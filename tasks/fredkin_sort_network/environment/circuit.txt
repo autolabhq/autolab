@@ -1,0 +1,145 @@
+; Baseline reversible 4-input sorting network.
+; Inputs x0..x7 encode four 2-bit values: (x1 x0), (x3 x2), (x5 x4), (x7 x6).
+; Outputs o0..o7 hold the sorted values.
+; Outputs p0..p4 hold the swap decisions for the 5 comparators.
+; Scratch t0..t3 must return to zero.
+
+; Copy inputs into working outputs.
+cx x0 o0
+cx x1 o1
+cx x2 o2
+cx x3 o3
+cx x4 o4
+cx x5 o5
+cx x6 o6
+cx x7 o7
+
+; Comparator 0: (o0,o1) vs (o2,o3), decision p0
+x o3
+ccx o1 o3 t0
+x o3
+x t1
+cx o1 t1
+cx o3 t1
+ccx t1 o0 t2
+x o2
+ccx t2 o2 t3
+x o2
+cx t0 p0
+cx t3 p0
+x o2
+ccx t2 o2 t3
+x o2
+ccx t1 o0 t2
+cx o3 t1
+cx o1 t1
+x t1
+x o3
+ccx o1 o3 t0
+x o3
+fred p0 o0 o2
+fred p0 o1 o3
+
+; Comparator 1: (o4,o5) vs (o6,o7), decision p1
+x o7
+ccx o5 o7 t0
+x o7
+x t1
+cx o5 t1
+cx o7 t1
+ccx t1 o4 t2
+x o6
+ccx t2 o6 t3
+x o6
+cx t0 p1
+cx t3 p1
+x o6
+ccx t2 o6 t3
+x o6
+ccx t1 o4 t2
+cx o7 t1
+cx o5 t1
+x t1
+x o7
+ccx o5 o7 t0
+x o7
+fred p1 o4 o6
+fred p1 o5 o7
+
+; Comparator 2: (o0,o1) vs (o4,o5), decision p2
+x o5
+ccx o1 o5 t0
+x o5
+x t1
+cx o1 t1
+cx o5 t1
+ccx t1 o0 t2
+x o4
+ccx t2 o4 t3
+x o4
+cx t0 p2
+cx t3 p2
+x o4
+ccx t2 o4 t3
+x o4
+ccx t1 o0 t2
+cx o5 t1
+cx o1 t1
+x t1
+x o5
+ccx o1 o5 t0
+x o5
+fred p2 o0 o4
+fred p2 o1 o5
+
+; Comparator 3: (o2,o3) vs (o6,o7), decision p3
+x o7
+ccx o3 o7 t0
+x o7
+x t1
+cx o3 t1
+cx o7 t1
+ccx t1 o2 t2
+x o6
+ccx t2 o6 t3
+x o6
+cx t0 p3
+cx t3 p3
+x o6
+ccx t2 o6 t3
+x o6
+ccx t1 o2 t2
+cx o7 t1
+cx o3 t1
+x t1
+x o7
+ccx o3 o7 t0
+x o7
+fred p3 o2 o6
+fred p3 o3 o7
+
+; Comparator 4: (o2,o3) vs (o4,o5), decision p4
+x o5
+ccx o3 o5 t0
+x o5
+x t1
+cx o3 t1
+cx o5 t1
+ccx t1 o2 t2
+x o4
+ccx t2 o4 t3
+x o4
+cx t0 p4
+cx t3 p4
+x o4
+ccx t2 o4 t3
+x o4
+ccx t1 o2 t2
+cx o5 t1
+cx o3 t1
+x t1
+x o5
+ccx o3 o5 t0
+x o5
+fred p4 o2 o4
+fred p4 o3 o5

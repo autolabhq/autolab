@@ -1,0 +1,46 @@
+; Baseline stack-machine dot product.
+; Scratch cells:
+; 1024 = acc
+; 1025 = ap
+; 1026 = bp
+; 1027 = n
+
+push 0
+st 1024
+push 0
+st 1025
+push 256
+st 1026
+push 256
+st 1027
+
+loop:
+ld 1027
+jz end
+
+ld 1024
+ld 1025
+ldx
+ld 1026
+ldx
+mul
+add
+st 1024
+
+ld 1025
+inc
+st 1025
+
+ld 1026
+inc
+st 1026
+
+ld 1027
+dec
+st 1027
+
+jmp loop
+
+end:
+ld 1024
+halt

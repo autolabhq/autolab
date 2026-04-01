@@ -1,0 +1,36 @@
+# FROZEN — do not modify this file.
+# Training config for data selection task. Only the data changes.
+
+# Model
+model_name_or_path: /models/Qwen2.5-3B-Instruct
+trust_remote_code: true
+template: qwen
+
+# LoRA SFT
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 16
+lora_alpha: 32
+lora_target: all
+lora_dropout: 0.05
+
+# Data
+dataset: selected_train
+dataset_dir: /app/data
+overwrite_cache: true
+preprocessing_num_workers: 4
+cutoff_len: 2048
+
+# Training
+output_dir: /app/output
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+learning_rate: 1.0e-4
+num_train_epochs: 1
+lr_scheduler_type: cosine
+warmup_ratio: 0.05
+bf16: true
+logging_steps: 20
+save_only_model: true
+overwrite_output_dir: true

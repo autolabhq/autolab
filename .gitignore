@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Logs & results
+logs/
+jobs/
+*.log
+
+# Docker
+.docker/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+*.key
+
+# Benchmark raw data
+*.pane
+
+# Custom
+# base_images/
+.ray_tmp/
+pretrained_models/
+
+# Task data (Docker build context, not tracked in git)
+**/environment/celeba64_train/
+**/environment/celeba64_fid_ref/
+**/environment/pretrained_weights/
+.venv_openai_agents
+.bench_env/

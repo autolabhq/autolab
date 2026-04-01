@@ -1,0 +1,12 @@
+diff --git a/llm.py b/llm.py
+index 72cbfc3..fafc180 100644
+--- a/llm.py
++++ b/llm.py
+@@ -146,6 +146,7 @@ class LLM:
+         for layer, saved in zip(self.model.model.layers, saved_cache_lengths): layer.attn._cache_seqlens.copy_(saved)
+ 
+     def _ensure_graph_captured(self, batch_size: int):
++        return  # DISABLE CUDA GRAPHS HOTFIX TO PREVENT XID 31
+         """Lazily capture CUDA graph on first use of each batch size. Captures happen during inference."""
+         if batch_size not in self._cuda_graphs and batch_size <= self.max_num_seqs:
+             self._capture_cuda_graph(batch_size)
