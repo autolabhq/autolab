@@ -158,8 +158,10 @@ If you use AutoLab in your research, please cite us:
 
 ```bibtex
 @misc{autolab-2026,
-  title   = {AutoLab: Evaluating AI Agents on Frontier Research Tasks},
-  author  = {BakeLab},
+  title   = {AutoLab: Can Models Begin to Participate
+             in the Loops That Drive Scientific
+             and Engineering Progress?},
+  author  = {AutoLab Team},
   year    = {2026},
   url     = {https://github.com/autolabhq/autolab}
 }
