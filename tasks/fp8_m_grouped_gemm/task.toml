@@ -1,0 +1,43 @@
+version = "1.0"
+
+[metadata]
+author = "kernel-anno"
+difficulty = "hard"
+domain = "gpu_kernel"
+tags = [
+  "triton", "fp8", "gemm", "grouped-gemm", "gpu",
+  "h100", "h800", "quantization", "inference"
+]
+
+[agent]
+timeout_sec = 7200          # 2 hours
+
+[verifier]
+timeout_sec = 900           # 15 min: compile + warmup + benchmark
+
+[environment]
+cpus         = 8
+memory_mb    = 32768
+storage_mb   = 8192
+gpus         = 1
+gpu_type     = "H800"       # also valid: H100
+allow_internet = false
+
+[optimization]
+metric    = "avg_tflops"    # higher is better
+direction = "higher"
+
+[optimization.baseline]
+# torch_ref: pure PyTorch dequant + matmul (measured at runtime)
+method = "Pure PyTorch: per-token/per-block FP8 dequantization then torch.matmul in BF16"
+
+[optimization.reference]
+# target = 80% of DeepGEMM (measured at runtime)
+method = "Triton kernel reaching >= 80% of DeepGEMM m_grouped_fp8_gemm_nt_contiguous throughput"
+
+[scoring]
+# reward = clamp(agent_tflops / (deepgemm_tflops * 0.8), 0.0, 1.0)
+# 0.0 = no improvement over torch_ref
+# 1.0 = agent reaches 80% of DeepGEMM (or better)
+formula = "linear_tflops_ratio"
+target_fraction_of_reference = 0.80
