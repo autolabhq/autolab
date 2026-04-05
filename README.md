@@ -1,21 +1,30 @@
-# Autolab
+# 📈 AutoLab
 
 AutoLab is a benchmark for evaluating AI agents on frontier research tasks. It presents 23 open-ended challenges spanning low-level systems optimization and GPU-intensive model training, each with a real codebase, a compute budget, and a goal to optimize. Instead of measuring one-shot correctness, AutoLab tests what matters in practice: the ability to diagnose bottlenecks, formulate hypotheses, run experiments, and iteratively improve under realistic constraints.
 
+- 🌐 **Website:** https://autolab.moe/
+- 💻 **GitHub:** https://github.com/autolabhq/autolab [You are here!]
+- 📝 **Blog:** https://autolab.moe/blog
+- 🔬 **Live Lab:** https://autolab.moe/live-lab (watch trajectory)
+
+<p align="center">
+  <img src="images/autolab.png" width="120" />
+</p>
+
 ## Environment Setup
+
+We utilize [Harbor](https://github.com/harbor-framework/harbor) to run and evaluate agent tasks in sandboxed containers. To install Harbor, simply:
 
 ```bash
 uv pip install harbor
 bash harbor_patch.sh  # enable gpu and extended waiting
 ```
 
-> ⚠️ Some tasks require GPU access. You need either local Docker environment with GPU support or a cloud sandbox such as [Modal](https://modal.com/).
+> ⚠️ Some tasks require GPU access. You need either a local Docker environment with GPU support or a cloud sandbox such as [Modal](https://modal.com/).
 
-## Overview
+## Task List (Initial Release)
 
 AutoLab consists of 23 scored tasks spanning two categories:
-
-## Task Lists (Initial Release)
 
 ### Model Development (5 tasks)
 
@@ -53,9 +62,9 @@ Each task gives the agent:
 - A working but unoptimized program (not a blank slate but a realistic starting point)
 - A fixed compute budget and timeout (1–12 hours depending on task complexity)
 - A target metric (throughput, latency, perplexity, accuracy, parameter count, etc.)
-- A sandbox (with a H100 or L40S GPU if it requires model training or inference)
+- A sandbox (with an H100 or L40S GPU if it requires model training or inference)
 
-The agent must diagnose bottlenecks, propose interventions, execute them, measure results, and iterate, exactly as a human researcher would!
+The agent must diagnose bottlenecks, propose interventions, execute them, measure results, and iterate — exactly as a human researcher would.
 
 Each task is a self-contained environment with Harbor-compatible format:
 
@@ -151,6 +160,18 @@ harbor run -p [task folder] -a terminus-2 -m [Your Model Name]
 ```bash
 harbor run -p ./tasks -a terminus-2 -m [Your Model Name]
 ```
+
+Refer to [Harbor documentation](https://www.harborframework.com/) for detailed setups for more model providers and agent harnesses.
+
+## Contribute
+
+### Add Your Model & Harness & Tasks
+
+We welcome new models, harnesses, and tasks. Open a PR (new tasks) or Issue (new models or harnesses), and we'll benchmark them on all tasks.
+
+> To submit, open a pull request at https://github.com/autolabhq/autolab/pulls
+
+Please contact Zhangchen (zxu9@uw.edu) if you have any questions.
 
 ## Citation
 
