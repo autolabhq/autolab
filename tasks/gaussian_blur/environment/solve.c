@@ -13,6 +13,7 @@
  */
 
 #include "solve.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
@@ -57,7 +58,7 @@ void blur_image(const uint8_t *src, uint8_t *dst,
 
     uint8_t *ping = (uint8_t *)malloc((size_t)width * height);
     uint8_t *pong = (uint8_t *)malloc((size_t)width * height);
-    if (!ping || !pong) { free(ping); free(pong); return; }
+    if (!ping || !pong) { free(ping); free(pong); fprintf(stderr, "OOM\n"); exit(1); }
 
     memcpy(ping, src, (size_t)width * height);
 

@@ -18,6 +18,7 @@
 
 #include "solve.h"
 #include <math.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -33,7 +34,7 @@ void attention(
     /* Allocate the full n×n score and probability matrices in double. */
     double *S = (double *)malloc((size_t)n * (size_t)n * sizeof(double));
     double *P = (double *)malloc((size_t)n * (size_t)n * sizeof(double));
-    if (!S || !P) { free(S); free(P); return; }
+    if (!S || !P) { free(S); free(P); fprintf(stderr, "OOM\n"); exit(1); }
 
     /* ── Step 1: S[i][j] = dot(Q[i], K[j]) / sqrt(d) ────────────────── */
     for (int i = 0; i < n; i++) {
