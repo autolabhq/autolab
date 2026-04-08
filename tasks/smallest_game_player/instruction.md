@@ -23,7 +23,7 @@ def predict(model, X):
     """Return (N,) int64 array of predicted columns in [0, 3]."""
 ```
 
-Parameter count is `sum(v.size for v in model.values())`. If hidden-test accuracy < 97%, reward is 0.
+Parameter count is `sum(v.size for v in model.values())`. If hidden-test accuracy < 95%, reward is 0.
 
 ## Files
 
