@@ -1,13 +1,21 @@
 #!/bin/bash
 # Harbor patches for autophd_gym
-# Usage: uv venv && uv sync && bash harbor_patch.sh
+# Usage: uv sync && bash harbor_patch.sh
 set -euo pipefail
 
-VENV_SITE=$(python3 -c "import sysconfig; print(sysconfig.get_path('purelib'))")
+# Use the project's .venv python so we patch the correct site-packages
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+VENV_PYTHON="$SCRIPT_DIR/.venv/bin/python3"
+if [ ! -x "$VENV_PYTHON" ]; then
+    echo "Error: .venv not found. Run 'uv sync' first." >&2
+    exit 1
+fi
+
+VENV_SITE=$("$VENV_PYTHON" -c "import sysconfig; print(sysconfig.get_path('purelib'))")
 echo "Site-packages: $VENV_SITE"
 
 # ── Patch 1: terminus-2 max duration 60 → 1200 seconds ──
-python3 -c "
+"$VENV_PYTHON" -c "
 from pathlib import Path
 p = Path('$VENV_SITE/harbor/agents/terminus_2/terminus_2.py')
 s = p.read_text()
@@ -23,7 +31,7 @@ else:
 "
 
 # ── Patch 2: docker environment GPU support ──
-python3 -c "
+"$VENV_PYTHON" -c "
 from pathlib import Path
 p = Path('$VENV_SITE/harbor/environments/docker/docker.py')
 s = p.read_text()
@@ -39,7 +47,7 @@ else:
 "
 
 # ── Patch 3: GPU device selection via HARBOR_GPU_DEVICES env var ──
-python3 << 'PYEOF'
+"$VENV_PYTHON" << 'PYEOF'
 from pathlib import Path
 import sysconfig, textwrap
 

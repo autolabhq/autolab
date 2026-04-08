@@ -16,7 +16,7 @@ AutoLab is a benchmark for evaluating AI agents on frontier research tasks. It p
 We utilize [Harbor](https://github.com/harbor-framework/harbor) to run and evaluate agent tasks in sandboxed containers. To install Harbor, simply:
 
 ```bash
-uv pip install harbor
+uv sync
 bash harbor_patch.sh  # enable gpu and extended waiting
 ```
 
