@@ -1,14 +1,27 @@
 # 📈 AutoLab
 
-AutoLab is a benchmark for evaluating AI agents on frontier research tasks. It presents 23 open-ended challenges spanning low-level systems optimization and GPU-intensive model training, each with a real codebase, a compute budget, and a goal to optimize. Instead of measuring one-shot correctness, AutoLab tests what matters in practice: the ability to diagnose bottlenecks, formulate hypotheses, run experiments, and iteratively improve under realistic constraints.
+AutoLab is a benchmark for evaluating AI agents on frontier auto research tasks. It presents 23 open-ended challenges spanning low-level systems optimization, GPU-intensive model development, and puzzle-style algorithmic challenges, each with a real codebase, a compute budget, and a goal to optimize. Instead of measuring one-shot correctness, AutoLab tests what matters in practice: the ability to diagnose bottlenecks, formulate hypotheses, run experiments, and iteratively improve under realistic constraints.
 
 - 🌐 **Website:** https://autolab.moe/
+- 🏆 **Leaderboard:** https://autolab.moe/#leaderboard
 - 💻 **GitHub:** https://github.com/autolabhq/autolab [You are here!]
 - 📝 **Blog:** https://autolab.moe/blog
 - 🔬 **Live Lab:** https://autolab.moe/live-lab (watch trajectory)
 
 <p align="center">
   <img src="images/autolab.png" width="120" />
+</p>
+
+## Leaderboard
+
+The live AutoLab leaderboard is available at https://autolab.moe/.
+
+<p align="center">
+  <img src="images/leaderboard_0410.jpg" alt="AutoLab leaderboard overview" width="900" />
+</p>
+
+<p align="center">
+  <img src="images/scores_0410.jpg" alt="AutoLab task detail scores" width="900" />
 </p>
 
 ## Environment Setup
@@ -20,11 +33,17 @@ uv sync
 bash harbor_patch.sh  # enable gpu and extended waiting
 ```
 
-> ⚠️ Some tasks require GPU access. You need either a local Docker environment with GPU support or a cloud sandbox such as [Modal](https://modal.com/).
+### Reproducing Benchmark Results
+
+We recommend using the following environments:
+
+- **System Optimization:** To fully reproduce leaderboard experiments, please use AMD Ryzen 9 9950X with 64 GB memory. Differences in instruction set support across CPU generations can affect the maximum achievable speedup. Relative rankings and performance trends nevertheless remain informative.
+- **Model Development:** require GPU access, we highly recommend [Modal](https://modal.com/) or other GPU-enabled container environment
+- **Puzzle and Challenge:** no specific hardware environment is required.
 
 ## Task List (Initial Release)
 
-AutoLab consists of 23 scored tasks spanning two categories:
+AutoLab consists of 23 scored tasks spanning three categories:
 
 ### Model Development (5 tasks)
 
@@ -34,7 +53,7 @@ AutoLab consists of 23 scored tasks spanning two categories:
 - **multilingual_ocr** — Fine-tune DeepSeek-OCR-3B with LoRA to minimize character error rate on Persian and Bengali text. (Python/Unsloth)
 - **llm_online_serving** — Optimize LLM online serving throughput and latency. (Python)
 
-### System Optimization (18 tasks)
+### System Optimization (12 tasks)
 
 - **aes128_ctr** — Encrypt 256 MiB using AES-128-CTR as fast as possible. (C)
 - **sha256_throughput** — Hash a 512 MiB buffer with SHA-256 as fast as possible. (C)
@@ -42,17 +61,20 @@ AutoLab consists of 23 scored tasks spanning two categories:
 - **flash_attention** — Compute scaled dot-product attention (n=4096, d=64) with cache-efficient tiling. (C)
 - **hash_join** — Inner equi-join two tables (20k × 5M rows) as fast as possible. (C)
 - **radix_sort** — Sort 50M random uint32s as fast as possible. (C)
-- **vliw_scheduler** — Pack a sequential instruction stream into VLIW bundles to minimize cycle count. (C)
 - **bvh_raytracer** — Build a BVH and accelerate ray-triangle intersection for a 638×638 scene. (C++)
 - **bm25_search_go** — Execute BM25 ranking queries on a synthetic corpus as fast as possible. (Go)
 - **concurrent_kv_wal** — Optimize a WAL-backed key-value store with 4 concurrent goroutines. (Go)
 - **fft_rust** — Compute DFT of a 32768-point real signal as fast as possible. (Rust)
 - **regex_engine** — Compile regex patterns and search 100k haystacks as fast as possible. (Rust)
 - **sstable_compaction_rs** — Optimize LSM-style SSTable compaction merging sorted runs. (Rust)
+
+### Puzzle and Challenge (6 tasks)
+
 - **discover_sorting** — Find a 16-input sorting network with the fewest comparators. (Python)
 - **fredkin_sort_network** — Build a 4-input stable sorting network using reversible gates with minimal gate count. (Python)
 - **stack_machine_golf** — Compute a 256-element dot product minimizing executed instruction count on a stack machine. (Assembly)
 - **toy_isa_opt** — Compute a 512-element dot product minimizing simulated cycle count on a toy ISA. (Assembly)
+- **vliw_scheduler** — Pack a sequential instruction stream into VLIW bundles to minimize cycle count. (C)
 - **smallest_game_player** — Train the smallest neural network (by parameter count) that achieves ≥95% accuracy on perfect-play Connect-3. (Python/PyTorch)
 
 ## Task Structure
@@ -131,7 +153,7 @@ Reward = `your_score / reference_score`. Matching the reference scores 1.0.
 
 ## Scoring
 
-`task.toml` defines a baseline and a human-written reference solution. The two task categories use different reward formulas:
+`task.toml` defines a baseline and a human-written reference solution. The three task categories use the following reward rules:
 
 **System Optimization tasks:** Log-scaled speedup, capped at 1.0:
 
@@ -146,6 +168,10 @@ reward  = min(1.0, 0.5 × log(speedup) / log(ref_speedup))
 reward  = agent_score / reference   (higher-is-better)
 reward  = reference / agent_score   (lower-is-better)
 ```
+
+**Puzzle & Challenge tasks:** Reward definitions vary by task.
+
+These tasks do not share a single reward formula. Refer to each task's `task.toml` and test harness for the exact scoring rule.
 
 ## Usage
 
