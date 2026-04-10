@@ -59,21 +59,21 @@ if [[ -z "$COUNT" ]]; then
 fi
 
 BASELINE=80
-REFERENCE=60
+BEST_KNOWN=60
 
-REWARD=$(python3 - "$COUNT" "$BASELINE" "$REFERENCE" <<'PY'
+REWARD=$(python3 - "$COUNT" "$BASELINE" "$BEST_KNOWN" <<'PY'
 import sys
 
 count = int(sys.argv[1])
 baseline = int(sys.argv[2])
-reference = int(sys.argv[3])
+best_known = int(sys.argv[3])
 
 if count > baseline:
     reward = 0.0
-elif count <= reference:
+elif count <= best_known:
     reward = 1.0
 else:
-    reward = (baseline - count) / (baseline - reference)
+    reward = (baseline - count) / (baseline - best_known)
 
 print(f"{reward:.4f}")
 PY

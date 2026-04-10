@@ -57,4 +57,4 @@ typedef struct { VliwOp alu; VliwOp mul; VliwOp mem; } VliwBundle;
 - C standard library and GCC builtins (`__builtin_*`, `__attribute__`) are available.
 - Single-threaded only. No new external libraries.
 - Output must be structurally correct (each op in the right slot type, every op emitted exactly once) and hazard-free — wrong results score 0.
-
+- Time budget: 2 hours

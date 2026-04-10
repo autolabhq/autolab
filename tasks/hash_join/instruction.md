@@ -33,3 +33,4 @@ The function signature in `solve.h` is fixed and must not change.
 - Standard C99. SIMD intrinsics (`<immintrin.h>`) are allowed.
 - No external libraries. Single-threaded only.
 - Wrong results score 0.
+- Time budget: 2 hours

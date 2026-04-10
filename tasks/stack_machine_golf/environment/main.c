@@ -147,13 +147,19 @@ static int pass2(FILE *f, Inst *prog) {
     return pc;
 }
 
-static long long reference_dot(void) {
-    long long acc = 0;
+static unsigned int g_seed = 0;
+
+static void generate_data(long long *mem) {
     for (int i = 0; i < 256; i++) {
-        long long a = (i * 12345 + 6789) % 997;
-        long long b = (i * 54321 + 9876) % 997;
-        acc += a * b;
+        mem[i]       = ((long long)i * 12345 + 6789 + g_seed) % 997;
+        mem[256 + i] = ((long long)i * 54321 + 9876 + g_seed * 3) % 997;
     }
+}
+
+static long long reference_dot(long long *mem) {
+    long long acc = 0;
+    for (int i = 0; i < 256; i++)
+        acc += mem[i] * mem[256 + i];
     return acc;
 }
 
@@ -173,7 +179,9 @@ static void push_value(long long *stack, int *sp, long long x) {
     stack[(*sp)++] = x;
 }
 
-int main(void) {
+int main(int argc, char **argv) {
+    if (argc > 1) g_seed = (unsigned int)atoi(argv[1]);
+
     FILE *f = fopen("program.stk", "r");
     if (!f) { perror("program.stk"); return 1; }
     Inst prog[MAX_PROG];
@@ -183,10 +191,7 @@ int main(void) {
     fclose(f);
 
     long long mem[MEM_SIZE] = {0};
-    for (int i = 0; i < 256; i++) {
-        mem[i] = (i * 12345 + 6789) % 997;
-        mem[256 + i] = (i * 54321 + 9876) % 997;
-    }
+    generate_data(mem);
 
     long long stack[STACK_SIZE];
     int sp = 0;
@@ -240,7 +245,7 @@ int main(void) {
 done:
     {
         long long got = (sp > 0) ? stack[sp - 1] : 0;
-        long long ref = reference_dot();
+        long long ref = reference_dot(mem);
         printf("instructions=%lld verify=%s result=%lld expected=%lld\n",
                executed, (got == ref ? "ok" : "FAIL"), got, ref);
     }

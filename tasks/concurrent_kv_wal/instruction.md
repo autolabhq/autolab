@@ -30,3 +30,4 @@ The store runs a deterministic multi-phase workload with **4 concurrent goroutin
 - Standard library only. No external modules, no cgo.
 - Goroutines, channels, `sync`, and `sync/atomic` are allowed.
 - Correctness is strict: the verifier diffs the full output.
+- Time budget: 4 hours

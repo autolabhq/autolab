@@ -27,3 +27,4 @@ void radix_sort(uint32_t *arr, size_t n);
 - C standard library (`<stdlib.h>`, `<string.h>`, `<stdint.h>`) is allowed. GCC extensions (`__builtin_*`, `restrict`, `__attribute__`) are allowed.
 - Single-threaded only.
 - Sorted output must be exactly correct. Wrong output scores 0.
+- Time budget: 2 hours

@@ -26,3 +26,4 @@ Do not modify: `main.go`, `go.mod`, `Makefile`
 - The public names used by `main.go` must keep working.
 - Output must remain exactly correct. Wrong checksum or hit count = score 0.
 - Single-process only. Goroutines are allowed.
+- Time budget: 4 hours

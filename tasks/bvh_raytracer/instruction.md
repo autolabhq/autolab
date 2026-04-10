@@ -31,3 +31,4 @@ bool Intersect(Ray& ray);      // update ray.t with nearest hit; return true if 
 - Standard library and SIMD intrinsics (`<immintrin.h>`) are allowed.
 - No external libraries. No multithreading.
 - `ray.t` must be correct — errors > 0.01 units score 0.
+- Time budget: 2 hours

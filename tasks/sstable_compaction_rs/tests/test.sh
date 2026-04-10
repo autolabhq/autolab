@@ -22,6 +22,8 @@ write_reward() {
 }
 
 echo "=== Building ==="
+# Ensure cargo detects source changes (cp/write may preserve timestamps)
+touch /app/src/*.rs 2>/dev/null || true
 if ! cargo build --release --manifest-path=/app/Cargo.toml 2>&1; then
     write_reward 0.0 false null null
     exit 0

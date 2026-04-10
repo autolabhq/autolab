@@ -54,23 +54,26 @@ echo "Cycles: ${CYCLES}  result=ok"
 
 # ── Step 3: Reward ────────────────────────────────────────────────────────────
 BASELINE=4080
-REFERENCE=1300
+BEST_KNOWN=1200
 
-RESULT=$(python3 - "$CYCLES" "$BASELINE" "$REFERENCE" <<'PYEOF'
-import sys, math
-cycles    = int(sys.argv[1])
-baseline  = int(sys.argv[2])
-reference = int(sys.argv[3])
-speedup     = baseline / cycles
-ref_speedup = baseline / reference
-reward = 0.0 if speedup <= 1.0 else min(1.0, 0.5 * math.log(speedup) / math.log(ref_speedup))
-print(f"{round(max(0.0, reward), 4)} {round(speedup, 2)}")
+REWARD=$(python3 - "$CYCLES" "$BASELINE" "$BEST_KNOWN" <<'PYEOF'
+import sys
+
+cycles = int(sys.argv[1])
+baseline = int(sys.argv[2])
+best_known = int(sys.argv[3])
+
+if cycles >= baseline:
+    reward = 0.0
+elif cycles <= best_known:
+    reward = 1.0
+else:
+    reward = (baseline - cycles) / (baseline - best_known)
+
+print(f"{round(reward, 4)}")
 PYEOF
 )
 
-REWARD=$(echo "$RESULT" | cut -d' ' -f1)
-SPEEDUP=$(echo "$RESULT" | cut -d' ' -f2)
-
-echo "Speedup: ${SPEEDUP}x  |  Reward: ${REWARD}"
-write_reward "$REWARD" true "$CYCLES" "$SPEEDUP"
-echo "Done. Written to $REWARD_FILE"
+echo "cycles=$CYCLES reward=$REWARD"
+write_reward "$REWARD" true "$CYCLES" null
+echo "$REWARD" > /logs/verifier/reward.txt

@@ -20,3 +20,4 @@ Implement a 4-input stable sorting network using reversible gates. Four 2-bit un
 - Edit `/app/circuit.txt` only.
 - Use only the provided gate set (x, cx, ccx, fred).
 - Output must be exactly correct for all 256 inputs.
+- Time budget: 2 hours

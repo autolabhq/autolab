@@ -8,7 +8,7 @@ Compute `sum = A[0]*B[0] + ... + A[511]*B[511]` and store the result in `r1` at 
 
 Memory layout (word-addressed): `A[0..511]` at addresses 0–511, `B[0..511]` at 512–1023.
 
-Data: `A[i] = (i*12345+6789)%997`, `B[i] = (i*54321+9876)%997`.
+Data values are integers in the range `[0, 996]`. The verifier tests with multiple data seeds, so your program must compute the dot product correctly for any valid input. Hardcoding the answer will fail verification.
 
 ## ISA
 
@@ -39,3 +39,4 @@ Baseline: **~9,220 cycles**.
 - Do not modify `Makefile`. Build configuration is fixed.
 - Edit `/app/program.s` only.
 - `r1` must equal the reference dot product at `halt` — wrong answer scores 0.
+- Time budget: 2 hours

@@ -4,7 +4,7 @@ version = "1.0"
 [metadata]
 author = "AutoLab"
 difficulty = "medium"
-domain   = "optimization"
+domain   = "puzzle_and_challenge"
 tags       = ["assembly", "scheduling", "pipeline", "unrolling", "dot-product",
               "simulated-hardware", "cycles", "ISA"]
 
@@ -22,7 +22,7 @@ gpus        = 0
 allow_internet = false
 
 [optimization]
-metric = "runtime_seconds"
+metric = "cycles"
 direction = "lower"
 
 [optimization.baseline]
@@ -30,6 +30,6 @@ score = 9220
 method = "Single-accumulator dot-product loop with back-to-back load→mul→add dependencies causing maximal pipeline stalls"
 
 [optimization.reference]
-score = 1500
+score = 2954
 method = "4× loop unrolling with 4 independent accumulators and interleaved loads to hide 5-cycle load/mul latency"
 
