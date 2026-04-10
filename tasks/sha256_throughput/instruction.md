@@ -27,3 +27,4 @@ void sha256(const uint8_t *data, size_t len, uint8_t *digest);
 - C standard library and `<immintrin.h>` are allowed. GCC extensions (`__attribute__`, `__builtin_*`, inline assembly) are allowed.
 - Single-threaded only.
 - Output must match Python's `hashlib.sha256` exactly. Wrong results score 0.
+- Time budget: 2 hours

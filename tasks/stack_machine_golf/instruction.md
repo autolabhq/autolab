@@ -13,10 +13,7 @@ Memory layout:
 - `A[0..255]` at addresses `0..255`
 - `B[0..255]` at addresses `256..511`
 
-Data is deterministic:
-
-- `A[i] = (i*12345 + 6789) % 997`
-- `B[i] = (i*54321 + 9876) % 997`
+Data values are integers in the range `[0, 996]`. The verifier tests with multiple data seeds, so your program must compute the dot product correctly for any valid input. Hardcoding the answer will fail verification.
 
 At `halt`, the top of the stack must equal the reference dot product.
 
@@ -72,3 +69,4 @@ Labels end with `:`.
 - You may use scratch memory at addresses `1024..1039`.
 - Wrong final result scores 0.
 - Infinite loops or stack underflow score 0.
+- Time budget: 2 hours

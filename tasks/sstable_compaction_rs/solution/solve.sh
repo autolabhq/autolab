@@ -7,3 +7,6 @@ cp /solution/optimized_iter.rs /app/src/iter.rs
 cp /solution/optimized_merge.rs /app/src/merge.rs
 cp /solution/optimized_builder.rs /app/src/builder.rs
 cp /solution/optimized_compaction.rs /app/src/compaction.rs
+
+# Ensure cargo detects file changes (cp may preserve timestamps)
+touch /app/src/*.rs

@@ -24,3 +24,4 @@ The function signature in `solve.h` is fixed and must not change.
 - C99 only. C standard library and `<immintrin.h>` are allowed. No other external libraries.
 - Single-threaded only.
 - Output must remain correct. Max allowed per-pixel deviation from the reference: **±4**.
+- Time budget: 2 hours

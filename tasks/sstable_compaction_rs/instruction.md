@@ -27,3 +27,4 @@ The benchmark generates several deterministic sorted SSTables. Each table stores
 - Pure Rust only. No external crates.
 - Single-threaded only.
 - Output must be exactly correct.
+- Time budget: 4 hours

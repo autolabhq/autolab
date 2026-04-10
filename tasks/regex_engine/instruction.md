@@ -25,3 +25,4 @@ The function signature in `src/main.rs` is fixed and must not change.
 - No external crates. Pure Rust only.
 - Single-threaded only.
 - Output must remain exactly correct.
+- Time budget: 2 hours

@@ -69,32 +69,24 @@ if [[ "$ACC_OK" != "yes" ]]; then
 fi
 
 BASELINE=17924
-REFERENCE=913
 
-RESULT2=$(python3 - "$PARAMS" "$BASELINE" "$REFERENCE" <<'PYEOF'
-import math
+REWARD=$(python3 - "$PARAMS" "$BASELINE" <<'PYEOF'
 import sys
 
 params = int(sys.argv[1])
 baseline = int(sys.argv[2])
-reference = int(sys.argv[3])
 
-reduction = baseline / params
-ref_reduction = baseline / reference
-
-if reduction <= 1.0:
+if params >= baseline:
     reward = 0.0
+elif params <= 0:
+    reward = 1.0
 else:
-    reward = min(1.0, 0.5 * math.log(reduction) / math.log(ref_reduction))
+    reward = (baseline - params) / baseline
 
-reward = round(max(0.0, reward), 4)
-print(f"{reward} {round(reduction, 2)}")
+print(f"{round(reward, 4)}")
 PYEOF
 )
 
-REWARD=$(echo "$RESULT2" | awk '{print $1}')
-SCORE=$(echo "$RESULT2" | awk '{print $2}')
-
-write_reward "$REWARD" true "$PARAMS" "$SCORE"
+echo "params=$PARAMS reward=$REWARD"
+write_reward "$REWARD" true "$PARAMS" null
 echo "$REWARD" > /logs/verifier/reward.txt
-echo "Final reward: $REWARD"

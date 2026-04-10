@@ -34,3 +34,4 @@ pub fn fft(signal: &[f64]) -> Vec<[f64; 2]>
 - Standard library (`std`) only — no external crates.
 - Single-threaded only.
 - Correctness verified via Parseval's theorem and spectral checksum (relative tolerance 1e-6).
+- Time budget: 2 hours

@@ -391,8 +391,12 @@ static long long simulate(CPU *cpu, Instruction *prog, int prog_len) {
     return cpu->cycle;
 }
 
+static unsigned int g_seed = 0;
+
 /* ── Main ───────────────────────────────────────────────────────────────────── */
-int main(void) {
+int main(int argc, char **argv) {
+    if (argc > 1) g_seed = (unsigned int)atoi(argv[1]);
+
     /* ── Load and assemble program.s ── */
     FILE *f = fopen("program.s", "r");
     if (!f) { perror("program.s"); return 1; }
@@ -422,10 +426,10 @@ int main(void) {
     CPU cpu;
     memset(&cpu, 0, sizeof(cpu));
 
-    /* Deterministic data: A[0..511] at mem[0..511], B[0..511] at mem[512..1023] */
+    /* Data: A[0..511] at mem[0..511], B[0..511] at mem[512..1023] */
     for (int i = 0; i < 512; i++) {
-        cpu.mem[i]       = (long long)((i * 12345LL + 6789) % 997);   /* A[i] */
-        cpu.mem[512 + i] = (long long)((i * 54321LL + 9876) % 997);   /* B[i] */
+        cpu.mem[i]       = (long long)((i * 12345LL + 6789 + g_seed) % 997);       /* A[i] */
+        cpu.mem[512 + i] = (long long)((i * 54321LL + 9876 + g_seed * 3) % 997);   /* B[i] */
     }
 
     /* ── Compute reference dot product in C ── */

@@ -27,3 +27,4 @@ The verifier calls `generate_network(16)`, runs the network on all 65 536 binary
 - Edit `/app/solve.py` only. Python standard library only.
 - `generate_network()` must return a `list` of 2-tuples with `0 <= i, j < 16` and `i != j`.
 - Incorrect networks score 0.
+- Time budget: 2 hours

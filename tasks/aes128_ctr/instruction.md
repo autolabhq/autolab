@@ -23,3 +23,4 @@ The function implements AES-128 in CTR (Counter) mode. It must produce output ma
 - C11 only. No external libraries beyond the C standard library, `<immintrin.h>`, and `<wmmintrin.h>`.
 - GCC extensions and intrinsics are allowed.
 - Single-threaded only.
+- Time budget: 2 hours

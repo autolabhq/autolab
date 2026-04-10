@@ -39,3 +39,4 @@ Parameter count is `sum(v.size for v in model.values())`. If hidden-test accurac
 - `train()` and `predict()` signatures must not change; `train()` must return a flat `dict[str, np.ndarray]`.
 - No explicit game-tree search, minimax, alpha-beta, or hardcoded state lookup tables.
 - No internet access.
+- Time budget: 2 hours

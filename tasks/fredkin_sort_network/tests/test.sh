@@ -23,25 +23,26 @@ if [ "$VERIFY" != "ok" ]; then
 fi
 
 BASELINE=128
-REFERENCE=88
+BEST_KNOWN=53
 
-RESULT=$(python3 - "$GATES" "$BASELINE" "$REFERENCE" <<'PYEOF'
-import math
+REWARD_VAL=$(python3 - "$GATES" "$BASELINE" "$BEST_KNOWN" <<'PYEOF'
 import sys
 
-score = float(sys.argv[1])
-baseline = float(sys.argv[2])
-reference = float(sys.argv[3])
-speedup = baseline / score if score > 0 else 0.0
-ref_speedup = baseline / reference if reference > 0 else 1.0
-reward = 0.0 if speedup <= 1.01 or ref_speedup <= 1.0 else min(1.0, 0.5 * math.log(speedup) / math.log(ref_speedup))
-print(f"{round(max(0.0, reward), 4)} {round(speedup, 2)}")
+count = int(sys.argv[1])
+baseline = int(sys.argv[2])
+optimal = int(sys.argv[3])
+
+if count >= baseline:
+    reward = 0.0
+elif count <= optimal:
+    reward = 1.0
+else:
+    reward = (baseline - count) / (baseline - optimal)
+
+print(f"{reward:.4f}")
 PYEOF
 )
 
-REWARD_VAL=$(echo "$RESULT" | cut -d' ' -f1)
-SPEEDUP_VAL=$(echo "$RESULT" | cut -d' ' -f2)
-
-echo "Speedup: ${SPEEDUP_VAL}x  |  Reward: ${REWARD_VAL}"
-write_reward "$REWARD_VAL" true "$GATES" "$SPEEDUP_VAL"
+echo "gates=$GATES reward=$REWARD_VAL"
+write_reward "$REWARD_VAL" true "$GATES" null
 echo "$REWARD_VAL" > "$LOGDIR/reward.txt"

@@ -34,9 +34,9 @@ if ! make -C /app 2>&1; then
     exit 0
 fi
 
-# ── Step 2: Run and parse output ───────────────────────────────────────────────
+# ── Step 2: Run with default seed (seed=0) for metric ─────────────────────────
 echo "=== Running simulator ==="
-OUTPUT=$(/app/solve 2>&1) || true
+OUTPUT=$(/app/solve 0 2>&1) || true
 echo "Output: $OUTPUT"
 
 VERIFY=$(echo "$OUTPUT" | sed -n 's/.*verify=\([^ ]*\).*/\1/p')
@@ -58,39 +58,41 @@ fi
 
 echo "Correctness OK. Cycles: $CYCLES"
 
+# ── Step 2b: Run with extra seeds to reject hardcoded answers ─────────────────
+for SEED in 42 137 999; do
+    SOUT=$(/app/solve $SEED 2>&1) || true
+    echo "seed=$SEED: $SOUT"
+    SVERIFY=$(echo "$SOUT" | sed -n 's/.*verify=\([^ ]*\).*/\1/p')
+    if [ "$SVERIFY" != "ok" ]; then
+        echo "Correctness FAILED with seed=$SEED"
+        write_reward 0.0 false "$CYCLES" null
+        echo "0.0" > /logs/verifier/reward.txt
+        exit 0
+    fi
+done
+
 # ── Step 3: Reward computation ─────────────────────────────────────────────────
 BASELINE=9220
-REFERENCE=1500
+BEST_KNOWN=1545
 
-RESULT=$(python3 - "$CYCLES" "$BASELINE" "$REFERENCE" <<'PYEOF'
-import sys, math
+REWARD=$(python3 - "$CYCLES" "$BASELINE" "$BEST_KNOWN" <<'PYEOF'
+import sys
 
-cycles     = int(sys.argv[1])
-baseline   = int(sys.argv[2])
-reference  = int(sys.argv[3])
+cycles = int(sys.argv[1])
+baseline = int(sys.argv[2])
+best_known = int(sys.argv[3])
 
-if cycles <= 0:
-    print("0.0 0.0")
-    sys.exit(0)
-
-speedup = baseline / cycles
-ref_speedup  = baseline / reference   # 6.1333...
-
-if speedup <= 1.0:
+if cycles >= baseline:
     reward = 0.0
+elif cycles <= best_known:
+    reward = 1.0
 else:
-    reward = min(1.0, 0.5 * math.log(speedup) / math.log(ref_speedup))
+    reward = (baseline - cycles) / (baseline - best_known)
 
-reward = max(0.0, round(reward, 4))
-speedup = round(speedup, 4)
-print(f"{reward} {speedup}")
+print(f"{round(reward, 4)}")
 PYEOF
 )
 
-REWARD=$(echo "$RESULT" | cut -d' ' -f1)
-SPEEDUP=$(echo "$RESULT" | cut -d' ' -f2)
-
-echo "Speedup: ${SPEEDUP}x  |  Reward: ${REWARD}"
-write_reward "$REWARD" true "$CYCLES" "$SPEEDUP"
+echo "cycles=$CYCLES reward=$REWARD"
+write_reward "$REWARD" true "$CYCLES" null
 echo "$REWARD" > /logs/verifier/reward.txt
-echo "Done. Written to $REWARD_FILE"
