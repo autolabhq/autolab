@@ -193,11 +193,12 @@ Refer to [Harbor documentation](https://www.harborframework.com/) for detailed s
 
 ### Add Your Model & Harness & Tasks
 
-We welcome new models, harnesses, and tasks. Open a PR (new tasks) or Issue (new models or harnesses), and we'll benchmark them on all tasks.
+We welcome new models, harnesses, and tasks. Open PR (new models or harnesses), we'll benchmark them on all tasks.
 
-> To submit, open a pull request at https://github.com/autolabhq/autolab/pulls
+To submit a new task, please use our contribution portal at https://autolab.moe/live-lab/contribute so it can go through the proper review process. Our team will review and verify all submissions.
 
-Please contact Zhangchen (zxu9@uw.edu) if you have any questions.
+
+Please contact Zichen (zcc@stanford.edu) if you have any questions.
 
 ## Citation
 
