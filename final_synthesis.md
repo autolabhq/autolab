@@ -234,15 +234,38 @@ While not delivering a breakthrough algorithm, the session provides:
 3. **Comprehensive resistance proof** that all 6 LMFDB benchmark
    targets uniformly defeat every known classical cryptanalytic
    attack (anomalous, MOV, GLV/CM, MW-rank, Petit-Quisquater,
-   structured FB / Groebner basis, isogeny navigation, lattice/p-adic)
+   structured FB / Groebner basis, isogeny navigation, lattice/p-adic,
+   Wu's method, quasi-subfield, p-adic L-function)
 4. **High-fidelity experimental methodology** for cryptanalytic
-   scaling claims (50 trials, full cost accounting, multi-curve)
+   scaling claims (50 trials, full cost accounting, multi-curve,
+   end-to-end scaling validation across multiple bit sizes)
 5. **Catalog of empirically-ruled-out attack directions** with
    reproducible Sage scripts
+6. **23-86× C-extension engineering speedup** with documented honest
+   budget analysis showing 5.5× remaining gap to 80-bit feasibility
+7. **Validation methodology lesson**: raw ops/sec is insufficient;
+   end-to-end scaling at multiple bit sizes is required to project
+   feasibility honestly. Corrected an early optimistic claim.
 
 This is a **rigorous empirical map** of the prime-field ECDLP attack
 landscape, demonstrating that the LMFDB benchmark accurately reflects
 ECDLP's current cryptographic security.
+
+## v6 program (final round): non-naive directions
+
+See `research_program_v6_result.md` for full details. Aggregate:
+
+| Phase | Direction | Result |
+|-------|-----------|--------|
+| 18.1 | Wu's characteristic-set method | 14× slower than GB; closed |
+| 18.2 | Quasi-subfield F_{p²} embedding | Works in F_{p²} but factor base not in `<P>`; relations don't descend; closed |
+| 19.1 | LLL on canonical lift | No hidden number; LLL fails; closed |
+| 19.2 | p-adic L-function | No known ECDLP connection; closed |
+| 20.1 | ℓ-isogeny graph walk | Order-preserving; class number ~10^11 makes enumeration infeasible; closed |
+| 21.1 | C-extension Pollard rho | 23-86× speedup; honest projection 5.5× short of 80-bit feasibility in budget |
+
+Five of six closed; one positive direction (engineering) but
+insufficient on its own to break the 80-bit benchmark.
 
 ## Acknowledgement
 
