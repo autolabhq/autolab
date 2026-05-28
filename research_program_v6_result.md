@@ -75,6 +75,26 @@ structure — none present in our generic LMFDB curves.
 **Verdict:** LLL on canonical lift coordinates is a clean negative.
 The lattice has no exploitable structure.
 
+### Phase 19.2: p-adic L-function evaluation
+
+**Setup:** Compute the Mazur-Swinnerton-Dyer p-adic L-function
+`L_p(E, T)` of 67.a1 at primes `p` of good ordinary reduction. Try
+both small `p` (11-31) and the benchmark 81-bit prime.
+
+**Result:**
+- All small primes (11, 13, 17, 19, 23, 29, 31) have good ordinary
+  reduction with non-zero `a_p`
+- At `p = 11`: `L_p(E, T) = 5 + 6·11 + 7·11^2 + 3·11^3 + 5·11^4 + ...`
+  (computed in 12 seconds with precision 5)
+- At benchmark 81-bit prime: setup succeeds (0.10s) but evaluation
+  would be infeasible at meaningful precision
+
+**Verdict:** Even if `L_p(E, 1)` is computable, there is **no known
+connection** between p-adic L-function values and ECDLP. The p-adic
+BSD conjecture relates `L_p(E, 1)` to `L'(E, 1)` and Tamagawa numbers,
+not to discrete logarithms. This direction is closed as a near-term
+attack vector — purely speculative without a concrete bridge.
+
 ### Phase 20.1: ℓ-isogeny walk on LMFDB benchmark curves
 
 **Setup:** Walk 2-, 3-, 5-, 7-isogeny graph from 67.a1 at p=1208925819614629469615699
@@ -139,6 +159,7 @@ hours of wall time on 2 CPUs.
 | 18.1 | Wu's method | 14× slower than GB — closed |
 | 18.2 | Quasi-subfield F_{p^2} | Computable but wrong subgroup — closed |
 | 19.1 | LLL canonical lift | No hidden number — closed |
+| 19.2 | p-adic L-function | No known connection to ECDLP — closed |
 | 20.1 | Isogeny graph walk | Order-preserving, computationally inaccessible — closed |
 | **21.1** | **C-extension** | **23× speedup, borderline-feasible for 80-bit benchmark** |
 
