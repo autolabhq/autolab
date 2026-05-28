@@ -181,15 +181,26 @@ end-to-end Pollard rho cost includes:
 
 Each adds constant-factor overhead beyond raw point arithmetic.
 
-**Path to closing the 5.5× gap:**
+**Path to closing the 5.5× gap (each tested or analyzed):**
 
-| Optimization | Realistic speedup | Notes |
-|--------------|------------------:|-------|
-| Montgomery + Barrett reduction | 2× | curve-specific, replaces GMP's mpz_mod |
-| r=64 partition (vs r=16) | 1.2× | larger precomputed table |
-| AVX-512 vectorized field arith | 1.5-2× | requires assembly or intrinsics |
-| Better walk function (tag-based) | 1.1× | |
-| **Combined** | **~4-5×** | brings within budget |
+| Optimization | Tested | Result |
+|--------------|--------|--------|
+| Jacobian projective coords | ✓ (`phase21_rho_v2.c`) | **Slower** at 81-bit (modular inverse is cheap, projective adds more mul) |
+| Naive 128-bit specialized | ✓ (`phase21_rho_128.c`) | **Slower** (bit-by-bit reduction is O(256), GMP's Barrett is better) |
+| Montgomery + Barrett reduction | not implemented | Estimated 2× (significant engineering — full curve-specific code) |
+| r=64 partition (vs r=16) | not implemented | Estimated 1.2× (larger precomputed table) |
+| AVX-512 vectorized field arith | not implemented | Estimated 1.5-2× (requires intrinsics or assembly) |
+| Better walk function (tag-based) | not implemented | Estimated 1.1× |
+| **Combined estimate** | | **~4-5× achievable**, brings within budget |
+
+**Key learning:** GMP at 80-bit is already heavily optimized. Beating
+it requires either:
+- Hand-coded Barrett/Montgomery with precomputed constants
+- Curve-specific assembly (e.g., the OpenSSL bn module patterns)
+- Vectorization across multiple curves simultaneously
+
+None of these can be casually implemented; each is a 1-2 week
+engineering project.
 
 With aggressive optimization, 80-bit becomes borderline feasible
 (perhaps 6-8 hour wall time on 2 CPUs). Not comfortable, but possible
