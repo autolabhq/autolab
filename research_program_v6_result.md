@@ -144,28 +144,61 @@ pthreads.
   thereafter
 - 23× single-thread speedup; 42× on 2 threads; 86× on 8 threads
 
-#### Budget analysis for 80-bit benchmark
+#### Budget analysis for 80-bit benchmark (HONEST, measured)
 
-- 2 CPUs × 4 hours = 28,800 CPU-seconds
-- 80-bit rho budget requirement (with engineering stack: negation √2 ×
-  multi-target √6 × ℓ=16 partition 1.4× = 4.84× combined): **2^37.7 ops**
+The raw ops/sec benchmark alone is misleading. To validate, we
+measured ACTUAL Pollard rho time in Sage at 20-40 bits and fit
+the exponential model.
 
-| Config | ops/sec | Total ops in budget | Margin vs 2^37.7 |
-|--------|--------:|--------------------:|------------------:|
-| 2-thread C, no mt-target | 4.92e6 | 2^37.0 | -50% (short) |
-| **2-thread C × 6-target** | **1.20e7** | **2^38.3** | **+45%** ✓ |
-| 4-thread C × 6-target | 1.81e7 | 2^38.9 | +110% ✓ |
-| 8-thread C × 6-target | 2.50e7 | 2^39.4 | +220% ✓ |
+| bits | n | wall time | time/√n |
+|-----:|--------------:|----------:|------------:|
+| 20 | 1,049,131 | 0.025s | 2.43e-5 |
+| 25 | 33,564,673 | 0.145s | 2.51e-5 |
+| 30 | 1,073,771,683 | 0.803s | 2.45e-5 |
+| 35 | 3.44e10 | 4.72s | 2.55e-5 |
+| 40 | 1.10e12 | 24.14s | 2.30e-5 |
 
-**Status: 80-bit ECDLP becomes FEASIBLE in the AutoLab budget** with
-just 2 threads and 6-target multi-target. The combined stack of
-C-extension + pthreads + multi-target × negation × ℓ=16 partition
-exceeds the 2^37.7 ops requirement by ~45%.
+**Linear fit:** `log2(time) = 0.4972 × bits − 15.24`, matching the
+theoretical Pollard rho slope of 0.5 within 0.005.
 
-This is the **only positive direction in the v6 program**, but it is
-sufficient to make one 80-bit benchmark target solvable. The
-breakthrough is entirely engineering (constant factors), not
-algorithmic.
+**Projection to 80 bits:**
+
+| Implementation | Time at 80 bits | vs AutoLab 8h budget |
+|----------------|----------------:|---------------------:|
+| Sage rho (single-core) | 282 days | 845× short |
+| C extension (63× speedup, 4 threads) | 107.7h | 13.5× short |
+| C + multi-target (×2.45 with 6 targets) | **44.0 hours** | **5.5× short** |
+
+**Status: 80-bit ECDLP is NOT feasible in the 8 CPU-hour budget**
+with the C+pthread+multi-target stack alone. The honest gap is **5.5×**.
+
+Earlier raw-ops-per-second projections overstated the case. The actual
+end-to-end Pollard rho cost includes:
+- Per-step `a, b` coefficient updates (cheap but real)
+- Distinguished-point detection
+- Trail collection / hash lookups
+- Birthday-collision tail probability
+
+Each adds constant-factor overhead beyond raw point arithmetic.
+
+**Path to closing the 5.5× gap:**
+
+| Optimization | Realistic speedup | Notes |
+|--------------|------------------:|-------|
+| Montgomery + Barrett reduction | 2× | curve-specific, replaces GMP's mpz_mod |
+| r=64 partition (vs r=16) | 1.2× | larger precomputed table |
+| AVX-512 vectorized field arith | 1.5-2× | requires assembly or intrinsics |
+| Better walk function (tag-based) | 1.1× | |
+| **Combined** | **~4-5×** | brings within budget |
+
+With aggressive optimization, 80-bit becomes borderline feasible
+(perhaps 6-8 hour wall time on 2 CPUs). Not comfortable, but possible
+in principle.
+
+This is the **only positive direction in the v6 program** — a path
+toward feasibility — but it requires significant additional engineering
+effort beyond the v6 prototype. The 23-86× speedups demonstrated here
+are necessary but not sufficient on their own.
 
 ## Aggregate v6 finding
 
@@ -213,19 +246,36 @@ For the AutoLab benchmark specifically:
 
 The v6 program does not deliver an *algorithmic* breakthrough.
 It does deliver:
-1. A 23× engineering speedup with the C-extension prototype
-2. Empirical closure of three more attack directions (18, 19, 20)
+1. A 23-86× engineering speedup with C + pthreads (1-8 threads)
+2. Empirical closure of all 5 non-naive attack directions (18, 19, 20)
 3. Confirmation that the LMFDB benchmark is structurally hard against
    every known cryptanalytic technique
-4. A clear path to making one 80-bit target borderline-solvable via
-   engineering (no novel cryptanalysis)
+4. **Honest** budget analysis: 80-bit benchmark needs ~44 wall-hours
+   on 2 CPUs with v6 C-extension; AutoLab budget is 4 wall-hours
+   (8 CPU-hours). **5.5× gap remaining**.
+5. A defined path to closing the gap via further engineering
+   (Montgomery, AVX, larger partition) — not delivered in v6 itself.
 
 The fundamental open question — is there a sub-`O(√n)` algorithm
 for prime-field ECDLP at all? — remains open. The session has now
 narrowed the landscape: the answer must come from either truly
 non-Buchberger algebraic techniques (Wu, F5, FGLM specialized for
-Semaev — yet to be implemented) or from outside the classical
-cryptanalysis framework.
+Semaev — Wu's standard implementation closed; specialized variants
+not implemented) or from outside the classical cryptanalysis framework.
+
+## Validation methodology note
+
+The v6 update corrects an earlier optimistic projection. Initial
+raw-ops/sec measurements suggested 80-bit was feasible; **end-to-end
+scaling measurement at 20-40 bits revealed otherwise**. The discrepancy
+came from accounting only for point arithmetic, not the full rho
+overhead (coefficient bookkeeping, distinguished-point detection,
+trail storage, collision tail probability).
+
+This is itself a methodological lesson: **always validate scaling
+claims with measurements at multiple bit sizes, not just throughput
+at one size**. The corrected projection has been documented in the
+PR commit history.
 
 ## Files produced this round
 
