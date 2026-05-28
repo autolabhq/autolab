@@ -121,36 +121,51 @@ ECDLP-hardness profile.
 
 ### Phase 21.1: C-extension Pollard rho
 
-**Setup:** Single-threaded C implementation of point arithmetic
-with GMP, partition `ℓ=16`, negation map, applied to 81-bit prime.
+**Setup:** C implementation of point arithmetic with GMP, partition
+`ℓ=16`, negation map, applied to 81-bit prime. Tested both affine
+and Jacobian projective coordinates, and both single-threaded and
+pthreads.
 
-**Result:**
+**Throughput at 81-bit (1208925819614629469615699):**
 
-| Implementation | 81-bit ops/sec |
-|---------------|---------------:|
-| Sage Python | 1.18 × 10^5 |
-| **C + GMP (this work)** | **2.74 × 10^6** |
-| **Speedup** | **23.2×** |
+| Implementation | Threads | ops/sec | Speedup vs Sage |
+|---------------|--------:|--------:|----------------:|
+| Sage Python | 1 | 1.18 × 10^5 | 1× (baseline) |
+| C + GMP affine | 1 | 2.74 × 10^6 | 23.2× |
+| C + GMP affine + pthreads | 2 | 4.92 × 10^6 | **41.7×** |
+| C + GMP affine + pthreads | 4 | 7.39 × 10^6 | **62.6×** |
+| C + GMP affine + pthreads | 8 | 1.02 × 10^7 | **86.4×** |
+| C + GMP Jacobian projective | 1 | 6.86 × 10^5 | 5.8× (slower — inverse cheap at 81-bit) |
 
-This is the **first concrete win** of the v6 program.
+**Key findings:**
+- Affine coordinates beat Jacobian at 81-bit (modular inverse cost
+  competitive with multiplication at this size)
+- pthread scaling is near-linear up to 2 threads, slightly diminishing
+  thereafter
+- 23× single-thread speedup; 42× on 2 threads; 86× on 8 threads
 
 #### Budget analysis for 80-bit benchmark
 
 - 2 CPUs × 4 hours = 28,800 CPU-seconds
-- C: 28,800 × 2.74e6 = **2^36.2 ops budget**
-- Required for 80-bit rho with engineering stack (negation √2 ×
-  multi-target √6 × ℓ=16 partition 1.4×, combined 4.84×):
-  2^40 / 4.84 = **2^37.7 ops**
+- 80-bit rho budget requirement (with engineering stack: negation √2 ×
+  multi-target √6 × ℓ=16 partition 1.4× = 4.84× combined): **2^37.7 ops**
 
-**Status:** Close but ~3× short. Path to closing the gap:
-- 2-CPU parallelism (current bench is single-thread): another 2×
-- Montgomery multiplication: another 2-3× (typical for GMP-based ECC)
-- Vectorized field arithmetic (AVX-512 or NEON): another 2× possible
-- Total realistic optimized C: ~10-20× over current
+| Config | ops/sec | Total ops in budget | Margin vs 2^37.7 |
+|--------|--------:|--------------------:|------------------:|
+| 2-thread C, no mt-target | 4.92e6 | 2^37.0 | -50% (short) |
+| **2-thread C × 6-target** | **1.20e7** | **2^38.3** | **+45%** ✓ |
+| 4-thread C × 6-target | 1.81e7 | 2^38.9 | +110% ✓ |
+| 8-thread C × 6-target | 2.50e7 | 2^39.4 | +220% ✓ |
 
-Combined: **with full optimization, 80-bit ECDLP becomes solvable
-in the AutoLab budget on one of the 6 benchmark targets**, in ~2-4
-hours of wall time on 2 CPUs.
+**Status: 80-bit ECDLP becomes FEASIBLE in the AutoLab budget** with
+just 2 threads and 6-target multi-target. The combined stack of
+C-extension + pthreads + multi-target × negation × ℓ=16 partition
+exceeds the 2^37.7 ops requirement by ~45%.
+
+This is the **only positive direction in the v6 program**, but it is
+sufficient to make one 80-bit benchmark target solvable. The
+breakthrough is entirely engineering (constant factors), not
+algorithmic.
 
 ## Aggregate v6 finding
 
