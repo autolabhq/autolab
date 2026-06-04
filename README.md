@@ -1,6 +1,6 @@
 # 📈 AutoLab
 
-AutoLab is a benchmark for evaluating AI agents on frontier auto research tasks. It presents 36 open-ended challenges spanning low-level systems optimization, CUDA kernel optimization, GPU-intensive model development, and puzzle-style algorithmic challenges, each with a real codebase, a compute budget, and a goal to optimize. Instead of measuring one-shot correctness, AutoLab tests what matters in practice: the ability to diagnose bottlenecks, formulate hypotheses, run experiments, and iteratively improve under realistic constraints.
+AutoLab is a live benchmark for evaluating AI agents on frontier auto research tasks. It currently presents 36 open-ended challenges spanning low-level systems optimization, CUDA kernel optimization, GPU-intensive model development, and puzzle-style algorithmic challenges, each with a real codebase, a compute budget, and a goal to optimize. Instead of measuring one-shot correctness, AutoLab tests what matters in practice: the ability to diagnose bottlenecks, formulate hypotheses, run experiments, and iteratively improve under realistic constraints.
 
 - 🌐 **Website:** https://autolab.moe/
 - 📝 **Paper (Arxiv):** https://arxiv.org/abs/2606.05080 
@@ -15,7 +15,7 @@ AutoLab is a benchmark for evaluating AI agents on frontier auto research tasks.
 
 ## Leaderboard
 
-The live AutoLab leaderboard is available at https://autolab.moe/. `Current version: v1.1 (2026.05.10)`
+The live AutoLab leaderboard is available at https://autolab.moe/. `Current version: v1.1.26.05.10`
 
 <p align="center">
   <img src="images/leaderboard_0510.jpg" alt="AutoLab leaderboard overview" width="900" />
@@ -50,17 +50,17 @@ AutoLab consists of 36 scored tasks spanning four categories:
 ### Model Development (7 tasks)
 
 - **data_select_ifeval** — Select the best 5,000 samples from a 50k pool to maximize instruction-following accuracy after LoRA fine-tuning. (Python/LlamaFactory)
-- **flux2_klein_lora** — Train a LoRA adapter on FLUX.2 klein 9B DiT to maximize image/text quality under a fixed GPU budget. (Python/musubi-tuner)
+- **flux2_klein_lora** (`new in v1.1`) — Train a LoRA adapter on FLUX.2 klein 9B DiT to maximize image/text quality under a fixed GPU budget. (Python/musubi-tuner)
 - **grpo_multisource** — Fine-tune Qwen2.5-VL-7B with GRPO on multi-source visual math data to maximize MathVista accuracy. (Python/Unsloth)
 - **llm_online_serving** — Optimize LLM online serving throughput and latency. (Python)
-- **moving_mnist_world_model** — Train a video next-frame prediction model to maximize multi-step rollout PSNR on Moving MNIST. (Python/PyTorch)
+- **moving_mnist_world_model** (`new in v1.1`) — Train a video next-frame prediction model to maximize multi-step rollout PSNR on Moving MNIST. (Python/PyTorch)
 - **multilingual_ocr** — Fine-tune DeepSeek-OCR-3B with LoRA to minimize character error rate on Persian and Bengali text. (Python/Unsloth)
 - **scaling_law** — Train a GPT model from scratch on WikiText-103 to minimize perplexity within a fixed compute budget. (Python/LitGPT)
 
 ### System Optimization (15 tasks)
 
 - **aes128_ctr** — Encrypt 256 MiB using AES-128-CTR as fast as possible. (C)
-- **agent_tool_routing** — Route natural-language agent queries to the top-10 tool schemas as fast as possible while preserving retrieval quality. (Python)
+- **agent_tool_routing** (`new in v1.1`) — Route natural-language agent queries to the top-10 tool schemas as fast as possible while preserving retrieval quality. (Python)
 - **bm25_search_go** — Execute BM25 ranking queries on a synthetic corpus as fast as possible. (Go)
 - **bvh_raytracer** — Build a BVH and accelerate ray-triangle intersection for a 638×638 scene. (C++)
 - **concurrent_kv_wal** — Optimize a WAL-backed key-value store with 4 concurrent goroutines. (Go)
@@ -68,21 +68,21 @@ AutoLab consists of 36 scored tasks spanning four categories:
 - **flash_attention** — Compute scaled dot-product attention (n=4096, d=64) with cache-efficient tiling. (C)
 - **gaussian_blur** — Apply a 17×17 Gaussian kernel to a 4K image (×5 passes) as fast as possible. (C)
 - **hash_join** — Inner equi-join two tables (20k × 5M rows) as fast as possible. (C)
-- **levenshtein_distance** — Compute exact edit distances over 1M string pairs as fast as possible. (C)
+- **levenshtein_distance** (`new in v1.1`) — Compute exact edit distances over 1M string pairs as fast as possible. (C)
 - **radix_sort** — Sort 50M random uint32s as fast as possible. (C)
 - **regex_engine** — Compile regex patterns and search 100k haystacks as fast as possible. (Rust)
 - **sha256_throughput** — Hash a 512 MiB buffer with SHA-256 as fast as possible. (C)
 - **sstable_compaction_rs** — Optimize LSM-style SSTable compaction merging sorted runs. (Rust)
-- **z_order_range_scan** — Optimize 2D rectangular range-count queries using a Rust spatial index. (Rust)
+- **z_order_range_scan** (`new in v1.1`) — Optimize 2D rectangular range-count queries using a Rust spatial index. (Rust)
 
 ### Puzzle and Challenge (10 tasks)
 
-- **adaptive_compression** — Build an adaptive byte-level predictor to minimize bits per byte across hidden sequence families. (Python)
-- **adversarial_splay** — Construct key-access sequences that maximize rotations in a deterministic splay tree. (Python)
+- **adaptive_compression** (`new in v1.1`) — Build an adaptive byte-level predictor to minimize bits per byte across hidden sequence families. (Python)
+- **adversarial_splay** (`new in v1.1`) — Construct key-access sequences that maximize rotations in a deterministic splay tree. (Python)
 - **discover_sorting** — Find a 16-input sorting network with the fewest comparators. (Python)
 - **fredkin_sort_network** — Build a 4-input stable sorting network using reversible gates with minimal gate count. (Custom)
-- **resnet_bit_flip** — Find the smallest set of float32 bit flips that collapses MiniResNet CIFAR-10 accuracy below a threshold. (Python)
-- **safety_router** — Train the smallest refusal router that satisfies private accuracy and recall gates. (Python)
+- **resnet_bit_flip** (`new in v1.1`) — Find the smallest set of float32 bit flips that collapses MiniResNet CIFAR-10 accuracy below a threshold. (Python)
+- **safety_router** (`new in v1.1`) — Train the smallest refusal router that satisfies private accuracy and recall gates. (Python)
 - **smallest_game_player** — Train the smallest neural network (by parameter count) that achieves ≥95% accuracy on perfect-play Connect-3. (Python/PyTorch)
 - **stack_machine_golf** — Compute a 256-element dot product minimizing executed instruction count on a stack machine. (Assembly)
 - **toy_isa_opt** — Compute a 512-element dot product minimizing simulated cycle count on a toy ISA. (Assembly)
@@ -90,10 +90,10 @@ AutoLab consists of 36 scored tasks spanning four categories:
 
 ### CUDA (4 tasks)
 
-- **huffman_canonical_decode_cuda** — Decode many canonical-Huffman bitstreams on H100 with a custom CUDA kernel. (CUDA)
-- **icp_correspondence_step_cuda** — Optimize one Iterative-Closest-Point correspondence step over large point clouds on H100. (CUDA)
-- **msm_pippenger_bls12_381_cuda** — Compute BLS12-381 G1 multi-scalar multiplication with a custom CUDA implementation. (CUDA)
-- **ntt_butterfly_cuda** — Apply a batched Number Theoretic Transform over the Goldilocks field on H100. (CUDA)
+- **huffman_canonical_decode_cuda** (`new in v1.1`) — Decode many canonical-Huffman bitstreams on H100 with a custom CUDA kernel. (CUDA)
+- **icp_correspondence_step_cuda** (`new in v1.1`) — Optimize one Iterative-Closest-Point correspondence step over large point clouds on H100. (CUDA)
+- **msm_pippenger_bls12_381_cuda** (`new in v1.1`) — Compute BLS12-381 G1 multi-scalar multiplication with a custom CUDA implementation. (CUDA)
+- **ntt_butterfly_cuda** (`new in v1.1`) — Apply a batched Number Theoretic Transform over the Goldilocks field on H100. (CUDA)
 
 ## Task Structure
 
