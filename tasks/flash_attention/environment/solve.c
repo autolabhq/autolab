@@ -1,8 +1,8 @@
 /*
- * solve.c — Scaled dot-product attention  (BASELINE — intentionally slow)
+ * solve.c — Scaled dot-product attention
  *
- * This implementation is correct but unoptimised.  It serves as the
- * starting point that you must improve.
+ * This implementation is correct but unoptimised Baseline.
+ *  It serves as the starting point that you must improve.
  *
  * ── Known performance problems (profile and fix them) ────────────────────
  *

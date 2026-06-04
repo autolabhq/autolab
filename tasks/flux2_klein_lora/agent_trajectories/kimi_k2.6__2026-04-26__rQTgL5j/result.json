@@ -1,0 +1,157 @@
+{
+    "id": "a25bab14-1335-4ea0-b339-04042ba07ae3",
+    "task_name": "musubi-tuner__flux2_klein_lora",
+    "trial_name": "musubi-tuner__flux2_klein_lora__rQTgL5j",
+    "trial_uri": "file:///home/ubuntu/autophd_gym/jobs/2026-04-26__20-00-51/musubi-tuner__flux2_klein_lora__rQTgL5j",
+    "task_id": {
+        "path": "/home/ubuntu/autophd_gym/tasks_ots/musubi-tuner__flux2_klein_lora"
+    },
+    "source": null,
+    "task_checksum": "8d43ec4f2d0602a819b961da9112e6df69bcae4c51c9cd1d37f6ba071d01b894",
+    "config": {
+        "task": {
+            "path": "/home/ubuntu/autophd_gym/tasks_ots/musubi-tuner__flux2_klein_lora",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "musubi-tuner__flux2_klein_lora__rQTgL5j",
+        "trials_dir": "jobs/2026-04-26__20-00-51",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/kimi-k2.6",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "60f8cd30-bcc2-4914-8393-90f69644496c"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "kimi-k2.6",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 1703634,
+        "n_cache_tokens": 90372,
+        "n_output_tokens": 21743,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 50,
+            "api_request_times_msec": [
+                15554.409980773926,
+                9921.586513519287,
+                3370.1841831207275,
+                26891.757011413574,
+                3500.990629196167,
+                16598.67215156555,
+                9895.774364471436,
+                8294.771909713745,
+                9239.768743515015,
+                4207.592964172363,
+                14628.961563110352,
+                9591.373682022095,
+                6435.155391693115,
+                74106.95362091064,
+                6537.585020065308,
+                6292.464733123779,
+                27119.70043182373,
+                15816.771507263184,
+                21828.328847885132,
+                32153.841733932495,
+                5116.818904876709,
+                7937.026739120483,
+                19647.99952507019,
+                17157.686471939087,
+                21133.995532989502,
+                13645.137548446655,
+                25576.625108718872,
+                25390.44690132141,
+                10494.34757232666,
+                6874.608278274536,
+                12175.932884216309,
+                7687.01958656311,
+                57170.03321647644,
+                15987.420797348022,
+                10987.859964370728,
+                6344.0186977386475,
+                7031.4061641693115,
+                6557.857990264893,
+                13833.281993865967,
+                9759.316205978394,
+                4241.533517837524,
+                10230.211019515991,
+                16721.5416431427,
+                17850.14796257019,
+                6763.563394546509,
+                7516.287565231323,
+                31282.74178504944,
+                18143.75615119934,
+                9241.010665893555,
+                8437.415599822998
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 1.0482
+        }
+    },
+    "exception_info": {
+        "exception_type": "AgentTimeoutError",
+        "exception_message": "Agent execution timed out after 14400.0 seconds",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py\", line 488, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1504, in run\n    await self._run_agent_loop(\n    ...<4 lines>...\n    )\n  File \"/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1325, in _run_agent_loop\n    timeout_occurred, terminal_output = await self._execute_commands(\n                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/terminus_2.py\", line 1142, in _execute_commands\n    await session.send_keys(\n    ...<3 lines>...\n    )\n  File \"/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 563, in send_keys\n    await self._send_non_blocking_keys(\n    ...<2 lines>...\n    )\n  File \"/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/tmux_session.py\", line 523, in _send_non_blocking_keys\n    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py\", line 702, in sleep\n    return await future\n           ^^^^^^^^^^^^\nasyncio.exceptions.CancelledError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 259, in _execute_agent\n    await asyncio.wait_for(\n    ...<6 lines>...\n    )\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py\", line 487, in wait_for\n    async with timeouts.timeout(timeout):\n               ~~~~~~~~~~~~~~~~^^^^^^^^^\n  File \"/home/ubuntu/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/timeouts.py\", line 114, in __aexit__\n    raise TimeoutError from exc_val\nTimeoutError\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 483, in run\n    await self._execute_agent()\n  File \"/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/trial/trial.py\", line 268, in _execute_agent\n    raise AgentTimeoutError(\n        f\"Agent execution timed out after {self._agent_timeout_sec} seconds\"\n    ) from e\nharbor.trial.trial.AgentTimeoutError: Agent execution timed out after 14400.0 seconds\n",
+        "occurred_at": "2026-04-27T00:04:46.590794"
+    },
+    "started_at": "2026-04-26T20:00:51.805489Z",
+    "finished_at": "2026-04-27T00:23:57.839466Z",
+    "environment_setup": {
+        "started_at": "2026-04-26T20:00:51.806188Z",
+        "finished_at": "2026-04-26T20:04:14.116174Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-26T20:04:14.116217Z",
+        "finished_at": "2026-04-26T20:04:46.572011Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-26T20:04:46.572064Z",
+        "finished_at": "2026-04-27T00:04:46.586040Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-27T00:04:46.592017Z",
+        "finished_at": "2026-04-27T00:23:39.253067Z"
+    }
+}

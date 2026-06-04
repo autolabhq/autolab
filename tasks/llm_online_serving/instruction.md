@@ -28,11 +28,7 @@ Where `throughput_ratio = optimized/baseline` (higher is better) and `completion
 python3 /app/benchmark.py
 ```
 
-Outputs JSON with `throughput_tok_per_sec` and `mean_completion_sec`. The verifier runs this benchmark twice (baseline vs your code) and computes:
-
-```
-reward = 0.5 × (your_throughput / baseline_throughput) + 0.5 × (baseline_completion / your_completion)
-```
+Outputs JSON with `throughput_tok_per_sec` and `mean_completion_sec`. The verifier runs this benchmark twice (baseline vs your code) and computes the combined serving score above. Higher is better.
 
 A correctness check (`pytest /tests/test_state.py`) runs first — the engine must still produce valid output.
 

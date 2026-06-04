@@ -88,7 +88,8 @@ import os
 from pathlib import Path
 
 LOG_DIR = os.environ.get("LOG_DIR", "/logs/verifier")
-REFERENCE = 0.42
+M_B = 0.38
+M_R = 0.48
 
 
 def parse_ifeval_scores(output_path):
@@ -110,16 +111,17 @@ baseline_scores = parse_ifeval_scores("/tmp/baseline_ifeval")
 agent_acc = agent_scores["prompt_level_strict"]
 baseline_acc = baseline_scores["prompt_level_strict"]
 
-# Multiplier reward
 if agent_acc <= 0:
     reward = 0.0
 else:
-    reward = agent_acc / REFERENCE
+    reward = max(0.0, min(1.0, (agent_acc - M_B) / (M_R - M_B)))
 
 payload = {
     "reward": round(reward, 4),
     "metric": round(agent_acc, 4),
     "metric_name": "ifeval_prompt_strict",
+    "m_baseline": M_B,
+    "m_reference": M_R,
     "agent_prompt_strict": round(agent_acc, 4),
     "agent_inst_strict": round(agent_scores["inst_level_strict"], 4),
     "baseline_prompt_strict": round(baseline_acc, 4),

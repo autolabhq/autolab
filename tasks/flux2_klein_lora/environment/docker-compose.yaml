@@ -1,0 +1,13 @@
+services:
+  main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    shm_size: '8g'
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

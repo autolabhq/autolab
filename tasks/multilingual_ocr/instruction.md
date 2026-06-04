@@ -27,10 +27,9 @@ python3 /app/evaluate_local.py   # approximate local check (20 samples)
 The verifier evaluates all 400 images and computes:
 ```
 avg_cer = 0.5 × persian_cer + 0.5 × bengali_cer
-reward = reference_cer / avg_cer
 ```
 
-Lower CER = higher reward.
+Lower CER is better.
 
 ## Rules
 

@@ -22,7 +22,7 @@ The checkpoint must contain `model_state_dict` and `model_config` dict. The veri
 
 ## Evaluation
 
-The verifier loads your checkpoint, reconstructs the model from saved config, and evaluates perplexity on the held-out test set. Reward is computed as a multiplier against the reference score.
+The verifier loads your checkpoint, reconstructs the model from saved config, and evaluates perplexity on the held-out test set. Lower perplexity is better.
 
 ```bash
 python3 /app/evaluate_local.py

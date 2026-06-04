@@ -42,8 +42,8 @@ def main():
     checkpoint_path = "/app/output/checkpoint.pt"
     log_dir = "/logs/verifier"
 
-    BASELINE_PPL = 95.0
-    REFERENCE_PPL = 23.0
+    BASELINE_PPL = 25.0
+    REFERENCE_PPL = 18.0
     EVAL_SEQ_LENGTH = 1024
     EVAL_BATCH_SIZE = 8
 
@@ -126,8 +126,10 @@ def main():
     print(f"Test perplexity: {ppl:.2f}")
     print(f"Tokens evaluated: {total_tokens:,}")
 
-    # --- Compute reward (multiplier: direction=lower → reference / score) ---
-    reward = REFERENCE_PPL / ppl if ppl > 0 else 0.0
+    if ppl > 0:
+        reward = max(0.0, min(1.0, (BASELINE_PPL - ppl) / (BASELINE_PPL - REFERENCE_PPL)))
+    else:
+        reward = 0.0
 
     print(f"\nScoring:")
     print(f"  Baseline PPL:  {BASELINE_PPL}")

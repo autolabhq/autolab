@@ -1,0 +1,121 @@
+============================================
+  FLUX.2 klein LoRA Quality Verifier
+============================================
+  baseline=0.0  reference=0.62
+
+[Step 1/4] Checking LoRA output...
+LoRA file valid: 336 tensors
+
+[Step 2/4] Evaluating agent's LoRA...
+Loaded 15 reference images, 8 prompts
+  Generating 1/8: a portrait of a warrior in naruto style
+  Generating 2/8: a landscape with mountains and river in naruto style
+  Generating 3/8: a cat sitting on a cushion in naruto style
+  Generating 4/8: a castle on a hill at sunset in naruto style
+  Generating 5/8: a dragon flying over a forest in naruto style
+  Generating 6/8: a robot standing in a garden in naruto style
+  Generating 7/8: a flower arrangement on a table in naruto style
+  Generating 8/8: an underwater scene with fish in naruto style
+
+Computing CLIP image similarity...
+/usr/local/lib/python3.10/dist-packages/open_clip/factory.py:450: UserWarning: QuickGELU mismatch between final model config (quick_gelu=False) and pretrained tag 'openai' (quick_gelu=True).
+  warnings.warn(
+  CLIP sim: 0.7839 (normalized: 0.7099)
+Computing DINO similarity...
+Using cache found in /root/.cache/torch/hub/facebookresearch_dinov2_main
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+  DINO sim: 0.4266 (normalized: 0.2532)
+Computing text alignment...
+  Text align: 0.3486 (normalized: 0.9905)
+
+==================================================
+EVALUATION RESULTS
+==================================================
+{
+  "score": 0.6202,
+  "clip_similarity": {
+    "raw": 0.7839,
+    "normalized": 0.7099
+  },
+  "dino_similarity": {
+    "raw": 0.4266,
+    "normalized": 0.2532
+  },
+  "text_alignment": {
+    "raw": 0.3486,
+    "normalized": 0.9905
+  },
+  "num_prompts": 8,
+  "lora_path": "/app/output/lora.safetensors"
+}
+
+Results written to /logs/verifier/optimized_score.json
+  Agent score: 0.6202
+
+[Step 3/4] Evaluating baseline (no LoRA)...
+Loaded 15 reference images, 8 prompts
+  Generating 1/8: a portrait of a warrior in naruto style
+  Generating 2/8: a landscape with mountains and river in naruto style
+  Generating 3/8: a cat sitting on a cushion in naruto style
+  Generating 4/8: a castle on a hill at sunset in naruto style
+  Generating 5/8: a dragon flying over a forest in naruto style
+  Generating 6/8: a robot standing in a garden in naruto style
+  Generating 7/8: a flower arrangement on a table in naruto style
+  Generating 8/8: an underwater scene with fish in naruto style
+
+Computing CLIP image similarity...
+/usr/local/lib/python3.10/dist-packages/open_clip/factory.py:450: UserWarning: QuickGELU mismatch between final model config (quick_gelu=False) and pretrained tag 'openai' (quick_gelu=True).
+  warnings.warn(
+  CLIP sim: 0.6932 (normalized: 0.4830)
+Computing DINO similarity...
+Using cache found in /root/.cache/torch/hub/facebookresearch_dinov2_main
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/root/.cache/torch/hub/facebookresearch_dinov2_main/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+  DINO sim: 0.3992 (normalized: 0.1983)
+Computing text alignment...
+  Text align: 0.3375 (normalized: 0.9167)
+
+==================================================
+EVALUATION RESULTS
+==================================================
+{
+  "score": 0.4918,
+  "clip_similarity": {
+    "raw": 0.6932,
+    "normalized": 0.483
+  },
+  "dino_similarity": {
+    "raw": 0.3992,
+    "normalized": 0.1983
+  },
+  "text_alignment": {
+    "raw": 0.3375,
+    "normalized": 0.9167
+  },
+  "num_prompts": 8,
+  "lora_path": null
+}
+
+Results written to /logs/verifier/baseline_score.json
+  Baseline measured: 0.4918  (task.toml baseline: 0.0)
+
+[Step 4/4] Computing reward...
+
+============================================
+  RESULTS
+============================================
+  Baseline (task.toml):  0.0
+  Baseline (measured):   0.4918
+  Optimized:             0.6202
+  Reference:             0.62
+  Reward:                1.0003
+============================================

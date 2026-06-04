@@ -3,12 +3,6 @@
 
 /*
  * Baseline: portable reference SHA-256 (FIPS 180-4).
- *
- * Bottlenecks (intentional):
- *  1. Message schedule w[16..63] computed inline, one word at a time.
- *  2. 64-round loop with per-round macro expansion for S0/S1/s0/s1.
- *  3. No loop unrolling; compiler sees all round-to-round data dependencies.
- *  4. ROR implemented as two shifts + OR (no SIMD, no SHA-NI).
  */
 
 static const uint32_t K[64] = {

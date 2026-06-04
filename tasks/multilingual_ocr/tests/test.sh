@@ -183,13 +183,16 @@ print(f"\nPersian CER:  {fa_cer:.4f} ({fa_count} samples)")
 print(f"Bengali CER:  {bn_cer:.4f} ({bn_count} samples)")
 print(f"Average CER:  {avg_cer:.4f}")
 
-REFERENCE_CER = 0.48
+M_B = 0.72
+M_R = 0.32
 
-reward = REFERENCE_CER / avg_cer if avg_cer > 0 else 1.0
+reward = max(0.0, min(1.0, (M_B - avg_cer) / (M_B - M_R)))
 
 results = {
     "reward": round(reward, 4),
     "avg_cer": round(avg_cer, 4),
+    "m_baseline": M_B,
+    "m_reference": M_R,
     "persian_cer": round(fa_cer, 4),
     "bengali_cer": round(bn_cer, 4),
     "num_eval_samples": len(data),

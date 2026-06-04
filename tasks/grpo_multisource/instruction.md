@@ -32,7 +32,7 @@ Maximize `mathvista_accuracy` on 100 held-out MathVista problems. A retention ga
 python3 /app/evaluate_local.py   # quick check (20 MathVista + 10 VQA)
 ```
 
-Reward = `your_score / reference_score`. Matching the reference scores 1.0.
+Higher MathVista accuracy is better. The forgetting gate (VQA retention ≥ 0.9) zeros the reward if violated.
 
 ## Rules
 

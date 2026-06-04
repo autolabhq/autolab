@@ -71,7 +71,7 @@ void blur_image(const uint8_t *src, uint8_t *dst,
 
                 for (int dy = -KERNEL_RADIUS; dy <= KERNEL_RADIUS; dy++) {
 
-                    /* Clamp row — branch inside the inner loop on purpose */
+                    /* Clamp row */
                     int ny = y + dy;
                     if      (ny < 0)      ny = 0;
                     else if (ny >= height) ny = height - 1;

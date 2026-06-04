@@ -1,0 +1,115 @@
+{
+    "id": "3150cb2d-94d9-4de4-90e7-c453f7f65916",
+    "task_name": "musubi-tuner__flux2_klein_lora",
+    "trial_name": "musubi-tuner__flux2_klein_lora__dJkbgCB",
+    "trial_uri": "file:///home/ubuntu/autophd_gym/jobs/2026-04-27__09-40-12/musubi-tuner__flux2_klein_lora__dJkbgCB",
+    "task_id": {
+        "path": "/home/ubuntu/autophd_gym/tasks_ots/musubi-tuner__flux2_klein_lora"
+    },
+    "source": null,
+    "task_checksum": "8d43ec4f2d0602a819b961da9112e6df69bcae4c51c9cd1d37f6ba071d01b894",
+    "config": {
+        "task": {
+            "path": "/home/ubuntu/autophd_gym/tasks_ots/musubi-tuner__flux2_klein_lora",
+            "git_url": null,
+            "git_commit_id": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "musubi-tuner__flux2_klein_lora__dJkbgCB",
+        "trials_dir": "jobs/2026-04-27__09-40-12",
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "terminus-2",
+            "import_path": null,
+            "model_name": "openai/xai-grok-4-20-reasoning",
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "kwargs": {},
+            "env": {}
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "suppress_override_warnings": false,
+            "kwargs": {}
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "job_id": "1c030602-bbc7-4cb5-a58f-87c439f12a7c"
+    },
+    "agent_info": {
+        "name": "terminus-2",
+        "version": "2.0.0",
+        "model_info": {
+            "name": "xai-grok-4-20-reasoning",
+            "provider": "openai"
+        }
+    },
+    "agent_result": {
+        "n_input_tokens": 251465,
+        "n_cache_tokens": 196822,
+        "n_output_tokens": 5356,
+        "cost_usd": null,
+        "rollout_details": [],
+        "metadata": {
+            "n_episodes": 13,
+            "api_request_times_msec": [
+                13748.89588356018,
+                30694.656372070312,
+                14816.598176956177,
+                11019.474983215332,
+                17639.776706695557,
+                12435.285329818726,
+                31401.766538619995,
+                14053.121566772461,
+                12479.753971099854,
+                14773.955345153809,
+                21632.891416549683,
+                27785.671949386597,
+                5983.17813873291
+            ],
+            "summarization_count": 0
+        }
+    },
+    "verifier_result": {
+        "rewards": {
+            "reward": 0.0
+        }
+    },
+    "exception_info": null,
+    "started_at": "2026-04-27T09:40:12.629515Z",
+    "finished_at": "2026-04-27T09:55:27.545140Z",
+    "environment_setup": {
+        "started_at": "2026-04-27T09:40:12.630249Z",
+        "finished_at": "2026-04-27T09:43:33.950330Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-04-27T09:43:33.950367Z",
+        "finished_at": "2026-04-27T09:44:06.283686Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-04-27T09:44:06.283743Z",
+        "finished_at": "2026-04-27T09:55:07.895071Z"
+    },
+    "verifier": {
+        "started_at": "2026-04-27T09:55:07.895189Z",
+        "finished_at": "2026-04-27T09:55:08.212302Z"
+    }
+}

@@ -1,0 +1,53 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/terminus_2.py", line 1504, in run
+    await self._run_agent_loop(
+    ...<4 lines>...
+    )
+  File "/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/terminus_2.py", line 1325, in _run_agent_loop
+    timeout_occurred, terminal_output = await self._execute_commands(
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/terminus_2.py", line 1142, in _execute_commands
+    await session.send_keys(
+    ...<3 lines>...
+    )
+  File "/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/tmux_session.py", line 563, in send_keys
+    await self._send_non_blocking_keys(
+    ...<2 lines>...
+    )
+  File "/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/agents/terminus_2/tmux_session.py", line 523, in _send_non_blocking_keys
+    await asyncio.sleep(min_timeout_sec - elapsed_time_sec)
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py", line 702, in sleep
+    return await future
+           ^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/trial/trial.py", line 259, in _execute_agent
+    await asyncio.wait_for(
+    ...<6 lines>...
+    )
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/tasks.py", line 487, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.14.3-linux-x86_64-gnu/lib/python3.14/asyncio/timeouts.py", line 114, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/trial/trial.py", line 483, in run
+    await self._execute_agent()
+  File "/home/ubuntu/autophd_gym/.venv/lib/python3.14/site-packages/harbor/trial/trial.py", line 268, in _execute_agent
+    raise AgentTimeoutError(
+        f"Agent execution timed out after {self._agent_timeout_sec} seconds"
+    ) from e
+harbor.trial.trial.AgentTimeoutError: Agent execution timed out after 14400.0 seconds
