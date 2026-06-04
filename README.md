@@ -206,11 +206,17 @@ If you use AutoLab in your research, please cite us:
 
 ```bibtex
 @misc{autolab-2026,
-  title   = {AutoLab: Can Models Begin to Participate
-             in the Loops That Drive Scientific
-             and Engineering Progress?},
-  author  = {AutoLab Team},
-  year    = {2026},
-  url     = {https://github.com/autolabhq/autolab}
+  title         = {AutoLab: Can Frontier Models Solve Long-Horizon
+                   Auto Research and Engineering Tasks?},
+  author        = {Xu, Zhangchen and Chen, Junda and Huang, Yue and Jiang, Dongfu and
+                   Chen, Jiefeng and Hua, Hang and Wu, Zijian and Liu, Zheyuan and
+                   He, Zexue and Li, Lichi and Diao, Shizhe and Pei, Jiaxin and
+                   Yoon, Jinsung and Zhang, Hao and Wang, Mengdi and Poovendran, Radha and
+                   Sra, Misha and Pentland, Alex and Chen, Zichen},
+  year          = {2026},
+  eprint        = {2606.05080},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2606.05080}
 }
 ```
