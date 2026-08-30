@@ -237,3 +237,7 @@ If you use AutoLab in your research, please cite us:
   url           = {https://arxiv.org/abs/2606.05080}
 }
 ```
+
+## License
+
+AutoLab is licensed under the [Apache License 2.0](LICENSE).
