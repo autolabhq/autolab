@@ -1,0 +1,131 @@
+{
+  "asymptotic_cost": {
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "compact_digit_extractor_supplied": false,
+    "field_scaling": {
+      "exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "prime": "p=Theta(B^5)"
+    },
+    "full_field_one_bond_tensor": {
+      "inside_online_cap": false,
+      "inside_setup_cap": false,
+      "minimum_bond_width": "p",
+      "state_and_contraction_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      }
+    },
+    "multi_edge_digitized_algebraic_encoding_supplied": false,
+    "restricted_distinct_source_messages": {
+      "actual_distinct_message_reachability_theorem_supplied": false,
+      "inside_online_cap": false,
+      "inside_setup_cap": false,
+      "message_count": "D=Theta(B^(12/5))",
+      "minimum_bond_width_if_messages_are_distinct": "D",
+      "state_and_contraction_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "scope": "Charges one-bond separation width and a restricted distinct-message channel. It is not a lower bound on a multi-edge digitized encoding with a proved compact algebraic extractor."
+  },
+  "one_bond_tensor_inside_caps": false,
+  "schema": "p1553.nonlinear_tensor_state_transition_ledger.r98.v1",
+  "separation_rank_controls": {
+    "all_full_field_kernels_rank_p": true,
+    "all_restricted_kernels_full_rank": true,
+    "full_field_sweep": [
+      {
+        "equality_rank": 3,
+        "label_count": 3,
+        "one_hot_factorization_exact": true,
+        "one_hot_width": 3,
+        "prime": 3,
+        "resultant_projector_equals_equality": true,
+        "resultant_projector_rank": 3
+      },
+      {
+        "equality_rank": 5,
+        "label_count": 5,
+        "one_hot_factorization_exact": true,
+        "one_hot_width": 5,
+        "prime": 5,
+        "resultant_projector_equals_equality": true,
+        "resultant_projector_rank": 5
+      },
+      {
+        "equality_rank": 7,
+        "label_count": 7,
+        "one_hot_factorization_exact": true,
+        "one_hot_width": 7,
+        "prime": 7,
+        "resultant_projector_equals_equality": true,
+        "resultant_projector_rank": 7
+      },
+      {
+        "equality_rank": 11,
+        "label_count": 11,
+        "one_hot_factorization_exact": true,
+        "one_hot_width": 11,
+        "prime": 11,
+        "resultant_projector_equals_equality": true,
+        "resultant_projector_rank": 11
+      },
+      {
+        "equality_rank": 13,
+        "label_count": 13,
+        "one_hot_factorization_exact": true,
+        "one_hot_width": 13,
+        "prime": 13,
+        "resultant_projector_equals_equality": true,
+        "resultant_projector_rank": 13
+      }
+    ],
+    "monic_quadratic_subfamily": {
+      "left": "A_u(z)=z^2+u",
+      "projector_identity": "delta_0(Res(A_u,C_v))=delta_0(u-v)",
+      "resultant_identity": "Res(A_u,C_v)=(v-u)^2",
+      "right": "C_v(z)=z^2+v"
+    },
+    "one_bond_theorem": "If K(u,v)=sum_(r=1)^w L_r(u)R_r(v), with arbitrary nonlinear local encoders L and R, then rank(K)<=w. The equality kernel is I_p, so exact one-bond width w>=p; on m distinct labels, w>=m.",
+    "restricted_distinct_message_sweep": [
+      {
+        "distinct_label_count": 4,
+        "full_rank": true,
+        "prime": 101,
+        "rank": 4
+      },
+      {
+        "distinct_label_count": 8,
+        "full_rank": true,
+        "prime": 101,
+        "rank": 8
+      },
+      {
+        "distinct_label_count": 16,
+        "full_rank": true,
+        "prime": 101,
+        "rank": 16
+      },
+      {
+        "distinct_label_count": 32,
+        "full_rank": true,
+        "prime": 101,
+        "rank": 32
+      }
+    ],
+    "scope": "Exact separation-rank theorem for one A/C cut and the full monic-quadratic coefficient subfamily. It does not cover multi-edge digit encodings, nonalgebraic lookup, or a restriction to an unproved smaller image of the actual EC divisor circuits."
+  }
+}

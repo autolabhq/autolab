@@ -1,0 +1,1364 @@
+{
+  "admission": {
+    "failures": [
+      "full_scalar_blind_relation_source_inside_cap",
+      "known_rhs_rank_without_verifier_dlp",
+      "candidate_factor_log_solve_without_verifier_dlp",
+      "candidate_identical_fresh_target_descent",
+      "generic_prime_family_theorem",
+      "shoup_improvement_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 17,
+    "obligations": {
+      "all_family_parameter_checks": true,
+      "candidate_factor_log_solve_without_verifier_dlp": false,
+      "candidate_identical_fresh_target_descent": false,
+      "compact_divisor_slp_supplied": true,
+      "factor_base_addition_map_injective": true,
+      "factor_base_frozen_scalar_blind": true,
+      "four_prime_order_relation_scale_families": true,
+      "full_scalar_blind_relation_source_inside_cap": false,
+      "generic_prime_family_theorem": false,
+      "known_rhs_rank_without_verifier_dlp": false,
+      "local_s4_triple_compiler_exact": true,
+      "local_s4_triple_query_inside_cap": true,
+      "local_s4_triple_state_inside_cap": true,
+      "matched_hash_controls_present": true,
+      "prospective_density_controls_present": true,
+      "public_rectangle_rank_exact": true,
+      "shoup_improvement_complete": false
+    },
+    "passed_obligation_count": 11
+  },
+  "aggregate": {
+    "all_diagnostic_full_sources_replay": true,
+    "all_factor_bases_injective": true,
+    "all_family_parameter_checks": true,
+    "all_rectangle_and_prospective_rank_checks_pass": true,
+    "best_explicit_full_source_state_exponent_B": 2.4000000000000004,
+    "best_explicit_full_source_work_exponent_B": 2.5999999999999996,
+    "candidate_density_range": [
+      0.0015384502616515587,
+      0.007670298898155476
+    ],
+    "generic_collision_full_source_exponent_B": 2.5,
+    "instance_count": 8,
+    "local_s4_compiler_passes": true,
+    "matched_control_count": 8,
+    "matched_control_density_range": [
+      0.011911249726841053,
+      0.022017103660686547
+    ]
+  },
+  "breakthrough": false,
+  "classification": "CARTESIAN_SUM_COMPACT_S4_PASS__FULL_SOURCE_RHO_FAIL",
+  "disposition": "REJECT_CARTESIAN_SUM_FULL_PIPELINE_ONLY__COMPACT_ADDITION_PUSHFORWARD_FACTOR_BASE__EXACT_B6O5_BY_B9O5_TRIPLE_COMPILER__B6O5_TRIPLE_QUERY_PASSES__PUBLIC_RECTANGLE_KERNEL_EXACT__PROSPECTIVE_MEANINGFUL_RANK_PASSES__FULL_RELATION_IS_5A_PLUS_5C__BEST_EXPLICIT_JOIN_B2P6_WORK_B2P4_STATE__GENERIC_COLLISION_B2P5_EQUALS_RHO__NO_QUOTIENT_WAGNER_CREDIT__NO_SUBCAP_FFE__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "fresh_target_descent_complete": false,
+  "instances": [
+    {
+      "factor_base_preview": [
+        [
+          60932,
+          2678
+        ],
+        [
+          82436,
+          2075
+        ],
+        [
+          32585,
+          63210
+        ],
+        [
+          41997,
+          5808
+        ],
+        [
+          81820,
+          81988
+        ],
+        [
+          12644,
+          6748
+        ]
+      ],
+      "family": {
+        "atom_a_size": 2,
+        "atom_c_size": 3,
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "family_id": "p98561_j0_q16427_h6_u2_v3",
+        "field_prime": 98561,
+        "subgroup_order": 16427
+      },
+      "family_validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      },
+      "finite_scale": {
+        "B": 6,
+        "atom_a_exponent_B": 0.3868528072345416,
+        "atom_c_exponent_B": 0.6131471927654585,
+        "subgroup_order": 16427,
+        "subgroup_order_over_B5": 2.112525720164609
+      },
+      "five_factor_source": {
+        "atom_a_endpoint_support": 6,
+        "atom_c_endpoint_support": 21,
+        "candidate_five_sum_density": 0.007670298898155476,
+        "candidate_five_sum_support": 126,
+        "candidate_ordered_occurrence_count": 7776,
+        "diagnostic_build_consumes_scalar_labels": false,
+        "diagnostic_build_is_over_cap": true,
+        "diagnostic_full_source_replay_exact": true,
+        "identity": "5F=5A+5C",
+        "maximum_endpoint_occurrence_count": 300,
+        "uniform_expected_ordered_count_per_target": 0.47336701771473794
+      },
+      "generator": [
+        11165,
+        19999
+      ],
+      "geometry": {
+        "atom_a_size": 2,
+        "atom_c_size": 3,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 5,
+          "output_degree": 6,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 6,
+        "input_atom_count": 5,
+        "offset": 0,
+        "optional_materialization_group_additions": 6,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "matched_hash_controls": [
+        {
+          "base_size": 6,
+          "coefficient_row_rank": 6,
+          "control_index": 0,
+          "five_sum_density": 0.015340597796310952,
+          "five_sum_support": 252,
+          "full_prospective_rank": true,
+          "ordered_occurrence_count": 7776,
+          "verifier_only": true
+        }
+      ],
+      "rank_control": {
+        "all_factor_columns_spanned_prospectively": true,
+        "all_selected_rhs_rows_replay": true,
+        "combined_factor_row_rank_verifier_only": 6,
+        "expected_rectangle_identity_rank": 2,
+        "known_rhs_values_obtained_by_candidate": false,
+        "meaningful_atom_log_dimension": 4,
+        "nominal_factor_column_count": 6,
+        "projected_known_rhs_row_rank_verifier_only": 4,
+        "public_rectangle_identities_need_no_dlp": true,
+        "rectangle_identity_count": 2,
+        "rectangle_identity_rank": 2,
+        "selected_known_rhs_count": 4
+      },
+      "triple_compiler": {
+        "all_sampled_sources_exact": true,
+        "asymptotic": {
+          "atom_a_build_exponent_B": 1.2000000000000002,
+          "atom_c_build_exponent_B": 1.7999999999999998,
+          "fresh_endpoint_query_exponent_B": 1.2000000000000002,
+          "query_inside_cap": true,
+          "retained_state_exponent_B": 1.7999999999999998,
+          "state_inside_cap": true
+        },
+        "atom_a_endpoint_support": 4,
+        "atom_a_ordered_occurrences": 8,
+        "atom_c_endpoint_support": 10,
+        "atom_c_ordered_occurrences": 27,
+        "candidate_scalar_labels_consumed": false,
+        "factor_triple_endpoint_support_verifier_only": 40,
+        "factor_triple_ordered_occurrences": 216,
+        "full_convolution_materialized_by_candidate": false,
+        "identity": "3F=3A+3C",
+        "sampled_source_count": 16,
+        "source_query_scan_words": 4,
+        "stored_endpoint_words": 14
+      },
+      "verifier_bsgs_receipt": {
+        "algorithm": "baby_step_giant_step_verifier_only",
+        "asymptotic_group_work_exponent_B": 2.5,
+        "baby_table_size": 129,
+        "candidate_algorithm_may_consume_labels": false,
+        "excluded_from_algorithmic_credit": true,
+        "total_giant_steps": 733,
+        "width": 129
+      }
+    },
+    {
+      "factor_base_preview": [
+        [
+          82890,
+          59972
+        ],
+        [
+          33743,
+          92974
+        ],
+        [
+          85977,
+          8932
+        ],
+        [
+          81680,
+          80083
+        ],
+        [
+          95486,
+          55226
+        ],
+        [
+          66583,
+          80722
+        ]
+      ],
+      "family": {
+        "atom_a_size": 2,
+        "atom_c_size": 3,
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "family_id": "p98561_j0_q16427_h6_u2_v3",
+        "field_prime": 98561,
+        "subgroup_order": 16427
+      },
+      "family_validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      },
+      "finite_scale": {
+        "B": 6,
+        "atom_a_exponent_B": 0.3868528072345416,
+        "atom_c_exponent_B": 0.6131471927654585,
+        "subgroup_order": 16427,
+        "subgroup_order_over_B5": 2.112525720164609
+      },
+      "five_factor_source": {
+        "atom_a_endpoint_support": 6,
+        "atom_c_endpoint_support": 21,
+        "candidate_five_sum_density": 0.007670298898155476,
+        "candidate_five_sum_support": 126,
+        "candidate_ordered_occurrence_count": 7776,
+        "diagnostic_build_consumes_scalar_labels": false,
+        "diagnostic_build_is_over_cap": true,
+        "diagnostic_full_source_replay_exact": true,
+        "identity": "5F=5A+5C",
+        "maximum_endpoint_occurrence_count": 300,
+        "uniform_expected_ordered_count_per_target": 0.47336701771473794
+      },
+      "generator": [
+        11165,
+        19999
+      ],
+      "geometry": {
+        "atom_a_size": 2,
+        "atom_c_size": 3,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 5,
+          "output_degree": 6,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 6,
+        "input_atom_count": 5,
+        "offset": 1,
+        "optional_materialization_group_additions": 6,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "matched_hash_controls": [
+        {
+          "base_size": 6,
+          "coefficient_row_rank": 6,
+          "control_index": 0,
+          "five_sum_density": 0.015340597796310952,
+          "five_sum_support": 252,
+          "full_prospective_rank": true,
+          "ordered_occurrence_count": 7776,
+          "verifier_only": true
+        }
+      ],
+      "rank_control": {
+        "all_factor_columns_spanned_prospectively": true,
+        "all_selected_rhs_rows_replay": true,
+        "combined_factor_row_rank_verifier_only": 6,
+        "expected_rectangle_identity_rank": 2,
+        "known_rhs_values_obtained_by_candidate": false,
+        "meaningful_atom_log_dimension": 4,
+        "nominal_factor_column_count": 6,
+        "projected_known_rhs_row_rank_verifier_only": 4,
+        "public_rectangle_identities_need_no_dlp": true,
+        "rectangle_identity_count": 2,
+        "rectangle_identity_rank": 2,
+        "selected_known_rhs_count": 4
+      },
+      "triple_compiler": {
+        "all_sampled_sources_exact": true,
+        "asymptotic": {
+          "atom_a_build_exponent_B": 1.2000000000000002,
+          "atom_c_build_exponent_B": 1.7999999999999998,
+          "fresh_endpoint_query_exponent_B": 1.2000000000000002,
+          "query_inside_cap": true,
+          "retained_state_exponent_B": 1.7999999999999998,
+          "state_inside_cap": true
+        },
+        "atom_a_endpoint_support": 4,
+        "atom_a_ordered_occurrences": 8,
+        "atom_c_endpoint_support": 10,
+        "atom_c_ordered_occurrences": 27,
+        "candidate_scalar_labels_consumed": false,
+        "factor_triple_endpoint_support_verifier_only": 40,
+        "factor_triple_ordered_occurrences": 216,
+        "full_convolution_materialized_by_candidate": false,
+        "identity": "3F=3A+3C",
+        "sampled_source_count": 16,
+        "source_query_scan_words": 4,
+        "stored_endpoint_words": 14
+      },
+      "verifier_bsgs_receipt": {
+        "algorithm": "baby_step_giant_step_verifier_only",
+        "asymptotic_group_work_exponent_B": 2.5,
+        "baby_table_size": 129,
+        "candidate_algorithm_may_consume_labels": false,
+        "excluded_from_algorithmic_credit": true,
+        "total_giant_steps": 735,
+        "width": 129
+      }
+    },
+    {
+      "factor_base_preview": [
+        [
+          451768,
+          2892317
+        ],
+        [
+          186704,
+          2533953
+        ],
+        [
+          1810435,
+          2774223
+        ],
+        [
+          2655382,
+          3079067
+        ],
+        [
+          2344290,
+          205687
+        ],
+        [
+          516155,
+          912005
+        ],
+        [
+          78619,
+          2271931
+        ],
+        [
+          2708271,
+          426372
+        ]
+      ],
+      "family": {
+        "atom_a_size": 3,
+        "atom_c_size": 5,
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "family_id": "p3148097_j0_q524683_h6_u3_v5",
+        "field_prime": 3148097,
+        "subgroup_order": 524683
+      },
+      "family_validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      },
+      "finite_scale": {
+        "B": 15,
+        "atom_a_exponent_B": 0.40568387108221293,
+        "atom_c_exponent_B": 0.5943161289177871,
+        "subgroup_order": 524683,
+        "subgroup_order_over_B5": 0.6909405761316872
+      },
+      "five_factor_source": {
+        "atom_a_endpoint_support": 21,
+        "atom_c_endpoint_support": 126,
+        "candidate_five_sum_density": 0.005014456347928177,
+        "candidate_five_sum_support": 2631,
+        "candidate_ordered_occurrence_count": 759375,
+        "diagnostic_build_consumes_scalar_labels": false,
+        "diagnostic_build_is_over_cap": true,
+        "diagnostic_full_source_replay_exact": true,
+        "identity": "5F=5A+5C",
+        "maximum_endpoint_occurrence_count": 3600,
+        "uniform_expected_ordered_count_per_target": 1.4473024664416418
+      },
+      "generator": [
+        2458755,
+        434908
+      ],
+      "geometry": {
+        "atom_a_size": 3,
+        "atom_c_size": 5,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 8,
+          "output_degree": 15,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 15,
+        "input_atom_count": 8,
+        "offset": 0,
+        "optional_materialization_group_additions": 15,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "matched_hash_controls": [
+        {
+          "base_size": 15,
+          "coefficient_row_rank": 15,
+          "control_index": 0,
+          "five_sum_density": 0.022017103660686547,
+          "five_sum_support": 11552,
+          "full_prospective_rank": true,
+          "ordered_occurrence_count": 759375,
+          "verifier_only": true
+        }
+      ],
+      "rank_control": {
+        "all_factor_columns_spanned_prospectively": true,
+        "all_selected_rhs_rows_replay": true,
+        "combined_factor_row_rank_verifier_only": 15,
+        "expected_rectangle_identity_rank": 8,
+        "known_rhs_values_obtained_by_candidate": false,
+        "meaningful_atom_log_dimension": 7,
+        "nominal_factor_column_count": 15,
+        "projected_known_rhs_row_rank_verifier_only": 7,
+        "public_rectangle_identities_need_no_dlp": true,
+        "rectangle_identity_count": 8,
+        "rectangle_identity_rank": 8,
+        "selected_known_rhs_count": 7
+      },
+      "triple_compiler": {
+        "all_sampled_sources_exact": true,
+        "asymptotic": {
+          "atom_a_build_exponent_B": 1.2000000000000002,
+          "atom_c_build_exponent_B": 1.7999999999999998,
+          "fresh_endpoint_query_exponent_B": 1.2000000000000002,
+          "query_inside_cap": true,
+          "retained_state_exponent_B": 1.7999999999999998,
+          "state_inside_cap": true
+        },
+        "atom_a_endpoint_support": 10,
+        "atom_a_ordered_occurrences": 27,
+        "atom_c_endpoint_support": 35,
+        "atom_c_ordered_occurrences": 125,
+        "candidate_scalar_labels_consumed": false,
+        "factor_triple_endpoint_support_verifier_only": 350,
+        "factor_triple_ordered_occurrences": 3375,
+        "full_convolution_materialized_by_candidate": false,
+        "identity": "3F=3A+3C",
+        "sampled_source_count": 16,
+        "source_query_scan_words": 10,
+        "stored_endpoint_words": 45
+      },
+      "verifier_bsgs_receipt": {
+        "algorithm": "baby_step_giant_step_verifier_only",
+        "asymptotic_group_work_exponent_B": 2.5,
+        "baby_table_size": 725,
+        "candidate_algorithm_may_consume_labels": false,
+        "excluded_from_algorithmic_credit": true,
+        "total_giant_steps": 7681,
+        "width": 725
+      }
+    },
+    {
+      "factor_base_preview": [
+        [
+          580821,
+          1312986
+        ],
+        [
+          971506,
+          2708288
+        ],
+        [
+          377452,
+          371719
+        ],
+        [
+          30056,
+          945535
+        ],
+        [
+          1977492,
+          2290939
+        ],
+        [
+          541164,
+          2180430
+        ],
+        [
+          328093,
+          2970205
+        ],
+        [
+          2079952,
+          1449313
+        ]
+      ],
+      "family": {
+        "atom_a_size": 3,
+        "atom_c_size": 5,
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "family_id": "p3148097_j0_q524683_h6_u3_v5",
+        "field_prime": 3148097,
+        "subgroup_order": 524683
+      },
+      "family_validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      },
+      "finite_scale": {
+        "B": 15,
+        "atom_a_exponent_B": 0.40568387108221293,
+        "atom_c_exponent_B": 0.5943161289177871,
+        "subgroup_order": 524683,
+        "subgroup_order_over_B5": 0.6909405761316872
+      },
+      "five_factor_source": {
+        "atom_a_endpoint_support": 21,
+        "atom_c_endpoint_support": 126,
+        "candidate_five_sum_density": 0.005043045038623321,
+        "candidate_five_sum_support": 2646,
+        "candidate_ordered_occurrence_count": 759375,
+        "diagnostic_build_consumes_scalar_labels": false,
+        "diagnostic_build_is_over_cap": true,
+        "diagnostic_full_source_replay_exact": true,
+        "identity": "5F=5A+5C",
+        "maximum_endpoint_occurrence_count": 3600,
+        "uniform_expected_ordered_count_per_target": 1.4473024664416418
+      },
+      "generator": [
+        2458755,
+        434908
+      ],
+      "geometry": {
+        "atom_a_size": 3,
+        "atom_c_size": 5,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 8,
+          "output_degree": 15,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 15,
+        "input_atom_count": 8,
+        "offset": 1,
+        "optional_materialization_group_additions": 15,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "matched_hash_controls": [
+        {
+          "base_size": 15,
+          "coefficient_row_rank": 15,
+          "control_index": 0,
+          "five_sum_density": 0.02179030004783841,
+          "five_sum_support": 11433,
+          "full_prospective_rank": true,
+          "ordered_occurrence_count": 759375,
+          "verifier_only": true
+        }
+      ],
+      "rank_control": {
+        "all_factor_columns_spanned_prospectively": true,
+        "all_selected_rhs_rows_replay": true,
+        "combined_factor_row_rank_verifier_only": 15,
+        "expected_rectangle_identity_rank": 8,
+        "known_rhs_values_obtained_by_candidate": false,
+        "meaningful_atom_log_dimension": 7,
+        "nominal_factor_column_count": 15,
+        "projected_known_rhs_row_rank_verifier_only": 7,
+        "public_rectangle_identities_need_no_dlp": true,
+        "rectangle_identity_count": 8,
+        "rectangle_identity_rank": 8,
+        "selected_known_rhs_count": 7
+      },
+      "triple_compiler": {
+        "all_sampled_sources_exact": true,
+        "asymptotic": {
+          "atom_a_build_exponent_B": 1.2000000000000002,
+          "atom_c_build_exponent_B": 1.7999999999999998,
+          "fresh_endpoint_query_exponent_B": 1.2000000000000002,
+          "query_inside_cap": true,
+          "retained_state_exponent_B": 1.7999999999999998,
+          "state_inside_cap": true
+        },
+        "atom_a_endpoint_support": 10,
+        "atom_a_ordered_occurrences": 27,
+        "atom_c_endpoint_support": 35,
+        "atom_c_ordered_occurrences": 125,
+        "candidate_scalar_labels_consumed": false,
+        "factor_triple_endpoint_support_verifier_only": 350,
+        "factor_triple_ordered_occurrences": 3375,
+        "full_convolution_materialized_by_candidate": false,
+        "identity": "3F=3A+3C",
+        "sampled_source_count": 16,
+        "source_query_scan_words": 10,
+        "stored_endpoint_words": 45
+      },
+      "verifier_bsgs_receipt": {
+        "algorithm": "baby_step_giant_step_verifier_only",
+        "asymptotic_group_work_exponent_B": 2.5,
+        "baby_table_size": 725,
+        "candidate_algorithm_may_consume_labels": false,
+        "excluded_from_algorithmic_credit": true,
+        "total_giant_steps": 9016,
+        "width": 725
+      }
+    },
+    {
+      "factor_base_preview": [
+        [
+          1796086,
+          6177672
+        ],
+        [
+          4619713,
+          6549438
+        ],
+        [
+          4148598,
+          7050016
+        ],
+        [
+          9303806,
+          3488741
+        ],
+        [
+          2313132,
+          3019781
+        ],
+        [
+          371095,
+          5436181
+        ],
+        [
+          184295,
+          4931692
+        ],
+        [
+          790719,
+          334947
+        ]
+      ],
+      "family": {
+        "atom_a_size": 3,
+        "atom_c_size": 6,
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "family_id": "p9603641_j0_q1600607_h6_u3_v6",
+        "field_prime": 9603641,
+        "subgroup_order": 1600607
+      },
+      "family_validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      },
+      "finite_scale": {
+        "B": 18,
+        "atom_a_exponent_B": 0.3800937667159343,
+        "atom_c_exponent_B": 0.6199062332840658,
+        "subgroup_order": 1600607,
+        "subgroup_order_over_B5": 0.8470756278683805
+      },
+      "five_factor_source": {
+        "atom_a_endpoint_support": 21,
+        "atom_c_endpoint_support": 252,
+        "candidate_five_sum_density": 0.0033062456930402027,
+        "candidate_five_sum_support": 5292,
+        "candidate_ordered_occurrence_count": 1889568,
+        "diagnostic_build_consumes_scalar_labels": false,
+        "diagnostic_build_is_over_cap": true,
+        "diagnostic_full_source_replay_exact": true,
+        "identity": "5F=5A+5C",
+        "maximum_endpoint_occurrence_count": 3600,
+        "uniform_expected_ordered_count_per_target": 1.1805321356210488
+      },
+      "generator": [
+        8133434,
+        740519
+      ],
+      "geometry": {
+        "atom_a_size": 3,
+        "atom_c_size": 6,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 9,
+          "output_degree": 18,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 18,
+        "input_atom_count": 9,
+        "offset": 0,
+        "optional_materialization_group_additions": 18,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "matched_hash_controls": [
+        {
+          "base_size": 18,
+          "coefficient_row_rank": 18,
+          "control_index": 0,
+          "five_sum_density": 0.016243212731170114,
+          "five_sum_support": 25999,
+          "full_prospective_rank": true,
+          "ordered_occurrence_count": 1889568,
+          "verifier_only": true
+        }
+      ],
+      "rank_control": {
+        "all_factor_columns_spanned_prospectively": true,
+        "all_selected_rhs_rows_replay": true,
+        "combined_factor_row_rank_verifier_only": 18,
+        "expected_rectangle_identity_rank": 10,
+        "known_rhs_values_obtained_by_candidate": false,
+        "meaningful_atom_log_dimension": 8,
+        "nominal_factor_column_count": 18,
+        "projected_known_rhs_row_rank_verifier_only": 8,
+        "public_rectangle_identities_need_no_dlp": true,
+        "rectangle_identity_count": 10,
+        "rectangle_identity_rank": 10,
+        "selected_known_rhs_count": 8
+      },
+      "triple_compiler": {
+        "all_sampled_sources_exact": true,
+        "asymptotic": {
+          "atom_a_build_exponent_B": 1.2000000000000002,
+          "atom_c_build_exponent_B": 1.7999999999999998,
+          "fresh_endpoint_query_exponent_B": 1.2000000000000002,
+          "query_inside_cap": true,
+          "retained_state_exponent_B": 1.7999999999999998,
+          "state_inside_cap": true
+        },
+        "atom_a_endpoint_support": 10,
+        "atom_a_ordered_occurrences": 27,
+        "atom_c_endpoint_support": 56,
+        "atom_c_ordered_occurrences": 216,
+        "candidate_scalar_labels_consumed": false,
+        "factor_triple_endpoint_support_verifier_only": 560,
+        "factor_triple_ordered_occurrences": 5832,
+        "full_convolution_materialized_by_candidate": false,
+        "identity": "3F=3A+3C",
+        "sampled_source_count": 16,
+        "source_query_scan_words": 10,
+        "stored_endpoint_words": 66
+      },
+      "verifier_bsgs_receipt": {
+        "algorithm": "baby_step_giant_step_verifier_only",
+        "asymptotic_group_work_exponent_B": 2.5,
+        "baby_table_size": 1266,
+        "candidate_algorithm_may_consume_labels": false,
+        "excluded_from_algorithmic_credit": true,
+        "total_giant_steps": 14966,
+        "width": 1266
+      }
+    },
+    {
+      "factor_base_preview": [
+        [
+          8549324,
+          1257534
+        ],
+        [
+          4971275,
+          4193606
+        ],
+        [
+          1392952,
+          5451906
+        ],
+        [
+          727306,
+          6813701
+        ],
+        [
+          3309738,
+          4714645
+        ],
+        [
+          197977,
+          6496570
+        ],
+        [
+          3018581,
+          1462711
+        ],
+        [
+          4786561,
+          2205621
+        ]
+      ],
+      "family": {
+        "atom_a_size": 3,
+        "atom_c_size": 6,
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "family_id": "p9603641_j0_q1600607_h6_u3_v6",
+        "field_prime": 9603641,
+        "subgroup_order": 1600607
+      },
+      "family_validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      },
+      "finite_scale": {
+        "B": 18,
+        "atom_a_exponent_B": 0.3800937667159343,
+        "atom_c_exponent_B": 0.6199062332840658,
+        "subgroup_order": 1600607,
+        "subgroup_order_over_B5": 0.8470756278683805
+      },
+      "five_factor_source": {
+        "atom_a_endpoint_support": 21,
+        "atom_c_endpoint_support": 252,
+        "candidate_five_sum_density": 0.0033062456930402027,
+        "candidate_five_sum_support": 5292,
+        "candidate_ordered_occurrence_count": 1889568,
+        "diagnostic_build_consumes_scalar_labels": false,
+        "diagnostic_build_is_over_cap": true,
+        "diagnostic_full_source_replay_exact": true,
+        "identity": "5F=5A+5C",
+        "maximum_endpoint_occurrence_count": 3600,
+        "uniform_expected_ordered_count_per_target": 1.1805321356210488
+      },
+      "generator": [
+        8133434,
+        740519
+      ],
+      "geometry": {
+        "atom_a_size": 3,
+        "atom_c_size": 6,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 9,
+          "output_degree": 18,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 18,
+        "input_atom_count": 9,
+        "offset": 1,
+        "optional_materialization_group_additions": 18,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "matched_hash_controls": [
+        {
+          "base_size": 18,
+          "coefficient_row_rank": 18,
+          "control_index": 0,
+          "five_sum_density": 0.01637941106092876,
+          "five_sum_support": 26217,
+          "full_prospective_rank": true,
+          "ordered_occurrence_count": 1889568,
+          "verifier_only": true
+        }
+      ],
+      "rank_control": {
+        "all_factor_columns_spanned_prospectively": true,
+        "all_selected_rhs_rows_replay": true,
+        "combined_factor_row_rank_verifier_only": 18,
+        "expected_rectangle_identity_rank": 10,
+        "known_rhs_values_obtained_by_candidate": false,
+        "meaningful_atom_log_dimension": 8,
+        "nominal_factor_column_count": 18,
+        "projected_known_rhs_row_rank_verifier_only": 8,
+        "public_rectangle_identities_need_no_dlp": true,
+        "rectangle_identity_count": 10,
+        "rectangle_identity_rank": 10,
+        "selected_known_rhs_count": 8
+      },
+      "triple_compiler": {
+        "all_sampled_sources_exact": true,
+        "asymptotic": {
+          "atom_a_build_exponent_B": 1.2000000000000002,
+          "atom_c_build_exponent_B": 1.7999999999999998,
+          "fresh_endpoint_query_exponent_B": 1.2000000000000002,
+          "query_inside_cap": true,
+          "retained_state_exponent_B": 1.7999999999999998,
+          "state_inside_cap": true
+        },
+        "atom_a_endpoint_support": 10,
+        "atom_a_ordered_occurrences": 27,
+        "atom_c_endpoint_support": 56,
+        "atom_c_ordered_occurrences": 216,
+        "candidate_scalar_labels_consumed": false,
+        "factor_triple_endpoint_support_verifier_only": 560,
+        "factor_triple_ordered_occurrences": 5832,
+        "full_convolution_materialized_by_candidate": false,
+        "identity": "3F=3A+3C",
+        "sampled_source_count": 16,
+        "source_query_scan_words": 10,
+        "stored_endpoint_words": 66
+      },
+      "verifier_bsgs_receipt": {
+        "algorithm": "baby_step_giant_step_verifier_only",
+        "asymptotic_group_work_exponent_B": 2.5,
+        "baby_table_size": 1266,
+        "candidate_algorithm_may_consume_labels": false,
+        "excluded_from_algorithmic_credit": true,
+        "total_giant_steps": 14911,
+        "width": 1266
+      }
+    },
+    {
+      "factor_base_preview": [
+        [
+          1655142,
+          91864519
+        ],
+        [
+          93717382,
+          37555631
+        ],
+        [
+          37495250,
+          81134298
+        ],
+        [
+          560833,
+          96049885
+        ],
+        [
+          20134695,
+          74141431
+        ],
+        [
+          67000142,
+          37064262
+        ],
+        [
+          95594336,
+          33370
+        ],
+        [
+          41488713,
+          59111154
+        ]
+      ],
+      "family": {
+        "atom_a_size": 4,
+        "atom_c_size": 7,
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "family_id": "p100683137_j0_q16780523_h6_u4_v7",
+        "field_prime": 100683137,
+        "subgroup_order": 16780523
+      },
+      "family_validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      },
+      "finite_scale": {
+        "B": 28,
+        "atom_a_exponent_B": 0.4160291953530189,
+        "atom_c_exponent_B": 0.583970804646981,
+        "subgroup_order": 16780523,
+        "subgroup_order_over_B5": 0.9750240668880525
+      },
+      "five_factor_source": {
+        "atom_a_endpoint_support": 56,
+        "atom_c_endpoint_support": 462,
+        "candidate_five_sum_density": 0.0015384502616515587,
+        "candidate_five_sum_support": 25816,
+        "candidate_ordered_occurrence_count": 17210368,
+        "diagnostic_build_consumes_scalar_labels": false,
+        "diagnostic_build_is_over_cap": true,
+        "diagnostic_full_source_replay_exact": true,
+        "identity": "5F=5A+5C",
+        "maximum_endpoint_occurrence_count": 7200,
+        "uniform_expected_ordered_count_per_target": 1.0256157093554235
+      },
+      "generator": [
+        34761503,
+        40775233
+      ],
+      "geometry": {
+        "atom_a_size": 4,
+        "atom_c_size": 7,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 11,
+          "output_degree": 28,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 28,
+        "input_atom_count": 11,
+        "offset": 0,
+        "optional_materialization_group_additions": 28,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "matched_hash_controls": [
+        {
+          "base_size": 28,
+          "coefficient_row_rank": 28,
+          "control_index": 0,
+          "five_sum_density": 0.011911249726841053,
+          "five_sum_support": 199877,
+          "full_prospective_rank": true,
+          "ordered_occurrence_count": 17210368,
+          "verifier_only": true
+        }
+      ],
+      "rank_control": {
+        "all_factor_columns_spanned_prospectively": true,
+        "all_selected_rhs_rows_replay": true,
+        "combined_factor_row_rank_verifier_only": 28,
+        "expected_rectangle_identity_rank": 18,
+        "known_rhs_values_obtained_by_candidate": false,
+        "meaningful_atom_log_dimension": 10,
+        "nominal_factor_column_count": 28,
+        "projected_known_rhs_row_rank_verifier_only": 10,
+        "public_rectangle_identities_need_no_dlp": true,
+        "rectangle_identity_count": 18,
+        "rectangle_identity_rank": 18,
+        "selected_known_rhs_count": 10
+      },
+      "triple_compiler": {
+        "all_sampled_sources_exact": true,
+        "asymptotic": {
+          "atom_a_build_exponent_B": 1.2000000000000002,
+          "atom_c_build_exponent_B": 1.7999999999999998,
+          "fresh_endpoint_query_exponent_B": 1.2000000000000002,
+          "query_inside_cap": true,
+          "retained_state_exponent_B": 1.7999999999999998,
+          "state_inside_cap": true
+        },
+        "atom_a_endpoint_support": 20,
+        "atom_a_ordered_occurrences": 64,
+        "atom_c_endpoint_support": 84,
+        "atom_c_ordered_occurrences": 343,
+        "candidate_scalar_labels_consumed": false,
+        "factor_triple_endpoint_support_verifier_only": 1680,
+        "factor_triple_ordered_occurrences": 21952,
+        "full_convolution_materialized_by_candidate": false,
+        "identity": "3F=3A+3C",
+        "sampled_source_count": 16,
+        "source_query_scan_words": 20,
+        "stored_endpoint_words": 104
+      },
+      "verifier_bsgs_receipt": {
+        "algorithm": "baby_step_giant_step_verifier_only",
+        "asymptotic_group_work_exponent_B": 2.5,
+        "baby_table_size": 4097,
+        "candidate_algorithm_may_consume_labels": false,
+        "excluded_from_algorithmic_credit": true,
+        "total_giant_steps": 78014,
+        "width": 4097
+      }
+    },
+    {
+      "factor_base_preview": [
+        [
+          88535132,
+          19579322
+        ],
+        [
+          1310226,
+          25411087
+        ],
+        [
+          77901387,
+          15979806
+        ],
+        [
+          17806138,
+          45021452
+        ],
+        [
+          23115903,
+          85809943
+        ],
+        [
+          67471202,
+          83005334
+        ],
+        [
+          35214236,
+          55630889
+        ],
+        [
+          76036384,
+          77671292
+        ]
+      ],
+      "family": {
+        "atom_a_size": 4,
+        "atom_c_size": 7,
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "family_id": "p100683137_j0_q16780523_h6_u4_v7",
+        "field_prime": 100683137,
+        "subgroup_order": 16780523
+      },
+      "family_validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      },
+      "finite_scale": {
+        "B": 28,
+        "atom_a_exponent_B": 0.4160291953530189,
+        "atom_c_exponent_B": 0.583970804646981,
+        "subgroup_order": 16780523,
+        "subgroup_order_over_B5": 0.9750240668880525
+      },
+      "five_factor_source": {
+        "atom_a_endpoint_support": 56,
+        "atom_c_endpoint_support": 462,
+        "candidate_five_sum_density": 0.0015417874639544905,
+        "candidate_five_sum_support": 25872,
+        "candidate_ordered_occurrence_count": 17210368,
+        "diagnostic_build_consumes_scalar_labels": false,
+        "diagnostic_build_is_over_cap": true,
+        "diagnostic_full_source_replay_exact": true,
+        "identity": "5F=5A+5C",
+        "maximum_endpoint_occurrence_count": 7200,
+        "uniform_expected_ordered_count_per_target": 1.0256157093554235
+      },
+      "generator": [
+        34761503,
+        40775233
+      ],
+      "geometry": {
+        "atom_a_size": 4,
+        "atom_c_size": 7,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 11,
+          "output_degree": 28,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 28,
+        "input_atom_count": 11,
+        "offset": 1,
+        "optional_materialization_group_additions": 28,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "matched_hash_controls": [
+        {
+          "base_size": 28,
+          "coefficient_row_rank": 28,
+          "control_index": 0,
+          "five_sum_density": 0.011941999662346638,
+          "five_sum_support": 200393,
+          "full_prospective_rank": true,
+          "ordered_occurrence_count": 17210368,
+          "verifier_only": true
+        }
+      ],
+      "rank_control": {
+        "all_factor_columns_spanned_prospectively": true,
+        "all_selected_rhs_rows_replay": true,
+        "combined_factor_row_rank_verifier_only": 28,
+        "expected_rectangle_identity_rank": 18,
+        "known_rhs_values_obtained_by_candidate": false,
+        "meaningful_atom_log_dimension": 10,
+        "nominal_factor_column_count": 28,
+        "projected_known_rhs_row_rank_verifier_only": 10,
+        "public_rectangle_identities_need_no_dlp": true,
+        "rectangle_identity_count": 18,
+        "rectangle_identity_rank": 18,
+        "selected_known_rhs_count": 10
+      },
+      "triple_compiler": {
+        "all_sampled_sources_exact": true,
+        "asymptotic": {
+          "atom_a_build_exponent_B": 1.2000000000000002,
+          "atom_c_build_exponent_B": 1.7999999999999998,
+          "fresh_endpoint_query_exponent_B": 1.2000000000000002,
+          "query_inside_cap": true,
+          "retained_state_exponent_B": 1.7999999999999998,
+          "state_inside_cap": true
+        },
+        "atom_a_endpoint_support": 20,
+        "atom_a_ordered_occurrences": 64,
+        "atom_c_endpoint_support": 84,
+        "atom_c_ordered_occurrences": 343,
+        "candidate_scalar_labels_consumed": false,
+        "factor_triple_endpoint_support_verifier_only": 1680,
+        "factor_triple_ordered_occurrences": 21952,
+        "full_convolution_materialized_by_candidate": false,
+        "identity": "3F=3A+3C",
+        "sampled_source_count": 16,
+        "source_query_scan_words": 20,
+        "stored_endpoint_words": 104
+      },
+      "verifier_bsgs_receipt": {
+        "algorithm": "baby_step_giant_step_verifier_only",
+        "asymptotic_group_work_exponent_B": 2.5,
+        "baby_table_size": 4097,
+        "candidate_algorithm_may_consume_labels": false,
+        "excluded_from_algorithmic_credit": true,
+        "total_giant_steps": 82633,
+        "width": 4097
+      }
+    }
+  ],
+  "next_action": "Derive or refute one addition-compatible field-coordinate filtration for the colored 5A+5C source. Each partial filter must compose under elliptic addition, retain exact source backpointers, avoid verifier logs, fit B^(9/4) setup and B^(5/4) fresh work, and pass a random-deck control.",
+  "novelty_scope": "R82 is not a one-dimensional field coset or scalar orbit. It freezes an elliptic addition pushforward factor base F=A+C and tests whether its exact factorized triple compiler survives the full known-RHS relation and identical descent.",
+  "schema": "p1553.cartesian_sum_compact_divisor_probe.r82.v1",
+  "scope_boundary": "This closes only Cartesian addition-pushforward factor bases under exact equality joins, generic collision search, and standard quotient-free generalized-birthday accounting. It is not a lower bound against a representation-specific FFE or summation-polynomial filtration with exact provenance.",
+  "shoup_bound_improvement": false,
+  "side_artifacts": {
+    "controls": "prospective_density_and_matched_rank_controls.json",
+    "cost_ledger": "scalar_blind_query_source_cost_ledger.json",
+    "endpoint_compiler": "divisor_slp_to_s4_endpoint_compiler.json",
+    "geometry": "frozen_compact_divisor_factor_base.json",
+    "logs_descent": "verified_factor_logs_and_identical_descent.json"
+  },
+  "source_bindings": {
+    "r11_cartesian_kummer_rigidity": {
+      "path": "p1553_cartesian_kummer_rigidity_gate_r11.md",
+      "sha256": "6c79b486bfa4cfd14674033a438db3d91ddf7bbe4d2c4aaf309f1a0706f0df4e"
+    },
+    "r14_tensor_trace_compiler": {
+      "path": "p1553_tensor_trace_minpoly_compiler_gate_r14.md",
+      "sha256": "da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac"
+    },
+    "r31_query2p1_registry": {
+      "bound_gate_sha256": "b2ee5934e295ab1f0d6b43452898e520d0cb18e718a8f5865694b25909b0df5e",
+      "path": "p1553_r31_artifact_index_README.md",
+      "sha256": "0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f"
+    },
+    "r81_complete_coset_screen": {
+      "path": "p1553_full_multiplicative_x_coset_endpoint_probe_report_r81.json",
+      "sha256": "e556efa7c1e639f76915f152ebdcc3d00db2a932d8ef207ae8653c94117f026f"
+    }
+  }
+}

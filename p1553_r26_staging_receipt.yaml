@@ -1,0 +1,70 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R26-MAXIMAL-ISOGENY-TRANSLATE-DIVERSITY-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T05:51:50Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R26 is a new scoped
+  function-field theorem requiring independent review. It closes global
+  low-degree addition-law compression but leaves finite exceptional-value
+  saturation unclassified.
+bindings:
+  r25_gate_sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+  r25_bundle_hash_list_sha256: f0935e23417296866b1f31bc8c9b8321cd31d3dc472f295464293ece74c65416
+  r25_staging_receipt_sha256: 2c5819dd6f1226637e46116c5ae0df2629e1c31f1a62c34852b6706d55a67a1a
+  r26_gate_sha256: 0f9d0d8f7d2cbc2b73ba848f252f0f0d9a1d2b870411c5610725ff33c67b364c
+  r26_parent_report_sha256: a77f0d76c6c7b52e17d89efc8ef5907bf0eceb29e62272efabc774d2b3737fa0
+  r26_artifact_index_sha256: 0f61e54cfd1d1462076cd057422b602118404865ea72a6313d9f38e8ac51cbfe
+  r26_bundle_hash_list_sha256: a410f9433d0b2291fb70151c648f5ec6ab3cb01e0ced7bd8ed70948c9a8d3457
+result:
+  classification: scoped_global_low_degree_addition_law_negative
+  translation_stabilizer: H_f
+  maximal_isogeny_degree: e=|H_f|
+  outer_degree: c=m/e
+  nonzero_translate_pair_field_degree: e
+  translate_correspondence_bidegree: (c,c)
+  prime_subgroup_selected_value_pullback_upper_bound: c*r
+  B2_pullback_over_B_values_outer_degree: Omega(B)
+  constant_degree_lattes_addition_law: fails_prime_subgroup_support_mass
+  finite_exceptional_value_intersection: not_classified
+  complete_image_B2: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r26_hash_list: pass
+  r26_parent_yaml_parse: pass
+  genus_zero_picard_obstruction_checked: pass
+  genus_one_isogeny_degree_sandwich_checked: pass
+  x_coordinate_control: pair_degree_1_outer_bidegree_2_2
+  lattes_control: pair_degree_k_squared_outer_bidegree_2_2
+  clean_temporary_replay_with_r16_through_r26_gates_and_r26_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T05_51_50Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - finite selected exceptional values are not classified
+  - a degree-Omega(B) correspondence may have a succinct circuit
+  - no complete image constructor, fresh target, R10, density, rank, logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Classify whether B selected values can be simultaneously exceptional for B
+  distinct degree-Omega(B) translate correspondences while their B^2 pullback
+  points have B popular shifts and only O(B^2) complete triples, with exact
+  sources, fresh target, R10, and full costs.

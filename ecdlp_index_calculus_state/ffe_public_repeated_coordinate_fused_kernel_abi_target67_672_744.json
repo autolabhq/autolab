@@ -1,0 +1,2058 @@
+{
+  "method": "verifier_curve_and_second_pass_abi_guard_for_portable_fused_kernel_contract",
+  "non_claims": [
+    "This validates the ABI and curve boundary of the portable contract; it is not a new ECDLP solve.",
+    "It does not search for additional relation systems or lower the contract into optimized native code.",
+    "A promoted FFE/summation-polynomial kernel must emit the same first-pass candidate points and second-pass checks."
+  ],
+  "parameters": {
+    "campaign_task_dir": "/Volumes/Volume/autolab/tasks/ecdlp_index_calculus",
+    "contract_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_contract_target67_672_744.json",
+    "source_names": []
+  },
+  "records": [
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "12",
+            17,
+            218
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2705,
+            9753
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "12",
+            17,
+            469
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2705,
+            9753
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "12",
+            30,
+            218
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2705,
+            9753
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "12",
+            30,
+            469
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2705,
+            9753
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "12",
+            174,
+            218
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            9251,
+            9216
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "12",
+            174,
+            469
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            9251,
+            9216
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "12",
+            210,
+            218
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            9251,
+            9216
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "12",
+            210,
+            469
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            9251,
+            9216
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 3,
+        "accepted_summary_count": 3,
+        "candidate_point_count": 8,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 8,
+        "first_pass_group_instance_count": 12,
+        "first_pass_saved_ops": 4,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": true,
+        "matches_contract_event_reuse_target": true,
+        "second_pass_check_count": 12,
+        "shared_first_event_pass_ops": 8,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "accepted_check_count_for_reuse_event": 2,
+        "applicable": true,
+        "expected_distinct_candidate_points": [
+          [
+            2705,
+            9753
+          ],
+          [
+            9251,
+            9216
+          ]
+        ],
+        "observed_distinct_candidate_points": [
+          [
+            2705,
+            9753
+          ],
+          [
+            9251,
+            9216
+          ]
+        ],
+        "reuse_event_accepted_relation_count": 2,
+        "reuse_event_candidate_point": [
+          9251,
+          9216
+        ],
+        "reuse_event_fanout": 2,
+        "reuse_event_key": [
+          "12",
+          174,
+          469
+        ],
+        "verified": true
+      },
+      "distinct_candidate_points": [
+        [
+          2705,
+          9753
+        ],
+        [
+          9251,
+          9216
+        ]
+      ],
+      "event_reuse_groups": [
+        {
+          "accepted_relation_count": 0,
+          "candidate_point": [
+            2705,
+            9753
+          ],
+          "event_key": [
+            "12",
+            17,
+            469
+          ],
+          "fanout": 2
+        },
+        {
+          "accepted_relation_count": 0,
+          "candidate_point": [
+            2705,
+            9753
+          ],
+          "event_key": [
+            "12",
+            30,
+            469
+          ],
+          "fanout": 2
+        },
+        {
+          "accepted_relation_count": 2,
+          "candidate_point": [
+            9251,
+            9216
+          ],
+          "event_key": [
+            "12",
+            174,
+            469
+          ],
+          "fanout": 2
+        },
+        {
+          "accepted_relation_count": 0,
+          "candidate_point": [
+            9251,
+            9216
+          ],
+          "event_key": [
+            "12",
+            210,
+            469
+          ],
+          "fanout": 2
+        }
+      ],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "source_name": "coord1114_744",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "1",
+            68,
+            42
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            7480,
+            6431
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "1",
+            68,
+            286
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            7480,
+            6431
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "1",
+            229,
+            42
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            5473,
+            680
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "1",
+            229,
+            286
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            5473,
+            680
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 2,
+        "accepted_summary_count": 2,
+        "candidate_point_count": 4,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 4,
+        "first_pass_group_instance_count": 4,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": true,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 4,
+        "shared_first_event_pass_ops": 4,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          5473,
+          680
+        ],
+        [
+          7480,
+          6431
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "117,6119",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "1"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 695
+      },
+      "source_name": "coord117_688",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            76,
+            53
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            76,
+            135
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            76,
+            217
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            114,
+            53
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            114,
+            135
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            114,
+            217
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            322,
+            53
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            322,
+            135
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            322,
+            217
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 2,
+        "accepted_summary_count": 2,
+        "candidate_point_count": 9,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 9,
+        "first_pass_group_instance_count": 9,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": false,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 9,
+        "shared_first_event_pass_ops": 9,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          6213,
+          3539
+        ],
+        [
+          6696,
+          1166
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "3|3|3",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 677
+      },
+      "source_name": "coord161_672",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            1,
+            149
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            1,
+            186
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            1,
+            296
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            130,
+            149
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            130,
+            186
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            130,
+            296
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            144,
+            149
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            144,
+            186
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            144,
+            296
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            331,
+            149
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            331,
+            186
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            331,
+            296
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 2,
+        "accepted_summary_count": 2,
+        "candidate_point_count": 12,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 12,
+        "first_pass_group_instance_count": 12,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": false,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 12,
+        "shared_first_event_pass_ops": 12,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          6213,
+          3539
+        ],
+        [
+          6696,
+          1166
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "source_name": "coord161_720",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            4,
+            204
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            4,
+            377
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            4,
+            429
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            4,
+            466
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            202,
+            204
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            202,
+            377
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            202,
+            429
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            202,
+            466
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            226,
+            204
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            226,
+            377
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            226,
+            429
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            226,
+            466
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 2,
+        "accepted_summary_count": 2,
+        "candidate_point_count": 12,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 12,
+        "first_pass_group_instance_count": 12,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": false,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 12,
+        "shared_first_event_pass_ops": 12,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          6213,
+          3539
+        ],
+        [
+          6696,
+          1166
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "source_name": "coord161_728",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            19,
+            14
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            19,
+            96
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            19,
+            299
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            150,
+            14
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            150,
+            96
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "2",
+            150,
+            299
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 3,
+        "accepted_summary_count": 3,
+        "candidate_point_count": 6,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 6,
+        "first_pass_group_instance_count": 6,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": false,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 6,
+        "shared_first_event_pass_ops": 6,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          6213,
+          3539
+        ],
+        [
+          6696,
+          1166
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "2|2|2",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 740
+      },
+      "source_name": "coord161_736",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            37,
+            109
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2344,
+            7558
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            37,
+            503
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2344,
+            7558
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            210,
+            109
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2344,
+            7558
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            210,
+            503
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2344,
+            7558
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            294,
+            109
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            868,
+            1621
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            294,
+            503
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            868,
+            1621
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 2,
+        "accepted_summary_count": 2,
+        "candidate_point_count": 6,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 6,
+        "first_pass_group_instance_count": 6,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": true,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 6,
+        "shared_first_event_pass_ops": 6,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          868,
+          1621
+        ],
+        [
+          2344,
+          7558
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "3|3",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 706
+      },
+      "source_name": "coord55_704",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            11,
+            29
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2344,
+            7558
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            11,
+            442
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2344,
+            7558
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            170,
+            29
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            868,
+            1621
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "0",
+            170,
+            442
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            868,
+            1621
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 2,
+        "accepted_summary_count": 2,
+        "candidate_point_count": 4,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 4,
+        "first_pass_group_instance_count": 4,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": true,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 4,
+        "shared_first_event_pass_ops": 4,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          868,
+          1621
+        ],
+        [
+          2344,
+          7558
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 718
+      },
+      "source_name": "coord55_712",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "7",
+            19,
+            233
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            371,
+            1564
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "7",
+            19,
+            473
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            371,
+            1564
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "7",
+            191,
+            233
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            371,
+            1564
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "7",
+            191,
+            473
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            371,
+            1564
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "7",
+            245,
+            233
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2139,
+            6807
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "7",
+            245,
+            473
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2139,
+            6807
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "7",
+            347,
+            233
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2139,
+            6807
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "7",
+            347,
+            473
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2139,
+            6807
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 2,
+        "accepted_summary_count": 2,
+        "candidate_point_count": 8,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 8,
+        "first_pass_group_instance_count": 8,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": true,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 8,
+        "shared_first_event_pass_ops": 8,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          371,
+          1564
+        ],
+        [
+          2139,
+          6807
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "757,1452",
+        "hit_event_signature": "8",
+        "hit_root_signature": "1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "7"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 1,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 715
+      },
+      "source_name": "coord757_712",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "abi_curve_status": "fused_kernel_abi_curve_verified",
+      "candidate_point_curve_checks": [
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "9",
+            5,
+            336
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            4247,
+            7706
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "9",
+            5,
+            359
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            4247,
+            7706
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "9",
+            69,
+            336
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            7962,
+            4835
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "9",
+            69,
+            359
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            7962,
+            4835
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "9",
+            151,
+            336
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            4247,
+            7706
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "9",
+            151,
+            359
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            4247,
+            7706
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "9",
+            296,
+            336
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            7962,
+            4835
+          ]
+        },
+        {
+          "coords_in_field": true,
+          "event_key": [
+            "9",
+            296,
+            359
+          ],
+          "finite_point": true,
+          "in_base_order_subgroup": true,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            7962,
+            4835
+          ]
+        }
+      ],
+      "checks": {
+        "accepted_relation_count": 2,
+        "accepted_summary_count": 2,
+        "candidate_point_count": 8,
+        "candidate_point_curve_verified": true,
+        "candidate_point_subgroup_verified": true,
+        "first_pass_group_count": 8,
+        "first_pass_group_instance_count": 8,
+        "first_pass_saved_ops": 0,
+        "first_second_pass_fanout_match": true,
+        "matches_contract_below_rho": true,
+        "matches_contract_event_reuse_target": false,
+        "second_pass_check_count": 8,
+        "shared_first_event_pass_ops": 8,
+        "summary_count_matches_accepted_checks": true
+      },
+      "coord1114_744_reuse_anchor": {
+        "applicable": false,
+        "verified": null
+      },
+      "distinct_candidate_points": [
+        [
+          4247,
+          7706
+        ],
+        [
+          7962,
+          4835
+        ]
+      ],
+      "event_reuse_groups": [],
+      "failures": [],
+      "implementation_boundary": "ABI/curve invariant check for the portable fused kernel contract. The first pass emits curve-valid candidate points; the second pass consumes only event keys and row-specific relation predicates.",
+      "public_group_key": {
+        "coordinate_key": "861,9226",
+        "hit_event_signature": "4|4",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "9"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 692
+      },
+      "source_name": "coord861_688",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_abi_probe_v1",
+  "summary": {
+    "abi_curve_verified_count": 10,
+    "below_rho_verified_count": 6,
+    "candidate_point_curve_verified_count": 10,
+    "candidate_point_subgroup_verified_count": 10,
+    "coord1114_744_reuse_anchor_verified": true,
+    "event_reuse_below_rho_verified_count": 1,
+    "first_second_pass_fanout_verified_count": 10,
+    "interpretation": "The portable contract is ABI-stable at the curve boundary: first-pass candidate-point outputs are verifier-curve points in the base-order subgroup, and second-pass row checks consume those public event keys without scanner-side candidate equality recomputation.",
+    "record_count": 10,
+    "relation_summary_abi_verified_count": 10,
+    "total_accepted_relations": 22,
+    "total_candidate_point_checks": 77,
+    "total_second_pass_checks": 81
+  }
+}

@@ -1,0 +1,119 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-NONLINEAR-ELLIPTIC-ORBIT-PRODUCT-R113-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_fixed_orbit_and_product_tree_scoped_negative
+run_count: 1
+status: fixed_orbit_and_standard_product_closed_transposed_leaf_generator_open
+labels:
+  - target-specialized
+  - elliptic-orbit
+  - nonlinear-product
+  - product-tree
+  - source-adjoint
+  - exact-negative
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R105-R108-R110-R111-R112
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Construct or refute a gauge-invariant nonlinear elliptic orbit-product
+  recurrence for the canonical C2 by C3 endpoint join.
+inputs:
+  - path: p1553_5a5c_gauge_normalized_endpoint_query2p1_probe_r112.py
+    sha256: d556faf03c6c9ec5448b40754582e2f57c42cdb15a64a007e74581a49a3e8a34
+  - path: p1553_5a5c_gauge_normalized_endpoint_query2p1_probe_report_r112.json
+    sha256: 3fa72cd2fd1ea45efc0db0946fac71ce42d325327d282a269439f61fe1719db2
+  - path: frozen_5a5c_gauge_normalized_endpoint_query2p1.json
+    sha256: 0e817b083bb044ae719d70ed6db7d8e4bd328ab06d644d5c96a4f4c7e6ab2085
+  - path: gauge_normalized_endpoint_index_ledger.json
+    sha256: 98feb6e98a004219d16a15421d59f1f69afd414044a61bba09232b9af627973e
+  - path: query2p1_subset_source_replay.json
+    sha256: b5bb8bf663f5b24bc74511b10c77cc6b693577266aba5b037c191f18dade51de
+  - path: query2p1_exceptional_controls.json
+    sha256: 110d294b56f23a917a2b15291bfa4eccc8c2fe9416aef84f8bf51b9e97ee1478
+  - path: factor_logs_and_identical_descent_r112.json
+    sha256: 05adbed7775de1ba91058bb320b861eda03fa683a13910c307a2b873d7373ff3
+  - path: p1553_5a5c_gauge_normalized_endpoint_query2p1_probe_gate_r112.md
+    sha256: d8de8e795feb08ebf967b9f10aa4b4f41919b4e808aa8f0bdaa88c206b7015ac
+  - path: p1553_5a5c_gauge_normalized_endpoint_query2p1_probe_parent_report_r112.yaml
+    sha256: 82fda11f8c376fb127b3f7bd384fb52ec4c7fd70f6dc1cc4ece447e7647aaf19
+  - path: p1553_r35_artifact_index_README.md
+    sha256: 9f4371eefd5e4019833eef858e3bda79d41aff0c5d7b861c71a5987a96acc392
+artifacts:
+  - path: p1553_5a5c_nonlinear_elliptic_orbit_product_probe_r113.py
+    sha256: 126a2405ae94aa01143ecdf88927f7f4fedb95922aeb7539b467516c97979e1c
+  - path: p1553_5a5c_nonlinear_elliptic_orbit_product_probe_report_r113.json
+    sha256: 5b961649fa71ced6b049a3500316114b3c9f3806b5b61639471d9a6f86b01102
+  - path: frozen_5a5c_nonlinear_elliptic_orbit_product.json
+    sha256: 1ffc99132f13f640b170bd2325bec13a196982bb26e377ce8230d2944428f907
+  - path: elliptic_orbit_product_recurrence_ledger.json
+    sha256: 6dbbe7b38e4a2e67584c80e70cbfc3be4745ab7895eccad19192785965edc754
+  - path: orbit_product_subset_source_replay.json
+    sha256: ef6bcec03bde76982453f5d508f6cdf9b6f32ba9ea1bca36ce143715b9dbb3df
+  - path: orbit_product_exceptional_controls.json
+    sha256: 716969c248a88870109d92caf821e9cd26b1f92ccd719f6b2dea5b76553ba3b4
+  - path: factor_logs_and_identical_descent_r113.json
+    sha256: f9f2e0ae9da91f59c3844e9139ef72f768ad2c56f44a8c1dc45229781c1f7ecf
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_nonlinear_elliptic_orbit_product_probe_r113.py
+    sha256: 5fa20d98ec649e0e8900b8aa77dd0c24f7f44098237bf50b40b4e034eb0847ba
+  - path: p1553_5a5c_nonlinear_elliptic_orbit_product_probe_gate_r113.md
+    sha256: d1939734367f92798ec40b89f9954ff0c9fe3bf07c6ad0bdaeb33e9a5fccad94
+verified_statements:
+  - >-
+    Every C3 endpoint set is a nonempty proper subset of a prime-order group
+    and therefore has trivial translation stabilizer.
+  - >-
+    Canonical C3 endpoint orderings have nonconstant successor differences,
+    while every nonzero fixed translation has full group orbit length B^5.
+  - >-
+    Order-one prefix products and exact product trees replay all target and
+    no-relation roots and all eighteen R112 sources.
+  - >-
+    Bounded prefix state does not reduce the B^3 membership-leaf generation
+    count or product-tree state.
+  - >-
+    Target-independent endpoint zero support occupies at least 99.4 percent
+    of each toy source body and has B^5 occurrence degree.
+scoped_failures:
+  fixed_translation_c3_orbit: failed
+  standard_product_tree_inside_caps: failed
+  bounded_prefix_state_as_low_work: failed
+  exact_product_root_and_source_replay: passed
+  transposed_nonuniform_leaf_generator: unsupplied
+  generic_multiplicity_and_integer_lift: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - arbitrary variable-coefficient nonlinear recurrences
+  - transposed nonuniform C5 leaf generation
+  - general arithmetic-circuit and generic-prime lower bounds
+admission:
+  passed_obligations: 8
+  obligation_count: 16
+  scoped_negative_admitted: true
+  lane_admitted: false
+result:
+  actual_and_matched_instance_count: 16
+  exact_relation_source_count: 18
+  c3_translation_stabilizers_trivial: true
+  nonzero_translation_orbit_exponent_B: 5
+  prefix_product_order: 1
+  prefix_product_state_dimension: 1
+  leaf_generation_exponent_B: 3
+  endpoint_zero_divisor_occurrence_exponent_B: 5
+  minimum_endpoint_support_ratio: 0.9943310657596371
+  exact_source_locator_complete: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_FIXED_TRANSLATION_ORBIT_AND_STANDARD_PRODUCT_TREE__REJECT_BOUNDED_PREFIX_STATE_AS_LOW_WORK__MERGE_WITH_IDEA006_IDEA012_R4_R97_R100__PRESERVE_TRANSPOSED_NONUNIFORM_C5_LEAF_GENERATOR__NO_LOCATOR__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one transposed nonuniform C5 leaf generator, charging
+  target updates, source adjoint, complete charts, markers, logs, and descent.

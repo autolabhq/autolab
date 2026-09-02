@@ -1,0 +1,76 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R38-TARGET-WALK-SUPPORT-WORK-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T08:20:42Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R38 is a new scoped theorem
+  and toy-control gate requiring independent review. It finds a genuine
+  low-boundary pencil but closes explicit changed-point target walks after
+  correlated batch success is charged.
+bindings:
+  r37_bundle_hash_list_sha256: a4541b34c8a221cd0a1325f2e97cb1d809b01f3a46c8ff2ca4d7d59c9cb7ff58
+  r37_staging_receipt_sha256: a8f3d76bd257b703b5baa121cfeac7271459495cd667f4a321e7326c44977f2a
+  r38_gate_sha256: ecacb63d18cc2e4478fa0d3c6b71930a4ba4e0a50f3866bd46752ed7c37f7aa5
+  r38_parent_report_sha256: 7374e5ab7e91bfb7d8fca7461af360cb4377c78e1657bdd6d5b4e9cd75020e89
+  r38_selfcheck_script_sha256: a750f12e3aa8840f63e4b32ff1f783f00086f0d2c4244bb2c6a70614488a5de8
+  r38_selfcheck_report_sha256: 8f724a3b9c1675343e286bdad8dabdfb44038e7f316300076223fbc8ebe678d1
+  r38_artifact_index_sha256: 75b4ff8f00364ff6b7bcb096fadaa83fe930accc3e2f7a592d22604601b2c29f
+  r38_bundle_hash_list_sha256: 4aa30dd51575016598aebdc1debda7d2ccbf0864d396db86dabe398c0d995b7f
+result:
+  classification: low_boundary_pencil_exists_explicit_target_walk_density_cancels
+  toy_low_boundary_pencil: present
+  toy_degree: 3
+  toy_selected_fibers: 3
+  toy_selected_points: 9
+  toy_boundary_size: 1
+  toy_complete_plus_minus_domain: 7
+  universal_pencil_boundary_floor: rejected_at_toy_scale
+  explicit_target_walk_expected_hit_work: B^3
+  implicit_pencil_batch_operation: absent
+  asymptotic_low_boundary_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r38_hash_list: pass
+  r38_parent_yaml_parse: pass
+  arbitrary_target_walk_support_bound_checked: pass
+  explicit_changed_point_work_bound_checked: pass
+  repeated_mask_expected_work_checked: pass
+  exact_degree_three_pencil_concurrency_checked: pass
+  selected_subgroup_fibers_checked: pass
+  one_path_boundary_checked: pass
+  r38_selfcheck_replay_matches_report: pass
+  clean_temporary_replay_with_r16_through_r38_gates_and_r38_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T08_20_42Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the cancellation theorem is scoped to explicit changed-point scans
+  - the toy pencil is not an asymptotic constructor
+  - the toy search uses scalar labels and is not oracle-free
+  - no target, R10, rank, logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Build or refute an implicit pencil-level batch operation whose work is
+  sublinear in translated endpoint support and which returns one marked
+  intersection. Test saturated norms, resultants, or low-degree recurrences
+  from H_C(g), the addition surface, and the line-pencil control under setup
+  B^(9/4+o(1)) and total masked-descent work below B^(5/2-o(1)), then bind any
+  survivor to R10, rank, logs, and descent.

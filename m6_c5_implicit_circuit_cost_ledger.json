@@ -1,0 +1,112 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_c5_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "r118_outer_batch_exponent_B": {
+      "decimal": 1.25,
+      "exact": "5/4"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "character_theorems": {
+    "base_field_algebraic_group_character": {
+      "nonconstant_base_field_algebraic_character_exists": false,
+      "proof": "A morphism E -> G_m is a nowhere-zero global regular function on the proper geometrically connected curve E, hence is constant; a group morphism is therefore the identity constant.",
+      "statement": "Every algebraic-group morphism E -> G_m is trivial."
+    },
+    "embedding_degree": {
+      "coordinate_representation_base_field_words_at_least": "k",
+      "definition": "k=ord_q(p), the least k with q dividing p^k-1",
+      "independent_torsion_field": "may require F_(p^k) or a further extension; k remains a lower-bound extension degree for pairing values",
+      "one_extension_field_operation_base_field_cost_at_least": "Omega(k)",
+      "qth_root_of_unity_field": "mu_q is contained in F_(p^k)",
+      "uniform_subpolynomial_embedding_degree_assumed": false
+    },
+    "independent_torsion_pairing_character": {
+      "five_sum_equivalence": "X1+...+X5=T iff chi_R(X1)*...*chi_R(X5)=chi_R(T)",
+      "requires_independent_q_torsion_or_equivalent_pairing_input": true,
+      "source_backpointer_preserved": true,
+      "statement": "If R in E[q] satisfies e_q(P,R)!=1, then chi_R(X)=e_q(X,R) is an injective homomorphism G -> mu_q."
+    },
+    "self_weil_pairing": {
+      "nontrivial_character_from_two_inputs_in_G": false,
+      "proof": "The Weil pairing is bilinear and alternating.",
+      "statement": "For a cyclic subgroup G=<P>, e_q(aP,bP)=1 for all a,b."
+    }
+  },
+  "pairing_cost_parameter": {
+    "embedding_degree": "k=ord_q(p)",
+    "embedding_degree_exponent_B": "log_B(k)",
+    "miller_loop_extension_operations": "O(log q)",
+    "one_target_character_base_field_exponent_B": "log_B(k)",
+    "polylog_query_requires": "k=B^(o(1))",
+    "r118_full_batch_base_field_exponent_B": "5/4+log_B(k)",
+    "uniform_generic_prime_requirement_proved": false
+  },
+  "r82_fixture_boundary": {
+    "all_finite_r82_embedding_degrees": 2,
+    "all_r82_curves_supersingular_j_zero": true,
+    "generic_asymptotic_credit": false
+  },
+  "routes": [
+    {
+      "nontrivial_route_exists": false,
+      "reason": "Hom_alg_groups(E,G_m)=0",
+      "route_id": "base_field_algebraic_group_character"
+    },
+    {
+      "nontrivial_route_exists": false,
+      "reason": "alternation makes e_q(G,G)=1",
+      "route_id": "self_weil_pairing_inside_cyclic_subgroup"
+    },
+    {
+      "exact_c5_product_encoding": true,
+      "independent_torsion_setup_and_extension_charged": true,
+      "inside_query_cap_condition": "k=B^(o(1))",
+      "route_id": "independent_q_torsion_pairing_character",
+      "uniform_inside_query_cap": false
+    },
+    {
+      "inside_setup_cap": false,
+      "random_deck_output_support_inherited": true,
+      "route_id": "small_embedding_degree_pairing_then_explicit_c5",
+      "state_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      }
+    },
+    {
+      "inside_setup_cap": false,
+      "route_id": "small_embedding_degree_pairing_then_current_k6_index",
+      "state_exponent_B": {
+        "decimal": 4.125,
+        "exact": "33/8"
+      }
+    },
+    {
+      "mov_transfer_not_membership_index": true,
+      "requires_finite_field_discrete_logarithm": true,
+      "route_id": "pairing_image_to_scalar_exponents",
+      "unit_cost_discrete_log_oracle_allowed": false
+    },
+    {
+      "exact_circuit_constructed": false,
+      "general_lower_bound_claimed": false,
+      "route_id": "small_embedding_degree_suboutput_multiplicative_c5_membership_source_circuit",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.m6_c5_implicit_circuit_cost_ledger.r120.v1",
+  "semantic_dedup": {
+    "nearby_idea": "ECDLP-IDEA-008 / P1542 pairing lift-return",
+    "nearby_scope": "pairing inversion, distortion lift, and return geometry",
+    "new_idea_id_claimed": false,
+    "r120_distinct_scope": "forward pairing character for exact C5 membership and source recovery"
+  }
+}

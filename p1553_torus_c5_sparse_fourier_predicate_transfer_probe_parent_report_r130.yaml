@@ -1,0 +1,110 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-SPARSE-FOURIER-PREDICATE-TRANSFER-R130-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_finite_field_transfer_counterexample_and_scoped_complex_uncertainty_bound
+run_count: 1
+status: order_two_finite_field_or_nonfourier_shared_predicate_dag_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - fourier-uncertainty
+  - chebotarev-transfer
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R123-R129
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the sharp complex cyclic Fourier uncertainty theorem can
+  be charged as a lower bound against shared selector predicates in the
+  actual finite pairing fields.
+inputs:
+  - path: p1553_torus_c5_piecewise_selector_decision_dag_probe_r129.py
+    sha256: 0296c7a71284b8d376720791eb73a768fe6446ea90ac0ce29a7b6a3b9435f1f5
+  - path: p1553_torus_c5_piecewise_selector_decision_dag_probe_report_r129.json
+    sha256: 3ff1da9d4eb76fe023432492ad0ad6452d1aa69dd51cea98e6469b3191de9402
+  - path: frozen_torus_c5_piecewise_selector_decision_dag.json
+    sha256: a10da885fbae4070e5a88591d53e1e716e40b26f31848661980aeb13a8e49e3d
+  - path: torus_c5_piecewise_selector_decision_dag_cost_ledger.json
+    sha256: 2948aea2107d53d5c9b700f20611c28f28c3a3933378510c9d625b80272334b6
+  - path: torus_c5_piecewise_selector_decision_dag_replay.json
+    sha256: cb3f53214494107fe9b81cc73a11131da23743fa65c290d19d376236c4593bd4
+  - path: torus_c5_piecewise_selector_decision_dag_controls.json
+    sha256: 72d32caf2ee1fa748fc90481cf8061bec62e37e6b61f598e83b77e841d39aaa0
+  - path: factor_logs_and_identical_descent_r129.json
+    sha256: d4d28cc412d139ed9f9dc25a050b43cce225a9c0a87dca307b6a955f04a37a40
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_piecewise_selector_decision_dag_probe_r129.py
+    sha256: a8c34c8d3f173328390735d2cae1a5172436c1cd9b99712aaa99860e3903c621
+  - path: p1553_torus_c5_piecewise_selector_decision_dag_probe_gate_r129.md
+    sha256: 35026763fe6805e22935bb8f62480609f67a1f7e0c303c67f3d302a14d853c32
+  - path: p1553_torus_c5_piecewise_selector_decision_dag_probe_parent_report_r129.yaml
+    sha256: b9f9d21e9572e9978511b34e01a90dc4b9df62087aa8f915342386610783970e
+  - path: references/tao_uncertainty_cyclic_prime_math0308286.pdf
+    sha256: 244f4e79e667ee831e65d0cb0d8d42de4e354e83d576c65acaf391b0da519880
+  - path: references/emmrich_kunis_finite_field_chebotarev_2506.02947.pdf
+    sha256: 5a3b29fbaf5bd6f4833de1a63272bb7510179a92dc9b855d69b8b3dcb92cd627
+artifacts:
+  - path: p1553_torus_c5_sparse_fourier_predicate_transfer_probe_r130.py
+    sha256: b990d602bc7b15a90bea8bbd1cc9bc600d7cbcab73caeaedecd7e666a95c55a1
+  - path: p1553_torus_c5_sparse_fourier_predicate_transfer_probe_report_r130.json
+    sha256: afcb0fd152a95535b5f004d9d07774a9a375ea548b79919f47a6d15682dfdeda
+  - path: frozen_torus_c5_sparse_fourier_predicate_transfer.json
+    sha256: 1b4d4b5437b71d6ff9204296145bf88cf68a16d52155aa469bda394a8a61f204
+  - path: torus_c5_sparse_fourier_predicate_transfer_cost_ledger.json
+    sha256: 552c3cc83c1b1635bd046845c2f4e8af6cd88c934918bfbb9303fc26eda67e8b
+  - path: torus_c5_sparse_fourier_predicate_transfer_replay.json
+    sha256: 11eba087140a633fe286c35ecd41fa2eb36ed9ae2f12e02eb1dd6e5631b1ae1c
+  - path: torus_c5_sparse_fourier_predicate_transfer_controls.json
+    sha256: 2c30b825eaf7a88b66be04dd29647dfc40aab2016db43c5c9c5957dbc8c95b1d
+  - path: factor_logs_and_identical_descent_r130.json
+    sha256: b0c80b3af457cd080ae1cbf6e703e22fe831085e638fade844ef6d41fafc30a6
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_sparse_fourier_predicate_transfer_probe_r130.py
+    sha256: 5d33f9e894264362d0c663a45b7bdbdf8edf2c854cc9bc13880adedc3ea4564f
+  - path: p1553_torus_c5_sparse_fourier_predicate_transfer_probe_gate_r130.md
+    sha256: 5737c29c69068dfb01ff8bd9b6aab0f210b362e4060f2d19d23e91fe474de640
+verified_statements:
+  - >-
+    Tao's sharp support inequality closes the complex sparse-Fourier zero
+    test and exact-indicator grammars at the frozen setup cap.
+  - >-
+    Every actual R82 pairing field has characteristic=6q-1 and
+    ord_q(characteristic)=2, outside the pinned primitive finite-field
+    Chebotarev sufficient condition.
+  - >-
+    Over GF(2^10), an exact five-mode polynomial has exactly five zeros on
+    an order-11 subgroup and its corresponding 5-by-5 Fourier minor has
+    rank four.
+  - >-
+    The complex sparse-zero consequence therefore cannot be transferred to
+    arbitrary finite coefficient fields without a field-specific theorem.
+scoped_failures:
+  complex_sparse_fourier_color_zero_test: rejected_B15O4_modes
+  complex_exact_color_indicator: rejected_B5_modes
+  unproved_complex_to_finite_field_transfer: rejected
+  actual_order_two_finite_field_fourier_minor_theorem: open
+  nonfourier_shared_predicate_decision_dag: open
+  high_degree_low_slp_finite_field_selector: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 12
+  total_obligations: 20
+  lane_admitted: false
+next_action: >-
+  Construct a finite-field shared-predicate selector DAG directly, or prove
+  a field-specific uncertainty/minor theorem for the actual
+  ord_q(characteristic)=2 pairing families. Avoid importing complex
+  Chebotarev bounds without transfer, return exact C2+C3 sources or an empty
+  certificate in polylogarithmic arbitrary-target work, fit
+  B^(9/4+o(1)) state, avoid field DLP, and include rank, logs, identical
+  descent, memory, field-operation, and bit costs.

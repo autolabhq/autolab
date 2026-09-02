@@ -1,0 +1,535 @@
+{
+  "admission": {
+    "failures": [
+      "first unary norm fills (4B+1)^3 coefficient cube",
+      "first-stage state exponent 3 exceeds 9/4",
+      "suffix reduction is inactive before the B^3 body appears",
+      "R73 multiplicity, source, and dyadic controls are not reached"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 9,
+    "passed_obligation_count": 4
+  },
+  "aggregate": {
+    "all_B_ge_6_suffix_reductions_inactive_at_first_stage": true,
+    "all_products_full_cube": true,
+    "all_single_factors_full_5_cube": true,
+    "all_symbolic_specializations_match_r72": true,
+    "family_count": 4,
+    "large_prefix_count": 8,
+    "maximum_support_count": 35937,
+    "prefix_instance_count": 20
+  },
+  "breakthrough": false,
+  "classification": "S6_FIRST_ITERATED_NORM_HAS_FULL_THREE_DIMENSIONAL_SUPPORT",
+  "cost_ledger": {
+    "first_stage_degree_each_axis": "4B",
+    "first_stage_full_support_formula": "(4B+1)^3",
+    "first_stage_state_exponent_B": 3.0,
+    "first_stage_work_lower_bound_in_frozen_representation_B": 3.0,
+    "lane_inside_caps": false,
+    "not_an_arithmetic_circuit_lower_bound": true,
+    "online_workspace_cap_exponent_B": 1.25,
+    "setup_state_cap_exponent_B": 2.25,
+    "suffix_polynomial_degree_B": 2.0,
+    "suffix_reduction_boundary": "For B>4, first-stage Z degree 4B is below the degree-B^2 suffix modulus, so reduction changes no coefficient."
+  },
+  "disposition": "REJECT_EXPANDED_S6_ITERATED_NORM_MOD_SUFFIX_GRAMMAR_ONLY__FOUR_STANDARD_CURVES__B2_3_4_6_8__EVERY_S4_FACTOR_FULL_5_CUBE__EVERY_FIRST_NORM_PRODUCT_FULL_4B_PLUS1_CUBED_SUPPORT__B3_STATE__SUFFIX_REDUCTION_INACTIVE_FOR_B_GT4__NO_CIRCUIT_LOWER_BOUND__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "families": [
+    {
+      "family_id": "secp256k1",
+      "field_bits": 256,
+      "prefixes": [
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 2,
+          "factor_support_counts": [
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 729,
+          "product_degree_bounds": {
+            "x_first": 8,
+            "x_second": 8,
+            "z": 8
+          },
+          "suffix_modulus_degree_lower_bound": 4,
+          "support_count": 729,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 3,
+          "factor_support_counts": [
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 2197,
+          "product_degree_bounds": {
+            "x_first": 12,
+            "x_second": 12,
+            "z": 12
+          },
+          "suffix_modulus_degree_lower_bound": 9,
+          "support_count": 2197,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 4,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 4913,
+          "product_degree_bounds": {
+            "x_first": 16,
+            "x_second": 16,
+            "z": 16
+          },
+          "suffix_modulus_degree_lower_bound": 16,
+          "support_count": 4913,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 6,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 15625,
+          "product_degree_bounds": {
+            "x_first": 24,
+            "x_second": 24,
+            "z": 24
+          },
+          "suffix_modulus_degree_lower_bound": 36,
+          "support_count": 15625,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": false
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 8,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 35937,
+          "product_degree_bounds": {
+            "x_first": 32,
+            "x_second": 32,
+            "z": 32
+          },
+          "suffix_modulus_degree_lower_bound": 64,
+          "support_count": 35937,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": false
+        }
+      ],
+      "specialization_replay": {
+        "specialization_matches_r72": true,
+        "symbolic_support_count": 125
+      }
+    },
+    {
+      "family_id": "nist_p256",
+      "field_bits": 256,
+      "prefixes": [
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 2,
+          "factor_support_counts": [
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 729,
+          "product_degree_bounds": {
+            "x_first": 8,
+            "x_second": 8,
+            "z": 8
+          },
+          "suffix_modulus_degree_lower_bound": 4,
+          "support_count": 729,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 3,
+          "factor_support_counts": [
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 2197,
+          "product_degree_bounds": {
+            "x_first": 12,
+            "x_second": 12,
+            "z": 12
+          },
+          "suffix_modulus_degree_lower_bound": 9,
+          "support_count": 2197,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 4,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 4913,
+          "product_degree_bounds": {
+            "x_first": 16,
+            "x_second": 16,
+            "z": 16
+          },
+          "suffix_modulus_degree_lower_bound": 16,
+          "support_count": 4913,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 6,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 15625,
+          "product_degree_bounds": {
+            "x_first": 24,
+            "x_second": 24,
+            "z": 24
+          },
+          "suffix_modulus_degree_lower_bound": 36,
+          "support_count": 15625,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": false
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 8,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 35937,
+          "product_degree_bounds": {
+            "x_first": 32,
+            "x_second": 32,
+            "z": 32
+          },
+          "suffix_modulus_degree_lower_bound": 64,
+          "support_count": 35937,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": false
+        }
+      ],
+      "specialization_replay": {
+        "specialization_matches_r72": true,
+        "symbolic_support_count": 125
+      }
+    },
+    {
+      "family_id": "nist_p384",
+      "field_bits": 384,
+      "prefixes": [
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 2,
+          "factor_support_counts": [
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 729,
+          "product_degree_bounds": {
+            "x_first": 8,
+            "x_second": 8,
+            "z": 8
+          },
+          "suffix_modulus_degree_lower_bound": 4,
+          "support_count": 729,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 3,
+          "factor_support_counts": [
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 2197,
+          "product_degree_bounds": {
+            "x_first": 12,
+            "x_second": 12,
+            "z": 12
+          },
+          "suffix_modulus_degree_lower_bound": 9,
+          "support_count": 2197,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 4,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 4913,
+          "product_degree_bounds": {
+            "x_first": 16,
+            "x_second": 16,
+            "z": 16
+          },
+          "suffix_modulus_degree_lower_bound": 16,
+          "support_count": 4913,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 6,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 15625,
+          "product_degree_bounds": {
+            "x_first": 24,
+            "x_second": 24,
+            "z": 24
+          },
+          "suffix_modulus_degree_lower_bound": 36,
+          "support_count": 15625,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": false
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 8,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 35937,
+          "product_degree_bounds": {
+            "x_first": 32,
+            "x_second": 32,
+            "z": 32
+          },
+          "suffix_modulus_degree_lower_bound": 64,
+          "support_count": 35937,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": false
+        }
+      ],
+      "specialization_replay": {
+        "specialization_matches_r72": true,
+        "symbolic_support_count": 125
+      }
+    },
+    {
+      "family_id": "nist_p521",
+      "field_bits": 521,
+      "prefixes": [
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 2,
+          "factor_support_counts": [
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 729,
+          "product_degree_bounds": {
+            "x_first": 8,
+            "x_second": 8,
+            "z": 8
+          },
+          "suffix_modulus_degree_lower_bound": 4,
+          "support_count": 729,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 3,
+          "factor_support_counts": [
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 2197,
+          "product_degree_bounds": {
+            "x_first": 12,
+            "x_second": 12,
+            "z": 12
+          },
+          "suffix_modulus_degree_lower_bound": 9,
+          "support_count": 2197,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 4,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 4913,
+          "product_degree_bounds": {
+            "x_first": 16,
+            "x_second": 16,
+            "z": 16
+          },
+          "suffix_modulus_degree_lower_bound": 16,
+          "support_count": 4913,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": true
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 6,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 15625,
+          "product_degree_bounds": {
+            "x_first": 24,
+            "x_second": 24,
+            "z": 24
+          },
+          "suffix_modulus_degree_lower_bound": 36,
+          "support_count": 15625,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": false
+        },
+        {
+          "all_factors_full_5_cube": true,
+          "deck_size": 8,
+          "factor_support_counts": [
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125,
+            125
+          ],
+          "full_cube_coefficient_count": 35937,
+          "product_degree_bounds": {
+            "x_first": 32,
+            "x_second": 32,
+            "z": 32
+          },
+          "suffix_modulus_degree_lower_bound": 64,
+          "support_count": 35937,
+          "support_density": 1.0,
+          "support_is_full_cube": true,
+          "z_reduction_active": false
+        }
+      ],
+      "specialization_replay": {
+        "specialization_matches_r72": true,
+        "symbolic_support_count": 125
+      }
+    }
+  ],
+  "fresh_target_descent_complete": false,
+  "grammar": {
+    "first_stage": "product over a3 of S4(X1,X2,a3,Z), then reduce modulo the suffix support polynomial",
+    "grammar_id": "s6_iterated_norm_mod_suffix_v1",
+    "not_product_resultant_in_query_parameter": true,
+    "not_residual_key_table": true,
+    "representation": "expanded trivariate coefficient dictionary",
+    "support_adaptive": false
+  },
+  "next_action": "Leave expanded iterated norms. Freeze a transposed scalar-functional grammar that computes only the suffix gcd or zero certificate from the factored unary S4 norm, without representing its trivariate coefficient body. Require R73 multiplicity and source replay.",
+  "schema": "p1553.s6_iterated_norm_support_probe.r75.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "r73_resultant_valuation_grammar": {
+      "path": "p1553_resultant_valuation_trace_grammar_report_r73.json",
+      "sha256": "00f750c15644acdaea32bbbbe9b407071cd3bf6a5cf2268ce075c55bd9a29915"
+    },
+    "r74_residual_decision_diagram": {
+      "path": "p1553_s6_residual_decision_diagram_probe_report_r74.json",
+      "sha256": "1558482f504bd5e05b112464ee7c6734dd30ee518789735ac7abc8c305a5f740"
+    }
+  }
+}

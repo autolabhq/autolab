@@ -1,0 +1,109 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-DEGREE-THREE-INNER-COMPOSITION-R43-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exhaustive_finite_field_pencil_enumeration
+  model_scope: rational_degree_three_inner_maps_on_r38_toy_curve
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_EXHAUSTIVE_TOY_COMPOSITION_NEGATIVE_GATE
+summary: >-
+  Every rational degree-three pencil on the R38 toy curve is represented by
+  one of two subgroup-coset embeddings and one of 37,237 rational line-pencil
+  centers. Exhaustive enumeration gives maximum complete three-point subgroup
+  fiber coverage 51 in the subgroup class and zero in the other coset, while
+  a degree-three by degree-three composition with nine selected outer values
+  needs 81 covered points in 27 complete inner fibers. The original R38 pencil
+  maps every one of 10,506 length-81 orbit intervals to at least 60 inner
+  values, above the compositional maximum 27. Composition is closed on the toy;
+  primitive degree-nine pencils remain open.
+inputs:
+  - path: staged/p1553_near_period_run_compiler_gate_r31.md
+    sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+  - path: staged/p1553_target_walk_support_work_gate_r38.md
+    sha256: ecacb63d18cc2e4478fa0d3c6b71930a4ba4e0a50f3866bd46752ed7c37f7aa5
+  - path: staged/p1553_implicit_pencil_norm_coboundary_gate_r39.md
+    sha256: 2901305c2ac83fe51d2f23957389cb2dfb6d58b3c4bc0d2e439ad4ef3f6085f6
+  - path: staged/p1553_single_interval_pencil_dlp_reduction_gate_r42.md
+    sha256: 8a8de8726e4fc9542f97cf7e1ba4fc54596307cc544da0d0b18b588553022dae
+  - path: staged/p1553_r42_bundle.sha256
+    sha256: fa218b20a5b79da63d5883497606c4d1fa3f7fd1a9ad9417c410f7c289ba20b8
+  - path: staged/p1553_r42_staging_receipt.yaml
+    sha256: 8e128b8cd0452a24f64407a5989569230cd1b6dd3ad66061364b1f149b77ab56
+outputs:
+  - path: staged/p1553_degree_three_inner_composition_gate_r43.md
+    sha256: b02901b1a822ce98f886146d5a04d2ea35b9515ec549358d2c4b7c02b6700ec8
+  - path: staged/p1553_degree_three_composition_exhaustive_r43.py
+    sha256: ad36272041959e7559ef4c2556c02f04ab7aba04293f2a8c617d04e2ce4072cc
+  - path: staged/p1553_degree_three_composition_exhaustive_report_r43.json
+    sha256: 948f2a034addc4b4930934d0a6594d86d2cfe2cee46241f73ab0518617d34c02
+frozen_parameters:
+  field_prime: 193
+  curve_order: 206
+  subgroup_order: 103
+  inner_degree: 3
+  outer_degree: 3
+  selected_outer_values: 9
+  selected_points_required: 81
+  complete_inner_fibers_required: 27
+theorems:
+  - >-
+    A degree-three by degree-three composition selecting nine outer values and
+    81 distinct subgroup points needs 27 complete three-point inner fibers.
+  - >-
+    Every rational degree-three map on the toy curve is covered by a rational
+    line pencil in one of the two subgroup-coset embedding classes.
+  - >-
+    Exhaustive maximum complete triple coverage is 51 in the subgroup class
+    and zero in the other coset, below the required 81.
+controls:
+  all_rational_curve_points_enumerated: true
+  all_projective_pencil_centers_enumerated: true
+  base_points_on_curve_excluded: true
+  both_subgroup_cosets_checked: true
+  original_pencil_all_steps_and_starts_checked: true
+  primitive_degree_nine_pencils: admitted_outside_gate
+toy_control:
+  projective_plane_points: 37443
+  rational_pencil_centers_off_curve: 37237
+  embedding_classes: 2
+  subgroup_maximum_complete_triple_coverage: 51
+  subgroup_centers_at_maximum: 2
+  outside_coset_maximum_complete_triple_coverage: 0
+  original_pencil_length_81_intervals_tested: 10506
+  original_pencil_minimum_inner_values: 60
+  original_pencil_intervals_at_most_27_values: 0
+  replay_matches_report: true
+result:
+  classification: exhaustive_toy_composition_negative_primitive_degree_nine_open
+  degree_three_by_degree_three_composition: absent_on_toy
+  primitive_degree_nine_pencil: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - the exhaustive result is for rational degree-three maps on one toy curve
+  - primitive degree-nine pencils are not covered
+  - no asymptotic theorem, target locator, R10, rank, logs, or descent
+deduplication:
+  - R38 owns the original degree-three low-boundary pencil
+  - R39 owns the first literal self-composition failure
+  - R42 owns the single-interval pencil DLP reduction
+  - R43 exhausts all rational degree-three inner maps on the same toy curve
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_EXHAUSTIVE_TOY_COMPOSITION_NEGATIVE_GATE__ALL_RATIONAL_DEGREE3_INNER_PENCILS_ON_R38_CURVE_ENUMERATED__37237_CENTERS_IN_EACH_OF_TWO_TRANSLATION_CLASSES__SUBGROUP_COMPLETE_TRIPLE_COVERAGE_MAX51_REQUIRED81__OTHER_COSET_COMPLETE_TRIPLE_COVERAGE_ZERO__ALL10506_ORIGINAL_PENCIL_LENGTH81_INTERVALS_HAVE_AT_LEAST60_VALUES__DEGREE3_BY_DEGREE3_COMPOSITION_CLOSED_ON_TOY__PRIMITIVE_DEGREE9_PENCIL_OPEN__NO_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Search primitive degree-nine pencils. Partition a length-81 orbit interval
+  into nine degree-nine blocks with equal Abel sum, construct their section
+  vectors in H^0(E,L), and test whether all nine vectors have projective rank
+  two. Start with structured equal-sum partitions such as normal 9-by-9
+  magic-square rows, retain negative rank witnesses, and require a rank-two
+  survivor to pass R42's all-secret marked target test.

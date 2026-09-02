@@ -1,0 +1,141 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-LOG-DERIVATIVE-ELLIPTIC-CAUCHY-TRACE-R168-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: logarithmic_candidate_poles_and_denominator_aware_trace_interface
+run_count: 1
+status: denominator_aware_elliptic_cauchy_trace_mod_u_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - logarithmic-derivative
+  - invariant-differential
+  - cauchy-trace
+  - zero-divisor
+  - local-residue
+  - full-cost
+  - scoped-boundary
+owner: P1553-R147-R166-R167-EAGEN-2022-596
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Differentiate the R167 elliptic-resultant identity into an additive trace,
+  prove that every regularized Kummer candidate remains a nonzero-residue pole,
+  and expose the denominator-aware trace rather than a value-only inverse.
+inputs:
+  - path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_r167.py
+    sha256: ba57052082668daf38027b928d88b0eca210510e2f6a6784ce3e0e8b481e1cd3
+  - path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_report_r167.json
+    sha256: 1d2f009525ef9d54a0f538d3a0a8cefe8451d4d97933b91b31ed1bb5c0b47e3c
+  - path: frozen_m6_generalized_target_divisor_weil_reciprocity_swap.json
+    sha256: 47d3d39017faa9adc1e79abc939c658c51272097dcb8620e72db51ce7543f492
+  - path: m6_generalized_target_divisor_weil_reciprocity_swap_cost_ledger.json
+    sha256: a84dc45c92d9a17ef9e9b73ddad426a8fe5111e72b6cd974fd5968841ebd10c3
+  - path: m6_generalized_target_divisor_weil_reciprocity_swap_replay.json
+    sha256: cf983cfdb3428503634d84a5a69305b71ac70e44338c37acb24e646e5593f6d0
+  - path: m6_generalized_target_divisor_weil_reciprocity_swap_controls.json
+    sha256: f78db8e5e5195727087552c8d8a122037eb1f0a0c5d469594ef08a070c093f83
+  - path: generalized_miller_elliptic_resultant_swap_r167.json
+    sha256: 95a42cb9d499012b676d96a77ca7c8a066e0cc6ade79e6cf9d0dd9ccfb674247
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_r167.py
+    sha256: 8c098e9a820ea7967cc700544aa64cc419750806c67e7c3dca395f271ae505e9
+  - path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_gate_r167.md
+    sha256: 41c4869bb231dfa2d0de1bb0d280aa34bd95903ed425792b80a84c762b845e3b
+  - path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_parent_report_r167.yaml
+    sha256: 0952a627b3bd5acd95e622533627f54b339605f92e9187be68d72431e7931db7
+  - path: references/eagen_ecip_weil_reciprocity_2022_596.pdf
+    sha256: 5310b35d288a9462ff704eb77e7651d18f681a5b560cfb2919d1cfd0e01ae09e
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_report_r147.json
+    sha256: a419f994907d392b8d8cec7a3af6dc0f3a67769350be7c1044e3de4320a69977
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_gate_r147.md
+    sha256: 7398ae8894fc40f710f76e2ec0e6f31726f283ca6fb9153f5258e0561537a6fe
+  - path: p1553_m6_kummer_x_translate_signed_verification_probe_report_r166.json
+    sha256: 94ee650b1302d231d946fc02f14d1c12b62a63bd9fba240a9d6a93e4bb986285
+  - path: p1553_m6_kummer_x_translate_signed_verification_probe_gate_r166.md
+    sha256: e98cd1ba5b73c591dae5882e9058fafbd6e548df3c2ae929563181bc84920d9c
+artifacts:
+  - path: p1553_m6_log_derivative_elliptic_cauchy_trace_probe_r168.py
+    sha256: 2bf35a1e4624d0832b710d36d25cdb50d5ff855793ed3bd3a80a42a3809b7400
+  - path: p1553_m6_log_derivative_elliptic_cauchy_trace_probe_report_r168.json
+    sha256: 82fbb81b136af357d4a78e5ef7bf29e7ce97002b8a95a7c93b42cc0bda7ed2c3
+  - path: frozen_m6_log_derivative_elliptic_cauchy_trace.json
+    sha256: 150dc58ef81575191a86497a43ceef092603c8661339acaa587f91a3f9d43645
+  - path: m6_log_derivative_elliptic_cauchy_trace_cost_ledger.json
+    sha256: 48bf265d3c6b19f72b0a242e63dec7aae75ac2026f641468d0e235c30f2d1412
+  - path: m6_log_derivative_elliptic_cauchy_trace_replay.json
+    sha256: 0b8d9231a701f5e85001245ffdd91e13a9bd79fc34162fa8b34109c6f0a76bae
+  - path: m6_log_derivative_elliptic_cauchy_trace_controls.json
+    sha256: e348e8a4b17d41775cbb6fed917f62f0c24b2fecec37abc5c59c9f9c85d490ab
+  - path: log_derivative_candidate_poles_and_trace_r168.json
+    sha256: 12731e6627c812951b35f53fccfa1610a763f3bf14c745544ff255affbf8660d
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_log_derivative_elliptic_cauchy_trace_probe_r168.py
+    sha256: 05d7ec8b9add06c4ea452ed1f61e8c8e83113593c8e5c24af354ece36af293df
+  - path: p1553_m6_log_derivative_elliptic_cauchy_trace_probe_gate_r168.md
+    sha256: 7063a5f6ba686e38682ab6e29f386ab56e7fb56097e288949cce73e130b2fcae
+verified_statements:
+  - >-
+    The invariant logarithmic differential dg/g has residue equal to the zero
+    multiplicity and preserves every candidate because N is below p.
+  - >-
+    Differentiating the R167 identity replaces the multiplicative resultant by
+    a corrected additive trace of Dh/h over S union -S.
+  - >-
+    Six controls contain 241 direct and swapped simple zero occurrences at 140
+    candidate roots, with maximum multiplicity four and no residue cancellation.
+  - >-
+    All six public P=T rational poles have nonzero residue -2n and are exactly
+    removed by the signed U,V equality prefilter and semantic factor-one rule.
+  - >-
+    Compact h and Dh/h state costs B^(5/4), while direct, raw swapped, and tensor
+    routes cost B^(7/2), B^(9/2), and B^(9/2), respectively.
+scoped_failures:
+  denominator_aware_transposed_elliptic_cauchy_trace_mod_u_below_rho: open
+  value_only_tensor_trace_candidate_locator: invalid_at_candidate_nonunits
+  direct_log_trace_table_below_rho: refuted_by_cost
+  raw_swapped_log_trace_table_below_rho: refuted_by_cost
+  tensor_quotient_below_rho: refuted_by_cost
+  deterministic_hash_to_curve_signed_difference_transfer: open
+  unconditional_total_attack_cost: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+unproved_or_outside_scope:
+  - an arithmetic-circuit lower bound for denominator-aware elliptic traces
+  - a sub-rho Fitting or subresultant trace operator modulo U
+  - deterministic hash-to-curve pseudorandomness for signed short forms
+admission:
+  passed_obligations: 24
+  total_obligations: 32
+  log_derivative_candidate_pole_interface_admitted: true
+  additive_elliptic_trace_linearization_admitted: true
+  denominator_aware_trace_constructor_admitted: false
+  lane_admitted: false
+result:
+  field_and_subgroup_order_exponent_B: 5
+  c3_divisor_degree_exponent_B: 9/4
+  target_count_exponent_B: 5/4
+  compact_h_and_dlog_h_state_exponent_B: 5/4
+  public_target_equality_prefilter_exponent_B: 9/4
+  direct_log_trace_table_exponent_B: 7/2
+  raw_swapped_log_trace_table_exponent_B: 9/2
+  tensor_quotient_state_exponent_B: 9/2
+  global_rho_exponent_B: 5/2
+  control_count: 6
+  candidate_pole_count: 140
+  candidate_zero_occurrence_count: 241
+  maximum_candidate_multiplicity: 4
+  public_target_equality_correction_count: 6
+  denominator_aware_elliptic_cauchy_trace_mod_u_complete: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_INVARIANT_LOG_DERIVATIVE_CANDIDATE_POLE_INTERFACE__241_DIRECT_AND_SWAPPED_ZERO_OCCURRENCES__140_NONZERO_RESIDUE_ROOTS__SIX_PUBLIC_EQUALITY_POLES_REGULARIZED__ADDITIVE_ELLIPTIC_TRACE__DIRECT_B7O2_RAW_B9O2_TENSOR_B9O2__DENOMINATOR_AWARE_TRACE_MOD_U_OPEN__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute a denominator-aware transposed elliptic Cauchy trace
+  modulo U below B^(5/2), preferably B^(9/4+o(1)), while preserving Fitting
+  information at candidate nonunits and forbidding nN, n^2, and tensor state.

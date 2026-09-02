@@ -1,0 +1,110 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-RATIONAL-CONVOLUTION-SUBALGEBRA-RIGIDITY-R150-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: actual_deck_rational_convolution_subalgebra_boundary
+run_count: 1
+status: finite_depth_target_specialized_u6_circuit_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - elliptic-curve
+  - compact-divisor
+  - cyclic-convolution
+  - rational-group-algebra
+  - cyclotomic-field
+  - galois-stabilizer
+  - nonlinear-powering
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R115-R149
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether nonlinear powering in a reusable rational cyclic
+  convolution quotient or deck-generated subalgebra implements the R149
+  compact-divisor exception.
+inputs:
+  - path: p1553_m6_actual_c6_shift_krylov_rank_probe_r149.py
+    sha256: 0faee973ce1bdc8deb0410eef0b5de429b526210b017fccea1e6ca1b67784ed8
+  - path: p1553_m6_actual_c6_shift_krylov_rank_probe_report_r149.json
+    sha256: cadfbb8804e79fb718c00f13bf58970482fe106e2a6fb14d6e8638b0a382d44f
+  - path: frozen_m6_actual_c6_shift_krylov_rank.json
+    sha256: 6edac765d2d426f0345080418bafbda91e3d5c149763e5cfac0cd604bb8ae8e8
+  - path: m6_actual_c6_shift_krylov_rank_cost_ledger.json
+    sha256: 9f647991bc492784c62cb07e5ee9bc66ff9516fe8fc602db3f6d3414f7ef4d1e
+  - path: m6_actual_c6_shift_krylov_rank_replay.json
+    sha256: 685f38f0683b6a6767b7c7b4a46055cf60537a9b567f884dd078aa4ee387989e
+  - path: m6_actual_c6_shift_krylov_rank_controls.json
+    sha256: ca13a7a2dd3137dfc1bf2c69a48bcc5e58df5951e81943f02244de9c84cb7b00
+  - path: factor_logs_and_identical_descent_r149.json
+    sha256: 2155cd38959d7117a762d5a4ef90b1fa55e708af536d252dd799cdba8441b4d3
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_actual_c6_shift_krylov_rank_probe_r149.py
+    sha256: 765c319bbacf0c062af77f2ba6677a3a9db862aed9d7a324016fd82866682051
+  - path: p1553_m6_actual_c6_shift_krylov_rank_probe_gate_r149.md
+    sha256: cee5fccdb2e59bd355e10168bad08e267b29b6a855e0c3ac112d934b1be98398
+  - path: p1553_m6_actual_c6_shift_krylov_rank_probe_parent_report_r149.yaml
+    sha256: b7240146539bd663851398d3ac21fc293658018baa4162790b229b95ed726d56
+artifacts:
+  - path: p1553_m6_rational_convolution_subalgebra_rigidity_probe_r150.py
+    sha256: 7f9217358c57a6cdb84f7f0d731e003e973096e4ff01a780ae0b3b8f482a755e
+  - path: p1553_m6_rational_convolution_subalgebra_rigidity_probe_report_r150.json
+    sha256: 598fd0b95622354f22bc6ce531fc02aa2b5f61a1578d06dae36fbd39086ae6d3
+  - path: frozen_m6_rational_convolution_subalgebra_rigidity.json
+    sha256: 04f989b1af422a1e42456bda7f95fbfdbb9941f709a75aed1de456d98c261e2b
+  - path: m6_rational_convolution_subalgebra_rigidity_cost_ledger.json
+    sha256: 57a022f3ffd5e149a95236f913cb612faff214f2ec2ef2d69a48f7af219017cd
+  - path: m6_rational_convolution_subalgebra_rigidity_replay.json
+    sha256: 4fb314326c46d9cf2988866435d4fdc7705f0dd28444c288002925d4cf833341
+  - path: m6_rational_convolution_subalgebra_rigidity_controls.json
+    sha256: cc838d5f5cd05b3c43ebfae096d3b9110fa06e02a2cb3ea10285155d119c2a28
+  - path: factor_logs_and_identical_descent_r150.json
+    sha256: cf0aa2174f836375165628813ee8f16ea29005a6345aec5af42f071f3367d1e5
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_rational_convolution_subalgebra_rigidity_probe_r150.py
+    sha256: e5ff8f6cc11cf7e252e1aa49b456942c7d9bcfae660707c0bf75b9626cf7bf03
+  - path: p1553_m6_rational_convolution_subalgebra_rigidity_probe_gate_r150.md
+    sha256: 1def188f9b0c5834889a937f7de9629f78b98c0e4f3b3249b1ba170a404483b6
+verified_statements:
+  - >-
+    For prime q, Q[C_q] splits as Q times Q(zeta_q), so its nonzero unital
+    quotient dimensions are 1, q-1, and q; augmentation is the only
+    one-dimensional quotient.
+  - >-
+    For deck element U and multiplier stabilizer H_C, the cyclotomic
+    conjugate degree is exactly (q-1)/|H_C|.
+  - >-
+    A campaign deck containing a nonzero atom satisfies |H_C|<=|C|, so a
+    reusable multiplication-closed representation containing U has
+    dimension at least (q-1)/|C|=B^(17/4-o(1)).
+  - >-
+    All eight actual finite decks have trivial multiplier stabilizer and
+    exact same-augmentation shifted-deck witnesses with different selected
+    C6 counts.
+  - >-
+    Verifier-only BSGS labels receive no candidate or asymptotic credit, and
+    the theorem does not cover fixed-depth nonhomomorphic U^6 circuits.
+scoped_failures:
+  finite_depth_target_specialized_u6_circuit: open
+  exact_integer_count_index: open
+  offline_online_transposed_atom_marginals: open
+  structured_generic_family_rank_and_density: open
+  factor_logs_without_verifier_labels: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 14
+  total_obligations: 24
+  rational_convolution_subalgebra_rigidity_admitted: true
+  reusable_multiplication_closed_route_negative_admitted: true
+  finite_depth_target_specialized_u6_circuit_admitted: false
+  lane_admitted: false
+next_action: >-
+  Construct one bounded-depth nonhomomorphic circuit specialized to U^6
+  and the B^(5/4) fixed marker batch. It must avoid q modes, q target
+  values, and the B^(9/4) C3 occurrence list, emit exact integer counts and
+  A/C marginals, and replay rank, factor logs, and identical descent.

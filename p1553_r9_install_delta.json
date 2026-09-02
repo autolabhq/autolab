@@ -1,0 +1,181 @@
+{
+  "schema": "crypto.autoresearch.merge_install_delta.v1",
+  "bundle_id": "P1553-R9-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compose_compare_and_merge",
+  "base_bundle": {
+    "bundle_id": "P1553-R8-20260719",
+    "manifest": "p1553_r8_install_delta.json",
+    "manifest_sha256": "54f5258d83d54d2473b13c2655e2e3c4c2d124f01b729aec855da18889d08d4d",
+    "manifest_hash_list": "p1553_r8_install_delta.sha256",
+    "manifest_hash_list_sha256": "b603dd4ed6b418b642408a3920122e6feca6e82111b79cb4fdd4d5195cea8e5a",
+    "simulated_queue_sha256": "6d946874f4c7c24ee4396b24c2d95d94b4ef1414dd4b9487d5adb9f40cf158f8"
+  },
+  "upstream_bundle": {
+    "bundle_id": "P1553-R5-R7-20260719",
+    "manifest_sha256": "41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a",
+    "manifest_hash_list_sha256": "0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d"
+  },
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "composition_rule": "Apply R5-R7, R8, and R9 to one private copy of the live queue, validate the combined result, then install all files and dispatch state atomically. Never install this delta alone.",
+  "file_installs": [
+    {
+      "source": "p1553_projector_trace_parent_report.yaml",
+      "sha256": "40ef9120033e21a16cd256fa5d7a3e4a3f035ef00f6f4fed5601246a477446f5",
+      "destination": "coordination/tasks/TASK-20260719-P1553-PTR-P1/projector_trace_report.yaml"
+    },
+    {
+      "source": "p1553_projector_trace_router_gate_r9.md",
+      "sha256": "400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81",
+      "destination": "coordination/tasks/TASK-20260719-P1553-PTR-P1/projector_trace_router_gate_r9.md"
+    },
+    {
+      "source": "p1553_projector_trace_red_team.yaml",
+      "sha256": "14178e88bb4356075302d49e93ecfa103c69cf52f46d9b91e231373e4b132bc4",
+      "destination": "coordination/tasks/TASK-20260719-P1553-PTR-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_projector_trace_red_team.md",
+      "sha256": "28b2bc99b89b5795dc359e4d5e0428be5888261a88df7afa78df8052b4f827f0",
+      "destination": "coordination/tasks/TASK-20260719-P1553-PTR-RT-R1/projector_trace_red_team.md"
+    },
+    {
+      "source": "p1553_projector_trace_router_gate_r9.md",
+      "sha256": "400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81",
+      "destination": "ideas/artifacts/ECDLP-IDEA-012/p1553_projector_trace_router_gate_r9.md"
+    }
+  ],
+  "queue_merge": {
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-PTR-P1",
+        "title": "Prove the exact projector-trace dyadic router",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 30,
+        "review_required": true,
+        "depends_on": ["TASK-20260719-P1553-IVQ-RT-R1"],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-IVQ-P1/integer_valued_quotient_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-IVQ-RT-R1/red_team_report.yaml",
+          "ideas/artifacts/ECDLP-IDEA-158/p1534_r1_independent_audit.md",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "ideas/rejected/ECDLP-IDEA-089_grothendieck_residue_idempotent_splitter_hypothesis.md",
+          "ideas/rejected/ECDLP-IDEA-198_barvinok_carry_state_source_unranking_hypothesis.md",
+          "ideas/rejected/ECDLP-IDEA-250_frobenius_split_source_strata_hypothesis.md",
+          "ideas/rejected/ECDLP-IDEA-266_equiprojectable_dynamic_evaluation_source_tree_hypothesis.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-PTR-P1"],
+        "attention_contract": {
+          "decisive_evidence": "An exact integer count theorem with complete dyadic source replay and a cap-sized contraction, or the first named source-faithful table/search above a direct cap.",
+          "inconclusive_decision": "Preserve the exact count interface and the implicit balanced-contraction exception without allocating a new idea.",
+          "local_ambiguity_rule": "Separate x-tuple count from sign multiplicity, output rank from constructor rank, target-fresh from target-independent factors, and standard route costs from lower bounds.",
+          "peripheral_exclusions": [
+            "No exact count claim unless the explicit root bound is below p",
+            "No projector or carry rank promoted into an elliptic circuit lower bound",
+            "No P1554, experiment, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after within-color uniqueness, one-child replay, and the balanced 2|3 nonlinear match are independently reconstructed."
+        },
+        "resource_estimate": {
+          "dominant_stage": "standard target-fresh triple zero-match search",
+          "stages": [
+            {"id": "pair_dictionary", "work": "B^2 setup/state"},
+            {"id": "standard_triple_search", "work": "B^3 per target"},
+            {"id": "admitted_trace_query", "work": "must be at most B^(5/4+o(1))"},
+            {"id": "dyadic_replay", "work": "B^(o(1)) count calls"}
+          ]
+        },
+        "handoff": {
+          "objective": "Prove the exact restricted projector-count router and isolate the remaining balanced implicit contraction.",
+          "uncertainty_reduced": "Whether Fermat trace is only modular, whether sparse projector rank is an obstruction, and what count/replay interface is sufficient for one verified source.",
+          "inputs": ["the independently reviewed R8 receipts", "P1534/P1536 quotient and norm controls", "the Frobenius, carry, and dynamic-split dedup owners"],
+          "constraints": [
+            "Bind the within-color uniqueness and finite-size threshold.",
+            "Count one child per dyadic level and verify signs only at the leaf.",
+            "Scope every B^3 statement to the standard balanced materialization/search.",
+            "Allocate no new idea, run, Shoup claim, or breakthrough claim."
+          ],
+          "deliverables": ["projector_trace_report.yaml", "projector_trace_router_gate_r9.md"],
+          "budget": {"wall_clock_seconds": 3600, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "The root bound and exact trace theorem include all assumptions.",
+            "Empty, multi-root, replay, signs, occurrences, and columns are complete.",
+            "The surviving contraction and complete campaign costs are explicit.",
+            "Exactly one next action remains."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-PTR-RT-R1",
+        "title": "Red-team the projector-trace dyadic router",
+        "role": "red-team",
+        "state": "completed",
+        "priority": 25,
+        "review_required": false,
+        "depends_on": ["TASK-20260719-P1553-PTR-P1"],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-PTR-P1/projector_trace_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-PTR-P1/projector_trace_router_gate_r9.md",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-PTR-RT-R1"],
+        "attention_contract": {
+          "decisive_evidence": "A reconstructed sign-normalized root bound, exact trace threshold, one-child replay, representation caps, and balanced standard-route boundary.",
+          "inconclusive_decision": "Retain implicit contraction and non-CP exceptions while rejecting only literal expansion and named table/search realizations.",
+          "local_ambiguity_rule": "Do not infer exact multiplicity from an empty-or-source router, or constructor cost from sparse output rank.",
+          "peripheral_exclusions": [
+            "No five-moment requirement when count replay suffices",
+            "No higher-carry affine formula inferred from the k=1 identity",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after every correction appears in both producer files and source bindings match."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R9 count, replay, rank, carry, cost, and ownership claims.",
+          "uncertainty_reduced": "Whether the exact theorem is branch complete without overstating its converse or any runtime lower bound.",
+          "inputs": ["the R9 producer receipts", "the R8 independent correction", "P1536 and the exact-query owners"],
+          "constraints": [
+            "Check within-color multiplicity and the finite-size threshold.",
+            "Check target-fresh and target-independent factor caps separately.",
+            "Require one count-only next action and preserve all representation exceptions."
+          ],
+          "deliverables": ["red_team_report.yaml", "projector_trace_red_team.md"],
+          "budget": {"wall_clock_seconds": 3600, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "Every theorem identity and assumption is independently reconstructed.",
+            "Every correction is reflected in both producer files.",
+            "Exactly one next action and no positive ECDLP status remain."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Recompute all three manifest layers and every source hash; preserve drift rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false
+  }
+}

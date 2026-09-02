@@ -1,0 +1,338 @@
+{
+  "algebraic": {
+    "candidate_work_credit": false,
+    "endpoint_bodies": {
+      "a3_exponent_B": {
+        "decimal": 0.25,
+        "exact": "1/4"
+      },
+      "a6_exponent_B": {
+        "decimal": 0.5,
+        "exact": "1/2"
+      },
+      "c3_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "c3_pair_occurrence_exponent_B": {
+        "decimal": 4.5,
+        "exact": "9/2"
+      },
+      "c6_exponent_B": {
+        "decimal": 4.5,
+        "exact": "9/2"
+      },
+      "full_source_occurrence_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      }
+    },
+    "not_excluded": [
+      "a jointly transposed target-batched elliptic coefficient functional",
+      "a source-returning FFE contraction that never emits C3+C3",
+      "a representation-specific low-rank addition pushforward"
+    ],
+    "routes": [
+      {
+        "inside_setup_cap": true,
+        "locator_complete": false,
+        "route_id": "explicit_c3_endpoint_divisor",
+        "state_exponent_B": {
+          "decimal": 2.25,
+          "exact": "9/4"
+        }
+      },
+      {
+        "fresh_work_exponent_B": {
+          "decimal": 2.25,
+          "exact": "9/4"
+        },
+        "inside_fresh_cap": false,
+        "route_id": "one_explicit_target_translated_c3_divisor_gcd",
+        "source_dictionary_exponent_B": {
+          "decimal": 2.25,
+          "exact": "9/4"
+        }
+      },
+      {
+        "fresh_work_exponent_B": {
+          "decimal": 2.75,
+          "exact": "11/4"
+        },
+        "inside_fresh_cap": false,
+        "route_id": "a6_batch_of_explicit_translated_divisor_gcds"
+      },
+      {
+        "inside_setup_cap": false,
+        "occurrence_degree_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "route_id": "materialized_c3_pair_sum_resultant_or_chow_form"
+      },
+      {
+        "equals_group_order_exponent": true,
+        "inside_setup_cap": false,
+        "occurrence_degree_exponent_B": {
+          "decimal": 5.0,
+          "exact": "5"
+        },
+        "route_id": "materialized_c3_c3_a6_incidence_pushforward"
+      },
+      {
+        "inside_setup_cap": false,
+        "output_occurrence_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "requires_scalar_exponents_for_cyclic_polynomial_encoding": true,
+        "route_id": "sparse_group_algebra_c3_square"
+      },
+      {
+        "inside_setup_cap": false,
+        "mode_count_exponent_B": {
+          "decimal": 5.0,
+          "exact": "5"
+        },
+        "requires_character_or_dlog_labels": true,
+        "route_id": "dense_group_fourier_transform"
+      },
+      {
+        "route_id": "balanced_three_f_meet_in_middle",
+        "state_exponent_B": {
+          "decimal": 2.5,
+          "exact": "5/2"
+        },
+        "strictly_below_rho": false,
+        "work_exponent_B": {
+          "decimal": 2.5,
+          "exact": "5/2"
+        }
+      }
+    ],
+    "schema": "p1553.c3_pair_sum_algebraic_cost_ledger.r116.v1",
+    "scoped_route_boundary": "standard explicit coefficient, divisor translation, resultant output, sparse group-algebra output, and dense Fourier routes",
+    "summation_polynomial_degrees": {
+      "expanded_atom_level_s13": {
+        "arity": 13,
+        "degree_per_variable": 2048,
+        "total_degree": 24576
+      },
+      "factor_level_s7": {
+        "arity": 7,
+        "degree_per_variable": 32,
+        "total_degree": 192
+      },
+      "fixed_degree_has_B_exponent_zero": true,
+      "fixed_degree_is_not_a_source_locator": true
+    },
+    "unconditional_lower_bound_claimed": false
+  },
+  "candidate_work_credit": false,
+  "indexing": {
+    "any_bound_indexing_route_meets_both_caps": false,
+    "candidate_work_credit": false,
+    "dinur_golovnev_v2": {
+      "batch_cap_forces_delta_at_most": {
+        "decimal": 0.3333333333333333,
+        "exact": "1/3"
+      },
+      "online_compatible_setup_exponent_B": {
+        "decimal": 4.875,
+        "exact": "39/8"
+      },
+      "paper_preprocessing_exponent_B": {
+        "decimal": 4.5,
+        "exact": "9/2"
+      },
+      "setup_cap_would_require_delta_at_least": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "sha256": "e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c",
+      "source": "references/dinur_golovnev_3sum_indexing_2512.04258v2.pdf",
+      "theorem": "S=soft-O(n^(5/2-delta)), T=soft-O(n^delta), 0<=delta<=1 for equal lists"
+    },
+    "kirkpatrick_et_al_v1": {
+      "sha256": "6c676ae909461219b8d2f4480225aade0ab46633c989e6249c980dae79c203ca",
+      "source": "references/kirkpatrick_et_al_preprocessed_3sum_unknown_universes_2602.11363v1.pdf",
+      "stronger_different_problem": "queries subsets A',B' and an unknown set C' of size O(n), not one point challenge",
+      "theorem": "for 0<=epsilon<=1/2, preprocessing n^2, space n^(2-2epsilon/3), query n^(3/2+epsilon)"
+    },
+    "normalization": {
+      "a6_target_batch_Q": "B^(1/2+o(1))",
+      "allowed_average_query_work": "B^(3/4+o(1))",
+      "c3_list_length_M": "B^(9/4+o(1))",
+      "fresh_batch_cap": "B^(5/4+o(1))",
+      "setup_cap": "B^(9/4+o(1))"
+    },
+    "polynomial_data_structure_lower_bound_claimed": false,
+    "prime_order_transfer_boundary": {
+      "dlog_labels_available_to_candidate": false,
+      "dlog_labels_make_integer_residues_compatible": true,
+      "generic_group_order": "prime q=B^(5+o(1))",
+      "proper_small_residue_homomorphism_is_trivial": true,
+      "public_ec_coordinate_encoding_is_addition_compatible": false
+    },
+    "routes": [
+      {
+        "batch_exponent_B": {
+          "decimal": 2.75,
+          "exact": "11/4"
+        },
+        "exact_source_reporting": true,
+        "inside_fresh_batch_cap": false,
+        "inside_setup_cap": true,
+        "query_per_target_exponent_B": {
+          "decimal": 2.25,
+          "exact": "9/4"
+        },
+        "route_id": "store_c3_scan_each_a6_target",
+        "setup_exponent_B": {
+          "decimal": 2.25,
+          "exact": "9/4"
+        },
+        "transfer_to_prime_order_ec": true
+      },
+      {
+        "batch_exponent_B": {
+          "decimal": 0.5,
+          "exact": "1/2"
+        },
+        "exact_source_reporting": true,
+        "inside_fresh_batch_cap": true,
+        "inside_setup_cap": false,
+        "query_per_target_exponent_B": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "route_id": "store_all_c3_pair_sums",
+        "setup_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "transfer_to_prime_order_ec": true
+      },
+      {
+        "batch_exponent_B": {
+          "decimal": 1.25,
+          "exact": "5/4"
+        },
+        "delta": {
+          "decimal": 0.3333333333333333,
+          "exact": "1/3"
+        },
+        "exact_source_reporting": true,
+        "inside_fresh_batch_cap": true,
+        "inside_setup_cap": false,
+        "integer_residue_transfer_to_prime_order_ec": false,
+        "preprocessing_work_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "query_per_target_exponent_B": {
+          "decimal": 0.75,
+          "exact": "3/4"
+        },
+        "route_id": "dinur_golovnev_v2_online_compatible_boundary",
+        "setup_exponent_B": {
+          "decimal": 4.875,
+          "exact": "39/8"
+        }
+      },
+      {
+        "batch_exponent_B": {
+          "decimal": 2.75,
+          "exact": "11/4"
+        },
+        "delta": {
+          "decimal": 1.0,
+          "exact": "1"
+        },
+        "exact_source_reporting": true,
+        "inside_fresh_batch_cap": false,
+        "inside_setup_cap": false,
+        "integer_residue_transfer_to_prime_order_ec": false,
+        "query_per_target_exponent_B": {
+          "decimal": 2.25,
+          "exact": "9/4"
+        },
+        "route_id": "dinur_golovnev_v2_minimum_advice_endpoint",
+        "setup_exponent_B": {
+          "decimal": 3.375,
+          "exact": "27/8"
+        }
+      },
+      {
+        "batch_exponent_B": {
+          "decimal": 1.25,
+          "exact": "5/4"
+        },
+        "delta": {
+          "decimal": 0.3333333333333333,
+          "exact": "1/3"
+        },
+        "inside_fresh_batch_cap": true,
+        "inside_setup_cap": false,
+        "integer_residue_transfer_to_prime_order_ec": false,
+        "query_per_target_exponent_B": {
+          "decimal": 0.75,
+          "exact": "3/4"
+        },
+        "route_id": "fiat_naor_2019_online_compatible_boundary",
+        "setup_exponent_B": {
+          "decimal": 4.25,
+          "exact": "17/4"
+        }
+      },
+      {
+        "epsilon": {
+          "decimal": 0.5,
+          "exact": "1/2"
+        },
+        "inside_fresh_batch_cap": false,
+        "inside_setup_cap": false,
+        "integer_fft_transfer_to_prime_order_ec": false,
+        "model_matches_point_challenge": false,
+        "preprocessing_work_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "query_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "route_id": "preprocessed_unknown_universe_2026_best_space",
+        "setup_exponent_B": {
+          "decimal": 3.75,
+          "exact": "15/4"
+        }
+      },
+      {
+        "epsilon": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "inside_fresh_batch_cap": false,
+        "inside_setup_cap": false,
+        "integer_fft_transfer_to_prime_order_ec": false,
+        "model_matches_point_challenge": false,
+        "preprocessing_work_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "query_exponent_B": {
+          "decimal": 3.375,
+          "exact": "27/8"
+        },
+        "route_id": "preprocessed_unknown_universe_2026_best_query",
+        "setup_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        }
+      }
+    ],
+    "schema": "p1553.c3_pair_sum_indexing_ledger.r116.v1"
+  },
+  "schema": "p1553.c3_pair_sum_combined_cost_ledger.r116.v1"
+}

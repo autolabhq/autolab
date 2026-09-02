@@ -1,0 +1,75 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R47-FIXED-DENOMINATOR-COLLISION-BEAM-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T10:01:22Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R47 is a finite two-denominator
+  toy search requiring independent review. Its exact projective slices do not
+  improve the seed, but other denominators and pencils outside the width-32
+  beam remain open.
+bindings:
+  r46_bundle_hash_list_sha256: ce3d817daa4c16a3025ab0b7236453bdc1313fe70b0df18caa82ffb5046042a5
+  r46_staging_receipt_sha256: 739e33ade7027c9d07e6f738c46bcf76c3dc364bfc75a1ee35050d17b1f96f56
+  r47_gate_sha256: ea56391b5ab951bea92390f3ae490c89d68885f29b02a8433adc5efba80415e3
+  r47_parent_report_sha256: 524a32ee268190f4bb5bffdc8a5536a118593eba7c76db42b9eeaa367d7bb1eb
+  r47_search_script_sha256: 2761e82597d3a9aeef902e70e1decc763b9cc2b883e89c0f265e0fd3002a44b6
+  r47_search_report_sha256: 5ea67039d9a32425160de5eac791e728a05785435247928663a275b09f17c388
+  r47_artifact_index_sha256: 4c61057a9327554946260313262a8c55a4206ae09d9a6cdd39219dedd5a7e7e5
+  r47_bundle_hash_list_sha256: 7407fccf1684d4cbe11d7f9b16111516233523cc7e4864dd549a3bd96e2f69b3
+result:
+  classification: finite_two_denominator_collision_negative_other_denominators_open
+  denominator_orientations: 2
+  generated_projective_line_instances: 611100
+  layer_unique_candidates: 576607
+  subgroup_basepoint_rejections: 27376
+  selected_nonseed_states: 512
+  best_complete_nine_point_fibers: 2
+  best_collision_pairs: 106
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+  survivors: 0
+  other_catalog_denominators: unclassified
+  outside_catalog_primitive_degree_nine_pencil: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r47_hash_list: pass
+  r47_parent_yaml_parse: pass
+  both_denominator_orientations_checked: pass
+  all_six_row_projective_slices_size_194: pass
+  all_512_selected_nonseed_collision_bases_rank_seven: pass
+  full_subgroup_degree_nine_multiplicity_control: pass
+  deterministic_replay_matches_report_byte_for_byte: pass
+  clean_temporary_replay_with_r16_through_r47_gates_and_r47_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T10_01_22Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - only two denominator sections are searched
+  - the width-32 beam is finite and not exhaustive in projective seven-space
+  - subgroup basepoint checks do not certify geometric basepoint freeness
+  - no target, R10, relation-rank campaign, logs, descent, or breakthrough
+exactly_one_next_action: >-
+  For each of all 807 R46 catalog sections as denominator, choose its highest-
+  collision disjoint catalog partner, extract a rank-seven collision basis,
+  drop each basis row, and exhaust all seven 194-pencil projective slices.
+  Retain the exact best fiber score per denominator and require any three-fiber
+  improvement to pass a full divisor/basepoint check before deeper search.

@@ -1,0 +1,109 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-PRIME-ORDER-HOMOMORPHIC-FINGERPRINT-R125-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_prime_order_kernel_dichotomy_and_scoped_fingerprint_audit
+run_count: 1
+status: nonhomomorphic_adaptive_target_fingerprint_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - homomorphism
+  - fingerprint
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R77-R120-R121-R124
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether one or more product-preserving fingerprints can compress
+  exact arbitrary-target C5 membership on the prime-order pairing image.
+inputs:
+  - path: p1553_torus_c5_linear_sketch_circulant_probe_r124.py
+    sha256: c3aabfe9d2ce8553c3facdc7fcf2f8b669b09ec48a6144772068f264e4ab012d
+  - path: p1553_torus_c5_linear_sketch_circulant_probe_report_r124.json
+    sha256: 99df2561ba0a07506f36c67d7152c299c6954272508eca1035ea3cdbe061dc6d
+  - path: frozen_torus_c5_linear_sketch_circulant.json
+    sha256: 129aac9bf7868c3305ef38d2af4443d2c6e8227f75f54b8b1aa09a1b4a323334
+  - path: torus_c5_linear_sketch_circulant_cost_ledger.json
+    sha256: b8b5e44c76b7abb85b9f32acf08a1ebc00ce6a5729710975f7eb3362d40b906f
+  - path: torus_c5_linear_sketch_circulant_replay.json
+    sha256: 162d813653f83c782ec69334d6876f1bf6bf2cab9a4d1a9d87e1ff768110e094
+  - path: torus_c5_linear_sketch_circulant_controls.json
+    sha256: 87011644cd14261d3f0afd45d367a18a39b484cdfc9b06a91de1e4812e07dfc2
+  - path: factor_logs_and_identical_descent_r124.json
+    sha256: dc170b78fc8460a65709fb3d3537d56571159f68e72c8b9b24c225b3c15b0e7a
+  - path: p1553_torus_c5_linear_sketch_circulant_probe_gate_r124.md
+    sha256: 30a3ce3036bab96731430a662cde3ded8e63b9fe1326942a5091148b3e939938
+  - path: p1553_torus_c5_linear_sketch_circulant_probe_parent_report_r124.yaml
+    sha256: eb31ae1bccf81431d27bcef8d6fe27ac3269f077bcf115eecab61526bc7a752a
+  - path: p1553_m6_small_k_multiplicative_c5_moment_torus_probe_gate_r121.md
+    sha256: 9266e3655a3f4176280834ec91c897cc7d30274382df6e197628af37bae71309
+  - path: p1553_m6_suboutput_implicit_c5_character_pairing_probe_gate_r120.md
+    sha256: ab8efbe571f310a510f943e45f9fb65bac34fd37b2ee4d04337cdf3a5c9c8da1
+  - path: p1553_target_translated_frequency_orbit_probe_gate_r77.md
+    sha256: 45324f816cc159032cb6c2ac97c0a2f52a618c409e276616521b4e894cb46b55
+artifacts:
+  - path: p1553_torus_c5_prime_order_homomorphic_fingerprint_probe_r125.py
+    sha256: 28a74fc7699f34569a30c3b378ef80985b8ff09bd01aed497df41a98c80160e4
+  - path: p1553_torus_c5_prime_order_homomorphic_fingerprint_probe_report_r125.json
+    sha256: c6f2bd31d83d2b959bd07477d0697f2e91180a5f65e02236a3c32cffd6c43a9b
+  - path: frozen_torus_c5_prime_order_homomorphic_fingerprint.json
+    sha256: be8bc523f1970c07bcc1e2285070051061c1e6dd189da717d879b539012e88ff
+  - path: torus_c5_prime_order_homomorphic_fingerprint_cost_ledger.json
+    sha256: 095ae32e7b927c2639de8cd02ff6818229a5026065d49407a0f42e3b0fea828e
+  - path: torus_c5_prime_order_homomorphic_fingerprint_replay.json
+    sha256: 63c51d0728f52b0618c6afdf73a3ffda070282d7fb79663b79fceb85effcc8c0
+  - path: torus_c5_prime_order_homomorphic_fingerprint_controls.json
+    sha256: 28da34281db3b0ea782b9b5bb8b89c39eaabb902f22cec499113d4b3cc1ba2b9
+  - path: factor_logs_and_identical_descent_r125.json
+    sha256: 750c96ae91a642278df899d845db00d26e70858d74af22dc7b51260584303c1a
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_prime_order_homomorphic_fingerprint_probe_r125.py
+    sha256: fbd5c8156f9c233a33834331e348b7809c55e69813bc99158d15b70a3e12c997
+  - path: p1553_torus_c5_prime_order_homomorphic_fingerprint_probe_gate_r125.md
+    sha256: b4d19d79a68076f8850afd7c079c7f25bb108ba9aee853330aecb508d9d11155
+verified_statements:
+  - >-
+    Every product-preserving fingerprint from a prime-order cyclic group is
+    either trivial or injective.
+  - >-
+    Power maps z to z^k are directly computable without field DLP; the
+    trivial map fails empty targets and every nontrivial map is a
+    permutation of all q elements.
+  - >-
+    A finite tuple of homomorphisms is trivial when all components are
+    trivial and injective otherwise.
+  - >-
+    Exact pure homomorphic fingerprints therefore retain image cardinality
+    q=B^5, above the B^(9/4) setup cap for a full image table.
+  - >-
+    Prime-order controls have no intermediate image, while composite-order
+    specificity controls expose proper quotient images.
+scoped_failures:
+  trivial_homomorphic_fingerprint: rejected_false_positives
+  nontrivial_prime_order_homomorphic_fingerprint: rejected_q_B5_image
+  finite_tuple_of_homomorphic_fingerprints: rejected_q_B5_combined_image
+  injective_homomorphic_c3_hash_c2_scan: rejected_B3O2_query
+  nonhomomorphic_or_adaptive_fingerprint: open
+  product_law_correction_data: open
+  five_source_locator: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 12
+  total_obligations: 20
+  lane_admitted: false
+next_action: >-
+  Freeze one nonhomomorphic or adaptive target fingerprint for the coupled
+  pair (u^(*2),u^(*3)); require fully charged product-law correction data,
+  exact empty semantics, five projective sources, B^(9/4+o(1)) setup,
+  polylogarithmic arbitrary-target work, no field DLP, and complete rank,
+  logs, identical descent, memory, field-operation, and bit costs.

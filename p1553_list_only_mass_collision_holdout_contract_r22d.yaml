@@ -1,0 +1,47 @@
+schema: crypto.autoresearch.experiment_contract.v1
+contract_id: P1553-LIST-ONLY-MASS-COLLISION-HOLDOUT-R22D
+date: 2026-07-19
+status: approved_local_toy
+classification:
+  - toy
+  - exact_finite_field
+  - fresh_holdout
+  - model-bound
+  - novelty-unverified
+objective: >-
+  Test whether the denominator selected by the rejected R22C search transfers
+  any substantial complete-key compression to a disjoint fifth-scalar interval.
+bound_training_report:
+  path: p1553_list_only_mass_collision_toy_report_r22c.json
+  sha256: 40ef33016a6e12b802ee7c40183c853e4d180d89b7993abf85f1d6e6c48a5af8
+frozen_instance:
+  field: 193
+  curve: y^2=x^3+2*x+3
+  generator: [1, 44]
+  subgroup_order: 103
+  degree: 8
+  endpoint_scalars: [1, 2, 3, 4, 5, 6, 7, 8]
+  training_fifth_scalars:
+    start: 9
+    stop_inclusive: 28
+  holdout_fifth_scalars:
+    start: 29
+    stop_inclusive: 48
+  denominator_coefficients_low_to_high: [147, 140, 100, 41, 188, 123, 182, 46, 1]
+command: >-
+  DOT_SAGE=/private/tmp/p1553-r22d-dot-sage
+  sage p1553_list_only_mass_collision_holdout_r22d.sage
+expected_stdout_artifact: p1553_list_only_mass_collision_holdout_report_r22d.json
+transfer_gate:
+  minimum_holdout_compression_ratio: 1.5
+  maximum_holdout_distinct_complete_keys: 106
+  require_no_holdout_poles: true
+rejection_gate:
+  - holdout compression is below 1.5
+  - a denominator pole enters the held-out source set
+  - the effect is concentrated only on the preregistered zero branch
+promotion:
+  authorized: false
+  reason: >-
+    A passing toy holdout would still lack asymptotic containment, source-mass
+    transfer, target action, R10, rank, logs, descent, and full cost receipts.

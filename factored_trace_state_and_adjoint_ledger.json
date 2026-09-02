@@ -1,0 +1,256 @@
+{
+  "adjoint_rank_controls": {
+    "all_dyadic_adjoint_families_full_rank": true,
+    "all_jacobians_full_rank": true,
+    "blind_nonzero_sweep": [
+      {
+        "all_projector_derivatives_nonzero": true,
+        "dimension": 4,
+        "dyadic_adjoint_rank": 4,
+        "dyadic_mask_count": 7,
+        "expected_full_binary_mask_count": 7,
+        "jacobian_rank": 4
+      },
+      {
+        "all_projector_derivatives_nonzero": true,
+        "dimension": 8,
+        "dyadic_adjoint_rank": 8,
+        "dyadic_mask_count": 15,
+        "expected_full_binary_mask_count": 15,
+        "jacobian_rank": 8
+      },
+      {
+        "all_projector_derivatives_nonzero": true,
+        "dimension": 16,
+        "dyadic_adjoint_rank": 16,
+        "dyadic_mask_count": 31,
+        "expected_full_binary_mask_count": 31,
+        "jacobian_rank": 16
+      },
+      {
+        "all_projector_derivatives_nonzero": true,
+        "dimension": 32,
+        "dyadic_adjoint_rank": 32,
+        "dyadic_mask_count": 63,
+        "expected_full_binary_mask_count": 63,
+        "jacobian_rank": 32
+      }
+    ],
+    "field_prime": 101,
+    "projector_derivative_identity": "delta_0'(h)=h^(p-2) in F_p",
+    "projector_identity": "delta_0(h)=1-h^(p-1)",
+    "scope": "Finite exact rank for the pointwise Jacobian and the complete dyadic mask family; not an asymptotic lower bound on arbitrary nonlinear compact trace circuits."
+  },
+  "asymptotic_cost": {
+    "balanced_product_tree": {
+      "forward_multiplications": "D-1",
+      "full_forward_nodes": "2D-1",
+      "inside_online_cap": false,
+      "inside_setup_cap": false,
+      "leaf_values": "D",
+      "reverse_adjoint_words": "Theta(D)",
+      "work_and_state_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "compact_nonlinear_tensor_tower_trace_supplied": false,
+    "dyadic_range_masks": {
+      "linearized_span_rank": "D",
+      "mask_count": "2D-1 for power-of-two D",
+      "state_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "full_transposed_adjoint": {
+      "adjoint_words": "Theta(D)",
+      "inside_setup_cap": false,
+      "state_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "pointwise_fermat_projector": {
+      "inside_online_cap": false,
+      "inside_setup_cap": false,
+      "state_or_streamed_source_values": "Theta(D)",
+      "work": "Theta(D log p)=B^(12/5) polylog(B)",
+      "work_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "scope": "Charges pointwise Fermat evaluation, source-valued product trees, their reverse adjoints, and the full dyadic linearized mask family. It does not lower-bound a nonlinear tensor-tower trace whose node states are constructed directly from compact A/C divisor circuits.",
+    "source_side": {
+      "source_count": "D=Theta(B^(12/5))",
+      "value_count_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    }
+  },
+  "pointwise_transposed_trace_inside_caps": false,
+  "schema": "p1553.factored_trace_state_and_adjoint_ledger.r97.v1",
+  "source_and_gradient_controls": {
+    "blind_nonzero": {
+      "dyadic_source": {
+        "queried_value_occurrences": 8,
+        "returned_bottom": true,
+        "source_index": null,
+        "transcript": [
+          {
+            "range": [
+              0,
+              8
+            ],
+            "zero_count": 0
+          }
+        ]
+      },
+      "integer_projector_count": 0,
+      "values": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23
+      ]
+    },
+    "field_prime": 101,
+    "multiplicity_boundary": "The projector sum counts two zero occurrences, while the first derivative of the scalar product is identically zero.",
+    "two_zeros": {
+      "integer_projector_count": 2,
+      "product_gradient": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "product_gradient_is_zero_vector": true,
+      "values": [
+        3,
+        0,
+        5,
+        7,
+        0,
+        11,
+        13,
+        17
+      ]
+    },
+    "unique_zero": {
+      "dyadic_source": {
+        "queried_value_occurrences": 22,
+        "returned_bottom": false,
+        "returned_source_is_zero": true,
+        "source_index": 2,
+        "transcript": [
+          {
+            "range": [
+              0,
+              8
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              0,
+              4
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              0,
+              4
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              0,
+              2
+            ],
+            "zero_count": 0
+          },
+          {
+            "range": [
+              2,
+              4
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              2,
+              3
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              2,
+              3
+            ],
+            "zero_count": 1
+          }
+        ]
+      },
+      "integer_projector_count": 1,
+      "product_gradient": [
+        0,
+        0,
+        27,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "product_gradient_localizes_unique_zero": true,
+      "product_gradient_nonzero_indices": [
+        2
+      ],
+      "projector_gradient": [
+        34,
+        81,
+        0,
+        29,
+        46,
+        70,
+        6,
+        16
+      ],
+      "projector_gradient_materialized_words": 8,
+      "values": [
+        3,
+        5,
+        0,
+        7,
+        11,
+        13,
+        17,
+        19
+      ],
+      "zero_coordinate_has_nonzero_projector_gradient": false
+    }
+  }
+}

@@ -1,0 +1,113 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-SYMMETRIC-SHIFT-REVERSE-ONLY-MARGINAL-R153-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_reverse_only_symmetry_reduction_with_finite_rank_deficit
+run_count: 1
+status: reverse_marker_operator_and_rank_transfer_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - elliptic-curve
+  - compact-divisor
+  - inversion-symmetry
+  - known-log-factor-base
+  - convolution
+  - transposition
+  - reverse-only
+  - rank-deficit
+  - model-bound
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R144-R152
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether inversion symmetry can remove the separate
+  forward-tangent requirement from the R152 signed marker DAG.
+inputs:
+  - path: p1553_m6_geometry_only_weight_interpolation_adjoint_probe_r152.py
+    sha256: 0ccb39253ab66c97961bd08722dab7ad45248e4b6faaf74f9e752344c4491fb2
+  - path: p1553_m6_geometry_only_weight_interpolation_adjoint_probe_report_r152.json
+    sha256: f2dd5a43593e9e747d969c73afefac9ee7ce7aac3ca79ca2dd009ea1ffe4e46c
+  - path: frozen_m6_geometry_only_weight_interpolation_adjoint.json
+    sha256: 6f51f9a2cb8199f8f45c919cfc0e3d2fbdcfb9b9aa2755b57c1d7e56b29e1c25
+  - path: m6_geometry_only_weight_interpolation_adjoint_cost_ledger.json
+    sha256: abb38aac0549ecdf871955000accf92e89fee3d2697a5ebbccf49c25adb9fbf9
+  - path: m6_geometry_only_weight_interpolation_adjoint_replay.json
+    sha256: 858e0802bf8f0702d6a596b97bb5b7ae514d2a34849a8e55f3ea66dff0ddf5bf
+  - path: m6_geometry_only_weight_interpolation_adjoint_controls.json
+    sha256: 31bfcb6da0a040ee79885ffbb5c2ca5190d2a7c1d97efb9d4e69e00698ab3db4
+  - path: factor_logs_and_identical_descent_r152.json
+    sha256: 551b053ad3b4730d0f615b784becb4ae1e11d9665bedd8b365d460e69db7ee92
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_geometry_only_weight_interpolation_adjoint_probe_r152.py
+    sha256: fbcaad6bac3619973c27bbd990d9a23e8890b5318626e12a9132c53831852282
+  - path: p1553_m6_geometry_only_weight_interpolation_adjoint_probe_gate_r152.md
+    sha256: 57c336c6e337e06092efc54af710b8cd5ae8de46edf184d9c3335cd44f4bb38a
+  - path: p1553_m6_geometry_only_weight_interpolation_adjoint_probe_parent_report_r152.yaml
+    sha256: 7cce460153d6249f9bc01a77dbe4fe6ef6f45fff770b1a013373f4f22c656182
+  - path: p1553_m6_weighted_fiber_marginal_log_operator_probe_r144.py
+    sha256: 3cd7a3e40bf696a836ff6b6cad4c59a7ca73a44d72d152232cddeffa14e90a5c
+  - path: p1553_m6_weighted_fiber_marginal_log_operator_probe_gate_r144.md
+    sha256: c967cc10137fe861384a80a8261763c2ecb86ca2951db8c5bf43f348c65e1e9b
+  - path: p1553_m6_weighted_fiber_marginal_log_operator_probe_parent_report_r144.yaml
+    sha256: db906bd74c9c43fd12ab196a36d59ac80bfbbd22de494c4b6b2efb4d0c96c268
+artifacts:
+  - path: p1553_m6_symmetric_shift_reverse_only_marginal_probe_r153.py
+    sha256: fa55c47f6b0c8a4a6071580c3ba6c519cdb7150d692ee16253fdf8150694e646
+  - path: p1553_m6_symmetric_shift_reverse_only_marginal_probe_report_r153.json
+    sha256: 0e5c8feb4498a16b02fd1ffb5e2f7df4a64d20097c62f35d99abef84a120afce
+  - path: frozen_m6_symmetric_shift_reverse_only_marginal.json
+    sha256: 81aa786dc9431f6e0bf83de1a43a2030996e06c73faf0f2900fe8ade4e19754c
+  - path: m6_symmetric_shift_reverse_only_marginal_cost_ledger.json
+    sha256: 0a2c48b7604bcef168acb850ab6de69a09d927c4d8558a3c2d8ee7ae60ffd859
+  - path: m6_symmetric_shift_reverse_only_marginal_replay.json
+    sha256: 6e66783f3ea159ad0b522b46075fe11e0c20b1c82428ed11aa31b0a72fb96f26
+  - path: m6_symmetric_shift_reverse_only_marginal_controls.json
+    sha256: abf91eff4a023d400fdb56caac7927a496cf83b5cba205536118cfdc4ef00f62
+  - path: factor_logs_and_identical_descent_r153.json
+    sha256: 2bfb012acdbac35964775c8fa1ae38d519c3e9ebddcc81b969c791b97e86a569
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_symmetric_shift_reverse_only_marginal_probe_r153.py
+    sha256: 5d62c7b1be2f5267ae2d66a931ae6a7034ff2ebc6b4c97bc179587b2f7a47a79
+  - path: p1553_m6_symmetric_shift_reverse_only_marginal_probe_gate_r153.md
+    sha256: afaeede72a11b0ae870a0551f9d5ec5bbdf94099f53dede5b5327fbfb9b0bf6d
+verified_statements:
+  - >-
+    A public known-log A deck and inversion-closed C deck preserve the
+    selected M6 exponents and give symmetric A6 shifts and an even C5 kernel.
+  - >-
+    Every marginal block satisfies D_s^T=D_(-s), so opposite-shift reverse
+    actions supply forward actions without a separate tangent operator.
+  - >-
+    Row sums recover six times each count and the corrected known-shift
+    relation equations are exact in all eight finite controls.
+  - >-
+    The eight finite stacked ranks are 4,0,0,0,0,0,0,0; no full-rank control
+    or verifier-only factor-log solve is admitted.
+  - >-
+    The B^(3/4) relation-count estimate is uniform-model-only and has no
+    structured generic-prime transfer.
+scoped_failures:
+  reverse_only_signed_marker_operator: open
+  signed_weight_separable_ffe_dag: open
+  targetable_multiscale_rank_and_density: open
+  factor_logs_without_verifier_labels: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 16
+  total_obligations: 27
+  reverse_only_operator_reduction_admitted: true
+  finite_rank_deficit_admitted: true
+  reverse_only_signed_marker_operator_admitted: false
+  lane_admitted: false
+next_action: >-
+  Construct only the reverse-adjoint signed marker operator for the
+  inversion-closed C deck and symmetric known-A6 shift batch, and add a
+  preregistered multiscale targetable-density and rank transfer because the
+  finite controls are never full rank.

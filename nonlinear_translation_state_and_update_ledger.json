@@ -1,0 +1,147 @@
+{
+  "cost_ledger": {
+    "c_deck_size_exponent_B": 0.6,
+    "exact_marker_moment_order_exponent_B": 3.0,
+    "exact_norm_moment_order_exponent_B": 3.0,
+    "exact_state_inside_setup_cap": false,
+    "exact_translation_inside_online_cap": false,
+    "fatal_obstruction": "the actual distinct endpoint support gives Hankel/Prony order C^5=B^3, so exact Newton and fixed-marker reconstruction materialize B^3 moments or equivalent recurrence coefficients",
+    "five_deck_endpoint_exponent_B": 3.0,
+    "moment_state_channels": 6,
+    "online_work_cap_exponent_B": 1.25,
+    "optimistic_full_state_translation_exponent_B": 3.0,
+    "optimistic_quasilinear_deck_update_exponent_B": 3.0,
+    "scope_exception": "a non-moment, non-Hankel source-reporting translation index whose state is not a rational reconstruction of the endpoint resolvent",
+    "setup_state_cap_exponent_B": 2.25
+  },
+  "deck_update_and_translation_control": {
+    "binomial_translation_matches_direct_shift": true,
+    "deck_product_matches_direct_moments": true,
+    "deck_size": 3,
+    "deck_update_law": "multiply the five deck exponential-moment series; replace one factor by its fixed-choice-weight series for each marker",
+    "field_prime": 65537,
+    "target": 1237,
+    "target_independent_state": true,
+    "target_translation_law": "G_target(z)=exp(target*z)*G(-z), channel by channel",
+    "truncation_order": 24
+  },
+  "frozen_sketch": {
+    "caps": {
+      "fresh_work_exponent_B": 1.25,
+      "setup_state_exponent_B": 2.25
+    },
+    "decoder": "Newton identities or Hankel/Pad\u00e9 rational reconstruction",
+    "forbidden_materializations": [
+      "endpoint/source dictionary",
+      "shift-value table",
+      "quotient or Krylov vector"
+    ],
+    "marker_rule": "source choice index plus one in each C slot",
+    "nonlinear_deck_update": true,
+    "nonlocal": true,
+    "schema": "p1553.frozen_5a5c_nonlocal_translation_sketch.r90.v1",
+    "sketch_id": "truncated_exponential_moment_hankel_pade_v1",
+    "state": [
+      "G(z)=product_i sum_j exp(c_ij*z) mod z^K",
+      "G_i(z)=weighted_i(z)*product_(h!=i) unweighted_h(z) mod z^K"
+    ],
+    "target_independent": true,
+    "translation_law": "G_target(z)=exp(target*z)*G(-z)"
+  },
+  "hankel_rank_controls": [
+    {
+      "all_endpoints_distinct": true,
+      "all_six_channels_have_full_hankel_rank": true,
+      "deck_size": 2,
+      "deck_sizes": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "endpoint_count": 32,
+      "endpoint_support_is_radix_interval": true,
+      "field_prime": 65537,
+      "marker_linear_complexities": [
+        32,
+        32,
+        32,
+        32,
+        32
+      ],
+      "moment_samples_per_channel": 64,
+      "newton_annihilator_degree": 32,
+      "newton_annihilator_exact": true,
+      "newton_annihilator_root_count": 32,
+      "norm_linear_complexity": 32
+    },
+    {
+      "all_endpoints_distinct": true,
+      "all_six_channels_have_full_hankel_rank": true,
+      "deck_size": 3,
+      "deck_sizes": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "endpoint_count": 243,
+      "endpoint_support_is_radix_interval": true,
+      "field_prime": 65537,
+      "marker_linear_complexities": [
+        243,
+        243,
+        243,
+        243,
+        243
+      ],
+      "moment_samples_per_channel": 486,
+      "newton_annihilator_degree": 243,
+      "newton_annihilator_exact": true,
+      "newton_annihilator_root_count": 243,
+      "norm_linear_complexity": 243
+    },
+    {
+      "all_endpoints_distinct": true,
+      "all_six_channels_have_full_hankel_rank": true,
+      "deck_size": 4,
+      "deck_sizes": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "endpoint_count": 1024,
+      "endpoint_support_is_radix_interval": true,
+      "field_prime": 65537,
+      "marker_linear_complexities": [
+        1024,
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "moment_samples_per_channel": 2048,
+      "newton_annihilator_degree": 1024,
+      "newton_annihilator_exact": true,
+      "newton_annihilator_root_count": 1024,
+      "norm_linear_complexity": 1024
+    }
+  ],
+  "schema": "p1553.nonlinear_translation_state_update.r90.v1",
+  "universal_newton_sharpness_control": {
+    "degree": 32,
+    "equal_power_sums_through_degree": 31,
+    "field_prime": 65537,
+    "first_different_power_sum_degree": 32,
+    "left_degree_n_power_sum": 96,
+    "norm_values_at_zero_differ": true,
+    "polynomial_left": "X^32-3",
+    "polynomial_right": "X^32-5",
+    "right_degree_n_power_sum": 160,
+    "scope": "sharpness for the universal Newton moment grammar; this is not asserted to be a five-deck realization"
+  }
+}

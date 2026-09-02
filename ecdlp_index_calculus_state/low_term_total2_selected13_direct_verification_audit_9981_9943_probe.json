@@ -1,0 +1,195 @@
+{
+  "artifacts": {
+    "c_header": "ecdlp_index_calculus_state/low_term_total2_selected13_direct_verification_audit_9981_9943_probe.h"
+  },
+  "claim_status": "SELECTED13_DIRECT_VERIFICATION_REQUIRES_FRESH_RELATIONS",
+  "created_at": "2026-06-05T19:02:42Z",
+  "failures": [],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "materialized_below_rho_labels_are_diagnostic_only": true,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false
+  },
+  "native_preflight": {
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_direct_audit_preflight_dxh4psuv/preflight.c",
+      "-o",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_direct_audit_preflight_dxh4psuv/preflight"
+    ],
+    "compile_returncode": 0,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_direct_verification_audit_preflight targets=2 verified=0 fresh_required=2 no_relation=1 rank_deficient=1 failures=0",
+    "verified": true
+  },
+  "parameters": {
+    "materialization": "ecdlp_index_calculus_state/low_term_total2_selected13_fresh_materialization_adapter_9981_9943_probe.json",
+    "support_state_dir": "/Volumes/Volume/autolab/ecdlp_index_calculus_state"
+  },
+  "schema": "ecdlp.low_term_total2_selected13_direct_verification_audit.v1",
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "classification_counts": {
+      "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS": 1,
+      "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT": 1
+    },
+    "direct_certificate_target_count": 0,
+    "direct_public_key_verified_count": 0,
+    "failure_count": 0,
+    "fresh_direct_verification_required_count": 2,
+    "pollard_rho_speedup_claimed": false,
+    "positive_control_certificate_count": 2,
+    "rank_deficient_target_count": 1,
+    "relation_derived_ecdlp": false,
+    "target_count": 2,
+    "target_without_relation_count": 1,
+    "verified": true,
+    "worker_interpretation": "The materialized selected13 targets do not have direct certificates. 9981 carries rank-deficient verifier evidence; 9943 has no exact direct relation for the materialized row. Fresh FFE relation emission is still required before any export or speedup claim."
+  },
+  "target_audits": [
+    {
+      "accepted_relation_export": false,
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_check_hash_u64": 9466797536760925517,
+      "backfill_row_id": "t9981_4d807a56f643",
+      "backfill_row_id_u64": 85214203672131,
+      "classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "classification_code": 3,
+      "direct_certificate_count": 0,
+      "direct_public_key_verified": false,
+      "exact_product_gate_rows": [
+        {
+          "derived_secret": null,
+          "direct_ops_over_rho": 0.72262774,
+          "public_key_verified": false,
+          "rank": 1,
+          "relation_count": 1,
+          "selector": "mode_low_term_support_total5",
+          "top_k": 16
+        }
+      ],
+      "exact_source_policy_rows": [
+        {
+          "below_rho": true,
+          "derived_secret": null,
+          "ops_over_rho": 0.72262774,
+          "public_key_verified": false,
+          "rank": 1,
+          "relation_count": 1,
+          "selector": "mode_low_term_support_total5",
+          "top_k": 16
+        }
+      ],
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "fresh_direct_verification_required": true,
+      "materialization_direct_public_key_verified": false,
+      "positive_control_certificates": [
+        {
+          "artifact": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9976_9983_probe.json",
+          "derived_secret": 1135,
+          "forms_count": 5,
+          "public_key_verified": true,
+          "rank": 5,
+          "selector": "mode_low_term_support_total5",
+          "top_k": 4,
+          "transfer_index": 9978
+        }
+      ],
+      "relation_derived_ecdlp": false,
+      "same_transfer_best_product_rank": 1,
+      "same_transfer_best_product_relation_count": 1,
+      "same_transfer_best_source_rank": 1,
+      "same_transfer_best_source_relation_count": 1,
+      "source_artifacts": {
+        "direct_certificates": [
+          "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9976_9983_probe.json"
+        ],
+        "frontier_public_leaf_policy": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_public_leaf_policy_p231_frozen_prefix_fixed_row_9976_9983_col15_selector_expanded_probe.json",
+        "shared_product_gate": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_fixed_leaf_shared_product_gate_9976_9983_col15_selector_expanded_density_probe.json",
+        "support_scout": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_selected_leaf_term_support_scout_22050_col15_selector_expanded_9976_9983_probe.json"
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "worker_obligation": "emit_additional_independent_direct_relation"
+    },
+    {
+      "accepted_relation_export": false,
+      "backfill_row_check_hash": "row_05f942a16fb73283",
+      "backfill_row_check_hash_u64": 430448500522037891,
+      "backfill_row_id": "t9943_4c88ff834538",
+      "backfill_row_id_u64": 84151286056248,
+      "classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+      "classification_code": 2,
+      "direct_certificate_count": 0,
+      "direct_public_key_verified": false,
+      "exact_product_gate_rows": [
+        {
+          "derived_secret": null,
+          "direct_ops_over_rho": 0.64963504,
+          "public_key_verified": false,
+          "rank": 0,
+          "relation_count": 0,
+          "selector": "mode_low_term_support_total5",
+          "top_k": 16
+        }
+      ],
+      "exact_source_policy_rows": [
+        {
+          "below_rho": true,
+          "derived_secret": null,
+          "ops_over_rho": 0.64963504,
+          "public_key_verified": false,
+          "rank": 0,
+          "relation_count": 0,
+          "selector": "mode_low_term_support_total5",
+          "top_k": 16
+        }
+      ],
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "fresh_direct_verification_required": true,
+      "materialization_direct_public_key_verified": false,
+      "positive_control_certificates": [
+        {
+          "artifact": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9936_9943_probe.json",
+          "derived_secret": 1085,
+          "forms_count": 2,
+          "public_key_verified": true,
+          "rank": 2,
+          "selector": "mode_low_term_support_total5",
+          "top_k": 7,
+          "transfer_index": 9938
+        }
+      ],
+      "relation_derived_ecdlp": false,
+      "same_transfer_best_product_rank": 1,
+      "same_transfer_best_product_relation_count": 1,
+      "same_transfer_best_source_rank": 1,
+      "same_transfer_best_source_relation_count": 1,
+      "source_artifacts": {
+        "direct_certificates": [
+          "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9936_9943_probe.json"
+        ],
+        "frontier_public_leaf_policy": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_public_leaf_policy_p231_frozen_prefix_fixed_row_9936_9943_col15_selector_expanded_probe.json",
+        "shared_product_gate": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_fixed_leaf_shared_product_gate_9936_9943_col15_selector_expanded_density_probe.json",
+        "support_scout": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_selected_leaf_term_support_scout_22050_col15_selector_expanded_9936_9943_probe.json"
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "worker_obligation": "emit_new_direct_relations_for_rank"
+    }
+  ]
+}

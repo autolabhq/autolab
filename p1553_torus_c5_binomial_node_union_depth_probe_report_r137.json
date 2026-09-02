@@ -1,0 +1,188 @@
+{
+  "admission": {
+    "lane_admitted": false,
+    "obligation_count": 23,
+    "obligations": {
+      "all_actual_positive_inverse_paths_exact": true,
+      "all_actual_product_set_bounds_exact": true,
+      "breakthrough_complete": false,
+      "deterministic_binomial_depth_B_three_quarters": true,
+      "eight_actual_controls_complete": true,
+      "eleven_source_bindings_verified": true,
+      "factor_logs_complete": false,
+      "finite_controls_receive_no_asymptotic_credit": true,
+      "identical_target_descent_complete": false,
+      "inside_cap_asymmetric_predicate_complete": false,
+      "inside_cap_five_source_index_complete": false,
+      "iterated_cauchy_davenport_bound_explicit": true,
+      "known_rhs_relation_rank_complete": false,
+      "pollard_rho_improvement_complete": false,
+      "primary_product_set_source_pinned": true,
+      "prime_order_binomial_root_bound_explicit": true,
+      "r136_path_product_interface_inherited": true,
+      "random_four_mode_depth_B_five_twelfths": true,
+      "random_support_receives_no_structured_credit": true,
+      "shoup_improvement_complete": false,
+      "structured_color_support_lower_bound_explicit": true,
+      "thirty_actual_color_controls_complete": true,
+      "three_plus_five_plus_and_nonzero_routes_preserved": true
+    },
+    "passed_obligation_count": 15,
+    "random_model_four_mode_tree_negative_admitted": true,
+    "structured_binomial_tree_negative_admitted": true,
+    "structured_three_plus_mode_or_nonzero_selector_admitted": false
+  },
+  "artifacts": {
+    "controls": "torus_c5_binomial_node_union_depth_controls.json",
+    "cost": "torus_c5_binomial_node_union_depth_cost_ledger.json",
+    "frozen": "frozen_torus_c5_binomial_node_union_depth.json",
+    "logs_descent": "factor_logs_and_identical_descent_r137.json",
+    "source_replay": "torus_c5_binomial_node_union_depth_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "BINOMIAL_NODE_UNION_DEPTH_AND_RANDOM_FOUR_MODE_NEGATIVE_ONLY_WITHHOLD_PROMOTION",
+  "classification": "CAUCHY_DAVENPORT_FORCES_EVERY_STRUCTURED_COLOR_FIVEFOLD_PRODUCT_SET_TO_AT_LEAST_FIVE_M_MINUS_FOUR__PRIME_ORDER_BINOMIAL_HAS_AT_MOST_ONE_ROOT__EXACT_BINOMIAL_ZERO_TEST_TREE_NEEDS_B_THREE_QUARTERS_ALL_NONZERO_PATH_DEPTH_REGARDLESS_OF_PRODUCT_EXPANSION__UNIFORM_RANDOM_SUPPORT_EXTENDS_POLYNOMIAL_DEPTH_TO_FOUR_MODE_NODES_ONLY__THIRTY_EXACT_PRODUCT_SET_AND_POSITIVE_INVERSE_EMPTY_CONTROLS__STRUCTURED_THREE_PLUS_FIVE_PLUS_LOW_SLP_NONZERO_VALUE_ROUTES_OPEN__NO_RANK_LOGS_DESCENT_SHOUP_BREAKTHROUGH",
+  "disposition": "ADMIT_CAUCHY_DAVENPORT_STRUCTURED_PRODUCT_SET_FLOOR__REJECT_ALL_STRUCTURED_BINOMIAL_ZERO_TEST_TREES_AT_POLYLOG_QUERY__ADMIT_RANDOM_SUPPORT_POLYNOMIAL_DEPTH_LOWER_BOUND_THROUGH_FOUR_MODES_ONLY__ADMIT_THIRTY_EXACT_PRODUCT_SET_AND_POSITIVE_INVERSE_EMPTY_CONTROLS_WITHOUT_ASYMPTOTIC_CREDIT__PRESERVE_STRUCTURED_THREE_PLUS_FIVE_PLUS_LOW_SLP_AND_NONZERO_VALUE_ROUTES__NO_LOCATOR__NO_RANK__NO_LOGS__NO_DESCENT__NO_SHOUP__NO_BREAKTHROUGH",
+  "finite_evidence": {
+    "active_color_control_count": 30,
+    "all_color_controls_are_bound_tight": true,
+    "all_color_product_sets_meet_cauchy_davenport": true,
+    "all_positive_inverse_pairs_share_all_nonzero_path": true,
+    "asymptotic_credit": false,
+    "control_count": 8
+  },
+  "next_action": "Probe the surviving node classes: structured three-plus-mode zero tests, five-plus-mode low-SLP zero-test circuits under the random support model, and nonzero-value Frobenius-coordinate branches. Freeze every circuit node and branch, replay exact positive and inverse-empty targets and C2+C3 sources, fit B^(9/4+o(1)) state and polylogarithmic arbitrary-target work, avoid field DLP, and charge rank, logs, identical descent, memory, field operations, and bits.",
+  "non_claims": [
+    "Cauchy-Davenport supplies only a linear structured product-set lower bound.",
+    "The three- and four-mode polynomial depth bounds require the random support model.",
+    "The random support model does not transfer to the structured factor base.",
+    "Nonzero-value and coordinate tests are not covered.",
+    "The exact small controls receive no probability or asymptotic credit.",
+    "No general straight-line-program, circuit, RAM, or cell-probe lower bound is claimed.",
+    "No source index, rank, logs, descent, rho, or Shoup result is supplied."
+  ],
+  "pollard_rho_improvement": false,
+  "schema": "p1553.torus_c5_binomial_node_union_depth.r137.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "devos_pdf": {
+      "path": "references/devos_structure_critical_product_sets_1301.0096.pdf",
+      "sha256": "924bac0a6b5a1e9379e38a53f3ab78a6ad129beb6fddb12396c8275403b8c511"
+    },
+    "r136_controls": {
+      "path": "torus_c5_all_nonzero_path_product_controls.json",
+      "sha256": "bcd98529f44223cb07510094de08c0f234da14830410b67847ec1aef75bf216b"
+    },
+    "r136_cost": {
+      "path": "torus_c5_all_nonzero_path_product_cost_ledger.json",
+      "sha256": "30935ad0b297822f56dca0e69fe80952e51b92c61f32cdee79a43dde8d483d8e"
+    },
+    "r136_frozen": {
+      "path": "frozen_torus_c5_all_nonzero_path_product.json",
+      "sha256": "3a8587a33e176a7174dacf88ced1da243b0be9b77f214a1b41bb2ef3db4ccef0"
+    },
+    "r136_gate": {
+      "path": "p1553_torus_c5_all_nonzero_path_product_probe_gate_r136.md",
+      "sha256": "1a7e631d374e9b49d8d7eaf3440bc31d95b8d28f8f73f5a3e520b1f461bcabc5"
+    },
+    "r136_logs": {
+      "path": "factor_logs_and_identical_descent_r136.json",
+      "sha256": "c38aaf5b7966f24273ffe76d6564f4e2cf9d845caa2d17715a535ce044209049"
+    },
+    "r136_parent": {
+      "path": "p1553_torus_c5_all_nonzero_path_product_probe_parent_report_r136.yaml",
+      "sha256": "a4d61b3f08e92de9b9276bc12d137a1ff1c1494e81d08d8432c6fea9ecaa72dc"
+    },
+    "r136_producer": {
+      "path": "p1553_torus_c5_all_nonzero_path_product_probe_r136.py",
+      "sha256": "a0761c05909996a80b3322aec859fcde97b23d77ce7cf512ddfa0c888e3017d9"
+    },
+    "r136_replay": {
+      "path": "torus_c5_all_nonzero_path_product_replay.json",
+      "sha256": "4c4414fa1472eaec54f9b71eeb6defc47b75c3b278cdad66b7d14e5fa0fb1d4d"
+    },
+    "r136_report": {
+      "path": "p1553_torus_c5_all_nonzero_path_product_probe_report_r136.json",
+      "sha256": "530b696871917a69ddef1e6a0a14a44421176439c0ccf7b9031ecf5a8a1b64ce"
+    },
+    "r136_test": {
+      "path": "tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_all_nonzero_path_product_probe_r136.py",
+      "sha256": "c6dd14aeabda0f4b69b6d3f021b207d998214d63922178fab58220a8beac01e3"
+    }
+  },
+  "theorem": {
+    "binomial_root_bound": "A nonzero represented binomial a*z^u+b*z^v with u distinct from v modulo prime q has at most one root in H: after division it is z^(u-v)=c, and the nonzero power map is a permutation of H.",
+    "deterministic_binomial_depth_lower_bound": "On the all-nonzero path, exactness forces the union of node root sets to cover either the color support or its complement. For binomial nodes this union has at most d points. Therefore d>=min(|S|,q-|S|)>=5m-4=B^(3/4+o(1)). This exceeds polylogarithmic arbitrary-target work regardless of the expanded support of the path product.",
+    "iterated_product_set_bound": "Let A be a nonempty subset of a cyclic group H of prime order q. Cauchy-Davenport in multiplicative notation gives |XY|>=min(q,|X|+|Y|-1). Iterating five times yields |A^5|>=min(q,5|A|-4). No discrete logarithm is computed; an abstract group isomorphism transfers the theorem.",
+    "maximum_deterministic_node_mode_count_closed": 2,
+    "maximum_random_model_node_mode_count_closed": 4,
+    "nonzero_value_tests_covered": false,
+    "not_covered": [
+      "structured zero-test nodes with three or more modes",
+      "uniform-random support trees with five or more modes per node",
+      "tests of nonzero field values rather than equality to zero",
+      "Frobenius-coordinate comparisons and table probes",
+      "general arithmetic-circuit, RAM, or cell-probe lower bounds"
+    ],
+    "primary_source": {
+      "author": "Matt DeVos",
+      "identifier": "arXiv:1301.0096",
+      "pinned_sha256": "924bac0a6b5a1e9379e38a53f3ab78a6ad129beb6fddb12396c8275403b8c511",
+      "source_result": "Introduction statement of the multiplicative Cauchy-Davenport theorem for prime-order groups",
+      "title": "The Structure of Critical Product Sets"
+    },
+    "random_depth_table": [
+      {
+        "maximum_node_mode_count": 2,
+        "maximum_single_node_root_exponent_q": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "minimum_depth_exponent_B": {
+          "decimal": 3.75,
+          "exact": "15/4"
+        },
+        "minimum_depth_exponent_q": {
+          "decimal": 0.75,
+          "exact": "3/4"
+        },
+        "polylogarithmic_query_compatible": false
+      },
+      {
+        "maximum_node_mode_count": 3,
+        "maximum_single_node_root_exponent_q": {
+          "decimal": 0.5,
+          "exact": "1/2"
+        },
+        "minimum_depth_exponent_B": {
+          "decimal": 1.25,
+          "exact": "5/4"
+        },
+        "minimum_depth_exponent_q": {
+          "decimal": 0.25,
+          "exact": "1/4"
+        },
+        "polylogarithmic_query_compatible": false
+      },
+      {
+        "maximum_node_mode_count": 4,
+        "maximum_single_node_root_exponent_q": {
+          "decimal": 0.6666666666666666,
+          "exact": "2/3"
+        },
+        "minimum_depth_exponent_B": {
+          "decimal": 0.4166666666666667,
+          "exact": "5/12"
+        },
+        "minimum_depth_exponent_q": {
+          "decimal": 0.08333333333333333,
+          "exact": "1/12"
+        },
+        "polylogarithmic_query_compatible": false
+      }
+    ],
+    "random_support_model_transferred_to_structured_factor_base": false,
+    "structured_color_support_lower_bound": "A balanced structured color has m=B^(3/4+o(1))=q^(3/20+o(1)) distinct atoms. Its accepted C5 support contains A^5, hence at least 5m-4 targets. The full C5 tuple count is B^(15/4)=q^(3/4), so the color complement has q-o(q) points.",
+    "uniform_random_support_extension": "Under the frozen uniform-random-deck support model only, |S|=q^(3/4+o(1)). If every node has at most t modes, Kelley gives at most 2*q^(1-1/(t-1)) roots per node. Thus depth is at least q^(3/4-(1-1/(t-1))+o(1))/2. For t=2,3,4 the q exponents are 3/4, 1/4, and 1/12, respectively, all polynomial and incompatible with polylog query work."
+  }
+}

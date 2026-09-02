@@ -1,0 +1,96 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-GENUS-ONE-ABC-PRODUCT-LINE-R53-PARENT
+date: 2026-07-20
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: self_contained_separable_riemann_hurwitz_theorem_and_exact_r52_divisor_accounting
+  model_scope: ordinary_three_term_function_field_abc_after_divisor_gcd_cancellation
+  novelty: unverified
+  independent_review: complete_pass
+  status: STAGED_INDEPENDENT_REVIEW_PASS_COORDINATOR_ARCHIVAL_REQUIRED
+summary: >-
+  After cancelling the common divisor from three dependent elliptic sections,
+  separable Riemann-Hurwitz gives m <= n, where m is moving map degree and n
+  is total radical support in the zero, one, and pole fibers. R52 satisfies
+  3 <= 9 with slack six, while a hypothetical primitive reduced degree-nine
+  split pencil satisfies 9 <= 27 with slack eighteen. This single three-fiber
+  inequality is blind to factor ownership and cannot by itself supply a
+  one-varying-factor theorem.
+inputs:
+  - path: staged/p1553_target_walk_support_work_gate_r38.md
+    sha256: ecacb63d18cc2e4478fa0d3c6b71930a4ba4e0a50f3866bd46752ed7c37f7aa5
+  - path: staged/p1553_translated_triple_product_pencil_gate_r51.md
+    sha256: 4b60aab9732a448c718f570262b6a44dd28fbdde6797090bba78fb1f59761ca2
+  - path: staged/p1553_translated_product_shared_factor_gate_r52.md
+    sha256: 060f27a6830a685f47ec241920bb5d3cb793336bba032e95f926a899bab018a2
+  - path: staged/p1553_r52_bundle.sha256
+    sha256: ea4392c4dcc8e5f34a455baa40622ac6aa320422875c392489fa95ae9fd8ff37
+  - path: staged/p1553_r52_staging_receipt.yaml
+    sha256: 8edcb0e589ef9a6b9745c54c4791d9239b29ccc8f5c379fbe76e27f391339962
+outputs:
+  - path: staged/p1553_genus_one_abc_product_line_gate_r53.md
+    sha256: d3a860a7d9fa76353bdfebc61387a9079f86733aef44d10dc2cef6eec4c957a8
+  - path: staged/p1553_genus_one_abc_product_line_selfcheck_r53.py
+    sha256: ce4f8128041b3f5a1b956ce71cfe53d65e23e966e494059be8a03a2960be15bf
+  - path: staged/p1553_genus_one_abc_product_line_selfcheck_report_r53.json
+    sha256: 9e68b20353fa1c5d2974ba0af62288d24f15e331fe72eb46a5b2df987308a2a3
+  - path: staged/p1553_genus_one_abc_product_line_independent_review_r53.md
+    sha256: c2c46df61db9b6995815a5579fec339cd2265fd899b5855e534e6ed2785e7c31
+theorems:
+  - >-
+    Removing the common zero divisor makes the residual zero divisors of three
+    dependent sections pairwise disjoint and identifies them with the zero,
+    one, and pole fibers of a degree-m map.
+  - >-
+    A separable degree-m map from a genus-g curve satisfies m <= n + 2g - 2,
+    where n is the number of distinct points over zero, one, and infinity.
+  - >-
+    On genus one, this single three-fiber inequality excludes only total
+    residual radical n < m and does not see a partition of reduced zeros into
+    low-degree factors.
+controls:
+  r52_common_divisor_cancelled_before_map_degree: true
+  r52_moving_degree: 3
+  r52_three_fiber_radical: 9
+  r52_abc_slack: 6
+  primitive_reduced_degree_nine_radical: 27
+  primitive_reduced_degree_nine_abc_slack: 18
+  reduced_r_factor_slack_formula: 2rd
+  strict_radical_deficit_negative_control: true
+result:
+  classification: single_three_fiber_abc_inequality_factor_blind_scope_closeout
+  single_three_fiber_inequality_closes_r52: false
+  single_three_fiber_inequality_excludes_primitive_reduced_product_pencils: false
+  one_varying_factor_theorem: absent
+  auxiliary_factor_sensitive_abc_or_s_unit_arguments: open
+  factor_sensitive_trisecant_classification: required
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+literature:
+  - doi: 10.1093/qmath/32.3.349
+    scope: polynomial_abc_context
+  - doi: 10.1017/S0305004100066184
+    scope: characteristic_zero_function_field_vanishing_sums_context
+limits:
+  - independent mathematical review has not been completed
+  - the positive-characteristic bound is proved only for separable maps
+  - no trisecant classification or coprime multi-factor exclusion is supplied
+  - no asymptotic pencil family, target, R10, rank campaign, logs, or descent
+deduplication:
+  - R52 owns the exact common-factor classification of the 228 positive R51 lines
+  - R53 owns only the ordinary genus-one abc scope and its factor-blind failure
+disposition: >-
+  STAGED_INDEPENDENT_REVIEW_PASS_COORDINATOR_ARCHIVAL_REQUIRED__DIVISOR_GCD_CANCELLED_BEFORE_MAP_DEGREE__NONCONSTANT_SEPARABLE_GENUS_ONE_ABC_M_LE_N__R52_THREE_LE_NINE_SLACK_SIX__PRIMITIVE_DEGREE_NINE_NINE_LE_27_SLACK_EIGHTEEN__REDUCED_R_FACTOR_PRODUCTS_SLACK_2RD__SINGLE_THREE_FIBER_INEQUALITY_FACTOR_BLIND__NO_ONE_VARYING_FACTOR_THEOREM_FROM_THIS_INEQUALITY_ALONE__AUXILIARY_FACTOR_S_UNIT_ARGUMENTS_OPEN__TRISECANT_PROBE_REQUIRED__NO_TARGET_R10_RELATION_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  On the frozen R38 elliptic toy, enumerate all within-window split
+  degree-three factors and their admissible degree-nine products, then scan a
+  frozen deterministic sample of coprime generated lines against the complete
+  product catalog. Preserve any primitive coprime trisecant as a construction
+  seed; a zero count closes only the sampled lines.

@@ -1,0 +1,78 @@
+{
+  "caps": {
+    "arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_state_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "interface": {
+    "asymptotic_credit": false,
+    "claw_equation": "z^b=-(z^(a+1)+z^a+z)/(z^a+z+1)",
+    "finite_scan_limit": 30000,
+    "input": "A generator z of the prime order q subgroup and known integer modes a,b.",
+    "output": "A rank-three four-by-four Fourier minor and its unique four-term kernel polynomial."
+  },
+  "required_open_outputs": [
+    "subcap_asymptotic_known_mode_claw",
+    "asymptotically_dense_atom_root_set",
+    "inside_cap_four_mode_selector",
+    "known_rhs_relation_rank_complete",
+    "factor_logs_complete",
+    "identical_target_descent_complete",
+    "generic_prime_family_algorithm",
+    "pollard_rho_improvement_complete",
+    "shoup_improvement_complete",
+    "breakthrough_complete"
+  ],
+  "schema": "p1553.torus_c5_order_two_four_minor_claw.frozen.r140.v1",
+  "source_bindings": {
+    "r134_controls": {
+      "path": "torus_c5_two_atom_geometric_progression_controls.json",
+      "sha256": "dfc7c9d0f13d21cd3bee1bba5a0dd7d727ef5df0fb7969ff66d9384293ea0a56"
+    },
+    "r139_controls": {
+      "path": "torus_c5_order_two_three_minor_rigidity_controls.json",
+      "sha256": "7e033a78d9b351529b5427087e8a8da5a28ee5840a9bc61919f21206ee51b6b0"
+    },
+    "r139_cost": {
+      "path": "torus_c5_order_two_three_minor_rigidity_cost_ledger.json",
+      "sha256": "660ca8cca2de9f2887b764c6d6054d99c1fdd540e2573c1293be9142f3ecb7f4"
+    },
+    "r139_frozen": {
+      "path": "frozen_torus_c5_order_two_three_minor_rigidity.json",
+      "sha256": "b3bbc3eb99aad5c03e5feee56c90a979ec086361375d353a297ea72fa4837456"
+    },
+    "r139_gate": {
+      "path": "p1553_torus_c5_order_two_three_minor_rigidity_probe_gate_r139.md",
+      "sha256": "068211b726698d32ec0c3ad91ded28e814b2331a9b99a7c74a9327c9bfc8d76d"
+    },
+    "r139_logs": {
+      "path": "factor_logs_and_identical_descent_r139.json",
+      "sha256": "0f080f3cbad1317f7e0084c810e1e34ef45a0fc6ebda3398256f14fca3964be6"
+    },
+    "r139_parent": {
+      "path": "p1553_torus_c5_order_two_three_minor_rigidity_probe_parent_report_r139.yaml",
+      "sha256": "a495e6be54c566f2f38174798963b6cd59c12be11cda1f160a89843ad2508888"
+    },
+    "r139_producer": {
+      "path": "p1553_torus_c5_order_two_three_minor_rigidity_probe_r139.py",
+      "sha256": "16f87b9249e368f80c7d85169c5a969ebb059e7d03dd0fbf84bf1951bf64ab18"
+    },
+    "r139_replay": {
+      "path": "torus_c5_order_two_three_minor_rigidity_replay.json",
+      "sha256": "96ba9fc10f4637ebc545ec9e1f39f8d2b687ed81548914bf8f0102713335fc17"
+    },
+    "r139_report": {
+      "path": "p1553_torus_c5_order_two_three_minor_rigidity_probe_report_r139.json",
+      "sha256": "a6a63b4dc9dcff419103ed4db4884c23c53c8c4d8d2c607a9da7244a96a5a2ce"
+    },
+    "r139_test": {
+      "path": "tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_order_two_three_minor_rigidity_probe_r139.py",
+      "sha256": "04c617baf2efcab875d2f550b9e448cf89028960b5d990aae37bb53dcb944098"
+    }
+  }
+}

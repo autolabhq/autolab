@@ -1,0 +1,89 @@
+schema: crypto.autoresearch.install_validation_receipt.v1
+bundle_id: P1553-R10-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+reason: authoritative checkout is read-only in this session
+composition:
+  mode: atomic_r5_through_r10
+  upstream_bundle_id: P1553-R5-R7-20260719
+  upstream_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_bundle_id: P1553-R9-20260719
+  base_manifest_sha256: 73e045b4d939401a2a15699a0db04f0a7f326e3be9a97ed5669035690fe01101
+  base_manifest_hash_list_sha256: 5ac673dec0653d55156233ae2371bdea776ae8ea09383ae396a9dc4bd478d1ad
+  base_simulated_queue_sha256: c0cf11e07745be78b192d85b41a6d5876dd6f1d2df4ca0019cceee0d61539ca4
+delta_manifest:
+  json_sha256: 59721e418d99f74fa9762100fe66e132933b3c7f408285b0335658938899b72f
+  sha256_list_sha256: b4b0d6920c296d6f7da3c0c18ae1224b9b1004a64ebebb6e011374e6cb69b73d
+  unique_sources: 4
+  destination_installs: 5
+  appended_tasks: 2
+producer_bindings:
+  gate_sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  parent_report_sha256: acf820dac41bded67af083931e4284702cdf75d5c9fd8e121c21dc57bfc3bf97
+  red_team_markdown_sha256: bb692017404ccbb853d02f3cc2806ab74588b8592eb50e3a4ebba1f96f573a17
+  red_team_yaml_sha256: 3a810ae62318ddac77edcacf364e28454473919e956cce488352d1511e484670
+  independent_reviewer: 019f7ca1-e1be-7941-97be-290005295446
+  final_review: accept
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+simulated_composed_merge:
+  queue_file_sha256: a70c3874615af2f3174a5ffc2d45a164de3808912c31db71ee2f5ee30701210a
+  queue_canonical_sha256: f8df9b1d61424c8fcc2b8c043410be808ff5e6745b02c9faa19b1e566e83b637
+  dispatch_file_sha256: 7de52538c0371ed944153cc59904b8ef1a5d353ba045fbc8d39b7f6a337f5c78
+  dispatch_report_sha256: 3649eb3c131e3aa67498085cbc0ffc4884747e148fa66d699e96f42aa991291a
+  dispatch_plan_sha256: bc9a6f08391386429081ed97e7752071d62152e68e986215ca8faff21a883124
+  terminal_tasks: 20
+  ready_tasks: 0
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  new_yaml_documents_parsed: 2
+  new_ascii_files_checked: 6
+  new_exactly_one_next_action_headings: 2
+  composed_r5_through_r10_exactly_one_next_action_headings: 12
+  r10_source_hash_list: pass
+  r10_manifest_source_bindings: pass
+  r10_task_ids_unique: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+research_result:
+  status: revise_scoped_theorem
+  exact_new_control: >-
+    The full ambient orthogonality kernel has a p by p identity minor, but the
+    actual nonlinear S_6 signature image remains outside that lower bound.
+    Effective separated rank at most one has an exact unary router, while
+    effective rank two reduces to sparse multiplicative convolution after all
+    4^5 zero strata are charged.
+  coefficient_complete_boundary: >-
+    Exact Fermat-projector contraction through unary moments uses
+    binomial(p+r-2,r-1) literal channels. This is over cap for fixed r>=2 but
+    is not a rank or arithmetic-circuit lower bound.
+  surviving_exception: >-
+    Compute h_I composed with the factorized actual target-triple map directly
+    from three unary lists, for every canonical dyadic query, without emitting
+    B^3 values or source incidences.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_install_rule: >-
+  Re-read all three live precondition hashes and both required NET task states;
+  compose R5-R7, R8, R9, and R10 on one private queue; install all files and
+  regenerated dispatch outputs atomically only if every manifest, source
+  binding, test, focus check, and corpus validator still passes. Preserve any
+  mismatch as concurrent-state drift instead of overwriting it.

@@ -1,0 +1,47 @@
+{
+  "diagnostics": {
+    "all_public_below_rho_cases_sample": []
+  },
+  "method": "public_below_rho_total_k_row_leaf_stress_selector",
+  "parameters": {
+    "allowed_leaf_selectors": [],
+    "default_selector_regex": "^mode_(?:cost_)?low_term_support_total[0-9]+$",
+    "forbidden_selection_fields": [
+      "public_key_verified",
+      "relation_count",
+      "rank",
+      "source_verified",
+      "row_selector_public_key_verified"
+    ],
+    "max_cases_per_challenge": 0,
+    "max_ops_over_rho": 1.5,
+    "require_below_rho": false,
+    "seed": "ecdlp-frontier-signed-dual-sieve-v1",
+    "selection_rule": [
+      "allow raw stress below_rho false when bounded by max_ops_over_rho",
+      "require ops_over_rho below threshold",
+      "rank by ops_over_rho, selected row count, selected leaf count, top_k, policy, leaf selector"
+    ],
+    "stress_source": "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_856_863_probe.json"
+  },
+  "positive_cases": [],
+  "schema": "ecdlp_low_term_totalk_public_stress_selector_probe_v1",
+  "summary": {
+    "all_public_bounded_case_count": 0,
+    "all_public_candidate_case_count": 0,
+    "interpretation": "Cases are selected from raw stress rows by public cost and deterministic public tie-breaks. Verifier fields are labels only and are not part of the selection rule.",
+    "leaf_selector_counts": {},
+    "policy_counts": {},
+    "positive_source": "public_bounded_stress_rows",
+    "positive_source_case_count": 0,
+    "positive_source_surface_ids": [],
+    "row_selector_counts": {},
+    "selected_max_ops_over_rho": null,
+    "selected_mean_ops_over_rho": null,
+    "selected_min_ops_over_rho": null,
+    "selected_public_case_count": 0,
+    "selected_signature_verified_label_count": 0,
+    "target_count": 0,
+    "target_summaries": []
+  }
+}

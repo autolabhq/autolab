@@ -1,0 +1,85 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "inside_polylog_query_cap": false,
+      "inside_setup_cap": false,
+      "minimum_serialized_mode_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "dense_consecutive_mode_color_zero_predicate",
+      "sequential_evaluation_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "status": "rejected"
+    },
+    {
+      "inside_polylog_query_cap": false,
+      "inside_setup_cap": false,
+      "route_id": "explicit_color_root_product_tree",
+      "single_target_leaf_evaluation_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "status": "rejected",
+      "stored_root_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      }
+    },
+    {
+      "field_specific_sparse_zero_theorem_supplied": false,
+      "inside_cap_circuit_constructed": false,
+      "route_id": "lacunary_order_two_finite_field_predicate",
+      "status": "open"
+    },
+    {
+      "exact_dag_constructed": false,
+      "general_lower_bound_claimed": false,
+      "route_id": "nonfourier_shared_predicate_decision_dag",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_consecutive_mode_predicate_cost_ledger.r131.v1",
+  "theorem": {
+    "balanced_color_acceptance": "For a balanced color class of m=Theta(n) among n=B^(3/4+o(1)) atoms, degree-five multisets containing at least two colored atoms number binom(n+4,5)-binom(n-m+4,5)-m*binom(n-m+3,4)=Theta(n^5)=B^(15/4+o(1)).",
+    "consecutive_mode_consequence": "On a nonzero cyclic subgroup, a Laurent polynomial with modes a,a+1,...,a+s-1 has at most s-1 distinct zeros unless it is zero: multiply by X^(-a) and apply the root bound.",
+    "dense_consecutive_predicate_lower_bound": "A single consecutive-mode zero predicate for one color therefore needs B^(15/4+o(1)) serialized modes.",
+    "dense_state_exponent_B": {
+      "decimal": 3.75,
+      "exact": "15/4"
+    },
+    "field_independent_root_bound": "Over any field, a nonzero polynomial of degree d has at most d distinct roots.",
+    "not_covered": [
+      "lacunary finite-field Fourier supports",
+      "high-degree low-SLP polynomial or rational predicates",
+      "multiple small predicates arranged in a shared decision DAG",
+      "adaptive cell-probe selectors",
+      "non-Fourier finite-field predicates",
+      "general arithmetic-circuit or data-structure lower bounds"
+    ],
+    "scope_limits": [
+      "single zero predicates with consecutive Fourier modes",
+      "dense serialized consecutive coefficient blocks",
+      "sequential Horner or explicit product-tree evaluation",
+      "injective degree-five source-monomial color predicates"
+    ],
+    "sequential_horner_query_exponent_B": {
+      "decimal": 3.75,
+      "exact": "15/4"
+    },
+    "vandermonde_equivalent": "For s distinct subgroup points, the s-by-s matrix of modes 0,...,s-1 has determinant product_{i<j}(x_j-x_i), which is nonzero over every coefficient field."
+  }
+}

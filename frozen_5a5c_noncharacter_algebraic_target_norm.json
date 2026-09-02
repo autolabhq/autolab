@@ -1,0 +1,115 @@
+{
+  "actual_offsets": [
+    0,
+    1
+  ],
+  "atom_exponents_B": {
+    "a": {
+      "decimal": 0.4,
+      "exact": "2/5"
+    },
+    "c": {
+      "decimal": 0.6,
+      "exact": "3/5"
+    }
+  },
+  "balanced_root_split": {
+    "left": {
+      "a": 2,
+      "c": 3
+    },
+    "right": {
+      "a": 3,
+      "c": 2
+    }
+  },
+  "campaign": "P1553",
+  "grammar": {
+    "allowed": [
+      "explicit endpoint Chow or coefficient vectors",
+      "Sylvester and subresultant sequences",
+      "quotient-free transposed cofactors",
+      "sparse Macaulay determinant or determinant quotient",
+      "constant-order target and marker truncation"
+    ],
+    "character_or_dlp_coordinates_forbidden": true,
+    "forbidden_unit_cost_oracles": [
+      "resultant",
+      "determinant",
+      "gcd",
+      "root",
+      "source"
+    ],
+    "target_may_be_injected_at_any_gate": true
+  },
+  "matched_random_offsets": [
+    2,
+    3
+  ],
+  "public_inputs": "D_A=sum_i[A_i], D_C=sum_j[C_j], target T",
+  "query_labels": [
+    "unique_min_partition_weight",
+    "unique_max_partition_weight",
+    "maximum_multiplicity",
+    "blind",
+    "projective_identity"
+  ],
+  "round": "R107",
+  "scalar_labels_consumed_by_candidate": false,
+  "schema": "p1553.frozen_5a5c_noncharacter_algebraic_target_norm.r107.v1",
+  "source_arity": {
+    "a": 5,
+    "c": 5
+  },
+  "source_bindings": {
+    "r102_gate": {
+      "path": "p1553_5a5c_two_sided_implicit_join_probe_gate_r102.md",
+      "sha256": "1af82597762525110baf31cec7b4e7b96693a730270f7e1bd6556906e5c5f56c"
+    },
+    "r102_report": {
+      "path": "p1553_5a5c_two_sided_implicit_join_probe_report_r102.json",
+      "sha256": "5f16489b5f0535df6c9728edfed5f2f83641a4b9c30fd2609db52a73f46d40e7"
+    },
+    "r105_gate": {
+      "path": "p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_gate_r105.md",
+      "sha256": "e349dc695975b3d5ce923ed334c61c6329884bbc30228f7bf52fb1c8413ea3ef"
+    },
+    "r105_parent": {
+      "path": "p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_parent_report_r105.yaml",
+      "sha256": "34ed83a9fbb47048734f9a14f0311fc272761b747da9b12fa66e110ab8daa3ad"
+    },
+    "r105_producer": {
+      "path": "p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_r105.py",
+      "sha256": "d7215def9fa82b01ec72ea43f3d297fd1343d2ceae9f5d364a351326c9f9c6b8"
+    },
+    "r105_report": {
+      "path": "p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_report_r105.json",
+      "sha256": "c00b8c3e934e783012acb1dab83282f98720702bb8cd81a706fbdf4671f93a83"
+    },
+    "r106_gate": {
+      "path": "p1553_5a5c_scalar_target_norm_count_circuit_probe_gate_r106.md",
+      "sha256": "dcc7fe476ed09c0ad559f115a38bdefc31d5209ec72fd5bca817c58dcba6e95c"
+    },
+    "r106_parent": {
+      "path": "p1553_5a5c_scalar_target_norm_count_circuit_probe_parent_report_r106.yaml",
+      "sha256": "ac4c9c0062951d690a1917882662f0b0d641cc19a5aadf4d73f5e4d16e05253f"
+    },
+    "r106_producer": {
+      "path": "p1553_5a5c_scalar_target_norm_count_circuit_probe_r106.py",
+      "sha256": "fdff39f3b49b0d01690ae5a480c17bfd701adcc528bc2701aa6ae9756bda6652"
+    },
+    "r106_report": {
+      "path": "p1553_5a5c_scalar_target_norm_count_circuit_probe_report_r106.json",
+      "sha256": "08a84327617ec660b189e5a42f22eaa79f817e1a6aa3167724263595f1fa192d"
+    },
+    "r84_gate": {
+      "path": "p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md",
+      "sha256": "4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661"
+    },
+    "r84_report": {
+      "path": "p1553_5a5c_marked_resultant_source_section_probe_report_r84.json",
+      "sha256": "c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b"
+    }
+  },
+  "target_and_partitions_frozen_before_outcomes": true
+}

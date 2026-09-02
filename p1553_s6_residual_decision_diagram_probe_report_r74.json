@@ -1,0 +1,1472 @@
+{
+  "admission": {
+    "failures": [
+      "all frozen algebraic triple residual keys are distinct",
+      "target-independent residual state exponent is 3",
+      "on-demand algebraic construction costs B^3 online",
+      "oracle Boolean compression presupposes relation incidences"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 10,
+    "passed_obligation_count": 6
+  },
+  "aggregate": {
+    "all_blind_target_oracle_diagrams_single_empty_state": true,
+    "all_forced_witnesses_recognized": true,
+    "all_sampled_endpoint_keys_match_s4_radicals": true,
+    "all_triple_algebraic_keys_distinct": true,
+    "family_count": 4,
+    "maximum_oracle_boolean_residual_state_count": 2,
+    "maximum_predicate_incidence_count": 1,
+    "prefix_instance_count": 16,
+    "target_instance_count": 32
+  },
+  "breakthrough": false,
+  "classification": "S6_RESIDUAL_RADICAL_MEMOIZATION_HAS_B3_ALGEBRAIC_STATES",
+  "cost_ledger": {
+    "algebraic_prefix_construction_exponent_B": 3.0,
+    "algebraic_prefix_state_exponent_B": 3.0,
+    "lane_inside_caps": false,
+    "literal_target_incidence_scan_exponent_B": 5.0,
+    "online_workspace_cap_exponent_B": 1.25,
+    "oracle_boolean_diagram_state_is_not_constructive_credit": true,
+    "pair_by_fifth_transition_exponent_B": 3.0,
+    "pair_side_state_exponent_B": 2.0,
+    "setup_state_cap_exponent_B": 2.25
+  },
+  "disposition": "REJECT_S6_SQUAREFREE_RESIDUAL_RADICAL_MEMOIZATION_GRAMMAR_ONLY__FOUR_STANDARD_CURVES__B6_10_14_18__ALL_TRIPLE_ALGEBRAIC_KEYS_DISTINCT__STATE_AND_CONSTRUCTION_B3__ORACLE_BOOLEAN_DIAGRAM_TINY_ONLY_AFTER_ROOT_INCIDENCES__R14_KRYLOV_DUPLICATE_NOT_RERUN__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "families": [
+    {
+      "family_id": "secp256k1",
+      "field_bits": 256,
+      "prefixes": [
+        {
+          "deck_size": 6,
+          "distinct_triple_algebraic_key_count": 216,
+          "observed_state_exponent_B": 3.0000000000000004,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  5,
+                  5,
+                  5
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 36,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 36,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 36,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 36,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 216
+        },
+        {
+          "deck_size": 10,
+          "distinct_triple_algebraic_key_count": 1000,
+          "observed_state_exponent_B": 2.9999999999999996,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  9,
+                  9,
+                  9
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 100,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 100,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 100,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 100,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 1000
+        },
+        {
+          "deck_size": 14,
+          "distinct_triple_algebraic_key_count": 2744,
+          "observed_state_exponent_B": 3.0,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  13,
+                  13,
+                  13
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 196,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 196,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 196,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 196,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 2744
+        },
+        {
+          "deck_size": 18,
+          "distinct_triple_algebraic_key_count": 5832,
+          "observed_state_exponent_B": 3.0000000000000004,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  17,
+                  17,
+                  17
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 324,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 324,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 324,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 324,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 5832
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p256",
+      "field_bits": 256,
+      "prefixes": [
+        {
+          "deck_size": 6,
+          "distinct_triple_algebraic_key_count": 216,
+          "observed_state_exponent_B": 3.0000000000000004,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  5,
+                  5,
+                  5
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 36,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 36,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 36,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 36,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 216
+        },
+        {
+          "deck_size": 10,
+          "distinct_triple_algebraic_key_count": 1000,
+          "observed_state_exponent_B": 2.9999999999999996,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  9,
+                  9,
+                  9
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 100,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 100,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 100,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 100,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 1000
+        },
+        {
+          "deck_size": 14,
+          "distinct_triple_algebraic_key_count": 2744,
+          "observed_state_exponent_B": 3.0,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  13,
+                  13,
+                  13
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 196,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 196,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 196,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 196,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 2744
+        },
+        {
+          "deck_size": 18,
+          "distinct_triple_algebraic_key_count": 5832,
+          "observed_state_exponent_B": 3.0000000000000004,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  17,
+                  17,
+                  17
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 324,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 324,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 324,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 324,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 5832
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p384",
+      "field_bits": 384,
+      "prefixes": [
+        {
+          "deck_size": 6,
+          "distinct_triple_algebraic_key_count": 216,
+          "observed_state_exponent_B": 3.0000000000000004,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  5,
+                  5,
+                  5
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 36,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 36,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 36,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 36,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 216
+        },
+        {
+          "deck_size": 10,
+          "distinct_triple_algebraic_key_count": 1000,
+          "observed_state_exponent_B": 2.9999999999999996,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  9,
+                  9,
+                  9
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 100,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 100,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 100,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 100,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 1000
+        },
+        {
+          "deck_size": 14,
+          "distinct_triple_algebraic_key_count": 2744,
+          "observed_state_exponent_B": 3.0,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  13,
+                  13,
+                  13
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 196,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 196,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 196,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 196,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 2744
+        },
+        {
+          "deck_size": 18,
+          "distinct_triple_algebraic_key_count": 5832,
+          "observed_state_exponent_B": 3.0000000000000004,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  17,
+                  17,
+                  17
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 324,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 324,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 324,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 324,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 5832
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p521",
+      "field_bits": 521,
+      "prefixes": [
+        {
+          "deck_size": 6,
+          "distinct_triple_algebraic_key_count": 216,
+          "observed_state_exponent_B": 3.0000000000000004,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  5,
+                  5,
+                  5
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 36,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 36,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 36,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 36,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 216
+        },
+        {
+          "deck_size": 10,
+          "distinct_triple_algebraic_key_count": 1000,
+          "observed_state_exponent_B": 2.9999999999999996,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  9,
+                  9,
+                  9
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 100,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 100,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 100,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 100,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 1000
+        },
+        {
+          "deck_size": 14,
+          "distinct_triple_algebraic_key_count": 2744,
+          "observed_state_exponent_B": 3.0,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  13,
+                  13,
+                  13
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 196,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 196,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 196,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 196,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 2744
+        },
+        {
+          "deck_size": 18,
+          "distinct_triple_algebraic_key_count": 5832,
+          "observed_state_exponent_B": 3.0000000000000004,
+          "radical_sample_replay": {
+            "all_match": true,
+            "rows": [
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  0,
+                  0
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  0,
+                  1,
+                  2
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  1,
+                  0,
+                  3
+                ],
+                "matches_s4_squarefree_radical": true
+              },
+              {
+                "endpoint_key": {
+                  "contains_infinity": false,
+                  "finite_root_count": 4
+                },
+                "indices": [
+                  17,
+                  17,
+                  17
+                ],
+                "matches_s4_squarefree_radical": true
+              }
+            ]
+          },
+          "targets": [
+            {
+              "distinct_suffix_algebraic_key_count": 324,
+              "forced_witness_recognized": null,
+              "nonempty_triple_residual_count": 0,
+              "oracle_boolean_residual_state_count": 1,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 0,
+              "suffix_occurrence_count": 324,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "distinct_suffix_algebraic_key_count": 324,
+              "forced_witness_recognized": true,
+              "nonempty_triple_residual_count": 1,
+              "oracle_boolean_residual_state_count": 2,
+              "oracle_construction_boundary": "The signatures are measured from exact endpoint intersections. Constructing them naively evaluates B^3 by B^2 incidences and presupposes the relation support.",
+              "oracle_construction_charged": false,
+              "oracle_empty_state_present": true,
+              "predicate_incidence_count": 1,
+              "suffix_occurrence_count": 324,
+              "target_id": "forced_positive_target"
+            }
+          ],
+          "triple_key_collision_count": 0,
+          "triple_occurrence_count": 5832
+        }
+      ],
+      "scalar_labels_consumed": false
+    }
+  ],
+  "fresh_target_descent_complete": false,
+  "grammar": {
+    "algebraic_state": "squarefree projective root support of S4(x1,x2,x3,z)",
+    "grammar_id": "s6_squarefree_residual_radical_memoization_v1",
+    "not_centered_carry": true,
+    "not_product_resultant": true,
+    "not_tensor_trace_minpoly": true,
+    "split": "three_labels_by_two_labels_plus_target",
+    "transition": "accept suffix iff its S4 squarefree root support intersects the stored prefix support"
+  },
+  "next_action": "Construct a support-adaptive transposed incidence algorithm that emits only nonempty S4-prefix/S4-suffix intersections without enumerating B^3 prefix radicals or B^5 incidences. Require blind zero certificates, the forced source, R73 multiplicities, dyadic children, and direct caps.",
+  "schema": "p1553.s6_residual_decision_diagram_probe.r74.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "r14_tensor_trace_dedup": {
+      "path": "p1553_tensor_trace_minpoly_compiler_gate_r14.md",
+      "sha256": "da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac"
+    },
+    "r72_s6_carry_probe": {
+      "path": "p1553_s6_centered_carry_rank_minor_probe_report_r72.json",
+      "sha256": "7e63b52fc7667be14aadc1db3aeeb22b43876ff2c62e3dce87b312c056e85e43"
+    },
+    "r73_resultant_valuation_grammar": {
+      "path": "p1553_resultant_valuation_trace_grammar_report_r73.json",
+      "sha256": "00f750c15644acdaea32bbbbe9b407071cd3bf6a5cf2268ce075c55bd9a29915"
+    }
+  }
+}

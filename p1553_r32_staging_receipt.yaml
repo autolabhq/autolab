@@ -1,0 +1,73 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R32-ALIGNED-RUN-HISTOGRAM-MM-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T06:56:14Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R32 is a new scoped hardness
+  reduction requiring independent review. It classifies the generic run
+  histogram but leaves the elliptic translation-consistent family open.
+bindings:
+  r31_gate_sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+  r31_bundle_hash_list_sha256: af7d63c555fd8c63f87876aa77dc1c90224fa8765000223f982da7c1a99ca87e
+  r31_staging_receipt_sha256: 39b3c3824527bf739630a09386d63486e47e817f3907a9784d497b156a5f7012
+  r31_selfcheck_script_sha256: 7882e47d2f328250f4faf12c5bd31cc6132f457daa3c4925cc2663ca1e07170a
+  r31_selfcheck_report_sha256: d1733f58385df12ca65b5fd493d1b61a887c74bcebf750a2dab5b9de86e1aacf
+  r32_gate_sha256: a9acc39df3f504685671ab7d0c16280c9826b6fb1250ffc2fd715ebecc93a02a
+  r32_parent_report_sha256: 88f23451bfb21c0fc0f0d114fdfa26811a29f1aab7d2477e9a08530d00859012
+  r32_artifact_index_sha256: 193b25e095f2171864fa689615783f648812f6552feeb2fce84802b15dd78b0e
+  r32_bundle_hash_list_sha256: 04ea33c41dec39f64514b8cba91368c361145d78b8c5d0452fdec22ed1b1e327
+result:
+  classification: generic_histogram_matrix_multiplication_hardness_reduction
+  generic_input_labels: O(B^2)
+  generic_run_records: O(B^2)
+  generic_expanded_sources: B^3
+  generic_output_keys: O(B^2)
+  hypothetical_generic_histogram_exponent: 2.25
+  implied_matrix_multiplication_exponent: at_most_2.25
+  current_published_matrix_multiplication_upper_bound: below_2.371339
+  generic_standard_transplant_at_cap: absent
+  elliptic_consistent_histogram: open
+  r31_selfcheck: pass
+  complete_value_histogram: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r32_hash_list: pass
+  r32_parent_yaml_parse: pass
+  output_sparse_matrix_multiplication_reduction_checked: pass
+  designated_key_count_identity_checked: pass
+  r31_selfcheck_replay_matches_bound_report: pass
+  clean_temporary_replay_with_r16_through_r32_gates_and_r32_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T06_56_14Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - no matrix multiplication lower-bound conjecture is assumed
+  - arbitrary run alignments may not be elliptic-translation realizable
+  - no lower bound or compiler for the actual degree-B pencil family
+  - no target, R10, density, rank, logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Exploit or refute the actual elliptic translation-consistent escape using
+  R31 path maps and R28 residual-divisor identities, while requiring exact
+  complete keys, counts, sources, restrictions, target, R10, rank, logs, and
+  descent; reject generic group-by claims that would silently imply
+  omega<=2.25.

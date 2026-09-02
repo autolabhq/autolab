@@ -1,0 +1,141 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-MARKED-RESULTANT-SOURCE-SECTION-R84-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_fp2_endpoint_polynomial_source_section_and_cap_audit
+run_count: 1
+status: explicit_marked_source_section_exact_coefficient_body_over_cap
+labels:
+  - exact-finite
+  - scalar-blind-source
+  - prospective
+  - verifier-dlp-separated
+  - scoped-negative
+  - novelty-unverified
+owner: P1539-P1553-R82
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Construct and fully charge one P1510-style marked-resultant source section
+  for R82's 2A+3C versus 3A+2C split, including exact containment, one jointly
+  coupled source for every attained target, coefficient state, fresh-query
+  work, rank, factor logs, and identical descent.
+inputs:
+  - path: p1553_5a5c_coordinate_filtration_probe_report_r83.json
+    sha256: 1478cdf21493ffbeaed0859af849ea6f2835027f23db7e3e4c008f3f24db500c
+  - path: p1553_5a5c_coordinate_filtration_probe_gate_r83.md
+    sha256: 7907df5232c7a6322c797ec33b7600042e223c2c21cb5c832b285995a77fafdf
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: /Volumes/Volume/autolab/research/p1510_global_truncated_marked_resultant_compiler.md
+    sha256: 20c7e26c55801aba57d2095254823f20de66ca499c8281ac761603391e8f0d68
+  - path: /Volumes/Volume/autolab/research/p1510_global_truncated_marked_resultant_compiler_audit.md
+    sha256: e89c11c5a57ae2ac90f4d42b3d33558cb1c1ba1765d7409a7940accba3098452
+  - path: /Volumes/Volume/autolab/research/p1511_factorized_semijoin_gate.md
+    sha256: 4b393c9805e5d7bc008451a9e275e5b41cf917fd9d87c7f99237783a0f4440d6
+  - path: p1553_block_common_right_factor_compiler_gate_r16.md
+    sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+artifacts:
+  - path: p1553_5a5c_marked_resultant_source_section_probe_r84.py
+    sha256: 80cd0887fd24bfc37f0568f03a8af4c98eb148e030a3112576c1a0940f4ad99d
+  - path: p1553_5a5c_marked_resultant_source_section_probe_report_r84.json
+    sha256: c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b
+  - path: frozen_5a5c_marked_resultant_section.json
+    sha256: 842076c19914abe0e969d159ef3847c9cfb3e87d0f5f3fcefeb058de94c2aa8c
+  - path: resultant_coefficient_and_containment_receipts.json
+    sha256: c2f3b02eed1e763aa4a6608b63617ad7c9f201e1e2339fee4e5855950064cc2b
+  - path: joint_source_section_replay.json
+    sha256: 2cb0f2a2e66d0f25bf5b8ec98912a0ef392a41cf51a4a80848b53b41338ec364
+  - path: fresh_query_state_cost_ledger.json
+    sha256: 64c3c66a655a3261d05fcbfca4da50eac9d7ee60331be7187af0a0fb2e7aad53
+  - path: factor_logs_and_identical_descent_r84.json
+    sha256: 6d677a7a00ac3b98168442bba820a8ef176b9d437a2bd20849e2192ec36f0d53
+  - path: p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md
+    sha256: 4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_marked_resultant_source_section_probe_r84.py
+    sha256: 332674727196772d688befd32b558a2c0b64009058c72cdeffbf1304c40197d8
+frozen_interface:
+  source_geometry: R82 F=A+C
+  family_count: 4
+  instance_count: 8
+  partial_split: 2A+3C versus 3A+2C
+  point_key: injective Fp2 key x+w*y with identity tag zero
+  left_source_count: binomial(u+1,2)*binomial(v+2,3)
+  right_source_count: binomial(u+2,3)*binomial(v+1,2)
+  side_polynomials: squarefree products over exact attained endpoints
+  source_selector: one packed mixed-radix interpolation polynomial per side
+  target_join: coefficient gcd against exact target-translated right roots
+  scalar_labels_consumed: false
+  verifier_dlp_consumed: false
+verified_statements:
+  - >-
+    Every left and right multiset source has a distinct endpoint on all eight
+    frozen instances; all radical roots vanish and every packed selector
+    decodes and group-replays exactly.
+  - >-
+    The all-target audit enumerates 1,146,360 side endpoint pairs and obtains
+    67,801 distinct targets. This target union equals direct 5A+5C multiset
+    enumeration exactly on every instance.
+  - >-
+    One jointly coupled left/right source group-replays for every attained
+    target, and all 32 sampled coefficient gcds have degree equal to the exact
+    point-set intersection and return a coupled source.
+  - >-
+    Direct 5A+5C source collision excess is 0,0,15,0,0,0,56,0. The much
+    larger split-pair multiplicity is separately attributed to multiple
+    partitions of one final multiset.
+  - >-
+    Under the frozen prospective generic-support model, explicit side
+    coefficient degrees are B^2.6 and B^2.4. The smaller side exceeds the
+    B^9/4 setup cap and a fresh translated-right polynomial exceeds the
+    B^5/4 online cap.
+  - >-
+    P1510's independently audited output-sensitive result is preserved.
+    Target-uniform pre-coefficient and pre-provenance-leaf circuits remain
+    outside this result.
+scoped_positive_controls:
+  scalar_blind_injective_fp2_key: pass
+  exact_side_root_polynomials: pass
+  packed_joint_source_interpolants: pass
+  direct_5a5c_containment_equality: pass
+  every_finite_attained_target_source_replay: pass
+  sampled_coefficient_gcd_replay: pass
+  p1510_output_sensitive_control: pass
+scoped_failures:
+  explicit_coefficient_body_inside_B9_over_4_setup: fail
+  fresh_target_translated_polynomial_inside_B5_over_4: fail
+  exhaustive_containment_audit_inside_online_cap: fail
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - target-uniform pre-coefficient resultant circuits
+  - target-uniform representations before provenance-leaf emission
+  - compact common right factors with exact source inversion
+  - structured asymptotic endpoint compression
+  - arbitrary summation-polynomial or FFE algorithms
+  - unrestricted arithmetic-circuit lower bounds
+admission:
+  passed_obligations: 9
+  obligation_count: 17
+  lane_admitted: false
+result:
+  exact_finite_side_source_sections_complete: true
+  direct_5a5c_containment_complete: true
+  exact_finite_joint_target_source_replay_complete: true
+  sampled_coefficient_gcd_replay_complete: true
+  explicit_coefficient_body_inside_caps: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_EXPLICIT_MARKED_RESULTANT_COEFFICIENT_BODY_ONLY__SCALAR_BLIND_FP2_POINT_KEY_INJECTIVE__RADICAL_SIDE_POLYNOMIALS_EXACT__PACKED_JOINT_SOURCE_INTERPOLANTS_EXACT__EVERY_FINITE_ATTAINED_TARGET_REPLAYED__DIRECT_5A5C_CONTAINMENT_EXACT__COEFFICIENT_GCD_SAMPLES_EXACT__LEFT_B2P6__RIGHT_B2P4__SMALLER_SIDE_EXCEEDS_B2P25_SETUP__FRESH_TRANSLATION_EXCEEDS_B1P25__ALL_TARGET_AUDIT_B5_NO_CREDIT__P1510_OUTPUT_SENSITIVE_EXCEPTION_PRESERVED__PRECOEFFICIENT_CIRCUIT_OPEN__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one target-uniform pre-coefficient circuit for the
+  2A+3C versus 3A+2C join. It must consume only the compact D_A,D_C inputs,
+  specialize a fresh target inside B^5/4, emit no B^2.4 side polynomial or
+  provenance leaves, return one jointly coupled source, and preserve exact
+  containment, rank, factor-log, and identical-descent receipts.

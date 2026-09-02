@@ -1,0 +1,127 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-25",
+  "claim_level": "preregistered_learned_policy_partial_negative_with_replicated_total2_total3_total4_ffe_gate",
+  "hypothesis": "The preregistered learned_target_zero_residue16_prior trained from <=87 gated FFE surfaces should select preserving root hyperplanes below rho on the fresh 104-111 window.",
+  "artifacts": {
+    "preregistration": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_learned_root_prior_preregistration_104_111.json",
+    "total2_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_104_111.json",
+    "total3_total4_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total3_total4_signature_fixed_selector_104_111.json",
+    "total2_gate": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_fixed_selector_104_111.json",
+    "total3_total4_gate": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_fixed_selector_104_111.json",
+    "total2_sage_factor": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total2_preregistered_104_111.json",
+    "total3_total4_sage_factor": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total3_total4_preregistered_104_111.json",
+    "total2_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total2_preregistered_104_111.json",
+    "total3_total4_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total3_total4_preregistered_104_111.json",
+    "total2_selector": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_root_hyperplane_selector_total2_preregistered_104_111.json",
+    "total3_total4_selector": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_root_hyperplane_selector_total3_total4_preregistered_104_111.json",
+    "frozen_evaluator": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_train_le87_test_104_111.json"
+  },
+  "strict_signature_evidence": {
+    "total2_below_rho_case_count": 2,
+    "total2_positive_source_case_count": 2,
+    "total2_target": "22050.cf1@11731",
+    "total2_transfer_index": 109,
+    "total2_row_salts": [
+      164,
+      166
+    ],
+    "total2_leaf_indices": [
+      90
+    ],
+    "total2_best_ops_over_rho": 0.73722628,
+    "total3_total4_below_rho_case_count": 4,
+    "total3_total4_positive_source_case_count": 4,
+    "total3_total4_target": "22050.cf1@11731",
+    "total3_total4_transfer_index": 109,
+    "total3_total4_row_salts": [
+      175
+    ],
+    "total3_total4_best_leaf_indices": [
+      19,
+      34,
+      90
+    ],
+    "total3_total4_best_ops_over_rho": 0.46715328
+  },
+  "pre_factor_gate_evidence": {
+    "total2_input_case_count": 2,
+    "total2_surface_count": 2,
+    "total2_pre_factor_gate_selected_count": 1,
+    "total3_total4_input_case_count": 4,
+    "total3_total4_surface_count": 1,
+    "total3_total4_pre_factor_gate_selected_count": 1
+  },
+  "sage_and_first_fall_evidence": {
+    "selected_surface_count": 2,
+    "missing_requested_surface_count": 0,
+    "total2_sage_resultant_factor_candidates": 22,
+    "total3_total4_sage_resultant_factor_candidates": 17,
+    "total2_preserving_sage_factor_root_scan_ops_over_rho": 0.53284672,
+    "total3_total4_preserving_sage_factor_root_scan_ops_over_rho": 0.61313869,
+    "total2_preserving_sage_factor_surface_ffe_ops_over_rho": 0.37956204,
+    "total3_total4_preserving_sage_factor_surface_ffe_ops_over_rho": 0.51094891,
+    "total2_full_remainder_ffe_ops_over_rho": 2.21167883,
+    "total3_total4_full_remainder_ffe_ops_over_rho": 1.61313869,
+    "preserving_sage_factor_remainder_below_rho_count": 0,
+    "all_factors_are_quadratic_root_hyperplanes": true,
+    "factor_shape": "deg1_mon3_root1",
+    "all_surface_factor_counts_match_known_hit_roots": true
+  },
+  "preregistered_policy_result": {
+    "policy": "learned_target_zero_residue16_prior",
+    "external_train_surface_count": 30,
+    "holdout_surface_count": 2,
+    "chosen_preserving_count": 2,
+    "chosen_false_positive_count": 0,
+    "below_rho_count": 1,
+    "direct_below_rho_count": 1,
+    "mean_total_ops_over_rho": 0.94525547,
+    "max_total_ops_over_rho": 1.33576642,
+    "mean_direct_total_ops_over_rho": 0.89051095,
+    "max_direct_total_ops_over_rho": 1.31386861,
+    "miss_surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt175|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+    "miss_reason": "preserving root was selected at evaluated root rank 11, so charged selector plus root-scan cost exceeded rho"
+  },
+  "baselines": {
+    "learned_global_zero_root_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 1,
+      "chosen_preserving_count": 1,
+      "mean_total_ops_over_rho": 0.61678833
+    },
+    "low_root_norm": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 1,
+      "chosen_preserving_count": 1,
+      "mean_total_ops_over_rho": 1.16423357
+    },
+    "frozen_static_summax_sage_low_constant_target_hash": {
+      "below_rho_count": 2,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 2,
+      "mean_total_ops_over_rho": 0.86861314,
+      "max_total_ops_over_rho": 0.87591241
+    },
+    "posthoc_global_root_hash": {
+      "below_rho_count": 2,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 2,
+      "mean_total_ops_over_rho": 0.80291971,
+      "max_total_ops_over_rho": 0.87591241
+    }
+  },
+  "limitations": [
+    "The preregistered primary learned policy missed the below-rho promotion condition on one of two selected surfaces.",
+    "The learned_global_zero_root_prior and low_root_norm baselines each chose one false positive on 104-111.",
+    "global_root_hash was post hoc best on this window and must be preregistered before any claim on a later window.",
+    "Full-remainder FFE costs remain above rho on the measured surfaces.",
+    "This is still not an end-to-end ECDLP speedup."
+  ],
+  "next_steps": [
+    "Preregister a capped residue16-then-global-hash policy for the next fresh window.",
+    "Keep the frozen static <=87 policy as the strongest honest baseline.",
+    "Continue requiring strict signature, pre-factor gate, Sage factorization, first-fall audit, and rho-separated accounting.",
+    "Build toward fresh hit-stream generation so the root-hyperplane shortcut can be tested as an algorithmic component rather than only a measured bank certificate."
+  ]
+}

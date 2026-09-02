@@ -1,0 +1,107 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TARGET-TRANSLATED-FREQUENCY-ORBIT-R77-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_finite_linear_translation_orbit_rank
+run_count: 1
+status: reject_universal_linear_target_translation_frequency_sketch_only
+labels:
+  - exact-finite
+  - linear-representation-bound
+  - scalar-label-diagnostic
+  - novelty-unverified
+owner: P1553-R3-R76
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether the target-translated pair-frequency query underlying R76 has a
+  universal low-dimensional exact linear shift-equivariant sketch, even after
+  granting scalar labels and exact finite-field group characters.
+inputs:
+  - path: p1553_multiplicative_x_s3_closure_screen_report_r70.json
+    sha256: 9e58c6178eb18b7535c59e117ad942465d6c7853890291dec2c7c0abdb4ffd89
+  - path: p1553_s6_subset_incidence_mobius_probe_report_r76.json
+    sha256: de41d1618bc71c46f700bfead0ed72c5ac0b29a89da3b5c32534a15314ef4c93
+  - path: p1553_r31_artifact_index_README.md
+    sha256: 0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f
+    contains_artifact: p1553_query2p1_indexing_gate_r3.md
+    contains_artifact_sha256: b2ee5934e295ab1f0d6b43452898e520d0cb18e718a8f5865694b25909b0df5e
+artifacts:
+  - path: p1553_target_translated_frequency_orbit_probe_r77.py
+    sha256: b5e863090aa036504d3c9fd7d47878e370c2c812f7f4e75b9b1d8d0ad972b335
+  - path: p1553_target_translated_frequency_orbit_probe_report_r77.json
+    sha256: 73f66184fa53a2d43397a915c4249a41c5687cbcd1d5d16cc3e4ff47cf254787
+  - path: p1553_target_translated_frequency_orbit_probe_gate_r77.md
+    sha256: 45324f816cc159032cb6c2ac97c0a2f52a618c409e276616521b4e894cb46b55
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_target_translated_frequency_orbit_probe_r77.py
+    sha256: 165b60456efdc5af76308d696189badf3ebebb0938e0e4596ee85ac0c8da6398
+frozen_interface:
+  curve_families:
+    - p193_a2_b3_q103_h2
+    - p257_a1_b7_q281_h1
+    - p337_a1_b3_q163_h2
+    - p449_a1_b3_q463_h1
+  deck_sources:
+    - multiplicative_x_reused
+    - independent_hash_decks
+  prefix_sizes:
+    - 2
+    - 3
+    - 4
+    - 6
+    - 8
+  scalar_labels_consumed_for_diagnostic: true
+  scalar_labels_available_to_fresh_target_algorithm: false
+  grammar_id: universal_linear_target_translation_frequency_sketch_v1
+verified_statements:
+  - >-
+    Signed five-list target counts are exact coefficients of the fivefold
+    cyclic group convolution.
+  - >-
+    The rank of all pair-kernel translates equals its nonzero group-character
+    Fourier support, with the lemma independently row-reduced on a small case.
+  - >-
+    Every one of 40 pair-query kernels has all q Fourier modes nonzero, across
+    both source types, four group orders, and five deck sizes.
+  - >-
+    All exact convolution-theorem checks and integer branch-mass controls pass.
+  - >-
+    The full orbit result persists while the target sequences contain 1801
+    exact zero targets in aggregate.
+scoped_positive_controls:
+  exact_group_convolution: pass
+  exact_finite_field_fourier_transform: pass
+  circulant_rank_lemma: pass
+  zero_and_positive_target_sequences: pass
+  multiplicative_and_hash_decks: pass
+scoped_failures:
+  universal_linear_query_dimension: ambient_group_order_q
+  fresh_target_character_map: unsupplied
+  r76_higher_subset_correction: omitted
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - nonlinear target-specialized nested resultants
+  - implicit value-sensitive arithmetic circuits
+  - randomized Las Vegas and support-restricted data structures
+  - asymptotic full Fourier support for arbitrary decks
+  - relation density, independent rank, factor logs, and descent
+admission:
+  passed_obligations: 5
+  obligation_count: 9
+  lane_admitted: false
+result:
+  universal_linear_translation_sketch_compressed: false
+  exact_convolution_control_complete: true
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_UNIVERSAL_LINEAR_TARGET_TRANSLATION_FREQUENCY_SKETCH_ONLY__FOUR_PRIME_ORDER_TOY_GROUPS__MULTIPLICATIVE_AND_HASH_DECKS__B2_3_4_6_8__FULL_PAIR_QUERY_CHARACTER_SUPPORT__EXACT_CONVOLUTION__SCALAR_LABELS_GRANTED_ONLY_AS_DIAGNOSTIC__R3_BOUNDARY_SHARPENED__NONLINEAR_TARGET_SPECIALIZATION_OPEN__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Freeze one nonlinear target-specialized nested-resultant scalar functional
+  for the actual S4 deck factors. Avoid group characters, B^3 prefix values,
+  and B^2 suffix materialization; replay R76 exact counts, multiple-root
+  correction, blind zero, one source, dyadic children, and the direct caps.

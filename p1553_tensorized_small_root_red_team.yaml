@@ -1,0 +1,65 @@
+schema_version: p1553-tensorized-small-root-red-team-v1
+date: 2026-07-19
+role: red-team
+reviewer_agent_id: 019f7c7a-2cb9-75a3-b012-8c93e3377e23
+coordinator_transcription: true
+run_accounting:
+  experiments_executed: 0
+  solver_runs_executed: 0
+  fixtures_executed: 0
+  timing_runs_executed: 0
+  relation_campaigns_executed: 0
+terminal_verdict:
+  classification: revise_scoped_conditional_backend
+  statement: >-
+    Exact implicit CP-Gram LLL is constructed for a supplied cap-sized shift
+    family and avoids B^5 materialization. The missing object is a
+    target-symbolic cancellation module of sufficiently small total rank that
+    yields five useful short equations and exact source-relevant recovery.
+  p1554_allocated: false
+  run_created: false
+  shoup_claim: false
+  breakthrough_claim: false
+accepted_positive_control:
+  generator: g_(k,alpha)=p^(m-k)*z^alpha*tilde(F_R)^k
+  root_divisibility: p^m
+  cp_rank: binomial(r+k-1,k)
+  domain_reduction: factorwise over Z and value preserving on legal labels
+  gram: exact weighted factor inner products
+  lll_output_rank: at_most_total_input_rank_A
+  naive_setup_bit_cost: B^(2+o(1))*A^2
+  naive_online_bit_cost: B^(1+o(1))*A^2
+  naive_cap: A<=B^(1/8+o(1))
+accepted_corrections:
+  - >-
+    A centered low-rank carry is sufficient but not necessary; the uncentered
+    separated integer lift is a valid Coppersmith input.
+  - >-
+    Recenter the kth power modulo p^k, not p, to preserve p^k divisibility.
+  - >-
+    LLL need not preserve constant tensor rank, but retained combinations have
+    represented rank bounded by the total input rank A.
+remaining_gates:
+  natural_separated_scaled_norm: B^(Omega(B)) on full-degree decks
+  conventional_cancellation_quotient_rank: B^5
+  cap_sized_structured_shift_module: unsupplied
+  five_useful_short_outputs: unsupplied
+  standard_exact_quotient_recovery: B^5
+  standard_balanced_source_locator: B^3
+  exact_subset_stable_decision_and_source: unsupplied
+conditional_path:
+  relation_campaign: B^(9/4)
+  factor_log_algebra: B^2
+  blind_descent: B^(5/4)
+  fallback_relation_collection: B^4
+  fallback_descent: B^3
+exactly_one_next_action: >-
+  Prove or refute one target-symbolic quotient-lattice module whose
+  literal-power shifts preserve p^m divisibility, have total separated rank
+  A<=B^(1/8+o(1)), yield five useful Howgrave-Graham-short outputs, and support
+  exact subset-stable decision-and-source recovery inside B^(5/4+o(1)).
+source_bindings:
+  hash_algorithm: SHA-256
+  files:
+    p1553_tensorized_small_root_gate_r7.md: b36870eeb0c7c0a53e6d1714d623629c522f4c58cd308a072e33ea6046a06615
+    p1553_tensorized_small_root_parent_report.yaml: 014d7bb61d9749e313e26179c242f321f5d474be8c7af84b48ecffa0fd8c6a25

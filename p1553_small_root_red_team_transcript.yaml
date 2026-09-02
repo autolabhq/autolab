@@ -1,0 +1,79 @@
+schema_version: p1553-small-root-red-team-transcript-v1
+date: 2026-07-19
+role: red-team
+reviewer_agent_ids:
+  - 019f7c7a-1e58-7b52-a2ea-50d1d8be6af8
+  - 019f7c7a-2cb9-75a3-b012-8c93e3377e23
+coordinator_transcription: true
+run_accounting:
+  experiments_executed: 0
+  solver_runs_executed: 0
+  fixtures_executed: 0
+  timing_runs_executed: 0
+  relation_campaigns_executed: 0
+terminal_verdict:
+  classification: revise_scoped_partial_input_compiler
+  statement: >-
+    The B^2 pair-label selector route fails, but five local x-class labels give
+    B^(1+o(1)) domain and coordinate maps and an exact signed S_6 predicate.
+    One returned root has a constant-cost exact source inverse. Exact no-root
+    or one-root recovery inside B^(5/4) remains unconstructed; B^5 is only the
+    full dense coefficient representation, not a general lattice lower bound.
+  p1554_allocated: false
+  run_created: false
+  shoup_claim: false
+  breakthrough_claim: false
+accepted_corrections:
+  - id: x_class_contract
+    statement: >-
+      Factor labels are nonidentity classes {P,-P}, each with a canonical
+      representative, global column, and occurrence backpointers. Dyadic
+      restrictions are sign closed.
+  - id: domain_binding
+    statement: >-
+      D_i(z_i)=product_(a=0)^(s_i-1)(z_i-a)=0 binds legal local labels.
+  - id: exact_sign_biconditional
+    statement: >-
+      S_6=0 iff R+sum_i sigma_i*P_(C_i)=O for one of 2^5 source sign vectors,
+      after globally normalizing the target sign.
+  - id: output_scope
+    statement: >-
+      The oracle must return one verified root or an exact no-root certificate;
+      all-root enumeration is not required.
+  - id: replay_scope
+    statement: >-
+      B^(1+o(1)) covers map selection and candidate evaluation only. Root,
+      exact-miss, output, negative-child, and bit costs remain unsupplied.
+  - id: dense_scope
+    statement: >-
+      Theta(B^5) is the full dense monomial envelope, not a lower bound against
+      selected sparse shifts or implicit tensor, circuit, or nonlattice routes.
+row_semantics:
+  repeated_class_coefficient: c_C=sum_(i:C_i=C) sigma_i
+  known_log: r+sum_C c_C*log_P(P_C)=0 mod N
+  blind_descent: x=-t-sum_C c_C*log_P(P_C) mod N
+  rank_rule: credit only the aggregated global-column row
+  zero_target: resample for known-log collection; direct x=-t in blind descent
+cost_reconstruction:
+  pair_label_selector_per_target: B^(2+o(1))
+  x_class_domain_and_coordinate_trees: B^(1+o(1))
+  one_supplied_predicate_evaluation: B^(1+o(1))
+  dense_coefficient_envelope: B^5
+  online_decision_and_witness_cap: B^(5/4+o(1))
+remaining_gates:
+  - determinant or root-region theorem
+  - exact no-root or one-root algorithm
+  - negative and dyadic replay cost
+  - represented tensor or lattice size and bit cost
+  - verified relation density and independent rank
+  - factor-log completion and identical scalar-blind descent
+exactly_one_next_action: >-
+  Derive or refute one exact no-root or one-verified-root algorithm for the
+  separated system {D_1,...,D_5,F_R}, including determinant/root-region,
+  construction, negative-answer, workspace, bit, and replay costs inside
+  B^(5/4+o(1)); do not require all-root enumeration.
+source_bindings:
+  hash_algorithm: SHA-256
+  files:
+    p1553_small_root_coordinate_gate_r6.md: 03e9234bb0e17d7cf97e85a46735748a61fefabb300278c52fef11b41755be05
+    p1553_small_root_parent_report.yaml: c4202511d97248dcf9284c63680ae9cc2cc1b75df8a99fc71422b0c0f03b4a7d

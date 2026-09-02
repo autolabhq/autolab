@@ -1,0 +1,101 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "deck_and_group_exponents": {
+    "C2_occurrences": {
+      "decimal": 1.5,
+      "exact": "3/2"
+    },
+    "C3_occurrences": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "C_atom": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "group_order_q": {
+      "decimal": 5.0,
+      "exact": "5"
+    }
+  },
+  "routes": [
+    {
+      "inside_setup_cap": false,
+      "route_id": "full_translated_query_table",
+      "state_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      }
+    },
+    {
+      "inside_setup_cap": false,
+      "minimum_state_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "route_id": "universal_linear_C3_sketch_linear_count_decoder",
+      "scoped_lower_bound_proved": true
+    },
+    {
+      "inside_polylog_query_cap": false,
+      "inside_setup_cap": true,
+      "query_exponent_B": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "route_id": "represented_C3_hash_then_C2_scan",
+      "setup_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    {
+      "exact_structure_constructed": false,
+      "route_id": "coupled_nonlinear_membership_data_structure",
+      "scoped_lower_bound_proved": false,
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_linear_sketch_circulant_cost_ledger.r124.v1",
+  "source_recovery": {
+    "general_source_locator_lower_bound_claimed": false,
+    "linear_count_sketch_returns_five_backpointers": false,
+    "source_augmentation_can_reduce_base_rank_requirement": false
+  },
+  "theorem": {
+    "circulant_rank_identity": "Over a splitting field of characteristic zero, rank(C_w)=#{j:DFT(w)_j!=0}=#{j:DFT(u)_j!=0}.",
+    "dimension_exponent_B": {
+      "decimal": 5.0,
+      "exact": "5"
+    },
+    "inside_setup_cap": false,
+    "minimum_linear_sketch_dimension": "q",
+    "not_covered": [
+      "a sketch specialized nonlinearly to the coupled pair (u^2,u^3)",
+      "nonlinear decoding that returns only membership",
+      "adaptive cell-probe or RAM data structures",
+      "approximate or bounded-error sketches",
+      "general arithmetic circuits"
+    ],
+    "prime_order_binary_deck_criterion": "For prime q and a proper nonempty binary deck polynomial U, U(zeta_q^j) is nonzero for every j. For j!=0, a zero would force the cyclotomic polynomial Phi_q=1+...+X^(q-1) to divide U over Q, which is possible for a binary polynomial of degree at most q-1 only when U is empty or all of G.",
+    "row_space_argument": "Exact linear decoding for every v forces every row of the circulant C_w into rowspace(S), so s>=rank(C_w).",
+    "scope_limits": [
+      "universal over all C3 occurrence vectors for the fixed kernel",
+      "linear preprocessing measurements",
+      "linear exact-count decoders followed optionally by a zero test",
+      "characteristic-zero rank argument"
+    ],
+    "translated_inner_product": "u^(*5)(y)=sum_x u^(*3)(x)*u^(*2)(y-x)",
+    "universal_linear_sketch_model": "For fixed C2 kernel w=u^(*2), preprocess every possible C3 vector v by s linear measurements Sv; recover every exact count <v,tau_y w> by a linear decoder depending on y."
+  }
+}

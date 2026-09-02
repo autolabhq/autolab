@@ -1,0 +1,107 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "fourier_identity": {
+    "characters_computable_without_dlp": "chi_j(z)=z^j",
+    "integer_nonzero_semantics_requires": "characteristic exceeds the charged ordered multiplicity or a noncancellation proof",
+    "ordered_count": "c5(y)=q^(-1)*sum_(j=0..q-1)(sum_i z_i^j)^5*y^(-j)"
+  },
+  "product_resultant_identity": {
+    "deck_polynomial": "P1(X)=product_i(X-z_i)",
+    "membership": "P5(y)=0",
+    "ordered_product_polynomial": "P_(a+b)(Y)=Res_X(P_a(X),X^deg(P_b)*P_b(Y/X))",
+    "source_recovery_from_zero_requires_gcd_roots_and_backpointers": true
+  },
+  "routes": [
+    {
+      "inside_setup_or_query_cap": false,
+      "mode_count_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "route_id": "full_multiplicative_fourier_inversion"
+    },
+    {
+      "inside_setup_cap": false,
+      "linear_complexity_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "required_mode_prefix_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "sparse_fourier_prony_bm_reconstruction",
+      "scope": "linear recurrence / Prony / BM grammar"
+    },
+    {
+      "degree_and_coefficient_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "inside_setup_cap": true,
+      "route_id": "ordered_p3_product_polynomial"
+    },
+    {
+      "inside_polylog_query_cap": false,
+      "optimistic_query_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "p2_degree_exponent_B": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "p3_degree_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "route_id": "target_scaled_p2_p3_fast_resultant",
+      "source_recovery_additional": true
+    },
+    {
+      "degree_and_output_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "inside_setup_cap": false,
+      "route_id": "symbolic_ordered_p5_product_resultant"
+    },
+    {
+      "inside_setup_cap": false,
+      "represented_point_count_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "full_c5_grid_multipoint_evaluation"
+    },
+    {
+      "covered_by_scoped_costs": false,
+      "exact_circuit_constructed": false,
+      "general_lower_bound_claimed": false,
+      "route_id": "target_specialized_nonrepresented_fourier_resultant_torus_circuit",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_fourier_product_resultant_cost_ledger.r123.v1",
+  "semantic_dedup": {
+    "nearby_lanes": [
+      "R77 additive target-frequency orbit",
+      "R90 additive moment/Hankel translation",
+      "R118 represented S6 quotient/resultant routes",
+      "R121 multiplicative complete-homogeneous moments",
+      "R122 all-arity explicit endpoint splits"
+    ],
+    "new_idea_id_claimed": false,
+    "r123_distinct_scope": "multiplicative characters computable directly on pairing images and the ordered product-composition resultant"
+  }
+}

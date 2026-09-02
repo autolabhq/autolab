@@ -1,0 +1,110 @@
+{
+  "occupancy_conservation": {
+    "boundary": "At M=Theta(q), increasing mean aggregate occupancy by B^gamma decreases uniform-target hit density by B^-gamma. A targetable structured family is required to avoid the matching retry exponent.",
+    "canonical_source_count": "M",
+    "mean_positive_occupancy": "L=M/H",
+    "positive_target_support": "H",
+    "uniform_target_success_probability": "H/q=M/(L*q)"
+  },
+  "random_occupancy_theorem": {
+    "canonical_source_to_group_ratio": "lambda=1/(m!)^2 at m*(alpha+beta)=5",
+    "conditional_singleton_first_order": "1-lambda/2+O(lambda^2)",
+    "conditional_singleton_probability": "lambda*exp(-lambda)/(1-exp(-lambda))",
+    "conditional_singleton_probability_decimal": 0.9999990355000988,
+    "lambda_decimal": 1.9290123456790124e-06,
+    "lambda_exact": "1/518400",
+    "limiting_occupancy": "Poisson(lambda)",
+    "m": 6,
+    "model": "Canonical A- and C-multiset source pairs map independently and uniformly into a prime-order target group.",
+    "random_model_only": true,
+    "structured_factor_base_transfer_supplied": false
+  },
+  "required_open_outputs": {
+    "density_retry_avoiding_target_selector": "open",
+    "factor_logs": "open",
+    "generic_prime_family_algorithm": "open",
+    "identical_target_descent": "open",
+    "implicit_batched_count_and_marginal_index": "open",
+    "shoup_bound_improvement": "open",
+    "structured_rank_and_density": "open",
+    "targetable_superconstant_structured_fibers": "open"
+  },
+  "schema": "p1553.m6_aggregate_marginal_singleton_source_equivalence.frozen.r146.v1",
+  "singleton_inversion_theorem": {
+    "a_marginal": "d_A(a)=c_T*r_A(a)",
+    "c_marginal": "d_C(c)=c_T*r_C(c)",
+    "consequence": "Exact count plus all A/C marginals is source-equivalent on every singleton canonical fiber.",
+    "count": "c_T=w_A*w_C",
+    "hypothesis": "A positive target fiber contains exactly one canonical A-multiset/C-multiset source pair.",
+    "recovery": "r_A(a)=d_A(a)/c_T and r_C(c)=d_C(c)/c_T over the integers."
+  },
+  "source_binding_actual_sha256": {
+    "r117_gate": "014f74c772dfc77d8821f658b10ef9bd11a644fe8f0b356c24fda61ef81d9de5",
+    "r117_report": "449021dd58e6567bb827bcfe41336175d7b628acda4446e1b63d9a46cf48f824",
+    "r144_controls": "0677e3a7220e7258e4dc56bff14f5e083a09ed048948667fe0582dd2fa4c6ea8",
+    "r145_controls": "582cb06bbf5a58c9110218823a0ac9fa80c60bf927ff21989588eb7668835fe1",
+    "r145_cost": "9585b1aaa473eb2c4b5ce2d2030600cc737ea4115dcaee3705a274ba254dd82c",
+    "r145_frozen": "1471f66d1703fa6cbacb9ed9974b389d47b0ee23f53a763bf139e685270e5f71",
+    "r145_gate": "dbbb5ada91deae0823cf502312f9e490a8b37fbcf165babba994c3b009fc8a8d",
+    "r145_logs": "78c35606a89edf074609276808f818176e229787257327718c30b6e54d9a470b",
+    "r145_parent": "6bdb7d1421e4425ca2073a70cc929cf634519b6f0197396eb0076426deaf41cb",
+    "r145_producer": "38048dcaee982faf9f6eaec2d3bd44cfdea22b784f7f46041118543048a47565",
+    "r145_replay": "d1159f37db92a4572d56ab71cb8d63cd2d3684972f4a226bda1b785daadc1f1c",
+    "r145_report": "015ff9c84547b1bdfa8ddb0e107d8e5be3872741740fc49c63f05fbf0e21037c",
+    "r145_test": "2373f522398c78349a2156dbc931b1367c0836fc673491c0e522598cf4e40d8a"
+  },
+  "source_bindings": {
+    "r117_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_target_batched_c3_elliptic_transpose_probe_gate_r117.md",
+      "sha256": "014f74c772dfc77d8821f658b10ef9bd11a644fe8f0b356c24fda61ef81d9de5"
+    },
+    "r117_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_target_batched_c3_elliptic_transpose_probe_report_r117.json",
+      "sha256": "449021dd58e6567bb827bcfe41336175d7b628acda4446e1b63d9a46cf48f824"
+    },
+    "r144_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_weighted_fiber_marginal_log_operator_controls.json",
+      "sha256": "0677e3a7220e7258e4dc56bff14f5e083a09ed048948667fe0582dd2fa4c6ea8"
+    },
+    "r145_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_weighted_c3_mobius_gcd_trace_controls.json",
+      "sha256": "582cb06bbf5a58c9110218823a0ac9fa80c60bf927ff21989588eb7668835fe1"
+    },
+    "r145_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_weighted_c3_mobius_gcd_trace_cost_ledger.json",
+      "sha256": "9585b1aaa473eb2c4b5ce2d2030600cc737ea4115dcaee3705a274ba254dd82c"
+    },
+    "r145_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_m6_weighted_c3_mobius_gcd_trace.json",
+      "sha256": "1471f66d1703fa6cbacb9ed9974b389d47b0ee23f53a763bf139e685270e5f71"
+    },
+    "r145_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_weighted_c3_mobius_gcd_trace_probe_gate_r145.md",
+      "sha256": "dbbb5ada91deae0823cf502312f9e490a8b37fbcf165babba994c3b009fc8a8d"
+    },
+    "r145_logs": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/factor_logs_and_identical_descent_r145.json",
+      "sha256": "78c35606a89edf074609276808f818176e229787257327718c30b6e54d9a470b"
+    },
+    "r145_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_weighted_c3_mobius_gcd_trace_probe_parent_report_r145.yaml",
+      "sha256": "6bdb7d1421e4425ca2073a70cc929cf634519b6f0197396eb0076426deaf41cb"
+    },
+    "r145_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_weighted_c3_mobius_gcd_trace_probe_r145.py",
+      "sha256": "38048dcaee982faf9f6eaec2d3bd44cfdea22b784f7f46041118543048a47565"
+    },
+    "r145_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_weighted_c3_mobius_gcd_trace_replay.json",
+      "sha256": "d1159f37db92a4572d56ab71cb8d63cd2d3684972f4a226bda1b785daadc1f1c"
+    },
+    "r145_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_weighted_c3_mobius_gcd_trace_probe_report_r145.json",
+      "sha256": "015ff9c84547b1bdfa8ddb0e107d8e5be3872741740fc49c63f05fbf0e21037c"
+    },
+    "r145_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_m6_weighted_c3_mobius_gcd_trace_probe_r145.py",
+      "sha256": "2373f522398c78349a2156dbc931b1367c0836fc673491c0e522598cf4e40d8a"
+    }
+  }
+}

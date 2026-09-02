@@ -1,0 +1,113 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-ACTUAL-DIVISOR-IMAGE-ENTROPY-MERGE-R101-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_structured_side_membership_count_source_oracles
+run_count: 1
+status: local_side_oracles_inside_caps_full_two_sided_join_open
+labels:
+  - exact-finite-controls
+  - structured-positive
+  - source-replay
+  - prospective
+  - novelty-unverified
+owner: P1513-P1553-R82-R84-R99-R100
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the actual R84 2A+3C and 3A+2C endpoint images admit
+  exact integer membership, count, and one-source oracles inside the direct
+  caps, while separating those local queries from the full two-sided target
+  intersection.
+inputs:
+  - path: p1553_5a5c_succinct_aggregate_digit_trie_probe_r100.py
+    sha256: 168f462c50aa89be7e513d21fe9f34f6080bf04922c192306997805029b88bd9
+  - path: p1553_5a5c_succinct_aggregate_digit_trie_probe_report_r100.json
+    sha256: fc7281ba084824963da550dfb8f034baa4f6d133305e18af11684e2be61154dd
+  - path: p1553_5a5c_succinct_aggregate_digit_trie_probe_gate_r100.md
+    sha256: 653ad0f51c9ec6f88a89769ca757f45ae70432cb947148d447eda968286a2e50
+  - path: p1553_5a5c_multiedge_digitized_equality_projector_probe_report_r99.json
+    sha256: dac6fbf38357e640bb174860df16117fdd3461717cb3b2ceac4e76ec7f77707c
+  - path: p1553_5a5c_multiedge_digitized_equality_projector_probe_gate_r99.md
+    sha256: a7e69ad7cf661f09c679039c5ed9874940eca5432d7ca91dc980f97005bfe560
+  - path: p1553_5a5c_marked_resultant_source_section_probe_r84.py
+    sha256: 80cd0887fd24bfc37f0568f03a8af4c98eb148e030a3112576c1a0940f4ad99d
+  - path: p1553_5a5c_marked_resultant_source_section_probe_report_r84.json
+    sha256: c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b
+  - path: p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md
+    sha256: 4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661
+  - path: p1553_cartesian_sum_compact_divisor_probe_r82.py
+    sha256: 7380bff3175625016affee4703b0b0f2867a28113f72eef2d90614ed57ffef07
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: p1553_cartesian_sum_compact_divisor_probe_gate_r82.md
+    sha256: 7c34e1d905c95a756689d4ec0ea92c6bd47808bcb3407d858ce08cccf75fd55e
+  - path: /Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md
+    sha256: 27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc
+artifacts:
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_r101.py
+    sha256: 854df1da576b07cc3dd63b1249a42a72d56708ef8eb43c4ef37478f2558e747d
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_report_r101.json
+    sha256: 050d1093fc34611f502a3f7b3ebf6fc632b3aeb9d03718f922e99baa2fe985c9
+  - path: frozen_5a5c_actual_divisor_image_entropy_merge.json
+    sha256: d19179b70610a13f3a7c92aa130cf075bf4cd5ae37cb15c28b77a23dae5af8a8
+  - path: actual_divisor_image_parameter_entropy_ledger.json
+    sha256: bd19140559adb0adeb794b78c391c5de35446f90bb30b8b0a63a948a595ab567
+  - path: actual_divisor_leaf_free_merge_source_replay.json
+    sha256: 3c74779038fcd56f5314b2eeeeaa6f674787a2469e1ac8b5c27ce4b0dc4f2d39
+  - path: actual_divisor_image_exceptional_controls.json
+    sha256: 01a6f9495aa7c083299931b9b3ccf7bb5ea0a8b1f237f2caf10fdaa1bcff066f
+  - path: factor_logs_and_identical_descent_r101.json
+    sha256: 613738806fedf792c9b7b3665f919764026f1b6c4280a3c202661ac749ec2f73
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_gate_r101.md
+    sha256: 3e12e4ab70edba64076d27b68d39ab34307ca6d9ff08252432759673b74a9ac5
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_actual_divisor_image_entropy_merge_probe_r101.py
+    sha256: a38fab611425e5b15bf65021cc7cdfeb2fb964b5ec738ce42301c1b507ad4b6a
+verified_statements:
+  - >-
+    The left 2A+3C image has an exact weighted local source oracle with
+    B^9/5 persistent state and B^4/5 query work.
+  - >-
+    The right 3A+2C image has an exact weighted local source oracle with
+    B^6/5 persistent state and B^6/5 query work.
+  - >-
+    All actual finite attained, blind, identity, repeated-atom, and synthetic
+    collision controls preserve exact integer multiplicity and one source.
+  - >-
+    The local oracles do not provide a subcap intersection between 2A+3C and
+    the target translate of 3A+2C.
+scoped_failures:
+  local_left_oracle_inside_caps: pass
+  local_right_oracle_inside_caps: pass
+  full_two_sided_join_inside_caps: unsupplied
+  full_five_a_five_c_integer_count_complete: unsupplied
+  full_five_a_five_c_joint_source_complete: unsupplied
+  full_exceptional_replay_complete: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - subcap two-sided implicit intersection
+  - arbitrary summation-polynomial and FFE representations
+  - any generic-prime lower bound for the structured endpoint family
+admission:
+  passed_obligations: 19
+  obligation_count: 32
+  local_side_oracles_admitted: true
+  lane_admitted: false
+result:
+  actual_structured_left_oracle_inside_caps: true
+  actual_structured_right_oracle_inside_caps: true
+  full_two_sided_join_complete: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_LOCAL_ACTUAL_SIDE_ORACLES_ONLY__2A3C_WEIGHTED_3C_STATE_B9O5_QUERY_B4O5__3A2C_WEIGHTED_2C_STATE_B6O5_QUERY_B6O5__EXACT_COUNTS_AND_ONE_SOURCE__SCALAR_BLIND__FULL_TWO_SIDED_TARGET_JOIN_UNSUPPLIED__SIDE_ENUMERATION_B13O5_OR_B12O5_OVER_ONLINE_CAP__NO_JOINT_SOURCE__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one two-sided implicit-intersection algorithm combining
+  the passing local side oracles inside B^9/4 setup/state and B^5/4 fresh
+  work/workspace, with exact joint count and one coupled source.

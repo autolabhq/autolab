@@ -1,0 +1,174 @@
+{
+  "cost": {
+    "a6_markers_per_row_exponent_B": {
+      "decimal": 0.5,
+      "exact": "1/2"
+    },
+    "bidirectional_marker_batch_operator_supplied": false,
+    "candidate_field_dlp_used": false,
+    "candidate_root_oracle_used": false,
+    "conditional_bidirectional_operator_apply_exponent_B": {
+      "decimal": 1.25,
+      "exact": "5/4"
+    },
+    "conditional_matrix_free_solve_exponent_B": {
+      "decimal": 2.0,
+      "exact": "2"
+    },
+    "conditional_matrix_free_solve_inside_pollard_rho": true,
+    "conditional_matrix_free_solve_inside_setup_cap": true,
+    "conditional_wiedemann_iteration_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "conditions": [
+      "One frozen scalar-blind marker-batch circuit applies both M and M^T in B^(5/4+o(1)) work.",
+      "Its setup is weight-independent or includes reusable division-safe tangent and adjoint state without replay.",
+      "The structured generic-prime marginal operator has the required rank and Wiedemann failure is controlled and followed by an exact residual check.",
+      "All field, extension, chart, integer-lift, memory, and bit costs remain within the charged exponents."
+    ],
+    "explicit_marginal_matrix_output_exponent_B": {
+      "decimal": 1.5,
+      "exact": "3/2"
+    },
+    "generic_prime_rank_and_density_supplied": false,
+    "known_target_row_count_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "meaningful_log_dimension_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "pollard_rho_exponent_B": {
+      "decimal": 2.5,
+      "exact": "5/2"
+    },
+    "reusable_weight_parametric_derivative_state_supplied": false,
+    "scalar_marker_batch_exponent_B": {
+      "decimal": 1.25,
+      "exact": "5/4"
+    },
+    "schema": "p1553.m6_matrix_free_marginal_jacobian_krylov.cost.r151.v1",
+    "setup_state_cap_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "unconditional_total_attack_cost_supplied": false
+  },
+  "required_open_outputs": {
+    "bidirectional_marker_batch_count_jacobian_operator": "open",
+    "factor_logs_without_verifier_matrix": "open",
+    "generic_prime_family_algorithm": "open",
+    "generic_prime_rank_and_density": "open",
+    "identical_target_descent": "open",
+    "reusable_weight_parametric_derivative_state": "open",
+    "shoup_bound_improvement": "open"
+  },
+  "schema": "p1553.m6_matrix_free_marginal_jacobian_krylov.frozen.r151.v1",
+  "source_binding_actual_sha256": {
+    "baur_strassen_primary": "828e8c9eb30af0089c48b1a5bcac3990bc0e21d3b68d4e343490b0fdaa38ecae",
+    "r144_controls": "0677e3a7220e7258e4dc56bff14f5e083a09ed048948667fe0582dd2fa4c6ea8",
+    "r144_gate": "c967cc10137fe861384a80a8261763c2ecb86ca2951db8c5bf43f348c65e1e9b",
+    "r144_parent": "db906bd74c9c43fd12ab196a36d59ac80bfbbd22de494c4b6b2efb4d0c96c268",
+    "r144_producer": "3cd7a3e40bf696a836ff6b6cad4c59a7ca73a44d72d152232cddeffa14e90a5c",
+    "r144_report": "954bc230dbe28300534a765c3bde389b7ae807767b664dc82f63ede1b3a5805d",
+    "r150_controls": "cc838d5f5cd05b3c43ebfae096d3b9110fa06e02a2cb3ea10285155d119c2a28",
+    "r150_cost": "57a022f3ffd5e149a95236f913cb612faff214f2ec2ef2d69a48f7af219017cd",
+    "r150_frozen": "04f989b1af422a1e42456bda7f95fbfdbb9941f709a75aed1de456d98c261e2b",
+    "r150_gate": "1def188f9b0c5834889a937f7de9629f78b98c0e4f3b3249b1ba170a404483b6",
+    "r150_logs": "cf0aa2174f836375165628813ee8f16ea29005a6345aec5af42f071f3367d1e5",
+    "r150_parent": "81761afebf32a86199a3aef3bad3520a9a4a25654ceef051a547d6829e9098b6",
+    "r150_producer": "7f9217358c57a6cdb84f7f0d731e003e973096e4ff01a780ae0b3b8f482a755e",
+    "r150_replay": "4fb314326c46d9cf2988866435d4fdc7705f0dd28444c288002925d4cf833341",
+    "r150_report": "598fd0b95622354f22bc6ce531fc02aa2b5f61a1578d06dae36fbd39086ae6d3",
+    "r150_test": "e5ff8f6cc11cf7e252e1aa49b456942c7d9bcfae660707c0bf75b9626cf7bf03",
+    "wiedemann_primary": "8ec0b8a8b35c02bd4a84236129ab991fdbcca4b4feb8332c22b08dbdefc1218a"
+  },
+  "source_bindings": {
+    "baur_strassen_primary": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/baur_strassen_partial_derivatives_1983.pdf",
+      "sha256": "828e8c9eb30af0089c48b1a5bcac3990bc0e21d3b68d4e343490b0fdaa38ecae"
+    },
+    "r144_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_weighted_fiber_marginal_log_operator_controls.json",
+      "sha256": "0677e3a7220e7258e4dc56bff14f5e083a09ed048948667fe0582dd2fa4c6ea8"
+    },
+    "r144_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_weighted_fiber_marginal_log_operator_probe_gate_r144.md",
+      "sha256": "c967cc10137fe861384a80a8261763c2ecb86ca2951db8c5bf43f348c65e1e9b"
+    },
+    "r144_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_weighted_fiber_marginal_log_operator_probe_parent_report_r144.yaml",
+      "sha256": "db906bd74c9c43fd12ab196a36d59ac80bfbbd22de494c4b6b2efb4d0c96c268"
+    },
+    "r144_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_weighted_fiber_marginal_log_operator_probe_r144.py",
+      "sha256": "3cd7a3e40bf696a836ff6b6cad4c59a7ca73a44d72d152232cddeffa14e90a5c"
+    },
+    "r144_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_weighted_fiber_marginal_log_operator_probe_report_r144.json",
+      "sha256": "954bc230dbe28300534a765c3bde389b7ae807767b664dc82f63ede1b3a5805d"
+    },
+    "r150_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_rational_convolution_subalgebra_rigidity_controls.json",
+      "sha256": "cc838d5f5cd05b3c43ebfae096d3b9110fa06e02a2cb3ea10285155d119c2a28"
+    },
+    "r150_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_rational_convolution_subalgebra_rigidity_cost_ledger.json",
+      "sha256": "57a022f3ffd5e149a95236f913cb612faff214f2ec2ef2d69a48f7af219017cd"
+    },
+    "r150_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_m6_rational_convolution_subalgebra_rigidity.json",
+      "sha256": "04f989b1af422a1e42456bda7f95fbfdbb9941f709a75aed1de456d98c261e2b"
+    },
+    "r150_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_rational_convolution_subalgebra_rigidity_probe_gate_r150.md",
+      "sha256": "1def188f9b0c5834889a937f7de9629f78b98c0e4f3b3249b1ba170a404483b6"
+    },
+    "r150_logs": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/factor_logs_and_identical_descent_r150.json",
+      "sha256": "cf0aa2174f836375165628813ee8f16ea29005a6345aec5af42f071f3367d1e5"
+    },
+    "r150_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_rational_convolution_subalgebra_rigidity_probe_parent_report_r150.yaml",
+      "sha256": "81761afebf32a86199a3aef3bad3520a9a4a25654ceef051a547d6829e9098b6"
+    },
+    "r150_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_rational_convolution_subalgebra_rigidity_probe_r150.py",
+      "sha256": "7f9217358c57a6cdb84f7f0d731e003e973096e4ff01a780ae0b3b8f482a755e"
+    },
+    "r150_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_rational_convolution_subalgebra_rigidity_replay.json",
+      "sha256": "4fb314326c46d9cf2988866435d4fdc7705f0dd28444c288002925d4cf833341"
+    },
+    "r150_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_rational_convolution_subalgebra_rigidity_probe_report_r150.json",
+      "sha256": "598fd0b95622354f22bc6ce531fc02aa2b5f61a1578d06dae36fbd39086ae6d3"
+    },
+    "r150_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_m6_rational_convolution_subalgebra_rigidity_probe_r150.py",
+      "sha256": "e5ff8f6cc11cf7e252e1aa49b456942c7d9bcfae660707c0bf75b9626cf7bf03"
+    },
+    "wiedemann_primary": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/wiedemann_sparse_linear_equations_1986.pdf",
+      "sha256": "8ec0b8a8b35c02bd4a84236129ab991fdbcca4b4feb8332c22b08dbdefc1218a"
+    }
+  },
+  "theorem": {
+    "baur_strassen_use": "Baur-Strassen gives constant-factor nonscalar overhead for the gradient of one complete division-safe scalar contraction circuit. Forward dual evaluation gives one directional action at constant scalar width.",
+    "bilinear_certificate": "lambda dot (M x)=x dot (M^T lambda) over the subgroup field.",
+    "forward_action": "For any atom vector x, Mx is the first-order coefficient of Z(w_a*(1+epsilon*x_a)); it is a forward directional derivative and does not require explicit marginal rows.",
+    "marginal_jacobian": "The aggregate marginal matrix is M=D_log Z(1), with M_(i,a)=w_a*partial Z_i/partial w_a at w=1.",
+    "novelty_status": "interface_composition_novelty_unverified",
+    "offline_online_boundary": "Differentiating a complete circuit also differentiates its setup. Baur-Strassen alone does not compile a reusable weight-parametric tangent/adjoint state. That state or a weight-independent setup remains mandatory.",
+    "primary_references": {
+      "baur_strassen": "Walter Baur and Volker Strassen, The Complexity of Partial Derivatives, Theoretical Computer Science 22 (1983), 317-330, doi:10.1016/0304-3975(83)90110-X.",
+      "wiedemann": "Douglas H. Wiedemann, Solving Sparse Linear Equations Over Finite Fields, IEEE Transactions on Information Theory 32(1) (1986), 54-62, doi:10.1109/TIT.1986.1057137."
+    },
+    "scope": "This is an exact interface reduction and conditional cost envelope, not a supplied count circuit, derivative data structure, generic-prime rank theorem, factor-log algorithm, or Shoup-bound improvement.",
+    "transpose_action": "For any row vector lambda, M^T lambda is the logarithmic gradient at w=1 of the scalar contraction sum_i lambda_i Z_i(w).",
+    "weighted_count_map": "Let Z(w) be the vector of aggregate known-target fiber counts as functions of logarithmic A/C atom weights, evaluated at w=1.",
+    "wiedemann_use": "Wiedemann linear algebra accepts a matrix as an operator and uses O(n) matrix-vector applications, up to logarithmic and probabilistic factors, with an exact residual check."
+  }
+}

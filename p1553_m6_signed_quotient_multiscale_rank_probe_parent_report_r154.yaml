@@ -1,0 +1,111 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-SIGNED-QUOTIENT-MULTISCALE-RANK-R154-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_signed_quotient_with_finite_multiscale_rank_transition
+run_count: 1
+status: random_rank_transfer_and_reverse_marker_operator_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - elliptic-curve
+  - compact-divisor
+  - inversion-symmetry
+  - signed-quotient
+  - convolution
+  - rank
+  - multiscale
+  - occupancy
+  - model-bound
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R153
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Correct the R153 rank target for public inversion signs and test whether
+  finite rank failure persists under preregistered occupancy-calibrated
+  random cyclic controls.
+inputs:
+  - path: p1553_m6_symmetric_shift_reverse_only_marginal_probe_r153.py
+    sha256: fa55c47f6b0c8a4a6071580c3ba6c519cdb7150d692ee16253fdf8150694e646
+  - path: p1553_m6_symmetric_shift_reverse_only_marginal_probe_report_r153.json
+    sha256: 0e5c8feb4498a16b02fd1ffb5e2f7df4a64d20097c62f35d99abef84a120afce
+  - path: frozen_m6_symmetric_shift_reverse_only_marginal.json
+    sha256: 81aa786dc9431f6e0bf83de1a43a2030996e06c73faf0f2900fe8ade4e19754c
+  - path: m6_symmetric_shift_reverse_only_marginal_cost_ledger.json
+    sha256: 0a2c48b7604bcef168acb850ab6de69a09d927c4d8558a3c2d8ee7ae60ffd859
+  - path: m6_symmetric_shift_reverse_only_marginal_replay.json
+    sha256: 6e66783f3ea159ad0b522b46075fe11e0c20b1c82428ed11aa31b0a72fb96f26
+  - path: m6_symmetric_shift_reverse_only_marginal_controls.json
+    sha256: abf91eff4a023d400fdb56caac7927a496cf83b5cba205536118cfdc4ef00f62
+  - path: factor_logs_and_identical_descent_r153.json
+    sha256: 2bfb012acdbac35964775c8fa1ae38d519c3e9ebddcc81b969c791b97e86a569
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_symmetric_shift_reverse_only_marginal_probe_r153.py
+    sha256: 5d62c7b1be2f5267ae2d66a931ae6a7034ff2ebc6b4c97bc179587b2f7a47a79
+  - path: p1553_m6_symmetric_shift_reverse_only_marginal_probe_gate_r153.md
+    sha256: afaeede72a11b0ae870a0551f9d5ec5bbdf94099f53dede5b5327fbfb9b0bf6d
+  - path: p1553_m6_symmetric_shift_reverse_only_marginal_probe_parent_report_r153.yaml
+    sha256: 1d46ec932cf58564ebbbccfdee888b7ffacd482d47e7077a1b33feb4dd382c87
+artifacts:
+  - path: p1553_m6_signed_quotient_multiscale_rank_probe_r154.py
+    sha256: 8e3f3cf4947417f341d4b708258106e11eb391170eb956d75992c5b0c6ebe6ad
+  - path: p1553_m6_signed_quotient_multiscale_rank_probe_report_r154.json
+    sha256: 16ee4f848ef89c54bda5a413fb05fefc6f6863600ff79f9f6f925e59bcc2d9ef
+  - path: frozen_m6_signed_quotient_multiscale_rank.json
+    sha256: f6082904507a58393507311fe712f5be2413fea71d087d3abebf6fe278a0856e
+  - path: m6_signed_quotient_multiscale_rank_cost_ledger.json
+    sha256: bd7ac6ba5efbdd9156b2ce0054bbdae29a19760a1b4323012d2d1c91320bbdbb
+  - path: m6_signed_quotient_multiscale_rank_replay.json
+    sha256: 87576bb1e92529815938dc1e8a1520a50e6e850d09ee28500df55d0375a236ee
+  - path: m6_signed_quotient_multiscale_rank_controls.json
+    sha256: 4eef913ace45f47337f1362af946fe8eb26f23167b738f79f785583f1ada66d6
+  - path: factor_logs_and_identical_descent_r154.json
+    sha256: 2302f2ea00ec127108817631f79961a4577dbbb0be912d11de8f0fd86343e631
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_signed_quotient_multiscale_rank_probe_r154.py
+    sha256: 8b230718808612747c50d7cee4261c1f42482e235350b1040126f7f7ef345e64
+  - path: p1553_m6_signed_quotient_multiscale_rank_probe_gate_r154.md
+    sha256: 905b7ac86fb1e444e0d40252f0107dbc65293de9823ec69a9e171a39da14ab27
+verified_statements:
+  - >-
+    Public inversion identities reduce the meaningful C-log dimension by
+    a constant factor, with exact combined rank
+    |C|/2+rank(signed quotient).
+  - >-
+    The eight inherited actual controls have signed quotient ranks
+    1,0,0,0,0,0,0,0 and none is full rank.
+  - >-
+    All 48 preregistered synthetic prime-cyclic controls replay the signed
+    relation identities and combined-rank formula exactly.
+  - >-
+    Eleven synthetic controls attain full signed quotient rank, concentrated
+    at occupancy multipliers four and eight.
+  - >-
+    The finite transition uses verifier labels and has no random-rank theorem,
+    hash-to-curve transfer, factor-log, or attack credit.
+scoped_failures:
+  random_rank_concentration_theorem: open
+  hash_to_curve_rank_transfer: open
+  reverse_only_signed_marker_operator: open
+  signed_weight_separable_ffe_dag: open
+  factor_logs_without_verifier_labels: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 16
+  total_obligations: 26
+  signed_quotient_reduction_admitted: true
+  actual_rank_deficit_admitted: true
+  synthetic_rank_transition_admitted_without_transfer: true
+  random_rank_or_hash_to_curve_transfer_admitted: false
+  reverse_only_signed_marker_operator_admitted: false
+  lane_admitted: false
+next_action: >-
+  Derive or refute a random-deck concentration and full-rank theorem for the
+  signed quotient before claiming hash-to-curve transfer, and construct the
+  one reverse-adjoint signed marker FFE operator within the frozen caps.

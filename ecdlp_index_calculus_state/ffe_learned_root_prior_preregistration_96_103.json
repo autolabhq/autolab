@@ -1,0 +1,63 @@
+{
+  "schema": "ecdlp_ffe_learned_root_prior_preregistration_v1",
+  "date": "2026-05-25",
+  "claim_boundary": "declared_before_96_103_generation",
+  "holdout_window": {
+    "transfer_indices": [
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ],
+    "window_label": "96_103"
+  },
+  "pre_factor_gate": {
+    "name": "pre_factor_nonvacuous_hit_root_proxy",
+    "uses_sage_factorization": false,
+    "uses_root_policy_outcome": false,
+    "conditions": [
+      "full materialized FFE surface has at least one selected root pair",
+      "selected public leaf has at least one known hit root before factorization"
+    ]
+  },
+  "root_policy": {
+    "name": "learned_global_zero_root_prior",
+    "train_rows": "all preregistered pre-factor-gated surfaces through transfer index 87",
+    "selection_rule": "mean-cost all-policy rule from the frozen 88-95 sensitivity handoff: among policies with all calibration rows preserving and zero false positives, choose minimum mean scan ops/rho",
+    "selected_from_artifact": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_train_le87_test_88_95.json",
+    "forbidden_holdout_selection_fields": [
+      "preserves_selected_root_pairs",
+      "chosen_preserves_selected_root_pairs",
+      "public_zero_recovered",
+      "below_rho",
+      "direct_below_rho",
+      "total_ops_over_rho",
+      "direct_total_ops_over_rho"
+    ]
+  },
+  "train_sources": [
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_all_public_leaf_plus_fresh_72_79.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_all_public_leaf_plus_fresh_72_79.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_all_public_leaf_plus_fresh_72_79.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total3_total4_verified_over_rho_80_87.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total3_total4_verified_over_rho_80_87.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_verified_over_rho_80_87.json"
+  ],
+  "intended_outputs": {
+    "total2_stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_selector_96_103_probe.json",
+    "total3_total4_stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_96_103_probe.json",
+    "strict_signatures": [
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_96_103.json",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total3_total4_signature_fixed_selector_96_103.json"
+    ],
+    "gate_manifests": [
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_fixed_selector_96_103.json",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_fixed_selector_96_103.json"
+    ]
+  },
+  "promotion_condition": "After generating 96-103 strict signatures and pre-factor manifests, factor only gate-selected surfaces and score learned_global_zero_root_prior trained only on <=87 gated surfaces. Count as positive only if preserving, false-positive-free, and below Pollard-rho under scan or direct-root accounting."
+}

@@ -1,0 +1,88 @@
+{
+  "schema": "ecdlp_ffe_total2_static_root_policy_preregistration_v1",
+  "date": "2026-05-25",
+  "claim_boundary": "declared_before_128_135_generation",
+  "holdout_window": {
+    "transfer_indices": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135
+    ],
+    "window_label": "128_135"
+  },
+  "channel_scope": {
+    "primary_channel": "low_term_total2",
+    "excluded_from_promotion": [
+      "low_term_total3",
+      "low_term_total4"
+    ],
+    "reason": "The 120-127 all-channel target_root_hash test failed only through a total3/4 surface with zero preserving Sage factors. This preregistration isolates the total2 first-fall route before adding a separate total3/4 pre-factor discriminator."
+  },
+  "pre_factor_gate": {
+    "name": "pre_factor_nonvacuous_hit_root_proxy",
+    "uses_sage_factorization": false,
+    "uses_root_policy_outcome": false,
+    "conditions": [
+      "full materialized FFE surface has at least one selected root pair",
+      "selected public leaf has at least one known hit root before factorization"
+    ]
+  },
+  "primary_root_policy": {
+    "name": "target_root_hash",
+    "policy_type": "static_public_order",
+    "policy_identity_selection_rule": "selected before 128-135 from the 120-127 total2-only diagnostic: 2/2 preserving, zero false positives, 2/2 scan-below-rho, 2/2 direct-below-rho, and chosen root 161 on both total2 selected surfaces",
+    "selected_from_artifact": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_train_le87_test_120_127.json",
+    "algorithm": [
+      "rank candidate root hyperplanes by target-scoped public fingerprint digest",
+      "stop at the first public-zero root hyperplane",
+      "charge all selector work plus root-scan or direct-root accounting"
+    ],
+    "forbidden_holdout_selection_fields": [
+      "preserves_selected_root_pairs",
+      "chosen_preserves_selected_root_pairs",
+      "public_zero_recovered",
+      "below_rho",
+      "direct_below_rho",
+      "total_ops_over_rho",
+      "direct_total_ops_over_rho"
+    ]
+  },
+  "baseline_root_policies": [
+    {
+      "name": "summax_low_root_norm_target_hash",
+      "reason": "posthoc best static public policy on the 120-127 total2 selected surfaces"
+    },
+    {
+      "name": "summax_sage_low_constant_target_hash",
+      "reason": "frozen static public policy selected from <=87 rows"
+    },
+    {
+      "name": "global_root_hash",
+      "reason": "static public global hash control"
+    },
+    {
+      "name": "residue16_then_global_hash_cap1",
+      "reason": "previous fresh-window hybrid primary"
+    }
+  ],
+  "intended_outputs": {
+    "total2_stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_selector_128_135_probe.json",
+    "strict_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_128_135.json",
+    "gate_manifest": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_fixed_selector_128_135.json",
+    "sage_factor_subset": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total2_preregistered_128_135.json",
+    "linear_factor_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total2_preregistered_128_135.json",
+    "root_selector": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_root_hyperplane_selector_total2_preregistered_128_135.json",
+    "frozen_evaluator": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_total2_train_le87_test_128_135.json"
+  },
+  "promotion_condition": "After generating the 128-135 total2 strict signature and pre-factor manifest, factor only total2 gate-selected surfaces and score target_root_hash. Count as a total2 scan-positive promotion only if all total2 gate-selected surfaces are preserving, false-positive-free, and scan-below-rho. Count as a weaker total2 direct-root-positive result only if all total2 gate-selected surfaces are preserving, false-positive-free, and direct-below-rho.",
+  "non_claims": [
+    "This does not promote total3/4 surfaces.",
+    "This does not claim end-to-end ECDLP recovery faster than Pollard rho.",
+    "This does not claim a public total3/4 discriminator has been found."
+  ]
+}

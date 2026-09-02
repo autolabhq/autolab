@@ -1,0 +1,139 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-IMPLICIT-PENCIL-NORM-COBOUNDARY-R39-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_and_exact_toy_selfcheck
+  model_scope: standard_implicit_norm_resultant_radical_and_constant_recurrence_routes
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE_STANDARD_IMPLICIT_GATE
+summary: >-
+  The exact translated product A_V(R)=product_v F_C(R-v) decides the marked
+  endpoint intersection, but its dense norm has degree B^4 and any
+  constant-success materialized batch radical has at least B^3 support.
+  Standard norm, resultant, quotient, divisor, radical, and post-hoc gcd
+  representations therefore miss the density-adjusted B^(1/2) fresh-target
+  gate. The exact R38 toy locator is not a translation coboundary, its naive
+  degree-nine composition has 66 inner values where at most 27 are allowed,
+  and all 4,896 nondegenerate arithmetic pair decks have norm cyclic linear
+  complexity 102 in a subgroup of order 103. A special high-degree Miller/net
+  circuit or source-returning nonlinear locator remains open.
+inputs:
+  - path: staged/p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: staged/p1553_heavy_key_source_target_support_gate_r36.md
+    sha256: 103670908f33baee0915372434899a3a710861f501e19c91599f4221fe3f2aa5
+  - path: staged/p1553_path_3sum_generic_reduction_gate_r37.md
+    sha256: b8a9423edef4041fcc78ec9f4808ab63ab2f97aa4fc1b157afaedabadb87c772
+  - path: staged/p1553_target_walk_support_work_gate_r38.md
+    sha256: ecacb63d18cc2e4478fa0d3c6b71930a4ba4e0a50f3866bd46752ed7c37f7aa5
+  - path: staged/p1553_r38_bundle.sha256
+    sha256: 4aa30dd51575016598aebdc1debda7d2ccbf0864d396db86dabe398c0d995b7f
+  - path: staged/p1553_r38_staging_receipt.yaml
+    sha256: 885ffe5e76cf8fb2232d2bf98aefeda27f1a7d6b79440d635bb9d65f12b0a64a
+  - path: authoritative/ECDLP-IDEA-121/translated_product_common_norm_v3.md
+    sha256: ce24397ea1686d081dac51b790fcfdf09f17e0a714dc0e8fef399fbb97c2d551
+  - path: authoritative/ECDLP-IDEA-121/ku_common_norm_reduction_gate.md
+    sha256: bc7f9e44852ff6a7a7e59d52676154e82f3b43988b7824ce8a2fbb8c0cd260c6
+  - path: authoritative/ECDLP-IDEA-121/ku_circuit_reduction_v2.md
+    sha256: 6fcca1d12e911f6eb2142ac96b6d0a83b6ac20db11efd06bc24c0abb7c99dc48
+  - path: authoritative/ECDLP-IDEA-006/p1540_elliptic_net_translated_pole_annihilator_gate.md
+    sha256: d9a4040230022c24f7011932ef7cd9b5bcea51236a80c042bb498d2012428437
+  - path: authoritative/ECDLP-IDEA-006/p1540_r1_independent_audit.md
+    sha256: 8032be2d3a645ac64c046783191cc9c634715518eb18e4702acf66e077223d45
+outputs:
+  - path: staged/p1553_implicit_pencil_norm_coboundary_gate_r39.md
+    sha256: 2901305c2ac83fe51d2f23957389cb2dfb6d58b3c4bc0d2e439ad4ef3f6085f6
+  - path: staged/p1553_implicit_pencil_norm_selfcheck_r39.py
+    sha256: e0a529f7d986eb4454fca688075c8a77f3cf9979123d1ea154d2fd40818ab23a
+  - path: staged/p1553_implicit_pencil_norm_selfcheck_report_r39.json
+    sha256: ce45016a88bad372681eb16c51fbc341fde77b001ebae4c7b8bb6afb436025a6
+frozen_parameters:
+  source_group_order: B^(5+o(1))
+  pencil_degree: B
+  selected_endpoint_support: B^2
+  other_pair_endpoint_support: B^2
+  setup_cap: B^(9/4+o(1))
+  density_adjusted_average_query_gate: B^(1/2-o(1))
+theorems:
+  - >-
+    The translated norm is an exact endpoint-intersection predicate and has
+    rational-function degree at most B^4 counting multiplicity.
+  - >-
+    A constant-success materialized batch radical needs at least B^3 distinct
+    shifted endpoints, while smaller batches inherit R38 support/work
+    cancellation across independent masks.
+  - >-
+    A multiplicative q-coboundary has zero valuation mass on every q-orbit;
+    the R38 rational locator has mass nine on the subgroup orbit and therefore
+    is not a coboundary.
+  - >-
+    Any q-coboundary primitive with zeros on a pole-free length-L interval has
+    transfer divisor degree Omega(L^2), hence Omega(B^4) at L=B^2; no circuit
+    size lower bound is claimed.
+  - >-
+    The naive degree-nine composition fails the necessary inner-value
+    saturation condition, 66 distinct inner values versus a maximum of 27.
+controls:
+  exact_norm_zero_semantics: pass
+  target_density: charged
+  all_negative_masks: charged
+  dense_degree_as_circuit_lower_bound: rejected
+  coboundary_orbit_mass: exact
+  constant_recurrence_toy_scan: exhaustive_over_4896_arithmetic_pair_decks
+  nonlinear_or_variable_recurrence: admitted_outside_gate
+  miller_or_elliptic_net_short_program: admitted_outside_gate
+toy_control:
+  field_prime: 193
+  subgroup_order: 103
+  selected_path_size: 9
+  reference_value_without_subgroup_preimage: 1
+  naive_scale_up_path_size: 81
+  naive_scale_up_distinct_inner_values: 66
+  allowed_inner_values_under_literal_composition: 27
+  arithmetic_pair_decks_tested: 4896
+  norm_linear_complexity: 102
+  replay_matches_report: true
+result:
+  classification: standard_implicit_routes_negative_special_circuit_open
+  exact_implicit_norm_predicate: present
+  standard_dense_norm_degree: B^4
+  constant_success_materialized_radical_support: B^3
+  toy_multiplicative_coboundary: absent
+  toy_naive_degree_nine_composition: failed
+  toy_short_constant_recurrence: absent
+  asymptotic_low_boundary_family: absent
+  special_miller_net_circuit: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - standard representation costs are not arithmetic-circuit lower bounds
+  - the recurrence and composition evidence is toy-only
+  - nonlinear, variable-coefficient, and special Miller/net circuits remain open
+  - no target, R10, rank, logs, or descent
+deduplication:
+  - P1513 owns generic translated-product and common-norm representations
+  - P1540 owns translated-coordinate constant-recurrence and nonlinear-net controls
+  - R36 owns marked source replay and target-density loss
+  - R38 owns explicit target-walk support/work cancellation
+  - R39 adds the exact pencil norm, coboundary, composition, and route-matched recurrence screens
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE_STANDARD_IMPLICIT_GATE__EXACT_TRANSLATED_NORM_PREDICATE_POSITIVE__STANDARD_NORM_RESULTANT_DIVISOR_AND_RADICAL_PAYLOADS_MISS_GATE__R38_TOY_NOT_COBOUNDARY__COBOUNDARY_INTERVAL_PRIMITIVE_DEGREE_OMEGA_B4_WITHOUT_CIRCUIT_LOWER_BOUND__NAIVE_DEGREE9_COMPOSITION_FAILS_66_GT_27__ALL_4896_TOY_ARITHMETIC_PAIR_DECK_NORMS_HAVE_LC_102_OF_103__MILLER_NET_OR_NONLINEAR_SOURCE_LOCATOR_OPEN__NO_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute the remaining orbit-segment primitive. Put the poles of
+  a selected-path locator on the subgroup orbit, derive the minimum principal
+  transfer divisor h, and test whether Miller, elliptic-net, or addition-chain
+  identities evaluate tau_q(h)/h and return one marked vanishing factor below
+  the density-adjusted B^(1/2) query gate without materializing its Omega(B^4)
+  divisor. The same construction must exhibit a degree-nine lift of the R38
+  pencil before any asymptotic or R10 claim.

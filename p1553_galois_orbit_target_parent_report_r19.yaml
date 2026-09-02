@@ -1,0 +1,73 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-GALOIS-ORBIT-TARGET-R19-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: draft_review_required_scoped_negative
+labels:
+  - theorem-only
+  - model-bound
+  - novelty-unverified
+  - independent-review-required
+owner: P1553/IDEA-057/IDEA-195
+new_idea_id: null
+breakthrough: false
+objective: >-
+  Classify growing Galois common factors, charge their exact finite-list orbit
+  saturation, and test whether a fresh prime-subgroup translation can descend
+  through a low-degree quotient label.
+inputs:
+  - path: staged/p1553_block_common_right_factor_compiler_gate_r16.md
+    sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+  - path: staged/p1553_generic_pair_birational_gate_r18.md
+    sha256: d1eadf3edf74acedf30888aff764d221d1483ca3dc8521ff293cd7aa422ca5c4
+  - path: staged/p1553_generic_pair_birational_parent_report_r18.yaml
+    sha256: a11c7987bf2c307a5dde77d3ce597a659b356ac841380084c6c289523067d97d
+verified_statements:
+  - >-
+    A geometrically Galois factor of degree e<p has a tame PGL2 deck group.
+    Every unbounded such group is cyclic or dihedral; A4, S4, and A5 are
+    bounded.
+  - >-
+    Factorization of the complete branch maps forces e to divide 2d and leaves
+    bounded-degree outer maps when e=Theta(d).
+  - >-
+    J<=C*L/e implies orbit collision energy at least eL/C and puts at least
+    half the fifth-list points in fibers with occupancy at least e/(2C).
+  - >-
+    A non-branch-preserving Mobius orbit graph lifts to a connected
+    (Z/2)^2-cover of genus 5-s>=2, where s is the intersection size of the two
+    four-point Kummer branch sets.
+  - >-
+    Only a bounded subgroup of PGL2 preserves the Kummer branch set, so a
+    growing passing Galois factor needs Omega(eL) nonliftable genus-at-least-two
+    fifth-list incidences.
+  - >-
+    A separable h:E->P1 of degree below N cannot semiconjugate translation by a
+    nonzero N-torsion point to one single-valued rational self-map of P1. The
+    quotient pullback would have to be both etale and branched.
+scoped_failures:
+  growing_galois_factor_without_orbit_receipt: missing_Omega_eL_interval_incidences
+  branch_preserving_growing_deck_group: impossible_bounded_stabilizer
+  single_valued_fresh_target_descent_below_N: impossible_etale_branched_pullback
+  finite_field_interval_incidence_bound: not_proved
+  non_galois_common_factors: not_classified
+  multivalued_target_action: not_classified
+  r10_density_rank_logs_and_descent: not_supplied
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  unrestricted_lower_bound: false
+  new_idea_id: null
+literature_boundary:
+  ahmadi_shparlinski_sum_product: >-
+    Does not imply the required bound: its two-set additive-or-multiplicative
+    image dichotomy does not control one-interval Mobius orbit intersections.
+  pakovich_field_intersections: >-
+    Comparison source only; a common right factor is still represented by the
+    generated compositum, not by intersecting the endpoint fields.
+exactly_one_next_action: >-
+  Prove or refute an o(eL) total nonliftable Mobius-orbit incidence bound for
+  the frozen prime-subgroup Kummer interval. A counterexample must carry the
+  full orbit, source, branch-factor, multivalued target, and R10 receipts.

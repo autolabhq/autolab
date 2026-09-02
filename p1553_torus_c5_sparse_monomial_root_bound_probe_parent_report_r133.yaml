@@ -1,0 +1,109 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-SPARSE-MONOMIAL-ROOT-BOUND-R133-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: pinned_sparse_root_theorem_adaptation_and_random_deck_model_negative
+run_count: 1
+status: five_mode_larger_polylog_low_slp_and_multi_predicate_routes_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - sparse-polynomial
+  - root-bound
+  - random-deck-model
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R129-R132
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine which represented asymmetric F_(p^2) sparse zero predicates
+  can contain a q^(3/4) torus C5 color support, while separating
+  deterministic subgroup consequences from a uniform-random-deck model.
+inputs:
+  - path: p1553_torus_c5_base_field_frobenius_predicate_dag_probe_r132.py
+    sha256: 9235668bed218df40c60ea774673b03bc2d55236cd1c04ab3ef813ad61e0baad
+  - path: p1553_torus_c5_base_field_frobenius_predicate_dag_probe_report_r132.json
+    sha256: 54e0396f8fcbed3fb41893af1c2d3612f81f26b5ff44dcbc0784299a7ff96f17
+  - path: frozen_torus_c5_base_field_frobenius_predicate_dag.json
+    sha256: efc22a83ab20a27b490204acdb67a8bda351d774caf2c186cda9f04cdd0ae56f
+  - path: torus_c5_base_field_frobenius_predicate_dag_cost_ledger.json
+    sha256: 437e3a1165d17d6f85caa4e246ea9769012df2915113675249bfcc68502fbe4f
+  - path: torus_c5_base_field_frobenius_predicate_dag_replay.json
+    sha256: 0e7f17f5c0c04cbdcf1a430f36114343b2b786cf3cb85a9ca586afeb549471e9
+  - path: torus_c5_base_field_frobenius_predicate_dag_controls.json
+    sha256: f0ee93f6ddfef5395abc88a8f03b31a325504a14bf04b7d7a246d9efec3f53ab
+  - path: factor_logs_and_identical_descent_r132.json
+    sha256: f85f4135fe44d2aebbe61191dff04e2e40aff4a07d45118c752758c8425dfed3
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_base_field_frobenius_predicate_dag_probe_r132.py
+    sha256: 296daa244226d7d3a41da492f97cf1ea291280af6bb9e0374e0b366df0e4d099
+  - path: p1553_torus_c5_base_field_frobenius_predicate_dag_probe_gate_r132.md
+    sha256: dd20f3188596712929c9715d1dbf27782a41a5be8900f727f948def2a7947332
+  - path: p1553_torus_c5_base_field_frobenius_predicate_dag_probe_parent_report_r132.yaml
+    sha256: 958b63522081adcba52bdfbdbaa982356d00d67098ea4c298e53227af1b6e447
+  - path: references/kelley_sparse_polynomial_roots_1602.00208.pdf
+    sha256: 250daacc1b157043cd9c7345036eb332fc69fee8e48a12ba81eddcc2b91995b7
+artifacts:
+  - path: p1553_torus_c5_sparse_monomial_root_bound_probe_r133.py
+    sha256: b53985696fb7a6b270b7e3cdffa50f50b6801cdc0569a567abf1486064d52bc7
+  - path: p1553_torus_c5_sparse_monomial_root_bound_probe_report_r133.json
+    sha256: 5b02982dfdce90645db52e36ba6063a40a6476307ec6a269d3c0c4311d64e8d3
+  - path: frozen_torus_c5_sparse_monomial_root_bound.json
+    sha256: 28e2827b522efd71b2abaebca377b169b9744263541499bd9a262eaf9d4f911b
+  - path: torus_c5_sparse_monomial_root_bound_cost_ledger.json
+    sha256: 7bc714f7c6b763c9347f78d094374fbf26442473bbdd58978e261de8494485c0
+  - path: torus_c5_sparse_monomial_root_bound_replay.json
+    sha256: 958baefed1027c0bf58d6ff666af3fad2c6546d9624acdc5bef9b8aac9c09dda
+  - path: torus_c5_sparse_monomial_root_bound_controls.json
+    sha256: 5bf39fb2ec030c9300f1913b09d0d28800d0330d2eca26478ad1a322d3503938
+  - path: factor_logs_and_identical_descent_r133.json
+    sha256: 757bb97a1adb867fb35455a17f822d825537cc59a9029459ad0c75f4e96a3e7a
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_sparse_monomial_root_bound_probe_r133.py
+    sha256: e5a350fa03fbf254f930ce9c52f1c36a648d234cba8617e7e6c8b533d6ab2891
+  - path: p1553_torus_c5_sparse_monomial_root_bound_probe_gate_r133.md
+    sha256: bfeb6cad6781ef2b63b36821b5ca4d02a7424353a29b99ed53aa974c580f5ffe
+verified_statements:
+  - >-
+    The proof of Kelley Theorem 2.3 adapts to a prime-order cyclic
+    subgroup over F_(p^2), where the largest root coset has size one.
+  - >-
+    A nonzero represented extension-field sparse sum with at most four
+    distinct subgroup modes cannot vanish on q^(3/4+o(1)) targets.
+  - >-
+    Under the explicit uniform-random-deck model, a pure-fifth witness
+    subset and union bound exclude represented predicates through
+    one quarter log2(q) modes with overwhelming probability.
+  - >-
+    All eight actual pairing controls replay every color's pure-fifth
+    sources, but their small numerical union bounds receive no credit.
+scoped_failures:
+  one_to_four_mode_extension_zero_predicate: rejected_asymptotically
+  small_log_mode_uniform_random_deck_predicate: rejected_with_overwhelming_probability_model_only
+  structured_factor_base_transfer: unproved
+  five_mode_extension_zero_predicate: open
+  larger_polylog_sparse_extension_predicate: open
+  low_slp_expanded_extension_predicate: open
+  multi_predicate_frobenius_coordinate_dag: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 13
+  total_obligations: 21
+  lane_admitted: false
+next_action: >-
+  Test a five-mode F_(p^2) zero predicate at the q^(3/4) threshold, a
+  represented predicate above the small-log regime, a high-expansion
+  low-SLP predicate, or a multi-predicate Frobenius-coordinate DAG.
+  Freeze every coefficient and node, replay exact positive/empty paths
+  and C2+C3 sources, fit B^(9/4+o(1)) state and polylogarithmic
+  arbitrary-target work, avoid field DLP, and charge rank, logs,
+  identical descent, memory, field operations, and bits.

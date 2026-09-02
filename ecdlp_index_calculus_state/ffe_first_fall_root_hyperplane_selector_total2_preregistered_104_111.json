@@ -1,0 +1,2746 @@
+{
+  "method": "heldout_root_hyperplane_order_with_public_zero_early_stop",
+  "parameters": {
+    "audit_source": "ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total2_preregistered_104_111.json",
+    "cost_model": "sum(factor_monomials * selected_leaf_count) until first public-zero root hyperplane, plus selected candidate factor_root_scan_ops, compared with generic_rho_steps; direct-root companion cost replaces factor_root_scan_ops with surface_ffe_ops plus direct validation of the hyperplane root r",
+    "forbidden_test_selection_fields": [
+      "preserves_selected_root_pairs",
+      "same_selected_root_pairs",
+      "selected_valid_root_leaves",
+      "missing_selected_root_pairs",
+      "extra_selected_root_pairs",
+      "generic_rho_steps",
+      "total_ops_over_rho",
+      "below_rho"
+    ],
+    "leave_out_mode": "transfer_row",
+    "policies": [
+      "sage_factor_order",
+      "low_constant",
+      "low_root_norm",
+      "global_root_hash",
+      "target_root_hash",
+      "summax_sage_low_constant_target_hash",
+      "minsum_low_constant_target_hash",
+      "summax_low_root_norm_target_hash",
+      "learned_target_zero_root_prior",
+      "learned_global_zero_root_prior",
+      "learned_target_zero_candidate_prior",
+      "learned_target_zero_residue16_prior",
+      "learned_target_zero_factor_index_prior",
+      "learned_salt_weighted_zero_prior",
+      "learned_transfer_weighted_zero_prior",
+      "learned_zero_ensemble_prior"
+    ],
+    "sage_factor_source": "ecdlp_index_calculus_state/ffe_sage_factor_total2_preregistered_104_111.json",
+    "selection_features": [
+      "root hyperplane fingerprint c + r*b + r^2",
+      "factorization order",
+      "centered root and constant norms",
+      "deterministic target/global root hashes",
+      "public zero tests on selected leaf coefficients",
+      "held-out calibration counts of public-zero roots"
+    ]
+  },
+  "policy_rows": {
+    "global_root_hash": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 88,
+        "direct_total_ops_over_rho": 0.64233577,
+        "evaluated_root_count": 9,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "global_root_hash",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 27,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 15,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7763
+          },
+          {
+            "factor_index": 9,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5597
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 16,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7901
+          },
+          {
+            "factor_index": 17,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 9139
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 3,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1976
+          }
+        ],
+        "total_ops": 100,
+        "total_ops_over_rho": 0.72992701,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "learned_global_zero_root_prior": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "learned_global_zero_root_prior",
+        "policy_type": "heldout_zero_prior",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "learned_salt_weighted_zero_prior": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "learned_salt_weighted_zero_prior",
+        "policy_type": "heldout_zero_prior",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "learned_target_zero_candidate_prior": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "learned_target_zero_candidate_prior",
+        "policy_type": "heldout_zero_prior",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "learned_target_zero_factor_index_prior": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "learned_target_zero_factor_index_prior",
+        "policy_type": "heldout_zero_prior",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "learned_target_zero_residue16_prior": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "learned_target_zero_residue16_prior",
+        "policy_type": "heldout_zero_prior",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "learned_target_zero_root_prior": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "learned_target_zero_root_prior",
+        "policy_type": "heldout_zero_prior",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "learned_transfer_weighted_zero_prior": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "learned_transfer_weighted_zero_prior",
+        "policy_type": "heldout_zero_prior",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "learned_zero_ensemble_prior": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "learned_zero_ensemble_prior",
+        "policy_type": "heldout_zero_prior",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "low_constant": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "low_constant",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "low_root_norm": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 124,
+        "direct_total_ops_over_rho": 0.90510949,
+        "evaluated_root_count": 21,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "low_root_norm",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 63,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 0,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 163
+          },
+          {
+            "factor_index": 21,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 11288
+          },
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 20,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10752
+          },
+          {
+            "factor_index": 19,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10618
+          },
+          {
+            "factor_index": 2,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1164
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          },
+          {
+            "factor_index": 3,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1976
+          }
+        ],
+        "total_ops": 136,
+        "total_ops_over_rho": 0.99270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "minsum_low_constant_target_hash": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 103,
+        "direct_total_ops_over_rho": 0.75182482,
+        "evaluated_root_count": 14,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "minsum_low_constant_target_hash",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 42,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 17,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 9139
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 10,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6076
+          },
+          {
+            "factor_index": 2,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1164
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 15,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7763
+          }
+        ],
+        "total_ops": 115,
+        "total_ops_over_rho": 0.83941606,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "sage_factor_order": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 97,
+        "direct_total_ops_over_rho": 0.7080292,
+        "evaluated_root_count": 12,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "sage_factor_order",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 36,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 0,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 163
+          },
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 2,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1164
+          },
+          {
+            "factor_index": 3,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1976
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          }
+        ],
+        "total_ops": 109,
+        "total_ops_over_rho": 0.79562044,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "summax_low_root_norm_target_hash": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 115,
+        "direct_total_ops_over_rho": 0.83941606,
+        "evaluated_root_count": 18,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "summax_low_root_norm_target_hash",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 54,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 21,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 11288
+          },
+          {
+            "factor_index": 2,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1164
+          },
+          {
+            "factor_index": 17,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 9139
+          },
+          {
+            "factor_index": 0,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 163
+          },
+          {
+            "factor_index": 15,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7763
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          },
+          {
+            "factor_index": 18,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 10135
+          }
+        ],
+        "total_ops": 127,
+        "total_ops_over_rho": 0.9270073,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "summax_sage_low_constant_target_hash": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 106,
+        "direct_total_ops_over_rho": 0.77372263,
+        "evaluated_root_count": 15,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "summax_sage_low_constant_target_hash",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 45,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 0,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 163
+          },
+          {
+            "factor_index": 5,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3665
+          },
+          {
+            "factor_index": 2,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1164
+          },
+          {
+            "factor_index": 4,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 3027
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          }
+        ],
+        "total_ops": 118,
+        "total_ops_over_rho": 0.86131387,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "target_root_hash": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 88,
+        "direct_total_ops_over_rho": 0.64233577,
+        "evaluated_root_count": 9,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "target_root_hash",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 27,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 17,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 9139
+          },
+          {
+            "factor_index": 2,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1164
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 15,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7763
+          },
+          {
+            "factor_index": 21,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 11288
+          },
+          {
+            "factor_index": 14,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7557
+          },
+          {
+            "factor_index": 12,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 6438
+          }
+        ],
+        "total_ops": 100,
+        "total_ops_over_rho": 0.72992701,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ]
+  },
+  "policy_summaries": {
+    "global_root_hash": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.64233577,
+      "max_total_ops_over_rho": 0.72992701,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.64233577,
+      "mean_evaluated_root_count": 9.0,
+      "mean_selector_eval_ops": 27.0,
+      "mean_total_ops_over_rho": 0.72992701,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.64233577,
+      "min_total_ops_over_rho": 0.72992701,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "learned_global_zero_root_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "learned_salt_weighted_zero_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "learned_target_zero_candidate_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "learned_target_zero_factor_index_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "learned_target_zero_residue16_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "learned_target_zero_root_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "learned_transfer_weighted_zero_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "learned_zero_ensemble_prior": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "low_constant": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "low_root_norm": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.90510949,
+      "max_total_ops_over_rho": 0.99270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.90510949,
+      "mean_evaluated_root_count": 21.0,
+      "mean_selector_eval_ops": 63.0,
+      "mean_total_ops_over_rho": 0.99270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.90510949,
+      "min_total_ops_over_rho": 0.99270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "minsum_low_constant_target_hash": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.75182482,
+      "max_total_ops_over_rho": 0.83941606,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.75182482,
+      "mean_evaluated_root_count": 14.0,
+      "mean_selector_eval_ops": 42.0,
+      "mean_total_ops_over_rho": 0.83941606,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.75182482,
+      "min_total_ops_over_rho": 0.83941606,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "sage_factor_order": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.7080292,
+      "max_total_ops_over_rho": 0.79562044,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.7080292,
+      "mean_evaluated_root_count": 12.0,
+      "mean_selector_eval_ops": 36.0,
+      "mean_total_ops_over_rho": 0.79562044,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.7080292,
+      "min_total_ops_over_rho": 0.79562044,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "summax_low_root_norm_target_hash": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "summax_sage_low_constant_target_hash": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.77372263,
+      "max_total_ops_over_rho": 0.86131387,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.77372263,
+      "mean_evaluated_root_count": 15.0,
+      "mean_selector_eval_ops": 45.0,
+      "mean_total_ops_over_rho": 0.86131387,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.77372263,
+      "min_total_ops_over_rho": 0.86131387,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "target_root_hash": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.64233577,
+      "max_total_ops_over_rho": 0.72992701,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.64233577,
+      "mean_evaluated_root_count": 9.0,
+      "mean_selector_eval_ops": 27.0,
+      "mean_total_ops_over_rho": 0.72992701,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.64233577,
+      "min_total_ops_over_rho": 0.72992701,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    }
+  },
+  "schema": "ecdlp_ffe_first_fall_root_hyperplane_selector_probe_v1",
+  "summary": {
+    "all_best_policy_false_positive_free": true,
+    "all_best_policy_surfaces_below_rho": true,
+    "all_best_policy_surfaces_preserve": true,
+    "best_heldout_policy": "learned_global_zero_root_prior",
+    "best_heldout_policy_summary": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.83941606,
+      "max_total_ops_over_rho": 0.9270073,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.83941606,
+      "mean_evaluated_root_count": 18.0,
+      "mean_selector_eval_ops": 54.0,
+      "mean_total_ops_over_rho": 0.9270073,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.83941606,
+      "min_total_ops_over_rho": 0.9270073,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "best_policy": "global_root_hash",
+    "best_policy_summary": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.64233577,
+      "max_total_ops_over_rho": 0.72992701,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.64233577,
+      "mean_evaluated_root_count": 9.0,
+      "mean_selector_eval_ops": 27.0,
+      "mean_total_ops_over_rho": 0.72992701,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.64233577,
+      "min_total_ops_over_rho": 0.72992701,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "best_policy_worst_rows": [
+      {
+        "below_rho": true,
+        "candidate_count": 22,
+        "chosen_candidate": {
+          "candidate_name": "sage_resultant_factor_11",
+          "constant": 4058,
+          "constant_norm": 4058,
+          "direct_root_recovery_ops": 61,
+          "factor_index": 11,
+          "factor_root_scan_ops": 73,
+          "preserves_selected_root_pairs": true,
+          "public_zero": true,
+          "root": 6110,
+          "root_norm": 5621,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1
+        },
+        "chosen_false_positive": false,
+        "chosen_preserves_selected_root_pairs": true,
+        "direct_below_rho": true,
+        "direct_ops_saved_vs_scan": 12,
+        "direct_root_recovery_ops": 61,
+        "direct_total_ops": 88,
+        "direct_total_ops_over_rho": 0.64233577,
+        "evaluated_root_count": 9,
+        "generic_rho_steps": 137,
+        "original_selected_root_pair_count": 1,
+        "p": 11731,
+        "policy": "global_root_hash",
+        "policy_type": "static_public_order",
+        "preserving_root_count": 1,
+        "public_zero_recovered": true,
+        "public_zero_root_count": 1,
+        "root_scan_ops": 73,
+        "row_key": "22050.cf1@11731:uniform:256:salt166",
+        "salt": 166,
+        "selector_eval_ops": 27,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:109:22050.cf1@11731",
+        "target": "22050.cf1@11731",
+        "top_root_sample": [
+          {
+            "factor_index": 15,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7763
+          },
+          {
+            "factor_index": 9,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5597
+          },
+          {
+            "factor_index": 7,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 5199
+          },
+          {
+            "factor_index": 1,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 880
+          },
+          {
+            "factor_index": 16,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 7901
+          },
+          {
+            "factor_index": 17,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 9139
+          },
+          {
+            "factor_index": 6,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 4450
+          },
+          {
+            "factor_index": 3,
+            "preserves_selected_root_pairs": false,
+            "public_zero": false,
+            "root": 1976
+          }
+        ],
+        "total_ops": 100,
+        "total_ops_over_rho": 0.72992701,
+        "train_row_count": 0,
+        "transfer_index": 109
+      }
+    ],
+    "best_static_policy": "global_root_hash",
+    "best_static_policy_summary": {
+      "below_rho_count": 1,
+      "chosen_false_positive_count": 0,
+      "chosen_preserving_count": 1,
+      "direct_below_rho_count": 1,
+      "max_direct_total_ops_over_rho": 0.64233577,
+      "max_total_ops_over_rho": 0.72992701,
+      "mean_direct_ops_saved_vs_scan": 12.0,
+      "mean_direct_total_ops_over_rho": 0.64233577,
+      "mean_evaluated_root_count": 9.0,
+      "mean_selector_eval_ops": 27.0,
+      "mean_total_ops_over_rho": 0.72992701,
+      "mean_train_row_count": 0.0,
+      "min_direct_total_ops_over_rho": 0.64233577,
+      "min_total_ops_over_rho": 0.72992701,
+      "public_zero_capable_surface_count": 1,
+      "public_zero_recovered_count": 1,
+      "selected_pair_surface_count": 1,
+      "surface_count": 1,
+      "target_summaries": {
+        "22050.cf1@11731": {
+          "below_rho_count": 1,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "public_zero_recovered_count": 1,
+          "surface_count": 1
+        }
+      },
+      "vacuous_preserving_surface_count": 0
+    },
+    "diagnostic_gates": {
+      "nonvacuous_public_zero_capable": {
+        "best_heldout_policy_under_gate": "learned_global_zero_root_prior",
+        "best_heldout_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.83941606,
+          "max_total_ops_over_rho": 0.9270073,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.83941606,
+          "mean_evaluated_root_count": 18.0,
+          "mean_selector_eval_ops": 54.0,
+          "mean_total_ops_over_rho": 0.9270073,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.83941606,
+          "min_total_ops_over_rho": 0.9270073,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "best_policy_under_gate": "global_root_hash",
+        "best_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "best_static_policy_under_gate": "global_root_hash",
+        "best_static_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "description": "Surfaces with both an original selected root pair and at least one public-zero-capable root hyperplane.",
+        "ex_post_diagnostic": true,
+        "full_best_policy": "global_root_hash",
+        "full_best_policy_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "policy_selection_note": "best_policy_under_gate is selected after applying this reporting gate and is diagnostic unless the gate is preregistered for a fresh bank. full_best_policy_summary keeps the all-surface policy fixed before gate reporting.",
+        "surface_count": 1
+      },
+      "nonvacuous_selected_root_pair": {
+        "best_heldout_policy_under_gate": "learned_global_zero_root_prior",
+        "best_heldout_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.83941606,
+          "max_total_ops_over_rho": 0.9270073,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.83941606,
+          "mean_evaluated_root_count": 18.0,
+          "mean_selector_eval_ops": 54.0,
+          "mean_total_ops_over_rho": 0.9270073,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.83941606,
+          "min_total_ops_over_rho": 0.9270073,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "best_policy_under_gate": "global_root_hash",
+        "best_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "best_static_policy_under_gate": "global_root_hash",
+        "best_static_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "description": "Surfaces with at least one original selected root pair.",
+        "ex_post_diagnostic": false,
+        "full_best_policy": "global_root_hash",
+        "full_best_policy_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "policy_selection_note": "best_policy_under_gate is selected after applying this reporting gate and is diagnostic unless the gate is preregistered for a fresh bank. full_best_policy_summary keeps the all-surface policy fixed before gate reporting.",
+        "surface_count": 1
+      },
+      "public_zero_capable": {
+        "best_heldout_policy_under_gate": "learned_global_zero_root_prior",
+        "best_heldout_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.83941606,
+          "max_total_ops_over_rho": 0.9270073,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.83941606,
+          "mean_evaluated_root_count": 18.0,
+          "mean_selector_eval_ops": 54.0,
+          "mean_total_ops_over_rho": 0.9270073,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.83941606,
+          "min_total_ops_over_rho": 0.9270073,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "best_policy_under_gate": "global_root_hash",
+        "best_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "best_static_policy_under_gate": "global_root_hash",
+        "best_static_policy_under_gate_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "description": "Surfaces with at least one root hyperplane that is public-zero capable.",
+        "ex_post_diagnostic": true,
+        "full_best_policy": "global_root_hash",
+        "full_best_policy_summary": {
+          "below_rho_count": 1,
+          "chosen_false_positive_count": 0,
+          "chosen_preserving_count": 1,
+          "direct_below_rho_count": 1,
+          "max_direct_total_ops_over_rho": 0.64233577,
+          "max_total_ops_over_rho": 0.72992701,
+          "mean_direct_ops_saved_vs_scan": 12.0,
+          "mean_direct_total_ops_over_rho": 0.64233577,
+          "mean_evaluated_root_count": 9.0,
+          "mean_selector_eval_ops": 27.0,
+          "mean_total_ops_over_rho": 0.72992701,
+          "mean_train_row_count": 0.0,
+          "min_direct_total_ops_over_rho": 0.64233577,
+          "min_total_ops_over_rho": 0.72992701,
+          "public_zero_capable_surface_count": 1,
+          "public_zero_recovered_count": 1,
+          "selected_pair_surface_count": 1,
+          "surface_count": 1,
+          "target_summaries": {
+            "22050.cf1@11731": {
+              "below_rho_count": 1,
+              "chosen_preserving_count": 1,
+              "direct_below_rho_count": 1,
+              "public_zero_recovered_count": 1,
+              "surface_count": 1
+            }
+          },
+          "vacuous_preserving_surface_count": 0
+        },
+        "policy_selection_note": "best_policy_under_gate is selected after applying this reporting gate and is diagnostic unless the gate is preregistered for a fresh bank. full_best_policy_summary keeps the all-surface policy fixed before gate reporting.",
+        "surface_count": 1
+      }
+    },
+    "heldout_policy_count": 8,
+    "interpretation": "The factored FFE bank can be viewed as a public zero early-stop problem over root hyperplanes. Static public rank ensembles remain strongest on this measured bank; held-out zero-root priors have transfer signal but are not yet a complete replacement for the public fingerprint order. This still needs fresh hit-stream generation before it becomes an ECDLP algorithm claim.",
+    "per_transfer_policy_oracle_upper_bound": {
+      "splits": [
+        {
+          "selected_policy": "global_root_hash",
+          "test_summary": {
+            "below_rho_count": 1,
+            "chosen_false_positive_count": 0,
+            "chosen_preserving_count": 1,
+            "direct_below_rho_count": 1,
+            "max_direct_total_ops_over_rho": 0.64233577,
+            "max_total_ops_over_rho": 0.72992701,
+            "mean_direct_ops_saved_vs_scan": 12.0,
+            "mean_direct_total_ops_over_rho": 0.64233577,
+            "mean_evaluated_root_count": 9.0,
+            "mean_selector_eval_ops": 27.0,
+            "mean_total_ops_over_rho": 0.72992701,
+            "mean_train_row_count": 0.0,
+            "min_direct_total_ops_over_rho": 0.64233577,
+            "min_total_ops_over_rho": 0.72992701,
+            "public_zero_capable_surface_count": 1,
+            "public_zero_recovered_count": 1,
+            "selected_pair_surface_count": 1,
+            "surface_count": 1,
+            "target_summaries": {
+              "22050.cf1@11731": {
+                "below_rho_count": 1,
+                "chosen_preserving_count": 1,
+                "direct_below_rho_count": 1,
+                "public_zero_recovered_count": 1,
+                "surface_count": 1
+              }
+            },
+            "vacuous_preserving_surface_count": 0
+          },
+          "transfer_index": 109
+        }
+      ],
+      "summary": {
+        "below_rho_count": 1,
+        "chosen_false_positive_count": 0,
+        "chosen_preserving_count": 1,
+        "direct_below_rho_count": 1,
+        "max_direct_total_ops_over_rho": 0.64233577,
+        "max_total_ops_over_rho": 0.72992701,
+        "mean_direct_ops_saved_vs_scan": 12.0,
+        "mean_direct_total_ops_over_rho": 0.64233577,
+        "mean_evaluated_root_count": 9.0,
+        "mean_selector_eval_ops": 27.0,
+        "mean_total_ops_over_rho": 0.72992701,
+        "mean_train_row_count": 0.0,
+        "min_direct_total_ops_over_rho": 0.64233577,
+        "min_total_ops_over_rho": 0.72992701,
+        "public_zero_capable_surface_count": 1,
+        "public_zero_recovered_count": 1,
+        "selected_pair_surface_count": 1,
+        "selected_policy_counts": {
+          "global_root_hash": 1
+        },
+        "split_count": 1,
+        "surface_count": 1,
+        "target_summaries": {
+          "22050.cf1@11731": {
+            "below_rho_count": 1,
+            "chosen_preserving_count": 1,
+            "direct_below_rho_count": 1,
+            "public_zero_recovered_count": 1,
+            "surface_count": 1
+          }
+        },
+        "vacuous_preserving_surface_count": 0
+      }
+    },
+    "policy_count": 16,
+    "static_policy_count": 8,
+    "surface_count": 1
+  }
+}

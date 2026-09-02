@@ -1,0 +1,133 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-RANDOM-FIFTH-DECK-CORRELATION-R23-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-057
+  - ECDLP-IDEA-121
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: independently_sampled_prime_subgroup_kummer_fifth_deck
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE
+summary: >-
+  For every fixed separable degree-d rational Kummer map and fixed endpoint
+  deck, the exact complete-key collision energy over a uniformly sampled
+  L-element fifth deck is a sum of pairwise branch-correspondence incidences.
+  Each correspondence has degree O(d) in one fifth coordinate. In the P1553
+  S=B^2, L=B, N=B^5, d<=B rectangle, the expected number of nontrivial
+  ordered collisions is O(B), so the expected complete image has
+  B^3-O(B) states and exceeds the B^(9/4) cap. Adaptive or adversarial support
+  co-design remains open.
+inputs:
+  - path: staged/p1553_erased_image_geometric_resolution_gate_r13.md
+    sha256: 78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5
+  - path: staged/p1553_translation_correlation_sparse_convolution_gate_r15.md
+    sha256: ea007be0b237b91127e6a42501873f914ad31d6d4fd4393c3ae6b85005893b9b
+  - path: staged/p1553_quadratic_intermediate_field_gate_r21.md
+    sha256: ad8d9e83b919ea92c98eefcb657831f01378b6760d49b2aaea0a892d6ed52be1
+  - path: staged/p1553_r21_bundle.sha256
+    sha256: 362b820cc46124e01e3c0d5f9e07cf6fac2287fd09b78160bb040e3e1ac2d64b
+  - path: staged/p1553_list_only_mass_collision_toy_gate_r22.md
+    sha256: ba1661d183f4e8b7291a1a34b48bdab2d01485da45c9753bbfb16e82b52208ab
+  - path: staged/p1553_list_only_mass_collision_toy_report_r22c.json
+    sha256: 40ef33016a6e12b802ee7c40183c853e4d180d89b7993abf85f1d6e6c48a5af8
+  - path: staged/p1553_list_only_mass_collision_holdout_report_r22d.json
+    sha256: b32b017c2d126e537891c5891cb31d5720caeee660eb1d715d0fbe1e04190302
+  - path: staged/p1553_r22_bundle.sha256
+    sha256: 77aac4a770d4717a43078fd2573f92c22048f5ff55fe931139a990e0cb02e5d1
+output:
+  path: staged/p1553_random_fifth_deck_correlation_gate_r23.md
+  sha256: de9a0a496fc6696ed6e976351476c56262484124c8c7d7cc2cdbddd16a6cc184
+frozen_parameters:
+  prime_subgroup_order: N
+  subgroup_order_differs_from_characteristic: true
+  kummer_population: M=(N-1)/2
+  endpoint_classes: S=Theta(B^2)
+  fifth_classes: L=Theta(B)
+  map_degree: d<=B
+  branch_map_degree: Delta=O(d)
+  source_count: n=S*L=Theta(B^3)
+  setup_state_cap: B^(9/4+o(1))
+theorems:
+  - >-
+    Distinct Kummer endpoint classes cannot induce identical complete branch
+    maps when deg(psi composed with x)=2d<N, because equality would force
+    invariance under a nonzero order-N translation.
+  - >-
+    The pairwise branch relation R_(u,v) has at most M*Delta points on the
+    prime-subgroup Kummer square, and its same-fifth diagonal has at most
+    2*Delta points for distinct endpoint classes.
+  - >-
+    For exact complete-key multiplicities m_y, the ordered nontrivial
+    collision correlation is C_Q=sum_y m_y(m_y-1), the energy is n+C_Q,
+    n-K_Q<=C_Q, and K_Q>=n^2/(n+C_Q).
+  - >-
+    Any image of size O(n/d) requires C_Q=Omega(n*d) exact complete-chart
+    incidences.
+  - >-
+    Sampling an L-subset without replacement after psi and U are fixed gives
+    E[C_Q]=O(S*d^2*L^2/M+S*d^2*L/M)=O(B).
+  - >-
+    Consequently E[K_Q]>=B^3-O(B), and the probability of even a fixed
+    constant compression is O(B^-2).
+controls:
+  fixed_before_fifth_sampling:
+    - psi coefficients
+    - endpoint deck
+    - all projective charts
+  exact_projective_strata:
+    - regular
+    - tangent
+    - identity
+    - pole
+    - infinity
+  adaptive_denominator_training: excluded
+  deterministic_field_interval: not_claimed_random
+  repeated_endpoint_occurrences: do_not_create_geometric_states_or_rank
+  common_image_curves: allowed_by_relation_degree_bound
+  common_right_factor_classification: not_used
+complexity:
+  random_fifth_expected_nontrivial_collisions: O(B)
+  random_fifth_expected_image_size: B^3-O(B)
+  required_image_cap: B^(9/4+o(1))
+  required_balanced_compression_collisions: Omega(S*L*d)
+result:
+  classification: scoped_random_deck_noncompression
+  exact_collision_identity: pass
+  independent_fifth_deck_compression: asymptotically_absent_with_high_probability
+  nested_norm_output_size: Theta(B^3)_with_high_probability
+  adaptive_support_co_design: open
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - the theorem is probabilistic only in the independently sampled fifth deck
+  - coefficients or supports chosen after seeing the deck invalidate the theorem
+  - deterministic factor-base subsets need a separate incidence theorem
+  - adversarial common-factor-free support co-design remains unclassified
+  - no unrestricted circuit, data-structure, or generic-group lower bound
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R13 owns the fixed-endpoint energy floor and output-sized image representation
+  - R15 owns the exact two-frequency translation-correlation interface
+  - IDEA-121 owns nested norms and short Newton or log-derivative locator failures
+  - R21 owns the all-monodromy growing common-right-factor closure
+  - R22 owns the trained-denominator toy and failed holdout transfer
+  - R23 adds only the prospective random-fifth collision expectation theorem
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE__FIXED_PSI_AND_ENDPOINT_DECK__EXACT_COMPLETE_COLLISION_CORRELATION__PAIRWISE_BRANCH_RELATIONS_HAVE_O_D_FIBER_DEGREE__INDEPENDENT_RANDOM_FIFTH_DECK_HAS_ONLY_O_B_EXPECTED_NONTRIVIAL_COLLISIONS_AND_B3_MINUS_O_B_IMAGE__ADAPTIVE_OR_ADVERSARIAL_SUPPORT_CO_DESIGN_OPEN__NO_TARGET__NO_R10__NO_DENSITY_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Derive or refute one prospective common-factor-free support co-design. Freeze
+  its algebraic fifth-deck rule before endpoint, target, and holdout choices;
+  require C_Q=Omega(SLd) on independent endpoint decks, complete charts,
+  exact sources, fresh targets, and R10 queries, then charge rank, logs, and
+  descent. Reject adaptive coefficients, pole deletion, training-only gain,
+  hidden factors, or an SL table.

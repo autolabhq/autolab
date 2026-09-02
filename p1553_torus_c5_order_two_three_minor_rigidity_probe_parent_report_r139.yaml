@@ -1,0 +1,106 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-ORDER-TWO-THREE-MINOR-RIGIDITY-R139-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: characteristic_specific_fourier_minor_theorem
+run_count: 1
+status: structured_four_plus_low_slp_and_nonzero_value_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - norm-one-torus
+  - sparse-polynomial
+  - decision-tree
+  - fourier-minor
+  - full-spark
+  - frobenius
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R129-R138
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether order-two Frobenius proves the atom-restricted
+  three-column full-spark hypothesis required by R138.
+inputs:
+  - path: p1553_torus_c5_chebotarev_fiber_cover_probe_r138.py
+    sha256: 4d2be77b119fd60744ea03d3f7f3a4021ad0d3dc65ab2cea2da04d10839abba2
+  - path: p1553_torus_c5_chebotarev_fiber_cover_probe_report_r138.json
+    sha256: f6ccece429e9d7dd523fded90239690ba2c865bbd1478f8f2c63cb84fbd14056
+  - path: frozen_torus_c5_chebotarev_fiber_cover.json
+    sha256: 91ec759e101e5265b5ee76cce1d300f47f686a2b72c4f9e8e3bd56932c5a70bc
+  - path: torus_c5_chebotarev_fiber_cover_cost_ledger.json
+    sha256: ba5d7ed1688b30242a1711554e371e61ae372e5aa4b3d8fda9785cf4a5bc4e1d
+  - path: torus_c5_chebotarev_fiber_cover_replay.json
+    sha256: 416d9a6f6460c029203573c4a5f3016df19ae6a053d888263d8c547fc6c128ff
+  - path: torus_c5_chebotarev_fiber_cover_controls.json
+    sha256: 0356dd83dc4e2fe44860b37acd18fdf9c6ed24661beb2b27d7b2e2111de57f6f
+  - path: factor_logs_and_identical_descent_r138.json
+    sha256: 580d3b753321618b9eaa6722004700aed9321590eb52be71dc645dfedd33c1b2
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_chebotarev_fiber_cover_probe_r138.py
+    sha256: 0e574b915ef65427c84d3bfb5f200427e2dec125f6e115aa6d8b4fde73e0fa89
+  - path: p1553_torus_c5_chebotarev_fiber_cover_probe_gate_r138.md
+    sha256: 7830c3ff7960c53fad0359d7871e64d7aa2e6a011e7845948a1c99f12aa12a3b
+  - path: p1553_torus_c5_chebotarev_fiber_cover_probe_parent_report_r138.yaml
+    sha256: 7f96df65b74a77ca0fff06ce5abc4d99c37742e85d9c42454569ae6c2f807a59
+artifacts:
+  - path: p1553_torus_c5_order_two_three_minor_rigidity_probe_r139.py
+    sha256: 16f87b9249e368f80c7d85169c5a969ebb059e7d03dd0fbf84bf1951bf64ab18
+  - path: p1553_torus_c5_order_two_three_minor_rigidity_probe_report_r139.json
+    sha256: a6a63b4dc9dcff419103ed4db4884c23c53c8c4d8d2c607a9da7244a96a5a2ce
+  - path: frozen_torus_c5_order_two_three_minor_rigidity.json
+    sha256: b3bbc3eb99aad5c03e5feee56c90a979ec086361375d353a297ea72fa4837456
+  - path: torus_c5_order_two_three_minor_rigidity_cost_ledger.json
+    sha256: 660ca8cca2de9f2887b764c6d6054d99c1fdd540e2573c1293be9142f3ecb7f4
+  - path: torus_c5_order_two_three_minor_rigidity_replay.json
+    sha256: 96ba9fc10f4637ebc545ec9e1f39f8d2b687ed81548914bf8f0102713335fc17
+  - path: torus_c5_order_two_three_minor_rigidity_controls.json
+    sha256: 7e033a78d9b351529b5427087e8a8da5a28ee5840a9bc61919f21206ee51b6b0
+  - path: factor_logs_and_identical_descent_r139.json
+    sha256: 0f080f3cbad1317f7e0084c810e1e34ef45a0fc6ebda3398256f14fca3964be6
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_order_two_three_minor_rigidity_probe_r139.py
+    sha256: 04c617baf2efcab875d2f550b9e448cf89028960b5d990aae37bb53dcb944098
+  - path: p1553_torus_c5_order_two_three_minor_rigidity_probe_gate_r139.md
+    sha256: 068211b726698d32ec0c3ad91ded28e814b2331a9b99a7c74a9327c9bfc8d76d
+verified_statements:
+  - >-
+    Affine row and mode normalization reduces every three-by-three prime
+    Fourier minor to parameters r,s outside zero and one.
+  - >-
+    Order-two Frobenius conjugation of a putative zero determinant forces
+    (r-1)(s-1)=0 modulo q, a contradiction.
+  - >-
+    Every actual structured atom color therefore has three-column full
+    spark without a random model or field discrete logarithm.
+  - >-
+    Exact structured trinomial trees require B^(3/4+o(1)) rejecting-path
+    depth or B^(5/2+o(1)) accepting-path depth.
+  - >-
+    All 2,048 actual normalized minors and nine exhaustive synthetic
+    normalized sweeps replay the proof identities.
+scoped_failures:
+  structured_trinomial_zero_test_tree: rejected_deterministically
+  structured_four_plus_mode_zero_test_tree: open
+  five_plus_mode_low_slp_zero_test_tree: open
+  nonzero_value_frobenius_coordinate_dag: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 23
+  lane_admitted: false
+next_action: >-
+  Probe order-two four-column minors and structured four-mode root fibers,
+  or construct a nonzero-value Frobenius-coordinate selector. Freeze every
+  mode, coefficient, circuit node, branch, and reverse C2+C3 source pointer;
+  replay positives and inverse empties; fit B^(9/4+o(1)) state and polylog
+  arbitrary-target work; avoid field DLP; and charge rank, logs, identical
+  descent, memory, field operations, extension degree, and bits.

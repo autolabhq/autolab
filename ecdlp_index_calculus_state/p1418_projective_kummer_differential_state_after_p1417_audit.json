@@ -1,0 +1,32 @@
+{
+  "errors": [],
+  "generated_at": "2026-07-14T00:59:19.519943+00:00",
+  "input_hashes": {
+    "contract_preregistration_sha256": "5edc86541674a74b9b2f9f53c3d257183b476d200d378bee8f82edfc0f1defe9",
+    "p1416_sha256": "bf4a1d998cc12bea98aa0235ed6c9c512ee0ab19112179c3a8530dada27fa419",
+    "p1417_audit_sha256": "53b807d81c44a1e855bc96ed84c60247a86752ffbf9917c0120fce2a471556ea",
+    "p1417_sha256": "de4c0db649602a087ae2be47421d84469047f46037eb6b689843ec80d7182b79",
+    "p1418_sha256": "17ef66324cbdfa49f5e88573719f8d98ccaca07ff3ef8b8c00d88c9b242abc45"
+  },
+  "interpretation": "The audit validates the executed permutation-closed known-difference representation and its cost accounting. It is a scoped toy/model negative, not a lower bound for divisor, adaptive, or non-enumerative index-calculus representations.",
+  "method": [
+    "fresh pair-by-factor construction over every normalized pair witness and every factor",
+    "independent projective xADD formula checked by cross multiplication against affine A+F",
+    "fresh difference, augmented, projective, output, and normalized-triple witness directories",
+    "independent exhaustive five-factor enumeration for every public query",
+    "fresh label-reversal rebuilds and exponent fits from reconstructed raw rows"
+  ],
+  "schema": "ecdlp.p1418_independent_audit.v1",
+  "summary": {
+    "audit_passed": true,
+    "check_count": 6155,
+    "error_count": 0,
+    "geometry_rebuild_count": 99,
+    "independent_five_tuple_query_rebuild_count": 297,
+    "independent_normalized_five_tuple_candidates_checked": 560538,
+    "label_shuffle_rebuild_count": 99,
+    "passed_check_count": 6155,
+    "projective_xadd_cross_multiplication_check_count": 48404,
+    "promoted_coordinate_policies": []
+  }
+}

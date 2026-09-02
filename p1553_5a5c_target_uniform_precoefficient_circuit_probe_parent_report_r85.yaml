@@ -1,0 +1,105 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-TARGET-UNIFORM-PRECOEFFICIENT-CIRCUIT-R85-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: equivariant_fiber_theorem_and_standard_circuit_route_screen
+run_count: 1
+status: fixed_target_equivariant_quotient_trivial_standard_grammars_over_cap
+labels:
+  - exact-theorem
+  - exact-finite-controls
+  - prospective
+  - scoped-negative
+  - novelty-unverified
+owner: P1539-P1553-R82-R84
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Construct or refute a target-uniform pre-coefficient circuit for the R84
+  2A+3C versus 3A+2C join without emitting a B^2.4 side polynomial or
+  provenance leaves.
+inputs:
+  - path: p1553_5a5c_marked_resultant_source_section_probe_report_r84.json
+    sha256: c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b
+  - path: p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md
+    sha256: 4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661
+  - path: /Volumes/Volume/autolab/research/p1512_linear_chow_negative_handoff_20260717.md
+    sha256: d725027f381770686eb972b1acfcf9c370f17254725f05526d338dea2f213f25
+  - path: /Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md
+    sha256: 27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc
+  - path: /Volumes/Volume/autolab/research/p1514_idea133_apolar_moment_constructor_handoff_v1_20260717.md
+    sha256: 16edd92f80a515f645d29577cea951859c4a56b45c65cd4931cf3874f83e48c7
+artifacts:
+  - path: p1553_5a5c_target_uniform_precoefficient_circuit_probe_r85.py
+    sha256: 6caffd6809e63707c3527f1ff2d29d01e2cfce188436c48972149250eaf7445b
+  - path: p1553_5a5c_target_uniform_precoefficient_circuit_probe_report_r85.json
+    sha256: 2a94e5b2807a327cc2de5a35ec8c30c5961065cdc374a7ffd3090a3626e67f78
+  - path: frozen_5a5c_precoefficient_circuit.json
+    sha256: 9b158823d2ddf5f50d855c8336d9b1fa1ab427ec3f0cebb6c15082a3b224375a
+  - path: circuit_node_degree_and_payload_ledger.json
+    sha256: 80d6baa73b6d054f86f3dde19c49583b9123629847d0505cc7bf75bb2b7722c9
+  - path: fresh_target_specialization_and_source_replay.json
+    sha256: 972e007bb04ccbc8e41d34726e154a423fd49e978ff66322be7ded8c5bcde799
+  - path: matched_explicit_coefficient_and_random_controls.json
+    sha256: a782ab497a972e632631e575e9d7ee30180e0a8d9592473730835d4e42a57790
+  - path: factor_logs_and_identical_descent_r85.json
+    sha256: 34eef1ba106b389129416be8042f7f8df1cf78182fb797da640c1efdff3630e1
+  - path: p1553_5a5c_target_uniform_precoefficient_circuit_probe_gate_r85.md
+    sha256: bb052ad21fde0f8f35dd56e014a6ab3a1ba1e148fd697fb80af230e4d3c4029a
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_target_uniform_precoefficient_circuit_probe_r85.py
+    sha256: 03cb1c13287d81c8bd8eaf7c2e8c74224f844976c6c2eb54a3d3b9c1d47b3487
+verified_statements:
+  - >-
+    Any fixed label map admitting exact induced actions for every translation
+    has subgroup-coset fibers; on a prime-order group it is injective or
+    constant. No homomorphism assumption is needed.
+  - >-
+    On all eight fixtures the full point key is exact but uncompressed, the
+    constant key is equivariant but not source-biconditional, and x/hash
+    compressions lose exact target action or source biconditionality.
+  - >-
+    The Z/808Z to Z/8Z positive control passes all 652,864 action checks with
+    kernel size 101.
+  - >-
+    Every explicit source-bearing binary root contraction has best balance
+    B^2.6 by B^2.4, so its smaller payload misses setup and online caps.
+  - >-
+    P1512 scalar-linear atomizers, P1513 standard shared-norm/KU routes, and
+    P1514 standard moment/dense-Macaulay constructors remain scoped negative;
+    target-specialized sparse multihomogeneous moments remain open.
+scoped_failures:
+  proper_fixed_target_equivariant_compression: fail
+  explicit_binary_source_payload_inside_caps: fail
+  scalar_linear_chow_inside_caps: fail
+  standard_shared_norm_or_ku_inside_caps: fail
+  standard_apolar_constructor_inside_caps: fail
+  target_specialized_sparse_moment_constructor: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - target-specialized nonlinear circuits
+  - sparse multihomogeneous moment recurrences
+  - false-positive filters with charged replay
+  - arbitrary FFE, Semaev, or arithmetic circuits
+admission:
+  passed_obligations: 7
+  obligation_count: 18
+  lane_admitted: false
+result:
+  prime_order_equivariant_fiber_theorem: true
+  fixed_exact_compressing_target_action_found: false
+  standard_precoefficient_circuit_inside_caps: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_FIXED_TARGET_EQUIVARIANT_QUOTIENT_AND_STANDARD_PRECOEFFICIENT_GRAMMARS_ONLY__TRANSLATION_INVARIANT_FIBERS_ARE_COSETS__PRIME_ORDER_MAP_INJECTIVE_OR_CONSTANT__FULL_KEY_EXACT_BUT_UNCOMPRESSED__CONSTANT_NOT_SOURCE_BICONDITIONAL__HASH_AND_X_CONTROLS_FAIL_ACTION_OR_COMPRESSION__COMPOSITE_QUOTIENT_POSITIVE_CONTROL__BEST_BINARY_PAYLOAD_B2P6_BY_B2P4__P1512_LINEAR_CHOW_BOUND__P1513_STANDARD_NORM_KU_BOUND__P1514_STANDARD_MOMENT_BOUND__SPARSE_TARGET_SPECIALIZED_MOMENT_RECURRENCE_OPEN__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one target-specialized sparse multihomogeneous moment
+  recurrence for the 5A+5C fiber. Derive its moments directly from compact
+  D_A,D_C without a fixed label quotient or supplied oracle, fit B^9/4 setup
+  and B^5/4 fresh work, and recover one jointly coupled source on every
+  accepted fiber including nonreduced and exceptional strata.

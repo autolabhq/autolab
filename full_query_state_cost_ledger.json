@@ -1,0 +1,48 @@
+{
+  "all_offset_replay_improves_total_exponent": false,
+  "caps": {
+    "online_work_exponent_B": 1.25,
+    "online_workspace_exponent_B": 1.25,
+    "setup_state_exponent_B": 2.25
+  },
+  "entropy_replay_theorem": {
+    "claim_scope": "explicit frozen bucket subsets and target-coupled offset replay; not an arithmetic-circuit or algebraic-elimination lower bound",
+    "exact_replay_consequence": "Restoring constant target success requires B^(delta-o(1)) disjoint masks, offsets, or retries unless a constraint is forced by the target equation or a compact selector covers one source for every attained endpoint.",
+    "exceptions": [
+      "a target-forced algebraic constraint with no entropy loss",
+      "a compact source section covering every attained endpoint",
+      "a representation-specific solver whose work is not accepted-source enumeration"
+    ],
+    "explicit_join_to_online_cap": {
+      "baseline_work_exponent_B": 2.6,
+      "desired_per_filter_work_exponent_B": 1.25,
+      "required_filter_exponent_delta_B": 1.35,
+      "required_replay_exponent_B": 1.35,
+      "restored_total_work_exponent_B": 2.6
+    },
+    "generic_collision_to_online_cap": {
+      "baseline_work_exponent_B": 2.5,
+      "desired_per_filter_work_exponent_B": 1.25,
+      "required_filter_exponent_delta_B": 1.25,
+      "required_replay_exponent_B": 1.25,
+      "restored_total_work_exponent_B": 2.5
+    },
+    "relation_scale": {
+      "asymptotic_solution_entropy_exponent_B": 0.0,
+      "distinct_target_support_exponent_B": 5.0,
+      "group_order_exponent_B": 5.0,
+      "source_exponent_B": 5.0
+    },
+    "static_subset_bound": "A frozen accepted subset containing M canonical sources covers at most M target endpoints. If M=B^(5-delta), its average target success density is at most B^(-delta+o(1))."
+  },
+  "fixed_coordinate_bucket_inside_caps_with_constant_success": false,
+  "forced_algebraic_selector_supplied": false,
+  "full_query_inside_cap": false,
+  "r82_baseline": {
+    "explicit_join_state_exponent_B": 2.4,
+    "explicit_join_work_exponent_B": 2.6,
+    "generic_collision_work_exponent_B": 2.5
+  },
+  "schema": "p1553.full_query_state_cost_ledger.r83.v1",
+  "target_coupled_offset_inside_caps_with_constant_success": false
+}

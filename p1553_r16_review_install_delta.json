@@ -1,0 +1,216 @@
+{
+  "schema": "crypto.autoresearch.merge_install_delta.v1",
+  "bundle_id": "P1553-R16-REVIEW-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compose_compare_merge_then_route_review",
+  "base_bundle": {
+    "bundle_id": "P1553-R15-REVIEW-20260719",
+    "manifest": "p1553_r15_review_install_delta.json",
+    "manifest_sha256": "c7b95bbd92dc8fd12d13c79f253d53aa96d47cc9de30d1ea314b4b79622343eb",
+    "manifest_hash_list": "p1553_r15_review_install_delta.sha256",
+    "manifest_hash_list_sha256": "256bbe48b12c680e611c32d2d6b3ff612875923a2ec9b8ed278797d976adaa29",
+    "simulated_queue_sha256": "8ba2ee04877d0a2ce7426b77552b07e5cf6696fe5309ef2470b0e5b0267f93a1"
+  },
+  "upstream_bundle": {
+    "bundle_id": "P1553-R5-R7-20260719",
+    "manifest_sha256": "41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a",
+    "manifest_hash_list_sha256": "0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d"
+  },
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6",
+    "ideas/artifacts/README.md": "1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "composition_rule": "Apply R5-R7 through R14, the R15 review-routing delta, and the R16 review-routing delta to one private queue. R15 and R16 remain unreviewed; both red-team tasks must stay queued until independently executed, and neither draft may be promoted from the staged producer receipts.",
+  "file_installs": [
+    {
+      "source": "p1553_block_common_right_factor_parent_report.yaml",
+      "sha256": "0442c740131216004d191137a248d9b4f524fcbd4d16226464d0fa79a6f65bc2",
+      "destination": "coordination/tasks/TASK-20260719-P1553-BCR-P1/block_common_right_factor_report.yaml"
+    },
+    {
+      "source": "p1553_block_common_right_factor_compiler_gate_r16.md",
+      "sha256": "9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c",
+      "destination": "coordination/tasks/TASK-20260719-P1553-BCR-P1/block_common_right_factor_compiler_gate_r16.md"
+    },
+    {
+      "source": "p1553_block_common_right_factor_compiler_gate_r16.md",
+      "sha256": "9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c",
+      "destination": "ideas/artifacts/ECDLP-IDEA-195/p1553_block_common_right_factor_compiler_gate_r16.md"
+    },
+    {
+      "source": "p1553_r16_artifact_index_README.md",
+      "sha256": "3cdbf2ca7fe94c6ce8b8bd7fe898ee2d7daf05a337ccccce76536168792c8315",
+      "destination": "ideas/artifacts/README.md"
+    }
+  ],
+  "queue_merge": {
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-BCR-P1",
+        "title": "Compile full psi blocks through common right factors",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 5,
+        "review_required": true,
+        "depends_on": [
+          "TASK-20260719-P1553-TCS-P1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-TCS-P1/translation_correlation_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-TCS-P1/translation_correlation_sparse_convolution_gate_r15.md",
+          "coordination/tasks/TASK-20260719-P1553-TTM-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-EIG-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md",
+          "ideas/deferred/ECDLP-IDEA-195_noncartesian_s3_intertwiner_source_router_hypothesis.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-BCR-P1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "The deck double-coset proof for degree-one components, the projective polynomial bound and output-Mobius-invariant value-fiber ramification theorem, the cyclic/dihedral Galois controls, the compositum field-direction test for common right factors, the q^2/q^3 intersection-only rejection control, the exact paired-map divisibility and birational-kill sieve, finite-deck image size rather than geometric degree, equations (8)-(12), keyed dyadic source replay, and prime-order isogeny control.",
+          "inconclusive_decision": "Accept only the degree-one classification and the conditional compiler with every premise explicit; preserve higher-degree correspondences, zero-dimensional incidence compression, actual block-factor construction, compact verification, fresh-target action, R10, and the complete ECDLP path.",
+          "local_ambiguity_rule": "Separate a compositum/right-factor certificate from an intersection/common-left-composite certificate, geometric factor degree from attained finite image, a supplied factor from a compact certificate, full-image setup from keyed online queries, signed points from Kummer classes, and a conditional compiler from an instantiated algorithm.",
+          "peripheral_exclusions": [
+            "No degree-one deck symmetry promoted to polynomial compression",
+            "No isogeny degree treated as finite-deck compression on the prime subgroup",
+            "No denominator-dropped trace-only or random-check factorization",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after every deck-group step, torsion argument, degree and image assumption, identity-verification charge, dyadic query, isogeny control, and omitted ECDLP stage is independently reconstructed."
+        },
+        "handoff": {
+          "objective": "Determine whether non-birational common right factors can turn the R13 erased-image survivor into an exact O~(S+SL/d) compiler without hiding finite-deck, containment, or source costs.",
+          "uncertainty_reduced": "Whether cross-endpoint common components are merely constant deck orbits or expose a cap-sized block-factor algorithm in the surviving degree range.",
+          "inputs": [
+            "the R15 correlation producer and R14 accepted decoder",
+            "R11-R13 Kummer rigidity, provenance, and energy receipts",
+            "IDEA-057 isogeny and composable-bucket controls",
+            "IDEA-195 non-Cartesian simultaneous trace/norm owner"
+          ],
+          "constraints": [
+            "Use complete trace and norm on every saturated chart.",
+            "Apply the ramification bound to every output-value hyperplane; reject output-Mobius pole disguises.",
+            "Compute the compositum of branch-coordinate fields; reject intersection-only certificates.",
+            "Use a saturated complete trace/norm paired-map degree as the first common-factor rejection test.",
+            "Prove finite-deck image compression separately from map degree.",
+            "Charge construction and verification of every block identity.",
+            "Return exact keyed dyadic counts and one joint occurrence source.",
+            "Keep fresh-target action and R10 explicit.",
+            "Allocate no new idea, run, Shoup claim, or breakthrough status."
+          ],
+          "deliverables": [
+            "block_common_right_factor_report.yaml",
+            "block_common_right_factor_compiler_gate_r16.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "The degree-one component theorem is exact for direct and swapped lifts.",
+            "The conditional work and state formulas include attained images and certificates.",
+            "Dyadic keyed source replay and every positive control are correct.",
+            "Exactly one explicit-block successor and no positive ECDLP status remain."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-BCR-RT-R1",
+        "title": "Red-team block common-right-factor compiler",
+        "role": "red-team",
+        "state": "queued",
+        "priority": 5,
+        "review_required": false,
+        "depends_on": [
+          "TASK-20260719-P1553-BCR-P1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-BCR-P1/block_common_right_factor_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-BCR-P1/block_common_right_factor_compiler_gate_r16.md",
+          "coordination/tasks/TASK-20260719-P1553-TCS-P1/translation_correlation_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-TCS-P1/translation_correlation_sparse_convolution_gate_r15.md",
+          "coordination/tasks/TASK-20260719-P1553-TTM-RT-R1/red_team_report.yaml",
+          "ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md",
+          "ideas/deferred/ECDLP-IDEA-195_noncartesian_s3_intertwiner_source_router_hypothesis.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-BCR-RT-R1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "Independent reconstruction of direct and swapped graph components, elliptic deck automorphisms, the translation-torsion argument, the projective divisor for every output value, the uniform value-fiber Riemann-Hurwitz count and output-Mobius invariance, the cyclic/dihedral Galois controls, the compositum/right-factor field direction and q^2/q^3 control, the paired-map divisibility and birational-kill sieve, common-right-factor degrees, finite-deck saturation, total compiler cost, containment, keyed dyadic source replay, and isogeny injectivity.",
+          "inconclusive_decision": "Accept a conditional compiler only if every premise and omitted stage is explicit. Reject any claim that an actual block factor, target action, R10 index, or complete ECDLP algorithm has been constructed.",
+          "local_ambiguity_rule": "Check composition order in every automorphism identity; distinguish composita from intersections and E from Kummer domains; audit all chart denominators; test J_z independently of e_z; and charge certificate verification rather than treating a supplied identity as free.",
+          "peripheral_exclusions": [
+            "No unrestricted common-factor, incidence, circuit, or data-structure lower bound",
+            "No conditional exponent promoted to a realized campaign",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after final producer hashes bind every correction and exactly one explicit-block construction or disproof action remains."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R16 deck-component theorem and conditional block compiler, including all inherited unreviewed R15 assumptions.",
+          "uncertainty_reduced": "Whether the new O~(S+SL/d) lane is an exact conditional upper bound or hides a wrong automorphism, finite-image, containment, or child-query step.",
+          "inputs": [
+            "the R16 producer receipts",
+            "the R15 producer receipts and pending review contract",
+            "the independently accepted R11-R14 controls",
+            "the cited Kummer, Lattes, common-field, and ECFFT sources"
+          ],
+          "constraints": [
+            "Reconstruct the theorem over the algebraic closure and return to the rational prime subgroup carefully.",
+            "Check direct and coordinate-swapped components separately.",
+            "Check the value-fiber bound for arbitrary c, including Mobius-relabelled exceptional fibers.",
+            "Reject an intersection/common-left-composite receipt as evidence of a common right factor.",
+            "Require all four paired trace/norm equalities with diagonal and denominator saturation.",
+            "Verify every asymptotic term from the exact block sum.",
+            "Require finite-deck saturation and complete-chart identity certificates.",
+            "Preserve target, R10, density, rank, factor-log, and descent omissions."
+          ],
+          "deliverables": [
+            "red_team_report.yaml",
+            "block_common_right_factor_red_team.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "Every automorphism, torsion, degree, cost, and source statement is independently reconstructed or corrected.",
+            "Final producer hashes bind all accepted corrections.",
+            "Exactly one next action and no positive ECDLP status remain."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Dispatch only TASK-20260719-P1553-TCS-RT-R1 and TASK-20260719-P1553-BCR-RT-R1; do not promote R15 or R16 before accepted independent receipts bind their final producer hashes.",
+    "Recompute all manifest layers, preconditions, and source hashes; preserve drift rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false,
+    "independent_review_complete": false
+  }
+}

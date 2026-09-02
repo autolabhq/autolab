@@ -1,0 +1,263 @@
+{
+  "cases": [
+    {
+      "activation_features": {
+        "factor_zero_profile_count": 3,
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "row_count": 3,
+        "row_xmatch_count_max": 0,
+        "row_xmatch_count_min": 0,
+        "row_xmatch_counts": [
+          0,
+          0,
+          0
+        ],
+        "salt_mod2_pattern": [
+          0,
+          0,
+          0
+        ],
+        "salt_mod2_residue_counts": {
+          "0": 3,
+          "1": 0
+        },
+        "salt_mod3_pattern": [
+          0,
+          1,
+          2
+        ],
+        "salt_mod3_residue_counts": {
+          "0": 1,
+          "1": 1,
+          "2": 1
+        },
+        "salt_mod4_pattern": [
+          0,
+          2,
+          2
+        ],
+        "salt_mod4_residue_counts": {
+          "0": 1,
+          "1": 0,
+          "2": 2,
+          "3": 0
+        },
+        "scheduled1_count": 0,
+        "support05_count": 0,
+        "support15_count": 0,
+        "top_k": 4,
+        "transfer_index": 646,
+        "xmatch_count": 0
+      },
+      "activation_rule": "all",
+      "activation_rule_matched": true,
+      "case_key": "22050.cf1@11731|646|4|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('22050.cf1@11731:uniform:256:salt166', (90,)), ('22050.cf1@11731:uniform:256:salt174', (90,)), ('22050.cf1@11731:uniform:256:salt164', (90,)))",
+      "context_error_count": 0,
+      "context_errors": [],
+      "factor_rejected_profiles": [],
+      "factor_zero_profiles": [
+        {
+          "factor_value": 0,
+          "leaf_index": 90,
+          "monic_coefficients": {
+            "b": 10907,
+            "c": 9714
+          },
+          "row_key": "22050.cf1@11731:uniform:256:salt166",
+          "salt": 166,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:646:22050.cf1@11731"
+        },
+        {
+          "factor_value": 0,
+          "leaf_index": 90,
+          "monic_coefficients": {
+            "b": 10907,
+            "c": 9714
+          },
+          "row_key": "22050.cf1@11731:uniform:256:salt174",
+          "salt": 174,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt174|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:646:22050.cf1@11731"
+        },
+        {
+          "factor_value": 0,
+          "leaf_index": 90,
+          "monic_coefficients": {
+            "b": 10907,
+            "c": 9714
+          },
+          "row_key": "22050.cf1@11731:uniform:256:salt164",
+          "salt": 164,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt164|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:646:22050.cf1@11731"
+        }
+      ],
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "rows": [
+        {
+          "baseline_costs": {
+            "preassociation_filter_beats_rho": true,
+            "preassociation_filter_ops": 43,
+            "preassociation_filter_ops_over_rho": 0.31386861,
+            "projected_core_ops_before_filtered_association": 42
+          },
+          "baseline_public_key_verified": false,
+          "baseline_rank": 0,
+          "row_key": "22050.cf1@11731:uniform:256:salt164",
+          "selected_leaf_indices": [
+            90
+          ],
+          "xmatches": []
+        },
+        {
+          "baseline_costs": {
+            "preassociation_filter_beats_rho": true,
+            "preassociation_filter_ops": 43,
+            "preassociation_filter_ops_over_rho": 0.31386861,
+            "projected_core_ops_before_filtered_association": 42
+          },
+          "baseline_public_key_verified": false,
+          "baseline_rank": 0,
+          "row_key": "22050.cf1@11731:uniform:256:salt166",
+          "selected_leaf_indices": [
+            90
+          ],
+          "xmatches": []
+        },
+        {
+          "baseline_costs": {
+            "preassociation_filter_beats_rho": true,
+            "preassociation_filter_ops": 43,
+            "preassociation_filter_ops_over_rho": 0.31386861,
+            "projected_core_ops_before_filtered_association": 42
+          },
+          "baseline_public_key_verified": false,
+          "baseline_rank": 0,
+          "row_key": "22050.cf1@11731:uniform:256:salt174",
+          "selected_leaf_indices": [
+            90
+          ],
+          "xmatches": []
+        }
+      ],
+      "rule_results": [
+        {
+          "charged_models": {
+            "measured_oriented_ops": 129,
+            "measured_oriented_ops_over_rho": 0.94160584,
+            "relation_only_event_ops": 129,
+            "relation_only_event_ops_over_rho": 0.94160584,
+            "rho": 137,
+            "selected_relation_count": 0,
+            "selected_xmatch_count": 0,
+            "shared_hit_root_savings": 2,
+            "shared_leaf_hit_root_ops": 125,
+            "shared_leaf_hit_root_ops_over_rho": 0.91240876,
+            "shared_leaf_ops": 127,
+            "shared_leaf_ops_over_rho": 0.9270073,
+            "shared_leaf_savings": 2
+          },
+          "derived_secret": null,
+          "public_key_verified": false,
+          "rank": 0,
+          "relation_count": 0,
+          "rule": "scheduled_trial_min",
+          "selected_xmatch_count": 0,
+          "selected_xmatches": [],
+          "selected_xmatches_truncated": false
+        },
+        {
+          "charged_models": {
+            "measured_oriented_ops": 129,
+            "measured_oriented_ops_over_rho": 0.94160584,
+            "relation_only_event_ops": 129,
+            "relation_only_event_ops_over_rho": 0.94160584,
+            "rho": 137,
+            "selected_relation_count": 0,
+            "selected_xmatch_count": 0,
+            "shared_hit_root_savings": 2,
+            "shared_leaf_hit_root_ops": 125,
+            "shared_leaf_hit_root_ops_over_rho": 0.91240876,
+            "shared_leaf_ops": 127,
+            "shared_leaf_ops_over_rho": 0.9270073,
+            "shared_leaf_savings": 2
+          },
+          "derived_secret": null,
+          "public_key_verified": false,
+          "rank": 0,
+          "relation_count": 0,
+          "rule": "candidate_pos_min",
+          "selected_xmatch_count": 0,
+          "selected_xmatches": [],
+          "selected_xmatches_truncated": false
+        },
+        {
+          "charged_models": {
+            "measured_oriented_ops": 129,
+            "measured_oriented_ops_over_rho": 0.94160584,
+            "relation_only_event_ops": 129,
+            "relation_only_event_ops_over_rho": 0.94160584,
+            "rho": 137,
+            "selected_relation_count": 0,
+            "selected_xmatch_count": 0,
+            "shared_hit_root_savings": 2,
+            "shared_leaf_hit_root_ops": 125,
+            "shared_leaf_hit_root_ops_over_rho": 0.91240876,
+            "shared_leaf_ops": 127,
+            "shared_leaf_ops_over_rho": 0.9270073,
+            "shared_leaf_savings": 2
+          },
+          "derived_secret": null,
+          "public_key_verified": false,
+          "rank": 0,
+          "relation_count": 0,
+          "rule": "all",
+          "selected_xmatch_count": 0,
+          "selected_xmatches": [],
+          "selected_xmatches_truncated": false
+        }
+      ],
+      "source_ops_over_rho": 0.94160584,
+      "source_public_key_verified": false,
+      "target": "22050.cf1@11731",
+      "top_k": 4,
+      "transfer_index": 646
+    }
+  ],
+  "method": "public_linear_factor_gate_xmatch_orientation_audit",
+  "parameters": {
+    "activation_rule": "all",
+    "factor": {
+      "b_coeff": 6110,
+      "c_coeff": 1,
+      "constant": 4058,
+      "p": 11731
+    },
+    "leaf_selector": "mode_cost_low_term_support_total3",
+    "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+    "radius": 4,
+    "rules": [
+      "scheduled_trial_min",
+      "candidate_pos_min",
+      "all"
+    ],
+    "signature_source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_640_647.json",
+    "target": "22050.cf1@11731",
+    "top_k": 4,
+    "transfer_index": 646
+  },
+  "schema": "ecdlp_ffe_public_linear_factor_xmatch_orientation_audit_v1",
+  "summary": {
+    "activated_case_count": 1,
+    "best_verified_rules": [],
+    "interpretation": "Rules are public filters over x-match metadata emitted after the public linear factor gate.  shared_leaf_hit_root_ops is a charged model that amortizes identical selected leaves and hit roots across rows; it is not a measured direct replay cost.",
+    "min_verified_measured_ops_over_rho": null,
+    "min_verified_shared_leaf_hit_root_ops_over_rho": null,
+    "min_verified_shared_leaf_ops_over_rho": null,
+    "source_case_count": 1,
+    "verified_measured_below_rho_rule_count": 0,
+    "verified_rule_count": 0,
+    "verified_shared_leaf_below_rho_rule_count": 0,
+    "verified_shared_leaf_hit_root_below_rho_rule_count": 0
+  }
+}

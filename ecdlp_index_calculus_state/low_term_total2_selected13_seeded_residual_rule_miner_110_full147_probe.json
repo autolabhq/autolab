@@ -1,0 +1,3996 @@
+{
+  "artifacts": {
+    "c_header": "ecdlp_index_calculus_state/low_term_total2_selected13_seeded_residual_rule_miner_110_full147_probe.h"
+  },
+  "claim_status": "SELECTED13_SEEDED_RESIDUAL_RULE_MINER_FOUND_NO_LOSS_GAIN",
+  "created_at": "2026-06-06T00:53:55Z",
+  "failures": [],
+  "honesty_boundary": {
+    "direct_top5_replay_labels_used_for_mining": true,
+    "fresh_one_leaf_replay_required_before_promotion": true,
+    "general_ecdlp_algorithm_claimed": false,
+    "seed_policy_verified_elsewhere": true
+  },
+  "native_preflight": {
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_seeded_residual_rule_miner_preflight_rmznobei/preflight.c",
+      "-o",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_seeded_residual_rule_miner_preflight_rmznobei/preflight"
+    ],
+    "compile_returncode": 0,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_seeded_residual_rule_miner_preflight candidates=96 seed_accepted=110 best=111 best_no_loss=111 failures=0",
+    "verified": true
+  },
+  "parameters": {
+    "full_score_candidate_limit": 20000,
+    "insert_mode": "before_span_fallback",
+    "max_candidate_predicates": 4096,
+    "max_predicate_arity": 3,
+    "seed_validation": "ecdlp_index_calculus_state/low_term_total2_selected13_second_stage_public_guarded_span110_then_span_le6_position_validation_10056_10607_full147_probe.json",
+    "top5_replays": [
+      "ecdlp_index_calculus_state/low_term_total2_selected13_second_stage_public_depth1_all_top5_diagnostic_10056_10607_top32_probe.json",
+      "ecdlp_index_calculus_state/low_term_total2_selected13_second_stage_public_depth1_all_top5_diagnostic_10056_10607_q32_63_probe.json",
+      "ecdlp_index_calculus_state/low_term_total2_selected13_second_stage_public_depth1_all_top5_diagnostic_10056_10607_q64_95_probe.json",
+      "ecdlp_index_calculus_state/low_term_total2_selected13_second_stage_public_depth1_all_top5_diagnostic_10056_10607_q96_127_probe.json",
+      "ecdlp_index_calculus_state/low_term_total2_selected13_second_stage_public_depth1_all_top5_diagnostic_10056_10607_q128_146_probe.json"
+    ],
+    "top_candidate_limit": 96
+  },
+  "schema": "ecdlp.low_term_total2_selected13_seeded_residual_rule_miner.v1",
+  "seed_policy": {
+    "fallback_order_mode": "span_root",
+    "raw_frozen_rules": [
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 9
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 2
+            },
+            {
+              "field": "scout",
+              "op": "==",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "position_desc",
+        "predicate": {
+          "all": [
+            {
+              "field": "rowhit",
+              "op": ">=",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "<=",
+              "value": 3
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "scout",
+              "op": "==",
+              "value": 4
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 1
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 2
+            },
+            {
+              "field": "scout",
+              "op": "==",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 9
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 3
+            },
+            {
+              "field": "scout",
+              "op": "==",
+              "value": 4
+            },
+            {
+              "field": "span",
+              "op": ">=",
+              "value": 9
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "scout",
+              "op": ">=",
+              "value": 8
+            },
+            {
+              "field": "span",
+              "op": ">=",
+              "value": 9
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 0
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 2
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 3
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 2
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 0
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 1
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 2
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 13
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 0
+            },
+            {
+              "field": "root",
+              "op": "==",
+              "value": 3
+            },
+            {
+              "field": "rowhit",
+              "op": "==",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 0
+            },
+            {
+              "field": "root",
+              "op": "==",
+              "value": 3
+            },
+            {
+              "field": "rowhit",
+              "op": "==",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 8
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "span_desc",
+        "predicate": {
+          "all": [
+            {
+              "field": "active",
+              "op": ">=",
+              "value": 4
+            },
+            {
+              "field": "span",
+              "op": "<=",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        }
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "field": "span",
+          "op": "<=",
+          "value": 6
+        }
+      },
+      {
+        "fallback_order_mode": "span_root",
+        "predicate": {
+          "kind": "fallback"
+        }
+      }
+    ],
+    "rules": [
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "root==1&span==4",
+        "rule_index": 0
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 9
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "root==1&span==9",
+        "rule_index": 1
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 2
+            },
+            {
+              "field": "scout",
+              "op": "==",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "root==2&scout==6&span==4",
+        "rule_index": 2
+      },
+      {
+        "order_mode": "position_desc",
+        "predicate": {
+          "all": [
+            {
+              "field": "rowhit",
+              "op": ">=",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "<=",
+              "value": 3
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "rowhit>=6&span<=3",
+        "rule_index": 3
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "scout",
+              "op": "==",
+              "value": 4
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 1
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "root==1&scout==4&span==1",
+        "rule_index": 4
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 2
+            },
+            {
+              "field": "scout",
+              "op": "==",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 9
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "root==2&scout==6&span==9",
+        "rule_index": 5
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "root",
+              "op": "==",
+              "value": 3
+            },
+            {
+              "field": "scout",
+              "op": "==",
+              "value": 4
+            },
+            {
+              "field": "span",
+              "op": ">=",
+              "value": 9
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "root==3&scout==4&span>=9",
+        "rule_index": 6
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "scout",
+              "op": ">=",
+              "value": 8
+            },
+            {
+              "field": "span",
+              "op": ">=",
+              "value": 9
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "scout>=8&span>=9",
+        "rule_index": 7
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 0
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 2
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "position==0&span==2",
+        "rule_index": 8
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 3
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "position==1&span==3",
+        "rule_index": 9
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 2
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "position==2&span==4",
+        "rule_index": 10
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 0
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 1
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "position==0&span==1",
+        "rule_index": 11
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 2
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "position==1&span==2",
+        "rule_index": 12
+      },
+      {
+        "order_mode": "span_root",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 1
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 13
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "position==1&span==13",
+        "rule_index": 13
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 0
+            },
+            {
+              "field": "root",
+              "op": "==",
+              "value": 3
+            },
+            {
+              "field": "rowhit",
+              "op": "==",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "position==0&root==3&rowhit==6&span==4",
+        "rule_index": 14
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "all": [
+            {
+              "field": "position",
+              "op": "==",
+              "value": 0
+            },
+            {
+              "field": "root",
+              "op": "==",
+              "value": 3
+            },
+            {
+              "field": "rowhit",
+              "op": "==",
+              "value": 6
+            },
+            {
+              "field": "span",
+              "op": "==",
+              "value": 8
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "position==0&root==3&rowhit==6&span==8",
+        "rule_index": 15
+      },
+      {
+        "order_mode": "span_desc",
+        "predicate": {
+          "all": [
+            {
+              "field": "active",
+              "op": ">=",
+              "value": 4
+            },
+            {
+              "field": "span",
+              "op": "<=",
+              "value": 4
+            }
+          ],
+          "kind": "all_of"
+        },
+        "predicate_text": "active>=4&span<=4",
+        "rule_index": 16
+      },
+      {
+        "order_mode": "position",
+        "predicate": {
+          "field": "span",
+          "op": "<=",
+          "value": 6
+        },
+        "predicate_text": "span<=6",
+        "rule_index": 17
+      }
+    ],
+    "selector_id": "second_stage_public_guarded_span110_then_span_le6_position_frozen_full147"
+  },
+  "summary": {
+    "best_accepted_below_rho_transfer_count": 111,
+    "best_gain_count": 1,
+    "best_gain_transfers": [
+      10415
+    ],
+    "best_loss_count": 0,
+    "best_loss_transfers": [],
+    "best_no_loss_accepted_below_rho_transfer_count": 111,
+    "best_no_loss_gain_count": 1,
+    "best_no_loss_gain_transfers": [
+      10415
+    ],
+    "failure_count": 0,
+    "general_ecdlp_algorithm_claimed": false,
+    "residual_rule_selection_miss_count": 22,
+    "residual_rule_selection_misses": [
+      10117,
+      10132,
+      10134,
+      10151,
+      10221,
+      10236,
+      10266,
+      10270,
+      10272,
+      10297,
+      10343,
+      10368,
+      10385,
+      10415,
+      10419,
+      10434,
+      10441,
+      10443,
+      10457,
+      10511,
+      10562,
+      10570
+    ],
+    "residual_top5_materialization_miss_count": 15,
+    "residual_top5_materialization_misses": [
+      10156,
+      10178,
+      10189,
+      10203,
+      10232,
+      10245,
+      10261,
+      10282,
+      10291,
+      10324,
+      10376,
+      10529,
+      10556,
+      10578,
+      10595
+    ],
+    "seed_accepted_below_rho_transfer_count": 110,
+    "seed_artifact_accepted_below_rho_transfer_count": 110,
+    "verified": true,
+    "worker_interpretation": "This seeded miner ranks public candidate branches against an already verified frozen policy. Candidate labels come from direct top-5 replay, so any promoted branch still needs a fresh one-leaf verifier replay."
+  },
+  "top_candidate_records": [
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 8498,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 6
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=6",
+      "rule_id_u64": 8179545168679002865
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 10762,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=3",
+      "rule_id_u64": 14492931997473426754
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18756,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span==1",
+      "rule_id_u64": 4697991856728651419
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18759,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=3",
+      "rule_id_u64": 16082863516478015698
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18762,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=2",
+      "rule_id_u64": 16306403925046157606
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18769,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=1",
+      "rule_id_u64": 8014246426665180577
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18795,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span==1",
+      "rule_id_u64": 1100847841930291615
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18798,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=2",
+      "rule_id_u64": 5864051074933987019
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18805,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=1",
+      "rule_id_u64": 17040415153891438381
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 8497,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 6
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=6",
+      "rule_id_u64": 16818430904476386680
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 10761,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=3",
+      "rule_id_u64": 17278600355773166780
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18755,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span==1",
+      "rule_id_u64": 1273689728758941510
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18758,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=3",
+      "rule_id_u64": 10796311111107488714
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18761,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=2",
+      "rule_id_u64": 17853829682946026270
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18768,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=1",
+      "rule_id_u64": 2490537432457614083
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18794,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span==1",
+      "rule_id_u64": 9455433152183371262
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18797,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=2",
+      "rule_id_u64": 12023172536294728032
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18804,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=1",
+      "rule_id_u64": 13183683442958652370
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 5240,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=3",
+      "rule_id_u64": 8984566655980701295
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 5250,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=3",
+      "rule_id_u64": 408749931268415489
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 8480,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=2",
+      "rule_id_u64": 15710390792332057484
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 8506,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=2",
+      "rule_id_u64": 9058207966575126162
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18754,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span==1",
+      "rule_id_u64": 2372714418332139788
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18767,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=1",
+      "rule_id_u64": 1216258959346877713
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18793,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span==1",
+      "rule_id_u64": 7092800706728789358
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18803,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=1",
+      "rule_id_u64": 955483034322281812
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 10760,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=3",
+      "rule_id_u64": 14319092950504390508
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18753,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span==1",
+      "rule_id_u64": 12015426651611465722
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18757,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=3",
+      "rule_id_u64": 4681264596393955746
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18760,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=2",
+      "rule_id_u64": 5693266546755010008
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18766,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=1",
+      "rule_id_u64": 13193511201283017949
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18792,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span==1",
+      "rule_id_u64": 8573663774464271669
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18796,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=2",
+      "rule_id_u64": 7306996068345680517
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18802,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=1",
+      "rule_id_u64": 3058724569809102167
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 7014,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=3",
+      "rule_id_u64": 13669906045253737467
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 7022,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=3",
+      "rule_id_u64": 2003073147111856095
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 10747,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=2",
+      "rule_id_u64": 7149354374074458005
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 10764,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=2",
+      "rule_id_u64": 8988758576820655179
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18752,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span==1",
+      "rule_id_u64": 9339922921157216484
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18765,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=1",
+      "rule_id_u64": 6669185847157350576
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18791,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span==1",
+      "rule_id_u64": 9957860844493318686
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18801,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=1",
+      "rule_id_u64": 434444674970014904
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 5249,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=3",
+      "rule_id_u64": 14562359729446435229
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 7013,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=3",
+      "rule_id_u64": 11934652373628542610
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 10746,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=2",
+      "rule_id_u64": 14844018708053201667
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 10763,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=2",
+      "rule_id_u64": 7759416209726912732
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18751,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span==1",
+      "rule_id_u64": 18222376225810870100
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18764,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=1",
+      "rule_id_u64": 7735761090801135411
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18790,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span==1",
+      "rule_id_u64": 8487909507136526507
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18800,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=1",
+      "rule_id_u64": 3316438556217072315
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 8505,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=3",
+      "rule_id_u64": 13248050408263519620
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 10745,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=3",
+      "rule_id_u64": 14454719174175665293
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 14813,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=2",
+      "rule_id_u64": 13214907655463701006
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 14829,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=2",
+      "rule_id_u64": 9621478325925516387
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18750,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span==1",
+      "rule_id_u64": 14374368440321332446
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18763,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&span<=1",
+      "rule_id_u64": 12434460277591380852
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18789,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span==1",
+      "rule_id_u64": 10290804644891346534
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 18799,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&span<=1",
+      "rule_id_u64": 8541006032152204774
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19089,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "scout==4&span>=12",
+      "rule_id_u64": 3432100086150643155
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19088,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "scout==4&span>=12",
+      "rule_id_u64": 4465027119546025084
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19087,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "scout==4&span>=12",
+      "rule_id_u64": 17566986964780793073
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19086,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "scout==4&span>=12",
+      "rule_id_u64": 8922783525495488837
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19085,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "scout==4&span>=12",
+      "rule_id_u64": 4301100546473854322
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19084,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "scout==4&span>=12",
+      "rule_id_u64": 7135847666688183415
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19083,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "scout==4&span>=12",
+      "rule_id_u64": 10796707398728480936
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19405,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "rowhit",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "rowhit==4&span>=12",
+      "rule_id_u64": 12793734136686056625
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19404,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "rowhit",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "rowhit==4&span>=12",
+      "rule_id_u64": 17167967834770515913
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19403,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "rowhit",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "rowhit==4&span>=12",
+      "rule_id_u64": 5643648790831530183
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19402,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "rowhit",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "rowhit==4&span>=12",
+      "rule_id_u64": 13657079219291595163
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19401,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "rowhit",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "rowhit==4&span>=12",
+      "rule_id_u64": 3216092275598784761
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19400,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "rowhit",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "rowhit==4&span>=12",
+      "rule_id_u64": 10172708436445860697
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19399,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "rowhit",
+            "kind": "comparison",
+            "op": "==",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "rowhit==4&span>=12",
+      "rule_id_u64": 1462040330837931867
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19702,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position<=3&span==1",
+      "rule_id_u64": 2868487263438094436
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19713,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position<=3&span<=1",
+      "rule_id_u64": 6608776712497925973
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19701,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position<=3&span==1",
+      "rule_id_u64": 14592004282570051784
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19712,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position<=3&span<=1",
+      "rule_id_u64": 6063108354651680131
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19699,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position<=3&span==1",
+      "rule_id_u64": 5409635812075531778
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19710,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position<=3&span<=1",
+      "rule_id_u64": 8359230617412113669
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19696,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position<=3&span==1",
+      "rule_id_u64": 9693031662133954297
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19707,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position<=3&span<=1",
+      "rule_id_u64": 4718617143250512258
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19798,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position==2&span>=12",
+      "rule_id_u64": 15753667759434049436
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19797,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position==2&span>=12",
+      "rule_id_u64": 1859964107623550014
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19796,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "position_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position==2&span>=12",
+      "rule_id_u64": 13813435201802513906
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19795,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "root",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position==2&span>=12",
+      "rule_id_u64": 9122033887717621687
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19794,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position==2&span>=12",
+      "rule_id_u64": 1680642857588468185
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19793,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_desc",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position==2&span>=12",
+      "rule_id_u64": 17060027588254914948
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19792,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "span_root",
+      "predicate": {
+        "all": [
+          {
+            "field": "position",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 12
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "position==2&span>=12",
+      "rule_id_u64": 10895089754689476231
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 2922,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 6
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&scout<=4&span<=6",
+      "rule_id_u64": 8425936800299705631
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 2969,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 6
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&scout<=4&span<=6",
+      "rule_id_u64": 7786979794427503595
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 7282,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&scout<=4&span<=3",
+      "rule_id_u64": 6354078972036150675
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 7311,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&scout<=4&span<=3",
+      "rule_id_u64": 12285134598686090989
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 8908,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 6
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 6
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&scout<=6&span<=6",
+      "rule_id_u64": 12967229964141014404
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 11602,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&scout<=4&span<=2",
+      "rule_id_u64": 5267902779424098646
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 11654,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 6
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 3
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&scout<=6&span<=3",
+      "rule_id_u64": 13557002609565463026
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 11664,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": "==",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 4
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 2
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root==2&scout<=4&span<=2",
+      "rule_id_u64": 1042731088882659418
+    },
+    {
+      "accepted_below_rho_transfer_count": 111,
+      "candidate_index": 19947,
+      "gain_count": 1,
+      "gain_transfers": [
+        10415
+      ],
+      "insert_index": 17,
+      "loss_count": 0,
+      "loss_transfers": [],
+      "net_gain": 1,
+      "order_mode": "active",
+      "predicate": {
+        "all": [
+          {
+            "field": "root",
+            "kind": "comparison",
+            "op": ">=",
+            "value": 2
+          },
+          {
+            "field": "scout",
+            "kind": "comparison",
+            "op": "<=",
+            "value": 6
+          },
+          {
+            "field": "span",
+            "kind": "comparison",
+            "op": "==",
+            "value": 1
+          }
+        ],
+        "kind": "all_of"
+      },
+      "predicate_text": "root>=2&scout<=6&span==1",
+      "rule_id_u64": 475947959534542410
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-DISTINGUISHED-BRANCH-VALUE-MASS-R24-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-057
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: prospective_distinguished_branch_value_alphabet
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE
+summary: >-
+  A degree-d rational Kummer map has at most d*r prime-subgroup Kummer
+  preimages over any r prospectively distinguished output values. Across an
+  arbitrary L-element fifth deck, at most 2*L*d*r distinct geometric sources
+  can put one of their two translated branches in those fibers. Therefore an
+  r=o(S/d) planted zero, pole, or other small value alphabet touches o(SL)
+  sources and cannot by itself create global d-fold complete-image
+  compression. The first mass-admissible case r=Theta(S/d)=Theta(B) remains
+  open.
+inputs:
+  - path: staged/p1553_erased_image_geometric_resolution_gate_r13.md
+    sha256: 78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5
+  - path: staged/p1553_quadratic_intermediate_field_gate_r21.md
+    sha256: ad8d9e83b919ea92c98eefcb657831f01378b6760d49b2aaea0a892d6ed52be1
+  - path: staged/p1553_list_only_mass_collision_toy_gate_r22.md
+    sha256: ba1661d183f4e8b7291a1a34b48bdab2d01485da45c9753bbfb16e82b52208ab
+  - path: staged/p1553_list_only_mass_collision_toy_report_r22c.json
+    sha256: 40ef33016a6e12b802ee7c40183c853e4d180d89b7993abf85f1d6e6c48a5af8
+  - path: staged/p1553_random_fifth_deck_correlation_gate_r23.md
+    sha256: de9a0a496fc6696ed6e976351476c56262484124c8c7d7cc2cdbddd16a6cc184
+  - path: staged/p1553_random_fifth_deck_correlation_parent_report_r23.yaml
+    sha256: 12494c453b4c9c3fa45b72c4f1de76b11bbbeb8a2bf6a6dd14d6dede6f6a4b25
+  - path: staged/p1553_r23_bundle.sha256
+    sha256: 29bfdbeca9cd14a579f134ca2b5926e3fb4858f13455e1d8dfc066cbcb1008da
+  - path: staged/p1553_r23_staging_receipt.yaml
+    sha256: 5239f8c910e0d83b26eea5aa80ca6ef63bc58639b938c4b070cc32f365d47bde
+output:
+  path: staged/p1553_distinguished_branch_value_mass_gate_r24.md
+  sha256: dd9b27fa5114e2121463612f5afaf09db12de30a0a0c4397f1dc37aafac1e99f
+frozen_parameters:
+  endpoint_classes: S=Theta(B^2)
+  fifth_classes: L=Theta(B)
+  kummer_map_degree: d<=B
+  distinguished_value_count: r
+  full_geometric_sources: n=S*L
+theorems:
+  - >-
+    The Kummer preimage Z_C of r projective psi-values has at most d*r
+    distinct classes, including pole and infinity fibers.
+  - >-
+    For fixed fifth class q and preimage class z, at most the two endpoint
+    classes [z+q] and [z-q] put z on a complete translated branch.
+  - >-
+    The exact distinguished stratum H_C therefore has size at most 2*L*d*r
+    and relative mass at most 2*d*r/S for arbitrary co-designed supports.
+  - >-
+    Any router whose only certified nontrivial key identifications occur in
+    H_C needs r=Omega(S/d) before it can claim global O(n/d) image size.
+result:
+  classification: scoped_small_distinguished_alphabet_mass_negative
+  exact_preimage_bound: d*r
+  exact_source_mass_bound: 2*L*d*r
+  constant_value_alphabet_global_compression: impossible_in_frozen_mechanism
+  r_little_o_S_over_d_global_compression: impossible_in_frozen_mechanism
+  r_theta_S_over_d: open
+  complete_pair_collisions: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+controls:
+  random_support_assumption: none
+  adversarial_support_co_design: allowed
+  projective_poles_and_infinity: counted
+  heavy_occurrence_weights: excluded_from_geometric_rank_credit
+  collisions_outside_distinguished_stratum: not_classified
+limits:
+  - independent mathematical review has not been completed
+  - the theorem closes only compression attributed to the distinguished stratum
+  - an alphabet of size Omega(S/d)=Omega(B) survives the mass gate
+  - additive energy and approximate translation stability remain unclassified
+  - no unrestricted circuit, data-structure, or generic-group lower bound
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R13 owns the complete image floor and output representation
+  - R22 owns the finite-list planted-zero observation and failed holdout
+  - R23 owns independent random-deck noncompression and collision budget
+  - generic BSG, Plunnecke, and almost-periodicity lanes own support-energy extraction
+  - R24 adds only the exact 2*L*d*r distinguished-branch mass gate
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE__ANY_R_DISTINGUISHED_PSI_VALUES_HAVE_AT_MOST_D_R_KUMMER_PREIMAGES__AT_MOST_2_L_D_R_GEOMETRIC_SOURCES_TOUCH_ONE_DISTINGUISHED_BRANCH__R_LITTLE_O_S_OVER_D_CANNOT_DRIVE_GLOBAL_D_FOLD_COMPRESSION__R_THETA_S_OVER_D_TRANSLATION_STABLE_ALPHABET_REMAINS_OPEN__NO_TARGET__NO_R10__NO_DENSITY_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Analyze r=Theta(S/d): require a prospective C, complete Z_C, and Q for
+  which Theta(SL) sources have both branches in Z_C and the complete keys
+  supply Omega(SLd) collision mass, exact sources, fresh targets, and R10;
+  reject scalar progressions, adaptive fit, hidden factors, rank loss, or an
+  SL table.

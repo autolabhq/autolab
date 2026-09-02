@@ -1,0 +1,236 @@
+{
+  "artifacts": {
+    "c_header": "ecdlp_index_calculus_state/low_term_total2_selected13_salt_conditioned_direct_replay_9839_repeated_terms_hit_root_sum.h"
+  },
+  "claim_status": "SELECTED13_SALT_CONDITIONED_DIRECT_REPLAY_FAILED",
+  "created_at": "2026-07-27T06:04:53Z",
+  "direct_replay_records": [
+    {
+      "accepted_relation_export": false,
+      "association_top_records": [
+        {
+          "active_scout_count_sum": 2,
+          "hit_root_count_sum": 2,
+          "leaf_index": 94,
+          "min_term_span": 3,
+          "row_hit_total_sum": 4,
+          "score_key": [
+            -1,
+            -2,
+            -4,
+            3,
+            94
+          ],
+          "scout_hit_total_sum": 4
+        }
+      ],
+      "below_rho": true,
+      "candidate_class": "salt_conditioned_association_direct_replay",
+      "candidate_class_code": 1,
+      "candidate_id": "salt_assoc_direct_1c6988490e9035f9",
+      "candidate_id_u64": 2047317352974923257,
+      "candidate_index": 0,
+      "derived_secret": null,
+      "duplicate_form_count": 0,
+      "generic_rho_steps": 137,
+      "known_positive_transfer": false,
+      "ops": 96,
+      "ops_over_rho": 0.70072993,
+      "public_key_verified": false,
+      "rank": 2,
+      "relation_count": 2,
+      "relation_derived_ecdlp": false,
+      "row_event_count": 2,
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt172"
+      ],
+      "row_summaries": [
+        {
+          "event_summaries": [],
+          "event_summary_count": 0,
+          "hit_event_count": 0,
+          "rank": 0,
+          "relation_count": 0,
+          "row_key": "22050.cf1@11731:uniform:256:salt163",
+          "selected_hit_roots": 0,
+          "selected_leaf_indices": [
+            94
+          ]
+        },
+        {
+          "event_summaries": [
+            {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                2,
+                5
+              ],
+              "leaf_index": 94,
+              "original_trial": 321,
+              "q_coeff": 308,
+              "relation_index": 0,
+              "rhs": 3794,
+              "row_key": "22050.cf1@11731:uniform:256:salt172",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                2,
+                5,
+                5
+              ]
+            },
+            {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                2,
+                4
+              ],
+              "leaf_index": 94,
+              "original_trial": 476,
+              "q_coeff": 5604,
+              "relation_index": 1,
+              "rhs": 8165,
+              "row_key": "22050.cf1@11731:uniform:256:salt172",
+              "scheduled_trial": 2,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                2,
+                4,
+                4
+              ]
+            }
+          ],
+          "event_summary_count": 2,
+          "hit_event_count": 4,
+          "rank": 2,
+          "relation_count": 2,
+          "row_key": "22050.cf1@11731:uniform:256:salt172",
+          "selected_hit_roots": 2,
+          "selected_leaf_indices": [
+            94
+          ]
+        }
+      ],
+      "salts": [
+        163,
+        172
+      ],
+      "scorer_mode": "repeated_terms_hit_root_sum",
+      "selected_common_leaf_count": 1,
+      "selected_leaf_count": 2,
+      "selected_leaf_indices": [
+        94
+      ],
+      "selected_leaf_map": [
+        {
+          "leaf_indices": [
+            94
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt163"
+        },
+        {
+          "leaf_indices": [
+            94
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt172"
+        }
+      ],
+      "status": "RANK2_UNVERIFIED",
+      "status_code": 4,
+      "top_k": 1,
+      "transfer_index": 9839,
+      "unique_form_count": 2
+    }
+  ],
+  "failures": [
+    {
+      "code": "native_preflight_failed",
+      "native_preflight": {
+        "compile_command": [
+          "cc",
+          "-std=c99",
+          "-Wall",
+          "-Wextra",
+          "-O2",
+          "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_salt_direct_replay_preflight_q6iq_3t1/preflight.c",
+          "-o",
+          "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_salt_direct_replay_preflight_q6iq_3t1/preflight"
+        ],
+        "compile_returncode": 0,
+        "preflight_returncode": 1,
+        "preflight_stderr": "",
+        "preflight_stdout": "selected13_salt_direct_replay_preflight records=1 accepted=0 accepted_below=0 heldout_accepted_below=0 failures=2",
+        "verified": false
+      }
+    }
+  ],
+  "honesty_boundary": {
+    "common_sweep_labels_used": false,
+    "general_ecdlp_algorithm_claimed": false,
+    "selection_cost_note": "Replay cost is measured on the selected row-leaf map produced by the public association selector.",
+    "selection_signal": "pre-relation salt-conditioned association cover only"
+  },
+  "native_preflight": {
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_salt_direct_replay_preflight_q6iq_3t1/preflight.c",
+      "-o",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_salt_direct_replay_preflight_q6iq_3t1/preflight"
+    ],
+    "compile_returncode": 0,
+    "preflight_returncode": 1,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_salt_direct_replay_preflight records=1 accepted=0 accepted_below=0 heldout_accepted_below=0 failures=2",
+    "verified": false
+  },
+  "parameters": {
+    "bank_source": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_probe.json",
+    "config_source": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_schedule_filter_probe.json",
+    "context_top_k": 16,
+    "contract": "ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_kernel_contract_selected13_9839_single.json",
+    "direct_source": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_direct_witness_probe.json",
+    "leaf_limit": null,
+    "radius": 4,
+    "scorer_mode": "repeated_terms_hit_root_sum",
+    "target": "22050.cf1@11731",
+    "top_k": 1,
+    "transfer_source": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_transfer_probe.json"
+  },
+  "schema": "ecdlp.low_term_total2_selected13_salt_conditioned_direct_replay_probe.v1",
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "below_rho_accepted_relation_export_count": 0,
+    "best_candidate_id": null,
+    "best_derived_secret": null,
+    "best_heldout_candidate_id": null,
+    "best_heldout_derived_secret": null,
+    "best_heldout_ops_over_rho": null,
+    "best_heldout_transfer_index": null,
+    "best_ops_over_rho": null,
+    "best_transfer_index": null,
+    "direct_replay_without_common_sweep_labels": true,
+    "failure_count": 1,
+    "general_ecdlp_algorithm_claimed": false,
+    "heldout_below_rho_accepted_relation_export_count": 0,
+    "heldout_below_rho_transfers": [],
+    "known_positive_below_rho_transfers": [],
+    "missing_below_rho_transfers": [
+      9839
+    ],
+    "status_counts": {
+      "RANK2_UNVERIFIED": 1
+    },
+    "transfer_count": 1,
+    "verified": false,
+    "worker_interpretation": "The salt-conditioned association policy is selected and replayed directly. The common-leaf sweep is not used as a label source in this probe; it only remains historical context for why this selector was worth testing."
+  }
+}

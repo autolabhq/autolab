@@ -1,0 +1,327 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_direct_certificate_lift_worklist_10376_probe.h"
+  },
+  "claim_status": "SELECTED13_PRIORITY0_DIRECT_CERTIFICATE_LIFT_WORKLIST_READY",
+  "created_at": "2026-07-06T16:17:45Z",
+  "evidence_sources": {
+    "dependency_bridge_terms": [
+      2,
+      6,
+      13
+    ],
+    "gap_scanner_remaining_same_target_terms": [
+      8,
+      12
+    ],
+    "gap_scanner_same_target_new_terms": [
+      3,
+      9
+    ],
+    "term812_summary": {
+      "accepted_relation_export_count": 0,
+      "cross_target_analogue_term_count": 2,
+      "cross_target_analogue_terms": [
+        8,
+        12
+      ],
+      "explicit_same_target_term_closure_count": 0,
+      "failure_count": 0,
+      "leaf12_seed_count": 0,
+      "leaf8_low_rank_seed_count": 1,
+      "leaf8_root_map_seed_count": 1,
+      "leaf8_signature_extended_seed_count": 1,
+      "leaf8_signature_seed_count": 1,
+      "leaf8_surface_gate_below_rho_route_count": 1,
+      "leaf8_surface_gate_unique_hit_count": 4,
+      "native_preflight_verified": true,
+      "open_term_count": 2,
+      "open_terms": [
+        8,
+        12
+      ],
+      "pollard_rho_speedup_claimed": false,
+      "relation_derived_ecdlp": false,
+      "verified": true,
+      "worker_interpretation": "Residual terms 8 and 12 still have no same-target residual-term closure. Same-target leaf-8 public-factor/root routes are useful generation seeds, but leaf 8 must not be counted as residual term 8."
+    }
+  },
+  "failures": [],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "direct_certificate_is_lift_source_only": true,
+    "exact_target_slot_direct_verified": false,
+    "general_ecdlp_algorithm_claimed": false,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "validator_acceptance_ready": false
+  },
+  "lift_terms": [
+    2,
+    3,
+    8,
+    9,
+    12,
+    13
+  ],
+  "lift_work_items": [
+    {
+      "already_in_source_certificate": false,
+      "covered_by_dependency_bridge": false,
+      "evidence_class": "open_no_same_target_route_seed",
+      "next_action": "Generate fresh same-target FFE/summation-polynomial residual-term-12 evidence.",
+      "priority": 0,
+      "same_target_analogue_available": false,
+      "same_target_residual_term_open": true,
+      "term": 12
+    },
+    {
+      "already_in_source_certificate": false,
+      "covered_by_dependency_bridge": false,
+      "evidence_class": "open_leaf_route_seed_only",
+      "next_action": "Use same-target leaf-8 hit streams as generation seeds, then require explicit residual-term-8 evidence.",
+      "priority": 1,
+      "same_target_analogue_available": false,
+      "same_target_residual_term_open": true,
+      "term": 8
+    },
+    {
+      "already_in_source_certificate": false,
+      "covered_by_dependency_bridge": false,
+      "evidence_class": "same_target_analogue_replay_required",
+      "next_action": "Replay same-target analogue evidence onto the transfer-10376 target slice and bind it to the row request.",
+      "priority": 2,
+      "same_target_analogue_available": true,
+      "same_target_residual_term_open": false,
+      "term": 3
+    },
+    {
+      "already_in_source_certificate": false,
+      "covered_by_dependency_bridge": false,
+      "evidence_class": "same_target_analogue_replay_required",
+      "next_action": "Replay same-target analogue evidence onto the transfer-10376 target slice and bind it to the row request.",
+      "priority": 2,
+      "same_target_analogue_available": true,
+      "same_target_residual_term_open": false,
+      "term": 9
+    },
+    {
+      "already_in_source_certificate": false,
+      "covered_by_dependency_bridge": true,
+      "evidence_class": "dependency_circuit_partial_evidence",
+      "next_action": "Materialize dependency-circuit evidence into the selected13 kernel completion hash.",
+      "priority": 3,
+      "same_target_analogue_available": false,
+      "same_target_residual_term_open": false,
+      "term": 2
+    },
+    {
+      "already_in_source_certificate": false,
+      "covered_by_dependency_bridge": true,
+      "evidence_class": "dependency_circuit_partial_evidence",
+      "next_action": "Materialize dependency-circuit evidence into the selected13 kernel completion hash.",
+      "priority": 3,
+      "same_target_analogue_available": false,
+      "same_target_residual_term_open": false,
+      "term": 13
+    }
+  ],
+  "native_preflight": {
+    "c_source_sha256": "bf3b1bd1bca794105ab1e13260e9a30ccdfcfdd4476216de9e184db62e203266",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-I",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state",
+      "/private/tmp/selected13_direct_cert_lift_k4g4iujy/preflight.c",
+      "-o",
+      "/private/tmp/selected13_direct_cert_lift_k4g4iujy/preflight"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_priority0_direct_certificate_lift_worklist_preflight transfer=10376 source_certs=1 source_terms=9 target_terms=15 lift_terms=6 dependency_terms=2 analogue_terms=2 open_terms=2 leaf8_surface_hits=4 leaf12_seeds=0 accepted=0 failures=0",
+    "verified": true
+  },
+  "packet_hash_u64": 977412026812359209,
+  "schema": "ecdlp.low_term_total2_selected13_priority0_direct_certificate_lift_worklist.v1",
+  "source_certificate": {
+    "below_rho": true,
+    "certificate_status": "PUBLIC_DIRECT_RELATION_EQUATIONS_VERIFY_PUBLIC_KEY",
+    "clause": "direct_source",
+    "direct_ops_over_rho": 0.78832117,
+    "exact_target_slot_match": false,
+    "expected_secret": 5859,
+    "form_count": 2,
+    "form_rhs_values": [
+      6812,
+      8173
+    ],
+    "form_term_supports": [
+      [
+        9,
+        9,
+        11,
+        11
+      ],
+      [
+        9,
+        9,
+        11,
+        11
+      ]
+    ],
+    "public_key_verified": true,
+    "rho": 137,
+    "row_keys": [
+      "22050.cf1@11731:uniform:256:salt173",
+      "22050.cf1@11731:uniform:256:salt168"
+    ],
+    "row_pair_matches_target": true,
+    "secret": 5859,
+    "secret_matches_expected": true,
+    "selected_term_support": [
+      0,
+      4,
+      5,
+      6,
+      7,
+      10,
+      11,
+      14,
+      15
+    ],
+    "selector": "mode_low_term_support_total5",
+    "term12_in_support": false,
+    "term8_in_support": false,
+    "top_k": 12,
+    "transfer_index": 10376
+  },
+  "source_support_terms": [
+    0,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    14,
+    15
+  ],
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "analogue_backed_lift_term_count": 2,
+    "dependency_backed_lift_term_count": 2,
+    "exact_target_slot_direct_verified_count": 0,
+    "failure_count": 0,
+    "leaf12_seed_count": 0,
+    "leaf8_surface_gate_unique_hit_count": 4,
+    "lift_term_count": 6,
+    "native_preflight_verified": true,
+    "open_lift_term_count": 2,
+    "open_lift_terms": [
+      8,
+      12
+    ],
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "source_certificate_count": 1,
+    "source_certificate_direct_ops_over_rho": 0.78832117,
+    "source_certificate_top_k": 12,
+    "source_support_count": 9,
+    "target_support_count": 15,
+    "target_transfer": 10376,
+    "verified": true,
+    "worker_interpretation": "The top_k=12 target-pair certificate can serve as a positive control for a top_k=16 lift. Terms 2 and 13 have dependency-circuit partial evidence, terms 3 and 9 have same-target analogue evidence, and terms 8 and 12 still require fresh residual synthesis."
+  },
+  "target_slot": {
+    "candidate_case_arg": "22050.cf1@11731|10376|mode_low_term_support_total5|16",
+    "classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+    "classification_code": 5,
+    "combined_family_residual_rank": 5,
+    "direct_ops_over_rho": 0.68613139,
+    "direct_ops_over_rho_scaled": 68613139,
+    "family_mask_rank": 3,
+    "family_masks": [
+      34816,
+      17408,
+      33
+    ],
+    "phase": "target_direct_rank_export",
+    "phase_code": 1,
+    "priority_rank": 0,
+    "priority_score": 1551239,
+    "required_output": {
+      "must_emit_target_direct_rank_export": true,
+      "must_evaluate_fresh_ffe_or_summation_polynomial_system": true,
+      "must_match_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+      "must_reject_source_hint_replay_as_target_export": true,
+      "must_set_relation_derived_ecdlp": true,
+      "must_verify_public_key": true
+    },
+    "residual_mask_rank": 2,
+    "residual_masks": [
+      13068,
+      13132
+    ],
+    "row_keys": [
+      "22050.cf1@11731:uniform:256:salt168",
+      "22050.cf1@11731:uniform:256:salt173"
+    ],
+    "row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "row_request_id_u64": 15227462883308766969,
+    "selected_support_mask": 65533,
+    "selected_term_support": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "selector": "mode_low_term_support_total5",
+    "target": "22050.cf1@11731",
+    "target_salts": [
+      168,
+      173
+    ],
+    "top_k": 16,
+    "transfer_index": 10376,
+    "worker_acceptance_gate": "fresh_ffe_direct_rank_export_and_relation_derived_ecdlp_only",
+    "worker_class": "hinted_delta_source_solve",
+    "worker_class_code": 3
+  },
+  "target_support_terms": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ]
+}

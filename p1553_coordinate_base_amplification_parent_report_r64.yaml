@@ -1,0 +1,68 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-COORDINATE-BASE-AMPLIFICATION-R64-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: preregistered_public_coordinate_base_amplification_search
+  model_scope: twelve_B40_base_families_on_the_R61_E_F193_tensor
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_COORDINATE_BASE_DIAGNOSTIC_GATE
+summary: >-
+  Twelve preregistered public coordinate bases and 6144 disjoint pencils yield
+  no smooth new root. Root deduplication and rational rank-one lifting leave
+  5830 product sections, but the root-level endpoint is cluster-invalid and
+  amplification inference is inconclusive. Downstream costs remain open.
+inputs:
+  - path: staged/p1553_public_factor_base_closure_gate_r63.md
+    sha256: c1fb6244d057f2ee5d37788c3cb98081ee5e852ea068af109c73de31027d33cd
+  - path: staged/p1553_public_factor_base_closure_probe_report_r63.json
+    sha256: bba00af8c72646a2405f9932ea81778b6b359db040d1ea9591686baa5010bfcc
+  - path: staged/p1553_public_factor_base_closure_probe_r63.py
+    sha256: 7f5d061a539d62d2b3d362fed8252fead5b8e14dbc9250f5543e686f3a8d89cb
+  - path: staged/p1553_degree_six_product_hypersurface_locator_report_r61.json
+    sha256: f91213021bd350b77cf1ac7d5cb8f2f9ae63b1265a5081d4ed58a3da07aa1f64
+outputs:
+  - path: staged/p1553_coordinate_base_amplification_gate_r64.md
+    sha256: fda9fce027da62857dd5ac7327a3ebf03b24474a456c63a7ed4cded017a81ac9
+  - path: staged/p1553_coordinate_base_amplification_search_r64.py
+    sha256: e582c13b6238ded714a3b9ed16b472ebb6775808971be6e8d058e76d872f3651
+  - path: staged/p1553_coordinate_base_amplification_search_report_r64.json
+    sha256: c63fb54f8aa8df42bbc1f4bd5118519af28933fee50bcf4e9dab01aa5e1e08a9
+controls:
+  public_base_size: 40
+  family_count: 12
+  accepted_pencils_per_family: 512
+  accepted_pencils_total: 6144
+  raw_roots_with_multiplicity: 5944
+  deduplicated_rational_rank_one_product_sections: 5830
+  smooth_new_roots: 0
+  pooled_unconditional_reference_intensity_times_conditioned_count: 0.5311384256718237
+  constant_size_rank_one_groebner_lift_attempts: 5867
+  bonferroni_familywise_level: 0.01
+result:
+  classification: coordinate_base_amplification_diagnostic_toy_gate
+  root_level_preregistered_endpoint_valid: false
+  statistically_significant_closure_amplification: false
+  smooth_closure_amplification_inference: inconclusive
+  post_hoc_structural_suppression_theorem: absent
+  generic_prime_distribution_theorem: absent
+  asymptotic_relation_algorithm: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - one finite toy with B=40 and families selected after R63
+  - root-level binomial endpoint is invalid because roots cluster by pencil
+  - base setup, rank, logs, linear algebra, and descent remain uncharged
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_COORDINATE_BASE_DIAGNOSTIC_GATE__TWELVE_FAMILIES_6144_PENCILS__5830_DEDUPLICATED_RATIONAL_LIFTS_ZERO_SMOOTH__CLUSTER_INVALID_ENDPOINT__AMPLIFICATION_INCONCLUSIVE__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Exhaustively classify primitive smooth trisecants for the largest tractable
+  public base to replace the invalid independent-root baseline with an exact
+  conditional incidence count.

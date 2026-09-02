@@ -1,0 +1,112 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-BINOMIAL-NODE-UNION-DEPTH-R137-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: structured_product_set_and_sparse_node_depth_lower_bound
+run_count: 1
+status: structured_three_plus_five_plus_low_slp_and_nonzero_value_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - sparse-polynomial
+  - decision-tree
+  - cauchy-davenport
+  - root-bound
+  - structured-factor-base
+  - random-model
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R129-R136
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether a nodewise root-union bound rules out
+  polylogarithmic-query sparse zero-test trees even when their expanded
+  all-nonzero path product has large support.
+inputs:
+  - path: p1553_torus_c5_all_nonzero_path_product_probe_r136.py
+    sha256: a0761c05909996a80b3322aec859fcde97b23d77ce7cf512ddfa0c888e3017d9
+  - path: p1553_torus_c5_all_nonzero_path_product_probe_report_r136.json
+    sha256: 530b696871917a69ddef1e6a0a14a44421176439c0ccf7b9031ecf5a8a1b64ce
+  - path: frozen_torus_c5_all_nonzero_path_product.json
+    sha256: 3a8587a33e176a7174dacf88ced1da243b0be9b77f214a1b41bb2ef3db4ccef0
+  - path: torus_c5_all_nonzero_path_product_cost_ledger.json
+    sha256: 30935ad0b297822f56dca0e69fe80952e51b92c61f32cdee79a43dde8d483d8e
+  - path: torus_c5_all_nonzero_path_product_replay.json
+    sha256: 4c4414fa1472eaec54f9b71eeb6defc47b75c3b278cdad66b7d14e5fa0fb1d4d
+  - path: torus_c5_all_nonzero_path_product_controls.json
+    sha256: bcd98529f44223cb07510094de08c0f234da14830410b67847ec1aef75bf216b
+  - path: factor_logs_and_identical_descent_r136.json
+    sha256: c38aaf5b7966f24273ffe76d6564f4e2cf9d845caa2d17715a535ce044209049
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_all_nonzero_path_product_probe_r136.py
+    sha256: c6dd14aeabda0f4b69b6d3f021b207d998214d63922178fab58220a8beac01e3
+  - path: p1553_torus_c5_all_nonzero_path_product_probe_gate_r136.md
+    sha256: 1a7e631d374e9b49d8d7eaf3440bc31d95b8d28f8f73f5a3e520b1f461bcabc5
+  - path: p1553_torus_c5_all_nonzero_path_product_probe_parent_report_r136.yaml
+    sha256: a4d61b3f08e92de9b9276bc12d137a1ff1c1494e81d08d8432c6fea9ecaa72dc
+  - path: references/devos_structure_critical_product_sets_1301.0096.pdf
+    sha256: 924bac0a6b5a1e9379e38a53f3ab78a6ad129beb6fddb12396c8275403b8c511
+artifacts:
+  - path: p1553_torus_c5_binomial_node_union_depth_probe_r137.py
+    sha256: 0120bb27e2fcc271d197f2eaae4b2adc5fd6ca65590973e9fce35c8f7221fbb1
+  - path: p1553_torus_c5_binomial_node_union_depth_probe_report_r137.json
+    sha256: 9e52400ba4ff17fe8d07e2f48f00e59ab8dd977ae9cc21a9a09b119c6cc8588d
+  - path: frozen_torus_c5_binomial_node_union_depth.json
+    sha256: e8cf340e380f99d57d2db08e24bdaa507f902d7fd93df02b6773603e43f310e0
+  - path: torus_c5_binomial_node_union_depth_cost_ledger.json
+    sha256: 45f178e841b3234607e7ae5706384f2553171be74de4a544e6eecc3973ae2ae5
+  - path: torus_c5_binomial_node_union_depth_replay.json
+    sha256: 38cd8666637b5e7e3a6864a6177a160bc27d6b1395840960b423321db8fbd3d4
+  - path: torus_c5_binomial_node_union_depth_controls.json
+    sha256: 9a3e9e71b2fd984d21feac2c1650adfd8cee3559a01ee62893f280c868ca1d31
+  - path: factor_logs_and_identical_descent_r137.json
+    sha256: 7e9d38cb8e3a6aec6d851837644ea6a813e9a0bae275bf4da6f0926140a3c6d6
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_binomial_node_union_depth_probe_r137.py
+    sha256: fb58d28c0d56125173b86c8eb2ce44aa11352fb76e271ae1a3b88487dc3d7a05
+  - path: p1553_torus_c5_binomial_node_union_depth_probe_gate_r137.md
+    sha256: 88669b1d4a1177c747a3bddb2cbdcaa22352a3c705048417d07f0a80a6bb246e
+verified_statements:
+  - >-
+    Cauchy-Davenport gives at least 5m-4 fivefold products from every
+    m-atom subset of the prime-order pairing image.
+  - >-
+    Every nonzero represented binomial has at most one root in the
+    prime-order pairing image.
+  - >-
+    Every exact structured binomial zero-test tree has all-nonzero path
+    depth at least 5m-4=B^(3/4+o(1)), regardless of product expansion.
+  - >-
+    Under the frozen uniform-random support model, trees with at most
+    four modes per node have polynomial all-nonzero path depth.
+  - >-
+    Thirty finite color controls attain the Cauchy-Davenport bound and
+    replay a positive and inverse empty on the same binomial path.
+scoped_failures:
+  structured_binomial_zero_test_tree: rejected_deterministically
+  random_support_at_most_four_mode_zero_test_tree: rejected_model_only
+  structured_three_plus_mode_zero_test_tree: open
+  five_plus_mode_low_slp_zero_test_tree: open
+  nonzero_value_frobenius_coordinate_dag: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 23
+  lane_admitted: false
+next_action: >-
+  Probe structured three-plus-mode zero tests, five-plus-mode low-SLP
+  zero-test circuits under the random support model, and nonzero-value
+  Frobenius-coordinate branches. Freeze every circuit node and branch,
+  replay exact positive and inverse-empty targets and C2+C3 sources, fit
+  B^(9/4+o(1)) state and polylogarithmic arbitrary-target work, avoid
+  field DLP, and charge rank, logs, identical descent, memory, field
+  operations, and bits.

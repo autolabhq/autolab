@@ -1,0 +1,59 @@
+schema: crypto.autoresearch.red_team_report.v1
+red_team_report:
+  id: RT-20260719-P1553-TTM-R14
+  task_id: TASK-20260719-P1553-TTM-RT-R1
+  reviewer: 019f7d58-7430-7a43-b0ed-0d8e7d85c64a
+  evidence_kind: theorem-only
+  run_count: 0
+  initial_verdict: accept
+  final_verdict: accept
+  producer_bindings:
+    gate_sha256: da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac
+    parent_report_sha256: ec5bc6425a29575468f78fad1803412dc9a69d6a69e581e5deaad7160cb7de8e
+  claim_under_review: >-
+    The complete high-degree Kummer branch map has compact O(d^2) chart
+    representation; certified exact trace moments give an O~(K) image,
+    multiplicity, occurrence-weight, and key decoder; every named standard
+    moment constructor exposes an over-cap object while compact trace,
+    containment, joint source, child, target, and rank-two operations remain
+    open.
+  objections: []
+  required_controls:
+    - exact short-Weierstrass branch quadratic and saturated exceptional charts
+    - nonzero geometric multiplicities and Vandermonde-Hankel determinant
+    - zero image coordinates and integer no-wrap below p
+    - finite-prefix stopping versus exact image containment
+    - jointly coupled source rather than independent marker sums
+    - fifth-first d*L^2 and full S*L represented-route charges
+    - additive, multiplicative, P1510, and uniform-fiber positive controls
+    - R10 query-sensitive rank-two convolution
+    - adaptive children, fresh targets, density, rank, factor logs, and descent
+  counterexample_or_mutation: >-
+    Two multiple fibers can share the same pair and fifth marker sums without
+    sharing the independently selected pair and fifth coordinates. A finite
+    recurrence fitting a moment prefix can also omit image states when no
+    exact upper bound or annihilation identity is supplied.
+  baseline_comparison: >-
+    The compact map input is B^(2+o(1)), and the supplied-moment decoder fits
+    O~(K). Standard fifth-first dense elimination already has d*L^2 at least
+    B^(11/4), while source-first quotient, norm, Krylov, and containment routes
+    expose S*L=B^3. No admitted route meets the online source, child, target,
+    and rank-two gates or establishes a complete sub-rho ECDLP path.
+  narrowest_supported_statement: >-
+    ACCEPT the compact branch formula, exact trace-Hankel decoder, and scoped
+    standard-constructor failures. Preserve compact moment compilation,
+    compressed containment, joint source selection, query-sensitive range and
+    convolution structures, and arbitrary circuits as open.
+  next_concrete_action: >-
+    Write one compact complete-chart tensor-trace constructor that outputs the
+    required moment families, proves P(a)=0, and supports one joint source,
+    adaptive children, fresh targets, and R10 rank two without any S*L vector,
+    d*L^2 dense resultant, d^2 online join, or unproved stopping rule.
+  artifact_paths:
+    - coordination/tasks/TASK-20260719-P1553-TTM-P1/tensor_trace_minpoly_compiler_gate_r14.md
+    - coordination/tasks/TASK-20260719-P1553-TTM-P1/tensor_trace_minpoly_report.yaml
+  claims:
+    breakthrough: false
+    shoup_bound_improvement: false
+    new_idea_id: null
+    experiment_or_run: false

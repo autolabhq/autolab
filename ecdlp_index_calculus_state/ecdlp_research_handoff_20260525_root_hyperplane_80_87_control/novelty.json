@@ -1,0 +1,69 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-25",
+  "claim_level": "diagnostic_control_shape_transfer_not_algorithmic_win",
+  "hypothesis": "FFE first-fall factors remain public root hyperplanes on harder 80-87 diagnostic surfaces, but usable relation transfer requires non-vacuous selected root pairs and public-zero recovery.",
+  "artifacts": {
+    "sage_factor_output": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total3_total4_verified_over_rho_80_87.json",
+    "first_fall_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total3_total4_verified_over_rho_80_87.json",
+    "selector_output": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_root_hyperplane_selector_total3_total4_verified_over_rho_80_87.json",
+    "selector_script": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/ffe_first_fall_root_hyperplane_selector_probe.py"
+  },
+  "evidence": {
+    "signature_case_count": 8,
+    "verified_case_count": 8,
+    "surface_count": 6,
+    "factor_count": 133,
+    "root_hyperplane_factor_count": 133,
+    "factor_shape_counts": {
+      "deg1_mon3_root1": 133
+    },
+    "root_hyperplane_failure_count": 0,
+    "best_policy": "low_root_norm",
+    "best_policy_selected_pair_surface_count": 3,
+    "best_policy_public_zero_capable_surface_count": 4,
+    "best_policy_vacuous_preserving_surface_count": 3,
+    "best_policy_public_zero_recovered_count": 4,
+    "best_policy_preserving_count": 4,
+    "best_policy_below_rho_count": 3,
+    "best_policy_mean_total_ops_over_rho": 0.938,
+    "best_policy_max_total_ops_over_rho": 1.096,
+    "best_policy_direct_below_rho_count": 4,
+    "best_policy_mean_direct_total_ops_over_rho": 0.852,
+    "best_policy_max_direct_total_ops_over_rho": 0.96,
+    "diagnostic_gate_name": "nonvacuous_public_zero_capable",
+    "diagnostic_gate_ex_post": true,
+    "diagnostic_gate_surface_count": 3,
+    "diagnostic_gate_policy": "low_root_norm",
+    "diagnostic_gate_below_rho_count": 3,
+    "diagnostic_gate_direct_below_rho_count": 3,
+    "diagnostic_gate_chosen_preserving_count": 3,
+    "diagnostic_gate_false_positive_count": 0,
+    "diagnostic_gate_vacuous_preserving_surface_count": 0,
+    "diagnostic_gate_mean_total_ops_over_rho": 0.88533333,
+    "diagnostic_gate_max_total_ops_over_rho": 0.96,
+    "diagnostic_gate_mean_direct_total_ops_over_rho": 0.816,
+    "diagnostic_gate_max_direct_total_ops_over_rho": 0.888,
+    "best_heldout_policy": "learned_salt_weighted_zero_prior",
+    "best_heldout_below_rho_count": 2,
+    "best_heldout_mean_total_ops_over_rho": 1.046,
+    "best_heldout_max_total_ops_over_rho": 1.288,
+    "best_heldout_direct_below_rho_count": 3,
+    "best_heldout_mean_direct_total_ops_over_rho": 0.96,
+    "best_heldout_max_direct_total_ops_over_rho": 1.152
+  },
+  "limitations": [
+    "The bank is a verified-over-rho diagnostic control, not a fresh below-rho hit stream.",
+    "Only four of six materialized surfaces are public-zero-capable under the best fixed policy.",
+    "Only three of six materialized surfaces have original selected root pairs, so three preserving labels are vacuous.",
+    "The best conservative scan policy is below rho on only three of six surfaces.",
+    "The 3/3 gated result is diagnostic because public-zero capability is currently measured after factorization.",
+    "Full-remainder FFE accounting remains over rho, with min full-remainder ops/rho 1.928."
+  ],
+  "next_steps": [
+    "Materialize fresh 80+ surfaces with non-vacuous selected root-pair counts before selector scoring.",
+    "Gate selector evaluation on public-zero capability and original selected root-pair presence.",
+    "Freeze root-ordering policies on older transfers before evaluating fresh 80+ surfaces.",
+    "Continue reporting conservative scan and direct-root companion costs side by side."
+  ]
+}

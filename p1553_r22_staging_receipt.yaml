@@ -1,0 +1,86 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R22-LIST-ONLY-MASS-COLLISION-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T05:09:51Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only, prior theorem packages remain
+  queued for independent review, and the R22 toy candidate failed both its
+  preregistered training gate and its frozen fresh-list holdout gate.
+bindings:
+  r21_gate_sha256: ad8d9e83b919ea92c98eefcb657831f01378b6760d49b2aaea0a892d6ed52be1
+  r21_parent_report_sha256: 5ff7c41e4d1e48877e8cfcef93c642e4ea52c531eac2c0d4ba67b3c5b71fb5cf
+  r21_bundle_hash_list_sha256: 362b820cc46124e01e3c0d5f9e07cf6fac2287fd09b78160bb040e3e1ac2d64b
+  r22_gate_sha256: ba1661d183f4e8b7291a1a34b48bdab2d01485da45c9753bbfb16e82b52208ab
+  r22_parent_report_sha256: fcd52cb181c11b3328ff22d640b69e5aedb2baac5047079f1aa23dbad0f1bcb8
+  r22_artifact_index_sha256: b843a9e7af8bbe3f4c2d80a5071bbd51620961791682ae3cdb0d95e2f2455d1a
+  r22_bundle_hash_list_sha256: 77aac4a770d4717a43078fd2573f92c22048f5ff55fe931139a990e0cb02e5d1
+  r22_contract_sha256: f450b8668b0542476e06ea4c445bdd245a4505f3858151191bde30e9a535c14d
+  r22a_contract_sha256: 7ae8214f0c26499f8c464310b77c3002676df17a4d7095579eccdd42bb6eca37
+  r22b_contract_sha256: 2894f22b90c16d35e3d479c3fc344471ad9ec2ce3b55241e0c8164dd11653ea2
+  r22c_contract_sha256: 12b42e35f38df4642a89214b93ffdfee9f5f68af48a74390cd7e7a02668960c5
+  r22_search_source_sha256: 48de8132d5c1538eca7b61cbe44b129a4649bfd200a7954f67ecd2bf0eefbc14
+  r22c_exact_report_sha256: 40ef33016a6e12b802ee7c40183c853e4d180d89b7993abf85f1d6e6c48a5af8
+  r22d_contract_sha256: 9dabdc2bbec1c204359fc95ee27c6ff0ce0e1ffb20b12fe7dcfb10541dc54ab2
+  r22d_holdout_source_sha256: 0c97097abe93f973611a27df808a85763445d5c1bee8b29ea642ca91b6a463a1
+  r22d_exact_report_sha256: b32b017c2d126e537891c5891cb31d5720caeee660eb1d715d0fbe1e04190302
+result:
+  classification: exact_toy_list_only_no_transfer
+  field: F_193
+  curve: y_squared_equals_x_cubed_plus_2x_plus_3
+  prime_subgroup_order: 103
+  sampled_denominators: 4096
+  map_degree: 8
+  training_nominal_sources: 160
+  training_distinct_complete_keys: 96
+  training_compression: 1.6666666666666667
+  training_required_compression: 2.0
+  training_gate: fail
+  frozen_holdout_nominal_sources: 160
+  frozen_holdout_regular_sources: 145
+  frozen_holdout_pole_sources: 15
+  frozen_holdout_distinct_complete_keys: 136
+  frozen_holdout_compression: 1.0661764705882353
+  frozen_holdout_maximum_fiber: 2
+  frozen_holdout_gate: fail
+  deterministic_search_replay: byte_identical
+  deterministic_holdout_replay: byte_identical
+  list_independent_constructor: absent
+  common_factor_free_asymptotic_identity: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r22_hash_list: pass
+  r22_parent_yaml_parse: pass
+  r22_contract_yaml_parse: pass
+  r22_reports_json_parse: pass
+  r22_failed_runs_preserved: 3
+  r22c_search_replay: byte_identical
+  r22d_holdout_replay: byte_identical
+  clean_temporary_replay_with_r16_through_r22_gates_and_r22_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T05_09_51Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - this is one small exact toy field and one trained candidate family
+  - the search was optimized on one finite fifth-source list
+  - the frozen candidate did not transfer to a disjoint fifth-source list
+  - pole sources violate the requested all-chart containment condition
+  - no list-independent complete-correlation identity is supplied
+  - no asymptotic output-sensitive constructor or image bound is supplied
+  - no fresh-target action, R10 density, rank, factor logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Do not tune another denominator; derive a list-independent common-factor-free
+  complete-correlation identity and preregister multi-interval all-chart
+  holdouts before authorizing any further finite-field search.

@@ -1,0 +1,252 @@
+{
+  "asymptotic_cost": {
+    "all-output_multipoint_evaluation": {
+      "arxiv": "2205.00342v1",
+      "bound": "(d^m+N)^(1+o(1))*poly(m,d,log|F|) for N output points",
+      "certified_output_all_values_cost_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "inside_online_cap": false,
+      "paper": "Bhargava-Ghosh-Guo-Kumar-Umans, Fast Multivariate Multipoint Evaluation Over All Finite Fields",
+      "root_side_evaluation_count_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "scope": "a matched upper-bound control; it does not lower-bound an output-sensitive zero/source algorithm",
+      "source_reporting_without_all_outputs_supplied": false,
+      "source_sha256": "14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8"
+    },
+    "cap_sized_aggregate_projector_contraction_supplied": false,
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "direct_implicit_projector_scan": {
+      "dyadic_replay_changes_exponent": false,
+      "fresh_work_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "inside_online_cap": false
+    },
+    "fatal_obstructions": [
+      "materializing the smaller feature side costs B^(12/5) state",
+      "direct or all-output multipoint evaluation costs B^(12/5) fresh work",
+      "the exact zero projector has full finite incidence rank despite the rank-six raw kernel",
+      "no branch-complete aggregate recurrence computes projector counts before individual evaluations"
+    ],
+    "materialized_smaller_feature_index": {
+      "inside_setup_cap": false,
+      "state_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "r84_root_source_sides": {
+      "larger_exponent_B": {
+        "decimal": 2.6,
+        "exact": "13/5"
+      },
+      "smaller_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "rank_six_raw_kernel_changes_projector_cost": false,
+    "scope_exception": "an exact aggregate recurrence for the Fermat projector trace over Cartesian source boxes with cap-sized intermediate state and dyadic source replay"
+  },
+  "finite_semantics": {
+    "all_dyadic_source_routes_exact": true,
+    "all_projector_predicates_exact": true,
+    "chart_rows": [
+      {
+        "all_dyadic_counts_exact": true,
+        "all_nonempty_rows_return_zero": true,
+        "all_returned_zeroes_have_signed_source": true,
+        "deck_size": 4,
+        "every_projector_entry_boolean": true,
+        "fermat_projector_degree": 100,
+        "integer_count_no_mod_p_wrap": true,
+        "less_than_twice_one_side_scan": true,
+        "maximum_direct_dyadic_field_evaluations": 19,
+        "maximum_dyadic_query_count": 5,
+        "pair_chart_count": 10,
+        "projector_equals_resultant_zero_predicate": true,
+        "projector_matrix_rank": 7,
+        "zero_count_histogram": {
+          "1": 3,
+          "2": 3,
+          "4": 3,
+          "5": 1
+        }
+      },
+      {
+        "all_dyadic_counts_exact": true,
+        "all_nonempty_rows_return_zero": true,
+        "all_returned_zeroes_have_signed_source": true,
+        "deck_size": 6,
+        "every_projector_entry_boolean": true,
+        "fermat_projector_degree": 100,
+        "integer_count_no_mod_p_wrap": true,
+        "less_than_twice_one_side_scan": true,
+        "maximum_direct_dyadic_field_evaluations": 41,
+        "maximum_dyadic_query_count": 6,
+        "pair_chart_count": 21,
+        "projector_equals_resultant_zero_predicate": true,
+        "projector_matrix_rank": 18,
+        "zero_count_histogram": {
+          "1": 7,
+          "2": 5,
+          "3": 2,
+          "4": 1,
+          "6": 3,
+          "7": 2,
+          "8": 1
+        }
+      },
+      {
+        "all_dyadic_counts_exact": true,
+        "all_nonempty_rows_return_zero": true,
+        "all_returned_zeroes_have_signed_source": true,
+        "deck_size": 8,
+        "every_projector_entry_boolean": true,
+        "fermat_projector_degree": 100,
+        "integer_count_no_mod_p_wrap": true,
+        "less_than_twice_one_side_scan": true,
+        "maximum_direct_dyadic_field_evaluations": 71,
+        "maximum_dyadic_query_count": 7,
+        "pair_chart_count": 36,
+        "projector_equals_resultant_zero_predicate": true,
+        "projector_matrix_rank": 29,
+        "zero_count_histogram": {
+          "1": 1,
+          "10": 2,
+          "2": 16,
+          "3": 8,
+          "4": 2,
+          "5": 1,
+          "8": 2,
+          "9": 4
+        }
+      },
+      {
+        "all_dyadic_counts_exact": true,
+        "all_nonempty_rows_return_zero": true,
+        "all_returned_zeroes_have_signed_source": true,
+        "deck_size": 10,
+        "every_projector_entry_boolean": true,
+        "fermat_projector_degree": 100,
+        "integer_count_no_mod_p_wrap": true,
+        "less_than_twice_one_side_scan": true,
+        "maximum_direct_dyadic_field_evaluations": 109,
+        "maximum_dyadic_query_count": 7,
+        "pair_chart_count": 55,
+        "projector_equals_resultant_zero_predicate": true,
+        "projector_matrix_rank": 53,
+        "zero_count_histogram": {
+          "10": 1,
+          "11": 4,
+          "12": 3,
+          "13": 2,
+          "2": 6,
+          "3": 7,
+          "4": 12,
+          "5": 9,
+          "6": 10,
+          "7": 1
+        }
+      },
+      {
+        "all_dyadic_counts_exact": true,
+        "all_nonempty_rows_return_zero": true,
+        "all_returned_zeroes_have_signed_source": true,
+        "deck_size": 12,
+        "every_projector_entry_boolean": true,
+        "fermat_projector_degree": 100,
+        "integer_count_no_mod_p_wrap": true,
+        "less_than_twice_one_side_scan": true,
+        "maximum_direct_dyadic_field_evaluations": 154,
+        "maximum_dyadic_query_count": 8,
+        "pair_chart_count": 78,
+        "projector_equals_resultant_zero_predicate": true,
+        "projector_matrix_rank": 78,
+        "zero_count_histogram": {
+          "12": 1,
+          "13": 1,
+          "14": 3,
+          "15": 4,
+          "16": 3,
+          "3": 3,
+          "4": 5,
+          "5": 11,
+          "6": 18,
+          "7": 14,
+          "8": 10,
+          "9": 5
+        }
+      }
+    ],
+    "identity": "delta_0(H)=1-H^(p-1) over F_p",
+    "largest_projector_full_rank": true,
+    "largest_projector_rank": 78,
+    "semantic_equivalence": "an exact hyperplane source query is the restricted Fermat projector existence/source router from the bound R9 gate"
+  },
+  "frozen_candidate": {
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "schema": "p1553.frozen_5a5c_implicit_veronese_hyperplane_index.r94.v1",
+    "source_interface": "exact box count followed by one nonzero dyadic child",
+    "value_kernel": {
+      "bound_r93_sha256": "f33c764ebbf491e55d7b8342fda9df8b29038beef8cdb06662c343ac415b7d4b",
+      "operator_rank": 6,
+      "veronese_dimension": 6
+    },
+    "zero_projector": {
+      "formula": "1-H^(p-1)",
+      "minimal_univariate_degree": 100
+    }
+  },
+  "minimal_projector_degree": {
+    "all_field_values_exact": true,
+    "binary_powering_multiplication_count_upper_bound": 14,
+    "degree": 100,
+    "field_prime": 101,
+    "low_arithmetic_depth_implies_low_separated_rank": false,
+    "minimal_degree_exact": true,
+    "projector": "1-X^(p-1)",
+    "proof": "a polynomial of degree below p-1 that is zero on all p-1 nonzero field elements must be the zero polynomial, contradicting value one at zero"
+  },
+  "multipoint_literature_control": {
+    "arxiv": "2205.00342v1",
+    "bound": "(d^m+N)^(1+o(1))*poly(m,d,log|F|) for N output points",
+    "certified_output_all_values_cost_exponent_B": {
+      "decimal": 2.4,
+      "exact": "12/5"
+    },
+    "inside_online_cap": false,
+    "paper": "Bhargava-Ghosh-Guo-Kumar-Umans, Fast Multivariate Multipoint Evaluation Over All Finite Fields",
+    "root_side_evaluation_count_exponent_B": {
+      "decimal": 2.4,
+      "exact": "12/5"
+    },
+    "scope": "a matched upper-bound control; it does not lower-bound an output-sensitive zero/source algorithm",
+    "source_reporting_without_all_outputs_supplied": false,
+    "source_sha256": "14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8"
+  },
+  "schema": "p1553.implicit_cartesian_range_index_cost_ledger.r94.v1"
+}

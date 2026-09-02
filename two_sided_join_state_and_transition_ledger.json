@@ -1,0 +1,644 @@
+{
+  "actual_state_and_query_counts": [
+    {
+      "family_id": "p98561_j0_q16427_h6_u2_v3",
+      "offset": 0,
+      "ordered_source_density_vs_subgroup": 0.47336701771473794,
+      "prefix_index_record_count": 15,
+      "suffix_scan_count_per_query": 30
+    },
+    {
+      "family_id": "p98561_j0_q16427_h6_u2_v3",
+      "offset": 1,
+      "ordered_source_density_vs_subgroup": 0.47336701771473794,
+      "prefix_index_record_count": 15,
+      "suffix_scan_count_per_query": 30
+    },
+    {
+      "family_id": "p3148097_j0_q524683_h6_u3_v5",
+      "offset": 0,
+      "ordered_source_density_vs_subgroup": 1.4473024664416418,
+      "prefix_index_record_count": 75,
+      "suffix_scan_count_per_query": 210
+    },
+    {
+      "family_id": "p3148097_j0_q524683_h6_u3_v5",
+      "offset": 1,
+      "ordered_source_density_vs_subgroup": 1.4473024664416418,
+      "prefix_index_record_count": 75,
+      "suffix_scan_count_per_query": 210
+    },
+    {
+      "family_id": "p9603641_j0_q1600607_h6_u3_v6",
+      "offset": 0,
+      "ordered_source_density_vs_subgroup": 1.1805321356210488,
+      "prefix_index_record_count": 90,
+      "suffix_scan_count_per_query": 378
+    },
+    {
+      "family_id": "p9603641_j0_q1600607_h6_u3_v6",
+      "offset": 1,
+      "ordered_source_density_vs_subgroup": 1.1805321356210488,
+      "prefix_index_record_count": 90,
+      "suffix_scan_count_per_query": 378
+    },
+    {
+      "family_id": "p100683137_j0_q16780523_h6_u4_v7",
+      "offset": 0,
+      "ordered_source_density_vs_subgroup": 1.0256157093554235,
+      "prefix_index_record_count": 245,
+      "suffix_scan_count_per_query": 840
+    },
+    {
+      "family_id": "p100683137_j0_q16780523_h6_u4_v7",
+      "offset": 1,
+      "ordered_source_density_vs_subgroup": 1.0256157093554235,
+      "prefix_index_record_count": 245,
+      "suffix_scan_count_per_query": 840
+    }
+  ],
+  "asymptotic_control": {
+    "canonical_prefix_join": {
+      "exact_integer_count_and_source": true,
+      "inside_online_cap": false,
+      "inside_setup_cap": true,
+      "queried_side": "1A+4C canonical suffixes",
+      "query_exponent_B": {
+        "decimal": 2.8,
+        "exact": "14/5"
+      },
+      "state_exponent_B": {
+        "decimal": 2.2,
+        "exact": "11/5"
+      },
+      "stored_side": "4A+1C canonical prefixes"
+    },
+    "caps": {
+      "fresh_work_workspace_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "disjoint_filter_conservation": {
+      "constant_success_repetition_exponent_B": {
+        "decimal": 1.55,
+        "exact": "31/20"
+      },
+      "identity": "5/4 + 31/20 = 14/5; ideal partition pruning is paid back by the classes or repetitions needed at density one",
+      "required_ideal_pruning_exponent_B": {
+        "decimal": 1.55,
+        "exact": "31/20"
+      },
+      "restored_total_work_exponent_B": {
+        "decimal": 2.8,
+        "exact": "14/5"
+      },
+      "retained_representation_exponent_B": {
+        "decimal": -1.55,
+        "exact": "-31/20"
+      },
+      "scope": "Applies to extra disjoint or independent filters that thin the true source set. It does not cover a target-forced algebraic identity satisfied by every true join."
+    },
+    "exhaustive_split_ledger": {
+      "all_nontrivial_atom_count_splits": [
+        {
+          "complement_query_exponent_B": {
+            "decimal": 4.4,
+            "exact": "22/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 0.6,
+            "exact": "3/5"
+          },
+          "stored_a_count": 0,
+          "stored_c_count": 1
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.8,
+            "exact": "19/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 1.2,
+            "exact": "6/5"
+          },
+          "stored_a_count": 0,
+          "stored_c_count": 2
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.2,
+            "exact": "16/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 1.8,
+            "exact": "9/5"
+          },
+          "stored_a_count": 0,
+          "stored_c_count": 3
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.6,
+            "exact": "13/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 2.4,
+            "exact": "12/5"
+          },
+          "stored_a_count": 0,
+          "stored_c_count": 4
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.0,
+            "exact": "2"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.0,
+            "exact": "3"
+          },
+          "stored_a_count": 0,
+          "stored_c_count": 5
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 4.6,
+            "exact": "23/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 0.4,
+            "exact": "2/5"
+          },
+          "stored_a_count": 1,
+          "stored_c_count": 0
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 4.0,
+            "exact": "4"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 1.0,
+            "exact": "1"
+          },
+          "stored_a_count": 1,
+          "stored_c_count": 1
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.4,
+            "exact": "17/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 1.6,
+            "exact": "8/5"
+          },
+          "stored_a_count": 1,
+          "stored_c_count": 2
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.8,
+            "exact": "14/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 2.2,
+            "exact": "11/5"
+          },
+          "stored_a_count": 1,
+          "stored_c_count": 3
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.2,
+            "exact": "11/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 2.8,
+            "exact": "14/5"
+          },
+          "stored_a_count": 1,
+          "stored_c_count": 4
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 1.6,
+            "exact": "8/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.4,
+            "exact": "17/5"
+          },
+          "stored_a_count": 1,
+          "stored_c_count": 5
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 4.2,
+            "exact": "21/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 0.8,
+            "exact": "4/5"
+          },
+          "stored_a_count": 2,
+          "stored_c_count": 0
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.6,
+            "exact": "18/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 1.4,
+            "exact": "7/5"
+          },
+          "stored_a_count": 2,
+          "stored_c_count": 1
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.0,
+            "exact": "3"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 2.0,
+            "exact": "2"
+          },
+          "stored_a_count": 2,
+          "stored_c_count": 2
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.4,
+            "exact": "12/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 2.6,
+            "exact": "13/5"
+          },
+          "stored_a_count": 2,
+          "stored_c_count": 3
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 1.8,
+            "exact": "9/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.2,
+            "exact": "16/5"
+          },
+          "stored_a_count": 2,
+          "stored_c_count": 4
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 1.2,
+            "exact": "6/5"
+          },
+          "inside_online_cap": true,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.8,
+            "exact": "19/5"
+          },
+          "stored_a_count": 2,
+          "stored_c_count": 5
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.8,
+            "exact": "19/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 1.2,
+            "exact": "6/5"
+          },
+          "stored_a_count": 3,
+          "stored_c_count": 0
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.2,
+            "exact": "16/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 1.8,
+            "exact": "9/5"
+          },
+          "stored_a_count": 3,
+          "stored_c_count": 1
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.6,
+            "exact": "13/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 2.4,
+            "exact": "12/5"
+          },
+          "stored_a_count": 3,
+          "stored_c_count": 2
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.0,
+            "exact": "2"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.0,
+            "exact": "3"
+          },
+          "stored_a_count": 3,
+          "stored_c_count": 3
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 1.4,
+            "exact": "7/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.6,
+            "exact": "18/5"
+          },
+          "stored_a_count": 3,
+          "stored_c_count": 4
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 0.8,
+            "exact": "4/5"
+          },
+          "inside_online_cap": true,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 4.2,
+            "exact": "21/5"
+          },
+          "stored_a_count": 3,
+          "stored_c_count": 5
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.4,
+            "exact": "17/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 1.6,
+            "exact": "8/5"
+          },
+          "stored_a_count": 4,
+          "stored_c_count": 0
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.8,
+            "exact": "14/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 2.2,
+            "exact": "11/5"
+          },
+          "stored_a_count": 4,
+          "stored_c_count": 1
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.2,
+            "exact": "11/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 2.8,
+            "exact": "14/5"
+          },
+          "stored_a_count": 4,
+          "stored_c_count": 2
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 1.6,
+            "exact": "8/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.4,
+            "exact": "17/5"
+          },
+          "stored_a_count": 4,
+          "stored_c_count": 3
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 1.0,
+            "exact": "1"
+          },
+          "inside_online_cap": true,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 4.0,
+            "exact": "4"
+          },
+          "stored_a_count": 4,
+          "stored_c_count": 4
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 0.4,
+            "exact": "2/5"
+          },
+          "inside_online_cap": true,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 4.6,
+            "exact": "23/5"
+          },
+          "stored_a_count": 4,
+          "stored_c_count": 5
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 3.0,
+            "exact": "3"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 2.0,
+            "exact": "2"
+          },
+          "stored_a_count": 5,
+          "stored_c_count": 0
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.4,
+            "exact": "12/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 2.6,
+            "exact": "13/5"
+          },
+          "stored_a_count": 5,
+          "stored_c_count": 1
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 1.8,
+            "exact": "9/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.2,
+            "exact": "16/5"
+          },
+          "stored_a_count": 5,
+          "stored_c_count": 2
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 1.2,
+            "exact": "6/5"
+          },
+          "inside_online_cap": true,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 3.8,
+            "exact": "19/5"
+          },
+          "stored_a_count": 5,
+          "stored_c_count": 3
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 0.6,
+            "exact": "3/5"
+          },
+          "inside_online_cap": true,
+          "inside_setup_cap": false,
+          "state_exponent_B": {
+            "decimal": 4.4,
+            "exact": "22/5"
+          },
+          "stored_a_count": 5,
+          "stored_c_count": 4
+        }
+      ],
+      "best_query_exponent_B": {
+        "decimal": 2.8,
+        "exact": "14/5"
+      },
+      "best_query_inside_online_cap": false,
+      "best_setup_eligible_splits": [
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.8,
+            "exact": "14/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 2.2,
+            "exact": "11/5"
+          },
+          "stored_a_count": 1,
+          "stored_c_count": 3
+        },
+        {
+          "complement_query_exponent_B": {
+            "decimal": 2.8,
+            "exact": "14/5"
+          },
+          "inside_online_cap": false,
+          "inside_setup_cap": true,
+          "state_exponent_B": {
+            "decimal": 2.2,
+            "exact": "11/5"
+          },
+          "stored_a_count": 4,
+          "stored_c_count": 1
+        }
+      ],
+      "best_state_exponent_B": {
+        "decimal": 2.2,
+        "exact": "11/5"
+      },
+      "eligible_split_count": 15
+    },
+    "representation_density": {
+      "ordered_factor_source_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "permutation_and_pairing_slack": "bounded arity supplies constants only, not B^delta",
+      "representation_surplus_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "subgroup_order_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      }
+    }
+  },
+  "best_split_query_inside_online_cap": false,
+  "schema": "p1553.two_sided_join_state_and_transition_ledger.r102.v1"
+}

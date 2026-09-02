@@ -1,0 +1,680 @@
+{
+  "method": "trace_derived_fused_leaf_root_one_event_pass_work_counters",
+  "non_claims": [
+    "This audit recomputes shared-pass work from traces; it does not yet fuse the verifier scanner internals.",
+    "Promotion still requires moving the same work counters into the algebraic replay path.",
+    "Relation acceptance remains an audit label after the public x-match trace is built."
+  ],
+  "parameters": {
+    "charged_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_hit_event_charged_replay_target67_672_744.json"
+  },
+  "records": [
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 12,
+          "baseline_hit_root_ops": 3,
+          "baseline_leaf_ops": 2,
+          "event_key_count": 8,
+          "hit_root_values": [
+            2716,
+            5973
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "12",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt206",
+            "67.a1@9803:uniform:256:salt209"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "replay": {
+        "baseline_ops": 129,
+        "baseline_ops_over_rho": 1.032,
+        "derived_secret": 6227,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 3,
+        "relation_count": 3
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt209"
+      ],
+      "source_name": "coord1114_744",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 123,
+        "charged_ops_over_rho": 0.984,
+        "matches_charged_ops": true,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 100,
+        "trace_below_rho": true,
+        "trace_first_event_pass_ops": 8,
+        "trace_hit_root_ops": 2,
+        "trace_leaf_ops": 1,
+        "trace_ops": 123,
+        "trace_ops_over_rho": 0.984,
+        "trace_savings_vs_baseline_ops": 6,
+        "trace_second_event_pass_ops": 12
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 4,
+          "baseline_hit_root_ops": 2,
+          "baseline_leaf_ops": 2,
+          "event_key_count": 4,
+          "hit_root_values": [
+            8741
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "1",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt205",
+            "67.a1@9803:uniform:256:salt206"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "117,6119",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "1"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 695
+      },
+      "replay": {
+        "baseline_ops": 112,
+        "baseline_ops_over_rho": 0.896,
+        "derived_secret": 9438,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt205",
+        "67.a1@9803:uniform:256:salt206"
+      ],
+      "source_name": "coord117_688",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 108,
+        "charged_ops_over_rho": 0.864,
+        "matches_charged_ops": false,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 100,
+        "trace_below_rho": true,
+        "trace_first_event_pass_ops": 4,
+        "trace_hit_root_ops": 1,
+        "trace_leaf_ops": 1,
+        "trace_ops": 110,
+        "trace_ops_over_rho": 0.88,
+        "trace_savings_vs_baseline_ops": 2,
+        "trace_second_event_pass_ops": 4
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 6,
+          "baseline_hit_root_ops": 2,
+          "baseline_leaf_ops": 2,
+          "event_key_count": 6,
+          "hit_root_values": [
+            5612
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "0",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt203",
+            "67.a1@9803:uniform:256:salt205"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "3|3",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 706
+      },
+      "replay": {
+        "baseline_ops": 116,
+        "baseline_ops_over_rho": 0.928,
+        "derived_secret": 3713,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt203",
+        "67.a1@9803:uniform:256:salt205"
+      ],
+      "source_name": "coord55_704",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 111,
+        "charged_ops_over_rho": 0.888,
+        "matches_charged_ops": false,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 100,
+        "trace_below_rho": true,
+        "trace_first_event_pass_ops": 6,
+        "trace_hit_root_ops": 1,
+        "trace_leaf_ops": 1,
+        "trace_ops": 114,
+        "trace_ops_over_rho": 0.912,
+        "trace_savings_vs_baseline_ops": 2,
+        "trace_second_event_pass_ops": 6
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 4,
+          "baseline_hit_root_ops": 2,
+          "baseline_leaf_ops": 2,
+          "event_key_count": 4,
+          "hit_root_values": [
+            5612
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "0",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt204",
+            "67.a1@9803:uniform:256:salt206"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 718
+      },
+      "replay": {
+        "baseline_ops": 112,
+        "baseline_ops_over_rho": 0.896,
+        "derived_secret": 9797,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt204",
+        "67.a1@9803:uniform:256:salt206"
+      ],
+      "source_name": "coord55_712",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 108,
+        "charged_ops_over_rho": 0.864,
+        "matches_charged_ops": false,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 100,
+        "trace_below_rho": true,
+        "trace_first_event_pass_ops": 4,
+        "trace_hit_root_ops": 1,
+        "trace_leaf_ops": 1,
+        "trace_ops": 110,
+        "trace_ops_over_rho": 0.88,
+        "trace_savings_vs_baseline_ops": 2,
+        "trace_second_event_pass_ops": 4
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 8,
+          "baseline_hit_root_ops": 1,
+          "baseline_leaf_ops": 1,
+          "event_key_count": 8,
+          "hit_root_values": [
+            3639
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "7",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt209"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "757,1452",
+        "hit_event_signature": "8",
+        "hit_root_signature": "1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "7"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 1,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 715
+      },
+      "replay": {
+        "baseline_ops": 68,
+        "baseline_ops_over_rho": 0.544,
+        "derived_secret": 702,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt209"
+      ],
+      "source_name": "coord757_712",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 68,
+        "charged_ops_over_rho": 0.544,
+        "matches_charged_ops": true,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 50,
+        "trace_below_rho": true,
+        "trace_first_event_pass_ops": 8,
+        "trace_hit_root_ops": 1,
+        "trace_leaf_ops": 1,
+        "trace_ops": 68,
+        "trace_ops_over_rho": 0.544,
+        "trace_savings_vs_baseline_ops": 0,
+        "trace_second_event_pass_ops": 8
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 8,
+          "baseline_hit_root_ops": 2,
+          "baseline_leaf_ops": 2,
+          "event_key_count": 8,
+          "hit_root_values": [
+            7515
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "9",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt206",
+            "67.a1@9803:uniform:256:salt208"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "861,9226",
+        "hit_event_signature": "4|4",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "9"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 692
+      },
+      "replay": {
+        "baseline_ops": 120,
+        "baseline_ops_over_rho": 0.96,
+        "derived_secret": 8677,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt208"
+      ],
+      "source_name": "coord861_688",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 114,
+        "charged_ops_over_rho": 0.912,
+        "matches_charged_ops": false,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 100,
+        "trace_below_rho": true,
+        "trace_first_event_pass_ops": 8,
+        "trace_hit_root_ops": 1,
+        "trace_leaf_ops": 1,
+        "trace_ops": 118,
+        "trace_ops_over_rho": 0.944,
+        "trace_savings_vs_baseline_ops": 2,
+        "trace_second_event_pass_ops": 8
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 9,
+          "baseline_hit_root_ops": 3,
+          "baseline_leaf_ops": 3,
+          "event_key_count": 9,
+          "hit_root_values": [
+            161,
+            9481
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "2",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt203",
+            "67.a1@9803:uniform:256:salt206",
+            "67.a1@9803:uniform:256:salt208"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "3|3|3",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 677
+      },
+      "replay": {
+        "baseline_ops": 174,
+        "baseline_ops_over_rho": 1.392,
+        "derived_secret": 9544,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt203",
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt208"
+      ],
+      "source_name": "coord161_672",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 164,
+        "charged_ops_over_rho": 1.312,
+        "matches_charged_ops": false,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 150,
+        "trace_below_rho": false,
+        "trace_first_event_pass_ops": 9,
+        "trace_hit_root_ops": 2,
+        "trace_leaf_ops": 1,
+        "trace_ops": 171,
+        "trace_ops_over_rho": 1.368,
+        "trace_savings_vs_baseline_ops": 3,
+        "trace_second_event_pass_ops": 9
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 12,
+          "baseline_hit_root_ops": 3,
+          "baseline_leaf_ops": 2,
+          "event_key_count": 12,
+          "hit_root_values": [
+            161,
+            9481
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "2",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt206",
+            "67.a1@9803:uniform:256:salt207"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "replay": {
+        "baseline_ops": 129,
+        "baseline_ops_over_rho": 1.032,
+        "derived_secret": 1767,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt207"
+      ],
+      "source_name": "coord161_720",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 123,
+        "charged_ops_over_rho": 0.984,
+        "matches_charged_ops": false,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 100,
+        "trace_below_rho": false,
+        "trace_first_event_pass_ops": 12,
+        "trace_hit_root_ops": 2,
+        "trace_leaf_ops": 1,
+        "trace_ops": 127,
+        "trace_ops_over_rho": 1.016,
+        "trace_savings_vs_baseline_ops": 2,
+        "trace_second_event_pass_ops": 12
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 12,
+          "baseline_hit_root_ops": 2,
+          "baseline_leaf_ops": 2,
+          "event_key_count": 12,
+          "hit_root_values": [
+            9481
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "2",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt207",
+            "67.a1@9803:uniform:256:salt208"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "replay": {
+        "baseline_ops": 128,
+        "baseline_ops_over_rho": 1.024,
+        "derived_secret": 3693,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt207",
+        "67.a1@9803:uniform:256:salt208"
+      ],
+      "source_name": "coord161_728",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 120,
+        "charged_ops_over_rho": 0.96,
+        "matches_charged_ops": false,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 100,
+        "trace_below_rho": false,
+        "trace_first_event_pass_ops": 12,
+        "trace_hit_root_ops": 1,
+        "trace_leaf_ops": 1,
+        "trace_ops": 126,
+        "trace_ops_over_rho": 1.008,
+        "trace_savings_vs_baseline_ops": 2,
+        "trace_second_event_pass_ops": 12
+      }
+    },
+    {
+      "groups": [
+        {
+          "baseline_event_pass_ops": 6,
+          "baseline_hit_root_ops": 3,
+          "baseline_leaf_ops": 3,
+          "event_key_count": 6,
+          "hit_root_values": [
+            161,
+            9481
+          ],
+          "leaf_count_charge": 1,
+          "leaf_signature": "2",
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt203",
+            "67.a1@9803:uniform:256:salt206",
+            "67.a1@9803:uniform:256:salt209"
+          ]
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "2|2|2",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 740
+      },
+      "replay": {
+        "baseline_ops": 168,
+        "baseline_ops_over_rho": 1.344,
+        "derived_secret": 4924,
+        "generic_rho_steps": 125,
+        "public_key_verified": true,
+        "rank": 3,
+        "relation_count": 3
+      },
+      "rule": "all_hit_event_rows",
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt203",
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt209"
+      ],
+      "source_name": "coord161_736",
+      "trace_complete": true,
+      "trace_fused_executor": {
+        "charged_ops": 160,
+        "charged_ops_over_rho": 1.28,
+        "matches_charged_ops": false,
+        "materialization_status": "trace_derived_work_counters_not_low_level_kernel",
+        "model": "trace_fused_leaf_root_one_event_pass",
+        "nonshared_base_ops": 150,
+        "trace_below_rho": false,
+        "trace_first_event_pass_ops": 6,
+        "trace_hit_root_ops": 2,
+        "trace_leaf_ops": 1,
+        "trace_ops": 165,
+        "trace_ops_over_rho": 1.32,
+        "trace_savings_vs_baseline_ops": 3,
+        "trace_second_event_pass_ops": 6
+      }
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_trace_fused_executor_audit_v1",
+  "summary": {
+    "interpretation": "Shared-pass cost is recomputed from selected leaf signatures, hit-root IDs, and all x-match traces.  The remaining non-claim is that these are trace-derived work counters, not yet a low-level fused algebraic kernel.",
+    "mean_trace_fused_below_rho_ops_over_rho": 0.85733333,
+    "record_count": 10,
+    "trace_complete_verified_count": 10,
+    "trace_fused_below_rho_count": 6,
+    "trace_fused_matches_charged_ops_count": 2,
+    "trace_fused_shared_savings_below_rho_count": 5,
+    "verified_replay_count": 10
+  }
+}

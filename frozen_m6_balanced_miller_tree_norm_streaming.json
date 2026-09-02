@@ -1,0 +1,76 @@
+{
+  "critical_experiment": {
+    "decisive_test": "Construct or refute a nonlocal batched elliptic leaf-translate product operator: from U and compact selected/target divisors, emit product_j U(x(T_j-P)) modulo U in softly O(n+N) work, preferably B^(9/4+o(1)), without visiting the n-by-N pair grid, materializing N dense elements of F_p[X]/U, or invoking an uncharged norm/resultant/multipoint oracle.",
+    "falsifier": "The route visits nN point/leaf pairs, materializes N dense quotient-ring factors, expands a degree-nN body, uses candidate inverses, or treats norm/resultant/multipoint evaluation as a unit-cost oracle.",
+    "hypothesis": "A nonlocal elliptic batch operator can fuse the surviving N target leaves before quotient-ring or endpoint expansion."
+  },
+  "promotion_allowed": false,
+  "schema": "p1553.m6_balanced_miller_tree_norm_streaming.frozen.r171.v1",
+  "source_bindings": {
+    "bhargava_et_al_2022": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/bhargava_ghosh_guo_kumar_umans_multipoint_2205.00342v1.pdf",
+      "sha256": "14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8"
+    },
+    "enge_2013": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/enge_bilinear_pairings_1301.5520v2.pdf",
+      "sha256": "93b99fa2d13e09c1bc8282b58d472be6285ceea9b594e9b97d765212a3aaa8e4"
+    },
+    "miller_1986": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/miller_weil_pairing_algorithm_1986.pdf",
+      "sha256": "39c76c7643278b87b3d8c24b9a07d0b4cbfb561cd13735548990848e0f0bd166"
+    },
+    "moroz_schost_2016": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/moroz_schost_truncated_resultant_1609.04259.pdf",
+      "sha256": "160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709"
+    },
+    "r170_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_lambda_zero_fitting_target_norm_dedup_controls.json",
+      "sha256": "1c00d68dcc15217ce1d3b7192e0992ccb9a1443450df3d100cb1d1beb2fd409f"
+    },
+    "r170_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_lambda_zero_fitting_target_norm_dedup_cost_ledger.json",
+      "sha256": "97cf12e1011c10148588da6febba2edbcfaa445f12fcb4df12ca81dc11278113"
+    },
+    "r170_fitting": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/lambda_zero_fitting_norm_and_density_r170.json",
+      "sha256": "fa7b5427696e244c257fa95168e3b7f5646c9bdff5d10ff25fd0b8193d28bea1"
+    },
+    "r170_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_m6_lambda_zero_fitting_target_norm_dedup.json",
+      "sha256": "34735b27f7b9d9a018a2c158cccaab4c9d61942144636d72b4cdcdc95d9d9f97"
+    },
+    "r170_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_gate_r170.md",
+      "sha256": "564ad5ffd47317768209244b1432f13cc2a0d1245a3d582e59c9bb0174375e02"
+    },
+    "r170_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_parent_report_r170.yaml",
+      "sha256": "a6bcb432f330f492669dbb597361d3cc9c7ceff468292a3b00bebe231965df91"
+    },
+    "r170_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_r170.py",
+      "sha256": "71f94407c05de7c0a4bcc77643c63e5f601b1c609639cbdba874a72c56f0091d"
+    },
+    "r170_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_lambda_zero_fitting_target_norm_dedup_replay.json",
+      "sha256": "84a36d4ab086664e4a2382e6b057f45b741dd43c38c7acd19026c0ff8f51d3cd"
+    },
+    "r170_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_report_r170.json",
+      "sha256": "a354427601094c8346253ac38bc0fd53f878e67d71962846561088ee6495162c"
+    },
+    "r170_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_r170.py",
+      "sha256": "51f82e0b8e762591669eec9aaa240e80c44b34ec1e7e56e80ca8ee83e955d2f3"
+    }
+  },
+  "theorem": {
+    "balanced_generalized_miller_tree": "For a finite zero list Z=(Z_1,...,Z_m), a leaf has state (1,Z_i). Merging states (f_A,A) and (f_B,B) multiplies by l_(A,B)/v_(A+B) and replaces the residual point by A+B. The result has divisor sum_i[Z_i]-[sum_i Z_i]-(m-1)[O]. A balanced tree has exactly m-1 line merges and logarithmic depth. When the point sum is O it represents the required principal function.",
+    "line_norm_homomorphism": "For f0(Q)=U(x(Q)), a line quotient g_(A,B) and shift P obey, on disjoint support, product_(Q in S union -S) g_(A,B)(Q+P) / g_(A,B)(P)^(2n) = f0(A-P)f0(B-P) / (f0(A+B-P)f0(-P)). This is the node-local norm homomorphism.",
+    "quotient_and_correction_cancellation": "The R167 numerator and denominator trees have equal size, both sum to O, and share the completion zero C. Their origin factors and C cancel. Multiplying the public anchor/auxiliary correction cancels every denominator leaf, leaving exactly the N original target translates and no internal partial-sum factor.",
+    "scoped_streaming_boundary": "Balanced line streaming reduces live memory and circuit depth, but the node-local homomorphic evaluation still performs Theta(nN) scalar translate work, and symbolic telescoping returns the same N target factors as R170. This closes only per-node or per-leaf streaming; it is not an arithmetic-circuit, RAM, cell-probe, elliptic-resultant, or generic-group lower bound.",
+    "specialization_boundary": "For every selected endpoint P, f0(-P)=U(x(P))=0, so individual line ratios are not units and cannot be specialized one node at a time. The equal-size numerator/denominator origin factors must be cancelled symbolically before evaluating selected or candidate-zero rows.",
+    "surviving_interface": "The surviving primitive is nonlocal: from compact selected and target divisors, batch all N elliptic translates against U and emit their product modulo U in softly O(n+N) work without visiting the n-by-N pair grid or materializing N dense quotient-ring elements.",
+    "tree_telescoping": "Multiplying the node-local identities cancels every internal partial sum. A size-m tree leaves product_i f0(Z_i-P) divided by f0(sum_i Z_i-P)f0(-P)^(m-1). For a principal zero list this is product_i f0(Z_i-P)/f0(-P)^m."
+  }
+}

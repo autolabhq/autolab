@@ -1,0 +1,156 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-HIGH-DEGREE-KUMMER-PROVENANCE-R12-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: revise_scoped_theorem
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+owner: P1553/P1515/IDEA-001/IDEA-057/IDEA-195
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Charge the explicit branch-state headers and source provenance required by
+  a surviving high-degree rational Kummer transporter on a dense pair-endpoint
+  support crossed with the fifth factor list.
+inputs:
+  - path: staged/p1553_cartesian_kummer_rigidity_gate_r11.md
+    sha256: 6c79b486bfa4cfd14674033a438db3d91ddf7bbe4d2c4aaf309f1a0706f0df4e
+  - path: staged/p1553_cartesian_kummer_rigidity_parent_report.yaml
+    sha256: 5f65da4f50e301067258f14f4b8e6dec91a0f096ac04e2418e4957bd649604b2
+  - path: staged/p1553_cartesian_kummer_rigidity_red_team.yaml
+    sha256: dec795cf4abcb14fd33b4e264dbe13eca168f504fc5557dfb6421bd04d99c14b
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md
+    sha256: 5f1bd9c12ca700074c9cd327f6539bc880ec60b27431dc5f34e23b0a12f6c68f
+  - path: ideas/artifacts/ECDLP-IDEA-001/exact_spectral_rank_density_gate.md
+    sha256: e572713a3910ef6a3e31ac360123aa8b5135c75d4210cbfb579e6831e9746fca
+  - path: ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md
+    sha256: 524a59c1728bcbea804ac4be42ace5a965b68a6332e85d941829b89e04fc4225
+  - path: ideas/artifacts/ECDLP-IDEA-098/p1515_r1_r11_independent_audit.md
+    sha256: 7e7609716f87b1b4df5ffc77406a912ad0303cc309ec1b84be42ebcc0d09539e
+process_guidance:
+  local_contract: ecdlp_index_calculus_state/experiment_contract_p1436_autoresearch_focus_enrichment.md
+  source_url: https://x.com/askalphaxiv/status/2076737985559822734
+  use: focus on a few decisive tests, resolve nonblocking ambiguity locally, and defer peripheral branches
+  evidentiary_role: workflow_only
+frozen_interface:
+  group_order: N=p^(1+o(1))
+  label_bound: B=N^(1/5)
+  pair_occurrences: B^2
+  pair_endpoint_support: S distinct Kummer classes
+  pair_endpoint_multiplicity: kappa=max pair occurrences in one endpoint class; S>=B^2/kappa
+  fifth_occurrences: B distinct Kummer classes with occurrence labels
+  map: nonconstant psi:P1->P1 of degree d; f=psi composed with x has degree 2d
+  branch_state: complete projective divisor D_(u,q)=[f(A+Q)]+[f(A-Q)]
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted miss or one completely verified signed occurrence-labelled source
+verified_statements:
+  - >-
+    For a fixed fifth label q, endpoint psi label, and complete branch divisor
+    D, at most d Kummer endpoint classes u share the indexed key
+    (q,psi(u),D). Hence the number of nonempty indexed headers is at least
+    S*B/d.
+  - >-
+    If S=Theta(B^2), fitting indexed headers beneath B^(9/4+o(1)) requires
+    d=Omega(B^(3/4-o(1))). This is a header floor, not a lower bound for every
+    implicit image constructor.
+  - >-
+    After erasing q, a complete divisor fiber contains at most 8d^2 signed
+    (A,Q) pairs and no more Kummer-class pairs. Thus divisor-only headers
+    number at least S*B/(8d^2).
+  - >-
+    Explicit all-preimage provenance contains S*B incidences. A full S*B
+    construction pass may instead retain one witness and an exact count per
+    header, so S*B is then setup work rather than persistent provenance. At
+    dense support both direct routes expose a B^3 charge, but no theorem here
+    excludes an oracle-free implicit algebraic image and inversion algorithm.
+  - >-
+    R11's independent selective-collision argument still forces
+    d=Omega(B^(1/2)) before a positive fraction of dense branch incidences can
+    be genuinely compressed.
+  - >-
+    Every separable degree-d isogeny with d<N is injective on the prime-order
+    subgroup G and on its Kummer classes. Thus ECFFT and quotient-isogeny maps
+    through degree O(B) give exact branching but no target-subgroup compression.
+  - >-
+    An auxiliary composite-torsion quotient control with d=B^(3/4) compresses
+    Theta(B^2) Kummer pair endpoints to Theta(B^(5/4)) labels and yields
+    Theta(B^(9/4)) indexed label/fifth states with exact branch composition.
+    Its source index has Theta(B^2) endpoint entries, Theta(B^(5/4)) quotient
+    representatives, and Theta(B^(3/4)) kernel data. Exact source recovery
+    enumerates and verifies d kernel-coset candidates within the online cap.
+    It fails the prime-order gate because its kernel intersects the source
+    subgroup nontrivially.
+  - >-
+    A degree-O(B) polynomial can collapse every endpoint and branch coordinate
+    on a known-multiple arithmetic-progression grid. Its fivefold endpoint
+    support is O(B), so uniform relation density is O(B/N) and B rows require
+    Omega(N) targets even under favorable rank assumptions.
+scoped_failures:
+  fifth_label_indexed_dense_headers_below_degree_B_three_quarters: state_over_cap
+  indexed_or_erased_explicit_preimage_payload_at_dense_support: B^3
+  full_incidence_pass_with_count_and_one_witness_at_dense_support: B^3_construction_work_not_persistent_state
+  literal_dense_endpoint_by_fifth_evaluation: B^3
+  degree_linear_arithmetic_progression_control: exact_compression_but_known_logs_and_density_failure
+  fixed_degree_rational_expansion_results: do_not_supply_growing_degree_source_faithful_router
+  separable_isogeny_or_ecfft_degree_below_N_on_prime_subgroup: injective_no_compression
+  composite_torsion_quotient_control: exact_transport_but_wrong_group_structure
+surviving_exceptions:
+  - fifth-label-erased implicit algebraic image and exact preimage inversion
+  - degree Omega(B^(1/2)) through O(B) list-specific rational maps
+  - non-Cartesian recursively constrained supports
+  - correction-carrying and arbitrary nonlinear arithmetic circuits
+  - the exact R10 rank-two sparse multiplicative-convolution control
+complexity_accounting:
+  pair_occurrence_state: B^(2+o(1))
+  indexed_headers: at least S*B/d
+  erased_headers: at least S*B/(8d^2)
+  explicit_preimage_payload: S*B
+  literal_construction: S*B
+  full_setup_and_state_cap: B^(9/4+o(1))
+  fresh_target_and_workspace_cap: B^(5/4+o(1))
+  conditional_parameters: setup B^s, state B^s_m, target work B^kappa, target workspace B^w, reciprocal density B^d_loss
+  conditional_lambda: max(s,1+d_loss+kappa,2)/5
+  conditional_mu: max(s_m,w,2)/5
+unproved_or_outside_scope:
+  - construction of the divisor image without enumerating S*B incidences
+  - exact source-deck membership and one-preimage inversion from an accepted state
+  - target action and every adaptive dyadic restriction on the implicit image
+  - a representation of the R10 rank-two control in the surviving grammar
+  - relation density, independent signed row rank, factor logs, and scalar-blind descent
+  - arbitrary nonlinear circuits and data structures
+deduplication:
+  - P1553 and P1551 own endpoint counting, Query2P1, signs, and source replay
+  - IDEA-001 owns endpoint-support rank and one-witness density accounting
+  - IDEA-057 and P1523 own global Kummer labels and canonical ECFFT screens
+  - P1515 owns nonlinear implicit target batches and list-specific routers
+  - IDEA-195 owns the non-Cartesian S_3 intertwiner residual
+primary_sources:
+  - url: https://arxiv.org/abs/1002.2554
+    use: fixed-degree rational-function expansion and exceptional-form comparison
+  - url: https://arxiv.org/abs/0806.0640
+    use: elliptic-curve sum-product comparison and hypothesis boundary
+  - url: https://arxiv.org/abs/0806.0409
+    use: Kummer-law and underlying-group reconstruction comparison
+  - url: https://arxiv.org/abs/2107.08473
+    use: ECFFT auxiliary-map comparison
+disposition: >-
+  REVISE_SCOPED_THEOREM__INDEXED_PSI_RESPECTING_COMPLETE_BRANCH_HEADERS_AT_LEAST_S_B_OVER_D__DENSE_STATE_CAP_FORCES_D_AT_LEAST_B_THREE_QUARTERS__ERASING_FIFTH_LABEL_GIVES_AT_MOST_8D_SQUARED_PREIMAGE_FIBER__EXPLICIT_PROVENANCE_OR_LITERAL_CONSTRUCTION_COSTS_S_B__DEGREE_LINEAR_STRUCTURED_COLLAPSE_EXISTS_BUT_HAS_KNOWN_LOGS_AND_DENSITY_FAILURE__IMPLICIT_IMAGE_AND_INVERSION_OPEN__NO_NEW_IDEA__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Derive or refute one oracle-free implicit algebraic image-and-inversion
+  algorithm for the fifth-label-erased complete divisor map on a frozen dense
+  pair support with d from B^(1/2) through O(B). It must avoid enumerating S*B
+  incidences, express the R10 rank-two control, meet B^(9/4) setup/state and
+  B^(5/4) fresh-target work/workspace for every adaptive child, invert one
+  accepted state to exact occurrence labels, and charge density, independent
+  rank, factor logs, and identical blind descent. A negative closes only this
+  frozen grammar; a positive remains model-bound until the complete ECDLP path
+  is proved.

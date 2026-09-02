@@ -1,0 +1,931 @@
+{
+  "checks": {
+    "all_recovered_points_publicly_project_to_prime_subgroup": true,
+    "direct_r60_report_digest_is_pinned": true,
+    "every_rank_one_fiber_is_a_unique_rational_point": true,
+    "four_rational_product_targets_lifted": true,
+    "marked_generators_and_t29_split_completely": true,
+    "r61_multiplication_matrix_digest_replays": true,
+    "t29_factor_lines_match_r60": true,
+    "t29_source_points_match_r60_without_curve_scan": true,
+    "t33_has_no_rational_source_points": true
+  },
+  "class_sum_scalars": [
+    46,
+    54
+  ],
+  "classification": [
+    "toy",
+    "exact-scan-free-factor-lift",
+    "model-bound",
+    "novelty-unverified"
+  ],
+  "cost_boundary": {
+    "claim_scope": "conditional lift after module import and precomputed fixed-class tensor and factor bases",
+    "conditional_lift_performs_inverse_discrete_log": false,
+    "conditional_lift_performs_subgroup_enumeration": false,
+    "curve_point_enumeration": false,
+    "expected_online_field_operations": "O(log p) for bounded-degree finite-field factorization, excluding bit costs",
+    "factor_base_linear_algebra_charged": false,
+    "factor_divisor_recovery": "factor two degree-three univariate polynomials over F_p",
+    "field_element_enumeration": false,
+    "import_time_forward_scalar_labelled_subgroup_table_built": true,
+    "import_time_setup_cost": "Theta(N) forward subgroup enumeration; uncharged and linearly invertible as a toy lookup table",
+    "projected_source_scalar_logs_charged": false,
+    "rank_one_lift": "nine quadratic 2x2 minors in three affine variables; constant-size Groebner basis",
+    "relation_rank_charged": false,
+    "restricted_factor_base_density_charged": false,
+    "source_pencil_generation_charged": false,
+    "target_descent_charged": false
+  },
+  "factor_bases": [
+    {
+      "blocks": [
+        [
+          0,
+          1,
+          45
+        ],
+        [
+          0,
+          2,
+          44
+        ],
+        [
+          1,
+          2,
+          43
+        ]
+      ],
+      "class_sum_scalar": 46,
+      "lines": [
+        [
+          1,
+          28,
+          171
+        ],
+        [
+          1,
+          31,
+          37
+        ],
+        [
+          1,
+          136,
+          117
+        ]
+      ],
+      "translation": 19
+    },
+    {
+      "blocks": [
+        [
+          0,
+          1,
+          53
+        ],
+        [
+          0,
+          2,
+          52
+        ],
+        [
+          1,
+          2,
+          51
+        ]
+      ],
+      "class_sum_scalar": 54,
+      "lines": [
+        [
+          1,
+          120,
+          189
+        ],
+        [
+          1,
+          74,
+          94
+        ],
+        [
+          1,
+          132,
+          158
+        ]
+      ],
+      "translation": 85
+    }
+  ],
+  "field_prime": 193,
+  "limits": [
+    "the lift is one finite toy conditioned on the precomputed fixed-class multiplication map and R60 pencil",
+    "importing the legacy module chain constructs a full forward scalar-labelled subgroup table in Theta(N) work; the conditional lift claim excludes and does not charge this setup",
+    "the marked source pencil was generated from scalar-labelled subgroup triples; that source-generation cost is not charged here",
+    "public projection returns subgroup points but not their scalar discrete logarithms",
+    "restricted factor-base density, relation rank, factor-base logs, and fresh-target descent remain absent",
+    "no generic-prime asymptotic, Shoup-bound improvement, or ECDLP breakthrough is claimed"
+  ],
+  "pass": true,
+  "prime_subgroup_order": 103,
+  "r61_pencil_product_lifts": [
+    {
+      "all_six_source_points_rational": true,
+      "factors": [
+        {
+          "intersection_factorization": {
+            "coefficients_low_to_high": [
+              109,
+              84,
+              1,
+              192
+            ],
+            "factors": [
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  85
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  108
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  192
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              }
+            ],
+            "rational_roots_with_multiplicity": [
+              1,
+              85,
+              108
+            ],
+            "unit": 192,
+            "variable": "x"
+          },
+          "line": [
+            1,
+            192,
+            43
+          ],
+          "publicly_projected_subgroup_points": [
+            [
+              84,
+              128
+            ],
+            [
+              189,
+              160
+            ],
+            [
+              0,
+              179
+            ]
+          ],
+          "rational_source_point_count": 3,
+          "source_points": [
+            [
+              84,
+              128
+            ],
+            [
+              189,
+              160
+            ],
+            [
+              0,
+              179
+            ]
+          ],
+          "translation": 19
+        },
+        {
+          "intersection_factorization": {
+            "coefficients_low_to_high": [
+              181,
+              81,
+              1,
+              166
+            ],
+            "factors": [
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  119
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  132
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  185
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              }
+            ],
+            "rational_roots_with_multiplicity": [
+              8,
+              61,
+              74
+            ],
+            "unit": 166,
+            "variable": "x"
+          },
+          "line": [
+            1,
+            42,
+            164
+          ],
+          "publicly_projected_subgroup_points": [
+            [
+              83,
+              26
+            ],
+            [
+              174,
+              132
+            ],
+            [
+              169,
+              42
+            ]
+          ],
+          "rational_source_point_count": 3,
+          "source_points": [
+            [
+              83,
+              26
+            ],
+            [
+              174,
+              132
+            ],
+            [
+              169,
+              42
+            ]
+          ],
+          "translation": 85
+        }
+      ],
+      "label": "t=0",
+      "rank_one_lift": {
+        "affine_preimage_free_columns": [
+          5,
+          6,
+          7
+        ],
+        "affine_preimage_pivots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          8
+        ],
+        "groebner_basis": [
+          "s0 - 87",
+          "s1 + 7",
+          "s2 - 13"
+        ],
+        "groebner_basis_size": 3,
+        "left_coordinates": [
+          1,
+          26,
+          136
+        ],
+        "rank_one_minor_count": 9,
+        "right_coordinates": [
+          1,
+          136,
+          58
+        ],
+        "tensor": [
+          78,
+          186,
+          85,
+          98,
+          11,
+          87,
+          186,
+          13,
+          173
+        ],
+        "unique_rational_solution": [
+          87,
+          186,
+          13
+        ]
+      },
+      "target_section": [
+        1,
+        122,
+        13,
+        166,
+        141,
+        180
+      ]
+    },
+    {
+      "all_six_source_points_rational": true,
+      "factors": [
+        {
+          "intersection_factorization": {
+            "coefficients_low_to_high": [
+              0,
+              50,
+              1,
+              1
+            ],
+            "factors": [
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  0
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  52
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  142
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              }
+            ],
+            "rational_roots_with_multiplicity": [
+              0,
+              51,
+              141
+            ],
+            "unit": 1,
+            "variable": "x"
+          },
+          "line": [
+            1,
+            81,
+            24
+          ],
+          "publicly_projected_subgroup_points": [
+            [
+              108,
+              42
+            ],
+            [
+              30,
+              64
+            ],
+            [
+              42,
+              16
+            ]
+          ],
+          "rational_source_point_count": 3,
+          "source_points": [
+            [
+              108,
+              42
+            ],
+            [
+              105,
+              80
+            ],
+            [
+              44,
+              82
+            ]
+          ],
+          "translation": 19
+        },
+        {
+          "intersection_factorization": {
+            "coefficients_low_to_high": [
+              24,
+              86,
+              1,
+              32
+            ],
+            "factors": [
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  8
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  28
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  151
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              }
+            ],
+            "rational_roots_with_multiplicity": [
+              42,
+              165,
+              185
+            ],
+            "unit": 32,
+            "variable": "x"
+          },
+          "line": [
+            1,
+            136,
+            11
+          ],
+          "publicly_projected_subgroup_points": [
+            [
+              117,
+              23
+            ],
+            [
+              129,
+              156
+            ],
+            [
+              144,
+              117
+            ]
+          ],
+          "rational_source_point_count": 3,
+          "source_points": [
+            [
+              117,
+              23
+            ],
+            [
+              129,
+              156
+            ],
+            [
+              144,
+              117
+            ]
+          ],
+          "translation": 85
+        }
+      ],
+      "label": "t=29",
+      "rank_one_lift": {
+        "affine_preimage_free_columns": [
+          5,
+          6,
+          7
+        ],
+        "affine_preimage_pivots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          8
+        ],
+        "groebner_basis": [
+          "s0 + 14",
+          "s1 + 63",
+          "s2 + 63"
+        ],
+        "groebner_basis_size": 3,
+        "left_coordinates": [
+          1,
+          111,
+          151
+        ],
+        "rank_one_minor_count": 9,
+        "right_coordinates": [
+          1,
+          1,
+          77
+        ],
+        "tensor": [
+          98,
+          98,
+          19,
+          70,
+          70,
+          179,
+          130,
+          130,
+          167
+        ],
+        "unique_rational_solution": [
+          179,
+          130,
+          130
+        ]
+      },
+      "target_section": [
+        30,
+        70,
+        94,
+        62,
+        121,
+        140
+      ]
+    },
+    {
+      "all_six_source_points_rational": false,
+      "factors": [
+        {
+          "intersection_factorization": {
+            "coefficients_low_to_high": [
+              130,
+              98,
+              1,
+              6
+            ],
+            "factors": [
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  161,
+                  145,
+                  86
+                ],
+                "degree": 3,
+                "multiplicity": 1
+              }
+            ],
+            "rational_roots_with_multiplicity": [],
+            "unit": 6,
+            "variable": "x"
+          },
+          "line": [
+            1,
+            103,
+            43
+          ],
+          "publicly_projected_subgroup_points": [],
+          "rational_source_point_count": 0,
+          "source_points": [],
+          "translation": 19
+        },
+        {
+          "intersection_factorization": {
+            "coefficients_low_to_high": [
+              4,
+              53,
+              1,
+              6
+            ],
+            "factors": [
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  161,
+                  41,
+                  65
+                ],
+                "degree": 3,
+                "multiplicity": 1
+              }
+            ],
+            "rational_roots_with_multiplicity": [],
+            "unit": 6,
+            "variable": "x"
+          },
+          "line": [
+            1,
+            103,
+            117
+          ],
+          "publicly_projected_subgroup_points": [],
+          "rational_source_point_count": 0,
+          "source_points": [],
+          "translation": 85
+        }
+      ],
+      "label": "t=33",
+      "rank_one_lift": {
+        "affine_preimage_free_columns": [
+          5,
+          6,
+          7
+        ],
+        "affine_preimage_pivots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          8
+        ],
+        "groebner_basis": [
+          "s0 - 35",
+          "s1 + 22",
+          "s2 + 73"
+        ],
+        "groebner_basis_size": 3,
+        "left_coordinates": [
+          1,
+          185,
+          55
+        ],
+        "rank_one_minor_count": 9,
+        "right_coordinates": [
+          1,
+          170,
+          23
+        ],
+        "tensor": [
+          154,
+          125,
+          68,
+          119,
+          158,
+          35,
+          171,
+          120,
+          73
+        ],
+        "unique_rational_solution": [
+          35,
+          171,
+          120
+        ]
+      },
+      "target_section": [
+        34,
+        156,
+        12,
+        41,
+        65,
+        28
+      ]
+    },
+    {
+      "all_six_source_points_rational": true,
+      "factors": [
+        {
+          "intersection_factorization": {
+            "coefficients_low_to_high": [
+              82,
+              124,
+              1,
+              28
+            ],
+            "factors": [
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  2
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  19
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  110
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              }
+            ],
+            "rational_roots_with_multiplicity": [
+              83,
+              174,
+              191
+            ],
+            "unit": 28,
+            "variable": "x"
+          },
+          "line": [
+            1,
+            92,
+            34
+          ],
+          "publicly_projected_subgroup_points": [
+            [
+              58,
+              109
+            ],
+            [
+              47,
+              47
+            ],
+            [
+              186,
+              178
+            ]
+          ],
+          "rational_source_point_count": 3,
+          "source_points": [
+            [
+              58,
+              109
+            ],
+            [
+              47,
+              47
+            ],
+            [
+              186,
+              178
+            ]
+          ],
+          "translation": 19
+        },
+        {
+          "intersection_factorization": {
+            "coefficients_low_to_high": [
+              163,
+              16,
+              1,
+              65
+            ],
+            "factors": [
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  7
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  9
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              },
+              {
+                "coefficients_high_to_low": [
+                  1,
+                  82
+                ],
+                "degree": 1,
+                "multiplicity": 1
+              }
+            ],
+            "rational_roots_with_multiplicity": [
+              111,
+              184,
+              186
+            ],
+            "unit": 65,
+            "variable": "x"
+          },
+          "line": [
+            1,
+            163,
+            136
+          ],
+          "publicly_projected_subgroup_points": [
+            [
+              164,
+              158
+            ],
+            [
+              8,
+              97
+            ],
+            [
+              125,
+              5
+            ]
+          ],
+          "rational_source_point_count": 3,
+          "source_points": [
+            [
+              164,
+              158
+            ],
+            [
+              8,
+              97
+            ],
+            [
+              125,
+              5
+            ]
+          ],
+          "translation": 85
+        }
+      ],
+      "label": "t=infinity",
+      "rank_one_lift": {
+        "affine_preimage_free_columns": [
+          5,
+          6,
+          7
+        ],
+        "affine_preimage_pivots": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          8
+        ],
+        "groebner_basis": [
+          "s0 - 4",
+          "s1 + 69",
+          "s2 + 81"
+        ],
+        "groebner_basis_size": 3,
+        "left_coordinates": [
+          1,
+          178,
+          64
+        ],
+        "rank_one_minor_count": 9,
+        "right_coordinates": [
+          1,
+          169,
+          136
+        ],
+        "tensor": [
+          14,
+          50,
+          167,
+          176,
+          22,
+          4,
+          124,
+          112,
+          73
+        ],
+        "unique_rational_solution": [
+          4,
+          124,
+          112
+        ]
+      },
+      "target_section": [
+        1,
+        118,
+        76,
+        43,
+        179,
+        165
+      ]
+    }
+  ],
+  "result": {
+    "asymptotic_relation_algorithm": false,
+    "breakthrough": false,
+    "factor_base_logs": false,
+    "fresh_target_action": false,
+    "independent_rank": false,
+    "public_cofactor_projection_available_without_dlp": true,
+    "r10_queried_coefficients": false,
+    "r60_parameter_and_factor_recovery_without_field_scan": true,
+    "r60_six_source_points_recovered_without_curve_scan": true,
+    "scalar_blind_descent": false,
+    "shoup_bound_improvement": false,
+    "source_scalar_logs_known_without_dlp": false
+  },
+  "schema": "p1553.degree_six_scan_free_factor_lift.r62.v1"
+}

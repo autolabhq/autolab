@@ -1,0 +1,324 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "log_B_group_order": {
+      "decimal": 5.0,
+      "exact": "5"
+    },
+    "rho_exponent_B": {
+      "decimal": 2.5,
+      "exact": "5/2"
+    },
+    "setup_state_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "grid_audit": {
+    "all_setup_eligible_rows_above_rho": true,
+    "candidate_count": 253368,
+    "denominator": 48,
+    "finite_grid_receives_proof_credit": false,
+    "minimum_relation_collection_exponent_B": {
+      "decimal": 2.875,
+      "exact": "23/8"
+    },
+    "minimum_relation_collection_row": {
+      "alpha_A_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "beta_C_exponent_B": {
+        "decimal": 0.125,
+        "exact": "1/8"
+      },
+      "candidate_work_credit": false,
+      "density_adjusted_fresh_exponent_B": {
+        "decimal": 2.75,
+        "exact": "11/4"
+      },
+      "density_retry_exponent_B": {
+        "decimal": 2.625,
+        "exact": "21/8"
+      },
+      "enumerated_c_arity_r": 0,
+      "enumerated_c_query_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "meaningful_relation_rank_exponent_B": {
+        "decimal": 0.125,
+        "exact": "1/8"
+      },
+      "one_c_branch_attempt_exponent_B": {
+        "decimal": 0.125,
+        "exact": "1/8"
+      },
+      "relation_arity_m": 19,
+      "relation_collection_exponent_B": {
+        "decimal": 2.875,
+        "exact": "23/8"
+      },
+      "setup_bound_applies": true,
+      "setup_cap_lower_bound_B": {
+        "decimal": 2.875,
+        "exact": "23/8"
+      },
+      "setup_eligible": true,
+      "source_body_exponent_B": {
+        "decimal": 2.375,
+        "exact": "19/8"
+      },
+      "stored_c_arity_s": 18,
+      "stored_c_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "strictly_above_rho_if_setup_eligible": true,
+      "supply_identity_exact": true,
+      "supply_identity_lower_bound_B": {
+        "decimal": 2.875,
+        "exact": "23/8"
+      },
+      "supply_term_at_least_group_order": true
+    },
+    "relation_arity_range": [
+      3,
+      20
+    ],
+    "setup_eligible_candidate_count": 97453,
+    "theorem_violation_count": 0
+  },
+  "model": {
+    "deck_exponents": "|A|=B^alpha, |C|=B^beta, 0<=alpha<=beta",
+    "density_retry": "delta=max(0,5-m(alpha+beta))",
+    "meaningful_relation_rank_exponent_B": "beta",
+    "one_c_branch": "enumerate A_m and one distinguished C, then query C_(m-1) by stored C_s and enumerated C_r, s+r=m-1",
+    "relation": "mF=mA+mC"
+  },
+  "routes": [
+    {
+      "covered_by_theorem": true,
+      "inside_below_rho_relation_collection": false,
+      "route_id": "explicit_occurrence_c_s_table"
+    },
+    {
+      "covered_by_theorem": true,
+      "route_id": "iid_random_deck_distinct_endpoint_c_s_table",
+      "setup_forces_support_over_group_ratio": "B^(s*beta-5)<=B^(-11/4)",
+      "stored_support_exponent_B": "s*beta",
+      "whp_occurrence_scale_support": true
+    },
+    {
+      "covered_by_iid_theorem": false,
+      "route_id": "collision_compressed_filtered_deck_table",
+      "status": "open_requires_actual_support_and_source_receipts"
+    },
+    {
+      "covered_by_theorem": false,
+      "exact_circuit_constructed": false,
+      "general_lower_bound_claimed": false,
+      "route_id": "target_specialized_nonoccurrence_torus_c5_circuit",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_explicit_split_global_rebalance_cost_ledger.r122.v1",
+  "selected_controls": [
+    {
+      "alpha_A_exponent_B": {
+        "decimal": 0.08333333333333333,
+        "exact": "1/12"
+      },
+      "beta_C_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "candidate_work_credit": false,
+      "density_adjusted_fresh_exponent_B": {
+        "decimal": 2.75,
+        "exact": "11/4"
+      },
+      "density_retry_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "enumerated_c_arity_r": 2,
+      "enumerated_c_query_exponent_B": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "meaningful_relation_rank_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "one_c_branch_attempt_exponent_B": {
+        "decimal": 2.75,
+        "exact": "11/4"
+      },
+      "relation_arity_m": 6,
+      "relation_collection_exponent_B": {
+        "decimal": 3.5,
+        "exact": "7/2"
+      },
+      "setup_bound_applies": true,
+      "setup_cap_lower_bound_B": {
+        "decimal": 3.5,
+        "exact": "7/2"
+      },
+      "setup_eligible": true,
+      "source_body_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "stored_c_arity_s": 3,
+      "stored_c_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "strictly_above_rho_if_setup_eligible": true,
+      "supply_identity_exact": true,
+      "supply_identity_lower_bound_B": {
+        "decimal": 3.5,
+        "exact": "7/2"
+      },
+      "supply_term_at_least_group_order": true
+    },
+    {
+      "alpha_A_exponent_B": {
+        "decimal": 0.4,
+        "exact": "2/5"
+      },
+      "beta_C_exponent_B": {
+        "decimal": 0.6,
+        "exact": "3/5"
+      },
+      "candidate_work_credit": false,
+      "density_adjusted_fresh_exponent_B": {
+        "decimal": 3.2,
+        "exact": "16/5"
+      },
+      "density_retry_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "enumerated_c_arity_r": 1,
+      "enumerated_c_query_exponent_B": {
+        "decimal": 0.6,
+        "exact": "3/5"
+      },
+      "meaningful_relation_rank_exponent_B": {
+        "decimal": 0.6,
+        "exact": "3/5"
+      },
+      "one_c_branch_attempt_exponent_B": {
+        "decimal": 3.2,
+        "exact": "16/5"
+      },
+      "relation_arity_m": 5,
+      "relation_collection_exponent_B": {
+        "decimal": 3.8,
+        "exact": "19/5"
+      },
+      "setup_bound_applies": true,
+      "setup_cap_lower_bound_B": {
+        "decimal": 3.35,
+        "exact": "67/20"
+      },
+      "setup_eligible": true,
+      "source_body_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "stored_c_arity_s": 3,
+      "stored_c_state_exponent_B": {
+        "decimal": 1.8,
+        "exact": "9/5"
+      },
+      "strictly_above_rho_if_setup_eligible": true,
+      "supply_identity_exact": true,
+      "supply_identity_lower_bound_B": {
+        "decimal": 3.8,
+        "exact": "19/5"
+      },
+      "supply_term_at_least_group_order": true
+    },
+    {
+      "alpha_A_exponent_B": {
+        "decimal": 0.025,
+        "exact": "1/40"
+      },
+      "beta_C_exponent_B": {
+        "decimal": 0.475,
+        "exact": "19/40"
+      },
+      "candidate_work_credit": false,
+      "density_adjusted_fresh_exponent_B": {
+        "decimal": 3.1,
+        "exact": "31/10"
+      },
+      "density_retry_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "enumerated_c_arity_r": 5,
+      "enumerated_c_query_exponent_B": {
+        "decimal": 2.375,
+        "exact": "19/8"
+      },
+      "meaningful_relation_rank_exponent_B": {
+        "decimal": 0.475,
+        "exact": "19/40"
+      },
+      "one_c_branch_attempt_exponent_B": {
+        "decimal": 3.1,
+        "exact": "31/10"
+      },
+      "relation_arity_m": 10,
+      "relation_collection_exponent_B": {
+        "decimal": 3.575,
+        "exact": "143/40"
+      },
+      "setup_bound_applies": true,
+      "setup_cap_lower_bound_B": {
+        "decimal": 3.225,
+        "exact": "129/40"
+      },
+      "setup_eligible": true,
+      "source_body_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "stored_c_arity_s": 4,
+      "stored_c_state_exponent_B": {
+        "decimal": 1.9,
+        "exact": "19/10"
+      },
+      "strictly_above_rho_if_setup_eligible": true,
+      "supply_identity_exact": true,
+      "supply_identity_lower_bound_B": {
+        "decimal": 3.575,
+        "exact": "143/40"
+      },
+      "supply_term_at_least_group_order": true
+    }
+  ],
+  "semantic_dedup": {
+    "nearby_lanes": [
+      "R115 relation-arity/factor-base envelope",
+      "R118 m=6 one-C branch and explicit split theorem",
+      "R119 iid C5 output-support theorem",
+      "R121 exact multiplicative C2|C3 torus split"
+    ],
+    "new_idea_id_claimed": false,
+    "r122_distinct_scope": "relation-collection lower bound for every arity after charging meaningful rank and the setup-limited stored C_s side"
+  },
+  "theorem": {
+    "all_fixed_arities_and_positive_beta_covered": true,
+    "combined_lower_bound": "L>=5+beta-s*beta>=11/4+beta",
+    "relation_collection_exponent": "L=delta+m*alpha+(r+2)*beta",
+    "rho_gap": "L-5/2>=1/4+beta>1/4",
+    "setup_condition": "s*beta<=9/4",
+    "supply_identity": "L=(delta+m(alpha+beta))+(1-s)*beta",
+    "supply_lower_bound": "delta+m(alpha+beta)>=5"
+  }
+}

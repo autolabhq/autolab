@@ -1,0 +1,67 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R24-DISTINGUISHED-BRANCH-VALUE-MASS-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T05:31:21Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R24 is a new scoped counting
+  theorem requiring independent review. It closes only compression attributed
+  to a prospectively distinguished value stratum smaller than S/d.
+bindings:
+  r23_gate_sha256: de9a0a496fc6696ed6e976351476c56262484124c8c7d7cc2cdbddd16a6cc184
+  r23_bundle_hash_list_sha256: 29bfdbeca9cd14a579f134ca2b5926e3fb4858f13455e1d8dfc066cbcb1008da
+  r23_staging_receipt_sha256: 5239f8c910e0d83b26eea5aa80ca6ef63bc58639b938c4b070cc32f365d47bde
+  r24_gate_sha256: dd9b27fa5114e2121463612f5afaf09db12de30a0a0c4397f1dc37aafac1e99f
+  r24_parent_report_sha256: ad05866c6a61717fbbc9e25ab41adb06d37bc836b7f211a82bb240bd6f57dcfb
+  r24_artifact_index_sha256: 222a5ab54e08257eaec1bd9e24def3e2b0722098ff3720098590a4adcf789314
+  r24_bundle_hash_list_sha256: 070027b38243a269f55604ac6b054ee05fca49da5358d89b3de0da8418dcabbc
+result:
+  classification: scoped_small_distinguished_alphabet_mass_negative
+  distinguished_value_count: r
+  exact_kummer_preimage_upper_bound: d*r
+  exact_geometric_source_mass_upper_bound: 2*L*d*r
+  relative_source_mass_upper_bound: 2*d*r/S
+  r_little_o_S_over_d_global_compression: impossible_in_frozen_mechanism
+  constant_zero_or_pole_alphabet: asymptotically_vanishing_mass
+  r_theta_S_over_d: not_classified
+  complete_pair_collision_identity: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r24_hash_list: pass
+  r24_parent_yaml_parse: pass
+  exact_preimage_and_translation_count_checked: pass
+  clean_temporary_replay_with_r16_through_r24_gates_and_r24_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T05_31_21Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the theorem closes only compression attributed to the special stratum
+  - a growing alphabet r=Omega(S/d)=Omega(B) survives the mass gate
+  - additive energy and approximate translation stability remain open
+  - heavy occurrence weights receive no independent-column credit
+  - no fresh target, R10, density, rank, factor logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Analyze r=Theta(S/d): require a prospective C, complete preimage Z_C, and
+  fifth deck Q for which Theta(SL) sources have both branches in Z_C and the
+  complete keys supply Omega(SLd) collision mass, exact sources, fresh
+  targets, and R10 without scalar progressions, adaptive fit, hidden factors,
+  rank loss, or an SL table.

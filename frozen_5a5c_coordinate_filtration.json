@@ -1,0 +1,43 @@
+{
+  "candidate_scalar_labels_consumed": false,
+  "canonical_source_rule": "lexicographically first weighted multiset source per attained endpoint, frozen before filter outcomes",
+  "filters": [
+    {
+      "definition": "x(P) mod m, identity mapped to 0",
+      "moduli": [
+        2,
+        4,
+        8
+      ],
+      "name": "x_residue"
+    },
+    {
+      "definition": "y(P) mod m, identity mapped to 0",
+      "moduli": [
+        2,
+        4,
+        8
+      ],
+      "name": "y_residue"
+    },
+    {
+      "definition": "SHA256(affine encoding of P) mod m",
+      "moduli": [
+        2,
+        4,
+        8
+      ],
+      "name": "encoding_hash"
+    }
+  ],
+  "partial_split": {
+    "a_atom_count": 2,
+    "c_atom_count": 3,
+    "complement_exponent_B": 2.4000000000000004,
+    "partial_exponent_B": 2.5999999999999996
+  },
+  "schema": "p1553.frozen_5a5c_coordinate_filtration.r83.v1",
+  "source_geometry": "R82 F=A+C with u=B^(2/5), v=B^(3/5)",
+  "target_coupling": "bucket(partial)-bucket(target) mod m",
+  "verifier_labels_used_to_index_attained_targets_only": true
+}

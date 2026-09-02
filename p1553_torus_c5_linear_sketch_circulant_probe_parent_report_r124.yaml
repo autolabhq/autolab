@@ -1,0 +1,111 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-LINEAR-SKETCH-CIRCULANT-R124-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_translated_query_identity_and_scoped_linear_sketch_rank_theorem
+run_count: 1
+status: coupled_nonlinear_target_data_structure_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - circulant
+  - linear-sketch
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R90-R114-R121-R123
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether universal target-independent linear measurements can compress
+  the translated C3 against C2 exact-count query family below the frozen
+  torus C5 setup cap.
+inputs:
+  - path: p1553_torus_c5_fourier_product_resultant_probe_r123.py
+    sha256: fb18e752bac3b39bef9d7aa235decdb5913d7de8ff39c6c05c661a54951ba326
+  - path: p1553_torus_c5_fourier_product_resultant_probe_report_r123.json
+    sha256: 9d7c4bf836e106202526233038409bdbbae704632df16b4da84453cc05eb2870
+  - path: frozen_torus_c5_fourier_product_resultant.json
+    sha256: f836bb2301cb472197aa26705e2bc8edd6f67d98447a718dffc2f4f935caf9f4
+  - path: torus_c5_fourier_product_resultant_cost_ledger.json
+    sha256: cd53e6948d00d5befa7598e6f5b4f1fdbc1295c6182f979e3a68ec2652dce72a
+  - path: torus_c5_fourier_product_resultant_replay.json
+    sha256: efb3425ffada1ceab062a3667688833e9f05c06c6dbba011b44afc9b43dff06b
+  - path: torus_c5_fourier_product_resultant_controls.json
+    sha256: c3ab2d7ed113d231df174f689ac7efca353e0016c0e091bbc67e5d79e97912d4
+  - path: factor_logs_and_identical_descent_r123.json
+    sha256: 1a967d9b7fb6b9e10563bf242d390cff83b6ee5f238b7bd453ab9a2f4b1623a7
+  - path: p1553_torus_c5_fourier_product_resultant_probe_gate_r123.md
+    sha256: 1b0711d92aeee1a1a4bb2208cdbc772d8a07e1dff14b423803e75f1bd859733f
+  - path: p1553_torus_c5_fourier_product_resultant_probe_parent_report_r123.yaml
+    sha256: 23bb3ca35ea47189f1e5436d8caaec09cb5ace3c6ced214db9046103b1068bea
+  - path: p1553_m6_small_k_multiplicative_c5_moment_torus_probe_gate_r121.md
+    sha256: 9266e3655a3f4176280834ec91c897cc7d30274382df6e197628af37bae71309
+  - path: p1553_5a5c_transposed_nonuniform_c5_leaf_generator_probe_gate_r114.md
+    sha256: 6574145a6d67ec4e55a8bf0cf90c3a0c9f858aa4cddbfd7e9a733c1033b3a3da
+  - path: p1553_5a5c_nonlocal_moment_hankel_translation_probe_gate_r90.md
+    sha256: b1618f6a354b995db01fbbc7aeeb69df6ebb5248b5c558bc4c72d87ce523897b
+artifacts:
+  - path: p1553_torus_c5_linear_sketch_circulant_probe_r124.py
+    sha256: c3aabfe9d2ce8553c3facdc7fcf2f8b669b09ec48a6144772068f264e4ab012d
+  - path: p1553_torus_c5_linear_sketch_circulant_probe_report_r124.json
+    sha256: 99df2561ba0a07506f36c67d7152c299c6954272508eca1035ea3cdbe061dc6d
+  - path: frozen_torus_c5_linear_sketch_circulant.json
+    sha256: 129aac9bf7868c3305ef38d2af4443d2c6e8227f75f54b8b1aa09a1b4a323334
+  - path: torus_c5_linear_sketch_circulant_cost_ledger.json
+    sha256: b8b5e44c76b7abb85b9f32acf08a1ebc00ce6a5729710975f7eb3362d40b906f
+  - path: torus_c5_linear_sketch_circulant_replay.json
+    sha256: 162d813653f83c782ec69334d6876f1bf6bf2cab9a4d1a9d87e1ff768110e094
+  - path: torus_c5_linear_sketch_circulant_controls.json
+    sha256: 87011644cd14261d3f0afd45d367a18a39b484cdfc9b06a91de1e4812e07dfc2
+  - path: factor_logs_and_identical_descent_r124.json
+    sha256: dc170b78fc8460a65709fb3d3537d56571159f68e72c8b9b24c225b3c15b0e7a
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_linear_sketch_circulant_probe_r124.py
+    sha256: 1fc02a49f7e9b6b745d9882fe087f948c23d17b365b8de7b77d861c650eac973
+  - path: p1553_torus_c5_linear_sketch_circulant_probe_gate_r124.md
+    sha256: 30a3ce3036bab96731430a662cde3ded8e63b9fe1326942a5091148b3e939938
+verified_statements:
+  - >-
+    Ordered C5 counts are translated inner products between the C3
+    occurrence vector and the C2 occurrence kernel.
+  - >-
+    A universal linear sketch with linear exact-count decoding for every
+    target needs at least the rank of the C2-kernel circulant.
+  - >-
+    Over characteristic zero, a proper nonempty binary deck on a
+    prime-order cyclic group has nonzero Fourier coefficients in every mode,
+    so the C2-kernel circulant has full rank q.
+  - >-
+    The resulting universal linear-sketch state exponent is B^5, above the
+    B^(9/4) setup cap.
+  - >-
+    Five finite controls verify direct C5 counts, translated C3-C2 queries,
+    full rational circulant rank, and selected full finite-field spectra.
+scoped_failures:
+  full_translated_query_table: rejected_B5_state
+  universal_linear_c3_sketch_with_linear_count_decoder: rejected_B5_state
+  represented_c3_hash_then_c2_scan: rejected_B3O2_query
+  coupled_nonlinear_membership_data_structure: open
+  nonlinear_membership_only_decoder: open
+  adaptive_cell_probe_or_ram_structure: open
+  general_arithmetic_circuit_lower_bound: not_claimed
+  five_source_locator: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 12
+  total_obligations: 20
+  lane_admitted: false
+next_action: >-
+  Freeze one target-specialized nonlinear zero-test for the coupled pair
+  (u^(*2),u^(*3)); require exact empty semantics, five projective sources,
+  B^(9/4+o(1)) state, polylogarithmic arbitrary-target work, no field DLP,
+  and complete rank, logs, identical descent, memory, field-operation, and
+  bit costs.

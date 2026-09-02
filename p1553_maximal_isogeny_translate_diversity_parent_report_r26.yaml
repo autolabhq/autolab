@@ -1,0 +1,103 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-MAXIMAL-ISOGENY-TRANSLATE-DIVERSITY-R26-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-057
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: global_algebraic_translate_law_for_separable_even_elliptic_function
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE
+summary: >-
+  Let H_f be the translation stabilizer of a separable degree-m<N even
+  function f on E, let e=|H_f|, and let c=m/e be the degree after its maximal
+  isogeny quotient. For every nonzero T in the prime-order subgroup,
+  [k(E):k(f(R),f(R+T))]=e and the irreducible translate correspondence has
+  bidegree (c,c). The isogeny quotient is injective on the prime subgroup, so
+  r selected values contain at most c*r subgroup points. A B^2 pullback over
+  B values therefore forces c=Omega(B), excluding a globally constant-degree
+  addition-law compressor. Finite exceptional-value saturation remains open.
+inputs:
+  - path: staged/p1553_quadratic_intermediate_field_gate_r21.md
+    sha256: ad8d9e83b919ea92c98eefcb657831f01378b6760d49b2aaea0a892d6ed52be1
+  - path: staged/p1553_random_fifth_deck_correlation_gate_r23.md
+    sha256: de9a0a496fc6696ed6e976351476c56262484124c8c7d7cc2cdbddd16a6cc184
+  - path: staged/p1553_distinguished_branch_value_mass_gate_r24.md
+    sha256: dd9b27fa5114e2121463612f5afaf09db12de30a0a0c4397f1dc37aafac1e99f
+  - path: staged/p1553_popular_difference_complete_triple_gate_r25.md
+    sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+  - path: staged/p1553_popular_difference_complete_triple_parent_report_r25.yaml
+    sha256: 6996b1b5c86fcee41d4f18364a02cba4f99a75658ec29f3f42ff46f9188d1266
+  - path: staged/p1553_r25_bundle.sha256
+    sha256: f0935e23417296866b1f31bc8c9b8321cd31d3dc472f295464293ece74c65416
+  - path: staged/p1553_r25_staging_receipt.yaml
+    sha256: 2c5819dd6f1226637e46116c5ae0df2629e1c31f1a62c34852b6706d55a67a1a
+output:
+  path: staged/p1553_maximal_isogeny_translate_diversity_gate_r26.md
+  sha256: 0f9d0d8f7d2cbc2b73ba848f252f0f0d9a1d2b870411c5610725ff33c67b364c
+frozen_parameters:
+  elliptic_function_degree: m<N
+  kummer_map_degree: d=m/2
+  translation_stabilizer: H_f
+  maximal_isogeny_degree: e=|H_f|
+  outer_degree: c=m/e
+  characteristic: greater_than_m_and_3
+theorems:
+  - >-
+    A genus-zero common quotient of f(R) and f(R+T) would make the degree-m
+    pole divisor linearly equivalent to its T-translate and force m*T=O,
+    impossible for nonzero T in the prime-order subgroup.
+  - >-
+    Every genus-one common quotient is an isogeny carrying f, so its kernel is
+    contained in H_f; invariance under H_f gives the reverse degree inequality.
+  - >-
+    Therefore [k(E):k(f(R),f(R+T))]=|H_f| for every nonzero subgroup T.
+  - >-
+    The irreducible translate correspondence has bidegree (c,c), where
+    c=m/|H_f|.
+  - >-
+    Since H_f intersects the prime subgroup trivially, r selected values have
+    at most c*r prime-subgroup preimages.
+  - >-
+    A Theta(B^2) pullback over Theta(B) values forces c=Omega(B), excluding a
+    global o(B)-degree translate law for the mass-admissible support.
+positive_control:
+  large_isogeny_constant_outer_degree: passes_low_degree_addition_law
+  prime_subgroup_pullback_mass: fails_by_isogeny_injectivity
+result:
+  classification: scoped_global_low_degree_addition_law_negative
+  translate_pair_degree: exact_translation_stabilizer_size
+  translate_correspondence_bidegree: exact_outer_degree_c
+  prime_subgroup_value_pullback_bound: c*r
+  constant_degree_lattes_support: asymptotically_insufficient
+  B2_pullback_outer_degree: Omega(B)
+  finite_exceptional_value_intersection: open
+  complete_triple_image_B2: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - the theorem requires separability and characteristic greater than m
+  - finite selected exceptional values are not classified
+  - degree Omega(B) can still have a succinct arithmetic circuit
+  - no complete image constructor or complete factor-base-to-target path
+deduplication:
+  - R21 owns shared complete-branch quadratic intermediate fields
+  - R24 owns distinguished-value source mass
+  - R25 owns popular differences, energy, and full-key collision budget
+  - R26 adds maximal-isogeny translate degree and prime-subgroup pullback bounds
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE__EVERY_NONZERO_PRIME_SUBGROUP_TRANSLATE_PAIR_HAS_DEGREE_EXACTLY_THE_TRANSLATION_STABILIZER__OUTER_TRANSLATE_CORRESPONDENCE_BIDEGREE_C_C__R_VALUES_HAVE_AT_MOST_C_R_SUBGROUP_PREIMAGES__B2_PULLBACK_OVER_B_VALUES_FORCES_C_OMEGA_B__GLOBAL_LOW_DEGREE_LATTES_LAW_FAILS_SUPPORT_MASS__FINITE_EXCEPTIONAL_SATURATION_OPEN__NO_TARGET__NO_R10__NO_DENSITY_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Classify whether B selected values can be simultaneously exceptional for B
+  distinct degree-Omega(B) prime-subgroup translate correspondences while
+  their B^2 pullback points have B popular shifts and only O(B^2) complete
+  triples; require exact sources, fresh target, R10, and full costs.

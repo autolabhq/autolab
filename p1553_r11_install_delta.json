@@ -1,0 +1,195 @@
+{
+  "schema": "crypto.autoresearch.merge_install_delta.v1",
+  "bundle_id": "P1553-R11-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compose_compare_and_merge",
+  "base_bundle": {
+    "bundle_id": "P1553-R10-20260719",
+    "manifest": "p1553_r10_install_delta.json",
+    "manifest_sha256": "59721e418d99f74fa9762100fe66e132933b3c7f408285b0335658938899b72f",
+    "manifest_hash_list": "p1553_r10_install_delta.sha256",
+    "manifest_hash_list_sha256": "b4b0d6920c296d6f7da3c0c18ae1224b9b1004a64ebebb6e011374e6cb69b73d",
+    "simulated_queue_sha256": "a70c3874615af2f3174a5ffc2d45a164de3808912c31db71ee2f5ee30701210a"
+  },
+  "upstream_bundle": {
+    "bundle_id": "P1553-R5-R7-20260719",
+    "manifest_sha256": "41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a",
+    "manifest_hash_list_sha256": "0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d"
+  },
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "composition_rule": "Apply R5-R7, R8, R9, R10, and R11 to one private copy of the live queue, validate the combined result, then install all files and dispatch state atomically. Never install this delta alone.",
+  "file_installs": [
+    {
+      "source": "p1553_cartesian_kummer_rigidity_parent_report.yaml",
+      "sha256": "5f65da4f50e301067258f14f4b8e6dec91a0f096ac04e2418e4957bd649604b2",
+      "destination": "coordination/tasks/TASK-20260719-P1553-CKR-P1/cartesian_kummer_rigidity_report.yaml"
+    },
+    {
+      "source": "p1553_cartesian_kummer_rigidity_gate_r11.md",
+      "sha256": "6c79b486bfa4cfd14674033a438db3d91ddf7bbe4d2c4aaf309f1a0706f0df4e",
+      "destination": "coordination/tasks/TASK-20260719-P1553-CKR-P1/cartesian_kummer_rigidity_gate_r11.md"
+    },
+    {
+      "source": "p1553_cartesian_kummer_rigidity_red_team.yaml",
+      "sha256": "dec795cf4abcb14fd33b4e264dbe13eca168f504fc5557dfb6421bd04d99c14b",
+      "destination": "coordination/tasks/TASK-20260719-P1553-CKR-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_cartesian_kummer_rigidity_red_team.md",
+      "sha256": "8c4864fb494cdf9f8e3052ef2b2b739f028e752e39fdbc6c1c2ee7131ef2c4e3",
+      "destination": "coordination/tasks/TASK-20260719-P1553-CKR-RT-R1/cartesian_kummer_rigidity_red_team.md"
+    },
+    {
+      "source": "p1553_cartesian_kummer_rigidity_gate_r11.md",
+      "sha256": "6c79b486bfa4cfd14674033a438db3d91ddf7bbe4d2c4aaf309f1a0706f0df4e",
+      "destination": "ideas/artifacts/ECDLP-IDEA-057/p1553_cartesian_kummer_rigidity_gate_r11.md"
+    }
+  ],
+  "queue_merge": {
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-CKR-P1",
+        "title": "Prove finite-Cartesian Kummer rigidity for the actual pullback",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 10,
+        "review_required": true,
+        "depends_on": ["TASK-20260719-P1553-FPB-RT-R1"],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-PTR-P1/projector_trace_router_gate_r9.md",
+          "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md",
+          "ideas/artifacts/ECDLP-IDEA-057/ecfft_auxiliary_isogeny_router_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-057/ecfft_list_restricted_branch_locus_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-001/exact_spectral_rank_density_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-098/p1515_r1_r11_independent_audit.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-CKR-P1"],
+        "attention_contract": {
+          "decisive_evidence": "A complete rational-function zero count proving the finite-Cartesian degree bound, plus an exact retained-support tradeoff and a sharp degree-linear counter-control.",
+          "inconclusive_decision": "Close only sublinear-degree branch-oblivious Cartesian Kummer maps and preserve correction-carrying, high-degree, non-Cartesian, and arbitrary-circuit routes.",
+          "local_ambiguity_rule": "Separate signed count from x-root multiplicity, global endpoint rank from finite-deck nonlinear cost, pair-collision incidences from compressed occurrences, and pole-free from projective bounds.",
+          "peripheral_exclusions": [
+            "No O(d_psi*B) support claim without an indivisible whole-fiber state",
+            "No finite-grid interpolation treated as source compression",
+            "No degree floor promoted to an unrestricted circuit lower bound",
+            "No P1554, experiment, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after within-color uniqueness, pole handling, swapped-factor evenness, the general O(d_psi^2*B) bound, and the linear-degree boundary are independently reconstructed."
+        },
+        "resource_estimate": {
+          "dominant_stage": "surviving high-degree correction-carrying non-Cartesian transporter",
+          "stages": [
+            {"id": "signed_pair_state", "work": "B^(2+o(1)) setup/state"},
+            {"id": "sublinear_cartesian_map", "work": "closed for d_psi<B/16"},
+            {"id": "general_selective_degree_floor", "work": "d_psi=Omega(B^(1/2))"},
+            {"id": "admitted_target_query", "work": "at most B^(5/4+o(1))"},
+            {"id": "source_replay", "work": "B^(o(1)) exact count calls plus verification"}
+          ]
+        },
+        "handoff": {
+          "objective": "Normalize the actual pullback as signed endpoint convolution and prove the exact finite-Cartesian rational Kummer rigidity boundary.",
+          "uncertainty_reduced": "Whether constant or sublinear-degree rational Kummer maps can become useful only because the factor decks are finite Cartesian lists.",
+          "inputs": [
+            "the independently reviewed R10 actual-image exception",
+            "R9 no-wrap and dyadic replay",
+            "P1551/P1553 endpoint coefficient ownership",
+            "IDEA-057 global and canonical Kummer map controls"
+          ],
+          "constraints": [
+            "Keep signed multiplicity distinct from projector x-root multiplicity.",
+            "Handle every pole and infinity branch projectively.",
+            "Use O(d_psi^2*B) for general selective fibers and O(d_psi*B) only for indivisible fibers.",
+            "Preserve degree at least sqrt(B), correction, non-Cartesian, and nonlinear exceptions.",
+            "Allocate no new idea, run, Shoup claim, or breakthrough claim."
+          ],
+          "deliverables": ["cartesian_kummer_rigidity_report.yaml", "cartesian_kummer_rigidity_gate_r11.md"],
+          "budget": {"wall_clock_seconds": 3600, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "Signed count, no-wrap, and replay assumptions are complete.",
+            "The 8*d_psi regular and 16*d_psi projective bounds are proved.",
+            "The general and whole-fiber support consequences are separated.",
+            "The linear-degree counter-control and exactly one next action remain."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-CKR-RT-R1",
+        "title": "Red-team finite-Cartesian Kummer rigidity",
+        "role": "red-team",
+        "state": "completed",
+        "priority": 5,
+        "review_required": false,
+        "depends_on": ["TASK-20260719-P1553-CKR-P1"],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-CKR-P1/cartesian_kummer_rigidity_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-CKR-P1/cartesian_kummer_rigidity_gate_r11.md",
+          "ideas/artifacts/ECDLP-IDEA-057/ecfft_list_restricted_branch_locus_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-001/exact_spectral_rank_density_gate.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-CKR-RT-R1"],
+        "attention_contract": {
+          "decisive_evidence": "Independent reconstruction of signed-count bounds, pole divisors, UFD branch matching, translation invariance, fiber collision accounting, and the finite-grid counter-control.",
+          "inconclusive_decision": "Accept only the scoped rational-map theorem and retain every nonlinear, correction-carrying, and non-Cartesian exception.",
+          "local_ambiguity_rule": "Require nonconstant maps, distinguish source-fiber pairs from source occurrences, and verify the exact N>4B+1 separation used by the interpolation control.",
+          "peripheral_exclusions": [
+            "No trace-only branch transport",
+            "No arbitrary-subset or arbitrary-circuit lower bound",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after every correction appears in both producer files and final source hashes match."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R11 count, rigidity, support, interpolation, ownership, and campaign claims.",
+          "uncertainty_reduced": "Whether finite Cartesian decks rescue a sublinear-degree Kummer transporter without hidden correction state.",
+          "inputs": [
+            "the R11 producer receipts",
+            "the R10 independent actual-image correction",
+            "the IDEA-057 and IDEA-001 ownership receipts"
+          ],
+          "constraints": [
+            "Check pole-inclusive and pole-free constants separately.",
+            "Check O(d_psi^2*B) and indivisible O(d_psi*B) claims separately.",
+            "Require one surviving non-Cartesian action and all complete-path costs."
+          ],
+          "deliverables": ["red_team_report.yaml", "cartesian_kummer_rigidity_red_team.md"],
+          "budget": {"wall_clock_seconds": 3600, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "Every theorem identity and assumption is independently reconstructed.",
+            "Every required correction is reflected in both producer files.",
+            "Exactly one next action and no positive ECDLP status remain."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Recompute all manifest layers and every source hash; preserve drift rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false
+  }
+}

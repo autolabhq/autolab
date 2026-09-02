@@ -1,0 +1,67 @@
+{
+  "critical_experiment": {
+    "decisive_test": "Construct or refute a fused factored dual-Chow outer norm that accepts U,V and the N target linear factors, handles Delta_V and the tangent diagonal symbolically, and emits the signed aggregate modulo U in softly O(n+N) work below B^(5/2), without materializing N^2 or n^2 Chow coefficients, nN or n^2 query grids, target-dependent transforms, or unit-cost multipoint, norm, derivative, or resultant oracles.",
+    "falsifier": "The route represents Theta(N^2) or Theta(n^2) Chow coefficients, emits nN or n^2 evaluation points, expands N linear factors independently in F_p[X]/U, drops the tangent diagonal, or invokes an uncharged norm or multipoint oracle.",
+    "hypothesis": "The factored target dual-Chow form can be fused with the confluent outer norm over U in softly O(n+N) work."
+  },
+  "promotion_allowed": false,
+  "schema": "p1553.m6_confluent_signed_dual_chow_pushforward.frozen.r174.v1",
+  "source_bindings": {
+    "bhargava_et_al_multipoint_2022": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/bhargava_ghosh_guo_kumar_umans_multipoint_2205.00342v1.pdf",
+      "sha256": "14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8"
+    },
+    "r173_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_s3_determinantal_transfer_noncommutativity_controls.json",
+      "sha256": "c53431049b58348471d8cf8d5797c7e9e7fcf52f0fc0bdd05e3631f26e1a2d64"
+    },
+    "r173_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_s3_determinantal_transfer_noncommutativity_cost_ledger.json",
+      "sha256": "7a0bb4812e6e7facbe4528e4717e34dfdd6b08f4d2b19af50f72ae921b490588"
+    },
+    "r173_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_m6_s3_determinantal_transfer_noncommutativity.json",
+      "sha256": "2032a4ef8c743de4db64d0e49bf8763fd23270120f26bb937629e9ef60410533"
+    },
+    "r173_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_s3_determinantal_transfer_noncommutativity_probe_gate_r173.md",
+      "sha256": "437a665efca2d9c0903e801f11b44f0c69f1d0a14a64ae4b69603593049442f7"
+    },
+    "r173_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_s3_determinantal_transfer_noncommutativity_probe_parent_report_r173.yaml",
+      "sha256": "c57613845a891c5a1f917bd0721a7b7041676c6abc289c194f92d083022a2a84"
+    },
+    "r173_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_s3_determinantal_transfer_noncommutativity_probe_r173.py",
+      "sha256": "dd63e3404bb9cd6cf24de48234b8240e6a7918eefb200bd76292c2e410119f67"
+    },
+    "r173_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_s3_determinantal_transfer_noncommutativity_replay.json",
+      "sha256": "57840c79d02126b9a4510273465df74fc0316c94913d2739a131ca0a880f1c4b"
+    },
+    "r173_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_s3_determinantal_transfer_noncommutativity_probe_report_r173.json",
+      "sha256": "2a9d6fafbee9c3c8e3d9323af291476bb662de075090cb497ad9e8555dafe75c"
+    },
+    "r173_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_m6_s3_determinantal_transfer_noncommutativity_probe_r173.py",
+      "sha256": "2f0b521d7e78901247119376a167951a4805e202976576aafe729f26e0107740"
+    },
+    "r173_transfer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/s3_determinantal_transfer_noncommutativity_r173.json",
+      "sha256": "4bd35b11d490b12445c8c98bd568e40d91259609b7a2976984c3f76c9454004c"
+    },
+    "semaev_2004": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/semaev_summation_polynomials_2004_031.ps",
+      "sha256": "991f85d58ab68551a229266d03c2f88a5fc42e81b2a5f8f4432937bcceff16df"
+    }
+  },
+  "theorem": {
+    "candidate_semantics": "The aggregate vanishes exactly when some selected Q satisfies P+Q=T for a retained target T, including Q=P through the tangent. It is signed and replays the R166 verified roots without the opposite-sign Kummer branch.",
+    "confluent_deflation": "Because L(P,P,-T)=0 identically, the off-diagonal chart is L/(Z-X)=(X-u)Delta_V(X,Z)-(V(X)+v), with Delta_V=(V(Z)-V(X))/(Z-X). The interpolant derivative V'(X) is not the curve tangent. On the diagonal Q=P it must be replaced by the scaled geometric tangent (X-u)(3X^2+a)-2V(X)(V(X)+v).",
+    "scope": "This is an exact commutative and tangent-aware reformulation. It does not supply a sub-rho algorithm: represented target Chow state has Theta(N^2) coefficients and represented selected Chow state has Theta(n^2); keeping either factored leaves an unproved fused outer norm. These representation costs are not general lower bounds.",
+    "selected_dual_chow_derivative": "Let C_S(alpha,beta,gamma)=product_Q(alpha*y_Q+beta*x_Q+gamma). At alpha=X-u, beta=-(V(X)+v), gamma=uV(X)+Xv, one factor is identically zero. The chart-corrected norm equals (-1)^(n-1)*geometric_tangent*partial_gamma(C_S)/U'(X), so the diagonal requires both a Chow derivative and the actual curve tangent rather than the derivative of the interpolated V side table.",
+    "signed_collinearity": "For P=(X,V(X)), Q=(Z,V(Z)), and T=(u,v), the determinant of P,Q,-T is L=(X-u)V(Z)+(u-Z)V(X)+(X-Z)v. Away from Q=P, L=0 exactly when P+Q=T.",
+    "target_dual_chow": "Let C_T(alpha,beta,gamma)=product_T(alpha*u_T+beta*v_T+gamma). Off the diagonal, the target product is C_T(-Delta_V,-1,X*Delta_V-V(X)). On Q=P it is C_T(-(3X^2+a),-2V(X),X(3X^2+a)-2V(X)^2). The full signed locator is the product of these two-chart target dual-Chow evaluations over the Q roots of U."
+  }
+}

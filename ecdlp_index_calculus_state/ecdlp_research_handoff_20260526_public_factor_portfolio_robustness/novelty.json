@@ -1,0 +1,61 @@
+{
+  "artifact": "ecdlp_index_calculus_state/ecdlp_research_handoff_20260526_public_factor_portfolio_robustness",
+  "hypothesis": "The guarded public-factor quadratic-root portfolio remains leave-one-window-out robust under public held-out selection, and its fragility is localized to policy-family eligibility.",
+  "inputs": {
+    "live_state_dir": "/Volumes/Volume/autolab/ecdlp_index_calculus_state",
+    "script_guarded_portfolio": "/Volumes/Volume/autolab/tasks/ecdlp_index_calculus/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_public_factor_guarded_portfolio_probe.py",
+    "script_guarded_portfolio_loo": "/Volumes/Volume/autolab/tasks/ecdlp_index_calculus/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_public_factor_guarded_portfolio_loo_probe.py"
+  },
+  "artifacts": {
+    "rolling_baseline": "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_rolling_baseline.json",
+    "loo_baseline": "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_loo_baseline.json",
+    "loo_min2_support_control": "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_loo_min2_support_control.json",
+    "loo_exclude_hash_control": "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_loo_exclude_hash_control.json",
+    "loo_train_worst075_control": "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_loo_train_worst075_control.json"
+  },
+  "evidence": {
+    "rolling_window_count": 11,
+    "rolling_selected_surface_count": 64,
+    "rolling_charged_below_rho_count": 64,
+    "rolling_false_positive_surface_count": 0,
+    "rolling_worst_window_max_charged_ops_over_rho": 0.84,
+    "rolling_latest_window": "fresh_264_279_fixed",
+    "rolling_latest_selected_surface_count": 16,
+    "rolling_latest_charged_below_rho_count": 16,
+    "rolling_latest_max_charged_ops_over_rho": 0.672,
+    "loo_heldout_window_count": 12,
+    "loo_selected_surface_count": 87,
+    "loo_charged_below_rho_count": 87,
+    "loo_false_positive_surface_count": 0,
+    "loo_gap_to_guarded_oracle_below_rho": 0,
+    "loo_worst_window_max_charged_ops_over_rho": 0.84,
+    "loo_min2_support_charged_below_rho_count": 87,
+    "loo_min2_support_false_positive_surface_count": 0,
+    "loo_min2_support_gap_to_guarded_oracle_below_rho": 0,
+    "loo_exclude_hash_charged_below_rho_count": 86,
+    "loo_exclude_hash_selected_surface_count": 87,
+    "loo_exclude_hash_false_positive_surface_count": 0,
+    "loo_exclude_hash_gap_to_guarded_oracle_below_rho": 1,
+    "loo_exclude_hash_failing_windows": [
+      "fresh_264_279_fixed"
+    ],
+    "loo_exclude_hash_worst_target": "67.a1@9803",
+    "loo_exclude_hash_worst_transfer_index": 268,
+    "loo_exclude_hash_worst_row_key": "67.a1@9803:uniform:256:salt208",
+    "loo_exclude_hash_worst_policy": "low_coeff_sum",
+    "loo_exclude_hash_worst_ops_over_rho": 1.032,
+    "loo_train_worst075_charged_below_rho_count": 16,
+    "loo_train_worst075_selected_surface_count": 16,
+    "loo_train_worst075_false_positive_surface_count": 0,
+    "loo_train_worst075_gap_to_guarded_oracle_below_rho": 71,
+    "loo_train_worst075_failing_heldout_window_count": 11
+  },
+  "interpretation": "The guarded portfolio is robust under leave-one-window-out and min-surfaces=2 controls, but hash factor-order policies are required for the latest 67.a1@9803 below-rho recovery. Tightening max train worst ratio to 0.75 destroys recall.",
+  "non_claims": [
+    "Not a complete ECDLP index-calculus speedup.",
+    "Not an asymptotic claim.",
+    "Not a fresh future-window promotion beyond the mounted materialized windows.",
+    "Mounted live state was read-only; this notebook and control artifacts are local worktree outputs."
+  ],
+  "next_experiment": "Materialize the next low-term total-2 FFE public-factor window after fresh_264_279_fixed, then run the same guarded portfolio with hash policies included and min_surfaces=2."
+}

@@ -1,0 +1,1904 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_source_gap_preflight_selected13_9696_9999_probe.h",
+    "exact_replay": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_exact_certificate_replay_selected13_9696_9999_probe.json",
+    "linear_rank": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_linear_rank_preflight_selected13_9696_9999_probe.json",
+    "worklist": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_execution_worklist_selected13_9696_9999_probe.json"
+  },
+  "claim_status": "FFE_SHARP_LANE_SOURCE_GAP_PREFLIGHT_READY",
+  "created_at": "2026-06-05T18:03:16Z",
+  "failures": [],
+  "honesty_boundary": [
+    "This classifies source proximity for support masks only.",
+    "Same-row-key and one-salt-neighbor witnesses are replay targets, not exported direct/rank certificates.",
+    "It does not regenerate sidecar coefficients, evaluate summation polynomials, solve finite-field equations, solve ECDLP, or claim a Pollard-rho speedup."
+  ],
+  "native_preflight": {
+    "c_source_sha256": "08d845a5e5535f25c3b01270027b20578d039b41b62f3f3a0f053967d63165a3",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-I",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state",
+      "/private/tmp/ecdlp_selected13_source_gap_0fby69w9/selected13_source_gap_preflight.c",
+      "-o",
+      "/private/tmp/ecdlp_selected13_source_gap_0fby69w9/selected13_source_gap_preflight"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "native_summary": {
+      "failure_count": 0,
+      "item_count": 13,
+      "one_salt_neighbor_mask_count": 6,
+      "primary0_neighbor": 0,
+      "primary0_same": 2,
+      "primary0_span_only": 1,
+      "primary1_neighbor": 2,
+      "primary1_same": 0,
+      "primary1_span_only": 1,
+      "primary_count": 2,
+      "primary_transfer0": 9981,
+      "primary_transfer1": 9943,
+      "same_row_key_mask_count": 2,
+      "support_span_only_mask_count": 31,
+      "total_mask_count": 39
+    },
+    "run_returncode": 0,
+    "run_stderr": "",
+    "run_stdout": "{\"item_count\":13,\"total_mask_count\":39,\"same_row_key_mask_count\":2,\"one_salt_neighbor_mask_count\":6,\"support_span_only_mask_count\":31,\"primary_count\":2,\"primary_transfer0\":9981,\"primary_transfer1\":9943,\"primary0_same\":2,\"primary0_neighbor\":0,\"primary0_span_only\":1,\"primary1_same\":0,\"primary1_neighbor\":2,\"primary1_span_only\":1,\"failure_count\":0}\n"
+  },
+  "parameters": {
+    "expected_one_salt_neighbor_mask_count": 6,
+    "expected_same_row_key_mask_count": 2,
+    "expected_support_span_only_mask_count": 31,
+    "primary_backfill_transfers": [
+      9981,
+      9943
+    ],
+    "source_tier_codes": {
+      "one_salt_neighbor_exact_support": 2,
+      "same_row_key_exact_support": 1,
+      "support_span_only": 3
+    }
+  },
+  "schema": "ecdlp.low_term_total2_ffe_sharp_lane_source_gap_preflight.v1",
+  "source_gap_items": [
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": true,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "same_row_key_exact_support",
+          "source_tier_code": 1,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "same_row_key_exact_support",
+          "source_tier_code": 1,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt171",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "row_check_hash": "row_8360d233d32d8d4d",
+      "row_check_hash_u64": 9466797536760925517,
+      "row_id": "t9981_4d807a56f643",
+      "salts": [
+        171,
+        173
+      ],
+      "source_gap_class": "same_row_key_partial_carryover",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 2,
+        "support_span_only": 1
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_index": 57
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": true,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "one_salt_neighbor_exact_support",
+          "source_tier_code": 2,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 175,
+                "other_salt_delta": -1,
+                "record_other_salt": 176,
+                "shared_salt": 167
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "one_salt_neighbor_exact_support",
+          "source_tier_code": 2,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 175,
+                "other_salt_delta": -1,
+                "record_other_salt": 176,
+                "shared_salt": 167
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt167",
+        "22050.cf1@11731:uniform:256:salt175"
+      ],
+      "row_check_hash": "row_05f942a16fb73283",
+      "row_check_hash_u64": 430448500522037891,
+      "row_id": "t9943_4c88ff834538",
+      "salts": [
+        167,
+        175
+      ],
+      "source_gap_class": "one_salt_neighbor_partial_carryover",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 2,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 1
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "work_item_index": 51
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "one_salt_neighbor_exact_support",
+          "source_tier_code": 2,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 174,
+                "other_salt_delta": 1,
+                "record_other_salt": 173,
+                "shared_salt": 171
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "one_salt_neighbor_exact_support",
+          "source_tier_code": 2,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 174,
+                "other_salt_delta": 1,
+                "record_other_salt": 173,
+                "shared_salt": 171
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt171",
+        "22050.cf1@11731:uniform:256:salt174"
+      ],
+      "row_check_hash": "row_006287284de1f15f",
+      "row_check_hash_u64": 27733154892738911,
+      "row_id": "t9715_42587b9acc58",
+      "salts": [
+        171,
+        174
+      ],
+      "source_gap_class": "one_salt_neighbor_partial_carryover",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 2,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 1
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9715,
+      "work_item_index": 0
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt166"
+      ],
+      "row_check_hash": "row_2caa94ddc9c8d52f",
+      "row_check_hash_u64": 3218548564003706159,
+      "row_id": "t9728_077c9ce3ade1",
+      "salts": [
+        163,
+        166
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9728,
+      "work_item_index": 3
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt175",
+        "22050.cf1@11731:uniform:256:salt177"
+      ],
+      "row_check_hash": "row_4d9877bd4db648a8",
+      "row_check_hash_u64": 5591350592316786856,
+      "row_id": "t9755_7e4493f8ec34",
+      "salts": [
+        175,
+        177
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9755,
+      "work_item_index": 13
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 172,
+                "other_salt_delta": -4,
+                "record_other_salt": 176,
+                "shared_salt": 167
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 172,
+                "other_salt_delta": -4,
+                "record_other_salt": 176,
+                "shared_salt": 167
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt167",
+        "22050.cf1@11731:uniform:256:salt172"
+      ],
+      "row_check_hash": "row_ad66fda44c138911",
+      "row_check_hash_u64": 12494953098278832401,
+      "row_id": "t9790_ce7877c9f345",
+      "salts": [
+        167,
+        172
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9790,
+      "work_item_index": 20
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt174"
+      ],
+      "row_check_hash": "row_3fd57720fd0de950",
+      "row_check_hash_u64": 4599713577997035856,
+      "row_id": "t9814_ba655b11c9ea",
+      "salts": [
+        163,
+        174
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9814,
+      "work_item_index": 26
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt172"
+      ],
+      "row_check_hash": "row_fc7df0cdd2e54f76",
+      "row_check_hash_u64": 18193962836443877238,
+      "row_id": "t9839_85f5eebd49d6",
+      "salts": [
+        163,
+        172
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9839,
+      "work_item_index": 27
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt170"
+      ],
+      "row_check_hash": "row_8b69a2acb30bcbf6",
+      "row_check_hash_u64": 10045739306448571382,
+      "row_id": "t9840_4afae5e6be25",
+      "salts": [
+        163,
+        170
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9840,
+      "work_item_index": 31
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 163,
+                "other_salt_delta": -8,
+                "record_other_salt": 171,
+                "shared_salt": 173
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 163,
+                "other_salt_delta": -8,
+                "record_other_salt": 171,
+                "shared_salt": 173
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "row_check_hash": "row_354aaafb3a281669",
+      "row_check_hash_u64": 3840069628275988073,
+      "row_id": "t9872_c55f1a9223ae",
+      "salts": [
+        163,
+        173
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9872,
+      "work_item_index": 38
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "one_salt_neighbor_exact_support",
+          "source_tier_code": 2,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 174,
+                "other_salt_delta": 1,
+                "record_other_salt": 173,
+                "shared_salt": 171
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "one_salt_neighbor_exact_support",
+          "source_tier_code": 2,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 174,
+                "other_salt_delta": 1,
+                "record_other_salt": 173,
+                "shared_salt": 171
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt171",
+        "22050.cf1@11731:uniform:256:salt174"
+      ],
+      "row_check_hash": "row_78e687bf5ac9f432",
+      "row_check_hash_u64": 8711799785126491186,
+      "row_id": "t9889_ff69240ced56",
+      "salts": [
+        171,
+        174
+      ],
+      "source_gap_class": "one_salt_neighbor_partial_carryover",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 2,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 1
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9889,
+      "work_item_index": 44
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 167,
+                "other_salt_delta": -6,
+                "record_other_salt": 173,
+                "shared_salt": 171
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 167,
+                "other_salt_delta": -6,
+                "record_other_salt": 173,
+                "shared_salt": 171
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 171,
+                "other_salt_delta": -5,
+                "record_other_salt": 176,
+                "shared_salt": 167
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 171,
+                "other_salt_delta": -5,
+                "record_other_salt": 176,
+                "shared_salt": 167
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt167",
+        "22050.cf1@11731:uniform:256:salt171"
+      ],
+      "row_check_hash": "row_399ea1083c14b49e",
+      "row_check_hash_u64": 4151932963221976222,
+      "row_id": "t9909_a4cd3a970d56",
+      "salts": [
+        167,
+        171
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9909,
+      "work_item_index": 46
+    },
+    {
+      "direct_status": "direct_certificate_missing",
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "is_primary": false,
+      "mask_witnesses": [
+        {
+          "family_mask": 33,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_a48b2b6b92f1dc81",
+              "certificate_hash_u64": 11856618185009781889,
+              "form_masks": [
+                33
+              ],
+              "row_id": "t9754_a66fa93a38cd",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 163,
+                "other_salt_delta": -10,
+                "record_other_salt": 173,
+                "shared_salt": 171
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9754
+            }
+          ]
+        },
+        {
+          "family_mask": 17408,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_958c291f3606ddda",
+              "certificate_hash_u64": 10776033222417898970,
+              "form_masks": [
+                17408
+              ],
+              "row_id": "t9742_c31aa535faab",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": 163,
+                "other_salt_delta": -10,
+                "record_other_salt": 173,
+                "shared_salt": 171
+              },
+              "salts": [
+                171,
+                173
+              ],
+              "transfer_index": 9742
+            },
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        },
+        {
+          "family_mask": 34816,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "witnesses": [
+            {
+              "certificate_hash": "cert_c4555d787f52fbbd",
+              "certificate_hash_u64": 14147316576567884733,
+              "form_masks": [
+                17408,
+                34816
+              ],
+              "row_id": "t9842_89b910c16356",
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "salt_delta": {
+                "backfill_other_salt": null,
+                "other_salt_delta": null,
+                "record_other_salt": null,
+                "shared_salt": null
+              },
+              "salts": [
+                167,
+                176
+              ],
+              "transfer_index": 9842
+            }
+          ]
+        }
+      ],
+      "materialized_row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt171"
+      ],
+      "row_check_hash": "row_eb6fbe1b10f86aee",
+      "row_check_hash_u64": 16964987344786057966,
+      "row_id": "t9913_67bdfbcc3cec",
+      "salts": [
+        163,
+        171
+      ],
+      "source_gap_class": "support_span_only",
+      "source_tier_counts": {
+        "one_salt_neighbor_exact_support": 0,
+        "same_row_key_exact_support": 0,
+        "support_span_only": 3
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9913,
+      "work_item_index": 48
+    }
+  ],
+  "summary": {
+    "backfill_item_count": 13,
+    "item_class_counts": {
+      "one_salt_neighbor_partial_carryover": 3,
+      "same_row_key_partial_carryover": 1,
+      "support_span_only": 9
+    },
+    "native_preflight_failure_count": 0,
+    "native_preflight_verified": true,
+    "one_salt_neighbor_mask_count": 6,
+    "primary_backfill_source_gaps": [
+      {
+        "source_gap_class": "same_row_key_partial_carryover",
+        "source_tier_counts": {
+          "one_salt_neighbor_exact_support": 0,
+          "same_row_key_exact_support": 2,
+          "support_span_only": 1
+        },
+        "transfer_index": 9981
+      },
+      {
+        "source_gap_class": "one_salt_neighbor_partial_carryover",
+        "source_tier_counts": {
+          "one_salt_neighbor_exact_support": 2,
+          "same_row_key_exact_support": 0,
+          "support_span_only": 1
+        },
+        "transfer_index": 9943
+      }
+    ],
+    "primary_backfill_transfers": [
+      9981,
+      9943
+    ],
+    "same_row_key_mask_count": 2,
+    "source_gap_interpretation": "9981 has two same-row-key exact support witnesses but no exported direct certificate; 9943 has two one-salt-neighbor exact support witnesses. Both still need actual FFE/summation-polynomial direct/rank export before any success claim.",
+    "support_span_only_mask_count": 31,
+    "total_mask_count": 39,
+    "verified": true
+  }
+}

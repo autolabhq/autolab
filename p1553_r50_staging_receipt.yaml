@@ -1,0 +1,71 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R50-EXTERNAL-PAIR-PENCIL-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T10:20:33Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R50 is an exhaustive pair scan
+  only within the deterministic R49 sample. It closes direct external-external
+  pencils in that sample but leaves unsampled equal-sum blocks open.
+bindings:
+  r49_bundle_hash_list_sha256: 58992545d6ecaac770d8e2c809f5ade30080b7871b154d33c22b126bdaea0d8f
+  r49_staging_receipt_sha256: 58fdf9f0381e1bd7db24b0df01c6f70818ac1410caa76af337d1d23d49de7e28
+  r50_gate_sha256: b7b8024af071ddf11bef600236c41a97cf3e9ed3bb56ff13e7e6fd48189d9791
+  r50_parent_report_sha256: 47d1de92a545f2db41eb401960734c610d936fa8879ae7cf392698c82a85db1a
+  r50_scan_script_sha256: 4ff8a38dc0dde71d11bf9712ecca94e19f02d761bd6d557a412d3f4854754e73
+  r50_scan_report_sha256: ee4da4e81aa16f0c85e28df98e6bfb7241408a22bc7cbbe112ad5068e5c326d5
+  r50_artifact_index_sha256: 4c1a775c8201c37881df380d0fe5ce72caa3a2d8831cc5eeb406d8edf1e05b6b
+  r50_bundle_hash_list_sha256: 5d128e21d1548fa0a367af33b58f63489124298fc3772803a9718d6482dade58
+result:
+  classification: exhaustive_r49_sample_pair_negative_unsampled_blocks_open
+  external_sections: 1000
+  total_external_pairs: 499500
+  disjoint_external_pairs: 162438
+  distinct_basepoint_free_external_pencils: 162438
+  complete_nine_point_fibers_per_pencil: 2
+  minimum_collision_pairs: 72
+  maximum_collision_pairs: 104
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+  survivors: 0
+  unsampled_equal_sum_blocks: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r50_hash_list: pass
+  r50_parent_yaml_parse: pass
+  all_499500_external_pairs_accounted: pass
+  all_162438_disjoint_pairs_plucker_deduplicated: pass
+  all_unique_pencils_scored_on_full_subgroup: pass
+  deterministic_replay_matches_report_byte_for_byte: pass
+  clean_temporary_replay_with_r16_through_r50_gates_and_r50_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T10_20_33Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the scan is exhaustive only within the deterministic 1000-block sample
+  - the enlarged 1807-section sample is tiny relative to all eligible blocks
+  - no target, R10, relation-rank campaign, logs, descent, or breakthrough
+exactly_one_next_action: >-
+  Tile the 81-point R38 path by nine translated copies of its three complete
+  degree-three fibers. Enumerate all 253 degree-nine blocks formed by unions of
+  three local triple fibers whose window indices sum to 12, construct their
+  exact sections, hash every two-section pencil by Plucker coordinates, and
+  test for nine disjoint blocks covering all 27 labeled local triples.

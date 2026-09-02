@@ -1,0 +1,236 @@
+{
+  "claim_status": "FFE_SHARP_LANE_KERNEL_CONTRACT_READY",
+  "contract": {
+    "direct_rank_backfill_manifest": [
+      {
+        "first_pass_id": "first_5550042f31f04504",
+        "full_family_row_ids": [
+          "t9839_85f5eebd49d6"
+        ],
+        "group_id": "sharp_group_585a44456f55",
+        "min_direct_ops_over_rho": 0.67153285,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt172"
+          ],
+          "salt_gap": 9,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            172
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9839
+        },
+        "queue_order": 5,
+        "row_checks": [
+          {
+            "direct_status": "direct_certificate_missing",
+            "is_full_family": true,
+            "matched_families": [
+              [
+                0,
+                5
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                11,
+                15
+              ]
+            ],
+            "row_check_hash": "row_fc7df0cdd2e54f76",
+            "row_id": "t9839_85f5eebd49d6",
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "top_k": 16
+          },
+          {
+            "direct_status": "direct_certificate_missing",
+            "is_full_family": false,
+            "matched_families": [],
+            "row_check_hash": "row_bd86a498b7c68f06",
+            "row_id": "t9839_a8c164657b8e",
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_cost_low_term_support_total3",
+            "top_k": 16
+          },
+          {
+            "direct_status": "direct_certificate_missing",
+            "is_full_family": false,
+            "matched_families": [],
+            "row_check_hash": "row_5b4789061951b6cb",
+            "row_id": "t9839_c9d5aeb34f49",
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_low_term_support_total3",
+            "top_k": 16
+          }
+        ],
+        "transfer_index": 9839
+      }
+    ]
+  },
+  "created_at": "2026-06-05T17:22:37Z",
+  "failures": [],
+  "honesty_boundary": [
+    "This is a kernel contract and validation gate only.",
+    "It does not evaluate summation polynomials, export new direct/rank rows, recover an ECDLP scalar, or claim a Pollard-rho speedup.",
+    "Inherited positives remain blocked until an exact row-level certificate is reproduced by the lower-level worker.",
+    "Backfill transfers remain missing until direct/rank export validates them."
+  ],
+  "lane": "selected13_sharp_minmod3",
+  "parameters": {
+    "expected_backfill_groups": 13,
+    "expected_exact_groups": 6,
+    "expected_inherited_rows": 12
+  },
+  "schema": "ecdlp.low_term_total2_ffe_sharp_lane_kernel_contract.v1",
+  "source_summary": {
+    "direct_ops_over_rho_median": 0.67153285,
+    "direct_status_counts": {
+      "direct_certificate_exported": 21,
+      "direct_certificate_missing": 39
+    },
+    "exact_positive_group_count": 6,
+    "exact_positive_transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "full_family_missing_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "group_count": 20,
+    "inherited_positive_row_count": 12,
+    "lane_positive_transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "missing_backfill_group_count": 13,
+    "missing_backfill_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "neutral_exported_row_count": 3,
+    "neutral_exported_transfers": [
+      9969
+    ],
+    "row_count": 60,
+    "score_certificate_source_counts": {
+      "exact_bridge_certificate": 6,
+      "none": 39,
+      "same_salt_bridge_certificate": 15
+    },
+    "transfer_count": 20
+  },
+  "summary": {
+    "backfill_group_count": 13,
+    "backfill_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "direct_status_counts": {
+      "direct_certificate_exported": 21,
+      "direct_certificate_missing": 39
+    },
+    "exact_certificate_check_count": 6,
+    "exact_positive_transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "first_pass_group_count": 20,
+    "inherited_promotion_check_count": 12,
+    "neutral_exported_row_count": 3,
+    "neutral_exported_transfers": [
+      9969
+    ],
+    "row_check_count": 60,
+    "transfer_count": 20
+  }
+}

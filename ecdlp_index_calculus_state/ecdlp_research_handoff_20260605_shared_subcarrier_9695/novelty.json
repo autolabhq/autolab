@@ -1,0 +1,72 @@
+{
+  "claim_status": "SHARED_PUBLIC_SUBCARRIER_CANDIDATE_FOR_ECDLP_RELATION_EXPORT",
+  "date": "2026-06-05",
+  "latest_common_block": "9688_9695",
+  "not_a_speedup_claim": true,
+  "shared_public_subcarrier": [
+    "salt_min_mod4=2",
+    "selected_has=13"
+  ],
+  "bridge": {
+    "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_missing_column_bridge_audit_5984_9695_probe.json",
+    "direct_below_rho_count": 938,
+    "rank_gain_certificate_count": 270,
+    "accepted_missing_rank_gain_count": 240
+  },
+  "clean_families": [
+    {
+      "family": [11, 15],
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_family_public_split_miner_11_15_5984_9695_replay6448_probe.json",
+      "positive_count": 58,
+      "rank_gain_total": 91,
+      "unique_gain_total": 170,
+      "robust_recall": 0.34482759,
+      "selected_carrier_mismatch": false
+    },
+    {
+      "family": [10, 14],
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_family_public_split_miner_10_14_5984_9695_replay6448_probe.json",
+      "positive_count": 53,
+      "rank_gain_total": 85,
+      "unique_gain_total": 176,
+      "robust_recall": 0.24528302,
+      "selected_carrier_mismatch": false
+    },
+    {
+      "family": [0, 5],
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_family_public_split_miner_0_5_5984_9695_replay6448_probe.json",
+      "positive_count": 59,
+      "rank_gain_total": 83,
+      "unique_gain_total": 168,
+      "robust_recall": 0.27118644,
+      "selected_carrier_mismatch": false
+    }
+  ],
+  "mismatch_families_to_reconcile": [
+    {
+      "family": [2, 4],
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_family_public_split_miner_2_4_5984_9687_replay6448_probe.json",
+      "reason": "accepted-form family has high unique gain but many positives do not contain both family columns in selected_term_support"
+    },
+    {
+      "family": [11, 13],
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_family_public_split_miner_11_13_5984_9687_replay6448_probe.json",
+      "reason": "accepted-form family positives are not selected-family positives"
+    }
+  ],
+  "next_work_order": {
+    "prioritize_tokens": [
+      "selected_has=13",
+      "salt_min_mod4=2"
+    ],
+    "primary_families": [
+      [11, 15],
+      [10, 14],
+      [0, 5]
+    ],
+    "diagnostic_families": [
+      [2, 4],
+      [11, 13]
+    ]
+  }
+}

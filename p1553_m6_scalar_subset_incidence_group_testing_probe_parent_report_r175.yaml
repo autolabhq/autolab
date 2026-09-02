@@ -1,0 +1,110 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-SCALAR-SUBSET-INCIDENCE-GROUP-TESTING-R175-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: exact_scalar_subset_reduction_and_open_reusable_incidence_oracle
+run_count: 1
+status: reusable_scalar_subset_incidence_oracle_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - signed-incidence
+  - group-testing
+  - output-sensitive
+  - dual-chow
+  - full-cost
+  - open-interface
+owner: P1553-R160-R163-R174-SHOUP-1997
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Reduce the R174 vector locator to output-sensitive scalar subset queries and
+  isolate the exact reusable-oracle contract needed for a below-rho
+  implementation.
+inputs:
+  - {path: p1553_m6_confluent_signed_dual_chow_pushforward_probe_r174.py, sha256: 9b30baf9bea77492816bd81bcbd6cfae01ae05b467b8793562101da8afe9765c}
+  - {path: p1553_m6_confluent_signed_dual_chow_pushforward_probe_report_r174.json, sha256: a8b1d1d5fd4ffeaef17726325ebd85c343285ef61d16ca4dd1ce91dfcce28496}
+  - {path: frozen_m6_confluent_signed_dual_chow_pushforward.json, sha256: 4673a2fd8dea6f212d4761b8ac60f99aadd99ddb43656db4e64992fb7cbd5d3b}
+  - {path: m6_confluent_signed_dual_chow_pushforward_cost_ledger.json, sha256: dee4664a442779b2c531714bcfe8af33deff1af1b903c99801c363438a3693b1}
+  - {path: m6_confluent_signed_dual_chow_pushforward_replay.json, sha256: fbac601d12b26ce98237c3481af4a7c8b956df658585bb085acf16c3afb8e3aa}
+  - {path: m6_confluent_signed_dual_chow_pushforward_controls.json, sha256: 6d69f7146857cfd017281550e7a44b99aa4c53623b767c852da40b81e8bc9d40}
+  - {path: confluent_signed_dual_chow_pushforward_r174.json, sha256: a87d2bb7b4b68d874c1f74867cd3d34ba5d69b2c60c7f58903647579c1cfd3f8}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_confluent_signed_dual_chow_pushforward_probe_r174.py, sha256: 747064ba9bc417572ab40ca6bac9169c35fc130bb112739d893ff76c06d274a7}
+  - {path: p1553_m6_confluent_signed_dual_chow_pushforward_probe_gate_r174.md, sha256: 46597f7afd91ada661b5822031489b7d08445b041dfd4399b4343199457afebb}
+  - {path: p1553_m6_confluent_signed_dual_chow_pushforward_probe_parent_report_r174.yaml, sha256: cac550192f9da4090c1e5459a5baed1f0ea3437c89ec012436995fcfe5bb4911}
+  - {path: p1553_m6_aggregate_union_factor_label_recovery_probe_report_r163.json, sha256: 0a35b4fee30c7abf4ba69232e0f7af65d48ec785aef832c934bf03d5366645ab}
+  - {path: p1553_m6_aggregate_union_factor_label_recovery_probe_gate_r163.md, sha256: 3064a108bf063ab59a0991be6910b70bf3a2e498974add780f6a57e157a63212}
+  - {path: p1553_m6_positive_c6_generic_locator_reduction_probe_report_r160.json, sha256: 8b061717b7822ce969433b17003f00fb2e8e4644305cda007b70ca2213f4f48c}
+  - {path: p1553_m6_positive_c6_generic_locator_reduction_probe_gate_r160.md, sha256: e4d13e79feb831e0d65e734170def4b5e79a6f53edaeb8c49c9bead4e739ec92}
+  - {path: references/shoup_generic_dlp_lower_bound_1997.pdf, sha256: 89d19aad3a4d98b563029de9135d30c8ed9b831d74f7348c286acc22f9af85b3}
+artifacts:
+  - {path: p1553_m6_scalar_subset_incidence_group_testing_probe_r175.py, sha256: f525ecc47496485919b4f2397b505842eac43ea7c1b53b90c6beaff4fa07d536}
+  - {path: p1553_m6_scalar_subset_incidence_group_testing_probe_report_r175.json, sha256: 5541b18b9ce670ca95902e75cf9fc14c2a35f9725c9ee756c0502963cbafc543}
+  - {path: frozen_m6_scalar_subset_incidence_group_testing.json, sha256: 1710f98bdb7d29d4c016abb0272915d6fdcdf471d35a6e7f79941b22cc1be7ad}
+  - {path: m6_scalar_subset_incidence_group_testing_cost_ledger.json, sha256: 0c8790183f1d05593308421e1cce0eabec21c3ee52fef2ed3c4f1dc84f0e5818}
+  - {path: m6_scalar_subset_incidence_group_testing_replay.json, sha256: 6eaf07b4a9507ca96681c85f79b8d33763033d7bd71faae5e8417987969f084f}
+  - {path: m6_scalar_subset_incidence_group_testing_controls.json, sha256: 1ff598263a892c4a8d87c04799b66383b671ffca9ecdb05c005c45219447fb2d}
+  - {path: scalar_subset_incidence_group_testing_r175.json, sha256: cff099668231e6b239bc1a651492938affc09c8531e61489b7384dff48258c00}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_scalar_subset_incidence_group_testing_probe_r175.py, sha256: 9cab6bb5fe9baa27d1d16e2874a3ceb782d0b93f799ce04befbd2cfb8472704f}
+  - {path: p1553_m6_scalar_subset_incidence_group_testing_probe_gate_r175.md, sha256: ccad60c12a8951476915c864d249135a369d0832a0a29704ef1cbd445739d3a1}
+verified_statements:
+  - A scalar subset product is zero exactly when its subset contains an R174 candidate leaf.
+  - Balanced zero-product group testing recovers all K candidates in at most 1 plus 2 K ceil log2 n queries.
+  - Queried subset volume is at most n times 1 plus ceil log2 n.
+  - Six controls make 358 exact queries and recover all 140 R174 roots.
+  - The controls query subset volume 1,238 against a proved finite bound of 1,374.
+  - Every queried compact U_S and V mod U_S descriptor interpolates its endpoints.
+  - Given the stated reusable scalar oracle and R163 K exponent, the conditional total is B to the 9 over 4 below rho.
+  - The reusable scalar oracle is not supplied and the direct expanded route costs B to the 23 over 4.
+scoped_failures:
+  reusable_scalar_subset_incidence_oracle: open
+  direct_expanded_tree_route_below_rho: refuted_by_full_cost
+  represented_target_chow_strictly_below_rho: refuted_by_full_cost
+  represented_selected_pair_route_below_rho: refuted_by_full_cost
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  encoding_invariant_generic_locator: excluded_by_r160_and_shoup_scope
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 22
+  scalar_subset_reduction_admitted: true
+  conditional_below_rho_envelope_admitted: true
+  reusable_scalar_subset_oracle_admitted: false
+  lane_admitted: false
+result:
+  control_count: 6
+  candidate_root_count: 140
+  query_count: 358
+  query_count_bound: 1622
+  zero_query_count: 316
+  nonzero_query_count: 42
+  leaf_query_count: 169
+  queried_subset_size_sum: 1238
+  queried_subset_size_bound: 1374
+  queried_descriptor_slot_count: 2834
+  selected_divisor_degree_exponent_B: 9/4
+  target_count_exponent_B: 5/4
+  r163_candidate_output_exponent_B: 3/4
+  conditional_scalar_oracle_total_exponent_B: 9/4
+  r163_label_backpointer_postprocessing_exponent_B: 2
+  direct_expanded_tree_factor_work_exponent_B: 23/4
+  represented_target_chow_exponent_B: 5/2
+  global_rho_exponent_B: 5/2
+  scalar_subset_oracle_supplied: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_SCALAR_SUBSET_ZERO_PRODUCT_BICONDITIONAL__BALANCED_GROUP_TESTING_RECOVERS_ALL_R174_ROOTS__QUERY_BOUND_1_PLUS_2KLOGN__SOFT_SUBSET_VOLUME_N__CONDITIONAL_REUSABLE_ORACLE_ENVELOPE_B9O4_BELOW_RHO__ORACLE_UNSUPPLIED__DIRECT_N2N_B23O4__GENERIC_INVARIANT_LOCATOR_EXCLUDED__NO_UNCONDITIONAL_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute the reusable scalar subset-incidence oracle after one
+  softly O(n+N) coordinate-specific preprocessing. Reject leaf enumeration, N
+  squared or n squared represented Chow bodies, nN per-node factor expansion,
+  target-dependent transforms, candidate inversions, and unit-cost multipoint,
+  norm, resultant, root, or generic locator oracles.

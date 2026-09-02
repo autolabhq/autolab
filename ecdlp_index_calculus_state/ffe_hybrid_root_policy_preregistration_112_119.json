@@ -1,0 +1,84 @@
+{
+  "schema": "ecdlp_ffe_hybrid_root_policy_preregistration_v1",
+  "date": "2026-05-25",
+  "claim_boundary": "declared_before_112_119_generation",
+  "holdout_window": {
+    "transfer_indices": [
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119
+    ],
+    "window_label": "112_119"
+  },
+  "pre_factor_gate": {
+    "name": "pre_factor_nonvacuous_hit_root_proxy",
+    "uses_sage_factorization": false,
+    "uses_root_policy_outcome": false,
+    "conditions": [
+      "full materialized FFE surface has at least one selected root pair",
+      "selected public leaf has at least one known hit root before factorization"
+    ]
+  },
+  "primary_root_policy": {
+    "name": "residue16_then_global_hash_cap1",
+    "train_rows": "all preregistered pre-factor-gated surfaces through transfer index 87",
+    "policy_identity_selection_rule": "selected before 112-119 from the 104-111 capped-family diagnostic: cap1 was the only tested residue16-then-global-hash cap with 2/2 preserving, zero false positives, and 2/2 below-rho scan/direct accounting",
+    "selected_from_artifact": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_train_le87_test_104_111.json",
+    "algorithm": [
+      "rank candidate root hyperplanes using learned_target_zero_residue16_prior trained only on <=87 gated surfaces",
+      "evaluate the first residue16-ranked candidate",
+      "if that candidate is not public-zero, continue with remaining candidates ordered by the static public global_root_hash key",
+      "stop at the first public-zero root hyperplane and charge all selector work plus root-scan or direct-root accounting"
+    ],
+    "forbidden_holdout_selection_fields": [
+      "preserves_selected_root_pairs",
+      "chosen_preserves_selected_root_pairs",
+      "public_zero_recovered",
+      "below_rho",
+      "direct_below_rho",
+      "total_ops_over_rho",
+      "direct_total_ops_over_rho"
+    ]
+  },
+  "baseline_root_policies": [
+    {
+      "name": "summax_sage_low_constant_target_hash",
+      "reason": "frozen static public policy selected from <=87 rows; strongest non-posthoc baseline on 104-111"
+    },
+    {
+      "name": "global_root_hash",
+      "reason": "posthoc best static public control on 104-111; included only as a declared control for 112-119"
+    },
+    {
+      "name": "learned_target_zero_residue16_prior",
+      "reason": "uncapped learned policy that motivated the cap-and-fallback family"
+    }
+  ],
+  "train_sources": [
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_all_public_leaf_plus_fresh_72_79.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_all_public_leaf_plus_fresh_72_79.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_all_public_leaf_plus_fresh_72_79.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total3_total4_verified_over_rho_80_87.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total3_total4_verified_over_rho_80_87.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_verified_over_rho_80_87.json"
+  ],
+  "intended_outputs": {
+    "total2_stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_selector_112_119_probe.json",
+    "total3_total4_stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_112_119_probe.json",
+    "strict_signatures": [
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_112_119.json",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total3_total4_signature_fixed_selector_112_119.json"
+    ],
+    "gate_manifests": [
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_fixed_selector_112_119.json",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_fixed_selector_112_119.json"
+    ],
+    "frozen_evaluator": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_train_le87_test_112_119.json"
+  },
+  "promotion_condition": "After generating 112-119 strict signatures and pre-factor manifests, factor only gate-selected surfaces and score residue16_then_global_hash_cap1 trained only on <=87 gated surfaces. Count as positive only if preserving, false-positive-free, and below Pollard-rho under scan or direct-root accounting on every gate-selected surface. Report summax_sage_low_constant_target_hash, global_root_hash, and learned_target_zero_residue16_prior as preregistered controls."
+}

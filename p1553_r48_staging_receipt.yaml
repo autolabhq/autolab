@@ -1,0 +1,80 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R48-ALL-DENOMINATOR-COLLISION-SLICE-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T10:07:49Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R48 is an exact declared-slice
+  toy sweep requiring independent review. Every catalog denominator is covered,
+  but numerator pencils outside the seven slices and denominators outside the
+  budgeted catalog remain open.
+bindings:
+  r47_bundle_hash_list_sha256: 7407fccf1684d4cbe11d7f9b16111516233523cc7e4864dd549a3bd96e2f69b3
+  r47_staging_receipt_sha256: 1488ef90bf65eecc857ed63f73d0409247cc19db62ed88abb7b75e9d41c64162
+  r48_gate_sha256: 76952071e56ade008852176cd17d71e23a8f98f0b7b674464fd1dd85f8c1f81f
+  r48_parent_report_sha256: c7794d0c58e8a9b510f9f5d5269c2d3bdd09cd2d2d698860b5d0be23720d39d1
+  r48_sweep_script_sha256: 011e767a9ff568773f1dba1f6dabda6d63fc22ceac38bdcc80b17c21a33ab3ef
+  r48_sweep_report_sha256: adf85fbbbe578d1c613ef3cba286a1c9eb97caed239bfd52ea500c64bedf6d35
+  r48_artifact_index_sha256: 9da44ccfe03feb4cc9e7d9b3ca07662a71a796ff07d43f7530437d1574ce597c
+  r48_bundle_hash_list_sha256: ce1a6f65097d907417494fba01c5c4ed529fa5509cbad3ad971c7befc2a6e611
+result:
+  classification: all_catalog_denominator_slice_negative_outside_catalog_open
+  catalog_denominators: 807
+  catalog_disjoint_pairs_scored_for_seed_selection: 142286
+  generated_projective_line_instances: 1095906
+  scored_subgroup_basepoint_free_candidates: 1040723
+  subgroup_basepoint_rejections: 49534
+  duplicate_slice_instances: 4842
+  denominators_with_strict_secondary_improvement: 72
+  maximum_collision_pair_gain: 11
+  best_complete_nine_point_fibers: 2
+  best_collision_pairs: 106
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+  survivors: 0
+  outside_slice_catalog_pencils: unclassified
+  outside_catalog_denominators: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r48_hash_list: pass
+  r48_parent_yaml_parse: pass
+  all_807_denominators_checked: pass
+  all_142286_disjoint_pairs_scored_for_seed_selection: pass
+  all_seed_collision_bases_rank_seven: pass
+  all_1095906_projective_slice_instances_generated: pass
+  all_unique_candidate_outcomes_accounted: pass
+  full_subgroup_degree_nine_multiplicity_control: pass
+  deterministic_replay_matches_report_byte_for_byte: pass
+  clean_temporary_replay_with_r16_through_r48_gates_and_r48_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T10_07_49Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - each denominator search is exhaustive only over seven declared slices
+  - every denominator is drawn from the budgeted R45 catalog
+  - subgroup basepoint checks do not certify geometric basepoint freeness
+  - no target, R10, relation-rank campaign, logs, descent, or breakthrough
+exactly_one_next_action: >-
+  With deterministic seed 1553, generate 1,000 distinct nine-subsets of
+  offsets 0 through 80 outside the R45 catalog whose offset sum is 360 modulo
+  103. Construct their exact sections, verify each subgroup zero set, choose
+  the highest-collision disjoint catalog partner, and exhaust the same seven
+  194-pencil slices.

@@ -1,0 +1,100 @@
+{
+  "schema": "ecdlp_ffe_total2_single_hit_root_policy_preregistration_v1",
+  "date": "2026-05-25",
+  "claim_boundary": "declared_before_160_167_generation",
+  "holdout_window": {
+    "transfer_indices": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167
+    ],
+    "window_label": "160_167"
+  },
+  "channel_scope": {
+    "primary_channel": "low_term_total2",
+    "excluded_from_promotion": [
+      "low_term_total3",
+      "low_term_total4"
+    ],
+    "reason": "The pre-factor locator family still false-positives on known total3/4 negative controls and on multi-hit-root total2 surfaces."
+  },
+  "pre_factor_gate": {
+    "name": "single_prefactor_hit_root",
+    "uses_sage_factorization": false,
+    "uses_root_policy_outcome": false,
+    "conditions": [
+      "full materialized FFE surface has at least one selected root pair",
+      "selected public leaves expose exactly one distinct known hit root before factorization"
+    ],
+    "derived_from": "152-159 fresh preregistered test plus earlier 112-151 diagnostic: broad pre-factor gates fail on multi-hit-root surfaces, while the single-hit-root subgate stayed preserving, false-positive-free, and below rho on retained total2 surfaces"
+  },
+  "primary_root_policy": {
+    "name": "prefactor_unique_leaf_hit_root_first_target_hash",
+    "policy_type": "pre_factor_public_root_locator",
+    "policy_identity_selection_rule": "selected before 160-167 from the 152-159 handoff: the fresh single-hit-root total2 route was 3/3 preserving, zero false positives, 3/3 scan-below-rho, and 3/3 direct-below-rho",
+    "selected_from_artifacts": [
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_single_hit_root_policy_total2_112_151.json",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_single_hit_root_policy_total2_152_159.json",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ecdlp_research_handoff_20260525_single_hit_root_152_159/novelty.json"
+    ],
+    "algorithm": [
+      "read pre_factor_selected_hit_roots and pre_factor_selected_hit_root_pairs from the preregistered gate manifest",
+      "require exactly one distinct pre-factor selected hit root for promotion",
+      "rank Sage root-hyperplane candidates whose root is that pre-factor hit root first",
+      "fall back to target_root_hash among non-hit-root candidates",
+      "stop at the first public-zero root hyperplane",
+      "charge all selector work plus root-scan and direct-root accounting"
+    ],
+    "forbidden_holdout_selection_fields": [
+      "preserves_selected_root_pairs",
+      "chosen_preserves_selected_root_pairs",
+      "chosen_false_positive",
+      "below_rho",
+      "direct_below_rho",
+      "total_ops_over_rho",
+      "direct_total_ops_over_rho"
+    ]
+  },
+  "baseline_root_policies": [
+    {
+      "name": "all_prefactor_gate_prefactor_unique_leaf_hit_root_first_target_hash",
+      "reason": "broad pre-factor gate failed on 144-151 and 152-159 through multi-hit-root surfaces"
+    },
+    {
+      "name": "prefactor_selected_hit_root_first_target_hash",
+      "reason": "earlier locator without unique-leaf tie-break"
+    },
+    {
+      "name": "target_root_hash",
+      "reason": "previous static primary; preserving but too expensive on 128-135"
+    },
+    {
+      "name": "global_root_hash",
+      "reason": "static public global hash control"
+    },
+    {
+      "name": "summax_sage_low_constant_target_hash",
+      "reason": "frozen <=87 static public control"
+    }
+  ],
+  "intended_outputs": {
+    "total2_stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_selector_160_167_probe.json",
+    "strict_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_160_167.json",
+    "gate_manifest": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_fixed_selector_160_167.json",
+    "sage_factor_subset": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total2_single_hit_root_preregistered_160_167.json",
+    "linear_factor_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total2_single_hit_root_preregistered_160_167.json",
+    "primary_policy_eval": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_single_hit_root_policy_total2_160_167.json",
+    "broad_gate_control": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_hit_root_policy_total2_160_167.json"
+  },
+  "promotion_condition": "After generating the 160-167 total2 strict signature and pre-factor manifest, factor only surfaces with exactly one distinct pre-factor selected hit root and score prefactor_unique_leaf_hit_root_first_target_hash. Count as a replicated total2 scan-positive only if all selected single-hit-root surfaces are preserving, false-positive-free, and scan-below-rho. Count as a weaker direct-root positive if all are preserving, false-positive-free, and direct-below-rho.",
+  "non_claims": [
+    "This does not promote total3/4 surfaces.",
+    "This does not claim end-to-end ECDLP recovery faster than Pollard rho.",
+    "This does not claim the dropped multi-hit-root surfaces are useless; they are outside this promoted gate."
+  ]
+}

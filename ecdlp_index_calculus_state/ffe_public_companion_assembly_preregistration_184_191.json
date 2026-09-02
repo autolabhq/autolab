@@ -1,0 +1,69 @@
+{
+  "schema": "ecdlp_ffe_public_companion_assembly_preregistration_v1",
+  "date": "2026-05-25",
+  "claim_boundary": "declared_before_184_191_generation",
+  "holdout_window": {
+    "transfer_indices": [
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191
+    ],
+    "window_label": "184_191"
+  },
+  "candidate_source": {
+    "family": "fixed_selector_low_term_total2_public_below_rho",
+    "leaf_selectors": [
+      "mode_cost_low_term_support_total2",
+      "mode_low_term_support_total2"
+    ],
+    "positive_source": "below_rho_all"
+  },
+  "anchor_rule": {
+    "gate": "single_prefactor_hit_root",
+    "policy": "prefactor_unique_leaf_hit_root_first_target_hash",
+    "conditions": [
+      "exactly one pre_factor_selected_hit_root",
+      "public_zero_recovered",
+      "total_ops_over_rho < 1.0",
+      "at most 3 public source cases per target and transfer challenge"
+    ]
+  },
+  "companion_rule": {
+    "conditions": [
+      "use source cases selected by the public anchor rule",
+      "retain every row/leaf surface in each selected public source case",
+      "do not drop companion rows before relation replay"
+    ],
+    "motivation": "The 176-183 anchor-only replay stalled at rank 1, while complete companion assemblies recovered 3 public-key derivations on 22050.cf1@11731."
+  },
+  "forbidden_selection_fields": [
+    "public_key_verified",
+    "relation_count",
+    "rank",
+    "chosen_preserves_selected_root_pairs",
+    "chosen_false_positive",
+    "below_rho",
+    "direct_below_rho"
+  ],
+  "intended_outputs": {
+    "stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_selector_184_191_probe.json",
+    "candidate_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_candidate_signature_fixed_selector_184_191.json",
+    "gate_manifest": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_candidates_184_191.json",
+    "sage_factor_subset": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total2_candidates_single_hit_root_184_191.json",
+    "root_policy_eval": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_single_hit_root_policy_total2_candidates_184_191.json",
+    "anchor_selector": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_single_hit_root_assembly_selector_184_191.json",
+    "companion_selector": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_companion_assembly_selector_184_191.json",
+    "companion_replay": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_companion_assembly_replay_184_191.json"
+  },
+  "promotion_condition": "Promote only if complete companion assemblies produce below-rho same-challenge relation systems that publicly derive fresh challenge keys without using verifier outcomes for selection.",
+  "non_claims": [
+    "This is not a complete ECDLP index-calculus algorithm.",
+    "This does not use total3 or total4 candidates.",
+    "This does not allow verifier outcomes to choose anchors or companions."
+  ]
+}

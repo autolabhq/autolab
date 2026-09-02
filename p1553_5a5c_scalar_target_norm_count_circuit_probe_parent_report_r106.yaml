@@ -1,0 +1,108 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-SCALAR-TARGET-NORM-COUNT-CIRCUIT-R106-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_prime_cyclic_fourier_support_obstruction
+run_count: 1
+status: character_diagonal_body_b5_noncharacter_norm_circuit_open
+labels:
+  - target-specialized
+  - scalar-count
+  - fourier
+  - uncertainty-principle
+  - actual-image
+  - matched-random-control
+  - scoped-negative
+  - prospective
+  - novelty-unverified
+owner: P1553-R77-R82-R91-R105
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether an exact character-diagonal representation can evaluate
+  the canonical 5A+5C scalar target count inside the setup and online caps.
+inputs:
+  - path: p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_r105.py
+    sha256: d7215def9fa82b01ec72ea43f3d297fd1343d2ceae9f5d364a351326c9f9c6b8
+  - path: p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_report_r105.json
+    sha256: c00b8c3e934e783012acb1dab83282f98720702bb8cd81a706fbdf4671f93a83
+  - path: p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_gate_r105.md
+    sha256: e349dc695975b3d5ce923ed334c61c6329884bbc30228f7bf52fb1c8413ea3ef
+  - path: p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_parent_report_r105.yaml
+    sha256: 34ed83a9fbb47048734f9a14f0311fc272761b747da9b12fa66e110ab8daa3ad
+  - path: p1553_target_translated_frequency_orbit_probe_report_r77.json
+    sha256: 73f66184fa53a2d43397a915c4249a41c5687cbcd1d5d16cc3e4ff47cf254787
+  - path: p1553_target_translated_frequency_orbit_probe_gate_r77.md
+    sha256: 45324f816cc159032cb6c2ac97c0a2f52a618c409e276616521b4e894cb46b55
+  - path: p1553_5a5c_unequal_list_subfunction_inversion_probe_report_r91.json
+    sha256: 6bfaaaa72dd1135f8244a70a0ce2a6697e5f3fe63ce8ac0ce107bd05f19a71da
+  - path: p1553_5a5c_unequal_list_subfunction_inversion_probe_gate_r91.md
+    sha256: 57469654e0b535ccbf1d62edd9548cd827a09d244deaecb06b8aedbd410ac6d3
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+artifacts:
+  - path: p1553_5a5c_scalar_target_norm_count_circuit_probe_r106.py
+    sha256: fdff39f3b49b0d01690ae5a480c17bfd701adcc528bc2701aa6ae9756bda6652
+  - path: p1553_5a5c_scalar_target_norm_count_circuit_probe_report_r106.json
+    sha256: 08a84327617ec660b189e5a42f22eaa79f817e1a6aa3167724263595f1fa192d
+  - path: frozen_5a5c_scalar_target_norm_count_circuit.json
+    sha256: 25776e0d8a2e1decf2bbc80d3cd3dd592cb7587fbe31f45e12b08a3c3eb55e87
+  - path: scalar_target_norm_gate_and_cost_ledger.json
+    sha256: 4c32b51fc88368b164e3edbc480e1ca2f0a9bc11bef986728edbb7acf58a9c60
+  - path: scalar_target_norm_marker_jet_replay.json
+    sha256: cf910bd072340e48cbabd989a42a10b2061950ac8f3e8839c71ed02ef70af64b
+  - path: scalar_target_norm_exceptional_controls.json
+    sha256: 21b5c6cc6981e8c1f1a61afd7dbb6bd2d28ce35a0a2c90a1fb92fbb1a01b9332
+  - path: factor_logs_and_identical_descent_r106.json
+    sha256: e6094d325d9595e89b5fdb488b5d4ad856e059c24c4154f5cfe6d6da7c1c3bf2
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_scalar_target_norm_count_circuit_probe_r106.py
+    sha256: 18a3958358af0338255c97ba73a7899b860a5e657c671a8b9865a41a0a0dbe96
+verified_statements:
+  - >-
+    Tao's prime-cyclic support uncertainty theorem bounds each side Fourier
+    zero set by its endpoint support minus one.
+  - >-
+    The canonical full-count spectrum has at least
+    q-|supp(H_A)|-|supp(H_C)|+2 live character modes.
+  - >-
+    Actual and matched side supports force more than 99 percent of finite
+    modes live and B^5 modes asymptotically.
+  - >-
+    The composite-order subgroup indicator passes as a sparse-spectrum
+    positive control.
+scoped_failures:
+  character_diagonal_scalar_constructor_inside_caps: refuted
+  candidate_dlp_character_coordinates: unavailable
+  noncharacter_scalar_target_norm: unsupplied
+  generic_multiplicity_and_integer_lift: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - non-character nonlinear resultant, norm, or rational circuits
+  - finite-field Fourier transforms without the complex minor theorem
+  - general arithmetic-circuit lower bounds
+  - generic-prime lower bounds
+primary_sources:
+  - url: https://arxiv.org/abs/math/0308286
+    use: sharp additive support uncertainty on prime cyclic groups
+admission:
+  passed_obligations: 12
+  obligation_count: 26
+  character_diagonal_constructor_class_closed: true
+  lane_admitted: false
+result:
+  live_character_mode_exponent_B: 5
+  minimum_finite_live_mode_fraction: 0.998478115297985
+  noncharacter_scalar_constructor_complete: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_CHARACTER_DIAGONAL_SCALAR_TARGET_COUNT_ONLY__PRIME_CYCLIC_UNCERTAINTY_FORCES_B5_LIVE_MODES__ACTUAL_AND_MATCHED_CONTROLS_EXACT__COMPOSITE_POSITIVE_CONTROL_PASSES__NONCHARACTER_RESULTANT_NORM_CIRCUIT_OPEN__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one non-character target-injected algebraic
+  norm/resultant circuit over the compact atom divisors.

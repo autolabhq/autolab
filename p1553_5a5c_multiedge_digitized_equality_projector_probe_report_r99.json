@@ -1,0 +1,754 @@
+{
+  "admission": {
+    "failures": [
+      "aggregate_compact_digit_index_supplied",
+      "standard_digit_setup_inside_cap",
+      "standard_digit_online_inside_cap",
+      "field_operation_digit_extractor_proved",
+      "actual_five_a_five_c_integer_lift_complete",
+      "actual_five_a_five_c_source_unranking_complete",
+      "projective_infinity_source_complete",
+      "proper_subsum_source_complete",
+      "tangent_source_complete",
+      "multiplicity_complete_actual_source_return",
+      "known_rhs_rank_without_verifier_dlp",
+      "factor_logs_without_verifier_dlp",
+      "identical_fresh_target_descent",
+      "generic_prime_family_algorithm",
+      "shoup_improvement_complete",
+      "succinct_low_circuit_fiber_indicator_family_supplied"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 31,
+    "obligations": {
+      "actual_five_a_five_c_integer_lift_complete": false,
+      "actual_five_a_five_c_source_unranking_complete": false,
+      "aggregate_compact_digit_index_supplied": false,
+      "alphabet_product_covers_field": true,
+      "blind_bottom_exact": true,
+      "canonical_radix_encoding_injective": true,
+      "digitized_equality_projector_exact": true,
+      "duplicate_occurrence_count_exact": true,
+      "factor_logs_without_verifier_dlp": false,
+      "fiber_indicator_interpolations_exact": true,
+      "field_operation_digit_extractor_proved": false,
+      "flattened_cut_rank_compatibility_recorded": true,
+      "full_lookup_charged_as_B5": true,
+      "generic_prime_family_algorithm": false,
+      "identical_fresh_target_descent": false,
+      "integer_no_wrap_replayed": true,
+      "known_rhs_rank_without_verifier_dlp": false,
+      "multiplicity_complete_actual_source_return": false,
+      "nine_source_bindings_verified": true,
+      "nonempty_fiber_indicators_degree_p_minus_1": true,
+      "projective_infinity_source_complete": false,
+      "proper_subsum_source_complete": false,
+      "shoup_improvement_complete": false,
+      "source_table_charged_as_B12O5": true,
+      "standard_digit_online_inside_cap": false,
+      "standard_digit_setup_inside_cap": false,
+      "succinct_low_circuit_fiber_indicator_family_supplied": false,
+      "supplied_digit_representation_positive_control": true,
+      "table_root_and_coefficient_state_charged": true,
+      "tangent_source_complete": false,
+      "toy_dyadic_source_exact": true
+    },
+    "passed_obligation_count": 15
+  },
+  "asymptotic_cost_control": {
+    "canonical_integer_digit_access_is_free_field_operation": false,
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "full_field_materialized_constructors": {
+      "digit_table_words": "Theta(p log p)",
+      "exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "fiber_coefficient_words": "Theta(p log p)",
+      "fiber_root_words": "Theta(p log p)",
+      "inside_setup_cap": false
+    },
+    "low_circuit_fiber_indicator_family_supplied": false,
+    "scope": "Charges materialized canonical-radix tables and per-source digit extraction only. It does not lower-bound a succinct arithmetic digit extractor or an aggregate digit trie built directly from compact A/C divisor circuits.",
+    "sourcewise_digit_extraction": {
+      "digit_words_or_extractor_calls": "Theta(D log p)",
+      "exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "inside_online_cap": false,
+      "inside_setup_cap": false,
+      "source_message_count": "D=Theta(B^(12/5))"
+    },
+    "succinct_aggregate_digit_index_from_compact_divisors_supplied": false,
+    "supplied_radix_digits": {
+      "edge_count": "Theta(log p)=Theta(log B)",
+      "edge_width": 2,
+      "equality_work": "Theta(log p)",
+      "flattened_cut_capacity": "2^ceil(log2 p) in [p,2p)",
+      "representation_positive_control": true
+    }
+  },
+  "breakthrough": false,
+  "classification": "SUPPLIED_RADIX_DIGITS_DECOMPOSE_EQUALITY_EXACTLY__FLATTENED_CAPACITY_STILL_P__STANDARD_DIGIT_TABLE_B5__SOURCEWISE_DIGIT_TRAFFIC_B12O5__AGGREGATE_DIGIT_INDEX_OPEN",
+  "digit_channel_controls": {
+    "all_alphabet_products_cover_field": true,
+    "all_digit_encodings_injective": true,
+    "all_digit_equalities_exact": true,
+    "all_fiber_indicators_degree_p_minus_1": true,
+    "all_fiber_interpolations_exact": true,
+    "degree_theorem": "For a nonempty proper S subset F_p, the unique polynomial indicator 1_S has x^(p-1) coefficient -|S| != 0, hence degree p-1.",
+    "radix": 2,
+    "rank_compatibility": "The product of channel alphabet sizes is at least p, so the flattened multi-edge cut capacity remains compatible with the rank-p equality kernel even though each supplied digit edge has width two.",
+    "scope": "Exact canonical-radix positive control plus materialized digit tables, fiber interpolation tables, and fiber root lists. Degree p-1 is not by itself an arithmetic-circuit lower bound.",
+    "sweep": [
+      {
+        "all_fiber_coefficient_words": 30,
+        "all_fiber_interpolations_exact": true,
+        "all_fiber_root_words": 15,
+        "all_nonempty_fiber_indicators_degree_p_minus_1": true,
+        "alphabet_product": 8,
+        "alphabet_product_covers_field": true,
+        "bit_count": 3,
+        "channel_alphabet_sizes": [
+          2,
+          2,
+          2
+        ],
+        "digit_equality_exact": true,
+        "encoding_injective": true,
+        "fiber_rows": [
+          {
+            "bit": 0,
+            "coefficient_words": 5,
+            "expected_degree": 4,
+            "fiber_size": 3,
+            "interpolation_degree": 4,
+            "interpolation_exact": true,
+            "root_list_words": 3,
+            "symbol": 0
+          },
+          {
+            "bit": 0,
+            "coefficient_words": 5,
+            "expected_degree": 4,
+            "fiber_size": 2,
+            "interpolation_degree": 4,
+            "interpolation_exact": true,
+            "root_list_words": 2,
+            "symbol": 1
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 5,
+            "expected_degree": 4,
+            "fiber_size": 3,
+            "interpolation_degree": 4,
+            "interpolation_exact": true,
+            "root_list_words": 3,
+            "symbol": 0
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 5,
+            "expected_degree": 4,
+            "fiber_size": 2,
+            "interpolation_degree": 4,
+            "interpolation_exact": true,
+            "root_list_words": 2,
+            "symbol": 1
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 5,
+            "expected_degree": 4,
+            "fiber_size": 4,
+            "interpolation_degree": 4,
+            "interpolation_exact": true,
+            "root_list_words": 4,
+            "symbol": 0
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 5,
+            "expected_degree": 4,
+            "fiber_size": 1,
+            "interpolation_degree": 4,
+            "interpolation_exact": true,
+            "root_list_words": 1,
+            "symbol": 1
+          }
+        ],
+        "flattened_cut_capacity": 8,
+        "materialized_digit_table_words": 15,
+        "prime": 5
+      },
+      {
+        "all_fiber_coefficient_words": 42,
+        "all_fiber_interpolations_exact": true,
+        "all_fiber_root_words": 21,
+        "all_nonempty_fiber_indicators_degree_p_minus_1": true,
+        "alphabet_product": 8,
+        "alphabet_product_covers_field": true,
+        "bit_count": 3,
+        "channel_alphabet_sizes": [
+          2,
+          2,
+          2
+        ],
+        "digit_equality_exact": true,
+        "encoding_injective": true,
+        "fiber_rows": [
+          {
+            "bit": 0,
+            "coefficient_words": 7,
+            "expected_degree": 6,
+            "fiber_size": 4,
+            "interpolation_degree": 6,
+            "interpolation_exact": true,
+            "root_list_words": 4,
+            "symbol": 0
+          },
+          {
+            "bit": 0,
+            "coefficient_words": 7,
+            "expected_degree": 6,
+            "fiber_size": 3,
+            "interpolation_degree": 6,
+            "interpolation_exact": true,
+            "root_list_words": 3,
+            "symbol": 1
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 7,
+            "expected_degree": 6,
+            "fiber_size": 4,
+            "interpolation_degree": 6,
+            "interpolation_exact": true,
+            "root_list_words": 4,
+            "symbol": 0
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 7,
+            "expected_degree": 6,
+            "fiber_size": 3,
+            "interpolation_degree": 6,
+            "interpolation_exact": true,
+            "root_list_words": 3,
+            "symbol": 1
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 7,
+            "expected_degree": 6,
+            "fiber_size": 4,
+            "interpolation_degree": 6,
+            "interpolation_exact": true,
+            "root_list_words": 4,
+            "symbol": 0
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 7,
+            "expected_degree": 6,
+            "fiber_size": 3,
+            "interpolation_degree": 6,
+            "interpolation_exact": true,
+            "root_list_words": 3,
+            "symbol": 1
+          }
+        ],
+        "flattened_cut_capacity": 8,
+        "materialized_digit_table_words": 21,
+        "prime": 7
+      },
+      {
+        "all_fiber_coefficient_words": 88,
+        "all_fiber_interpolations_exact": true,
+        "all_fiber_root_words": 44,
+        "all_nonempty_fiber_indicators_degree_p_minus_1": true,
+        "alphabet_product": 16,
+        "alphabet_product_covers_field": true,
+        "bit_count": 4,
+        "channel_alphabet_sizes": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "digit_equality_exact": true,
+        "encoding_injective": true,
+        "fiber_rows": [
+          {
+            "bit": 0,
+            "coefficient_words": 11,
+            "expected_degree": 10,
+            "fiber_size": 6,
+            "interpolation_degree": 10,
+            "interpolation_exact": true,
+            "root_list_words": 6,
+            "symbol": 0
+          },
+          {
+            "bit": 0,
+            "coefficient_words": 11,
+            "expected_degree": 10,
+            "fiber_size": 5,
+            "interpolation_degree": 10,
+            "interpolation_exact": true,
+            "root_list_words": 5,
+            "symbol": 1
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 11,
+            "expected_degree": 10,
+            "fiber_size": 6,
+            "interpolation_degree": 10,
+            "interpolation_exact": true,
+            "root_list_words": 6,
+            "symbol": 0
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 11,
+            "expected_degree": 10,
+            "fiber_size": 5,
+            "interpolation_degree": 10,
+            "interpolation_exact": true,
+            "root_list_words": 5,
+            "symbol": 1
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 11,
+            "expected_degree": 10,
+            "fiber_size": 7,
+            "interpolation_degree": 10,
+            "interpolation_exact": true,
+            "root_list_words": 7,
+            "symbol": 0
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 11,
+            "expected_degree": 10,
+            "fiber_size": 4,
+            "interpolation_degree": 10,
+            "interpolation_exact": true,
+            "root_list_words": 4,
+            "symbol": 1
+          },
+          {
+            "bit": 3,
+            "coefficient_words": 11,
+            "expected_degree": 10,
+            "fiber_size": 8,
+            "interpolation_degree": 10,
+            "interpolation_exact": true,
+            "root_list_words": 8,
+            "symbol": 0
+          },
+          {
+            "bit": 3,
+            "coefficient_words": 11,
+            "expected_degree": 10,
+            "fiber_size": 3,
+            "interpolation_degree": 10,
+            "interpolation_exact": true,
+            "root_list_words": 3,
+            "symbol": 1
+          }
+        ],
+        "flattened_cut_capacity": 16,
+        "materialized_digit_table_words": 44,
+        "prime": 11
+      },
+      {
+        "all_fiber_coefficient_words": 104,
+        "all_fiber_interpolations_exact": true,
+        "all_fiber_root_words": 52,
+        "all_nonempty_fiber_indicators_degree_p_minus_1": true,
+        "alphabet_product": 16,
+        "alphabet_product_covers_field": true,
+        "bit_count": 4,
+        "channel_alphabet_sizes": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "digit_equality_exact": true,
+        "encoding_injective": true,
+        "fiber_rows": [
+          {
+            "bit": 0,
+            "coefficient_words": 13,
+            "expected_degree": 12,
+            "fiber_size": 7,
+            "interpolation_degree": 12,
+            "interpolation_exact": true,
+            "root_list_words": 7,
+            "symbol": 0
+          },
+          {
+            "bit": 0,
+            "coefficient_words": 13,
+            "expected_degree": 12,
+            "fiber_size": 6,
+            "interpolation_degree": 12,
+            "interpolation_exact": true,
+            "root_list_words": 6,
+            "symbol": 1
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 13,
+            "expected_degree": 12,
+            "fiber_size": 7,
+            "interpolation_degree": 12,
+            "interpolation_exact": true,
+            "root_list_words": 7,
+            "symbol": 0
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 13,
+            "expected_degree": 12,
+            "fiber_size": 6,
+            "interpolation_degree": 12,
+            "interpolation_exact": true,
+            "root_list_words": 6,
+            "symbol": 1
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 13,
+            "expected_degree": 12,
+            "fiber_size": 8,
+            "interpolation_degree": 12,
+            "interpolation_exact": true,
+            "root_list_words": 8,
+            "symbol": 0
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 13,
+            "expected_degree": 12,
+            "fiber_size": 5,
+            "interpolation_degree": 12,
+            "interpolation_exact": true,
+            "root_list_words": 5,
+            "symbol": 1
+          },
+          {
+            "bit": 3,
+            "coefficient_words": 13,
+            "expected_degree": 12,
+            "fiber_size": 8,
+            "interpolation_degree": 12,
+            "interpolation_exact": true,
+            "root_list_words": 8,
+            "symbol": 0
+          },
+          {
+            "bit": 3,
+            "coefficient_words": 13,
+            "expected_degree": 12,
+            "fiber_size": 5,
+            "interpolation_degree": 12,
+            "interpolation_exact": true,
+            "root_list_words": 5,
+            "symbol": 1
+          }
+        ],
+        "flattened_cut_capacity": 16,
+        "materialized_digit_table_words": 52,
+        "prime": 13
+      },
+      {
+        "all_fiber_coefficient_words": 170,
+        "all_fiber_interpolations_exact": true,
+        "all_fiber_root_words": 85,
+        "all_nonempty_fiber_indicators_degree_p_minus_1": true,
+        "alphabet_product": 32,
+        "alphabet_product_covers_field": true,
+        "bit_count": 5,
+        "channel_alphabet_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "digit_equality_exact": true,
+        "encoding_injective": true,
+        "fiber_rows": [
+          {
+            "bit": 0,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 9,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 9,
+            "symbol": 0
+          },
+          {
+            "bit": 0,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 8,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 8,
+            "symbol": 1
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 9,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 9,
+            "symbol": 0
+          },
+          {
+            "bit": 1,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 8,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 8,
+            "symbol": 1
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 9,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 9,
+            "symbol": 0
+          },
+          {
+            "bit": 2,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 8,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 8,
+            "symbol": 1
+          },
+          {
+            "bit": 3,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 9,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 9,
+            "symbol": 0
+          },
+          {
+            "bit": 3,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 8,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 8,
+            "symbol": 1
+          },
+          {
+            "bit": 4,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 16,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 16,
+            "symbol": 0
+          },
+          {
+            "bit": 4,
+            "coefficient_words": 17,
+            "expected_degree": 16,
+            "fiber_size": 1,
+            "interpolation_degree": 16,
+            "interpolation_exact": true,
+            "root_list_words": 1,
+            "symbol": 1
+          }
+        ],
+        "flattened_cut_capacity": 32,
+        "materialized_digit_table_words": 85,
+        "prime": 17
+      }
+    ]
+  },
+  "disposition": "REJECT_STANDARD_DIGIT_CONSTRUCTORS_ONLY__SUPPLIED_RADIX_DIGITS_GIVE_EXACT_SMALL_EDGE_EQUALITY__FLATTENED_CAPACITY_P__NONEMPTY_FIBER_INDICATORS_DEGREE_P_MINUS_1__MATERIALIZED_TABLE_ROOT_AND_COEFFICIENT_STATE_B5__SOURCEWISE_DIGIT_TRAFFIC_B12O5__DUPLICATE_COUNT_AND_TOY_SOURCE_EXACT__SUCCINCT_AGGREGATE_DIGIT_TRIE_OPEN__ACTUAL_5A5C_AND_PROJECTIVE_BRANCHES_INCOMPLETE__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "fresh_target_descent_complete": false,
+  "next_action": "Construct or refute one succinct aggregate digit trie from the compact A/C divisor circuits. Freeze the arithmetic digit or fiber-indicator circuit and aggregation law before outcomes; require setup/state below B^(9/4), fresh count and complete source return below B^(5/4), no sourcewise D traffic or p-size advice, exact multiplicity and all exceptional branches, known-RHS rank, factor logs, and identical target descent.",
+  "novelty_scope": "R99 is the first campaign receipt to credit an exact small-edge digitized equality representation while separating supplied digits from the aggregate compact-source constructor.",
+  "occurrence_digit_controls": {
+    "bit_count": 7,
+    "blind_dyadic_source": {
+      "queried_occurrences": 8,
+      "returned_bottom": true,
+      "source_index": null,
+      "transcript": [
+        {
+          "match_count": 0,
+          "range": [
+            0,
+            8
+          ]
+        }
+      ]
+    },
+    "blind_integer_count": 0,
+    "blind_target": 3,
+    "duplicate_source_indices": [
+      0,
+      1
+    ],
+    "field_prime": 101,
+    "integer_counts_below_prime": true,
+    "materialized_occurrence_digit_words": 56,
+    "occurrence_values": [
+      2,
+      2,
+      5,
+      7,
+      9,
+      12,
+      20,
+      31
+    ],
+    "positive_dyadic_source": {
+      "queried_occurrences": 22,
+      "returned_bottom": false,
+      "returned_source_matches_target": true,
+      "source_index": 0,
+      "source_value": 2,
+      "transcript": [
+        {
+          "match_count": 2,
+          "range": [
+            0,
+            8
+          ]
+        },
+        {
+          "match_count": 2,
+          "range": [
+            0,
+            4
+          ]
+        },
+        {
+          "match_count": 2,
+          "range": [
+            0,
+            4
+          ]
+        },
+        {
+          "match_count": 2,
+          "range": [
+            0,
+            2
+          ]
+        },
+        {
+          "match_count": 2,
+          "range": [
+            0,
+            2
+          ]
+        },
+        {
+          "match_count": 1,
+          "range": [
+            0,
+            1
+          ]
+        },
+        {
+          "match_count": 1,
+          "range": [
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    "positive_integer_count": 2,
+    "positive_target": 2
+  },
+  "schema": "p1553.5a5c_multiedge_digitized_equality_projector.r99.v1",
+  "scope_boundary": "R99 positively verifies supplied radix-digit equality, then closes materialized digit tables, fiber interpolation/root tables, and per-source extraction. Degree p-1 is not an arithmetic-circuit lower bound, and a succinct aggregate digit index from compact A/C divisor circuits remains open.",
+  "shoup_bound_improvement": false,
+  "side_artifacts": {
+    "exceptional": "digitized_projector_exceptional_controls.json",
+    "frozen": "frozen_5a5c_multiedge_digitized_equality_projector.json",
+    "logs_descent": "factor_logs_and_identical_descent_r99.json",
+    "source_replay": "digitized_projector_integer_source_replay.json",
+    "state_ledger": "digit_extractor_state_and_cut_capacity_ledger.json"
+  },
+  "source_bindings": {
+    "p1513_handoff": {
+      "path": "/Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md",
+      "sha256": "27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc"
+    },
+    "r85_gate": {
+      "path": "p1553_5a5c_target_uniform_precoefficient_circuit_probe_gate_r85.md",
+      "sha256": "bb052ad21fde0f8f35dd56e014a6ab3a1ba1e148fd697fb80af230e4d3c4029a"
+    },
+    "r94_gate": {
+      "path": "p1553_5a5c_implicit_veronese_hyperplane_source_index_probe_gate_r94.md",
+      "sha256": "66d2004d1b4dfa63ac69f60397da45e379dfca4bb8db12ede0647f028aaf517d"
+    },
+    "r94_report": {
+      "path": "p1553_5a5c_implicit_veronese_hyperplane_source_index_probe_report_r94.json",
+      "sha256": "a9966f1fb407e720ce1e9aaafc82ab4a38eade9f338cda287cb737445d099df0"
+    },
+    "r97_gate": {
+      "path": "p1553_5a5c_factored_transposed_projector_trace_probe_gate_r97.md",
+      "sha256": "ef91d8a15dc7a218c21355b5b2f2777db948978514ebed26d6884ce929c09182"
+    },
+    "r97_report": {
+      "path": "p1553_5a5c_factored_transposed_projector_trace_probe_report_r97.json",
+      "sha256": "84217a15910b0ed15b6b69c3ec8875f7f2b913a17e4c70fc89cc905c25f492f6"
+    },
+    "r98_gate": {
+      "path": "p1553_5a5c_nonlinear_tensor_tower_trace_probe_gate_r98.md",
+      "sha256": "7acd34a7e3286edd658089a7d258688f9e327ffce03a185c762eee4eade06f3c"
+    },
+    "r98_producer": {
+      "path": "p1553_5a5c_nonlinear_tensor_tower_trace_probe_r98.py",
+      "sha256": "41d98744ff051a6dd259323e7a1298aea77a14b2d12d7cf0149b6eb592297a1e"
+    },
+    "r98_report": {
+      "path": "p1553_5a5c_nonlinear_tensor_tower_trace_probe_report_r98.json",
+      "sha256": "cb322e28620a4634ffac0c474d772c06a26010f10b3dc32c97c9e75637a90dfa"
+    }
+  }
+}

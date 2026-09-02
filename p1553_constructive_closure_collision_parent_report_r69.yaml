@@ -1,0 +1,69 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-CONSTRUCTIVE-CLOSURE-COLLISION-R69-PARENT
+date: 2026-07-28
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exact_constructive_rank_nullity_and_scalar_blind_collision_replay
+  model_scope: general_rank_identity_with_order_103_toy_and_uniform_collision_cost
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_CONSTRUCTIVE_CLOSURE_COLLISION_GATE
+summary: >-
+  A constructive relation with one fresh residual preserves unresolved-log
+  nullity; only a residual collision can reduce it. On the scalar-blind toy,
+  48 fresh rows preserve nullity 12 and 11 independent collisions reduce it to
+  one, recovering all 60 factor logs and fresh target log 53. The source takes
+  66 proposals and online descent 60 lookups versus rho 13, before omitted
+  costs.
+inputs:
+  - path: staged/p1553_scalar_blind_rank_descent_audit_r67.py
+    sha256: 60cf8dc258f2ea097a8581bd95b8002829be492a512cf336c270abda6876129e
+  - path: staged/p1553_scalar_blind_rank_descent_audit_report_r67.json
+    sha256: fc47d3d509597fe5b7a0928c5fcffc4cd6c60679ea7efc7d531f4b24b28f143b
+  - path: staged/p1553_ffe_fixed_sum_information_conservation_r68.py
+    sha256: b8aa38732e577d10c7e7326f01ed5d3a688627963f7d0b98dee3f6a2078deddc
+  - path: staged/p1553_ffe_fixed_sum_information_conservation_report_r68.json
+    sha256: 5c064a36630c052093ebb7bd3b4429d37f836982ba097eacbad2f2ebe1bb6b51
+outputs:
+  - path: staged/p1553_constructive_closure_collision_gate_r69.py
+    sha256: 3afc921566f7750a1175e3b2aba2053429cc12f2f5d6b4c4fd0bef5f438784d5
+  - path: staged/p1553_constructive_closure_collision_gate_report_r69.json
+    sha256: 401b8ae56607f4962c9ae10ed99889d5c27ac865d0e27b3359f7b163a04dd451
+controls:
+  initial_public_base_size: 12
+  pair_proposals: 66
+  fresh_residual_rows: 48
+  fresh_residual_rank: 48
+  nullity_after_fresh_rows: 12
+  closure_collision_rows: 18
+  independent_closure_collision_rows: 11
+  final_relation_rank: 59
+  final_nullity: 1
+  recovered_factor_logs: 60
+  fresh_target_log: 53
+  rho_expected_operations: 13
+  online_target_lookups: 60
+result:
+  classification: constructive_closure_collision_gate
+  scalar_blind_toy_logs_recovered: true
+  fresh_residual_rows_add_log_information: false
+  closure_collisions_add_log_information: true
+  source_beats_direct_pair_enumeration: false
+  source_beats_rho: false
+  online_descent_beats_rho: false
+  new_idea_created: false
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - the exact numerical replay is one size-103 toy
+  - the uniform collision model is not a lower bound for every structured coordinate base
+  - source and target phases already exceed rho before omitted costs
+  - no Shoup-bound improvement or ECDLP breakthrough is claimed
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_CONSTRUCTIVE_CLOSURE_COLLISION_GATE__FRESH_RESIDUALS_PRESERVE_NULLITY__ONLY_CLOSURES_ADD_RANK__TOY_LOGS_AND_TARGET_VERIFY__SOURCE_AND_ONLINE_ABOVE_RHO__UNIFORM_SQRT_BN_COLLISION_COST__NO_NEW_IDEA__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Preregister one public coordinate-defined closure-collision locator acting
+  before pair materialization, then require superuniform independent collision
+  rank, total source and descent below rho, and unchanged transfer across four
+  generic-prime target families.

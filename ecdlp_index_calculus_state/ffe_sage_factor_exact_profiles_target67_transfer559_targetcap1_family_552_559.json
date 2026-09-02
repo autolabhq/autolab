@@ -1,0 +1,1658 @@
+{
+  "cases": [
+    {
+      "exact_profile": {
+        "leaf_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "leaf_selector": "mode_cost_low_term_support_total4",
+        "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+        "row_key": "67.a1@9803:uniform:256:salt204",
+        "selected_signature": "0,1,2,3",
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:559:67.a1@9803",
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 559
+      },
+      "exact_profile_source_case_key": "67.a1@9803|559|4|fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt204', (0, 1, 2, 3)),)",
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+      "public_key_verified": true,
+      "reconstructed_errors": [],
+      "row_selector": "target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+      "source_ops_over_rho": 0.712,
+      "surface_ids": [
+        "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:559:67.a1@9803"
+      ],
+      "target": "67.a1@9803",
+      "top_k": 4,
+      "transfer_index": 559,
+      "union_rank": 4,
+      "union_relation_count": 4
+    }
+  ],
+  "method": "sage_backed_factorization_for_exact_row_leaf_profiles",
+  "parameters": {
+    "profiles": [
+      {
+        "leaf_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "leaf_selector": "mode_cost_low_term_support_total4",
+        "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+        "row_key": "67.a1@9803:uniform:256:salt204",
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 559
+      }
+    ],
+    "radius": 4,
+    "seed": "ecdlp-frontier-signed-dual-sieve-v1",
+    "signature_source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_552_559.json"
+  },
+  "schema": "ecdlp_ffe_sage_factor_exact_profile_subset_probe_v1",
+  "summary": {
+    "best_preserving_sage_factor_surfaces": [],
+    "case_count": 1,
+    "interpretation": "Sage replaces the previous SymPy factorization gap with true finite-field resultant factorization. A preserving factor must emit every original selected root pair. The root-scan count charges a conservative scan over the known hit roots after the factor selects a zero leaf, avoiding full A/B remainder evaluation. Preserving below-rho root-scan candidates are concrete follow-up leads; remainder-only wins would be stronger still.",
+    "materialized_exact_profile_count": 1,
+    "max_sage_resultant_factor_count": 21,
+    "min_full_remainder_ffe_ops_over_rho": 2.6,
+    "min_preserving_sage_factor_remainder_ffe_ops_over_rho": null,
+    "min_preserving_sage_factor_root_scan_ops_over_rho": null,
+    "min_preserving_sage_factor_surface_ffe_ops_over_rho": null,
+    "missing_exact_profile_count": 0,
+    "preserving_sage_factor_remainder_below_rho_count": 0,
+    "preserving_sage_factor_root_scan_below_rho_count": 0,
+    "preserving_sage_factor_surface_below_rho_count": 0,
+    "requested_profile_count": 1,
+    "sage_version": "10.9",
+    "surface_count": 1,
+    "surface_profile_ids": [
+      "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:559:67.a1@9803#leaves=0,1,2,3"
+    ],
+    "surfaces_with_any_preserving_sage_factor_candidate": 0,
+    "surfaces_with_nontrivial_resultant_factor": 1,
+    "surfaces_with_nontrivial_sage_remainder_gcd": 0,
+    "total_sage_resultant_factor_candidates": 21,
+    "verified_case_count": 1
+  },
+  "surfaces": [
+    {
+      "best_preserving_candidate": null,
+      "candidate_count": 21,
+      "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:559:67.a1@9803",
+      "cost_inputs": {
+        "core_ops": 53,
+        "generic_rho_steps": 125,
+        "root_recoveries": 4,
+        "selected_hit_events": 16,
+        "selected_hit_roots": 3,
+        "selected_leaf_count": 4
+      },
+      "exact_profile": {
+        "leaf_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "leaf_selector": "mode_cost_low_term_support_total4",
+        "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+        "row_key": "67.a1@9803:uniform:256:salt204",
+        "selected_signature": "0,1,2,3",
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:559:67.a1@9803",
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 559
+      },
+      "exact_profile_source_case_key": "67.a1@9803|559|4|fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt204', (0, 1, 2, 3)),)",
+      "full_remainder_ffe_ops_over_rho": 2.6,
+      "gcd_cancelled_candidate": null,
+      "has_nontrivial_sage_remainder_gcd": false,
+      "original_selected_root_pair_count": 3,
+      "p": 9803,
+      "preserving_candidate_count": 0,
+      "preserving_candidates": [],
+      "remainder_a_stats": {
+        "max_b_degree": 20,
+        "max_c_degree": 10,
+        "monomials": 121,
+        "total_degree": 20
+      },
+      "remainder_b_stats": {
+        "max_b_degree": 19,
+        "max_c_degree": 10,
+        "monomials": 111,
+        "total_degree": 20
+      },
+      "resultant_stats": {
+        "max_b_degree": 21,
+        "max_c_degree": 21,
+        "monomials": 253,
+        "total_degree": 21
+      },
+      "row_key": "67.a1@9803:uniform:256:salt204",
+      "sage_gcd_remainder_stats": {
+        "max_b_degree": 0,
+        "max_c_degree": 0,
+        "monomials": 1,
+        "total_degree": 0
+      },
+      "sage_resultant_factor_candidates": [
+        {
+          "candidate_name": "sage_resultant_factor_0",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_1",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 113,
+          "factor_root_scan_ops_over_rho": 0.904,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 1,
+          "selected_missed_leaves": 3,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_2",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_3",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_4",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_5",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_6",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_7",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 113,
+          "factor_root_scan_ops_over_rho": 0.904,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 1,
+          "selected_missed_leaves": 3,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_8",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_9",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_10",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_11",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 113,
+          "factor_root_scan_ops_over_rho": 0.904,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 1,
+          "selected_missed_leaves": 3,
+          "selected_root_pair_count": 1,
+          "selected_surface_zero_leaves": 1,
+          "selected_valid_root_leaves": 1,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_12",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_13",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_14",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_15",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_16",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_17",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_18",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_19",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        },
+        {
+          "candidate_name": "sage_resultant_factor_20",
+          "extra_selected_root_pairs": [],
+          "factor_exponent": 1,
+          "factor_monomials": 3,
+          "factor_root_scan_beats_rho": true,
+          "factor_root_scan_ops": 92,
+          "factor_root_scan_ops_over_rho": 0.736,
+          "factor_total_degree": 1,
+          "full_remainder_ffe_ops_over_rho": 2.6,
+          "full_remainder_monomials": 232,
+          "full_resultant_monomials": 253,
+          "generic_rho_steps": 125,
+          "known_hit_root_count": 21,
+          "missing_selected_root_pairs": [
+            [
+              0,
+              4136
+            ],
+            [
+              1,
+              945
+            ],
+            [
+              3,
+              3379
+            ]
+          ],
+          "preserves_selected_root_pairs": false,
+          "remainder_ffe_beats_rho": false,
+          "remainder_ffe_ops": 325,
+          "remainder_ffe_ops_over_rho": 2.6,
+          "remainder_monomials": 232,
+          "same_selected_root_pairs": false,
+          "selected_degenerate_root_scans": 0,
+          "selected_false_zero_leaves": 0,
+          "selected_leaf_count": 4,
+          "selected_linear_root_recoveries": 0,
+          "selected_missed_leaves": 4,
+          "selected_root_pair_count": 0,
+          "selected_surface_zero_leaves": 0,
+          "selected_valid_root_leaves": 0,
+          "surface_ffe_beats_rho": true,
+          "surface_ffe_ops": 96,
+          "surface_ffe_ops_over_rho": 0.768,
+          "surface_monomials": 3
+        }
+      ],
+      "sage_resultant_factorization": {
+        "factor_count": 21,
+        "factors": [
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                5094
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                942
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                952
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                945
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                1430
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                1459
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                2971
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                2025
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                7426
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                2547
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                4800
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                2716
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                3397
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                2877
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                6949
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                3379
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                5340
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                3442
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                8027
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                3736
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                7618
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                3766
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                261
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                4136
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                1308
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                4168
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                9546
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                4232
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                6872
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                4234
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                1042
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                5308
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                644
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                6262
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                4538
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                6676
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                3087
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                7120
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                3512
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                7251
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          },
+          {
+            "exponent": 1,
+            "fingerprint": [
+              [
+                0,
+                0,
+                142
+              ],
+              [
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                7515
+              ]
+            ],
+            "max_b_degree": 1,
+            "max_c_degree": 1,
+            "monomials": 3,
+            "total_degree": 1
+          }
+        ],
+        "nontrivial_factor_count": 21
+      },
+      "selected_leaf_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "source_case_count": 1,
+      "source_cases": [
+        {
+          "leaf_selector": "mode_cost_low_term_support_total4",
+          "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+          "row_selector": "target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+          "source_ops_over_rho": 0.712,
+          "target": "67.a1@9803",
+          "top_k": 4,
+          "transfer_index": 559
+        }
+      ],
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:559:67.a1@9803",
+      "surface_profile_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:559:67.a1@9803#leaves=0,1,2,3",
+      "target": "67.a1@9803"
+    }
+  ]
+}

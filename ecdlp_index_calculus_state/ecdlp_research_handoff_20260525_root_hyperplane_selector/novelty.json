@@ -1,0 +1,55 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-25",
+  "claim_level": "measured_factored_bank_candidate",
+  "hypothesis": "FFE first-fall factors can be treated as public root hyperplanes c + r*b + r^2, reducing the current surface route to root ordering plus public-zero early stop.",
+  "artifacts": {
+    "probe_script": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/ffe_first_fall_root_hyperplane_selector_probe.py",
+    "probe_output": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_root_hyperplane_selector_all_public_leaf_plus_fresh_72_79.json",
+    "first_fall_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_all_public_leaf_plus_fresh_72_79.json"
+  },
+  "evidence": {
+    "surface_count": 28,
+    "best_policy": "summax_sage_low_constant_target_hash",
+    "best_policy_selected_pair_surface_count": 27,
+    "best_policy_public_zero_capable_surface_count": 28,
+    "best_policy_vacuous_preserving_surface_count": 1,
+    "best_policy_below_rho_count": 28,
+    "best_policy_preserving_count": 28,
+    "best_policy_false_positive_count": 0,
+    "best_policy_mean_total_ops_over_rho": 0.78788738,
+    "best_policy_max_total_ops_over_rho": 0.968,
+    "best_policy_direct_below_rho_count": 28,
+    "best_policy_mean_direct_total_ops_over_rho": 0.72040459,
+    "best_policy_max_direct_total_ops_over_rho": 0.848,
+    "diagnostic_gate_name": "nonvacuous_public_zero_capable",
+    "diagnostic_gate_ex_post": true,
+    "diagnostic_gate_surface_count": 27,
+    "diagnostic_gate_below_rho_count": 27,
+    "diagnostic_gate_direct_below_rho_count": 27,
+    "diagnostic_gate_vacuous_preserving_surface_count": 0,
+    "diagnostic_gate_mean_total_ops_over_rho": 0.79625196,
+    "diagnostic_gate_max_total_ops_over_rho": 0.968,
+    "diagnostic_gate_mean_direct_total_ops_over_rho": 0.72735118,
+    "diagnostic_gate_max_direct_total_ops_over_rho": 0.848,
+    "best_heldout_policy": "learned_global_zero_root_prior",
+    "best_heldout_below_rho_count": 26,
+    "best_heldout_mean_total_ops_over_rho": 0.64366215,
+    "best_heldout_max_total_ops_over_rho": 1.096,
+    "best_heldout_direct_below_rho_count": 27,
+    "best_heldout_mean_direct_total_ops_over_rho": 0.57617935,
+    "best_heldout_max_direct_total_ops_over_rho": 1.0
+  },
+  "limitations": [
+    "Evidence is over the current factored 72-79 plus public-leaf bank, not a fresh unseen stream.",
+    "One preserving label is vacuous because that surface has no original selected root pair.",
+    "The strongest all-surface result is a static public fingerprint rank order, not a learned root prior.",
+    "Held-out root priors transfer but still have two over-rho tails under conservative root-scan charging and one equality-to-rho direct-root tail.",
+    "Factorization and first-fall generation costs remain separate proof obligations."
+  ],
+  "next_steps": [
+    "Run fixed policies on a fresh 88-95 surface bank.",
+    "Freeze learned prior selection on older transfers before evaluating later transfers.",
+    "Report conservative root-scan and direct-root costs side by side."
+  ]
+}

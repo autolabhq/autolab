@@ -1,0 +1,237 @@
+{
+  "schema": "crypto.autoresearch.merge_install_delta.v1",
+  "bundle_id": "P1553-R12-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compose_compare_and_merge",
+  "base_bundle": {
+    "bundle_id": "P1553-R11-20260719",
+    "manifest": "p1553_r11_install_delta.json",
+    "manifest_sha256": "5734fe58a08dc64f8e5a5111b00186975d1bccfb2f93fbf429f4942476bb6db3",
+    "manifest_hash_list": "p1553_r11_install_delta.sha256",
+    "manifest_hash_list_sha256": "e4a780fcca2c53e266cd488c97c276679fcfb44b06f35cd1dc0586a91a4a6a98",
+    "simulated_queue_sha256": "e1548d613c6d403adba77631a3d6f9c634fb3312e644da6ab1028b7f0af40370"
+  },
+  "upstream_bundle": {
+    "bundle_id": "P1553-R5-R7-20260719",
+    "manifest_sha256": "41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a",
+    "manifest_hash_list_sha256": "0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d"
+  },
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "composition_rule": "Apply R5-R7, R8, R9, R10, R11, and R12 to one private copy of the live queue, validate the combined result, then install all files and dispatch state atomically. Never install this delta alone.",
+  "file_installs": [
+    {
+      "source": "p1553_high_degree_kummer_provenance_parent_report.yaml",
+      "sha256": "0b1c9869776a5d8669693d4a05eaf096659e02dbce424fbfce9dd3fff269a8f4",
+      "destination": "coordination/tasks/TASK-20260719-P1553-HKP-P1/high_degree_kummer_provenance_report.yaml"
+    },
+    {
+      "source": "p1553_high_degree_kummer_provenance_gate_r12.md",
+      "sha256": "999159b7f3240ad6cc78034bc68ef6f9c27bfb3a00f88ff2ffc38cc58e9fe181",
+      "destination": "coordination/tasks/TASK-20260719-P1553-HKP-P1/high_degree_kummer_provenance_gate_r12.md"
+    },
+    {
+      "source": "p1553_high_degree_kummer_provenance_red_team.yaml",
+      "sha256": "fe4105d2ac6cf68f2d840df68e1aa7d8047e9d08924bc88cc9d6b80551350358",
+      "destination": "coordination/tasks/TASK-20260719-P1553-HKP-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_high_degree_kummer_provenance_red_team.md",
+      "sha256": "2a609a031cf3d5aa373f9ce458f0500c7cc51c149b309c74198a6c205b89c449",
+      "destination": "coordination/tasks/TASK-20260719-P1553-HKP-RT-R1/high_degree_kummer_provenance_red_team.md"
+    },
+    {
+      "source": "p1553_high_degree_kummer_provenance_gate_r12.md",
+      "sha256": "999159b7f3240ad6cc78034bc68ef6f9c27bfb3a00f88ff2ffc38cc58e9fe181",
+      "destination": "ideas/artifacts/ECDLP-IDEA-057/p1553_high_degree_kummer_provenance_gate_r12.md"
+    }
+  ],
+  "queue_merge": {
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-HKP-P1",
+        "title": "Charge high-degree Kummer branch state and provenance",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 4,
+        "review_required": true,
+        "depends_on": [
+          "TASK-20260719-P1553-CKR-RT-R1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-CKR-P1/cartesian_kummer_rigidity_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-CKR-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-001/exact_spectral_rank_density_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md",
+          "ideas/artifacts/ECDLP-IDEA-098/p1515_r1_r11_independent_audit.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-HKP-P1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "Exact indexed and fifth-label-erased projective fiber bounds, with one prime-order isogeny closure and one composite-torsion positive control.",
+          "inconclusive_decision": "Close only explicit psi-respecting header tables, direct all-preimage state, direct full-incidence construction, and prime-order isogeny/ECFFT compression; preserve implicit non-isogeny image constructors.",
+          "local_ambiguity_rule": "Separate endpoint support from pair occurrences, construction work from persistent provenance, fifth-indexed from fifth-erased keys, and signed group points from Kummer classes.",
+          "peripheral_exclusions": [
+            "No parameter-count lower bound for arbitrary rational maps",
+            "No direct-incidence cost promoted to an arbitrary-circuit lower bound",
+            "No composite-torsion control treated as a prime-order construction",
+            "No P1554, experiment, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after the two fiber bounds, all four provenance routes, both structured controls, and complete-path omissions are independently reconstructed."
+        },
+        "resource_estimate": {
+          "dominant_stage": "surviving fifth-label-erased implicit algebraic image and inversion",
+          "stages": [
+            {
+              "id": "pair_occurrence_index",
+              "work": "B^(2+o(1)) setup/state"
+            },
+            {
+              "id": "indexed_header_floor",
+              "work": "at least S*B/d headers"
+            },
+            {
+              "id": "erased_header_floor",
+              "work": "at least S*B/(8*d^2) headers"
+            },
+            {
+              "id": "direct_incidence_construction",
+              "work": "S*B evaluations"
+            },
+            {
+              "id": "admitted_target_query",
+              "work": "at most B^(5/4+o(1))"
+            }
+          ]
+        },
+        "handoff": {
+          "objective": "Charge explicit high-degree Kummer branch headers, construction, and source provenance after the R11 degree floor.",
+          "uncertainty_reduced": "Whether the surviving degree range can fit a source-faithful pair-endpoint by fifth-list branch table under the campaign state cap.",
+          "inputs": [
+            "the independently reviewed R11 finite-Cartesian rigidity theorem",
+            "R10 actual-image and rank-two controls",
+            "P1551/P1553 occurrence-source semantics",
+            "IDEA-001 support and density accounting",
+            "IDEA-057 prime-order and ECFFT ownership receipts"
+          ],
+          "constraints": [
+            "Use distinct endpoint support S and separately charge pair occurrence multiplicity.",
+            "Retain complete projective branch divisors, psi labels, fifth occurrence labels when indexed, and all exceptional strata.",
+            "Separate all-preimage state from count-plus-one-witness construction work.",
+            "Require a prime-order gate and a favorable composite-torsion transport control.",
+            "Preserve implicit non-isogeny image/inversion, non-Cartesian, correction-carrying, and arbitrary-circuit exceptions.",
+            "Allocate no new idea, run, Shoup claim, or breakthrough status."
+          ],
+          "deliverables": [
+            "high_degree_kummer_provenance_report.yaml",
+            "high_degree_kummer_provenance_gate_r12.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "Indexed and erased-key fiber bounds are projectively complete.",
+            "State, construction, and one-witness provenance charges are separated.",
+            "Prime-order isogeny injectivity and both positive controls are explicit.",
+            "Exactly one implicit image-and-inversion action remains."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-HKP-RT-R1",
+        "title": "Red-team high-degree Kummer state and provenance",
+        "role": "red-team",
+        "state": "completed",
+        "priority": 3,
+        "review_required": false,
+        "depends_on": [
+          "TASK-20260719-P1553-HKP-P1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-HKP-P1/high_degree_kummer_provenance_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-HKP-P1/high_degree_kummer_provenance_gate_r12.md",
+          "coordination/tasks/TASK-20260719-P1553-CKR-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-001/exact_spectral_rank_density_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-057/ecfft_auxiliary_isogeny_router_gate.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-HKP-RT-R1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "Independent reconstruction of projective fibers, source multiplicities, direct construction charges, prime-order kernel intersection, and both positive controls.",
+          "inconclusive_decision": "Accept only the explicit-state and direct-construction theorem while retaining all implicit non-isogeny, nonlinear, and complete-path exceptions.",
+          "local_ambiguity_rule": "Reject any occurrence/support substitution, any state/work substitution, any signed/Kummer exact-count substitution, or any canonical representative presented without kernel-coset verification.",
+          "peripheral_exclusions": [
+            "No unrestricted arithmetic-circuit lower bound",
+            "No auxiliary composite-order result transferred to prime-order G",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after every correction appears in both producer files and the final hashes match."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R12 header, provenance, construction, isogeny, and density claims.",
+          "uncertainty_reduced": "Whether explicit high-degree branch state is genuinely charged without closing the surviving implicit router by assumption.",
+          "inputs": [
+            "the R12 producer receipts",
+            "the R11 independent rigidity receipt",
+            "the R10 actual-image control",
+            "IDEA-001 and IDEA-057 ownership receipts"
+          ],
+          "constraints": [
+            "Check indexed and fifth-erased keys separately.",
+            "Check poles, signs, inseparability, occurrence multiplicity, and Kummer quotient constants.",
+            "Distinguish persistent preimages from one-witness state after a full construction pass.",
+            "Require complete source-index accounting for the composite-torsion control.",
+            "Preserve R10 rank-two, implicit-circuit, factor-log, and blind-descent exceptions."
+          ],
+          "deliverables": [
+            "red_team_report.yaml",
+            "high_degree_kummer_provenance_red_team.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "Every bound and control is independently reconstructed or corrected.",
+            "The final producer hashes match the accepted review.",
+            "Exactly one next action and no positive ECDLP status remain."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Recompute all manifest layers and every source hash; preserve drift rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false
+  }
+}

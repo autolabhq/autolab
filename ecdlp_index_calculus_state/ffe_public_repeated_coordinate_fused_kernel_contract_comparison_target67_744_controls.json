@@ -1,0 +1,236 @@
+{
+  "accounting_boundaries": {
+    "conservative_event_key_contract": "One first-pass candidate-point operation is charged per public event key.",
+    "optimized_batch_lane_contract": "First-pass candidate-point work is charged by validated grouped-left-y native lanes, and requires the batch-lane ABI/curve guard."
+  },
+  "method": "side_by_side_event_key_and_batch_lane_contract_accounting",
+  "non_claims": [
+    "This is a comparison of existing verified contracts; it is not a new relation search.",
+    "Lane-only below-rho records are optimized-implementation claims, not conservative event-key claims.",
+    "No large-field or general ECDLP break is claimed by this artifact."
+  ],
+  "parameters": {
+    "event_key_contract_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_contract_target67_744_controls.json",
+    "lane_abi_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_batch_lane_abi_target67_744_controls.json",
+    "lane_contract_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_batch_lane_contract_target67_744_controls.json",
+    "source_names": []
+  },
+  "records": [
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "batch_lane_only_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": false,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "source_name": "coord161_720",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 117,
+        "batch_lane_fused_ops_over_rho": 0.936,
+        "event_key_first_pass_ops": 12,
+        "event_key_fused_below_rho": false,
+        "event_key_fused_ops": 127,
+        "event_key_fused_ops_over_rho": 1.016,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 10,
+        "lane_total_saved_ops": 10,
+        "second_event_pass_ops": 12
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "batch_lane_only_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": false,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "source_name": "coord161_728",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 116,
+        "batch_lane_fused_ops_over_rho": 0.928,
+        "event_key_first_pass_ops": 12,
+        "event_key_fused_below_rho": false,
+        "event_key_fused_ops": 126,
+        "event_key_fused_ops_over_rho": 1.008,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 10,
+        "lane_total_saved_ops": 10,
+        "second_event_pass_ops": 12
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "event_key_and_batch_lane_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": true,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "source_name": "coord1114_744",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 117,
+        "batch_lane_fused_ops_over_rho": 0.936,
+        "event_key_first_pass_ops": 8,
+        "event_key_fused_below_rho": true,
+        "event_key_fused_ops": 123,
+        "event_key_fused_ops_over_rho": 0.984,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 6,
+        "lane_total_saved_ops": 6,
+        "second_event_pass_ops": 12
+      }
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_contract_comparison_probe_v1",
+  "summary": {
+    "batch_lane_abi_guarded_below_rho_count": 3,
+    "batch_lane_only_below_rho_count": 2,
+    "batch_lane_optimized_below_rho_count": 3,
+    "contract_comparison_verified_count": 3,
+    "event_key_and_batch_lane_below_rho_count": 1,
+    "event_key_conservative_below_rho_count": 1,
+    "interpretation": "Event-key and batch-lane accounting are now compared without mixing claim boundaries.  Conservative below-rho claims require only the event-key contract; optimized below-rho claims additionally require the batch-lane contract and ABI/curve guard.",
+    "lane_only_source_names": [
+      "coord161_720",
+      "coord161_728"
+    ],
+    "mean_batch_lane_below_rho_ops_over_rho": 0.93333333,
+    "mean_event_key_below_rho_ops_over_rho": 0.984,
+    "not_below_rho_count": 0,
+    "record_count": 3,
+    "total_batch_lane_fused_ops": 350,
+    "total_event_key_fused_ops": 376,
+    "total_lane_saved_ops": 26
+  }
+}

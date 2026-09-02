@@ -1,0 +1,68 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "exact_on_actual_inversion_disjoint_supports": false,
+      "inversion_invariant": true,
+      "route_id": "base_field_univariate_zero_predicate_dag",
+      "status": "rejected_on_actual_controls"
+    },
+    {
+      "exact_on_actual_inversion_disjoint_supports": false,
+      "inversion_invariant": true,
+      "route_id": "base_field_trace_or_dickson_predicate_dag",
+      "status": "rejected_on_actual_controls"
+    },
+    {
+      "inside_cap_exact_circuit_constructed": false,
+      "inversion_invariant_forced": false,
+      "route_id": "extension_field_lacunary_predicate",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_circuit_constructed": false,
+      "may_distinguish_z_from_inverse": true,
+      "route_id": "frobenius_aware_coordinate_predicate_dag",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_base_field_frobenius_predicate_dag_cost_ledger.r132.v1",
+  "theorem": {
+    "actual_control_contradiction": "In every actual R82 pairing deck, each positive C5 target has an empty inverse. Such a base-field predicate DAG cannot be an exact membership or source locator on those controls.",
+    "base_field_polynomial_identity": "For f in F_p[X], f(z^(-1))=f(z^p)=f(z)^p. Hence f(z)=0 if and only if f(z^(-1))=0.",
+    "base_field_rational_identity": "The numerator-zero and denominator-zero outcomes of every univariate F_p rational predicate are inversion invariant on the subgroup.",
+    "decision_dag_consequence": "A deterministic DAG branching only on zero or definedness outcomes of univariate base-field polynomial or rational predicates follows the same path on z and z^(-1).",
+    "not_covered": [
+      "extension-field coefficients",
+      "Frobenius-aware coordinate predicates in (z,z^p)",
+      "tests that consume nonzero predicate values",
+      "lacunary F_(p^2) polynomials",
+      "adaptive cell-probe selectors",
+      "general arithmetic-circuit or data-structure lower bounds"
+    ],
+    "order_two_frobenius": "For z in the order-q subgroup and characteristic p=-1 mod q, z^p=z^(-1).",
+    "random_subset_comparator_is_model_bound": true,
+    "random_subset_comparator_receives_candidate_credit": false,
+    "random_subset_overlap_exponent_B": {
+      "decimal": 2.5,
+      "exact": "5/2"
+    },
+    "scope_limits": [
+      "univariate target polynomials with coefficients in F_p",
+      "univariate base-field rational zero and definedness tests",
+      "deterministic DAGs using only those Boolean outcomes",
+      "actual inversion-disjoint R82 C5 supports"
+    ],
+    "uniform_random_subset_comparator": "For a uniformly random M-subset S of an odd prime-order group, E|S intersect S^(-1)|=M^2/q. At M=B^(15/4+o(1)), q=B^(5+o(1)), this is B^(5/2+o(1)), an o(1) fraction B^(-5/4+o(1)) of S."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "admission": {
+    "complex_fourier_predicate_negative_admitted": true,
+    "failures": [
+      "actual_order_two_fourier_minor_theorem_complete",
+      "inside_cap_shared_predicate_dag_complete",
+      "known_rhs_relation_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "pollard_rho_improvement_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "finite_field_transfer_rejection_admitted": true,
+    "lane_admitted": false,
+    "obligation_count": 20,
+    "obligations": {
+      "actual_order_two_fourier_minor_theorem_complete": false,
+      "all_actual_characteristic_orders_equal_two": true,
+      "all_actual_fields_fail_primitive_condition": true,
+      "all_actual_subgroups_embed_quadratically": true,
+      "breakthrough_complete": false,
+      "factor_logs_complete": false,
+      "finite_field_transfer_requirement_explicit": true,
+      "five_mode_five_zero_counterexample_exact": true,
+      "four_actual_pairing_fields_checked": true,
+      "gf2_10_modulus_irreducible": true,
+      "gf2_10_order11_root_exact": true,
+      "identical_target_descent_complete": false,
+      "inside_cap_shared_predicate_dag_complete": false,
+      "known_rhs_relation_rank_complete": false,
+      "pollard_rho_improvement_complete": false,
+      "r129_shared_predicate_interface_inherited": true,
+      "shoup_improvement_complete": false,
+      "tao_complex_theorem_scope_frozen": true,
+      "twelve_source_bindings_verified": true,
+      "unjustified_complex_to_finite_transfer_rejected": true
+    },
+    "passed_obligation_count": 12
+  },
+  "artifacts": {
+    "controls": "torus_c5_sparse_fourier_predicate_transfer_controls.json",
+    "cost": "torus_c5_sparse_fourier_predicate_transfer_cost_ledger.json",
+    "frozen": "frozen_torus_c5_sparse_fourier_predicate_transfer.json",
+    "logs_descent": "factor_logs_and_identical_descent_r130.json",
+    "source_replay": "torus_c5_sparse_fourier_predicate_transfer_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "EXACT_FINITE_FIELD_TRANSFER_CONTROLS_AND_SCOPED_COMPLEX_FOURIER_BOUND_ONLY_WITHHOLD_PROMOTION",
+  "classification": "TAO_SHARP_UNCERTAINTY_CLOSES_COMPLEX_SPARSE_FOURIER_PREDICATES_ONLY__ALL_FOUR_ACTUAL_PAIRING_FIELDS_HAVE_ORD_Q_CHARACTERISTIC_TWO_AND_FAIL_PRIMITIVE_CHEBOTAREV_CONDITION__GF2E10_Q11_FIVE_MODE_FIVE_ZERO_COUNTEREXAMPLE_EXACT__FINITE_FIELD_TRANSFER_UNSUPPLIED__ORDER2_FOURIER_OR_NONFOURIER_SHARED_PREDICATE_DAG_OPEN__NO_RANK_LOGS_DESCENT_SHOUP_BREAKTHROUGH",
+  "disposition": "ADMIT_COMPLEX_FOURIER_UNCERTAINTY_SCOPE_AND_EXACT_FINITE_FIELD_TRANSFER_COUNTEREXAMPLE_ONLY__REJECT_UNJUSTIFIED_COMPLEX_TO_FINITE_LOWER_BOUND__PRESERVE_ORDER2_FINITE_FIELD_FOURIER_AND_NONFOURIER_SHARED_PREDICATE_DAG__NO_LOCATOR__NO_RANK__NO_LOGS__NO_DESCENT__NO_SHOUP__NO_BREAKTHROUGH",
+  "finite_evidence": {
+    "actual_pairing_field_count": 4,
+    "all_actual_characteristic_orders_equal_two": true,
+    "all_actual_fields_fail_primitive_condition": true,
+    "asymptotic_credit": false,
+    "five_mode_five_zero_counterexample_exact": true
+  },
+  "next_action": "Construct a finite-field shared-predicate selector DAG directly, or prove a field-specific uncertainty/minor theorem for the actual ord_q(characteristic)=2 pairing families. It must avoid importing complex Chebotarev bounds without transfer, choose a valid C2 branch in polylogarithmic arbitrary-target work, return exact C2+C3 sources or an empty certificate, fit B^(9/4+o(1)) state, avoid field DLP, and include rank, logs, identical descent, memory, field-operation, and bit costs.",
+  "non_claims": [
+    "Tao's sharp theorem is not transferred to the actual fields.",
+    "The finite-field counterexample is a transfer control only.",
+    "No order-two all-minors theorem is supplied.",
+    "Non-Fourier and low-SLP selector DAGs remain open.",
+    "Finite controls receive no asymptotic credit.",
+    "No rank, logs, descent, rho, or Shoup result is supplied."
+  ],
+  "pollard_rho_improvement": false,
+  "schema": "p1553.torus_c5_sparse_fourier_predicate_transfer.r130.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "finite_field_chebotarev_paper": {
+      "path": "references/emmrich_kunis_finite_field_chebotarev_2506.02947.pdf",
+      "sha256": "5a3b29fbaf5bd6f4833de1a63272bb7510179a92dc9b855d69b8b3dcb92cd627"
+    },
+    "r129_controls": {
+      "path": "torus_c5_piecewise_selector_decision_dag_controls.json",
+      "sha256": "72d32caf2ee1fa748fc90481cf8061bec62e37e6b61f598e83b77e841d39aaa0"
+    },
+    "r129_cost": {
+      "path": "torus_c5_piecewise_selector_decision_dag_cost_ledger.json",
+      "sha256": "2948aea2107d53d5c9b700f20611c28f28c3a3933378510c9d625b80272334b6"
+    },
+    "r129_frozen": {
+      "path": "frozen_torus_c5_piecewise_selector_decision_dag.json",
+      "sha256": "a10da885fbae4070e5a88591d53e1e716e40b26f31848661980aeb13a8e49e3d"
+    },
+    "r129_gate": {
+      "path": "p1553_torus_c5_piecewise_selector_decision_dag_probe_gate_r129.md",
+      "sha256": "35026763fe6805e22935bb8f62480609f67a1f7e0c303c67f3d302a14d853c32"
+    },
+    "r129_logs": {
+      "path": "factor_logs_and_identical_descent_r129.json",
+      "sha256": "d4d28cc412d139ed9f9dc25a050b43cce225a9c0a87dca307b6a955f04a37a40"
+    },
+    "r129_parent": {
+      "path": "p1553_torus_c5_piecewise_selector_decision_dag_probe_parent_report_r129.yaml",
+      "sha256": "b9f9d21e9572e9978511b34e01a90dc4b9df62087aa8f915342386610783970e"
+    },
+    "r129_producer": {
+      "path": "p1553_torus_c5_piecewise_selector_decision_dag_probe_r129.py",
+      "sha256": "0296c7a71284b8d376720791eb73a768fe6446ea90ac0ce29a7b6a3b9435f1f5"
+    },
+    "r129_replay": {
+      "path": "torus_c5_piecewise_selector_decision_dag_replay.json",
+      "sha256": "cb3f53214494107fe9b81cc73a11131da23743fa65c290d19d376236c4593bd4"
+    },
+    "r129_report": {
+      "path": "p1553_torus_c5_piecewise_selector_decision_dag_probe_report_r129.json",
+      "sha256": "3ff1da9d4eb76fe023432492ad0ad6452d1aa69dd51cea98e6469b3191de9402"
+    },
+    "r129_test": {
+      "path": "tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_piecewise_selector_decision_dag_probe_r129.py",
+      "sha256": "a8c34c8d3f173328390735d2cae1a5172436c1cd9b99712aaa99860e3903c621"
+    },
+    "tao_paper": {
+      "path": "references/tao_uncertainty_cyclic_prime_math0308286.pdf",
+      "sha256": "244f4e79e667ee831e65d0cb0d8d42de4e354e83d576c65acaf391b0da519880"
+    }
+  },
+  "theorem": {
+    "actual_pairing_field_boundary": "Every R82 family has characteristic=6q-1 and therefore ord_q(characteristic)=2, outside the primitive condition.",
+    "complex_color_predicate_consequence": "A zero test vanishing on Theta(B^(15/4)) accepted targets needs B^(15/4+o(1)) complex modes.",
+    "complex_exact_indicator_consequence": "An exact indicator supported on at most B^(15/4+o(1)) of q=B^(5+o(1)) points has B^(5+o(1)) Fourier support.",
+    "complex_sparse_zero_consequence": "A nonzero complex q-cyclic Fourier polynomial with s modes has at most s-1 zeros.",
+    "counterexample_boundary": "GF(2^10) with q=11 admits a five-mode polynomial with five distinct subgroup zeros, so the complex sparse-zero consequence fails after finite-field reduction in general.",
+    "finite_field_primary_source_boundary": "The pinned finite-field Chebotarev sufficient theorem is stated in the primitive case ord_q(characteristic)=q-1; finite-characteristic transfer is not automatic.",
+    "finite_field_transfer_requirement": "The sharp support inequality requires nonvanishing minors of the q-by-q Fourier matrix in the circuit coefficient field.",
+    "not_covered": [
+      "actual order-two finite-field Fourier matrices",
+      "non-Fourier shared-predicate decision DAGs",
+      "high-degree low-SLP finite-field selectors",
+      "adaptive cell-probe selectors",
+      "general arithmetic-circuit or data-structure lower bounds"
+    ],
+    "scope_limits": [
+      "complex or characteristic-zero cyclic Fourier predicates",
+      "finite-field transfer only after a field-specific all-minors proof",
+      "sparse Fourier zero tests and exact Fourier indicators"
+    ],
+    "tao_complex_theorem": "For nonzero f on Z/qZ with q prime and complex coefficients, |supp(f)|+|supp(fhat)|>=q+1."
+  }
+}

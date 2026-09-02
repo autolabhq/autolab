@@ -1,0 +1,84 @@
+schema_version: p1553-factorized-pullback-red-team-v1
+date: 2026-07-19
+role: red-team
+reviewer_agent_id: 019f7ca1-e1be-7941-97be-290005295446
+coordinator_transcription: true
+run_accounting:
+  experiments_executed: 0
+  solver_runs_executed: 0
+  fixtures_executed: 0
+  timing_runs_executed: 0
+  relation_campaigns_executed: 0
+terminal_verdict:
+  classification: revise_scoped_theorem
+  statement: >-
+    The exact moment identity, universal identity-minor theorem, rank-at-most-one
+    router, and rank-two convolution control are accepted after correction.
+    The actual S_6 nonlinear pullback remains open, with no general circuit
+    lower bound or ECDLP algorithm.
+  final_review: accept
+  p1554_allocated: false
+  run_created: false
+  shoup_claim: false
+  breakthrough_claim: false
+accepted_moment_theorem:
+  channels: binomial(p+r-2,r-1)
+  all_multinomial_scalars_nonzero_mod_p: true
+  literal_fixed_r_at_least_2_cost: B^(5*(r-1)+o(1))
+  rank_or_circuit_lower_bound: false
+accepted_universal_obstruction:
+  kernel: 1[u_dot_v=0]_on_all_F_p^r
+  identity_minor: p_by_p
+  separated_terms_lower_bound: p
+  applies_to_actual_S6_image_automatically: false
+accepted_low_rank_controls:
+  rank_at_most_one_setup_state: B^(1+o(1))
+  rank_at_most_one_query_replay: B^(o(1))
+  rank_zero_direct_integer_count: product_i_abs_I_i
+  rank_two_zero_status_patterns: 4^5
+  rank_two_all_nonzero_reduction: sparse_multiplicative_convolution
+  canonical_dyadic_pair_occurrence_state: B^(2+o(1))
+  exact_sparse_convolution_evaluator_inside_caps: unsupplied
+accepted_standard_boundaries:
+  direct_rank_two_query: B^3
+  dense_multiplicative_character_modes: p-1=B^(5+o(1))
+  explicit_B_target_batch_time: B^(3+o(1))
+  explicit_B_target_batch_state: B^3
+  single_target_blind_descent: B^3
+  implicit_actual_image_pullback: open
+conditional_campaign_accounting:
+  setup: B^s
+  state: B^s_m
+  target_work: B^kappa
+  target_workspace: B^w
+  reciprocal_density_loss: B^d
+  lambda: max(s,1+d+kappa,2)/5
+  mu: max(s_m,w,2)/5
+  constant_density_control: d=0
+  independent_row_per_accepted_target: required_not_proved
+required_corrections_applied:
+  - rank one renamed rank at most one and rank-zero branch scoped
+  - rank-two zero partition corrected from 3^5 to 4^5
+  - pair histograms restricted to nonzero ratio labels
+  - dense transform corrected to p-1 multiplicative-character modes
+  - explicit B-target batch and conditional campaign formulas restored
+  - cost variables corrected to separate work, workspace, and density loss
+  - indexing paper titles corrected
+  - rational route scoped to named explicit pole-deck expansion
+exactly_one_next_action: >-
+  Prove or refute exact, mask-compatible summation of
+  h_I(V_R(a_3,a_4,a_5)) in one frozen factorized-circuit grammar for the
+  actual separated S_6 signatures, on the full box and every adaptive dyadic
+  child, without emitting B^3 values or source incidences. Require the grammar
+  to express the exact rank-two sparse multiplicative-convolution control;
+  handle zero signatures; preserve integer multiplicities and occurrence
+  backpointers; enforce B^(9/4+o(1)) setup/state and B^(5/4+o(1)) target
+  time/workspace; and charge replay, signs, verification, columns, density,
+  rank, factor logs, and identical blind descent. A negative closes only the
+  frozen grammar, and a positive count remains model-bound until the complete
+  ECDLP path is proved.
+source_bindings:
+  hash_algorithm: SHA-256
+  files:
+    p1553_factorized_pullback_gate_r10.md: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+    p1553_factorized_pullback_parent_report.yaml: acf820dac41bded67af083931e4284702cdf75d5c9fd8e121c21dc57bfc3bf97

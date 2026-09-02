@@ -1,0 +1,65 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-PUBLIC-COFACTOR-PROJECTION-COST-R59-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exhaustive_finite_group_projection_and_heuristic_fixed_degree_rate_model
+  model_scope: R58_E_F193_witness_and_random_fiber_model
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_EXACT_PROJECTION_HEURISTIC_COST_GATE
+summary: >-
+  Public [104] exactly projects E(F193) onto the order-103 subgroup and recovers
+  all R58 output atoms without discrete logs. The heuristic ordered-partition
+  model predicts the observed degree-nine first-hit count but charges linear
+  pencils; degree six is the only constant-pencil-count candidate, with field
+  scanning and factor-base density still uncharged.
+inputs:
+  - path: staged/p1553_full_curve_primitive_product_pencil_gate_r58.md
+    sha256: 592438ed51e3fa39cc869927fad40726949ee6c645b487db4e4795d5b8118f25
+  - path: staged/p1553_full_curve_primitive_product_pencil_search_report_r58.json
+    sha256: 728037585618fbe680747e5b68a40005fc8a6c8b0979213662c0b638cd616c3b
+  - path: staged/p1553_full_curve_primitive_product_pencil_search_r58.py
+    sha256: d4fda31b41d93ef58b393476a6e4a64535947e305e132fe671dcac7cf9c141f3
+  - path: staged/p1553_primitive_degree_nine_rank_search_r44.py
+    sha256: b9bbad90f2f5076ea0cb8346d94514a7e8f82993daa07c374d050e334be2687b
+  - path: staged/p1553_low_boundary_pencil_search_r38.py
+    sha256: a750f12e3aa8840f63e4b32ff1f783f00086f0d2c4244bb2c6a70614488a5de8
+outputs:
+  - path: staged/p1553_public_cofactor_projection_cost_gate_r59.md
+    sha256: d6839fb19226c106db20e441998ff56ea1b306ba6a4155b940f998ebafe1c3d1
+  - path: staged/p1553_public_cofactor_projection_cost_gate_r59.py
+    sha256: 939dc4ea8e10860e1229391e41cb65906136bc0e9cfdbd207a2397c07ddcd9f7
+  - path: staged/p1553_public_cofactor_projection_cost_report_r59.json
+    sha256: 2b3931459c521d8e68b20bec1dd58ec9dfa5688efe34859f59386ffe6cb3eea7
+controls:
+  projector: 104
+  projection_image_size: 103
+  projection_kernel_size: 2
+  group_pairs_checked: 42436
+  ordered_class_partitions: 1680
+  heuristic_degree_nine_pencils_per_success: 11935.125
+  observed_degree_nine_first_success: 11104
+result:
+  third_fiber_subgroup_atoms_publicly_recovered: true
+  third_fiber_scalar_logs_recovered: false
+  fixed_degree_nine_relation_cost_below_rho: false
+  degree_six_two_factor_rate_candidate: true
+  asymptotic_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - rate model is heuristic and fixed-degree
+  - full parameter scan and restricted factor-base density are uncharged
+  - no target, R10, rank campaign, logs, or descent
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_EXACT_PROJECTION_HEURISTIC_COST_GATE__PUBLIC_104_PROJECTION__DEGREE9_MODEL_MATCHES_TOY_BUT_LINEAR__DEGREE6_CONSTANT_PENCIL_CANDIDATE__FIELD_SCAN_AND_FACTOR_BASE_UNCHARGED__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Test the degree-six two-class prediction with a deterministic full-curve
+  primitive product-pencil search.

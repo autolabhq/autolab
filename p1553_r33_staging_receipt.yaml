@@ -1,0 +1,67 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R33-LOW-MODULI-JOINT-SPECTRUM-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T07:05:26Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R33 is a new scoped reduction
+  requiring independent review. It isolates a low-moduli elliptic family and
+  an exact joint-spectrum target but supplies no output-sensitive compiler.
+bindings:
+  r32_bundle_hash_list_sha256: 04ea33c41dec39f64514b8cba91368c361145d78b8c5d0452fdec22ed1b1e327
+  r32_staging_receipt_sha256: 1914f64aeadab9b1585bf4e03e99615e557fcf3fc01b2ef44be4b45322d42b6b
+  r33_gate_sha256: ab15335a61790398bace9b8420165480017ae58cc85c60bf048b3eccdd6ed601
+  r33_parent_report_sha256: b862ffde748e8d0a9a324ee2d71e40e79e821508ca0826f828b3fb4551bfb8cf
+  r33_artifact_index_sha256: 4ba46350b6d4526515aab2c3fbbbc962cb773cce13c8b6b0a60f4596189b72f4
+  r33_bundle_hash_list_sha256: 57bdcc05ae9594478b43d173908670cea07527cd0f14687aee4c058894849198
+result:
+  classification: low_moduli_split_algebra_joint_spectrum_target
+  actual_family_parameter_dimension: O(B)
+  actual_family_entropy_bits: O(B_log_B)
+  arbitrary_matrix_entropy_bits: Theta(B^2)
+  hidden_order_advice: forbidden
+  split_algebra_dimension: B^2
+  run_compressed_partial_translation_records: O(B^2)
+  standard_joint_spectrum_cost: B^3
+  output_sensitive_joint_spectrum: absent
+  complete_value_histogram: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r33_hash_list: pass
+  r33_parent_yaml_parse: pass
+  parameter_entropy_bound_checked: pass
+  canonical_order_advice_guard_checked: pass
+  split_algebra_joint_spectrum_formulation_checked: pass
+  clean_temporary_replay_with_r16_through_r33_gates_and_r33_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T07_05_26Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - low parameter dimension is not an arithmetic complexity bound
+  - no output-sensitive joint-spectrum algorithm for the actual elliptic family
+  - no canonical adaptive restriction package
+  - no target, R10, density, rank, logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Construct or refute the low-moduli joint-spectrum operation using the
+  decomposed divisor, R28 residuals, and R31 partial translations, with exact
+  keys, counts, canonical sources, restrictions, target, R10, rank, logs,
+  and descent below the campaign caps.

@@ -1,0 +1,116 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-NONLINEAR-TENSOR-TOWER-TRACE-R98-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_one_bond_resultant_projector_separation_rank_theorem
+run_count: 1
+status: one_bond_width_p_restricted_width_d_over_cap
+labels:
+  - exact-finite-controls
+  - exact-separation-rank-theorem
+  - prospective
+  - scoped-negative
+  - novelty-unverified
+owner: P1513-P1553-R78-R80-R85-R95-R97
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether arbitrary nonlinear local encoders can evaluate the
+  resultant projector through one cap-sized A/C tensor bond while preserving
+  exact occurrence counts and source semantics.
+inputs:
+  - path: p1553_5a5c_factored_transposed_projector_trace_probe_r97.py
+    sha256: f9015647b49a246680258ce259dfa49a80a237172162e34f3e4390b87b726972
+  - path: p1553_5a5c_factored_transposed_projector_trace_probe_report_r97.json
+    sha256: 84217a15910b0ed15b6b69c3ec8875f7f2b913a17e4c70fc89cc905c25f492f6
+  - path: p1553_5a5c_factored_transposed_projector_trace_probe_gate_r97.md
+    sha256: ef91d8a15dc7a218c21355b5b2f2777db948978514ebed26d6884ce929c09182
+  - path: p1553_5a5c_aggregate_veronese_projector_recurrence_probe_report_r95.json
+    sha256: 50441deecd5fadcb05d30c09532d2b5fe6e8893ea2530243c20a52761e0a1742
+  - path: p1553_5a5c_aggregate_veronese_projector_recurrence_probe_gate_r95.md
+    sha256: 6645a20b942f4c86abafed39fa14538b1bb80edee3ffa94a2e7d914e12c0c763
+  - path: p1553_actual_s6_fermat_tensor_train_probe_report_r78.json
+    sha256: e590002c433c6504725d5ab7ff1dba97ad8c15400bf0117846742da7359c5e60
+  - path: p1553_actual_s6_fermat_tensor_train_probe_gate_r78.md
+    sha256: 9149c3b903d91a2156125a2c61896dc1111eaeffafdf0536c89a50b7e0e84ff9
+  - path: p1553_batched_nested_norm_node_compiler_probe_report_r80.json
+    sha256: 936537fb78908dd2916bf6fa5b2091f336b9a47217a1ff787b068ae0491992c5
+  - path: p1553_batched_nested_norm_node_compiler_probe_gate_r80.md
+    sha256: 1ff3641688f4f0e13fd64f83aa540ea429a4164e0d0741b64b38acd804d7fb01
+  - path: p1553_5a5c_target_uniform_precoefficient_circuit_probe_gate_r85.md
+    sha256: bb052ad21fde0f8f35dd56e014a6ab3a1ba1e148fd697fb80af230e4d3c4029a
+  - path: /Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md
+    sha256: 27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc
+artifacts:
+  - path: p1553_5a5c_nonlinear_tensor_tower_trace_probe_r98.py
+    sha256: 41d98744ff051a6dd259323e7a1298aea77a14b2d12d7cf0149b6eb592297a1e
+  - path: p1553_5a5c_nonlinear_tensor_tower_trace_probe_report_r98.json
+    sha256: cb322e28620a4634ffac0c474d772c06a26010f10b3dc32c97c9e75637a90dfa
+  - path: frozen_5a5c_nonlinear_tensor_tower_trace.json
+    sha256: 929f450b064728f91b23a25ddfef259f8b5fcf380e4de8bdd2fdd82b546b5a85
+  - path: nonlinear_tensor_state_and_transition_ledger.json
+    sha256: a0b55cfd30a9667fcd1f15126c7cc1ead80e9d8f96655d7394a5ffcf9b0cdd98
+  - path: tensor_tower_integer_source_replay.json
+    sha256: 96e1d21c4ff5402a7f66d30f7cf86a8ade68e7d1d1e8978e9cccadcc389ee02c
+  - path: tensor_tower_exceptional_controls.json
+    sha256: dac1cd08887dbfd6221cf75acb6c8a19732f253f4a80a00a161c9a367c7f4001
+  - path: factor_logs_and_identical_descent_r98.json
+    sha256: 34dad802af8204d6a779b318645f2d0f5199590a04a5a22f7c458e52ec1b821e
+  - path: p1553_5a5c_nonlinear_tensor_tower_trace_probe_gate_r98.md
+    sha256: 7acd34a7e3286edd658089a7d258688f9e327ffce03a185c762eee4eade06f3c
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_nonlinear_tensor_tower_trace_probe_r98.py
+    sha256: bff539b87d73b10390c2a619471c1e1d714d88d6f8fb5e2db720f542baf42120
+verified_statements:
+  - >-
+    On A_u=z^2+u and C_v=z^2+v, the resultant projector is the equality
+    kernel delta_0(u-v).
+  - >-
+    The full-field equality kernel has rank p, so every exact one-bond
+    factorization with arbitrary nonlinear local encoders has width at least p.
+  - >-
+    Restricted kernels on m distinct messages have exact rank m for
+    m=4,8,16,32 over F_101.
+  - >-
+    Duplicate occurrence count and toy dyadic source return are exact, while
+    value collapse loses one occurrence.
+scoped_failures:
+  one_bond_tensor_inside_setup_cap: fail
+  one_bond_tensor_inside_online_cap: fail
+  actual_distinct_message_reachability_theorem: unsupplied
+  multi_edge_digitized_encoding: unsupplied
+  compact_algebraic_digit_extractor: unsupplied
+  actual_five_a_five_c_integer_lift_complete: unsupplied
+  actual_five_a_five_c_source_unranking_complete: unsupplied
+  projective_exceptional_replay_complete: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - multi-edge digitized algebraic encodings
+  - nonalgebraic lookup or interpolation tables
+  - actual EC divisor-image reachability
+  - arbitrary summation-polynomial and FFE representations
+admission:
+  passed_obligations: 14
+  obligation_count: 30
+  lane_admitted: false
+result:
+  monic_quadratic_resultant_projector_is_equality: true
+  full_field_one_bond_width_lower_bound: p
+  restricted_distinct_message_width_lower_bound: D
+  duplicate_count_and_toy_source_exact: true
+  one_bond_tensor_inside_caps: false
+  multi_edge_digitized_encoding_found: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_ONE_BOND_NONLINEAR_TENSOR_TOWER_ONLY__MONIC_QUADRATIC_RESULTANT_PROJECTOR_IS_EQUALITY__FULL_FIELD_SEPARATION_RANK_P_B5__RESTRICTED_DISTINCT_MESSAGES_RANK_D_B12O5__DUPLICATE_COUNT_AND_TOY_SOURCE_EXACT__VALUE_COLLAPSE_LOSES_OCCURRENCE__MULTI_EDGE_DIGITIZED_ENCODING_OPEN__ACTUAL_EC_IMAGE_AND_PROJECTIVE_BRANCHES_INCOMPLETE__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one multi-edge digitized algebraic equality projector
+  over F_p whose extractor and total cut capacity fit both P1515 caps without
+  a p-size lookup or interpolation table and preserve complete occurrence
+  source semantics and all exceptional branches.

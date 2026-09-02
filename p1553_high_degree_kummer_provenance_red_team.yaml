@@ -1,0 +1,82 @@
+schema_version: p1553-high-degree-kummer-provenance-red-team-v1
+date: 2026-07-19
+role: red-team
+reviewer_agent_id: 019f7d16-e67d-7bf2-a60a-1c2ba91519d3
+coordinator_transcription: true
+run_accounting:
+  experiments_executed: 0
+  solver_runs_executed: 0
+  fixtures_executed: 0
+  timing_runs_executed: 0
+  relation_campaigns_executed: 0
+terminal_verdict:
+  classification: revise_scoped_theorem
+  final_review: accept
+  initial_review: revise
+  statement: >-
+    The indexed psi-respecting header floor, erased-key 8d^2 fiber bound,
+    prime-order isogeny injectivity, and two structured controls are exact
+    after separating S*B construction work from persistent provenance state.
+  p1554_allocated: false
+  run_created: false
+  shoup_claim: false
+  breakthrough_claim: false
+accepted_indexed_bound:
+  key: q, psi(u), complete projective branch divisor
+  pair_endpoint_support: S distinct Kummer classes
+  occurrence_multiplicity: kappa with S>=B^2/kappa
+  maximum_endpoint_classes_per_key: d
+  header_floor: B*ceil(S/d)>=S*B/d
+  dense_support_degree_floor: d=Omega(B^(3/4-o(1)))
+accepted_erased_bound:
+  key: psi(u), complete projective branch divisor
+  signed_preimage_fiber: at_most_8*d^2
+  header_floor: S*B/(8*d^2)
+  independent_r11_useful_merge_floor: d=Omega(B^(1/2))
+accepted_accounting:
+  explicit_all_preimages: S*B persistent entries
+  direct_count_plus_one_witness: S*B construction work, header_scaled persistent state
+  implicit_image_and_inversion: open
+accepted_prime_order_control:
+  isogeny_assumption: separable degree d<N
+  kernel_intersection_G: identity_only
+  induced_kummer_map: injective
+  ecfft_compression_on_G: none
+accepted_composite_torsion_control:
+  kernel_degree: d=B^(3/4)
+  pair_kummer_classes: Theta(B^2)
+  quotient_labels: Theta(B^(5/4))
+  indexed_states: Theta(B^(9/4))
+  source_index: Theta(B^2) endpoints plus Theta(B^(5/4)) representatives plus Theta(B^(3/4)) kernel data
+  inversion: enumerate and verify d candidates within online cap
+  campaign_gate: fails prime-order structure
+accepted_progression_control:
+  factor_decks: five known-multiple scalar intervals
+  rational_map_degree: O(B)
+  fivefold_support: O(B)
+  uniform_relation_density: O(B/N)
+  favorable_B_row_target_attempts: Omega(N)
+required_corrections_applied:
+  - count-plus-one-witness route separated from persistent all-preimage state
+  - auxiliary signed-point counts changed to Kummer Theta statements
+  - endpoint, quotient-representative, and kernel source-index state charged
+  - all five arithmetic-progression decks specified
+scope:
+  explicit_header_grammar_only: true
+  arbitrary_implicit_circuits_open: true
+  nonisogeny_list_specific_maps_open: true
+  r10_rank_two_backend_unimplemented: true
+  factor_logs_unproved: true
+  blind_descent_unproved: true
+exactly_one_next_action: >-
+  Derive or refute the frozen fifth-label-erased implicit algebraic
+  image-and-inversion route under the stated setup, fresh-target query,
+  adaptive restriction, R10 rank-two control, source replay, density, rank,
+  factor-log, and identical blind-descent requirements. A negative closes only
+  that grammar; a positive image or count remains model-bound until the
+  complete ECDLP path is proved.
+source_bindings:
+  hash_algorithm: SHA-256
+  files:
+    p1553_high_degree_kummer_provenance_gate_r12.md: 999159b7f3240ad6cc78034bc68ef6f9c27bfb3a00f88ff2ffc38cc58e9fe181
+    p1553_high_degree_kummer_provenance_parent_report.yaml: 0b1c9869776a5d8669693d4a05eaf096659e02dbce424fbfce9dd3fff269a8f4

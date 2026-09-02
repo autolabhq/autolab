@@ -1,0 +1,86 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "admitted": false,
+      "exact_empty_rejection": false,
+      "image_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "route_id": "trivial_homomorphic_fingerprint"
+    },
+    {
+      "image_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "injective": true,
+      "inside_full_table_setup_cap": false,
+      "route_id": "nontrivial_prime_order_homomorphic_fingerprint"
+    },
+    {
+      "inside_polylog_query_cap": false,
+      "inside_setup_cap": true,
+      "query_exponent_B": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "route_id": "injective_homomorphic_C3_hash_C2_scan",
+      "setup_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    {
+      "inside_full_table_setup_cap": false,
+      "minimum_exact_combined_image_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "route_id": "finite_tuple_of_homomorphic_fingerprints"
+    },
+    {
+      "exact_structure_constructed": false,
+      "route_id": "nonhomomorphic_or_adaptive_fingerprint",
+      "scoped_lower_bound_proved": false,
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_prime_order_homomorphic_fingerprint_cost_ledger.r125.v1",
+  "theorem": {
+    "exact_membership_consequence": "A trivial fingerprint maps every target to the occupied image whenever C5 is nonempty, so it gives false positives on empty targets. An exact pure homomorphic fingerprint must therefore be injective and have image cardinality at least q.",
+    "image_exponent_B": {
+      "decimal": 5.0,
+      "exact": "5"
+    },
+    "inside_setup_cap_for_full_image_table": false,
+    "minimum_exact_image_cardinality": "q",
+    "model": "Product-preserving fingerprints phi_i:mu_q->H_i are group homomorphisms used to map C2, C3, and the arbitrary target before a compressed convolution or membership test.",
+    "multiple_map_dichotomy": "The product fingerprint (phi_1,...,phi_t) has kernel equal to the intersection of component kernels. It is trivial when all components are trivial and injective otherwise.",
+    "not_covered": [
+      "nonhomomorphic fingerprints with separately proved correction data",
+      "adaptive or target-dependent probes",
+      "nonlinear rational-Krylov circuits",
+      "deck-specific perfect hashing unrelated to group multiplication",
+      "general arithmetic circuits or data structures"
+    ],
+    "power_map_realization": "Every endomorphism of mu_q is z->z^k. It is directly computable without field DLP; k=0 mod q is constant and every other k is a permutation.",
+    "prime_order_kernel_dichotomy": "For prime q, ker(phi) is either mu_q or {1}. Hence phi is trivial or injective.",
+    "scope_limits": [
+      "pure product-preserving group homomorphisms",
+      "single or finite tuples of homomorphisms",
+      "exact arbitrary-target membership with positive and empty targets"
+    ]
+  }
+}

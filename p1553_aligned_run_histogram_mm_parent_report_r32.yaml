@@ -1,0 +1,99 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-ALIGNED-RUN-HISTOGRAM-MM-R32-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only_with_toy_selfcheck
+  model_scope: generic_aligned_run_histogram_after_r31
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_HARDNESS_REDUCTION
+summary: >-
+  The generic aligned-run histogram contains dense Boolean matrix
+  multiplication while retaining O(B^2) stored labels, O(B^2) run records,
+  total expanded length B^3, alphabet Theta(B), and only O(B^2) attained
+  output keys. A generic exact B^(9/4+o(1)) histogram algorithm would imply
+  square matrix multiplication exponent at most 2.25, improving the current
+  published upper bound below 2.371339. This is not an impossibility theorem;
+  the actual elliptic run family has translation consistency absent from the
+  reduction. Standard sparse-convolution, factorized-database, and compressed-
+  string size promises alone do not supply the campaign compiler.
+inputs:
+  - path: staged/p1553_translation_correlation_sparse_convolution_gate_r15.md
+    sha256: ea007be0b237b91127e6a42501873f914ad31d6d4fd4393c3ae6b85005893b9b
+  - path: staged/p1553_near_period_run_compiler_gate_r31.md
+    sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+  - path: staged/p1553_r31_bundle.sha256
+    sha256: af7d63c555fd8c63f87876aa77dc1c90224fa8765000223f982da7c1a99ca87e
+  - path: staged/p1553_r31_staging_receipt.yaml
+    sha256: 39b3c3824527bf739630a09386d63486e47e817f3907a9784d497b156a5f7012
+  - path: staged/p1553_near_period_run_compiler_selfcheck_r31.py
+    sha256: 7882e47d2f328250f4faf12c5bd31cc6132f457daa3c4925cc2663ca1e07170a
+  - path: staged/p1553_near_period_run_compiler_selfcheck_report_r31.json
+    sha256: d1733f58385df12ca65b5fd493d1b61a887c74bcebf750a2dab5b9de86e1aacf
+output:
+  path: staged/p1553_aligned_run_histogram_mm_gate_r32.md
+  sha256: a9acc39df3f504685671ab7d0c16280c9826b6fb1250ffc2fd715ebecc93a02a
+frozen_parameters:
+  stored_label_count: O(c^2)
+  run_record_count: c^2
+  run_length: c
+  expanded_source_count: c^3
+  alphabet_size: Theta(c)
+  attained_histogram_size: O(c^2)
+theorems:
+  - >-
+    One row string per A row, one column string per B column, and one run per
+    row-column pair make a designated color-triple count equal the
+    corresponding integer matrix-product entry.
+  - >-
+    The reduction uses O(c^2) stored labels and runs and has at most
+    c^2+2c+1 attained histogram keys.
+  - >-
+    A generic c^(9/4+o(1)) exact aligned-run histogram compiler implies
+    square matrix multiplication exponent omega<=2.25.
+  - >-
+    The deterministic R31 self-check reconstructs every toy source domain
+    exactly from boundary starts and direct run lengths.
+controls:
+  output_sparsity: preserved
+  integer_counts: exact_no_modular_wrap
+  current_matrix_multiplication_result: upper_bound_not_lower_bound
+  actual_elliptic_translation_consistency: admitted_escape
+  toy_selfcheck: theorem_implementation_only
+result:
+  classification: generic_histogram_matrix_multiplication_hardness_reduction
+  hypothetical_generic_histogram_exponent: 2.25
+  implied_matrix_multiplication_exponent: at_most_2.25
+  current_published_matrix_multiplication_upper_bound: below_2.371339
+  generic_standard_transplant_at_cap: absent
+  elliptic_consistent_histogram: open
+  r31_selfcheck: pass
+  complete_value_histogram: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - no matrix multiplication lower-bound conjecture is assumed
+  - arbitrary run alignments may not be realizable by elliptic translations
+  - no lower bound for the actual degree-c pencil family
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R14 and R15 own generic moment and correlation routes
+  - R31 owns the positive run compiler and histogram residual
+  - R32 adds the output-sparse matrix multiplication reduction and transplant screen
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_HARDNESS_REDUCTION__GENERIC_ALIGNED_RUN_HISTOGRAM_CONTAINS_DENSE_MATRIX_MULTIPLICATION_WITH_O_B2_INPUT_AND_OUTPUT__B2_25_COMPILER_IMPLIES_OMEGA_AT_MOST_2_25__CURRENT_PUBLISHED_UPPER_BOUND_BELOW_2_371339__ACTUAL_ELLIPTIC_CONSISTENCY_OPEN__SELF_CHECK_PASS__NO_COMPLETE_HISTOGRAM_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Exploit or refute the actual elliptic translation-consistent escape using
+  R31 path maps and R28 residual-divisor identities, while requiring exact
+  complete keys, counts, sources, restrictions, target, R10, rank, logs, and
+  descent; reject generic group-by claims that would silently imply
+  omega<=2.25.

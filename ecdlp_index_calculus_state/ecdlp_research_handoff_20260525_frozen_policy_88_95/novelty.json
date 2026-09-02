@@ -1,0 +1,77 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-25",
+  "claim_level": "frozen_policy_boundary_and_next_preregistration",
+  "hypothesis": "A root-hyperplane policy selected only from <=87 pre-factor-gated FFE surfaces can be scored on fresh 88-95 gate-selected surfaces without post hoc policy choice.",
+  "artifacts": {
+    "frozen_evaluator": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/ffe_frozen_root_policy_evaluator.py",
+    "frozen_output": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_train_le87_test_88_95.json"
+  },
+  "strict_frozen_static_result": {
+    "policy": "summax_sage_low_constant_target_hash",
+    "train_surface_count": 30,
+    "train_below_rho_count": 28,
+    "train_direct_below_rho_count": 30,
+    "train_chosen_preserving_count": 30,
+    "train_false_positive_count": 0,
+    "train_mean_total_ops_over_rho": 0.8123601,
+    "train_max_total_ops_over_rho": 1.056,
+    "holdout_surface_count": 3,
+    "holdout_below_rho_count": 2,
+    "holdout_direct_below_rho_count": 2,
+    "holdout_chosen_preserving_count": 3,
+    "holdout_false_positive_count": 0,
+    "holdout_mean_total_ops_over_rho": 0.79912409,
+    "holdout_max_total_ops_over_rho": 1.12,
+    "holdout_mean_direct_total_ops_over_rho": 0.74906083,
+    "holdout_max_direct_total_ops_over_rho": 1.072
+  },
+  "holdout_miss": {
+    "target": "67.a1@9803",
+    "transfer_index": 90,
+    "row_key": "67.a1@9803:uniform:256:salt206",
+    "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:90:67.a1@9803",
+    "chosen_factor": "sage_resultant_factor_9",
+    "chosen_root": 3394,
+    "chosen_preserves_selected_root_pair": true,
+    "evaluated_root_count": 4,
+    "selector_eval_ops": 48,
+    "root_scan_ops": 92,
+    "total_ops_over_rho": 1.12,
+    "direct_total_ops_over_rho": 1.072
+  },
+  "diagnostic_not_claim": {
+    "posthoc_best_static_policy": "global_root_hash",
+    "posthoc_holdout_below_rho_count": 3,
+    "posthoc_holdout_max_total_ops_over_rho": 0.928,
+    "posthoc_holdout_max_direct_total_ops_over_rho": 0.88
+  },
+  "next_preregistration_candidate": {
+    "selection_rule": "among policies with all calibration rows preserving and zero false positives, choose minimum mean scan ops/rho",
+    "selected_policy_on_le87": "learned_global_zero_root_prior",
+    "train_surface_count": 30,
+    "train_below_rho_count": 27,
+    "train_direct_below_rho_count": 29,
+    "train_chosen_preserving_count": 30,
+    "train_false_positive_count": 0,
+    "train_mean_total_ops_over_rho": 0.67360973,
+    "external_train_holdout_below_rho_count": 3,
+    "external_train_holdout_direct_below_rho_count": 3,
+    "external_train_holdout_chosen_preserving_count": 3,
+    "external_train_holdout_false_positive_count": 0,
+    "external_train_holdout_mean_total_ops_over_rho": 0.8300146,
+    "external_train_holdout_max_total_ops_over_rho": 0.928
+  },
+  "limitations": [
+    "The strict count-first static policy does not keep every 88-95 surface below rho.",
+    "The learned-prior repair is a sensitivity result on an already inspected holdout and must be preregistered before a new unseen window.",
+    "The result still operates after FFE surface materialization and Sage factorization; full-remainder FFE costs remain a separate blocker.",
+    "This is not yet an end-to-end ECDLP speedup."
+  ],
+  "next_steps": [
+    "Preregister learned_global_zero_root_prior with <=87 external training and test it on 96-111 or unseen labels.",
+    "Keep pre-factor gate ordering before Sage factorization.",
+    "Report scan, direct-root, and full-remainder accounting separately.",
+    "Treat global_root_hash on 88-95 as a post hoc diagnostic unless it is also selected by a predeclared rule on a future window."
+  ]
+}

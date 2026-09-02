@@ -1,0 +1,77 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R17-PAIR-COMPOSITUM-TOY-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T04:11:56Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only, R15 and R16 reviews remain queued,
+  and R17 is one negative toy requiring independent review.
+bindings:
+  r16_gate_sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+  r16_parent_report_sha256: 0442c740131216004d191137a248d9b4f524fcbd4d16226464d0fa79a6f65bc2
+  r17_gate_sha256: 0ca83b9a6991fe593832519773971aa9fa17b705a7ea155f561cd18ecebc0101
+  r17_parent_report_sha256: e2ab792c4e96dcd645caba2e6e0f9a9eed77bf456c50fd643dea61e1edde6b79
+  r17_success_contract_sha256: 7da9feeeca5baf490d75233af1e14e63ccb426ee325a9487e1d5ffa877f50ff7
+  r17_success_script_sha256: 7fca161667dbc638efb34e3e78f684d6e8b1c8cfa5158aaec6ff0b334f16ce6a
+  r17_success_report_sha256: f5c9257d77a3c87efcf00655a5ec04735eebbacc3f5b7377df3266d9ed2cd154
+  r17_artifact_index_sha256: f3230cc15c5775e373a0f7e144a49b42380e05c692dbd7ace6d6fe6ec012b5df
+  bundle_hash_list_sha256: 4acc5ae300cec07f0b428fd58431975cee1182338a82c4b67ed29ece00c25fdf
+run_history:
+  r17:
+    runs: 1
+    status: invalid_no_result
+    failure: report_serialization
+    receipt_sha256: 1dc7231ac321a99a15c10a017315cd01f15a450464af8f0c50095f88463e99a6
+  r17a:
+    runs: 1
+    status: invalid_no_result
+    failure: report_serialization
+    receipt_sha256: 29a4aa3227e9e9751e8953ef188839e1f54db068d63f805c071e71852b875a2e
+  r17b:
+    runs: 1
+    status: completed
+    decision: REJECT_TOY_CANDIDATE_BIRATIONAL_PAIR
+result:
+  classification: exact_negative_toy
+  field: F_193
+  subgroup_order: 103
+  degree: 3
+  fiber_uniform_min_support_lower_bound: 2
+  paired_endpoints: [1, 2]
+  common_gcd: q0-q1
+  off_diagonal_factor: absent
+  paired_map_degree: 1
+  common_right_factor_degree: 1
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r17_hash_list: pass
+  r17_json_and_yaml_parse: pass
+  direct_formula_checks: 6_passed
+  derivative_squarefree: true
+  infinity_unramified: true
+  four_equalities_contain_diagonal: true
+  clean_temporary_replay_with_r17_gate_and_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: failed_infrastructure_appledouble_sidecars
+  live_appledouble_sidecar_count_under_ideas: 8
+  live_sidecar_scope: ideas/rejected/preallocation
+  live_sidecars_modified_or_removed: false
+limits:
+  - no asymptotic generic-pair theorem
+  - no exclusion of special fiber-uniform non-Galois families
+  - no endpoint or fifth finite-list saturation theorem
+  - no fresh-target action or R10 index
+  - no density, rank, factor logs, or blind descent
+  - no Shoup-bound improvement or breakthrough
+exactly_one_next_action: >-
+  Prove or refute pairwise birationality on a Zariski-open set of the degree-d
+  full-zero-fiber interpolation family; do not extrapolate from R17B alone.

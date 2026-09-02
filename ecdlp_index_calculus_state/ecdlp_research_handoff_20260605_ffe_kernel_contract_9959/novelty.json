@@ -1,0 +1,41 @@
+{
+  "claim_status": "RESEARCH_HANDOFF_READY",
+  "date": "2026-06-05",
+  "frontier": {
+    "common_complete_end": 9959,
+    "note": "Support scouts were observed through 9959 for this coherent handoff; direct/rank artifacts also extend through 9967, but the matching support scout was not part of this handoff."
+  },
+  "honesty_boundary": [
+    "This is an FFE kernel contract and validation handoff, not an ECDLP recovery.",
+    "The contract does not evaluate summation polynomials or produce new direct/rank exports.",
+    "No Pollard-rho speedup is claimed from this artifact alone."
+  ],
+  "new_artifacts": [
+    "../low_term_total2_ffe_sharp_lane_kernel_contract_selected13_9696_9959_probe.json",
+    "../low_term_total2_ffe_sharp_lane_kernel_packet_manifest_selected13_9696_9959_probe.json",
+    "../low_term_total2_ffe_sharp_lane_kernel_packet_manifest_selected13_9696_9959_probe.h",
+    "experiment_result.md",
+    "next_hypothesis.md"
+  ],
+  "novelty_vector": [
+    "Separates public first-pass row-key/salt grouping from private second-pass row checks for the selected13 sharp lane.",
+    "Adds canonical hashes for exact certificate reproduction, inherited promotion gates, and direct/rank backfill rows.",
+    "Lowers the selected13 contract into typed ABI packets with verifier target context and C-compatible packet arrays.",
+    "Keeps same-salt inherited positives out of the promoted success set until a row-level exact certificate is emitted.",
+    "Promotes transfer 9943 from newly observed sharp-lane tail data into a concrete full-family FFE backfill target."
+  ],
+  "primary_backfill_target": {
+    "first_pass_id": "first_cff38c0711c53228",
+    "full_family_row_id": "t9943_4c88ff834538",
+    "group_id": "sharp_group_a15d48c024d5",
+    "packet_hash": "packet_a3c18ea956996b89",
+    "packet_index": 17,
+    "row_check_hash": "row_05f942a16fb73283",
+    "salts": [
+      167,
+      175
+    ],
+    "transfer_index": 9943
+  },
+  "source_contract": "../low_term_total2_ffe_sharp_lane_kernel_contract_selected13_9696_9959_probe.json"
+}

@@ -1,0 +1,318 @@
+{
+  "any_scoped_route_meets_both_caps": false,
+  "candidate_work_credit": false,
+  "dinur_golovnev_k6": {
+    "k": 6,
+    "n": "|C|=B^(3/4+o(1))",
+    "sha256": "e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c",
+    "source": "references/dinur_golovnev_3sum_indexing_2512.04258v2.pdf",
+    "state_exponent_B": {
+      "decimal": 4.125,
+      "exact": "33/8"
+    },
+    "theorem": "S=soft-O(n^(k-1/2-delta)), T=soft-O(n^delta), 0<=delta<=1",
+    "zero_online_slack_forces_delta": {
+      "decimal": 0.0,
+      "exact": "0"
+    }
+  },
+  "explicit_occurrence_split_table_theorem": {
+    "any_row_meets_both_caps": false,
+    "arbitrary_endpoint_compressed_index_lower_bound_claimed": false,
+    "best_setup_compatible_batch_exponent_B": {
+      "decimal": 2.75,
+      "exact": "11/4"
+    },
+    "best_setup_compatible_stored_arity": 3,
+    "minimum_online_compatible_setup_exponent_B": {
+      "decimal": 3.75,
+      "exact": "15/4"
+    },
+    "minimum_stored_arity_for_batch_cap": 5,
+    "proof": "For occurrence-materialized C^s tables, setup permits stored arity s<=3. Then the complementary enumerated arity 6-s>=3 makes the A6 batch exponent at least 1/2+9/4=11/4. Conversely the batch cap requires 6-s<=1, hence s>=5 and occurrence state at least 15/4.",
+    "rows": [
+      {
+        "a6_batch_query_exponent_B": {
+          "decimal": 5.0,
+          "exact": "5"
+        },
+        "enumerated_c_arity": 6,
+        "inside_batch_cap": false,
+        "inside_setup_cap": true,
+        "meets_both_caps": false,
+        "per_target_query_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "setup_exponent_B": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "stored_c_arity": 0
+      },
+      {
+        "a6_batch_query_exponent_B": {
+          "decimal": 4.25,
+          "exact": "17/4"
+        },
+        "enumerated_c_arity": 5,
+        "inside_batch_cap": false,
+        "inside_setup_cap": true,
+        "meets_both_caps": false,
+        "per_target_query_exponent_B": {
+          "decimal": 3.75,
+          "exact": "15/4"
+        },
+        "setup_exponent_B": {
+          "decimal": 0.75,
+          "exact": "3/4"
+        },
+        "stored_c_arity": 1
+      },
+      {
+        "a6_batch_query_exponent_B": {
+          "decimal": 3.5,
+          "exact": "7/2"
+        },
+        "enumerated_c_arity": 4,
+        "inside_batch_cap": false,
+        "inside_setup_cap": true,
+        "meets_both_caps": false,
+        "per_target_query_exponent_B": {
+          "decimal": 3.0,
+          "exact": "3"
+        },
+        "setup_exponent_B": {
+          "decimal": 1.5,
+          "exact": "3/2"
+        },
+        "stored_c_arity": 2
+      },
+      {
+        "a6_batch_query_exponent_B": {
+          "decimal": 2.75,
+          "exact": "11/4"
+        },
+        "enumerated_c_arity": 3,
+        "inside_batch_cap": false,
+        "inside_setup_cap": true,
+        "meets_both_caps": false,
+        "per_target_query_exponent_B": {
+          "decimal": 2.25,
+          "exact": "9/4"
+        },
+        "setup_exponent_B": {
+          "decimal": 2.25,
+          "exact": "9/4"
+        },
+        "stored_c_arity": 3
+      },
+      {
+        "a6_batch_query_exponent_B": {
+          "decimal": 2.0,
+          "exact": "2"
+        },
+        "enumerated_c_arity": 2,
+        "inside_batch_cap": false,
+        "inside_setup_cap": false,
+        "meets_both_caps": false,
+        "per_target_query_exponent_B": {
+          "decimal": 1.5,
+          "exact": "3/2"
+        },
+        "setup_exponent_B": {
+          "decimal": 3.0,
+          "exact": "3"
+        },
+        "stored_c_arity": 4
+      },
+      {
+        "a6_batch_query_exponent_B": {
+          "decimal": 1.25,
+          "exact": "5/4"
+        },
+        "enumerated_c_arity": 1,
+        "inside_batch_cap": true,
+        "inside_setup_cap": false,
+        "meets_both_caps": false,
+        "per_target_query_exponent_B": {
+          "decimal": 0.75,
+          "exact": "3/4"
+        },
+        "setup_exponent_B": {
+          "decimal": 3.75,
+          "exact": "15/4"
+        },
+        "stored_c_arity": 5
+      },
+      {
+        "a6_batch_query_exponent_B": {
+          "decimal": 0.5,
+          "exact": "1/2"
+        },
+        "enumerated_c_arity": 0,
+        "inside_batch_cap": true,
+        "inside_setup_cap": false,
+        "meets_both_caps": false,
+        "per_target_query_exponent_B": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "setup_exponent_B": {
+          "decimal": 4.5,
+          "exact": "9/2"
+        },
+        "stored_c_arity": 6
+      }
+    ]
+  },
+  "general_arithmetic_circuit_or_data_structure_lower_bound_claimed": false,
+  "literature_controls": {
+    "multipoint": {
+      "scope": "upper bound for represented all-output evaluation, not an output-sensitive lower bound",
+      "sha256": "14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8",
+      "source": "references/bhargava_ghosh_guo_kumar_umans_multipoint_2205.00342v1.pdf"
+    },
+    "truncated_resultant": {
+      "scope": "upper bound for explicit coefficient bodies, not an arithmetic-circuit lower bound",
+      "sha256": "160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709",
+      "source": "references/moroz_schost_truncated_resultant_1609.04259v1.pdf"
+    }
+  },
+  "normalization": {
+    "a6_target_batch": "B^(1/2+o(1))",
+    "c3_persistent_state": "B^(9/4+o(1))",
+    "c_atom_deck": "|C|=B^(3/4+o(1))",
+    "fresh_batch_cap": "B^(5/4+o(1))",
+    "group_order": "q=B^(5+o(1)) prime",
+    "setup_cap": "B^(9/4+o(1))"
+  },
+  "one_atom_branch_reduction": {
+    "negative_queries_require_exact_rejection": true,
+    "outer_query_count_equals_batch_cap": true,
+    "outer_query_count_exponent_B": {
+      "decimal": 1.25,
+      "exact": "5/4"
+    },
+    "positive_source_can_be_dyadically_recovered_if_predicate_exists": true,
+    "required_c5_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "required_interface": "target-dependent C5 membership plus one five-C source in polylogarithmic field work"
+  },
+  "output_sensitive_nonlinear_c5_index_lower_bound_claimed": false,
+  "routes": [
+    {
+      "exact_source_reporting": true,
+      "inside_batch_cap_if_lookup_constant": true,
+      "inside_setup_cap": false,
+      "outer_query_batch_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "route_id": "one_c_branch_plus_materialized_c5_index",
+      "setup_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      }
+    },
+    {
+      "delta": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "five_sum_query_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "inside_batch_cap": true,
+      "inside_setup_cap": false,
+      "integer_residue_transfer_to_prime_order_ec": false,
+      "outer_query_batch_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "route_id": "one_c_branch_plus_dinur_golovnev_k6_index",
+      "setup_exponent_B": {
+        "decimal": 4.125,
+        "exact": "33/8"
+      }
+    },
+    {
+      "exact_source_reporting": true,
+      "five_sum_query_exponent_B": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "inside_batch_cap": false,
+      "inside_setup_cap": true,
+      "outer_query_batch_exponent_B": {
+        "decimal": 2.75,
+        "exact": "11/4"
+      },
+      "route_id": "one_c_branch_plus_c2_scan_against_c3_hash",
+      "setup_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    {
+      "deck_domain_polynomial_degree_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "degree_per_source_variable": 16,
+      "fixed_sign_point_source_verification_required": true,
+      "inside_batch_cap": false,
+      "inside_setup_cap": false,
+      "maximum_sign_branches": 32,
+      "represented_dimension_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "five_variable_deck_quotient_or_grid",
+      "summation_polynomial": "S6(x1,x2,x3,x4,x5,x_target)",
+      "tensor_quotient_dimension": "dim(A_C^tensor5)=|C|^5",
+      "x_only_s6_fixed_sign_source_biconditional": false
+    },
+    {
+      "inside_caps": false,
+      "represented_coefficient_or_output_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "all_grid_multivariate_multipoint",
+      "source_reporting_without_all_outputs_supplied": false,
+      "theorem": "(d^m+N)^(1+o(1))*poly(m,d,log|F|)"
+    },
+    {
+      "explicit_degree_body_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "inside_caps": false,
+      "outer_query_batch_exponent_B": {
+        "decimal": 3.5,
+        "exact": "7/2"
+      },
+      "route_id": "constant_order_truncated_c2_c3_resultant_per_c5_query",
+      "source_cofactor_or_gcd_unit_cost": false,
+      "theorem": "soft-O(kd) for order-k truncation and degree d"
+    },
+    {
+      "a6_batch_query_exponent_B": {
+        "decimal": 2.75,
+        "exact": "11/4"
+      },
+      "inside_batch_cap": false,
+      "inside_setup_cap": true,
+      "route_id": "r117_direct_c3_translated_divisor_batch",
+      "setup_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    }
+  ],
+  "schema": "p1553.m6_nonlinear_c6_branch_and_ffe_cost_ledger.r118.v1"
+}

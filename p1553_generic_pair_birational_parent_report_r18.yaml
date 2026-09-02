@@ -1,0 +1,71 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-GENERIC-PAIR-BIRATIONAL-R18-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: draft_review_required_generic_negative
+labels:
+  - theorem-only
+  - generic
+  - model-bound
+  - novelty-unverified
+  - independent-review-required
+owner: P1553/IDEA-195
+new_idea_id: null
+breakthrough: false
+objective: >-
+  Determine whether a generic degree-d full-zero-fiber interpolation map can
+  satisfy R16's simultaneous common-right-factor premise.
+inputs:
+  - path: staged/p1553_block_common_right_factor_compiler_gate_r16.md
+    sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+  - path: staged/p1553_pair_compositum_toy_gate_r17.md
+    sha256: 0ca83b9a6991fe593832519773971aa9fa17b705a7ea155f561cd18ecebc0101
+  - path: staged/p1553_pair_compositum_toy_report_r17b.json
+    sha256: f5c9257d77a3c87efcf00655a5ec04735eebbacc3f5b7377df3266d9ed2cd154
+verified_statements:
+  - >-
+    For polynomial psi=h with a full zero fiber, any shared right factor for
+    endpoints A_1 and A_2 is totally ramified at q=x(A_1).
+  - >-
+    If h(x(A_2+A_1)) and h(x(A_2-A_1)) are distinct and one branch derivative
+    is nonzero, the complete trace/norm map for A_2 is unramified at x(A_1),
+    contradicting every nontrivial shared factor.
+  - >-
+    The local-witness conditions define a nonempty Zariski-open endpoint locus
+    for every d>=3.
+  - >-
+    Bounded-bidegree paired cross equations having a common off-diagonal
+    factor form a proper closed coefficient envelope X_cross. Every genuine
+    paired-degree-greater-than-one point lies in this envelope, but special
+    denominator or chart artifacts prevent identifying the envelope with the
+    genuine exceptional locus without further saturation analysis.
+  - >-
+    A generic degree-d denominator therefore makes one endpoint pair
+    birational and rejects a simultaneous common right factor for the block.
+scoped_failures:
+  generic_full_zero_fiber_interpolation: rejected_by_pairwise_birationality
+  closed_common_factor_envelope: not_classified
+  genuine_components_vs_chart_artifacts: not_separated
+  prescribed_prime_subgroup_incidence: not_bounded
+  endpoint_and_fifth_finite_list_saturation: not_supplied
+  fresh_target_and_r10: not_supplied
+  density_rank_logs_and_descent: not_supplied
+surviving_exceptions:
+  - isogeny and Lattes decompositions
+  - finite-deck and functionally decomposable maps
+  - special non-Galois common intermediate covers
+  - addition-dependent endpoint identities
+  - list-specific points deliberately chosen in the proper exceptional locus
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  unrestricted_lower_bound: false
+  asymptotic_algorithm: false
+  new_idea_id: null
+exactly_one_next_action: >-
+  Classify positive-dimensional components of the closed paired cross-factor
+  envelope, first separating genuine fiber components from chart artifacts,
+  and either reduce them to known controls or extract one explicit non-Galois
+  component with both finite-list saturation gates and a compact certificate.

@@ -1,0 +1,40 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-26",
+  "claim": "Frozen guarded public-factor portfolio survived fresh transfer windows 280-327 and filtered the first raw quadratic-root false positive.",
+  "artifacts": [
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_row_312_327_expanded_probe.json",
+    "ecdlp_index_calculus_state/low_term_total2_expanded_leaf_rescue_312_327_fixed_summary.json",
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_sage_factor_fresh_312_327_fixed_probe.json",
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_public_factor_quadratic_root_fresh_312_327_fixed_probe.json",
+    "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_rolling_with_280_327_fixed.json",
+    "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_loo_with_280_327_fixed.json"
+  ],
+  "new_evidence": {
+    "fresh_windows": [
+      "fresh_280_295_fixed",
+      "fresh_296_311_fixed",
+      "fresh_312_327_fixed"
+    ],
+    "raw_312_327_quadratic_false_positive_count": 1,
+    "raw_312_327_preserving_sage_factor_surfaces": 9,
+    "raw_312_327_surface_count": 10,
+    "rolling_test_window_count": 14,
+    "rolling_below_rho_count": 82,
+    "rolling_latest_window": "fresh_312_327_fixed",
+    "rolling_latest_below_rho_count": 5,
+    "rolling_latest_false_positive_count": 0,
+    "rolling_latest_max_charged_ops_over_rho": 0.68,
+    "loo_heldout_window_count": 15,
+    "loo_below_rho_count": 105,
+    "loo_false_positive_count": 0,
+    "loo_gap_to_guarded_oracle_below_rho": 0,
+    "loo_failing_window_count": 0
+  },
+  "novelty_assessment": {
+    "strength": "three fresh-window promotion plus a meaningful guard-filter validation",
+    "strongest_point": "The 312-327 raw quadratic-root audit has a below-rho false positive, but the frozen public guard filters it and the combined LOO audit remains 105/105.",
+    "main_limitation": "This remains a component result; one 312-327 surface lacks a preserving Sage factor and full-remainder FFE costs are above rho.",
+    "next_required_step": "Explain the selected-leaf/factor-zero guard structurally and materialize the next transfer block."
+  }
+}

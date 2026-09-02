@@ -1,0 +1,110 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-SUCCINCT-AGGREGATE-DIGIT-TRIE-R100-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_universal_subset_index_information_bound_and_structured_control
+run_count: 1
+status: universal_index_omega_D_structured_actual_image_open
+labels:
+  - exact-finite-controls
+  - information-theoretic
+  - structured-positive-control
+  - prospective
+  - scoped-negative
+  - novelty-unverified
+owner: P1513-P1553-R82-R84-R94-R99
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether a universal exact aggregate digit trie can fit the direct
+  setup cap and preserve occurrence-complete source semantics, while keeping
+  structured source families outside the claimed lower bound.
+inputs:
+  - path: p1553_5a5c_multiedge_digitized_equality_projector_probe_r99.py
+    sha256: 3497a069b3bb5b2590537344d68ca0d1cefd0995de6cd739d8f79b352c862e23
+  - path: p1553_5a5c_multiedge_digitized_equality_projector_probe_report_r99.json
+    sha256: dac6fbf38357e640bb174860df16117fdd3461717cb3b2ceac4e76ec7f77707c
+  - path: p1553_5a5c_multiedge_digitized_equality_projector_probe_gate_r99.md
+    sha256: a7e69ad7cf661f09c679039c5ed9874940eca5432d7ca91dc980f97005bfe560
+  - path: p1553_5a5c_implicit_veronese_hyperplane_source_index_probe_report_r94.json
+    sha256: a9966f1fb407e720ce1e9aaafc82ab4a38eade9f338cda287cb737445d099df0
+  - path: p1553_5a5c_implicit_veronese_hyperplane_source_index_probe_gate_r94.md
+    sha256: 66d2004d1b4dfa63ac69f60397da45e379dfca4bb8db12ede0647f028aaf517d
+  - path: p1553_5a5c_marked_resultant_source_section_probe_report_r84.json
+    sha256: c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b
+  - path: p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md
+    sha256: 4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: p1553_cartesian_sum_compact_divisor_probe_gate_r82.md
+    sha256: 7c34e1d905c95a756689d4ec0ea92c6bd47808bcb3407d858ce08cccf75fd55e
+  - path: /Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md
+    sha256: 27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc
+artifacts:
+  - path: p1553_5a5c_succinct_aggregate_digit_trie_probe_r100.py
+    sha256: 168f462c50aa89be7e513d21fe9f34f6080bf04922c192306997805029b88bd9
+  - path: p1553_5a5c_succinct_aggregate_digit_trie_probe_report_r100.json
+    sha256: fc7281ba084824963da550dfb8f034baa4f6d133305e18af11684e2be61154dd
+  - path: frozen_5a5c_succinct_aggregate_digit_trie.json
+    sha256: 947898bdfce1e67b6b2c2f6507528523579067124ccd7fcf42ac3d2827313538
+  - path: aggregate_digit_trie_state_transition_ledger.json
+    sha256: 89ad87aaffb39fedc07225bd39d8b74a729f1463ca1296377e8a0e9f66db0aff
+  - path: aggregate_digit_trie_integer_source_replay.json
+    sha256: c46aa3273b4223bcde92fe98fbd20d2ae95c3451b16a022b0bb6a612bb630f10
+  - path: aggregate_digit_trie_exceptional_controls.json
+    sha256: 3a64bb47d6ec5cdab85cc06a4f0ef5addfc735979cbfa3bd41605f557cff97a6
+  - path: factor_logs_and_identical_descent_r100.json
+    sha256: 43cb18ab5c0f96a37fd6a9754391c37938557940ae99aacd389f9515326888ca
+  - path: p1553_5a5c_succinct_aggregate_digit_trie_probe_gate_r100.md
+    sha256: 653ad0f51c9ec6f88a89769ca757f45ae70432cb947148d447eda968286a2e50
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_succinct_aggregate_digit_trie_probe_r100.py
+    sha256: a93d4aa57d877c64e95b1193d7c16fa0811e7720444b625af75b4cd1393334b1
+verified_statements:
+  - >-
+    Universal exact D-subset membership requires at least binomial(p,D)
+    distinguishable persistent states.
+  - >-
+    Under p=B^5 and D=B^12/5, the resulting field-word bound is at least
+    13D/25 and retains exponent B^12/5.
+  - >-
+    Explicit and Patricia tries retain Theta(D) terminal or branch state,
+    and complete duplicate occurrence return retains D payloads.
+  - >-
+    A structured interval family has an exact two-word membership and source
+    summary, so the universal bound does not cover every structured family.
+scoped_failures:
+  universal_trie_inside_setup_cap: fail
+  actual_divisor_image_entropy_theorem: unsupplied
+  actual_divisor_short_generator: unsupplied
+  leaf_free_merge_law: unsupplied
+  actual_five_a_five_c_integer_lift_complete: unsupplied
+  actual_five_a_five_c_source_unranking_complete: unsupplied
+  projective_exceptional_replay_complete: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - actual 3A+2C endpoint image entropy
+  - structured leaf-free divisor merge laws
+  - arbitrary summation-polynomial and FFE representations
+admission:
+  passed_obligations: 16
+  obligation_count: 31
+  lane_admitted: false
+result:
+  universal_D_subset_state_lower_bound: Omega(D)
+  explicit_trie_state: Theta(D)
+  structured_interval_constant_state_positive: true
+  actual_divisor_image_theorem_found: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_UNIVERSAL_AGGREGATE_DIGIT_TRIES_ONLY__ALL_D_SUBSETS_REQUIRE_BINOMIAL_P_D_STATES__OMEGA_D_FIELD_WORDS_B12O5__EXPLICIT_AND_PATRICIA_TRIES_THETA_D__DUPLICATE_OCCURRENCE_PAYLOAD_D__STRUCTURED_INTERVAL_CONSTANT_STATE_POSITIVE__ACTUAL_3A2C_IMAGE_ENTROPY_AND_MERGE_OPEN__PROJECTIVE_AND_FULL_5A5C_INCOMPLETE__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Prove or refute one actual-image entropy and merge theorem for the R84
+  3A+2C side directly from D_A,D_C, with either a subcap leaf-free summary or
+  an Omega(B^12/5)-word distinguishable reachable subfamily.

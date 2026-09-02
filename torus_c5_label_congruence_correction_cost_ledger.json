@@ -1,0 +1,55 @@
+{
+  "candidate_C2_scan_exponent_B": {
+    "decimal": 2.0,
+    "exact": "2"
+  },
+  "candidate_field_dlp_used": false,
+  "explicit_restricted_correction_table_exponent_B": {
+    "decimal": 5.0,
+    "exact": "5"
+  },
+  "explicit_restricted_table_inside_setup_cap": false,
+  "factor_log_cost_supplied": false,
+  "generalized_birthday_boundary": {
+    "campaign_below_rho": false,
+    "campaign_beta": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "campaign_explicit_output_exponent_N": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "campaign_merge_exponent_N": {
+      "decimal": 0.55,
+      "exact": "11/20"
+    },
+    "explicit_rank_requirement": "At least N^beta explicit relation rows are required for N^beta factor-log unknowns.",
+    "explicit_row_output_exponent_N": "beta",
+    "filtered_pair_list_exponent_N": "2*beta-mu",
+    "four_source_output_exponent_N": "4*beta-mu-1",
+    "merge_work_lower_envelope": "1-beta",
+    "minimum_over_beta": {
+      "beta": {
+        "decimal": 0.5,
+        "exact": "1/2"
+      },
+      "total_exponent_N": {
+        "decimal": 0.5,
+        "exact": "1/2"
+      }
+    },
+    "model": "Four-list explicit relation generation with factor-base size n=N^beta and an ideal compatible projection of size N^mu.",
+    "rank_supply_constraint": "mu<=3*beta-1",
+    "scope": "Exponent boundary for one ideal projected two-pair merge that must emit enough explicit rows. It is not a lower bound for implicit relation-span operators, compressed linear algebra, nonuniform structured factor bases, or general ECDLP algorithms.",
+    "total_lower_envelope": "max(beta,1-beta)"
+  },
+  "identical_descent_cost_supplied": false,
+  "implicit_relation_span_operator_cost_supplied": false,
+  "injective_label_threshold": "k>=ceil(log_6(q))",
+  "label_only_fixed_k_composition": "impossible when nonconstant and 6^k<q",
+  "rank_cost_supplied": false,
+  "schema": "p1553.torus_c5_label_congruence_correction.cost.r143.v1",
+  "single_cross_ratio_defect_evaluation": "O(log q) field operations after the candidate C2 operand is known",
+  "total_attack_cost_supplied": false
+}

@@ -1,0 +1,5835 @@
+{
+  "artifacts": {
+    "assembly_manifest": "ecdlp_index_calculus_state/low_term_total2_ffe_assembly_manifest_selected13_9696_9999_probe.json"
+  },
+  "claim_status": "FFE_SHARP_LANE_REPLAY_WORKORDER_READY",
+  "created_at": "2026-06-05T17:22:29Z",
+  "failures": [],
+  "honesty_boundary": [
+    "This workorder specifies replay and backfill targets only.",
+    "It does not evaluate summation polynomials or compute new rank-gain evidence.",
+    "Inherited positives must become exact row-level certificates before promotion.",
+    "Backfill rows are not successes until direct/rank export validates them."
+  ],
+  "kernel_contract": {
+    "first_pass_group_key": [
+      "target",
+      "transfer_index",
+      "row_keys",
+      "salts"
+    ],
+    "required_backfill_check": "For direct_rank_backfill groups, export direct/rank rows for the full-family selected support first, then attempt lower-support variants with inherited evidence kept separate.",
+    "required_lane_tokens": [
+      "selected_has=13",
+      "salt_adjacent=False",
+      "salt_min_mod4=3"
+    ],
+    "required_positive_check": "For exact_positive_replay groups, reproduce the exact bridge certificate fields for row_keys, selector, top_k, selected support, accepted missing columns, form supports, rank gain, and unique factor-relation gain."
+  },
+  "lane": "selected13_sharp_minmod3",
+  "queues": {
+    "direct_rank_backfill_queue": [
+      {
+        "full_family_row_ids": [
+          "t9728_077c9ce3ade1"
+        ],
+        "group_id": "sharp_group_bddb36225d1b",
+        "min_direct_ops_over_rho": 0.6350365,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt166"
+          ],
+          "salt_gap": 3,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            166
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9728
+        },
+        "row_count": 3,
+        "transfer_index": 9728
+      },
+      {
+        "full_family_row_ids": [
+          "t9755_7e4493f8ec34"
+        ],
+        "group_id": "sharp_group_0f87573f1711",
+        "min_direct_ops_over_rho": 0.6350365,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt175",
+            "22050.cf1@11731:uniform:256:salt177"
+          ],
+          "salt_gap": 2,
+          "salt_min_mod4": 3,
+          "salts": [
+            175,
+            177
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9755
+        },
+        "row_count": 3,
+        "transfer_index": 9755
+      },
+      {
+        "full_family_row_ids": [
+          "t9790_ce7877c9f345"
+        ],
+        "group_id": "sharp_group_e4ec5c5e68a3",
+        "min_direct_ops_over_rho": 0.6350365,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt167",
+            "22050.cf1@11731:uniform:256:salt172"
+          ],
+          "salt_gap": 5,
+          "salt_min_mod4": 3,
+          "salts": [
+            167,
+            172
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9790
+        },
+        "row_count": 3,
+        "transfer_index": 9790
+      },
+      {
+        "full_family_row_ids": [
+          "t9872_c55f1a9223ae"
+        ],
+        "group_id": "sharp_group_3f6f609f5e02",
+        "min_direct_ops_over_rho": 0.6350365,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt173"
+          ],
+          "salt_gap": 10,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            173
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9872
+        },
+        "row_count": 3,
+        "transfer_index": 9872
+      },
+      {
+        "full_family_row_ids": [
+          "t9909_a4cd3a970d56"
+        ],
+        "group_id": "sharp_group_df4c59182e60",
+        "min_direct_ops_over_rho": 0.6350365,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt167",
+            "22050.cf1@11731:uniform:256:salt171"
+          ],
+          "salt_gap": 4,
+          "salt_min_mod4": 3,
+          "salts": [
+            167,
+            171
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9909
+        },
+        "row_count": 3,
+        "transfer_index": 9909
+      },
+      {
+        "full_family_row_ids": [
+          "t9913_67bdfbcc3cec"
+        ],
+        "group_id": "sharp_group_5a3b6385ad92",
+        "min_direct_ops_over_rho": 0.6350365,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt171"
+          ],
+          "salt_gap": 8,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            171
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9913
+        },
+        "row_count": 3,
+        "transfer_index": 9913
+      },
+      {
+        "full_family_row_ids": [
+          "t9943_4c88ff834538"
+        ],
+        "group_id": "sharp_group_a15d48c024d5",
+        "min_direct_ops_over_rho": 0.6350365,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt167",
+            "22050.cf1@11731:uniform:256:salt175"
+          ],
+          "salt_gap": 8,
+          "salt_min_mod4": 3,
+          "salts": [
+            167,
+            175
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9943
+        },
+        "row_count": 3,
+        "transfer_index": 9943
+      },
+      {
+        "full_family_row_ids": [
+          "t9981_4d807a56f643"
+        ],
+        "group_id": "sharp_group_8d65be64543c",
+        "min_direct_ops_over_rho": 0.6350365,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt171",
+            "22050.cf1@11731:uniform:256:salt173"
+          ],
+          "salt_gap": 2,
+          "salt_min_mod4": 3,
+          "salts": [
+            171,
+            173
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9981
+        },
+        "row_count": 3,
+        "transfer_index": 9981
+      },
+      {
+        "full_family_row_ids": [
+          "t9715_42587b9acc58"
+        ],
+        "group_id": "sharp_group_f3eaa7199b73",
+        "min_direct_ops_over_rho": 0.67153285,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt171",
+            "22050.cf1@11731:uniform:256:salt174"
+          ],
+          "salt_gap": 3,
+          "salt_min_mod4": 3,
+          "salts": [
+            171,
+            174
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9715
+        },
+        "row_count": 3,
+        "transfer_index": 9715
+      },
+      {
+        "full_family_row_ids": [
+          "t9814_ba655b11c9ea"
+        ],
+        "group_id": "sharp_group_86c97a8445eb",
+        "min_direct_ops_over_rho": 0.67153285,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt174"
+          ],
+          "salt_gap": 11,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            174
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9814
+        },
+        "row_count": 3,
+        "transfer_index": 9814
+      },
+      {
+        "full_family_row_ids": [
+          "t9839_85f5eebd49d6"
+        ],
+        "group_id": "sharp_group_585a44456f55",
+        "min_direct_ops_over_rho": 0.67153285,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt172"
+          ],
+          "salt_gap": 9,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            172
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9839
+        },
+        "row_count": 3,
+        "transfer_index": 9839
+      },
+      {
+        "full_family_row_ids": [
+          "t9889_ff69240ced56"
+        ],
+        "group_id": "sharp_group_fb57af7f8511",
+        "min_direct_ops_over_rho": 0.67153285,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt171",
+            "22050.cf1@11731:uniform:256:salt174"
+          ],
+          "salt_gap": 3,
+          "salt_min_mod4": 3,
+          "salts": [
+            171,
+            174
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9889
+        },
+        "row_count": 3,
+        "transfer_index": 9889
+      },
+      {
+        "full_family_row_ids": [
+          "t9840_4afae5e6be25"
+        ],
+        "group_id": "sharp_group_59a07f1a17c3",
+        "min_direct_ops_over_rho": 0.7080292,
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt170"
+          ],
+          "salt_gap": 7,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            170
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9840
+        },
+        "row_count": 3,
+        "transfer_index": 9840
+      }
+    ],
+    "exact_positive_replay_queue": [
+      {
+        "expected_exact_rows": [
+          {
+            "accepted_missing_columns": [
+              10,
+              14
+            ],
+            "direct_ops_over_rho": 0.72262774,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": {
+              "accepted_missing_columns": [
+                10,
+                14
+              ],
+              "accepted_missing_not_selected_columns": [],
+              "accepted_priority_columns": [
+                10,
+                14
+              ],
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9736_9743_probe.json",
+              "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+              "direct_ops_over_rho": 0.72262774,
+              "form_supports": [
+                [
+                  10,
+                  14
+                ]
+              ],
+              "rank": 2,
+              "rank_gain": 1,
+              "rank_score": {
+                "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9736_9743_probe.json",
+                "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+                "deficiency_delta": -1,
+                "rank_after": 10,
+                "rank_before": 9,
+                "rank_gain": 1,
+                "unique_factor_relation_gain": 1
+              },
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "saturated_form_supports": [],
+              "selected_missing_columns": [
+                0,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_priority_columns": [
+                0,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_term_support": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selector": "mode_low_term_support_total5",
+              "target": "22050.cf1@11731",
+              "top_k": 16,
+              "transfer_index": 9742,
+              "unique_factor_relation_gain": 1
+            },
+            "exact_rank_gain": 1,
+            "expected_form_supports": [
+              [
+                10,
+                14
+              ]
+            ],
+            "matched_families": [
+              [
+                11,
+                15
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "row_id": "t9742_c31aa535faab",
+            "score_certificate_source": "exact_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9742
+          }
+        ],
+        "group_id": "sharp_group_d455913b772d",
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt171",
+            "22050.cf1@11731:uniform:256:salt173"
+          ],
+          "salt_gap": 2,
+          "salt_min_mod4": 3,
+          "salts": [
+            171,
+            173
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9742
+        },
+        "transfer_index": 9742
+      },
+      {
+        "expected_exact_rows": [
+          {
+            "accepted_missing_columns": [
+              10,
+              14,
+              15
+            ],
+            "direct_ops_over_rho": 0.7810219,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": {
+              "accepted_missing_columns": [
+                10,
+                14,
+                15
+              ],
+              "accepted_missing_not_selected_columns": [],
+              "accepted_priority_columns": [
+                10,
+                14,
+                15
+              ],
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9840_9847_probe.json",
+              "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+              "direct_ops_over_rho": 0.7810219,
+              "form_supports": [
+                [
+                  10,
+                  14
+                ],
+                [
+                  11,
+                  15
+                ]
+              ],
+              "rank": 3,
+              "rank_gain": 2,
+              "rank_score": {
+                "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9840_9847_probe.json",
+                "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+                "deficiency_delta": -2,
+                "rank_after": 11,
+                "rank_before": 9,
+                "rank_gain": 2,
+                "unique_factor_relation_gain": 6
+              },
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt167",
+                "22050.cf1@11731:uniform:256:salt176"
+              ],
+              "saturated_form_supports": [],
+              "selected_missing_columns": [
+                0,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_priority_columns": [
+                0,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_term_support": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selector": "mode_low_term_support_total5",
+              "target": "22050.cf1@11731",
+              "top_k": 16,
+              "transfer_index": 9842,
+              "unique_factor_relation_gain": 6
+            },
+            "exact_rank_gain": 2,
+            "expected_form_supports": [
+              [
+                10,
+                14
+              ],
+              [
+                11,
+                15
+              ]
+            ],
+            "matched_families": [
+              [
+                11,
+                15
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "row_id": "t9842_89b910c16356",
+            "score_certificate_source": "exact_bridge_certificate",
+            "score_rank_gain": 2,
+            "score_unique_factor_relation_gain": 6,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9842
+          }
+        ],
+        "group_id": "sharp_group_c6f20681a8f6",
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt167",
+            "22050.cf1@11731:uniform:256:salt176"
+          ],
+          "salt_gap": 9,
+          "salt_min_mod4": 3,
+          "salts": [
+            167,
+            176
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9842
+        },
+        "transfer_index": 9842
+      },
+      {
+        "expected_exact_rows": [
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.75182482,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": {
+              "accepted_missing_columns": [],
+              "accepted_missing_not_selected_columns": [],
+              "accepted_priority_columns": [
+                5
+              ],
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9880_9887_probe.json",
+              "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+              "direct_ops_over_rho": 0.75182482,
+              "form_supports": [
+                [
+                  1,
+                  5
+                ]
+              ],
+              "rank": 2,
+              "rank_gain": 1,
+              "rank_score": {
+                "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9880_9887_probe.json",
+                "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+                "deficiency_delta": -1,
+                "rank_after": 10,
+                "rank_before": 9,
+                "rank_gain": 1,
+                "unique_factor_relation_gain": 1
+              },
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt163",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "saturated_form_supports": [],
+              "selected_missing_columns": [
+                0,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_priority_columns": [
+                0,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_term_support": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selector": "mode_low_term_support_total5",
+              "target": "22050.cf1@11731",
+              "top_k": 16,
+              "transfer_index": 9884,
+              "unique_factor_relation_gain": 1
+            },
+            "exact_rank_gain": 1,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [
+              [
+                11,
+                15
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "row_id": "t9884_e2635d3064cc",
+            "score_certificate_source": "exact_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9884
+          }
+        ],
+        "group_id": "sharp_group_821ce671cb93",
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt173"
+          ],
+          "salt_gap": 10,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            173
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9884
+        },
+        "transfer_index": 9884
+      },
+      {
+        "expected_exact_rows": [
+          {
+            "accepted_missing_columns": [
+              0
+            ],
+            "direct_ops_over_rho": 0.72262774,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": {
+              "accepted_missing_columns": [
+                0
+              ],
+              "accepted_missing_not_selected_columns": [],
+              "accepted_priority_columns": [
+                0,
+                5
+              ],
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9752_9759_probe.json",
+              "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+              "direct_ops_over_rho": 0.72262774,
+              "form_supports": [
+                [
+                  0,
+                  5
+                ]
+              ],
+              "rank": 2,
+              "rank_gain": 1,
+              "rank_score": {
+                "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9752_9759_probe.json",
+                "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+                "deficiency_delta": -1,
+                "rank_after": 10,
+                "rank_before": 9,
+                "rank_gain": 1,
+                "unique_factor_relation_gain": 1
+              },
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt171",
+                "22050.cf1@11731:uniform:256:salt173"
+              ],
+              "saturated_form_supports": [],
+              "selected_missing_columns": [
+                0,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_priority_columns": [
+                0,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_term_support": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selector": "mode_low_term_support_total5",
+              "target": "22050.cf1@11731",
+              "top_k": 16,
+              "transfer_index": 9754,
+              "unique_factor_relation_gain": 1
+            },
+            "exact_rank_gain": 1,
+            "expected_form_supports": [
+              [
+                0,
+                5
+              ]
+            ],
+            "matched_families": [
+              [
+                11,
+                15
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "row_id": "t9754_a66fa93a38cd",
+            "score_certificate_source": "exact_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9754
+          }
+        ],
+        "group_id": "sharp_group_57288a59d612",
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt171",
+            "22050.cf1@11731:uniform:256:salt173"
+          ],
+          "salt_gap": 2,
+          "salt_min_mod4": 3,
+          "salts": [
+            171,
+            173
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9754
+        },
+        "transfer_index": 9754
+      },
+      {
+        "expected_exact_rows": [
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.72262774,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": {
+              "accepted_missing_columns": [],
+              "accepted_missing_not_selected_columns": [],
+              "accepted_priority_columns": [
+                5
+              ],
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9776_9783_probe.json",
+              "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+              "direct_ops_over_rho": 0.72262774,
+              "form_supports": [
+                [
+                  1,
+                  5
+                ]
+              ],
+              "rank": 2,
+              "rank_gain": 1,
+              "rank_score": {
+                "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9776_9783_probe.json",
+                "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+                "deficiency_delta": -1,
+                "rank_after": 10,
+                "rank_before": 9,
+                "rank_gain": 1,
+                "unique_factor_relation_gain": 1
+              },
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt163",
+                "22050.cf1@11731:uniform:256:salt174"
+              ],
+              "saturated_form_supports": [],
+              "selected_missing_columns": [
+                0,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_priority_columns": [
+                0,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_term_support": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selector": "mode_low_term_support_total5",
+              "target": "22050.cf1@11731",
+              "top_k": 16,
+              "transfer_index": 9776,
+              "unique_factor_relation_gain": 1
+            },
+            "exact_rank_gain": 1,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [
+              [
+                11,
+                15
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "row_id": "t9776_1f890a9ba538",
+            "score_certificate_source": "exact_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9776
+          }
+        ],
+        "group_id": "sharp_group_f86f780b311f",
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt174"
+          ],
+          "salt_gap": 11,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            174
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9776
+        },
+        "transfer_index": 9776
+      },
+      {
+        "expected_exact_rows": [
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.75182482,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": {
+              "accepted_missing_columns": [],
+              "accepted_missing_not_selected_columns": [],
+              "accepted_priority_columns": [
+                5
+              ],
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9800_9807_probe.json",
+              "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+              "direct_ops_over_rho": 0.75182482,
+              "form_supports": [
+                [
+                  1,
+                  5
+                ]
+              ],
+              "rank": 2,
+              "rank_gain": 1,
+              "rank_score": {
+                "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9800_9807_probe.json",
+                "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+                "deficiency_delta": -1,
+                "rank_after": 10,
+                "rank_before": 9,
+                "rank_gain": 1,
+                "unique_factor_relation_gain": 1
+              },
+              "row_keys": [
+                "22050.cf1@11731:uniform:256:salt163",
+                "22050.cf1@11731:uniform:256:salt171"
+              ],
+              "saturated_form_supports": [],
+              "selected_missing_columns": [
+                0,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_priority_columns": [
+                0,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selected_term_support": [
+                0,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15
+              ],
+              "selector": "mode_low_term_support_total5",
+              "target": "22050.cf1@11731",
+              "top_k": 16,
+              "transfer_index": 9803,
+              "unique_factor_relation_gain": 1
+            },
+            "exact_rank_gain": 1,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [
+              [
+                11,
+                15
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                0,
+                5
+              ]
+            ],
+            "row_id": "t9803_b18fbcf9d26a",
+            "score_certificate_source": "exact_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9803
+          }
+        ],
+        "group_id": "sharp_group_d33284e14590",
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt171"
+          ],
+          "salt_gap": 8,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            171
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9803
+        },
+        "transfer_index": 9803
+      }
+    ],
+    "inherited_promotion_queue": [
+      {
+        "group_id": "sharp_group_d455913b772d",
+        "inherited_positive_rows": [
+          {
+            "accepted_missing_columns": [
+              10,
+              14
+            ],
+            "direct_ops_over_rho": 0.67153285,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                10,
+                14
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9742_e8ae3ed4739b",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9742
+          },
+          {
+            "accepted_missing_columns": [
+              10,
+              14
+            ],
+            "direct_ops_over_rho": 0.67153285,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                10,
+                14
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9742_bfd8548c73bd",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_cost_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9742
+          }
+        ],
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt171",
+            "22050.cf1@11731:uniform:256:salt173"
+          ],
+          "salt_gap": 2,
+          "salt_min_mod4": 3,
+          "salts": [
+            171,
+            173
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9742
+        },
+        "transfer_index": 9742
+      },
+      {
+        "group_id": "sharp_group_c6f20681a8f6",
+        "inherited_positive_rows": [
+          {
+            "accepted_missing_columns": [
+              10,
+              14,
+              15
+            ],
+            "direct_ops_over_rho": 0.70072993,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                10,
+                14
+              ],
+              [
+                11,
+                15
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9842_912970e1beaa",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 2,
+            "score_unique_factor_relation_gain": 6,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9842
+          },
+          {
+            "accepted_missing_columns": [
+              10,
+              14,
+              15
+            ],
+            "direct_ops_over_rho": 0.70072993,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                10,
+                14
+              ],
+              [
+                11,
+                15
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9842_33a55f4a5ddc",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 2,
+            "score_unique_factor_relation_gain": 6,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_cost_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9842
+          }
+        ],
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt167",
+            "22050.cf1@11731:uniform:256:salt176"
+          ],
+          "salt_gap": 9,
+          "salt_min_mod4": 3,
+          "salts": [
+            167,
+            176
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9842
+        },
+        "transfer_index": 9842
+      },
+      {
+        "group_id": "sharp_group_821ce671cb93",
+        "inherited_positive_rows": [
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.70072993,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9884_dfa0858037df",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9884
+          },
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.70072993,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9884_9acebb034d14",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_cost_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9884
+          }
+        ],
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt173"
+          ],
+          "salt_gap": 10,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            173
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9884
+        },
+        "transfer_index": 9884
+      },
+      {
+        "group_id": "sharp_group_57288a59d612",
+        "inherited_positive_rows": [
+          {
+            "accepted_missing_columns": [
+              0
+            ],
+            "direct_ops_over_rho": 0.7080292,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                0,
+                5
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9754_ca9cc2428290",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_cost_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9754
+          },
+          {
+            "accepted_missing_columns": [
+              0
+            ],
+            "direct_ops_over_rho": 0.7080292,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                0,
+                5
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9754_a1374150a4e3",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9754
+          }
+        ],
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt171",
+            "22050.cf1@11731:uniform:256:salt173"
+          ],
+          "salt_gap": 2,
+          "salt_min_mod4": 3,
+          "salts": [
+            171,
+            173
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9754
+        },
+        "transfer_index": 9754
+      },
+      {
+        "group_id": "sharp_group_f86f780b311f",
+        "inherited_positive_rows": [
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.7080292,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9776_37113895d302",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9776
+          },
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.7080292,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9776_2408017520d2",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_cost_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9776
+          }
+        ],
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt174"
+          ],
+          "salt_gap": 11,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            174
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9776
+        },
+        "transfer_index": 9776
+      },
+      {
+        "group_id": "sharp_group_d33284e14590",
+        "inherited_positive_rows": [
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.73722628,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9803_80d5b4edc1ca",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_cost_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9803
+          },
+          {
+            "accepted_missing_columns": [],
+            "direct_ops_over_rho": 0.73722628,
+            "direct_status": "direct_certificate_exported",
+            "evidence_positive": true,
+            "exact_bridge_certificate": null,
+            "exact_rank_gain": 0,
+            "expected_form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "matched_families": [],
+            "row_id": "t9803_4da93d7926a0",
+            "score_certificate_source": "same_salt_bridge_certificate",
+            "score_rank_gain": 1,
+            "score_unique_factor_relation_gain": 1,
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              11,
+              12,
+              13
+            ],
+            "selector": "mode_low_term_support_total3",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9803
+          }
+        ],
+        "public_first_pass": {
+          "row_keys": [
+            "22050.cf1@11731:uniform:256:salt163",
+            "22050.cf1@11731:uniform:256:salt171"
+          ],
+          "salt_gap": 8,
+          "salt_min_mod4": 3,
+          "salts": [
+            163,
+            171
+          ],
+          "target": "22050.cf1@11731",
+          "transfer_index": 9803
+        },
+        "transfer_index": 9803
+      }
+    ]
+  },
+  "replay_groups": [
+    {
+      "backfill_required": false,
+      "direct_statuses": [
+        "direct_certificate_exported"
+      ],
+      "exact_positive_row_count": 1,
+      "exact_positive_rows": [
+        {
+          "accepted_missing_columns": [
+            10,
+            14
+          ],
+          "direct_ops_over_rho": 0.72262774,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": {
+            "accepted_missing_columns": [
+              10,
+              14
+            ],
+            "accepted_missing_not_selected_columns": [],
+            "accepted_priority_columns": [
+              10,
+              14
+            ],
+            "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9736_9743_probe.json",
+            "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+            "direct_ops_over_rho": 0.72262774,
+            "form_supports": [
+              [
+                10,
+                14
+              ]
+            ],
+            "rank": 2,
+            "rank_gain": 1,
+            "rank_score": {
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9736_9743_probe.json",
+              "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+              "deficiency_delta": -1,
+              "rank_after": 10,
+              "rank_before": 9,
+              "rank_gain": 1,
+              "unique_factor_relation_gain": 1
+            },
+            "row_keys": [
+              "22050.cf1@11731:uniform:256:salt171",
+              "22050.cf1@11731:uniform:256:salt173"
+            ],
+            "saturated_form_supports": [],
+            "selected_missing_columns": [
+              0,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_priority_columns": [
+              0,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9742,
+            "unique_factor_relation_gain": 1
+          },
+          "exact_rank_gain": 1,
+          "expected_form_supports": [
+            [
+              10,
+              14
+            ]
+          ],
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9742_c31aa535faab",
+          "score_certificate_source": "exact_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9742
+        }
+      ],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_d455913b772d",
+      "inherited_positive_row_count": 2,
+      "inherited_positive_rows": [
+        {
+          "accepted_missing_columns": [
+            10,
+            14
+          ],
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              10,
+              14
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9742_e8ae3ed4739b",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9742
+        },
+        {
+          "accepted_missing_columns": [
+            10,
+            14
+          ],
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              10,
+              14
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9742_bfd8548c73bd",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9742
+        }
+      ],
+      "max_direct_ops_over_rho": 0.72262774,
+      "min_direct_ops_over_rho": 0.67153285,
+      "missing_row_count": 0,
+      "missing_rows": [],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "salt_gap": 2,
+        "salt_min_mod4": 3,
+        "salts": [
+          171,
+          173
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9742
+      },
+      "replay_class": "exact_positive_replay",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9742_c31aa535faab",
+        "t9742_e8ae3ed4739b",
+        "t9742_bfd8548c73bd"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9742
+    },
+    {
+      "backfill_required": false,
+      "direct_statuses": [
+        "direct_certificate_exported"
+      ],
+      "exact_positive_row_count": 1,
+      "exact_positive_rows": [
+        {
+          "accepted_missing_columns": [
+            10,
+            14,
+            15
+          ],
+          "direct_ops_over_rho": 0.7810219,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": {
+            "accepted_missing_columns": [
+              10,
+              14,
+              15
+            ],
+            "accepted_missing_not_selected_columns": [],
+            "accepted_priority_columns": [
+              10,
+              14,
+              15
+            ],
+            "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9840_9847_probe.json",
+            "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+            "direct_ops_over_rho": 0.7810219,
+            "form_supports": [
+              [
+                10,
+                14
+              ],
+              [
+                11,
+                15
+              ]
+            ],
+            "rank": 3,
+            "rank_gain": 2,
+            "rank_score": {
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9840_9847_probe.json",
+              "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+              "deficiency_delta": -2,
+              "rank_after": 11,
+              "rank_before": 9,
+              "rank_gain": 2,
+              "unique_factor_relation_gain": 6
+            },
+            "row_keys": [
+              "22050.cf1@11731:uniform:256:salt167",
+              "22050.cf1@11731:uniform:256:salt176"
+            ],
+            "saturated_form_supports": [],
+            "selected_missing_columns": [
+              0,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_priority_columns": [
+              0,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9842,
+            "unique_factor_relation_gain": 6
+          },
+          "exact_rank_gain": 2,
+          "expected_form_supports": [
+            [
+              10,
+              14
+            ],
+            [
+              11,
+              15
+            ]
+          ],
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9842_89b910c16356",
+          "score_certificate_source": "exact_bridge_certificate",
+          "score_rank_gain": 2,
+          "score_unique_factor_relation_gain": 6,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9842
+        }
+      ],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_c6f20681a8f6",
+      "inherited_positive_row_count": 2,
+      "inherited_positive_rows": [
+        {
+          "accepted_missing_columns": [
+            10,
+            14,
+            15
+          ],
+          "direct_ops_over_rho": 0.70072993,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              10,
+              14
+            ],
+            [
+              11,
+              15
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9842_912970e1beaa",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 2,
+          "score_unique_factor_relation_gain": 6,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9842
+        },
+        {
+          "accepted_missing_columns": [
+            10,
+            14,
+            15
+          ],
+          "direct_ops_over_rho": 0.70072993,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              10,
+              14
+            ],
+            [
+              11,
+              15
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9842_33a55f4a5ddc",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 2,
+          "score_unique_factor_relation_gain": 6,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9842
+        }
+      ],
+      "max_direct_ops_over_rho": 0.7810219,
+      "min_direct_ops_over_rho": 0.70072993,
+      "missing_row_count": 0,
+      "missing_rows": [],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt167",
+          "22050.cf1@11731:uniform:256:salt176"
+        ],
+        "salt_gap": 9,
+        "salt_min_mod4": 3,
+        "salts": [
+          167,
+          176
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9842
+      },
+      "replay_class": "exact_positive_replay",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9842_89b910c16356",
+        "t9842_912970e1beaa",
+        "t9842_33a55f4a5ddc"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9842
+    },
+    {
+      "backfill_required": false,
+      "direct_statuses": [
+        "direct_certificate_exported"
+      ],
+      "exact_positive_row_count": 1,
+      "exact_positive_rows": [
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.75182482,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": {
+            "accepted_missing_columns": [],
+            "accepted_missing_not_selected_columns": [],
+            "accepted_priority_columns": [
+              5
+            ],
+            "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9880_9887_probe.json",
+            "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+            "direct_ops_over_rho": 0.75182482,
+            "form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "rank": 2,
+            "rank_gain": 1,
+            "rank_score": {
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9880_9887_probe.json",
+              "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+              "deficiency_delta": -1,
+              "rank_after": 10,
+              "rank_before": 9,
+              "rank_gain": 1,
+              "unique_factor_relation_gain": 1
+            },
+            "row_keys": [
+              "22050.cf1@11731:uniform:256:salt163",
+              "22050.cf1@11731:uniform:256:salt173"
+            ],
+            "saturated_form_supports": [],
+            "selected_missing_columns": [
+              0,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_priority_columns": [
+              0,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9884,
+            "unique_factor_relation_gain": 1
+          },
+          "exact_rank_gain": 1,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9884_e2635d3064cc",
+          "score_certificate_source": "exact_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9884
+        }
+      ],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_821ce671cb93",
+      "inherited_positive_row_count": 2,
+      "inherited_positive_rows": [
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.70072993,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9884_dfa0858037df",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9884
+        },
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.70072993,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9884_9acebb034d14",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9884
+        }
+      ],
+      "max_direct_ops_over_rho": 0.75182482,
+      "min_direct_ops_over_rho": 0.70072993,
+      "missing_row_count": 0,
+      "missing_rows": [],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "salt_gap": 10,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          173
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9884
+      },
+      "replay_class": "exact_positive_replay",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9884_e2635d3064cc",
+        "t9884_dfa0858037df",
+        "t9884_9acebb034d14"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9884
+    },
+    {
+      "backfill_required": false,
+      "direct_statuses": [
+        "direct_certificate_exported"
+      ],
+      "exact_positive_row_count": 1,
+      "exact_positive_rows": [
+        {
+          "accepted_missing_columns": [
+            0
+          ],
+          "direct_ops_over_rho": 0.72262774,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": {
+            "accepted_missing_columns": [
+              0
+            ],
+            "accepted_missing_not_selected_columns": [],
+            "accepted_priority_columns": [
+              0,
+              5
+            ],
+            "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9752_9759_probe.json",
+            "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+            "direct_ops_over_rho": 0.72262774,
+            "form_supports": [
+              [
+                0,
+                5
+              ]
+            ],
+            "rank": 2,
+            "rank_gain": 1,
+            "rank_score": {
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9752_9759_probe.json",
+              "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+              "deficiency_delta": -1,
+              "rank_after": 10,
+              "rank_before": 9,
+              "rank_gain": 1,
+              "unique_factor_relation_gain": 1
+            },
+            "row_keys": [
+              "22050.cf1@11731:uniform:256:salt171",
+              "22050.cf1@11731:uniform:256:salt173"
+            ],
+            "saturated_form_supports": [],
+            "selected_missing_columns": [
+              0,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_priority_columns": [
+              0,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9754,
+            "unique_factor_relation_gain": 1
+          },
+          "exact_rank_gain": 1,
+          "expected_form_supports": [
+            [
+              0,
+              5
+            ]
+          ],
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9754_a66fa93a38cd",
+          "score_certificate_source": "exact_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9754
+        }
+      ],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_57288a59d612",
+      "inherited_positive_row_count": 2,
+      "inherited_positive_rows": [
+        {
+          "accepted_missing_columns": [
+            0
+          ],
+          "direct_ops_over_rho": 0.7080292,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              0,
+              5
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9754_ca9cc2428290",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9754
+        },
+        {
+          "accepted_missing_columns": [
+            0
+          ],
+          "direct_ops_over_rho": 0.7080292,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              0,
+              5
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9754_a1374150a4e3",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9754
+        }
+      ],
+      "max_direct_ops_over_rho": 0.72262774,
+      "min_direct_ops_over_rho": 0.7080292,
+      "missing_row_count": 0,
+      "missing_rows": [],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "salt_gap": 2,
+        "salt_min_mod4": 3,
+        "salts": [
+          171,
+          173
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9754
+      },
+      "replay_class": "exact_positive_replay",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9754_a66fa93a38cd",
+        "t9754_ca9cc2428290",
+        "t9754_a1374150a4e3"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9754
+    },
+    {
+      "backfill_required": false,
+      "direct_statuses": [
+        "direct_certificate_exported"
+      ],
+      "exact_positive_row_count": 1,
+      "exact_positive_rows": [
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.72262774,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": {
+            "accepted_missing_columns": [],
+            "accepted_missing_not_selected_columns": [],
+            "accepted_priority_columns": [
+              5
+            ],
+            "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9776_9783_probe.json",
+            "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+            "direct_ops_over_rho": 0.72262774,
+            "form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "rank": 2,
+            "rank_gain": 1,
+            "rank_score": {
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9776_9783_probe.json",
+              "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+              "deficiency_delta": -1,
+              "rank_after": 10,
+              "rank_before": 9,
+              "rank_gain": 1,
+              "unique_factor_relation_gain": 1
+            },
+            "row_keys": [
+              "22050.cf1@11731:uniform:256:salt163",
+              "22050.cf1@11731:uniform:256:salt174"
+            ],
+            "saturated_form_supports": [],
+            "selected_missing_columns": [
+              0,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_priority_columns": [
+              0,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9776,
+            "unique_factor_relation_gain": 1
+          },
+          "exact_rank_gain": 1,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9776_1f890a9ba538",
+          "score_certificate_source": "exact_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9776
+        }
+      ],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_f86f780b311f",
+      "inherited_positive_row_count": 2,
+      "inherited_positive_rows": [
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.7080292,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9776_37113895d302",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9776
+        },
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.7080292,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9776_2408017520d2",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9776
+        }
+      ],
+      "max_direct_ops_over_rho": 0.72262774,
+      "min_direct_ops_over_rho": 0.7080292,
+      "missing_row_count": 0,
+      "missing_rows": [],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt174"
+        ],
+        "salt_gap": 11,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          174
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9776
+      },
+      "replay_class": "exact_positive_replay",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9776_1f890a9ba538",
+        "t9776_37113895d302",
+        "t9776_2408017520d2"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9776
+    },
+    {
+      "backfill_required": false,
+      "direct_statuses": [
+        "direct_certificate_exported"
+      ],
+      "exact_positive_row_count": 1,
+      "exact_positive_rows": [
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.75182482,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": {
+            "accepted_missing_columns": [],
+            "accepted_missing_not_selected_columns": [],
+            "accepted_priority_columns": [
+              5
+            ],
+            "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9800_9807_probe.json",
+            "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+            "direct_ops_over_rho": 0.75182482,
+            "form_supports": [
+              [
+                1,
+                5
+              ]
+            ],
+            "rank": 2,
+            "rank_gain": 1,
+            "rank_score": {
+              "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9800_9807_probe.json",
+              "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+              "deficiency_delta": -1,
+              "rank_after": 10,
+              "rank_before": 9,
+              "rank_gain": 1,
+              "unique_factor_relation_gain": 1
+            },
+            "row_keys": [
+              "22050.cf1@11731:uniform:256:salt163",
+              "22050.cf1@11731:uniform:256:salt171"
+            ],
+            "saturated_form_supports": [],
+            "selected_missing_columns": [
+              0,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_priority_columns": [
+              0,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selected_term_support": [
+              0,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "selector": "mode_low_term_support_total5",
+            "target": "22050.cf1@11731",
+            "top_k": 16,
+            "transfer_index": 9803,
+            "unique_factor_relation_gain": 1
+          },
+          "exact_rank_gain": 1,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9803_b18fbcf9d26a",
+          "score_certificate_source": "exact_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9803
+        }
+      ],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_d33284e14590",
+      "inherited_positive_row_count": 2,
+      "inherited_positive_rows": [
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.73722628,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9803_80d5b4edc1ca",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9803
+        },
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.73722628,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": true,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              1,
+              5
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9803_4da93d7926a0",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 1,
+          "score_unique_factor_relation_gain": 1,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9803
+        }
+      ],
+      "max_direct_ops_over_rho": 0.75182482,
+      "min_direct_ops_over_rho": 0.73722628,
+      "missing_row_count": 0,
+      "missing_rows": [],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt171"
+        ],
+        "salt_gap": 8,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          171
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9803
+      },
+      "replay_class": "exact_positive_replay",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9803_b18fbcf9d26a",
+        "t9803_80d5b4edc1ca",
+        "t9803_4da93d7926a0"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9803
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_bddb36225d1b",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.64963504,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9728_2b52b21a0a76",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9728
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9728_1f1763c06081",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9728
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.64963504,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9728_077c9ce3ade1",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9728
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt166"
+        ],
+        "salt_gap": 3,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          166
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9728
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9728_2b52b21a0a76",
+        "t9728_1f1763c06081",
+        "t9728_077c9ce3ade1"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9728
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_0f87573f1711",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.64963504,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9755_fe3d009b8b27",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9755
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9755_6bc8a4092e60",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9755
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.64963504,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9755_7e4493f8ec34",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9755
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt175",
+          "22050.cf1@11731:uniform:256:salt177"
+        ],
+        "salt_gap": 2,
+        "salt_min_mod4": 3,
+        "salts": [
+          175,
+          177
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9755
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9755_fe3d009b8b27",
+        "t9755_6bc8a4092e60",
+        "t9755_7e4493f8ec34"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9755
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_e4ec5c5e68a3",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.68613139,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9790_cd585da9c36b",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9790
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9790_0993dc2ab81e",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9790
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.68613139,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9790_ce7877c9f345",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9790
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt167",
+          "22050.cf1@11731:uniform:256:salt172"
+        ],
+        "salt_gap": 5,
+        "salt_min_mod4": 3,
+        "salts": [
+          167,
+          172
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9790
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9790_cd585da9c36b",
+        "t9790_0993dc2ab81e",
+        "t9790_ce7877c9f345"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9790
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_3f6f609f5e02",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.64963504,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9872_be9cbcb0e90a",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9872
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9872_7c4f22246203",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9872
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.64963504,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9872_c55f1a9223ae",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9872
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "salt_gap": 10,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          173
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9872
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9872_be9cbcb0e90a",
+        "t9872_7c4f22246203",
+        "t9872_c55f1a9223ae"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9872
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_df4c59182e60",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.68613139,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9909_e4b303276c8e",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9909
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9909_a1a1aa3d1ebb",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9909
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.68613139,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9909_a4cd3a970d56",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9909
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt167",
+          "22050.cf1@11731:uniform:256:salt171"
+        ],
+        "salt_gap": 4,
+        "salt_min_mod4": 3,
+        "salts": [
+          167,
+          171
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9909
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9909_e4b303276c8e",
+        "t9909_a1a1aa3d1ebb",
+        "t9909_a4cd3a970d56"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9909
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_5a3b6385ad92",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.64963504,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9913_af16dccabf37",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9913
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9913_a0d63dc83f10",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9913
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.64963504,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9913_67bdfbcc3cec",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9913
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt171"
+        ],
+        "salt_gap": 8,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          171
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9913
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9913_af16dccabf37",
+        "t9913_a0d63dc83f10",
+        "t9913_67bdfbcc3cec"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9913
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_a15d48c024d5",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.64963504,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9943_fe0e4b034833",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9943
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9943_a49114f229ff",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9943
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.64963504,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9943_4c88ff834538",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9943
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt167",
+          "22050.cf1@11731:uniform:256:salt175"
+        ],
+        "salt_gap": 8,
+        "salt_min_mod4": 3,
+        "salts": [
+          167,
+          175
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9943
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9943_fe0e4b034833",
+        "t9943_a49114f229ff",
+        "t9943_4c88ff834538"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9943
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_8d65be64543c",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.72262774,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9981_e15012eae192",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9981
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9981_6b17fb76c773",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9981
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.72262774,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9981_4d807a56f643",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9981
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "salt_gap": 2,
+        "salt_min_mod4": 3,
+        "salts": [
+          171,
+          173
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9981
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9981_e15012eae192",
+        "t9981_6b17fb76c773",
+        "t9981_4d807a56f643"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9981
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_f3eaa7199b73",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.75912409,
+      "min_direct_ops_over_rho": 0.67153285,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9715_a937962fad39",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9715
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9715_50a54c321947",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9715
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.75912409,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9715_42587b9acc58",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9715
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt174"
+        ],
+        "salt_gap": 3,
+        "salt_min_mod4": 3,
+        "salts": [
+          171,
+          174
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9715
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9715_a937962fad39",
+        "t9715_50a54c321947",
+        "t9715_42587b9acc58"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9715
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_86c97a8445eb",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.72262774,
+      "min_direct_ops_over_rho": 0.67153285,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9814_32c116e71991",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9814
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9814_073924bc6230",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9814
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.72262774,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9814_ba655b11c9ea",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9814
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt174"
+        ],
+        "salt_gap": 11,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          174
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9814
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9814_32c116e71991",
+        "t9814_073924bc6230",
+        "t9814_ba655b11c9ea"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9814
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_585a44456f55",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.72262774,
+      "min_direct_ops_over_rho": 0.67153285,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9839_c9d5aeb34f49",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9839
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9839_a8c164657b8e",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9839
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.72262774,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9839_85f5eebd49d6",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9839
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt172"
+        ],
+        "salt_gap": 9,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          172
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9839
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9839_c9d5aeb34f49",
+        "t9839_a8c164657b8e",
+        "t9839_85f5eebd49d6"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9839
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_fb57af7f8511",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.72262774,
+      "min_direct_ops_over_rho": 0.67153285,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9889_e2342ff23462",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9889
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.67153285,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9889_af875baf80cc",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9889
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.72262774,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9889_ff69240ced56",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9889
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt174"
+        ],
+        "salt_gap": 3,
+        "salt_min_mod4": 3,
+        "salts": [
+          171,
+          174
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9889
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9889_e2342ff23462",
+        "t9889_af875baf80cc",
+        "t9889_ff69240ced56"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9889
+    },
+    {
+      "backfill_required": true,
+      "direct_statuses": [
+        "direct_certificate_missing"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_59a07f1a17c3",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.79562044,
+      "min_direct_ops_over_rho": 0.7080292,
+      "missing_row_count": 3,
+      "missing_rows": [
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.7080292,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9840_6abe9113c826",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9840
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.7080292,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [],
+          "row_id": "t9840_15924870d702",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9840
+        },
+        {
+          "accepted_missing_columns": null,
+          "direct_ops_over_rho": 0.79562044,
+          "direct_status": "direct_certificate_missing",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": null,
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9840_4afae5e6be25",
+          "score_certificate_source": "none",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9840
+        }
+      ],
+      "neutral_row_count": 0,
+      "neutral_rows": [],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt170"
+        ],
+        "salt_gap": 7,
+        "salt_min_mod4": 3,
+        "salts": [
+          163,
+          170
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9840
+      },
+      "replay_class": "direct_rank_backfill",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9840_6abe9113c826",
+        "t9840_15924870d702",
+        "t9840_4afae5e6be25"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9840
+    },
+    {
+      "backfill_required": false,
+      "direct_statuses": [
+        "direct_certificate_exported"
+      ],
+      "exact_positive_row_count": 0,
+      "exact_positive_rows": [],
+      "full_family_row_count": 1,
+      "group_id": "sharp_group_6f31160dafba",
+      "inherited_positive_row_count": 0,
+      "inherited_positive_rows": [],
+      "max_direct_ops_over_rho": 0.68613139,
+      "min_direct_ops_over_rho": 0.6350365,
+      "missing_row_count": 0,
+      "missing_rows": [],
+      "neutral_row_count": 3,
+      "neutral_rows": [
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              2,
+              4
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9969_e90cf5a5230d",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9969
+        },
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.6350365,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              2,
+              4
+            ]
+          ],
+          "matched_families": [],
+          "row_id": "t9969_b252802466e2",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9969
+        },
+        {
+          "accepted_missing_columns": [],
+          "direct_ops_over_rho": 0.68613139,
+          "direct_status": "direct_certificate_exported",
+          "evidence_positive": false,
+          "exact_bridge_certificate": null,
+          "exact_rank_gain": 0,
+          "expected_form_supports": [
+            [
+              2,
+              4
+            ]
+          ],
+          "matched_families": [
+            [
+              11,
+              15
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "row_id": "t9969_0ed25ead319e",
+          "score_certificate_source": "same_salt_bridge_certificate",
+          "score_rank_gain": 0,
+          "score_unique_factor_relation_gain": 0,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "target": "22050.cf1@11731",
+          "top_k": 16,
+          "transfer_index": 9969
+        }
+      ],
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt175"
+        ],
+        "salt_gap": 4,
+        "salt_min_mod4": 3,
+        "salts": [
+          171,
+          175
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9969
+      },
+      "replay_class": "neutral_exported_replay",
+      "row_count": 3,
+      "second_pass_row_ids": [
+        "t9969_e90cf5a5230d",
+        "t9969_b252802466e2",
+        "t9969_0ed25ead319e"
+      ],
+      "selected_supports": [
+        "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+        "0,2,3,6,7,8,9,11,12,13"
+      ],
+      "transfer_index": 9969
+    }
+  ],
+  "schema": "ecdlp.low_term_total2_ffe_sharp_lane_replay_workorder.v1",
+  "source_lane_summary": {
+    "accepted_missing_rank_gain_count": 9,
+    "direct_ops_over_rho": {
+      "max": 0.79562044,
+      "median": 0.67153285,
+      "min": 0.6350365
+    },
+    "direct_status_counts": {
+      "direct_certificate_exported": 21,
+      "direct_certificate_missing": 39
+    },
+    "exact_rank_gain_positive_count": 6,
+    "exact_rank_gain_total": 7,
+    "exact_rank_gain_transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "form_support_counts": {
+      "0,5": 3,
+      "1,5": 9,
+      "10,14": 6,
+      "11,15": 3
+    },
+    "full_family_missing_validation_count": 13,
+    "full_family_missing_validation_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "missing_validation_count": 39,
+    "missing_validation_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "positive_row_ids": [
+      "t9742_c31aa535faab",
+      "t9754_a66fa93a38cd",
+      "t9776_1f890a9ba538",
+      "t9803_b18fbcf9d26a",
+      "t9884_e2635d3064cc",
+      "t9842_89b910c16356",
+      "t9742_bfd8548c73bd",
+      "t9742_e8ae3ed4739b",
+      "t9842_33a55f4a5ddc",
+      "t9842_912970e1beaa",
+      "t9884_9acebb034d14",
+      "t9884_dfa0858037df",
+      "t9754_a1374150a4e3",
+      "t9754_ca9cc2428290",
+      "t9776_2408017520d2",
+      "t9776_37113895d302",
+      "t9803_4da93d7926a0",
+      "t9803_80d5b4edc1ca"
+    ],
+    "positive_transfer_count": 6,
+    "positive_transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "rank_gain_positive_count": 18,
+    "relation_row_ids": [
+      "t9728_077c9ce3ade1",
+      "t9755_7e4493f8ec34",
+      "t9872_c55f1a9223ae",
+      "t9913_67bdfbcc3cec",
+      "t9943_4c88ff834538",
+      "t9790_ce7877c9f345",
+      "t9909_a4cd3a970d56",
+      "t9814_ba655b11c9ea",
+      "t9839_85f5eebd49d6",
+      "t9889_ff69240ced56",
+      "t9981_4d807a56f643",
+      "t9715_42587b9acc58",
+      "t9840_4afae5e6be25",
+      "t9728_1f1763c06081",
+      "t9728_2b52b21a0a76",
+      "t9755_6bc8a4092e60",
+      "t9755_fe3d009b8b27",
+      "t9790_cd585da9c36b",
+      "t9872_7c4f22246203",
+      "t9872_be9cbcb0e90a",
+      "t9909_e4b303276c8e",
+      "t9913_a0d63dc83f10",
+      "t9913_af16dccabf37",
+      "t9943_a49114f229ff",
+      "t9943_fe0e4b034833",
+      "t9981_6b17fb76c773",
+      "t9981_e15012eae192",
+      "t9715_50a54c321947",
+      "t9715_a937962fad39",
+      "t9790_0993dc2ab81e",
+      "t9814_073924bc6230",
+      "t9814_32c116e71991",
+      "t9839_a8c164657b8e",
+      "t9839_c9d5aeb34f49",
+      "t9889_af875baf80cc",
+      "t9889_e2342ff23462",
+      "t9909_a1a1aa3d1ebb",
+      "t9840_15924870d702",
+      "t9840_6abe9113c826",
+      "t9969_0ed25ead319e",
+      "t9742_c31aa535faab",
+      "t9754_a66fa93a38cd",
+      "t9776_1f890a9ba538",
+      "t9803_b18fbcf9d26a",
+      "t9884_e2635d3064cc",
+      "t9842_89b910c16356",
+      "t9969_b252802466e2",
+      "t9969_e90cf5a5230d",
+      "t9742_bfd8548c73bd",
+      "t9742_e8ae3ed4739b",
+      "t9842_33a55f4a5ddc",
+      "t9842_912970e1beaa",
+      "t9884_9acebb034d14",
+      "t9884_dfa0858037df",
+      "t9754_a1374150a4e3",
+      "t9754_ca9cc2428290",
+      "t9776_2408017520d2",
+      "t9776_37113895d302",
+      "t9803_4da93d7926a0",
+      "t9803_80d5b4edc1ca"
+    ],
+    "row_count": 60,
+    "score_certificate_source_counts": {
+      "exact_bridge_certificate": 6,
+      "none": 39,
+      "same_salt_bridge_certificate": 15
+    },
+    "score_rank_gain_total": 21,
+    "score_unique_factor_relation_gain_total": 33,
+    "selected_support_counts": {
+      "0,2,3,4,5,6,7,8,9,10,11,12,13,14,15": 20,
+      "0,2,3,6,7,8,9,11,12,13": 40
+    },
+    "top_missing_row_ids": [
+      "t9728_077c9ce3ade1",
+      "t9755_7e4493f8ec34",
+      "t9872_c55f1a9223ae",
+      "t9913_67bdfbcc3cec",
+      "t9943_4c88ff834538",
+      "t9790_ce7877c9f345",
+      "t9909_a4cd3a970d56",
+      "t9814_ba655b11c9ea",
+      "t9839_85f5eebd49d6",
+      "t9889_ff69240ced56",
+      "t9981_4d807a56f643",
+      "t9715_42587b9acc58",
+      "t9840_4afae5e6be25",
+      "t9728_1f1763c06081",
+      "t9728_2b52b21a0a76",
+      "t9755_6bc8a4092e60",
+      "t9755_fe3d009b8b27",
+      "t9790_cd585da9c36b",
+      "t9872_7c4f22246203",
+      "t9872_be9cbcb0e90a",
+      "t9909_e4b303276c8e",
+      "t9913_a0d63dc83f10",
+      "t9913_af16dccabf37",
+      "t9943_a49114f229ff",
+      "t9943_fe0e4b034833",
+      "t9981_6b17fb76c773",
+      "t9981_e15012eae192",
+      "t9715_50a54c321947",
+      "t9715_a937962fad39",
+      "t9790_0993dc2ab81e",
+      "t9814_073924bc6230",
+      "t9814_32c116e71991",
+      "t9839_a8c164657b8e",
+      "t9839_c9d5aeb34f49",
+      "t9889_af875baf80cc",
+      "t9889_e2342ff23462",
+      "t9909_a1a1aa3d1ebb",
+      "t9840_15924870d702",
+      "t9840_6abe9113c826"
+    ],
+    "transfer_count": 20,
+    "transfer_dedup_score_rank_gain_total": 7,
+    "transfer_dedup_score_unique_factor_relation_gain_total": 11,
+    "transfers": [
+      9715,
+      9728,
+      9742,
+      9754,
+      9755,
+      9776,
+      9790,
+      9803,
+      9814,
+      9839,
+      9840,
+      9842,
+      9872,
+      9884,
+      9889,
+      9909,
+      9913,
+      9943,
+      9969,
+      9981
+    ]
+  },
+  "summary": {
+    "direct_ops_over_rho_median": 0.67153285,
+    "direct_status_counts": {
+      "direct_certificate_exported": 21,
+      "direct_certificate_missing": 39
+    },
+    "exact_positive_group_count": 6,
+    "exact_positive_transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "full_family_missing_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "group_count": 20,
+    "inherited_positive_row_count": 12,
+    "lane_positive_transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "missing_backfill_group_count": 13,
+    "missing_backfill_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "neutral_exported_row_count": 3,
+    "neutral_exported_transfers": [
+      9969
+    ],
+    "row_count": 60,
+    "score_certificate_source_counts": {
+      "exact_bridge_certificate": 6,
+      "none": 39,
+      "same_salt_bridge_certificate": 15
+    },
+    "transfer_count": 20
+  }
+}

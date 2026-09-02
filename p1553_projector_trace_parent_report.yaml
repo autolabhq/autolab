@@ -1,0 +1,130 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-PROJECTOR-TRACE-ROUTER-R9-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: revise_scoped_theorem
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+owner: P1553/P1534/P1536/IDEA-089/IDEA-198/IDEA-250/IDEA-266
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the Fermat projector yields an exact branch-complete
+  dyadic router for the R6 predicate and identify the first over-cap object in
+  the named standard contraction without claiming a universal rank bound.
+inputs:
+  - path: staged/p1553_integer_valued_quotient_gate_r8.md
+    sha256: 78c856187bb43adcd97d0f02f2259c7299874ab93a03954dacb4dd1b8b007ed9
+  - path: staged/p1553_integer_valued_quotient_parent_report.yaml
+    sha256: 110f0893b7a32d84114ef85c4d8c2baad00c05b86af21d51de1b64162bc7369a
+  - path: staged/p1553_integer_valued_quotient_red_team.yaml
+    sha256: c98229e8a179c4f70d9f38aca91e8243e070ec79ad3150dfc40c5618cf46c983
+  - path: ideas/artifacts/ECDLP-IDEA-158/p1534_r1_independent_audit.md
+    sha256: 6a2c96f41552f91ab6d6ddc4801d6e4f958cf5845f6f81676de7f4db89653c53
+  - path: ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md
+    sha256: 81ec3515b584c36a809c155b5f26127bce91c09d7bfe6bccc425cdef07d51393
+  - path: ideas/rejected/ECDLP-IDEA-089_grothendieck_residue_idempotent_splitter_hypothesis.md
+    sha256: 084ffa5cd92f6f50e96d6fd1f63ca1abda975c87c81c7574e99db9e2bf8c80ce
+  - path: ideas/rejected/ECDLP-IDEA-198_barvinok_carry_state_source_unranking_hypothesis.md
+    sha256: 834211bd8e26e3d421df0749653a1bc55b786aab56a698edb9cd71013a0c058a
+  - path: ideas/rejected/ECDLP-IDEA-250_frobenius_split_source_strata_hypothesis.md
+    sha256: 9dc90c1f073c2af434fbc4b8d3074f688ea75c3393283d2f66a6fe65ebfe487d
+  - path: ideas/rejected/ECDLP-IDEA-266_equiprojectable_dynamic_evaluation_source_tree_hypothesis.md
+    sha256: a9529076339b09b881d4504de45c132219352d4e0edc282cc0d2d955577ea1b1
+frozen_interface:
+  group_order: N=p^(1+o(1))
+  label_bound: B=N^(1/5)
+  exact_count_threshold: 32*B^4<p
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted miss or one verified signed occurrence-labelled source
+verified_statements:
+  - >-
+    If every colored deck contains each global x-class at most once, fixing
+    four legal occurrence labels and the 2^4 source signs determines at most
+    one fifth x-class. Thus 16*min_j(product_(i!=j)|I_i|) is valid and 32*B^4
+    is a conservative frozen bound. Within-color multiplicity must be charged.
+  - >-
+    Above the explicit threshold 32*B^4<p, the algebra trace of
+    chi_(R,I)=1-F_R^(p-1) is the exact integer restricted root count, not only
+    its residue modulo p.
+  - >-
+    Exact restricted counts support one-source recovery in at most
+    1+5*ceil(log_2 B) count calls while preserving occurrence labels, sign
+    closure, complete verification, and repeated-column aggregation. The
+    converse from one source to exact multiplicity is not claimed.
+  - >-
+    The pseudoinverse and projector identities are exact, but Frobenius is the
+    identity on the split F_p quotient and supplies no source-atom recurrence.
+  - >-
+    In CRT coordinates the projector has CP rank at most the root count and
+    F_R^(p-1) has CP rank at most the root count plus one. Sparse useful fibers
+    therefore rule out a universal large projector-flattening obstruction.
+  - >-
+    A supplied target-fresh A-term CP projector gives all dyadic counts in
+    A*B^(1+o(1)) factor-construction work and A*B^(o(1)) replay. The direct
+    fresh-target cap requires A<=B^(1/4+o(1)) for that implementation.
+  - >-
+    If all CP factor vectors and interval sums are target-independent and only
+    A weights specialize, setup/state costs A*B^(1+o(1)) and target replay
+    costs A*B^(o(1)), conditionally allowing A<=B^(5/4+o(1)).
+  - >-
+    Carry rank changes under integral lift replacement tilde(F) by
+    tilde(F)+pL, so carry-rank obstructions are scoped to a frozen lift and
+    arithmetic schedule.
+  - >-
+    Literal Fermat-power expansion and standard CRT, quotient, norm, and
+    balanced routes do not construct a cap-sized exact trace evaluator.
+scoped_positive_controls:
+  exact_root_bound: 32*B^4
+  exact_projector_count: true_above_threshold
+  dyadic_source_replay: at_most_1_plus_5_ceil_log2_B_count_calls
+  supplied_cp_direct_rank_cap: A<=B^(1/4+o(1))
+  supplied_target_independent_cp_rank_cap: A<=B^(5/4+o(1))
+  projector_rank_upper_bound: z_(R,I)
+scoped_failures:
+  explicit_projector_inverse_trace: B^5
+  generic_quotient_power_projection: B^(5+o(1))
+  standard_norm_or_jet: B^5
+  standard_balanced_triple_search: B^3_per_target
+  sequential_partial_inverse_or_norm: up_to_B^4_outer_coefficients
+  cap_sized_exact_trace_contraction: unsupplied
+complexity_accounting:
+  conditional_lambda: max(s,1+kappa,2)/5
+  conditional_mu: max(s_m,w,2)/5
+  full_cap_lambda: 0.45
+  full_cap_mu: 0.45
+  mu_0_40_requires: persistent_state_at_most_B^2
+  standard_relation_collection: B^4=N^0.8
+  standard_blind_descent: B^3=N^0.6
+unproved_or_outside_scope:
+  - exact implicit orthogonality or trace contraction for the actual S_6 decks
+  - all arithmetic circuits and non-CP implicit representations
+  - relation density and independent signed row rank
+  - factor-log completion and identical scalar-blind descent
+deduplication:
+  - P1534 owns the quotient kernel and primitive-idempotent source issue
+  - P1536 owns the projector trace, norm jet, and B^5 or B^3 standard controls
+  - IDEA-089 owns residue and primitive-idempotent splitting
+  - IDEA-198 owns carry-state source unranking
+  - IDEA-250 owns Frobenius point-blindness on the finite-etale source locus
+  - IDEA-266 owns dynamic zero-divisor source trees after algebra construction
+  - P1553 owns Query2P1, dyadic restrictions, signs, and source replay
+disposition: >-
+  REVISE_SCOPED_THEOREM__ACTUAL_RESTRICTED_S6_ROOT_COUNT_AT_MOST_32_B4_LT_P__PROJECTOR_TRACE_IS_EXACT_INTEGER_EXISTENCE_COUNT__FROBENIUS_IS_IDENTITY_ON_SPLIT_RATIONAL_QUOTIENT__FERMAT_PROJECTOR_AND_PSEUDOINVERSE_IDENTITIES_EXACT_BUT_NOT_CONSTRUCTIVE__MULTIROOT_DYADIC_ROUTER_REDUCES_TO_EXACT_TRACE_CONTRACTION__SUPPLIED_CP_PROJECTOR_GIVES_BRANCH_COMPLETE_ROUTER_WITH_DIRECT_A_LE_B1_OVER_4__PROJECTOR_AND_FINAL_FERMAT_POWER_HAVE_RANK_AT_MOST_Z_AND_Z_PLUS_1__SPARSE_FIBERS_DEFEAT_PROJECTOR_FLATTENING_AS_AN_OBSTRUCTION__CARRY_RANK_NOT_LIFT_INVARIANT__SHI_CONTROL_REMAINS_LIFT_SCOPED__STANDARD_TRACE_B5_OR_BALANCED_TRIPLE_B3__CAP_SIZED_TRACE_EVALUATOR_UNSUPPLIED__P1534_P1536_IDEA089_IDEA198_IDEA250_IDEA266_P1553_MERGE__NO_NEW_IDEA__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Derive or refute one exact balanced 2|3 contraction computing only C_(R,I)
+  on the full box and every queried dyadic child, without materializing or
+  source-supplying the B^3 triple table, within B^(9/4+o(1)) setup/state and
+  B^(5/4+o(1)) fresh-target time/workspace. Charge the initial count, one child
+  per level including zero children, target specialization, exact field and
+  bit complexity, occurrence backpointers, leaf sign verification,
+  repeated-column aggregation, relation density and rank, factor logs, and
+  identical blind-masked descent. A negative result closes only the explicit
+  contraction representation it proves.

@@ -1,0 +1,811 @@
+{
+  "admission": {
+    "failures": [
+      "target-independent prefix product/correction state costs B^3",
+      "fresh-target remainder/gcd work costs B^3",
+      "fresh-target suffix/correction workspace costs B^2",
+      "gcd degree alone is not exact tuple count",
+      "factor-log solve and identical fresh-target descent are unsupplied"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 14,
+    "passed_obligation_count": 9
+  },
+  "aggregate": {
+    "all_blind_counts_zero": true,
+    "all_forced_counts_one": true,
+    "all_positive_product_tree_sources_verified": true,
+    "all_product_gcd_existence_checks_exact": true,
+    "family_count": 4,
+    "maximum_prefix_product_degree": 500,
+    "maximum_suffix_product_degree": 100,
+    "prefix_instance_count": 12,
+    "synthetic_gcd_degree_differs_from_tuple_count": true,
+    "target_instance_count": 24
+  },
+  "breakthrough": false,
+  "classification": "BATCHED_S4_PRODUCT_GCD_IMPROVES_B5_TO_B3_BUT_MISSES_CAPS",
+  "compiler": {
+    "compiler_id": "s4_factor_subproduct_gcd_mobius_v1",
+    "exact_tuple_count": "R76 alternating endpoint-subset histograms; gcd degree alone is not occurrence count",
+    "existence": "one finite-root polynomial gcd plus identity tag",
+    "fast_multiplication_model": "M(n)=n^(1+o(1)) field operations",
+    "frozen_before_target_outcomes": true,
+    "norm_or_resultant_unit_cost": false,
+    "prefix": "balanced product tree of B^3 squarefree S4 endpoint factors",
+    "schema": "p1553.frozen_batched_norm_node_compiler.r80.v1",
+    "source": "gcd-guided descent in prefix and suffix factor trees",
+    "suffix": "balanced product tree of B^2 target-specialized S4 endpoint factors"
+  },
+  "cost_ledger": {
+    "best_exact_integrated_path": {
+      "fresh_target_work_exponent_B": 3.0,
+      "fresh_target_workspace_exponent_B": 2.0,
+      "setup_state_exponent_B": 3.0,
+      "setup_work_exponent_B": 3.0,
+      "uses_product_gcd_for_existence_source": true,
+      "uses_r76_histograms_for_exact_tuple_count": true
+    },
+    "compiled_fast_arithmetic": {
+      "fresh_gcd_and_remainder_work_exponent_B": 3.0,
+      "fresh_source_backtracking_work_exponent_B": 3.0,
+      "lane_inside_caps": false,
+      "polylog_factors_suppressed": true,
+      "prefix_factor_enumeration_exponent_B": 3.0,
+      "prefix_product_tree_state_exponent_B": 3.0,
+      "prefix_product_tree_work_exponent_B": 3.0,
+      "r76_fresh_target_correction_work_exponent_B": 2.0,
+      "r76_prefix_correction_state_exponent_B": 3.0,
+      "strict_improvement_over_leaf_B5": true,
+      "suffix_factor_enumeration_exponent_B": 2.0,
+      "suffix_product_tree_work_exponent_B": 2.0
+    },
+    "failure_reasons": [
+      "prefix product and exact-correction advice exceed B^(9/4)",
+      "fresh degree-B^3 remainder/gcd work exceeds B^(5/4)",
+      "fresh suffix and correction workspace exceed B^(5/4)"
+    ],
+    "online_work_cap_exponent_B": 1.25,
+    "online_workspace_cap_exponent_B": 1.25,
+    "schema": "p1553.compiled_node_field_state_cost.r80.v1",
+    "setup_state_cap_exponent_B": 2.25
+  },
+  "disposition": "REJECT_STANDARD_BATCHED_S4_SUBPRODUCT_GCD_COMPILER_ONLY__FOUR_STANDARD_CURVES__B3_4_5__STRICT_B5_TO_B3_IMPROVEMENT__EXACT_EXISTENCE_AND_PRODUCT_TREE_SOURCE__GCD_DEGREE_NOT_TUPLE_COUNT__R76_MOBIUS_CORRECTION__SETUP_STATE_B3__FRESH_TARGET_WORK_B3_STATE_B2__STRUCTURED_FACTOR_BASE_GEOMETRY_OPEN__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "families": [
+    {
+      "family_id": "secp256k1",
+      "prefixes": [
+        {
+          "deck_size": 3,
+          "prefix_occurrence_count": 27,
+          "prefix_root_product_degree": 108,
+          "prefix_subset_contribution_count": 405,
+          "prefix_subset_histogram_key_count": 405,
+          "prefix_tree_receipts": {
+            "internal_node_count": 26,
+            "leaf_count": 27,
+            "naive_coefficient_product_count": 6162,
+            "stored_coefficient_count": 681
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 9,
+              "suffix_root_product_degree": 36,
+              "suffix_tree_receipts": {
+                "internal_node_count": 8,
+                "leaf_count": 9,
+                "naive_coefficient_product_count": 700,
+                "stored_coefficient_count": 169
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 9,
+              "suffix_root_product_degree": 36,
+              "suffix_tree_receipts": {
+                "internal_node_count": 8,
+                "leaf_count": 9,
+                "naive_coefficient_product_count": 700,
+                "stored_coefficient_count": 169
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 4,
+          "prefix_occurrence_count": 64,
+          "prefix_root_product_degree": 256,
+          "prefix_subset_contribution_count": 960,
+          "prefix_subset_histogram_key_count": 960,
+          "prefix_tree_receipts": {
+            "internal_node_count": 63,
+            "leaf_count": 64,
+            "naive_coefficient_product_count": 33855,
+            "stored_coefficient_count": 1919
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 16,
+              "suffix_root_product_degree": 64,
+              "suffix_tree_receipts": {
+                "internal_node_count": 15,
+                "leaf_count": 16,
+                "naive_coefficient_product_count": 2191,
+                "stored_coefficient_count": 351
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 16,
+              "suffix_root_product_degree": 64,
+              "suffix_tree_receipts": {
+                "internal_node_count": 15,
+                "leaf_count": 16,
+                "naive_coefficient_product_count": 2191,
+                "stored_coefficient_count": 351
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 5,
+          "prefix_occurrence_count": 125,
+          "prefix_root_product_degree": 500,
+          "prefix_subset_contribution_count": 1875,
+          "prefix_subset_histogram_key_count": 1875,
+          "prefix_tree_receipts": {
+            "internal_node_count": 124,
+            "leaf_count": 125,
+            "naive_coefficient_product_count": 127612,
+            "stored_coefficient_count": 4237
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 25,
+              "suffix_root_product_degree": 100,
+              "suffix_tree_receipts": {
+                "internal_node_count": 24,
+                "leaf_count": 25,
+                "naive_coefficient_product_count": 5296,
+                "stored_coefficient_count": 621
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 25,
+              "suffix_root_product_degree": 100,
+              "suffix_tree_receipts": {
+                "internal_node_count": 24,
+                "leaf_count": 25,
+                "naive_coefficient_product_count": 5296,
+                "stored_coefficient_count": 621
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p256",
+      "prefixes": [
+        {
+          "deck_size": 3,
+          "prefix_occurrence_count": 27,
+          "prefix_root_product_degree": 108,
+          "prefix_subset_contribution_count": 405,
+          "prefix_subset_histogram_key_count": 405,
+          "prefix_tree_receipts": {
+            "internal_node_count": 26,
+            "leaf_count": 27,
+            "naive_coefficient_product_count": 6162,
+            "stored_coefficient_count": 681
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 9,
+              "suffix_root_product_degree": 36,
+              "suffix_tree_receipts": {
+                "internal_node_count": 8,
+                "leaf_count": 9,
+                "naive_coefficient_product_count": 700,
+                "stored_coefficient_count": 169
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 9,
+              "suffix_root_product_degree": 36,
+              "suffix_tree_receipts": {
+                "internal_node_count": 8,
+                "leaf_count": 9,
+                "naive_coefficient_product_count": 700,
+                "stored_coefficient_count": 169
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 4,
+          "prefix_occurrence_count": 64,
+          "prefix_root_product_degree": 256,
+          "prefix_subset_contribution_count": 960,
+          "prefix_subset_histogram_key_count": 960,
+          "prefix_tree_receipts": {
+            "internal_node_count": 63,
+            "leaf_count": 64,
+            "naive_coefficient_product_count": 33855,
+            "stored_coefficient_count": 1919
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 16,
+              "suffix_root_product_degree": 64,
+              "suffix_tree_receipts": {
+                "internal_node_count": 15,
+                "leaf_count": 16,
+                "naive_coefficient_product_count": 2191,
+                "stored_coefficient_count": 351
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 16,
+              "suffix_root_product_degree": 64,
+              "suffix_tree_receipts": {
+                "internal_node_count": 15,
+                "leaf_count": 16,
+                "naive_coefficient_product_count": 2191,
+                "stored_coefficient_count": 351
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 5,
+          "prefix_occurrence_count": 125,
+          "prefix_root_product_degree": 500,
+          "prefix_subset_contribution_count": 1875,
+          "prefix_subset_histogram_key_count": 1875,
+          "prefix_tree_receipts": {
+            "internal_node_count": 124,
+            "leaf_count": 125,
+            "naive_coefficient_product_count": 127612,
+            "stored_coefficient_count": 4237
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 25,
+              "suffix_root_product_degree": 100,
+              "suffix_tree_receipts": {
+                "internal_node_count": 24,
+                "leaf_count": 25,
+                "naive_coefficient_product_count": 5296,
+                "stored_coefficient_count": 621
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 25,
+              "suffix_root_product_degree": 100,
+              "suffix_tree_receipts": {
+                "internal_node_count": 24,
+                "leaf_count": 25,
+                "naive_coefficient_product_count": 5296,
+                "stored_coefficient_count": 621
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p384",
+      "prefixes": [
+        {
+          "deck_size": 3,
+          "prefix_occurrence_count": 27,
+          "prefix_root_product_degree": 108,
+          "prefix_subset_contribution_count": 405,
+          "prefix_subset_histogram_key_count": 405,
+          "prefix_tree_receipts": {
+            "internal_node_count": 26,
+            "leaf_count": 27,
+            "naive_coefficient_product_count": 6162,
+            "stored_coefficient_count": 681
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 9,
+              "suffix_root_product_degree": 36,
+              "suffix_tree_receipts": {
+                "internal_node_count": 8,
+                "leaf_count": 9,
+                "naive_coefficient_product_count": 700,
+                "stored_coefficient_count": 169
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 9,
+              "suffix_root_product_degree": 36,
+              "suffix_tree_receipts": {
+                "internal_node_count": 8,
+                "leaf_count": 9,
+                "naive_coefficient_product_count": 700,
+                "stored_coefficient_count": 169
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 4,
+          "prefix_occurrence_count": 64,
+          "prefix_root_product_degree": 256,
+          "prefix_subset_contribution_count": 960,
+          "prefix_subset_histogram_key_count": 960,
+          "prefix_tree_receipts": {
+            "internal_node_count": 63,
+            "leaf_count": 64,
+            "naive_coefficient_product_count": 33855,
+            "stored_coefficient_count": 1919
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 16,
+              "suffix_root_product_degree": 64,
+              "suffix_tree_receipts": {
+                "internal_node_count": 15,
+                "leaf_count": 16,
+                "naive_coefficient_product_count": 2191,
+                "stored_coefficient_count": 351
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 16,
+              "suffix_root_product_degree": 64,
+              "suffix_tree_receipts": {
+                "internal_node_count": 15,
+                "leaf_count": 16,
+                "naive_coefficient_product_count": 2191,
+                "stored_coefficient_count": 351
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 5,
+          "prefix_occurrence_count": 125,
+          "prefix_root_product_degree": 500,
+          "prefix_subset_contribution_count": 1875,
+          "prefix_subset_histogram_key_count": 1875,
+          "prefix_tree_receipts": {
+            "internal_node_count": 124,
+            "leaf_count": 125,
+            "naive_coefficient_product_count": 127612,
+            "stored_coefficient_count": 4237
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 25,
+              "suffix_root_product_degree": 100,
+              "suffix_tree_receipts": {
+                "internal_node_count": 24,
+                "leaf_count": 25,
+                "naive_coefficient_product_count": 5296,
+                "stored_coefficient_count": 621
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 25,
+              "suffix_root_product_degree": 100,
+              "suffix_tree_receipts": {
+                "internal_node_count": 24,
+                "leaf_count": 25,
+                "naive_coefficient_product_count": 5296,
+                "stored_coefficient_count": 621
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p521",
+      "prefixes": [
+        {
+          "deck_size": 3,
+          "prefix_occurrence_count": 27,
+          "prefix_root_product_degree": 108,
+          "prefix_subset_contribution_count": 405,
+          "prefix_subset_histogram_key_count": 405,
+          "prefix_tree_receipts": {
+            "internal_node_count": 26,
+            "leaf_count": 27,
+            "naive_coefficient_product_count": 6162,
+            "stored_coefficient_count": 681
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 9,
+              "suffix_root_product_degree": 36,
+              "suffix_tree_receipts": {
+                "internal_node_count": 8,
+                "leaf_count": 9,
+                "naive_coefficient_product_count": 700,
+                "stored_coefficient_count": 169
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 9,
+              "suffix_root_product_degree": 36,
+              "suffix_tree_receipts": {
+                "internal_node_count": 8,
+                "leaf_count": 9,
+                "naive_coefficient_product_count": 700,
+                "stored_coefficient_count": 169
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 4,
+          "prefix_occurrence_count": 64,
+          "prefix_root_product_degree": 256,
+          "prefix_subset_contribution_count": 960,
+          "prefix_subset_histogram_key_count": 960,
+          "prefix_tree_receipts": {
+            "internal_node_count": 63,
+            "leaf_count": 64,
+            "naive_coefficient_product_count": 33855,
+            "stored_coefficient_count": 1919
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 16,
+              "suffix_root_product_degree": 64,
+              "suffix_tree_receipts": {
+                "internal_node_count": 15,
+                "leaf_count": 16,
+                "naive_coefficient_product_count": 2191,
+                "stored_coefficient_count": 351
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 16,
+              "suffix_root_product_degree": 64,
+              "suffix_tree_receipts": {
+                "internal_node_count": 15,
+                "leaf_count": 16,
+                "naive_coefficient_product_count": 2191,
+                "stored_coefficient_count": 351
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 5,
+          "prefix_occurrence_count": 125,
+          "prefix_root_product_degree": 500,
+          "prefix_subset_contribution_count": 1875,
+          "prefix_subset_histogram_key_count": 1875,
+          "prefix_tree_receipts": {
+            "internal_node_count": 124,
+            "leaf_count": 125,
+            "naive_coefficient_product_count": 127612,
+            "stored_coefficient_count": 4237
+          },
+          "targets": [
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": false,
+              "mobius_exact_tuple_count": 0,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 0,
+              "product_tree_source_indices": null,
+              "product_tree_source_relation_verified": null,
+              "suffix_occurrence_count": 25,
+              "suffix_root_product_degree": 100,
+              "suffix_tree_receipts": {
+                "internal_node_count": 24,
+                "leaf_count": 25,
+                "naive_coefficient_product_count": 5296,
+                "stored_coefficient_count": 621
+              },
+              "target_id": "blind_hash_target"
+            },
+            {
+              "gcd_degree_equals_tuple_count_on_frozen_instance": true,
+              "histogram_source_present": true,
+              "mobius_exact_tuple_count": 1,
+              "product_polynomial_detects_existence": true,
+              "product_polynomial_gcd_degree": 1,
+              "product_tree_source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "product_tree_source_relation_verified": true,
+              "suffix_occurrence_count": 25,
+              "suffix_root_product_degree": 100,
+              "suffix_tree_receipts": {
+                "internal_node_count": 24,
+                "leaf_count": 25,
+                "naive_coefficient_product_count": 5296,
+                "stored_coefficient_count": 621
+              },
+              "target_id": "forced_positive_target"
+            }
+          ]
+        }
+      ],
+      "scalar_labels_consumed": false
+    }
+  ],
+  "fresh_target_descent_complete": false,
+  "next_action": "Leave random hash decks and construct one scalar-blind structured factor-base geometry whose B^3 triple endpoint multiset has a proved representation of at most B^(9/4+o(1)), while fresh target-plus-pair queries and source return cost at most B^(5/4+o(1)). Require a prospective relation-density theorem, matched random controls, exact rank, factor logs, and identical target descent.",
+  "schema": "p1553.batched_nested_norm_node_compiler_probe.r80.v1",
+  "scope_boundary": "This implements the standard batched subproduct/gcd compiler and its R76 exact correction. It is not a lower bound against factor bases whose triple endpoint support has a new provable compressed representation below B^(9/4).",
+  "shoup_bound_improvement": false,
+  "side_artifacts": {
+    "arithmetic_receipts": "resultant_subproduct_remainder_receipts.json",
+    "compiler": "frozen_batched_norm_node_compiler.json",
+    "cost_ledger": "compiled_node_field_state_cost_ledger.json",
+    "exact_replay": "r76_batched_zero_count_source_replay.json"
+  },
+  "source_bindings": {
+    "r3_query2p1_registry": {
+      "bound_gate_sha256": "b2ee5934e295ab1f0d6b43452898e520d0cb18e718a8f5865694b25909b0df5e",
+      "path": "p1553_r31_artifact_index_README.md",
+      "sha256": "0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f"
+    },
+    "r76_exact_incidence_control": {
+      "path": "p1553_s6_subset_incidence_mobius_probe_report_r76.json",
+      "sha256": "de41d1618bc71c46f700bfead0ed72c5ac0b29a89da3b5c32534a15314ef4c93"
+    },
+    "r79_scalar_leaf_slp": {
+      "path": "p1553_scalar_only_nested_norm_slp_probe_report_r79.json",
+      "sha256": "b5bd22b7256d80f5fa475517699c42f2201a1c8c6209718ea38ab832146a8929"
+    }
+  }
+}

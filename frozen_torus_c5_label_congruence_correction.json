@@ -1,0 +1,111 @@
+{
+  "cross_ratio_defect": {
+    "branch_point_degree": "two numerator and two denominator roots in x",
+    "candidate_dependence": "The fixed-degree formula still requires the unknown C2 operand x.",
+    "definition": "delta_z(x,y)=chi_z(x*y)/(chi_z(x)*chi_z(y))",
+    "target_split_formula": "For t=x*y, delta_z(x,t/x) is the qth power of -(t+x*z+x)*(x+z+1)*(t*z+t+z) / ((t+z+1)*(t*z+t+x*z)*(x*z+x+z))."
+  },
+  "generalized_birthday_boundary": {
+    "campaign_below_rho": false,
+    "campaign_beta": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "campaign_explicit_output_exponent_N": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "campaign_merge_exponent_N": {
+      "decimal": 0.55,
+      "exact": "11/20"
+    },
+    "explicit_rank_requirement": "At least N^beta explicit relation rows are required for N^beta factor-log unknowns.",
+    "explicit_row_output_exponent_N": "beta",
+    "filtered_pair_list_exponent_N": "2*beta-mu",
+    "four_source_output_exponent_N": "4*beta-mu-1",
+    "merge_work_lower_envelope": "1-beta",
+    "minimum_over_beta": {
+      "beta": {
+        "decimal": 0.5,
+        "exact": "1/2"
+      },
+      "total_exponent_N": {
+        "decimal": 0.5,
+        "exact": "1/2"
+      }
+    },
+    "model": "Four-list explicit relation generation with factor-base size n=N^beta and an ideal compatible projection of size N^mu.",
+    "rank_supply_constraint": "mu<=3*beta-1",
+    "scope": "Exponent boundary for one ideal projected two-pair merge that must emit enough explicit rows. It is not a lower bound for implicit relation-span operators, compressed linear algebra, nonuniform structured factor bases, or general ECDLP algorithms.",
+    "total_lower_envelope": "max(beta,1-beta)"
+  },
+  "label_congruence_theorem": {
+    "conclusion": "Every total label-only composition is constant or injective.",
+    "hypothesis": "sigma:G->A and F:A*A->A satisfy sigma(x*y)=F(sigma(x),sigma(y)) for every x,y in G.",
+    "proof": "Equality of sigma values is a multiplication congruence. The identity class is a subgroup and every class is its coset. For prime-order G the subgroup is G or {1}.",
+    "sextic_tuple_consequence": "A nonconstant k-label Mobius signature with 6^k<q cannot have a total label-only product law."
+  },
+  "required_open_outputs": {
+    "compressed_known_rhs_rank": "open",
+    "factor_logs": "open",
+    "generic_prime_family_algorithm": "open",
+    "identical_target_descent": "open",
+    "implicit_relation_span_operator": "open",
+    "shoup_bound_improvement": "open"
+  },
+  "schema": "p1553.torus_c5_label_congruence_correction.frozen.r143.v1",
+  "source_binding_actual_sha256": {
+    "r142_controls": "bf452fbfc523fa2469c70da68e25439d8fe79fe7a550a12f8cc6736d6b73d59a",
+    "r142_cost": "71ee44314fd109bf2854a659d4a80356d5b084602f1f2e5a7113e2018ba706d4",
+    "r142_frozen": "b3b1a96ec46f8617b249f366b3fb77bc64bdde4d5188b47e293033a63a82a51e",
+    "r142_gate": "c4663f680cd2816d721b0d8020c4c5ced9479fc40b4b417701ebc2e060cbdae4",
+    "r142_logs": "d5a35abfa58dc93a8a5bd6d2d315a186c53a8e435d637084abe02d106f63b81f",
+    "r142_parent": "4ab045100abb9537baa6c2e89cbfbd82809f6adff420837dcadce1224dc3d6d7",
+    "r142_producer": "d99409f519e96a9c62644bddc8262d9e535ec55e8fdd4a70ee828a5486af2eef",
+    "r142_replay": "b285ea1f2883f16b53f30b00aa6793d84f55b8397200297ec7c227c5e3083a10",
+    "r142_report": "2a6b812448fcf1e24aac0a7d85f56e2fc0cc9a26de5aaf73b42a1d8ae58b8122",
+    "r142_test": "43723e93867533406eb45ab41cdfedf9f1476f8879018b32e8a106be7935dcb0"
+  },
+  "source_bindings": {
+    "r142_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/torus_c5_adaptive_character_decision_router_controls.json",
+      "sha256": "bf452fbfc523fa2469c70da68e25439d8fe79fe7a550a12f8cc6736d6b73d59a"
+    },
+    "r142_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/torus_c5_adaptive_character_decision_router_cost_ledger.json",
+      "sha256": "71ee44314fd109bf2854a659d4a80356d5b084602f1f2e5a7113e2018ba706d4"
+    },
+    "r142_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_torus_c5_adaptive_character_decision_router.json",
+      "sha256": "b3b1a96ec46f8617b249f366b3fb77bc64bdde4d5188b47e293033a63a82a51e"
+    },
+    "r142_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_torus_c5_adaptive_character_decision_router_probe_gate_r142.md",
+      "sha256": "c4663f680cd2816d721b0d8020c4c5ced9479fc40b4b417701ebc2e060cbdae4"
+    },
+    "r142_logs": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/factor_logs_and_identical_descent_r142.json",
+      "sha256": "d5a35abfa58dc93a8a5bd6d2d315a186c53a8e435d637084abe02d106f63b81f"
+    },
+    "r142_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_torus_c5_adaptive_character_decision_router_probe_parent_report_r142.yaml",
+      "sha256": "4ab045100abb9537baa6c2e89cbfbd82809f6adff420837dcadce1224dc3d6d7"
+    },
+    "r142_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_torus_c5_adaptive_character_decision_router_probe_r142.py",
+      "sha256": "d99409f519e96a9c62644bddc8262d9e535ec55e8fdd4a70ee828a5486af2eef"
+    },
+    "r142_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/torus_c5_adaptive_character_decision_router_replay.json",
+      "sha256": "b285ea1f2883f16b53f30b00aa6793d84f55b8397200297ec7c227c5e3083a10"
+    },
+    "r142_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_torus_c5_adaptive_character_decision_router_probe_report_r142.json",
+      "sha256": "2a6b812448fcf1e24aac0a7d85f56e2fc0cc9a26de5aaf73b42a1d8ae58b8122"
+    },
+    "r142_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_adaptive_character_decision_router_probe_r142.py",
+      "sha256": "43723e93867533406eb45ab41cdfedf9f1476f8879018b32e8a106be7935dcb0"
+    }
+  }
+}

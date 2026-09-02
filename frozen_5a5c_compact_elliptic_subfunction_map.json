@@ -1,0 +1,66 @@
+{
+  "candidate_interface": {
+    "MAP1": "h(P), selecting one rational fiber",
+    "MAP2": "a second public coordinate identifying P in the fiber",
+    "TR": "translate a local fiber index back to an endpoint",
+    "f_d": "the MAP2 values on the d-th fiber"
+  },
+  "caps": {
+    "fresh_work_exponent_B": {
+      "decimal": 1.25,
+      "exact": "5/4"
+    },
+    "setup_state_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "frozen_rational_maps": {
+    "x": {
+      "degree_upper_bound": 2,
+      "map2": "MAP2(P)=y(P)",
+      "rational_map": "h(P)=x(P)"
+    },
+    "x_plus_2y": {
+      "degree_upper_bound": 3,
+      "map2": "MAP2(P)=x(P)",
+      "rational_map": "h(P)=x(P)+2y(P)"
+    },
+    "x_plus_y": {
+      "degree_upper_bound": 3,
+      "map2": "MAP2(P)=x(P)",
+      "rational_map": "h(P)=x(P)+y(P)"
+    },
+    "y": {
+      "degree_upper_bound": 3,
+      "map2": "MAP2(P)=x(P)",
+      "rational_map": "h(P)=y(P)"
+    }
+  },
+  "schema": "p1553.frozen_5a5c_compact_elliptic_subfunction_map.r92.v1",
+  "theorem_4_1": {
+    "paper": "Dinur-Golovnev arXiv:2512.04258v2",
+    "query": "soft-O(L^delta)",
+    "space": "soft-O(L^(3/2-delta)*D + Aux + L^delta)",
+    "version_sha256": "e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c"
+  },
+  "toy_prime_curve": {
+    "addition_closed_on_full_enumeration": true,
+    "all_enumerated_points_on_curve": true,
+    "curve": "E/F_101: y^2=x^3+7x+4",
+    "curve_discriminant_nonzero": true,
+    "enumerated_projective_point_count": 97,
+    "field_prime": 101,
+    "field_prime_exactly_prime": true,
+    "generator": [
+      0,
+      2
+    ],
+    "generator_has_stated_prime_order": true,
+    "group_order_exactly_prime": true,
+    "infinity_included": true,
+    "nontrivial_two_torsion_point_count": 0,
+    "point_count_matches_stated_order": true,
+    "stated_group_order": 97
+  }
+}

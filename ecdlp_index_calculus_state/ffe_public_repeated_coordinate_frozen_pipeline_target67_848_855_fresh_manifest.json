@@ -1,0 +1,142 @@
+{
+  "artifacts": {
+    "coordinate_gate": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_848_855_fresh_coordinate_gate.json",
+    "guard_replay": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_848_855_fresh_guard_replay.json",
+    "public_selector": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_848_855_fresh_public_selector.json"
+  },
+  "commands": [
+    {
+      "cmd": [
+        "/usr/local/bin/python3",
+        "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/low_term_totalk_public_stress_selector_probe.py",
+        "--stress-source",
+        "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_848_855_probe.json",
+        "--max-ops-over-rho",
+        "1.5",
+        "--max-cases-per-challenge",
+        "0",
+        "--out",
+        "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_848_855_fresh_public_selector.json",
+        "--allow-over-rho"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"all_public_bounded_case_count\": 0,\n  \"all_public_candidate_case_count\": 0,\n  \"interpretation\": \"Cases are selected from raw stress rows by public cost and deterministic public tie-breaks. Verifier fields are labels only and are not part of the selection rule.\",\n  \"leaf_selector_counts\": {},\n  \"policy_counts\": {},\n  \"positive_source\": \"public_bounded_stress_rows\",\n  \"positive_source_case_count\": 0,\n  \"positive_source_surface_ids\": [],\n  \"row_selector_counts\": {},\n  \"selected_max_ops_over_rho\": null,\n  \"selected_mean_ops_over_rho\": null,\n  \"selected_min_ops_over_rho\": null,\n  \"selected_public_case_count\": 0,\n  \"selected_signature_verified_label_count\": 0,\n  \"target_count\": 0,\n  \"target_summaries\": []\n}\n"
+    },
+    {
+      "cmd": [
+        "/usr/local/bin/python3",
+        "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/ffe_public_repeated_coordinate_gate_miner.py",
+        "--signature-source",
+        "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_848_855_fresh_public_selector.json",
+        "--target",
+        "67.a1@9803",
+        "--min-row-count",
+        "2",
+        "--min-profile-count",
+        "2",
+        "--max-candidates",
+        "256",
+        "--replay-top",
+        "256",
+        "--include-axis-replay",
+        "--event-summary-limit",
+        "16",
+        "--out",
+        "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_848_855_fresh_coordinate_gate.json"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"best_replayed_verified_candidates\": [],\n  \"candidate_count\": 0,\n  \"mean_replayed_ops_over_rho\": null,\n  \"min_replayed_ops_over_rho\": null,\n  \"replayed_candidate_count\": 0,\n  \"replayed_public_key_verified_count\": 0,\n  \"replayed_verified_below_rho_count\": 0,\n  \"source_verified_label_count\": 0\n}\n"
+    },
+    {
+      "cmd": [
+        "/usr/local/bin/python3",
+        "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/ffe_public_repeated_coordinate_form_guard_replay_probe.py",
+        "--window",
+        "w848_855_fresh|ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_848_855_fresh_coordinate_gate.json",
+        "--activation-rule",
+        "activate:b_minus_c_mod16=0&source_ops_millirhos>=1312|c_mod16=10&source_ops_millirhos>=1368",
+        "--form-guard",
+        "candidate_pos_span=0",
+        "--event-summary-limit",
+        "16",
+        "--out",
+        "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_848_855_fresh_guard_replay.json",
+        "--row-rule",
+        "activated|row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+        "--row-rule",
+        "all_root|row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8"
+      ],
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\n  \"best_guarded_verified_cases\": [],\n  \"by_rule\": [],\n  \"guard_passed_relation_case_count\": 0,\n  \"guard_rejected_relation_case_count\": 0,\n  \"guarded_below_rho_count\": 0,\n  \"guarded_verified_case_count\": 0,\n  \"input_case_count\": 0,\n  \"mean_guard_passed_ops_over_rho\": null,\n  \"min_guard_passed_ops_over_rho\": null,\n  \"rejected_but_verified_case_count\": 0,\n  \"relation_case_count\": 0,\n  \"selected_case_count\": 0\n}\n"
+    }
+  ],
+  "coordinate_gate_summary": {
+    "best_replayed_verified_candidates": [],
+    "candidate_count": 0,
+    "mean_replayed_ops_over_rho": null,
+    "min_replayed_ops_over_rho": null,
+    "replayed_candidate_count": 0,
+    "replayed_public_key_verified_count": 0,
+    "replayed_verified_below_rho_count": 0,
+    "source_verified_label_count": 0
+  },
+  "guard_replay_summary": {
+    "best_guarded_verified_cases": [],
+    "by_rule": [],
+    "guard_passed_relation_case_count": 0,
+    "guard_rejected_relation_case_count": 0,
+    "guarded_below_rho_count": 0,
+    "guarded_verified_case_count": 0,
+    "input_case_count": 0,
+    "mean_guard_passed_ops_over_rho": null,
+    "min_guard_passed_ops_over_rho": null,
+    "rejected_but_verified_case_count": 0,
+    "relation_case_count": 0,
+    "selected_case_count": 0
+  },
+  "method": "public_selector_to_coordinate_gate_to_frozen_form_guard_replay",
+  "non_claims": [
+    "Fresh validation requires a stress source not used in guard discovery.",
+    "The form guard is event-stage and does not avoid row-scan cost.",
+    "This harness preserves exact command provenance for promotion tests."
+  ],
+  "parameters": {
+    "activation_rule": "activate:b_minus_c_mod16=0&source_ops_millirhos>=1312|c_mod16=10&source_ops_millirhos>=1368",
+    "allow_over_rho": true,
+    "event_summary_limit": 16,
+    "form_guard": "candidate_pos_span=0",
+    "gate_max_candidates": 256,
+    "gate_replay_top": 256,
+    "max_cases_per_challenge": 0,
+    "max_ops_over_rho": 1.5,
+    "row_rules": [
+      "activated|row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "all_root|row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8"
+    ],
+    "stress_source": "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_848_855_probe.json",
+    "target": "67.a1@9803",
+    "window_name": "w848_855_fresh"
+  },
+  "schema": "ecdlp_public_repeated_coordinate_frozen_pipeline_runner_v1",
+  "selector_summary": {
+    "all_public_bounded_case_count": 0,
+    "all_public_candidate_case_count": 0,
+    "interpretation": "Cases are selected from raw stress rows by public cost and deterministic public tie-breaks. Verifier fields are labels only and are not part of the selection rule.",
+    "leaf_selector_counts": {},
+    "policy_counts": {},
+    "positive_source": "public_bounded_stress_rows",
+    "positive_source_case_count": 0,
+    "positive_source_surface_ids": [],
+    "row_selector_counts": {},
+    "selected_max_ops_over_rho": null,
+    "selected_mean_ops_over_rho": null,
+    "selected_min_ops_over_rho": null,
+    "selected_public_case_count": 0,
+    "selected_signature_verified_label_count": 0,
+    "target_count": 0,
+    "target_summaries": []
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "artifact": "ecdlp_index_calculus_state/future_witness_rolling_228_299.json",
+  "created_utc": "2026-05-25T17:34:53Z",
+  "method": "public_same_signature_event_density_policy_for_heldout_compact_witness_windows",
+  "status": "diagnostic_selector_seed_sensitive",
+  "supporting_artifacts": [
+    "ecdlp_index_calculus_state/future_witness_fresh_a_250_257.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_a_282_289.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_a_236_243.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_a_rowfixed_250_257.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_a_rowfixed_282_289.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_a_rowfixed_236_243.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_a_rowscoutfilterfixed_250_257.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_a_rowscoutfilterfixed_282_289.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_b_rowscoutfilterfixed_228_235.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_b_rowscoutfilterfixed_250_257.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_b_rowscoutfilterfixed_282_289.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_c_rowscoutfilterfixed_228_235.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_c_rowscoutfilterfixed_250_257.json",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_c_rowscoutfilterfixed_282_289.json",
+    "ecdlp_index_calculus_state/ecdlp_research_handoff_20260525_rolling_window_policy/challenge_seed_stability_matrix.md",
+    "ecdlp_index_calculus_state/future_witness_fresh_challenge_only_a_rowscoutfilterfixed_236_243.json",
+    "ecdlp_index_calculus_state/future_witness_signature_inspect_baseline_250_257.json",
+    "ecdlp_index_calculus_state/future_witness_signature_inspect_fresh_a_250_257.json",
+    "ecdlp_index_calculus_state/ecdlp_research_handoff_20260525_rolling_window_policy/signature_inspection_250_257.md"
+  ],
+  "claims": [
+    {
+      "claim": "Public same-term-signature window ranking identified unseen two-target witness windows under the original shared challenge seed.",
+      "evidence": {
+        "window_count": 65,
+        "top8_all_target_positive_count": 8,
+        "first_unseen_all_target_positive": {
+          "salt_start": 250,
+          "salt_end": 257,
+          "public_policy_rank": 3,
+          "min_verified_pair_ops_over_rho": 0.64
+        },
+        "best_unseen_min_verified_pair_ops_over_rho": 0.624
+      }
+    },
+    {
+      "claim": "A strict threshold learned from the 228-235 positive was conservative and false-positive-free on the original 228-299 rolling scan.",
+      "evidence": {
+        "selected_window_count": 2,
+        "true_positive_count": 2,
+        "false_positive_count": 0
+      }
+    },
+    {
+      "claim": "Fresh shared-challenge transfer failed on the top unseen windows.",
+      "evidence": {
+        "naive_fresh_seed": {
+          "250_257_min_verified_pair_ops_over_rho": 1.12,
+          "282_289_min_verified_pair_ops_over_rho": 1.008,
+          "236_243_min_verified_pair_ops_over_rho": 1.08,
+          "all_target_positive_count": 0
+        },
+        "row_fixed_challenge_scout_filter_fresh": {
+          "positive_window_count": 0,
+          "all_target_positive_count": 0,
+          "public_threshold_false_positive_count_per_window": 1
+        },
+        "row_scout_filter_fixed_challenge_only_fresh": {
+          "positive_window_count": 0,
+          "all_target_positive_count": 0,
+          "public_threshold_false_positive_count_per_window": 1
+        },
+        "challenge_stability_matrix": {
+          "windows": [
+            "228-235",
+            "250-257",
+            "282-289"
+          ],
+          "fresh_transfer_a": {
+            "positive_window_count": 0,
+            "all_target_positive_count": 0,
+            "targets_with_events": 1,
+            "same_signature_pair_count": 28
+          },
+          "fresh_transfer_b": {
+            "positive_window_count": 0,
+            "all_target_positive_count": 0,
+            "targets_with_events": 0,
+            "same_signature_pair_count": 0
+          },
+          "fresh_transfer_c": {
+            "positive_window_count": 0,
+            "all_target_positive_count": 0,
+            "targets_with_events": 1,
+            "same_signature_pair_count": 56
+          }
+        }
+      }
+    },
+    {
+      "claim": "Fresh challenge A converts the 250-257 public signal into dense one-target repetition rather than cross-target compatibility.",
+      "evidence": {
+        "baseline_250_257": {
+          "positive_window_count": 1,
+          "all_target_positive_count": 1,
+          "min_verified_pair_ops_over_rho": 0.64,
+          "targets_with_events": 2,
+          "targets_with_same_signature_pair": 2,
+          "same_signature_pair_count": 6
+        },
+        "fresh_transfer_a_challenge_only_250_257": {
+          "positive_window_count": 0,
+          "all_target_positive_count": 0,
+          "targets_with_events": 1,
+          "targets_with_same_signature_pair": 1,
+          "same_signature_pair_count": 28,
+          "surviving_target": "22050.cf1@11731",
+          "surviving_signature": [
+            56,
+            [
+              10,
+              10,
+              13,
+              13
+            ],
+            "2+2"
+          ]
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "The result is a diagnostic window selector, not a complete index-calculus algorithm.",
+    "Row materialization is not free and must remain in the cost model.",
+    "The same-signature signal is seed-sensitive and has not transferred to fresh shared challenges.",
+    "Verifier-backed witnesses remain fixed-target compact witnesses rather than a proven scalable hit stream."
+  ],
+  "next_required_validation": [
+    "Build a challenge-seed stability matrix with row, scout, and filter schedules frozen.",
+    "Search for challenge-invariant term-signature families before pair verification.",
+    "If no signature family survives, pivot from salt-window routing to FFE/summation-polynomial row synthesis."
+  ]
+}

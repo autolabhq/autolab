@@ -1,0 +1,194 @@
+{
+  "asymptotic_cost": {
+    "arbitrary_D_subset_exact_index": {
+      "build_work": "Omega(D)",
+      "explicit_or_patricia_trie_state": "Theta(D)",
+      "exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "inside_setup_cap": false,
+      "minimum_field_words": "Omega(D)"
+    },
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "explicit_index_target_query": {
+      "inside_online_cap_after_overcap_setup": true,
+      "work": "O(log p)"
+    },
+    "r84_smaller_side": {
+      "actual_divisor_image_is_arbitrary_D_subset": false,
+      "actual_divisor_image_short_generator_proved": false,
+      "leaf_free_mergeable_summary_supplied": false,
+      "prospective_source_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "scope": "Closes exact tries and summaries universal over arbitrary D-subsets, plus explicit occurrence payloads. It does not lower-bound the structured 3A+2C endpoint image or another short public family.",
+    "structured_interval_positive_control": {
+      "inside_direct_caps": true,
+      "persistent_words": "O(1)",
+      "target_query": "O(1) representation-aware comparisons"
+    }
+  },
+  "information_controls": {
+    "all_finite_word_bounds_exact": true,
+    "binomial_lower_bound": "binomial(p,D)>=(p/D)^D",
+    "campaign_substitution": {
+      "D": "Theta(B^(12/5))",
+      "constant_fraction_of_D": {
+        "decimal": 0.52,
+        "exact": "13/25"
+      },
+      "log_p_D": {
+        "decimal": 0.48,
+        "exact": "12/25"
+      },
+      "minimum_field_words": "D*(1-log_p D)>=13D/25=Theta(B^(12/5))",
+      "p": "Theta(B^5)"
+    },
+    "exact_membership_state_theorem": "Two different subsets must have different persistent states: a target in their symmetric difference forces different exact membership answers. Exact source return is at least as strong.",
+    "family": "all D-element subsets of F_p",
+    "finite_sweep": [
+      {
+        "binary_trie_nodes": 13,
+        "explicit_leaf_records": 4,
+        "minimum_field_words": 3,
+        "minimum_field_words_exact": true,
+        "patricia_branch_nodes_for_D_gt_1": 3,
+        "patricia_leaf_nodes": 4,
+        "patricia_total_nodes": 7,
+        "possible_distinct_subsets": 2380,
+        "prime": 17,
+        "subset_size": 4,
+        "values": [
+          4,
+          5,
+          6,
+          15
+        ]
+      },
+      {
+        "binary_trie_nodes": 19,
+        "explicit_leaf_records": 5,
+        "minimum_field_words": 4,
+        "minimum_field_words_exact": true,
+        "patricia_branch_nodes_for_D_gt_1": 4,
+        "patricia_leaf_nodes": 5,
+        "patricia_total_nodes": 9,
+        "possible_distinct_subsets": 169911,
+        "prime": 31,
+        "subset_size": 5,
+        "values": [
+          14,
+          22,
+          24,
+          25,
+          30
+        ]
+      },
+      {
+        "binary_trie_nodes": 35,
+        "explicit_leaf_records": 7,
+        "minimum_field_words": 5,
+        "minimum_field_words_exact": true,
+        "patricia_branch_nodes_for_D_gt_1": 6,
+        "patricia_leaf_nodes": 7,
+        "patricia_total_nodes": 13,
+        "possible_distinct_subsets": 436270780,
+        "prime": 61,
+        "subset_size": 7,
+        "values": [
+          7,
+          14,
+          17,
+          24,
+          33,
+          44,
+          59
+        ]
+      },
+      {
+        "binary_trie_nodes": 50,
+        "explicit_leaf_records": 10,
+        "minimum_field_words": 7,
+        "minimum_field_words_exact": true,
+        "patricia_branch_nodes_for_D_gt_1": 9,
+        "patricia_leaf_nodes": 10,
+        "patricia_total_nodes": 19,
+        "possible_distinct_subsets": 209123798385425,
+        "prime": 127,
+        "subset_size": 10,
+        "values": [
+          0,
+          3,
+          42,
+          45,
+          54,
+          58,
+          71,
+          81,
+          92,
+          104
+        ]
+      }
+    ],
+    "scope": "Information lower bound for a data structure supporting every D-subset. It does not apply to a restricted structured family with a short public generator or merge law.",
+    "state_count": "binomial(p,D)"
+  },
+  "schema": "p1553.aggregate_digit_trie_state_transition_ledger.r100.v1",
+  "structured_and_occurrence_controls": {
+    "blind_integer_count": 0,
+    "blind_target": 3,
+    "duplicate_occurrence_payload_words": 8,
+    "integer_counts_below_prime": true,
+    "occurrence_list": [
+      2,
+      2,
+      5,
+      7,
+      9,
+      12,
+      20,
+      31
+    ],
+    "occurrence_payload_needed_for_complete_source_return": true,
+    "positive_integer_count": 2,
+    "positive_source_index": 0,
+    "positive_target": 2,
+    "structured_interval_blind": {
+      "present": false,
+      "returned_bottom": true,
+      "source_index": null,
+      "summary": {
+        "lower": 20,
+        "upper": 36
+      },
+      "summary_words": 2,
+      "target": 19
+    },
+    "structured_interval_is_constant_state_counterexample": true,
+    "structured_interval_positive": {
+      "present": true,
+      "returned_bottom": false,
+      "source_index": 7,
+      "summary": {
+        "lower": 20,
+        "upper": 36
+      },
+      "summary_words": 2,
+      "target": 27
+    },
+    "value_leaf_count": 7
+  },
+  "universal_exact_trie_inside_caps": false
+}

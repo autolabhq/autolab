@@ -1,0 +1,105 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-COMPACT-ELLIPTIC-SUBFUNCTION-MAP-R92-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: elliptic_subfunction_semantics_and_coverage_cost_screen
+run_count: 1
+status: endpoint_tr_exact_theorem_state_b10o3_source_tr_absent
+labels:
+  - exact-finite-controls
+  - exact-exponent-derivation
+  - prospective
+  - scoped-negative
+  - novelty-unverified
+owner: P1515-P1553-R82-R83-R91
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Construct public elliptic MAP1, MAP2, f_d, and TR operations for the compact
+  five-A plus five-C endpoint source, then charge the bound subfunction
+  framework under the direct setup and fresh-work caps.
+inputs:
+  - path: p1553_5a5c_unequal_list_subfunction_inversion_probe_report_r91.json
+    sha256: 6bfaaaa72dd1135f8244a70a0ce2a6697e5f3fe63ce8ac0ce107bd05f19a71da
+  - path: p1553_5a5c_unequal_list_subfunction_inversion_probe_gate_r91.md
+    sha256: 57469654e0b535ccbf1d62edd9548cd827a09d244deaecb06b8aedbd410ac6d3
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: p1553_5a5c_coordinate_filtration_probe_report_r83.json
+    sha256: 1478cdf21493ffbeaed0859af849ea6f2835027f23db7e3e4c008f3f24db500c
+  - path: partial_filter_composability_and_false_positive_controls.json
+    sha256: b0dd2c5f2675e8e0967a6c0722f26f35700ac9b68f41aafa5f461e17c1cb71af
+  - path: /Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-098/recursive_s3_local_separator_trichotomy_v1.md
+    sha256: dec667b097bcaefdf4c54091b2a9fa7757db5a65efe5b36e6ac15a6ff11a435a
+  - path: /Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-098/recursive_s3_field_router_candidate_v1.md
+    sha256: ee7c0ef479f33d3a82ab6827c286460604c6d26c9a76aa551305eccc2a337e24
+  - path: references/dinur_golovnev_3sum_indexing_2512.04258v2.pdf
+    sha256: e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c
+artifacts:
+  - path: p1553_5a5c_compact_elliptic_subfunction_map_probe_r92.py
+    sha256: 4f3724031a14de218ddda89120d32518ceb7b0430baf147b95a049227c8f8332
+  - path: p1553_5a5c_compact_elliptic_subfunction_map_probe_report_r92.json
+    sha256: 6604e1ac8e15c9048d06262a4116596ff793d4805901df8be16d67c2f170c24c
+  - path: frozen_5a5c_compact_elliptic_subfunction_map.json
+    sha256: f725025a93b350e26f49bbba00a8ec30e2a5675b6404c5ece75cc4920d6fce71
+  - path: elliptic_map1_map2_fd_tr_ledger.json
+    sha256: 2f446941a7339999fcb7c1549509ef2940f6c68e62655f870d2a0bbff9e03abe
+  - path: compact_divisor_target_source_replay.json
+    sha256: 85b21abb0d10f91c55416b2669608009f7f8ac746b3e0de41f803de72a11e7cb
+  - path: projective_branch_and_random_group_controls.json
+    sha256: 00b3a68a7b848c8cbbcb312d65167ef8cd556567fa2a384b7eec06fe3890fc4b
+  - path: factor_logs_and_identical_descent_r92.json
+    sha256: 0984a2250747d9ea7340df1f0de2fbc6454d91baa5c989acdf315eee1ced1961
+  - path: p1553_5a5c_compact_elliptic_subfunction_map_probe_gate_r92.md
+    sha256: f4e5cfe45f25721bd11e60fab31a49866f38fe690b65b832d0b2ba7e20e78ad6
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_compact_elliptic_subfunction_map_probe_r92.py
+    sha256: a39f0f93eccb8a1a6451f5717101ceeea48598706e301c04077bbea523a9635d
+verified_statements:
+  - >-
+    The toy curve over F_101 has exactly 97 projective points, prime group
+    order, full addition-table closure, and an explicit prime-order generator.
+  - >-
+    Four projective rational-fiber interfaces return every endpoint exactly,
+    include infinity, respect their degree bounds, and satisfy D times L at
+    least 97.
+  - >-
+    For a B^5 endpoint space, charging all Theorem 4.1 advice gives an
+    unconstrained minimum B^10/3 and an online-compatible minimum B^35/8.
+  - >-
+    An optimistic explicit one-source-per-endpoint translator is exact but
+    costs B^5 state; actual compact five-A plus five-C source TR is absent.
+scoped_failures:
+  subfunction_framework_inside_setup_cap: fail
+  subfunction_framework_inside_both_caps: fail
+  compact_five_a_five_c_source_TR_complete: unsupplied
+  actual_semaev_projective_exceptional_charts: unsupplied
+  signed_source_biconditional_complete: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - jointly compressed overlapping correspondence families
+  - non-Fiat-Naor source-reporting data structures
+  - representation-changing summation-polynomial and FFE identities
+  - universal data-structure lower bounds
+admission:
+  passed_obligations: 12
+  obligation_count: 22
+  lane_admitted: false
+result:
+  elliptic_endpoint_TR_exact: true
+  compact_five_a_five_c_source_TR_complete: false
+  subcap_subfunction_framework_found: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_DIRECT_ELLIPTIC_ENDPOINT_PARTITION_SUBFUNCTION_FRAMEWORK_ONLY__FOUR_PROJECTIVE_RATIONAL_MAP_CONTROLS_EXACT__D_TIMES_L_COVERAGE_EXACT__THEOREM_ALL_STATE_MIN_B10O3__ONLINE_COMPATIBLE_MIN_B35O8__EXPLICIT_SOURCE_TRANSLATOR_B5__ACTUAL_5A5C_SOURCE_TR_ABSENT__OVERLAPPING_SHARED_CORRESPONDENCE_OPEN__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one target-dependent overlapping S3/S4 incidence
+  correspondence with one shared semilinear operator across all charts, joint
+  state below B^9/4, fresh work below B^5/4, and exact projective five-A plus
+  five-C source unranking, without independent inversion tables or dictionaries.

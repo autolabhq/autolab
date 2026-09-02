@@ -1,0 +1,115 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-OCCURRENCE-PAIR-RESULTANT-LOCAL-VALUATION-R147-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_local_valuation_identity_and_standard_truncation_boundary
+run_count: 1
+status: shared_transposed_multi_target_valuation_marker_route_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - elliptic-curve
+  - cartesian-factor-base
+  - occurrence-divisor
+  - repeated-roots
+  - pair-resultant
+  - local-valuation
+  - truncated-resultant
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R115-R144-R146
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the source-equivalent R146 count interface can be
+  represented as a local valuation whose standard batched evaluation meets
+  the R115 setup and fresh-work caps.
+inputs:
+  - path: p1553_m6_aggregate_marginal_singleton_source_equivalence_probe_r146.py
+    sha256: 088ece9b3359cd80b510ccb6bd2aba7fbc2ff037978e1e54a9d8159d902034a3
+  - path: p1553_m6_aggregate_marginal_singleton_source_equivalence_probe_report_r146.json
+    sha256: 6b7c1eefcb4d062bf5eaee84e88ab2f5e1fd65ba060f16c1ce4adaf0dbfb64f9
+  - path: frozen_m6_aggregate_marginal_singleton_source_equivalence.json
+    sha256: 0570199c52a34c19819852c003870f6962148b1f8ff80e13326a3553665b527b
+  - path: m6_aggregate_marginal_singleton_source_equivalence_cost_ledger.json
+    sha256: 8f40955365b4fc074ed83a98dd168f8f61b747a968d7e71682e3fdaeb9e90711
+  - path: m6_aggregate_marginal_singleton_source_equivalence_replay.json
+    sha256: b33844c11cb0b60562292be41d9f7e6738bc290650c64d17cd6f16dc96cb2d24
+  - path: m6_aggregate_marginal_singleton_source_equivalence_controls.json
+    sha256: 9a2a729ce1169ca979b52047452149e551cffc2e68ea875ef819def7c322412d
+  - path: factor_logs_and_identical_descent_r146.json
+    sha256: cc960f475d3029958cd71bdc22b1c7c4411fe30fca31a08580eb1d6c3f8d9037
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_aggregate_marginal_singleton_source_equivalence_probe_r146.py
+    sha256: 6b23ddbffe6a3ef455c90b15628b117a4ea74aa2c9f51c390846d7bfbbd11af2
+  - path: p1553_m6_aggregate_marginal_singleton_source_equivalence_probe_gate_r146.md
+    sha256: 8b0dc8312273770d5f7f44a26b89a1ce06873b20994d7445fbf8b3d55ba02216
+  - path: p1553_m6_aggregate_marginal_singleton_source_equivalence_probe_parent_report_r146.yaml
+    sha256: 8c6b9f0505a3b26b3443a40f1cb38cc4e0a36f58515d5db3c510b3004e6232bb
+  - path: references/moroz_schost_truncated_resultant_1609.04259.pdf
+    sha256: 160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709
+artifacts:
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_r147.py
+    sha256: cbd08abbdb85025c2353be2253284d79896c6a1709690aa31d01a90622e1a49f
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_report_r147.json
+    sha256: a419f994907d392b8d8cec7a3af6dc0f3a67769350be7c1044e3de4320a69977
+  - path: frozen_m6_occurrence_pair_resultant_local_valuation.json
+    sha256: 0e1c41e3c0ddcb6808977a52d50be72c1a2cef36e186599d3bc5337a793cb26b
+  - path: m6_occurrence_pair_resultant_local_valuation_cost_ledger.json
+    sha256: dbb23343d92b1d757bce760fefeed04aa47719779a4f153fe8a2c6b25dac2c10
+  - path: m6_occurrence_pair_resultant_local_valuation_replay.json
+    sha256: 30e839872cd09e34d12224662c3e3988c5cb478377da1632eb2a4f0c985ef643
+  - path: m6_occurrence_pair_resultant_local_valuation_controls.json
+    sha256: d61405a35dc3efec0c9c49dd3be7159718f052ea7daa601ed56d64a1628fdf65
+  - path: factor_logs_and_identical_descent_r147.json
+    sha256: 4389c787e70da680929bb59faaf1550f22d435f253e8f002dc0d50eb1df2f31c
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_occurrence_pair_resultant_local_valuation_probe_r147.py
+    sha256: da3d847481dd5bc38386f4f50ecb3c9d933e8e6ec0afee0b5c697813e2174a75
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_gate_r147.md
+    sha256: 7398ae8894fc40f710f76e2ec0e6f31726f283ca6fb9153f5258e0561537a6fe
+verified_statements:
+  - >-
+    Retaining all ordered C3 occurrences as repeated roots gives an
+    occurrence divisor of degree |C|^3, while the local valuation of its
+    implicit pair resultant at a target equals the direct ordered C6 count.
+  - >-
+    All repeated-root multiplicities, twelve positive target valuations,
+    and six empty target valuations replay exactly on each of eight actual
+    controls without a candidate root or DLP oracle.
+  - >-
+    The full pair resultant has formal degree |C|^6 but is never
+    materialized or charged as a candidate artifact.
+  - >-
+    The Moroz-Schost soft-O(d*k) truncated-resultant bound charges one
+    bounded-order local target at B^(9/4), one known-target A6 batch at
+    B^(11/4), and the complete standard relation stream at B^(7/2)
+    = N^(7/10).
+  - >-
+    Those charges close only independent componentwise or direct-product
+    use of the cited algorithm; they are not a lower bound for a genuinely
+    shared transposed multi-target valuation-and-marker operator.
+scoped_failures:
+  shared_sublinear_multi_target_valuation_index: open
+  offline_online_transposed_atom_marginals: open
+  generic_integer_lift: open
+  structured_generic_family_rank_and_density: open
+  factor_logs_without_verifier_labels: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 25
+  local_valuation_count_identity_admitted: true
+  standard_componentwise_truncation_negative_admitted: true
+  shared_multi_target_operator_admitted: false
+  lane_admitted: false
+next_action: >-
+  Construct one genuinely shared transposed multi-target
+  valuation-and-marker operator for the occurrence divisor. It must process
+  the complete B^(5/4) target stream after B^(9/4) setup without a B^(9/4)
+  factor per target, emit exact integer counts and B^(3/4) A/C marginals,
+  and replay R144 rank, factor logs, and shifted descent.

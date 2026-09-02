@@ -1,0 +1,123 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-BATCHED-NESTED-NORM-NODE-COMPILER-R80-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_finite_batched_product_gcd_cost_replay
+run_count: 1
+status: reject_standard_batched_s4_subproduct_gcd_compiler_only
+labels:
+  - exact-finite
+  - per-node-costed
+  - scalar-blind-source
+  - novelty-unverified
+owner: P1553-R3-R76-R79
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Compile the actual-S4 five-deck leaf program into balanced prefix and suffix
+  product trees, charge every polynomial operation, and preserve exact
+  existence, count, and source semantics.
+inputs:
+  - path: p1553_scalar_only_nested_norm_slp_probe_report_r79.json
+    sha256: b5bd22b7256d80f5fa475517699c42f2201a1c8c6209718ea38ab832146a8929
+  - path: p1553_s6_subset_incidence_mobius_probe_report_r76.json
+    sha256: de41d1618bc71c46f700bfead0ed72c5ac0b29a89da3b5c32534a15314ef4c93
+  - path: p1553_r31_artifact_index_README.md
+    sha256: 0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f
+    contains_artifact: p1553_query2p1_indexing_gate_r3.md
+    contains_artifact_sha256: b2ee5934e295ab1f0d6b43452898e520d0cb18e718a8f5865694b25909b0df5e
+artifacts:
+  - path: p1553_batched_nested_norm_node_compiler_probe_r80.py
+    sha256: e69a431cccc584c2ce11e7af7a497c4c4f7bfe751a0617cd1a5f0add64fb29ce
+  - path: p1553_batched_nested_norm_node_compiler_probe_report_r80.json
+    sha256: 936537fb78908dd2916bf6fa5b2091f336b9a47217a1ff787b068ae0491992c5
+  - path: frozen_batched_norm_node_compiler.json
+    sha256: eee3c93b0fcd9ef5eb9a70f2c218ac7f3dc736fc02f153f4f9e2ae1924cb3592
+  - path: resultant_subproduct_remainder_receipts.json
+    sha256: f7c57aaedd3bae886e7b4904c63baead05198fdddec8da24e18679c9c4f8589e
+  - path: r76_batched_zero_count_source_replay.json
+    sha256: 49e8cf96cae42bb6b825f96668680524682ace5942a29291d7121cb674215d34
+  - path: compiled_node_field_state_cost_ledger.json
+    sha256: fa63c9572e7477cb75e2c7f825c8097ab464a3561c5da77962a8e70fad1f652e
+  - path: p1553_batched_nested_norm_node_compiler_probe_gate_r80.md
+    sha256: 1ff3641688f4f0e13fd64f83aa540ea429a4164e0d0741b64b38acd804d7fb01
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_batched_nested_norm_node_compiler_probe_r80.py
+    sha256: 5e277796ce9d8427b6ee87dd77433746b9c55c5cd60dbf37ed5918237fcd43c3
+frozen_interface:
+  curve_families:
+    - secp256k1
+    - nist_p256
+    - nist_p384
+    - nist_p521
+  deck_sizes:
+    - 3
+    - 4
+    - 5
+  target_types:
+    - blind_hash_target
+    - forced_positive_target
+  scalar_labels_consumed: false
+  compiler_id: s4_factor_subproduct_gcd_mobius_v1
+  fast_multiplication_model: M(n)=n^(1+o(1))
+verified_statements:
+  - >-
+    Product-polynomial gcd plus identity tags makes all 24 finite existence
+    decisions exactly and product-tree descent returns a signed-group-law
+    verified source on every positive instance.
+  - >-
+    R76 alternating endpoint-subset histograms preserve exact tuple counts:
+    every blind count is zero and every forced count is one.
+  - >-
+    A synthetic repeated and multiple-root control has exact tuple count four,
+    gcd degree three, and naive singleton incidence count six.
+  - >-
+    The standard batched compiler strictly improves the R79 B^5 leaf path to
+    B^(3+o(1)) dominant field work.
+scoped_positive_controls:
+  product_gcd_existence: pass
+  product_tree_source_return: pass
+  exact_mobius_tuple_count: pass
+  duplicate_and_multiple_root_semantics: pass
+  blind_zero_target: pass
+  forced_positive_source: pass
+  scalar_blindness: pass
+  strict_B5_to_B3_improvement: pass
+  finite_source_binding: pass
+scoped_failures:
+  setup_state_exponent_B: 3
+  setup_state_cap_exponent_B: 2.25
+  fresh_target_work_exponent_B: 3
+  fresh_target_workspace_exponent_B: 2
+  fresh_target_cap_exponent_B: 1.25
+  gcd_degree_exact_tuple_count: false
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - compressed structured triple-endpoint representations
+  - asymptotic lower bounds for unrestricted factor-base geometry
+  - prospective relation density and matched random controls
+  - independent factor-base rank and verified factor logs
+  - identical fresh-target descent
+admission:
+  passed_obligations: 9
+  obligation_count: 14
+  lane_admitted: false
+result:
+  exact_existence_complete: true
+  exact_count_complete: true
+  verified_source_return_complete: true
+  strict_leaf_work_improvement: true
+  direct_caps_satisfied: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_STANDARD_BATCHED_S4_SUBPRODUCT_GCD_COMPILER_ONLY__FOUR_STANDARD_CURVES__B3_4_5__STRICT_B5_TO_B3_IMPROVEMENT__EXACT_EXISTENCE_AND_PRODUCT_TREE_SOURCE__GCD_DEGREE_NOT_TUPLE_COUNT__R76_MOBIUS_CORRECTION__SETUP_STATE_B3__FRESH_TARGET_WORK_B3_STATE_B2__STRUCTURED_FACTOR_BASE_GEOMETRY_OPEN__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct one scalar-blind structured factor-base geometry whose B^3 triple
+  endpoint multiset has a proved representation of at most B^(9/4+o(1)),
+  while fresh target-plus-pair queries and source return cost at most
+  B^(5/4+o(1)); require a prospective relation-density theorem, matched random
+  controls, exact rank, factor logs, and identical target descent.

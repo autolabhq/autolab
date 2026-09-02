@@ -1,0 +1,63 @@
+schema: crypto.autoresearch.experiment_contract.v1
+contract_id: P1553-PAIR-COMPOSITUM-TOY-R17
+date: 2026-07-19
+status: preregistered
+evidence_kind: exact_toy_algebra
+labels:
+  - toy
+  - exact
+  - model-bound
+  - novelty-unverified
+  - independent-review-required
+breakthrough: false
+maximum_runs: 1
+objective: >-
+  Compute the generic degree of one complete paired Kummer branch map for a
+  fixed degree-three, fiber-uniform, non-Galois rational psi whose zero fiber
+  is a full three-endpoint block in a prime-order subgroup.
+fixture:
+  field: F_193
+  curve: y^2=x^3+2x+3
+  subgroup_order: 103
+  generator: [1, 44]
+  degree: 3
+  endpoint_scalars: [1, 2, 3]
+  endpoint_x_coordinates: [1, 184, 62]
+  paired_endpoint_scalars: [1, 2]
+  psi_numerator: (t-1)*(t-184)*(t-62)
+  psi_denominator: t^3+5*t+7
+  block_value: 0
+preconditions:
+  - the curve and listed generator have exact order 103
+  - numerator and denominator are coprime and the denominator is nonzero on the block
+  - the derivative numerator is squarefree and infinity is unramified
+  - all endpoint and fifth Kummer formulas use both trace and norm
+method:
+  - reduce numerator and denominator of psi in the quadratic Kummer addition algebra
+  - construct exact rational trace and norm maps for each paired endpoint
+  - cross-multiply the four q-versus-q_prime equalities
+  - compute their common bivariate gcd and factor it over F_193
+  - require every equality to contain the diagonal q-q_prime
+decision_rule:
+  reject_candidate_block: >-
+    The common gcd has no irreducible factor other than q-q_prime, so the
+    paired map is birational onto its image and no nontrivial shared right
+    factor exists.
+  retain_for_review: >-
+    A non-diagonal factor survives all four complete equalities; report it
+    without promoting an algorithmic claim.
+controls:
+  - direct elliptic evaluations at fixed subgroup points equal the reduced trace and norm formulas
+  - q^2 and q^3 remain the field-direction false-positive control outside this run
+exclusions:
+  - no extrapolation from degree three to asymptotic d
+  - no finite-deck saturation claim
+  - no fresh-target or R10 claim
+  - no relation-density, rank, factor-log, or descent claim
+  - no Shoup-bound or breakthrough claim
+artifacts:
+  script: p1553_pair_compositum_toy_r17.sage
+  report: p1553_pair_compositum_toy_report_r17.json
+exactly_one_next_action: >-
+  If the pair is birational, derive an asymptotic generic-pair theorem for the
+  interpolation family; otherwise classify the surviving off-diagonal factor.

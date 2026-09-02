@@ -1,0 +1,41 @@
+{
+  "caps": {
+    "online_workspace_exponent_B": 1.25,
+    "setup_state_exponent_B": 2.25
+  },
+  "dyadic_pair_state_exponent_B": 2.0,
+  "integer_multiplicity_bound_exponent_B": 4.0,
+  "integer_no_wrap_control": "B^4 < p on the R10/R9 asymptotic box",
+  "lane_inside_caps": false,
+  "not_a_lower_bound": true,
+  "routes": [
+    {
+      "first_over_cap_object": "B^4 resultant coefficients",
+      "online_work_exponent_B": 0.0,
+      "passes": false,
+      "persistent_state_exponent_B": 4.0,
+      "route": "expanded_parametric_resultant",
+      "setup_work_exponent_B": 4.0
+    },
+    {
+      "batch_online_exponent_B": 3.0,
+      "first_over_cap_object": "degree-B^2 specialized polynomial arithmetic",
+      "passes": false,
+      "per_coefficient_online_exponent_B": 2.0,
+      "persistent_state_exponent_B": 2.0,
+      "required_coefficient_count_exponent_B": 1.0,
+      "route": "specialized_subresultant_or_gcd",
+      "setup_work_exponent_B": 2.0
+    },
+    {
+      "first_over_cap_object": "B^3 triple signature occurrences",
+      "online_work_exponent_B": 3.0,
+      "passes": false,
+      "persistent_state_exponent_B": 3.0,
+      "route": "actual_pair_triple_extension",
+      "setup_work_exponent_B": 2.0
+    }
+  ],
+  "schema": "p1553.dyadic_joint_source_and_direct_cost_ledger.r73.v1",
+  "source_replay": "A positive specialized gcd identifies a pair-product root; stored pair occurrence backpointers and the fifth label recover one joint source. This costs up to B^2 online in this grammar."
+}

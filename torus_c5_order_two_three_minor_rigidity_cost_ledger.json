@@ -1,0 +1,61 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "minimum_accepting_path_depth_exponent_B": {
+        "decimal": 2.5,
+        "exact": "5/2"
+      },
+      "minimum_rejecting_path_depth_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "route_id": "structured_trinomial_zero_test_tree",
+      "status": "rejected_deterministically_by_order_two_three_minor_rigidity"
+    },
+    {
+      "inside_cap_exact_tree_constructed": false,
+      "route_id": "structured_four_plus_mode_zero_test_tree",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_tree_constructed": false,
+      "route_id": "five_plus_mode_low_slp_zero_test_tree",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_dag_constructed": false,
+      "route_id": "nonzero_value_frobenius_coordinate_dag",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_order_two_three_minor_rigidity_cost_ledger.r139.v1",
+  "theorem": {
+    "affine_normalization": "For prime q, translate and scale any three distinct row exponents and any three distinct mode exponents in Z/qZ. Row and column permutations and nonzero diagonal scalings preserve singularity, reducing every 3-by-3 Fourier minor to rows {0,1,r} and modes {0,1,s}, with r,s not in {0,1}.",
+    "atom_restricted_consequence": "Every atom subset inherits three-column full spark. Hence every nonzero represented trinomial has at most two zeros on each structured atom color.",
+    "contradiction": "The forced congruence is (r-1)(s-1)=0 modulo prime q, contradicting normalized distinct rows and modes. Therefore every 3-by-3 minor of the q-point Fourier matrix over any field of characteristic p=-1 modulo q is nonsingular.",
+    "field_discrete_logarithm_required": false,
+    "maximum_structured_node_mode_count_closed_unconditionally": 3,
+    "normalized_determinant_equation": "For a primitive q-th root zeta, the normalized determinant vanishes exactly when (zeta-1)(zeta^(r*s)-1)=(zeta^s-1)(zeta^r-1). Both sides are nonzero.",
+    "not_covered": [
+      "structured zero-test nodes with four or more represented modes",
+      "five-plus-mode compact straight-line programs",
+      "tests of nonzero field values or coordinate comparisons",
+      "general arithmetic-circuit, RAM, or cell-probe lower bounds"
+    ],
+    "order_two_frobenius_step": "If the characteristic p is -1 modulo q, Frobenius sends zeta to zeta^(-1). Conjugating a putative equality multiplies its left side by zeta^(-(1+r*s)) and its right side by zeta^(-(r+s)). Cancelling the original equal nonzero sides forces 1+r*s=r+s modulo q.",
+    "proof_status": "self_contained_finite_field_argument",
+    "random_support_model_required": false,
+    "structured_tree_consequence": "R138's tuple-fiber lemma now applies unconditionally. For m=B^(3/4+o(1)), a rejecting all-nonzero path has depth at least ceil(m/2)=B^(3/4+o(1)). If the leaf accepts, R133's global trinomial root bound requires q^(1/2+o(1))=B^(5/2+o(1)) depth to cover the q-o(q) complement. Thus every exact structured trinomial zero-test tree misses the polylog arbitrary-target query cap."
+  }
+}

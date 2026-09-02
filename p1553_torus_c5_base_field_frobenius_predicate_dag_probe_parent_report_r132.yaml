@@ -1,0 +1,104 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-BASE-FIELD-FROBENIUS-PREDICATE-DAG-R132-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_actual_inverse_witnesses_and_scoped_frobenius_dag_obstruction
+run_count: 1
+status: asymmetric_extension_or_frobenius_aware_predicate_dag_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - frobenius
+  - inversion
+  - decision-dag
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R129-R131
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether univariate base-field polynomial or rational predicates
+  can route the order-two torus C5 support despite Frobenius acting as
+  inversion.
+inputs:
+  - path: p1553_torus_c5_consecutive_mode_predicate_probe_r131.py
+    sha256: d312f28885677339632ec9517c8529e327a63fa7e8aca5d6a67d6a4f71e3adf9
+  - path: p1553_torus_c5_consecutive_mode_predicate_probe_report_r131.json
+    sha256: a2ffed2c599fd1003dce13a3a360d7ac49f983ab92a439f1023a8abe0cb2efcb
+  - path: frozen_torus_c5_consecutive_mode_predicate.json
+    sha256: 46775815377c1cadbc095735b4f1fe9cd64167ea7b933664ae5892e5bc1b8ded
+  - path: torus_c5_consecutive_mode_predicate_cost_ledger.json
+    sha256: d18d3317aa2952b604c880d44447cef0d7bbc2c01b33a28b4131889fdfea8965
+  - path: torus_c5_consecutive_mode_predicate_replay.json
+    sha256: 80c0a9d57247a981a55ec104cfb8f933e44b2bc610db945aaa89a7b473068f9b
+  - path: torus_c5_consecutive_mode_predicate_controls.json
+    sha256: c9b874db6c10f6108b1179bcddd7e2e5dcc398cec6eaa871649912f07e20fb2a
+  - path: factor_logs_and_identical_descent_r131.json
+    sha256: 9388946d26f2e311fd712feaaed9e6905e4e5ecbe5ceed554084d6e57fd39b36
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_consecutive_mode_predicate_probe_r131.py
+    sha256: 50c4fb705854bb11de19096716295d05ba54b035e6dc8ef675c112219481cb3a
+  - path: p1553_torus_c5_consecutive_mode_predicate_probe_gate_r131.md
+    sha256: e2b714358fa386b23f8c9bdf75ab6d6971d080209d0e45885b4ba4fbb623f11d
+  - path: p1553_torus_c5_consecutive_mode_predicate_probe_parent_report_r131.yaml
+    sha256: ca65e6e86c3aeae074b13d80774b08c18743932776e8b546409417c40dca6e46
+artifacts:
+  - path: p1553_torus_c5_base_field_frobenius_predicate_dag_probe_r132.py
+    sha256: 9235668bed218df40c60ea774673b03bc2d55236cd1c04ab3ef813ad61e0baad
+  - path: p1553_torus_c5_base_field_frobenius_predicate_dag_probe_report_r132.json
+    sha256: 54e0396f8fcbed3fb41893af1c2d3612f81f26b5ff44dcbc0784299a7ff96f17
+  - path: frozen_torus_c5_base_field_frobenius_predicate_dag.json
+    sha256: efc22a83ab20a27b490204acdb67a8bda351d774caf2c186cda9f04cdd0ae56f
+  - path: torus_c5_base_field_frobenius_predicate_dag_cost_ledger.json
+    sha256: 437e3a1165d17d6f85caa4e246ea9769012df2915113675249bfcc68502fbe4f
+  - path: torus_c5_base_field_frobenius_predicate_dag_replay.json
+    sha256: 0e7f17f5c0c04cbdcf1a430f36114343b2b786cf3cb85a9ca586afeb549471e9
+  - path: torus_c5_base_field_frobenius_predicate_dag_controls.json
+    sha256: f0ee93f6ddfef5395abc88a8f03b31a325504a14bf04b7d7a246d9efec3f53ab
+  - path: factor_logs_and_identical_descent_r132.json
+    sha256: f85f4135fe44d2aebbe61191dff04e2e40aff4a07d45118c752758c8425dfed3
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_base_field_frobenius_predicate_dag_probe_r132.py
+    sha256: 296daa244226d7d3a41da492f97cf1ea291280af6bb9e0374e0b366df0e4d099
+  - path: p1553_torus_c5_base_field_frobenius_predicate_dag_probe_gate_r132.md
+    sha256: dd20f3188596712929c9715d1dbf27782a41a5be8900f727f948def2a7947332
+verified_statements:
+  - >-
+    In each actual pairing field, p=-1 mod q and Frobenius maps every
+    order-q target z to z^(-1).
+  - >-
+    Univariate F_p polynomial and rational zero or definedness outcomes are
+    invariant under target inversion, so deterministic DAGs of those
+    outcomes cannot distinguish an inverse pair.
+  - >-
+    In all eight actual pairing decks, every positive C5 target and every
+    active color target has an inverse outside the full C5 support.
+  - >-
+    Every exact full-support and color-support root annihilator contains an
+    extension-field coefficient.
+scoped_failures:
+  base_field_univariate_polynomial_zero_dag: rejected_on_actual_controls
+  base_field_univariate_rational_zero_dag: rejected_on_actual_controls
+  base_field_trace_or_dickson_zero_dag: rejected_on_actual_controls
+  asymmetric_extension_field_lacunary_predicate: open
+  frobenius_aware_coordinate_predicate_dag: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 12
+  total_obligations: 20
+  lane_admitted: false
+next_action: >-
+  Construct an asymmetric lacunary predicate over F_(p^2), or a
+  Frobenius-aware coordinate DAG using both z and z^p. It must distinguish
+  the observed positive/empty inverse pairs, choose a valid C2 branch in
+  polylogarithmic arbitrary-target work, return exact C2+C3 sources or an
+  empty certificate, fit B^(9/4+o(1)) state, avoid field DLP, and include
+  rank, logs, identical descent, memory, field-operation, and bit costs.

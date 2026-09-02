@@ -1,0 +1,127 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-AGGREGATE-UNION-FACTOR-LABEL-RECOVERY-R163-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: aggregate_union_semantics_and_output_sensitive_label_reduction
+run_count: 1
+status: aggregate_union_factor_constructor_below_rho_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - quotient-algebra
+  - fermat-projector
+  - gcd
+  - source-reporting
+  - output-sensitive
+  - full-cost
+  - scoped-boundary
+owner: P1553-R88-R161-R162
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Reduce the nonlinear signed-divisor target batch to one low-degree union
+  factor and prove that target labels and C3 source backpointers are affordable
+  postprocessing.
+inputs:
+  - path: p1553_m6_batch_inverse_transpose_modcomp_fit_probe_r162.py
+    sha256: 734938d6e5f7c79b10539dd57583f7a012b66406bfb55e1a3bbcb96e24ee89f1
+  - path: p1553_m6_batch_inverse_transpose_modcomp_fit_probe_report_r162.json
+    sha256: 55a46fbdefc4e1c9a84d5286cf825beb1a0c2659ca6653d63cc5b95fbfea1742
+  - path: frozen_m6_batch_inverse_transpose_modcomp_fit.json
+    sha256: 69411c74d272c73d721d3a863ea2f25262906d2461eb43f3835ef912531e58a7
+  - path: m6_batch_inverse_transpose_modcomp_fit_cost_ledger.json
+    sha256: ab274fdea53dc0c89b140ab910e6b288d25a56a1912f5b6f26c6ee716450b7e4
+  - path: m6_batch_inverse_transpose_modcomp_fit_replay.json
+    sha256: a51f01eee7da30b83dcbd00703ba52af085c8b849272f85c1921ab4d21335022
+  - path: m6_batch_inverse_transpose_modcomp_fit_controls.json
+    sha256: ba3e8bd83c66f2876b599fc095eb69c637963e89783a73bfc9481bff0d95d2d8
+  - path: batch_inverse_functional_transpose_r162.json
+    sha256: dd373da7cbe4f98ac2f354f7e082bc16f7415345afb90838a94b7576a5596319
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_batch_inverse_transpose_modcomp_fit_probe_r162.py
+    sha256: 863ac5fce63370328976b4c6ce2b67bafb63d29f27bf7d84a7371a40326011ab
+  - path: p1553_m6_batch_inverse_transpose_modcomp_fit_probe_gate_r162.md
+    sha256: e5fa538ae4f3bef7f6764d7271a64f48da7e8e340e0f10eae0af6ce345a10338
+  - path: p1553_m6_batch_inverse_transpose_modcomp_fit_probe_parent_report_r162.yaml
+    sha256: a49a2631c8a7b9313fe20794df0c56b7ca6081bc2242b5b05b6fca0eec914927
+  - path: p1553_5a5c_black_box_translated_resultant_localizer_probe_report_r88.json
+    sha256: d73e017c731a54c6913aeaa94e6b5c6d54ca3757f56be14e8ca8ee5524031de1
+  - path: p1553_5a5c_black_box_translated_resultant_localizer_probe_gate_r88.md
+    sha256: 90f0980bdeb51f540cd233f207218361cc14beb8a899c246418410d36ef43d56
+artifacts:
+  - path: p1553_m6_aggregate_union_factor_label_recovery_probe_r163.py
+    sha256: 225108ac4f89b44c88db5db93aa3c2c1b4578c4b0993f7f736781b469b3d77f9
+  - path: p1553_m6_aggregate_union_factor_label_recovery_probe_report_r163.json
+    sha256: 0a35b4fee30c7abf4ba69232e0f7af65d48ec785aef832c934bf03d5366645ab
+  - path: frozen_m6_aggregate_union_factor_label_recovery.json
+    sha256: 2971fc80ba63eb35303f35592dab57c91d532f31886cfde21b632ef04626c8d7
+  - path: m6_aggregate_union_factor_label_recovery_cost_ledger.json
+    sha256: 28f090f312d5177d4f7d4132e5b772b56b42ff372c7866db23e227b3888e4722
+  - path: m6_aggregate_union_factor_label_recovery_replay.json
+    sha256: 83fa1b944f0b336e8c81c3e166ff0ce94f18949201d93f0b440af87df58e655e
+  - path: m6_aggregate_union_factor_label_recovery_controls.json
+    sha256: dc485b0fd593aadd11db178fd2c2edc5510fc443dca928fcc58627a818c4d5ff
+  - path: aggregate_union_target_labels_and_backpointers_r163.json
+    sha256: 815fbd1a3e64a6f203a34541c5a29c407553144b934b56a5641e38ec4a15b9ee
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_aggregate_union_factor_label_recovery_probe_r163.py
+    sha256: 6f829d95211f8d4b2785e6392319435e6a651a41028de506b2cfadbce621058a
+  - path: p1553_m6_aggregate_union_factor_label_recovery_probe_gate_r163.md
+    sha256: 3064a108bf063ab59a0991be6910b70bf3a2e498974add780f6a57e157a63212
+verified_statements:
+  - >-
+    Coupling the x and signed-y residuals with a per-target Fermat projector,
+    multiplying over targets, and taking gcd with U returns exactly the union
+    of participating left C3 endpoints.
+  - >-
+    Multiplying x residuals and y residuals separately is invalid because
+    their zero factors may come from different targets.
+  - >-
+    For K unique positive-C6 targets, the union factor has degree at most 20K.
+  - >-
+    Given union roots, scanning N targets per root recovers target labels,
+    both C3 backpointers, and positive-C6 sources in B^2 total work.
+  - >-
+    Six finite controls verify exact union factors, sources, labels, empty
+    targets, and inherited exceptional semantics.
+  - >-
+    A synthetic Q=-2P, T=-P control verifies a genuine positive denominator-
+    exceptional match with x(T)=x(P).
+scoped_failures:
+  aggregate_union_factor_constructor_below_rho: open
+  deterministic_hash_to_curve_transfer: open
+  unconditional_total_attack_cost: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+unproved_or_outside_scope:
+  - a below-rho constructor for the aggregate projector product modulo U
+  - arithmetic-circuit or data-structure lower bounds
+  - deterministic hash-to-curve pseudorandomness
+admission:
+  passed_obligations: 20
+  total_obligations: 27
+  aggregate_union_semantics_admitted: true
+  post_union_label_recovery_admitted: true
+  aggregate_union_constructor_admitted: false
+  lane_admitted: false
+result:
+  c3_divisor_degree_exponent_B: 9/4
+  target_count_exponent_B: 5/4
+  union_factor_degree_exponent_B: 3/4
+  label_backpointer_scan_exponent_B: 2
+  global_rho_exponent_B: 5/2
+  finite_control_count: 6
+  positive_exceptional_control_count: 1
+  aggregate_union_constructor_complete: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_SAME_TARGET_PROJECTOR_AND_AGGREGATE_UNION_SEMANTICS__UNION_DEGREE_B3O4__TARGET_LABEL_AND_SOURCE_BACKPOINTER_POSTPROCESS_B2__AGGREGATE_UNION_CONSTRUCTOR_OPEN__NO_RHO__NO_SHOUP_IMPROVEMENT__NO_BREAKTHROUGH
+next_action: >-
+  Construct the unlabeled aggregate union factor below B^(5/2), ideally in
+  B^(9/4+o(1)), while coupling signed x/y membership per target and handling
+  denominator exceptions.

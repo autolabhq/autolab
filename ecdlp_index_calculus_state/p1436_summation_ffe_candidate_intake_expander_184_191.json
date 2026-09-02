@@ -1,0 +1,58 @@
+{
+  "admission": {
+    "failures": [
+      "source_enumerator_not_fully_public_scalar_blind",
+      "no_new_factor_rows",
+      "no_independent_new_factor_rows",
+      "absolute_source_operations_not_reported",
+      "direct_pair_complement_operations_not_reported"
+    ],
+    "lane_admitted": false,
+    "product_quotient_information_credit": 0,
+    "status": "rejected_no_new_independent_rows_and_incomplete_cost_contract"
+  },
+  "algorithm_breakthrough": false,
+  "candidate_id": "ffe_public_independent_row_expander_184_191",
+  "classification": "EXISTING_CANDIDATE_R68_ADMISSION_REJECTED",
+  "comparison": {
+    "added_source_case_count": 18,
+    "baseline_challenge_group_max_rank": 2,
+    "baseline_challenge_group_relation_count_sum": 6,
+    "baseline_source_case_count": 10,
+    "candidate_challenge_group_max_rank": 2,
+    "candidate_challenge_group_relation_count_sum": 6,
+    "candidate_group_count": 5,
+    "candidate_public_key_verified_group_count": 1,
+    "candidate_source_case_count": 28,
+    "independent_new_factor_row_count_proxy": 0,
+    "new_factor_row_count_proxy": 0
+  },
+  "conclusion": "Adding 18 public-diversity source cases produced no new challenge-group relation and no rank increase. This existing FFE candidate fails the R68 new-factor-row gate and cannot be credited toward a generic-prime ECDLP speedup.",
+  "generated_at": "2026-07-29T05:26:11.549867+00:00",
+  "new_factor_row_discovery_contract": {
+    "direct_pair_complement_operations": null,
+    "independent_new_factor_row_count": 0,
+    "measured_source_operations": null,
+    "new_factor_row_count": 0,
+    "replay_artifact_sha256": "60256baf44f738093dae704f2ab640734ad45ac27dcccb9f089cb5f930ea3564",
+    "scalar_blind": false,
+    "source_enumerator_id": "ffe-public-independent-row-expander-184-191"
+  },
+  "provenance": {
+    "baseline_replay_path": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_companion_assembly_replay_184_191.json",
+    "baseline_replay_sha256": "13ae21fce14b249cd37477cdf703ebcf2caebb972fbe930c55c0bc4c1e8d9347",
+    "candidate_replay_path": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_independent_row_expander_replay_184_191.json",
+    "candidate_replay_sha256": "60256baf44f738093dae704f2ab640734ad45ac27dcccb9f089cb5f930ea3564",
+    "selector_path": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_independent_row_expander_selector_184_191.json",
+    "selector_schema": "ecdlp_ffe_public_independent_row_expander_probe_v1",
+    "selector_sha256": "4f0d5c05994aba5f787d1ee9807ab5299a5a4c6162c62b83a448ac08b1961035"
+  },
+  "r68_binding": {
+    "ffe_product_relations_add_information_beyond_fixed_sum_rows": false,
+    "information_conservation_pass": true,
+    "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_ffe_fixed_sum_information_conservation_report_r68.json",
+    "pencil_factorization_can_only_help_by_finding_new_fixed_sum_rows": true,
+    "sha256": "5c064a36630c052093ebb7bd3b4429d37f836982ba097eacbad2f2ebe1bb6b51"
+  },
+  "schema": "ecdlp.p1436_summation_ffe_candidate_intake.v1"
+}

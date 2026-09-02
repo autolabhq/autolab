@@ -1,0 +1,147 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-FACTORIZED-PULLBACK-R10-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: revise_scoped_theorem
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+owner: P1515/P1534/P1536/P1553/IDEA-089/IDEA-195/IDEA-197/IDEA-198/IDEA-250/IDEA-266
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the exact R9 restricted root count admits a cap-sized
+  factorized 2|3 pullback contraction, while separating universal
+  orthogonality obstructions from the actual Semaev signature image.
+inputs:
+  - path: staged/p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+  - path: staged/p1553_projector_trace_parent_report.yaml
+    sha256: 40ef9120033e21a16cd256fa5d7a3e4a3f035ef00f6f4fed5601246a477446f5
+  - path: staged/p1553_projector_trace_red_team.yaml
+    sha256: 14178e88bb4356075302d49e93ecfa103c69cf52f46d9b91e231373e4b132bc4
+  - path: ideas/artifacts/ECDLP-IDEA-098/p1515_r1_r11_independent_audit.md
+    sha256: 7e7609716f87b1b4df5ffc77406a912ad0303cc309ec1b84be42ebcc0d09539e
+  - path: ideas/artifacts/ECDLP-IDEA-012/p1553_determinant_value_channel_audit_r1.md
+    sha256: 5073e39388792ea9cd8a4f7a1fe19f33f2799e59aa85f898148c9712bb963669
+  - path: ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md
+    sha256: 81ec3515b584c36a809c155b5f26127bce91c09d7bfe6bccc425cdef07d51393
+frozen_interface:
+  group_order: N=p^(1+o(1))
+  label_bound: B=N^(1/5)
+  separated_terms: r
+  exact_count_threshold: 32*B^4<p
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted miss or one verified signed occurrence-labelled source
+verified_statements:
+  - >-
+    The exact moment-simplex formula has
+    M=binomial(p+r-2,r-1) composition channels and reconstructs every
+    restricted Fermat-projector count from unary moments.
+  - >-
+    For fixed r>=2, literal moment-simplex construction has
+    M=B^(5(r-1)+o(1)) channels. This rejects that representation only; quotient
+    coincidences and cancellations prevent a rank or circuit lower bound.
+  - >-
+    The full F_p^r orthogonality kernel contains a p by p identity minor for
+    r>=2. Every universally valid separated feature identity therefore has at
+    least p terms.
+  - >-
+    The identity-minor theorem does not apply automatically to the nonlinear
+    pair and target-triple signature images of the actual S_6 predicate.
+  - >-
+    Effective separated rank at most one has an exact unary zero-count router within
+    B^(1+o(1)) setup/state and B^(o(1)) target replay.
+  - >-
+    The zero-coefficient rank-zero branch has direct integer count
+    product_i|I_i| and is incompatible with the full-size 32*B^4 geometric
+    bound whenever that box size exceeds 32*B^4.
+  - >-
+    With two nonzero coefficients, the 4^5 unary zero strata are handled by
+    unary status counts, and the all-nonzero stratum reduces to exact sparse
+    multiplicative convolution of two B^2 dyadic pair histograms evaluated at
+    B target-scaled points.
+  - >-
+    All dyadic pair histograms have B^(2+o(1)) total occurrence entries because
+    each pair belongs to O(log^2 B) ancestor rectangles.
+  - >-
+    Literal moments, explicit triple scanning, dense character transforms,
+    represented multivariate evaluation, and the named rational, matrix, and
+    tensor routes expose an object above a direct cap, without excluding an
+    implicit actual-image pullback circuit.
+scoped_positive_controls:
+  effective_rank_at_most_one_setup_state: B^(1+o(1))
+  effective_rank_at_most_one_query_replay: B^(o(1))
+  effective_rank_two_pair_state: B^(2+o(1))
+  effective_rank_two_residual: sparse_multiplicative_convolution_at_B_points
+  universal_identity_minor_rank: p
+scoped_failures:
+  literal_moment_channels: binomial(p+r-2,r-1)
+  explicit_triple_values: B^3
+  dense_character_modes: p-1=B^(5+o(1))
+  represented_mpe_coefficients: binomial(p+r-2,r-1)
+  cap_sized_actual_image_pullback: unsupplied
+surviving_object: >-
+  For h_I(v)=sum_(x in I_1xI_2) delta_0(U(x) dot v), compute
+  sum_(y in I_3xI_4xI_5) h_I(V_R(y)) directly from the factorized three-list
+  grammar without emitting B^3 values or source incidences.
+complexity_accounting:
+  full_cap_lambda: 0.45
+  full_cap_mu: 0.45
+  standard_per_target_relation_collection: B^4=N^0.8
+  explicit_B_target_batch_time: B^(3+o(1))=N^(0.6+o(1))
+  explicit_B_target_batch_state: B^3
+  standard_blind_descent: B^3=N^0.6
+  conditional_lambda: max(s,1+d+kappa,2)/5
+  conditional_mu: max(s_m,w,2)/5
+  conditional_parameters: setup B^s, state B^s_m, target work B^kappa, target workspace B^w, reciprocal density B^d
+  conditional_assumptions: one independent signed row per accepted target; constant-density control sets d=0
+  mandatory_charges:
+    - full-box count and every adaptive child including zero children
+    - target specialization and exact field and bit complexity
+    - occurrence backpointers, signs, and complete projective verification
+    - repeated columns, relation density, and independent rank
+    - factor logarithms and identical scalar-blind descent
+unproved_or_outside_scope:
+  - a lower bound on the actual S_6 pair and triple signature images
+  - all arithmetic circuits or implicit representations
+  - a cap-sized exact sparse multiplicative-convolution index
+  - relation density, matrix rank, factor-log solve, and blind descent
+  - any generic-group lower-bound violation
+deduplication:
+  - P1515 owns explicit 2|3 search, batch indexing, and nonlinear implicit semijoin
+  - P1534 owns quotient-kernel and balanced source extraction
+  - P1536 owns projector moments and standard B^5 or B^3 controls
+  - P1553 owns exact Query2P1 counts, dyadic replay, signs, and source labels
+  - >-
+    The P1553 determinant-value audit already owns fixed-target no-wrap
+    counting; R9 added dyadic multiplicity assumptions and source replay
+  - >-
+    IDEA-089/195/197/198/250/266 own the related idempotent,
+    representation, quotient, carry, Frobenius, and dynamic-source hypotheses
+primary_sources:
+  - url: https://arxiv.org/abs/2205.00342
+    use: represented multivariate multipoint-evaluation input boundary
+  - url: https://arxiv.org/abs/2512.04258
+    use: parameterized kSUM indexing tradeoff comparison
+  - url: https://arxiv.org/abs/2602.11363
+    use: preprocessed-universe 3SUM comparison
+disposition: >-
+  REVISE_SCOPED_THEOREM__EXACT_MOMENT_SIMPLEX_FORMULA__LITERAL_MOMENTS_OVER_CAP_FOR_R_GE_2_WITHOUT_CIRCUIT_LOWER_BOUND__UNIVERSAL_ORTHOGONALITY_HAS_P_IDENTITY_MINOR__ACTUAL_SEMAEV_IMAGE_NOT_CLOSED__RANK_AT_MOST_ONE_EXACT_UNARY_ROUTER_PASSES__RANK_TWO_HAS_4_POW_5_ZERO_STRATA_AND_REDUCES_TO_SPARSE_MULTIPLICATIVE_CONVOLUTION__DYADIC_PAIR_STATE_B2__STANDARD_EXACT_EVALUATORS_B3_OR_P_MINUS_1_MODES__FACTORIZED_NONLINEAR_PULLBACK_UNSUPPLIED__NO_NEW_IDEA__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Prove or refute exact summation of h_I(V_R(a_3,a_4,a_5)) in one frozen
+  factorized-circuit grammar for the actual separated S_6 signatures, on the
+  full box and every adaptive dyadic child, without emitting B^3 values or
+  source incidences. Require the grammar to express the exact rank-two sparse
+  multiplicative-convolution control; handle zero signatures; preserve
+  integer multiplicities and occurrence backpointers; enforce B^(9/4+o(1))
+  setup/state and B^(5/4+o(1)) target time/workspace; and charge replay, signs,
+  verification, columns, density, rank, factor logs, and identical blind
+  descent. A negative closes only the frozen grammar, and a positive count
+  remains model-bound until the complete ECDLP path is proved.

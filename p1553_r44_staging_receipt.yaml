@@ -1,0 +1,75 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R44-PRIMITIVE-DEGREE-NINE-SECTION-RANK-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T09:26:19Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R44 is a new structured toy
+  primitive-pencil negative gate requiring independent review. It excludes
+  only the tested magic-square and finite equal-sum trade families; arbitrary
+  primitive degree-nine pencils and asymptotic families remain open.
+bindings:
+  r43_bundle_hash_list_sha256: 5deeefbbf9fef16f424c494c260b781532eef37bb1f6ff859829b8ea300e45ab
+  r43_staging_receipt_sha256: b647080192cf34b92687f1e30bf0cff6a313b096a4c7847d08780d80f67d3e35
+  r44_gate_sha256: bc5e2068f25814087f228c5bc422109b3f7d5122cfad6bb0600b6208d372885a
+  r44_parent_report_sha256: 4660a2602a68477b122069f414159bb0b217a6bc245d53b42be241b052ec7628
+  r44_search_script_sha256: b9bbad90f2f5076ea0cb8346d94514a7e8f82993daa07c374d050e334be2687b
+  r44_search_report_sha256: 29a998d29bd0b98d1b31b50ff9be589d3cedcaa5cb791cc911f4d337ffaf75c6
+  r44_artifact_index_sha256: 0edb70229fb5e02fc608feff425a40ef68e0e4ff92d272685dcd0809fb9c834b
+  r44_bundle_hash_list_sha256: e24ce23353862aed15fa5f67fdffcad9cb1a5d3364160aad2da7ef0e394e7cf9
+result:
+  classification: structured_toy_primitive_pencil_negative_arbitrary_family_open
+  required_section_rank: 2
+  row_affine_instances_checked: 10506
+  row_minimum_section_rank: 9
+  column_affine_instances_checked: 10506
+  column_rank_eight_instances: 206
+  column_rank_nine_instances: 10300
+  trade_rank_instances_checked: 160008
+  trade_minimum_section_rank: 8
+  rank_two_survivors: 0
+  arbitrary_primitive_degree_nine_pencil: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r44_hash_list: pass
+  r44_parent_yaml_parse: pass
+  all_10506_row_affine_contexts_checked: pass
+  all_10506_column_affine_contexts_checked: pass
+  all_160008_trade_rank_instances_checked: pass
+  equal_abel_sums_checked: pass
+  exact_section_kernels_checked: pass
+  exact_finite_field_ranks_checked: pass
+  r44_search_replay_matches_report_byte_for_byte: pass
+  clean_temporary_replay_with_r16_through_r44_gates_and_r44_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T09_26_19Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the exhaustive affine result covers only two structured partitions on one toy curve
+  - the deterministic trade walk is finite and correlated
+  - arbitrary equal-sum partitions and primitive degree-nine pencils remain open
+  - no asymptotic family, target, R10, rank campaign, logs, descent, or breakthrough
+exactly_one_next_action: >-
+  Replace the undirected trade walk with a rank-minor-guided search. Starting
+  from every rank-eight column witness, enumerate all equal-sum pair trades,
+  score each child by exact section rank and the number of vanishing 8-by-8
+  minors, retain a deterministic beam, and require any rank-two survivor to
+  pass R42's all-secret marked-target test before any asymptotic claim.

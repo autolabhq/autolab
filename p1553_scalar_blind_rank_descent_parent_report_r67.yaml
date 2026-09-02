@@ -1,0 +1,76 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-SCALAR-BLIND-RANK-DESCENT-R67-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exact_scalar_blind_fixed_sum_rank_target_descent_and_ffe_redundancy_gate
+  model_scope: hash_to_curve_B24_base_on_E_F193_prime_subgroup_103
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_FIXED_SUM_REDUNDANCY_GATE
+summary: >-
+  Thirty-six scalar-blind fixed-sum equations have rank 24 and recover every
+  core factor-base log. Forty-eight online target lookups recover log 53 for a
+  fresh public target. Direct product quotients and exhaustive FFE trisecants
+  reproduce the same logs but add no information. The uniform model requires
+  B about sqrt(N), Theta(N) precomputation, and rho-matching online descent.
+inputs:
+  - path: staged/p1553_kernel_decomposition_relation_generator_gate_r66.md
+    sha256: 7032c45a1f49249951bcad021ff2ac6b7510be84b102e3ad7348fce586a3bf58
+  - path: staged/p1553_kernel_decomposition_relation_generator_report_r66.json
+    sha256: 753c16d1f15e444517ac7bc503fd9f888d8219e724e1dced6c384ed6b80a4081
+  - path: staged/p1553_exact_public_base_trisecant_scan_report_r65.json
+    sha256: 30d686228a271cbdf4a61e2bf4b7d553bc297d7e6203955863b15b7ff98fdb8a
+  - path: staged/p1553_degree_six_product_hypersurface_locator_report_r61.json
+    sha256: f91213021bd350b77cf1ac7d5cb8f2f9ae63b1265a5081d4ed58a3da07aa1f64
+outputs:
+  - path: staged/p1553_scalar_blind_rank_descent_gate_r67.md
+    sha256: daf1906c179acbe1ebc88eed28c76fe146058489568fa56d0397513ae8be1f13
+  - path: staged/p1553_scalar_blind_rank_descent_audit_r67.py
+    sha256: 60cf8dc258f2ea097a8581bd95b8002829be492a512cf336c270abda6876129e
+  - path: staged/p1553_scalar_blind_rank_descent_audit_report_r67.json
+    sha256: fc47d3d509597fe5b7a0928c5fcffc4cd6c60679ea7efc7d531f4b24b28f143b
+controls:
+  field_prime: 193
+  prime_subgroup_order: 103
+  core_base_size: 24
+  scalar_labels_materialized: false
+  fixed_sum_class_scalars: [46, 54]
+  core_fixed_sum_triples: [19, 17]
+  core_fixed_sum_rows: 36
+  core_fixed_sum_rank: 24
+  online_target_hash_lookups: 48
+  online_target_pair_counts: [5, 5]
+  recovered_target_log: 53
+  core_smooth_products: 4162
+  core_direct_quotient_rank: 22
+  core_incidence_pairs: 8659041
+  core_incidence_rank: 22
+  target_extended_smooth_products: 6710
+  target_extended_direct_quotient_rank: 23
+  target_extended_incidence_pairs: 22508695
+  target_extended_incidence_rank: 23
+result:
+  classification: fixed_sum_redundancy_and_scalar_blind_descent_toy_gate
+  fixed_sum_system_recovers_factor_base_logs: true
+  fresh_scalar_blind_target_log_recovered: true
+  direct_product_quotients_add_log_information: false
+  ffe_trisecants_add_log_information: false
+  target_descent_amortized: true
+  online_descent_beats_rho_under_uniform_model: false
+  precomputation_beats_rho_under_uniform_model: false
+  generic_prime_rank_theorem: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - one factor base and one fresh target on one size-103 toy subgroup
+  - fixed-sum rank and target-pair densities have no generic-prime theorem
+  - uniform scaling requires B about sqrt(N) and Theta(N) preprocessing
+  - no Shoup-bound improvement or ECDLP breakthrough is claimed
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_FIXED_SUM_REDUNDANCY_GATE__B24_36_FIXED_SUM_ROWS_RANK24__TARGET_48_LOOKUPS_TEN_ROWS_LOG53__FFE_ADDS_NO_LOG_INFORMATION__B_SQRT_N_THETA_N_PRECOMPUTATION_RHO_MATCHING_ONLINE__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Prove or refute a public scalar-blind base/class family with superuniform
+  fixed-sum rank and subquadratic enumeration after semantic deduplication
+  against the complete ledger.

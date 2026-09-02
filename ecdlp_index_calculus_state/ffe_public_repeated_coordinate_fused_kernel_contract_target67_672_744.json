@@ -1,0 +1,5599 @@
+{
+  "method": "portable_first_pass_second_pass_kernel_contract_from_hot_path_executor",
+  "non_claims": [
+    "This is a portable contract emitted from the Python executor, not the optimized FFE kernel itself.",
+    "Accepted relation summaries are compact verifier outputs used to replay modular linear algebra.",
+    "A promoted implementation must emit the same first-pass and second-pass contract from lower-level FFE/summation-polynomial code."
+  ],
+  "parameters": {
+    "executor_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_executor_target67_672_744.json",
+    "frontier_targets": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_targets.json",
+    "source_names": []
+  },
+  "records": [
+    {
+      "checks": {
+        "accepted_relation_count": 3,
+        "first_pass_group_count": 8,
+        "first_pass_group_instance_count": 12,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 12
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": true,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 3,
+            "factor_support": [
+              1,
+              6,
+              13
+            ],
+            "leaf_index": 12,
+            "original_trial": 469,
+            "q_coeff": 3177,
+            "relation_index": 0,
+            "rhs": 6189,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              6,
+              13,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              6,
+              12
+            ],
+            "leaf_index": 12,
+            "original_trial": 218,
+            "q_coeff": 1403,
+            "relation_index": 0,
+            "rhs": 825,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              6,
+              12,
+              12
+            ]
+          },
+          {
+            "candidate_pos": 3,
+            "factor_support": [
+              1,
+              6,
+              13
+            ],
+            "leaf_index": 12,
+            "original_trial": 469,
+            "q_coeff": 8631,
+            "relation_index": 1,
+            "rhs": 6402,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              6,
+              13,
+              13
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              2705,
+              9753
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "12",
+              17,
+              218
+            ],
+            "fanout": 1,
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2705,
+              9753
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 1,
+            "candidate_point_reused": true,
+            "event_key": [
+              "12",
+              17,
+              469
+            ],
+            "fanout": 2,
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              },
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2705,
+              9753
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "12",
+              30,
+              218
+            ],
+            "fanout": 1,
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2705,
+              9753
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 1,
+            "candidate_point_reused": true,
+            "event_key": [
+              "12",
+              30,
+              469
+            ],
+            "fanout": 2,
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              },
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              9251,
+              9216
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "12",
+              174,
+              218
+            ],
+            "fanout": 1,
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation_count": 2,
+            "candidate_point": [
+              9251,
+              9216
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 1,
+            "candidate_point_reused": true,
+            "event_key": [
+              "12",
+              174,
+              469
+            ],
+            "fanout": 2,
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              },
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              9251,
+              9216
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "12",
+              210,
+              218
+            ],
+            "fanout": 1,
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              9251,
+              9216
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 1,
+            "candidate_point_reused": true,
+            "event_key": [
+              "12",
+              210,
+              469
+            ],
+            "fanout": 2,
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              },
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 210
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              2716
+            ],
+            "selected_leaf_signature": "12"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "selected_hit_root_values": [
+              2716,
+              5973
+            ],
+            "selected_leaf_signature": "12"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "12",
+              17,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "12",
+              30,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "12",
+              174,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 3,
+              "factor_support": [
+                1,
+                6,
+                13
+              ],
+              "leaf_index": 12,
+              "original_trial": 469,
+              "q_coeff": 3177,
+              "relation_index": 0,
+              "rhs": 6189,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                6,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "12",
+              210,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "12",
+              17,
+              218
+            ],
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                6,
+                12
+              ],
+              "leaf_index": 12,
+              "original_trial": 218,
+              "q_coeff": 1403,
+              "relation_index": 0,
+              "rhs": 825,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                6,
+                12,
+                12
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "12",
+              17,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "12",
+              30,
+              218
+            ],
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "12",
+              30,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "12",
+              174,
+              218
+            ],
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "12",
+              174,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": 1,
+            "relation_summary": {
+              "candidate_pos": 3,
+              "factor_support": [
+                1,
+                6,
+                13
+              ],
+              "leaf_index": 12,
+              "original_trial": 469,
+              "q_coeff": 8631,
+              "relation_index": 1,
+              "rhs": 6402,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                6,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "12",
+              210,
+              218
+            ],
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "12",
+              210,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 210
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 6227,
+        "factor_variable_count": 14,
+        "form_count": 3,
+        "matches_recorded_secret": true,
+        "rank": 3,
+        "recorded_secret": 6227,
+        "relation_summary_count": 3,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt209"
+      ],
+      "source_name": "coord1114_744",
+      "work_counters": {
+        "baseline_hit_root_ops": 3,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 4,
+        "fused_below_rho": true,
+        "fused_ops": 123,
+        "fused_ops_over_rho": 0.984,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 12,
+        "shared_first_event_pass_ops": 8,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 4,
+        "first_pass_group_instance_count": 4,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 4
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 2,
+            "factor_support": [
+              1,
+              3,
+              10
+            ],
+            "leaf_index": 1,
+            "original_trial": 42,
+            "q_coeff": 6413,
+            "relation_index": 0,
+            "rhs": 7291,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              3,
+              3,
+              10
+            ]
+          },
+          {
+            "candidate_pos": 2,
+            "factor_support": [
+              1,
+              3,
+              10
+            ],
+            "leaf_index": 1,
+            "original_trial": 286,
+            "q_coeff": 2828,
+            "relation_index": 0,
+            "rhs": 5375,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              3,
+              3,
+              10
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              7480,
+              6431
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "1",
+              68,
+              42
+            ],
+            "fanout": 1,
+            "leaf_signature": "1",
+            "original_trial": 42,
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt205",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 68
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              7480,
+              6431
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "1",
+              68,
+              286
+            ],
+            "fanout": 1,
+            "leaf_signature": "1",
+            "original_trial": 286,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 68
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              5473,
+              680
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "1",
+              229,
+              42
+            ],
+            "fanout": 1,
+            "leaf_signature": "1",
+            "original_trial": 42,
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt205",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 229
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              5473,
+              680
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "1",
+              229,
+              286
+            ],
+            "fanout": 1,
+            "leaf_signature": "1",
+            "original_trial": 286,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 229
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "selected_hit_root_values": [
+              8741
+            ],
+            "selected_leaf_signature": "1"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              8741
+            ],
+            "selected_leaf_signature": "1"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "1",
+              68,
+              42
+            ],
+            "leaf_signature": "1",
+            "original_trial": 42,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "scheduled_trial": 1,
+            "scout_pos": 68
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "1",
+              229,
+              42
+            ],
+            "leaf_signature": "1",
+            "original_trial": 42,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                3,
+                10
+              ],
+              "leaf_index": 1,
+              "original_trial": 42,
+              "q_coeff": 6413,
+              "relation_index": 0,
+              "rhs": 7291,
+              "row_key": "67.a1@9803:uniform:256:salt205",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                3,
+                3,
+                10
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "scheduled_trial": 1,
+            "scout_pos": 229
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "1",
+              68,
+              286
+            ],
+            "leaf_signature": "1",
+            "original_trial": 286,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 68
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "1",
+              229,
+              286
+            ],
+            "leaf_signature": "1",
+            "original_trial": 286,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                3,
+                10
+              ],
+              "leaf_index": 1,
+              "original_trial": 286,
+              "q_coeff": 2828,
+              "relation_index": 0,
+              "rhs": 5375,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                3,
+                3,
+                10
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 229
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "117,6119",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "1"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 695
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 9438,
+        "factor_variable_count": 11,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 9438,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt205",
+        "67.a1@9803:uniform:256:salt206"
+      ],
+      "source_name": "coord117_688",
+      "work_counters": {
+        "baseline_hit_root_ops": 2,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": true,
+        "fused_ops": 110,
+        "fused_ops_over_rho": 0.88,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 4,
+        "shared_first_event_pass_ops": 4,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 6,
+        "first_pass_group_instance_count": 6,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 6
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              11,
+              14
+            ],
+            "leaf_index": 0,
+            "original_trial": 503,
+            "q_coeff": 2927,
+            "relation_index": 0,
+            "rhs": 8125,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              11,
+              14,
+              14
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              11,
+              14
+            ],
+            "leaf_index": 0,
+            "original_trial": 109,
+            "q_coeff": 1167,
+            "relation_index": 0,
+            "rhs": 8552,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              11,
+              14,
+              14
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              2344,
+              7558
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              37,
+              109
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 109,
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt205",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 37
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              2344,
+              7558
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              37,
+              503
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 503,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt203",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 37
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2344,
+              7558
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              210,
+              109
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 109,
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt205",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2344,
+              7558
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              210,
+              503
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 503,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt203",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              868,
+              1621
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              294,
+              109
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 109,
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt205",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 294
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              868,
+              1621
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              294,
+              503
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 503,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt203",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 294
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "selected_hit_root_values": [
+              5612
+            ],
+            "selected_leaf_signature": "0"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "selected_hit_root_values": [
+              5612
+            ],
+            "selected_leaf_signature": "0"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "0",
+              37,
+              503
+            ],
+            "leaf_signature": "0",
+            "original_trial": 503,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                11,
+                14
+              ],
+              "leaf_index": 0,
+              "original_trial": 503,
+              "q_coeff": 2927,
+              "relation_index": 0,
+              "rhs": 8125,
+              "row_key": "67.a1@9803:uniform:256:salt203",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                11,
+                14,
+                14
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "scout_pos": 37
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "0",
+              210,
+              503
+            ],
+            "leaf_signature": "0",
+            "original_trial": 503,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "0",
+              294,
+              503
+            ],
+            "leaf_signature": "0",
+            "original_trial": 503,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "scout_pos": 294
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "0",
+              37,
+              109
+            ],
+            "leaf_signature": "0",
+            "original_trial": 109,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                11,
+                14
+              ],
+              "leaf_index": 0,
+              "original_trial": 109,
+              "q_coeff": 1167,
+              "relation_index": 0,
+              "rhs": 8552,
+              "row_key": "67.a1@9803:uniform:256:salt205",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                11,
+                14,
+                14
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "scheduled_trial": 1,
+            "scout_pos": 37
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "0",
+              210,
+              109
+            ],
+            "leaf_signature": "0",
+            "original_trial": 109,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "scheduled_trial": 1,
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "0",
+              294,
+              109
+            ],
+            "leaf_signature": "0",
+            "original_trial": 109,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt205",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt205",
+            "scheduled_trial": 1,
+            "scout_pos": 294
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "3|3",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 706
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 3713,
+        "factor_variable_count": 15,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 3713,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt203",
+        "67.a1@9803:uniform:256:salt205"
+      ],
+      "source_name": "coord55_704",
+      "work_counters": {
+        "baseline_hit_root_ops": 2,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": true,
+        "fused_ops": 114,
+        "fused_ops_over_rho": 0.912,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 6,
+        "shared_first_event_pass_ops": 6,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 4,
+        "first_pass_group_instance_count": 4,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 4
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              11,
+              14
+            ],
+            "leaf_index": 0,
+            "original_trial": 442,
+            "q_coeff": 294,
+            "relation_index": 0,
+            "rhs": 9188,
+            "row_key": "67.a1@9803:uniform:256:salt204",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              11,
+              14,
+              14
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              11,
+              14
+            ],
+            "leaf_index": 0,
+            "original_trial": 29,
+            "q_coeff": 2053,
+            "relation_index": 0,
+            "rhs": 9070,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              11,
+              14,
+              14
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              2344,
+              7558
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              11,
+              29
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 29,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 11
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              2344,
+              7558
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              11,
+              442
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 442,
+            "representative_row_key": "67.a1@9803:uniform:256:salt204",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt204",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 11
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              868,
+              1621
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              170,
+              29
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 29,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 170
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              868,
+              1621
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "0",
+              170,
+              442
+            ],
+            "fanout": 1,
+            "leaf_signature": "0",
+            "original_trial": 442,
+            "representative_row_key": "67.a1@9803:uniform:256:salt204",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt204",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 170
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt204",
+            "selected_hit_root_values": [
+              5612
+            ],
+            "selected_leaf_signature": "0"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              5612
+            ],
+            "selected_leaf_signature": "0"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "0",
+              11,
+              442
+            ],
+            "leaf_signature": "0",
+            "original_trial": 442,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                11,
+                14
+              ],
+              "leaf_index": 0,
+              "original_trial": 442,
+              "q_coeff": 294,
+              "relation_index": 0,
+              "rhs": 9188,
+              "row_key": "67.a1@9803:uniform:256:salt204",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                11,
+                14,
+                14
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt204",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt204",
+            "scheduled_trial": 1,
+            "scout_pos": 11
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "0",
+              170,
+              442
+            ],
+            "leaf_signature": "0",
+            "original_trial": 442,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt204",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt204",
+            "scheduled_trial": 1,
+            "scout_pos": 170
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "0",
+              11,
+              29
+            ],
+            "leaf_signature": "0",
+            "original_trial": 29,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                11,
+                14
+              ],
+              "leaf_index": 0,
+              "original_trial": 29,
+              "q_coeff": 2053,
+              "relation_index": 0,
+              "rhs": 9070,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                11,
+                14,
+                14
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 11
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "0",
+              170,
+              29
+            ],
+            "leaf_signature": "0",
+            "original_trial": 29,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 170
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 718
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 9797,
+        "factor_variable_count": 15,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 9797,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt204",
+        "67.a1@9803:uniform:256:salt206"
+      ],
+      "source_name": "coord55_712",
+      "work_counters": {
+        "baseline_hit_root_ops": 2,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": true,
+        "fused_ops": 110,
+        "fused_ops_over_rho": 0.88,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 4,
+        "shared_first_event_pass_ops": 4,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 8,
+        "first_pass_group_instance_count": 8,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 8
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              8,
+              13
+            ],
+            "leaf_index": 7,
+            "original_trial": 233,
+            "q_coeff": 2274,
+            "relation_index": 0,
+            "rhs": 5292,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              8,
+              13,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              8,
+              13
+            ],
+            "leaf_index": 7,
+            "original_trial": 473,
+            "q_coeff": 6899,
+            "relation_index": 1,
+            "rhs": 9106,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              8,
+              13,
+              13
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              371,
+              1564
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "7",
+              19,
+              233
+            ],
+            "fanout": 1,
+            "leaf_signature": "7",
+            "original_trial": 233,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              371,
+              1564
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "7",
+              19,
+              473
+            ],
+            "fanout": 1,
+            "leaf_signature": "7",
+            "original_trial": 473,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              371,
+              1564
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "7",
+              191,
+              233
+            ],
+            "fanout": 1,
+            "leaf_signature": "7",
+            "original_trial": 233,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 191
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              371,
+              1564
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "7",
+              191,
+              473
+            ],
+            "fanout": 1,
+            "leaf_signature": "7",
+            "original_trial": 473,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 191
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2139,
+              6807
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "7",
+              245,
+              233
+            ],
+            "fanout": 1,
+            "leaf_signature": "7",
+            "original_trial": 233,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 245
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2139,
+              6807
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "7",
+              245,
+              473
+            ],
+            "fanout": 1,
+            "leaf_signature": "7",
+            "original_trial": 473,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 245
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2139,
+              6807
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "7",
+              347,
+              233
+            ],
+            "fanout": 1,
+            "leaf_signature": "7",
+            "original_trial": 233,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 347
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2139,
+              6807
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "7",
+              347,
+              473
+            ],
+            "fanout": 1,
+            "leaf_signature": "7",
+            "original_trial": 473,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 347
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "selected_hit_root_values": [
+              3639
+            ],
+            "selected_leaf_signature": "7"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "7",
+              19,
+              233
+            ],
+            "leaf_signature": "7",
+            "original_trial": 233,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                8,
+                13
+              ],
+              "leaf_index": 7,
+              "original_trial": 233,
+              "q_coeff": 2274,
+              "relation_index": 0,
+              "rhs": 5292,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                8,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "7",
+              19,
+              473
+            ],
+            "leaf_signature": "7",
+            "original_trial": 473,
+            "relation_index": 1,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                8,
+                13
+              ],
+              "leaf_index": 7,
+              "original_trial": 473,
+              "q_coeff": 6899,
+              "relation_index": 1,
+              "rhs": 9106,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                8,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "7",
+              191,
+              233
+            ],
+            "leaf_signature": "7",
+            "original_trial": 233,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 191
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "7",
+              191,
+              473
+            ],
+            "leaf_signature": "7",
+            "original_trial": 473,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 191
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "7",
+              245,
+              233
+            ],
+            "leaf_signature": "7",
+            "original_trial": 233,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 245
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "7",
+              245,
+              473
+            ],
+            "leaf_signature": "7",
+            "original_trial": 473,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 245
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "7",
+              347,
+              233
+            ],
+            "leaf_signature": "7",
+            "original_trial": 233,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 347
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "7",
+              347,
+              473
+            ],
+            "leaf_signature": "7",
+            "original_trial": 473,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 347
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "757,1452",
+        "hit_event_signature": "8",
+        "hit_root_signature": "1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "7"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 1,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 715
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 702,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 702,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt209"
+      ],
+      "source_name": "coord757_712",
+      "work_counters": {
+        "baseline_hit_root_ops": 1,
+        "baseline_leaf_ops": 1,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": true,
+        "fused_ops": 68,
+        "fused_ops_over_rho": 0.544,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 50,
+        "second_event_pass_ops": 8,
+        "shared_first_event_pass_ops": 8,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 8,
+        "first_pass_group_instance_count": 8,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 8
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              6,
+              13
+            ],
+            "leaf_index": 9,
+            "original_trial": 336,
+            "q_coeff": 6382,
+            "relation_index": 0,
+            "rhs": 4071,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              6,
+              6,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              6,
+              13
+            ],
+            "leaf_index": 9,
+            "original_trial": 359,
+            "q_coeff": 2894,
+            "relation_index": 0,
+            "rhs": 2802,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              6,
+              6,
+              13
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              4247,
+              7706
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "9",
+              5,
+              336
+            ],
+            "fanout": 1,
+            "leaf_signature": "9",
+            "original_trial": 336,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 5
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              4247,
+              7706
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "9",
+              5,
+              359
+            ],
+            "fanout": 1,
+            "leaf_signature": "9",
+            "original_trial": 359,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 5
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              7962,
+              4835
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "9",
+              69,
+              336
+            ],
+            "fanout": 1,
+            "leaf_signature": "9",
+            "original_trial": 336,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 69
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              7962,
+              4835
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "9",
+              69,
+              359
+            ],
+            "fanout": 1,
+            "leaf_signature": "9",
+            "original_trial": 359,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 69
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              4247,
+              7706
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "9",
+              151,
+              336
+            ],
+            "fanout": 1,
+            "leaf_signature": "9",
+            "original_trial": 336,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 151
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              4247,
+              7706
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "9",
+              151,
+              359
+            ],
+            "fanout": 1,
+            "leaf_signature": "9",
+            "original_trial": 359,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 151
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              7962,
+              4835
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "9",
+              296,
+              336
+            ],
+            "fanout": 1,
+            "leaf_signature": "9",
+            "original_trial": 336,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 296
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              7962,
+              4835
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "9",
+              296,
+              359
+            ],
+            "fanout": 1,
+            "leaf_signature": "9",
+            "original_trial": 359,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 296
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              7515
+            ],
+            "selected_leaf_signature": "9"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "selected_hit_root_values": [
+              7515
+            ],
+            "selected_leaf_signature": "9"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "9",
+              5,
+              336
+            ],
+            "leaf_signature": "9",
+            "original_trial": 336,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                6,
+                13
+              ],
+              "leaf_index": 9,
+              "original_trial": 336,
+              "q_coeff": 6382,
+              "relation_index": 0,
+              "rhs": 4071,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                6,
+                6,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 5
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "9",
+              69,
+              336
+            ],
+            "leaf_signature": "9",
+            "original_trial": 336,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 69
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "9",
+              151,
+              336
+            ],
+            "leaf_signature": "9",
+            "original_trial": 336,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 151
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "9",
+              296,
+              336
+            ],
+            "leaf_signature": "9",
+            "original_trial": 336,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 296
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "9",
+              5,
+              359
+            ],
+            "leaf_signature": "9",
+            "original_trial": 359,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                6,
+                13
+              ],
+              "leaf_index": 9,
+              "original_trial": 359,
+              "q_coeff": 2894,
+              "relation_index": 0,
+              "rhs": 2802,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                6,
+                6,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 5
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "9",
+              69,
+              359
+            ],
+            "leaf_signature": "9",
+            "original_trial": 359,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 69
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "9",
+              151,
+              359
+            ],
+            "leaf_signature": "9",
+            "original_trial": 359,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 151
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "9",
+              296,
+              359
+            ],
+            "leaf_signature": "9",
+            "original_trial": 359,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 296
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "861,9226",
+        "hit_event_signature": "4|4",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "9"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 692
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 8677,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 8677,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt208"
+      ],
+      "source_name": "coord861_688",
+      "work_counters": {
+        "baseline_hit_root_ops": 2,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": true,
+        "fused_ops": 118,
+        "fused_ops_over_rho": 0.944,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 8,
+        "shared_first_event_pass_ops": 8,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 9,
+        "first_pass_group_instance_count": 9,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 9
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              9,
+              12
+            ],
+            "leaf_index": 2,
+            "original_trial": 217,
+            "q_coeff": 4587,
+            "relation_index": 0,
+            "rhs": 7830,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              12,
+              12
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              9,
+              12
+            ],
+            "leaf_index": 2,
+            "original_trial": 53,
+            "q_coeff": 1284,
+            "relation_index": 0,
+            "rhs": 3754,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              12,
+              12
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              76,
+              53
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 53,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 76
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              76,
+              135
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 135,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 76
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              76,
+              217
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 217,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt203",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 76
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              114,
+              53
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 53,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 114
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              114,
+              135
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 135,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 114
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              114,
+              217
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 217,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt203",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 114
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              322,
+              53
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 53,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 322
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              322,
+              135
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 135,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 322
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              322,
+              217
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 217,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt203",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 322
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "selected_hit_root_values": [
+              161
+            ],
+            "selected_leaf_signature": "2"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "selected_hit_root_values": [
+              161
+            ],
+            "selected_leaf_signature": "2"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              76,
+              217
+            ],
+            "leaf_signature": "2",
+            "original_trial": 217,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                9,
+                12
+              ],
+              "leaf_index": 2,
+              "original_trial": 217,
+              "q_coeff": 4587,
+              "relation_index": 0,
+              "rhs": 7830,
+              "row_key": "67.a1@9803:uniform:256:salt203",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                12,
+                12
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "scout_pos": 76
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              114,
+              217
+            ],
+            "leaf_signature": "2",
+            "original_trial": 217,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "scout_pos": 114
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              322,
+              217
+            ],
+            "leaf_signature": "2",
+            "original_trial": 217,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "scout_pos": 322
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              76,
+              135
+            ],
+            "leaf_signature": "2",
+            "original_trial": 135,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 76
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              114,
+              135
+            ],
+            "leaf_signature": "2",
+            "original_trial": 135,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 114
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              322,
+              135
+            ],
+            "leaf_signature": "2",
+            "original_trial": 135,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 322
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              76,
+              53
+            ],
+            "leaf_signature": "2",
+            "original_trial": 53,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                9,
+                12
+              ],
+              "leaf_index": 2,
+              "original_trial": 53,
+              "q_coeff": 1284,
+              "relation_index": 0,
+              "rhs": 3754,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                12,
+                12
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 76
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              114,
+              53
+            ],
+            "leaf_signature": "2",
+            "original_trial": 53,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 114
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              322,
+              53
+            ],
+            "leaf_signature": "2",
+            "original_trial": 53,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 322
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "3|3|3",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 677
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 9544,
+        "factor_variable_count": 13,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 9544,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt203",
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt208"
+      ],
+      "source_name": "coord161_672",
+      "work_counters": {
+        "baseline_hit_root_ops": 3,
+        "baseline_leaf_ops": 3,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": false,
+        "fused_ops": 171,
+        "fused_ops_over_rho": 1.368,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 150,
+        "second_event_pass_ops": 9,
+        "shared_first_event_pass_ops": 9,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 12,
+        "first_pass_group_instance_count": 12,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 12
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 186,
+            "q_coeff": 9302,
+            "relation_index": 0,
+            "rhs": 6136,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 149,
+            "q_coeff": 2843,
+            "relation_index": 0,
+            "rhs": 2681,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              1,
+              149
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              1,
+              186
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              1,
+              296
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              130,
+              149
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              130,
+              186
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              130,
+              296
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              144,
+              149
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              144,
+              186
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              144,
+              296
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              331,
+              149
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 331
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              331,
+              186
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 331
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              331,
+              296
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 331
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              161,
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "selected_hit_root_values": [
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              1,
+              186
+            ],
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 186,
+              "q_coeff": 9302,
+              "relation_index": 0,
+              "rhs": 6136,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              1,
+              296
+            ],
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 2,
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              130,
+              186
+            ],
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              130,
+              296
+            ],
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 2,
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              144,
+              186
+            ],
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              144,
+              296
+            ],
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 2,
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "2",
+              331,
+              186
+            ],
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 331
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "2",
+              331,
+              296
+            ],
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 2,
+            "scout_pos": 331
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              1,
+              149
+            ],
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 149,
+              "q_coeff": 2843,
+              "relation_index": 0,
+              "rhs": 2681,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              130,
+              149
+            ],
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              144,
+              149
+            ],
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "2",
+              331,
+              149
+            ],
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 331
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 1767,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 1767,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt207"
+      ],
+      "source_name": "coord161_720",
+      "work_counters": {
+        "baseline_hit_root_ops": 3,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": false,
+        "fused_ops": 127,
+        "fused_ops_over_rho": 1.016,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 12,
+        "shared_first_event_pass_ops": 12,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 12,
+        "first_pass_group_instance_count": 12,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 12
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 2,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 466,
+            "q_coeff": 8889,
+            "relation_index": 0,
+            "rhs": 3933,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 2,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 2,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 204,
+            "q_coeff": 9843,
+            "relation_index": 0,
+            "rhs": 7283,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              4,
+              204
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              4,
+              377
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              4,
+              429
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              4,
+              466
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              202,
+              204
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              202,
+              377
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              202,
+              429
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              202,
+              466
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              226,
+              204
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              226,
+              377
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              226,
+              429
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              226,
+              466
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 226
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "selected_hit_root_values": [
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "selected_hit_root_values": [
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              4,
+              429
+            ],
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              4,
+              466
+            ],
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 2,
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              202,
+              429
+            ],
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              202,
+              466
+            ],
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 466,
+              "q_coeff": 8889,
+              "relation_index": 0,
+              "rhs": 3933,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 2,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 2,
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              226,
+              429
+            ],
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              226,
+              466
+            ],
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 2,
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              4,
+              204
+            ],
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              4,
+              377
+            ],
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 2,
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              202,
+              204
+            ],
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 204,
+              "q_coeff": 9843,
+              "relation_index": 0,
+              "rhs": 7283,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              202,
+              377
+            ],
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 2,
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              226,
+              204
+            ],
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              226,
+              377
+            ],
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 2,
+            "scout_pos": 226
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 3693,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 3693,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt207",
+        "67.a1@9803:uniform:256:salt208"
+      ],
+      "source_name": "coord161_728",
+      "work_counters": {
+        "baseline_hit_root_ops": 2,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": false,
+        "fused_ops": 126,
+        "fused_ops_over_rho": 1.008,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 12,
+        "shared_first_event_pass_ops": 12,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 3,
+        "first_pass_group_count": 6,
+        "first_pass_group_instance_count": 6,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 6
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 2,
+            "factor_support": [
+              1,
+              9,
+              12
+            ],
+            "leaf_index": 2,
+            "original_trial": 299,
+            "q_coeff": 8453,
+            "relation_index": 0,
+            "rhs": 7440,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              12,
+              12
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 96,
+            "q_coeff": 5728,
+            "relation_index": 0,
+            "rhs": 8644,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 2,
+            "factor_support": [
+              1,
+              9,
+              12
+            ],
+            "leaf_index": 2,
+            "original_trial": 14,
+            "q_coeff": 8535,
+            "relation_index": 0,
+            "rhs": 5841,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              12,
+              12
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              19,
+              14
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 14,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              19,
+              96
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 96,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              19,
+              299
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 299,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt203",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              150,
+              14
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 14,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 150
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              150,
+              96
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 96,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 150
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              150,
+              299
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 299,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt203",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 150
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "selected_hit_root_values": [
+              161
+            ],
+            "selected_leaf_signature": "2"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "selected_hit_root_values": [
+              161
+            ],
+            "selected_leaf_signature": "2"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              19,
+              299
+            ],
+            "leaf_signature": "2",
+            "original_trial": 299,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              150,
+              299
+            ],
+            "leaf_signature": "2",
+            "original_trial": 299,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                9,
+                12
+              ],
+              "leaf_index": 2,
+              "original_trial": 299,
+              "q_coeff": 8453,
+              "relation_index": 0,
+              "rhs": 7440,
+              "row_key": "67.a1@9803:uniform:256:salt203",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                12,
+                12
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt203",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt203",
+            "scheduled_trial": 1,
+            "scout_pos": 150
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              19,
+              96
+            ],
+            "leaf_signature": "2",
+            "original_trial": 96,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 96,
+              "q_coeff": 5728,
+              "relation_index": 0,
+              "rhs": 8644,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              150,
+              96
+            ],
+            "leaf_signature": "2",
+            "original_trial": 96,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 150
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              19,
+              14
+            ],
+            "leaf_signature": "2",
+            "original_trial": 14,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 19
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              150,
+              14
+            ],
+            "leaf_signature": "2",
+            "original_trial": 14,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                9,
+                12
+              ],
+              "leaf_index": 2,
+              "original_trial": 14,
+              "q_coeff": 8535,
+              "relation_index": 0,
+              "rhs": 5841,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                12,
+                12
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 150
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "2|2|2",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 740
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 4924,
+        "factor_variable_count": 14,
+        "form_count": 3,
+        "matches_recorded_secret": true,
+        "rank": 3,
+        "recorded_secret": 4924,
+        "relation_summary_count": 3,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt203",
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt209"
+      ],
+      "source_name": "coord161_736",
+      "work_counters": {
+        "baseline_hit_root_ops": 3,
+        "baseline_leaf_ops": 3,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": false,
+        "fused_ops": 165,
+        "fused_ops_over_rho": 1.32,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 150,
+        "second_event_pass_ops": 6,
+        "shared_first_event_pass_ops": 6,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      }
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_contract_probe_v1",
+  "summary": {
+    "contract_below_rho_count": 6,
+    "contract_derived_count": 10,
+    "contract_event_reuse_below_rho_count": 1,
+    "contract_fused_ops_match_count": 10,
+    "contract_secret_match_count": 10,
+    "contract_verified_count": 10,
+    "interpretation": "The hot-path executor has been lowered into a portable contract: first-pass candidate-point groups, second-pass row checks, compact relation summaries, independent derivation, and recomputed work counters.",
+    "mean_contract_below_rho_ops_over_rho": 0.85733333,
+    "record_count": 10
+  }
+}

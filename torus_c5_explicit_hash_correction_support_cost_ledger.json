@@ -1,0 +1,85 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "inside_setup_cap": false,
+      "minimum_state_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "explicit_per_bucket_pair_product_corrections",
+      "scoped_lower_bound_proved": true
+    },
+    {
+      "inside_setup_cap": false,
+      "minimum_state_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "global_deduplicated_product_dictionary",
+      "scoped_lower_bound_proved": true
+    },
+    {
+      "admitted": false,
+      "exact_product_composition_proved": false,
+      "route_id": "coordinate_hash_without_corrections"
+    },
+    {
+      "exact_structure_constructed": false,
+      "route_id": "implicit_or_adaptive_correction_circuit",
+      "scoped_lower_bound_proved": false,
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_explicit_hash_correction_support_cost_ledger.r126.v1",
+  "split_exponents": {
+    "C2": {
+      "decimal": 1.5,
+      "exact": "3/2"
+    },
+    "C3": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "C5_support": {
+      "decimal": 3.75,
+      "exact": "15/4"
+    }
+  },
+  "theorem": {
+    "coverage_identity": "union_(a,b) L_(a,b)=C2*C3=C5",
+    "entry_lower_bound": "sum_(a,b)|L_(a,b)| >= |union_(a,b)L_(a,b)| = |C5|",
+    "global_deduplication_boundary": "A globally deduplicated exact product dictionary still has exactly |C5| target entries.",
+    "iid_support_inheritance": "Under the R119 iid-distinct-support theorem at |C|=B^(3/4+o(1)), |C5|=B^(15/4+o(1)) with high probability.",
+    "inside_setup_cap": false,
+    "minimum_explicit_correction_state_exponent_B": {
+      "decimal": 3.75,
+      "exact": "15/4"
+    },
+    "model": "Arbitrary hashes h2:C2->A and h3:C3->B, plus an explicit correction list L_(a,b) containing every distinct product xy for x in C2 bucket a and y in C3 bucket b.",
+    "not_covered": [
+      "implicit correction circuits",
+      "adaptive probes into compressed correction data",
+      "nonlinear algebraic certificates not listing product targets",
+      "bounded-error fingerprints",
+      "general arithmetic circuits or data structures"
+    ],
+    "scope_limits": [
+      "explicit per-bucket distinct-product correction lists",
+      "globally deduplicated explicit exact product dictionaries",
+      "arbitrary target-independent hashes",
+      "exact membership with represented product keys"
+    ],
+    "source_backpointer_consequence": "Attaching one C2 and one C3 source to each represented product does not reduce the number of represented product entries."
+  }
+}

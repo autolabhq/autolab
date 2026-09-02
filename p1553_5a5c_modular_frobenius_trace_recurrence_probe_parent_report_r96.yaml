@@ -1,0 +1,111 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-MODULAR-FROBENIUS-TRACE-R96-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_split_quotient_projector_trace_and_frobenius_screen
+run_count: 1
+status: exact_trace_reduced_identity_nonreduced_source_loss_over_cap
+labels:
+  - exact-finite-controls
+  - exact-quotient-algebra
+  - prospective
+  - scoped-negative
+  - novelty-unverified
+owner: P1553-R9-R84-R90-R94-R95
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Instantiate the R95 projector sum as a modular quotient-algebra trace,
+  determine whether Frobenius compresses its source state, and preserve
+  exact occurrence multiplicity and dyadic source semantics.
+inputs:
+  - path: p1553_5a5c_aggregate_veronese_projector_recurrence_probe_r95.py
+    sha256: 494ed8e091bd965d235dfb5b3b350be2f9493eaeb1bc676229116259f59126f9
+  - path: p1553_5a5c_aggregate_veronese_projector_recurrence_probe_report_r95.json
+    sha256: 50441deecd5fadcb05d30c09532d2b5fe6e8893ea2530243c20a52761e0a1742
+  - path: p1553_5a5c_aggregate_veronese_projector_recurrence_probe_gate_r95.md
+    sha256: 6645a20b942f4c86abafed39fa14538b1bb80edee3ffa94a2e7d914e12c0c763
+  - path: p1553_5a5c_implicit_veronese_hyperplane_source_index_probe_report_r94.json
+    sha256: a9966f1fb407e720ce1e9aaafc82ab4a38eade9f338cda287cb737445d099df0
+  - path: p1553_5a5c_marked_resultant_source_section_probe_report_r84.json
+    sha256: c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b
+  - path: p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md
+    sha256: 4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661
+  - path: p1553_5a5c_nonlocal_moment_hankel_translation_probe_report_r90.json
+    sha256: 02bece6fe25e335bd061eec784e237b6d9d2ab57f34bd8dd823217a137a56c2b
+  - path: p1553_5a5c_nonlocal_moment_hankel_translation_probe_gate_r90.md
+    sha256: b1618f6a354b995db01fbbc7aeeb69df6ebb5248b5c558bc4c72d87ce523897b
+  - path: p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+artifacts:
+  - path: p1553_5a5c_modular_frobenius_trace_recurrence_probe_r96.py
+    sha256: 92f646378156476cf897729b6bca6d67bc47398663137aee1ab17d910511f960
+  - path: p1553_5a5c_modular_frobenius_trace_recurrence_probe_report_r96.json
+    sha256: e4e667703d22b96c5ef64b3bfbbd24119f128cd00f68d0d7d850ba41c0c0e163
+  - path: frozen_5a5c_modular_frobenius_trace_recurrence.json
+    sha256: 2f791a74207956207ad1398b49e17523aab0956449368cbafa712b4397aaf373
+  - path: frobenius_trace_state_and_transition_ledger.json
+    sha256: 1195d80b7a2eb0de18411748037b8129ae762fbea268d70b1b02d0af3651674b
+  - path: integer_lift_dyadic_source_replay.json
+    sha256: 05cd1234564a6a664aaece6350260fe551c4527d1d07fade36551edb69797d97
+  - path: quotient_trace_exceptional_controls.json
+    sha256: 4f5c8c87c0298e58793bc37f322d0bf49c678f1980f092215796cf5d454bf939
+  - path: factor_logs_and_identical_descent_r96.json
+    sha256: 594fb047fe8760213efd05314bf8a63cdb750d983551fc90cee38958b86e89ad
+  - path: p1553_5a5c_modular_frobenius_trace_recurrence_probe_gate_r96.md
+    sha256: 55655280c02bbef1e5f0f29bcad1beb1b21d6809e79b7de400a58997b0caa64d
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_modular_frobenius_trace_recurrence_probe_r96.py
+    sha256: a4b76d8a31f6e3982c690defffcdcbe244866dfb5a932295ada81a2170b19206
+verified_statements:
+  - >-
+    Tr_A(1-M_h^(p-1)) equals the exact no-wrap projector count on reduced,
+    duplicate, and blind F_11 controls.
+  - >-
+    Frobenius is the identity on the reduced split quotient and therefore
+    gives no state contraction.
+  - >-
+    The duplicate quotient preserves a third zero occurrence, while
+    Frobenius rank drops from dimension five to four and loses its nilpotent
+    multiplicity direction.
+  - >-
+    Standard source-complete quotient state costs B^12/5 and an explicit
+    multiplication/Frobenius matrix costs B^24/5.
+scoped_failures:
+  quotient_basis_inside_setup_cap: fail
+  quotient_basis_inside_online_cap: fail
+  explicit_matrix_inside_setup_cap: fail
+  factored_trace_without_quotient_basis_supplied: unsupplied
+  actual_five_a_five_c_integer_lift_complete: unsupplied
+  actual_five_a_five_c_source_unranking_complete: unsupplied
+  projective_exceptional_replay_complete: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - factored transposed traces
+  - modular character-sum algorithms
+  - succinct source-reporting circuits
+  - arbitrary summation-polynomial and FFE representations
+admission:
+  passed_obligations: 13
+  obligation_count: 27
+  lane_admitted: false
+result:
+  exact_quotient_projector_trace_found: true
+  reduced_frobenius_compression_found: false
+  nonreduced_frobenius_source_complete: false
+  standard_quotient_trace_inside_caps: false
+  factored_transposed_trace_found: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_STANDARD_SPLIT_QUOTIENT_FROBENIUS_TRACE_ONLY__PROJECTOR_TRACE_AND_DYADIC_TOY_SOURCE_EXACT__REDUCED_FROBENIUS_IDENTITY_NO_COMPRESSION__RADICAL_LOSES_DUPLICATE__NONREDUCED_FROBENIUS_LOSES_NILPOTENT_SOURCE_STATE__QUOTIENT_B12O5_AND_MATRIX_B24O5__FACTORED_TRANSPOSED_TRACE_OPEN__PROJECTIVE_AND_FULL_5A5C_SOURCE_INCOMPLETE__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one factored transposed projector-trace functional
+  over the compact A/C divisor circuits that avoids B^12/5 quotient state,
+  fits both P1515 caps, certifies an integer count, and returns one complete
+  coupled source without scans or verifier oracles.

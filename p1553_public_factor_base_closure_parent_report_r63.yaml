@@ -1,0 +1,70 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-PUBLIC-FACTOR-BASE-CLOSURE-R63-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: deterministic_public_factor_base_closure_probe_and_model_cost_gate
+  model_scope: nested_coordinate_hash_bases_on_the_R61_E_F193_tensor
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_FACTOR_BASE_CLOSURE_MODEL_GATE
+summary: >-
+  Eight nested projected-atom bases and 4096 smooth-source pencils yield two
+  replayable smooth-output witnesses. Corrected factor-section and rank-one
+  lift accounting makes the exploratory amplification inference inconclusive.
+  All asymptotic cost conclusions remain model-bound; downstream costs are open.
+inputs:
+  - path: staged/p1553_degree_six_scan_free_factor_lift_gate_r62.md
+    sha256: 38c785bd7d1e6fb1b52d04f07e363de6d63c840187f5b38000e203bddb7187f4
+  - path: staged/p1553_degree_six_scan_free_factor_lift_report_r62.json
+    sha256: 31d06e333d24d79382d065fc88ae0b88cd0d58b4307110588275dc1d3995ec37
+  - path: staged/p1553_degree_six_scan_free_factor_lift_r62.py
+    sha256: 15ca1a87202d069b79325b7a1743762d221f0726e793020910fb74c3633d900a
+  - path: staged/p1553_degree_six_product_hypersurface_locator_report_r61.json
+    sha256: f91213021bd350b77cf1ac7d5cb8f2f9ae63b1265a5081d4ed58a3da07aa1f64
+outputs:
+  - path: staged/p1553_public_factor_base_closure_gate_r63.md
+    sha256: c1fb6244d057f2ee5d37788c3cb98081ee5e852ea068af109c73de31027d33cd
+  - path: staged/p1553_public_factor_base_closure_probe_r63.py
+    sha256: 7f5d061a539d62d2b3d362fed8252fead5b8e14dbc9250f5543e686f3a8d89cb
+  - path: staged/p1553_public_factor_base_closure_probe_report_r63.json
+    sha256: bba00af8c72646a2405f9932ea81778b6b359db040d1ea9591686baa5010bfcc
+controls:
+  public_base_sizes: [12, 16, 20, 24, 28, 32, 40, 48]
+  even_two_torsion_lifts_per_projected_triple: 4
+  accepted_pencils_per_base: 512
+  accepted_pencils_total: 4096
+  smooth_output_witnesses: 2
+  first_positive_base_size: 40
+  observed_smooth_rate_at_positive_rows: 0.001953125
+  b40_distinct_roots: 497
+  b40_rational_rank_one_lifts: 496
+  b40_unconditional_reference_intensity_times_conditioned_count: 0.040466020097291826
+  b48_distinct_roots: 496
+  b48_rational_rank_one_lifts: 494
+  b48_unconditional_reference_intensity_times_conditioned_count: 0.13483378942207827
+result:
+  classification: public_factor_base_closure_model_gate
+  public_factor_base_closure_measured: true
+  smooth_closure_amplification_inference: inconclusive
+  generic_prime_distribution_theorem: absent
+  source_factor_selection_cost_charged: false
+  base_materialization_cost_charged: false
+  asymptotic_relation_algorithm: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - one finite toy and at most 512 sampled pencils per base
+  - asymptotic cost conclusions require unproved output-distribution models
+  - base/source/rank/log/linear-algebra/descent costs remain uncharged
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_FACTOR_BASE_CLOSURE_MODEL_GATE__PUBLIC_PROJECTED_BASES_FOUR_TORSION_LIFTS__4096_PENCILS_TWO_SMOOTH_WITNESSES__DEDUPLICATED_RATIONAL_RANK_ONE_ROOTS__UNIFORM_P2_PAIR_NULL__AMPLIFICATION_INCONCLUSIVE__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Preregister and test public coordinate-structured bases against the corrected
+  uniform-factor-pair null with pencil-clustered inference and charged costs.

@@ -1,0 +1,236 @@
+{
+  "admission": {
+    "failures": [
+      "rational_pole_cancellation_network_closed",
+      "bounded_sum_theta_addition_circuit_closed",
+      "actual_deck_specific_high_rank_circuit_closed",
+      "homogeneous_projective_trivialization_complete",
+      "generic_marker_factorization_inside_caps",
+      "generic_multiplicity_and_integer_lift_complete",
+      "known_rhs_rank_without_verifier_dlp",
+      "factor_logs_without_verifier_dlp",
+      "identical_fresh_target_descent",
+      "generic_prime_family_algorithm",
+      "shoup_improvement_complete",
+      "full_pipeline_fresh_workspace_inside_cap",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 26,
+    "obligations": {
+      "actual_deck_specific_high_rank_circuit_closed": false,
+      "all_balanced_side_images_injective": true,
+      "all_signed_section_sample_ranks_full": true,
+      "all_unary_pairwise_cylinder_controls_exact": true,
+      "bounded_sum_theta_addition_circuit_closed": false,
+      "breakthrough_complete": false,
+      "factor_logs_without_verifier_dlp": false,
+      "ffe_extension_preserves_rank": true,
+      "full_pipeline_fresh_workspace_inside_cap": false,
+      "generic_marker_factorization_inside_caps": false,
+      "generic_multiplicity_and_integer_lift_complete": false,
+      "generic_prime_family_algorithm": false,
+      "homogeneous_projective_trivialization_complete": false,
+      "identical_fresh_target_descent": false,
+      "known_rhs_rank_without_verifier_dlp": false,
+      "nine_source_bindings_verified": true,
+      "poincare_pair_tables_individually_inside_online_cap": true,
+      "r108_canonical_weight_14400_preserved": true,
+      "rational_pole_cancellation_network_closed": false,
+      "regular_pure_pairwise_zero_set_refuted": true,
+      "shoup_improvement_complete": false,
+      "sixteen_actual_and_matched_instances": true,
+      "translated_sections_linearly_independent": true,
+      "uniform_section_rank_exponent_B12O5": true,
+      "uniform_section_rank_misses_online_cap": true,
+      "uniform_section_rank_misses_setup_cap": true
+    },
+    "passed_obligation_count": 13
+  },
+  "artifacts": {
+    "exceptional": "poincare_theta_exceptional_controls.json",
+    "frozen": "frozen_5a5c_poincare_theta_target_section.json",
+    "logs_descent": "factor_logs_and_identical_descent_r109.json",
+    "marker_replay": "poincare_theta_canonical_marker_replay.json",
+    "rank_ledger": "poincare_theta_section_rank_ledger.json"
+  },
+  "breakthrough": false,
+  "claim_status": "SCOPED_PURE_SECTION_AND_UNIFORM_RANK_NEGATIVE_NO_ALGORITHM_CLAIM",
+  "classification": "TARGET_EQUALITY_FIBER_HAS_NO_UNARY_OR_PAIRWISE_ZERO_CYLINDER__REGULAR_PURE_POINCARE_SECTION_PRODUCT_REFUTED__TRANSLATED_SIGNED_SECTIONS_HAVE_B12O5_UNIFORM_FLATTENING_RANK__ACTUAL_AND_MATCHED_BALANCED_IMAGES_INJECTIVE_AND_SAMPLE_RANKS_FULL__RATIONAL_THETA_CANCELLATION_NETWORK_OPEN",
+  "cost_ledger": {
+    "caps": {
+      "fresh_work_workspace_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "regular_pure_pairwise_scalar_product": {
+      "constructor_valid": false,
+      "pairwise_norm_product_cost_credit": false,
+      "zero_set_cylinder_theorem": {
+        "bounded_sum_of_products_covered": false,
+        "candidate_form": "s_T(P1,...,P10)=product_i u_i(P_i) product_(i<j) b_ij(P_i,P_j)",
+        "projective_trivialization_covered": false,
+        "proof": "A zero of a regular finite-valued product makes one unary or pairwise factor zero, hence forces the whole cylinder obtained by varying the other coordinates to vanish. In a nontrivial prime-order group, changing one free coordinate changes the sum, so Z_T contains no unary or pairwise cylinder.",
+        "rational_pole_cancellation_covered": false,
+        "regular_finite_valued_pure_product_refuted": true,
+        "target_zero_fiber": "Z_T={(P1,...,P10):P1+...+P10=T}"
+      }
+    },
+    "scope_boundary": {
+      "actual_deck_specific_high_rank_circuit_open": true,
+      "general_arithmetic_circuit_lower_bound_claimed": false,
+      "pure_regular_pairwise_section_product_closed": true,
+      "rational_pole_cancellation_network_open": true,
+      "uniform_separated_rank_below_B12O5_closed": true
+    },
+    "theorem_of_cube_pair_tables": {
+      "all_pair_tables_inside_online_cap": true,
+      "pair_table_exponents_B": {
+        "A_A": {
+          "decimal": 0.8,
+          "exact": "4/5"
+        },
+        "A_C": {
+          "decimal": 1.0,
+          "exact": "1"
+        },
+        "C_C": {
+          "decimal": 1.2,
+          "exact": "6/5"
+        }
+      }
+    },
+    "uniform_bounded_separated_section": {
+      "inside_online_cap": false,
+      "inside_setup_cap": false,
+      "minimum_rank_state_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "translation_rank_theorem": {
+        "ffe_scalar_extension_changes_rank": false,
+        "generic_balanced_small_side_exponent_B": {
+          "decimal": 2.4,
+          "exact": "12/5"
+        },
+        "kappa": "x+w*y with a pole of order three at O",
+        "proof": "For distinct P_i, the translate Q -> kappa(P_i+Q)-kappa(T) has its unique order-three pole at Q=-P_i. At that pole no other translate has a pole, so every finite linear relation has zero coefficient. The translates are linearly independent.",
+        "rank_lower_bound_above_online_cap": true,
+        "rank_lower_bound_above_setup_cap": true,
+        "scope": "This closes uniform finite separated-rank identities in the function field. It is not a lower bound for arbitrary small arithmetic circuits that generate high rank implicitly.",
+        "section": "f_T(P,Q)=kappa(P+Q)-kappa(T) over F_(p^2)(E)",
+        "uniform_two_block_section_rank_lower_exponent_B": {
+          "decimal": 2.4,
+          "exact": "12/5"
+        }
+      }
+    }
+  },
+  "disposition": "REJECT_REGULAR_PURE_PAIRWISE_TARGET_SECTION_AND_UNIFORM_SEPARATED_RANK_BELOW_B12O5_ONLY__PRESERVE_RATIONAL_THETA_CANCELLATION_NETWORK__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "finite_controls": {
+    "all_cylinders_exact": true,
+    "all_sample_ranks_full": true,
+    "all_side_images_injective": true,
+    "instance_count": 16,
+    "minimum_sample_dimension": 24,
+    "minimum_sample_rank": 24
+  },
+  "next_action": "Construct or refute one exact finite-field theta-addition cancellation network for the target section. Freeze the theta basis, rational poles, projective trivializations, additions, bond dimensions, and deck contraction order; allow high flattening rank only when generated implicitly inside both caps; require exact zero biconditional, the R108 weight 14400 marker lift, generic multiplicity/integer lifting, rank, logs, and identical descent.",
+  "non_claims": [
+    "No lower bound for arbitrary arithmetic circuits is proved.",
+    "Rational theta identities with pole cancellation remain open.",
+    "Actual-deck-specific high-rank implicit circuits remain open.",
+    "No generic-prime ECDLP algorithm is constructed.",
+    "No rank, factor-log, target-descent, or Shoup gate passes."
+  ],
+  "primary_sources": [
+    {
+      "url": "https://stacks.math.columbia.edu/tag/0BFE",
+      "use": "line-bundle scope of the theorem of the cube; no target-section pure tensor is asserted"
+    }
+  ],
+  "schema": "p1553.5a5c_poincare_theta_target_section_rank.r109.v1",
+  "shoup_bound_improvement": false,
+  "source_binding_hashes_verified": {
+    "p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_report_r105.json": "c00b8c3e934e783012acb1dab83282f98720702bb8cd81a706fbdf4671f93a83",
+    "p1553_5a5c_actual_divisor_image_entropy_merge_probe_gate_r101.md": "3e12e4ab70edba64076d27b68d39ab34307ca6d9ff08252432759673b74a9ac5",
+    "p1553_5a5c_actual_divisor_image_entropy_merge_probe_r101.py": "854df1da576b07cc3dd63b1249a42a72d56708ef8eb43c4ef37478f2558e747d",
+    "p1553_5a5c_actual_divisor_image_entropy_merge_probe_report_r101.json": "050d1093fc34611f502a3f7b3ebf6fc632b3aeb9d03718f922e99baa2fe985c9",
+    "p1553_5a5c_compact_preendpoint_s3_ffe_pushdown_probe_report_r104.json": "5dbf8a75dd8298c2c606e41a4c121c6191ef56b5e184199e8db48841880b1edf",
+    "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_gate_r108.md": "9d7bf5d8b5420d52950ce28a08b7d59a94307bf66752805967338727f3883ab7",
+    "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_parent_report_r108.yaml": "6705c882ec1b80538bd3a7e853f33c4f832afae5e35c2063a19a04794d928888",
+    "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_r108.py": "99fb8e79f3e22ae82b47d3282edbc17ad0616bc9d30511114d38c919d6ee3e19",
+    "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_report_r108.json": "91fab519c6a59851a672aed1a9e18fac8c434359c91a9e1d9fc0acb112ee7b41"
+  },
+  "source_bindings": {
+    "r101_gate": {
+      "path": "p1553_5a5c_actual_divisor_image_entropy_merge_probe_gate_r101.md",
+      "sha256": "3e12e4ab70edba64076d27b68d39ab34307ca6d9ff08252432759673b74a9ac5"
+    },
+    "r101_producer": {
+      "path": "p1553_5a5c_actual_divisor_image_entropy_merge_probe_r101.py",
+      "sha256": "854df1da576b07cc3dd63b1249a42a72d56708ef8eb43c4ef37478f2558e747d"
+    },
+    "r101_report": {
+      "path": "p1553_5a5c_actual_divisor_image_entropy_merge_probe_report_r101.json",
+      "sha256": "050d1093fc34611f502a3f7b3ebf6fc632b3aeb9d03718f922e99baa2fe985c9"
+    },
+    "r104_report": {
+      "path": "p1553_5a5c_compact_preendpoint_s3_ffe_pushdown_probe_report_r104.json",
+      "sha256": "5dbf8a75dd8298c2c606e41a4c121c6191ef56b5e184199e8db48841880b1edf"
+    },
+    "r105_report": {
+      "path": "p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_report_r105.json",
+      "sha256": "c00b8c3e934e783012acb1dab83282f98720702bb8cd81a706fbdf4671f93a83"
+    },
+    "r108_gate": {
+      "path": "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_gate_r108.md",
+      "sha256": "9d7bf5d8b5420d52950ce28a08b7d59a94307bf66752805967338727f3883ab7"
+    },
+    "r108_parent": {
+      "path": "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_parent_report_r108.yaml",
+      "sha256": "6705c882ec1b80538bd3a7e853f33c4f832afae5e35c2063a19a04794d928888"
+    },
+    "r108_producer": {
+      "path": "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_r108.py",
+      "sha256": "99fb8e79f3e22ae82b47d3282edbc17ad0616bc9d30511114d38c919d6ee3e19"
+    },
+    "r108_report": {
+      "path": "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_report_r108.json",
+      "sha256": "91fab519c6a59851a672aed1a9e18fac8c434359c91a9e1d9fc0acb112ee7b41"
+    }
+  },
+  "theorem": {
+    "pure_pairwise_zero_set": {
+      "bounded_sum_of_products_covered": false,
+      "candidate_form": "s_T(P1,...,P10)=product_i u_i(P_i) product_(i<j) b_ij(P_i,P_j)",
+      "projective_trivialization_covered": false,
+      "proof": "A zero of a regular finite-valued product makes one unary or pairwise factor zero, hence forces the whole cylinder obtained by varying the other coordinates to vanish. In a nontrivial prime-order group, changing one free coordinate changes the sum, so Z_T contains no unary or pairwise cylinder.",
+      "rational_pole_cancellation_covered": false,
+      "regular_finite_valued_pure_product_refuted": true,
+      "target_zero_fiber": "Z_T={(P1,...,P10):P1+...+P10=T}"
+    },
+    "translated_section_rank": {
+      "ffe_scalar_extension_changes_rank": false,
+      "generic_balanced_small_side_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "kappa": "x+w*y with a pole of order three at O",
+      "proof": "For distinct P_i, the translate Q -> kappa(P_i+Q)-kappa(T) has its unique order-three pole at Q=-P_i. At that pole no other translate has a pole, so every finite linear relation has zero coefficient. The translates are linearly independent.",
+      "rank_lower_bound_above_online_cap": true,
+      "rank_lower_bound_above_setup_cap": true,
+      "scope": "This closes uniform finite separated-rank identities in the function field. It is not a lower bound for arbitrary small arithmetic circuits that generate high rank implicitly.",
+      "section": "f_T(P,Q)=kappa(P+Q)-kappa(T) over F_(p^2)(E)",
+      "uniform_two_block_section_rank_lower_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    }
+  }
+}

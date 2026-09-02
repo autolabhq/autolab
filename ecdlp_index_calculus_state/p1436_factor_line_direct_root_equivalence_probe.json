@@ -1,0 +1,2717 @@
+{
+  "admission": {
+    "failed_obligations": [
+      "fresh_relation_forms_after_source_ledger_dedup",
+      "positive_fresh_rank_delta",
+      "source_precedes_selected_leaf_materialization",
+      "at_least_four_target_families"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 6,
+    "obligations": {
+      "at_least_four_target_families": {
+        "pass": false,
+        "target_count": 2
+      },
+      "extra_roots_pass_relation_verification": {
+        "accepted_relation_count": 20,
+        "pass": true
+      },
+      "fresh_relation_forms_after_source_ledger_dedup": {
+        "fresh_relation_form_count": 0,
+        "pass": false
+      },
+      "positive_fresh_rank_delta": {
+        "fresh_rank_delta": 0,
+        "pass": false
+      },
+      "public_direct_roots_preserve_selected_pairs": {
+        "pass": true,
+        "preserved_surface_count": 356,
+        "surface_count": 356
+      },
+      "source_precedes_selected_leaf_materialization": {
+        "pass": false,
+        "source_stage": "post_selected_public_row_leaf_materialization"
+      }
+    },
+    "passed_obligation_count": 2
+  },
+  "claim_boundary": {
+    "algorithm_breakthrough": false,
+    "direct_recovery_of_existing_rows_is_relation_discovery": false,
+    "generic_prime_field_speedup": false,
+    "shoup_bound_improvement": false
+  },
+  "classification": "FFE_FACTORS_ARE_PUBLIC_ROOT_LINES_WITH_PARTIAL_DIRECT_REPLAY",
+  "direct_public_leaf_recovery": {
+    "case_count": 356,
+    "exact_selected_pair_recovery_count": 341,
+    "exact_selected_pair_recovery_fraction": 0.95786517,
+    "exact_selected_pair_recovery_pass": false,
+    "failed_exact_selected_pair_recovery_count": 15,
+    "fully_charged_direct_quadratic_ops": 19068,
+    "fully_charged_direct_quadratic_ops_over_sum_rho": 0.41024096,
+    "marginal_direct_quadratic_ops_after_core": 2432,
+    "marginal_direct_quadratic_ops_over_sum_rho": 0.05232358,
+    "preserved_selected_pair_surface_count": 356,
+    "preserved_selected_pair_surface_fraction": 1.0,
+    "proposal_surface_count": 356,
+    "sum_generic_rho_steps": 46480,
+    "target_count": 2,
+    "target_summaries": {
+      "22050.cf1@11731": {
+        "exact_selected_pair_recovery_count": 158,
+        "fully_charged_direct_quadratic_ops": 8072,
+        "proposal_surface_count": 165,
+        "sum_generic_rho_steps": 22605
+      },
+      "67.a1@9803": {
+        "exact_selected_pair_recovery_count": 183,
+        "fully_charged_direct_quadratic_ops": 10996,
+        "proposal_surface_count": 191,
+        "sum_generic_rho_steps": 23875
+      }
+    }
+  },
+  "direct_recovery_failure_examples": [
+    {
+      "coefficient_points": [
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": [
+            6110,
+            6445
+          ]
+        }
+      ],
+      "core_ops": 44,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 5942,
+              "b": 2499,
+              "point": [
+                9043,
+                255
+              ],
+              "trial": 164,
+              "x": 6110
+            }
+          ],
+          "root": 6110
+        },
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 2,
+          "matching_hit_rows": [
+            {
+              "a": 5070,
+              "b": 4566,
+              "point": [
+                9378,
+                8703
+              ],
+              "trial": 101,
+              "x": 6445
+            },
+            {
+              "a": 1262,
+              "b": 6824,
+              "point": [
+                9378,
+                8703
+              ],
+              "trial": 119,
+              "x": 6445
+            }
+          ],
+          "root": 6445
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          90,
+          6110
+        ],
+        [
+          90,
+          6445
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 61,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 17,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 2,
+      "row_key": "22050.cf1@11731:uniform:256:salt174",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt174|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:826:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 826
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 9485,
+          "c": 5625,
+          "leaf_index": 79,
+          "recovered_roots": []
+        },
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": [
+            6110,
+            6445
+          ]
+        }
+      ],
+      "core_ops": 44,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 8666,
+              "b": 2473,
+              "point": [
+                9043,
+                255
+              ],
+              "trial": 488,
+              "x": 6110
+            }
+          ],
+          "root": 6110
+        },
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 6416,
+              "b": 9337,
+              "point": [
+                9378,
+                5381
+              ],
+              "trial": 112,
+              "x": 6445
+            }
+          ],
+          "root": 6445
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          90,
+          6110
+        ],
+        [
+          90,
+          6445
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 60,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 16,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 2,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 2,
+      "row_key": "22050.cf1@11731:uniform:256:salt171",
+      "selected_leaf_count": 2,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt171|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:853:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 853
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": [
+            6110,
+            6445
+          ]
+        }
+      ],
+      "core_ops": 44,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 1641,
+              "b": 5834,
+              "point": [
+                9043,
+                2433
+              ],
+              "trial": 200,
+              "x": 6110
+            }
+          ],
+          "root": 6110
+        },
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 8824,
+              "b": 8554,
+              "point": [
+                9378,
+                8703
+              ],
+              "trial": 231,
+              "x": 6445
+            }
+          ],
+          "root": 6445
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          90,
+          6110
+        ],
+        [
+          90,
+          6445
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 57,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 13,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 2,
+      "row_key": "22050.cf1@11731:uniform:256:salt166",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:854:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 854
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": [
+            6110,
+            6445
+          ]
+        }
+      ],
+      "core_ops": 44,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 183,
+              "b": 2015,
+              "point": [
+                9043,
+                255
+              ],
+              "trial": 130,
+              "x": 6110
+            }
+          ],
+          "root": 6110
+        },
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 2458,
+              "b": 7631,
+              "point": [
+                9378,
+                8703
+              ],
+              "trial": 311,
+              "x": 6445
+            }
+          ],
+          "root": 6445
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          90,
+          6110
+        ],
+        [
+          90,
+          6445
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 57,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 13,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 2,
+      "row_key": "22050.cf1@11731:uniform:256:salt173",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt173|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:856:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 856
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 9485,
+          "c": 5625,
+          "leaf_index": 79,
+          "recovered_roots": []
+        },
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": [
+            6110,
+            6445
+          ]
+        }
+      ],
+      "core_ops": 44,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 2747,
+              "b": 6648,
+              "point": [
+                9043,
+                255
+              ],
+              "trial": 370,
+              "x": 6110
+            }
+          ],
+          "root": 6110
+        },
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 8736,
+              "b": 2149,
+              "point": [
+                9378,
+                5381
+              ],
+              "trial": 263,
+              "x": 6445
+            }
+          ],
+          "root": 6445
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          90,
+          6110
+        ],
+        [
+          90,
+          6445
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 60,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 16,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 2,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 2,
+      "row_key": "22050.cf1@11731:uniform:256:salt169",
+      "selected_leaf_count": 2,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt169|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:859:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 859
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": [
+            6110,
+            6445
+          ]
+        }
+      ],
+      "core_ops": 44,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 293,
+              "b": 3494,
+              "point": [
+                9043,
+                2433
+              ],
+              "trial": 151,
+              "x": 6110
+            }
+          ],
+          "root": 6110
+        },
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 9073,
+              "b": 7803,
+              "point": [
+                9378,
+                5381
+              ],
+              "trial": 155,
+              "x": 6445
+            }
+          ],
+          "root": 6445
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          90,
+          6110
+        ],
+        [
+          90,
+          6445
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 57,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 13,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 2,
+      "row_key": "22050.cf1@11731:uniform:256:salt175",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt175|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:918:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 918
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": [
+            6110,
+            6445
+          ]
+        }
+      ],
+      "core_ops": 44,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 3008,
+              "b": 10172,
+              "point": [
+                9043,
+                255
+              ],
+              "trial": 84,
+              "x": 6110
+            }
+          ],
+          "root": 6110
+        },
+        {
+          "leaf_index": 90,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 3579,
+              "b": 8859,
+              "point": [
+                9378,
+                8703
+              ],
+              "trial": 365,
+              "x": 6445
+            }
+          ],
+          "root": 6445
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          90,
+          6110
+        ],
+        [
+          90,
+          6445
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 57,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 13,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 2,
+      "row_key": "22050.cf1@11731:uniform:256:salt170",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt170|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:919:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 919
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 861,
+          "c": 9226,
+          "leaf_index": 9,
+          "recovered_roots": [
+            1427,
+            7515
+          ]
+        }
+      ],
+      "core_ops": 52,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 9,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 9362,
+              "b": 3580,
+              "point": [
+                7962,
+                4967
+              ],
+              "trial": 498,
+              "x": 1427
+            }
+          ],
+          "root": 1427
+        },
+        {
+          "leaf_index": 9,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 2137,
+              "b": 5051,
+              "point": [
+                4247,
+                7706
+              ],
+              "trial": 419,
+              "x": 7515
+            }
+          ],
+          "root": 7515
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          9,
+          1427
+        ],
+        [
+          9,
+          7515
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 69,
+      "generic_rho_steps": 125,
+      "marginal_direct_quadratic_ops": 17,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 9803,
+      "recovered_pair_count": 2,
+      "row_key": "67.a1@9803:uniform:256:salt206",
+      "selected_leaf_count": 1,
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:821:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 821
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 55,
+          "c": 7531,
+          "leaf_index": 0,
+          "recovered_roots": [
+            4136,
+            5612
+          ]
+        },
+        {
+          "b": 1352,
+          "c": 358,
+          "leaf_index": 15,
+          "recovered_roots": []
+        }
+      ],
+      "core_ops": 52,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 0,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 2331,
+              "b": 9744,
+              "point": [
+                868,
+                8181
+              ],
+              "trial": 18,
+              "x": 4136
+            }
+          ],
+          "root": 4136
+        },
+        {
+          "leaf_index": 0,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 5362,
+              "b": 9521,
+              "point": [
+                2344,
+                7558
+              ],
+              "trial": 115,
+              "x": 5612
+            }
+          ],
+          "root": 5612
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          0,
+          4136
+        ],
+        [
+          0,
+          5612
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 76,
+      "generic_rho_steps": 125,
+      "marginal_direct_quadratic_ops": 24,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 2,
+      "original_selected_pair_count": 0,
+      "p": 9803,
+      "recovered_pair_count": 2,
+      "row_key": "67.a1@9803:uniform:256:salt204",
+      "selected_leaf_count": 2,
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:832:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 832
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 1352,
+          "c": 358,
+          "leaf_index": 16,
+          "recovered_roots": [
+            2793,
+            5658
+          ]
+        }
+      ],
+      "core_ops": 52,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 16,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 786,
+              "b": 9109,
+              "point": [
+                9328,
+                343
+              ],
+              "trial": 195,
+              "x": 2793
+            }
+          ],
+          "root": 2793
+        },
+        {
+          "leaf_index": 16,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 1685,
+              "b": 2242,
+              "point": [
+                2390,
+                6002
+              ],
+              "trial": 277,
+              "x": 5658
+            }
+          ],
+          "root": 5658
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          16,
+          2793
+        ],
+        [
+          16,
+          5658
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 73,
+      "generic_rho_steps": 125,
+      "marginal_direct_quadratic_ops": 21,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 9803,
+      "recovered_pair_count": 2,
+      "row_key": "67.a1@9803:uniform:256:salt208",
+      "selected_leaf_count": 1,
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt208|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:841:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 841
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 161,
+          "c": 6976,
+          "leaf_index": 2,
+          "recovered_roots": [
+            161,
+            9481
+          ]
+        },
+        {
+          "b": 542,
+          "c": 3911,
+          "leaf_index": 6,
+          "recovered_roots": []
+        }
+      ],
+      "core_ops": 52,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 2,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 6930,
+              "b": 3986,
+              "point": [
+                6696,
+                1166
+              ],
+              "trial": 244,
+              "x": 161
+            }
+          ],
+          "root": 161
+        },
+        {
+          "leaf_index": 2,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 2661,
+              "b": 8641,
+              "point": [
+                6213,
+                6263
+              ],
+              "trial": 424,
+              "x": 9481
+            }
+          ],
+          "root": 9481
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          2,
+          161
+        ],
+        [
+          2,
+          9481
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 76,
+      "generic_rho_steps": 125,
+      "marginal_direct_quadratic_ops": 24,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 2,
+      "original_selected_pair_count": 0,
+      "p": 9803,
+      "recovered_pair_count": 2,
+      "row_key": "67.a1@9803:uniform:256:salt202",
+      "selected_leaf_count": 2,
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:876:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 876
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 161,
+          "c": 6976,
+          "leaf_index": 2,
+          "recovered_roots": [
+            161,
+            9481
+          ]
+        },
+        {
+          "b": 542,
+          "c": 3911,
+          "leaf_index": 6,
+          "recovered_roots": []
+        },
+        {
+          "b": 861,
+          "c": 1638,
+          "leaf_index": 8,
+          "recovered_roots": []
+        }
+      ],
+      "core_ops": 52,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 2,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 3929,
+              "b": 1734,
+              "point": [
+                6696,
+                1166
+              ],
+              "trial": 209,
+              "x": 161
+            }
+          ],
+          "root": 161
+        },
+        {
+          "leaf_index": 2,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 4157,
+              "b": 5598,
+              "point": [
+                6213,
+                3539
+              ],
+              "trial": 163,
+              "x": 9481
+            }
+          ],
+          "root": 9481
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          2,
+          161
+        ],
+        [
+          2,
+          9481
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 79,
+      "generic_rho_steps": 125,
+      "marginal_direct_quadratic_ops": 27,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 3,
+      "original_selected_pair_count": 0,
+      "p": 9803,
+      "recovered_pair_count": 2,
+      "row_key": "67.a1@9803:uniform:256:salt206",
+      "selected_leaf_count": 3,
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:876:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 876
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 55,
+          "c": 7531,
+          "leaf_index": 0,
+          "recovered_roots": [
+            4136,
+            5612
+          ]
+        }
+      ],
+      "core_ops": 52,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 0,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 6826,
+              "b": 8592,
+              "point": [
+                868,
+                1621
+              ],
+              "trial": 183,
+              "x": 4136
+            }
+          ],
+          "root": 4136
+        },
+        {
+          "leaf_index": 0,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 62,
+              "b": 7467,
+              "point": [
+                2344,
+                7558
+              ],
+              "trial": 417,
+              "x": 5612
+            }
+          ],
+          "root": 5612
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          0,
+          4136
+        ],
+        [
+          0,
+          5612
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 73,
+      "generic_rho_steps": 125,
+      "marginal_direct_quadratic_ops": 21,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 9803,
+      "recovered_pair_count": 2,
+      "row_key": "67.a1@9803:uniform:256:salt202",
+      "selected_leaf_count": 1,
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:911:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 911
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 1545,
+          "c": 8489,
+          "leaf_index": 17,
+          "recovered_roots": [
+            1966,
+            6292
+          ]
+        }
+      ],
+      "core_ops": 52,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 17,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 8658,
+              "b": 6367,
+              "point": [
+                8501,
+                3430
+              ],
+              "trial": 93,
+              "x": 1966
+            }
+          ],
+          "root": 1966
+        },
+        {
+          "leaf_index": 17,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 4569,
+              "b": 3731,
+              "point": [
+                3024,
+                184
+              ],
+              "trial": 291,
+              "x": 6292
+            }
+          ],
+          "root": 6292
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          17,
+          1966
+        ],
+        [
+          17,
+          6292
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 69,
+      "generic_rho_steps": 125,
+      "marginal_direct_quadratic_ops": 17,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 9803,
+      "recovered_pair_count": 2,
+      "row_key": "67.a1@9803:uniform:256:salt207",
+      "selected_leaf_count": 1,
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:940:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 940
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 757,
+          "c": 1452,
+          "leaf_index": 7,
+          "recovered_roots": [
+            3639,
+            5407
+          ]
+        }
+      ],
+      "core_ops": 52,
+      "exact_selected_pair_recovery": false,
+      "extra_pair_details": [
+        {
+          "leaf_index": 7,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 6630,
+              "b": 9797,
+              "point": [
+                371,
+                1564
+              ],
+              "trial": 281,
+              "x": 3639
+            }
+          ],
+          "root": 3639
+        },
+        {
+          "leaf_index": 7,
+          "matching_hit_row_count": 1,
+          "matching_hit_rows": [
+            {
+              "a": 4669,
+              "b": 6735,
+              "point": [
+                2139,
+                6807
+              ],
+              "trial": 453,
+              "x": 5407
+            }
+          ],
+          "root": 5407
+        }
+      ],
+      "extra_selected_pairs": [
+        [
+          7,
+          3639
+        ],
+        [
+          7,
+          5407
+        ]
+      ],
+      "fully_charged_direct_quadratic_ops": 65,
+      "generic_rho_steps": 125,
+      "marginal_direct_quadratic_ops": 13,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 9803,
+      "recovered_pair_count": 2,
+      "row_key": "67.a1@9803:uniform:256:salt207",
+      "selected_leaf_count": 1,
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:944:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 944
+    }
+  ],
+  "extra_root_relation_verification": {
+    "accepted_relation_count": 20,
+    "accepted_relation_examples": [
+      {
+        "form": [
+          [
+            2499,
+            0,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          5837,
+          [
+            3,
+            3,
+            5,
+            5
+          ]
+        ],
+        "hit_row": {
+          "a": 5942,
+          "b": 2499,
+          "point": [
+            9043,
+            255
+          ],
+          "trial": 164,
+          "x": 6110
+        },
+        "leaf_index": 90,
+        "relation": {
+          "a": 5942,
+          "b": 2499,
+          "indices": [
+            3,
+            3,
+            5,
+            5
+          ]
+        },
+        "root": 6110,
+        "scout_pos": 20,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt174|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:826:22050.cf1@11731",
+        "target": "22050.cf1@11731"
+      },
+      {
+        "form": [
+          [
+            2473,
+            0,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          3113,
+          [
+            3,
+            3,
+            5,
+            5
+          ]
+        ],
+        "hit_row": {
+          "a": 8666,
+          "b": 2473,
+          "point": [
+            9043,
+            255
+          ],
+          "trial": 488,
+          "x": 6110
+        },
+        "leaf_index": 90,
+        "relation": {
+          "a": 8666,
+          "b": 2473,
+          "indices": [
+            3,
+            3,
+            5,
+            5
+          ]
+        },
+        "root": 6110,
+        "scout_pos": 20,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt171|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:853:22050.cf1@11731",
+        "target": "22050.cf1@11731"
+      },
+      {
+        "form": [
+          [
+            5834,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          10138,
+          [
+            2,
+            2,
+            4,
+            4
+          ]
+        ],
+        "hit_row": {
+          "a": 1641,
+          "b": 5834,
+          "point": [
+            9043,
+            2433
+          ],
+          "trial": 200,
+          "x": 6110
+        },
+        "leaf_index": 90,
+        "relation": {
+          "a": 1641,
+          "b": 5834,
+          "indices": [
+            2,
+            2,
+            4,
+            4
+          ]
+        },
+        "root": 6110,
+        "scout_pos": 21,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:854:22050.cf1@11731",
+        "target": "22050.cf1@11731"
+      },
+      {
+        "form": [
+          [
+            2015,
+            0,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          11596,
+          [
+            3,
+            3,
+            5,
+            5
+          ]
+        ],
+        "hit_row": {
+          "a": 183,
+          "b": 2015,
+          "point": [
+            9043,
+            255
+          ],
+          "trial": 130,
+          "x": 6110
+        },
+        "leaf_index": 90,
+        "relation": {
+          "a": 183,
+          "b": 2015,
+          "indices": [
+            3,
+            3,
+            5,
+            5
+          ]
+        },
+        "root": 6110,
+        "scout_pos": 20,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt173|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:856:22050.cf1@11731",
+        "target": "22050.cf1@11731"
+      },
+      {
+        "form": [
+          [
+            6648,
+            0,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          9032,
+          [
+            3,
+            3,
+            5,
+            5
+          ]
+        ],
+        "hit_row": {
+          "a": 2747,
+          "b": 6648,
+          "point": [
+            9043,
+            255
+          ],
+          "trial": 370,
+          "x": 6110
+        },
+        "leaf_index": 90,
+        "relation": {
+          "a": 2747,
+          "b": 6648,
+          "indices": [
+            3,
+            3,
+            5,
+            5
+          ]
+        },
+        "root": 6110,
+        "scout_pos": 20,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt169|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:859:22050.cf1@11731",
+        "target": "22050.cf1@11731"
+      },
+      {
+        "form": [
+          [
+            3494,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          11486,
+          [
+            2,
+            2,
+            4,
+            4
+          ]
+        ],
+        "hit_row": {
+          "a": 293,
+          "b": 3494,
+          "point": [
+            9043,
+            2433
+          ],
+          "trial": 151,
+          "x": 6110
+        },
+        "leaf_index": 90,
+        "relation": {
+          "a": 293,
+          "b": 3494,
+          "indices": [
+            2,
+            2,
+            4,
+            4
+          ]
+        },
+        "root": 6110,
+        "scout_pos": 21,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt175|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:918:22050.cf1@11731",
+        "target": "22050.cf1@11731"
+      },
+      {
+        "form": [
+          [
+            10172,
+            0,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          8771,
+          [
+            3,
+            3,
+            5,
+            5
+          ]
+        ],
+        "hit_row": {
+          "a": 3008,
+          "b": 10172,
+          "point": [
+            9043,
+            255
+          ],
+          "trial": 84,
+          "x": 6110
+        },
+        "leaf_index": 90,
+        "relation": {
+          "a": 3008,
+          "b": 10172,
+          "indices": [
+            3,
+            3,
+            5,
+            5
+          ]
+        },
+        "root": 6110,
+        "scout_pos": 20,
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt170|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:919:22050.cf1@11731",
+        "target": "22050.cf1@11731"
+      },
+      {
+        "form": [
+          [
+            5051,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            9885,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0,
+            0
+          ],
+          7750,
+          [
+            1,
+            6,
+            6,
+            13
+          ]
+        ],
+        "hit_row": {
+          "a": 2137,
+          "b": 5051,
+          "point": [
+            4247,
+            7706
+          ],
+          "trial": 419,
+          "x": 7515
+        },
+        "leaf_index": 9,
+        "relation": {
+          "a": 2137,
+          "b": 5051,
+          "indices": [
+            1,
+            6,
+            6,
+            13
+          ]
+        },
+        "root": 7515,
+        "scout_pos": 16,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:821:67.a1@9803",
+        "target": "67.a1@9803"
+      },
+      {
+        "form": [
+          [
+            9521,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0,
+            0,
+            9885,
+            0
+          ],
+          4525,
+          [
+            1,
+            11,
+            14,
+            14
+          ]
+        ],
+        "hit_row": {
+          "a": 5362,
+          "b": 9521,
+          "point": [
+            2344,
+            7558
+          ],
+          "trial": 115,
+          "x": 5612
+        },
+        "leaf_index": 0,
+        "relation": {
+          "a": 5362,
+          "b": 9521,
+          "indices": [
+            1,
+            11,
+            14,
+            14
+          ]
+        },
+        "root": 5612,
+        "scout_pos": 11,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:832:67.a1@9803",
+        "target": "67.a1@9803"
+      },
+      {
+        "form": [
+          [
+            9109,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9885,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0
+          ],
+          9101,
+          [
+            1,
+            8,
+            8,
+            14
+          ]
+        ],
+        "hit_row": {
+          "a": 786,
+          "b": 9109,
+          "point": [
+            9328,
+            343
+          ],
+          "trial": 195,
+          "x": 2793
+        },
+        "leaf_index": 16,
+        "relation": {
+          "a": 786,
+          "b": 9109,
+          "indices": [
+            1,
+            8,
+            8,
+            14
+          ]
+        },
+        "root": 2793,
+        "scout_pos": 9,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt208|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:841:67.a1@9803",
+        "target": "67.a1@9803"
+      },
+      {
+        "form": [
+          [
+            2242,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9885,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0
+          ],
+          8202,
+          [
+            1,
+            9,
+            9,
+            14
+          ]
+        ],
+        "hit_row": {
+          "a": 1685,
+          "b": 2242,
+          "point": [
+            2390,
+            6002
+          ],
+          "trial": 277,
+          "x": 5658
+        },
+        "leaf_index": 16,
+        "relation": {
+          "a": 1685,
+          "b": 2242,
+          "indices": [
+            1,
+            9,
+            9,
+            14
+          ]
+        },
+        "root": 5658,
+        "scout_pos": 167,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt208|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:841:67.a1@9803",
+        "target": "67.a1@9803"
+      },
+      {
+        "form": [
+          [
+            3986,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0,
+            0,
+            9885,
+            0,
+            0,
+            0
+          ],
+          2957,
+          [
+            1,
+            9,
+            12,
+            12
+          ]
+        ],
+        "hit_row": {
+          "a": 6930,
+          "b": 3986,
+          "point": [
+            6696,
+            1166
+          ],
+          "trial": 244,
+          "x": 161
+        },
+        "leaf_index": 2,
+        "relation": {
+          "a": 6930,
+          "b": 3986,
+          "indices": [
+            1,
+            9,
+            12,
+            12
+          ]
+        },
+        "root": 161,
+        "scout_pos": 20,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:876:67.a1@9803",
+        "target": "67.a1@9803"
+      },
+      {
+        "form": [
+          [
+            1734,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0,
+            0,
+            9885,
+            0,
+            0,
+            0
+          ],
+          5958,
+          [
+            1,
+            9,
+            12,
+            12
+          ]
+        ],
+        "hit_row": {
+          "a": 3929,
+          "b": 1734,
+          "point": [
+            6696,
+            1166
+          ],
+          "trial": 209,
+          "x": 161
+        },
+        "leaf_index": 2,
+        "relation": {
+          "a": 3929,
+          "b": 1734,
+          "indices": [
+            1,
+            9,
+            12,
+            12
+          ]
+        },
+        "root": 161,
+        "scout_pos": 20,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:876:67.a1@9803",
+        "target": "67.a1@9803"
+      },
+      {
+        "form": [
+          [
+            5598,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            9885,
+            0,
+            0
+          ],
+          5730,
+          [
+            1,
+            9,
+            13,
+            13
+          ]
+        ],
+        "hit_row": {
+          "a": 4157,
+          "b": 5598,
+          "point": [
+            6213,
+            3539
+          ],
+          "trial": 163,
+          "x": 9481
+        },
+        "leaf_index": 2,
+        "relation": {
+          "a": 4157,
+          "b": 5598,
+          "indices": [
+            1,
+            9,
+            13,
+            13
+          ]
+        },
+        "root": 9481,
+        "scout_pos": 100,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:876:67.a1@9803",
+        "target": "67.a1@9803"
+      },
+      {
+        "form": [
+          [
+            8592,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            9885
+          ],
+          3061,
+          [
+            1,
+            11,
+            15,
+            15
+          ]
+        ],
+        "hit_row": {
+          "a": 6826,
+          "b": 8592,
+          "point": [
+            868,
+            1621
+          ],
+          "trial": 183,
+          "x": 4136
+        },
+        "leaf_index": 0,
+        "relation": {
+          "a": 6826,
+          "b": 8592,
+          "indices": [
+            1,
+            11,
+            15,
+            15
+          ]
+        },
+        "root": 4136,
+        "scout_pos": 166,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:911:67.a1@9803",
+        "target": "67.a1@9803"
+      },
+      {
+        "form": [
+          [
+            7467,
+            0,
+            9886,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            9886,
+            0,
+            0,
+            9885,
+            0
+          ],
+          9825,
+          [
+            1,
+            11,
+            14,
+            14
+          ]
+        ],
+        "hit_row": {
+          "a": 62,
+          "b": 7467,
+          "point": [
+            2344,
+            7558
+          ],
+          "trial": 417,
+          "x": 5612
+        },
+        "leaf_index": 0,
+        "relation": {
+          "a": 62,
+          "b": 7467,
+          "indices": [
+            1,
+            11,
+            14,
+            14
+          ]
+        },
+        "root": 5612,
+        "scout_pos": 44,
+        "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:911:67.a1@9803",
+        "target": "67.a1@9803"
+      }
+    ],
+    "all_extra_x_matches_rejected": false,
+    "candidate_relation_rank_sum_across_targets": 12,
+    "candidate_verification_attempt_count": 86,
+    "equal_point_candidate_count": 30,
+    "interpretation": "A shared x-coordinate is only a relation candidate. The elliptic-curve point equality and verifier relation checks are decisive.",
+    "target_summaries": {
+      "22050.cf1@11731": {
+        "accepted_relation_count": 7,
+        "candidate_relation_rank": 3,
+        "derived_secret": null,
+        "derives_secret": false
+      },
+      "67.a1@9803": {
+        "accepted_relation_count": 13,
+        "candidate_relation_rank": 9,
+        "derived_secret": null,
+        "derives_secret": false
+      }
+    }
+  },
+  "factor_identity_examples": [
+    {
+      "all_factors_are_c_plus_r_b_plus_r2": true,
+      "all_translated_constant_zero_counts_match": true,
+      "candidate_count_with_index": 18,
+      "distinct_encoded_root_count": 18,
+      "encoded_roots_recovered_from_selected_leaves": 18,
+      "factor_count": 18,
+      "line_root_identity_count": 18,
+      "monic_sage_selected_leaf_count": 1,
+      "sage_selected_leaf_count": 1,
+      "selected_leaf_sets_match_current_materialization": true,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt161|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:974:22050.cf1@11731",
+      "translated_constant_zero_count_match_count": 18
+    },
+    {
+      "all_factors_are_c_plus_r_b_plus_r2": true,
+      "all_translated_constant_zero_counts_match": true,
+      "candidate_count_with_index": 18,
+      "distinct_encoded_root_count": 18,
+      "encoded_roots_recovered_from_selected_leaves": 18,
+      "factor_count": 18,
+      "line_root_identity_count": 18,
+      "monic_sage_selected_leaf_count": 1,
+      "sage_selected_leaf_count": 1,
+      "selected_leaf_sets_match_current_materialization": true,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt162|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:856:22050.cf1@11731",
+      "translated_constant_zero_count_match_count": 18
+    },
+    {
+      "all_factors_are_c_plus_r_b_plus_r2": true,
+      "all_translated_constant_zero_counts_match": true,
+      "candidate_count_with_index": 17,
+      "distinct_encoded_root_count": 17,
+      "encoded_roots_recovered_from_selected_leaves": 17,
+      "factor_count": 17,
+      "line_root_identity_count": 17,
+      "monic_sage_selected_leaf_count": 1,
+      "sage_selected_leaf_count": 1,
+      "selected_leaf_sets_match_current_materialization": false,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt163|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:871:22050.cf1@11731",
+      "translated_constant_zero_count_match_count": 17
+    },
+    {
+      "all_factors_are_c_plus_r_b_plus_r2": true,
+      "all_translated_constant_zero_counts_match": true,
+      "candidate_count_with_index": 16,
+      "distinct_encoded_root_count": 16,
+      "encoded_roots_recovered_from_selected_leaves": 16,
+      "factor_count": 16,
+      "line_root_identity_count": 16,
+      "monic_sage_selected_leaf_count": 1,
+      "sage_selected_leaf_count": 1,
+      "selected_leaf_sets_match_current_materialization": true,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt163|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:898:22050.cf1@11731",
+      "translated_constant_zero_count_match_count": 16
+    },
+    {
+      "all_factors_are_c_plus_r_b_plus_r2": true,
+      "all_translated_constant_zero_counts_match": true,
+      "candidate_count_with_index": 23,
+      "distinct_encoded_root_count": 23,
+      "encoded_roots_recovered_from_selected_leaves": 23,
+      "factor_count": 23,
+      "line_root_identity_count": 23,
+      "monic_sage_selected_leaf_count": 1,
+      "sage_selected_leaf_count": 1,
+      "selected_leaf_sets_match_current_materialization": false,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt163|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:917:22050.cf1@11731",
+      "translated_constant_zero_count_match_count": 23
+    },
+    {
+      "all_factors_are_c_plus_r_b_plus_r2": true,
+      "all_translated_constant_zero_counts_match": true,
+      "candidate_count_with_index": 23,
+      "distinct_encoded_root_count": 23,
+      "encoded_roots_recovered_from_selected_leaves": 23,
+      "factor_count": 23,
+      "line_root_identity_count": 23,
+      "monic_sage_selected_leaf_count": 1,
+      "sage_selected_leaf_count": 1,
+      "selected_leaf_sets_match_current_materialization": false,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt164|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:828:22050.cf1@11731",
+      "translated_constant_zero_count_match_count": 23
+    },
+    {
+      "all_factors_are_c_plus_r_b_plus_r2": true,
+      "all_translated_constant_zero_counts_match": true,
+      "candidate_count_with_index": 13,
+      "distinct_encoded_root_count": 13,
+      "encoded_roots_recovered_from_selected_leaves": 13,
+      "factor_count": 13,
+      "line_root_identity_count": 13,
+      "monic_sage_selected_leaf_count": 3,
+      "sage_selected_leaf_count": 3,
+      "selected_leaf_sets_match_current_materialization": false,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt164|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:829:22050.cf1@11731",
+      "translated_constant_zero_count_match_count": 13
+    },
+    {
+      "all_factors_are_c_plus_r_b_plus_r2": true,
+      "all_translated_constant_zero_counts_match": true,
+      "candidate_count_with_index": 19,
+      "distinct_encoded_root_count": 19,
+      "encoded_roots_recovered_from_selected_leaves": 19,
+      "factor_count": 19,
+      "line_root_identity_count": 19,
+      "monic_sage_selected_leaf_count": 1,
+      "sage_selected_leaf_count": 1,
+      "selected_leaf_sets_match_current_materialization": false,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt164|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:862:22050.cf1@11731",
+      "translated_constant_zero_count_match_count": 19
+    }
+  ],
+  "factor_identity_failure_examples": [],
+  "factor_line_identity": {
+    "all_line_identity_pass": true,
+    "all_line_identity_surface_count": 103,
+    "factor_candidate_count": 2097,
+    "identity": "factor(b,c) = c + r*b + r^2",
+    "missing_window_count": 1,
+    "retained_window_count": 17,
+    "surface_count": 103,
+    "translated_constant_zero_count_match_count": 2097,
+    "translated_constant_zero_equivalence_pass": true,
+    "zero_equivalence": "factor(b,c)=0 iff r is a root of x^2+b*x+c"
+  },
+  "fatal_obstruction": "All retained FFE factors are public root-line encodings. Direct monic quadratic solving exactly replays 341 of 356 selected pair sets. The verified extra forms add no rank beyond the complete source ledger.",
+  "fresh_relation_rank_audit": {
+    "baseline_relation_form_count": 114,
+    "candidate_relation_form_count": 20,
+    "fresh_candidate_relation_form_count": 0,
+    "fresh_rank_delta_sum_across_targets": 0,
+    "rank_after_sum_across_targets": 21,
+    "rank_before_sum_across_targets": 21,
+    "target_summaries": {
+      "22050.cf1@11731": {
+        "baseline_relation_form_count": 52,
+        "candidate_relation_form_count": 7,
+        "fresh_candidate_form_examples": [],
+        "fresh_candidate_relation_form_count": 0,
+        "fresh_rank_delta": 0,
+        "rank_after": 5,
+        "rank_before": 5
+      },
+      "67.a1@9803": {
+        "baseline_relation_form_count": 62,
+        "candidate_relation_form_count": 13,
+        "fresh_candidate_form_examples": [],
+        "fresh_candidate_relation_form_count": 0,
+        "fresh_rank_delta": 0,
+        "rank_after": 16,
+        "rank_before": 16
+      }
+    }
+  },
+  "generated_at": "2026-07-29T06:22:21.925797+00:00",
+  "information_accounting": {
+    "candidate_extra_root_pair_count": 30,
+    "factorization_adds_information": false,
+    "fresh_rank_delta": 0,
+    "freshness_status": "CLOSED_NO_RANK_DELTA_AGAINST_FULL_SOURCE_LEDGER",
+    "new_independent_fixed_sum_row_count": 0,
+    "r68_information_conservation_pass": true,
+    "reason": "The factor lines add no information beyond public leaf roots. Most roots replay selected pairs. Extra polynomial roots receive rank credit only after elliptic-curve point equality, relation verification, source-ledger deduplication, and modular rank.",
+    "unique_candidate_extra_root_pair_count": 30,
+    "verifier_accepted_extra_relation_count": 20
+  },
+  "next_action": "Close this factor-selector branch and move the generator upstream of selected leaves: preregister a scalar-blind source of previously unseen fixed-sum row candidates, then require positive fresh rank and complete cost below direct pair-complement enumeration on four target families.",
+  "schema": "ecdlp.p1436_factor_line_direct_root_equivalence_probe.v1",
+  "source_bindings": {
+    "backfill": {
+      "path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/public_factor_presurface_backfill_audit_low_total2_816_975_probe.json",
+      "schema": "ecdlp_low_term_total2_ffe_public_factor_presurface_backfill_audit_probe_v1",
+      "sha256": "7bb68a3c6cec0c1bde67d5112c0f12c2ff45d0cf99cac36901ae101d02fb6a66"
+    },
+    "generator": {
+      "path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/public_factor_presurface_generator_audit_low_total2_816_975_probe.json",
+      "schema": "ecdlp_low_term_total2_ffe_public_factor_presurface_generator_audit_probe_v1",
+      "sha256": "b88899e3ba0ed6837a0267a347212ecf8f64c50b879ef99b8ba9456f367db0be"
+    },
+    "r68": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_ffe_fixed_sum_information_conservation_report_r68.json",
+      "schema": "p1553.ffe_fixed_sum_information_conservation.r68.v1",
+      "sha256": "5c064a36630c052093ebb7bd3b4429d37f836982ba097eacbad2f2ebe1bb6b51"
+    },
+    "stage_guard": {
+      "path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/public_factor_stage_guard_charge_audit_low_total2_816_975_probe.json",
+      "schema": "ecdlp_low_term_total2_ffe_public_factor_stage_guard_charge_audit_probe_v1",
+      "sha256": "2bcbd7e50af4c7e7a6792cd4a099e1c1776d66684de6d650f30e003617ad83c4"
+    }
+  },
+  "surface_examples": [
+    {
+      "coefficient_points": [
+        {
+          "b": 9485,
+          "c": 5625,
+          "leaf_index": 79,
+          "recovered_roots": []
+        }
+      ],
+      "core_ops": 42,
+      "exact_selected_pair_recovery": true,
+      "extra_pair_details": [],
+      "extra_selected_pairs": [],
+      "fully_charged_direct_quadratic_ops": 45,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 3,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 0,
+      "row_key": "22050.cf1@11731:uniform:256:salt168",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt168|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:816:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 816
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 9485,
+          "c": 5625,
+          "leaf_index": 79,
+          "recovered_roots": [
+            270
+          ]
+        }
+      ],
+      "core_ops": 43,
+      "exact_selected_pair_recovery": true,
+      "extra_pair_details": [],
+      "extra_selected_pairs": [],
+      "fully_charged_direct_quadratic_ops": 51,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 8,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 1,
+      "p": 11731,
+      "recovered_pair_count": 1,
+      "row_key": "22050.cf1@11731:uniform:256:salt173",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt173|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:816:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 816
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 9485,
+          "c": 5625,
+          "leaf_index": 79,
+          "recovered_roots": []
+        }
+      ],
+      "core_ops": 42,
+      "exact_selected_pair_recovery": true,
+      "extra_pair_details": [],
+      "extra_selected_pairs": [],
+      "fully_charged_direct_quadratic_ops": 45,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 3,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 0,
+      "row_key": "22050.cf1@11731:uniform:256:salt165",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt165|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:818:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 818
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 9485,
+          "c": 5625,
+          "leaf_index": 79,
+          "recovered_roots": []
+        }
+      ],
+      "core_ops": 42,
+      "exact_selected_pair_recovery": true,
+      "extra_pair_details": [],
+      "extra_selected_pairs": [],
+      "fully_charged_direct_quadratic_ops": 45,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 3,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 0,
+      "row_key": "22050.cf1@11731:uniform:256:salt172",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt172|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:818:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 818
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 9485,
+          "c": 5625,
+          "leaf_index": 79,
+          "recovered_roots": [
+            1976
+          ]
+        }
+      ],
+      "core_ops": 43,
+      "exact_selected_pair_recovery": true,
+      "extra_pair_details": [],
+      "extra_selected_pairs": [],
+      "fully_charged_direct_quadratic_ops": 51,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 8,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 1,
+      "p": 11731,
+      "recovered_pair_count": 1,
+      "row_key": "22050.cf1@11731:uniform:256:salt174",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt174|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:818:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 818
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": [
+            6110
+          ]
+        }
+      ],
+      "core_ops": 43,
+      "exact_selected_pair_recovery": true,
+      "extra_pair_details": [],
+      "extra_selected_pairs": [],
+      "fully_charged_direct_quadratic_ops": 51,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 8,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 1,
+      "p": 11731,
+      "recovered_pair_count": 1,
+      "row_key": "22050.cf1@11731:uniform:256:salt167",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt167|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:819:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 819
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": []
+        }
+      ],
+      "core_ops": 42,
+      "exact_selected_pair_recovery": true,
+      "extra_pair_details": [],
+      "extra_selected_pairs": [],
+      "fully_charged_direct_quadratic_ops": 45,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 3,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 0,
+      "row_key": "22050.cf1@11731:uniform:256:salt173",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt173|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:819:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 819
+    },
+    {
+      "coefficient_points": [
+        {
+          "b": 10907,
+          "c": 9714,
+          "leaf_index": 90,
+          "recovered_roots": []
+        }
+      ],
+      "core_ops": 42,
+      "exact_selected_pair_recovery": true,
+      "extra_pair_details": [],
+      "extra_selected_pairs": [],
+      "fully_charged_direct_quadratic_ops": 45,
+      "generic_rho_steps": 137,
+      "marginal_direct_quadratic_ops": 3,
+      "missing_selected_pairs": [],
+      "monic_selected_leaf_count": 1,
+      "original_selected_pair_count": 0,
+      "p": 11731,
+      "recovered_pair_count": 0,
+      "row_key": "22050.cf1@11731:uniform:256:salt166",
+      "selected_leaf_count": 1,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:820:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "transfer_index": 820
+    }
+  ],
+  "window_bindings": [
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_816_823_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "1bb29e8129e01697867f2b035545f0e73b2384846e29ee0904819303ff2ad1c4",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_816_823_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "5f1582f1321d1164000a1e9deca7ea4eb358254ba2d85a5024bfb56780646feb",
+      "window": "fresh_816_823_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_824_831_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "e28f62e464475df9612c6df3913b76ad587a025d5cb8f1d5ea5a827c2f81558c",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_824_831_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "a2087ed0896828721964faca0ae0d034b85a6468da2a6a5286e73308f1770476",
+      "window": "fresh_824_831_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_832_839_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "a1e32cb989ecfe0a445277ccde740839b253873e97c5a1f2ba27055f7f9b75df",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_832_839_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "94f4b305d665eabe0a0632cb57455e32f853a44ec5e43075f72cd407f7ef3fbd",
+      "window": "fresh_832_839_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_840_847_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "6b31314cfe99b2849bd40d308f6247797c39ef85a94ab24d62156e5165e4a10c",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_840_847_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "f07ef66f65bb6aa6a9409ee01353ad6ae3fc7c583791b568c11b9b2a9d82640b",
+      "window": "fresh_840_847_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_848_855_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "2e84fe0049107078f058a8b0637e005c80b4513d7864befa54cf43e9fa4b78fd",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_848_855_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "6be331b12c6021801cced0f3656a57b3968b3cf6a52855ca134c8fdd11445556",
+      "window": "fresh_848_855_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_856_863_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "b6e03bc162e3f2949c82723557dcb468fb60ef9cb94aef9585fd631ea953bbdf",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_856_863_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "230215d4cdcc73e9ad22170bbbd447ca1e714683089982161d639aa91c2fcc13",
+      "window": "fresh_856_863_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_864_879_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "a3f8722e4cf079bbafe93a53f7176a0d18c486609df750f22a455aa2e7d3fd0f",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_864_879_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "83eca8290a1f6d3540c67339678a4b979c2a98d2954e2916d27756e1b8f86d3b",
+      "window": "fresh_864_879_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_880_895_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "6083f926c0e50e2ade5bf3a9018247d08dce9e1eb5451c3a5d22d69319c3b3b3",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_880_895_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "fb8c3efd2a93232801095a494c11c2426537efd4883f41fb8f10306f9801bf94",
+      "window": "fresh_880_895_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_896_903_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "7ee69ebbcca3f4d63be0919fa10c73fd468b91399b226be4bdcea96ae93d2dfa",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_896_903_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "dcaef1435168e4ddc09515b771a1d0e5b78f017eae5935b9b854af68aecdaffd",
+      "window": "fresh_896_903_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_904_911_expanded_probe.json",
+      "quadratic_root_present": false,
+      "sage_factor_path": null,
+      "sage_factor_present": false,
+      "window": "fresh_904_911_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_912_919_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "9dee2cdf7feb6ee2ab4516ee0b83987539bb3b5404f7687bd53c89a89583ba61",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_912_919_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "c06674340bcab017f397ab2c8c1f817faa03584c0d362932e8e1db05016c1dca",
+      "window": "fresh_912_919_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_920_927_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "e7c4eff3642828d38669d2a0f830b54b2ed47fbf74bcc80cf75260e730a97a6d",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_920_927_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "d8a439384b6a11e1f9148a085644fb30d2fcf95fab3016d30b0f9601d8d10b72",
+      "window": "fresh_920_927_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_928_935_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "402fe27fb8c4e16b25d814c53e82655757945cf82fd6516bac27ea9d3afe1f2b",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_928_935_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "b70c583e441a58158fc31a49f482e826362977678e38889e5140f2fa18c6ea61",
+      "window": "fresh_928_935_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_936_943_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "c74d52ecbb9d84a827e04e56701d9c8e58955333554a7027d9f159b3b97c7b22",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_936_943_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "10eaa0772a27f42ec317a33558f46878b203b3b0e974203e5d4baa6f047e94bf",
+      "window": "fresh_936_943_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_944_951_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "2f74ba3790c7e099ec4d88106380537631524cd7f25461d441d3644056812dba",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_944_951_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "5308496cc27781d796cc230b6eefd94c142542a0173ddbcf897d8fa4d0327336",
+      "window": "fresh_944_951_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_952_959_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "3d6b5faf4acfab3ed1dd979e37ca69f9735e8077dd55539e9f3cc912bdf261e8",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_952_959_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "bad9b02f5d6bf50c2d8c627a3aab86457dd2b6756b842c7fe0e8e02d1a78be53",
+      "window": "fresh_952_959_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_960_967_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "6541dde1653bf552ef8a24eed261ceec027ee0fbdce4c4143b36f3767f392271",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_960_967_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "ee97bec071adc6a8ebb27b96bd3e0fa76881738e8da5534c297363b8f3e619b4",
+      "window": "fresh_960_967_expanded"
+    },
+    {
+      "quadratic_root_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_public_factor_quadratic_root_fresh_968_975_expanded_probe.json",
+      "quadratic_root_present": true,
+      "quadratic_root_sha256": "9f7604568c4e3c1fb7b2c24634591efab3ecd9fb644cd47458e913c45a45cc29",
+      "sage_factor_path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sage_factor_fresh_968_975_expanded_probe.json",
+      "sage_factor_present": true,
+      "sage_factor_sha256": "385f1ead482f8dd19138e174869eec9b48a80e46d36f7ec7dea0dab1de540ad0",
+      "window": "fresh_968_975_expanded"
+    }
+  ]
+}

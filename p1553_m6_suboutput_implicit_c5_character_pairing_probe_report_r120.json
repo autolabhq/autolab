@@ -1,0 +1,152 @@
+{
+  "admission": {
+    "failures": [
+      "inside_cap_multiplicative_c5_membership_circuit_complete",
+      "inside_cap_multiplicative_c5_source_recovery_complete",
+      "known_rhs_relation_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 19,
+    "obligations": {
+      "all_eight_r82_pairing_controls_complete": true,
+      "all_r82_c5_product_identities_exact": true,
+      "all_r82_embedding_degrees_two_and_pairings_nontrivial": true,
+      "all_r82_sources_and_empty_images_replay": true,
+      "base_field_algebraic_character_triviality_theorem_complete": true,
+      "breakthrough_complete": false,
+      "embedding_degree_and_extension_cost_charged": true,
+      "factor_logs_complete": false,
+      "four_maximal_embedding_degree_curve_controls_complete": true,
+      "identical_target_descent_complete": false,
+      "independent_torsion_pairing_character_theorem_complete": true,
+      "inside_cap_multiplicative_c5_membership_circuit_complete": false,
+      "inside_cap_multiplicative_c5_source_recovery_complete": false,
+      "known_rhs_relation_rank_complete": false,
+      "r119_implicit_circuit_interface_inherited": true,
+      "self_weil_pairing_triviality_theorem_complete": true,
+      "semantic_dedup_and_small_k_residual_scope_complete": true,
+      "shoup_improvement_complete": false,
+      "thirteen_source_bindings_verified": true
+    },
+    "pairing_character_control_admitted": true,
+    "passed_obligation_count": 12,
+    "scoped_negative_admitted": true
+  },
+  "artifacts": {
+    "cost": "m6_c5_implicit_circuit_cost_ledger.json",
+    "exceptional_controls": "m6_c5_implicit_circuit_exceptional_controls.json",
+    "frozen": "frozen_m6_suboutput_implicit_c5_membership_circuit.json",
+    "logs_descent": "factor_logs_and_identical_descent_r120.json",
+    "source_replay": "m6_c5_implicit_circuit_source_replay.json"
+  },
+  "breakthrough": false,
+  "character_theorems": {
+    "base_field_algebraic_group_character": {
+      "nonconstant_base_field_algebraic_character_exists": false,
+      "proof": "A morphism E -> G_m is a nowhere-zero global regular function on the proper geometrically connected curve E, hence is constant; a group morphism is therefore the identity constant.",
+      "statement": "Every algebraic-group morphism E -> G_m is trivial."
+    },
+    "embedding_degree": {
+      "coordinate_representation_base_field_words_at_least": "k",
+      "definition": "k=ord_q(p), the least k with q dividing p^k-1",
+      "independent_torsion_field": "may require F_(p^k) or a further extension; k remains a lower-bound extension degree for pairing values",
+      "one_extension_field_operation_base_field_cost_at_least": "Omega(k)",
+      "qth_root_of_unity_field": "mu_q is contained in F_(p^k)",
+      "uniform_subpolynomial_embedding_degree_assumed": false
+    },
+    "independent_torsion_pairing_character": {
+      "five_sum_equivalence": "X1+...+X5=T iff chi_R(X1)*...*chi_R(X5)=chi_R(T)",
+      "requires_independent_q_torsion_or_equivalent_pairing_input": true,
+      "source_backpointer_preserved": true,
+      "statement": "If R in E[q] satisfies e_q(P,R)!=1, then chi_R(X)=e_q(X,R) is an injective homomorphism G -> mu_q."
+    },
+    "self_weil_pairing": {
+      "nontrivial_character_from_two_inputs_in_G": false,
+      "proof": "The Weil pairing is bilinear and alternating.",
+      "statement": "For a cyclic subgroup G=<P>, e_q(aP,bP)=1 for all a,b."
+    }
+  },
+  "claim_status": "EXACT_PAIRING_CHARACTER_CONTROL_AND_SCOPED_CHARACTER_NEGATIVE_ONLY_WITHHOLD_PROMOTION",
+  "classification": "BASE_FIELD_ALGEBRAIC_CHARACTERS_TRIVIAL__SELF_WEIL_PAIRING_TRIVIAL_ON_CYCLIC_G__INDEPENDENT_TORSION_PAIRING_GIVES_INJECTIVE_C5_PRODUCT_ENCODING_OVER_FPK__PAIRING_COST_SCALES_WITH_EMBEDDING_DEGREE_AND_R82_CONTROLS_ARE_SUPERSINGULAR_K2_EXCEPTIONS__FOUR_PRIME_ORDER_CURVES_REALIZE_MAXIMAL_K_QMINUS1_FINITE_CONTROLS__SMALL_K_PAIRING_ONLY_REENCODES_EXACT_MULTIPLICATIVE_FIVE_SUM__SUBOUTPUT_MULTIPLICATIVE_C5_CIRCUIT_OPEN__NO_RANK_LOGS_DESCENT_SHOUP_BREAKTHROUGH",
+  "disposition": "ADMIT_EXACT_SMALL_K_PAIRING_CHARACTER_AND_C5_PRODUCT_REPLAY_ONLY__REJECT_BASE_FIELD_CHARACTER_SELF_PAIRING_UNCHARGED_EMBEDDING_DEGREE_EXPLICIT_PRODUCT_SUPPORT_CURRENT_K6_AND_UNIT_FIELD_DLP_ROUTES__PRESERVE_SMALL_K_SUBOUTPUT_MULTIPLICATIVE_C5_CIRCUIT_AND_PAIRING_UNFRIENDLY_INPUT_GAP__NO_LOCATOR__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "finite_evidence": {
+    "all_maximal_embedding_controls_exact": true,
+    "all_r82_c5_endpoint_product_identities_exact": true,
+    "all_r82_embedding_degrees_two": true,
+    "all_r82_pairing_characters_nontrivial_q_roots": true,
+    "all_r82_sources_and_empty_images_replay": true,
+    "asymptotic_credit": false,
+    "maximal_embedding_degree_curve_control_count": 4,
+    "r82_pairing_control_count": 8
+  },
+  "next_action": "On the only surviving pairing branch k=B^(o(1)), construct or refute an exact sub-output multiplicative five-product membership/source circuit over mu_q with B^(9/4+o(1)) state and polylogarithmic query. It must consume pairing images as field elements without taking their discrete logs, avoid the B^(15/4) product support and B^(33/8) current index, provide exact empty certification and five occurrence backpointers, and charge extension construction, independent q-torsion, every Miller/final-exponentiation operation, multiplicative FFE branch, relation use, and identical descent. Pairing-unfriendly inputs remain a separate failed branch.",
+  "non_claims": [
+    "Finite R82 controls are supersingular embedding-degree-two fixtures.",
+    "No uniform small embedding degree for generic inputs is claimed.",
+    "A pairing character re-encodes but does not solve five-sum membership.",
+    "No field discrete logarithm receives unit-cost oracle credit.",
+    "No lower bound for the surviving multiplicative circuit is claimed.",
+    "No relation rank, factor logs, or identical descent is supplied.",
+    "No generic-prime ECDLP or Shoup improvement is claimed."
+  ],
+  "schema": "p1553.m6_suboutput_implicit_c5_character_pairing.r120.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "enge_pairing_pdf": {
+      "path": "references/enge_bilinear_pairings_1301.5520v2.pdf",
+      "sha256": "93b99fa2d13e09c1bc8282b58d472be6285ceea9b594e9b97d765212a3aaa8e4"
+    },
+    "miller_pairing_pdf": {
+      "path": "references/miller_weil_pairing_algorithm_1986.pdf",
+      "sha256": "39c76c7643278b87b3d8c24b9a07d0b4cbfb561cd13735548990848e0f0bd166"
+    },
+    "pairing_registry": {
+      "path": "p1553_r23_artifact_index_README.md",
+      "sha256": "8efff2f8ae6a85fdf7a2dd6ae364e0e8f86f6e165d6a4c7fb4edbabed9c223a5"
+    },
+    "r119_controls": {
+      "path": "m6_c5_membership_exceptional_controls.json",
+      "sha256": "06df2f774602cf9f467cfd08db68d4df73edb227cb3e55aa12914d8d0132afae"
+    },
+    "r119_cost": {
+      "path": "m6_c5_membership_ffe_cost_ledger.json",
+      "sha256": "933a3ad858ddb68b89a4328a2d404bca4df3a20b21fbac9f41a3514f75308c5c"
+    },
+    "r119_frozen": {
+      "path": "frozen_m6_output_sensitive_c5_source_index.json",
+      "sha256": "9ba25b63d0dfb3dd2a4be31aeb3b2d0fba3624e5b3d3fcdfdd2c4be9b2abccda"
+    },
+    "r119_gate": {
+      "path": "p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_gate_r119.md",
+      "sha256": "941e375918c4acd1be8293fcc40666879b4f5178b4454e28c21487cb9be9a9e9"
+    },
+    "r119_logs": {
+      "path": "factor_logs_and_identical_descent_r119.json",
+      "sha256": "e1b6a3e891b8ad5e1ce636326992ed5d0a9fa0a0c9ab6d4bda1c0971a1b0ed3a"
+    },
+    "r119_parent": {
+      "path": "p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_parent_report_r119.yaml",
+      "sha256": "f1aceb3511e275dcfd6b3d43d76d24eab3de78b61ff42de7e5e11aee00645eea"
+    },
+    "r119_producer": {
+      "path": "p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_r119.py",
+      "sha256": "99bd176b07eb119edad2ddbb6a2ff890b1109f1ef0a8cc26af061279e7bca578"
+    },
+    "r119_replay": {
+      "path": "m6_c5_membership_source_replay.json",
+      "sha256": "408066047d2401dce4f57382b3231cda04667fd80599e65a5aa106b8c2af867e"
+    },
+    "r119_report": {
+      "path": "p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_report_r119.json",
+      "sha256": "1ff46d9c7a66ade7e617fc5523bf69d125ba1a102cc360b3cdee2ed0df1f75a9"
+    },
+    "r82_producer": {
+      "path": "p1553_cartesian_sum_compact_divisor_probe_r82.py",
+      "sha256": "7380bff3175625016affee4703b0b0f2867a28113f72eef2d90614ed57ffef07"
+    }
+  }
+}

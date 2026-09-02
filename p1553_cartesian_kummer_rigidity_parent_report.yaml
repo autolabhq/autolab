@@ -1,0 +1,134 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-CARTESIAN-KUMMER-RIGIDITY-R11-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: revise_scoped_theorem
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+owner: P1553/P1515/IDEA-001/IDEA-057/IDEA-195
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Normalize the actual R10 S_6 pullback as an exact signed endpoint
+  coefficient and determine whether a sublinear-degree list-specific rational
+  Kummer map can compress a full Cartesian source merge without carrying
+  source corrections.
+inputs:
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: staged/p1553_factorized_pullback_parent_report.yaml
+    sha256: acf820dac41bded67af083931e4284702cdf75d5c9fd8e121c21dc57bfc3bf97
+  - path: staged/p1553_factorized_pullback_red_team.yaml
+    sha256: 3a810ae62318ddac77edcacf364e28454473919e956cce488352d1511e484670
+  - path: staged/p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+  - path: ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md
+    sha256: 5f1bd9c12ca700074c9cd327f6539bc880ec60b27431dc5f34e23b0a12f6c68f
+  - path: ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md
+    sha256: 524a59c1728bcbea804ac4be42ace5a965b68a6332e85d941829b89e04fc4225
+  - path: ideas/artifacts/ECDLP-IDEA-057/ecfft_auxiliary_isogeny_router_gate.md
+    sha256: f8abb802b5052f614a6500c722083d3ebbd45d6e54353686ff3283ffa27a88b7
+  - path: ideas/artifacts/ECDLP-IDEA-057/ecfft_list_restricted_branch_locus_gate.md
+    sha256: e4972a1c6f4fb796a9efa556c745c4d4d5e4b00e5637e9fca9f3828abb4db120
+  - path: ideas/artifacts/ECDLP-IDEA-001/exact_spectral_rank_density_gate.md
+    sha256: e572713a3910ef6a3e31ac360123aa8b5135c75d4210cbfb579e6831e9746fca
+  - path: ideas/artifacts/ECDLP-IDEA-098/p1515_r1_r11_independent_audit.md
+    sha256: 7e7609716f87b1b4df5ffc77406a912ad0303cc309ec1b84be42ebcc0d09539e
+frozen_interface:
+  group_order: N=p^(1+o(1))
+  label_bound: B=N^(1/5)
+  exact_count_threshold: 32*B^4<p
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted miss or one verified signed occurrence-labelled source
+  source_assumptions: nonidentity within-color-unique x-classes; cross-color copies remain separate occurrences; nonzero target for S_6 comparison
+verified_statements:
+  - >-
+    The coefficient of -R in the product of five sign-closed occurrence
+    measures is the exact signed source count. It has the same zero set as the
+    S_6 projector count but a different multiplicity.
+  - >-
+    For nonidentity x-classes in an odd prime subgroup, the projector count z
+    and signed count M satisfy z<=M<=16*z and
+    M<=16*min_j(product_(i!=j)|I_i|). The R9 no-wrap threshold applies.
+    Within-color multiplicity kappa_j multiplies the corresponding bound and
+    requires a fresh finite-size threshold check.
+  - >-
+    Exact signed counts support one-source dyadic replay in at most
+    1+5*ceil(log_2 B) calls, followed by constant sign enumeration and
+    complete projective verification.
+  - >-
+    The actual signed 2|3 kernel is endpoint equality under translation. On
+    the full subgroup it is an N by N permutation matrix; on finite decks its
+    rank is only the number of matched attained endpoints.
+  - >-
+    Let psi have degree d_psi and f=psi composed with x have degree 2*d_psi. For two
+    distinct Kummer source classes, complete branch equality can hold at no
+    more than 16*d_psi second-list points when pole cases are included,
+    provided 2*d_psi<N. The clean-chart bound is 8*d_psi.
+  - >-
+    Consequently, a full Cartesian second deck of size B admits no nontrivial
+    branch-oblivious merger for d_psi<B/16. The general collision-incidence
+    count is O(d_psi^2*B), so retaining Theta(B^2) compressed first-stage
+    occurrences requires d_psi=Omega(B^(1/2)).
+  - >-
+    A degree-O(B) interpolation map can transport one finite Cartesian grid
+    without being a global Kummer transporter. The exhibited control is
+    injective on that grid and supplies no source compression.
+scoped_failures:
+  projector_to_signed_convolution: exact_representation_change_not_a_locator
+  full_endpoint_separated_rank: N
+  branch_oblivious_rational_degree_d_psi_below_B_over_16: no_nontrivial_cartesian_merge
+  constant_degree_ecfft_local_map: no_nontrivial_cartesian_merge
+  general_support_changing_collision_incidences: at_most_O(d_psi^2*B)
+  indivisible_whole_fiber_compressed_occurrences: at_most_O(d_psi*B)
+surviving_exceptions:
+  - degree Omega(B^(1/2)) through O(B) list-specific Kummer maps
+  - preimage correction states with complete source inversion
+  - non-Cartesian recursively constrained supports
+  - nonlinear implicit multirow and arbitrary arithmetic circuits
+  - the exact R10 rank-two sparse multiplicative-convolution control
+complexity_accounting:
+  full_setup_and_state_cap: B^(9/4+o(1))
+  fresh_target_and_workspace_cap: B^(5/4+o(1))
+  standard_explicit_triple_query: B^3
+  conditional_parameters: setup B^s, state B^s_m, target work B^kappa, target workspace B^w, reciprocal density B^d_loss, rational-map degree d_psi
+  conditional_lambda: max(s,1+d_loss+kappa,2)/5
+  conditional_mu: max(s_m,w,2)/5
+unproved_or_outside_scope:
+  - a coefficient and correction grammar for degree-O(B) finite-list maps in the surviving d_psi range
+  - a Hilbert-function bound for the actual non-Cartesian recursive support
+  - all correction-carrying and arbitrary nonlinear circuits
+  - relation density and independent signed row rank
+  - factor-log completion and identical scalar-blind descent
+deduplication:
+  - P1553 and P1551 own the endpoint coefficient and source replay
+  - IDEA-001 owns endpoint-support rank and the linear density tradeoff
+  - IDEA-057 and P1523 own global Kummer labels and canonical ECFFT screens
+  - P1515 owns nonlinear implicit target batches and list-specific routers
+  - IDEA-195 owns the non-Cartesian S_3 intertwiner residual
+primary_sources:
+  - url: https://arxiv.org/abs/0806.0409
+    use: Kummer-law and underlying-group reconstruction comparison
+  - url: https://arxiv.org/abs/2107.08473
+    use: ECFFT degree-two auxiliary-map comparison
+disposition: >-
+  REVISE_SCOPED_THEOREM__SIGNED_ENDPOINT_COUNT_EXACT_AND_NO_WRAP__SIGNED_COUNT_ZERO_SET_EQUALS_S6_PROJECTOR_ZERO_SET_BUT_MULTIPLICITY_DIFFERS__ACTUAL_2_TO_3_PULLBACK_IS_EXISTING_ENDPOINT_COEFFICIENT__FULL_ENDPOINT_KERNEL_RANK_N_ALREADY_OWNED__EVERY_BRANCH_OBLIVIOUS_RATIONAL_KUMMER_MAP_WITH_D_PSI_LT_B_OVER_16_FAILS_NONTRIVIAL_CARTESIAN_MERGE__GENERAL_COLLISION_INCIDENCES_AT_MOST_O_D_PSI_SQUARED_B__CONSTANT_DEGREE_ECFFT_LOCAL_MAPS_CLOSED__DEGREE_AT_LEAST_SQRT_B_CORRECTIONS_NONCARTESIAN_AND_NONLINEAR_CIRCUITS_OPEN__NO_NEW_IDEA__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Derive or refute one exact source-faithful Kummer transporter on a frozen
+  non-Cartesian support over the full surviving degree range
+  d_psi=Omega(B^(1/2)) through O(B). It must merge a positive fraction of
+  source classes while retaining Theta(B^2) first-stage pair occurrences,
+  express the R10 rank-two sparse-convolution control, bound every correction
+  and provenance state within B^(9/4+o(1)), answer every full-box and
+  adaptive-child target query within B^(5/4+o(1)), and return one verified
+  signed occurrence source. A negative must prove a Hilbert-function,
+  branch-growth, or provenance bound for the frozen grammar; a positive first
+  merge remains model-bound until density, independent rank, factor logs, and
+  identical blind descent are complete.

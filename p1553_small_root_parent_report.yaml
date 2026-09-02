@@ -1,0 +1,132 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-SMALL-ROOT-R6-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: revise_scoped_reduction
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+owner: P1553/P1551/P1516/IDEA-049
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether a complete integral lift and multivariate small-root backend
+  construct the target-fresh Query2P1 decision and one exact signed source from
+  the two pair indexes inside the B^(9/4) setup and B^(5/4) online gates.
+inputs:
+  - path: ideas/artifacts/ECDLP-IDEA-012/p1553_target_label_common_factor_gate_r4.md
+    sha256: 8cf15364c2da6830255216f3766a5d016b847d4bd012df92fd86c462ee6a9bc1
+  - path: staged/p1553_elliptic_net_aggregate_gate_r5.md
+    sha256: aa980ac35fb2a9e1af9a08310c5b62fc024a779d09d766311dd70cbcb9e1192d
+  - path: ideas/deferred/ECDLP-IDEA-049_bounded_root_decomposition_transducer_hypothesis.md
+    sha256: 1a58addced8c2bb14590eb9a74252707409d01e7acb6fbab206dc12af974b1e0
+  - path: ideas/artifacts/ECDLP-IDEA-049/integral_addition_transducer_derivation.md
+    sha256: cbbe0f83426067fefde0a1f440afafad3d856ad49540469219df78da5a716b4d
+  - path: ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md
+    sha256: 5f1bd9c12ca700074c9cd327f6539bc880ec60b27431dc5f34e23b0a12f6c68f
+  - path: ideas/artifacts/ECDLP-IDEA-165/pair_sum_quotient_theorem.md
+    sha256: 18cebc9c209c6ba0d705e43da7f921885e60d3436b201375e306e14f4ae0bdb2
+  - path: ideas/artifacts/ECDLP-IDEA-012/p1553_query2p1_indexing_gate_r3.md
+    sha256: b2ee5934e295ab1f0d6b43452898e520d0cb18e718a8f5865694b25909b0df5e
+  - path: docs/focused-autoresearch-loop.md
+    sha256: 8ba64525354917ab0cf9995955e87d11d86bbf42b147b28b36ae7a43b0c2347e
+  - path: tools/autoresearch_focus.py
+    sha256: ba6848118998482b997177dcef9f65672641a0a3f59a7d0d8ed7a1c409805ed5
+  - path: tools/test_autoresearch_focus.py
+    sha256: edea657a488d0ff4f09315e9a5d3095ad4085b7239769dc74802583b13a81b42
+frozen_interface:
+  group_order: N=p^(1+o(1))
+  pair_deck_size: B^2
+  fifth_deck_size: B
+  B: N^(1/5)
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted existence plus one signed x-class-labelled source
+verified_statements:
+  - >-
+    The three favorable occurrence indices have ranges Theta(B^2),
+    Theta(B^2), and Theta(B), so their natural source box has volume
+    Theta(B^5)=Theta(N).
+  - >-
+    Replacing pair endpoints by pair-occurrence indices does not create cheap
+    polynomial access: an arbitrary pair-deck coordinate map is a supplied
+    lookup table or a dense interpolation polynomial of degree Theta(B^2).
+  - >-
+    A dense selector or one-hot endpoint channel costs B^(2+o(1)) per fresh
+    target before small-root lattice work, above the B^(5/4+o(1)) online cap.
+  - >-
+    Keeping complete affine addition variables retains full-field coordinates,
+    modulus-size carry branches, or both. Eliminating them returns the standard
+    complete addition/Semaev and resultant controls.
+  - >-
+    The existing IDEA-049 complete-slope argument rejects the natural global
+    centered affine lift; it is not an impossibility theorem for every special
+    deck or nonlinear transducer.
+  - >-
+    A stronger five-label correction is explicit: degree-<s_i Lagrange maps
+    send each restricted x-class label to its public x-coordinate, and the
+    fixed S_6 circuit evaluates the target predicate in B^(1+o(1)) work
+    without a pair selector. Public domain polynomials D_i bind legal node
+    labels, and the degree of F_R in label z_i is at most 16(s_i-1).
+  - >-
+    On nonidentity x-class decks with sign-closed restrictions, an S_6 zero is
+    exactly a signed relation. Constant-many sign recovery, global target-sign
+    normalization, and complete projective verification return an exact
+    signed source from one root; a zero target is a separate direct branch.
+  - >-
+    Each x-class stores a canonical representative, global factor-base column,
+    and occurrence backpointers. Repeated classes across colours aggregate
+    signed coefficients in one global column and receive rank credit only for
+    the resulting row.
+  - >-
+    The same signed source inverse gives r+sum_C c_C*log(P_C)=0 for known-log
+    targets and x=-t-sum_C c_C*log(P_C) for blind R=Q+[t]P. Known-log
+    collection resamples R=O; a blind zero target directly yields x=-t.
+  - >-
+    Canonical dyadic restrictions admit precomputed local label-coordinate maps
+    with B^(1+o(1)) total coefficient state per deck tree and B^(1+o(1))
+    map-selection and candidate-evaluation work across logarithmically many
+    replay levels. Root, exact-miss, output, and negative-child costs remain
+    unsupplied.
+  - >-
+    The five-label root box still has volume B^5=N. At full nodes, a standard
+    rectangular or dense total-degree monomial embedding has Theta(B^5)
+    positions in its first coefficient vector, before lattice reduction. No
+    tensorized determinant inequality or complete root/source locator is
+    constructed from the separated circuit inside the online cap.
+scoped_route_costs:
+  pair_index_setup: B^(2+o(1))
+  dense_pair_index_to_coordinate_selector_per_target: B^(2+o(1))
+  five_original_label_coordinate_maps_setup: B^(1+o(1))
+  five_label_predicate_evaluator: B^(1+o(1))
+  expanded_five_label_coefficient_tensor_upper_envelope: B^5
+  natural_three_index_box: B^5=N
+  factor_log_algebra_conditional: B^2
+  masked_descent_conditional: B^(5/4)
+unproved_or_outside_scope:
+  - a special factor deck with a proved low-height complete addition transducer
+  - a sparse or circuit-succinct index-to-coordinate map with exact restrictions
+  - general multivariate Coppersmith lower bounds
+  - a tensorized small-root lattice or nonlattice locator operating directly on
+    the separated label-interpolated S_6 circuit
+  - arbitrary arithmetic circuits, word-RAM indexes, or cell-probe structures
+  - relation density and independent rank
+  - factor-log completion and scalar-blind descent
+deduplication:
+  - IDEA-049 owns operation-preserving integral lifts and small-root extraction
+  - P1551 owns endpoint coefficient or selector access
+  - P1516 owns the two pair indexes and the missing target-local router
+  - P1553 owns Query2P1 and exact target-label support semantics
+disposition: >-
+  REVISE_SCOPED_REDUCTION__PAIR_OCCURRENCE_INDEX_BOX_HAS_VOLUME_B5_EQ_N__PAIR_INDEX_TO_ENDPOINT_ACCESS_IS_SUPPLIED_B2_SELECTOR_OR_DENSE_DEGREE_B2_INTERPOLATION__FIVE_ORIGINAL_LABEL_CORRECTION_CONSTRUCTS_DEGREE_B_COORDINATE_MAPS_AND_COMPLETE_MODULAR_PREDICATE_EVALUATOR_IN_B1__DYADIC_LOCAL_MAPS_FIT_SETUP_AND_REPLAY_EVALUATION__FIVE_LABEL_ROOT_BOX_STILL_B5_EQ_N__STANDARD_EXPANDED_SMALL_ROOT_LATTICES_CAN_EXPOSE_B5_COEFFICIENTS__NO_TENSORIZED_DETERMINANT_INEQUALITY_OR_COMPLETE_ROOT_LOCATOR__AFFINE_COORDINATE_LIFT_RETAINS_FULL_FIELD_VARIABLES_OR_MODULUS_SIZE_CARRIES__SPECIAL_TENSOR_OR_NONLINEAR_TRANSDUCER_NOT_RULED_OUT__IDEA049_P1551_P1516_P1553_MERGE__RANK_LOGS_DESCENT_UNSUPPLIED__NO_P1554__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Derive or refute one tensorized multivariate small-root construction that acts
+  directly on the five-label Lagrange-coordinate S_6 circuit,
+  proves a determinant/root-region theorem without B^5 coefficient expansion,
+  returns one exact restricted signed source or an exact no-root certificate
+  inside the frozen total caps; otherwise preserve Query2P1 unchanged.

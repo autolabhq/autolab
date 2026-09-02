@@ -1,0 +1,106 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-POPULAR-DIFFERENCE-COMPLETE-TRIPLE-R25-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+  - ECDLP-IDEA-340
+classification:
+  evidence: theorem_only
+  model_scope: mass_admissible_distinguished_alphabet_with_dense_two_branch_containment
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION
+summary: >-
+  In the first R24-admissible r=Theta(S/d)=Theta(B) regime, if a fixed
+  positive fraction of S*L sources has both translated branches in the full
+  preimage Z of the value alphabet, then Theta(L) fifth shifts are popular
+  differences of Z with Omega(S) representations and Z has additive energy
+  Omega(L*S^2)=Omega(B^5). This routes structural extraction to IDEA-340.
+  The condition still does not imply the Omega(S*L*d) complete-key collision
+  budget or an O(B^2) image; the ambient complete value alphabet has
+  Theta(r^3)=Theta(B^3) states.
+inputs:
+  - path: staged/p1553_random_fifth_deck_correlation_gate_r23.md
+    sha256: de9a0a496fc6696ed6e976351476c56262484124c8c7d7cc2cdbddd16a6cc184
+  - path: staged/p1553_r23_bundle.sha256
+    sha256: 29bfdbeca9cd14a579f134ca2b5926e3fb4858f13455e1d8dfc066cbcb1008da
+  - path: staged/p1553_distinguished_branch_value_mass_gate_r24.md
+    sha256: dd9b27fa5114e2121463612f5afaf09db12de30a0a0c4397f1dc37aafac1e99f
+  - path: staged/p1553_distinguished_branch_value_mass_parent_report_r24.yaml
+    sha256: ad05866c6a61717fbbc9e25ab41adb06d37bc836b7f211a82bb240bd6f57dcfb
+  - path: staged/p1553_r24_bundle.sha256
+    sha256: 070027b38243a269f55604ac6b054ee05fca49da5358d89b3de0da8418dcabbc
+  - path: staged/p1553_r24_staging_receipt.yaml
+    sha256: 60cc93025f82f69aeaa6286f3a30df75a4dc07f3d39b8dd4358ea0be18bbdd26
+output:
+  path: staged/p1553_popular_difference_complete_triple_gate_r25.md
+  sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+frozen_parameters:
+  endpoint_support: S=Theta(B^2)
+  fifth_support: L=Theta(B)
+  map_degree: d=Theta(B)
+  distinguished_values: r=Theta(B)
+  preimage_support: Z=Theta(S)
+  dense_containment_fraction: alpha
+theorems:
+  - >-
+    The both-branch source count at shift q is at most the ordered difference
+    multiplicity r_(Z-Z)(2q).
+  - >-
+    If total both-branch containment is at least alpha*S*L, then at least
+    alpha*L/(2-alpha) shifts have difference multiplicity at least alpha*S/2.
+  - >-
+    The additive energy is at least
+    alpha^3*L*S^2/(4*(2-alpha))=Omega_alpha(L*S^2).
+  - >-
+    For |Z|=Theta(S), the associated BSG parameter is only O(S/L)=O(B), so
+    no constant-loss public chart follows from energy alone.
+  - >-
+    Even when all three complete values lie in C, the ambient tagged alphabet
+    has Theta(r^3)=Theta(B^3) states; O(B^2) image size still requires the R23
+    Omega(S*L*d)=Omega(B^4) complete collision budget.
+positive_control:
+  scalar_progression_popular_differences: pass
+  public_generic_prime_factor_base: fail_hidden_scalar_orientation
+  degree_d_rational_pullback_realization: absent
+  complete_triple_compression: absent
+literature_boundary:
+  elliptic_sum_product_0806_0640: does_not_bound_required_single_pullback_popular_differences
+  elliptic_exponential_sums_1302_4210: square_root_field_terms_too_coarse
+  balog_szemeredi: requires_relation_graph_and_charged_extraction
+result:
+  classification: exact_popular_difference_reduction_no_constructor
+  dense_two_branch_containment: implies_B5_energy
+  public_energy_extraction: absent
+  complete_collision_budget: absent
+  complete_image_B2: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - additive energy is necessary but not sufficient for complete-key compression
+  - generalized progressions and nonstandard high-energy sets remain possible
+  - no DLP-free public chart or below-cap energy graph constructor is supplied
+  - current literature does not close the degree-B pullback regime
+  - no unrestricted circuit, data-structure, or generic-group lower bound
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R23 owns random-deck noncompression and the complete collision budget
+  - R24 owns the small distinguished-value mass gate
+  - IDEA-340 owns BSG extraction and public Freiman chart obligations
+  - IDEA-351 owns almost-periodic quotients and exact support correction
+  - R25 adds only the popular-difference and complete-triple reduction
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION__DENSE_BOTH_BRANCH_CONTAINMENT_IMPLIES_THETA_L_POPULAR_DIFFERENCES_AND_OMEGA_L_S2_ADDITIVE_ENERGY__BSG_PARAMETER_O_S_OVER_L__SCALAR_PROGRESSION_CONTROL_EXPOSES_DLP_ORIENTATION__R_CUBED_AMBIENT_COMPLETE_VALUES_DO_NOT_SUPPLY_B2_IMAGE__NO_CONSTRUCTOR__NO_TARGET__NO_R10__NO_DENSITY_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Prove or refute one algebraic popular-difference constructor with degree-B
+  psi, B values, B^2 pullback points, B public popular shifts, O(B^2)
+  complete keys, exact sources, fresh target, and R10 inside the caps; reject
+  scalar orientation, pair enumeration, adaptive fit, hidden factors, or
+  containment without the complete collision budget.

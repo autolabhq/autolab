@@ -1,0 +1,76 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-PAIR-COMPOSITUM-TOY-R17-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: exact_toy_algebra
+run_count:
+  failed_reporting_runs: 2
+  successful_runs: 1
+status: draft_review_required_negative_toy
+labels:
+  - toy
+  - exact
+  - model-bound
+  - novelty-unverified
+  - independent-review-required
+owner: P1553/IDEA-195
+new_idea_id: null
+breakthrough: false
+objective: >-
+  Exercise the corrected R16 paired-compositum rejection sieve on one exact
+  fiber-uniform non-Galois rational map with a full endpoint block.
+inputs:
+  - path: staged/p1553_block_common_right_factor_compiler_gate_r16.md
+    sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+  - path: staged/p1553_block_common_right_factor_parent_report.yaml
+    sha256: 0442c740131216004d191137a248d9b4f524fcbd4d16226464d0fa79a6f65bc2
+  - path: staged/p1553_pair_compositum_toy_contract_r17b.yaml
+    sha256: 7da9feeeca5baf490d75233af1e14e63ccb426ee325a9487e1d5ffa877f50ff7
+  - path: staged/p1553_pair_compositum_toy_r17b.sage
+    sha256: 7fca161667dbc638efb34e3e78f684d6e8b1c8cfa5158aaec6ff0b334f16ce6a
+  - path: staged/p1553_pair_compositum_toy_report_r17b.json
+    sha256: f5c9257d77a3c87efcf00655a5ec04735eebbacc3f5b7377df3266d9ed2cd154
+failed_run_receipts:
+  - path: staged/p1553_pair_compositum_toy_report_r17.json
+    sha256: 1dc7231ac321a99a15c10a017315cd01f15a450464af8f0c50095f88463e99a6
+    status: invalid_no_result
+  - path: staged/p1553_pair_compositum_toy_report_r17a.json
+    sha256: 29a4aa3227e9e9751e8953ef188839e1f54db068d63f805c071e71852b875a2e
+    status: invalid_no_result
+fixture:
+  field: F_193
+  curve: y^2=x^3+2x+3
+  curve_order: 206
+  subgroup_order: 103
+  generator: [1, 44]
+  endpoint_scalars: [1, 2, 3]
+  paired_endpoint_scalars: [1, 2]
+  degree: 3
+  psi_numerator: x^3+139*x^2+74*x+172
+  psi_denominator: x^3+5*x+7
+verified_statements:
+  - the numerator zero fiber is exactly the three listed endpoint x-coordinates
+  - the derivative numerator is squarefree and infinity is unramified
+  - every geometric psi fiber has at least two support points
+  - the degree-three map is non-Galois
+  - six direct elliptic evaluations match the reduced trace and norm formulas
+  - all four q0-versus-q1 equations contain the diagonal
+  - the exact common gcd is q0-q1 with multiplicity one
+  - the paired complete branch map is birational onto its image
+  - the toy candidate has no nontrivial shared right factor
+scoped_failures:
+  fixed_degree_three_interpolation_candidate: rejected_by_birational_endpoint_pair
+  asymptotic_generic_pair_theorem: not_proved
+  special_fiber_uniform_non_galois_families: not_classified
+  endpoint_and_fifth_finite_list_saturation: not_supplied
+  fresh_target_and_r10: not_supplied
+  density_rank_logs_and_descent: not_supplied
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  asymptotic_algorithm: false
+  new_idea_id: null
+exactly_one_next_action: >-
+  Prove or refute birationality of one endpoint pair on a Zariski-open set in
+  the degree-d interpolation family with a full endpoint zero fiber, without
+  extrapolating from the fixed R17B toy.

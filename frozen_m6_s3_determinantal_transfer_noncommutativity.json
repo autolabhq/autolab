@@ -1,0 +1,67 @@
+{
+  "critical_experiment": {
+    "decisive_test": "Exploit the discriminant square root 4*V(X)*V_T(u) directly: formulate the two diagonal target-sign branches as compact divisor pushforwards modulo arbitrary squarefree U, then test a transposed modular-composition or multipoint implementation with fully charged precomputation and work strictly below B^(5/2), rejecting N^2 coefficients, nN pairs, target-dependent setup, and unit-cost norm or resultant oracles.",
+    "falsifier": "The transfer is order sensitive, materializes Theta(N^2) field coefficients, visits nN pairs, or merely diagonalizes into the two already charged R172 target-sign branches.",
+    "hypothesis": "The 2 by 2 S3 determinant pencil composes over the roots or target support through an order-independent transfer of softly linear size."
+  },
+  "promotion_allowed": false,
+  "schema": "p1553.m6_s3_determinantal_transfer_noncommutativity.frozen.r173.v1",
+  "source_bindings": {
+    "hyun_neiger_schost_2019": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/hyun_neiger_schost_bivariate_resultants_1905.04356.pdf",
+      "sha256": "32b73cf0ca7172bdec0f8f1b256adda628a86d6dd7eee8e07e8644e35a9f16f3"
+    },
+    "r172_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_target_sign_conjugate_s3_self_resultant_controls.json",
+      "sha256": "d176c75580c5810c37e6e9debb0a2a91636fe17f28bbec0b516f2a3cd164bc99"
+    },
+    "r172_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_target_sign_conjugate_s3_self_resultant_cost_ledger.json",
+      "sha256": "b8ceb6c4d9cc9d6365ce861ba17b6ac631c0e8f4f951d56dc4d94d0e351602f0"
+    },
+    "r172_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_m6_target_sign_conjugate_s3_self_resultant.json",
+      "sha256": "5a6938348733ec3d103ec2044198bcb5aef06c2119da01d45d5f746ed9e737bf"
+    },
+    "r172_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_target_sign_conjugate_s3_self_resultant_probe_gate_r172.md",
+      "sha256": "14fb9459c75510f26177e2ef795266a825f58c2cdd11797d6ec6e60bd31dc951"
+    },
+    "r172_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_target_sign_conjugate_s3_self_resultant_probe_parent_report_r172.yaml",
+      "sha256": "45e476d650cb7c54bb3f9859175cded032d823881d76c706f60722c3e9d6a1bb"
+    },
+    "r172_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_target_sign_conjugate_s3_self_resultant_probe_r172.py",
+      "sha256": "297dc3d3195926341fbbd79c7d0346e59bfcb1cd721e5b4f0d4b3e2cb4d615c8"
+    },
+    "r172_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_target_sign_conjugate_s3_self_resultant_replay.json",
+      "sha256": "7975e14f92f9fedd73193ace641d3ea6e2d97387b512be16ad9b01133fb15920"
+    },
+    "r172_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_target_sign_conjugate_s3_self_resultant_probe_report_r172.json",
+      "sha256": "66f986b68c6d31576c688da4509d828139275331009dba4bb05abd45aef5ce5e"
+    },
+    "r172_resultant": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/target_conjugate_s3_factored_self_resultant_r172.json",
+      "sha256": "281fcf996ceddeeef5b5da57930e6b5dfc44da6da743719726fc2ebffd7f299d"
+    },
+    "r172_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_m6_target_sign_conjugate_s3_self_resultant_probe_r172.py",
+      "sha256": "b9b663f3e502971257047a6b39d09a4d969030ebfd928927b14be4f474385dd1"
+    },
+    "semaev_2004": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/semaev_summation_polynomials_2004_031.ps",
+      "sha256": "991f85d58ab68551a229266d03c2f88a5fc42e81b2a5f8f4432937bcceff16df"
+    }
+  },
+  "theorem": {
+    "affine_pencil": "Writing the determinant matrix as A(X,u)+Z B(X,u), A has rows [Xu-a,2b] and [2(X+u),Xu-a], while B has rows [X+u,2Xu] and [2,X+u].",
+    "commutator": "The exact commutator [A,B] is diagonal with entries delta and -delta, where delta=4(b-Xu(X+u)). Hence M(z1)M(z2)-M(z2)M(z1) =(z2-z1)[A,B], and the naive root-matrix product is generically order sensitive rather than a symmetric function of the roots of U.",
+    "determinant_product": "For any explicit ordering of target x-coordinates, det(product_j M_{u_j}(X,Z))=product_j S3(X,Z,u_j)=Res_Y(W(Y),S3(X,Z,Y)). The determinant is order invariant although the matrix product is not.",
+    "elementary_symmetric_s3": "For s1=X+Z+u, s2=XZ+Xu+Zu, and s3=XZu, S3(X,Z,u) =(s2-a)^2-4*s1*(s3+b). This is the determinant of the 2 by 2 matrix [[s2-a,2(s3+b)],[2s1,s2-a]].",
+    "scope": "This refutes only the naive order-independent 2 by 2 transfer and charges its represented product. It is not a resultant lower bound; a custom commutative, transposed, or implicit squarefree-modulus algorithm remains possible.",
+    "separable_discriminant": "The discriminant of S3(X,Z,u) as a quadratic in Z is 16(X^3+aX+b)(u^3+au+b). On the two compact curve divisors its square root is 4 V(X) V_T(u); diagonalizing the pencil therefore recovers the two target-sign branches already exposed in R172."
+  }
+}

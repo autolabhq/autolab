@@ -1,0 +1,69 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R29-DISTINCT-SHIFT-PARTIAL-ORTHOGONAL-GRID-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T06:27:41Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R29 is a new scoped incidence
+  reduction requiring independent review. It rejects exact full grids and
+  bounded-degree interpolation but leaves approximate compact designs open.
+bindings:
+  r28_gate_sha256: c24183bfe4823a9318ae06769763c94cfed99cb4291807f06b85f397fd53f662
+  r28_bundle_hash_list_sha256: 38970d51cf0592cfe34eb020f5d2798c44f47aa95e2abad1208d13addf42e48d
+  r28_staging_receipt_sha256: cd701dd5034752b4ad0dab9563345c09077b69f87e228eea576f60c81b4baeeb
+  r29_gate_sha256: 2d675720d215e78d1fa83e3a33a91ceb6b41060c13031dedf1ba6943dbd5e9eb
+  r29_parent_report_sha256: b534dff7ba2407bd32fd4b1492882c384497f34d746cd6f4220f78d38cdea05f
+  r29_artifact_index_sha256: 7bf1ea0416f490cbc4952184e1b5d953f4cabffa3a4fedd899ad998883e6ce39
+  r29_bundle_hash_list_sha256: 5619581cd011919d6b3f4523ecb090bd150fa0b4fdf3ef9d4db799a647f83ee1
+result:
+  classification: exact_partial_orthogonal_grid_reduction_no_constructor
+  good_shift_count: Theta(B)
+  singleton_cells_per_good_shift: Theta(B^2)
+  exact_full_grid: impossible_on_proper_prime_group_subset
+  finite_list_capture_degree: Omega(B)
+  affine_plane_scale: attainable_with_external_rank_two_chart
+  compact_partial_grid_compiler: absent
+  complete_plus_minus_image: absent
+  complete_source_package: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r29_hash_list: pass
+  r29_parent_yaml_parse: pass
+  good_shift_extraction_checked: pass
+  prime_cycle_full_grid_obstruction_checked: pass
+  finite_list_bezout_interpolation_checked: pass
+  affine_plane_partition_dimension_control_checked: pass
+  clean_temporary_replay_with_r16_through_r29_gates_and_r29_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T06_27_41Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - exact full-grid impossibility has no constant-density stability theorem
+  - no universal circuit lower bound for structured degree-B relation families
+  - no compact coupled plus-minus occupancy or source compiler
+  - no complete image, target, R10, density, rank, logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Construct or refute one degree-B approximate partial-orthogonal grid with B
+  values and B public shifts, together with a compact exact compiler for the
+  coupled plus-minus image, counts, and sources; reject external affine or
+  scalar charts, false-positive supersets, dense per-shift tables, isogeny
+  stabilizers, or missing target, R10, rank, logs, and descent.

@@ -1,0 +1,176 @@
+{
+  "admission": {
+    "failures": [
+      "inside_cap_primal_leaf_generator_complete",
+      "inside_cap_preleaf_transpose_complete",
+      "generic_multiplicity_integer_lift_complete",
+      "known_rhs_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 15,
+    "obligations": {
+      "all_sources_match_r113": true,
+      "breakthrough_complete": false,
+      "factor_logs_complete": false,
+      "fourteen_unique_zero_gradients_exact": true,
+      "generic_multiplicity_integer_lift_complete": false,
+      "identical_target_descent_complete": false,
+      "inside_cap_preleaf_transpose_complete": false,
+      "inside_cap_primal_leaf_generator_complete": false,
+      "known_rhs_rank_complete": false,
+      "r108_weight_and_r105_markers_preserved": true,
+      "shoup_improvement_complete": false,
+      "sixteen_actual_and_matched_instances": true,
+      "ten_source_bindings_verified": true,
+      "two_double_zero_hessian_vectors_exact": true,
+      "typed_transposed_profiles_frozen": true
+    },
+    "passed_obligation_count": 7,
+    "scoped_negative_admitted": true
+  },
+  "artifacts": {
+    "exceptional": "transposed_c5_exceptional_controls.json",
+    "frozen": "frozen_5a5c_transposed_nonuniform_c5_leaf_generator.json",
+    "ledger": "transposed_c5_leaf_generator_ledger.json",
+    "logs_descent": "factor_logs_and_identical_descent_r114.json",
+    "source_replay": "transposed_c5_source_adjoint_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "EXACT_TRANSPOSED_ADJOINT_SCOPED_NEGATIVE_WITHHOLD_PROMOTION",
+  "classification": "FIRST_PRODUCT_ADJOINT_LOCALIZES_EVERY_UNIQUE_ZERO_AND_COLLAPSES_ON_DOUBLE_ZEROS__SECOND_HESSIAN_VECTOR_LOCALIZES_BOTH_DOUBLE_ZERO_LEAVES__ALL_ADJOINTS_REQUIRE_THE_B3_PRIMAL_LEAF_TRACE__CHECKPOINTING_REDUCES_STATE_NOT_B3_WORK__TRANSPOSING_BEFORE_LEAF_FORMATION_EXPANDS_A5_BY_ONE_C_ATOM_TO_B13O5_TYPED_STATE_ALREADY_OVER_SETUP__STANDARD_PRODUCT_AD_AND_TYPED_PRELEAF_TRANSPOSE_CLOSED_ONLY__RELATION_ARITY_AND_FACTOR_BASE_REBALANCE_OPEN",
+  "control_summary": {
+    "all_double_hessian_vectors_exact": true,
+    "all_sources_match_r113": true,
+    "all_unique_gradients_exact": true,
+    "double_zero_instance_count": 2,
+    "instance_count": 16,
+    "maximum_first_transposed_state_count": 392,
+    "minimum_first_transposed_state_count": 18,
+    "source_count": 18,
+    "unique_zero_instance_count": 14
+  },
+  "cost_ledger": {
+    "caps": {
+      "fresh_work_workspace_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "constructor_status": {
+      "exact_first_second_source_adjoint_complete": true,
+      "exact_forward_existence_complete": true,
+      "generic_multiplicity_integer_lift_complete": false,
+      "inside_cap_preleaf_transpose_complete": false,
+      "inside_cap_primal_leaf_generator_complete": false
+    },
+    "product_forward_and_adjoint": {
+      "checkpointed_reverse_state_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "checkpointed_reverse_work_exponent_B": {
+        "decimal": 3.0,
+        "exact": "3"
+      },
+      "double_zero_first_adjoint_collapses": true,
+      "double_zero_hessian_vector_exact": true,
+      "higher_adjoint_order_reduces_primal_leaf_work": false,
+      "inside_online_cap": false,
+      "primal_leaf_exponent_B": {
+        "decimal": 3.0,
+        "exact": "3"
+      },
+      "reverse_product_work_exponent_B": {
+        "decimal": 3.0,
+        "exact": "3"
+      },
+      "unique_zero_first_adjoint_exact": true
+    },
+    "scope": {
+      "arbitrary_black_box_transposed_group_algebra_closed": false,
+      "first_and_second_adjoint_localization_closed": true,
+      "general_arithmetic_circuit_lower_bound_claimed": false,
+      "standard_product_reverse_ad_closed": true,
+      "typed_preleaf_support_propagation_closed": true
+    },
+    "transpose_before_leaf_formation": {
+      "first_state_inside_online_cap": false,
+      "first_state_inside_setup_cap": false,
+      "five_c_atom_occurrence_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "maximum_observed_first_state_count": 392,
+      "minimum_observed_first_state_count": 18,
+      "one_c_atom_expansion_exponent_B": {
+        "decimal": 2.6,
+        "exact": "13/5"
+      },
+      "terminal_a5_support_exponent_B": {
+        "decimal": 2.0,
+        "exact": "2"
+      }
+    }
+  },
+  "disposition": "ADMIT_EXACT_FIRST_SECOND_PRODUCT_ADJOINTS_ONLY__REJECT_STANDARD_REVERSE_AD_AND_TYPED_PRELEAF_TRANSPOSE_AS_INSIDE_CAP_LOCATORS__MERGE_WITH_R97_R104_R108_R113__PIVOT_TO_RELATION_ARITY_FACTOR_BASE_REBALANCE__NO_LOCATOR__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "next_action": "Search the relation-arity and asymmetric factor-base exponent space for a new summation-polynomial/FFE regime whose first transposed source-return interface fits B^(9/4) setup and B^(5/4) fresh work while preserving relation supply, known-RHS rank, factor logs, and identical descent. Freeze the feasibility inequalities before running any new toy instance.",
+  "non_claims": [
+    "Sparse adjoint output does not imply cheap primal construction.",
+    "Checkpointed reverse mode reduces memory, not leaf work.",
+    "No lower bound for arbitrary black-box transposed multiplication is proved.",
+    "No generic-prime ECDLP algorithm is constructed.",
+    "No rank, factor-log, target-descent, or Shoup gate passes."
+  ],
+  "schema": "p1553.5a5c_transposed_nonuniform_c5_leaf_generator.r114.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "idea_registry": {
+      "path": "p1553_r35_artifact_index_README.md",
+      "sha256": "9f4371eefd5e4019833eef858e3bda79d41aff0c5d7b861c71a5987a96acc392"
+    },
+    "r113_exceptional": {
+      "path": "orbit_product_exceptional_controls.json",
+      "sha256": "716969c248a88870109d92caf821e9cd26b1f92ccd719f6b2dea5b76553ba3b4"
+    },
+    "r113_frozen": {
+      "path": "frozen_5a5c_nonlinear_elliptic_orbit_product.json",
+      "sha256": "1ffc99132f13f640b170bd2325bec13a196982bb26e377ce8230d2944428f907"
+    },
+    "r113_gate": {
+      "path": "p1553_5a5c_nonlinear_elliptic_orbit_product_probe_gate_r113.md",
+      "sha256": "d1939734367f92798ec40b89f9954ff0c9fe3bf07c6ad0bdaeb33e9a5fccad94"
+    },
+    "r113_ledger": {
+      "path": "elliptic_orbit_product_recurrence_ledger.json",
+      "sha256": "6dbbe7b38e4a2e67584c80e70cbfc3be4745ab7895eccad19192785965edc754"
+    },
+    "r113_logs": {
+      "path": "factor_logs_and_identical_descent_r113.json",
+      "sha256": "f9f2e0ae9da91f59c3844e9139ef72f768ad2c56f44a8c1dc45229781c1f7ecf"
+    },
+    "r113_parent": {
+      "path": "p1553_5a5c_nonlinear_elliptic_orbit_product_probe_parent_report_r113.yaml",
+      "sha256": "9945ff193a3fd2cc7022e27e68ddf5cf6e40d0ab5301a9450433fe8c0128f129"
+    },
+    "r113_producer": {
+      "path": "p1553_5a5c_nonlinear_elliptic_orbit_product_probe_r113.py",
+      "sha256": "126a2405ae94aa01143ecdf88927f7f4fedb95922aeb7539b467516c97979e1c"
+    },
+    "r113_replay": {
+      "path": "orbit_product_subset_source_replay.json",
+      "sha256": "ef6bcec03bde76982453f5d508f6cdf9b6f32ba9ea1bca36ce143715b9dbb3df"
+    },
+    "r113_report": {
+      "path": "p1553_5a5c_nonlinear_elliptic_orbit_product_probe_report_r113.json",
+      "sha256": "5b961649fa71ced6b049a3500316114b3c9f3806b5b61639471d9a6f86b01102"
+    }
+  }
+}

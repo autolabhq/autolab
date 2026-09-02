@@ -1,0 +1,638 @@
+{
+  "schema": "crypto.autoresearch.dispatch_queue.v1",
+  "objective": "Determine whether the P1553 Query2P1 exact-existence residual admits a prime-field elliptic indexing, shifted-norm, or nonhomomorphic construction inside B^(9/4) setup and B^(5/4) query, with exact sources and the complete ECDLP path.",
+  "max_concurrent": 2,
+  "tasks": [
+    {
+      "id": "TASK-20260718-P1553-DV-AUDIT-R1",
+      "title": "Independently audit the P1553 determinant-value channel",
+      "role": "validator",
+      "state": "completed",
+      "priority": 100,
+      "review_required": false,
+      "depends_on": [],
+      "read_scope": [
+        "AGENTS.md",
+        "agents/validator.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_determinant_value_channel_gate_v1.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_six_list_incidence_model_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1539_r1_independent_audit.md",
+        "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/rejected/ECDLP-IDEA-041_elliptic_cauchy_chord_locator_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-071_elliptic_cauchy_displacement_reporter_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-260_fay_trisecant_theta_source_recursion_hypothesis.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260718-P1553-DV-AUDIT-R1"
+      ],
+      "handoff": {
+        "objective": "Reconstruct and try to falsify every mathematical and represented-cost claim in the P1553 V1 determinant-value receipt, then search only within its typed residual for a complete annihilator, contraction, and source inverse.",
+        "uncertainty_reduced": "Whether the V1 correction and residual are admissible theorem evidence, and whether determinant values yield a concrete operation inside the B^(9/4) campaign and B^(5/4) target rectangle.",
+        "inputs": [
+          "ideas/artifacts/ECDLP-IDEA-012/p1553_determinant_value_channel_gate_v1.md",
+          "the hash-bound dependencies listed in the task read scope",
+          "the materialized P1553 claim and blockers in focus/current_plan.json"
+        ],
+        "constraints": [
+          "Act only as Validator; do not edit the producer, shared ledger, focus queue, corpus records, contracts, or repository status.",
+          "Do not execute any experiment, solver, fixture, timing run, relation campaign, or IDEA-133 verifier.",
+          "Recompute the Frobenius--Stickelberger scope, O(B) contraction, degree-six slice bound, 6k row-mode correction, and aggregation/powering noncommutation independently.",
+          "Test candidate deck masks against gauge dependence, cancellation, finite-field characteristic, coefficient construction, target updates, exact signed all-strata source output, rank, factor logs, and blind descent.",
+          "Treat a missing construction as incomplete, not as an unrestricted lower bound or a breakthrough.",
+          "Use ASCII and preserve exact input hashes in the report."
+        ],
+        "deliverables": [
+          "validation_report.yaml",
+          "static_audit.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 1800,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both reports exist under the assigned write scope and bind every audited input by SHA-256.",
+          "The YAML verdict is terminal and distinguishes verified claims, corrections, unresolved residuals, and claim limitations.",
+          "Any proposed positive operation includes coefficient construction, contraction, exact source unranking, campaign/query exponents, rank, factor logs, and blind descent; otherwise the report preserves the typed residual without allocating P1554."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260718-P1553-DIVISOR-RT-R1",
+      "title": "Red-team the P1553 relation-divisor product gate",
+      "role": "red-team",
+      "state": "completed",
+      "priority": 95,
+      "review_required": false,
+      "depends_on": [],
+      "read_scope": [
+        "AGENTS.md",
+        "agents/red-team.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_determinant_value_channel_gate_v1.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_six_list_incidence_model_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-115/ulrich_source_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1539_r1_independent_audit.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260718-P1553-DIVISOR-RT-R1"
+      ],
+      "handoff": {
+        "objective": "Try to falsify the proposed deterministic gate that an exact globally regular scalar reporter for the union of all tuple-relation divisors must carry their full product divisor, of weight B^5 in each deck-point coordinate.",
+        "uncertainty_reduced": "Whether this divisor argument validly replaces the heuristic value-image claim for a sharply scoped reporter class, or collapses into P1512/P1513 without adding a usable obstruction.",
+        "inputs": [
+          "the P1553 V1 determinant-value receipt",
+          "the P1512 linear Chow cycle-length gate",
+          "the P1551 source-algebra and P1513 translated-product controls"
+        ],
+        "constraints": [
+          "Do not edit any producer, shared ledger, focus queue, corpus record, contract, or repository status.",
+          "Do not execute experiments, solvers, fixtures, timing runs, relation campaigns, or the IDEA-133 verifier.",
+          "Check irreducibility, localization away from diagonals, Cartier-divisor multiplicity, gauge/frame dependence, finite-deck restriction, rational reporters, reporter families, and false-positive verification.",
+          "Explicitly distinguish global section degree from arithmetic-circuit size; repeated squaring and norm circuits remain possible exceptions unless separately charged.",
+          "Semantically compare the operation with P1512, P1513, P1551, and P1539 before calling it distinct.",
+          "No unrestricted lower bound, P1554 allocation, or breakthrough claim is permitted."
+        ],
+        "deliverables": [
+          "red_team_report.yaml",
+          "divisor_gate_notes.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 1800,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "The report states a terminal pass, revise, or fail verdict for the exact scoped divisor argument.",
+          "Every surviving exception has an explicit interface and cost consequence rather than an unrestricted label.",
+          "The report identifies whether the argument is new evidence, a semantic merge, or invalid, without changing official status."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260718-P1553-FD-REPORTER-P1",
+      "title": "Construct or sharply reduce the P1553 finite-deck reporter",
+      "role": "idea-generator",
+      "state": "completed",
+      "priority": 90,
+      "review_required": true,
+      "depends_on": [
+        "TASK-20260718-P1553-DV-AUDIT-R1",
+        "TASK-20260718-P1553-DIVISOR-RT-R1"
+      ],
+      "read_scope": [
+        "AGENTS.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_determinant_value_channel_audit_r1.md",
+        "coordination/tasks/TASK-20260718-P1553-DV-AUDIT-R1/static_audit.md",
+        "coordination/tasks/TASK-20260718-P1553-DIVISOR-RT-R1/divisor_gate_notes.md",
+        "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-158/p1534_r1_independent_audit.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/rejected/ECDLP-IDEA-156_combinatorial_nullstellensatz_source_self_reduction_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-199_ranked_subset_convolution_source_unranking_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-266_equiprojectable_dynamic_evaluation_source_tree_hypothesis.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260718-P1553-FD-REPORTER-P1"
+      ],
+      "handoff": {
+        "objective": "Write one coefficient-complete finite-deck reporter interface for the P1553 determinant Fermat mask, or derive the sharpest representation-specific obstruction after exhausting CP, tensor-train, Schur-power, quotient-algebra, endpoint-convolution, and subdeck-conditioning realizations.",
+        "uncertainty_reduced": "Whether the determinant's constant pre-mask tensor rank and elliptic 6k row modes can be converted into a target-uniform exact count and source operation without rebuilding B^3 endpoint/source traffic.",
+        "inputs": [
+          "the hash-bound P1553 R1 closeout",
+          "P1551 finite-domain grammar and endpoint-convolution normal form",
+          "P1534 exact fivefold FFE kernel control",
+          "the P1513 norm and source-jet correction"
+        ],
+        "constraints": [
+          "Act only as Idea Generator and write only beneath the assigned task directory.",
+          "Do not edit shared ledgers, focus files, idea records, contracts, producer artifacts, or official status.",
+          "Do not execute a solver, fixture, timing run, relation campaign, or IDEA-133 verifier.",
+          "Separate compact predicate syntax from the cost of constructing contraction state, querying one fresh target, and returning exact signed sources.",
+          "For CP or tensor-train proposals, give exact ranks across every cut before and after the Fermat mask, an explicit constructor, and a nonzero-entry/source query algorithm; low rank discovered only after locating the support receives no credit.",
+          "For quotient, Schur-power, trace, norm, or transposed proposals, name every represented algebra/module, coefficient source, temporary state, and target update.",
+          "Use the B^(9/4) setup/campaign and B^(5/4) fresh-target caps and include relation rank, factor logs, blind descent, output, and memory before any positive verdict.",
+          "Treat failure to construct the operation as incomplete or a scoped reduction, never as an unrestricted circuit or Shoup lower bound."
+        ],
+        "deliverables": [
+          "candidate_report.yaml",
+          "finite_deck_reporter_spec.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 2400,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both deliverables bind all read-scope inputs by SHA-256.",
+          "Every positive construction includes public coefficient construction, exact target-labelled count, fresh-target recurrence, exact all-strata source replay, and complete exponents.",
+          "Every negative conclusion is operation-level deduplicated and preserves untested circuit classes explicitly.",
+          "The report allocates no P1554, contract, run, or breakthrough claim."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260718-P1553-TENSOR-RT-R1",
+      "title": "Red-team low-rank finite-deck determinant masking",
+      "role": "red-team",
+      "state": "completed",
+      "priority": 85,
+      "review_required": false,
+      "depends_on": [
+        "TASK-20260718-P1553-FD-REPORTER-P1"
+      ],
+      "read_scope": [
+        "AGENTS.md",
+        "agents/red-team.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_determinant_value_channel_audit_r1.md",
+        "coordination/tasks/TASK-20260718-P1553-FD-REPORTER-P1/candidate_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-FD-REPORTER-P1/finite_deck_reporter_spec.md",
+        "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-158/p1534_r1_independent_audit.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/rejected/ECDLP-IDEA-136_folded_wronskian_branch_rank_condenser_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-138_sumcheck_source_self_reduction_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-156_combinatorial_nullstellensatz_source_self_reduction_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-199_ranked_subset_convolution_source_unranking_hypothesis.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260718-P1553-TENSOR-RT-R1"
+      ],
+      "handoff": {
+        "objective": "Try to falsify every claimed advantage from low CP rank, tensor-train compression, determinant powers, finite-deck interpolation, and recursive source conditioning for the P1553 mask, while actively searching for a surviving constructive exception.",
+        "uncertainty_reduced": "Whether low-rank syntax can be constructed and queried without first finding the rare endpoint intersection, and whether exact source self-reduction can reuse one target-labelled count within the stated caps.",
+        "inputs": [
+          "the P1553 R1 residual interface",
+          "P1551 pointwise-versus-aggregation and endpoint convolution controls",
+          "P1534 exact FFE kernel",
+          "rank-condenser, sum-check, coefficient-conditioning, and source-unranking controls"
+        ],
+        "constraints": [
+          "Act only as Red Team and write only beneath the assigned task directory.",
+          "Do not edit producer artifacts, shared ledgers, focus files, idea records, contracts, or official status.",
+          "Do not execute experiments, solvers, fixtures, timing runs, relation campaigns, or IDEA-133 verifiers.",
+          "Compute exact matricization ranks or sharp bounds for the pre-mask determinant and the post-mask zero indicator on generic and collision-heavy finite decks.",
+          "Distinguish existence of a sparse or low-rank representation from target-independent construction and nonzero-entry location.",
+          "Attack cancellation, gauge normalization, false positives, multiple fibers, conditioning costs, target updates, and source provenance.",
+          "Compare every route by mathematical operation with P1551, P1534, P1513, IDEA-136, IDEA-138, IDEA-156, and IDEA-199.",
+          "No unrestricted tensor-rank, arithmetic-circuit, generic-group, or ECDLP lower bound may be inferred."
+        ],
+        "deliverables": [
+          "red_team_report.yaml",
+          "tensor_rank_notes.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 2400,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both reports bind all read-scope inputs by SHA-256 and state one terminal scoped verdict.",
+          "At least one favorable exact control and one adversarial/collision-heavy control are reconstructed.",
+          "Any surviving route has a typed constructor, target update, count/source output, and complete cost consequence.",
+          "No official status change, P1554, experiment, or breakthrough claim is made."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260718-P1553-Q2P1-P1",
+      "title": "Construct or reduce the Query2P1 exact-existence index",
+      "role": "idea-generator",
+      "state": "completed",
+      "priority": 80,
+      "review_required": true,
+      "depends_on": [
+        "TASK-20260718-P1553-TENSOR-RT-R1"
+      ],
+      "read_scope": [
+        "AGENTS.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_finite_deck_weighted_endpoint_gate_r2.md",
+        "coordination/tasks/TASK-20260718-P1553-FD-REPORTER-P1/finite_deck_reporter_spec.md",
+        "coordination/tasks/TASK-20260718-P1553-TENSOR-RT-R1/red_team_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-TENSOR-RT-R1/tensor_rank_notes.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-121/ku_circuit_reduction_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-165/pair_sum_quotient_theorem.md",
+        "ideas/rejected/ECDLP-IDEA-138_sumcheck_source_self_reduction_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-156_combinatorial_nullstellensatz_source_self_reduction_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-199_ranked_subset_convolution_source_unranking_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-266_equiprojectable_dynamic_evaluation_source_tree_hypothesis.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260718-P1553-Q2P1-P1"
+      ],
+      "handoff": {
+        "objective": "Either construct a coefficient-complete Query2P1 exact-existence data structure inside the frozen setup/query rectangle, or derive the sharpest operation-level reduction after exhausting current asymmetric 3SUM/kSUM indexing, small-quotient convolution, prime-order character transforms, shifted pair-divisor resultants, and target-polynomial norm tests.",
+        "uncertainty_reduced": "Whether two source-labelled dyadic B^2 pair indexes plus a B-point target-minus-fifth deck admit any exact fresh-target decision below B^3 represented traffic, especially after accounting for the absence of nontrivial small quotients in a prime-order elliptic subgroup.",
+        "inputs": [
+          "the hash-bound P1553 R2 Query2P1 interface",
+          "P1513/P1551/P1516 norm, endpoint-coefficient, and pair-router controls",
+          "current primary 3SUM/kSUM indexing and preprocessed-universe algorithms",
+          "the materialized P1553 blockers and complete-path requirements"
+        ],
+        "constraints": [
+          "Act only as Idea Generator and write only beneath the assigned task directory.",
+          "Do not edit shared ledgers, focus files, idea records, contracts, producer artifacts, or official status.",
+          "Do not execute a solver, fixture, timing run, relation campaign, or IDEA-133 verifier.",
+          "Freeze exact input sizes, source labels, dyadic restrictions, target freshness, success probability, advice construction time, bit state, online work, workspace, and output verification.",
+          "Recompute the Dinur-Golovnev asymmetric 3SUM and kSUM indexing exponents and the 2025/2026 preprocessed-universe exponents on every natural Query2P1 encoding; do not transfer integer small-modulus hashing to E(F_p) without an explicit efficiently computable relation-preserving map.",
+          "Prove or falsify the prime-order small-quotient lemma and separately test nonhomomorphic coordinate hashes, exact additive characters, field-coordinate FFE masks, Semaev leaves, shifted resultants, quotient-ring norms modulo the B-target polynomial, dynamic evaluation, and product-circuit zero tests.",
+          "A positive route must give public coefficient/advice construction, exact no-false-positive existence, O(log B) source replay with labels, all-strata verification, relation density/rank, factor logs, identical scalar-blind descent, and complete lambda,mu<=0.45.",
+          "Failure of named routes is not an unrestricted arithmetic-circuit, data-structure, generic-group, Shoup, or ECDLP lower bound. Preserve every untested exception explicitly.",
+          "Use primary literature for current algorithmic controls, bind local read-scope files by SHA-256, and use ASCII."
+        ],
+        "deliverables": [
+          "query2p1_report.yaml",
+          "query2p1_theorem_gate.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 2400,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both deliverables exist under the assigned write scope, bind every local input by SHA-256, and cite primary algorithmic controls.",
+          "Every indexing transplant includes preprocessing time as well as retained space and query time, and every modulus/FFT route specifies an exact relation-preserving map on the prime-order subgroup.",
+          "Every norm/resultant route types its coefficient ring, represented dimension, target polynomial, zero test, dyadic restriction update, source output, and complete B exponents.",
+          "The terminal verdict distinguishes a constructed Query2P1 operation, a conditional reduction, and a scoped named-route failure without allocating P1554, a contract, a run, or a breakthrough."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260718-P1553-Q2P1-RT-R1",
+      "title": "Red-team the Query2P1 indexing and small-quotient gate",
+      "role": "red-team",
+      "state": "completed",
+      "priority": 75,
+      "review_required": false,
+      "depends_on": [
+        "TASK-20260718-P1553-Q2P1-P1"
+      ],
+      "read_scope": [
+        "AGENTS.md",
+        "agents/red-team.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_finite_deck_weighted_endpoint_gate_r2.md",
+        "coordination/tasks/TASK-20260718-P1553-Q2P1-P1/query2p1_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-Q2P1-P1/query2p1_theorem_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-121/ku_circuit_reduction_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-165/pair_sum_quotient_theorem.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260718-P1553-Q2P1-RT-R1"
+      ],
+      "handoff": {
+        "objective": "Independently falsify or sharpen the producer's Query2P1 indexing, prime-order quotient, shifted-resultant, and exact-source conclusions while searching for one surviving nonhomomorphic or target-batched construction.",
+        "uncertainty_reduced": "Whether the producer correctly transfers current indexing theorems, whether the small-quotient obstruction is stated at the right algebraic scope, and whether any intrinsic elliptic norm or coordinate route avoids the charged B^3/B^4 objects.",
+        "inputs": [
+          "the completed Query2P1 producer receipts",
+          "the P1553 R2 typed residual",
+          "P1513/P1516 standard and unrestricted exceptions",
+          "primary 3SUM/kSUM indexing and preprocessed-universe controls"
+        ],
+        "constraints": [
+          "Act only as Red Team and write only beneath the assigned task directory.",
+          "Do not edit producer artifacts, shared ledgers, focus files, idea records, contracts, or official status.",
+          "Do not execute experiments, solvers, fixtures, timing runs, relation campaigns, or IDEA-133 verifiers.",
+          "Recompute every B exponent, including preprocessing work hidden behind advice, dyadic node multiplicity, random coins, false-positive cleanup, all B target/fifth points, and O(log B) replay calls.",
+          "Attack the small-quotient claim with nonhomomorphic hashes, rational coordinate maps, extension-field characters, Semaev and FFE encodings, and target-specialized product circuits; distinguish failure of additive convolution from failure of every algorithm.",
+          "Attack any shifted-resultant or quotient-ring shortcut with coefficient-ring dimension, zero-divisor handling, dynamic splitting, source labels, exceptional elliptic strata, and fresh-target rebuild costs.",
+          "Operation-level deduplicate against P1513, P1551, P1516, IDEA-138, IDEA-156, IDEA-199, and IDEA-266.",
+          "No unrestricted circuit/data-structure lower bound, P1554 allocation, experiment, Shoup-bound improvement, or breakthrough claim is permitted."
+        ],
+        "deliverables": [
+          "red_team_report.yaml",
+          "query2p1_red_team.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 2400,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both reports bind all local read-scope inputs by SHA-256 and state one terminal scoped verdict.",
+          "Every producer exponent and primary-literature transplant is independently reconstructed or corrected.",
+          "At least one favorable exact control and one adversarial mutation against an overbroad quotient or norm claim are supplied.",
+          "Any surviving Query2P1 route has exact advice, query, restriction, source, all-strata, and complete ECDLP accounting; otherwise every untested exception remains explicit."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260718-P1553-ZR-P1",
+      "title": "Construct or reduce the target-label common-factor map",
+      "role": "idea-generator",
+      "state": "completed",
+      "priority": 70,
+      "review_required": true,
+      "depends_on": [
+        "TASK-20260718-P1553-Q2P1-RT-R1"
+      ],
+      "read_scope": [
+        "AGENTS.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_query2p1_indexing_gate_r3.md",
+        "coordination/tasks/TASK-20260718-P1553-Q2P1-P1/query2p1_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-Q2P1-P1/query2p1_theorem_gate.md",
+        "coordination/tasks/TASK-20260718-P1553-Q2P1-RT-R1/red_team_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-Q2P1-RT-R1/query2p1_red_team.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-121/ku_circuit_reduction_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-165/pair_sum_quotient_theorem.md",
+        "ideas/rejected/ECDLP-IDEA-199_ranked_subset_convolution_source_unranking_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-266_equiprojectable_dynamic_evaluation_source_tree_hypothesis.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260718-P1553-ZR-P1"
+      ],
+      "handoff": {
+        "objective": "Either construct the exact target-label common factor z_R(T)=gcd(g_I(T),r_R(T)) from the two dyadic source-labelled pair-divisor trees inside the frozen setup/query rectangle, or derive the sharpest representation-specific obstruction after exhausting multipoint and remainder trees, transposed resultant evaluation, structured Sylvester displacement, modular composition, subresultants, and common-factor extraction.",
+        "uncertainty_reduced": "Whether output degree at most B and the split target-label algebra permit a genuinely output-sensitive construction without first materializing B^3 translated pair-intersection values or coefficients.",
+        "inputs": [
+          "the hash-bound P1553 R3 z_R residual",
+          "the completed Query2P1 producer and independent red-team receipts",
+          "P1513 translated-product and characteristic-norm controls",
+          "P1516 pair-router and IDEA-199/266 source-algebra controls"
+        ],
+        "constraints": [
+          "Act only as Idea Generator and write only beneath the assigned task directory.",
+          "Do not edit shared ledgers, focus files, idea records, contracts, producer predecessors, or official status.",
+          "Do not execute a solver, fixture, timing run, relation campaign, or IDEA-133 verifier.",
+          "Freeze a complete signed projective elliptic chart, denominator saturation, occurrence labels, multiplicity conventions, dyadic restrictions, target freshness, and exact unit or factor output before costing an algorithm.",
+          "For every route type the coefficient ring, bidegrees, represented dimensions, preprocessing state, target-dependent work, temporary workspace, output reconstruction, and O(log B) source replay.",
+          "Distinguish fast univariate gcd after r_R is represented from constructing r_R modulo g_I; do not credit output degree, half-gcd, modular composition, transposition, or displacement rank unless the input representation is produced inside the cap.",
+          "Test whether the target translation family has reusable low displacement rank or addition-law separability after complete-chart saturation, and prove the rank or exhibit the restoring B^3 state.",
+          "A positive route must include exact all-strata source replay, relation density and rank, factor logs, identical scalar-blind descent, verification, and complete lambda,mu<=0.45.",
+          "Failure of named algebraic algorithms is not an unrestricted circuit, data-structure, coordinate, Shoup, or ECDLP lower bound; preserve every untested representation-sensitive exception.",
+          "Use primary literature for algorithmic controls, bind every local input by SHA-256, and use ASCII. Allocate no P1554, contract, run, or breakthrough claim."
+        ],
+        "deliverables": [
+          "zr_report.yaml",
+          "zr_theorem_gate.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 2400,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both deliverables bind every local read-scope input by SHA-256 and state one terminal constructed, conditional, or scoped-negative verdict.",
+          "The complete-chart definition of r_R and z_R is coefficient-complete and proves exact componentwise meaning on repeated, tangent, vertical, infinity, and nonreduced strata.",
+          "Every fast-algebra route distinguishes input construction from gcd or output extraction and gives preprocessing, online, workspace, replay, and bit-cost exponents.",
+          "Any surviving route includes the full factor-base-to-target-descent path; otherwise the receipt names exactly one next action and preserves unrestricted exceptions."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260718-P1553-ZR-RT-R1",
+      "title": "Red-team the target-label common-factor construction",
+      "role": "red-team",
+      "state": "completed",
+      "priority": 65,
+      "review_required": false,
+      "depends_on": [
+        "TASK-20260718-P1553-ZR-P1"
+      ],
+      "read_scope": [
+        "AGENTS.md",
+        "agents/red-team.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_query2p1_indexing_gate_r3.md",
+        "coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_theorem_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-121/ku_circuit_reduction_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-165/pair_sum_quotient_theorem.md",
+        "ideas/rejected/ECDLP-IDEA-199_ranked_subset_convolution_source_unranking_hypothesis.md",
+        "ideas/rejected/ECDLP-IDEA-266_equiprojectable_dynamic_evaluation_source_tree_hypothesis.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260718-P1553-ZR-RT-R1"
+      ],
+      "handoff": {
+        "objective": "Independently reconstruct and try to falsify the producer's z_R algebra, complete-chart semantics, fast-algebra costs, and source-replay claims while actively searching for one valid output-sensitive or target-batched construction the producer missed.",
+        "uncertainty_reduced": "Whether any claimed sub-B^3 advantage survives coefficient construction, saturation, multiplicity, no-relation, restriction replay, and complete ECDLP accounting.",
+        "inputs": [
+          "the completed z_R producer receipts",
+          "the P1553 R3 frozen interface",
+          "P1513/P1516 translated-product and pair-router controls",
+          "primary fast polynomial, resultant, and modular-composition controls"
+        ],
+        "constraints": [
+          "Act only as Red Team and write only beneath the assigned task directory.",
+          "Do not edit producer artifacts, shared ledgers, focus files, idea records, contracts, or official status.",
+          "Do not execute experiments, solvers, fixtures, timing runs, relation campaigns, or IDEA-133 verifiers.",
+          "Reconstruct the componentwise meaning of r_R modulo g_I on complete signed charts and attack denominator saturation, repeated roots, tangencies, vertical pairs, infinity, labels, and false factors.",
+          "Separate the cost of forming target-dependent resultant data from univariate gcd, factor extraction, and output-sensitive reporting; charge every coefficient, oracle call, word size, and restriction replay.",
+          "Challenge claimed structure with generic pair decks, collision-heavy decks, no-relation targets, and one favorable exactly separable control.",
+          "Operation-level deduplicate every survivor against P1513, P1551, P1516, IDEA-199, and IDEA-266.",
+          "No unrestricted arithmetic-circuit, data-structure, coordinate, generic-group, Shoup, or ECDLP lower bound may be inferred. Allocate no P1554, experiment, or breakthrough claim."
+        ],
+        "deliverables": [
+          "red_team_report.yaml",
+          "zr_red_team.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 2400,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both reports bind every local read-scope input by SHA-256 and state one terminal scoped verdict.",
+          "Every producer formula and B exponent is independently reconstructed or corrected.",
+          "At least one favorable structured control and one adversarial generic or no-relation control are supplied.",
+          "Any surviving route has exact construction, restriction, source, all-strata, and complete ECDLP accounting; otherwise exactly one next action remains."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260719-P1553-NET-P1",
+      "title": "Specify the gauge-invariant elliptic-net constructor",
+      "role": "idea-generator",
+      "state": "completed",
+      "priority": 70,
+      "review_required": true,
+      "depends_on": [
+        "TASK-20260718-P1553-ZR-RT-R1"
+      ],
+      "read_scope": [
+        "AGENTS.md",
+        "agents/idea-generator.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_target_label_common_factor_gate_r4.md",
+        "ideas/artifacts/ECDLP-IDEA-006/p1540_elliptic_net_translated_pole_annihilator_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-006/p1540_r1_independent_audit.md",
+        "coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_theorem_gate.md",
+        "coordination/tasks/TASK-20260718-P1553-ZR-RT-R1/red_team_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-ZR-RT-R1/zr_red_team.md",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-121/ku_circuit_reduction_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-165/pair_sum_quotient_theorem.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260719-P1553-NET-P1"
+      ],
+      "handoff": {
+        "objective": "Give a theorem-only, oracle-free and gauge-invariant elliptic-net or division-polynomial construction of r_R modulo g_I, or of exact dyadic subinterval unit products, within total B^(5/4+o(1)); otherwise isolate the first recurrence input or represented state that exceeds the cap.",
+        "uncertainty_reduced": "Whether nonlinear or variable-coefficient elliptic recurrences can construct the exact fifth-label support without importing supplied orbit-resultant terms, a degree-B^2 target vector, B^3 translated endpoints, or unpaid all-negative replay.",
+        "inputs": [
+          "the reviewed P1553 R4 common-factor semantics and sole surviving exception",
+          "the immutable producer and red-team z_R receipts",
+          "P1513 translated-product and elliptic pair-router controls",
+          "primary elliptic-net, elliptic divisibility sequence, and polynomial-recurrence controls"
+        ],
+        "constraints": [
+          "Act only as Idea Generator and write only beneath the assigned task directory.",
+          "Do not edit shared ledgers, focus files, idea records, contracts, predecessor receipts, or official status.",
+          "Do not execute experiments, solvers, fixtures, timing runs, relation campaigns, or IDEA-133 verifiers.",
+          "State the exact coefficient rings, occurrence-label algebra, complete signed projective charts, gauge action, target freshness rule, dyadic restrictions, and required output before invoking any recurrence.",
+          "For every net or division-polynomial term, identify its index, seed set, coefficient source, dependency graph, representation size, and whether it is target-dependent; supplied recurrence terms or target resultants count at full construction cost.",
+          "Prove gauge invariance of the returned gcd or unit product, including zero, pole, tangent, vertical, identity, infinity, repeated-label, and nonreduced strata; no generic affine division is allowed.",
+          "Charge preprocessing, one target, B relation targets, temporary workspace, O(log B) restriction replay, output reconstruction, field-to-bit conversion, relation density and rank, factor logs, scalar-blind descent, and final verification.",
+          "A fast supplied-term recurrence is not a constructor. A positive result must give an oracle-free algorithm with lambda,mu<=0.45 and no target-specific advice.",
+          "Failure closes only the named elliptic-net and division-polynomial representations, not unrestricted arithmetic circuits, data structures, coordinates, generic-group models, Shoup, or ECDLP.",
+          "Use primary literature, bind every local input by SHA-256, use ASCII, and allocate no P1554, contract, run, or breakthrough claim."
+        ],
+        "deliverables": [
+          "net_constructor_report.yaml",
+          "net_constructor_theorem.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 3000,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both deliverables bind every local read-scope input by SHA-256 and state one terminal constructed, conditional, or scoped-negative verdict.",
+          "The recurrence is written explicitly enough to distinguish computable seeds from supplied target-dependent terms and to audit every represented dimension.",
+          "Gauge invariance, complete-chart strata, target freshness, and exact z_R or unit-product semantics are proved or a precise counterexample is supplied.",
+          "Every exponent includes construction and replay; any surviving route includes the full ECDLP path, otherwise exactly one narrower theorem target remains."
+        ]
+      }
+    },
+    {
+      "id": "TASK-20260719-P1553-NET-RT-R1",
+      "title": "Red-team the gauge-invariant elliptic-net constructor",
+      "role": "red-team",
+      "state": "completed",
+      "priority": 65,
+      "review_required": false,
+      "depends_on": [
+        "TASK-20260719-P1553-NET-P1"
+      ],
+      "read_scope": [
+        "AGENTS.md",
+        "agents/red-team.md",
+        "ideas/artifacts/ECDLP-IDEA-012/p1553_target_label_common_factor_gate_r4.md",
+        "ideas/artifacts/ECDLP-IDEA-006/p1540_elliptic_net_translated_pole_annihilator_gate.md",
+        "ideas/artifacts/ECDLP-IDEA-006/p1540_r1_independent_audit.md",
+        "coordination/tasks/TASK-20260719-P1553-NET-P1/net_constructor_report.yaml",
+        "coordination/tasks/TASK-20260719-P1553-NET-P1/net_constructor_theorem.md",
+        "coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_report.yaml",
+        "coordination/tasks/TASK-20260718-P1553-ZR-RT-R1/red_team_report.yaml",
+        "ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-121/ku_circuit_reduction_v2.md",
+        "ideas/artifacts/ECDLP-IDEA-165/pair_sum_quotient_theorem.md",
+        "ledger/FINDING-PF-IC-001.md",
+        "focus/current_plan.json"
+      ],
+      "write_scope": [
+        "coordination/tasks/TASK-20260719-P1553-NET-RT-R1"
+      ],
+      "handoff": {
+        "objective": "Independently reconstruct and try to falsify the proposed elliptic-net or division-polynomial constructor, with special attention to gauge, hidden seeds, target advice, vanishing denominators, represented dimensions, and all-negative interval replay.",
+        "uncertainty_reduced": "Whether the producer has an actual oracle-free constructor rather than a fast evaluator for already supplied recurrence terms or a compressed restatement of the B^3 translated pair table.",
+        "inputs": [
+          "the completed NET producer receipts",
+          "the reviewed P1553 R4 exact common-factor interface",
+          "the immutable z_R producer and red-team receipts",
+          "primary elliptic-net, divisibility-sequence, and polynomial-recurrence controls"
+        ],
+        "constraints": [
+          "Act only as Red Team and write only beneath the assigned task directory.",
+          "Do not edit producer artifacts, shared ledgers, focus files, idea records, contracts, or official status.",
+          "Do not execute experiments, solvers, fixtures, timing runs, relation campaigns, or IDEA-133 verifiers.",
+          "Reconstruct every recurrence from its base identities and classify each seed or coefficient as source-only, target-only, mixed, supplied, or constructed.",
+          "Test gauge rescalings, fresh-target substitutions, zero and pole branches, tangencies, vertical pairs, identity, infinity, repeated labels, nonreduced components, no-relation targets, and one favorable separable control.",
+          "Expand any claimed compact state until its field elements, term indices, dependency edges, coefficient degrees, preprocessing, per-target work, workspace, replay, and bit costs are explicit.",
+          "Treat a recurrence evaluator with supplied terms, a target-trained orbit, or an unproved variable-coefficient acceleration as conditional rather than constructed.",
+          "Operation-level deduplicate every survivor against P1513, P1551, P1516, IDEA-121, IDEA-165, and the P1553 R4 route ledger.",
+          "No unrestricted arithmetic-circuit, data-structure, coordinate, generic-group, Shoup, or ECDLP lower bound may be inferred. Allocate no P1554, experiment, or breakthrough claim.",
+          "Use primary literature, bind every local input by SHA-256, and use ASCII."
+        ],
+        "deliverables": [
+          "red_team_report.yaml",
+          "net_red_team.md"
+        ],
+        "budget": {
+          "wall_clock_seconds": 3000,
+          "memory_gb": 4,
+          "maximum_runs": 1
+        },
+        "completion_gate": [
+          "Both reports bind every local read-scope input by SHA-256 and state one terminal scoped verdict.",
+          "Every seed, gauge factor, represented dimension, and B exponent is independently reconstructed or corrected.",
+          "At least one favorable control and one adversarial no-relation or collision-heavy control are supplied.",
+          "Any surviving route has exact construction, restriction, replay, all-strata, and complete ECDLP accounting; otherwise exactly one next action remains."
+        ]
+      }
+    }
+  ]
+}

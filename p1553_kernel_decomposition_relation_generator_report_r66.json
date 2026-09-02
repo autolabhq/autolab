@@ -1,0 +1,403 @@
+{
+  "checks": {
+    "all_generated_kernel_matrices_are_full_rank": true,
+    "all_loaded_dependency_source_digests_are_pinned": true,
+    "direct_r61_report_digest_is_pinned": true,
+    "direct_r65_report_digest_is_pinned": true,
+    "factor_section_counts_match_r65": true,
+    "generated_primitive_line_set_matches_r65": true,
+    "imported_r65_implementation_digest_is_pinned": true,
+    "kernel_dimension_is_three": true
+  },
+  "classification": [
+    "toy",
+    "exact-kernel-decomposition-generator",
+    "heuristic-cost-model",
+    "model-bound",
+    "novelty-unverified"
+  ],
+  "cost_model": {
+    "base_and_factor_catalog_construction_charged": false,
+    "candidate_work_per_invertible_X": 84,
+    "construction": "choose three smooth left sections X; enumerate one smooth right section y1; solve a 3x3 linear map for K; the remaining y2,y3 are forced",
+    "full_scan_asymptotic": "Theta(S_left^3*S_right); for balanced catalogs this is Theta(S^4), the same order as all pairs of M about S^2 smooth products",
+    "full_toy_scan_cost": "C(S_left,3)*S_right candidate tests before rank and disjointness filters",
+    "generic_expected_X_trials_per_relation": "about |P^2(F_p)|^2/S^3",
+    "generic_expected_candidate_tests_per_relation": "about |P^2(F_p)|^2/S^2, asymptotically (N/B)^6 when p is comparable to N",
+    "generic_smooth_factor_section_scale": "S about B^3/N for a random fixed-sum point base when p is comparable to N",
+    "linear_algebra_charged": false,
+    "projected_scalar_logs_charged": false,
+    "relation_collection_for_B_rows": "about N^6/B^5 candidate tests under the uniform model; no exponent gain over R63",
+    "relation_rank_charged": false,
+    "scalar_labelled_subgroup_table_cost_charged_as_blocking": true,
+    "scalar_labelled_subgroup_table_materialization": "literal builder uses Theta(N log N) group operations from N independent double-and-add multiplications plus O(N log N) sorting and creates an invertible scalar-labelled lookup table; not an inverse DLP, but already too expensive for a sub-rho claim",
+    "target_descent_charged": false,
+    "toy_candidate_count_ratio_to_R65_pairs": 0.16502422856107726,
+    "uniform_factor_section_expected_hits_per_X": 0.00042276262161896065
+  },
+  "dependency_source_sha256": {
+    "p1553_catalog_pencil_fiber_scan_r46.py": "3101a43126a2c1511b15ad6aef1bdc7a0144719ecb31bc9708d10128413e2572",
+    "p1553_coprime_product_trisecant_probe_r54.py": "c42ce441526d9adc95617eccac15a5b09e29a044e40f253ea0f8123a6a7b1ccc",
+    "p1553_degree_six_primitive_product_pencil_search_r60.py": "5a9b2f6987fc945e3664347b6c929fc0fc4b973b615e0277545bc4ec5091e5f8",
+    "p1553_degree_six_product_hypersurface_locator_r61.py": "b8331ae9534fde907df8cffda074d2443f219324174fee6f49756cd40351bbfb",
+    "p1553_degree_six_scan_free_factor_lift_r62.py": "15ca1a87202d069b79325b7a1743762d221f0726e793020910fb74c3633d900a",
+    "p1553_exact_public_base_trisecant_scan_r65.py": "148c8c0b39c5a1849a99e7509e5212364f777d6e38899f55affe6611b6ee3ff8",
+    "p1553_fixed_class_multiplication_kernel_scan_r56.py": "40698d92012a4ca4e79f5ac8da58f76967a14e2dd20ba234e1b61c273aedc210",
+    "p1553_full_curve_primitive_product_pencil_search_r58.py": "d4fda31b41d93ef58b393476a6e4a64535947e305e132fe671dcac7cf9c141f3",
+    "p1553_low_boundary_pencil_search_r38.py": "a750f12e3aa8840f63e4b32ff1f783f00086f0d2c4244bb2c6a70614488a5de8",
+    "p1553_primitive_degree_nine_rank_search_r44.py": "b9bbad90f2f5076ea0cb8346d94514a7e8f82993daa07c374d050e334be2687b",
+    "p1553_public_factor_base_closure_probe_r63.py": "7f5d061a539d62d2b3d362fed8252fead5b8e14dbc9250f5543e686f3a8d89cb"
+  },
+  "field_prime": 193,
+  "generation_scan": {
+    "all_three_right_factors_smooth": 569,
+    "candidate_first_right_factors": 1158780,
+    "disjoint_right_hit_histogram_per_X": {
+      "0": 13794,
+      "1": 1
+    },
+    "distinct_primitive_relation_lines": 1,
+    "generated_lines": [
+      {
+        "kernel_coordinates": [
+          61,
+          14,
+          55
+        ],
+        "kernel_matrix": [
+          [
+            0,
+            106,
+            148
+          ],
+          [
+            92,
+            0,
+            61
+          ],
+          [
+            14,
+            55,
+            0
+          ]
+        ],
+        "kernel_matrix_rank": 3,
+        "normalized_section_relation_coefficients": [
+          65,
+          112,
+          16
+        ],
+        "plucker_key_hex": "016a971a482261a47c825f512fa065",
+        "products": [
+          {
+            "factors": [
+              {
+                "base_indices": [
+                  1,
+                  13,
+                  23
+                ],
+                "line": [
+                  1,
+                  10,
+                  1
+                ],
+                "torsion_lift_pattern": [
+                  1,
+                  1,
+                  0
+                ],
+                "verification_scalars": [
+                  84,
+                  75,
+                  93
+                ]
+              },
+              {
+                "base_indices": [
+                  7,
+                  19,
+                  20
+                ],
+                "line": [
+                  1,
+                  64,
+                  1
+                ],
+                "torsion_lift_pattern": [
+                  1,
+                  1,
+                  0
+                ],
+                "verification_scalars": [
+                  10,
+                  18,
+                  26
+                ]
+              }
+            ],
+            "mask": 196542553116050246087126846827217574514451009732526211072,
+            "section": [
+              1,
+              45,
+              104,
+              136,
+              41,
+              28
+            ]
+          },
+          {
+            "factors": [
+              {
+                "base_indices": [
+                  7,
+                  8,
+                  22
+                ],
+                "line": [
+                  1,
+                  92,
+                  114
+                ],
+                "torsion_lift_pattern": [
+                  0,
+                  1,
+                  1
+                ],
+                "verification_scalars": [
+                  10,
+                  79,
+                  60
+                ]
+              },
+              {
+                "base_indices": [
+                  0,
+                  2,
+                  4
+                ],
+                "line": [
+                  1,
+                  162,
+                  40
+                ],
+                "torsion_lift_pattern": [
+                  0,
+                  0,
+                  0
+                ],
+                "verification_scalars": [
+                  53,
+                  37,
+                  67
+                ]
+              }
+            ],
+            "mask": 6129993855476654080656733738079898612322073662564860928,
+            "section": [
+              1,
+              166,
+              192,
+              72,
+              99,
+              55
+            ]
+          },
+          {
+            "factors": [
+              {
+                "base_indices": [
+                  9,
+                  12,
+                  17
+                ],
+                "line": [
+                  1,
+                  83,
+                  97
+                ],
+                "torsion_lift_pattern": [
+                  0,
+                  0,
+                  0
+                ],
+                "verification_scalars": [
+                  4,
+                  91,
+                  54
+                ]
+              },
+              {
+                "base_indices": [
+                  18,
+                  21,
+                  22
+                ],
+                "line": [
+                  1,
+                  92,
+                  186
+                ],
+                "torsion_lift_pattern": [
+                  0,
+                  0,
+                  0
+                ],
+                "verification_scalars": [
+                  83,
+                  14,
+                  60
+                ]
+              }
+            ],
+            "mask": 2485551486298613486312243216,
+            "section": [
+              1,
+              163,
+              67,
+              5,
+              21,
+              32
+            ]
+          }
+        ]
+      }
+    ],
+    "internally_simple_relation_candidates": 1,
+    "invertible_left_factor_triples": 13795,
+    "left_factor_triples": 27720,
+    "maximum_disjoint_right_hits_for_one_X": 1,
+    "maximum_smooth_right_hits_for_one_X": 2,
+    "pairwise_disjoint_left_factor_triples": 13872,
+    "pairwise_disjoint_right_factor_triples": 1,
+    "primitive_relation_candidate_visits": 1,
+    "singular_first_row_maps": 0,
+    "smooth_right_hit_histogram_per_X": {
+      "0": 13231,
+      "1": 559,
+      "2": 5
+    }
+  },
+  "limits": [
+    "the exact generator is tested on one B=24 public base and one toy curve",
+    "the executable depends on a literal Theta(N log N)-group-work scalar-labelled subgroup table plus O(N log N) sorting and is public only after those toy catalogs are precomputed",
+    "the generator is cheaper than all smooth-product pairs but its uniform smoothness model recovers the same N^6/B^5 relation-collection exponent",
+    "base construction, relation rank, projected logs, linear algebra, and fresh-target descent remain uncharged",
+    "no Shoup-bound improvement or ECDLP breakthrough is claimed"
+  ],
+  "multiplication_kernel": {
+    "basis_matrices": [
+      [
+        [
+          0,
+          78,
+          58
+        ],
+        [
+          123,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          12,
+          151
+        ],
+        [
+          32,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          158,
+          121
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    ],
+    "basis_vectors": [
+      [
+        0,
+        78,
+        58,
+        123,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        12,
+        151,
+        32,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        158,
+        121,
+        8,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "dimension": 3
+  },
+  "pass": true,
+  "prime_subgroup_order": 103,
+  "public_base_size": 24,
+  "result": {
+    "asymptotic_exponent_improvement_under_uniform_model": false,
+    "asymptotic_relation_algorithm": false,
+    "breakthrough": false,
+    "conditional_precomputed_catalog_kernel_decomposition_rule": true,
+    "factor_base_logs": false,
+    "fresh_target_action": false,
+    "independent_rank": false,
+    "r10_queried_coefficients": false,
+    "scalar_blind_descent": false,
+    "shoup_bound_improvement": false,
+    "subquadratic_in_full_smooth_product_pair_scan": false,
+    "toy_constant_factor_candidate_reduction": true,
+    "unconditional_public_kernel_decomposition_generation_rule": false,
+    "unique_r65_primitive_line_recovered": true
+  },
+  "schema": "p1553.kernel_decomposition_relation_generator.r66.v1",
+  "smooth_factor_section_counts": [
+    56,
+    84
+  ]
+}

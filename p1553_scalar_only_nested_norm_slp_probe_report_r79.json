@@ -1,0 +1,293 @@
+{
+  "admission": {
+    "failures": [
+      "blind zero certification evaluates B^5 actual S6 leaves",
+      "exact counting evaluates and Fermat-projects B^5 leaves",
+      "caching scalar norm nodes uses B^5 state",
+      "factor-log solve and identical fresh-target descent are unsupplied"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 12,
+    "passed_obligation_count": 8
+  },
+  "aggregate": {
+    "all_bound_blind_counts_zero": true,
+    "all_bound_forced_counts_one": true,
+    "all_direct_root_products_match_counts": true,
+    "all_dyadic_counts_conserve": true,
+    "all_sources_verified": true,
+    "bound_instance_count": 32,
+    "direct_control_family_count": 4,
+    "duplicate_and_multiple_root_semantics_pass": true,
+    "maximum_cached_scalar_node_count": 9331,
+    "maximum_leaf_count": 7776
+  },
+  "breakthrough": false,
+  "classification": "SCALAR_ONLY_LEAF_NESTED_NORM_HAS_B5_FAILED_ZERO_WORK",
+  "cost_ledger": {
+    "asymptotic": {
+      "blind_failed_zero_certificate_work_exponent_B": 5.0,
+      "cached_source_tree_state_exponent_B": 5.0,
+      "fermat_exact_count_work_exponent_B": 5.0,
+      "field_bitlength_factor_suppressed": true,
+      "forced_exact_count_work_exponent_B": 5.0,
+      "lane_inside_caps": false,
+      "leaf_s6_resultant_work_exponent_B": 5.0,
+      "scalar_product_work_exponent_B": 5.0,
+      "streaming_workspace_exponent_B": 0.0
+    },
+    "charging_rule": "A NORM node expands to its scalar child calls and multiplications; it receives no unit-cost black-box credit.",
+    "online_workspace_cap_exponent_B": 1.25,
+    "per_size": [
+      {
+        "blind_failed_zero_leaf_floor": 243,
+        "cached_scalar_node_count": 364,
+        "cached_tree_state_exponent_B": 5.0,
+        "deck_size": 3,
+        "exact_count_work_exponent_B": 5.0,
+        "forced_exact_count_leaf_floor": 243,
+        "leaf_s6_resultant_evaluation_count": 243,
+        "level_node_counts": {
+          "fixed_prefix_length_0": 1,
+          "fixed_prefix_length_1": 3,
+          "fixed_prefix_length_2": 9,
+          "fixed_prefix_length_3": 27,
+          "fixed_prefix_length_4": 81,
+          "fixed_prefix_length_5": 243
+        },
+        "scalar_product_multiplication_count": 242,
+        "streaming_live_scalar_count_upper_bound": 6,
+        "streaming_workspace_exponent_B": 0.0
+      },
+      {
+        "blind_failed_zero_leaf_floor": 1024,
+        "cached_scalar_node_count": 1365,
+        "cached_tree_state_exponent_B": 5.0,
+        "deck_size": 4,
+        "exact_count_work_exponent_B": 5.0,
+        "forced_exact_count_leaf_floor": 1024,
+        "leaf_s6_resultant_evaluation_count": 1024,
+        "level_node_counts": {
+          "fixed_prefix_length_0": 1,
+          "fixed_prefix_length_1": 4,
+          "fixed_prefix_length_2": 16,
+          "fixed_prefix_length_3": 64,
+          "fixed_prefix_length_4": 256,
+          "fixed_prefix_length_5": 1024
+        },
+        "scalar_product_multiplication_count": 1023,
+        "streaming_live_scalar_count_upper_bound": 6,
+        "streaming_workspace_exponent_B": 0.0
+      },
+      {
+        "blind_failed_zero_leaf_floor": 3125,
+        "cached_scalar_node_count": 3906,
+        "cached_tree_state_exponent_B": 5.0,
+        "deck_size": 5,
+        "exact_count_work_exponent_B": 5.0,
+        "forced_exact_count_leaf_floor": 3125,
+        "leaf_s6_resultant_evaluation_count": 3125,
+        "level_node_counts": {
+          "fixed_prefix_length_0": 1,
+          "fixed_prefix_length_1": 5,
+          "fixed_prefix_length_2": 25,
+          "fixed_prefix_length_3": 125,
+          "fixed_prefix_length_4": 625,
+          "fixed_prefix_length_5": 3125
+        },
+        "scalar_product_multiplication_count": 3124,
+        "streaming_live_scalar_count_upper_bound": 6,
+        "streaming_workspace_exponent_B": 0.0
+      },
+      {
+        "blind_failed_zero_leaf_floor": 7776,
+        "cached_scalar_node_count": 9331,
+        "cached_tree_state_exponent_B": 5.0,
+        "deck_size": 6,
+        "exact_count_work_exponent_B": 5.0,
+        "forced_exact_count_leaf_floor": 7776,
+        "leaf_s6_resultant_evaluation_count": 7776,
+        "level_node_counts": {
+          "fixed_prefix_length_0": 1,
+          "fixed_prefix_length_1": 6,
+          "fixed_prefix_length_2": 36,
+          "fixed_prefix_length_3": 216,
+          "fixed_prefix_length_4": 1296,
+          "fixed_prefix_length_5": 7776
+        },
+        "scalar_product_multiplication_count": 7775,
+        "streaming_live_scalar_count_upper_bound": 6,
+        "streaming_workspace_exponent_B": 0.0
+      }
+    ],
+    "schema": "p1553.per_node_state_work_failed_zero.r79.v1",
+    "setup_state_cap_exponent_B": 2.25
+  },
+  "direct_controls": [
+    {
+      "all_root_products_match_counts": true,
+      "family_id": "secp256k1",
+      "targets": [
+        {
+          "deck_size": 3,
+          "exact_fermat_zero_count": 0,
+          "leaf_count": 243,
+          "root_scalar_product_is_zero": false,
+          "source_indices": null,
+          "source_relation_verified": null,
+          "target_id": "blind_hash_target"
+        },
+        {
+          "deck_size": 3,
+          "exact_fermat_zero_count": 1,
+          "leaf_count": 243,
+          "root_scalar_product_is_zero": true,
+          "source_indices": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source_relation_verified": true,
+          "target_id": "forced_positive_target"
+        }
+      ]
+    },
+    {
+      "all_root_products_match_counts": true,
+      "family_id": "nist_p256",
+      "targets": [
+        {
+          "deck_size": 3,
+          "exact_fermat_zero_count": 0,
+          "leaf_count": 243,
+          "root_scalar_product_is_zero": false,
+          "source_indices": null,
+          "source_relation_verified": null,
+          "target_id": "blind_hash_target"
+        },
+        {
+          "deck_size": 3,
+          "exact_fermat_zero_count": 1,
+          "leaf_count": 243,
+          "root_scalar_product_is_zero": true,
+          "source_indices": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source_relation_verified": true,
+          "target_id": "forced_positive_target"
+        }
+      ]
+    },
+    {
+      "all_root_products_match_counts": true,
+      "family_id": "nist_p384",
+      "targets": [
+        {
+          "deck_size": 3,
+          "exact_fermat_zero_count": 0,
+          "leaf_count": 243,
+          "root_scalar_product_is_zero": false,
+          "source_indices": null,
+          "source_relation_verified": null,
+          "target_id": "blind_hash_target"
+        },
+        {
+          "deck_size": 3,
+          "exact_fermat_zero_count": 1,
+          "leaf_count": 243,
+          "root_scalar_product_is_zero": true,
+          "source_indices": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source_relation_verified": true,
+          "target_id": "forced_positive_target"
+        }
+      ]
+    },
+    {
+      "all_root_products_match_counts": true,
+      "family_id": "nist_p521",
+      "targets": [
+        {
+          "deck_size": 3,
+          "exact_fermat_zero_count": 0,
+          "leaf_count": 243,
+          "root_scalar_product_is_zero": false,
+          "source_indices": null,
+          "source_relation_verified": null,
+          "target_id": "blind_hash_target"
+        },
+        {
+          "deck_size": 3,
+          "exact_fermat_zero_count": 1,
+          "leaf_count": 243,
+          "root_scalar_product_is_zero": true,
+          "source_indices": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "source_relation_verified": true,
+          "target_id": "forced_positive_target"
+        }
+      ]
+    }
+  ],
+  "disposition": "REJECT_SCALAR_ONLY_LEAF_PRODUCT_NORM_SLP_ONLY__ACTUAL_S4_BY_S4_LEAVES__FOUR_DIRECT_STANDARD_CURVE_CONTROLS__R78_32_INSTANCE_BINDING__BLIND_ZERO__FORCED_COUNT_SOURCE__DUPLICATE_AND_MULTIPLE_ROOT_SEMANTICS__DYADIC_CHILDREN__STREAMING_WORKSPACE_CONSTANT_BUT_FAILED_ZERO_WORK_B5__CACHED_STATE_B5__BATCHED_NORM_COMPILER_OPEN__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "fresh_target_descent_complete": false,
+  "grammar": {
+    "all_nodes_scalar": true,
+    "dyadic_children": "first-mode interval sums of leaf indicators",
+    "exact_count": "sum over leaves of 1-resultant^(p-1), valid as an integer on the frozen B^5<p range",
+    "frozen_before_target_outcomes": true,
+    "grammar_id": "actual_s4_five_level_scalar_product_norm_v1",
+    "leaf": "scalar Res_z(S4(x1,x2,x3,z),S4(xR,x4,x5,z))",
+    "norm_is_not_a_primitive_oracle": true,
+    "recursive_node": "scalar product over one frozen deck coordinate",
+    "root": "one scalar product over all B^5 tuple occurrences",
+    "schema": "p1553.frozen_scalar_only_nested_norm_slp.r79.v1",
+    "source": "first zero leaf plus five occurrence indices"
+  },
+  "next_action": "Freeze one batched nested-norm node compiler from unary deck polynomials to scalar output. Expand every resultant, subproduct, remainder, transposed, and source operation into field-operation and state receipts; require a strict improvement over B^5 while preserving R76 zero/count/source/children before testing the direct caps.",
+  "schema": "p1553.scalar_only_nested_norm_slp_probe.r79.v1",
+  "scope_boundary": "This rejects only the explicit scalar-leaf product/norm SLP. It does not reject a batched norm-node compiler that proves a sub-B^5 arithmetic implementation from compact deck polynomials without hiding forbidden intermediate state.",
+  "shoup_bound_improvement": false,
+  "side_artifacts": {
+    "cost_ledger": "per_node_state_work_and_failed_zero_ledger.json",
+    "frozen_slp": "frozen_scalar_only_nested_norm_slp.json",
+    "scalar_replay": "actual_s4_scalar_zero_count_replay.json",
+    "source_transcript": "rectangle_source_and_dyadic_transcript.json"
+  },
+  "source_bindings": {
+    "r2_finite_deck_registry": {
+      "bound_gate_sha256": "55acc1457e7fd5a740da57c2c1db957374c7c18561c67b1748176dc8c61fcda5",
+      "path": "p1553_r31_artifact_index_README.md",
+      "sha256": "0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f"
+    },
+    "r76_exact_incidence_control": {
+      "path": "p1553_s6_subset_incidence_mobius_probe_report_r76.json",
+      "sha256": "de41d1618bc71c46f700bfead0ed72c5ac0b29a89da3b5c32534a15314ef4c93"
+    },
+    "r78_actual_s6_tt_control": {
+      "path": "p1553_actual_s6_fermat_tensor_train_probe_report_r78.json",
+      "sha256": "e590002c433c6504725d5ab7ff1dba97ad8c15400bf0117846742da7359c5e60"
+    },
+    "r78_frozen_grammar": {
+      "path": "frozen_nonlinear_nested_resultant_functional_grammar.json",
+      "sha256": "320c0ae21cbb56451c1dcd4e9f96e53bfd1cb87d07d7a7fc6d6402e835d107f3"
+    }
+  }
+}

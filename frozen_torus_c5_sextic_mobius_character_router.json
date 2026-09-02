@@ -1,0 +1,73 @@
+{
+  "caps": {
+    "arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_state_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "interface": {
+    "closed_use": "Translation-invariant linear convolution requires Omega(q) spectral state.",
+    "input": "A norm-one target x, fixed norm-one parameter z, and prime subgroup order q=(p+1)/6.",
+    "output": "The six-valued label chi_z(x)=T_z(x)^q.",
+    "positive_use": "O(log q) labels can separate inversion-disjoint support values from their inverses."
+  },
+  "required_open_outputs": [
+    "nonlinear_character_source_router_complete",
+    "compact_nontranslation_composition_complete",
+    "complete_five_source_index",
+    "known_rhs_relation_rank_complete",
+    "factor_logs_complete",
+    "identical_target_descent_complete",
+    "generic_prime_family_algorithm",
+    "pollard_rho_improvement_complete",
+    "shoup_improvement_complete",
+    "breakthrough_complete"
+  ],
+  "schema": "p1553.torus_c5_sextic_mobius_character_router.frozen.r141.v1",
+  "source_bindings": {
+    "r140_controls": {
+      "path": "torus_c5_order_two_four_minor_claw_controls.json",
+      "sha256": "dbe9feac7384b1d6048b11d9a7a86e2afdb91adc339481132183e85f57ea1a75"
+    },
+    "r140_cost": {
+      "path": "torus_c5_order_two_four_minor_claw_cost_ledger.json",
+      "sha256": "2cd3c7708e4f83af6f688e10ce27e06198e6aaade546b0e0ef15423777137af8"
+    },
+    "r140_frozen": {
+      "path": "frozen_torus_c5_order_two_four_minor_claw.json",
+      "sha256": "7930da7bdd6f51254ab2a23aacf12113c0c85fd2857aec8919caeb30d69f1a1f"
+    },
+    "r140_gate": {
+      "path": "p1553_torus_c5_order_two_four_minor_claw_probe_gate_r140.md",
+      "sha256": "33c8b530802974a36b06b0032c17794f7f77bf454d41dd4a2e2415d671ccfe66"
+    },
+    "r140_logs": {
+      "path": "factor_logs_and_identical_descent_r140.json",
+      "sha256": "b7d7c9f1ecf51a349dea0c610c4a8a3fee6d000708285685a4d27d9b12eeecda"
+    },
+    "r140_parent": {
+      "path": "p1553_torus_c5_order_two_four_minor_claw_probe_parent_report_r140.yaml",
+      "sha256": "03ae39a6fde97e95581fefccf64a86cc6adc29ff2126ffc2e72bfd7f6d136ec5"
+    },
+    "r140_producer": {
+      "path": "p1553_torus_c5_order_two_four_minor_claw_probe_r140.py",
+      "sha256": "a849f79dea39041de547b473c0d4fc28e6221bbb6e004738028c7f4515422373"
+    },
+    "r140_replay": {
+      "path": "torus_c5_order_two_four_minor_claw_replay.json",
+      "sha256": "0661fab8f891080107a03e95981fea0170e54cbe8f53487db40fcfa9f0a9a3e2"
+    },
+    "r140_report": {
+      "path": "p1553_torus_c5_order_two_four_minor_claw_probe_report_r140.json",
+      "sha256": "3971132c94034f6c7f03bb7b77e83212fe805d9539b96c77a10e14176dca527c"
+    },
+    "r140_test": {
+      "path": "tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_order_two_four_minor_claw_probe_r140.py",
+      "sha256": "8e5daa679de1739e71c9670c5b775c2179d833748730fe897ba7eb8b8e36a585"
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "minimum_query_depth_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "random_model_required": false,
+      "route_id": "structured_binomial_zero_test_tree",
+      "status": "rejected_deterministically_by_product_set_size"
+    },
+    {
+      "minimum_four_mode_depth_exponent_B": {
+        "decimal": 0.4166666666666667,
+        "exact": "5/12"
+      },
+      "random_model_required": true,
+      "route_id": "random_support_at_most_four_mode_zero_test_tree",
+      "status": "rejected_with_high_probability_under_uniform_random_support_model_only",
+      "structured_factor_base_theorem": false
+    },
+    {
+      "inside_cap_exact_tree_constructed": false,
+      "route_id": "structured_three_plus_mode_zero_test_tree",
+      "status": "open",
+      "structured_support_lower_bound_sufficient": false
+    },
+    {
+      "inside_cap_exact_tree_constructed": false,
+      "random_root_budget_polynomial_gap": false,
+      "route_id": "five_plus_mode_low_slp_zero_test_tree",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_dag_constructed": false,
+      "route_id": "nonzero_value_frobenius_coordinate_dag",
+      "status": "open",
+      "zero_set_root_budget_applicable": false
+    }
+  ],
+  "schema": "p1553.torus_c5_binomial_node_union_depth_cost_ledger.r137.v1",
+  "theorem": {
+    "binomial_root_bound": "A nonzero represented binomial a*z^u+b*z^v with u distinct from v modulo prime q has at most one root in H: after division it is z^(u-v)=c, and the nonzero power map is a permutation of H.",
+    "deterministic_binomial_depth_lower_bound": "On the all-nonzero path, exactness forces the union of node root sets to cover either the color support or its complement. For binomial nodes this union has at most d points. Therefore d>=min(|S|,q-|S|)>=5m-4=B^(3/4+o(1)). This exceeds polylogarithmic arbitrary-target work regardless of the expanded support of the path product.",
+    "iterated_product_set_bound": "Let A be a nonempty subset of a cyclic group H of prime order q. Cauchy-Davenport in multiplicative notation gives |XY|>=min(q,|X|+|Y|-1). Iterating five times yields |A^5|>=min(q,5|A|-4). No discrete logarithm is computed; an abstract group isomorphism transfers the theorem.",
+    "maximum_deterministic_node_mode_count_closed": 2,
+    "maximum_random_model_node_mode_count_closed": 4,
+    "nonzero_value_tests_covered": false,
+    "not_covered": [
+      "structured zero-test nodes with three or more modes",
+      "uniform-random support trees with five or more modes per node",
+      "tests of nonzero field values rather than equality to zero",
+      "Frobenius-coordinate comparisons and table probes",
+      "general arithmetic-circuit, RAM, or cell-probe lower bounds"
+    ],
+    "primary_source": {
+      "author": "Matt DeVos",
+      "identifier": "arXiv:1301.0096",
+      "pinned_sha256": "924bac0a6b5a1e9379e38a53f3ab78a6ad129beb6fddb12396c8275403b8c511",
+      "source_result": "Introduction statement of the multiplicative Cauchy-Davenport theorem for prime-order groups",
+      "title": "The Structure of Critical Product Sets"
+    },
+    "random_depth_table": [
+      {
+        "maximum_node_mode_count": 2,
+        "maximum_single_node_root_exponent_q": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "minimum_depth_exponent_B": {
+          "decimal": 3.75,
+          "exact": "15/4"
+        },
+        "minimum_depth_exponent_q": {
+          "decimal": 0.75,
+          "exact": "3/4"
+        },
+        "polylogarithmic_query_compatible": false
+      },
+      {
+        "maximum_node_mode_count": 3,
+        "maximum_single_node_root_exponent_q": {
+          "decimal": 0.5,
+          "exact": "1/2"
+        },
+        "minimum_depth_exponent_B": {
+          "decimal": 1.25,
+          "exact": "5/4"
+        },
+        "minimum_depth_exponent_q": {
+          "decimal": 0.25,
+          "exact": "1/4"
+        },
+        "polylogarithmic_query_compatible": false
+      },
+      {
+        "maximum_node_mode_count": 4,
+        "maximum_single_node_root_exponent_q": {
+          "decimal": 0.6666666666666666,
+          "exact": "2/3"
+        },
+        "minimum_depth_exponent_B": {
+          "decimal": 0.4166666666666667,
+          "exact": "5/12"
+        },
+        "minimum_depth_exponent_q": {
+          "decimal": 0.08333333333333333,
+          "exact": "1/12"
+        },
+        "polylogarithmic_query_compatible": false
+      }
+    ],
+    "random_support_model_transferred_to_structured_factor_base": false,
+    "structured_color_support_lower_bound": "A balanced structured color has m=B^(3/4+o(1))=q^(3/20+o(1)) distinct atoms. Its accepted C5 support contains A^5, hence at least 5m-4 targets. The full C5 tuple count is B^(15/4)=q^(3/4), so the color complement has q-o(q) points.",
+    "uniform_random_support_extension": "Under the frozen uniform-random-deck support model only, |S|=q^(3/4+o(1)). If every node has at most t modes, Kelley gives at most 2*q^(1-1/(t-1)) roots per node. Thus depth is at least q^(3/4-(1-1/(t-1))+o(1))/2. For t=2,3,4 the q exponents are 3/4, 1/4, and 1/12, respectively, all polynomial and incompatible with polylog query work."
+  }
+}

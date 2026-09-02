@@ -1,0 +1,140 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-GENERALIZED-TARGET-DIVISOR-WEIL-RECIPROCITY-SWAP-R167-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: compact_principal_divisor_witness_and_exact_weil_reciprocity_swap
+run_count: 1
+status: output_sensitive_elliptic_resultant_mod_u_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - principal-divisor
+  - generalized-miller
+  - weil-reciprocity
+  - elliptic-resultant
+  - tame-symbol
+  - full-cost
+  - scoped-boundary
+owner: P1553-R113-R166-EAGEN-2022-596-MILLER-1986
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Replace the arbitrary target list in R166 by a compact principal-divisor
+  witness, prove the corrected Weil-reciprocity product swap on finite controls,
+  and charge both the raw swap and standard represented elliptic resultant.
+inputs:
+  - path: p1553_m6_kummer_x_translate_signed_verification_probe_r166.py
+    sha256: c524eca7bdb586e8e68e34da515da301766668f6f0b7bd6808e005b2b77e893a
+  - path: p1553_m6_kummer_x_translate_signed_verification_probe_report_r166.json
+    sha256: 94ee650b1302d231d946fc02f14d1c12b62a63bd9fba240a9d6a93e4bb986285
+  - path: frozen_m6_kummer_x_translate_signed_verification.json
+    sha256: e413a3f78adf508fbc22e2b05e4b2d1d5986871473de0cafa78ba89f5f2fb21a
+  - path: m6_kummer_x_translate_signed_verification_cost_ledger.json
+    sha256: 3b6ce95aa27864c5fe475ea36d745afba2108189138ade240f2f1ee4cbd43857
+  - path: m6_kummer_x_translate_signed_verification_replay.json
+    sha256: b459ab51185d403d0de91b5ff1700d43138e3e2e7281f4cdfe38ff0d1a0760ee
+  - path: m6_kummer_x_translate_signed_verification_controls.json
+    sha256: 72a28dbed3e056b4f1cab123546e786ae2ebc058bd012338afc7bde3ff6d9fc8
+  - path: kummer_x_candidate_and_signed_false_branch_r166.json
+    sha256: ff79f8c98a284f4a71cd3c529e65d11b76b77af216eb33089d50245a91fa6e5a
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_kummer_x_translate_signed_verification_probe_r166.py
+    sha256: 39570b95fbc355095a5f494ae091889d11d11b92b753b3caf0f74c5b5e63a751
+  - path: p1553_m6_kummer_x_translate_signed_verification_probe_gate_r166.md
+    sha256: e98cd1ba5b73c591dae5882e9058fafbd6e548df3c2ae929563181bc84920d9c
+  - path: p1553_m6_kummer_x_translate_signed_verification_probe_parent_report_r166.yaml
+    sha256: a10abdaa1f1c075ab0c0b77a709a1757d675f0369e9d7c51f276cb25e1c7c502
+  - path: references/eagen_ecip_weil_reciprocity_2022_596.pdf
+    sha256: 5310b35d288a9462ff704eb77e7651d18f681a5b560cfb2919d1cfd0e01ae09e
+  - path: references/miller_weil_pairing_algorithm_1986.pdf
+    sha256: 39c76c7643278b87b3d8c24b9a07d0b4cbfb561cd13735548990848e0f0bd166
+  - path: p1553_5a5c_nonlinear_elliptic_orbit_product_probe_report_r113.json
+    sha256: 5b961649fa71ced6b049a3500316114b3c9f3806b5b61639471d9a6f86b01102
+  - path: p1553_5a5c_nonlinear_elliptic_orbit_product_probe_gate_r113.md
+    sha256: d1939734367f92798ec40b89f9954ff0c9fe3bf07c6ad0bdaeb33e9a5fccad94
+artifacts:
+  - path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_r167.py
+    sha256: ba57052082668daf38027b928d88b0eca210510e2f6a6784ce3e0e8b481e1cd3
+  - path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_report_r167.json
+    sha256: 1d2f009525ef9d54a0f538d3a0a8cefe8451d4d97933b91b31ed1bb5c0b47e3c
+  - path: frozen_m6_generalized_target_divisor_weil_reciprocity_swap.json
+    sha256: 47d3d39017faa9adc1e79abc939c658c51272097dcb8620e72db51ce7543f492
+  - path: m6_generalized_target_divisor_weil_reciprocity_swap_cost_ledger.json
+    sha256: a84dc45c92d9a17ef9e9b73ddad426a8fe5111e72b6cd974fd5968841ebd10c3
+  - path: m6_generalized_target_divisor_weil_reciprocity_swap_replay.json
+    sha256: cf983cfdb3428503634d84a5a69305b71ac70e44338c37acb24e646e5593f6d0
+  - path: m6_generalized_target_divisor_weil_reciprocity_swap_controls.json
+    sha256: f78db8e5e5195727087552c8d8a122037eb1f0a0c5d469594ef08a070c093f83
+  - path: generalized_miller_elliptic_resultant_swap_r167.json
+    sha256: 95a42cb9d499012b676d96a77ca7c8a066e0cc6ade79e6cf9d0dd9ccfb674247
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_r167.py
+    sha256: 8c098e9a820ea7967cc700544aa64cc419750806c67e7c3dca395f271ae505e9
+  - path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_gate_r167.md
+    sha256: 41c4869bb231dfa2d0de1bb0d280aa34bd95903ed425792b80a84c762b845e3b
+verified_statements:
+  - >-
+    Any retained target list admits a degree-N principal-divisor quotient h
+    after adding one common zero and N auxiliary poles with matching group sum.
+  - >-
+    A generalized Miller line SLP compactly represents h in O(N) line merges;
+    this is compact divisor state, not a fast resultant or restriction modulo U.
+  - >-
+    Weil reciprocity swaps the N-target Kummer product into a corrected product
+    of h over S union -S, with candidate-zero rows handled by specialization.
+  - >-
+    Six controls verify 202 endpoint identities exactly: 62 disjoint-support
+    rows and 140 candidate-zero specialization rows.
+  - >-
+    The finite controls use 1,486 direct target evaluations versus 17,844 raw
+    swapped h evaluations; all auxiliary correction factors are units.
+  - >-
+    Raw swapped evaluation costs B^(9/2), and a standard represented elliptic
+    resultant remains at B^(7/2), both above the B^(5/2) rho proxy.
+scoped_failures:
+  output_sensitive_slp_elliptic_resultant_mod_u_below_rho: open
+  raw_weil_swap_below_rho: refuted_by_cost
+  standard_represented_elliptic_resultant_below_rho: refuted_by_cost
+  deterministic_hash_to_curve_signed_difference_transfer: open
+  unconditional_total_attack_cost: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+unproved_or_outside_scope:
+  - an arithmetic-circuit lower bound for SLP elliptic resultants modulo U
+  - a sub-rho transposed or half-GCD restriction operator for generalized Miller factors
+  - deterministic hash-to-curve pseudorandomness for signed short forms
+admission:
+  passed_obligations: 24
+  total_obligations: 32
+  compact_target_divisor_witness_admitted: true
+  weil_reciprocity_swap_identity_admitted: true
+  output_sensitive_resultant_constructor_admitted: false
+  lane_admitted: false
+result:
+  field_and_subgroup_order_exponent_B: 5
+  c3_divisor_degree_exponent_B: 9/4
+  target_count_exponent_B: 5/4
+  compact_target_divisor_state_exponent_B: 5/4
+  direct_target_table_exponent_B: 7/2
+  raw_weil_swap_exponent_B: 9/2
+  standard_elliptic_resultant_representation_exponent_B: 7/2
+  global_rho_exponent_B: 5/2
+  control_count: 6
+  evaluated_endpoint_count: 202
+  disjoint_support_row_count: 62
+  candidate_zero_specialization_count: 140
+  direct_target_evaluation_count: 1486
+  raw_swapped_h_evaluation_count: 17844
+  output_sensitive_elliptic_resultant_mod_u_complete: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_COMPACT_GENERALIZED_TARGET_DIVISOR_WITNESS__EXACT_WEIL_RECIPROCITY_SWAP_ON_SIX_FINITE_CONTROLS__CANDIDATE_ZERO_ROWS_BY_SPECIALIZATION__AUXILIARY_CORRECTIONS_UNITS__RAW_SWAP_B9O2__STANDARD_RESULTANT_B7O2__OUTPUT_SENSITIVE_RESULTANT_MOD_U_OPEN__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute an SLP elliptic-resultant or tame-symbol remainder
+  operator modulo U below B^(5/2), preferably B^(9/4+o(1)), without nN, n^2,
+  or represented degree-Theta(nN) intermediates.

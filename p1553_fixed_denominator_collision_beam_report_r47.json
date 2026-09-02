@@ -1,0 +1,464 @@
+{
+  "checks": {
+    "all_beam_layers_completed": true,
+    "all_selected_collision_bases_have_rank_seven": true,
+    "no_nine_fiber_survivor": true,
+    "two_denominator_orientations_checked": true
+  },
+  "classification": [
+    "toy",
+    "exact",
+    "deterministic-finite-search",
+    "model-bound",
+    "novelty-unverified"
+  ],
+  "field_prime": 193,
+  "global_best": {
+    "denominator_section": [
+      1,
+      143,
+      155,
+      132,
+      57,
+      124,
+      129,
+      22,
+      9
+    ],
+    "score": [
+      2,
+      106,
+      9
+    ],
+    "witness": {
+      "collision_pairs": 106,
+      "complete_coverage": 18,
+      "complete_nine_point_fibers": 2,
+      "maximum_selected_multiplicity": 9,
+      "numerator_section": [
+        1,
+        143,
+        155,
+        132,
+        57,
+        69,
+        64,
+        171,
+        184
+      ],
+      "selected_multiplicity_histogram": {
+        "1": 30,
+        "2": 13,
+        "7": 1,
+        "9": 2
+      }
+    }
+  },
+  "limits": [
+    "only two fixed denominator sections from the strongest R46 pair are searched",
+    "the beam retains 32 isolated pencils per layer and is not exhaustive in projective seven-space",
+    "subgroup basepoint checks do not certify geometric basepoint freeness over the algebraic closure",
+    "no asymptotic family, target locator, R10 output, relation-rank campaign, logs, or descent is constructed"
+  ],
+  "pass": true,
+  "required_score": {
+    "complete_coverage": 81,
+    "complete_nine_point_fibers": 9,
+    "minimum_collision_pairs": 324
+  },
+  "schema": "p1553.fixed_denominator_collision_beam.r47.v1",
+  "search_parameters": {
+    "beam_layers": 8,
+    "beam_width": 32,
+    "denominator_orientations": 2,
+    "dropped_collision_rows_per_state": 7,
+    "pencils_per_projective_slice": 194,
+    "score": [
+      "complete nine-point fibers",
+      "selected collision pairs",
+      "maximum selected multiplicity"
+    ]
+  },
+  "searches": [
+    {
+      "best_score": [
+        2,
+        106,
+        9
+      ],
+      "best_witness": {
+        "collision_pairs": 106,
+        "complete_coverage": 18,
+        "complete_nine_point_fibers": 2,
+        "maximum_selected_multiplicity": 9,
+        "numerator_section": [
+          1,
+          143,
+          155,
+          132,
+          57,
+          124,
+          129,
+          22,
+          9
+        ],
+        "selected_multiplicity_histogram": {
+          "1": 30,
+          "2": 13,
+          "7": 1,
+          "9": 2
+        }
+      },
+      "denominator_section": [
+        1,
+        143,
+        155,
+        132,
+        57,
+        69,
+        64,
+        171,
+        184
+      ],
+      "layers": [
+        {
+          "best_score_in_selected": [
+            2,
+            88,
+            9
+          ],
+          "generated_projective_line_instances": 1358,
+          "input_beam": 1,
+          "layer": 1,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 63,
+          "unique_unvisited_candidates": 1288
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            92,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 2,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1969,
+          "unique_unvisited_candidates": 41257
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            95,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 3,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1953,
+          "unique_unvisited_candidates": 41038
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            103,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 4,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1950,
+          "unique_unvisited_candidates": 40836
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            96,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 5,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1948,
+          "unique_unvisited_candidates": 41232
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            98,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 6,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1930,
+          "unique_unvisited_candidates": 41049
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            98,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 7,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1917,
+          "unique_unvisited_candidates": 41075
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            97,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 8,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1922,
+          "unique_unvisited_candidates": 41066
+        }
+      ],
+      "seed_numerator_section": [
+        1,
+        143,
+        155,
+        132,
+        57,
+        124,
+        129,
+        22,
+        9
+      ],
+      "seed_score": [
+        2,
+        106,
+        9
+      ],
+      "survivors": [],
+      "visited_isolated_pencils": 257
+    },
+    {
+      "best_score": [
+        2,
+        106,
+        9
+      ],
+      "best_witness": {
+        "collision_pairs": 106,
+        "complete_coverage": 18,
+        "complete_nine_point_fibers": 2,
+        "maximum_selected_multiplicity": 9,
+        "numerator_section": [
+          1,
+          143,
+          155,
+          132,
+          57,
+          69,
+          64,
+          171,
+          184
+        ],
+        "selected_multiplicity_histogram": {
+          "1": 30,
+          "2": 13,
+          "7": 1,
+          "9": 2
+        }
+      },
+      "denominator_section": [
+        1,
+        143,
+        155,
+        132,
+        57,
+        124,
+        129,
+        22,
+        9
+      ],
+      "layers": [
+        {
+          "best_score_in_selected": [
+            2,
+            87,
+            9
+          ],
+          "generated_projective_line_instances": 1358,
+          "input_beam": 1,
+          "layer": 1,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 62,
+          "unique_unvisited_candidates": 1289
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            95,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 2,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1974,
+          "unique_unvisited_candidates": 40992
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            98,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 3,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1960,
+          "unique_unvisited_candidates": 41014
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            96,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 4,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1969,
+          "unique_unvisited_candidates": 41041
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            100,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 5,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1949,
+          "unique_unvisited_candidates": 41218
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            97,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 6,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1933,
+          "unique_unvisited_candidates": 41034
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            96,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 7,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1945,
+          "unique_unvisited_candidates": 40485
+        },
+        {
+          "best_score_in_selected": [
+            2,
+            97,
+            9
+          ],
+          "generated_projective_line_instances": 43456,
+          "input_beam": 32,
+          "layer": 8,
+          "output_beam": 32,
+          "selected_candidate_collision_basis_rank_histogram": {
+            "7": 32
+          },
+          "subgroup_basepoint_rejections": 1932,
+          "unique_unvisited_candidates": 40693
+        }
+      ],
+      "seed_numerator_section": [
+        1,
+        143,
+        155,
+        132,
+        57,
+        69,
+        64,
+        171,
+        184
+      ],
+      "seed_score": [
+        2,
+        106,
+        9
+      ],
+      "survivors": [],
+      "visited_isolated_pencils": 257
+    }
+  ],
+  "subgroup_order": 103,
+  "survivors": []
+}

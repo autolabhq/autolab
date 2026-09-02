@@ -1,0 +1,71 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R27-TRANSLATE-CURVE-BEZOUT-SATURATION-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T06:05:58Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R27 is a new scoped geometric
+  reduction requiring independent review. It proves a saturation dichotomy
+  but supplies no singularity or distinct-shift design.
+bindings:
+  r26_gate_sha256: 0f9d0d8f7d2cbc2b73ba848f252f0f0d9a1d2b870411c5610725ff33c67b364c
+  r26_bundle_hash_list_sha256: a410f9433d0b2291fb70151c648f5ec6ab3cb01e0ced7bd8ed70948c9a8d3457
+  r26_staging_receipt_sha256: 64cb06101dcff48488f7d13ab9806b8bb564c2bc4ff9df176d4ab091c418d4a4
+  r27_gate_sha256: dee8a0913854e0ce3e717ecdbc3e8aea73b987b2b2fb71790a470f501dd0c2d9
+  r27_parent_report_sha256: 0106c779c665550a24ec562404d7b8ff7c4b832048b31c1ec4ec96d31105e6e3
+  r27_artifact_index_sha256: 133ca0d924a2529a35933611732c9a30d9f8ca62d560fc82b60262e175902f69
+  r27_bundle_hash_list_sha256: 38503161972ea8ec40575a4def14fd6619b883772f8d6c9e249d7573ab5d5ba6
+result:
+  classification: exact_bezout_saturation_dichotomy_no_constructor
+  translate_curve_bidegree: (c,c)
+  translate_curve_normalization_genus: 1
+  per_curve_delta_defect: (c-1)^2-1
+  distinct_curve_intersection_number: 2*c^2
+  equal_curve_automorphism_bound_per_shift: 6
+  complete_energy_upper_bound: 4*L^2*c^2+12*L*(z+2*c^2)
+  finite_exceptional_image_lower_bound: Omega(B^2)
+  target_image_O_B2: requires_Bezout_saturation
+  selected_singularity_branch: requires_Omega(B^3)_delta_defect
+  distinct_shift_grid_branch: requires_Omega(B)_shifts_on_positive_incidence_mass
+  algebraic_saturation_design: absent
+  complete_source_package: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r27_hash_list: pass
+  r27_parent_yaml_parse: pass
+  arithmetic_genus_and_delta_budget_checked: pass
+  bidegree_intersection_number_checked: pass
+  equal_curve_automorphism_bound_checked: pass
+  normalization_multiplicity_correction_checked: pass
+  clean_temporary_replay_with_r16_through_r27_gates_and_r27_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T06_05_58Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - both saturation branches remain logically possible
+  - no algebraic design, complete source package, or query implementation
+  - no fresh target, R10, density, rank, factor logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Construct or refute both saturation branches for a frozen degree-B map, B
+  values, and B public shifts, followed by O(B^2) complete triples, exact
+  source replay, fresh target, R10, rank, logs, and descent without scalar
+  charts, adaptive selection, isogeny stabilizers, or pair tables.

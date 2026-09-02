@@ -1,0 +1,73 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R37-PATH-3SUM-GENERIC-REDUCTION-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T08:04:25Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R37 is a new scoped generic-
+  boundary reduction requiring independent review. It proves path-only
+  target indexing below the R36 threshold would itself beat Shoup, while
+  leaving coordinate-level elliptic-pencil use open.
+bindings:
+  r36_bundle_hash_list_sha256: 8af4ef463fac0f34253693860ab8acfcb9da683473e38f7b97d6eb6b5df75cc7
+  r36_staging_receipt_sha256: af3b33bc7b1777e05be4b4b3a7eeaea514bd3162b414621cb7db6613ac569bd2
+  r37_gate_sha256: b8a9423edef4041fcc78ec9f4808ab63ab2f97aa4fc1b157afaedabadb87c772
+  r37_parent_report_sha256: 42df82d34bfaf01c62b8597356e61e2e37ff89d112ef0ce1bdb0fb90471669d6
+  r37_selfcheck_script_sha256: b131a63aa766c3d97544b6965bfd4afba7c20239889fc95aab9a68d726225658
+  r37_selfcheck_report_sha256: a8b91e5270d185b7303131f27abfa6fb537281a5794176024a31a69ab6a99541
+  r37_artifact_index_sha256: 8710c63e80d312d2c717f97bf3c82eb35a2bb5ad3362175c94080d6422d98fd9
+  r37_bundle_hash_list_sha256: a4541b34c8a221cd0a1325f2e97cb1d809b01f3a46c8ff2ca4d7d59c9cb7ff58
+result:
+  classification: path_only_target_index_is_generic_dlp_complete_at_boundary
+  generic_total_work_exponent: max_s_2_plus_kappa_2
+  shoup_work_exponent: 5_over_2
+  generic_query_floor_under_setup_cap: 1_over_2
+  r36_strict_subrho_query_requirement: below_1_over_2
+  degree_B_pencil_escape: admitted_unsupplied
+  heavy_key_mark_escape: admitted_unsupplied
+  toy_bad_recoveries: 0
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r37_hash_list: pass
+  r37_parent_yaml_parse: pass
+  mixed_radix_path_construction_checked: pass
+  exact_scalar_recovery_formula_checked: pass
+  all_query_cost_accounting_checked: pass
+  shoup_exponent_substitution_checked: pass
+  batch_interval_bsgs_control_checked: pass
+  r37_selfcheck_replay_matches_report: pass
+  r37_toy_hits: 4
+  r37_toy_bad_recoveries: 0
+  clean_temporary_replay_with_r16_through_r37_gates_and_r37_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T08_04_25Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the reduction is generic and path-only
+  - arbitrary mixed-radix paths need not realize one degree-B pencil
+  - the toy cyclic control is not elliptic or asymptotic evidence
+  - no target, R10, rank, logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Exploit or close the degree-B pencil marks excluded from the reduction.
+  Require an explicit coordinate operation that returns an extendible key
+  and pair endpoint below B^(1/2-o(1)) average target work with setup at most
+  B^(9/4+o(1)), and prove why it does not apply to arbitrary mixed-radix
+  paths; then bind any survivor to R10, rank, logs, and descent.

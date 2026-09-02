@@ -1,0 +1,122 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-PRINCIPAL-TARGET-PONTRYAGIN-RESULTANT-R176-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: exact_principal_signed_incidence_and_represented_pontryagin_reciprocity_boundary
+run_count: 1
+status: factored_trilinear_elliptic_resultant_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - principal-divisor
+  - pontryagin-product
+  - weil-reciprocity
+  - generalized-miller
+  - full-cost
+  - open-interface
+owner: P1553-R167-R169-R175-EAGEN-2022-MILLER-1986
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Replace the R175 signed subset scalar by a principal target-function
+  evaluation on a Pontryagin product cycle and test whether ordinary Weil
+  reciprocity supplies the required reusable below-rho oracle.
+inputs:
+  - {path: p1553_m6_scalar_subset_incidence_group_testing_probe_r175.py, sha256: f525ecc47496485919b4f2397b505842eac43ea7c1b53b90c6beaff4fa07d536}
+  - {path: p1553_m6_scalar_subset_incidence_group_testing_probe_report_r175.json, sha256: 5541b18b9ce670ca95902e75cf9fc14c2a35f9725c9ee756c0502963cbafc543}
+  - {path: frozen_m6_scalar_subset_incidence_group_testing.json, sha256: 1710f98bdb7d29d4c016abb0272915d6fdcdf471d35a6e7f79941b22cc1be7ad}
+  - {path: m6_scalar_subset_incidence_group_testing_cost_ledger.json, sha256: 0c8790183f1d05593308421e1cce0eabec21c3ee52fef2ed3c4f1dc84f0e5818}
+  - {path: m6_scalar_subset_incidence_group_testing_replay.json, sha256: 6eaf07b4a9507ca96681c85f79b8d33763033d7bd71faae5e8417987969f084f}
+  - {path: m6_scalar_subset_incidence_group_testing_controls.json, sha256: 1ff598263a892c4a8d87c04799b66383b671ffca9ecdb05c005c45219447fb2d}
+  - {path: scalar_subset_incidence_group_testing_r175.json, sha256: cff099668231e6b239bc1a651492938affc09c8531e61489b7384dff48258c00}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_scalar_subset_incidence_group_testing_probe_r175.py, sha256: 9cab6bb5fe9baa27d1d16e2874a3ceb782d0b93f799ce04befbd2cfb8472704f}
+  - {path: p1553_m6_scalar_subset_incidence_group_testing_probe_gate_r175.md, sha256: ccad60c12a8951476915c864d249135a369d0832a0a29704ef1cbd445739d3a1}
+  - {path: p1553_m6_scalar_subset_incidence_group_testing_probe_parent_report_r175.yaml, sha256: e46cbd385ba78e5e14fd10dd70414b3a990a94493b8d32064258c362e56399c8}
+  - {path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_r167.py, sha256: ba57052082668daf38027b928d88b0eca210510e2f6a6784ce3e0e8b481e1cd3}
+  - {path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_report_r167.json, sha256: 1d2f009525ef9d54a0f538d3a0a8cefe8451d4d97933b91b31ed1bb5c0b47e3c}
+  - {path: frozen_m6_generalized_target_divisor_weil_reciprocity_swap.json, sha256: 47d3d39017faa9adc1e79abc939c658c51272097dcb8620e72db51ce7543f492}
+  - {path: m6_generalized_target_divisor_weil_reciprocity_swap_cost_ledger.json, sha256: a84dc45c92d9a17ef9e9b73ddad426a8fe5111e72b6cd974fd5968841ebd10c3}
+  - {path: m6_generalized_target_divisor_weil_reciprocity_swap_replay.json, sha256: cf983cfdb3428503634d84a5a69305b71ac70e44338c37acb24e646e5593f6d0}
+  - {path: m6_generalized_target_divisor_weil_reciprocity_swap_controls.json, sha256: f78db8e5e5195727087552c8d8a122037eb1f0a0c5d469594ef08a070c093f83}
+  - {path: generalized_miller_elliptic_resultant_swap_r167.json, sha256: 95a42cb9d499012b676d96a77ca7c8a066e0cc6ade79e6cf9d0dd9ccfb674247}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_r167.py, sha256: 8c098e9a820ea7967cc700544aa64cc419750806c67e7c3dca395f271ae505e9}
+  - {path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_gate_r167.md, sha256: 41c4869bb231dfa2d0de1bb0d280aa34bd95903ed425792b80a84c762b845e3b}
+  - {path: p1553_m6_generalized_target_divisor_weil_reciprocity_swap_probe_parent_report_r167.yaml, sha256: 0952a627b3bd5acd95e622533627f54b339605f92e9187be68d72431e7931db7}
+  - {path: references/eagen_ecip_weil_reciprocity_2022_596.pdf, sha256: 5310b35d288a9462ff704eb77e7651d18f681a5b560cfb2919d1cfd0e01ae09e}
+  - {path: references/miller_weil_pairing_algorithm_1986.pdf, sha256: 39c76c7643278b87b3d8c24b9a07d0b4cbfb561cd13735548990848e0f0bd166}
+  - {path: p1553_m6_regularized_log_trace_displacement_rank_probe_report_r169.json, sha256: 6f9123923396d0c6478486c9a669cb73ff759db00fa8997954f5b4a35d11ce86}
+  - {path: p1553_m6_regularized_log_trace_displacement_rank_probe_gate_r169.md, sha256: 7aba9b4c16a35dc7db1f1ad5953ef50e597a882644260c028d8b6d7a412d185f}
+artifacts:
+  - {path: p1553_m6_principal_target_pontryagin_resultant_probe_r176.py, sha256: 6d487f22177941a03c5533c0ee185456a4ea831b31df389e679f03783afe73ef}
+  - {path: p1553_m6_principal_target_pontryagin_resultant_probe_report_r176.json, sha256: 6d00706a225c0e1e2bb087a20f2e20ca327acfa25067f63241bb4e7302521632}
+  - {path: frozen_m6_principal_target_pontryagin_resultant.json, sha256: 743d55aeb444a5b05d566b0178e3bb1d9582cef8d6d8d3127e5bb8e76d12c874}
+  - {path: m6_principal_target_pontryagin_resultant_cost_ledger.json, sha256: a76a53b4e0c0f59815617f329e36b61675b17e8fa050f173a361e688526fb8f5}
+  - {path: m6_principal_target_pontryagin_resultant_replay.json, sha256: 387040fa5d26ef5798f1db553632010b556e9b3c1ffce031e14336350b60d9a4}
+  - {path: m6_principal_target_pontryagin_resultant_controls.json, sha256: 1fd6f58d2ae0f0fe16407af76bb16b22e740398b692595c3f58642a344e514ae}
+  - {path: principal_target_pontryagin_resultant_r176.json, sha256: 967f07d990aa8296f3256daacd5632b8ad8c8410e5e1e94cefc351901bd1a5d2}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_principal_target_pontryagin_resultant_probe_r176.py, sha256: dab2a234da7837967b7d7dc0483a257f30bde2a5e5c3f655cc747b591ad50f61}
+  - {path: p1553_m6_principal_target_pontryagin_resultant_probe_gate_r176.md, sha256: a64140ac0bd7a0b05cc55edf69a4334c105992e799a1be0534f7b0cf78604a56}
+verified_statements:
+  - The principal target function h vanishes on a selected pair sum exactly when the positive signed target incidence holds.
+  - All 8,922 selected pair sums avoid the auxiliary poles and exactly 241 are incidences.
+  - The 241 incidences split into 5 diagonal and 236 off-diagonal cases and produce all 140 R175 roots.
+  - The principal subset scalar replays all 358 R175 balanced-tree query zero patterns.
+  - Every queried Pontryagin cycle has degree mn and group sum n sum A plus m sum D.
+  - All 358 completed generalized Miller and Weil-reciprocity scalar identities are exact.
+  - The reciprocity controls contain 42 literal disjoint-support identities and 316 candidate-specialized zero identities.
+  - Standard represented Pontryagin-cycle and completed Miller routes retain n squared state at B to the 9 over 2.
+scoped_failures:
+  factored_trilinear_elliptic_resultant: open
+  represented_pontryagin_cycle_below_rho: refuted_by_full_cost
+  represented_principal_completion_below_rho: refuted_by_full_cost
+  direct_pair_target_expansion_below_rho: refuted_by_full_cost
+  arithmetic_circuit_lower_bound: not_claimed
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 16
+  total_obligations: 23
+  principal_signed_incidence_admitted: true
+  represented_weil_reciprocity_route_admitted: true
+  factored_trilinear_elliptic_resultant_admitted: false
+  lane_admitted: false
+result:
+  control_count: 6
+  selected_pair_evaluation_count: 8922
+  selected_pair_denominator_unit_count: 8922
+  principal_pair_incidence_count: 241
+  diagonal_pair_incidence_count: 5
+  off_diagonal_pair_incidence_count: 236
+  candidate_root_count: 140
+  principal_tree_query_count: 358
+  reciprocity_identity_count: 358
+  literal_disjoint_support_identity_count: 42
+  candidate_specialized_zero_identity_count: 316
+  queried_pair_cycle_degree_sum: 56468
+  miller_merge_count: 56468
+  charged_miller_probe_evaluation_count: 868648
+  maximum_miller_shuffle_attempt: 1
+  compact_target_witness_exponent_B: 5/4
+  root_pontryagin_cycle_degree_exponent_B: 9/2
+  balanced_pair_cycle_volume_exponent_B: 9/2
+  direct_pair_target_expansion_exponent_B: 23/4
+  conditional_factored_resultant_exponent_B: 9/4
+  global_rho_exponent_B: 5/2
+  factored_trilinear_resultant_supplied: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_PRINCIPAL_TARGET_SIGNED_INCIDENCE__H_OF_P_PLUS_Q_ZERO_IFF_POSITIVE_TARGET_SUM__DIAGONAL_BY_GROUP_LAW__358_R175_TREE_QUERIES_REPLAYED__358_COMPLETED_PONTRYAGIN_WEIL_IDENTITIES__PAIR_CYCLE_DEGREE_MN__STANDARD_ROOT_AND_TREE_STATE_N2_B9O2__RECIPROCITY_PRESERVES_MN_INPUT__FACTORED_TRILINEAR_RESULTANT_OPEN__NO_CIRCUIT_LOWER_BOUND__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute a factored trilinear elliptic resultant from compact
+  U_A,V_A, fixed U_D,V_D, and h with reusable softly O(n+N) setup and softly
+  O(m+N) node work. Reject explicit mn pair sums, degree-mn principal functions,
+  n squared tensor state, target-dependent per-node setup, candidate inversions,
+  and unit-cost resultant, norm, root, or generic locator oracles.

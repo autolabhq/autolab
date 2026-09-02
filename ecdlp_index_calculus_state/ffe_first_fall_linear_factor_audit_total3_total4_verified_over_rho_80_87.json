@@ -1,0 +1,971 @@
+{
+  "method": "mine_sage_factorized_ffe_surfaces_for_quadratic_root_hyperplanes",
+  "parameters": {
+    "charged_rollup_source": "ecdlp_index_calculus_state/nonexistent_charged_rollup_empty.json",
+    "public_selector_source": "ecdlp_index_calculus_state/nonexistent_public_selector_empty.json",
+    "sage_factor_source": "ecdlp_index_calculus_state/ffe_sage_factor_total3_total4_verified_over_rho_80_87.json"
+  },
+  "root_hyperplane_failures": [],
+  "schema": "ecdlp_ffe_first_fall_linear_factor_audit_v1",
+  "summary": {
+    "all_factors_are_quadratic_root_hyperplanes": true,
+    "all_surface_factor_counts_match_known_hit_roots": true,
+    "best_policy_all_surfaces_below_rho": false,
+    "best_policy_by_charged_total": null,
+    "best_policy_false_positive_count": 0,
+    "best_policy_max_total_ops_over_rho": null,
+    "best_policy_mean_evaluated_factor_count": null,
+    "best_policy_mean_total_ops_over_rho": null,
+    "best_policy_preserve_count": 0,
+    "best_policy_surface_count": 0,
+    "best_policy_total_ops_below_rho_count": 0,
+    "factor_count": 133,
+    "factor_shape_counts": {
+      "deg1_mon3_root1": 133
+    },
+    "interpretation": "Every Sage factor in the measured bank has the exact form c + r*b + r^2, i.e. a root hyperplane for x^2 + b*x + c. The current public quotient route is therefore a first-fall root-selection problem over linear factors, not a generic high-degree resultant search. This is still a measured surface bank result; fresh hit-stream generation remains the next proof obligation before claiming a general ECDLP speedup.",
+    "mean_charged_total_ops_over_rho": null,
+    "mean_factor_count": 22.16666667,
+    "mean_preserving_factor_count": 13.33333333,
+    "preserving_factor_count": 80,
+    "root_hyperplane_factor_count": 133,
+    "root_hyperplane_failure_count": 0,
+    "root_prior_holdout_summaries": [
+      {
+        "candidate_root_hit_count": 1,
+        "candidate_root_hit_rate": 0.16666667,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 1,
+        "preserving_root_hit_rate": 0.16666667,
+        "scope": "target",
+        "surface_count": 6,
+        "top_n": 1
+      },
+      {
+        "candidate_root_hit_count": 1,
+        "candidate_root_hit_rate": 0.16666667,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 1,
+        "preserving_root_hit_rate": 0.16666667,
+        "scope": "target",
+        "surface_count": 6,
+        "top_n": 2
+      },
+      {
+        "candidate_root_hit_count": 2,
+        "candidate_root_hit_rate": 0.33333333,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 2,
+        "preserving_root_hit_rate": 0.33333333,
+        "scope": "target",
+        "surface_count": 6,
+        "top_n": 4
+      },
+      {
+        "candidate_root_hit_count": 4,
+        "candidate_root_hit_rate": 0.66666667,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 3,
+        "preserving_root_hit_rate": 0.5,
+        "scope": "target",
+        "surface_count": 6,
+        "top_n": 8
+      },
+      {
+        "candidate_root_hit_count": 4,
+        "candidate_root_hit_rate": 0.66666667,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 3,
+        "preserving_root_hit_rate": 0.5,
+        "scope": "target",
+        "surface_count": 6,
+        "top_n": 16
+      },
+      {
+        "candidate_root_hit_count": 6,
+        "candidate_root_hit_rate": 1.0,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 3,
+        "preserving_root_hit_rate": 0.5,
+        "scope": "target",
+        "surface_count": 6,
+        "top_n": 32
+      },
+      {
+        "candidate_root_hit_count": 1,
+        "candidate_root_hit_rate": 0.16666667,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 1,
+        "preserving_root_hit_rate": 0.16666667,
+        "scope": "global",
+        "surface_count": 6,
+        "top_n": 1
+      },
+      {
+        "candidate_root_hit_count": 1,
+        "candidate_root_hit_rate": 0.16666667,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 1,
+        "preserving_root_hit_rate": 0.16666667,
+        "scope": "global",
+        "surface_count": 6,
+        "top_n": 2
+      },
+      {
+        "candidate_root_hit_count": 2,
+        "candidate_root_hit_rate": 0.33333333,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 2,
+        "preserving_root_hit_rate": 0.33333333,
+        "scope": "global",
+        "surface_count": 6,
+        "top_n": 4
+      },
+      {
+        "candidate_root_hit_count": 4,
+        "candidate_root_hit_rate": 0.66666667,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 3,
+        "preserving_root_hit_rate": 0.5,
+        "scope": "global",
+        "surface_count": 6,
+        "top_n": 8
+      },
+      {
+        "candidate_root_hit_count": 4,
+        "candidate_root_hit_rate": 0.66666667,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 3,
+        "preserving_root_hit_rate": 0.5,
+        "scope": "global",
+        "surface_count": 6,
+        "top_n": 16
+      },
+      {
+        "candidate_root_hit_count": 6,
+        "candidate_root_hit_rate": 1.0,
+        "misses": [
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 80
+          },
+          {
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+            "target": "67.a1@9803",
+            "transfer_index": 82
+          }
+        ],
+        "preserving_root_hit_count": 3,
+        "preserving_root_hit_rate": 0.5,
+        "scope": "global",
+        "surface_count": 6,
+        "top_n": 32
+      }
+    ],
+    "surface_count": 6,
+    "surface_factor_count_matches_known_hit_roots_count": 6,
+    "surface_with_preserving_factor_count": 6,
+    "target_summaries": {
+      "67.a1@9803": {
+        "all_factor_count_matches_known_hit_roots": true,
+        "all_root_hyperplanes": true,
+        "best_policy_below_rho_count": 0,
+        "best_policy_max_total_ops_over_rho": null,
+        "best_policy_mean_total_ops_over_rho": null,
+        "best_policy_preserve_count": 0,
+        "factor_count": 133,
+        "mean_factor_count": 22.16666667,
+        "mean_preserving_factor_count": 13.33333333,
+        "preserving_factor_count": 80,
+        "surface_count": 6
+      }
+    },
+    "top_roots_by_target": {
+      "67.a1@9803": [
+        {
+          "count": 3,
+          "root": 6185
+        },
+        {
+          "count": 3,
+          "root": 7526
+        },
+        {
+          "count": 2,
+          "root": 945
+        },
+        {
+          "count": 2,
+          "root": 1730
+        },
+        {
+          "count": 2,
+          "root": 4262
+        },
+        {
+          "count": 2,
+          "root": 4805
+        },
+        {
+          "count": 2,
+          "root": 5112
+        },
+        {
+          "count": 2,
+          "root": 5612
+        },
+        {
+          "count": 2,
+          "root": 5701
+        },
+        {
+          "count": 2,
+          "root": 7560
+        },
+        {
+          "count": 2,
+          "root": 7826
+        },
+        {
+          "count": 2,
+          "root": 1646
+        }
+      ]
+    }
+  },
+  "surfaces": [
+    {
+      "all_factors_root_hyperplanes": true,
+      "best_policy": null,
+      "best_policy_below_rho": false,
+      "best_policy_evaluated_factor_count": null,
+      "best_policy_factor_index": null,
+      "best_policy_is_root_hyperplane": null,
+      "best_policy_preserves": false,
+      "best_policy_root": null,
+      "best_policy_root_scan_ops": null,
+      "best_policy_selector_eval_ops": null,
+      "best_policy_total_ops_over_rho": null,
+      "candidate_roots": [
+        130,
+        945,
+        1730,
+        2025,
+        2252,
+        2439,
+        2716,
+        2985,
+        3442,
+        3837,
+        4234,
+        4262,
+        4805,
+        5013,
+        5112,
+        5612,
+        5686,
+        5701,
+        6017,
+        6310,
+        7087,
+        7560,
+        7691,
+        7826,
+        8791,
+        9196
+      ],
+      "candidate_roots_sample": [
+        130,
+        945,
+        1730,
+        2025,
+        2252,
+        2439,
+        2716,
+        2985,
+        3442,
+        3837,
+        4234,
+        4262,
+        4805,
+        5013,
+        5112,
+        5612
+      ],
+      "factor_count": 26,
+      "factor_count_matches_known_hit_roots": true,
+      "known_hit_root_count": 26,
+      "p": 9803,
+      "preserving_factor_count": 26,
+      "preserving_roots": [
+        130,
+        945,
+        1730,
+        2025,
+        2252,
+        2439,
+        2716,
+        2985,
+        3442,
+        3837,
+        4234,
+        4262,
+        4805,
+        5013,
+        5112,
+        5612,
+        5686,
+        5701,
+        6017,
+        6310,
+        7087,
+        7560,
+        7691,
+        7826,
+        8791,
+        9196
+      ],
+      "root_hyperplane_factor_count": 26,
+      "row_key": "67.a1@9803:uniform:256:salt204",
+      "selected_leaf_indices": [
+        3
+      ],
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 80
+    },
+    {
+      "all_factors_root_hyperplanes": true,
+      "best_policy": null,
+      "best_policy_below_rho": false,
+      "best_policy_evaluated_factor_count": null,
+      "best_policy_factor_index": null,
+      "best_policy_is_root_hyperplane": null,
+      "best_policy_preserves": false,
+      "best_policy_root": null,
+      "best_policy_root_scan_ops": null,
+      "best_policy_selector_eval_ops": null,
+      "best_policy_total_ops_over_rho": null,
+      "candidate_roots": [
+        1646,
+        1680,
+        2626,
+        2632,
+        2669,
+        3087,
+        3394,
+        3398,
+        4260,
+        4590,
+        4611,
+        4612,
+        4943,
+        5112,
+        5612,
+        6185,
+        7341,
+        7526,
+        7541
+      ],
+      "candidate_roots_sample": [
+        1646,
+        1680,
+        2626,
+        2632,
+        2669,
+        3087,
+        3394,
+        3398,
+        4260,
+        4590,
+        4611,
+        4612,
+        4943,
+        5112,
+        5612,
+        6185
+      ],
+      "factor_count": 19,
+      "factor_count_matches_known_hit_roots": true,
+      "known_hit_root_count": 19,
+      "p": 9803,
+      "preserving_factor_count": 1,
+      "preserving_roots": [
+        6185
+      ],
+      "root_hyperplane_factor_count": 19,
+      "row_key": "67.a1@9803:uniform:256:salt205",
+      "selected_leaf_indices": [
+        3
+      ],
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 80
+    },
+    {
+      "all_factors_root_hyperplanes": true,
+      "best_policy": null,
+      "best_policy_below_rho": false,
+      "best_policy_evaluated_factor_count": null,
+      "best_policy_factor_index": null,
+      "best_policy_is_root_hyperplane": null,
+      "best_policy_preserves": false,
+      "best_policy_root": null,
+      "best_policy_root_scan_ops": null,
+      "best_policy_selector_eval_ops": null,
+      "best_policy_total_ops_over_rho": null,
+      "candidate_roots": [
+        342,
+        1966,
+        2422,
+        2825,
+        2877,
+        3007,
+        3639,
+        4012,
+        4805,
+        5325,
+        6172,
+        6185,
+        6262,
+        6493,
+        7193,
+        7526,
+        7560,
+        8108,
+        8605
+      ],
+      "candidate_roots_sample": [
+        342,
+        1966,
+        2422,
+        2825,
+        2877,
+        3007,
+        3639,
+        4012,
+        4805,
+        5325,
+        6172,
+        6185,
+        6262,
+        6493,
+        7193,
+        7526
+      ],
+      "factor_count": 19,
+      "factor_count_matches_known_hit_roots": true,
+      "known_hit_root_count": 19,
+      "p": 9803,
+      "preserving_factor_count": 1,
+      "preserving_roots": [
+        6185
+      ],
+      "root_hyperplane_factor_count": 19,
+      "row_key": "67.a1@9803:uniform:256:salt206",
+      "selected_leaf_indices": [
+        3
+      ],
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 80
+    },
+    {
+      "all_factors_root_hyperplanes": true,
+      "best_policy": null,
+      "best_policy_below_rho": false,
+      "best_policy_evaluated_factor_count": null,
+      "best_policy_factor_index": null,
+      "best_policy_is_root_hyperplane": null,
+      "best_policy_preserves": false,
+      "best_policy_root": null,
+      "best_policy_root_scan_ops": null,
+      "best_policy_selector_eval_ops": null,
+      "best_policy_total_ops_over_rho": null,
+      "candidate_roots": [
+        605,
+        1296,
+        2335,
+        2632,
+        2793,
+        2796,
+        3340,
+        3394,
+        5701,
+        7515,
+        7593,
+        7826,
+        7832,
+        7847,
+        8022,
+        8098,
+        8259,
+        8829
+      ],
+      "candidate_roots_sample": [
+        605,
+        1296,
+        2335,
+        2632,
+        2793,
+        2796,
+        3340,
+        3394,
+        5701,
+        7515,
+        7593,
+        7826,
+        7832,
+        7847,
+        8022,
+        8098
+      ],
+      "factor_count": 18,
+      "factor_count_matches_known_hit_roots": true,
+      "known_hit_root_count": 18,
+      "p": 9803,
+      "preserving_factor_count": 1,
+      "preserving_roots": [
+        1296
+      ],
+      "root_hyperplane_factor_count": 18,
+      "row_key": "67.a1@9803:uniform:256:salt201",
+      "selected_leaf_indices": [
+        10
+      ],
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 82
+    },
+    {
+      "all_factors_root_hyperplanes": true,
+      "best_policy": null,
+      "best_policy_below_rho": false,
+      "best_policy_evaluated_factor_count": null,
+      "best_policy_factor_index": null,
+      "best_policy_is_root_hyperplane": null,
+      "best_policy_preserves": false,
+      "best_policy_root": null,
+      "best_policy_root_scan_ops": null,
+      "best_policy_selector_eval_ops": null,
+      "best_policy_total_ops_over_rho": null,
+      "candidate_roots": [
+        733,
+        945,
+        1035,
+        1043,
+        1256,
+        1296,
+        1646,
+        2152,
+        2560,
+        3058,
+        3515,
+        3729,
+        3736,
+        4059,
+        4213,
+        4612,
+        5319,
+        5418,
+        6172,
+        7316,
+        7526,
+        7570,
+        7847,
+        8911,
+        9282
+      ],
+      "candidate_roots_sample": [
+        733,
+        945,
+        1035,
+        1043,
+        1256,
+        1296,
+        1646,
+        2152,
+        2560,
+        3058,
+        3515,
+        3729,
+        3736,
+        4059,
+        4213,
+        4612
+      ],
+      "factor_count": 25,
+      "factor_count_matches_known_hit_roots": true,
+      "known_hit_root_count": 25,
+      "p": 9803,
+      "preserving_factor_count": 25,
+      "preserving_roots": [
+        733,
+        945,
+        1035,
+        1043,
+        1256,
+        1296,
+        1646,
+        2152,
+        2560,
+        3058,
+        3515,
+        3729,
+        3736,
+        4059,
+        4213,
+        4612,
+        5319,
+        5418,
+        6172,
+        7316,
+        7526,
+        7570,
+        7847,
+        8911,
+        9282
+      ],
+      "root_hyperplane_factor_count": 25,
+      "row_key": "67.a1@9803:uniform:256:salt204",
+      "selected_leaf_indices": [
+        10
+      ],
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 82
+    },
+    {
+      "all_factors_root_hyperplanes": true,
+      "best_policy": null,
+      "best_policy_below_rho": false,
+      "best_policy_evaluated_factor_count": null,
+      "best_policy_factor_index": null,
+      "best_policy_is_root_hyperplane": null,
+      "best_policy_preserves": false,
+      "best_policy_root": null,
+      "best_policy_root_scan_ops": null,
+      "best_policy_selector_eval_ops": null,
+      "best_policy_total_ops_over_rho": null,
+      "candidate_roots": [
+        696,
+        784,
+        1035,
+        1081,
+        1256,
+        1424,
+        1730,
+        2198,
+        2335,
+        2394,
+        2547,
+        3301,
+        4262,
+        4582,
+        5395,
+        5412,
+        6107,
+        6185,
+        7120,
+        7193,
+        8002,
+        8098,
+        8142,
+        8193,
+        8290,
+        8741
+      ],
+      "candidate_roots_sample": [
+        696,
+        784,
+        1035,
+        1081,
+        1256,
+        1424,
+        1730,
+        2198,
+        2335,
+        2394,
+        2547,
+        3301,
+        4262,
+        4582,
+        5395,
+        5412
+      ],
+      "factor_count": 26,
+      "factor_count_matches_known_hit_roots": true,
+      "known_hit_root_count": 26,
+      "p": 9803,
+      "preserving_factor_count": 26,
+      "preserving_roots": [
+        696,
+        784,
+        1035,
+        1081,
+        1256,
+        1424,
+        1730,
+        2198,
+        2335,
+        2394,
+        2547,
+        3301,
+        4262,
+        4582,
+        5395,
+        5412,
+        6107,
+        6185,
+        7120,
+        7193,
+        8002,
+        8098,
+        8142,
+        8193,
+        8290,
+        8741
+      ],
+      "root_hyperplane_factor_count": 26,
+      "row_key": "67.a1@9803:uniform:256:salt206",
+      "selected_leaf_indices": [
+        10
+      ],
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:82:67.a1@9803",
+      "target": "67.a1@9803",
+      "transfer_index": 82
+    }
+  ]
+}

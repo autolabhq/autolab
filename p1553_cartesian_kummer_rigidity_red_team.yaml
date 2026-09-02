@@ -1,0 +1,80 @@
+schema_version: p1553-cartesian-kummer-rigidity-red-team-v1
+date: 2026-07-19
+role: red-team
+reviewer_agent_id: 019f7cef-5acf-7f42-9944-26fb5fc5cc23
+coordinator_transcription: true
+run_accounting:
+  experiments_executed: 0
+  solver_runs_executed: 0
+  fixtures_executed: 0
+  timing_runs_executed: 0
+  relation_campaigns_executed: 0
+terminal_verdict:
+  classification: revise_scoped_theorem
+  final_review: accept
+  statement: >-
+    The signed endpoint normalization and pole-inclusive 16*d_psi Cartesian
+    rigidity theorem are exact after correction. General selective support
+    gives O(d_psi^2*B) collision incidences, leaving degree at least sqrt(B),
+    correction-carrying, and non-Cartesian routes open.
+  p1554_allocated: false
+  run_created: false
+  shoup_claim: false
+  breakthrough_claim: false
+accepted_signed_count:
+  projector_count_relation: z<=M<=16*z
+  unique_color_bound: M<=16*min_j(product_(i!=j)|I_i|)
+  multiplicity_correction: multiply corresponding bound by kappa_j
+  exact_threshold: 32*B^4<p under frozen uniqueness
+  replay_calls: at_most_1_plus_5_ceil_log2_B
+  leaf: enumerate_signs_verify_then_aggregate_columns
+accepted_endpoint_scope:
+  exact_pullback: coefficient_of_signed_endpoint_convolution
+  full_endpoint_kernel_rank: N
+  finite_deck_rank: number_of_matched_attained_endpoints
+  nonlinear_actual_image_closed: false
+accepted_rigidity:
+  rational_map_degree: d_psi
+  composed_kummer_map_degree: 2*d_psi
+  assumptions: nonconstant psi, 2*d_psi<N, distinct Kummer classes
+  combined_pole_points: at_most_8*d_psi
+  regular_branch_equalities: at_most_8*d_psi_unless_global
+  projective_branch_equalities: at_most_16*d_psi
+  cartesian_no_merge_threshold: B>16*d_psi
+  invariant_translation_consequence: N_divides_2*d_psi
+accepted_support_scope:
+  fiber_pair_count: sum_binomial_m_h_2<=B*(d_psi-1)/2
+  general_collision_incidences: O(d_psi^2*B)
+  general_useful_degree_floor: Omega(B^(1/2))
+  indivisible_whole_fiber_occurrences: O(d_psi*B)
+  indivisible_whole_fiber_degree_floor: Omega(B)
+  relation_density_or_rank_proved: false
+accepted_linear_degree_control:
+  subgroup_separation: N>4*B+1
+  finite_affine_grid: Omega_aff
+  polynomial_fixes_infinity: true
+  moved_coordinate: x((2*B+1)*P)
+  compresses_source_grid: false
+required_corrections_applied:
+  - nonidentity, within-color uniqueness, cross-color occurrence, and nonzero-target assumptions added
+  - within-color multiplicity correction added
+  - swapped UFD match now uses evenness before translation invariance
+  - general support bound corrected from O(d_psi*B) to O(d_psi^2*B)
+  - general useful degree floor corrected to Omega(B^(1/2))
+  - infinity separated from the affine interpolation product
+  - direct P1551 and R9 bindings added
+exactly_one_next_action: >-
+  Derive or refute one exact source-faithful Kummer transporter on a frozen
+  non-Cartesian support over d_psi=Omega(B^(1/2)) through O(B). It must merge a
+  positive fraction of source classes while retaining Theta(B^2) first-stage
+  pair occurrences, express the R10 rank-two sparse-convolution control, keep
+  all correction and provenance state within B^(9/4+o(1)), answer every
+  full-box and adaptive-child query within B^(5/4+o(1)), and return one
+  verified signed occurrence source. A negative closes only its frozen
+  grammar; a positive first merge remains model-bound until density,
+  independent rank, factor logs, and identical blind descent are complete.
+source_bindings:
+  hash_algorithm: SHA-256
+  files:
+    p1553_cartesian_kummer_rigidity_gate_r11.md: 6c79b486bfa4cfd14674033a438db3d91ddf7bbe4d2c4aaf309f1a0706f0df4e
+    p1553_cartesian_kummer_rigidity_parent_report.yaml: 5f65da4f50e301067258f14f4b8e6dec91a0f096ac04e2418e4957bd649604b2

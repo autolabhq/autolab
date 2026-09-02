@@ -1,0 +1,65 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "random_model_required": false,
+      "route_id": "structured_zero_test_dag_product_through_six_modes",
+      "status": "rejected_by_all_nonzero_path_product_root_cover_dichotomy",
+      "structured_factor_base_theorem": true
+    },
+    {
+      "random_model_required": true,
+      "route_id": "random_deck_zero_test_dag_product_through_near_five_log",
+      "status": "rejected_with_overwhelming_probability_under_uniform_random_deck_model_only",
+      "structured_factor_base_theorem": false
+    },
+    {
+      "expanded_path_product_bound_applicable": false,
+      "inside_cap_exact_dag_constructed": false,
+      "route_id": "growing_expanded_support_low_slp_dag",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_dag_constructed": false,
+      "route_id": "nonzero_value_frobenius_coordinate_dag",
+      "status": "open",
+      "zero_test_path_product_argument_applicable": false
+    },
+    {
+      "inside_cap_exact_dag_constructed": false,
+      "route_id": "structured_seven_plus_mode_path_product",
+      "status": "open",
+      "structured_rank_above_six_proved": false
+    }
+  ],
+  "schema": "p1553.torus_c5_all_nonzero_path_product_cost_ledger.r136.v1",
+  "theorem": {
+    "all_nonzero_path_product": "Let a deterministic membership decision tree on H test nonzero represented polynomials f_1,...,f_d along its all-nonzero root-to-leaf path, and put P=product_i f_i. A point follows that path exactly when P is nonzero. If the leaf rejects, every accepted point must have left the path, so P vanishes on the full acceptance support. If the leaf accepts, every point outside the support must leave the path, so the complement is contained in the root set of P, equal to the union of the root sets of the f_i.",
+    "coordinate_comparisons_covered": false,
+    "deterministic_structured_dichotomy": "For one asymptotic C5 color support S, let M be the number of distinct represented modes of the nonzero product P. R135 excludes P vanishing on S when M<=6. Kelley-adapted root bounds give |Z(f_i)|<=2*q^(1-1/(t_i-1)) for t_i>=2 and zero roots for t_i=1. Therefore every exact tree obeys M>6 or q-|S|<=sum_i 2*q^(1-1/(t_i-1)).",
+    "fixed_node_support_consequence": "If every node has at most fixed t>=2 modes and the path depth is polylogarithmic, the root-budget sum is o(q) while |S|=q^(3/4+o(1)). Hence an exact tree must have more than six distinct modes in its expanded all-nonzero path product.",
+    "high_expansion_low_slp_covered": false,
+    "maximum_deterministic_path_product_mode_count_excluded": 6,
+    "nonzero_value_tests_covered": false,
+    "not_covered": [
+      "all-nonzero path products with seven or more structured modes",
+      "compact circuits whose expanded path product has large support",
+      "tests of nonzero field values rather than equality to zero",
+      "Frobenius-coordinate comparisons and table probes",
+      "general arithmetic-circuit, RAM, or cell-probe lower bounds"
+    ],
+    "random_deck_amplification": "Under the frozen uniform-random-deck model, replace six by L(q)=(5-o(1))*log2(q) with overwhelming probability using R135. For fixed node support t and polylogarithmic depth, exactness forces expanded path-product support above L(q). Since product support is at most product_i t_i, this implies depth greater than log_t L(q) when every t_i<=t. The lower bound is only Omega(log log q), compatible with polylog query work and compact high-expansion straight-line programs.",
+    "random_model_path_product_mode_count_excluded": "(5-o(1))*log2(q)",
+    "zero_test_scope_only": true
+  }
+}

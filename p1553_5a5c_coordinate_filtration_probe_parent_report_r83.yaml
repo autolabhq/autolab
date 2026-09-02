@@ -1,0 +1,133 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-COORDINATE-FILTRATION-R83-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: canonical_source_bucket_survival_and_ffe_replay
+run_count: 1
+status: coordinate_bucket_filtration_entropy_replay_fail
+labels:
+  - exact-finite
+  - prospective
+  - scalar-blind-source
+  - scoped-theorem
+  - verifier-dlp-separated
+  - novelty-unverified
+owner: P1539-P1553-R82
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether frozen field-coordinate buckets or target-coupled offsets can
+  turn R82's colored 5A+5C relation source into a subcap staged filtration
+  without deleting attained targets or replaying every discarded bucket.
+inputs:
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: p1553_cartesian_sum_compact_divisor_probe_gate_r82.md
+    sha256: 7c34e1d905c95a756689d4ec0ea92c6bd47808bcb3407d858ce08cccf75fd55e
+  - path: p1553_r31_artifact_index_README.md
+    sha256: 0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f
+    contains_artifact: ECDLP-IDEA-012/p1539_r1_independent_audit.md
+    contains_artifact_sha256: 634e5a7d2847e849a2e46178f31500f19109e9a9d88a2bf8c70d1f0afe4d467a
+artifacts:
+  - path: p1553_5a5c_coordinate_filtration_probe_r83.py
+    sha256: 0707a53515279e5e5985623d16a731eb1d41dbfb5b6a6a980dcc0cc30a514833
+  - path: p1553_5a5c_coordinate_filtration_probe_report_r83.json
+    sha256: 1478cdf21493ffbeaed0859af849ea6f2835027f23db7e3e4c008f3f24db500c
+  - path: frozen_5a5c_coordinate_filtration.json
+    sha256: 3a5f7e7fb347098745ce96d2028e33c406263368a92792a8bb53e3e8e2c1e77f
+  - path: partial_filter_composability_and_false_positive_controls.json
+    sha256: b0dd2c5f2675e8e0967a6c0722f26f35700ac9b68f41aafa5f461e17c1cb71af
+  - path: summation_polynomial_ffe_source_replay.json
+    sha256: 68bbc08fb17f6f63096c9f9e0de23da8ebbc6d7483b10a6348911086bc90c6fa
+  - path: full_query_state_cost_ledger.json
+    sha256: 4fcaf43e7678bd0542eb6e353f1a183978060d59486a581ed48492c1f2d6600a
+  - path: factor_logs_and_identical_descent.json
+    sha256: 46ad990d3e3d0f41ed4042490ffd6c8a68980869e966304d4936f807476928f0
+  - path: p1553_5a5c_coordinate_filtration_probe_gate_r83.md
+    sha256: 7907df5232c7a6322c797ec33b7600042e223c2c21cb5c832b285995a77fafdf
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_coordinate_filtration_probe_r83.py
+    sha256: 50757d8fb6e4a6d2720a5a6ea73b9c97295eeb8b0d1619cce2ada88743c205cf
+frozen_interface:
+  source_geometry: R82 F=A+C
+  family_count: 4
+  instance_count: 8
+  filter_profile_count: 72
+  partial_split: 2A+3C versus 3A+2C
+  bucket_maps:
+    - x-coordinate residue
+    - y-coordinate residue
+    - SHA-256 encoding hash
+  bucket_moduli:
+    - 2
+    - 4
+    - 8
+  target_coupling: bucket(partial)-bucket(target) mod m
+  scalar_labels_consumed: false
+  verifier_dlp_credit: forbidden
+verified_statements:
+  - >-
+    One canonical weighted-multiset 5A+5C source is retained and group-replayed
+    for every attained endpoint on all eight R82 instances.
+  - >-
+    No tested x-, y-, or encoding-hash bucket is additive on its sampled
+    partial endpoints, while the Z/808Z to Z/8Z positive control passes all
+    4,096 homomorphism checks.
+  - >-
+    No single static bucket or target-coupled offset retains every canonical
+    target; best survival fractions range from 0.1480 through 0.7063 static
+    and 0.1270 through 0.6111 target-coupled.
+  - >-
+    Replaying all static buckets and all coupled offsets recovers every
+    canonical target on all 72 profiles.
+  - >-
+    At B^5=N relation scale, reducing an explicit B^2.6 join to B^1.25 per
+    filter requires B^1.35 filter replay and restores B^2.6 total work; the
+    generic B^2.5 route similarly restores B^2.5.
+  - >-
+    All 512 sampled supplied sources replay exactly, and all 4,608 regular
+    Semaev S3 auxiliary-chain equations vanish with no identity exceptions.
+scoped_positive_controls:
+  canonical_source_per_attained_target: pass
+  static_and_target_coupled_filter_measurement: pass
+  prime_order_homomorphism_theorem: pass
+  divisible_order_quotient_control: pass
+  exact_all_bucket_replay: pass
+  exact_group_source_replay: pass
+  exact_s3_auxiliary_chain: pass
+scoped_failures:
+  single_coordinate_bucket_complete: fail
+  single_target_coupled_offset_complete: fail
+  actual_coordinate_filter_additive: fail
+  full_query_inside_B5_over_4_with_constant_success: fail
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - target-forced algebraic invariants
+  - compact source sections covering every attained endpoint
+  - P1510-style marked-resultant selectors
+  - arbitrary summation-polynomial or FFE elimination circuits
+  - unrestricted arithmetic-circuit lower bounds
+admission:
+  passed_obligations: 11
+  obligation_count: 16
+  lane_admitted: false
+result:
+  canonical_source_replay_complete: true
+  bucket_survival_controls_complete: true
+  divisible_order_positive_control_complete: true
+  exact_s3_chain_replay_complete: true
+  subcap_full_query_complete: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_FIXED_COORDINATE_FILTRATION_ONLY__R82_CANONICAL_SOURCE_PER_ATTAINED_TARGET__X_Y_HASH_BUCKETS_M2_M4_M8__NO_ACTUAL_FILTER_ADDITIVE__NO_SINGLE_BUCKET_OR_TARGET_OFFSET_COMPLETE__ALL_BUCKET_REPLAY_EXACT__CONSTANT_RELATION_ENTROPY_RESTORES_FILTER_EXPONENT__DIVISIBLE_ORDER_QUOTIENT_POSITIVE_CONTROL__EXACT_S3_AUXILIARY_CHAIN__NO_SUBCAP_CONSTRUCTOR__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one P1510-style marked-resultant source section for the
+  R82 2A+3C versus 3A+2C split. It must cover every attained target without
+  bucket replay, return one jointly coupled atom source, and receive full
+  coefficient, state, fresh-query, rank, factor-log, and identical-descent
+  receipts.

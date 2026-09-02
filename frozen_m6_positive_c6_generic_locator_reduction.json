@@ -1,0 +1,202 @@
+{
+  "admission": {
+    "coordinate_specific_escape_preserved": true,
+    "encoding_invariant_locator_at_caps_admitted": false,
+    "generic_locator_reduction_admitted": true,
+    "lane_admitted": false,
+    "obligation_count": 24,
+    "obligations": {
+      "all_finite_columns_covered": true,
+      "all_finite_dlps_publicly_verified": true,
+      "all_finite_factor_logs_publicly_verified": true,
+      "all_finite_identical_descents_verified": true,
+      "all_finite_relation_matrices_full_rank": true,
+      "breakthrough_complete": false,
+      "candidate_oracles_avoided": true,
+      "coordinate_specific_s7_or_ffe_locator_complete": false,
+      "deterministic_hash_to_curve_transfer_complete": false,
+      "encoding_invariant_locator_at_caps_excluded": true,
+      "finite_controls_scoped_without_attack_credit": true,
+      "generic_challenge_embedding_proved": true,
+      "generic_factor_log_to_dlp_extraction_proved": true,
+      "generic_prime_coordinate_family_algorithm": false,
+      "nineteen_source_bindings_verified": true,
+      "pollard_rho_improvement_complete": false,
+      "r116_c3_pair_interface_semantically_deduplicated": true,
+      "r148_direct_batch_cost_semantically_deduplicated": true,
+      "r159_coverage_rank_and_descent_theorem_inherited": true,
+      "shoup_improvement_complete": false,
+      "shoup_primary_generic_lower_bound_bound": true,
+      "six_finite_generic_reduction_controls_complete": true,
+      "total_generic_reduction_exponent_q9O20_charged": true,
+      "unconditional_total_attack_cost_complete": false
+    },
+    "passed_obligation_count": 17
+  },
+  "cost": {
+    "assumed_locator_batch_work_exponent_q": {
+      "decimal": 0.25,
+      "exact": "1/4"
+    },
+    "assumed_locator_setup_exponent_q": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "c3_state_exponent_q": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "contradiction_gap_exponent_B": {
+      "decimal": 0.25,
+      "exact": "1/4"
+    },
+    "contradiction_gap_exponent_q": {
+      "decimal": 0.05,
+      "exact": "1/20"
+    },
+    "coordinate_specific_locator_excluded": false,
+    "dense_relation_solve_exponent_q": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "factor_base_dimension_exponent_q": {
+      "decimal": 0.15,
+      "exact": "3/20"
+    },
+    "finite_c3_scan_receives_asymptotic_credit": false,
+    "generic_locator_at_requested_caps_compatible_with_shoup": false,
+    "group_order_relation": "q=B^5",
+    "materialized_c3_pair_table_exponent_B": {
+      "decimal": 4.5,
+      "exact": "9/2"
+    },
+    "positive_c6_source_exponent_q": {
+      "decimal": 0.9,
+      "exact": "9/10"
+    },
+    "r116_and_r148_standard_route_audits_inherited": true,
+    "r159_target_batch_exponent_q": {
+      "decimal": 0.25,
+      "exact": "1/4"
+    },
+    "reduced_generic_dlp_exponent_q": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "schema": "p1553.m6_positive_c6_generic_locator_reduction.cost.r160.v1",
+    "shoup_generic_lower_bound_exponent_q": {
+      "decimal": 0.5,
+      "exact": "1/2"
+    },
+    "standard_c3_scan_full_batch_exponent_B": {
+      "decimal": 3.5,
+      "exact": "7/2"
+    },
+    "unconditional_arithmetic_circuit_lower_bound_claimed": false,
+    "unconditional_total_attack_cost_supplied": false
+  },
+  "generic_reduction": {
+    "assumed_locator_interface": "An encoding-invariant classical generic-group algorithm accepts d iid group elements and the R159 target batch, returns positive-C6 sources with R159's coverage guarantee, and uses at most B^(9/4+o(1)) setup/state plus B^(5/4+o(1)) batch work.",
+    "challenge_embedding": "Given Q=[x]G, independently sample public a_i in F_q and nonzero b_i in F_q, then form C_i=[a_i]G+[b_i]Q. For fixed x, the C_i are iid uniform group elements; rejection of zero and equal-up-to-sign encodings gives the conditioned ideal factor-base law.",
+    "cost_contradiction": "With q=B^5, the locator setup and dense relation solve each cost B^(9/4+o(1))=q^(9/20+o(1)); target generation and locator batch work cost at most B^(5/4+o(1))=q^(1/4+o(1)). The resulting generic DLP algorithm is q^(9/20+o(1)), below Shoup's Omega(q^(1/2)) generic lower bound.",
+    "dlp_extraction": "Each recovered ell_i satisfies ell_i=a_i+b_i*x mod q. Since b_i is nonzero, x=(ell_i-a_i)/b_i mod q; public multiplication verifies the result. Identical target descent is not needed for this reduction.",
+    "novelty_status": "direct_r159_generic_locator_reduction_novelty_unverified",
+    "primary_source": {
+      "author": "Victor Shoup",
+      "local_sha256": "89d19aad3a4d98b563029de9135d30c8ed9b831d74f7348c286acc22f9af85b3",
+      "title": "Lower Bounds for Discrete Logarithms and Related Problems",
+      "url": "https://www.shoup.net/papers/dlbounds1.pdf",
+      "venue": "EUROCRYPT 1997"
+    },
+    "relation_recovery": "For every returned source v at tG+[s_j]C_j, the public row r=v-s_j e_j satisfies r dot ell=t. R159 proves all-column coverage and full rank with probability 1-o(1), so the factor logs ell are recovered without a rank or DLP oracle.",
+    "scope": "This excludes the requested locator only when it is simulable from opaque generic encodings and group operations. It is not a data-structure or arithmetic-circuit lower bound and does not exclude coordinate-aware summation-polynomial, resultant, or FFE algorithms."
+  },
+  "required_locator_scope": "must exploit elliptic coordinates, finite-field arithmetic, summation polynomials, resultants, or FFE in a way not simulable from opaque generic encodings",
+  "schema": "p1553.m6_positive_c6_generic_locator_reduction.frozen.r160.v1",
+  "source_bindings": {
+    "r116_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/c3_pair_sum_indexing_and_algebraic_cost_ledger.json",
+      "sha256": "f128638edd6d6bbe523e15f47a07bed6b792860bbd3ea3fa1bcf3b3544e0421d"
+    },
+    "r116_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_a6_batched_c3_pair_sum_source_locator_probe_gate_r116.md",
+      "sha256": "1a17b8e396affe9ced0a5d589059ec6d3d000ee23f56522e1f55e353bac72542"
+    },
+    "r116_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_a6_batched_c3_pair_sum_source_locator_probe_parent_report_r116.yaml",
+      "sha256": "50d5439738e7ba815ddb7bab07fb8d03000bb9a2af42b5e99bbca9009e08760b"
+    },
+    "r116_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_a6_batched_c3_pair_sum_source_locator_probe_r116.py",
+      "sha256": "dcaf00bf51a2a8757a12e407cbe581f45f58c54895623f857d996898a5835f46"
+    },
+    "r116_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_a6_batched_c3_pair_sum_source_locator_probe_report_r116.json",
+      "sha256": "9c5ebb9e99eaada2296c3d4f0fcbdb472995f3ae071bb68138e364e266f93d25"
+    },
+    "r148_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_static_3sum_indexing_tradeoff_cost_ledger.json",
+      "sha256": "3161ea7199f1200b1a9a6643b2cad20f082e343f9a85ca36235a218df8418e7d"
+    },
+    "r148_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_static_3sum_indexing_tradeoff_probe_gate_r148.md",
+      "sha256": "50e465e70d3e57457a64185cd9b86fc9b08bd9ebc56cfe6969f8c1f04508d9ca"
+    },
+    "r148_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_static_3sum_indexing_tradeoff_probe_report_r148.json",
+      "sha256": "b01496572b919ffd15406ee83bcd185675b96669d0cd40f51972ddf56f2caed7"
+    },
+    "r159_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_random_diagonal_known_target_rank_controls.json",
+      "sha256": "d95dad07fbe68c1f4196535e817a998391e15abd50f918a2b7777ca6a8a07e32"
+    },
+    "r159_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_random_diagonal_known_target_rank_cost_ledger.json",
+      "sha256": "b42f8c6818a92fe269ac9642dca1225faf0a38266824550f0768be47640a00e3"
+    },
+    "r159_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_m6_random_diagonal_known_target_rank.json",
+      "sha256": "c5df20238ff3107b384d26c33b882b51754089bd4ff517c0220b1dc67307fc43"
+    },
+    "r159_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_random_diagonal_known_target_rank_probe_gate_r159.md",
+      "sha256": "58b37a59c6f2a983ab2a0a73bdba444fab667aa24eff91eb49f448453a91fda9"
+    },
+    "r159_logs": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/factor_logs_and_identical_descent_r159.json",
+      "sha256": "4a9258ebff17de5b77d9be2db0c0943188e134077e7ea1e93d9069d5982d5871"
+    },
+    "r159_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_random_diagonal_known_target_rank_probe_parent_report_r159.yaml",
+      "sha256": "7dc129664690bf788df3671a36c47d0f47abf94bd331bcad5a368fd9ff5040c0"
+    },
+    "r159_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_random_diagonal_known_target_rank_probe_r159.py",
+      "sha256": "8889acea5284ee2ca70d147f35c90d08d3e3612f9749984d6c10856c74efa448"
+    },
+    "r159_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_random_diagonal_known_target_rank_replay.json",
+      "sha256": "08a247a446a0c7d1d0ca8abe0016b6ec825165e911341fdb0a54be9a5e1685de"
+    },
+    "r159_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_random_diagonal_known_target_rank_probe_report_r159.json",
+      "sha256": "869f04cbcfa5f918e2d96000508cb02c3ffb1266cbd9e0001f2c14d5a0ae7860"
+    },
+    "r159_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_m6_random_diagonal_known_target_rank_probe_r159.py",
+      "sha256": "d8ec783bc8b0c2827d40251364d1bce2d495aeda67c804ee9ab604b4ad60da43"
+    },
+    "shoup_generic_lower_bound": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/shoup_generic_dlp_lower_bound_1997.pdf",
+      "sha256": "89d19aad3a4d98b563029de9135d30c8ed9b831d74f7348c286acc22f9af85b3"
+    }
+  },
+  "successor_interface": {
+    "batch_work_cap": "B^(5/4+o(1))",
+    "forbidden_shortcut": "generic-encoding-invariant source index",
+    "persistent_input": "compact factor-base divisor or B^(9/4) C3 state",
+    "required_output": "one positive-C6 source per covered column and descent",
+    "setup_cap": "B^(9/4+o(1))",
+    "target_batch": "B^(5/4+o(1)) R159 random-diagonal targets"
+  }
+}

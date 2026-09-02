@@ -1,0 +1,246 @@
+{
+  "batch_lanes": [
+    {
+      "candidate_point": [
+        6696,
+        1166
+      ],
+      "case_count": 14,
+      "group_index": 0,
+      "lane_index": 0,
+      "left_y": 5888
+    },
+    {
+      "candidate_point": [
+        6213,
+        3539
+      ],
+      "case_count": 10,
+      "group_index": 0,
+      "lane_index": 1,
+      "left_y": 3914
+    },
+    {
+      "candidate_point": [
+        9251,
+        9216
+      ],
+      "case_count": 4,
+      "group_index": 1,
+      "lane_index": 2,
+      "left_y": 3914
+    },
+    {
+      "candidate_point": [
+        2705,
+        9753
+      ],
+      "case_count": 4,
+      "group_index": 1,
+      "lane_index": 3,
+      "left_y": 5888
+    }
+  ],
+  "method": "compiled_c_grouped_left_y_batch_lane_kernel_for_repeated_coordinate_candidate_points",
+  "native_execution": {
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_batch_lane_target67_744_controls.c",
+      "-o",
+      "/private/tmp/ecdlp_batch_lane_wqk6lvmm/ffe_public_repeated_coordinate_fused_kernel_batch_lane_target67_744_controls.bin"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executable": "/private/tmp/ecdlp_batch_lane_wqk6lvmm/ffe_public_repeated_coordinate_fused_kernel_batch_lane_target67_744_controls.bin",
+    "executed": true,
+    "native_summary": {
+      "case_count": 32,
+      "case_match_count": 32,
+      "failure_count": 0,
+      "field_op_counts": {
+        "add": 8,
+        "inv": 2,
+        "mul": 20,
+        "neg": 4,
+        "sub": 30,
+        "total": 64
+      },
+      "group_count": 2,
+      "lane_count": 4,
+      "lane_match_count": 4,
+      "register_match_count": 32,
+      "result_match_count": 32,
+      "reused_case_count": 4,
+      "shared_prepare_match_count": 2
+    },
+    "run_returncode": 0,
+    "run_stderr": "",
+    "run_stdout": "{\"group_count\":2,\"lane_count\":4,\"case_count\":32,\"lane_match_count\":4,\"case_match_count\":32,\"failure_count\":0,\"shared_prepare_match_count\":2,\"result_match_count\":32,\"register_match_count\":32,\"reused_case_count\":4,\"field_op_counts\":{\"add\":8,\"sub\":30,\"mul\":20,\"neg\":4,\"inv\":2,\"total\":64}}\n"
+  },
+  "non_claims": [
+    "This specializes first-pass candidate-point arithmetic only; it is not a new relation search.",
+    "It does not replace the second-pass relation predicate or modular linear algebra layers.",
+    "A production FFE/summation-polynomial implementation must still pass the ABI and contract gates."
+  ],
+  "parameters": {
+    "affine_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_affine_trace_target67_744_controls.json",
+    "c_out": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_batch_lane_target67_744_controls.c",
+    "compiler": "cc",
+    "keep_exe": false,
+    "shared_denominator_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_shared_denominator_target67_744_controls.json",
+    "source_names": []
+  },
+  "records": [
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "batch_lane_status": "batch_lane_native_kernel_verified",
+      "case_count": 8,
+      "lane_count": 2,
+      "matches_contract_below_rho": true,
+      "matches_contract_event_reuse_target": true,
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "reused_case_count": 4,
+      "source_name": "coord1114_744"
+    },
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "batch_lane_status": "batch_lane_native_kernel_verified",
+      "case_count": 12,
+      "lane_count": 2,
+      "matches_contract_below_rho": false,
+      "matches_contract_event_reuse_target": false,
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "reused_case_count": 0,
+      "source_name": "coord161_720"
+    },
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "batch_lane_status": "batch_lane_native_kernel_verified",
+      "case_count": 12,
+      "lane_count": 2,
+      "matches_contract_below_rho": false,
+      "matches_contract_event_reuse_target": false,
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "reused_case_count": 0,
+      "source_name": "coord161_728"
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_batch_lane_probe_v1",
+  "shared_groups": [
+    {
+      "case_count": 24,
+      "group_index": 0,
+      "lane_count": 2,
+      "left_x": 4979,
+      "p": 9803,
+      "right": [
+        2476,
+        3749
+      ],
+      "slope_denominator": 7300,
+      "slope_denominator_inverse": 7833
+    },
+    {
+      "case_count": 8,
+      "group_index": 1,
+      "lane_count": 2,
+      "left_x": 4979,
+      "p": 9803,
+      "right": [
+        7537,
+        8016
+      ],
+      "slope_denominator": 2558,
+      "slope_denominator_inverse": 6741
+    }
+  ],
+  "summary": {
+    "baseline_shared_denominator_field_op_counts": {
+      "add": 64,
+      "inv": 2,
+      "mul": 160,
+      "neg": 32,
+      "sub": 226,
+      "total": 484
+    },
+    "batch_lane_count": 4,
+    "batch_lane_verified_count": 3,
+    "below_rho_batch_lane_verified_count": 1,
+    "compiled": true,
+    "event_reuse_below_rho_batch_lane_verified_count": 1,
+    "executed": true,
+    "field_op_savings_vs_shared_denominator": {
+      "add": 56,
+      "inv": 0,
+      "mul": 140,
+      "neg": 28,
+      "sub": 196,
+      "total": 420
+    },
+    "global_batch_lane_verified": true,
+    "interpretation": "Repeated-coordinate candidate points now batch by unique left-y lane inside each shared-denominator group.",
+    "native_case_count": 32,
+    "native_case_match_count": 32,
+    "native_failure_count": 0,
+    "native_field_op_counts": {
+      "add": 8,
+      "inv": 2,
+      "mul": 20,
+      "neg": 4,
+      "sub": 30,
+      "total": 64
+    },
+    "native_lane_match_count": 4,
+    "native_register_match_count": 32,
+    "native_result_match_count": 32,
+    "native_reused_case_count": 4,
+    "native_shared_prepare_match_count": 2,
+    "record_count": 3,
+    "shared_group_count": 2
+  }
+}

@@ -1,0 +1,89 @@
+schema: crypto.autoresearch.install_validation_receipt.v1
+bundle_id: P1553-R11-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+reason: authoritative checkout is read-only in this session
+composition:
+  mode: atomic_r5_through_r11
+  upstream_bundle_id: P1553-R5-R7-20260719
+  upstream_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_bundle_id: P1553-R10-20260719
+  base_manifest_sha256: 59721e418d99f74fa9762100fe66e132933b3c7f408285b0335658938899b72f
+  base_manifest_hash_list_sha256: b4b0d6920c296d6f7da3c0c18ae1224b9b1004a64ebebb6e011374e6cb69b73d
+  base_simulated_queue_sha256: a70c3874615af2f3174a5ffc2d45a164de3808912c31db71ee2f5ee30701210a
+delta_manifest:
+  json_sha256: 5734fe58a08dc64f8e5a5111b00186975d1bccfb2f93fbf429f4942476bb6db3
+  sha256_list_sha256: e4a780fcca2c53e266cd488c97c276679fcfb44b06f35cd1dc0586a91a4a6a98
+  unique_sources: 4
+  destination_installs: 5
+  appended_tasks: 2
+producer_bindings:
+  gate_sha256: 6c79b486bfa4cfd14674033a438db3d91ddf7bbe4d2c4aaf309f1a0706f0df4e
+  parent_report_sha256: 5f65da4f50e301067258f14f4b8e6dec91a0f096ac04e2418e4957bd649604b2
+  red_team_markdown_sha256: 8c4864fb494cdf9f8e3052ef2b2b739f028e752e39fdbc6c1c2ee7131ef2c4e3
+  red_team_yaml_sha256: dec795cf4abcb14fd33b4e264dbe13eca168f504fc5557dfb6421bd04d99c14b
+  independent_reviewer: 019f7cef-5acf-7f42-9944-26fb5fc5cc23
+  final_review: accept
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+simulated_composed_merge:
+  queue_file_sha256: e1548d613c6d403adba77631a3d6f9c634fb3312e644da6ab1028b7f0af40370
+  queue_canonical_sha256: 5872a5856549ee18bc74555ed9b2009639fabedacef7bbd5316c1eba37ee817b
+  dispatch_file_sha256: 18be96330dfe91dedc0863907eab8baf46d8359622fc30a36e9dae1d320ab864
+  dispatch_report_sha256: 6dfcb04dd9067c41b77c5f4519036e00240bf4bc1679e5376fe1a55ff8cdcd0e
+  dispatch_plan_sha256: fc5e7ec16c79811cdb8fbb26475d5d88f03e0b60551737e35bad7365a54299f9
+  terminal_tasks: 22
+  ready_tasks: 0
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  new_yaml_documents_parsed: 2
+  new_ascii_files_checked: 6
+  new_exactly_one_next_action_headings: 2
+  composed_r5_through_r11_exactly_one_next_action_headings: 14
+  r11_source_hash_list: pass
+  r11_manifest_source_bindings: pass
+  r11_task_ids_unique: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+research_result:
+  status: revise_scoped_theorem
+  exact_normalization: >-
+    The actual sign-closed S_6 existence predicate can be counted by a signed
+    endpoint coefficient. Its zero set equals the projector zero set, its
+    multiplicity differs by a factor between one and sixteen, and it remains
+    below p under the frozen unique-color threshold.
+  exact_new_boundary: >-
+    A nonconstant degree-d_psi rational Kummer label cannot merge distinct
+    source classes across a full B-point Cartesian second deck when
+    B>16*d_psi and 2*d_psi<N. General selective collision incidences are
+    O(d_psi^2*B), so the surviving useful degree range starts at sqrt(B).
+  surviving_exception: >-
+    A degree between sqrt(B) and B list-specific source-faithful Kummer
+    transporter on a non-Cartesian recursive support, with bounded corrections
+    and provenance, remains unconstructed and not excluded.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_install_rule: >-
+  Re-read all three live precondition hashes and both required NET task states;
+  compose R5-R7, R8, R9, R10, and R11 on one private queue; install all files
+  and regenerated dispatch outputs atomically only if every manifest, source
+  binding, test, focus check, and corpus validator still passes. Preserve any
+  mismatch as concurrent-state drift instead of overwriting it.

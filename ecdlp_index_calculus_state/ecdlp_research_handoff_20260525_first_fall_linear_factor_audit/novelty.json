@@ -1,0 +1,43 @@
+{
+  "schema": "ecdlp_handoff_novelty_v1",
+  "claim": "The measured low-term-support FFE resultant factors in the combined 72-79 surface bank all collapse to quadratic root hyperplanes c + r*b + r^2.",
+  "status": "measured_structural_identity_on_existing_surface_bank",
+  "honesty_boundary": {
+    "surface_bank": "all_public_leaf_plus_fresh_72_79",
+    "surface_count": 28,
+    "fresh_hit_stream_validated": false,
+    "sage_factorization_already_available": true,
+    "general_ecdlp_speedup_claimed": false
+  },
+  "artifacts": {
+    "audit_script": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/ffe_first_fall_linear_factor_audit.py",
+    "audit_output": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_all_public_leaf_plus_fresh_72_79.json",
+    "sage_factor_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_all_public_leaf_plus_fresh_72_79.json",
+    "charged_rollup_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_factor_quadratic_root_all_public_leaf_plus_fresh_72_79_charged_rollup.json"
+  },
+  "metrics": {
+    "surface_count": 28,
+    "factor_count": 526,
+    "root_hyperplane_factor_count": 526,
+    "root_hyperplane_failure_count": 0,
+    "all_surface_factor_counts_match_known_hit_roots": true,
+    "surface_with_preserving_factor_count": 28,
+    "preserving_factor_count": 39,
+    "best_policy_by_charged_total": "summax_sage_low_constant_target_hash",
+    "best_policy_total_ops_below_rho_count": 28,
+    "best_policy_preserve_count": 28,
+    "best_policy_false_positive_count": 0,
+    "best_policy_mean_total_ops_over_rho": 0.78788738,
+    "best_policy_max_total_ops_over_rho": 0.968,
+    "target_top8_root_prior_preserving_hit_count": 19,
+    "target_top8_root_prior_preserving_hit_rate": 0.67857143,
+    "target_top8_root_prior_candidate_hit_count": 24,
+    "target_top8_root_prior_candidate_hit_rate": 0.85714286
+  },
+  "next_work_orders": [
+    "ffe_first_fall_root_hyperplane_selector_probe",
+    "heldout_root_prior_transfer_audit",
+    "diagnostic_80_87_root_hyperplane_scoring",
+    "multi_surface_first_fall_relation_harvest"
+  ]
+}

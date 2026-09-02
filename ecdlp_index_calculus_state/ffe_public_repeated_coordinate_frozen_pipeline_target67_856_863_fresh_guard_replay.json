@@ -1,0 +1,48 @@
+{
+  "cases": [],
+  "context_error_count": 0,
+  "context_errors": [],
+  "context_errors_truncated": false,
+  "method": "public_row_rule_replay_with_frozen_form_orientation_guard",
+  "non_claims": [
+    "The form guard is applied after relation-event scanning; row scan costs are still charged.",
+    "This is a frozen replay wrapper, not fresh validation unless the input window was held out from guard discovery.",
+    "Rejected cases may still have rank and relation count; rejection means the candidate-position alignment guard failed."
+  ],
+  "parameters": {
+    "activation_rule": "activate:b_minus_c_mod16=0&source_ops_millirhos>=1312|c_mod16=10&source_ops_millirhos>=1368",
+    "event_summary_limit": 16,
+    "form_guard": "candidate_pos_span=0",
+    "row_rules": [
+      {
+        "name": "activated",
+        "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0"
+      },
+      {
+        "name": "all_root",
+        "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8"
+      }
+    ],
+    "windows": [
+      {
+        "artifact": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_856_863_fresh_coordinate_gate.json",
+        "name": "w856_863_fresh"
+      }
+    ]
+  },
+  "schema": "ecdlp_public_repeated_coordinate_form_guard_replay_probe_v1",
+  "summary": {
+    "best_guarded_verified_cases": [],
+    "by_rule": [],
+    "guard_passed_relation_case_count": 0,
+    "guard_rejected_relation_case_count": 0,
+    "guarded_below_rho_count": 0,
+    "guarded_verified_case_count": 0,
+    "input_case_count": 0,
+    "mean_guard_passed_ops_over_rho": null,
+    "min_guard_passed_ops_over_rho": null,
+    "rejected_but_verified_case_count": 0,
+    "relation_case_count": 0,
+    "selected_case_count": 0
+  }
+}

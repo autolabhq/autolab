@@ -1,0 +1,74 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R34-SUMMATION-SURFACE-GRID-RESIDUE-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T07:21:12Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R34 is a new scoped reduction
+  requiring independent review. It identifies a quadratic-degree addition
+  carrier but supplies no radical-first selected-shift compiler.
+bindings:
+  r33_bundle_hash_list_sha256: 57bdcc05ae9594478b43d173908670cea07527cd0f14687aee4c058894849198
+  r33_staging_receipt_sha256: 309decd21ca90b440ecf58f5fbd7fddbc4dba9d22e94ec7fa73d7bedb7f3d629
+  r34_gate_sha256: 84bb7fa7288a76099378a9b475aededbbcb27e53564f7f55a730e127e457656a
+  r34_parent_report_sha256: 4967d948161a407af9a76469aaef462423c5b487a910b3a7324f551b0028f344
+  r34_selfcheck_script_sha256: d6a0a62e7439753d2dec1d58f949bc6120b3ba475144b4713a28aa48f7a3bf75
+  r34_selfcheck_report_sha256: 022d60606cbe8e6e0e46edac11663977cc0e2a5585d292c19c727041aea2c00e
+  r34_artifact_index_sha256: a5f931bf9f005c085ff42aa97bf6008652e1a17e3d019fe853291bc94cbdc4d6
+  r34_bundle_hash_list_sha256: 3e90b0b3976629e2d6a76de4d48c29912c6f96b48213e81e94ab5ccb52e05612
+result:
+  classification: low_degree_addition_surface_no_radical_first_compiler
+  addition_surface_coordinate_degrees: O(B^2)
+  selected_shift_curve_union_degree: O(B^2)
+  explicit_grid_algebra_dimension: B^3
+  graph_first_source_norm_degree: B^3
+  affine_recursive_resultant_projectively_complete: false
+  radical_first_selected_shift_ideal: absent
+  complete_value_histogram: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r34_hash_list: pass
+  r34_parent_yaml_parse: pass
+  repeated_addition_surface_degree_proof_checked: pass
+  selected_shift_curve_union_degree_proof_checked: pass
+  explicit_grid_residue_dimension_checked: pass
+  r34_selfcheck_replay_matches_report: pass
+  regular_desired_branches_checked: 8742
+  regular_desired_branch_failures: 0
+  proper_subsum_affine_resultant_witness: pass
+  r33_artifact_index_restored_byte_for_byte: pass
+  clean_temporary_replay_with_r16_through_r34_gates_and_r34_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T07_21_12Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the grid-residue statement is not an arithmetic-circuit lower bound
+  - no saturated selected-shift ideal or radical-first compiler
+  - the toy control is not asymptotic evidence
+  - no target, R10, density, rank, logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Build or refute a saturated radical-first presentation of the selected-
+  shift curve union, preserving all projective strata and testing a
+  prospective common-base-locus or pairwise-curve-intersection schedule for
+  exact keys, counts, and coupled sources below B^(9/4+o(1)) without a B^3
+  grid residue or source norm; then bind any survivor to restrictions,
+  fresh target, R10, rank, logs, and descent.

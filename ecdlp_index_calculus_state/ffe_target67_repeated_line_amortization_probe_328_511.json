@@ -1,0 +1,486 @@
+{
+  "line_groups": [
+    {
+      "interpretation": "success_only amortization counts only rows that actually recover; line_present amortization shares confirmation over all observed rows with the same line, including replay failures.",
+      "leaf_signatures": [
+        "3,5,6",
+        "4,5,6"
+      ],
+      "line": "1119*b + 1*c + 7180 mod 9803",
+      "line_key": [
+        1119,
+        1,
+        7180,
+        9803
+      ],
+      "line_present_amortized_below_rho_count": 1,
+      "line_present_amortized_rows": [
+        {
+          "amortized_line_plus_replay_ops_over_rho": 0.944,
+          "amortized_line_share_over_rho": 0.384,
+          "below_rho": true,
+          "leaf_signature": "4,5,6",
+          "replay_measured_ops_over_rho": 0.56,
+          "replay_secret": 4698,
+          "transfer_index": 427
+        }
+      ],
+      "line_present_count": 2,
+      "max_line_root_scan_ops_over_rho": 0.768,
+      "max_replay_ops_over_rho": 0.56,
+      "mean_line_root_scan_ops_over_rho": 0.756,
+      "meets_required_success_count": false,
+      "min_line_root_scan_ops_over_rho": 0.744,
+      "min_replay_ops_over_rho": 0.56,
+      "records": [
+        {
+          "bucket": "line_present_replay_success",
+          "leaf_signature": "4,5,6",
+          "line_plus_replay_ops_over_rho": 1.328,
+          "line_root_scan_ops_over_rho": 0.768,
+          "replay_best_rule": "all",
+          "replay_measured_ops_over_rho": 0.56,
+          "replay_secret": 4698,
+          "row_public_key_verified": true,
+          "row_rank": 2,
+          "row_relation_count": 2,
+          "salt": 206,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_target67_transfer427_posthoc_424_431.json",
+          "top_k": 7,
+          "transfer_index": 427
+        },
+        {
+          "bucket": "line_present_replay_failure",
+          "leaf_signature": "3,5,6",
+          "line_plus_replay_ops_over_rho": null,
+          "line_root_scan_ops_over_rho": 0.744,
+          "replay_best_rule": null,
+          "replay_measured_ops_over_rho": null,
+          "replay_secret": null,
+          "row_public_key_verified": false,
+          "row_rank": 1,
+          "row_relation_count": 1,
+          "salt": 208,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_target67_pair56_salt208_transfer458_control_456_463.json",
+          "top_k": 7,
+          "transfer_index": 458
+        }
+      ],
+      "repeated_line_present": true,
+      "replay_failure_count": 1,
+      "replay_success_count": 1,
+      "row_verified_count": 1,
+      "salts": [
+        206,
+        208
+      ],
+      "success_only_amortized_below_rho_count": 0,
+      "success_only_amortized_rows": [
+        {
+          "amortized_line_plus_replay_ops_over_rho": 1.328,
+          "amortized_line_share_over_rho": 0.768,
+          "below_rho": false,
+          "leaf_signature": "4,5,6",
+          "replay_measured_ops_over_rho": 0.56,
+          "replay_secret": 4698,
+          "transfer_index": 427
+        }
+      ],
+      "transfer_indices": [
+        427,
+        458
+      ]
+    },
+    {
+      "interpretation": "success_only amortization counts only rows that actually recover; line_present amortization shares confirmation over all observed rows with the same line, including replay failures.",
+      "leaf_signatures": [
+        "1,5,6",
+        "2,5,6"
+      ],
+      "line": "3394*b + 1*c + 711 mod 9803",
+      "line_key": [
+        3394,
+        1,
+        711,
+        9803
+      ],
+      "line_present_amortized_below_rho_count": 1,
+      "line_present_amortized_rows": [
+        {
+          "amortized_line_plus_replay_ops_over_rho": 0.912,
+          "amortized_line_share_over_rho": 0.464,
+          "below_rho": true,
+          "leaf_signature": "1,5,6",
+          "replay_measured_ops_over_rho": 0.448,
+          "replay_secret": 6208,
+          "transfer_index": 395
+        }
+      ],
+      "line_present_count": 2,
+      "max_line_root_scan_ops_over_rho": 0.928,
+      "max_replay_ops_over_rho": 0.448,
+      "mean_line_root_scan_ops_over_rho": 0.848,
+      "meets_required_success_count": false,
+      "min_line_root_scan_ops_over_rho": 0.768,
+      "min_replay_ops_over_rho": 0.448,
+      "records": [
+        {
+          "bucket": "line_present_replay_success",
+          "leaf_signature": "1,5,6",
+          "line_plus_replay_ops_over_rho": 1.216,
+          "line_root_scan_ops_over_rho": 0.768,
+          "replay_best_rule": "candidate_pos_min",
+          "replay_measured_ops_over_rho": 0.448,
+          "replay_secret": 6208,
+          "row_public_key_verified": true,
+          "row_rank": 2,
+          "row_relation_count": 2,
+          "salt": 206,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_target67_transfer395_posthoc_392_399.json",
+          "top_k": 7,
+          "transfer_index": 395
+        },
+        {
+          "bucket": "line_present_replay_failure",
+          "leaf_signature": "2,5,6",
+          "line_plus_replay_ops_over_rho": null,
+          "line_root_scan_ops_over_rho": 0.928,
+          "replay_best_rule": null,
+          "replay_measured_ops_over_rho": null,
+          "replay_secret": null,
+          "row_public_key_verified": true,
+          "row_rank": 4,
+          "row_relation_count": 4,
+          "salt": 204,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_target67_pair56_salt204_transfer449_posthoc_448_455.json",
+          "top_k": 7,
+          "transfer_index": 449
+        }
+      ],
+      "repeated_line_present": true,
+      "replay_failure_count": 1,
+      "replay_success_count": 1,
+      "row_verified_count": 2,
+      "salts": [
+        204,
+        206
+      ],
+      "success_only_amortized_below_rho_count": 0,
+      "success_only_amortized_rows": [
+        {
+          "amortized_line_plus_replay_ops_over_rho": 1.376,
+          "amortized_line_share_over_rho": 0.928,
+          "below_rho": false,
+          "leaf_signature": "1,5,6",
+          "replay_measured_ops_over_rho": 0.448,
+          "replay_secret": 6208,
+          "transfer_index": 395
+        }
+      ],
+      "transfer_indices": [
+        395,
+        449
+      ]
+    },
+    {
+      "interpretation": "success_only amortization counts only rows that actually recover; line_present amortization shares confirmation over all observed rows with the same line, including replay failures.",
+      "leaf_signatures": [
+        "6,7,10,13",
+        "7,10,13"
+      ],
+      "line": "8022*b + 1*c + 5592 mod 9803",
+      "line_key": [
+        8022,
+        1,
+        5592,
+        9803
+      ],
+      "line_present_amortized_below_rho_count": 0,
+      "line_present_amortized_rows": [],
+      "line_present_count": 2,
+      "max_line_root_scan_ops_over_rho": 0.936,
+      "max_replay_ops_over_rho": null,
+      "mean_line_root_scan_ops_over_rho": 0.932,
+      "meets_required_success_count": false,
+      "min_line_root_scan_ops_over_rho": 0.928,
+      "min_replay_ops_over_rho": null,
+      "records": [
+        {
+          "bucket": "line_present_replay_failure",
+          "leaf_signature": "6,7,10,13",
+          "line_plus_replay_ops_over_rho": null,
+          "line_root_scan_ops_over_rho": 0.936,
+          "replay_best_rule": null,
+          "replay_measured_ops_over_rho": null,
+          "replay_secret": null,
+          "row_public_key_verified": true,
+          "row_rank": 3,
+          "row_relation_count": 3,
+          "salt": 204,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_target67_transfer503_top16_496_503.json",
+          "top_k": 16,
+          "transfer_index": 503
+        },
+        {
+          "bucket": "line_present_replay_failure",
+          "leaf_signature": "7,10,13",
+          "line_plus_replay_ops_over_rho": null,
+          "line_root_scan_ops_over_rho": 0.928,
+          "replay_best_rule": null,
+          "replay_measured_ops_over_rho": null,
+          "replay_secret": null,
+          "row_public_key_verified": true,
+          "row_rank": 3,
+          "row_relation_count": 3,
+          "salt": 204,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_target67_transfer503_top16_496_503.json",
+          "top_k": 16,
+          "transfer_index": 503
+        }
+      ],
+      "repeated_line_present": true,
+      "replay_failure_count": 2,
+      "replay_success_count": 0,
+      "row_verified_count": 2,
+      "salts": [
+        204
+      ],
+      "success_only_amortized_below_rho_count": 0,
+      "success_only_amortized_rows": [],
+      "transfer_indices": [
+        503
+      ]
+    },
+    {
+      "interpretation": "success_only amortization counts only rows that actually recover; line_present amortization shares confirmation over all observed rows with the same line, including replay failures.",
+      "leaf_signatures": [
+        "0,1,2,3"
+      ],
+      "line": "8741*b + 1*c + 499 mod 9803",
+      "line_key": [
+        8741,
+        1,
+        499,
+        9803
+      ],
+      "line_present_amortized_below_rho_count": 0,
+      "line_present_amortized_rows": [],
+      "line_present_count": 1,
+      "max_line_root_scan_ops_over_rho": 0.872,
+      "max_replay_ops_over_rho": null,
+      "mean_line_root_scan_ops_over_rho": 0.872,
+      "meets_required_success_count": false,
+      "min_line_root_scan_ops_over_rho": 0.872,
+      "min_replay_ops_over_rho": null,
+      "records": [
+        {
+          "bucket": "line_present_replay_failure",
+          "leaf_signature": "0,1,2,3",
+          "line_plus_replay_ops_over_rho": null,
+          "line_root_scan_ops_over_rho": 0.872,
+          "replay_best_rule": null,
+          "replay_measured_ops_over_rho": null,
+          "replay_secret": null,
+          "row_public_key_verified": true,
+          "row_rank": 4,
+          "row_relation_count": 4,
+          "salt": 204,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_branch_scheduler_selected_448_455.json",
+          "top_k": 4,
+          "transfer_index": 449
+        }
+      ],
+      "repeated_line_present": false,
+      "replay_failure_count": 1,
+      "replay_success_count": 0,
+      "row_verified_count": 1,
+      "salts": [
+        204
+      ],
+      "success_only_amortized_below_rho_count": 0,
+      "success_only_amortized_rows": [],
+      "transfer_indices": [
+        449
+      ]
+    },
+    {
+      "interpretation": "success_only amortization counts only rows that actually recover; line_present amortization shares confirmation over all observed rows with the same line, including replay failures.",
+      "leaf_signatures": [
+        "0,1,2,3"
+      ],
+      "line": "945*b + 1*c + 952 mod 9803",
+      "line_key": [
+        945,
+        1,
+        952,
+        9803
+      ],
+      "line_present_amortized_below_rho_count": 0,
+      "line_present_amortized_rows": [
+        {
+          "amortized_line_plus_replay_ops_over_rho": 1.312,
+          "amortized_line_share_over_rho": 0.768,
+          "below_rho": false,
+          "leaf_signature": "0,1,2,3",
+          "replay_measured_ops_over_rho": 0.544,
+          "replay_secret": 255,
+          "transfer_index": 330
+        }
+      ],
+      "line_present_count": 1,
+      "max_line_root_scan_ops_over_rho": 0.768,
+      "max_replay_ops_over_rho": 0.544,
+      "mean_line_root_scan_ops_over_rho": 0.768,
+      "meets_required_success_count": false,
+      "min_line_root_scan_ops_over_rho": 0.768,
+      "min_replay_ops_over_rho": 0.544,
+      "records": [
+        {
+          "bucket": "line_present_replay_success",
+          "leaf_signature": "0,1,2,3",
+          "line_plus_replay_ops_over_rho": 1.312,
+          "line_root_scan_ops_over_rho": 0.768,
+          "replay_best_rule": "all",
+          "replay_measured_ops_over_rho": 0.544,
+          "replay_secret": 255,
+          "row_public_key_verified": true,
+          "row_rank": 2,
+          "row_relation_count": 2,
+          "salt": 206,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_target67_predictor_v2_328_335.json",
+          "top_k": 4,
+          "transfer_index": 330
+        }
+      ],
+      "repeated_line_present": false,
+      "replay_failure_count": 0,
+      "replay_success_count": 1,
+      "row_verified_count": 1,
+      "salts": [
+        206
+      ],
+      "success_only_amortized_below_rho_count": 0,
+      "success_only_amortized_rows": [
+        {
+          "amortized_line_plus_replay_ops_over_rho": 1.312,
+          "amortized_line_share_over_rho": 0.768,
+          "below_rho": false,
+          "leaf_signature": "0,1,2,3",
+          "replay_measured_ops_over_rho": 0.544,
+          "replay_secret": 255,
+          "transfer_index": 330
+        }
+      ],
+      "transfer_indices": [
+        330
+      ]
+    },
+    {
+      "interpretation": "success_only amortization counts only rows that actually recover; line_present amortization shares confirmation over all observed rows with the same line, including replay failures.",
+      "leaf_signatures": [
+        "0,1,2,3"
+      ],
+      "line": "9481*b + 1*c + 5654 mod 9803",
+      "line_key": [
+        9481,
+        1,
+        5654,
+        9803
+      ],
+      "line_present_amortized_below_rho_count": 0,
+      "line_present_amortized_rows": [
+        {
+          "amortized_line_plus_replay_ops_over_rho": 1.224,
+          "amortized_line_share_over_rho": 0.776,
+          "below_rho": false,
+          "leaf_signature": "0,1,2,3",
+          "replay_measured_ops_over_rho": 0.448,
+          "replay_secret": 7675,
+          "transfer_index": 473
+        }
+      ],
+      "line_present_count": 1,
+      "max_line_root_scan_ops_over_rho": 0.776,
+      "max_replay_ops_over_rho": 0.448,
+      "mean_line_root_scan_ops_over_rho": 0.776,
+      "meets_required_success_count": false,
+      "min_line_root_scan_ops_over_rho": 0.776,
+      "min_replay_ops_over_rho": 0.448,
+      "records": [
+        {
+          "bucket": "line_present_replay_success",
+          "leaf_signature": "0,1,2,3",
+          "line_plus_replay_ops_over_rho": 1.224,
+          "line_root_scan_ops_over_rho": 0.776,
+          "replay_best_rule": "candidate_pos_min",
+          "replay_measured_ops_over_rho": 0.448,
+          "replay_secret": 7675,
+          "row_public_key_verified": true,
+          "row_rank": 2,
+          "row_relation_count": 2,
+          "salt": 206,
+          "source": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_branch_scheduler_selected_472_479.json",
+          "top_k": 4,
+          "transfer_index": 473
+        }
+      ],
+      "repeated_line_present": false,
+      "replay_failure_count": 0,
+      "replay_success_count": 1,
+      "row_verified_count": 1,
+      "salts": [
+        206
+      ],
+      "success_only_amortized_below_rho_count": 0,
+      "success_only_amortized_rows": [
+        {
+          "amortized_line_plus_replay_ops_over_rho": 1.224,
+          "amortized_line_share_over_rho": 0.776,
+          "below_rho": false,
+          "leaf_signature": "0,1,2,3",
+          "replay_measured_ops_over_rho": 0.448,
+          "replay_secret": 7675,
+          "transfer_index": 473
+        }
+      ],
+      "transfer_indices": [
+        473
+      ]
+    }
+  ],
+  "method": "group_preserving_degree1_lines_and_test_observed_two_row_reuse",
+  "non_claims": [
+    "This probe does not create a new line predictor.",
+    "line_present amortization is diagnostic when failed replays share the line; success_only amortization is the stricter recovery criterion.",
+    "A repeated line with fewer than two replay successes does not satisfy the n=2 amortized recovery target."
+  ],
+  "parameters": {
+    "line_stage_source": "ecdlp_index_calculus_state/ffe_target67_line_stage_audit_328_511.json",
+    "required_successes": 2
+  },
+  "schema": "ecdlp_target67_repeated_line_amortization_probe_v1",
+  "summary": {
+    "bucket_counts": {
+      "line_present_replay_failure": 5,
+      "line_present_replay_success": 4
+    },
+    "interpretation": "The n=2 break-even is only operational when a repeated line has at least two replay-success rows.  Repeated line-present families with one success and one failure are mechanism evidence, not an amortized ECDLP speedup.",
+    "line_family_count": 6,
+    "line_present_amortized_below_rho_family_count": 2,
+    "line_present_amortized_below_rho_labels": [
+      "1119*b + 1*c + 7180 mod 9803",
+      "3394*b + 1*c + 711 mod 9803"
+    ],
+    "repeated_line_labels": [
+      "1119*b + 1*c + 7180 mod 9803",
+      "3394*b + 1*c + 711 mod 9803",
+      "8022*b + 1*c + 5592 mod 9803"
+    ],
+    "repeated_line_present_family_count": 3,
+    "repeated_line_with_any_success_count": 2,
+    "repeated_line_with_required_success_count": 0,
+    "repeated_success_line_labels": [],
+    "required_successes": 2,
+    "success_only_amortized_below_rho_family_count": 0
+  }
+}

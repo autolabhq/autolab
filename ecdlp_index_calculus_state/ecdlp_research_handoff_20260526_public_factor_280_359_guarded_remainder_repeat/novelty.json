@@ -1,0 +1,52 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-26",
+  "claim": "Frozen guarded public-factor portfolio survived fresh transfer windows 280-359, and 344-359 repeated a preserving full-remainder FFE below-rho witness while filtering raw false positives.",
+  "artifacts": [
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_row_344_359_expanded_probe.json",
+    "ecdlp_index_calculus_state/low_term_total2_expanded_leaf_rescue_344_359_fixed_summary.json",
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_sage_factor_fresh_344_359_fixed_probe.json",
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_public_factor_quadratic_root_fresh_344_359_fixed_probe.json",
+    "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_rolling_with_280_359_fixed.json",
+    "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_loo_with_280_359_fixed.json",
+    "ecdlp_index_calculus_state/ecdlp_research_handoff_20260526_public_factor_280_359_guarded_remainder_repeat/false_positive_guard_structural_audit.json",
+    "ecdlp_index_calculus_state/ecdlp_research_handoff_20260526_public_factor_280_359_guarded_remainder_repeat/full_remainder_sparsity_audit.json"
+  ],
+  "new_evidence": {
+    "fresh_windows": [
+      "fresh_280_295_fixed",
+      "fresh_296_311_fixed",
+      "fresh_312_327_fixed",
+      "fresh_328_343_fixed",
+      "fresh_344_359_fixed"
+    ],
+    "raw_344_359_surface_count": 15,
+    "raw_344_359_best_policy": "low_degree_then_order",
+    "raw_344_359_best_policy_below_rho_count": 13,
+    "raw_344_359_best_policy_false_positive_count": 1,
+    "raw_344_359_false_positive_row_count": 13,
+    "raw_344_359_false_positive_guard_pass_count": 0,
+    "raw_344_359_preserving_sage_factor_surfaces": 14,
+    "raw_344_359_full_remainder_below_rho_count": 1,
+    "raw_344_359_min_full_remainder_ffe_ops_over_rho": 0.93430657,
+    "raw_344_359_min_full_remainder_monomials": 79,
+    "raw_344_359_min_known_hit_root_count": 12,
+    "rolling_test_window_count": 16,
+    "rolling_below_rho_count": 96,
+    "rolling_latest_window": "fresh_344_359_fixed",
+    "rolling_latest_below_rho_count": 9,
+    "rolling_latest_false_positive_count": 0,
+    "rolling_latest_max_charged_ops_over_rho": 0.6350365,
+    "loo_heldout_window_count": 17,
+    "loo_below_rho_count": 119,
+    "loo_false_positive_count": 0,
+    "loo_gap_to_guarded_oracle_below_rho": 0,
+    "loo_failing_window_count": 0
+  },
+  "novelty_assessment": {
+    "strength": "five fresh-window promotion plus a repeated full-remainder below-rho witness and renewed false-positive guard stress",
+    "strongest_point": "The combined rolling and LOO guarded portfolios remain perfect through 280-359, while 344-359 repeats the 79-monomial full-remainder below-rho profile at 0.93430657 rho.",
+    "main_limitation": "The full-remainder win is still one surface per latest block, and the direct public quadratic-root layer remains false-positive-prone before applying the frozen guard.",
+    "next_required_step": "Explain why row key salt165 on target 22050.cf1@11731 keeps producing a 79-monomial full remainder, then test 360-375 without changing the guard."
+  }
+}

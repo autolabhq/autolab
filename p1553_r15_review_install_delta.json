@@ -1,0 +1,206 @@
+{
+  "schema": "crypto.autoresearch.merge_install_delta.v1",
+  "bundle_id": "P1553-R15-REVIEW-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compose_compare_merge_then_route_review",
+  "base_bundle": {
+    "bundle_id": "P1553-R14-20260719",
+    "manifest": "p1553_r14_install_delta.json",
+    "manifest_sha256": "d3c4824f0a2ee508e1b42707817c2ff78e0dab8011cd8b36f654ad69ea8a399a",
+    "manifest_hash_list": "p1553_r14_install_delta.sha256",
+    "manifest_hash_list_sha256": "34088ede7d5b36547f01027bfbce7f14f9fe37e101502ad0f9b48598ef51af0c",
+    "simulated_queue_sha256": "93fd7f670455aed953817ac56a25c4311b2e3cae864df8b08204c1ecd9d3ccaf"
+  },
+  "upstream_bundle": {
+    "bundle_id": "P1553-R5-R7-20260719",
+    "manifest_sha256": "41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a",
+    "manifest_hash_list_sha256": "0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d"
+  },
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6",
+    "ideas/artifacts/README.md": "1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "composition_rule": "Apply R5-R7, R8, R9, R10, R11, R12, R13, R14, and the R15 review-routing delta to one private copy of the live queue. Install only after the complete composition validates. R15 remains unreviewed and its red-team task must stay queued until independently executed.",
+  "file_installs": [
+    {
+      "source": "p1553_translation_correlation_parent_report.yaml",
+      "sha256": "9aa2b9b7fd78e7b6378a01f8a7011ce67c5d273e1cf3bc08c8b873358f763f92",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TCS-P1/translation_correlation_report.yaml"
+    },
+    {
+      "source": "p1553_translation_correlation_sparse_convolution_gate_r15.md",
+      "sha256": "ea007be0b237b91127e6a42501873f914ad31d6d4fd4393c3ae6b85005893b9b",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TCS-P1/translation_correlation_sparse_convolution_gate_r15.md"
+    },
+    {
+      "source": "p1553_translation_correlation_sparse_convolution_gate_r15.md",
+      "sha256": "ea007be0b237b91127e6a42501873f914ad31d6d4fd4393c3ae6b85005893b9b",
+      "destination": "ideas/artifacts/ECDLP-IDEA-057/p1553_translation_correlation_sparse_convolution_gate_r15.md"
+    },
+    {
+      "source": "p1553_r15_artifact_index_README.md",
+      "sha256": "f5641fdf000334b55231f7af3c74022ebea6dee012c7e83e204781a9e5c0195e",
+      "destination": "ideas/artifacts/README.md"
+    }
+  ],
+  "queue_merge": {
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-TCS-P1",
+        "title": "Reduce complete Kummer moments to translation correlations",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 4,
+        "review_required": true,
+        "depends_on": [
+          "TASK-20260719-P1553-TTM-RT-R1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-TTM-P1/tensor_trace_minpoly_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-TTM-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md",
+          "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-TCS-P1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "The exact three-point correlation reduction, translate-pair bijection, two-frequency Fourier identity, sparse-convolution interface mismatch, and R10 queried-output control.",
+          "inconclusive_decision": "Close only ordinary integer-index sparse convolution, full character tables, explicit translate-pair support, globally composable EC buckets, and full-support R10 convolution; preserve list-restricted nonhomomorphic sketches, family-specific identities, common fiber-product components, and arbitrary circuits.",
+          "local_ambiguity_rule": "Keep the complete divisor trace and norm together; distinguish output image size from convolution support; distinguish prime-order EC buckets from supplied quotients of F_p^star; require exact counts, one joint source, and every target and child update.",
+          "peripheral_exclusions": [
+            "No field cancellation treated as support discovery",
+            "No unknown EC scalar logs treated as explicit indices",
+            "No full convolution substituted for queried coefficients",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after the Fourier signs, projective charts, source bijection, sparse-algorithm hypotheses, R10 output interface, positive controls, and surviving exception are independently reconstructed."
+        },
+        "handoff": {
+          "objective": "Determine exactly which sparse-convolution and Fourier interfaces can construct the R14 complete Kummer moment package without restoring the source grid.",
+          "uncertainty_reduced": "Whether output-sensitive sparse nonnegative convolution transfers to complete elliptic branch correlations and the query-sensitive R10 control.",
+          "inputs": [
+            "the independently accepted R14 tensor-trace gate",
+            "the R10 rank-two sparse-convolution control",
+            "the IDEA-057 prime-order composable-bucket theorem",
+            "primary sparse-convolution and multipoint-evaluation algorithms"
+          ],
+          "constraints": [
+            "Retain complete branch trace and norm on all saturated charts.",
+            "Use exact Fourier conventions over a splitting field.",
+            "Separate known integer indices from unknown EC scalar labels.",
+            "Charge full output support when only queried coefficients are required.",
+            "Preserve nonhomomorphic and family-specific exceptions.",
+            "Allocate no new idea, run, Shoup claim, or breakthrough status."
+          ],
+          "deliverables": [
+            "translation_correlation_report.yaml",
+            "translation_correlation_sparse_convolution_gate_r15.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "The correlation and Fourier identities are coefficient-exact.",
+            "The source-pair bijection and projective exceptions are explicit.",
+            "Every sparse algorithm is compared at its actual input and output interface.",
+            "Exactly one scoped successor and no positive ECDLP status remain."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-TCS-RT-R1",
+        "title": "Red-team translation correlations and sparse convolution",
+        "role": "red-team",
+        "state": "queued",
+        "priority": 4,
+        "review_required": false,
+        "depends_on": [
+          "TASK-20260719-P1553-TCS-P1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-TCS-P1/translation_correlation_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-TCS-P1/translation_correlation_sparse_convolution_gate_r15.md",
+          "coordination/tasks/TASK-20260719-P1553-TTM-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-TCS-RT-R1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "Independent reconstruction of the complete-chart scalar, multinomial correlation family, translate-pair inverse, double-character identity, composable-bucket scope, sparse-convolution promises, and R10 full-support mismatch.",
+          "inconclusive_decision": "Accept only identities and named interface failures that survive exact review; retain nonhomomorphic sketches, sparse transform promises, common components, compressed containment, source replay, target updates, and the complete ECDLP path.",
+          "local_ambiguity_rule": "Reject hidden sign, pole, character-convention, coefficient-cancellation, scalar-index, source-coupling, child-output, and target-advice assumptions. Distinguish a route cost from a lower bound.",
+          "peripheral_exclusions": [
+            "No generic sparse-convolution impossibility claim",
+            "No generic arithmetic-circuit or data-structure lower bound",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after every accepted identity and correction is bound to final producer hashes and exactly one successor remains."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R15 translation-correlation, Fourier, source, sparse-convolution, and R10 claims.",
+          "uncertainty_reduced": "Whether R15 has genuinely closed the ordinary sparse-convolution transplant without silently closing the list-restricted nonhomomorphic exception.",
+          "inputs": [
+            "the R15 producer receipts",
+            "the independently accepted R14 receipt",
+            "R10 and IDEA-057 controls",
+            "the cited primary sparse-convolution algorithms"
+          ],
+          "constraints": [
+            "Recompute the Fourier formula from the stated transform convention.",
+            "Audit every projective and sign stratum.",
+            "Check exact algorithm promises rather than titles or summaries.",
+            "Require one jointly coupled source and query-sensitive outputs.",
+            "Preserve all target, rank, factor-log, and descent omissions."
+          ],
+          "deliverables": [
+            "red_team_report.yaml",
+            "translation_correlation_red_team.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "Every algebraic identity and interface claim is independently reconstructed or corrected.",
+            "Final producer hashes are bound after any corrections.",
+            "Exactly one next action and no positive ECDLP status remain."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Dispatch only TASK-20260719-P1553-TCS-RT-R1; do not promote R15 before its independent receipt is accepted and hash-bound.",
+    "Recompute all manifest layers, preconditions, and source hashes; preserve drift rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false,
+    "independent_review_complete": false
+  }
+}

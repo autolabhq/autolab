@@ -1,0 +1,116 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-PATH-3SUM-GENERIC-REDUCTION-R37-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_and_toy_control
+  model_scope: generic_group_path_only_fresh_target_projection
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_GENERIC_BOUNDARY_GATE
+summary: >-
+  Four mixed-radix lists of length B encode an arbitrary prime-order DLP into
+  two pair endpoint decks, one of which is B public translation paths. One
+  of B^2 known-log target queries returns marked labels that recover the
+  scalar exactly. A generic path-only index with setup exponent s and average
+  query exponent kappa therefore solves DLP in B^max(s,2+kappa,2) work.
+  Shoup forces max(s,2+kappa) at least 5/2-o(1), so the campaign setup cap
+  implies kappa at least 1/2-o(1), exactly R36's density-adjusted threshold.
+  The common degree-B elliptic pencil and heavy-key marks are excluded from
+  the reduction and remain the only admitted coordinate-level escape.
+inputs:
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: staged/p1553_popular_difference_complete_triple_gate_r25.md
+    sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+  - path: staged/p1553_distinct_shift_partial_orthogonal_grid_gate_r29.md
+    sha256: 2d675720d215e78d1fa83e3a33a91ceb6b41060c13031dedf1ba6943dbd5e9eb
+  - path: staged/p1553_near_period_run_compiler_gate_r31.md
+    sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+  - path: staged/p1553_heavy_key_source_target_support_gate_r36.md
+    sha256: 103670908f33baee0915372434899a3a710861f501e19c91599f4221fe3f2aa5
+  - path: staged/p1553_r36_bundle.sha256
+    sha256: 8af4ef463fac0f34253693860ab8acfcb9da683473e38f7b97d6eb6b5df75cc7
+  - path: staged/p1553_r36_staging_receipt.yaml
+    sha256: af3b33bc7b1777e05be4b4b3a7eeaea514bd3162b414621cb7db6613ac569bd2
+outputs:
+  - path: staged/p1553_path_3sum_generic_reduction_gate_r37.md
+    sha256: b8a9423edef4041fcc78ec9f4808ab63ab2f97aa4fc1b157afaedabadb87c772
+  - path: staged/p1553_path_3sum_shoup_selfcheck_r37.py
+    sha256: b131a63aa766c3d97544b6965bfd4afba7c20239889fc95aab9a68d726225658
+  - path: staged/p1553_path_3sum_shoup_selfcheck_report_r37.json
+    sha256: a8b91e5270d185b7303131f27abfa6fb537281a5794176024a31a69ab6a99541
+frozen_parameters:
+  source_group_order: B^(5+o(1))
+  input_lists: 4
+  list_size: B
+  pair_endpoint_deck_size: B^2
+  path_count: B
+  path_length: B
+  known_log_queries: B^2
+theorems:
+  - >-
+    The explicit mixed-radix lists guarantee a positive marked path-3SUM
+    query for every secret scalar below the prime group order.
+  - >-
+    Every returned occurrence-label tuple recovers the secret exactly modulo
+    the group order, including modular wraps and repeated endpoints.
+  - >-
+    Setup B^s and B^2 queries of average cost B^kappa yield generic DLP work
+    B^max(s,2+kappa,2), so Shoup forces max(s,2+kappa) at least 5/2-o(1).
+  - >-
+    Under setup s at most 9/4, a generic path-only index has kappa at least
+    1/2-o(1), matching the strict R36 sub-rho threshold.
+controls:
+  mixed_radix_pair_decks: exact
+  marked_label_recovery: exact
+  all_negative_queries_charged: true
+  low_memory_collision: rho_scale
+  coordinate_pencil_escape: admitted
+  generic_lower_bound_scope: explicit
+toy_control:
+  group: cyclic_order_1009
+  B: 4
+  secret: 777
+  target_labels: 16
+  z_distinct_endpoints: 16
+  v_distinct_endpoints: 16
+  hits: 4
+  bad_recoveries: 0
+  replay_matches_report: true
+result:
+  classification: path_only_target_index_is_generic_dlp_complete_at_boundary
+  generic_total_work_exponent: max_s_2_plus_kappa_2
+  shoup_work_exponent: 5_over_2
+  generic_query_floor_under_setup_cap: 1_over_2
+  r36_strict_subrho_query_requirement: below_1_over_2
+  degree_B_pencil_escape: admitted_unsupplied
+  heavy_key_mark_escape: admitted_unsupplied
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - the reduction is generic and path-only
+  - arbitrary mixed-radix paths need not be fibers of one elliptic pencil
+  - the toy control is not asymptotic or elliptic evidence
+  - no coordinate-level target index, R10, rank, logs, or descent
+deduplication:
+  - R25 owns scalar-progression controls
+  - R29 owns the abstract rank-two grid control
+  - R31 owns path compilation
+  - R36 owns the density-adjusted target query requirement
+  - R37 adds the mixed-radix generic-DLP reduction and boundary proof
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_GENERIC_BOUNDARY_GATE__FOUR_LENGTH_B_LISTS_AND_B_PUBLIC_PATHS_ENCODE_ARBITRARY_DLP__B2_KNOWN_LOG_QUERIES_RECOVER_EXACT_SCALAR_FROM_MARKED_LABELS__GENERIC_WORK_B_MAX_S_2_PLUS_KAPPA_2__SHOUP_FORCES_MAX_S_2_PLUS_KAPPA_AT_LEAST_5_OVER_2__SETUP_CAP_FORCES_KAPPA_AT_LEAST_1_OVER_2__EXACTLY_R36_DENSITY_BOUNDARY__DEGREE_B_PENCIL_AND_HEAVY_MARK_ESCAPE_ADMITTED__TOY_PASS__NO_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Exploit or close the degree-B pencil marks excluded from the reduction.
+  Require an explicit coordinate operation that returns an extendible key
+  and pair endpoint below B^(1/2-o(1)) average target work with setup at most
+  B^(9/4+o(1)), and prove why it does not apply to arbitrary mixed-radix
+  paths; then bind any survivor to R10, rank, logs, and descent.

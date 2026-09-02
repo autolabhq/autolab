@@ -1,0 +1,213 @@
+{
+  "admission": {
+    "deterministic_one_to_four_mode_negative_admitted": true,
+    "lane_admitted": false,
+    "obligation_count": 21,
+    "obligations": {
+      "breakthrough_complete": false,
+      "cyclic_subgroup_adaptation_explicit": true,
+      "eight_actual_controls_complete": true,
+      "eleven_source_bindings_verified": true,
+      "factor_logs_complete": false,
+      "five_modes_first_not_excluded": true,
+      "identical_target_descent_complete": false,
+      "inside_cap_asymmetric_predicate_complete": false,
+      "inside_cap_five_source_index_complete": false,
+      "known_rhs_relation_rank_complete": false,
+      "larger_sparse_slp_and_multi_dag_routes_preserved": true,
+      "model_and_finite_evidence_receive_no_credit": true,
+      "one_through_four_modes_excluded_deterministically": true,
+      "pollard_rho_improvement_complete": false,
+      "primary_source_pinned": true,
+      "prime_order_coset_parameter_is_one": true,
+      "pure_fifth_source_witnesses_exact": true,
+      "r132_asymmetric_interface_inherited": true,
+      "random_deck_assumptions_explicit": true,
+      "shoup_improvement_complete": false,
+      "small_log_union_bound_explicit": true
+    },
+    "passed_obligation_count": 13,
+    "random_deck_small_log_negative_admitted_model_only": true
+  },
+  "artifacts": {
+    "controls": "torus_c5_sparse_monomial_root_bound_controls.json",
+    "cost": "torus_c5_sparse_monomial_root_bound_cost_ledger.json",
+    "frozen": "frozen_torus_c5_sparse_monomial_root_bound.json",
+    "logs_descent": "factor_logs_and_identical_descent_r133.json",
+    "source_replay": "torus_c5_sparse_monomial_root_bound_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "PINNED_SPARSE_ROOT_THEOREM_ADAPTATION_AND_RANDOM_DECK_MODEL_NEGATIVE_ONLY_WITHHOLD_PROMOTION",
+  "classification": "PRIME_ORDER_SUBGROUP_ADAPTATION_OF_KELLEY_SPARSE_ROOT_BOUND__ONE_TO_FOUR_EXTENSION_MODES_CANNOT_COVER_Q_TO_THREE_QUARTERS__FIVE_MODES_FIRST_NOT_EXCLUDED__UNIFORM_RANDOM_DECK_PURE_FIFTH_UNION_BOUND_EXCLUDES_UP_TO_QUARTER_LOG2_Q_MODES_WITH_OVERWHELMING_PROBABILITY_ONLY__NO_STRUCTURED_FACTOR_BASE_TRANSFER__LARGER_POLYLOG_LOW_SLP_MULTI_PREDICATE_DAG_OPEN__NO_RANK_LOGS_DESCENT_SHOUP_BREAKTHROUGH",
+  "disposition": "ADMIT_PINNED_SUBGROUP_SPARSE_ROOT_BOUND_AND_ONE_TO_FOUR_MODE_NEGATIVE__ADMIT_SMALL_LOG_NEGATIVE_UNDER_RANDOM_DECK_MODEL_ONLY__WITHHOLD_STRUCTURED_TRANSFER__PRESERVE_FIVE_MODE_LARGER_POLYLOG_LOW_SLP_AND_MULTI_PREDICATE_DAGS__NO_LOCATOR__NO_RANK__NO_LOGS__NO_DESCENT__NO_SHOUP__NO_BREAKTHROUGH",
+  "finite_evidence": {
+    "all_actual_random_deck_union_bounds_below_one": false,
+    "all_pure_fifth_sources_replay": true,
+    "all_pure_fifth_targets_in_color_acceptance": true,
+    "asymptotic_credit": false,
+    "control_count": 8
+  },
+  "next_action": "Test the first surviving asymmetric selector classes: a five-mode F_(p^2) zero predicate at the q^(3/4) threshold, a represented predicate above the small-log regime, a high-expansion low-SLP predicate, or a multi-predicate Frobenius-coordinate DAG. Freeze every coefficient and node, replay exact positive/empty paths and C2+C3 sources, fit B^(9/4+o(1)) state and polylogarithmic arbitrary-target work, avoid field DLP, and charge rank, logs, identical descent, memory, field operations, and bits.",
+  "non_claims": [
+    "The subgroup result adapts a pinned proof; it is not a new sparse-root theorem.",
+    "The random-deck union bound does not transfer to the structured factor base.",
+    "The actual small controls receive no probability or asymptotic credit.",
+    "Five modes and larger polylogarithmic represented support remain open.",
+    "High-expansion low-SLP and multi-predicate DAGs remain open.",
+    "No general circuit, RAM, or cell-probe lower bound is claimed.",
+    "No source index, rank, logs, descent, rho, or Shoup result is supplied."
+  ],
+  "pollard_rho_improvement": false,
+  "schema": "p1553.torus_c5_sparse_monomial_root_bound.r133.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "kelley_sparse_roots_pdf": {
+      "path": "references/kelley_sparse_polynomial_roots_1602.00208.pdf",
+      "sha256": "250daacc1b157043cd9c7345036eb332fc69fee8e48a12ba81eddcc2b91995b7"
+    },
+    "r132_controls": {
+      "path": "torus_c5_base_field_frobenius_predicate_dag_controls.json",
+      "sha256": "f0ee93f6ddfef5395abc88a8f03b31a325504a14bf04b7d7a246d9efec3f53ab"
+    },
+    "r132_cost": {
+      "path": "torus_c5_base_field_frobenius_predicate_dag_cost_ledger.json",
+      "sha256": "437e3a1165d17d6f85caa4e246ea9769012df2915113675249bfcc68502fbe4f"
+    },
+    "r132_frozen": {
+      "path": "frozen_torus_c5_base_field_frobenius_predicate_dag.json",
+      "sha256": "efc22a83ab20a27b490204acdb67a8bda351d774caf2c186cda9f04cdd0ae56f"
+    },
+    "r132_gate": {
+      "path": "p1553_torus_c5_base_field_frobenius_predicate_dag_probe_gate_r132.md",
+      "sha256": "dd20f3188596712929c9715d1dbf27782a41a5be8900f727f948def2a7947332"
+    },
+    "r132_logs": {
+      "path": "factor_logs_and_identical_descent_r132.json",
+      "sha256": "f85f4135fe44d2aebbe61191dff04e2e40aff4a07d45118c752758c8425dfed3"
+    },
+    "r132_parent": {
+      "path": "p1553_torus_c5_base_field_frobenius_predicate_dag_probe_parent_report_r132.yaml",
+      "sha256": "958b63522081adcba52bdfbdbaa982356d00d67098ea4c298e53227af1b6e447"
+    },
+    "r132_producer": {
+      "path": "p1553_torus_c5_base_field_frobenius_predicate_dag_probe_r132.py",
+      "sha256": "9235668bed218df40c60ea774673b03bc2d55236cd1c04ab3ef813ad61e0baad"
+    },
+    "r132_replay": {
+      "path": "torus_c5_base_field_frobenius_predicate_dag_replay.json",
+      "sha256": "0e7f17f5c0c04cbdcf1a430f36114343b2b786cf3cb85a9ca586afeb549471e9"
+    },
+    "r132_report": {
+      "path": "p1553_torus_c5_base_field_frobenius_predicate_dag_probe_report_r132.json",
+      "sha256": "54e0396f8fcbed3fb41893af1c2d3612f81f26b5ff44dcbc0784299a7ff96f17"
+    },
+    "r132_test": {
+      "path": "tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_base_field_frobenius_predicate_dag_probe_r132.py",
+      "sha256": "296daa244226d7d3a41da492f97cf1ea291280af6bb9e0374e0b366df0e4d099"
+    }
+  },
+  "theorem": {
+    "adaptation_proof_dependencies": [
+      "exponent reduction modulo the cyclic domain order q",
+      "the geometry-of-numbers degree reduction in t-1 exponents",
+      "power maps and coset decomposition in a cyclic group",
+      "the ordinary degree bound over the coefficient field K",
+      "linear independence of distinct characters because char(K) does not divide q"
+    ],
+    "deterministic_consequence": "A represented extension-field zero predicate with at most four distinct modes cannot vanish on q^(3/4+o(1)) color targets. Five modes are the first count not excluded by this bound; the bound does not construct such a predicate.",
+    "not_covered": [
+      "five-mode existence or nonexistence at the q^(3/4) threshold",
+      "larger polylogarithmic represented support",
+      "polynomials with large expansion but compact straight-line programs",
+      "multiple-predicate or adaptive decision DAGs",
+      "nonzero-value tests and coordinate comparisons",
+      "deterministic structured factor bases",
+      "general arithmetic-circuit, RAM, or cell-probe lower bounds"
+    ],
+    "primary_source": {
+      "arxiv": "1602.00208",
+      "author": "Zander Kelley",
+      "pinned_artifact": "references/kelley_sparse_polynomial_roots_1602.00208.pdf",
+      "pinned_sha256": "250daacc1b157043cd9c7345036eb332fc69fee8e48a12ba81eddcc2b91995b7",
+      "source_result": "Theorem 2.3 and its proof",
+      "title": "Roots of Sparse Polynomials over a Finite Field",
+      "url": "https://arxiv.org/abs/1602.00208"
+    },
+    "prime_order_coset_parameter": 1,
+    "random_deck_model": {
+      "assumptions": [
+        "q is prime and q is not 5",
+        "the deck is an ordered uniform sample without replacement from H",
+        "the four balanced color parts are fixed independently of deck values",
+        "the coefficient field has size p^2 with p<6q",
+        "predicates are represented sparse sums with distinct exponents modulo q"
+      ],
+      "asymptotic_consequence": "At deck size q^(3/20+o(1)), m=q^(3/20+o(1))/4 and the displayed failure bound tends to zero because its positive logarithm is O((log q)^2) while 3m grows polynomially.",
+      "logarithmic_threshold": "If t-1 <= log2(q)/4, the subgroup root bound gives root density at most 2*q^(-1/(t-1)) <= 1/8.",
+      "model_bound": true,
+      "projective_polynomial_count": "For exact term count t, support choices are at most q^t. After projective coefficient normalization, coefficient choices are at most (p^2)^(t-1) < 36^t q^(2t). Hence the represented predicate count is below 36^t q^(3t).",
+      "pure_fifth_subset": "Every atom in a color supplies its pure fifth power to that color's C5 acceptance set. Since gcd(5,q)=1, fifth powering permutes H, so a color's pure fifth powers form a uniform sample without replacement.",
+      "receives_candidate_credit": false,
+      "transfers_to_structured_factor_base": false,
+      "union_bound": "Writing T=1+floor(log2(q)/4) and m for the smallest color part, the probability that any represented predicate with at most T modes vanishes on every pure fifth power of any color is at most 4*T*36^T*q^(3T)*8^(-m)."
+    },
+    "required_color_root_exponent_q": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "scope_limits": [
+      "one represented sparse polynomial zero predicate",
+      "distinct exponent modes modulo the prime subgroup order",
+      "one through four modes deterministically",
+      "up to one quarter log2(q) modes only in the frozen random-deck model"
+    ],
+    "subgroup_adaptation": "Let H be a cyclic subgroup of prime order q in a field K of characteristic not q. For a nonzero t-mode function f(z)=sum_i a_i z^(e_i) with nonzero coefficients and distinct e_i modulo q, the degree-reduction proof of Kelley Theorem 2.3 applies with cyclic domain order q. Since H has prime order and distinct characters are linearly independent, the largest root coset has size C=1. Thus for t>=2, |{z in H:f(z)=0}| <= 2 q^(1-1/(t-1)).",
+    "term_threshold_rows": [
+      {
+        "excluded_for_q_to_three_quarters_roots": true,
+        "first_not_excluded_by_bound": false,
+        "root_exponent_q": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "term_count": 1
+      },
+      {
+        "excluded_for_q_to_three_quarters_roots": true,
+        "first_not_excluded_by_bound": false,
+        "root_exponent_q": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "term_count": 2
+      },
+      {
+        "excluded_for_q_to_three_quarters_roots": true,
+        "first_not_excluded_by_bound": false,
+        "root_exponent_q": {
+          "decimal": 0.5,
+          "exact": "1/2"
+        },
+        "term_count": 3
+      },
+      {
+        "excluded_for_q_to_three_quarters_roots": true,
+        "first_not_excluded_by_bound": false,
+        "root_exponent_q": {
+          "decimal": 0.6666666666666666,
+          "exact": "2/3"
+        },
+        "term_count": 4
+      },
+      {
+        "excluded_for_q_to_three_quarters_roots": false,
+        "first_not_excluded_by_bound": true,
+        "root_exponent_q": {
+          "decimal": 0.75,
+          "exact": "3/4"
+        },
+        "term_count": 5
+      }
+    ]
+  }
+}

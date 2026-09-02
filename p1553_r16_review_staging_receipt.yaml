@@ -1,0 +1,142 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R16-REVIEW-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: authoritative checkout is read-only and the R15 and R16 red-team tasks remain queued
+composition:
+  mode: atomic_r5_through_r16_two_review_routing
+  upstream_bundle_id: P1553-R5-R7-20260719
+  upstream_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_bundle_id: P1553-R15-REVIEW-20260719
+  base_manifest_sha256: c7b95bbd92dc8fd12d13c79f253d53aa96d47cc9de30d1ea314b4b79622343eb
+  base_manifest_hash_list_sha256: 256bbe48b12c680e611c32d2d6b3ff612875923a2ec9b8ed278797d976adaa29
+  base_simulated_queue_sha256: 8ba2ee04877d0a2ce7426b77552b07e5cf6696fe5309ef2470b0e5b0267f93a1
+review_delta:
+  json_sha256: 2afe36d21d857b2d591e82860f6e912e8c671f47c96ac13e4478a614dd50e807
+  sha256_list_sha256: 929bb595fac29dfe9871fa49537811624da3c4152952bff97c11d62ffdc7aca5
+  unique_sources: 3
+  destination_installs: 4
+  appended_tasks: 2
+producer_bindings:
+  r15_gate_sha256: ea007be0b237b91127e6a42501873f914ad31d6d4fd4393c3ae6b85005893b9b
+  r15_parent_report_sha256: 9aa2b9b7fd78e7b6378a01f8a7011ce67c5d273e1cf3bc08c8b873358f763f92
+  r15_red_team_task: TASK-20260719-P1553-TCS-RT-R1
+  r15_red_team_state: queued
+  r16_gate_sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+  r16_parent_report_sha256: 0442c740131216004d191137a248d9b4f524fcbd4d16226464d0fa79a6f65bc2
+  r16_artifact_index_sha256: 3cdbf2ca7fe94c6ce8b8bd7fe898ee2d7daf05a337ccccce76536168792c8315
+  r16_producer_status: draft_review_required_conditional_positive
+  r16_red_team_task: TASK-20260719-P1553-BCR-RT-R1
+  r16_red_team_state: queued
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+  appledouble_sidecars_under_ideas: absent_at_final_scan
+simulated_composed_review_route:
+  queue_file_sha256: 0c725c615be10021d7a440c382798c6ddfc03ae956cae0d2f48980b98813654e
+  queue_canonical_sha256: cfeb107c10f7c0eb40782c8f72edc81a8211515b21c7d33432d23d9e2064955e
+  dispatch_file_sha256: 6c713eb2724072159847577a2112a69e260a5f524da1f66ec42c7efe996e9bc2
+  dispatch_report_sha256: e7e24815f7e31955346e740a13c358513c998c281e9e0a09da3db299f9f7b443
+  dispatch_plan_sha256: cb249627ba4ed2a826c1d5243c6ddc9c52d6b562f4b1a0a3e4a30ff17248289f
+  terminal_tasks: 30
+  ready_tasks: 2
+  ready_task_ids:
+    - TASK-20260719-P1553-BCR-RT-R1
+    - TASK-20260719-P1553-TCS-RT-R1
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  r16_producer_yaml_documents_parsed: 1
+  r16_review_delta_json_parsed: true
+  source_hash_list: pass
+  manifest_source_bindings: pass
+  artifact_index_precondition_bound: true
+  artifact_index_coverage_in_clean_replay: pass
+  task_ids_unique: pass
+  dependency_ids_resolve: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator_live: pass
+  idea_corpus_validator_clean_temporary_replay_with_r13_through_r16_artifacts_and_r16_index: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+draft_research_result:
+  status: review_required_conditional_positive
+  degree_one_component_boundary: >-
+    Every direct or swapped degree-one cross-endpoint component is a deck
+    double-coset graph. On the prime-order subgroup its translation offset
+    vanishes, leaving only an origin-fixing automorphism orbit of at most three
+    Kummer classes. This cannot provide polynomial compression.
+  polynomial_family_boundary: >-
+    For polynomial psi, the projective branch-infinity hyperplane pulls back
+    to 2d*[x(A)]. A nontrivial common factor must be totally ramified at every
+    endpoint in the block. Riemann-Hurwitz permits at most two, so no growing
+    balanced polynomial block exists.
+  value_fiber_boundary: >-
+    For every output value c, if r_c is the support size of psi^(-1)(c), then
+    every degree-e block factor obeys
+    m*max(0,e-2r_c)<=8r_c*(e-1) and
+    r_c>=m*e/(2m+8(e-1)). Balanced factors therefore require Omega(d)
+    support in every value fiber.
+  output_coordinate_boundary: >-
+    Sym^2(M) relabels complete branch outputs under every output Mobius map M,
+    so a sparse exceptional fiber cannot be hidden by making the infinity
+    fiber generic. This closes disguised polynomial/power maps and the
+    unbounded cyclic/dihedral tame Galois quotient families.
+  field_direction_guard: >-
+    A common right factor is governed by the compositum
+    k(T_A,V_A:A in H_z), not the intersection of the coordinate fields. The
+    q^2/q^3 control has nonconstant intersection k(q^6) but compositum k(q),
+    so every intersection-only certificate is a false positive.
+  pairwise_kill_sieve: >-
+    A degree-e common right factor forces e to divide the generic degree of
+    every paired complete trace/norm map. One fully saturated pair that is
+    birational onto its image rejects every nontrivial factor for the block.
+  conditional_compiler: >-
+    A complete common right factor pi_z for every endpoint in one psi block
+    gives setup O~(S+sum_z[L+e_z+m_z(J_z+d/e_z)+v_z]) and state
+    O~(S+sum_z[J_z+m_z*J_z]). Under balanced blocks, degree, attained fifth
+    image, and compact certificates, both become O~(S+SL/d), at most B^(9/4)
+    in the surviving degree range.
+  containment_and_source: >-
+    Exact all-chart identities F_A=G_A*pi_z plus the attained pi_z deck image
+    certify containment. Fifth dyadic histograms and the inherited pair
+    dictionary answer a queried complete-key child in O~(d) work with exact
+    integer count and one jointly coupled occurrence source.
+  positive_control: >-
+    Isogeny and Lattes maps supply exact common factors, but on the target
+    prime-order subgroup they are injective: endpoint blocks have size one and
+    the fifth image has J_z=L. Composite torsion passes the compression
+    premises but fails the group gate.
+  surviving_exception: >-
+    No explicit non-isogeny balanced block factor or compact all-chart
+    certificate is known. Fresh-target action, query-sensitive R10, density,
+    independent rank, factor logs, and blind descent also remain absent.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_action: >-
+  Independently red-team R15 and R16. For R16, reconstruct direct and swapped
+  automorphism identities, the torsion-offset proof, the projective
+  projective divisors for every output value, the polynomial and uniform
+  value-fiber ramification counts, output-Mobius invariance, the
+  compositum/right-factor field direction, every exact cost term,
+  the paired-map birational-kill sieve, finite-deck saturation, compact
+  verification, keyed dyadic replay, and the prime-order isogeny control. Bind corrections
+  to new producer hashes before acceptance; do not promote the conditional
+  compiler as an instantiated algorithm.

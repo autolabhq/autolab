@@ -1,0 +1,141 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-S4-CENTERED-CARRY-RANK-PROBE-R71-PARENT
+date: 2026-07-28
+role: coordinator
+evidence_kind: exact_deterministic_toy
+run_count: 1
+status: reject_frozen_canonical_s4_lift
+labels:
+  - exact-toy
+  - representation-bound
+  - scalar-blind-source
+  - novelty-unverified
+owner: P1553-R7-R8/IDEA-049/IDEA-198
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the actual target-specific S4 predecessor of R8's
+  unresolved elliptic p^k-centered carry retains cap-compatible separated
+  rank after canonical centering on exact legal x-class grids.
+inputs:
+  - path: p1553_integer_valued_quotient_gate_r8.md
+    sha256: 78c856187bb43adcd97d0f02f2259c7299874ab93a03954dacb4dd1b8b007ed9
+  - path: p1553_tensorized_small_root_gate_r7.md
+    sha256: b36870eeb0c7c0a53e6d1714d623629c522f4c58cd308a072e33ea6046a06615
+  - path: p1553_multiplicative_x_s3_closure_screen_report_r70.json
+    sha256: 9e58c6178eb18b7535f59e117ad942465d6c7853890291dec2c7c0abdb4ffd89
+artifacts:
+  - path: p1553_s4_centered_carry_rank_probe_r71.py
+    sha256: 1b22d8bb7ab19c686c7945dd7c0e13a1575031173ce8b262ee39fb3799d6931b
+  - path: p1553_s4_centered_carry_rank_probe_report_r71.json
+    sha256: 6ee62d61f6c567a5a65947b6b47026182bd961565dde3c1aee540cf3cbe5b72f
+  - path: p1553_s4_centered_carry_rank_probe_gate_r71.md
+    sha256: f194ed996a24659e2b11d762dd471c0ff75ab98d6e64a9df8b782c676acca2f7
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_s4_centered_carry_rank_probe_r71.py
+    sha256: 30ba5c3561cf7a4dac4d17d5fb87f34e18931f63376e8ba2146032f5d88af556
+frozen_interface:
+  curve_family_count: 4
+  target_types:
+    - blind_hash_target
+    - forced_positive_target
+  scalar_labels_consumed: false
+  deck_count: 3
+  deck_sizes:
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+  centered_lift: K_R=(S4-ctr_p(S4))/p
+  rank_moduli:
+    - 1000003
+    - 1000033
+verified_statements:
+  - >-
+    All four field primes and subgroup orders are prime, every curve order
+    replays as the stated prime subgroup times cofactor, and every curve
+    discriminant is nonzero.
+  - >-
+    Three public legal x-class decks per curve are derived from
+    domain-separated SHA-256 x-coordinate streams followed by canonical
+    square-root selection and public cofactor clearing; no scalar label or
+    discrete logarithm is consumed.
+  - >-
+    For all 4096 full-grid target tuples, the closed quadratic-resultant
+    formula equals the exact Bareiss determinant of the Sylvester matrix.
+  - >-
+    S4 vanishes modulo p exactly when one of the eight normalized signed group
+    relations exists. There are zero predicate mismatches, and every forced
+    positive witness verifies.
+  - >-
+    Every centered carry division is exact. Every rank-one constant control
+    has mode rank one under both auxiliary primes.
+  - >-
+    For every curve, target, prefix size, and mode, both the centered
+    remainder and centered carry flattenings have full row rank B under both
+    auxiliary primes. Thus every frozen carry has rational matrix rank and
+    rational CP rank at least B.
+  - >-
+    At B=8 every raw integer S4 lift has mode rank five under both auxiliary
+    primes. Fixed-target S4 has degree four in each variable, which gives a
+    matching rational upper bound and proves exact raw mode rank five.
+  - >-
+    The full-rank carry result rejects only the canonical k=1 S4 lift on the
+    named legal grids. It is not an asymptotic rank theorem for S6, a runtime
+    lower bound, or a rejection of noncanonical and non-CP interfaces.
+aggregate:
+  family_count: 4
+  target_instance_count: 8
+  prefix_instance_count: 48
+  mode_flattenings_per_tensor_kind: 144
+  carry_modes_full_under_both_auxiliary_primes: 144
+  remainder_modes_full_under_both_auxiliary_primes: 144
+  every_carry_prefix_all_modes_full: true
+  every_remainder_prefix_all_modes_full: true
+  largest_grid_cp_rank_lower_bound: 8
+scoped_positive_controls:
+  exact_s4_predicate_replay: pass
+  closed_resultant_vs_bareiss: pass
+  scalar_blind_public_source: pass
+  blind_and_forced_positive_targets: pass
+  rank_one_constant_tensor: pass
+  raw_s4_degree_four_rank_bound: pass
+scoped_failures:
+  canonical_s4_k1_carry_cp_rank: at_least_B_on_every_frozen_prefix
+  canonical_s4_k1_remainder_cp_rank: at_least_B_on_every_frozen_prefix
+  r7_tiny_rank_cancellation_observed: false
+  s6_centered_carry_theorem: unsupplied
+  exact_unit_or_zero_divisor_router: unsupplied
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - asymptotic rank growth for every legal deck family
+  - centered S6 powers modulo p^k
+  - noncanonical bounded integer lifts
+  - shared-correlation and non-CP implicit modules
+  - intrinsic runtime lower bounds
+  - relation density, independent relation rank, factor logs, and descent
+admission:
+  passed_obligations: 3
+  obligation_count: 7
+  lane_admitted: false
+result:
+  canonical_s4_carry_low_rank_survives: false
+  s6_centered_carry_rank_resolved: false
+  branch_complete_unit_or_zero_divisor_router_supplied: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_FROZEN_CANONICAL_S4_K1_CENTERED_CARRY__FOUR_GENERIC_PRIME_FIELD_FAMILIES__THREE_SCALAR_BLIND_LEGAL_X_CLASS_DECKS__BLIND_AND_FORCED_POSITIVE_TARGETS__EXACT_QUADRATIC_RESULTANT_EQUALS_BAREISS_SYLVESTER_DETERMINANT__S4_ZERO_IFF_SIGNED_GROUP_RELATION_ON_ALL_4096_TUPLES__RAW_B8_MODE_RANK_EXACTLY_5__CENTERED_REMAINDER_AND_CARRY_MODE_RANK_FULL_B_FOR_EVERY_B3_THROUGH_B8_PREFIX__BOTH_AUXILIARY_PRIMES__RATIONAL_CP_RANK_AT_LEAST_B_ON_EVERY_FROZEN_CARRY__R7_TINY_CP_CANCELLATION_NOT_OBSERVED__FINITE_REPRESENTATION_BOUND_ONLY__NO_S6_ASYMPTOTIC_THEOREM__NONCANONICAL_AND_NON_CP_INTERFACES_OPEN__NO_UNIT_OR_ZERO_DIVISOR_ROUTER__NO_FACTOR_LOG_SOLVE__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Stop allocating experiments to the canonical k=1 centered-carry CP route.
+  For the live R8 exception, specify one exact branch-complete
+  unit-or-zero-divisor interface for the five-label S6 predicate that either
+  proves an S6-specific cancellation absent from this S4 predecessor or avoids
+  explicit centered-carry representation entirely. Before any run, expose its
+  target-independent state, target specialization, exact empty-fiber test,
+  positive-child preservation, occurrence-labelled source recovery, integer
+  heights, and direct setup, online, and workspace costs. Reject it at the
+  interface stage if any standard B^3 or B^5 object is hidden.

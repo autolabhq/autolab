@@ -1,0 +1,113 @@
+{
+  "artifacts": {
+    "miner": "tasks/ecdlp_index_calculus/ffe_full_remainder_public_sparsity_miner.py",
+    "output": "ecdlp_index_calculus_state/ffe_full_remainder_public_sparsity_miner_328_375.json"
+  },
+  "best_public_pre_materialization_rules": [
+    {
+      "activation_rule": "activate:row_salt_transfer_mod2=165|0",
+      "missed_positive_count": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "selected_negative_count": 0,
+      "selected_positive_count": 2,
+      "selected_record_count": 2
+    },
+    {
+      "activation_rule": "activate:row_salt_transfer_mod6=165|0",
+      "missed_positive_count": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "selected_negative_count": 0,
+      "selected_positive_count": 2,
+      "selected_record_count": 2
+    },
+    {
+      "activation_rule": "activate:target_row_salt_transfer_mod6=22050.cf1@11731|165|0",
+      "missed_positive_count": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "selected_negative_count": 0,
+      "selected_positive_count": 2,
+      "selected_record_count": 2
+    }
+  ],
+  "claim_status": "component_evidence_only_not_a_promoted_ecdlp_speedup",
+  "date": "2026-05-26",
+  "diagnostic_signature": {
+    "full_remainder_monomials": 79,
+    "full_resultant_monomials": 91,
+    "known_hit_root_count": 12
+  },
+  "holdout_status": "fresh_360_375_abstains_for_the_mod6_selector_and_demotes_broad_full_remainder_claims",
+  "negative_controls_seen": [
+    {
+      "full_remainder_monomials": 172,
+      "ops_over_rho": 1.64233577,
+      "row_key": "22050.cf1@11731:uniform:256:salt165",
+      "transfer_index": 353
+    },
+    {
+      "full_remainder_monomials": 154,
+      "ops_over_rho": 1.52554745,
+      "row_key": "22050.cf1@11731:uniform:256:salt165",
+      "transfer_index": 357
+    },
+    {
+      "nonpreserving": true,
+      "row_key": "22050.cf1@11731:uniform:256:salt165",
+      "transfer_index": 363
+    }
+  ],
+  "next_test": {
+    "frozen_selector": {
+      "row_salt": 165,
+      "target": "22050.cf1@11731",
+      "transfer_mod6": 0
+    },
+    "negative_controls": [
+      "same target and salt with transfer_mod6 in 3 or 5",
+      "same target and transfer_mod6 0 with neighboring salts",
+      "67.a1@9803 rows with matching transfer residue when available"
+    ],
+    "pass_signal": "two or more preserving selected holdout surfaces with full_remainder_monomials <= 92 and ops_over_rho < 1.0"
+  },
+  "pollard_rho_comparison": {
+    "below_rho_positive_count": 2,
+    "positive_ops_over_rho": [
+      0.96350365,
+      0.93430657
+    ],
+    "rho_baseline": 1.0
+  },
+  "positive_records": [
+    {
+      "candidate_name": "sage_resultant_factor_0",
+      "full_remainder_monomials": 79,
+      "known_hit_root_count": 12,
+      "ops_over_rho": 0.96350365,
+      "row_key": "22050.cf1@11731:uniform:256:salt165",
+      "selected_leaf_count": 3,
+      "source_label": "fresh_328_343",
+      "transfer_index": 342
+    },
+    {
+      "candidate_name": "sage_resultant_factor_6",
+      "full_remainder_monomials": 79,
+      "known_hit_root_count": 12,
+      "ops_over_rho": 0.93430657,
+      "row_key": "22050.cf1@11731:uniform:256:salt165",
+      "selected_leaf_count": 1,
+      "source_label": "fresh_344_359",
+      "transfer_index": 348
+    }
+  ],
+  "schema": "ecdlp_full_remainder_sparsity_rule_miner_handoff_v1",
+  "summary": {
+    "nonpreserving_surface_count": 2,
+    "positive_79_profile_count": 2,
+    "positive_below_rho_count": 2,
+    "preserving_candidate_count": 29,
+    "record_count": 31
+  }
+}

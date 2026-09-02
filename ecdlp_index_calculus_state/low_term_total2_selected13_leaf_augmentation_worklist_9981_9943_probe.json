@@ -1,0 +1,975 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_leaf_augmentation_worklist_9981_9943_probe.h"
+  },
+  "claim_status": "SELECTED13_LEAF_AUGMENTATION_WORKLIST_READY",
+  "created_at": "2026-06-05T19:10:37Z",
+  "failures": [],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "worklist_only": true
+  },
+  "native_preflight": {
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_leaf_aug_preflight_a38a6mzd/preflight.c",
+      "-o",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_leaf_aug_preflight_a38a6mzd/preflight"
+    ],
+    "compile_returncode": 0,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_leaf_augmentation_preflight items=14 fresh_required=14 exact_selector=7 positive_union=2 single_leaf=5 failures=0",
+    "verified": true
+  },
+  "parameters": {
+    "audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_direct_verification_audit_9981_9943_probe.json",
+    "max_items_per_target": 8
+  },
+  "schema": "ecdlp.low_term_total2_selected13_leaf_augmentation_worklist.v1",
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "candidate_class_counts": {
+      "exact_selector_replay": 7,
+      "positive_control_leaf_union": 2,
+      "single_leaf_positive_control_augmentation": 5
+    },
+    "failure_count": 0,
+    "fresh_direct_verification_required_count": 14,
+    "max_items_per_target": 8,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "target_transfer_counts": {
+      "9943": 6,
+      "9981": 8
+    },
+    "verified": true,
+    "work_item_count": 14,
+    "worker_interpretation": "Work items are leaf-set replay candidates for fresh FFE/direct relation emission. Exact selector variants reuse current target evidence; positive-control union and single-leaf items seed fresh augmentations from nearby verified certificates."
+  },
+  "work_items": [
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 0,
+      "added_leaf_indices_by_row": {},
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        }
+      ],
+      "candidate_selected_leaf_count": 1,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.38686131,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selector": "mode_low_term_support_total1",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": null,
+      "reason": "Existing exact-transfer selector has verifier relation evidence; replay it against the materialized row identity and test independence.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 4,
+      "removed_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          65,
+          79
+        ],
+        "22050.cf1@11731:uniform:256:salt173": [
+          65,
+          79
+        ]
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_id": "leaf_aug_2c99873a692aa2f7",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 0,
+      "added_leaf_indices_by_row": {},
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        },
+        {
+          "leaf_indices": [
+            65,
+            79
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt173"
+        }
+      ],
+      "candidate_selected_leaf_count": 5,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.72262774,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 16
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": null,
+      "reason": "Existing exact-transfer selector has verifier relation evidence; replay it against the materialized row identity and test independence.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 0,
+      "removed_leaf_indices_by_row": {},
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_id": "leaf_aug_c256790d8f418194",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 1,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt173": [
+          90
+        ]
+      },
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        },
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt173"
+        }
+      ],
+      "candidate_selected_leaf_count": 2,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.70072993,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selector": "mode_cost_low_term_support_total2",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": null,
+      "reason": "Existing exact-transfer selector has verifier relation evidence; replay it against the materialized row identity and test independence.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 4,
+      "removed_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          65,
+          79
+        ],
+        "22050.cf1@11731:uniform:256:salt173": [
+          65,
+          79
+        ]
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_id": "leaf_aug_4dbafd045fee5c3e",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 2,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt173": [
+          8,
+          90
+        ]
+      },
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        },
+        {
+          "leaf_indices": [
+            8,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt173"
+        }
+      ],
+      "candidate_selected_leaf_count": 3,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.7080292,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selector": "mode_cost_low_term_support_total3",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": null,
+      "reason": "Existing exact-transfer selector has verifier relation evidence; replay it against the materialized row identity and test independence.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 4,
+      "removed_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          65,
+          79
+        ],
+        "22050.cf1@11731:uniform:256:salt173": [
+          65,
+          79
+        ]
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_id": "leaf_aug_462028918b4dc878",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 2,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          8
+        ],
+        "22050.cf1@11731:uniform:256:salt173": [
+          90
+        ]
+      },
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            8,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        },
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt173"
+        }
+      ],
+      "candidate_selected_leaf_count": 3,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.74452555,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selector": "mode_low_term_support_total3",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": null,
+      "reason": "Existing exact-transfer selector has verifier relation evidence; replay it against the materialized row identity and test independence.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 4,
+      "removed_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          65,
+          79
+        ],
+        "22050.cf1@11731:uniform:256:salt173": [
+          65,
+          79
+        ]
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_id": "leaf_aug_6cb6cffade5a1590",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 4,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          8,
+          56
+        ],
+        "22050.cf1@11731:uniform:256:salt173": [
+          8,
+          90
+        ]
+      },
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            8,
+            56,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        },
+        {
+          "leaf_indices": [
+            8,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt173"
+        }
+      ],
+      "candidate_selected_leaf_count": 5,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.75912409,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": null,
+      "reason": "Existing exact-transfer selector has verifier relation evidence; replay it against the materialized row identity and test independence.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 4,
+      "removed_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          65,
+          79
+        ],
+        "22050.cf1@11731:uniform:256:salt173": [
+          65,
+          79
+        ]
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_id": "leaf_aug_3cf73ac30d400f9a",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 4,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          19,
+          34
+        ],
+        "22050.cf1@11731:uniform:256:salt173": [
+          34,
+          90
+        ]
+      },
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "positive_control_leaf_union",
+      "candidate_class_code": 2,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            19,
+            34,
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        },
+        {
+          "leaf_indices": [
+            34,
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt173"
+        }
+      ],
+      "candidate_selected_leaf_count": 9,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.87591241,
+        "public_key_verified": true,
+        "rank": 5,
+        "relation_count": 5,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt169",
+          "22050.cf1@11731:uniform:256:salt163"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 4
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": {
+        "derived_secret": 1135,
+        "public_key_verified": true,
+        "rank": 5,
+        "relation_count": 5,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 4,
+        "transfer_index": 9978
+      },
+      "reason": "Union the materialized row leaves with row-position-matched leaves from a same-target public-key-verified control.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 0,
+      "removed_leaf_indices_by_row": {},
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_id": "leaf_aug_ecb51c4e07b0ae31",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 1,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt171": [
+          19
+        ]
+      },
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            19,
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        },
+        {
+          "leaf_indices": [
+            65,
+            79
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt173"
+        }
+      ],
+      "candidate_selected_leaf_count": 6,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.87591241,
+        "public_key_verified": true,
+        "rank": 5,
+        "relation_count": 5,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt169",
+          "22050.cf1@11731:uniform:256:salt163"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 4
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": {
+        "derived_secret": 1135,
+        "public_key_verified": true,
+        "rank": 5,
+        "relation_count": 5,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 4,
+        "transfer_index": 9978
+      },
+      "reason": "Test positive-control leaf 19 on 22050.cf1@11731:uniform:256:salt171 as the smallest fresh-emission augmentation.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 0,
+      "removed_leaf_indices_by_row": {},
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "work_item_id": "leaf_aug_1cc114f68d253bf1",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 2,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt167": [
+          8
+        ],
+        "22050.cf1@11731:uniform:256:salt175": [
+          8
+        ]
+      },
+      "backfill_row_check_hash": "row_05f942a16fb73283",
+      "backfill_row_id": "t9943_4c88ff834538",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            8
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        },
+        {
+          "leaf_indices": [
+            8
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175"
+        }
+      ],
+      "candidate_selected_leaf_count": 2,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.66423358,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt167",
+          "22050.cf1@11731:uniform:256:salt175"
+        ],
+        "selector": "mode_cost_hybrid_support_monic_b_total2",
+        "top_k": 16
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": null,
+      "reason": "Existing exact-transfer selector has verifier relation evidence; replay it against the materialized row identity and test independence.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 5,
+      "removed_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt167": [
+          65,
+          79,
+          90
+        ],
+        "22050.cf1@11731:uniform:256:salt175": [
+          65,
+          79
+        ]
+      },
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "work_item_id": "leaf_aug_d3d8dfef36d5035f",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 4,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt167": [
+          8,
+          56
+        ],
+        "22050.cf1@11731:uniform:256:salt175": [
+          8,
+          90
+        ]
+      },
+      "backfill_row_check_hash": "row_05f942a16fb73283",
+      "backfill_row_id": "t9943_4c88ff834538",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "positive_control_leaf_union",
+      "candidate_class_code": 2,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            8,
+            56,
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        },
+        {
+          "leaf_indices": [
+            8,
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175"
+        }
+      ],
+      "candidate_selected_leaf_count": 9,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.75912409,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt170",
+          "22050.cf1@11731:uniform:256:salt166"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "reason": "Union the materialized row leaves with row-position-matched leaves from a same-target public-key-verified control.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 0,
+      "removed_leaf_indices_by_row": {},
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "work_item_id": "leaf_aug_177f1e5d86698505",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 1,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt175": [
+          90
+        ]
+      },
+      "backfill_row_check_hash": "row_05f942a16fb73283",
+      "backfill_row_id": "t9943_4c88ff834538",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        },
+        {
+          "leaf_indices": [
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175"
+        }
+      ],
+      "candidate_selected_leaf_count": 6,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.75912409,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt170",
+          "22050.cf1@11731:uniform:256:salt166"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "reason": "Test positive-control leaf 90 on 22050.cf1@11731:uniform:256:salt175 as the smallest fresh-emission augmentation.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 0,
+      "removed_leaf_indices_by_row": {},
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "work_item_id": "leaf_aug_2bc48be38ef226aa",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 1,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt167": [
+          56
+        ]
+      },
+      "backfill_row_check_hash": "row_05f942a16fb73283",
+      "backfill_row_id": "t9943_4c88ff834538",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            56,
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        },
+        {
+          "leaf_indices": [
+            65,
+            79
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175"
+        }
+      ],
+      "candidate_selected_leaf_count": 6,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.75912409,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt170",
+          "22050.cf1@11731:uniform:256:salt166"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "reason": "Test positive-control leaf 56 on 22050.cf1@11731:uniform:256:salt167 as the smallest fresh-emission augmentation.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 0,
+      "removed_leaf_indices_by_row": {},
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "work_item_id": "leaf_aug_2eb2e5cd6e6f0bb4",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 1,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt167": [
+          8
+        ]
+      },
+      "backfill_row_check_hash": "row_05f942a16fb73283",
+      "backfill_row_id": "t9943_4c88ff834538",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            8,
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        },
+        {
+          "leaf_indices": [
+            65,
+            79
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175"
+        }
+      ],
+      "candidate_selected_leaf_count": 6,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.75912409,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt170",
+          "22050.cf1@11731:uniform:256:salt166"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "reason": "Test positive-control leaf 8 on 22050.cf1@11731:uniform:256:salt167 as the smallest fresh-emission augmentation.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 0,
+      "removed_leaf_indices_by_row": {},
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "work_item_id": "leaf_aug_3c22f493a77e88cb",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    },
+    {
+      "accepted_relation_export": false,
+      "added_leaf_count": 1,
+      "added_leaf_indices_by_row": {
+        "22050.cf1@11731:uniform:256:salt175": [
+          8
+        ]
+      },
+      "backfill_row_check_hash": "row_05f942a16fb73283",
+      "backfill_row_id": "t9943_4c88ff834538",
+      "base_classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "candidate_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        },
+        {
+          "leaf_indices": [
+            8,
+            65,
+            79
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175"
+        }
+      ],
+      "candidate_selected_leaf_count": 6,
+      "candidate_source_row": {
+        "below_rho": true,
+        "ops_over_rho": 0.75912409,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt170",
+          "22050.cf1@11731:uniform:256:salt166"
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7
+      },
+      "fresh_direct_verification_required": true,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "reason": "Test positive-control leaf 8 on 22050.cf1@11731:uniform:256:salt175 as the smallest fresh-emission augmentation.",
+      "relation_derived_ecdlp": false,
+      "removed_leaf_count": 0,
+      "removed_leaf_indices_by_row": {},
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "work_item_id": "leaf_aug_ff31bac110febb60",
+      "worker_acceptance_gate": "fresh_direct_relation_replay_must_verify_public_key"
+    }
+  ]
+}

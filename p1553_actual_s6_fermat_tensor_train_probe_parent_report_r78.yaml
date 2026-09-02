@@ -1,0 +1,119 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-ACTUAL-S6-FERMAT-TENSOR-TRAIN-R78-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_finite_target_specialized_tensor_rank
+run_count: 1
+status: reject_actual_s6_value_first_tt_fermat_grammar_only
+labels:
+  - exact-finite
+  - nonlinear-representation-bound
+  - scalar-blind-source
+  - novelty-unverified
+owner: P1553-R2-R9-R10-R75
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Freeze and test one nonlinear target-specialized actual-S4 resultant
+  functional: exact tensor-train representation of tuple values followed by
+  binary Hadamard Fermat projection, exact counting, and source replay.
+inputs:
+  - path: p1553_s6_centered_carry_rank_minor_probe_report_r72.json
+    sha256: 7e63b52fc7667be14aadc1db3aeeb22b43876ff2c62e3dce87b312c056e85e43
+  - path: p1553_s6_iterated_norm_support_probe_report_r75.json
+    sha256: c5f41fbb7325fe3f4e85fe6084fbaed6ab2df9d9101bd031cd1c589a95a3ba8c
+  - path: p1553_s6_subset_incidence_mobius_probe_report_r76.json
+    sha256: de41d1618bc71c46f700bfead0ed72c5ac0b29a89da3b5c32534a15314ef4c93
+  - path: p1553_r31_artifact_index_README.md
+    sha256: 0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f
+    contains_artifact: p1553_finite_deck_weighted_endpoint_gate_r2.md
+    contains_artifact_sha256: 55acc1457e7fd5a740da57c2c1db957374c7c18561c67b1748176dc8c61fcda5
+artifacts:
+  - path: p1553_actual_s6_fermat_tensor_train_probe_r78.py
+    sha256: fb31a8b420df349d2220d0fd4ffb9451b73ec6313ec0fd1baf058a000f30ae04
+  - path: p1553_actual_s6_fermat_tensor_train_probe_report_r78.json
+    sha256: e590002c433c6504725d5ab7ff1dba97ad8c15400bf0117846742da7359c5e60
+  - path: frozen_nonlinear_nested_resultant_functional_grammar.json
+    sha256: 320c0ae21cbb56451c1dcd4e9f96e53bfd1cb87d07d7a7fc6d6402e835d107f3
+  - path: actual_s4_target_specialization_replay.json
+    sha256: 6e32afd5ad8bd6527c780e42a7e4208417c59bfd8c87e8497119a9e991c7cf62
+  - path: r76_mobius_zero_source_and_child_replay.json
+    sha256: 713918450c94b64d608fca70c16ee1b0b4731e83e661c261c0ba2287a3a82a13
+  - path: nonlinear_functional_state_and_direct_cost_ledger.json
+    sha256: f5a51829590e004b9c303252adb376c023e980bf1a264121accb61e65cbcad4b
+  - path: p1553_actual_s6_fermat_tensor_train_probe_gate_r78.md
+    sha256: 9149c3b903d91a2156125a2c61896dc1111eaeffafdf0536c89a50b7e0e84ff9
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_actual_s6_fermat_tensor_train_probe_r78.py
+    sha256: 8952a4bc7a0242c67e04ff96e12b299707403fa72e0a0a62195c67454392667f
+frozen_interface:
+  curve_families:
+    - secp256k1
+    - nist_p256
+    - nist_p384
+    - nist_p521
+  prefix_sizes:
+    - 3
+    - 4
+    - 5
+    - 6
+  target_types:
+    - blind_hash_target
+    - forced_positive_target
+  scalar_labels_consumed: false
+  grammar_id: actual_s6_value_tensor_tt_fermat_binary_v1
+verified_statements:
+  - >-
+    Every raw actual-S6 target tensor has exact TT ranks [B,B^2,B^2,B] on all
+    32 frozen instances.
+  - >-
+    Every exact value-first TT therefore has a B^5 center core before Fermat
+    projection; the first Hadamard square retains the same ranks.
+  - >-
+    Every blind target has count zero, while every forced target has count one,
+    a verified occurrence-labelled source, and exact dyadic child conservation.
+  - >-
+    The final zero masks have TT rank zero or one, but that sparsity is reached
+    only after the full value tensor and receives no constructor credit.
+  - >-
+    A Fermat control preserves duplicate tuple occurrences and counts one tuple
+    once independently of its internal common-root multiplicity.
+scoped_positive_controls:
+  actual_s4_by_s4_resultant_values: pass
+  exact_fermat_projector: pass
+  duplicate_occurrence_count: pass
+  blind_zero_target: pass
+  forced_positive_source: pass
+  dyadic_child_conservation: pass
+scoped_failures:
+  raw_tt_center_core_exponent_B: 5
+  binary_fermat_work_exponent_B: 5
+  final_sparse_mask_constructor_credit: zero
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - scalar-only black-box nested norms and resultants
+  - nonlinear circuits that never represent tuple tensors or TT cores
+  - randomized Las Vegas and support-restricted data structures
+  - asymptotic TT rank for arbitrary decks
+  - relation density, independent rank, factor logs, and descent
+admission:
+  passed_obligations: 7
+  obligation_count: 11
+  lane_admitted: false
+result:
+  exact_zero_count_complete: true
+  exact_source_and_children_complete: true
+  direct_caps_satisfied: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_ACTUAL_S6_VALUE_FIRST_TT_FERMAT_GRAMMAR_ONLY__FOUR_STANDARD_CURVES__B3_4_5_6__BLIND_ZERO__FORCED_COUNT_ONE__SOURCE_AND_DYADIC_REPLAY__ALL_RAW_MIDDLE_CUTS_FULL__CENTER_CORE_B5__FINAL_MASK_TINY_ONLY_AFTER_VALUE_CONSTRUCTION__R2_R75_BOUNDARIES_SHARPENED__SCALAR_ONLY_CIRCUITS_OPEN__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct a straight-line black-box nested S4 norm functional whose every
+  node is scalar or at most B^(9/4) persistent state and B^(5/4) fresh-target
+  state/work. Never materialize a tuple-value tensor, TT core, coefficient
+  cube, quotient algebra, or suffix polynomial; retain R76 zero, count, source,
+  multiplicity, and dyadic replay.

@@ -1,0 +1,131 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-SMALL-K-MULTIPLICATIVE-C5-MOMENT-TORUS-R121-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_torus_moment_split_controls_and_scoped_representation_audit
+run_count: 1
+status: target_specialized_nonlinear_torus_c5_membership_source_circuit_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - moment-recurrence
+  - ksum-indexing
+  - ffe
+  - source-reporting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R82-R90-R91-R118-R120
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test complete-homogeneous moment, norm-one torus, explicit split, and
+  Dinur-Golovnev subfunction routes for the frozen R120 small-k
+  multiplicative C5 interface, with exact source replay and full scoped cost
+  boundaries.
+inputs:
+  - path: p1553_m6_suboutput_implicit_c5_character_pairing_probe_r120.py
+    sha256: e758a1fed3cb0a41d18d74fd0fd4ffd05f047bd4d37d2d9be15f821195a9a131
+  - path: p1553_m6_suboutput_implicit_c5_character_pairing_probe_report_r120.json
+    sha256: de3e063e1d11a61cea49896a9a1e5e252b0e167cd558e6b50affe733bdeb60e5
+  - path: frozen_m6_suboutput_implicit_c5_membership_circuit.json
+    sha256: 1a4f30674052f3b6ab598b79fd06d6fed300c23f9ca6001a09826f7a514715c8
+  - path: m6_c5_implicit_circuit_cost_ledger.json
+    sha256: 0e12afd3f31209dd707c022280c3868eec5a7d5533afcd7692f5bb19c0f71a42
+  - path: m6_c5_implicit_circuit_source_replay.json
+    sha256: ab50bec7273b718bcde1492df984d4dac054973a0706674d04b8b595b19aa600
+  - path: m6_c5_implicit_circuit_exceptional_controls.json
+    sha256: 3dc277dab4854e9a4da6de31d7eb953ca228ac232d6cb7cffa586788988f2244
+  - path: factor_logs_and_identical_descent_r120.json
+    sha256: 3b79bac599448a55a16d43a85af68e1519a72dfcb8ac1d74f9e2716bf5f40cbf
+  - path: p1553_m6_suboutput_implicit_c5_character_pairing_probe_gate_r120.md
+    sha256: ab8efbe571f310a510f943e45f9fb65bac34fd37b2ee4d04337cdf3a5c9c8da1
+  - path: p1553_m6_suboutput_implicit_c5_character_pairing_probe_parent_report_r120.yaml
+    sha256: 4e51a5d10a1debf66f7b4305f173cd818914e48e61512e37d11a6ea45e55169d
+  - path: p1553_m6_nonlinear_value_sensitive_c6_source_locator_probe_gate_r118.md
+    sha256: 9ed7f59fb94dd1ecff54d8844068502183a7928c64e991c9a98b270ab8645b9d
+  - path: p1553_5a5c_nonlocal_moment_hankel_translation_probe_gate_r90.md
+    sha256: b1618f6a354b995db01fbbc7aeeb69df6ebb5248b5c558bc4c72d87ce523897b
+  - path: p1553_5a5c_unequal_list_subfunction_inversion_probe_gate_r91.md
+    sha256: 57469654e0b535ccbf1d62edd9548cd827a09d244deaecb06b8aedbd410ac6d3
+  - path: p1553_tensor_trace_minpoly_red_team.md
+    sha256: a534f6260a342bacc1aeba6becce8a35707644ed6fcd16eb2a75cfb7dbbe0c3c
+  - path: references/dinur_golovnev_3sum_indexing_2512.04258v2.pdf
+    sha256: e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c
+artifacts:
+  - path: p1553_m6_small_k_multiplicative_c5_moment_torus_probe_r121.py
+    sha256: b590354da291830d9a3372d5d144f1552dee04b2f3e8368258213637c022a6f9
+  - path: p1553_m6_small_k_multiplicative_c5_moment_torus_probe_report_r121.json
+    sha256: 356560169e475900452e83c68a8726420151d57f44735194cb9aaae23a06e54e
+  - path: frozen_m6_small_k_multiplicative_c5_subfunction_index.json
+    sha256: 2876c2d9fbc95c7b1e1481554909065b54d13c82a24e0026a19a70744a7d2a3d
+  - path: m6_small_k_multiplicative_c5_cost_ledger.json
+    sha256: 13922a59704fd9ebac8e5db0afe3b85ec893623e73aac0343f8abe655fef9245
+  - path: m6_small_k_multiplicative_c5_source_replay.json
+    sha256: 428fcb4261ac6d92fb67343b19f8a673ca6a0d870ab95fe6fbf91e7abfa50723
+  - path: m6_small_k_multiplicative_c5_exceptional_controls.json
+    sha256: f12a9e30a2fdf4d295fb6a1b0544632ea5fb2ed1938960363403ecd45736bad1
+  - path: factor_logs_and_identical_descent_r121.json
+    sha256: 991ffc245bc7c5fe7a68b16652ded8850489c3df4258319b0a4b674401e0ffa4
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_small_k_multiplicative_c5_moment_torus_probe_r121.py
+    sha256: 919547a613975658fab7b2ea7ee8fc572032ec9670e33c94ba7430f904cbf8b0
+  - path: p1553_m6_small_k_multiplicative_c5_moment_torus_probe_gate_r121.md
+    sha256: 9266e3655a3f4176280834ec91c897cc7d30274382df6e197628af37bae71309
+verified_statements:
+  - >-
+    On every R82 pairing control, the odd-q image lies in the norm-one torus
+    and avoids the unique omitted Cayley-chart point -1.
+  - >-
+    The Cayley parameter t=b/(a+1) roundtrips every deck image, converts
+    multiplication to (t+s)/(1+d*t*s), and converts each five-product query
+    to the exact degree-five symmetric equation B-t_target*A=0.
+  - >-
+    Every canonical five-product moment equals the complete homogeneous
+    polynomial h_5 in the powered deck; the first twice-support moments match
+    direct enumeration on all eight controls.
+  - >-
+    Berlekamp-Massey has order exactly equal to the injective C5 support and
+    returns the full endpoint annihilator; every positive product is a root
+    and every inherited empty target is rejected.
+  - >-
+    The C2|C3 split uses B^(9/4) setup and B^(3/2) query, returns exact five
+    projective occurrence backpointers, and rejects the empty controls.
+  - >-
+    Full moment and annihilator state has exponent B^(15/4); the direct k=6
+    indexing theorem has B^(33/8) state, and the general subfunction theorem
+    is either outside its output-universe hypothesis or retains B^(15/4)
+    state under the explicit injective-image grant.
+scoped_failures:
+  full_complete_homogeneous_moment_recurrence: rejected_at_frozen_setup
+  full_endpoint_annihilator: rejected_at_frozen_setup
+  materialized_degree_five_torus_grid: rejected_at_frozen_setup
+  c2_c3_split_query: rejected_at_polylog_query_cap
+  direct_balanced_integer_ksum_index: rejected_at_frozen_setup
+  dinur_golovnev_theorem4p1_direct_ambient_application: inapplicable
+  dinur_golovnev_theorem4p1_injective_image_grant: rejected_at_frozen_setup
+  pairing_image_exponent_linearization: rejected_requires_field_dlp
+  target_specialized_nonlinear_torus_c5_circuit: open
+  pairing_unfriendly_generic_inputs: open
+  general_circuit_or_data_structure_lower_bound: not_claimed
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 13
+  total_obligations: 20
+  lane_admitted: false
+  torus_and_moment_controls_admitted: true
+  scoped_representation_negatives_admitted: true
+disposition: >-
+  ADMIT_EXACT_NORM_ONE_TORUS_COMPLETE_HOMOGENEOUS_MOMENT_BM_AND_SPLIT_SOURCE_CONTROLS_ONLY__REJECT_FULL_MOMENT_ANNIHILATOR_TORUS_GRID_C2C3_QUERY_DIRECT_KSUM_THEOREM4P1_AND_FIELD_DLP_ROUTES_AT_FROZEN_CAPS__PRESERVE_TARGET_SPECIALIZED_NONLINEAR_TORUS_C5_CIRCUIT_AND_PAIRING_UNFRIENDLY_GAP__NO_LOCATOR__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one target-specialized nonlinear torus C5
+  membership/source circuit outside the full moment, explicit split,
+  integer-residue kSUM, and Theorem 4.1 grammars. It must fit B^(9/4+o(1))
+  state and polylogarithmic arbitrary-target work, avoid field DLP, return an
+  exact empty certificate and five projective occurrence backpointers, and
+  charge the complete pairing-to-descent path.

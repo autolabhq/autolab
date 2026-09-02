@@ -1,0 +1,147 @@
+{
+  "admission": {
+    "failures": [
+      "inside_cap_nonlinear_membership_complete",
+      "inside_cap_five_source_recovery_complete",
+      "known_rhs_relation_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "pollard_rho_improvement_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 20,
+    "obligations": {
+      "all_rational_circulant_ranks_full": true,
+      "breakthrough_complete": false,
+      "candidate_dlogs_not_consumed": true,
+      "factor_logs_complete": false,
+      "five_finite_rank_controls_complete": true,
+      "group_order_B5_state_charged": true,
+      "identical_target_descent_complete": false,
+      "inside_cap_five_source_recovery_complete": false,
+      "inside_cap_nonlinear_membership_complete": false,
+      "known_rhs_relation_rank_complete": false,
+      "linear_sketch_scope_frozen": true,
+      "nonlinear_and_coupled_routes_preserved": true,
+      "pollard_rho_improvement_complete": false,
+      "prime_order_cyclotomic_nonvanishing_explicit": true,
+      "r123_nonrepresented_circuit_interface_inherited": true,
+      "row_space_lower_bound_explicit": true,
+      "selected_finite_field_spectral_controls_full": true,
+      "shoup_improvement_complete": false,
+      "translated_c3_c2_inner_product_identity_exact": true,
+      "twelve_source_bindings_verified": true
+    },
+    "passed_obligation_count": 12,
+    "scoped_universal_linear_sketch_negative_admitted": true,
+    "translated_inner_product_semantics_admitted": true
+  },
+  "artifacts": {
+    "controls": "torus_c5_linear_sketch_circulant_controls.json",
+    "cost": "torus_c5_linear_sketch_circulant_cost_ledger.json",
+    "frozen": "frozen_torus_c5_linear_sketch_circulant.json",
+    "logs_descent": "factor_logs_and_identical_descent_r124.json",
+    "source_replay": "torus_c5_linear_sketch_circulant_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "EXACT_TRANSLATED_INNER_PRODUCT_AND_SCOPED_UNIVERSAL_LINEAR_SKETCH_NEGATIVE_ONLY_WITHHOLD_PROMOTION",
+  "classification": "C5_TRANSLATED_C3_C2_INNER_PRODUCT_EXACT__UNIVERSAL_LINEAR_SKETCH_DIMENSION_EQUALS_CIRCULANT_RANK__PRIME_ORDER_PROPER_BINARY_DECK_C2_KERNEL_HAS_FULL_RATIONAL_FOURIER_SUPPORT_Q_B5__SETUP_OVER_CAP__COUPLED_NONLINEAR_TARGET_DATA_STRUCTURE_OPEN__NO_SOURCE_RANK_LOGS_DESCENT_SHOUP_BREAKTHROUGH",
+  "disposition": "ADMIT_EXACT_TRANSLATED_C3C2_INNER_PRODUCT_AND_FULL_CIRCULANT_RANK_THEOREM_FOR_UNIVERSAL_LINEAR_COUNT_SKETCHES_ONLY__REJECT_THAT_GRAMMAR_AT_B5_STATE__PRESERVE_COUPLED_NONLINEAR_TARGET_DATA_STRUCTURE__NO_LOCATOR__NO_RANK__NO_LOGS__NO_DESCENT__NO_SHOUP__NO_BREAKTHROUGH",
+  "finite_evidence": {
+    "all_rational_circulant_ranks_full": true,
+    "all_selected_finite_field_spectral_ranks_full": true,
+    "all_translated_inner_product_identities_exact": true,
+    "asymptotic_credit": false,
+    "control_count": 5
+  },
+  "next_action": "Freeze one target-specialized nonlinear zero-test for the coupled pair (u^(*2),u^(*3)) rather than a universal linear sketch. Test whether a multilinear, rational-Krylov, adaptive probe, or nonlinear fingerprint circuit can answer exact C5 membership and return five projective sources with B^(9/4+o(1)) state and polylogarithmic arbitrary-target work. Charge noncancellation, all preprocessing, source adjoints, rank, logs, identical descent, memory, field operations, and bit complexity.",
+  "non_claims": [
+    "The rank theorem is universal over C3 vectors for one kernel.",
+    "It does not cover nonlinear preprocessing specialized to u^3.",
+    "It does not cover nonlinear membership-only decoding.",
+    "Finite controls receive no asymptotic credit.",
+    "No five-source locator, rank, logs, or descent is supplied.",
+    "No generic-prime ECDLP or Shoup improvement is claimed."
+  ],
+  "pollard_rho_improvement": false,
+  "schema": "p1553.torus_c5_linear_sketch_circulant.r124.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "r114_gate": {
+      "path": "p1553_5a5c_transposed_nonuniform_c5_leaf_generator_probe_gate_r114.md",
+      "sha256": "6574145a6d67ec4e55a8bf0cf90c3a0c9f858aa4cddbfd7e9a733c1033b3a3da"
+    },
+    "r121_gate": {
+      "path": "p1553_m6_small_k_multiplicative_c5_moment_torus_probe_gate_r121.md",
+      "sha256": "9266e3655a3f4176280834ec91c897cc7d30274382df6e197628af37bae71309"
+    },
+    "r123_controls": {
+      "path": "torus_c5_fourier_product_resultant_controls.json",
+      "sha256": "c3ab2d7ed113d231df174f689ac7efca353e0016c0e091bbc67e5d79e97912d4"
+    },
+    "r123_cost": {
+      "path": "torus_c5_fourier_product_resultant_cost_ledger.json",
+      "sha256": "cd53e6948d00d5befa7598e6f5b4f1fdbc1295c6182f979e3a68ec2652dce72a"
+    },
+    "r123_frozen": {
+      "path": "frozen_torus_c5_fourier_product_resultant.json",
+      "sha256": "f836bb2301cb472197aa26705e2bc8edd6f67d98447a718dffc2f4f935caf9f4"
+    },
+    "r123_gate": {
+      "path": "p1553_torus_c5_fourier_product_resultant_probe_gate_r123.md",
+      "sha256": "1b0711d92aeee1a1a4bb2208cdbc772d8a07e1dff14b423803e75f1bd859733f"
+    },
+    "r123_logs": {
+      "path": "factor_logs_and_identical_descent_r123.json",
+      "sha256": "1a967d9b7fb6b9e10563bf242d390cff83b6ee5f238b7bd453ab9a2f4b1623a7"
+    },
+    "r123_parent": {
+      "path": "p1553_torus_c5_fourier_product_resultant_probe_parent_report_r123.yaml",
+      "sha256": "23bb3ca35ea47189f1e5436d8caaec09cb5ace3c6ced214db9046103b1068bea"
+    },
+    "r123_producer": {
+      "path": "p1553_torus_c5_fourier_product_resultant_probe_r123.py",
+      "sha256": "fb18e752bac3b39bef9d7aa235decdb5913d7de8ff39c6c05c661a54951ba326"
+    },
+    "r123_replay": {
+      "path": "torus_c5_fourier_product_resultant_replay.json",
+      "sha256": "efb3425ffada1ceab062a3667688833e9f05c06c6dbba011b44afc9b43dff06b"
+    },
+    "r123_report": {
+      "path": "p1553_torus_c5_fourier_product_resultant_probe_report_r123.json",
+      "sha256": "9d7c4bf836e106202526233038409bdbbae704632df16b4da84453cc05eb2870"
+    },
+    "r90_gate": {
+      "path": "p1553_5a5c_nonlocal_moment_hankel_translation_probe_gate_r90.md",
+      "sha256": "b1618f6a354b995db01fbbc7aeeb69df6ebb5248b5c558bc4c72d87ce523897b"
+    }
+  },
+  "theorem": {
+    "circulant_rank_identity": "Over a splitting field of characteristic zero, rank(C_w)=#{j:DFT(w)_j!=0}=#{j:DFT(u)_j!=0}.",
+    "dimension_exponent_B": {
+      "decimal": 5.0,
+      "exact": "5"
+    },
+    "inside_setup_cap": false,
+    "minimum_linear_sketch_dimension": "q",
+    "not_covered": [
+      "a sketch specialized nonlinearly to the coupled pair (u^2,u^3)",
+      "nonlinear decoding that returns only membership",
+      "adaptive cell-probe or RAM data structures",
+      "approximate or bounded-error sketches",
+      "general arithmetic circuits"
+    ],
+    "prime_order_binary_deck_criterion": "For prime q and a proper nonempty binary deck polynomial U, U(zeta_q^j) is nonzero for every j. For j!=0, a zero would force the cyclotomic polynomial Phi_q=1+...+X^(q-1) to divide U over Q, which is possible for a binary polynomial of degree at most q-1 only when U is empty or all of G.",
+    "row_space_argument": "Exact linear decoding for every v forces every row of the circulant C_w into rowspace(S), so s>=rank(C_w).",
+    "scope_limits": [
+      "universal over all C3 occurrence vectors for the fixed kernel",
+      "linear preprocessing measurements",
+      "linear exact-count decoders followed optionally by a zero test",
+      "characteristic-zero rank argument"
+    ],
+    "translated_inner_product": "u^(*5)(y)=sum_x u^(*3)(x)*u^(*2)(y-x)",
+    "universal_linear_sketch_model": "For fixed C2 kernel w=u^(*2), preprocess every possible C3 vector v by s linear measurements Sv; recover every exact count <v,tau_y w> by a linear decoder depending on y."
+  }
+}

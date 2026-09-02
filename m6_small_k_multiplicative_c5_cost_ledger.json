@@ -1,0 +1,164 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "c_atom_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "per_arbitrary_c5_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "identities": {
+    "complete_homogeneous_endpoint_moment": {
+      "identity": "sum_(i1<=...<=i5)(z_i1*...*z_i5)^m =h_5(z_1^m,...,z_n^m)",
+      "newton_recurrence": "r*h_r=sum_(j=1..r) p_j*h_(r-j), p_j=sum_i z_i^(j*m)",
+      "single_moment_uses_five_deck_power_sums": true,
+      "validity_condition": "characteristic p>5"
+    },
+    "five_product_form": {
+      "degree": 5,
+      "elementary_symmetric_variables": "e0,...,e5 in t1,...,t5",
+      "even_part": "A=e0+d*e2+d^2*e4",
+      "finite_target_equation": "B-t_target*A=0",
+      "multilinear_in_source_parameters": true,
+      "odd_part": "B=e1+d*e3+d^2*e5",
+      "requires_discrete_logarithms": false
+    },
+    "norm_one_cayley_chart": {
+      "chart": "z(t)=(1+u*t)/(1-u*t)",
+      "field": "Fp2=Fp[u]/(u^2-d), d a nonsquare",
+      "group_law": "t+s over 1+d*t*s",
+      "inverse": "t=b/(a+1) for z=a+b*u",
+      "omitted_point": "z=-1",
+      "omitted_point_absent_from_mu_q_for_odd_q": true
+    }
+  },
+  "random_deck_support_boundary": {
+    "inherited_whp_distinct_support_exponent_B": {
+      "decimal": 3.75,
+      "exact": "15/4"
+    },
+    "transferred_to_every_filtered_deck": false
+  },
+  "routes": [
+    {
+      "exact_recurrence_order_random_deck_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "inside_setup_cap": false,
+      "naive_all_moments_work_exponent_B": {
+        "decimal": 4.5,
+        "exact": "9/2"
+      },
+      "one_endpoint_moment_from_deck_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "represented_state_or_output_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "complete_homogeneous_full_moment_recurrence"
+    },
+    {
+      "annihilator_degree_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "inside_setup_cap": false,
+      "route_id": "full_endpoint_annihilator_membership"
+    },
+    {
+      "compact_predicate_is_not_compact_membership_index": true,
+      "inside_setup_cap_when_materialized": false,
+      "predicate_degree": 5,
+      "predicate_description_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "route_id": "cayley_torus_degree_five_grid_evaluation",
+      "source_grid_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      }
+    },
+    {
+      "c2_query_exponent_B": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "c3_setup_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "inside_polylog_query_cap": false,
+      "inside_setup_cap": true,
+      "route_id": "c2_table_c3_table_split_query"
+    },
+    {
+      "inside_setup_cap": false,
+      "integer_addition_or_xor_theorem_directly_transferred": false,
+      "query_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "route_id": "dinur_golovnev_balanced_k6_index_delta_zero",
+      "state_exponent_B": {
+        "decimal": 4.125,
+        "exact": "33/8"
+      }
+    },
+    {
+      "ambient_mu_q_universe_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "ambient_universe_meets_paper_requirement": false,
+      "candidate_domain_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "delta_zero_space_lower_bound_under_grant": "Omega(M)",
+      "delta_zero_space_term": "soft-O(D*L^(3/2))",
+      "general_data_structure_lower_bound_claimed": false,
+      "granted_state_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "injective_image_recoding_grant": "Even if an admissible image-range recoding is granted, Items 4-5 cover at most D*L image points per sampled decomposition, so 5/6 expected coverage forces D*L>=5M/6.",
+      "inside_setup_cap": false,
+      "paper_requires_output_universe_soft_O_domain": true,
+      "route_id": "dinur_golovnev_theorem4p1_subfunction_template"
+    },
+    {
+      "allowed": false,
+      "requires_finite_field_discrete_logarithms": true,
+      "route_id": "pairing_image_exponent_linearization",
+      "would_convert_products_to_integer_sums": true
+    },
+    {
+      "exact_circuit_constructed": false,
+      "general_lower_bound_claimed": false,
+      "route_id": "target_specialized_nonlinear_torus_c5_membership_source_circuit",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.m6_small_k_multiplicative_c5_cost_ledger.r121.v1",
+  "semantic_dedup": {
+    "nearby_lanes": [
+      "R90 additive exponential-moment Hankel translation",
+      "R91 integer unequal-list subfunction inversion",
+      "R118 scalar-blind elliptic C5 indexing",
+      "R120 independent-torsion pairing character"
+    ],
+    "new_idea_id_claimed": false,
+    "r121_distinct_scope": "multiplicative complete-homogeneous moments and a complete odd-order norm-one torus chart after the R120 pairing"
+  }
+}

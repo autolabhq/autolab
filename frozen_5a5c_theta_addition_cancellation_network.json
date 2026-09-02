@@ -1,0 +1,137 @@
+{
+  "alternant_theorem": {
+    "basis": [
+      "1",
+      "x",
+      "y",
+      "x^2",
+      "x*y",
+      "x^3",
+      "x^2*y",
+      "x^4",
+      "x^3*y",
+      "x^5",
+      "x^4*y"
+    ],
+    "basis_pole_orders": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "confluent_jets_required_after_position_separation": false,
+    "curve_model": "short Weierstrass y^2=x^3+a*x+b",
+    "line_bundle": "L(11O)",
+    "original_target_biconditional": "det=0 iff sum_(i=1)^10 P_i=T",
+    "position_shift_rule": "Q_i=P_i+S_i with sum_i S_i=O; P_11=-T",
+    "predicate": "det(eval_basis(Q_i))=0 iff sum_i Q_i=O for eleven pairwise-distinct affine points Q_i",
+    "proof": "Singularity gives a nonzero f in L(11O) vanishing at all eleven distinct Q_i. Degree forces div(f)=sum_i[Q_i]-11[O], whose Abel sum is O. Conversely Abel sum O makes that divisor principal and supplies the kernel section.",
+    "target_dependent_shift_search_scalar_blind": true
+  },
+  "cauchy_theta_scope": {
+    "analytic_identity": "det K(x_i,y_j;lambda) = sigma(lambda+X-Y)/sigma(lambda) * prod_(a<b)sigma(x_a-x_b)sigma(y_b-y_a) / prod_(a,b)sigma(x_a-y_b)",
+    "confluent_or_position_separated_repair_required": true,
+    "constant_determinant_is_source_locator": false,
+    "constant_determinant_per_supplied_source": true,
+    "finite_field_algebraic_substitute": "the position-separated L(11O) Abel alternant",
+    "globally_scalar_rational_kernel": false,
+    "kronecker_kernel_is_poincare_bundle_section": true,
+    "pairwise_theta_table_exponent_B": {
+      "decimal": 1.0,
+      "exact": "1"
+    },
+    "pairwise_theta_table_inside_online_cap": true,
+    "primary_source": "https://arxiv.org/abs/2305.02837",
+    "unshifted_repeated_rows_are_false_zeros": true
+  },
+  "field_model": "actual j=0 prime-field curves from R82",
+  "novelty_deduplication": {
+    "merged_lanes": [
+      "ECDLP-IDEA-012/p1539 Abel-Jacobi evaluation minor",
+      "ECDLP-IDEA-012 determinant value channel"
+    ],
+    "new_algorithm_claimed": false,
+    "new_local_control_only": "zero-sum position separation removes confluent repeated-row and affine-pole branches on the current 5A+5C decks",
+    "registry": "p1553_r35_artifact_index_README.md"
+  },
+  "position_shift_search": {
+    "candidate_bound_exponent_B": {
+      "decimal": 1.2,
+      "exact": "6/5"
+    },
+    "coefficients": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "deterministic_candidate_bound": "(5*|A|+5*|C|+1)^2+1",
+    "last_shift": "negative sum of first ten shifts",
+    "maximum_multiplier": 1,
+    "selection_before_source_outcomes": true,
+    "target_specialized": true
+  },
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2305.02837",
+      "use": "Frobenius elliptic Cauchy determinant identity"
+    },
+    {
+      "url": "https://arxiv.org/abs/1005.3623",
+      "use": "addition laws as line-bundle sections"
+    },
+    {
+      "url": "https://arxiv.org/abs/1801.05677",
+      "use": "algebraic Kronecker section of the Poincare bundle"
+    }
+  ],
+  "schema": "p1553.frozen_5a5c_theta_addition_cancellation_network.r110.v1",
+  "source_arity": {
+    "a": 5,
+    "c": 5,
+    "target": 1
+  },
+  "source_bindings": {
+    "idea_registry": {
+      "path": "p1553_r35_artifact_index_README.md",
+      "sha256": "9f4371eefd5e4019833eef858e3bda79d41aff0c5d7b861c71a5987a96acc392"
+    },
+    "r105_report": {
+      "path": "p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_report_r105.json",
+      "sha256": "c00b8c3e934e783012acb1dab83282f98720702bb8cd81a706fbdf4671f93a83"
+    },
+    "r108_report": {
+      "path": "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_report_r108.json",
+      "sha256": "91fab519c6a59851a672aed1a9e18fac8c434359c91a9e1d9fc0acb112ee7b41"
+    },
+    "r109_gate": {
+      "path": "p1553_5a5c_poincare_theta_target_section_rank_probe_gate_r109.md",
+      "sha256": "fc876cc0b83fc43c61c2b95eff1cb0229663f1974b024d4a8f4619b264b7cc00"
+    },
+    "r109_parent": {
+      "path": "p1553_5a5c_poincare_theta_target_section_rank_probe_parent_report_r109.yaml",
+      "sha256": "dd826bb338e9eeada0692f75ec94f7cecc2ae2b407b0830120d4c9c742e1d9ef"
+    },
+    "r109_producer": {
+      "path": "p1553_5a5c_poincare_theta_target_section_rank_probe_r109.py",
+      "sha256": "085b3df3d7442a78800dcd01e67c8fc155a9dfb1181d9a141ed9097c2af65c2e"
+    },
+    "r109_report": {
+      "path": "p1553_5a5c_poincare_theta_target_section_rank_probe_report_r109.json",
+      "sha256": "73c826964d17877ea26436c40bd52753f2b5d0c416fee86ef04f2b4c8f030e4d"
+    }
+  }
+}

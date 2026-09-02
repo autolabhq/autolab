@@ -1,0 +1,70 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R31-NEAR-PERIOD-RUN-COMPILER-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T06:45:25Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R31 is a new conditional
+  positive incidence compiler requiring independent review. It compiles
+  containment runs but not complete value histograms or an ECDLP path.
+bindings:
+  r30_gate_sha256: 8876faa2b65f6a44410495209617b50e99cc781caaf73a2f4cb8b359b294006f
+  r30_bundle_hash_list_sha256: ffedf5472d54e778fc2d8e0f379f38e45c8bce41ec224030978ab42178dc0edf
+  r30_staging_receipt_sha256: f53b15dc9a85860f1472146c5e2ebc0333acb8067d9aa57761c708bac591e7d8
+  r31_gate_sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+  r31_parent_report_sha256: 00da003569e4e99e2236904fc26e1ec971a089a566fe4f1616825bd464c04483
+  r31_artifact_index_sha256: 0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f
+  r31_bundle_hash_list_sha256: af7d63c555fd8c63f87876aa77dc1c90224fa8765000223f982da7c1a99ca87e
+result:
+  classification: conditional_positive_translation_incidence_compiler
+  base_path_count: O(B)
+  complete_domain_run_records: O(B^2)
+  construction_work: O(B^2)
+  retained_state: O(B^2)
+  scalar_log_used: false
+  exact_domain_counts: supplied
+  one_source_per_run: supplied
+  complete_value_histogram: absent
+  standard_value_scan: B^3
+  arbitrary_restriction_stability: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r31_hash_list: pass
+  r31_parent_yaml_parse: pass
+  minimum_boundary_path_count_checked: pass
+  translated_intersection_start_bound_checked: pass
+  direct_run_length_formula_checked: pass
+  complete_domain_cost_accounting_checked: pass
+  clean_temporary_replay_with_r16_through_r31_gates_and_r31_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T06_45_25Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - selected support and near-total ownership are upstream conditions
+  - exact complete value histogram remains unconstructed
+  - arbitrary adaptive restriction fragmentation remains unbounded
+  - no target, R10, density, rank, logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Build or refute an exact output-sensitive aligned-run colored histogram for
+  the actual degree-B pencil within B^(9/4+o(1)) setup, preserving complete
+  keys, counts, sources, adaptive restrictions, target, R10, rank, logs, and
+  descent without scanning B^3 positions or using scalar gap logs.

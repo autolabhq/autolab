@@ -1,0 +1,42 @@
+{
+  "cases": [],
+  "context_error_count": 0,
+  "context_errors": [],
+  "context_errors_truncated": false,
+  "method": "public_pair_rule_subset_replay_with_form_guard",
+  "non_claims": [
+    "Pair rules are public subset selectors, but each selected subset still pays row replay costs.",
+    "A rule mined from decompositions is not a speedup claim until validated on a later window.",
+    "The form guard is applied after relation-event scanning, as in the row-rule replay probe."
+  ],
+  "parameters": {
+    "event_summary_limit": 16,
+    "form_guard": "candidate_pos_span=0",
+    "max_subset_size": 2,
+    "pair_rules": [
+      {
+        "name": "pairminer_no_exact_v1",
+        "pair_rule": "pair_activate:b_minus_c_mod16=1&pair_salt_span>=4|b_minus_c_mod16=7&pair_salt_delta_from_min_signature=0,3|pair_salt_sum_mod8=0&transfer_mod5=1"
+      }
+    ],
+    "windows": [
+      {
+        "artifact": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_760_767_fresh_coordinate_gate.json",
+        "name": "w760_767_fresh"
+      }
+    ]
+  },
+  "schema": "ecdlp_public_repeated_coordinate_subset_pair_rule_replay_probe_v1",
+  "summary": {
+    "best_guarded_verified_pair_cases": [],
+    "by_rule": [],
+    "guard_passed_relation_pair_case_count": 0,
+    "guarded_below_rho_pair_case_count": 0,
+    "guarded_verified_pair_case_count": 0,
+    "input_pair_case_count": 0,
+    "mean_guard_passed_ops_over_rho": null,
+    "min_guard_passed_ops_over_rho": null,
+    "relation_pair_case_count": 0,
+    "selected_pair_case_count": 0
+  }
+}

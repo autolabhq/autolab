@@ -1,0 +1,656 @@
+{
+  "method": "rerun_verified_coordinate_recoveries_with_row_subset_costs",
+  "non_claims": [
+    "Subset replays are verifier-informed diagnostics unless a public row-pruning rule selects the same subset.",
+    "The probe decomposes measured row scan costs; it does not prove that coordinate confirmation is reusable.",
+    "Only exact-coordinate gates are rerun because compact candidate artifacts do not preserve full case profiles for wider axis gates."
+  ],
+  "parameters": {
+    "candidate_sources": [
+      {
+        "artifact": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_712_719_fresh_coordinate_gate.json",
+        "name": "w712_719_fresh"
+      }
+    ],
+    "coordinate": {
+      "b": 757,
+      "c": 1452
+    },
+    "event_summary_limit": 16,
+    "gate_kind": "exact_coordinate",
+    "max_recoveries": 0
+  },
+  "recoveries": [
+    {
+      "below_rho_verified_subset_count": 3,
+      "best_below_rho_verified_subset": {
+        "below_rho": true,
+        "derived_secret": 702,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "materialized_row_count": 1,
+        "ops": 68,
+        "ops_over_rho": 0.544,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "relation_event_count_sum": 2,
+        "row_keys": [
+          "67.a1@9803:uniform:256:salt209"
+        ],
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 2
+      },
+      "best_verified_subset": {
+        "below_rho": true,
+        "derived_secret": 702,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "materialized_row_count": 1,
+        "ops": 68,
+        "ops_over_rho": 0.544,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "relation_event_count_sum": 2,
+        "row_keys": [
+          "67.a1@9803:uniform:256:salt209"
+        ],
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 2
+      },
+      "case_key": "67.a1@9803|715|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt202', (7,)), ('67.a1@9803:uniform:256:salt206', (7,)), ('67.a1@9803:uniform:256:salt209', (7,)))",
+      "context_error_count": 0,
+      "context_errors": [],
+      "coordinate": {
+        "b": 757,
+        "c": 1452
+      },
+      "event_positive_row_count": 1,
+      "event_positive_row_ops_over_rho_sum": 0.544,
+      "event_positive_rows": [
+        {
+          "candidate_verifications": 8,
+          "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:715:67.a1@9803",
+          "event_summaries": [
+            {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                8,
+                13
+              ],
+              "leaf_index": 7,
+              "original_trial": 233,
+              "q_coeff": 2274,
+              "relation_index": 0,
+              "rhs": 5292,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                8,
+                13,
+                13
+              ]
+            },
+            {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                8,
+                13
+              ],
+              "leaf_index": 7,
+              "original_trial": 473,
+              "q_coeff": 6899,
+              "relation_index": 1,
+              "rhs": 9106,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                8,
+                13,
+                13
+              ]
+            }
+          ],
+          "event_summaries_truncated": false,
+          "generic_rho_steps": 125,
+          "hit_event_summaries": [
+            {
+              "accepted_relation": true,
+              "candidate_pos": 1,
+              "leaf_index": 7,
+              "original_trial": 233,
+              "relation_index": 0,
+              "scheduled_trial": 1,
+              "scout_pos": 19
+            },
+            {
+              "accepted_relation": true,
+              "candidate_pos": 1,
+              "leaf_index": 7,
+              "original_trial": 473,
+              "relation_index": 1,
+              "scheduled_trial": 2,
+              "scout_pos": 19
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 2,
+              "leaf_index": 7,
+              "original_trial": 233,
+              "relation_index": null,
+              "scheduled_trial": 1,
+              "scout_pos": 191
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 2,
+              "leaf_index": 7,
+              "original_trial": 473,
+              "relation_index": null,
+              "scheduled_trial": 2,
+              "scout_pos": 191
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 3,
+              "leaf_index": 7,
+              "original_trial": 233,
+              "relation_index": null,
+              "scheduled_trial": 1,
+              "scout_pos": 245
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 3,
+              "leaf_index": 7,
+              "original_trial": 473,
+              "relation_index": null,
+              "scheduled_trial": 2,
+              "scout_pos": 245
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 4,
+              "leaf_index": 7,
+              "original_trial": 233,
+              "relation_index": null,
+              "scheduled_trial": 1,
+              "scout_pos": 347
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 4,
+              "leaf_index": 7,
+              "original_trial": 473,
+              "relation_index": null,
+              "scheduled_trial": 2,
+              "scout_pos": 347
+            }
+          ],
+          "ops_over_rho": 0.544,
+          "preassociation_filter_ops": 68,
+          "relation_event_count": 2,
+          "row_derived_secret": 702,
+          "row_key": "67.a1@9803:uniform:256:salt209",
+          "row_public_key_verified": true,
+          "row_rank": 2,
+          "row_relation_count": 2,
+          "selected_hit_events": 8,
+          "selected_hit_root_values": [
+            3639
+          ],
+          "selected_hit_roots": 1,
+          "selected_leaf_count": 1,
+          "selected_leaf_indices": [
+            7
+          ]
+        }
+      ],
+      "full_replay": {
+        "below_rho": false,
+        "derived_secret": 702,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "materialized_row_count": 3,
+        "ops": 170,
+        "ops_over_rho": 1.36,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selected_leaf_count": 3,
+        "selected_row_count": 3,
+        "unique_form_count": 2
+      },
+      "gate_kind": "exact_coordinate",
+      "gate_label": "(757,1452)",
+      "kept_profiles": [
+        {
+          "leaf_indices": [
+            7
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:715:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            7
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:715:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            7
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt209",
+          "salt": 209,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt209|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:715:67.a1@9803"
+        }
+      ],
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "non_claim": "Subsets are verifier-informed diagnostics unless a public row-pruning rule selects the same rows before relation events are inspected.",
+      "original_compact_replay": {
+        "derived_secret": 702,
+        "ops_over_rho": 1.36,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selected_leaf_count": 3,
+        "selected_row_count": 3
+      },
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_costs": [
+        {
+          "candidate_verifications": 0,
+          "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:715:67.a1@9803",
+          "event_summaries": [],
+          "event_summaries_truncated": false,
+          "generic_rho_steps": 125,
+          "hit_event_summaries": [],
+          "ops_over_rho": 0.408,
+          "preassociation_filter_ops": 51,
+          "relation_event_count": 0,
+          "row_derived_secret": null,
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "row_public_key_verified": false,
+          "row_rank": 0,
+          "row_relation_count": 0,
+          "selected_hit_events": 0,
+          "selected_hit_root_values": [],
+          "selected_hit_roots": 0,
+          "selected_leaf_count": 1,
+          "selected_leaf_indices": [
+            7
+          ]
+        },
+        {
+          "candidate_verifications": 0,
+          "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:715:67.a1@9803",
+          "event_summaries": [],
+          "event_summaries_truncated": false,
+          "generic_rho_steps": 125,
+          "hit_event_summaries": [],
+          "ops_over_rho": 0.408,
+          "preassociation_filter_ops": 51,
+          "relation_event_count": 0,
+          "row_derived_secret": null,
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "row_public_key_verified": false,
+          "row_rank": 0,
+          "row_relation_count": 0,
+          "selected_hit_events": 0,
+          "selected_hit_root_values": [],
+          "selected_hit_roots": 0,
+          "selected_leaf_count": 1,
+          "selected_leaf_indices": [
+            7
+          ]
+        },
+        {
+          "candidate_verifications": 8,
+          "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:715:67.a1@9803",
+          "event_summaries": [
+            {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                8,
+                13
+              ],
+              "leaf_index": 7,
+              "original_trial": 233,
+              "q_coeff": 2274,
+              "relation_index": 0,
+              "rhs": 5292,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                8,
+                13,
+                13
+              ]
+            },
+            {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                8,
+                13
+              ],
+              "leaf_index": 7,
+              "original_trial": 473,
+              "q_coeff": 6899,
+              "relation_index": 1,
+              "rhs": 9106,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                8,
+                13,
+                13
+              ]
+            }
+          ],
+          "event_summaries_truncated": false,
+          "generic_rho_steps": 125,
+          "hit_event_summaries": [
+            {
+              "accepted_relation": true,
+              "candidate_pos": 1,
+              "leaf_index": 7,
+              "original_trial": 233,
+              "relation_index": 0,
+              "scheduled_trial": 1,
+              "scout_pos": 19
+            },
+            {
+              "accepted_relation": true,
+              "candidate_pos": 1,
+              "leaf_index": 7,
+              "original_trial": 473,
+              "relation_index": 1,
+              "scheduled_trial": 2,
+              "scout_pos": 19
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 2,
+              "leaf_index": 7,
+              "original_trial": 233,
+              "relation_index": null,
+              "scheduled_trial": 1,
+              "scout_pos": 191
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 2,
+              "leaf_index": 7,
+              "original_trial": 473,
+              "relation_index": null,
+              "scheduled_trial": 2,
+              "scout_pos": 191
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 3,
+              "leaf_index": 7,
+              "original_trial": 233,
+              "relation_index": null,
+              "scheduled_trial": 1,
+              "scout_pos": 245
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 3,
+              "leaf_index": 7,
+              "original_trial": 473,
+              "relation_index": null,
+              "scheduled_trial": 2,
+              "scout_pos": 245
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 4,
+              "leaf_index": 7,
+              "original_trial": 233,
+              "relation_index": null,
+              "scheduled_trial": 1,
+              "scout_pos": 347
+            },
+            {
+              "accepted_relation": false,
+              "candidate_pos": 4,
+              "leaf_index": 7,
+              "original_trial": 473,
+              "relation_index": null,
+              "scheduled_trial": 2,
+              "scout_pos": 347
+            }
+          ],
+          "ops_over_rho": 0.544,
+          "preassociation_filter_ops": 68,
+          "relation_event_count": 2,
+          "row_derived_secret": 702,
+          "row_key": "67.a1@9803:uniform:256:salt209",
+          "row_public_key_verified": true,
+          "row_rank": 2,
+          "row_relation_count": 2,
+          "selected_hit_events": 8,
+          "selected_hit_root_values": [
+            3639
+          ],
+          "selected_hit_roots": 1,
+          "selected_leaf_count": 1,
+          "selected_leaf_indices": [
+            7
+          ]
+        }
+      ],
+      "source_name": "w712_719_fresh",
+      "source_ops_over_rho": 1.36,
+      "subset_count": 7,
+      "subset_records": [
+        {
+          "below_rho": true,
+          "derived_secret": 702,
+          "duplicate_form_count": 0,
+          "generic_rho_steps": 125,
+          "materialized_row_count": 1,
+          "ops": 68,
+          "ops_over_rho": 0.544,
+          "public_key_verified": true,
+          "rank": 2,
+          "relation_count": 2,
+          "relation_event_count_sum": 2,
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt209"
+          ],
+          "selected_leaf_count": 1,
+          "selected_row_count": 1,
+          "unique_form_count": 2
+        },
+        {
+          "below_rho": true,
+          "derived_secret": 702,
+          "duplicate_form_count": 0,
+          "generic_rho_steps": 125,
+          "materialized_row_count": 2,
+          "ops": 119,
+          "ops_over_rho": 0.952,
+          "public_key_verified": true,
+          "rank": 2,
+          "relation_count": 2,
+          "relation_event_count_sum": 2,
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt202",
+            "67.a1@9803:uniform:256:salt209"
+          ],
+          "selected_leaf_count": 2,
+          "selected_row_count": 2,
+          "unique_form_count": 2
+        },
+        {
+          "below_rho": true,
+          "derived_secret": 702,
+          "duplicate_form_count": 0,
+          "generic_rho_steps": 125,
+          "materialized_row_count": 2,
+          "ops": 119,
+          "ops_over_rho": 0.952,
+          "public_key_verified": true,
+          "rank": 2,
+          "relation_count": 2,
+          "relation_event_count_sum": 2,
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt206",
+            "67.a1@9803:uniform:256:salt209"
+          ],
+          "selected_leaf_count": 2,
+          "selected_row_count": 2,
+          "unique_form_count": 2
+        },
+        {
+          "below_rho": false,
+          "derived_secret": 702,
+          "duplicate_form_count": 0,
+          "generic_rho_steps": 125,
+          "materialized_row_count": 3,
+          "ops": 170,
+          "ops_over_rho": 1.36,
+          "public_key_verified": true,
+          "rank": 2,
+          "relation_count": 2,
+          "relation_event_count_sum": 2,
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt202",
+            "67.a1@9803:uniform:256:salt206",
+            "67.a1@9803:uniform:256:salt209"
+          ],
+          "selected_leaf_count": 3,
+          "selected_row_count": 3,
+          "unique_form_count": 2
+        },
+        {
+          "below_rho": true,
+          "derived_secret": null,
+          "duplicate_form_count": 0,
+          "generic_rho_steps": 125,
+          "materialized_row_count": 1,
+          "ops": 51,
+          "ops_over_rho": 0.408,
+          "public_key_verified": false,
+          "rank": 0,
+          "relation_count": 0,
+          "relation_event_count_sum": 0,
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt202"
+          ],
+          "selected_leaf_count": 1,
+          "selected_row_count": 1,
+          "unique_form_count": 0
+        },
+        {
+          "below_rho": true,
+          "derived_secret": null,
+          "duplicate_form_count": 0,
+          "generic_rho_steps": 125,
+          "materialized_row_count": 1,
+          "ops": 51,
+          "ops_over_rho": 0.408,
+          "public_key_verified": false,
+          "rank": 0,
+          "relation_count": 0,
+          "relation_event_count_sum": 0,
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt206"
+          ],
+          "selected_leaf_count": 1,
+          "selected_row_count": 1,
+          "unique_form_count": 0
+        },
+        {
+          "below_rho": true,
+          "derived_secret": null,
+          "duplicate_form_count": 0,
+          "generic_rho_steps": 125,
+          "materialized_row_count": 2,
+          "ops": 102,
+          "ops_over_rho": 0.816,
+          "public_key_verified": false,
+          "rank": 0,
+          "relation_count": 0,
+          "relation_event_count_sum": 0,
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt202",
+            "67.a1@9803:uniform:256:salt206"
+          ],
+          "selected_leaf_count": 2,
+          "selected_row_count": 2,
+          "unique_form_count": 0
+        }
+      ],
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 715,
+      "verified_subset_count": 4
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_cost_decomposition_probe_v1",
+  "summary": {
+    "below_rho_verified_subset_recovery_count": 1,
+    "diagnostic_below_rho_subset_recoveries": [
+      {
+        "best_subset": {
+          "below_rho": true,
+          "derived_secret": 702,
+          "duplicate_form_count": 0,
+          "generic_rho_steps": 125,
+          "materialized_row_count": 1,
+          "ops": 68,
+          "ops_over_rho": 0.544,
+          "public_key_verified": true,
+          "rank": 2,
+          "relation_count": 2,
+          "relation_event_count_sum": 2,
+          "row_keys": [
+            "67.a1@9803:uniform:256:salt209"
+          ],
+          "selected_leaf_count": 1,
+          "selected_row_count": 1,
+          "unique_form_count": 2
+        },
+        "derived_secret": 702,
+        "event_positive_row_ops_over_rho_sum": 0.544,
+        "full_ops_over_rho": 1.36,
+        "transfer_index": 715
+      }
+    ],
+    "event_positive_rows_below_rho_recovery_count": 1,
+    "interpretation": "If below-rho subsets exist, the algebraic relation replay can be cheap once relation-bearing rows are known.  This is not a public speedup until the same pruning is predicted without verifier events.",
+    "max_best_verified_subset_ops_over_rho": 0.544,
+    "mean_full_replay_ops_over_rho": 1.36,
+    "min_best_verified_subset_ops_over_rho": 0.544,
+    "min_event_positive_row_ops_over_rho_sum": 0.544,
+    "min_full_replay_ops_over_rho": 1.36,
+    "recovery_count": 1,
+    "row_relation_event_count_distribution": {
+      "0": 2,
+      "2": 1
+    }
+  }
+}

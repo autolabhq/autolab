@@ -1,0 +1,115 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-MONOGENIC-KERNEL-BIDEGREE-R181-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: exact_signed_kernel_normal_form_rank_and_represented_norm_cost_audit
+run_count: 1
+status: gcd_equivalent_output_sensitive_elliptic_composed_resultant_open
+labels:
+  - theorem-applicability
+  - exact-finite
+  - elliptic-curve
+  - modular-composition
+  - composed-resultant
+  - held-out
+  - full-cost
+  - open-interface
+owner: P1553-R174-R181-POTEAUX-SCHOST-BFSS-KEDLAYA-UMANS-SHOUP-1997
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the R180 one-shot opening is an exact bounded-bidegree
+  monogenic kernel or only a tautological post-construction representation,
+  while preserving a stronger gcd-equivalent output-sensitive route.
+inputs:
+  - {path: p1553_m6_d5_directed_evaluation_survivor_probe_r180.py, sha256: d7925463992a6275aa05e7401bcde60dd5f4959b3a426892d561b78a6502ac60}
+  - {path: p1553_m6_d5_directed_evaluation_survivor_probe_report_r180.json, sha256: 93aff1e86ceab11135757789baf02497c5b4915843061125aa351854423bb760}
+  - {path: frozen_m6_d5_directed_evaluation_survivor.json, sha256: e3bd7aa983330fa315552dd8813cb58efec30633dbae370586edb2a43edb2231}
+  - {path: m6_d5_directed_evaluation_survivor_cost_ledger.json, sha256: 038215322dcc394d4231f234092e08e365aab6622138570fbf7eee35e1ae79cc}
+  - {path: m6_d5_directed_evaluation_survivor_replay.json, sha256: f136b663b81f712849552881eb78336e2b1bf39800377027fdcd222f6c2fa17d}
+  - {path: m6_d5_directed_evaluation_survivor_controls.json, sha256: a632faa9922d552106d8099f0efd98bb2114e81ed7c1cf7d235cd78a7cf28318}
+  - {path: d5_directed_evaluation_survivor_applicability_r180.json, sha256: 8bacbab2eeffb69cb3e3a4f2dd0f3a02bda992a9e584a648e2d9a41cb72b9c9b}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_d5_directed_evaluation_survivor_probe_r180.py, sha256: e34e4067069d9288bc57c74dfa38ef5f558e5eda8e1c44137ffb61b9a3ba0f41}
+  - {path: p1553_m6_d5_directed_evaluation_survivor_probe_gate_r180.md, sha256: b1e56b8a374d2b95a04f278e5c47910d072b937c67cbaea3f6dab7caee6d44d1}
+  - {path: p1553_m6_d5_directed_evaluation_survivor_probe_parent_report_r180.yaml, sha256: a11bb3fea860ebbceb57d43d1aff2e115867f8667143c7fe78ee8a272c144270}
+  - {path: references/poteaux_schost_modular_composition_triangular_sets_2010.pdf, sha256: 587f302dd16c724d1be6a4b629a46a684a0c35389dbc22ba45641dba54de6f32}
+  - {path: references/bostan_flajolet_salvy_schost_special_resultants_2005.pdf, sha256: 19db312c68f997949db342a050df568a009a340dd5026e4584e2c4fa59fcc375}
+  - {path: references/kedlaya_umans_fast_polynomial_factorization_modular_composition_2011.pdf, sha256: 93bd1f77b762f49bcae017d5c12ceccef38c67a956810873105cbce083634377}
+  - {path: references/shoup_generic_dlp_lower_bound_1997.pdf, sha256: 89d19aad3a4d98b563029de9135d30c8ed9b831d74f7348c286acc22f9af85b3}
+artifacts:
+  - {path: p1553_m6_monogenic_kernel_bidegree_probe_r181.py, sha256: c96a8283da297d78f3ba16d038fe6422026f09a0663d4ecacf9a290936dc178b}
+  - {path: p1553_m6_monogenic_kernel_bidegree_probe_report_r181.json, sha256: c80947aab90d88b402eb4fd42de5917b310e25455a0a7c59fc4e95b09b9f7be6}
+  - {path: frozen_m6_monogenic_kernel_bidegree.json, sha256: 5244a753b4ceb16f8cbd7f271f41bb93af6cadd58fe73152c20d65225eac1356}
+  - {path: m6_monogenic_kernel_bidegree_cost_ledger.json, sha256: 77d018d104916d41686620cc0c880881d5919de7361aee4dbf6ae95f3b4f7be1}
+  - {path: m6_monogenic_kernel_bidegree_replay.json, sha256: 860d5e366227116c8e1d3b757b498336ae08a6141640b5f480240b4fc4853b12}
+  - {path: m6_monogenic_kernel_bidegree_controls.json, sha256: 3b85e19a38058ff9f3f0d0f79238075b5f0dc32e18ba4d38da3e0a1fa82c6a6f}
+  - {path: monogenic_kernel_bidegree_applicability_r181.json, sha256: 35157589f6109dc1443a0497f8f087fd6c0338b61b97950a7cd75073940339a3}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_monogenic_kernel_bidegree_probe_r181.py, sha256: 9c064a5039e027d7692729089877bfeeeed447d0b1c7fb44b1d247cc5c69766a}
+  - {path: p1553_m6_monogenic_kernel_bidegree_probe_gate_r181.md, sha256: 24d801e02466f07a7a7e4036773a2fb362eeaae13bd5dccc947cf51d616f7469}
+verified_statements:
+  - The canonical signed target kernel has normal form A_P(u)+v*B_P(u).
+  - All nine controls have target pole order 3n and exactly 3n dense coefficient slots per source point.
+  - Every canonical coefficient matrix and fixed public target evaluation matrix has full source rank n.
+  - Canonical scan evaluations equal independently reconstructed R180 target factors entry for entry.
+  - All 13,383 desired signed incidence zeros are exact.
+  - Six development candidate factors replay R180 and three held-out factors replay fresh R174 executions.
+  - A tautological H(a) representation supplies no coefficients and receives no constructor credit.
+  - Represented triangular norms and full composed resultants retain dimension or output degree nN.
+scoped_failures:
+  post_construction_monogenic_composition: tautological_no_constructor_credit
+  explicit_exact_bounded_source_degree_fold: closed_on_nine_finite_controls
+  canonical_dense_bidegree_body_below_rho: false
+  flattened_tensor_norm_below_rho: false
+  full_composed_resultant_output_below_rho: false
+  asymptotic_full_rank_theorem: not_claimed
+  compact_high_degree_slp_compiler: open
+  gcd_equivalent_unit_normalized_kernel: open
+  output_sensitive_elliptic_composed_resultant_mod_u: open
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  factor_logs: open
+  identical_target_descent: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 21
+  total_obligations: 33
+  canonical_kernel_scope_admitted: true
+  explicit_exact_bounded_bidegree_fold_closed: true
+  flattened_norm_route_closed: true
+  gcd_equivalent_output_sensitive_resultant_admitted: false
+  lane_admitted: false
+result:
+  control_count: 9
+  development_control_count: 6
+  held_out_control_count: 3
+  held_out_seed: 18104
+  selected_divisor_degree_sum: 303
+  retained_target_count_sum: 60
+  canonical_coefficient_slot_count: 40149
+  canonical_nonzero_coefficient_count: 40149
+  desired_incidence_zero_count: 13383
+  charged_scan_pair_evaluation_count: 658473
+  selected_divisor_degree_exponent_B: 9/4
+  target_count_exponent_B: 5/4
+  canonical_explicit_bidegree_body_exponent_B: 9/2
+  flattened_tensor_norm_exponent_B: 7/2
+  full_composed_resultant_output_exponent_B: 7/2
+  global_rho_exponent_B: 5/2
+  output_sensitive_gcd_resultant_supplied: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_CANONICAL_SIGNED_TARGET_KERNEL_NORMAL_FORM__NINE_CONTROLS_INCLUDING_THREE_HELD_OUT_REPLAYED__TARGET_POLE_ORDER_3N__EXACT_COEFFICIENT_AND_PUBLIC_SCAN_RANK_N__CANONICAL_BODY_3N2_FULLY_DENSE__TAUTOLOGICAL_H_OF_A_GETS_NO_CONSTRUCTOR_CREDIT__EXPLICIT_BOUNDED_SOURCE_DEGREE_FOLD_CLOSED_ON_CONTROLS__FLATTENED_NN_NORM_AND_FULL_COMPOSED_RESULTANT_B7O2__GCD_EQUIVALENT_OUTPUT_SENSITIVE_RESULTANT_OPEN__NO_ASYMPTOTIC_CIRCUIT_LOWER_BOUND__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute one gcd-equivalent output-sensitive elliptic composed
+  resultant modulo U. Accept the O(n)-size signed line-product SLP and O(N)
+  target divisor, discard target-dependent units, and emit G_1 in softly
+  O(n+N) work without the canonical 3n squared body, an nN tensor element, or
+  the full degree-nN composed resultant. Test direct transposed power
+  projections or subresultant traces modulo U on seed 18104. Reject candidate
+  oracles, unit-cost norms, and post-construction modular composition.

@@ -1,0 +1,227 @@
+{
+  "execution_status": {
+    "missing_inputs": [
+      "collision_records"
+    ],
+    "next_step": "Collect collision-level raw records in the original collection path and rerun this script to generate exact matrix artifacts. Synthetic summaries can guide ranking, but they are not durable replay evidence.",
+    "records_missing_exact_inputs": 3,
+    "records_with_missing_collision_sources": 3,
+    "replay_ready_records": 0,
+    "routing_ablation_records": 3,
+    "status": "missing_exact_inputs"
+  },
+  "generated_at": "2026-07-27T07:25:55.218228Z",
+  "note_url": "https://x.com/askalphaxiv/status/2076737985559822734?s=46",
+  "records": [
+    {
+      "augmented_rank": 3,
+      "collision_count": 16,
+      "configuration": "consecutive_canonical_mask1",
+      "cross_shift_collision_count": 10,
+      "curve": {
+        "bits": 24,
+        "seed": 1432401,
+        "split": "prospective"
+      },
+      "factor_base_size_B": 12,
+      "matrix_variants": [
+        {
+          "augmented_rank_observed": 3,
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 16,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 3,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "all_edge"
+        },
+        {
+          "augmented_rank_observed": 3,
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 10,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 3,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "cross_shift_only"
+        },
+        {
+          "augmented_rank_observed": 3,
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 6,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 3,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "within_shift_only"
+        }
+      ],
+      "policy": "two_map_union",
+      "prefix": "full",
+      "raw_collision_records_present": false,
+      "relation_rank": 3,
+      "relation_row_count": 4,
+      "replay_mode": "synthetic",
+      "unknown_factor_count": 4,
+      "within_shift_collision_count": 6
+    },
+    {
+      "augmented_rank": 2,
+      "collision_count": 12,
+      "configuration": "mixed_balanced_stride_mask1",
+      "cross_shift_collision_count": 4,
+      "curve": {
+        "bits": 24,
+        "seed": 1432401,
+        "split": "prospective"
+      },
+      "factor_base_size_B": 12,
+      "matrix_variants": [
+        {
+          "augmented_rank_observed": 2,
+          "max_rank_estimate": 2,
+          "observed_collision_edges": 12,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 2,
+          "relation_row_count": 2,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "all_edge"
+        },
+        {
+          "augmented_rank_observed": 2,
+          "max_rank_estimate": 2,
+          "observed_collision_edges": 4,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 2,
+          "relation_row_count": 2,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "cross_shift_only"
+        },
+        {
+          "augmented_rank_observed": 2,
+          "max_rank_estimate": 2,
+          "observed_collision_edges": 8,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 2,
+          "relation_row_count": 2,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "within_shift_only"
+        }
+      ],
+      "policy": "two_map_union",
+      "prefix": "full",
+      "raw_collision_records_present": false,
+      "relation_rank": 2,
+      "relation_row_count": 2,
+      "replay_mode": "synthetic",
+      "unknown_factor_count": 4,
+      "within_shift_collision_count": 8
+    },
+    {
+      "augmented_rank": 1,
+      "collision_count": 8,
+      "configuration": "random_hash_mask1",
+      "cross_shift_collision_count": 4,
+      "curve": {
+        "bits": 24,
+        "seed": 1432401,
+        "split": "prospective"
+      },
+      "factor_base_size_B": 12,
+      "matrix_variants": [
+        {
+          "augmented_rank_observed": 1,
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 8,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 1,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "all_edge"
+        },
+        {
+          "augmented_rank_observed": 1,
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 4,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 1,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "cross_shift_only"
+        },
+        {
+          "augmented_rank_observed": 1,
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 4,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_present": false,
+          "relation_rank_observed": 1,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if raw collision records become available.",
+          "replay_mode": "synthetic",
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "within_shift_only"
+        }
+      ],
+      "policy": "two_map_union",
+      "prefix": "full",
+      "raw_collision_records_present": false,
+      "relation_rank": 1,
+      "relation_row_count": 4,
+      "replay_mode": "synthetic",
+      "unknown_factor_count": 4,
+      "within_shift_collision_count": 4
+    }
+  ],
+  "required_variants": [
+    "all_edge",
+    "cross_shift_only",
+    "within_shift_only"
+  ],
+  "schema": "ecdlp.p1436_collision_to_rank_routing_ablation.v1",
+  "source": {
+    "source_author": "askalphaxiv",
+    "source_post_id": "2076737985559822734",
+    "source_post_url": "https://x.com/askalphaxiv/status/2076737985559822734",
+    "source_post_url_with_query": "https://x.com/askalphaxiv/status/2076737985559822734?s=46",
+    "source_query": "?s=46",
+    "tweet_summary": "Introducing autoresearch with GPT 5.6\n\nWe had GPT 5.6 Sol reproduce the key findings from \"Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in LLM Fine-tuning\"\n\nCompared to GPT-5.5 and even Fable 5, GPT-5.6 stayed more focused on a few, critical experiments and spent less time on peripheral details. It also asked fewer \"clarification\" questions and independently resolved ambiguities instead of pushing them back to us\n\n@OpenAI pushing the boundaries of the automated research loop with models that don't have handcuffs",
+    "tweet_summary_is_verbatim": true,
+    "tweet_text": "Introducing autoresearch with GPT 5.6\n\nWe had GPT 5.6 Sol reproduce the key findings from \"Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in LLM Fine-tuning\"\n\nCompared to GPT-5.5 and even Fable 5, GPT-5.6 stayed more focused on a few, critical experiments and spent less time on peripheral details. It also asked fewer \"clarification\" questions and independently resolved ambiguities instead of pushing them back to us\n\n@OpenAI pushing the boundaries of the automated research loop with models that don't have handcuffs",
+    "tweet_text_included": true,
+    "tweet_text_sha256": "1e8f3074d67db94e5801e5e247b6844f1170dc2d9616920874a66001cdacb0cf"
+  }
+}

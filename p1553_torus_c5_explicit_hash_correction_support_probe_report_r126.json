@@ -1,0 +1,148 @@
+{
+  "admission": {
+    "coordinate_hash_correction_semantics_admitted": true,
+    "failures": [
+      "inside_cap_implicit_membership_complete",
+      "inside_cap_five_source_recovery_complete",
+      "known_rhs_relation_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "pollard_rho_improvement_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 20,
+    "obligations": {
+      "all_correction_sources_replay": true,
+      "all_correction_unions_equal_c5_support": true,
+      "all_explicit_correction_lists_at_least_c5_support": true,
+      "breakthrough_complete": false,
+      "coordinate_hashes_use_no_dlp": true,
+      "coverage_lower_bound_explicit": true,
+      "factor_logs_complete": false,
+      "finite_controls_receive_no_asymptotic_credit": true,
+      "global_deduplication_boundary_explicit": true,
+      "identical_target_descent_complete": false,
+      "iid_B15O4_support_cost_charged": true,
+      "implicit_correction_circuits_preserved": true,
+      "inside_cap_five_source_recovery_complete": false,
+      "inside_cap_implicit_membership_complete": false,
+      "known_rhs_relation_rank_complete": false,
+      "pollard_rho_improvement_complete": false,
+      "r125_nonhomomorphic_correction_interface_inherited": true,
+      "shoup_improvement_complete": false,
+      "twelve_source_bindings_verified": true,
+      "twenty_four_coordinate_hash_controls_complete": true
+    },
+    "passed_obligation_count": 12,
+    "scoped_explicit_correction_support_negative_admitted": true
+  },
+  "artifacts": {
+    "controls": "torus_c5_explicit_hash_correction_support_controls.json",
+    "cost": "torus_c5_explicit_hash_correction_support_cost_ledger.json",
+    "frozen": "frozen_torus_c5_explicit_hash_correction_support.json",
+    "logs_descent": "factor_logs_and_identical_descent_r126.json",
+    "source_replay": "torus_c5_explicit_hash_correction_support_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "EXACT_COORDINATE_HASH_CORRECTION_CONTROLS_AND_SCOPED_EXPLICIT_SUPPORT_NEGATIVE_ONLY_WITHHOLD_PROMOTION",
+  "classification": "ARBITRARY_COORDINATE_HASH_C2C3_EXPLICIT_CORRECTION_UNION_EQUALS_C5_SUPPORT__SUM_BUCKET_PAIR_PRODUCT_ENTRIES_AT_LEAST_C5__GLOBAL_DEDUP_DICTIONARY_STILL_C5__IID_STATE_B15O4_OVER_CAP__ACTUAL_R82_NO_DLP_HASH_AND_SOURCE_CONTROLS_EXACT__IMPLICIT_ADAPTIVE_CORRECTION_CIRCUIT_OPEN__NO_RANK_LOGS_DESCENT_SHOUP_BREAKTHROUGH",
+  "disposition": "ADMIT_COORDINATE_HASH_EXACT_CORRECTION_AND_SOURCE_CONTROLS_ONLY__REJECT_EXPLICIT_PER_BUCKET_AND_GLOBAL_DEDUP_PRODUCT_DICTIONARIES_AT_C5_B15O4_STATE__PRESERVE_IMPLICIT_ADAPTIVE_CORRECTION_CIRCUIT__NO_LOCATOR__NO_RANK__NO_LOGS__NO_DESCENT__NO_SHOUP__NO_BREAKTHROUGH",
+  "finite_evidence": {
+    "all_correction_sources_replay": true,
+    "all_correction_unions_equal_c5_support": true,
+    "all_hashes_use_field_coordinates_without_dlp": true,
+    "asymptotic_credit": false,
+    "control_count": 24,
+    "maximum_correction_duplication_ratio": 4.658008658008658,
+    "minimum_correction_duplication_ratio": 2.0
+  },
+  "next_action": "Freeze one implicit correction circuit or adaptive probe scheme for a nonhomomorphic coordinate hash. It must evaluate exact target membership without listing per-bucket or globally deduplicated C5 products, prove deterministic noncancellation and empty semantics, recover five projective sources, fit B^(9/4+o(1)) total setup and polylogarithmic arbitrary-target work, avoid field DLP, and charge rank, logs, identical descent, memory, field operations, and bits.",
+  "non_claims": [
+    "The lower bound covers represented correction product entries.",
+    "It does not cover implicit or adaptive correction circuits.",
+    "Finite controls receive no asymptotic credit.",
+    "No complete source index, rank, logs, or descent is supplied.",
+    "No generic-prime ECDLP or Shoup improvement is claimed."
+  ],
+  "pollard_rho_improvement": false,
+  "schema": "p1553.torus_c5_explicit_hash_correction_support.r126.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "r119_gate": {
+      "path": "p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_gate_r119.md",
+      "sha256": "941e375918c4acd1be8293fcc40666879b4f5178b4454e28c21487cb9be9a9e9"
+    },
+    "r121_gate": {
+      "path": "p1553_m6_small_k_multiplicative_c5_moment_torus_probe_gate_r121.md",
+      "sha256": "9266e3655a3f4176280834ec91c897cc7d30274382df6e197628af37bae71309"
+    },
+    "r124_gate": {
+      "path": "p1553_torus_c5_linear_sketch_circulant_probe_gate_r124.md",
+      "sha256": "30a3ce3036bab96731430a662cde3ded8e63b9fe1326942a5091148b3e939938"
+    },
+    "r125_controls": {
+      "path": "torus_c5_prime_order_homomorphic_fingerprint_controls.json",
+      "sha256": "28da34281db3b0ea782b9b5bb8b89c39eaabb902f22cec499113d4b3cc1ba2b9"
+    },
+    "r125_cost": {
+      "path": "torus_c5_prime_order_homomorphic_fingerprint_cost_ledger.json",
+      "sha256": "095ae32e7b927c2639de8cd02ff6818229a5026065d49407a0f42e3b0fea828e"
+    },
+    "r125_frozen": {
+      "path": "frozen_torus_c5_prime_order_homomorphic_fingerprint.json",
+      "sha256": "be8bc523f1970c07bcc1e2285070051061c1e6dd189da717d879b539012e88ff"
+    },
+    "r125_gate": {
+      "path": "p1553_torus_c5_prime_order_homomorphic_fingerprint_probe_gate_r125.md",
+      "sha256": "b4d19d79a68076f8850afd7c079c7f25bb108ba9aee853330aecb508d9d11155"
+    },
+    "r125_logs": {
+      "path": "factor_logs_and_identical_descent_r125.json",
+      "sha256": "750c96ae91a642278df899d845db00d26e70858d74af22dc7b51260584303c1a"
+    },
+    "r125_parent": {
+      "path": "p1553_torus_c5_prime_order_homomorphic_fingerprint_probe_parent_report_r125.yaml",
+      "sha256": "29d29a6e507839ee60964fd49cae14ed3ee9dab348c961a99586acd2ea48298d"
+    },
+    "r125_producer": {
+      "path": "p1553_torus_c5_prime_order_homomorphic_fingerprint_probe_r125.py",
+      "sha256": "28a74fc7699f34569a30c3b378ef80985b8ff09bd01aed497df41a98c80160e4"
+    },
+    "r125_replay": {
+      "path": "torus_c5_prime_order_homomorphic_fingerprint_replay.json",
+      "sha256": "63c51d0728f52b0618c6afdf73a3ffda070282d7fb79663b79fceb85effcc8c0"
+    },
+    "r125_report": {
+      "path": "p1553_torus_c5_prime_order_homomorphic_fingerprint_probe_report_r125.json",
+      "sha256": "c6f2bd31d83d2b959bd07477d0697f2e91180a5f65e02236a3c32cffd6c43a9b"
+    }
+  },
+  "theorem": {
+    "coverage_identity": "union_(a,b) L_(a,b)=C2*C3=C5",
+    "entry_lower_bound": "sum_(a,b)|L_(a,b)| >= |union_(a,b)L_(a,b)| = |C5|",
+    "global_deduplication_boundary": "A globally deduplicated exact product dictionary still has exactly |C5| target entries.",
+    "iid_support_inheritance": "Under the R119 iid-distinct-support theorem at |C|=B^(3/4+o(1)), |C5|=B^(15/4+o(1)) with high probability.",
+    "inside_setup_cap": false,
+    "minimum_explicit_correction_state_exponent_B": {
+      "decimal": 3.75,
+      "exact": "15/4"
+    },
+    "model": "Arbitrary hashes h2:C2->A and h3:C3->B, plus an explicit correction list L_(a,b) containing every distinct product xy for x in C2 bucket a and y in C3 bucket b.",
+    "not_covered": [
+      "implicit correction circuits",
+      "adaptive probes into compressed correction data",
+      "nonlinear algebraic certificates not listing product targets",
+      "bounded-error fingerprints",
+      "general arithmetic circuits or data structures"
+    ],
+    "scope_limits": [
+      "explicit per-bucket distinct-product correction lists",
+      "globally deduplicated explicit exact product dictionaries",
+      "arbitrary target-independent hashes",
+      "exact membership with represented product keys"
+    ],
+    "source_backpointer_consequence": "Attaching one C2 and one C3 source to each represented product does not reduce the number of represented product entries."
+  }
+}

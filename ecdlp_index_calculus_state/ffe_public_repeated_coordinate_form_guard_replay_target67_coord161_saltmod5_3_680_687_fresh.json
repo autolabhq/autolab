@@ -1,0 +1,44 @@
+{
+  "cases": [],
+  "context_error_count": 0,
+  "context_errors": [],
+  "context_errors_truncated": false,
+  "method": "public_row_rule_replay_with_frozen_form_orientation_guard",
+  "non_claims": [
+    "The form guard is applied after relation-event scanning; row scan costs are still charged.",
+    "This is a frozen replay wrapper, not fresh validation unless the input window was held out from guard discovery.",
+    "Rejected cases may still have rank and relation count; rejection means the candidate-position alignment guard failed."
+  ],
+  "parameters": {
+    "activation_rule": null,
+    "event_summary_limit": 16,
+    "form_guard": "candidate_pos_span=0",
+    "row_rules": [
+      {
+        "name": "coord161_saltmod5_3",
+        "row_rule": "row_activate:coordinate_key=161,6976&leaf_min=2&salt_mod5=3"
+      }
+    ],
+    "windows": [
+      {
+        "artifact": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_680_687_fresh_coordinate_gate.json",
+        "name": "w680_687_fresh"
+      }
+    ]
+  },
+  "schema": "ecdlp_public_repeated_coordinate_form_guard_replay_probe_v1",
+  "summary": {
+    "best_guarded_verified_cases": [],
+    "by_rule": [],
+    "guard_passed_relation_case_count": 0,
+    "guard_rejected_relation_case_count": 0,
+    "guarded_below_rho_count": 0,
+    "guarded_verified_case_count": 0,
+    "input_case_count": 0,
+    "mean_guard_passed_ops_over_rho": null,
+    "min_guard_passed_ops_over_rho": null,
+    "rejected_but_verified_case_count": 0,
+    "relation_case_count": 0,
+    "selected_case_count": 0
+  }
+}

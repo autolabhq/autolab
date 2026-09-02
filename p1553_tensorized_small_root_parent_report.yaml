@@ -1,0 +1,121 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-TENSORIZED-SMALL-ROOT-R7-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: revise_scoped_reduction
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+owner: P1553/P1536/IDEA-049
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the constant-rank separated coefficient tensor of the R6
+  five-label S_6 predicate supports an exact implicit Coppersmith lattice and
+  decision-and-witness source locator inside B^(9/4) setup and B^(5/4) online
+  gates.
+inputs:
+  - path: staged/p1553_small_root_coordinate_gate_r6.md
+    sha256: 03e9234bb0e17d7cf97e85a46735748a61fefabb300278c52fef11b41755be05
+  - path: staged/p1553_small_root_parent_report.yaml
+    sha256: c4202511d97248dcf9284c63680ae9cc2cc1b75df8a99fc71422b0c0f03b4a7d
+  - path: ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md
+    sha256: 81ec3515b584c36a809c155b5f26127bce91c09d7bfe6bccc425cdef07d51393
+  - path: coordination/tasks/TASK-20260718-P1553-FD-REPORTER-P1/finite_deck_reporter_spec.md
+    sha256: fd12ff17055a108ef31e58b2fb813feb1b8dc8eb2950db127a7a623e69a4d77f
+  - path: coordination/tasks/TASK-20260718-P1553-TENSOR-RT-R1/red_team_report.yaml
+    sha256: 0a48143e4b5a25fad52200abf7d43f7094ef18af6df0348ea9aa987ecd15002d
+  - path: ideas/deferred/ECDLP-IDEA-049_bounded_root_decomposition_transducer_hypothesis.md
+    sha256: 1a58addced8c2bb14590eb9a74252707409d01e7acb6fbab206dc12af974b1e0
+  - path: ideas/artifacts/ECDLP-IDEA-049/integral_addition_transducer_derivation.md
+    sha256: cbbe0f83426067fefde0a1f440afafad3d856ad49540469219df78da5a716b4d
+frozen_interface:
+  group_order: N=p^(1+o(1))
+  label_bound: B=N^(1/5)
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted existence plus one signed x-class-labelled source
+verified_statements:
+  - >-
+    Because S_6 is fixed, substituting five univariate coordinate maps gives a
+    coefficient tensor over F_p with constant CP rank and B^(1+o(1)) factor
+    storage, including after univariate reduction modulo the label-domain
+    polynomials.
+  - >-
+    Weighted inner products of two supplied bounded-rank CP tensors factor
+    into one-dimensional inner products. An exact Gram matrix for a supplied
+    cap-sized shift family can therefore be computed without materializing the
+    B^5 ambient coefficient vector.
+  - >-
+    Literal-power generators g_(k,alpha)=p^(m-k) z^alpha tilde(F_R)^k retain
+    p^m divisibility at every root and have CP rank at most
+    binomial(r+k-1,k). Integer reduction modulo the domain polynomials
+    preserves label values and separation.
+  - >-
+    Gram-form LLL returns integer combinations whose represented CP rank is at
+    most the total input rank A. In the naive pairwise implementation, setup
+    and online costs are B^(2+o(1))*A^2 and B^(1+o(1))*A^2, so both caps
+    require A<=B^(1/8+o(1)).
+  - >-
+    This implicit Gram observation corrects any inference that B^5 ambient
+    dimension alone is a runtime lower bound. Generator count, integer height,
+    tensor-rank growth, lattice reduction, and root recovery must be charged.
+  - >-
+    A modular CP decomposition does not bound the rank of the centered integer
+    carry tensor K_k in ctr_(p^k)(tilde(F_R)^k)=tilde(F_R)^k-p^k*K_k.
+    Such a low-rank carry is sufficient for compact recentering but is not
+    formally necessary because the uncentered separated lift is valid.
+  - >-
+    On generic full-degree interpolation maps, the natural separated integer
+    lift has a nonzero coefficient at root-scaled degree Omega(B), hence norm
+    at least B^(Omega(B)); multiplying by p^(m-1) does not make that vector
+    Howgrave-Graham-short relative to p^m.
+  - >-
+    Standard monomial p^k-shifts supply arbitrary entrywise cancellations in
+    the integer domain quotient, whose rank is Theta(B^5). No smaller
+    structured cancellation module with a determinant theorem is constructed.
+  - >-
+    Although LLL output rank is bounded by A in the retained-combination
+    representation, no admitted input module returns five useful short integer
+    polynomials or exact restricted decision-and-source recovery.
+scoped_positive_control:
+  modular_predicate_cp_rank: constant_in_B
+  modular_factor_storage: B^(1+o(1))
+  supplied_low_rank_gram_computation: implicit_and_exact
+  literal_power_rank: binomial(r+k-1,k)
+  naive_total_rank_cap: A<=B^(1/8+o(1))
+scoped_failures:
+  natural_root_scaled_separated_lift: B^(Omega(B))_norm_on_full_degree_decks
+  standard_entrywise_carry_module: Theta(B^5)_quotient_rank
+  structured_cancellation_shift_constructor: unsupplied
+  lll_output_rank: bounded_by_total_input_rank_A
+  exact_multivariate_root_recovery: unsupplied
+  standard_quotient_root_recovery: B^5
+  standard_balanced_source_locator: B^3
+unproved_or_outside_scope:
+  - a special useful factor deck whose coordinate maps have proved low degree
+    or low-height integer lifts
+  - low-rank centered carry tensors for the actual S_6 interpolation family
+  - implicit lattice algorithms outside the screened CP/TT and Gram route
+  - unrestricted multivariate Coppersmith or arithmetic-circuit lower bounds
+  - relation density, independent rank, factor logs, and scalar-blind descent
+deduplication:
+  - IDEA-049 owns bounded integer transducers and small-root source extraction
+  - P1536 owns the constant-rank S_6 predicate versus zero-locator distinction
+  - P1553 owns Query2P1, restrictions, sign filtering, and source replay
+  - the P1553 tensor audit owns pre-mask CP/TT compression and exact-support gates
+disposition: >-
+  REVISE_SCOPED_REDUCTION__FIVE_LABEL_S6_COEFFICIENT_TENSOR_HAS_CONSTANT_MODULAR_CP_RANK__LITERAL_POWER_SHIFT_RANK_BINOMIAL_R_PLUS_K_MINUS_1_K__DOMAIN_REDUCTION_PRESERVES_SEPARATED_FACTORS_AND_VALUES__EXACT_IMPLICIT_GRAM_LLL_AVOIDS_B5_MATERIALIZATION__OUTPUT_COMBINATION_RANK_BOUNDED_BY_TOTAL_INPUT_RANK_A__NAIVE_GRAM_CAP_REQUIRES_A_LE_B1_OVER_8__MODULAR_RANK_DOES_NOT_BOUND_CENTERED_INTEGER_P_K_CARRY_RANK__NATURAL_SEPARATED_LIFT_HAS_B_TO_OMEGA_B_ROOT_SCALED_NORM_ON_FULL_DEGREE_DECKS__STANDARD_ENTRYWISE_P_K_SHIFT_MODULE_HAS_B5_RANK__NO_CAP_SIZED_STRUCTURED_CANCELLATION_MODULE__NO_FIVE_USEFUL_SHORT_POLYNOMIALS_OR_EXACT_DECISION_WITNESS_THEOREM__STANDARD_ROOT_RECOVERY_B5_OR_B3__RYAN2025_EXPLICIT_AND_HEURISTIC_AT_MULTIVARIATE_RECOVERY__IDEA049_P1536_P1553_MERGE__RANK_LOGS_DESCENT_UNSUPPLIED__NO_P1554__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Prove or refute one target-symbolic quotient-lattice module whose
+  literal-power shifts preserve p^m divisibility, have total separated rank
+  A<=B^(1/8+o(1)) under the naive exact Gram route, yield five useful
+  Howgrave-Graham-short outputs, and support exact subset-stable
+  decision-and-source recovery within B^(5/4+o(1)); if its needed
+  cancellations require the full B^5 quotient module, close this
+  tensor-lattice branch and preserve Query2P1.

@@ -1,0 +1,70 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R23-RANDOM-FIFTH-DECK-CORRELATION-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T05:23:40Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only, R23 is a new scoped probabilistic
+  theorem requiring independent review, and it closes only fifth decks
+  sampled independently after the map and endpoint deck are frozen.
+bindings:
+  r22_gate_sha256: ba1661d183f4e8b7291a1a34b48bdab2d01485da45c9753bbfb16e82b52208ab
+  r22_bundle_hash_list_sha256: 77aac4a770d4717a43078fd2573f92c22048f5ff55fe931139a990e0cb02e5d1
+  r22_staging_receipt_sha256: 81fb9fba27d34955a59a258804aed8a2f006250f3d9f6c36b0532ec8512a13be
+  r23_gate_sha256: de9a0a496fc6696ed6e976351476c56262484124c8c7d7cc2cdbddd16a6cc184
+  r23_parent_report_sha256: 12494c453b4c9c3fa45b72c4f1de76b11bbbeb8a2bf6a6dd14d6dede6f6a4b25
+  r23_artifact_index_sha256: 8efff2f8ae6a85fdf7a2dd6ae364e0e8f86f6e165d6a4c7fb4edbabed9c223a5
+  r23_bundle_hash_list_sha256: 29bfdbeca9cd14a579f134ca2b5926e3fb4858f13455e1d8dfc066cbcb1008da
+result:
+  classification: scoped_random_deck_noncompression
+  fixed_map_and_endpoint_deck: required
+  independently_sampled_fifth_deck: required
+  exact_collision_correlation: pass
+  pairwise_branch_relation_fiber_degree: O(d)
+  expected_nontrivial_ordered_collisions: O(B)
+  expected_source_count: Theta(B^3)
+  expected_complete_image_size: B^3-O(B)
+  fixed_constant_compression_probability: O(B^-2)
+  required_balanced_collision_budget: Omega(S*L*d)
+  setup_state_cap: B^(9/4+o(1))
+  adaptive_support_co_design: not_classified
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r23_hash_list: pass
+  r23_parent_yaml_parse: pass
+  exact_sampling_probabilities_checked: pass
+  exact_collision_energy_identities_checked: pass
+  clean_temporary_replay_with_r16_through_r23_gates_and_r23_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T05_23_40Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the theorem requires the map and endpoint deck to precede fifth sampling
+  - adaptive coefficient fitting and adversarial support co-design are outside scope
+  - deterministic field-defined factor-base subsets are not asserted random
+  - repeated occurrences do not certify independent relation rank
+  - no fresh target, R10, density, rank, factor logs, or descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Derive or refute one prospective common-factor-free support co-design whose
+  algebraic fifth-deck rule is frozen before endpoint, target, and holdout
+  choices and which certifies C_Q=Omega(SLd), exact sources, fresh targets,
+  R10 queries, rank, logs, and descent without adaptive advice or an SL table.

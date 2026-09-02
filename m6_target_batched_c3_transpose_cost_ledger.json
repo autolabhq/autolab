@@ -1,0 +1,147 @@
+{
+  "any_scoped_route_meets_both_caps": false,
+  "candidate_work_credit": false,
+  "canonical_source_support_theorem": {
+    "canonical_source_count": "binom(|A|+5,6)*binom(|C|+5,6)",
+    "leading_denominator": 518400,
+    "leading_ratio_to_group_order": {
+      "decimal": 1.9290123456790124e-06,
+      "exact": "1/518400"
+    },
+    "regular_nonzero_boolean_section_zero_degree": "Omega(q)",
+    "regular_section_pole_degree_exponent_B": {
+      "decimal": 5.0,
+      "exact": "5"
+    },
+    "straight_line_circuit_lower_bound_claimed": false,
+    "support_at_most_canonical_source_count": true,
+    "zero_target_fraction_lower_bound": "1-1/(6!)^2+o(1)"
+  },
+  "dinur_golovnev_k7": {
+    "k": 7,
+    "n": "|C|=B^(3/4+o(1))",
+    "online_compatible_delta": {
+      "decimal": 1.0,
+      "exact": "1"
+    },
+    "sha256": "e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c",
+    "source": "references/dinur_golovnev_3sum_indexing_2512.04258v2.pdf",
+    "state_exponent_B": {
+      "decimal": 4.125,
+      "exact": "33/8"
+    },
+    "theorem": "S=soft-O(n^(k-1/2-delta)), T=soft-O(n^delta), 0<=delta<=1"
+  },
+  "normalization": {
+    "a6_batch": "B^(1/2+o(1))",
+    "a_deck": "|A|=B^(1/12+o(1))",
+    "c3_state": "B^(9/4+o(1))",
+    "c_deck": "|C|=B^(3/4+o(1))",
+    "group_order": "q=B^(5+o(1)) prime"
+  },
+  "prime_cyclotomic_translation_rank_theorem": {
+    "base_field_linear_rank_theorem_claimed": false,
+    "extends_r77_finite_controls": true,
+    "proof": "A vanishing proper 0/1 deck polynomial at a primitive qth root would be divisible by Phi_q=1+X+...+X^(q-1), forcing all q coefficients equal.",
+    "six_factor_fourier_identity": "hat(h)(chi)=hat(mu_A)(chi)^6*hat(mu_C)(chi)^6",
+    "state_exponent_B": {
+      "decimal": 5.0,
+      "exact": "5"
+    },
+    "statement": "For prime q and every nonempty proper D subset Z/qZ, sum_(d in D) zeta^(r*d) is nonzero for every qth character r over characteristic zero.",
+    "translation_orbit_rank": "q"
+  },
+  "routes": [
+    {
+      "inside_setup_cap": false,
+      "route_id": "universal_characteristic_zero_linear_shift_sketch",
+      "scope": "exact characteristic-zero linear shift-equivariant state",
+      "state_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "theorem": "prime-cyclotomic deck DFT nonvanishing"
+    },
+    {
+      "arithmetic_circuit_lower_bound_claimed": false,
+      "inside_setup_if_materialized": false,
+      "pole_degree_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "route_id": "regular_rational_boolean_target_section",
+      "zero_divisor_degree_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      }
+    },
+    {
+      "a6_batch_exponent_B": {
+        "decimal": 0.5,
+        "exact": "1/2"
+      },
+      "delta": {
+        "decimal": 1.0,
+        "exact": "1"
+      },
+      "fresh_batch_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "inside_fresh_batch_cap": true,
+      "inside_setup_cap": false,
+      "integer_residue_transfer_to_prime_order_ec": false,
+      "k": 7,
+      "query_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "route_id": "dinur_golovnev_k7_index_on_original_c_deck",
+      "state_exponent_B": {
+        "decimal": 4.125,
+        "exact": "33/8"
+      }
+    },
+    {
+      "exact_source_reporting": true,
+      "fresh_batch_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "inside_fresh_batch_cap": true,
+      "inside_setup_cap": false,
+      "query_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "route_id": "trivial_k7_store_five_c_sums",
+      "state_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      }
+    },
+    {
+      "inside_fresh_batch_cap": true,
+      "inside_setup_cap": false,
+      "query_exponent_B": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "route_id": "r116_equal_c3_index_online_boundary",
+      "state_exponent_B": {
+        "decimal": 4.875,
+        "exact": "39/8"
+      }
+    },
+    {
+      "fresh_batch_exponent_B": {
+        "decimal": 2.75,
+        "exact": "11/4"
+      },
+      "inside_fresh_batch_cap": false,
+      "route_id": "r116_explicit_target_translated_divisor_batch"
+    }
+  ],
+  "schema": "p1553.m6_target_batched_c3_transpose_cost_ledger.r117.v1",
+  "unconditional_data_structure_lower_bound_claimed": false
+}

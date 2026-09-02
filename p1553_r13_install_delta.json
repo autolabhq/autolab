@@ -1,0 +1,248 @@
+{
+  "schema": "crypto.autoresearch.merge_install_delta.v1",
+  "bundle_id": "P1553-R13-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compose_compare_and_merge",
+  "base_bundle": {
+    "bundle_id": "P1553-R12-20260719",
+    "manifest": "p1553_r12_install_delta.json",
+    "manifest_sha256": "452367a2158cd17ff252d1e3e6b2344e644082be8b9d6e5060ebc50ffbc5f811",
+    "manifest_hash_list": "p1553_r12_install_delta.sha256",
+    "manifest_hash_list_sha256": "273fcb0e624e83ae9011ac8d0ae944beac8c88b868f7eda84a5966bd1a18dbeb",
+    "simulated_queue_sha256": "2a5432d7736d39e754b367afc6a0e0766051810467d2ae4ab81e9acf73169a55"
+  },
+  "upstream_bundle": {
+    "bundle_id": "P1553-R5-R7-20260719",
+    "manifest_sha256": "41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a",
+    "manifest_hash_list_sha256": "0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d"
+  },
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6",
+    "ideas/artifacts/README.md": "1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "composition_rule": "Apply R5-R7, R8, R9, R10, R11, R12, and R13 to one private copy of the live queue, validate the combined result, then install all files and dispatch state atomically. Never install this delta alone.",
+  "file_installs": [
+    {
+      "source": "p1553_erased_image_geometric_resolution_parent_report.yaml",
+      "sha256": "b4c1645ab58f470b38519ebb0e9bd993547a5a3d39d56a1c8eb82413ae0ff838",
+      "destination": "coordination/tasks/TASK-20260719-P1553-EIG-P1/erased_image_geometric_resolution_report.yaml"
+    },
+    {
+      "source": "p1553_erased_image_geometric_resolution_gate_r13.md",
+      "sha256": "78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5",
+      "destination": "coordination/tasks/TASK-20260719-P1553-EIG-P1/erased_image_geometric_resolution_gate_r13.md"
+    },
+    {
+      "source": "p1553_erased_image_geometric_resolution_red_team.yaml",
+      "sha256": "6ccc492fab0553ec2a808300f7bf41cd9f26043bd3e3cd64eb21f60b58df169c",
+      "destination": "coordination/tasks/TASK-20260719-P1553-EIG-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_erased_image_geometric_resolution_red_team.md",
+      "sha256": "dd34379a1daf393f27f7750253d95bf95383f4d857a0e11c6239c5eb2a4d0e0a",
+      "destination": "coordination/tasks/TASK-20260719-P1553-EIG-RT-R1/erased_image_geometric_resolution_red_team.md"
+    },
+    {
+      "source": "p1553_erased_image_geometric_resolution_gate_r13.md",
+      "sha256": "78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5",
+      "destination": "ideas/artifacts/ECDLP-IDEA-195/p1553_erased_image_geometric_resolution_gate_r13.md"
+    },
+    {
+      "source": "p1553_r13_artifact_index_README.md",
+      "sha256": "282ca79465b607cfe11e5113008ac9b8a9c14b0bd323a1eebce9d16aa908225c",
+      "destination": "ideas/artifacts/README.md"
+    }
+  ],
+  "queue_merge": {
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-EIG-P1",
+        "title": "Bound and construct the fifth-erased Kummer image",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 4,
+        "review_required": true,
+        "depends_on": [
+          "TASK-20260719-P1553-HKP-RT-R1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-HKP-P1/high_degree_kummer_provenance_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-HKP-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-CKR-P1/cartesian_kummer_rigidity_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-CKR-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-003/p1533_collision_multiset_resultant_spec.md",
+          "ideas/artifacts/ECDLP-IDEA-012/p1553_target_label_common_factor_gate_r4.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-EIG-P1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "The transposed fixed-endpoint branch-energy floor, the exact O(K) image/multiplicity/joint-source representation, and the first represented object in every standard graph-first elimination route.",
+          "inconclusive_decision": "Close explicit erased-image state below d=B^(3/4) on certified dense support and close only the named graph-first represented routes; preserve output-sensitive compilers, compressed completeness, child range counting, fresh-target action, and arbitrary circuits.",
+          "local_ambiguity_rule": "Separate fixed-endpoint fifth collisions from unproved cross-endpoint energy; pair geometric multiplicity with occurrence weights; require J_12 and J_5 to name one common preimage; separate representation size from construction and completeness.",
+          "peripheral_exclusions": [
+            "No cross-endpoint O(d^2) collision claim without common-component classification",
+            "No graph degree promoted to an unrestricted image or resultant lower bound",
+            "No source witness or total-mass check treated as image completeness",
+            "No P1554, experiment, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after the energy proof, graph/image degree split, joint source section, completeness and child counterexamples, P1510 control, and R10 rank-two omission are independently reconstructed."
+        },
+        "resource_estimate": {
+          "dominant_stage": "surviving output-sensitive erased-image compiler in degree B^(3/4) through B",
+          "stages": [
+            {
+              "id": "pair_occurrence_index",
+              "work": "B^(2+o(1)) setup/state"
+            },
+            {
+              "id": "erased_image_floor",
+              "work": "K at least S^2*L^2/[d*(S*L+32*d*binomial(L,2))]"
+            },
+            {
+              "id": "output_sized_image_package",
+              "work": "O(K) coefficients when supplied"
+            },
+            {
+              "id": "standard_graph_first_elimination",
+              "work": "S*L represented degree or dimension"
+            },
+            {
+              "id": "admitted_target_and_child_query",
+              "work": "at most B^(5/4+o(1)) per fresh target or adaptive child"
+            }
+          ]
+        },
+        "handoff": {
+          "objective": "Derive or refute an output-sized radical-image representation and standard constructor for the fifth-erased complete Kummer branch state.",
+          "uncertainty_reduced": "Whether fifth-label erasure removes the R12 degree-three-quarters state floor and whether standard geometric elimination can construct the reduced image without the dense source graph.",
+          "inputs": [
+            "the independently reviewed R11 and R12 Kummer receipts",
+            "R10 exact counts and rank-two control",
+            "P1551 explicit quotient grammar",
+            "P1533 characteristic-polynomial and subdivision semantics",
+            "P1553 R4 Fitting-module control",
+            "P1510 output-sensitive marked-resultant compiler and audit"
+          ],
+          "constraints": [
+            "Retain complete projective branch divisors and distinct Kummer labels.",
+            "Use only fixed-endpoint fifth collisions in the transposed energy theorem.",
+            "Keep geometric fiber size, occurrence mass, and source occurrence labels separate.",
+            "Require J_12 and J_5 to be one jointly chosen source section.",
+            "Preserve family-specific output-sensitive and arbitrary-circuit exceptions.",
+            "Allocate no new idea, run, Shoup claim, or breakthrough status."
+          ],
+          "deliverables": [
+            "erased_image_geometric_resolution_report.yaml",
+            "erased_image_geometric_resolution_gate_r13.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "The transposed branch-energy theorem is projectively and combinatorially exact.",
+            "Image degree K and graph degree S*L are separated.",
+            "Multiplicity, joint source, completeness, and adaptive child interfaces are explicit.",
+            "P1510 and R10 controls preserve the correct surviving exception.",
+            "Exactly one compiler action and no positive ECDLP status remain."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-EIG-RT-R1",
+        "title": "Red-team erased-image energy and geometric elimination",
+        "role": "red-team",
+        "state": "completed",
+        "priority": 3,
+        "review_required": false,
+        "depends_on": [
+          "TASK-20260719-P1553-EIG-P1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-EIG-P1/erased_image_geometric_resolution_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-EIG-P1/erased_image_geometric_resolution_gate_r13.md",
+          "coordination/tasks/TASK-20260719-P1553-HKP-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-CKR-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+          "ideas/artifacts/ECDLP-IDEA-003/p1533_collision_multiset_resultant_spec.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-EIG-RT-R1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "Independent reconstruction of branch symmetry, the 16d transposed collision bound, both Cauchy steps, the degree-d psi fiber, the O(K) joint-source package, and every graph-first degree charge.",
+          "inconclusive_decision": "Accept only the fixed-endpoint energy and frozen graph-first theorem while retaining cross-endpoint components, output-sensitive compilation, compressed completeness, adaptive range queries, target action, rank two, and complete ECDLP stages.",
+          "local_ambiguity_rule": "Reject any independent marginal source selectors, any total-mass completeness shortcut, any cross-endpoint collision estimate inferred from R11, or any resultants-equal-domain-degree generalization contradicted by P1510.",
+          "peripheral_exclusions": [
+            "No unrestricted elimination, circuit, proof-system, or data-structure lower bound",
+            "No image representation treated as a target query or relation campaign",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after every correction is present in both producer files, the final hashes match, and exactly one scoped compiler action remains."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R13 energy, image representation, graph-first elimination, completeness, and source-replay claims.",
+          "uncertainty_reduced": "Whether the repaired erased-image degree floor and geometric-resolution boundary survive signs, poles, occurrence weights, marginal-source errors, and the P1510 counter-control.",
+          "inputs": [
+            "the R13 producer receipts",
+            "the independently reviewed R11 and R12 receipts",
+            "R10 rank-two and Query2P1 semantics",
+            "P1551/P1533/P1553 R4 elimination and source interfaces",
+            "P1510 positive compiler control"
+          ],
+          "constraints": [
+            "Reconstruct the theorem without cross-endpoint O(d^2) energy.",
+            "Check complete projective strata and integer no-wrap.",
+            "Require one jointly coupled pair/fifth source section.",
+            "Separate roots-with-witnesses from image completeness.",
+            "Preserve all target, rank, factor-log, and descent omissions."
+          ],
+          "deliverables": [
+            "red_team_report.yaml",
+            "erased_image_geometric_resolution_red_team.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "Every inequality and ownership binding is independently reconstructed or corrected.",
+            "The final producer hashes match the accepted review.",
+            "Exactly one next action and no positive ECDLP status remain."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Recompute all manifest layers, the artifact-index precondition, and every source hash; preserve drift rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false
+  }
+}

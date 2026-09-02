@@ -1,0 +1,112 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-BUCKET-RESULTANT-ROUTING-TRADEOFF-R127-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_bucket_routing_controls_and_scoped_resultant_tradeoff
+run_count: 1
+status: cap_tight_singleton_c3_implicit_router_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - bucket-resultant
+  - target-routing
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R123-R126
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Optimize the bucket count and target-routing multiplicity of implicit
+  nonhomomorphic C2-C3 correction resultants under the frozen torus C5
+  setup and arbitrary-target query caps.
+inputs:
+  - path: p1553_torus_c5_explicit_hash_correction_support_probe_r126.py
+    sha256: 6540a8847cc02206879e217a00b342fafedbe87a31ecac80e24702c3b5a91f64
+  - path: p1553_torus_c5_explicit_hash_correction_support_probe_report_r126.json
+    sha256: d7af982e0a35bded47611f2e2d50d2a602a26b6e86b8af94f5781963593c5dee
+  - path: frozen_torus_c5_explicit_hash_correction_support.json
+    sha256: 0c5455ab77affc5250ef21184b73035db93d519447deb5911657e6d3ba2fdcbd
+  - path: torus_c5_explicit_hash_correction_support_cost_ledger.json
+    sha256: b4a63f593f162eb47d9ce0bb27db10f336993e8e7b1679d0690bf9ab9b2e3de5
+  - path: torus_c5_explicit_hash_correction_support_replay.json
+    sha256: af4e1d8ad163de0c9919dee4a29510e307747b95ae553b413dbd4d9aea1cbc23
+  - path: torus_c5_explicit_hash_correction_support_controls.json
+    sha256: f1dc25662a9707ab08f1b90f05c280610bb7659a8af2d1565182c8159bcfb132
+  - path: factor_logs_and_identical_descent_r126.json
+    sha256: de11144ba29fa6728ddd30843fc5de128c974cc4be25a67ae964dcffd4210da2
+  - path: p1553_torus_c5_explicit_hash_correction_support_probe_gate_r126.md
+    sha256: 31de425cd111ddc6d06d33b4e81818c964932be4d18a80fb154164c62e8bab5b
+  - path: p1553_torus_c5_explicit_hash_correction_support_probe_parent_report_r126.yaml
+    sha256: 3dd1924eac95dd48cd2ab78a5a6edec5887c960a86c6770a9a34b8850ea3dff7
+  - path: p1553_torus_c5_fourier_product_resultant_probe_gate_r123.md
+    sha256: 1b0711d92aeee1a1a4bb2208cdbc772d8a07e1dff14b423803e75f1bd859733f
+  - path: p1553_m6_small_k_multiplicative_c5_moment_torus_probe_gate_r121.md
+    sha256: 9266e3655a3f4176280834ec91c897cc7d30274382df6e197628af37bae71309
+  - path: references/moroz_schost_truncated_resultant_1609.04259v1.pdf
+    sha256: 160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709
+  - path: references/bhargava_ghosh_guo_kumar_umans_multipoint_2205.00342v1.pdf
+    sha256: 14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8
+artifacts:
+  - path: p1553_torus_c5_bucket_resultant_routing_tradeoff_probe_r127.py
+    sha256: 4d4d88bbd2f0f98f1eca9f2986d6ebbb50f5fef7a3af9cc8a5a9c4cd9e802a7b
+  - path: p1553_torus_c5_bucket_resultant_routing_tradeoff_probe_report_r127.json
+    sha256: 373a69c5a6a0dcdb4b12f68d1a1bd71b74f4c8e1971329dba64f103fe4ae138f
+  - path: frozen_torus_c5_bucket_resultant_routing_tradeoff.json
+    sha256: c91e94d84a12e920d0b59619b730a9e81b4ff2aa9bc8fb46014a2f39594fad4a
+  - path: torus_c5_bucket_resultant_routing_tradeoff_cost_ledger.json
+    sha256: 2c1cf3b67084f01265dfde52c9c32e328bb7e30be06385f4752af8f8b5d9d45f
+  - path: torus_c5_bucket_resultant_routing_tradeoff_replay.json
+    sha256: 293fc34625268ea3cc34f7e6bdd28b8f46ced80f5f00855855639525f0be38e7
+  - path: torus_c5_bucket_resultant_routing_tradeoff_controls.json
+    sha256: 536b8b366e6705ae4c7a7f5c8b46630b85a3b6dd827040202cb0c726d99ae758
+  - path: factor_logs_and_identical_descent_r127.json
+    sha256: 7d3b8d62d4b77dcdbd92e1a2ec84df10dd0a106832ec6ee08ef022967ad6ee13
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_bucket_resultant_routing_tradeoff_probe_r127.py
+    sha256: f0fba2610d8f21b0559cc67504fb78d3be12710fdfa5003e01ad35a95fab8127
+  - path: p1553_torus_c5_bucket_resultant_routing_tradeoff_probe_gate_r127.md
+    sha256: 729bb912d2db0bd518375bdbce0f7cf0fa5d068af854224b8306a7c8be6db4d8
+verified_statements:
+  - >-
+    With H=B^gamma balanced buckets, one represented C2-C3 bucket
+    resultant has optimistic work B^(9/4-gamma).
+  - >-
+    Querying all H^2 bucket pairs costs B^(9/4+gamma), while ideal
+    quotient-style H-pair routing still costs B^(9/4).
+  - >-
+    Routing through R=B^rho pairs has query exponent
+    rho+9/4-gamma; polylogarithmic query under nonempty balanced buckets
+    isolates gamma=9/4 and rho=0.
+  - >-
+    The isolated cap-compatible corner is a B^(9/4)-state C3
+    singleton-bucket index with an implicit O(1)-pair target router; no such
+    router is constructed.
+  - >-
+    Twenty-four coordinate-hash controls verify all-pair and target-bucket
+    routed membership, empty rejection, and C2+C3 source replay.
+scoped_failures:
+  all_bucket_pair_resultants: rejected_B9O4_plus_gamma_query
+  quotient_style_h_pair_routing: rejected_B9O4_query
+  represented_symbolic_bucket_resultants: rejected_B15O4_output
+  represented_dense_target_bucket_tensor: rejected_tradeoff
+  shared_transposed_bucket_resultants: open
+  cap_tight_singleton_c3_implicit_o1_router: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 12
+  total_obligations: 20
+  lane_admitted: false
+next_action: >-
+  Construct or refute a B^(9/4+o(1))-state C3 singleton-bucket index with
+  an implicit O(1)-pair arbitrary-target router and matching C2+C3 source
+  return, without field DLP and with complete rank, logs, identical descent,
+  memory, field-operation, and bit costs.

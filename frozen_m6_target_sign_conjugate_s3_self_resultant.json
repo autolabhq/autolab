@@ -1,0 +1,79 @@
+{
+  "critical_experiment": {
+    "decisive_test": "Construct or refute a factored self-S3 resultant operator that emits Res_Z(U(Z),product_j S3(X,Z,u_j)) modulo U(X) in softly O(n+N) work, preferably B^(9/4+o(1)), while retaining the N-factor S3 representation and avoiding the N^2 reverse-resultant coefficient body, nN point/factor grid, candidate inversions, or unit-cost resultant and multipoint oracles.",
+    "falsifier": "The route materializes the (2N+1)^2 reverse coefficient grid, visits nN point/factor pairs, forms an nN or n^2 polynomial matrix, inverts candidate nonunits, or assumes a resultant, norm, root, count, or multipoint oracle.",
+    "hypothesis": "The factored symmetric S3 kernel has a self-resultant remainder algorithm softly linear in n+N despite its dense represented reverse resultant."
+  },
+  "promotion_allowed": false,
+  "schema": "p1553.m6_target_sign_conjugate_s3_self_resultant.frozen.r172.v1",
+  "source_bindings": {
+    "hyun_neiger_schost_2019": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/hyun_neiger_schost_bivariate_resultants_1905.04356.pdf",
+      "sha256": "32b73cf0ca7172bdec0f8f1b256adda628a86d6dd7eee8e07e8644e35a9f16f3"
+    },
+    "moroz_schost_2016": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/moroz_schost_truncated_resultant_1609.04259.pdf",
+      "sha256": "160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709"
+    },
+    "r161_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_signed_c3_divisor_translation_gcd_probe_gate_r161.md",
+      "sha256": "0ca8660b9554c39e2c90a8f29cee05554b9fb3adce0c4c2a1038e739b3888bcd"
+    },
+    "r161_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_signed_c3_divisor_translation_gcd_probe_report_r161.json",
+      "sha256": "7e73325212e9d8c3cf42ae46cce0a5c1bdebea9784b9bf5c30761c006cb8bedd"
+    },
+    "r171_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_balanced_miller_tree_norm_streaming_controls.json",
+      "sha256": "d54c4d4db51abab1ccf4d01294bee945d240d637dd9db4a0078a523bef8aa300"
+    },
+    "r171_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_balanced_miller_tree_norm_streaming_cost_ledger.json",
+      "sha256": "9e9fe2ae4e5ec8e905b60b56227be57e86f0cc10de63e0c0917dc7b5837ebb76"
+    },
+    "r171_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_m6_balanced_miller_tree_norm_streaming.json",
+      "sha256": "a80e1d9cbb7893a0a70ee04c95cd4ca2632f45181c9b72d645bd1afaf15abaef"
+    },
+    "r171_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_balanced_miller_tree_norm_streaming_probe_gate_r171.md",
+      "sha256": "0f862466fa7816c438c6ef8526e66e350b1091c02f2e631d5b28a4105c10d680"
+    },
+    "r171_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_balanced_miller_tree_norm_streaming_probe_parent_report_r171.yaml",
+      "sha256": "3fee4660f7b558116299174194657da9464435f402a9f3fb289489474fbb1f93"
+    },
+    "r171_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_balanced_miller_tree_norm_streaming_probe_r171.py",
+      "sha256": "684ab4cf92398b7a7789b8e429356ee712ba255e65f5d172cee1c4ebbe58d39e"
+    },
+    "r171_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_balanced_miller_tree_norm_streaming_replay.json",
+      "sha256": "76a793283ce4df296d0ead1dc6826bab40835cefdfcbc809e481bbbe377141be"
+    },
+    "r171_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_balanced_miller_tree_norm_streaming_probe_report_r171.json",
+      "sha256": "12c34212fa3e07321ec7e9524a32a845233b420eae28f16e2dc3abfebd4efa92"
+    },
+    "r171_slp": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/balanced_miller_tree_and_leaf_cancellation_r171.json",
+      "sha256": "e322d78df66e9edec2fb39b412a98b23077b7648548f4154f30b7a166a5bcc7f"
+    },
+    "r171_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_m6_balanced_miller_tree_norm_streaming_probe_r171.py",
+      "sha256": "85df97c68496b5ce8beb3c207ab2e6b0bf0a51486be80183e6e92d02d76e74e5"
+    },
+    "semaev_2004": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/semaev_summation_polynomials_2004_031.ps",
+      "sha256": "991f85d58ab68551a229266d03c2f88a5fc42e81b2a5f8f4432937bcceff16df"
+    }
+  },
+  "theorem": {
+    "candidate_semantics": "The plus branch is the R171 Kummer locator. The conjugate branch tests target equations with -P in the selected slot. Their product returns the union; all roots retain a signed-verifier backstop. Finite extra-root counts are diagnostics, not a density theorem.",
+    "compact_target_x_batch": "For W(Y)=product_j(Y-u_j), multiplying over targets gives a symmetric locator G_+(X)G_-(X)=R(X)/W(X)^(2n), where R(X)=Res_Z(U(Z),Res_Y(W(Y),S3(X,Z,Y))). The denominator is one exponentiation modulo U and is a unit after the public target/selected x-equality split.",
+    "homogenized_translation": "For P=(X,V(X)), T=(u,v), D=(u-X)^2, and A=u^2X+uX^2+a(u+X)+2b, the x-coordinate of T-P is (A+2vV)/D modulo U. If H_U(K,D)=D^n U(K/D), then the plus and target-sign-conjugate factors are H_U(A+2vV,D) and H_U(A-2vV,D).",
+    "reverse_resultant_boundary": "The reverse resultant Res_Y(W,S3) is the factored product of N quadratic S3 kernels. Its represented bivariate coefficient grid has (2N+1)^2 slots, hence N^2=B^(5/2) scale before the final self-resultant. The six controls are fully dense and full coefficient rank, but this is not a circuit or resultant lower bound.",
+    "semaev_conjugate_identity": "The polynomial identity (A-DZ)^2-4(u^3+au+b)(X^3+aX+b) = D*S3(X,Z,u) implies H_U(A+2vV,D)H_U(A-2vV,D) = D^n Res_Z(U(Z),S3(X,Z,u)) modulo U(X).",
+    "surviving_interface": "The surviving unproved interface must keep Res_Y(W,S3) factored and supply an algorithm for Res_Z(U(Z),product_j S3(X,Z,u_j)) modulo U(X) in softly O(n+N) work, without the N^2 reverse body, nN pair body, or candidate inversions."
+  }
+}

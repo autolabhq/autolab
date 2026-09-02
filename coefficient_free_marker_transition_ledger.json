@@ -1,0 +1,231 @@
+{
+  "cost_ledger": {
+    "c_deck_size_exponent_B": 0.6,
+    "explicit_shift_recurrence_inside_online_cap": false,
+    "explicit_shift_recurrence_inside_setup_cap": false,
+    "first_setup_cap_crossing_slot": 4,
+    "five_slot_shift_support_exponents_B": [
+      0.6,
+      1.2,
+      1.8,
+      2.4,
+      3.0
+    ],
+    "five_slot_support_exponent_B": 3.0,
+    "four_slot_support_exponent_B": 2.4,
+    "scope_exception": "a nonlocal nonlinear target-independent translation sketch whose update and source inverse never expose shift evaluations, polynomial coefficients, quotient vectors, or endpoint tables",
+    "target_local_fixed_marker_state_exact_under_translation": false,
+    "target_local_fixed_marker_state_exponent_B": 0.0
+  },
+  "fixed_marker_collision": {
+    "deck_sizes": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "decks_p": [
+      [
+        8,
+        14
+      ],
+      [
+        0,
+        12
+      ],
+      [
+        16,
+        5
+      ],
+      [
+        15,
+        14
+      ],
+      [
+        14,
+        10
+      ]
+    ],
+    "decks_q": [
+      [
+        16,
+        5
+      ],
+      [
+        13,
+        8
+      ],
+      [
+        12,
+        1
+      ],
+      [
+        7,
+        6
+      ],
+      [
+        5,
+        16
+      ]
+    ],
+    "field_prime": 17,
+    "fixed_marker_rule": "source choice index plus one in each slot",
+    "local_jet_p": [
+      4,
+      2,
+      13,
+      13,
+      13,
+      5,
+      15
+    ],
+    "local_jet_q": [
+      4,
+      2,
+      13,
+      13,
+      13,
+      5,
+      15
+    ],
+    "local_jets_equal": true,
+    "local_norm_nonzero": true,
+    "target": 0,
+    "theorem": "The fixed seven-scalar local jet is not a congruence for target translation, even for five equal two-element decks and a nonzero local norm.",
+    "translated_jet_p": [
+      0,
+      12,
+      5,
+      5,
+      5,
+      10,
+      5
+    ],
+    "translated_jet_q": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "translated_jets_differ": true,
+    "translated_target": 1
+  },
+  "prefix_support_controls": [
+    {
+      "collision_free_every_prefix": true,
+      "deck_size": 2,
+      "field_prime": 1000003,
+      "minimum_prefix_occupancy_fraction": 1.0,
+      "prefix_distinct_support_sizes": [
+        2,
+        4,
+        8,
+        16,
+        32
+      ],
+      "prefix_occupancy_fractions": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prefix_occurrence_sizes": [
+        2,
+        4,
+        8,
+        16,
+        32
+      ]
+    },
+    {
+      "collision_free_every_prefix": true,
+      "deck_size": 3,
+      "field_prime": 1000003,
+      "minimum_prefix_occupancy_fraction": 1.0,
+      "prefix_distinct_support_sizes": [
+        3,
+        9,
+        27,
+        81,
+        243
+      ],
+      "prefix_occupancy_fractions": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "prefix_occurrence_sizes": [
+        3,
+        9,
+        27,
+        81,
+        243
+      ]
+    },
+    {
+      "collision_free_every_prefix": false,
+      "deck_size": 4,
+      "field_prime": 1000003,
+      "minimum_prefix_occupancy_fraction": 0.99609375,
+      "prefix_distinct_support_sizes": [
+        4,
+        16,
+        64,
+        255,
+        1020
+      ],
+      "prefix_occupancy_fractions": [
+        1.0,
+        1.0,
+        1.0,
+        0.99609375,
+        0.99609375
+      ],
+      "prefix_occurrence_sizes": [
+        4,
+        16,
+        64,
+        256,
+        1024
+      ]
+    }
+  ],
+  "schema": "p1553.coefficient_free_marker_transition_ledger.r89.v1",
+  "translation_orbit": {
+    "all_channels_full_quotient_rank": true,
+    "deck_sizes": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "field_prime": 1009,
+    "fixed_marker_leading_coefficients_nonzero": true,
+    "marker_polynomial_degrees": [
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "marker_translation_remainder_ranks": [
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "norm_polynomial_degree": 32,
+    "norm_translation_remainder_rank": 16,
+    "quotient_degree": 16,
+    "theorem": "Each nonzero degree-d fixed-marker polynomial has a full translation span in characteristic greater than d; reduction modulo a lower-degree polynomial therefore fills that quotient."
+  }
+}

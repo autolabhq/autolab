@@ -1,0 +1,116 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-SPARSE-PROJECTOR-PRONY-LOCATOR-R183-PARENT
+date: 2026-08-02
+role: coordinator
+evidence_kind: exact_nested_projector_multiplicity_and_sparse_locator_recovery
+run_count: 1
+status: slp_direct_nested_projector_moment_constructor_open
+labels:
+  - theorem-applicability
+  - exact-finite
+  - elliptic-curve
+  - fermat-projector
+  - power-projection
+  - berlekamp-massey
+  - held-out
+  - adversarial-control
+  - full-cost
+  - open-interface
+owner: P1553-R97-R163-R168-R182-R183-WIEDEMANN-KEDLAYA-UMANS-SHOUP-1997
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Replace the R182 A-valued resultant output by an output-sensitive scalar
+  moment interface and test exact candidate-locator recovery without granting
+  credit for a represented nN projector or a candidate oracle.
+inputs:
+  - {path: p1553_m6_gcd_equivalent_target_subresultant_probe_r182.py, sha256: 0058a28e4c337df97cec7b2e87bb5cc16e18a5b47029ab72d12b852405875e15}
+  - {path: p1553_m6_gcd_equivalent_target_subresultant_probe_report_r182.json, sha256: 9a38150e9e7e0e41f455b000b4cda390aaff4f428c2828d5ffeed8a9781f7f5d}
+  - {path: frozen_m6_gcd_equivalent_target_subresultant.json, sha256: 29291879484cf68bc16b83e2341818a611bb0c529c53e135f33bc181f30d462e}
+  - {path: m6_gcd_equivalent_target_subresultant_cost_ledger.json, sha256: 0eb0f05465fc072c72b6cccc24105d420431eb53162a6d5042b135bdcb454121}
+  - {path: m6_gcd_equivalent_target_subresultant_replay.json, sha256: bec170f0a0148e269b28c0499f7a8c65b20a3270a8f8dbfc41a0724d3e71e9ba}
+  - {path: m6_gcd_equivalent_target_subresultant_controls.json, sha256: 850099e9c6f538baea1f94b7d87dafbe8c2df7a83b3dcf9d47be9b233639b77f}
+  - {path: gcd_equivalent_target_subresultant_applicability_r182.json, sha256: 5f1700e9b00d6756daa58d38f36002e7f0dee704632f223de8f4bc55cfce620c}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_gcd_equivalent_target_subresultant_probe_r182.py, sha256: 37e7ced472a7eb2244e1539cb3248fd2e170bdec343a89a69b93ce9e05d39a7e}
+  - {path: p1553_m6_gcd_equivalent_target_subresultant_probe_gate_r182.md, sha256: 960fbcdcae0867bc8b02786f81af9eb68ed337d2dfff9019e62c61248ca303fd}
+  - {path: p1553_m6_gcd_equivalent_target_subresultant_probe_parent_report_r182.yaml, sha256: d83ffeed2d66b78ec40a7b14e3a89fd5a8940775d21f5c297c6105454032ba66}
+  - {path: p1553_m6_aggregate_union_factor_label_recovery_probe_gate_r163.md, sha256: 3064a108bf063ab59a0991be6910b70bf3a2e498974add780f6a57e157a63212}
+  - {path: p1553_m6_log_derivative_elliptic_cauchy_trace_probe_gate_r168.md, sha256: 7063a5f6ba686e38682ab6e29f386ab56e7fb56097e288949cce73e130b2fcae}
+  - {path: p1553_5a5c_factored_transposed_projector_trace_probe_gate_r97.md, sha256: ef91d8a15dc7a218c21355b5b2f2777db948978514ebed26d6884ce929c09182}
+  - {path: references/wiedemann_sparse_linear_equations_1986.pdf, sha256: 8ec0b8a8b35c02bd4a84236129ab991fdbcca4b4feb8332c22b08dbdefc1218a}
+  - {path: references/kedlaya_umans_fast_polynomial_factorization_modular_composition_2011.pdf, sha256: 93bd1f77b762f49bcae017d5c12ceccef38c67a956810873105cbce083634377}
+  - {path: references/shoup_generic_dlp_lower_bound_1997.pdf, sha256: 89d19aad3a4d98b563029de9135d30c8ed9b831d74f7348c286acc22f9af85b3}
+artifacts:
+  - {path: p1553_m6_sparse_projector_prony_locator_probe_r183.py, sha256: 202a28eade6a3d532c4f9f8cf6ae3e02c9a74da9bccc436069917204e511b53f}
+  - {path: p1553_m6_sparse_projector_prony_locator_probe_report_r183.json, sha256: a2e746fa5159a3684d3f6913888ad9c6a1fd7983fcb9abbacc17e6d4ee5baae5}
+  - {path: frozen_m6_sparse_projector_prony_locator.json, sha256: 8d020353811cf7cf47e7950fe14f7da1df74eafb7c904f7e0abcfd875ef48c4b}
+  - {path: m6_sparse_projector_prony_locator_cost_ledger.json, sha256: c91e54b65c5068a3cada5b3f2237ec1f1228989d2115f22cfc2fd183cec27a6b}
+  - {path: m6_sparse_projector_prony_locator_replay.json, sha256: 2473d0295858506f0ec687c03831c5b345f726323e59486ef98f17b070ba168e}
+  - {path: m6_sparse_projector_prony_locator_controls.json, sha256: 9575764c7e662210b9f41ffe2783be3f6b95926f7b3d534e361401704b63366f}
+  - {path: sparse_projector_prony_locator_applicability_r183.json, sha256: 652e2a17148613d57d729200a3297948e9cebc898ce07992482a5bf3927e3be8}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_sparse_projector_prony_locator_probe_r183.py, sha256: c44e54238b0599e30211a4035ed19858104272c11bfb866d2528e63343fac60e}
+  - {path: p1553_m6_sparse_projector_prony_locator_probe_gate_r183.md, sha256: 4544744eccc2050390b69bc377d6188e6e66b28c226c2840d0f607bc9330e67d}
+verified_statements:
+  - The nested Fermat-projector trace equals the sum of target-chart gcd degrees.
+  - Total target degree below the characteristic prevents nonzero multiplicity cancellation.
+  - Nonzero multiplicity support equals candidate source support in all thirteen controls.
+  - Weighted Hankel rank and Berlekamp-Massey order equal the candidate degree.
+  - Two candidate-degree moments recover the exact candidate locator in all controls.
+  - The new strided divisor control is checked by an independent elliptic group-law comparator.
+  - A source-row swap preserves every tested global target power sum but changes the candidate locator.
+  - The represented tensor and A-linear target-Krylov routes retain nN scale.
+scoped_failures:
+  source_blind_scalar_trace_label_complete: false
+  represented_tensor_projector_below_rho: false
+  a_linear_target_krylov_below_rho: false
+  slp_direct_nested_projector_moment_constructor: open
+  general_nonlinear_trace_or_circuit_lower_bound: not_claimed
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  factor_logs: open
+  identical_target_descent: open
+  unconditional_total_attack_cost: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 19
+  total_obligations: 28
+  nested_projector_identity_admitted: true
+  weighted_prony_output_stage_admitted: true
+  slp_direct_nested_moment_constructor_admitted: false
+  lane_admitted: false
+result:
+  control_count: 13
+  r182_replay_control_count: 12
+  new_divisor_family_control_count: 1
+  new_divisor_seed: 18307
+  selected_divisor_degree_sum: 411
+  unique_target_degree_sum: 84
+  candidate_source_count: 256
+  noncandidate_source_count: 155
+  target_gcd_multiplicity_sum: 414
+  weighted_moment_count: 512
+  represented_source_target_value_slots: 2997
+  total_distinct_target_value_count: 2839
+  full_target_spectrum_source_count: 298
+  candidate_degree_exponent_B: 3/4
+  candidate_verification_exponent_B: 2
+  desired_compact_setup_exponent_B: 9/4
+  represented_standard_route_exponent_B: 7/2
+  global_rho_exponent_B: 5/2
+  slp_direct_nested_projector_moment_constructor_supplied: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_NESTED_FERMAT_PROJECTOR_TRACE_EQUALS_TARGET_GCD_DEGREE__NONZERO_MULTIPLICITY_SUPPORT_EXACT_BECAUSE_N_LT_P__TWELVE_R182_REPLAYS_AND_ONE_NEW_STRIDED_DIVISOR_FAMILY__WEIGHTED_2C_SOURCE_MOMENTS_RECOVER_G1_BY_PRONY_BERLEKAMP_MASSEY__SOURCE_BLIND_GLOBAL_KRYLOV_TRACE_LABEL_COLLISION_EXACT__OUTPUT_AND_RECOVERY_B3O4__CANDIDATE_VERIFICATION_B2__REPRESENTED_PROJECTOR_AND_A_LINEAR_KRYLOV_B7O2__SLP_DIRECT_NESTED_MOMENT_CONSTRUCTOR_OPEN__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute one SLP-direct nested projector-moment operator. From
+  compact U,V, target charts, and the R181 signed line-product SLP, emit the 2c
+  scalars Tr_A(X^k Tr_B(1-M_R^(p-1))) in softly O(n+N+c) work without
+  representing R, the Fermat projector, an A-valued target Krylov sequence, or
+  any nN tensor body. Test seed 18308 and a second strided divisor family;
+  reject source-blind traces and candidate oracles.

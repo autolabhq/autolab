@@ -1,0 +1,22 @@
+{
+  "caps": {
+    "fresh_work_exponent_B": 1.25,
+    "setup_state_exponent_B": 2.25
+  },
+  "forbidden_materializations": [
+    "P_C coefficient vector",
+    "P_C(T-X) mod P_A(X)",
+    "translated C evaluation vector on A endpoints",
+    "B^2 quotient Krylov block",
+    "C endpoint/source dictionary"
+  ],
+  "left_input": "P_A(X), degree B^2, source dictionary allowed",
+  "query": "fresh T",
+  "required_scalar_outputs": [
+    "zero or nonzero",
+    "simple versus multiple or nonreduced",
+    "five fixed source markers"
+  ],
+  "right_input": "implicit five-slot C divisor, degree B^3 eliminant",
+  "schema": "p1553.frozen_5a5c_black_box_resultant.r88.v1"
+}

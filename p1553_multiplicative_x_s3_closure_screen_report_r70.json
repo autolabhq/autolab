@@ -1,0 +1,743 @@
+{
+  "admission": {
+    "lane_admitted": false,
+    "obligation_count": 7,
+    "obligations": {
+      "complete_pair_probe_below_rho_on_every_family": false,
+      "exact_s3_relation_replay": true,
+      "four_distinct_generic_prime_field_families": true,
+      "fresh_target_descent_below_rho_on_every_family": false,
+      "independent_collision_rank_exceeds_all_matched_controls_on_every_family": false,
+      "public_scalar_blind_coordinate_subgroup_source": true,
+      "subquadratic_s3_locator_supplied": false
+    },
+    "passed_obligation_count": 3
+  },
+  "aggregate": {
+    "candidate_rank_excess_transfers_to_all_families": false,
+    "complete_pair_probe_below_rho_on_all_families": false,
+    "families_with_candidate_rank_above_control_max": 0,
+    "families_with_pair_probe_below_rho": 0,
+    "families_with_preregistered_rank_excess": 0,
+    "family_count": 4
+  },
+  "candidate": {
+    "definition": "Take canonical curve points above a public multiplicative subgroup of F_p^*, cofactor-clear into the prime subgroup, and measure S3 closure collisions among the frozen prefix.",
+    "name": "multiplicative_subgroup_x_coordinate_s3_closure",
+    "potential_locator": "A useful successor would need sparse S3 zero-location on the multiplicative grid. Fast univariate polynomial arithmetic or a dense p-1 character transform alone is not such a locator."
+  },
+  "checks": {
+    "all_candidate_rows_pass_exact_s3_replay": true,
+    "all_controls_pass_exact_s3_replay": true,
+    "all_curve_discriminants_nonzero": true,
+    "all_curve_orders_match_prime_subgroup_times_cofactor": true,
+    "all_subgroup_orders_are_prime": true,
+    "candidate_streams_are_scalar_blind": true,
+    "four_distinct_prime_field_families": true
+  },
+  "classification": "MULTIPLICATIVE_X_S3_STRUCTURE_SCREENED_WITHOUT_UNIFORM_RANK_EXCESS",
+  "family_results": [
+    {
+      "candidate_profile": {
+        "base_size": 8,
+        "closure_collision_count": 3,
+        "final_atom_count": 33,
+        "final_nullity": 5,
+        "final_relation_rank": 28,
+        "fresh_residual_count": 25,
+        "fresh_residual_rank": 25,
+        "independent_collision_rank": 3,
+        "pair_proposal_count": 28,
+        "s3_failures": 0,
+        "s3_nonidentity_checks": 28
+      },
+      "candidate_source": {
+        "accepted_x_coordinates": [
+          1,
+          3,
+          8,
+          20,
+          24,
+          27,
+          33,
+          42
+        ],
+        "coordinate_subgroup_generator": 125,
+        "coordinate_subgroup_order": 64,
+        "enumerated_coordinate_count": 64,
+        "field_primitive_root": 5,
+        "points": [
+          [
+            184,
+            75
+          ],
+          [
+            95,
+            29
+          ],
+          [
+            178,
+            74
+          ],
+          [
+            130,
+            94
+          ],
+          [
+            64,
+            145
+          ],
+          [
+            127,
+            157
+          ],
+          [
+            63,
+            56
+          ],
+          [
+            108,
+            42
+          ]
+        ],
+        "scalar_labels_consumed": false,
+        "sign_rule": "canonical_minimum_square_root_before_cofactor_clearing"
+      },
+      "cost_floor": {
+        "pair_proposal_ratio_vs_rho": 2.1538461538461537,
+        "pair_proposals": 28,
+        "pair_proposals_below_rho": false,
+        "rho_expected_group_operations": 13,
+        "subquadratic_locator_supplied": false
+      },
+      "curve_discriminant_nonzero": true,
+      "curve_order_replay": 206,
+      "excess_test": {
+        "candidate_at_least_double_control_mean": false,
+        "candidate_exceeds_every_control": false,
+        "candidate_has_preregistered_rank_excess": false,
+        "candidate_minus_control_max_rank": -2,
+        "candidate_minus_control_mean_rank": -0.03125
+      },
+      "family": {
+        "cofactor": 2,
+        "coordinate_subgroup_order": 64,
+        "curve_a": 2,
+        "curve_b": 3,
+        "family_id": "p193_a2_b3_q103_h2",
+        "field_prime": 193,
+        "subgroup_order": 103
+      },
+      "matched_hash_controls": {
+        "closure_collision_counts": [
+          6,
+          5,
+          4,
+          5,
+          2,
+          5,
+          5,
+          3,
+          4,
+          8,
+          4,
+          4,
+          7,
+          5,
+          4,
+          3,
+          2,
+          8,
+          5,
+          4,
+          5,
+          6,
+          5,
+          1,
+          3,
+          5,
+          4,
+          7,
+          4,
+          4,
+          2,
+          2
+        ],
+        "control_count": 32,
+        "independent_collision_rank_population_stdev": 1.1035277239380985,
+        "independent_collision_ranks": [
+          4,
+          5,
+          2,
+          3,
+          2,
+          4,
+          5,
+          3,
+          4,
+          5,
+          2,
+          2,
+          5,
+          3,
+          2,
+          3,
+          2,
+          5,
+          3,
+          2,
+          3,
+          3,
+          3,
+          1,
+          3,
+          3,
+          3,
+          4,
+          2,
+          2,
+          2,
+          2
+        ],
+        "max_independent_collision_rank": 5,
+        "mean_independent_collision_rank": 3.03125
+      }
+    },
+    {
+      "candidate_profile": {
+        "base_size": 8,
+        "closure_collision_count": 1,
+        "final_atom_count": 35,
+        "final_nullity": 7,
+        "final_relation_rank": 28,
+        "fresh_residual_count": 27,
+        "fresh_residual_rank": 27,
+        "independent_collision_rank": 1,
+        "pair_proposal_count": 28,
+        "s3_failures": 0,
+        "s3_nonidentity_checks": 28
+      },
+      "candidate_source": {
+        "accepted_x_coordinates": [
+          1,
+          2,
+          8,
+          11,
+          22,
+          23,
+          30,
+          32
+        ],
+        "coordinate_subgroup_generator": 81,
+        "coordinate_subgroup_order": 64,
+        "enumerated_coordinate_count": 64,
+        "field_primitive_root": 3,
+        "points": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            70
+          ],
+          [
+            8,
+            28
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            22,
+            59
+          ],
+          [
+            23,
+            115
+          ],
+          [
+            30,
+            56
+          ],
+          [
+            32,
+            93
+          ]
+        ],
+        "scalar_labels_consumed": false,
+        "sign_rule": "canonical_minimum_square_root_before_cofactor_clearing"
+      },
+      "cost_floor": {
+        "pair_proposal_ratio_vs_rho": 1.2727272727272727,
+        "pair_proposals": 28,
+        "pair_proposals_below_rho": false,
+        "rho_expected_group_operations": 22,
+        "subquadratic_locator_supplied": false
+      },
+      "curve_discriminant_nonzero": true,
+      "curve_order_replay": 281,
+      "excess_test": {
+        "candidate_at_least_double_control_mean": false,
+        "candidate_exceeds_every_control": false,
+        "candidate_has_preregistered_rank_excess": false,
+        "candidate_minus_control_max_rank": -2,
+        "candidate_minus_control_mean_rank": -0.34375
+      },
+      "family": {
+        "cofactor": 1,
+        "coordinate_subgroup_order": 64,
+        "curve_a": 1,
+        "curve_b": 7,
+        "family_id": "p257_a1_b7_q281_h1",
+        "field_prime": 257,
+        "subgroup_order": 281
+      },
+      "matched_hash_controls": {
+        "closure_collision_counts": [
+          1,
+          2,
+          1,
+          2,
+          3,
+          1,
+          3,
+          3,
+          2,
+          3,
+          2,
+          4,
+          0,
+          2,
+          0,
+          3,
+          3,
+          0,
+          1,
+          0,
+          3,
+          0,
+          2,
+          4,
+          1,
+          1,
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ],
+        "control_count": 32,
+        "independent_collision_rank_population_stdev": 0.955555303213791,
+        "independent_collision_ranks": [
+          1,
+          2,
+          1,
+          2,
+          1,
+          1,
+          3,
+          1,
+          2,
+          3,
+          2,
+          2,
+          0,
+          2,
+          0,
+          3,
+          1,
+          0,
+          1,
+          0,
+          3,
+          0,
+          2,
+          2,
+          1,
+          1,
+          0,
+          2,
+          1,
+          2,
+          0,
+          1
+        ],
+        "max_independent_collision_rank": 3,
+        "mean_independent_collision_rank": 1.34375
+      }
+    },
+    {
+      "candidate_profile": {
+        "base_size": 8,
+        "closure_collision_count": 7,
+        "final_atom_count": 29,
+        "final_nullity": 4,
+        "final_relation_rank": 25,
+        "fresh_residual_count": 21,
+        "fresh_residual_rank": 21,
+        "independent_collision_rank": 4,
+        "pair_proposal_count": 28,
+        "s3_failures": 0,
+        "s3_nonidentity_checks": 28
+      },
+      "candidate_source": {
+        "accepted_x_coordinates": [
+          38,
+          40,
+          59,
+          117,
+          129,
+          138,
+          140,
+          148
+        ],
+        "coordinate_subgroup_generator": 199,
+        "coordinate_subgroup_order": 48,
+        "enumerated_coordinate_count": 48,
+        "field_primitive_root": 10,
+        "points": [
+          [
+            229,
+            30
+          ],
+          [
+            46,
+            55
+          ],
+          [
+            170,
+            130
+          ],
+          [
+            48,
+            118
+          ],
+          [
+            158,
+            322
+          ],
+          [
+            236,
+            315
+          ],
+          [
+            131,
+            155
+          ],
+          [
+            266,
+            40
+          ]
+        ],
+        "scalar_labels_consumed": false,
+        "sign_rule": "canonical_minimum_square_root_before_cofactor_clearing"
+      },
+      "cost_floor": {
+        "pair_proposal_ratio_vs_rho": 1.6470588235294117,
+        "pair_proposals": 28,
+        "pair_proposals_below_rho": false,
+        "rho_expected_group_operations": 17,
+        "subquadratic_locator_supplied": false
+      },
+      "curve_discriminant_nonzero": true,
+      "curve_order_replay": 326,
+      "excess_test": {
+        "candidate_at_least_double_control_mean": true,
+        "candidate_exceeds_every_control": false,
+        "candidate_has_preregistered_rank_excess": false,
+        "candidate_minus_control_max_rank": 0,
+        "candidate_minus_control_mean_rank": 2.4375
+      },
+      "family": {
+        "cofactor": 2,
+        "coordinate_subgroup_order": 48,
+        "curve_a": 1,
+        "curve_b": 3,
+        "family_id": "p337_a1_b3_q163_h2",
+        "field_prime": 337,
+        "subgroup_order": 163
+      },
+      "matched_hash_controls": {
+        "closure_collision_counts": [
+          2,
+          1,
+          3,
+          1,
+          3,
+          1,
+          0,
+          4,
+          0,
+          4,
+          1,
+          10,
+          1,
+          1,
+          3,
+          5,
+          3,
+          5,
+          1,
+          1,
+          4,
+          5,
+          0,
+          1,
+          4,
+          0,
+          2,
+          0,
+          0,
+          4,
+          1,
+          1
+        ],
+        "control_count": 32,
+        "independent_collision_rank_population_stdev": 1.1709371246996996,
+        "independent_collision_ranks": [
+          2,
+          1,
+          1,
+          1,
+          3,
+          1,
+          0,
+          4,
+          0,
+          2,
+          1,
+          4,
+          1,
+          1,
+          3,
+          3,
+          2,
+          3,
+          1,
+          1,
+          3,
+          3,
+          0,
+          1,
+          2,
+          0,
+          2,
+          0,
+          0,
+          2,
+          1,
+          1
+        ],
+        "max_independent_collision_rank": 4,
+        "mean_independent_collision_rank": 1.5625
+      }
+    },
+    {
+      "candidate_profile": {
+        "base_size": 8,
+        "closure_collision_count": 0,
+        "final_atom_count": 36,
+        "final_nullity": 8,
+        "final_relation_rank": 28,
+        "fresh_residual_count": 28,
+        "fresh_residual_rank": 28,
+        "independent_collision_rank": 0,
+        "pair_proposal_count": 28,
+        "s3_failures": 0,
+        "s3_nonidentity_checks": 28
+      },
+      "candidate_source": {
+        "accepted_x_coordinates": [
+          1,
+          10,
+          35,
+          37,
+          52,
+          77,
+          84,
+          99
+        ],
+        "coordinate_subgroup_generator": 391,
+        "coordinate_subgroup_order": 64,
+        "enumerated_coordinate_count": 64,
+        "field_primitive_root": 3,
+        "points": [
+          [
+            1,
+            118
+          ],
+          [
+            10,
+            53
+          ],
+          [
+            35,
+            34
+          ],
+          [
+            37,
+            164
+          ],
+          [
+            52,
+            32
+          ],
+          [
+            77,
+            97
+          ],
+          [
+            84,
+            88
+          ],
+          [
+            99,
+            191
+          ]
+        ],
+        "scalar_labels_consumed": false,
+        "sign_rule": "canonical_minimum_square_root_before_cofactor_clearing"
+      },
+      "cost_floor": {
+        "pair_proposal_ratio_vs_rho": 1.037037037037037,
+        "pair_proposals": 28,
+        "pair_proposals_below_rho": false,
+        "rho_expected_group_operations": 27,
+        "subquadratic_locator_supplied": false
+      },
+      "curve_discriminant_nonzero": true,
+      "curve_order_replay": 463,
+      "excess_test": {
+        "candidate_at_least_double_control_mean": false,
+        "candidate_exceeds_every_control": false,
+        "candidate_has_preregistered_rank_excess": false,
+        "candidate_minus_control_max_rank": -3,
+        "candidate_minus_control_mean_rank": -1.03125
+      },
+      "family": {
+        "cofactor": 1,
+        "coordinate_subgroup_order": 64,
+        "curve_a": 1,
+        "curve_b": 3,
+        "family_id": "p449_a1_b3_q463_h1",
+        "field_prime": 449,
+        "subgroup_order": 463
+      },
+      "matched_hash_controls": {
+        "closure_collision_counts": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          2,
+          3,
+          2,
+          0,
+          4,
+          2,
+          3,
+          1,
+          0,
+          1,
+          3,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          5,
+          0,
+          1,
+          3,
+          1,
+          1,
+          1,
+          5,
+          0
+        ],
+        "control_count": 32,
+        "independent_collision_rank_population_stdev": 0.9180269263480239,
+        "independent_collision_ranks": [
+          0,
+          2,
+          1,
+          0,
+          0,
+          0,
+          2,
+          1,
+          2,
+          0,
+          3,
+          2,
+          2,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          3,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          0
+        ],
+        "max_independent_collision_rank": 3,
+        "mean_independent_collision_rank": 1.03125
+      }
+    }
+  ],
+  "limits": [
+    "The four-family screen uses small prime-order groups and fixed size-eight prefixes.",
+    "Failure to exceed controls is evidence against this frozen candidate, not an impossibility theorem for every multiplicative coset family.",
+    "The screen exhausts seed pairs only for falsification and supplies no subquadratic locator.",
+    "No Shoup-bound improvement or ECDLP breakthrough is claimed."
+  ],
+  "next_action": "Close the raw multiplicative-x prefix candidate unless an independent review identifies a non-prefix coset family with a prospective density theorem. Route new work to a source with an explicit sub-pair collision locator, not merely FFT-compatible coordinates.",
+  "pass": true,
+  "r69_binding": {
+    "path": "p1553_constructive_closure_collision_gate_report_r69.json",
+    "rank_boundary": "Only independently colliding residuals receive rank-reduction credit; fresh residual rows receive none.",
+    "sha256": "401b8ae56607f4962c9ae10ed99889d5c27ac865d0e27b3359f7b163a04dd451"
+  },
+  "result": {
+    "breakthrough": false,
+    "fresh_target_descent_complete": false,
+    "scalar_blind_four_family_screen_complete": true,
+    "shoup_bound_improvement": false,
+    "source_beats_rho": false,
+    "subquadratic_s3_locator_supplied": false,
+    "transferred_superuniform_collision_rank": false
+  },
+  "schema": "p1553.multiplicative_x_s3_closure_screen.r70.v1",
+  "semantic_dedup": {
+    "disposition": "Retain as an R69 successor falsification screen. Do not promote fast field-subgroup arithmetic into an ECDLP source claim without rank excess and an exact subquadratic locator.",
+    "new_idea_created": false,
+    "owners": [
+      "ECDLP-IDEA-057 auxiliary ECFFT and composable-label screens",
+      "ECDLP-IDEA-195 non-Cartesian S3 source-router residual",
+      "P1553 R10 exact multiplicative-convolution control"
+    ]
+  },
+  "source_bindings": {
+    "r69_constructive_closure_report": {
+      "path": "p1553_constructive_closure_collision_gate_report_r69.json",
+      "sha256": "401b8ae56607f4962c9ae10ed99889d5c27ac865d0e27b3359f7b163a04dd451"
+    }
+  }
+}

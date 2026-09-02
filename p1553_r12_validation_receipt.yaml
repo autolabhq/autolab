@@ -1,0 +1,111 @@
+schema: crypto.autoresearch.install_validation_receipt.v1
+bundle_id: P1553-R12-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+reason: authoritative checkout is read-only and the live corpus validator is unstable under concurrent AppleDouble sidecars
+composition:
+  mode: atomic_r5_through_r12
+  upstream_bundle_id: P1553-R5-R7-20260719
+  upstream_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_bundle_id: P1553-R11-20260719
+  base_manifest_sha256: 5734fe58a08dc64f8e5a5111b00186975d1bccfb2f93fbf429f4942476bb6db3
+  base_manifest_hash_list_sha256: e4a780fcca2c53e266cd488c97c276679fcfb44b06f35cd1dc0586a91a4a6a98
+  base_simulated_queue_sha256: e1548d613c6d403adba77631a3d6f9c634fb3312e644da6ab1028b7f0af40370
+delta_manifest:
+  json_sha256: 452367a2158cd17ff252d1e3e6b2344e644082be8b9d6e5060ebc50ffbc5f811
+  sha256_list_sha256: 273fcb0e624e83ae9011ac8d0ae944beac8c88b868f7eda84a5966bd1a18dbeb
+  unique_sources: 4
+  destination_installs: 5
+  appended_tasks: 2
+producer_bindings:
+  gate_sha256: 999159b7f3240ad6cc78034bc68ef6f9c27bfb3a00f88ff2ffc38cc58e9fe181
+  parent_report_sha256: 0b1c9869776a5d8669693d4a05eaf096659e02dbce424fbfce9dd3fff269a8f4
+  red_team_markdown_sha256: 2a609a031cf3d5aa373f9ce458f0500c7cc51c149b309c74198a6c205b89c449
+  red_team_yaml_sha256: fe4105d2ac6cf68f2d840df68e1aa7d8047e9d08924bc88cc9d6b80551350358
+  independent_reviewer: 019f7d16-e67d-7bf2-a60a-1c2ba91519d3
+  initial_review: revise
+  final_review: accept
+  corrections_applied:
+    - count-plus-one-witness construction separated from persistent all-preimage state
+    - auxiliary quotient counts stated for Kummer classes with Theta notation
+    - endpoint, quotient-representative, and kernel source-index state charged
+    - all five arithmetic-progression decks specified
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+simulated_composed_merge:
+  queue_file_sha256: 2a5432d7736d39e754b367afc6a0e0766051810467d2ae4ab81e9acf73169a55
+  queue_canonical_sha256: cd56c4914dbdcca7fc8e1c9c3cbebc4b9a785707facd327a22fd26a24885d473
+  dispatch_file_sha256: 7a6b6387a979b3d92d1cacf090f1653bb447f8ad7fc05987a35f624f962dc220
+  dispatch_report_sha256: 080cb31870301525d1123b7a640926e46c98c1af55281c4a929ab6a260cfff33
+  dispatch_plan_sha256: b6dd2d772d58e2047d8c17724669bbeeb124a13559d555c60af36f122c5b3677
+  terminal_tasks: 24
+  ready_tasks: 0
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  new_yaml_documents_parsed: 2
+  new_ascii_files_checked_before_receipt: 6
+  r12_files_with_exactly_one_next_action: 4
+  r12_task_records_with_exactly_one_next_action: 2
+  composed_r5_through_r12_exactly_one_next_action_records: 16
+  r12_source_hash_list: pass
+  r12_manifest_source_bindings: pass
+  r12_task_ids_unique: pass
+  r12_dependency_ids_resolve: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator_live: blocked_by_persistent_appledouble_sidecars
+  idea_corpus_validator_clean_temporary_replay: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_validator_observation: >-
+    Concurrent writers repeatedly created and removed AppleDouble sidecars
+    under ideas/. One intermediate live replay passed, but the final live
+    replay failed while three sidecars were present, so the authoritative
+    corpus gate is not stable and installation is blocked. A private copy of
+    ideas, ledger, inputs, and focus with only AppleDouble metadata excluded
+    passed the unchanged validator at 17 hypotheses, 17 registry rows, and 9
+    contracts. No authoritative cleanup or write was attempted by this
+    session.
+research_result:
+  status: revise_scoped_theorem
+  exact_new_boundary: >-
+    A fifth-label-indexed psi-respecting branch table on certified dense pair
+    support needs at least S*B/d headers, so the B^(9/4) state cap forces
+    d=Omega(B^(3/4-o(1))). Erasing the fifth label enlarges a complete-key
+    fiber to at most 8d^2 and leaves an implicit image-and-inversion route.
+  construction_state_split: >-
+    Storing all preimages costs S*B state; a direct count-plus-one-witness pass
+    may use less persistent state but still costs S*B construction work. At
+    dense support both direct routes expose a B^3 charge.
+  standard_construction_closure: >-
+    Every separable isogeny of degree d<N, including the ECFFT quotient
+    mechanism through O(B), is injective on the prime-order subgroup and its
+    Kummer classes. It gives exact branch composition but no compression.
+  surviving_exception: >-
+    A list-specific non-isogeny implicit algebraic constructor for the erased
+    complete branch image, with exact source inversion and the R10 rank-two
+    control, remains unconstructed and not excluded.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_install_rule: >-
+  Re-read all three live precondition hashes and both required NET task states;
+  compose R5-R7, R8, R9, R10, R11, and R12 on one private queue; install all
+  files and regenerated dispatch outputs atomically only if every manifest,
+  source binding, test, focus check, corpus validator, and AppleDouble scan
+  passes after concurrent writers settle. Preserve any mismatch as drift
+  instead of overwriting it.

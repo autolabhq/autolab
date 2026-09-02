@@ -1,0 +1,121 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-OUTPUT-SENSITIVE-NONLINEAR-C5-SOURCE-INDEX-R119-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: random_deck_support_theorem_and_scoped_output_linear_audit
+run_count: 1
+status: suboutput_implicit_nonlinear_c5_membership_source_circuit_open
+labels:
+  - exact-finite
+  - theorem-only
+  - elliptic-curve
+  - random-deck
+  - ksum-indexing
+  - summation-polynomial
+  - ffe
+  - source-reporting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R82-R91-R94-R107-R118
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Prove or refute occurrence-sized canonical C5 endpoint support in the
+  frozen R118 regime, charge output-linear membership/source realizations,
+  and preserve any sub-output nonlinear index not covered by that theorem.
+inputs:
+  - path: p1553_m6_nonlinear_value_sensitive_c6_source_locator_probe_r118.py
+    sha256: 250fe039b89eb898d7efe8c576417720e13604671942eec53fcd2392c3bc28fa
+  - path: p1553_m6_nonlinear_value_sensitive_c6_source_locator_probe_report_r118.json
+    sha256: 465f8ec0b328580a3d7ad808ff9dcddc278402d64ea269f642f7996af681d036
+  - path: frozen_m6_nonlinear_c6_source_locator.json
+    sha256: 9634d37e048c5addc560adb9c00963b156e18eac0c81c22c88ddb0aa92ee5dd2
+  - path: m6_nonlinear_c6_branch_and_ffe_cost_ledger.json
+    sha256: 221ce9ee8b505bf59ed1f0296f6156378baa5e41cd69b769327c249060631822
+  - path: m6_nonlinear_c6_source_replay.json
+    sha256: c21101df0fd83ff8d79438762c4fca872e192d6ab9454ead59813971aa0b395d
+  - path: m6_nonlinear_c6_exceptional_controls.json
+    sha256: af35028330ccf255c150211f02e6bd62ed2069c98127bc9948ffc14fa33eb270
+  - path: factor_logs_and_identical_descent_r118.json
+    sha256: 00bf012cffbea3f97e9a37554fbbe78428ecca56cb95fb5eb0e7480b7d743cb8
+  - path: p1553_m6_nonlinear_value_sensitive_c6_source_locator_probe_gate_r118.md
+    sha256: 9ed7f59fb94dd1ecff54d8844068502183a7928c64e991c9a98b270ab8645b9d
+  - path: p1553_m6_nonlinear_value_sensitive_c6_source_locator_probe_parent_report_r118.yaml
+    sha256: 3b7ec8dd0690412e85ebf4fc9abe26a132dc91edde08e747658731c1e43d5213
+  - path: p1553_cartesian_sum_compact_divisor_probe_r82.py
+    sha256: 7380bff3175625016affee4703b0b0f2867a28113f72eef2d90614ed57ffef07
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: p1553_cartesian_sum_compact_divisor_probe_gate_r82.md
+    sha256: 7c34e1d905c95a756689d4ec0ea92c6bd47808bcb3407d858ce08cccf75fd55e
+artifacts:
+  - path: p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_r119.py
+    sha256: 99bd176b07eb119edad2ddbb6a2ff890b1109f1ef0a8cc26af061279e7bca578
+  - path: p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_report_r119.json
+    sha256: 1ff46d9c7a66ade7e617fc5523bf69d125ba1a102cc360b3cdee2ed0df1f75a9
+  - path: frozen_m6_output_sensitive_c5_source_index.json
+    sha256: 9ba25b63d0dfb3dd2a4be31aeb3b2d0fba3624e5b3d3fcdfdd2c4be9b2abccda
+  - path: m6_c5_membership_ffe_cost_ledger.json
+    sha256: 933a3ad858ddb68b89a4328a2d404bca4df3a20b21fbac9f41a3514f75308c5c
+  - path: m6_c5_membership_source_replay.json
+    sha256: 408066047d2401dce4f57382b3231cda04667fd80599e65a5aa106b8c2af867e
+  - path: m6_c5_membership_exceptional_controls.json
+    sha256: 06df2f774602cf9f467cfd08db68d4df73edb227cb3e55aa12914d8d0132afae
+  - path: factor_logs_and_identical_descent_r119.json
+    sha256: e1b6a3e891b8ad5e1ce636326992ed5d0a9fa0a0c9ab6d4bda1c0971a1b0ed3a
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_r119.py
+    sha256: 751c167df2c39c6122828584fc8aaf1c8ac98215cf576d1d506e60ca3d3159d1
+  - path: p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_gate_r119.md
+    sha256: 941e375918c4acd1be8293fcc40666879b4f5178b4454e28c21487cb9be9a9e9
+verified_statements:
+  - >-
+    For an iid uniform deck in a prime cyclic group of order q>5, every
+    distinct pair of canonical five-source multiplicity vectors collides
+    with probability exactly 1/q.
+  - >-
+    The expected canonical-source collision count is binom(M,2)/q and
+    endpoint-support deficiency is at most the collision count, yielding
+    the stated Markov support bound.
+  - >-
+    At n=B^(3/4) and q=B^5, canonical C5 support is
+    B^(15/4+o(1)) with probability 1-o(1), while expected collisions have
+    exponent B^(5/2+o(1)).
+  - >-
+    Exhaustive q=11, n=3 enumeration exactly matches the pair-collision
+    theorem and verifies the support-deficiency inequality on all decks.
+  - >-
+    All eight inherited R82 finite projective decks have injective
+    canonical C5 endpoint maps, exact source replay, and exact empty-target
+    rejection without consuming scalar labels.
+  - >-
+    Explicit endpoint dictionaries, radical/source selectors, and
+    output-linear image compilers require B^(15/4+o(1)) random-deck output
+    and exceed the B^(9/4+o(1)) setup cap.
+scoped_failures:
+  explicit_c5_endpoint_dictionary: rejected_at_frozen_setup
+  radical_endpoint_polynomial_and_source_selector: rejected_at_frozen_setup
+  output_linear_radical_image_or_trace_compiler: rejected_at_frozen_setup
+  universal_characteristic_zero_shift_index: rejected_at_frozen_setup
+  current_bound_k6_index: rejected_at_frozen_setup
+  generic_filtered_r82_support_transfer: not_proved
+  implicit_nonlinear_c5_membership_source_circuit: open
+  cell_probe_ram_or_arithmetic_circuit_lower_bound: not_claimed
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 10
+  total_obligations: 17
+  lane_admitted: false
+  random_model_theorem_admitted: true
+  scoped_negative_admitted: true
+disposition: >-
+  ADMIT_IID_RANDOM_DECK_C5_SUPPORT_THEOREM_AND_FINITE_R82_SOURCE_CONTROLS_ONLY__REJECT_OUTPUT_LINEAR_ENDPOINT_DICTIONARY_RADICAL_SELECTOR_AND_IMAGE_COMPILERS_AT_FROZEN_SETUP__PRESERVE_SUBOUTPUT_IMPLICIT_NONLINEAR_C5_MEMBERSHIP_SOURCE_CIRCUIT__NO_LOCATOR__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one sub-output implicit nonlinear C5 membership/source
+  circuit using at most B^(9/4+o(1)) setup and polylogarithmic exact query,
+  with frozen target graph, exact empty certificate, and reverse projective
+  source recovery, before any rank, logs, descent, or asymptotic credit.

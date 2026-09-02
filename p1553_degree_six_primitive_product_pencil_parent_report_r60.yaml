@@ -1,0 +1,65 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-DEGREE-SIX-PRIMITIVE-PRODUCT-PENCIL-R60-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exact_deterministic_positive_degree_six_product_pencil_search
+  model_scope: one_degree_six_witness_on_E_F193_full_rational_curve
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_POSITIVE_DEGREE_SIX_TOY_GATE
+summary: >-
+  Seed 1560 finds a primitive degree-six product pencil after 18 accepted
+  coprime pencils, matching the 19.31 heuristic. Its third rational fiber
+  splits into the same two classes and projects to six subgroup atoms. The
+  current full-field parameter scan costs Theta(N), and factor-base density,
+  relation rank, logs, and descent remain uncharged.
+inputs:
+  - path: staged/p1553_public_cofactor_projection_cost_gate_r59.md
+    sha256: d6839fb19226c106db20e441998ff56ea1b306ba6a4155b940f998ebafe1c3d1
+  - path: staged/p1553_public_cofactor_projection_cost_report_r59.json
+    sha256: 2b3931459c521d8e68b20bec1dd58ec9dfa5688efe34859f59386ffe6cb3eea7
+outputs:
+  - path: staged/p1553_degree_six_primitive_product_pencil_gate_r60.md
+    sha256: 89aa1c7cbd31d898c6bd06a8950b46f646898912e1ba6179023d137ddc251137
+  - path: staged/p1553_degree_six_primitive_product_pencil_search_r60.py
+    sha256: 5a9b2f6987fc945e3664347b6c929fc0fc4b973b615e0277545bc4ec5091e5f8
+  - path: staged/p1553_degree_six_primitive_product_pencil_search_report_r60.json
+    sha256: b15ac1b6cb5df18b4fb5fdcad4d0982fb8c122777dfc6009cbd5318fc28dd364
+controls:
+  field_prime: 193
+  curve_order: 206
+  prime_subgroup_order: 103
+  class_sum_scalars: [46, 54]
+  factor_catalog_sizes: [1717, 1717]
+  search_seed: 1560
+  attempts: 24
+  accepted_coprime_pencils: 18
+  complete_rational_third_fibers_seen: 2
+  witness_parameter: 29
+  common_base_divisor_degree: 0
+  effective_map_degree: 6
+result:
+  classification: positive_primitive_degree_six_product_pencil_toy
+  primitive_coprime_degree_six_product_pencil_found: true
+  observed_constant_rate_model_matches: true
+  third_fiber_source_points_publicly_projectable_without_dlp: true
+  third_fiber_scalar_logs_known_without_dlp: false
+  asymptotic_relation_algorithm: absent
+  product_image_hypersurface_locator: routed_not_constructed
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - full parameter scan costs Theta(p) and restricted factor-base density is absent
+  - no generic-prime locator, relation rank, logs, or descent
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_POSITIVE_DEGREE_SIX_TOY_GATE__SEED1560_ACCEPTED18__DEGREE6_BASE0_THREE_SPLIT_FIBERS__PUBLIC_PROJECTION__THETA_P_SCAN__HYPERSURFACE_LOCATOR_ROUTED__FACTOR_BASE_RANK_LOGS_DESCENT_ABSENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct and verify the fixed-class degree-six product-image hypersurface
+  locator, then charge restricted factor-base density.

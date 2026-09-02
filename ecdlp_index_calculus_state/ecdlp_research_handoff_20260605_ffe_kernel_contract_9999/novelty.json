@@ -1,0 +1,897 @@
+{
+  "claim_status": "RESEARCH_HANDOFF_READY",
+  "date": "2026-06-05",
+  "frontier": {
+    "latest_common_complete_end": 9999,
+    "note": "Direct certificates, rank scorers, and selected support scouts are all present through 9992_9999 for this handoff."
+  },
+  "honesty_boundary": [
+    "This is an FFE kernel contract and packet ABI handoff plus one bounded 9943 target-level recovery, not a generalized ECDLP recovery.",
+    "The contract does not evaluate summation polynomials or produce new direct/rank exports.",
+    "The linear rank preflight is support-space only and does not make a direct/rank export claim.",
+    "The source-gap preflight ranks replay targets but does not turn source proximity into a direct certificate.",
+    "The sidecar coefficient preflight exports source coefficient forms for worker input but does not prove a backfill transfer.",
+    "The backfill transfer gate binds source forms to missing row hashes but keeps accepted backfill exports at zero.",
+    "The replay algebra probe classifies copied source-form solves as source-secret replay or inconsistent source mixes, not backfill exports.",
+    "The fresh-emission packet binds worker obligations for fresh row emission but does not export direct/rank rows.",
+    "The fresh materialization adapter binds support-scout rows to packet row hashes but does not turn unverified below-rho labels into relations.",
+    "The direct verification audit classifies target verifier gaps but does not export direct/rank rows.",
+    "The leaf augmentation worklist orders replay candidates but does not export direct/rank rows.",
+    "The leaf augmentation replay probe records unverified rank/relation evidence but does not export direct/rank rows.",
+    "The 9943 second-stage lattice probe exhausts visible leaf subsets but does not export direct/rank rows.",
+    "The 9943 salt-neighbor carryover probe tests 9842 to 9943 leaf mutation but does not export direct/rank rows.",
+    "The 9943 public-prefix expansion probe records a bounded target-level relation-derived export but does not prove a cross-target algorithm.",
+    "The public-prefix min/transfer probe minimizes the 9943 export and derives 9981 only over rho, so it records portability evidence but not a generalized below-rho algorithm.",
+    "The 9981 event-core gap-closure probe derives held-out 9981 below rho after minimizing accepted transfer events, but still does not prove a generalized ECDLP algorithm.",
+    "The common leaf-pair sweep finds candidate-level below-rho relation-derived recoveries on 12 of 13 selected13 backfill transfers, but the sweep itself is not an end-to-end speedup because leaf selection is not predicted in advance.",
+    "The common leaf predictor audit tests existing fixed public-prefix rankers and finds zero end-to-end-like selectors, so salt-conditioned FFE prediction remains required.",
+    "No generalized or broad cross-target Pollard-rho speedup is claimed from these bounded artifacts alone."
+  ],
+  "new_artifacts": [
+    "../low_term_total2_direct_missing_column_bridge_audit_5984_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_kernel_contract_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_kernel_packet_manifest_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_kernel_packet_manifest_selected13_9696_9999_probe.h",
+    "../low_term_total2_ffe_sharp_lane_native_packet_abi_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_execution_worklist_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_execution_worklist_selected13_9696_9999_probe.h",
+    "../low_term_total2_ffe_sharp_lane_exact_certificate_replay_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_exact_certificate_replay_selected13_9696_9999_probe.h",
+    "../low_term_total2_ffe_sharp_lane_linear_rank_preflight_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_linear_rank_preflight_selected13_9696_9999_probe.h",
+    "../low_term_total2_ffe_sharp_lane_source_gap_preflight_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_source_gap_preflight_selected13_9696_9999_probe.h",
+    "../low_term_total2_ffe_sharp_lane_sidecar_coeff_preflight_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_sidecar_coeff_preflight_selected13_9696_9999_probe.h",
+    "../low_term_total2_ffe_sharp_lane_backfill_transfer_gate_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_backfill_transfer_gate_selected13_9696_9999_probe.h",
+    "../low_term_total2_ffe_sharp_lane_backfill_replay_algebra_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_backfill_replay_algebra_selected13_9696_9999_probe.h",
+    "../low_term_total2_ffe_sharp_lane_fresh_emission_packet_selected13_9696_9999_probe.json",
+    "../low_term_total2_ffe_sharp_lane_fresh_emission_packet_selected13_9696_9999_probe.h",
+    "../low_term_total2_selected13_fresh_materialization_adapter_9981_9943_probe.json",
+    "../low_term_total2_selected13_fresh_materialization_adapter_9981_9943_probe.h",
+    "../low_term_total2_selected13_direct_verification_audit_9981_9943_probe.json",
+    "../low_term_total2_selected13_direct_verification_audit_9981_9943_probe.h",
+    "../low_term_total2_selected13_leaf_augmentation_worklist_9981_9943_probe.json",
+    "../low_term_total2_selected13_leaf_augmentation_worklist_9981_9943_probe.h",
+    "../low_term_total2_selected13_leaf_augmentation_replay_probe_9981_9943.json",
+    "../low_term_total2_selected13_leaf_augmentation_replay_probe_9981_9943.h",
+    "../low_term_total2_selected13_9943_second_stage_lattice_probe.json",
+    "../low_term_total2_selected13_9943_second_stage_lattice_probe.h",
+    "../low_term_total2_selected13_9943_salt_neighbor_carryover_probe.json",
+    "../low_term_total2_selected13_9943_salt_neighbor_carryover_probe.h",
+    "../low_term_total2_selected13_9943_public_prefix_expansion_probe.json",
+    "../low_term_total2_selected13_9943_public_prefix_expansion_probe.h",
+    "../low_term_total2_selected13_public_prefix_min_transfer_probe.json",
+    "../low_term_total2_selected13_public_prefix_min_transfer_probe.h",
+    "../low_term_total2_selected13_9981_event_core_gap_closure_probe.json",
+    "../low_term_total2_selected13_9981_event_core_gap_closure_probe.h",
+    "../low_term_total2_selected13_common_leaf_pair_sweep_probe.json",
+    "../low_term_total2_selected13_common_leaf_pair_sweep_probe.h",
+    "../low_term_total2_selected13_common_leaf_predictor_audit_probe.json",
+    "../low_term_total2_selected13_common_leaf_predictor_audit_probe.h",
+    "experiment_result.md",
+    "next_hypothesis.md"
+  ],
+  "novelty_vector": [
+    "Extends the selected13 sharp-lane FFE contract from frontier 9959 to 9999.",
+    "Adds transfer 9981 as a new full-family direct/rank backfill packet.",
+    "Adds a neutral exported row class so saturated zero-rank comparators are ABI-covered without being promoted.",
+    "Adds a compiled native C ABI probe that checks packet and row arrays before the next FFE worker consumes them.",
+    "Adds a row execution worklist with exact-certificate dependencies and native C preflight for worker payloads.",
+    "Adds embedded exact-certificate replay with canonical hash recomputation and native C preflight.",
+    "Adds GF(2) support-mask rank/span preflight showing the full-family backfill masks are already inside the exact replay support span.",
+    "Adds source-gap preflight that separates same-row-key replay candidates from one-salt-neighbor candidates and span-only obligations.",
+    "Adds sidecar coefficient preflight that resolves mounted exact-certificate sidecars into 12 source coefficient forms for the priority backfill targets.",
+    "Adds a backfill transfer gate that binds those 12 forms to two missing full-family row hashes while requiring fresh direct/rank exports.",
+    "Adds replay-algebra negative controls showing copied source forms do not produce a backfill export.",
+    "Adds a native-preflighted fresh-emission packet that binds row slots, row hashes, and family-lane obligations for 9981 and 9943.",
+    "Adds a selected13 fresh materialization adapter that binds packet rows to host support-scout cases and preserves direct-public-key-unverified labels.",
+    "Adds a selected13 direct verification audit that separates the 9981 rank-deficient target from the 9943 no-relation target.",
+    "Adds a selected13 leaf augmentation worklist that orders exact selector, positive-control union, and single-leaf replay attempts for fresh relation emission.",
+    "Adds a selected13 leaf augmentation replay probe that runs those attempts through the verifier and isolates three unverified rank-1 seeds for 9943.",
+    "Adds a selected13 9943 second-stage lattice exhaustion probe showing the current visible leaf universe cannot produce rank 2 or a public-key-verified export.",
+    "Adds a selected13 9943 salt-neighbor carryover probe showing the verified 9842 source row does not survive the 176 to 175 salt mutation.",
+    "Adds a selected13 9943 public-prefix expansion probe that derives the target secret 7416 below rho from new public feature prefix leaves.",
+    "Adds a selected13 public-prefix min/transfer probe that shrinks 9943 to a two-leaf event core and shows 9981 transfers only over rho.",
+    "Adds a selected13 9981 event-core gap-closure probe that shrinks the held-out transfer to leaf 47 on both salts and derives secret 3626 below rho.",
+    "Adds a selected13 common leaf-pair sweep over all 13 direct/rank backfill transfers, yielding candidate-level below-rho recoveries on 12 transfers and isolating 9839 as the remaining miss.",
+    "Adds a selected13 common leaf predictor audit showing existing fixed public-prefix rankers cover held-out winners only at non-below-rho selected-set cost.",
+    "Preserves exact-positive certificates and inherited-promotion gates while expanding the backfill queue."
+  ],
+  "primary_backfill_targets": [
+    {
+      "first_pass_id": "first_37e20bd5a8b8d1f0",
+      "full_family_row_id": "t9981_4d807a56f643",
+      "packet_hash": "packet_4d46da8f104e6b82",
+      "packet_index": 19,
+      "row_check_hash": "row_8360d233d32d8d4d",
+      "salts": [
+        171,
+        173
+      ],
+      "transfer_index": 9981
+    },
+    {
+      "first_pass_id": "first_cff38c0711c53228",
+      "full_family_row_id": "t9943_4c88ff834538",
+      "packet_hash": "packet_a3c18ea956996b89",
+      "packet_index": 17,
+      "row_check_hash": "row_05f942a16fb73283",
+      "salts": [
+        167,
+        175
+      ],
+      "transfer_index": 9943
+    }
+  ],
+  "neutral_exported_control": {
+    "first_pass_id": "first_14d4ce00f0909c1a",
+    "packet_hash": "packet_42d699d6c680250e",
+    "packet_index": 18,
+    "salts": [
+      171,
+      175
+    ],
+    "transfer_index": 9969
+  },
+  "native_packet_abi": {
+    "artifact": "../low_term_total2_ffe_sharp_lane_native_packet_abi_selected13_9696_9999_probe.json",
+    "claim_status": "FFE_SHARP_LANE_NATIVE_PACKET_ABI_VERIFIED",
+    "compiled": true,
+    "native_failure_count": 0,
+    "selected13_missing_count": 0
+  },
+  "row_execution_worklist": {
+    "artifact": "../low_term_total2_ffe_sharp_lane_execution_worklist_selected13_9696_9999_probe.json",
+    "c_header": "../low_term_total2_ffe_sharp_lane_execution_worklist_selected13_9696_9999_probe.h",
+    "claim_status": "FFE_SHARP_LANE_EXECUTION_WORKLIST_READY",
+    "dependency_edge_count": 12,
+    "native_preflight_failure_count": 0,
+    "primary_backfill_transfers": [
+      9981,
+      9943
+    ],
+    "work_item_count": 60
+  },
+  "exact_certificate_replay": {
+    "artifact": "../low_term_total2_ffe_sharp_lane_exact_certificate_replay_selected13_9696_9999_probe.json",
+    "c_header": "../low_term_total2_ffe_sharp_lane_exact_certificate_replay_selected13_9696_9999_probe.h",
+    "claim_status": "FFE_SHARP_LANE_EXACT_CERTIFICATE_REPLAY_READY",
+    "native_preflight_failure_count": 0,
+    "rank_gain_sum": 7,
+    "record_count": 6,
+    "sidecar_artifact_available_count": 0,
+    "sidecar_artifact_missing_count": 6
+  },
+  "linear_rank_preflight": {
+    "artifact": "../low_term_total2_ffe_sharp_lane_linear_rank_preflight_selected13_9696_9999_probe.json",
+    "backfill_family_masks_in_exact_span_count": 39,
+    "c_header": "../low_term_total2_ffe_sharp_lane_linear_rank_preflight_selected13_9696_9999_probe.h",
+    "claim_status": "FFE_SHARP_LANE_LINEAR_RANK_PREFLIGHT_READY",
+    "exact_form_mask_count": 7,
+    "exact_form_mask_rank": 4,
+    "full_family_backfill_count": 13,
+    "interpretation": "Full-family support masks are covered by the exact replay GF(2) span; actual FFE/summation-polynomial direct/rank export is still required.",
+    "native_preflight_failure_count": 0,
+    "unique_exact_form_mask_count": 4
+  },
+  "source_gap_preflight": {
+    "artifact": "../low_term_total2_ffe_sharp_lane_source_gap_preflight_selected13_9696_9999_probe.json",
+    "c_header": "../low_term_total2_ffe_sharp_lane_source_gap_preflight_selected13_9696_9999_probe.h",
+    "claim_status": "FFE_SHARP_LANE_SOURCE_GAP_PREFLIGHT_READY",
+    "interpretation": "9981 is a same-row-key partial carryover candidate; 9943 is a one-salt-neighbor mutation candidate; both still require actual FFE/summation-polynomial direct/rank export.",
+    "native_preflight_failure_count": 0,
+    "one_salt_neighbor_mask_count": 6,
+    "primary_backfill_source_gaps": [
+      {
+        "source_gap_class": "same_row_key_partial_carryover",
+        "source_tier_counts": {
+          "one_salt_neighbor_exact_support": 0,
+          "same_row_key_exact_support": 2,
+          "support_span_only": 1
+        },
+        "transfer_index": 9981
+      },
+      {
+        "source_gap_class": "one_salt_neighbor_partial_carryover",
+        "source_tier_counts": {
+          "one_salt_neighbor_exact_support": 2,
+          "same_row_key_exact_support": 0,
+          "support_span_only": 1
+        },
+        "transfer_index": 9943
+      }
+    ],
+    "same_row_key_mask_count": 2,
+    "support_span_only_mask_count": 31
+  },
+  "sidecar_coeff_preflight": {
+    "artifact": "../low_term_total2_ffe_sharp_lane_sidecar_coeff_preflight_selected13_9696_9999_probe.json",
+    "c_header": "../low_term_total2_ffe_sharp_lane_sidecar_coeff_preflight_selected13_9696_9999_probe.h",
+    "claim_status": "FFE_SHARP_LANE_SIDECAR_COEFF_PREFLIGHT_READY",
+    "coefficient_form_count": 12,
+    "interpretation": "Mounted sidecars provide coefficient forms for priority support witnesses; actual FFE/summation-polynomial direct/rank export is still required.",
+    "mounted_sidecar_count": 3,
+    "mounted_sidecar_writable": false,
+    "native_preflight_failure_count": 0,
+    "one_salt_neighbor_form_count": 4,
+    "same_row_key_form_count": 4,
+    "support_span_only_form_count": 4,
+    "unique_coefficient_form_count": 8
+  },
+  "backfill_transfer_gate": {
+    "accepted_backfill_export_count": 0,
+    "artifact": "../low_term_total2_ffe_sharp_lane_backfill_transfer_gate_selected13_9696_9999_probe.json",
+    "c_header": "../low_term_total2_ffe_sharp_lane_backfill_transfer_gate_selected13_9696_9999_probe.h",
+    "candidate_form_count": 12,
+    "claim_status": "FFE_SHARP_LANE_BACKFILL_TRANSFER_GATE_READY",
+    "interpretation": "Sidecar forms are bound to missing full-family backfill row hashes; a worker must still re-emit and verify direct/rank rows for 9981 and 9943.",
+    "mask_lane_count": 6,
+    "native_preflight_failure_count": 0,
+    "primary_backfill_transfers": [
+      9981,
+      9943
+    ],
+    "transfer_gate_count": 2,
+    "transfer_gates": [
+      {
+        "backfill_row_check_hash": "row_8360d233d32d8d4d",
+        "backfill_row_id": "t9981_4d807a56f643",
+        "gate_status": "BACKFILL_SAME_ROW_KEY_REPLAY_FIRST",
+        "transfer_index": 9981
+      },
+      {
+        "backfill_row_check_hash": "row_05f942a16fb73283",
+        "backfill_row_id": "t9943_4c88ff834538",
+        "gate_status": "BACKFILL_SALT_NEIGHBOR_MUTATION_SECOND",
+        "transfer_index": 9943
+      }
+    ],
+    "worker_required_direct_export_count": 2
+  },
+  "backfill_replay_algebra": {
+    "accepted_backfill_export_count": 0,
+    "artifact": "../low_term_total2_ffe_sharp_lane_backfill_replay_algebra_selected13_9696_9999_probe.json",
+    "c_header": "../low_term_total2_ffe_sharp_lane_backfill_replay_algebra_selected13_9696_9999_probe.h",
+    "case_kind_counts": {
+      "mask_lane": 6,
+      "tier_group": 4,
+      "transfer_gate": 2
+    },
+    "claim_status": "FFE_SHARP_LANE_BACKFILL_REPLAY_ALGEBRA_READY",
+    "interpretation": "The bound sidecar forms replay only source secrets or inconsistent source mixes; no accepted backfill export is produced without fresh FFE/summation-polynomial row emission.",
+    "native_preflight_failure_count": 0,
+    "replay_case_count": 12,
+    "result_counts": {
+      "SOURCE_FORM_SYSTEM_INCONSISTENT": 3,
+      "SOURCE_SECRET_REPLAY_ONLY": 9
+    },
+    "transfer_gate_statuses": [
+      {
+        "backfill_transfer_index": 9981,
+        "result_status": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+        "source_secret_set": [
+          2802,
+          8534,
+          10783
+        ]
+      },
+      {
+        "backfill_transfer_index": 9943,
+        "result_status": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+        "source_secret_set": [
+          2802,
+          10783
+        ]
+      }
+    ],
+    "unverified_new_linear_derivation_count": 0
+  },
+  "fresh_emission_packet": {
+    "accepted_backfill_export_count": 0,
+    "artifact": "../low_term_total2_ffe_sharp_lane_fresh_emission_packet_selected13_9696_9999_probe.json",
+    "c_header": "../low_term_total2_ffe_sharp_lane_fresh_emission_packet_selected13_9696_9999_probe.h",
+    "claim_status": "FFE_SHARP_LANE_FRESH_EMISSION_PACKET_READY",
+    "family_lane_count": 6,
+    "full_family_target_count": 2,
+    "full_gate_replay_result_counts": {
+      "SOURCE_FORM_SYSTEM_INCONSISTENT": 2
+    },
+    "interpretation": "The packet binds priority backfill rows to row hashes and replay-negative controls; a lower-level FFE/summation-polynomial worker must freshly emit direct/rank rows before any export is accepted.",
+    "native_preflight_failure_count": 0,
+    "primary_backfill_transfers": [
+      9981,
+      9943
+    ],
+    "row_slot_count": 6,
+    "row_slot_direct_status_counts": {
+      "direct_certificate_missing": 6
+    },
+    "source_tier_counts": {
+      "one_salt_neighbor_exact_support": 2,
+      "same_row_key_exact_support": 2,
+      "support_span_only": 2
+    },
+    "target_count": 2,
+    "targets": [
+      {
+        "backfill_row_check_hash": "row_8360d233d32d8d4d",
+        "backfill_row_id": "t9981_4d807a56f643",
+        "family_lane_count": 3,
+        "full_gate_replay_result": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+        "packet_index": 19,
+        "priority_order": 0,
+        "row_slot_count": 3,
+        "salts": [
+          171,
+          173
+        ],
+        "transfer_index": 9981
+      },
+      {
+        "backfill_row_check_hash": "row_05f942a16fb73283",
+        "backfill_row_id": "t9943_4c88ff834538",
+        "family_lane_count": 3,
+        "full_gate_replay_result": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+        "packet_index": 17,
+        "priority_order": 1,
+        "row_slot_count": 3,
+        "salts": [
+          167,
+          175
+        ],
+        "transfer_index": 9943
+      }
+    ]
+  },
+  "fresh_materialization_adapter": {
+    "accepted_relation_export_count": 0,
+    "artifact": "../low_term_total2_selected13_fresh_materialization_adapter_9981_9943_probe.json",
+    "below_rho_unverified_count": 2,
+    "c_header": "../low_term_total2_selected13_fresh_materialization_adapter_9981_9943_probe.h",
+    "claim_status": "SELECTED13_FRESH_MATERIALIZATION_NEEDS_FRESH_DIRECT_VERIFICATION",
+    "direct_public_key_verified_count": 0,
+    "family_lane_count": 6,
+    "interpretation": "The adapter binds priority packet row identities to exact support-scout cases; both below-rho labels remain direct-public-key-unverified and require a fresh verifier/export before any relation claim.",
+    "materialized_target_count": 2,
+    "native_preflight_failure_count": 0,
+    "needs_fresh_direct_verification_count": 2,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "target_count": 2,
+    "targets": [
+      {
+        "backfill_row_check_hash": "row_8360d233d32d8d4d",
+        "backfill_row_id": "t9981_4d807a56f643",
+        "direct_ops_over_rho": 0.72262774,
+        "direct_public_key_verified": false,
+        "family_masks": [
+          33,
+          17408,
+          34816
+        ],
+        "transfer_index": 9981
+      },
+      {
+        "backfill_row_check_hash": "row_05f942a16fb73283",
+        "backfill_row_id": "t9943_4c88ff834538",
+        "direct_ops_over_rho": 0.64963504,
+        "direct_public_key_verified": false,
+        "family_masks": [
+          33,
+          17408,
+          34816
+        ],
+        "transfer_index": 9943
+      }
+    ]
+  },
+  "direct_verification_audit": {
+    "accepted_relation_export_count": 0,
+    "artifact": "../low_term_total2_selected13_direct_verification_audit_9981_9943_probe.json",
+    "c_header": "../low_term_total2_selected13_direct_verification_audit_9981_9943_probe.h",
+    "claim_status": "SELECTED13_DIRECT_VERIFICATION_REQUIRES_FRESH_RELATIONS",
+    "classification_counts": {
+      "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS": 1,
+      "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT": 1
+    },
+    "direct_certificate_target_count": 0,
+    "direct_public_key_verified_count": 0,
+    "interpretation": "The audit follows materialized targets into upstream verifier evidence: 9981 has rank-deficient direct evidence, 9943 has no exact direct relation, and both require fresh FFE relation emission before any export claim.",
+    "native_preflight_failure_count": 0,
+    "positive_control_certificate_count": 2,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "target_count": 2,
+    "targets": [
+      {
+        "backfill_row_check_hash": "row_8360d233d32d8d4d",
+        "backfill_row_id": "t9981_4d807a56f643",
+        "classification": "FRESH_DIRECT_RELATION_REQUIRED_RANK_DEFICIENT",
+        "direct_public_key_verified": false,
+        "exact_relation_count": 1,
+        "exact_rank": 1,
+        "transfer_index": 9981,
+        "worker_obligation": "emit_additional_independent_direct_relation"
+      },
+      {
+        "backfill_row_check_hash": "row_05f942a16fb73283",
+        "backfill_row_id": "t9943_4c88ff834538",
+        "classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+        "direct_public_key_verified": false,
+        "exact_relation_count": 0,
+        "exact_rank": 0,
+        "transfer_index": 9943,
+        "worker_obligation": "emit_new_direct_relations_for_rank"
+      }
+    ]
+  },
+  "leaf_augmentation_worklist": {
+    "accepted_relation_export_count": 0,
+    "artifact": "../low_term_total2_selected13_leaf_augmentation_worklist_9981_9943_probe.json",
+    "c_header": "../low_term_total2_selected13_leaf_augmentation_worklist_9981_9943_probe.h",
+    "candidate_class_counts": {
+      "exact_selector_replay": 7,
+      "positive_control_leaf_union": 2,
+      "single_leaf_positive_control_augmentation": 5
+    },
+    "claim_status": "SELECTED13_LEAF_AUGMENTATION_WORKLIST_READY",
+    "fresh_direct_verification_required_count": 14,
+    "interpretation": "The worklist orders fresh-emission replay candidates for 9981 and 9943; every item still needs a public-key-verified direct relation export before any ECDLP claim.",
+    "native_preflight_failure_count": 0,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "target_transfer_counts": {
+      "9943": 6,
+      "9981": 8
+    },
+    "top_items": [
+      {
+        "base_relation_count": 1,
+        "base_rank": 1,
+        "candidate_class": "exact_selector_replay",
+        "transfer_index": 9981,
+        "work_item_id": "leaf_aug_2c99873a692aa2f7"
+      },
+      {
+        "base_relation_count": 1,
+        "base_rank": 1,
+        "candidate_class": "positive_control_leaf_union",
+        "positive_control_transfer": 9978,
+        "transfer_index": 9981,
+        "work_item_id": "leaf_aug_ecb51c4e07b0ae31"
+      },
+      {
+        "base_relation_count": 0,
+        "base_rank": 0,
+        "candidate_class": "positive_control_leaf_union",
+        "positive_control_transfer": 9938,
+        "transfer_index": 9943,
+        "work_item_id": "leaf_aug_177f1e5d86698505"
+      }
+    ],
+    "work_item_count": 14
+  },
+  "leaf_augmentation_replay_probe": {
+    "accepted_relation_export_count": 0,
+    "artifact": "../low_term_total2_selected13_leaf_augmentation_replay_probe_9981_9943.json",
+    "c_header": "../low_term_total2_selected13_leaf_augmentation_replay_probe_9981_9943.h",
+    "claim_status": "SELECTED13_LEAF_AUGMENTATION_REPLAY_NO_EXPORT",
+    "context_error_count": 0,
+    "interpretation": "The replay probe runs all 14 leaf augmentation items through the verifier path. It produces relation events and three unverified 9943 rank gains, but no public-key-verified export or relation-derived ECDLP.",
+    "native_preflight_failure_count": 0,
+    "pollard_rho_speedup_claimed": false,
+    "public_key_verified_item_count": 0,
+    "relation_derived_ecdlp": false,
+    "relation_derived_item_count": 0,
+    "relation_producing_item_count": 11,
+    "status_counts": {
+      "NO_REPLAY_RELATION": 3,
+      "UNVERIFIED_RANK_OR_RELATION_GAIN": 3,
+      "UNVERIFIED_REPLAY_RELATION_ONLY": 8
+    },
+    "target_transfer_counts": {
+      "9943": 6,
+      "9981": 8
+    },
+    "top_unverified_gain_items": [
+      {
+        "candidate_class": "exact_selector_replay",
+        "ops_over_rho": 0.66423358,
+        "rank": 1,
+        "relation_count": 1,
+        "transfer_index": 9943,
+        "work_item_id": "leaf_aug_d3d8dfef36d5035f"
+      },
+      {
+        "candidate_class": "positive_control_leaf_union",
+        "ops_over_rho": 0.75182482,
+        "rank": 1,
+        "relation_count": 1,
+        "transfer_index": 9943,
+        "work_item_id": "leaf_aug_177f1e5d86698505"
+      },
+      {
+        "candidate_class": "single_leaf_positive_control_augmentation",
+        "ops_over_rho": 0.69343066,
+        "rank": 1,
+        "relation_count": 1,
+        "transfer_index": 9943,
+        "work_item_id": "leaf_aug_3c22f493a77e88cb"
+      }
+    ],
+    "unverified_rank_or_relation_gain_count": 3,
+    "work_item_count": 14
+  },
+  "selected13_9943_second_stage_lattice_probe": {
+    "accepted_relation_export_count": 0,
+    "artifact": "../low_term_total2_selected13_9943_second_stage_lattice_probe.json",
+    "c_header": "../low_term_total2_selected13_9943_second_stage_lattice_probe.h",
+    "candidate_count": 511,
+    "claim_status": "SELECTED13_9943_SECOND_STAGE_LATTICE_NO_EXPORT",
+    "context_error_count": 0,
+    "hit_root_only_count": 128,
+    "interpretation": "The probe exhausts every non-empty subset of the visible 9943 worklist leaf universe. The current leaf family cannot produce rank 2, public-key verification, or relation-derived ECDLP; the next worker needs a new relation source.",
+    "leaf_universe": {
+      "22050.cf1@11731:uniform:256:salt167": [
+        8,
+        56,
+        65,
+        79,
+        90
+      ],
+      "22050.cf1@11731:uniform:256:salt175": [
+        8,
+        65,
+        79,
+        90
+      ]
+    },
+    "native_preflight_failure_count": 0,
+    "pollard_rho_speedup_claimed": false,
+    "public_key_verified_count": 0,
+    "rank1_relation_count": 256,
+    "rank2_or_better_count": 0,
+    "relation_derived_ecdlp": false,
+    "relation_producing_count": 256,
+    "status_counts": {
+      "HIT_ROOT_ONLY": 128,
+      "NO_RELATION": 127,
+      "RANK1_RELATION_ONLY": 256
+    },
+    "top_candidate": {
+      "candidate_id": "second_stage_33c49deb22757afc",
+      "leaf_count": 1,
+      "ops_over_rho": 0.35036496,
+      "rank": 1,
+      "relation_count": 1,
+      "selected_leaf_map": [
+        {
+          "leaf_indices": [
+            8
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        }
+      ]
+    }
+  },
+  "selected13_9943_salt_neighbor_carryover_probe": {
+    "accepted_relation_export_count": 0,
+    "artifact": "../low_term_total2_selected13_9943_salt_neighbor_carryover_probe.json",
+    "c_header": "../low_term_total2_selected13_9943_salt_neighbor_carryover_probe.h",
+    "candidate_count": 11,
+    "claim_status": "SELECTED13_9943_SALT_NEIGHBOR_CARRYOVER_NO_EXPORT",
+    "interpretation": "The probe replays the verified 9842 source leaf systems and maps salt176 to salt175 for the 9943 target. The verified source row maps to zero target relations, and the only mapped rank-1 target rows come from source-unverified low-leaf selectors.",
+    "mapped_target_rank1_count": 4,
+    "max_mapped_target_rank": 1,
+    "native_preflight_failure_count": 0,
+    "pollard_rho_speedup_claimed": false,
+    "salt_map": {
+      "167": 167,
+      "176": 175
+    },
+    "source_gap_witness_count": 2,
+    "source_public_key_verified_count": 1,
+    "source_sidecar_form_count": 4,
+    "source_transfer_index": 9842,
+    "status_counts": {
+      "MUTATION_NO_RELATION": 6,
+      "MUTATION_RANK1_ONLY": 4,
+      "SOURCE_VERIFIED_MUTATION_NO_RELATION": 1
+    },
+    "target_public_key_verified_count": 0,
+    "target_relation_derived_ecdlp": false,
+    "top_source_verified_item": {
+      "backfill_leaf_map": [
+        {
+          "leaf_indices": [
+            65,
+            79,
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        },
+        {
+          "leaf_indices": [
+            65,
+            79
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175"
+        }
+      ],
+      "selector": "mode_low_term_support_total5",
+      "source_derived_secret": 2802,
+      "source_ops_over_rho": 0.7810219,
+      "source_rank": 3,
+      "source_relation_count": 4,
+      "target_ops_over_rho": 0.64963504,
+      "target_rank": 0,
+      "target_relation_count": 0
+    },
+    "transfer_index": 9943
+  },
+  "selected13_9943_public_prefix_expansion_probe": {
+    "accepted_relation_export_count": 3,
+    "artifact": "../low_term_total2_selected13_9943_public_prefix_expansion_probe.json",
+    "below_rho_accepted_relation_export_count": 2,
+    "best_accepted_candidate": {
+      "candidate_class": "pair_public_prefix",
+      "candidate_id": "public_prefix_a546aeffc8e7f563",
+      "derived_secret": 7416,
+      "mode": "hybrid_double_monic_b",
+      "new_leaf_count": 14,
+      "ops_over_rho": 0.81021898,
+      "rank": 3,
+      "relation_count": 3,
+      "selected_leaf_map": [
+        {
+          "leaf_indices": [
+            1,
+            2,
+            8,
+            16,
+            17,
+            19,
+            22,
+            28
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt167"
+        },
+        {
+          "leaf_indices": [
+            1,
+            2,
+            8,
+            16,
+            17,
+            19,
+            22,
+            28
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175"
+        }
+      ],
+      "top_k": 8
+    },
+    "c_header": "../low_term_total2_selected13_9943_public_prefix_expansion_probe.h",
+    "candidate_class_counts": {
+      "pair_public_prefix": 55,
+      "public_prefix_salt167_seed_salt175": 54,
+      "seed_salt167_public_prefix_salt175": 54
+    },
+    "candidate_count": 163,
+    "claim_status": "SELECTED13_9943_PUBLIC_PREFIX_EXPANSION_BELOW_RHO_EXPORT",
+    "general_ecdlp_algorithm_claimed": false,
+    "interpretation": "The probe changes the 9943 relation source from copied leaves/forms to public feature prefixes. It finds three relation-derived exports, two below rho, with best mode hybrid_double_monic_b at top-k 8. This is a bounded target-level recovery, not yet a generalized algorithm.",
+    "max_rank": 5,
+    "max_relation_count": 5,
+    "native_preflight_failure_count": 0,
+    "pollard_rho_speedup_scope": "bounded 9943 public-prefix replay under the existing preassociation cost model",
+    "rank2_or_better_unverified_count": 50,
+    "relation_derived_ecdlp": true,
+    "status_counts": {
+      "ACCEPTED_RELATION_DERIVED_BELOW_RHO": 2,
+      "ACCEPTED_RELATION_DERIVED_OVER_RHO": 1,
+      "HIT_ROOT_ONLY": 7,
+      "NO_RELATION": 15,
+      "RANK1_RELATION_ONLY": 88,
+      "RANK2_UNVERIFIED": 50
+    },
+    "target_level_pollard_rho_speedup_claimed": true,
+    "transfer_index": 9943
+  },
+  "selected13_public_prefix_min_transfer_probe": {
+    "artifact": "../low_term_total2_selected13_public_prefix_min_transfer_probe.json",
+    "c_header": "../low_term_total2_selected13_public_prefix_min_transfer_probe.h",
+    "candidate_count": 41,
+    "claim_status": "SELECTED13_PUBLIC_PREFIX_MIN_TRANSFER_HELDOUT_OVER_RHO",
+    "general_ecdlp_algorithm_claimed": false,
+    "heldout_9981": {
+      "accepted_relation_export_count": 4,
+      "below_rho_accepted_relation_export_count": 0,
+      "best_accepted_candidate": {
+        "candidate_id": "min_transfer_49041154c45578de",
+        "derived_secret": 3626,
+        "mode": "low_term_span",
+        "ops_over_rho": 1.00729927,
+        "rank": 4,
+        "relation_count": 4,
+        "selected_leaf_count": 16,
+        "selected_leaf_map": [
+          {
+            "leaf_indices": [
+              8,
+              19,
+              34,
+              47,
+              56,
+              89,
+              90,
+              94
+            ],
+            "row_key": "22050.cf1@11731:uniform:256:salt171"
+          },
+          {
+            "leaf_indices": [
+              8,
+              19,
+              34,
+              47,
+              56,
+              89,
+              90,
+              94
+            ],
+            "row_key": "22050.cf1@11731:uniform:256:salt173"
+          }
+        ],
+        "top_k": 8
+      },
+      "candidate_count": 33,
+      "relation_derived_ecdlp": true,
+      "status_counts": {
+        "ACCEPTED_DERIVED_OVER_RHO": 4,
+        "HIT_ROOT_ONLY": 5,
+        "NO_RELATION": 6,
+        "RANK1_RELATION_ONLY": 10,
+        "RANK2_UNVERIFIED": 8
+      }
+    },
+    "interpretation": "The 9943 public-prefix export minimizes to a two-leaf event core. The same selector family derives 9981 only over rho, so this is portability evidence but not a generalized below-rho algorithm.",
+    "minimized_9943": {
+      "accepted_relation_export_count": 3,
+      "below_rho_accepted_relation_export_count": 3,
+      "best_accepted_candidate": {
+        "candidate_id": "min_transfer_9a5de0d9305636da",
+        "derived_secret": 7416,
+        "mode": "hybrid_double_monic_b",
+        "ops_over_rho": 0.67153285,
+        "rank": 2,
+        "relation_count": 2,
+        "selected_leaf_count": 2,
+        "selected_leaf_map": [
+          {
+            "leaf_indices": [
+              28
+            ],
+            "row_key": "22050.cf1@11731:uniform:256:salt167"
+          },
+          {
+            "leaf_indices": [
+              28
+            ],
+            "row_key": "22050.cf1@11731:uniform:256:salt175"
+          }
+        ]
+      },
+      "candidate_count": 8,
+      "relation_derived_ecdlp": true,
+      "status_counts": {
+        "ACCEPTED_DERIVED_BELOW_RHO": 3,
+        "RANK1_RELATION_ONLY": 3,
+        "RANK2_UNVERIFIED": 2
+      }
+    },
+    "native_preflight_failure_count": 0,
+    "pollard_rho_speedup_scope": "bounded 9943 minimized public-prefix event core only; held-out 9981 is relation-derived but over rho",
+    "target_9943_below_rho_relation_derived": true,
+    "transfer_9981_below_rho_relation_derived": false,
+    "transfer_9981_relation_derived": true
+  },
+  "selected13_9981_event_core_gap_closure_probe": {
+    "accepted_relation_export_count": 64,
+    "artifact": "../low_term_total2_selected13_9981_event_core_gap_closure_probe.json",
+    "below_rho_accepted_relation_export_count": 63,
+    "best_below_rho_candidate": {
+      "candidate_id": "event_core_e94577e2cc4f02c1",
+      "derived_secret": 3626,
+      "ops_over_rho": 0.70072993,
+      "rank": 2,
+      "relation_count": 2,
+      "selected_leaf_count": 2,
+      "selected_leaf_map": [
+        {
+          "leaf_indices": [
+            47
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt171"
+        },
+        {
+          "leaf_indices": [
+            47
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt173"
+        }
+      ]
+    },
+    "c_header": "../low_term_total2_selected13_9981_event_core_gap_closure_probe.h",
+    "candidate_count": 217,
+    "claim_status": "SELECTED13_9981_EVENT_CORE_GAP_CLOSURE_BELOW_RHO_EXPORT",
+    "general_ecdlp_algorithm_claimed": false,
+    "heldout_9981_below_rho_relation_derived": true,
+    "interpretation": "The accepted 9981 public-prefix transfer was over rho before event minimization. This probe enumerates compact event-core subsets and finds a two-leaf held-out below-rho export. It is bounded selected13 evidence, not a generalized ECDLP algorithm.",
+    "native_preflight_failure_count": 0,
+    "source_best_over_rho_candidate_id": "min_transfer_49041154c45578de",
+    "source_best_over_rho_ops_over_rho": 1.00729927,
+    "status_counts": {
+      "ACCEPTED_DERIVED_BELOW_RHO": 63,
+      "ACCEPTED_DERIVED_OVER_RHO": 1,
+      "RANK2_UNVERIFIED": 153
+    },
+    "target_level_pollard_rho_speedup_claimed": true,
+    "transfer_index": 9981
+  },
+  "selected13_common_leaf_pair_sweep_probe": {
+    "accepted_candidate_count": 19,
+    "artifact": "../low_term_total2_selected13_common_leaf_pair_sweep_probe.json",
+    "below_rho_accepted_candidate_count": 19,
+    "best_heldout_candidate": {
+      "derived_secret": 6014,
+      "leaf_index": 18,
+      "ops_over_rho": 0.69343066,
+      "transfer_index": 9840
+    },
+    "c_header": "../low_term_total2_selected13_common_leaf_pair_sweep_probe.h",
+    "candidate_count": 1300,
+    "claim_status": "SELECTED13_COMMON_LEAF_PAIR_SWEEP_HELDOUT_BELOW_RHO_CANDIDATES",
+    "general_ecdlp_algorithm_claimed": false,
+    "heldout_below_rho_transfer_count": 10,
+    "heldout_transfer_count": 11,
+    "interpretation": "The same-leaf event-core family is broad across selected13 backfill rows, but this artifact sweeps leaf choices. It is selector-mining evidence and does not include a precommitted public predictor for the winning leaf.",
+    "native_preflight_failure_count": 0,
+    "same_leaf_pair_sweep_promoted_as_end_to_end_speedup": false,
+    "selection_cost_note": "Per-target full sweep costs are about 64x rho, so candidate-level below-rho rows are not promoted as an end-to-end algorithm.",
+    "transfer_count": 13,
+    "transfers_with_below_rho_export_count": 12,
+    "transfers_without_below_rho_export": [
+      9839
+    ]
+  },
+  "selected13_common_leaf_predictor_audit_probe": {
+    "artifact": "../low_term_total2_selected13_common_leaf_predictor_audit_probe.json",
+    "best_compact_selector": {
+      "heldout_covered_transfer_count": 8,
+      "mode": "low_term_span",
+      "selector_id": "predictor_049_low_term_span_top13",
+      "top_k": 13
+    },
+    "best_non_full_selector": {
+      "heldout_covered_transfer_count": 10,
+      "mode": "double_pair_first",
+      "selector_id": "predictor_031_double_pair_first_top89",
+      "top_k": 89
+    },
+    "c_header": "../low_term_total2_selected13_common_leaf_predictor_audit_probe.h",
+    "claim_status": "SELECTED13_COMMON_LEAF_PREDICTOR_AUDIT_COVERS_HELDOUT_NOT_BELOW_RHO_COST",
+    "end_to_end_like_selector_count": 0,
+    "general_ecdlp_algorithm_claimed": false,
+    "interpretation": "Fixed public-prefix rankers can cover held-out winning leaves but not at below-rho selected-set cost. The next selector needs salt-conditioned FFE association features.",
+    "native_preflight_failure_count": 0,
+    "non_full_heldout_cover_selector_count": 48,
+    "predictor_selector_count": 88,
+    "selection_cost_note": "A selector is counted as end-to-end-like only if it both finds a below-rho candidate and its whole selected leaf set costs less than rho on that transfer."
+  },
+  "source_contract": "../low_term_total2_ffe_sharp_lane_kernel_contract_selected13_9696_9999_probe.json"
+}

@@ -1,0 +1,61 @@
+schema: crypto.autoresearch.experiment_contract.v1
+contract_id: P1553-LIST-ONLY-MASS-COLLISION-TOY-R22B
+date: 2026-07-19
+status: approved_local_toy
+supersedes_failed_contract: P1553-LIST-ONLY-MASS-COLLISION-TOY-R22A
+repair_scope: native_python_seed_cast_only
+failed_replay_stderr_sha256: 05b04dc9773bce46d89b97c83b291c1de8577faf2c7b2616d58479eb5b1f2220
+classification:
+  - toy
+  - exact_finite_field
+  - model-bound
+  - novelty-unverified
+objective: >-
+  Test whether a degree-eight full-zero-fiber rational Kummer map can create
+  substantial finite-list complete-branch compression without relying on a
+  global common right factor.
+frozen_instance:
+  field: 193
+  curve: y^2=x^3+2*x+3
+  generator: [1, 44]
+  subgroup_order: 103
+  degree: 8
+  endpoint_scalars: [1, 2, 3, 4, 5, 6, 7, 8]
+  fifth_scalars:
+    start: 9
+    stop_inclusive: 28
+  candidate_count: 4096
+  random_seed: 155322
+candidate_family: >-
+  psi numerator is the monic product of the eight endpoint x-coordinate
+  factors. Each denominator is a deterministic pseudorandom monic degree-eight
+  polynomial, coprime to the numerator and nonzero on every evaluated branch
+  point. Complete keys are exact finite trace-and-norm pairs.
+command: >-
+  DOT_SAGE=/private/tmp/p1553-r22b-dot-sage
+  sage p1553_list_only_mass_collision_toy_r22.sage
+expected_stdout_artifact: p1553_list_only_mass_collision_toy_report_r22b.json
+acceptance_gate:
+  minimum_source_count: 160
+  maximum_distinct_complete_keys: 80
+  minimum_compression_ratio: 2.0
+  require_endpoint_block_size_greater_than_r21_bound: true
+  require_exact_collision_sources: true
+  require_regular_affine_chart: true
+rejection_gate:
+  - no candidate reaches twofold exact complete-key compression
+  - collisions are only constant-size accidental finite-list effects
+  - any accepted candidate uses a pole on the evaluated source set
+controls:
+  - identity psi complete-key distinct count
+  - random-key occupancy expectation in a 193^2 universe
+  - exact fiber histogram and one source per attained key
+resource_cap:
+  wall_seconds: 300
+  output_megabytes: 8
+promotion:
+  authorized: false
+  reason: >-
+    A passing finite toy would only nominate a separately reviewed asymptotic
+    construction. It would not establish containment, target transfer, R10,
+    rank, logs, descent, a Shoup improvement, or a breakthrough.

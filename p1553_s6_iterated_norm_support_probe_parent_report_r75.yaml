@@ -1,0 +1,94 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-S6-ITERATED-NORM-SUPPORT-R75-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_symbolic_coefficient_support
+run_count: 1
+status: reject_expanded_s6_iterated_norm_mod_suffix_grammar_only
+labels:
+  - exact-finite
+  - representation-bound
+  - scalar-blind-source
+  - novelty-unverified
+owner: P1553-R9-R10
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether a factored S4 prefix norm can be expanded and reduced modulo
+  the suffix support polynomial before an over-cap coefficient body appears.
+inputs:
+  - path: p1553_s6_residual_decision_diagram_probe_report_r74.json
+    sha256: 1558482f504bd5e05b112464ee7c6734dd30ee518789735ac7abc8c305a5f740
+  - path: p1553_resultant_valuation_trace_grammar_report_r73.json
+    sha256: 00f750c15644acdaea32bbbbe9b407071cd3bf6a5cf2268ce075c55bd9a29915
+artifacts:
+  - path: p1553_s6_iterated_norm_support_probe_r75.py
+    sha256: 0bbbccda66ae1df14fa61ec58f3caa116d6558ea1d00b7ae111e63b0fbf4290a
+  - path: p1553_s6_iterated_norm_support_probe_report_r75.json
+    sha256: c5f41fbb7325fe3f4e85fe6084fbaed6ab2df9d9101bd031cd1c589a95a3ba8c
+  - path: p1553_s6_iterated_norm_support_probe_gate_r75.md
+    sha256: 0bc8a0101e86faa065385b2c023991f2dfcab9751dd9ee9fc795cb3bd165c81a
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_s6_iterated_norm_support_probe_r75.py
+    sha256: 0ddcc7886cd14f9e81a31bda0f01359b1865113c8cf7329997f0dc9b30f30c64
+frozen_interface:
+  curve_families:
+    - secp256k1
+    - nist_p256
+    - nist_p384
+    - nist_p521
+  prefix_sizes:
+    - 2
+    - 3
+    - 4
+    - 6
+    - 8
+  scalar_labels_consumed: false
+  grammar_id: s6_iterated_norm_mod_suffix_v1
+verified_statements:
+  - >-
+    The symbolic trivariate S4 factor specializes exactly to the independent
+    R72 univariate compiler on all four standardized curves.
+  - >-
+    Every individual S4(X1,X2,a3,Z) factor has all 125 monomials in the
+    degree-four coefficient cube.
+  - >-
+    Every first-stage product over B third-deck values has all (4B+1)^3
+    possible trivariate coefficients on all 20 frozen instances.
+  - >-
+    For B greater than four, the first-stage Z degree 4B is below the degree-B2
+    suffix modulus, so suffix remainder changes no coefficient before the B3
+    body appears.
+scoped_positive_controls:
+  symbolic_to_r72_specialization: pass
+  four_standard_curve_fields: pass
+  exact_coefficient_support: pass
+scoped_failures:
+  first_stage_state_exponent_B: 3
+  first_stage_represented_work_exponent_B: at_least_3
+  early_suffix_reduction: inactive_for_B_greater_than_4
+  r73_multiplicity_source_and_dyadic_controls: not_reached
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - transposed scalar-functional algorithms
+  - black-box factored norms and straight-line circuits
+  - arithmetic-circuit lower bounds
+  - relation density, independent rank, factor logs, and descent
+admission:
+  passed_obligations: 4
+  obligation_count: 9
+  lane_admitted: false
+result:
+  expanded_iterated_norm_inside_caps: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_EXPANDED_S6_ITERATED_NORM_MOD_SUFFIX_GRAMMAR_ONLY__FOUR_STANDARD_CURVES__B2_3_4_6_8__EVERY_S4_FACTOR_FULL_5_CUBE__EVERY_FIRST_NORM_PRODUCT_FULL_4B_PLUS1_CUBED_SUPPORT__B3_STATE__SUFFIX_REDUCTION_INACTIVE_FOR_B_GT4__NO_CIRCUIT_LOWER_BOUND__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Freeze a transposed scalar-functional grammar that computes only the suffix
+  gcd or exact zero certificate from the factored unary S4 norm without
+  representing its trivariate coefficient body. Require R73 multiplicity,
+  zero-signature, dyadic-child, and source controls inside the direct caps.

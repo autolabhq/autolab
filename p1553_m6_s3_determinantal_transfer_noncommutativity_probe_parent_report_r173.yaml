@@ -1,0 +1,104 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-S3-DETERMINANTAL-TRANSFER-NONCOMMUTATIVITY-R173-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: exact_determinantal_identity_and_scoped_noncommutative_transfer_closure
+run_count: 1
+status: naive_two_by_two_transfer_closed_custom_implicit_resultant_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - semaev-s3
+  - determinant-pencil
+  - noncommutativity
+  - iterated-resultant
+  - full-cost
+  - scoped-negative
+owner: P1553-R172-SEMAEV-2004-HYUN-NEIGER-SCHOST-2019
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether the elementary-symmetric 2 by 2 determinant pencil for Semaev
+  S3 supplies an order-independent, softly linear factored self-resultant
+  transfer modulo the selected divisor U.
+inputs:
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_r172.py, sha256: 297dc3d3195926341fbbd79c7d0346e59bfcb1cd721e5b4f0d4b3e2cb4d615c8}
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_report_r172.json, sha256: 66f986b68c6d31576c688da4509d828139275331009dba4bb05abd45aef5ce5e}
+  - {path: frozen_m6_target_sign_conjugate_s3_self_resultant.json, sha256: 5a6938348733ec3d103ec2044198bcb5aef06c2119da01d45d5f746ed9e737bf}
+  - {path: m6_target_sign_conjugate_s3_self_resultant_cost_ledger.json, sha256: b8ceb6c4d9cc9d6365ce861ba17b6ac631c0e8f4f951d56dc4d94d0e351602f0}
+  - {path: m6_target_sign_conjugate_s3_self_resultant_replay.json, sha256: 7975e14f92f9fedd73193ace641d3ea6e2d97387b512be16ad9b01133fb15920}
+  - {path: m6_target_sign_conjugate_s3_self_resultant_controls.json, sha256: d176c75580c5810c37e6e9debb0a2a91636fe17f28bbec0b516f2a3cd164bc99}
+  - {path: target_conjugate_s3_factored_self_resultant_r172.json, sha256: 281fcf996ceddeeef5b5da57930e6b5dfc44da6da743719726fc2ebffd7f299d}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_target_sign_conjugate_s3_self_resultant_probe_r172.py, sha256: b9b663f3e502971257047a6b39d09a4d969030ebfd928927b14be4f474385dd1}
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_gate_r172.md, sha256: 14fb9459c75510f26177e2ef795266a825f58c2cdd11797d6ec6e60bd31dc951}
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_parent_report_r172.yaml, sha256: 45e476d650cb7c54bb3f9859175cded032d823881d76c706f60722c3e9d6a1bb}
+  - {path: references/semaev_summation_polynomials_2004_031.ps, sha256: 991f85d58ab68551a229266d03c2f88a5fc42e81b2a5f8f4432937bcceff16df}
+  - {path: references/hyun_neiger_schost_bivariate_resultants_1905.04356.pdf, sha256: 32b73cf0ca7172bdec0f8f1b256adda628a86d6dd7eee8e07e8644e35a9f16f3}
+artifacts:
+  - {path: p1553_m6_s3_determinantal_transfer_noncommutativity_probe_r173.py, sha256: dd63e3404bb9cd6cf24de48234b8240e6a7918eefb200bd76292c2e410119f67}
+  - {path: p1553_m6_s3_determinantal_transfer_noncommutativity_probe_report_r173.json, sha256: 2a9d6fafbee9c3c8e3d9323af291476bb662de075090cb497ad9e8555dafe75c}
+  - {path: frozen_m6_s3_determinantal_transfer_noncommutativity.json, sha256: 2032a4ef8c743de4db64d0e49bf8763fd23270120f26bb937629e9ef60410533}
+  - {path: m6_s3_determinantal_transfer_noncommutativity_cost_ledger.json, sha256: 7a0bb4812e6e7facbe4528e4717e34dfdd6b08f4d2b19af50f72ae921b490588}
+  - {path: m6_s3_determinantal_transfer_noncommutativity_replay.json, sha256: 57840c79d02126b9a4510273465df74fc0316c94913d2739a131ca0a880f1c4b}
+  - {path: m6_s3_determinantal_transfer_noncommutativity_controls.json, sha256: c53431049b58348471d8cf8d5797c7e9e7fcf52f0fc0bdd05e3631f26e1a2d64}
+  - {path: s3_determinantal_transfer_noncommutativity_r173.json, sha256: 4bd35b11d490b12445c8c98bd568e40d91259609b7a2976984c3f76c9454004c}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_s3_determinantal_transfer_noncommutativity_probe_r173.py, sha256: 2f0b521d7e78901247119376a167951a4805e202976576aafe729f26e0107740}
+  - {path: p1553_m6_s3_determinantal_transfer_noncommutativity_probe_gate_r173.md, sha256: 437a665efca2d9c0903e801f11b44f0c69f1d0a14a64ae4b69603593049442f7}
+verified_statements:
+  - Semaev S3 has the exact elementary-symmetric 2 by 2 determinant form stated by the R173 producer.
+  - Six controls verify 68,326 evaluated determinant identities and 1,486 separable discriminant identities.
+  - The coefficient-matrix commutator is diag(delta,-delta) with delta equal to 4(b-Xu(X+u)).
+  - All 1,675,890 tested distinct-root pencil pairs and all 118 target-factor pairs are noncommuting.
+  - Forward and reverse target products differ in every control, while both determinants replay the corresponding R172 reverse resultant exactly.
+  - The six represented transfer matrices reserve 1,448 coefficient slots, use 1,418, and have coefficient-rank sum 184.
+  - Represented 2 by 2 transfer state costs B^(5/2), exactly the rho proxy before the outer self-resultant.
+  - Diagonalizing through the known discriminant square root returns the two R172 target-sign branches rather than a new compact branch.
+scoped_failures:
+  naive_order_independent_two_by_two_transfer: refuted_by_exact_noncommutativity
+  represented_two_by_two_transfer_strictly_below_rho: refuted_by_full_cost
+  factored_self_s3_resultant_mod_u: open
+  custom_implicit_or_transposed_resultant: open
+  resultant_or_circuit_lower_bound: not_claimed
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 14
+  total_obligations: 23
+  determinantal_identity_admitted: true
+  naive_order_independent_two_by_two_transfer_admitted: false
+  factored_self_s3_resultant_mod_u_admitted: false
+  lane_admitted: false
+result:
+  control_count: 6
+  determinant_identity_count: 68326
+  discriminant_identity_count: 1486
+  pencil_pair_order_identity_count: 1675890
+  pencil_pair_noncommuting_count: 1675890
+  exceptional_commutator_evaluation_count: 0
+  target_factor_pair_count: 118
+  target_factor_noncommuting_pair_count: 118
+  represented_transfer_coefficient_slot_count: 1448
+  represented_transfer_nonzero_coefficient_count: 1418
+  represented_transfer_coefficient_rank_sum: 184
+  factored_pencil_state_exponent_B: 5/4
+  represented_matrix_transfer_exponent_B: 5/2
+  standard_outer_route_exponent_B: 7/2
+  global_rho_exponent_B: 5/2
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_ELEMENTARY_SYMMETRIC_S3_DETERMINANT_AND_SEPARABLE_DISCRIMINANT__EXACT_2X2_AFFINE_PENCIL__GENERIC_PENCIL_AND_TARGET_FACTOR_NONCOMMUTATIVITY__ORDERED_TRANSFER_DETERMINANT_REPLAYS_R172__REPRESENTED_MATRIX_BODY_N2_B5O2_AT_RHO__DIAGONALIZATION_RETURNS_R172_SIGN_SPLIT__NAIVE_2X2_SYMMETRIC_TRANSFER_CLOSED__CUSTOM_IMPLICIT_RESULTANT_OPEN__NO_GENERAL_LOWER_BOUND__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Use the known square root 4 V(X) V_T(u) to formulate the two diagonal
+  target-sign branches as compact divisor pushforwards modulo arbitrary
+  squarefree U. Test a transposed modular-composition or multipoint
+  implementation with all preprocessing charged and total work strictly below
+  B^(5/2), rejecting N^2 coefficient bodies, nN pair grids, target-dependent
+  setup, and unit-cost norm or resultant oracles.

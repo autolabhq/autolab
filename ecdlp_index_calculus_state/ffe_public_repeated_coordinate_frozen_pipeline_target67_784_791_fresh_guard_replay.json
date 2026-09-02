@@ -1,0 +1,4883 @@
+{
+  "cases": [
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (17,)), ('67.a1@9803:uniform:256:salt204', (17,)), ('67.a1@9803:uniform:256:salt207', (17,)))",
+      "coordinate": {
+        "b": 1545,
+        "c": 8489
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.816,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 204,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 4,
+            "salt_mod2": 0,
+            "salt_mod4": 0,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 207,
+            "salt_delta_from_min": 3,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt207",
+          "salt": 207,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (17,)), ('67.a1@9803:uniform:256:salt204', (17,)), ('67.a1@9803:uniform:256:salt207', (17,)))",
+      "coordinate": {
+        "b": 1545,
+        "c": 8489
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.816,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 204,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 4,
+            "salt_mod2": 0,
+            "salt_mod4": 0,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 207,
+            "salt_delta_from_min": 3,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt207",
+          "salt": 207,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (17,)), ('67.a1@9803:uniform:256:salt207', (17,)), ('67.a1@9803:uniform:256:salt204', (17,)))",
+      "coordinate": {
+        "b": 1545,
+        "c": 8489
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.816,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 207,
+            "salt_delta_from_min": 3,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt207",
+          "salt": 207,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 204,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 4,
+            "salt_mod2": 0,
+            "salt_mod4": 0,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (17,)), ('67.a1@9803:uniform:256:salt207', (17,)), ('67.a1@9803:uniform:256:salt204', (17,)))",
+      "coordinate": {
+        "b": 1545,
+        "c": 8489
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.816,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 207,
+            "salt_delta_from_min": 3,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt207",
+          "salt": 207,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 204,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 4,
+            "salt_mod2": 0,
+            "salt_mod4": 0,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt206', (2,)), ('67.a1@9803:uniform:256:salt205', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt206', (2,)), ('67.a1@9803:uniform:256:salt205', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt202', (2,)), ('67.a1@9803:uniform:256:salt205', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt202', (2,)), ('67.a1@9803:uniform:256:salt205', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt205', (2,)), ('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt206', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt205', (2,)), ('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt206', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt205', (2,)), ('67.a1@9803:uniform:256:salt202', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt205', (2,)), ('67.a1@9803:uniform:256:salt202', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.224,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (17,)), ('67.a1@9803:uniform:256:salt204', (7, 17)), ('67.a1@9803:uniform:256:salt207', (17,)))",
+      "coordinate": {
+        "b": 1545,
+        "c": 8489
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.816,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 204,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 4,
+            "salt_mod2": 0,
+            "salt_mod4": 0,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 207,
+            "salt_delta_from_min": 3,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt207",
+          "salt": 207,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.232,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (17,)), ('67.a1@9803:uniform:256:salt204', (7, 17)), ('67.a1@9803:uniform:256:salt207', (17,)))",
+      "coordinate": {
+        "b": 1545,
+        "c": 8489
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.816,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 204,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 4,
+            "salt_mod2": 0,
+            "salt_mod4": 0,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 207,
+            "salt_delta_from_min": 3,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt207",
+          "salt": 207,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.232,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (17,)), ('67.a1@9803:uniform:256:salt207', (17,)), ('67.a1@9803:uniform:256:salt204', (7, 17)))",
+      "coordinate": {
+        "b": 1545,
+        "c": 8489
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.816,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 207,
+            "salt_delta_from_min": 3,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt207",
+          "salt": 207,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 204,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 4,
+            "salt_mod2": 0,
+            "salt_mod4": 0,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.232,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (17,)), ('67.a1@9803:uniform:256:salt207', (17,)), ('67.a1@9803:uniform:256:salt204', (7, 17)))",
+      "coordinate": {
+        "b": 1545,
+        "c": 8489
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.816,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 207,
+            "salt_delta_from_min": 3,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt207",
+          "salt": 207,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            17
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 0,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 1,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 204,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 4,
+            "salt_mod2": 0,
+            "salt_mod4": 0,
+            "top_k": 16,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.232,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt206', (2, 12)), ('67.a1@9803:uniform:256:salt205', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.232,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt206', (2,)), ('67.a1@9803:uniform:256:salt205', (2, 12)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.232,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt205', (2,)), ('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt206', (2, 12)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.232,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt205', (2, 12)), ('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt206', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 1,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.232,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt203', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 58,
+        "ops_over_rho": 0.464,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 6,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt203', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 12,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt203', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 58,
+        "ops_over_rho": 0.464,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 6,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt203', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 12,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt206', (5,)), ('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt206', (5,)), ('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 58,
+        "ops_over_rho": 0.464,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 6,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 58,
+        "ops_over_rho": 0.464,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 6,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.28,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (5,)), ('67.a1@9803:uniform:256:salt202', (2, 5)), ('67.a1@9803:uniform:256:salt203', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 58,
+        "ops_over_rho": 0.464,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 6,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.288,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (5,)), ('67.a1@9803:uniform:256:salt202', (2, 5)), ('67.a1@9803:uniform:256:salt203', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 12,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.288,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt202', (5, 15)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 58,
+        "ops_over_rho": 0.464,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 6,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.288,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt202', (5, 15)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.288,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt202', (5, 15)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 58,
+        "ops_over_rho": 0.464,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 6,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.288,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt203', (5,)), ('67.a1@9803:uniform:256:salt202', (5, 15)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.288,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|786|4|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt209', (0,)), ('67.a1@9803:uniform:256:salt206', (0,)), ('67.a1@9803:uniform:256:salt205', (0,)))",
+      "coordinate": {
+        "b": 55,
+        "c": 7531
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:786:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            0
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 12,
+            "b_mod16": 7,
+            "b_mod5": 0,
+            "leaf_min_mod8": 0,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 3,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 4,
+            "transfer_index": 786
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:786:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.296,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 4,
+      "transfer_index": 786,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|786|4|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt209', (0,)), ('67.a1@9803:uniform:256:salt206', (0,)), ('67.a1@9803:uniform:256:salt205', (0,)))",
+      "coordinate": {
+        "b": 55,
+        "c": 7531
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:786:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            0
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 12,
+            "b_mod16": 7,
+            "b_mod5": 0,
+            "leaf_min_mod8": 0,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 3,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 4,
+            "transfer_index": 786
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:786:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.296,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 4,
+      "transfer_index": 786,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|786|4|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt209', (0,)), ('67.a1@9803:uniform:256:salt206', (0,)), ('67.a1@9803:uniform:256:salt205', (0, 2)))",
+      "coordinate": {
+        "b": 55,
+        "c": 7531
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:786:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            0
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 12,
+            "b_mod16": 7,
+            "b_mod5": 0,
+            "leaf_min_mod8": 0,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 3,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 4,
+            "transfer_index": 786
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:786:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.304,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 4,
+      "transfer_index": 786,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|786|4|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt209', (0,)), ('67.a1@9803:uniform:256:salt206', (0,)), ('67.a1@9803:uniform:256:salt205', (0, 2)))",
+      "coordinate": {
+        "b": 55,
+        "c": 7531
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:786:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            0
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 12,
+            "b_mod16": 7,
+            "b_mod5": 0,
+            "leaf_min_mod8": 0,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 3,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 4,
+            "transfer_index": 786
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:786:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.304,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 4,
+      "transfer_index": 786,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt202', (2, 12)), ('67.a1@9803:uniform:256:salt205', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.304,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt202', (2, 12)), ('67.a1@9803:uniform:256:salt205', (2,)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.304,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt205', (2,)), ('67.a1@9803:uniform:256:salt202', (2, 12)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.304,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|788|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt207', (2,)), ('67.a1@9803:uniform:256:salt205', (2,)), ('67.a1@9803:uniform:256:salt202', (2, 12)))",
+      "coordinate": {
+        "b": 161,
+        "c": 6976
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            2
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 1,
+            "b_mod5": 1,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 788
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:788:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.304,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 788,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt202', (10,)), ('67.a1@9803:uniform:256:salt201', (10,)), ('67.a1@9803:uniform:256:salt207', (10,)))",
+      "coordinate": {
+        "b": 937,
+        "c": 7720
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            10
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 2,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.36,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt202', (10,)), ('67.a1@9803:uniform:256:salt201', (10,)), ('67.a1@9803:uniform:256:salt207', (10,)))",
+      "coordinate": {
+        "b": 937,
+        "c": 7720
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            10
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 2,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.36,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt203', (2, 5)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 58,
+        "ops_over_rho": 0.464,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 6,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.36,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (5,)), ('67.a1@9803:uniform:256:salt202', (5,)), ('67.a1@9803:uniform:256:salt203', (2, 5)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 12,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.36,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt206', (5,)), ('67.a1@9803:uniform:256:salt203', (5, 15)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.36,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|790|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt206', (5,)), ('67.a1@9803:uniform:256:salt203', (5, 15)), ('67.a1@9803:uniform:256:salt208', (5,)))",
+      "coordinate": {
+        "b": 429,
+        "c": 3910
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            5
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 7,
+            "b_mod16": 13,
+            "b_mod5": 4,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 203,
+            "salt_delta_from_min": 0,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 1,
+            "salt_mod4": 3,
+            "top_k": 16,
+            "transfer_index": 790
+          },
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:790:67.a1@9803"
+        }
+      ],
+      "rule_name": "all_root",
+      "source_ops_over_rho": 1.36,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 790,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (7,)), ('67.a1@9803:uniform:256:salt206', (7,)), ('67.a1@9803:uniform:256:salt205', (7,)))",
+      "coordinate": {
+        "b": 757,
+        "c": 1452
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 60,
+        "ops_over_rho": 0.48,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            7
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 9,
+            "b_mod16": 5,
+            "b_mod5": 2,
+            "leaf_min_mod8": 7,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.368,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt208', (7,)), ('67.a1@9803:uniform:256:salt206', (7,)), ('67.a1@9803:uniform:256:salt205', (7,)))",
+      "coordinate": {
+        "b": 757,
+        "c": 1452
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 60,
+        "ops_over_rho": 0.48,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            7
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 9,
+            "b_mod16": 5,
+            "b_mod5": 2,
+            "leaf_min_mod8": 7,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.368,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt202', (10,)), ('67.a1@9803:uniform:256:salt201', (2, 10)), ('67.a1@9803:uniform:256:salt207', (10,)))",
+      "coordinate": {
+        "b": 937,
+        "c": 7720
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            10
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 2,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.368,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (7,)), ('67.a1@9803:uniform:256:salt206', (7, 10)), ('67.a1@9803:uniform:256:salt205', (7,)))",
+      "coordinate": {
+        "b": 757,
+        "c": 1452
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 60,
+        "ops_over_rho": 0.48,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            7
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 9,
+            "b_mod16": 5,
+            "b_mod5": 2,
+            "leaf_min_mod8": 7,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.376,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|784|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total4|(('67.a1@9803:uniform:256:salt208', (7,)), ('67.a1@9803:uniform:256:salt206', (7,)), ('67.a1@9803:uniform:256:salt205', (7, 10)))",
+      "coordinate": {
+        "b": 757,
+        "c": 1452
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 60,
+        "ops_over_rho": 0.48,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total4",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            7
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 9,
+            "b_mod16": 5,
+            "b_mod5": 2,
+            "leaf_min_mod8": 7,
+            "leaf_selector": "mode_low_term_support_total4",
+            "policy_family": "global_cap3",
+            "salt": 206,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 784
+          },
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:784:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.376,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 784,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt201', (13,)), ('67.a1@9803:uniform:256:salt204', (13,)), ('67.a1@9803:uniform:256:salt202', (13,)))",
+      "coordinate": {
+        "b": 1145,
+        "c": 8648
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            13
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.392,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt201', (13,)), ('67.a1@9803:uniform:256:salt204', (13,)), ('67.a1@9803:uniform:256:salt202', (13,)))",
+      "coordinate": {
+        "b": 1145,
+        "c": 8648
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            13
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.392,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt201', (13,)), ('67.a1@9803:uniform:256:salt202', (13,)), ('67.a1@9803:uniform:256:salt204', (13,)))",
+      "coordinate": {
+        "b": 1145,
+        "c": 8648
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            13
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.392,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|16|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt201', (13,)), ('67.a1@9803:uniform:256:salt202', (13,)), ('67.a1@9803:uniform:256:salt204', (13,)))",
+      "coordinate": {
+        "b": 1145,
+        "c": 8648
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            13
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 0,
+            "leaf_min_mod8": 5,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 16,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.392,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt202', (10,)), ('67.a1@9803:uniform:256:salt201', (10,)), ('67.a1@9803:uniform:256:salt207', (2, 10)))",
+      "coordinate": {
+        "b": 937,
+        "c": 7720
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            10
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 2,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total4",
+            "policy_family": "target_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 5,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.408,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('67.a1@9803:uniform:256:salt201', (10,)), ('67.a1@9803:uniform:256:salt204', (10,)), ('67.a1@9803:uniform:256:salt202', (10,)))",
+      "coordinate": {
+        "b": 937,
+        "c": 7720
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            10
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 2,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_cost_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.496,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    },
+    {
+      "activation_clauses": [],
+      "activation_selected": false,
+      "case_key": "67.a1@9803|787|12|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total3|(('67.a1@9803:uniform:256:salt201', (10,)), ('67.a1@9803:uniform:256:salt204', (10,)), ('67.a1@9803:uniform:256:salt202', (10,)))",
+      "coordinate": {
+        "b": 937,
+        "c": 7720
+      },
+      "form_guard": "candidate_pos_span=0",
+      "form_guard_features": {
+        "candidate_pos_max": null,
+        "candidate_pos_min": null,
+        "candidate_pos_signature": "",
+        "candidate_pos_span": null,
+        "candidate_pos_unique_count": 0,
+        "candidate_pos_values": []
+      },
+      "form_guard_passed": false,
+      "guarded_replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        ],
+        "derived_secret": null,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 125,
+        "guard_passed": false,
+        "guarded_below_rho": false,
+        "guarded_public_key_verified": false,
+        "materialized_row_count": 1,
+        "ops": 51,
+        "ops_over_rho": 0.408,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 0
+      },
+      "leaf_selector": "mode_low_term_support_total3",
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0",
+      "row_rule_selected_profiles": [
+        {
+          "leaf_indices": [
+            10
+          ],
+          "public_features": {
+            "b_minus_c_mod16": 1,
+            "b_mod16": 9,
+            "b_mod5": 2,
+            "leaf_min_mod8": 2,
+            "leaf_selector": "mode_low_term_support_total3",
+            "policy_family": "global_cap3",
+            "salt": 202,
+            "salt_delta_from_min": 1,
+            "salt_delta_to_max": 2,
+            "salt_mod2": 0,
+            "salt_mod4": 2,
+            "top_k": 12,
+            "transfer_index": 787
+          },
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:787:67.a1@9803"
+        }
+      ],
+      "rule_name": "activated",
+      "source_ops_over_rho": 1.496,
+      "source_public_key_verified": false,
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 787,
+      "window": "w784_791_fresh"
+    }
+  ],
+  "context_error_count": 0,
+  "context_errors": [],
+  "context_errors_truncated": false,
+  "method": "public_row_rule_replay_with_frozen_form_orientation_guard",
+  "non_claims": [
+    "The form guard is applied after relation-event scanning; row scan costs are still charged.",
+    "This is a frozen replay wrapper, not fresh validation unless the input window was held out from guard discovery.",
+    "Rejected cases may still have rank and relation count; rejection means the candidate-position alignment guard failed."
+  ],
+  "parameters": {
+    "activation_rule": "activate:b_minus_c_mod16=0&source_ops_millirhos>=1312|c_mod16=10&source_ops_millirhos>=1368",
+    "event_summary_limit": 16,
+    "form_guard": "candidate_pos_span=0",
+    "row_rules": [
+      {
+        "name": "activated",
+        "row_rule": "row_activate:b_minus_c_mod16=0&salt_mod4=3|b_mod16=10&salt_delta_to_max=1|salt_delta_from_min<=1&salt_mod2=0"
+      },
+      {
+        "name": "all_root",
+        "row_rule": "row_activate:b_mod5=4&salt=203|leaf_min_mod8=4&salt_delta_from_min=1|salt_mod4=3&transfer_mod16=8"
+      }
+    ],
+    "windows": [
+      {
+        "artifact": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_784_791_fresh_coordinate_gate.json",
+        "name": "w784_791_fresh"
+      }
+    ]
+  },
+  "schema": "ecdlp_public_repeated_coordinate_form_guard_replay_probe_v1",
+  "summary": {
+    "best_guarded_verified_cases": [],
+    "by_rule": [],
+    "guard_passed_relation_case_count": 0,
+    "guard_rejected_relation_case_count": 0,
+    "guarded_below_rho_count": 0,
+    "guarded_verified_case_count": 0,
+    "input_case_count": 62,
+    "mean_guard_passed_ops_over_rho": null,
+    "min_guard_passed_ops_over_rho": null,
+    "rejected_but_verified_case_count": 0,
+    "relation_case_count": 0,
+    "selected_case_count": 62
+  }
+}

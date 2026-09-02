@@ -1,0 +1,107 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-S6-RESIDUAL-DECISION-DIAGRAM-R74-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_finite_residual_support_enumeration
+run_count: 1
+status: reject_s6_squarefree_residual_radical_memoization_grammar_only
+labels:
+  - exact-finite
+  - representation-bound
+  - scalar-blind-source
+  - novelty-unverified
+owner: P1553-R9-R10
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether the actual S4-by-S4 S6 split admits target-independent state
+  reuse in a non-CP algebraic decision diagram keyed by exact squarefree
+  intermediate support, while separating constructive state from an
+  outcome-conditioned oracle truth diagram.
+inputs:
+  - path: p1553_s6_centered_carry_rank_minor_probe_report_r72.json
+    sha256: 7e63b52fc7667be14aadc1db3aeeb22b43876ff2c62e3dce87b312c056e85e43
+  - path: p1553_resultant_valuation_trace_grammar_report_r73.json
+    sha256: 00f750c15644acdaea32bbbbe9b407071cd3bf6a5cf2268ce075c55bd9a29915
+  - path: p1553_tensor_trace_minpoly_compiler_gate_r14.md
+    sha256: da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac
+artifacts:
+  - path: p1553_s6_residual_decision_diagram_probe_r74.py
+    sha256: 04dc04e2cc700793ed973405da6d6a41c7a3635c7410e7858c96f5242ddc84e2
+  - path: p1553_s6_residual_decision_diagram_probe_report_r74.json
+    sha256: 1558482f504bd5e05b112464ee7c6734dd30ee518789735ac7abc8c305a5f740
+  - path: p1553_s6_residual_decision_diagram_probe_gate_r74.md
+    sha256: 6cb48eafa6a9ccb182a60480a366c33ad6e91d2519dc1a1125b803a980ef3f48
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_s6_residual_decision_diagram_probe_r74.py
+    sha256: 9ed44ad10b448914a1e6f5e451bc9c087b761560519f83fc41d19ca38dcc3873
+frozen_interface:
+  curve_families:
+    - secp256k1
+    - nist_p256
+    - nist_p384
+    - nist_p521
+  prefix_sizes:
+    - 6
+    - 10
+    - 14
+    - 18
+  target_types:
+    - blind_hash_target
+    - forced_positive_target
+  scalar_labels_consumed: false
+  grammar_id: s6_squarefree_residual_radical_memoization_v1
+verified_statements:
+  - >-
+    The signed three-point Kummer endpoint set equals the projective squarefree
+    radical support of S4 in its last variable on every sampled family and
+    prefix control.
+  - >-
+    Every B^3 triple occurrence has a distinct target-independent algebraic
+    residual key on all four curves and all four prefix sizes.
+  - >-
+    Every blind target has zero incidences and a one-state outcome-conditioned
+    Boolean diagram; every forced target has exactly one incidence, two Boolean
+    states, and its frozen source is recognized.
+  - >-
+    Constructing the algebraic residual diagram costs B^3 work/state, while the
+    literal oracle-signature incidence grid costs B^5.
+  - >-
+    R14 already owns quotient-minimal-polynomial, trace-Hankel, Krylov, and
+    represented tensor-algebra routes, so that duplicate was not rerun.
+scoped_positive_controls:
+  exact_s4_radical_support: pass
+  scalar_blind_standard_curve_decks: pass
+  blind_zero_target: pass
+  forced_positive_source: pass
+  constructive_vs_oracle_state_separation: pass
+scoped_failures:
+  algebraic_residual_state_exponent_B: 3
+  algebraic_residual_construction_exponent_B: 3
+  pair_by_fifth_transition_exponent_B: 3
+  oracle_signature_construction: root_presupposing_or_B5
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - asymptotic residual-key collision bounds for arbitrary decks
+  - support-adaptive transposed incidence algorithms
+  - other decision-diagram keys and unrestricted circuits
+  - relation density, independent rank, factor logs, and descent
+admission:
+  passed_obligations: 6
+  obligation_count: 10
+  lane_admitted: false
+result:
+  target_independent_residual_compression_observed: false
+  oracle_boolean_compression_constructive: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_S6_SQUAREFREE_RESIDUAL_RADICAL_MEMOIZATION_GRAMMAR_ONLY__FOUR_STANDARD_CURVES__B6_10_14_18__ALL_TRIPLE_ALGEBRAIC_KEYS_DISTINCT__STATE_AND_CONSTRUCTION_B3__ORACLE_BOOLEAN_DIAGRAM_TINY_ONLY_AFTER_ROOT_INCIDENCES__R14_KRYLOV_DUPLICATE_NOT_RERUN__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct a support-adaptive transposed incidence algorithm that emits only
+  nonempty S4-prefix/S4-suffix intersections without enumerating B^3 prefix
+  radicals or B^5 incidences. Require exact blind zero certificates, the forced
+  source, R73 multiplicities, dyadic children, and direct caps.

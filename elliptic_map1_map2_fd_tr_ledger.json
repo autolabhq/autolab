@@ -1,0 +1,486 @@
+{
+  "cost_ledger": {
+    "best_charged_setup_exponent_with_online_cap": {
+      "decimal": 4.375,
+      "exact": "35/8"
+    },
+    "best_charged_setup_exponent_without_online_cap": {
+      "decimal": 3.3333333333333335,
+      "exact": "10/3"
+    },
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "fatal_obstructions": [
+      "the theorem advice is at least B^(10/3) even without the online cap",
+      "the online-compatible theorem point needs B^(35/8) setup",
+      "the exact elliptic maps return only an endpoint, not a 5A+5C source tuple",
+      "an explicit one-source-per-endpoint translator costs B^5 state"
+    ],
+    "scope_exception": "a target-dependent overlapping correspondence with one jointly compressed operator, rather than D independently preprocessed endpoint fibers, plus an exact compact source unranking map",
+    "source_translation": {
+      "actual_five_a_five_c_source_tuples_used": false,
+      "asymptotic_dictionary_state_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "candidate_credit": false,
+      "explicit_dictionary_TR_exact": true,
+      "explicit_dictionary_entry_count": 97,
+      "inside_setup_cap": false,
+      "one_source_per_endpoint": true,
+      "scope": "optimistic one-source-per-endpoint control; the explicit dictionary supplies the missing source translator at B^5 state",
+      "synthetic_source_count": 97,
+      "x_fiber_endpoint_control_exact": true
+    },
+    "subfunction_framework": {
+      "actual_theorem_advice_unconstrained_optimum": {
+        "delta_exponent_B": {
+          "decimal": 1.0,
+          "exact": "1"
+        },
+        "fiber_exponent_B": {
+          "decimal": 3.3333333333333335,
+          "exact": "10/3"
+        },
+        "image_exponent_B": {
+          "decimal": 1.6666666666666667,
+          "exact": "5/3"
+        },
+        "online_cap_satisfied": false,
+        "per_subfunction_advice_exponent_B": {
+          "decimal": 3.3333333333333335,
+          "exact": "10/3"
+        },
+        "query_exponent_B": {
+          "decimal": 3.3333333333333335,
+          "exact": "10/3"
+        },
+        "setup_cap_satisfied": false,
+        "setup_exponent_B": {
+          "decimal": 3.3333333333333335,
+          "exact": "10/3"
+        },
+        "shared_randomness_advice_exponent_B": {
+          "decimal": 3.3333333333333335,
+          "exact": "10/3"
+        },
+        "shared_randomness_charged_to_setup": true
+      },
+      "all_state_charged_unconstrained_minimum_B": {
+        "decimal": 3.3333333333333335,
+        "exact": "10/3"
+      },
+      "any_certified_point_inside_both_caps": false,
+      "any_certified_point_inside_setup_cap": false,
+      "auxiliary_source_translation_state_granted_free": true,
+      "bound_theorem_4_1": {
+        "charged_term_exponent": "max(5+ell*(1/2-delta), ell*delta)",
+        "delta_range": "[0,1]",
+        "query": "soft-O(L^delta)",
+        "query_exponent": "ell*delta",
+        "space": "soft-O(L^(3/2-delta)*D + Aux + L^delta)"
+      },
+      "construction_specific_nonclaim": "this charges the advice built by Theorem 4.1 for D independent generic subfunctions; it is not a lower bound against joint compression across subfunctions",
+      "endpoint_coverage": {
+        "MAP1_image_size": "D=B^d",
+        "counting_constraint": "D*L>=N, hence d+ell>=5",
+        "endpoint_count": "N=B^5",
+        "maximum_subfunction_domain": "L=B^ell",
+        "rational_map_specialization": "for h:E->P1 of degree r, each rational fiber has at most r points, so |h(E(F_q))|*r>=|E(F_q)|"
+      },
+      "exact_optimum_proofs": {
+        "actual_unconstrained": "for ell<=10/3 choose delta=1 and the first advice term is at least 5-ell/2>=10/3; for ell>=10/3, max(5+ell/2-ell*delta,ell*delta)>=10/3, with equality at ell=10/3,delta=1",
+        "online_compatible": "ell*delta<=5/4; for ell<=5/4 the best point has delta=1 and setup>=5-ell/2, while for ell>=5/4 setup>=15/4+ell/2; both meet at ell=5/4",
+        "optimistic_free_shared_randomness": "after deleting the L^delta advice term, choose delta=1 and ell=5 to obtain 5-ell/2=5/2"
+      },
+      "free_randomness_optimistic_minimum_B": {
+        "decimal": 2.5,
+        "exact": "5/2"
+      },
+      "map_description_and_evaluation_granted_free": true,
+      "online_compatible_minimum_B": {
+        "decimal": 4.375,
+        "exact": "35/8"
+      },
+      "online_compatible_optimum": {
+        "delta_exponent_B": {
+          "decimal": 1.0,
+          "exact": "1"
+        },
+        "fiber_exponent_B": {
+          "decimal": 1.25,
+          "exact": "5/4"
+        },
+        "image_exponent_B": {
+          "decimal": 3.75,
+          "exact": "15/4"
+        },
+        "online_cap_satisfied": true,
+        "per_subfunction_advice_exponent_B": {
+          "decimal": 4.375,
+          "exact": "35/8"
+        },
+        "query_exponent_B": {
+          "decimal": 1.25,
+          "exact": "5/4"
+        },
+        "setup_cap_satisfied": false,
+        "setup_exponent_B": {
+          "decimal": 4.375,
+          "exact": "35/8"
+        },
+        "shared_randomness_advice_exponent_B": {
+          "decimal": 1.25,
+          "exact": "5/4"
+        },
+        "shared_randomness_charged_to_setup": true
+      },
+      "optimistic_free_shared_randomness_optimum": {
+        "delta_exponent_B": {
+          "decimal": 1.0,
+          "exact": "1"
+        },
+        "fiber_exponent_B": {
+          "decimal": 5.0,
+          "exact": "5"
+        },
+        "image_exponent_B": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "online_cap_satisfied": false,
+        "per_subfunction_advice_exponent_B": {
+          "decimal": 2.5,
+          "exact": "5/2"
+        },
+        "query_exponent_B": {
+          "decimal": 5.0,
+          "exact": "5"
+        },
+        "setup_cap_satisfied": false,
+        "setup_exponent_B": {
+          "decimal": 2.5,
+          "exact": "5/2"
+        },
+        "shared_randomness_advice_exponent_B": {
+          "decimal": 5.0,
+          "exact": "5"
+        },
+        "shared_randomness_charged_to_setup": false
+      }
+    }
+  },
+  "frozen_candidate": {
+    "candidate_interface": {
+      "MAP1": "h(P), selecting one rational fiber",
+      "MAP2": "a second public coordinate identifying P in the fiber",
+      "TR": "translate a local fiber index back to an endpoint",
+      "f_d": "the MAP2 values on the d-th fiber"
+    },
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "frozen_rational_maps": {
+      "x": {
+        "degree_upper_bound": 2,
+        "map2": "MAP2(P)=y(P)",
+        "rational_map": "h(P)=x(P)"
+      },
+      "x_plus_2y": {
+        "degree_upper_bound": 3,
+        "map2": "MAP2(P)=x(P)",
+        "rational_map": "h(P)=x(P)+2y(P)"
+      },
+      "x_plus_y": {
+        "degree_upper_bound": 3,
+        "map2": "MAP2(P)=x(P)",
+        "rational_map": "h(P)=x(P)+y(P)"
+      },
+      "y": {
+        "degree_upper_bound": 3,
+        "map2": "MAP2(P)=x(P)",
+        "rational_map": "h(P)=y(P)"
+      }
+    },
+    "schema": "p1553.frozen_5a5c_compact_elliptic_subfunction_map.r92.v1",
+    "theorem_4_1": {
+      "paper": "Dinur-Golovnev arXiv:2512.04258v2",
+      "query": "soft-O(L^delta)",
+      "space": "soft-O(L^(3/2-delta)*D + Aux + L^delta)",
+      "version_sha256": "e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c"
+    },
+    "toy_prime_curve": {
+      "addition_closed_on_full_enumeration": true,
+      "all_enumerated_points_on_curve": true,
+      "curve": "E/F_101: y^2=x^3+7x+4",
+      "curve_discriminant_nonzero": true,
+      "enumerated_projective_point_count": 97,
+      "field_prime": 101,
+      "field_prime_exactly_prime": true,
+      "generator": [
+        0,
+        2
+      ],
+      "generator_has_stated_prime_order": true,
+      "group_order_exactly_prime": true,
+      "infinity_included": true,
+      "nontrivial_two_torsion_point_count": 0,
+      "point_count_matches_stated_order": true,
+      "stated_group_order": 97
+    }
+  },
+  "rational_fiber_semantics": [
+    {
+      "D_times_L": 98,
+      "MAP1_image_size_D": 49,
+      "TR_returns_exact_endpoint_for_every_target": true,
+      "absent_MAP2_value_rejected": true,
+      "coverage_inequality_D_times_L_at_least_N": true,
+      "every_target_has_one_fd_preimage": true,
+      "fiber_size_histogram": {
+        "1": 1,
+        "2": 48
+      },
+      "infinity_bucket_is_explicit": true,
+      "map_definition": {
+        "degree_upper_bound": 2,
+        "map2": "MAP2(P)=y(P)",
+        "rational_map": "h(P)=x(P)"
+      },
+      "map_name": "x",
+      "maximum_fiber_at_most_rational_degree": true,
+      "maximum_subfunction_domain_L": 2,
+      "projective_domain_size": 97,
+      "runtime_credit": false,
+      "scope": "exact finite semantic replay for identity endpoint inversion; fiber enumeration is not an asymptotic implementation"
+    },
+    {
+      "D_times_L": 189,
+      "MAP1_image_size_D": 63,
+      "TR_returns_exact_endpoint_for_every_target": true,
+      "absent_MAP2_value_rejected": true,
+      "coverage_inequality_D_times_L_at_least_N": true,
+      "every_target_has_one_fd_preimage": true,
+      "fiber_size_histogram": {
+        "1": 45,
+        "2": 2,
+        "3": 16
+      },
+      "infinity_bucket_is_explicit": true,
+      "map_definition": {
+        "degree_upper_bound": 3,
+        "map2": "MAP2(P)=x(P)",
+        "rational_map": "h(P)=y(P)"
+      },
+      "map_name": "y",
+      "maximum_fiber_at_most_rational_degree": true,
+      "maximum_subfunction_domain_L": 3,
+      "projective_domain_size": 97,
+      "runtime_credit": false,
+      "scope": "exact finite semantic replay for identity endpoint inversion; fiber enumeration is not an asymptotic implementation"
+    },
+    {
+      "D_times_L": 213,
+      "MAP1_image_size_D": 71,
+      "TR_returns_exact_endpoint_for_every_target": true,
+      "absent_MAP2_value_rejected": true,
+      "coverage_inequality_D_times_L_at_least_N": true,
+      "every_target_has_one_fd_preimage": true,
+      "fiber_size_histogram": {
+        "1": 57,
+        "2": 2,
+        "3": 12
+      },
+      "infinity_bucket_is_explicit": true,
+      "map_definition": {
+        "degree_upper_bound": 3,
+        "map2": "MAP2(P)=x(P)",
+        "rational_map": "h(P)=x(P)+y(P)"
+      },
+      "map_name": "x_plus_y",
+      "maximum_fiber_at_most_rational_degree": true,
+      "maximum_subfunction_domain_L": 3,
+      "projective_domain_size": 97,
+      "runtime_credit": false,
+      "scope": "exact finite semantic replay for identity endpoint inversion; fiber enumeration is not an asymptotic implementation"
+    },
+    {
+      "D_times_L": 180,
+      "MAP1_image_size_D": 60,
+      "TR_returns_exact_endpoint_for_every_target": true,
+      "absent_MAP2_value_rejected": true,
+      "coverage_inequality_D_times_L_at_least_N": true,
+      "every_target_has_one_fd_preimage": true,
+      "fiber_size_histogram": {
+        "1": 41,
+        "2": 1,
+        "3": 18
+      },
+      "infinity_bucket_is_explicit": true,
+      "map_definition": {
+        "degree_upper_bound": 3,
+        "map2": "MAP2(P)=x(P)",
+        "rational_map": "h(P)=x(P)+2y(P)"
+      },
+      "map_name": "x_plus_2y",
+      "maximum_fiber_at_most_rational_degree": true,
+      "maximum_subfunction_domain_L": 3,
+      "projective_domain_size": 97,
+      "runtime_credit": false,
+      "scope": "exact finite semantic replay for identity endpoint inversion; fiber enumeration is not an asymptotic implementation"
+    }
+  ],
+  "schema": "p1553.elliptic_map1_map2_fd_tr_ledger.r92.v1",
+  "subfunction_framework_cost": {
+    "actual_theorem_advice_unconstrained_optimum": {
+      "delta_exponent_B": {
+        "decimal": 1.0,
+        "exact": "1"
+      },
+      "fiber_exponent_B": {
+        "decimal": 3.3333333333333335,
+        "exact": "10/3"
+      },
+      "image_exponent_B": {
+        "decimal": 1.6666666666666667,
+        "exact": "5/3"
+      },
+      "online_cap_satisfied": false,
+      "per_subfunction_advice_exponent_B": {
+        "decimal": 3.3333333333333335,
+        "exact": "10/3"
+      },
+      "query_exponent_B": {
+        "decimal": 3.3333333333333335,
+        "exact": "10/3"
+      },
+      "setup_cap_satisfied": false,
+      "setup_exponent_B": {
+        "decimal": 3.3333333333333335,
+        "exact": "10/3"
+      },
+      "shared_randomness_advice_exponent_B": {
+        "decimal": 3.3333333333333335,
+        "exact": "10/3"
+      },
+      "shared_randomness_charged_to_setup": true
+    },
+    "all_state_charged_unconstrained_minimum_B": {
+      "decimal": 3.3333333333333335,
+      "exact": "10/3"
+    },
+    "any_certified_point_inside_both_caps": false,
+    "any_certified_point_inside_setup_cap": false,
+    "auxiliary_source_translation_state_granted_free": true,
+    "bound_theorem_4_1": {
+      "charged_term_exponent": "max(5+ell*(1/2-delta), ell*delta)",
+      "delta_range": "[0,1]",
+      "query": "soft-O(L^delta)",
+      "query_exponent": "ell*delta",
+      "space": "soft-O(L^(3/2-delta)*D + Aux + L^delta)"
+    },
+    "construction_specific_nonclaim": "this charges the advice built by Theorem 4.1 for D independent generic subfunctions; it is not a lower bound against joint compression across subfunctions",
+    "endpoint_coverage": {
+      "MAP1_image_size": "D=B^d",
+      "counting_constraint": "D*L>=N, hence d+ell>=5",
+      "endpoint_count": "N=B^5",
+      "maximum_subfunction_domain": "L=B^ell",
+      "rational_map_specialization": "for h:E->P1 of degree r, each rational fiber has at most r points, so |h(E(F_q))|*r>=|E(F_q)|"
+    },
+    "exact_optimum_proofs": {
+      "actual_unconstrained": "for ell<=10/3 choose delta=1 and the first advice term is at least 5-ell/2>=10/3; for ell>=10/3, max(5+ell/2-ell*delta,ell*delta)>=10/3, with equality at ell=10/3,delta=1",
+      "online_compatible": "ell*delta<=5/4; for ell<=5/4 the best point has delta=1 and setup>=5-ell/2, while for ell>=5/4 setup>=15/4+ell/2; both meet at ell=5/4",
+      "optimistic_free_shared_randomness": "after deleting the L^delta advice term, choose delta=1 and ell=5 to obtain 5-ell/2=5/2"
+    },
+    "free_randomness_optimistic_minimum_B": {
+      "decimal": 2.5,
+      "exact": "5/2"
+    },
+    "map_description_and_evaluation_granted_free": true,
+    "online_compatible_minimum_B": {
+      "decimal": 4.375,
+      "exact": "35/8"
+    },
+    "online_compatible_optimum": {
+      "delta_exponent_B": {
+        "decimal": 1.0,
+        "exact": "1"
+      },
+      "fiber_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "image_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "online_cap_satisfied": true,
+      "per_subfunction_advice_exponent_B": {
+        "decimal": 4.375,
+        "exact": "35/8"
+      },
+      "query_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_cap_satisfied": false,
+      "setup_exponent_B": {
+        "decimal": 4.375,
+        "exact": "35/8"
+      },
+      "shared_randomness_advice_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "shared_randomness_charged_to_setup": true
+    },
+    "optimistic_free_shared_randomness_optimum": {
+      "delta_exponent_B": {
+        "decimal": 1.0,
+        "exact": "1"
+      },
+      "fiber_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "image_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "online_cap_satisfied": false,
+      "per_subfunction_advice_exponent_B": {
+        "decimal": 2.5,
+        "exact": "5/2"
+      },
+      "query_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "setup_cap_satisfied": false,
+      "setup_exponent_B": {
+        "decimal": 2.5,
+        "exact": "5/2"
+      },
+      "shared_randomness_advice_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "shared_randomness_charged_to_setup": false
+    }
+  }
+}

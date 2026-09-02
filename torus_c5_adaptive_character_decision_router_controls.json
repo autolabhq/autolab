@@ -1,0 +1,52 @@
+{
+  "actual_control_count": 8,
+  "all_actual_c5_supports_injective": true,
+  "all_actual_positive_inverses_empty": true,
+  "all_controls_fail_finite_B9_over_4_leaf_cap": true,
+  "all_exact_router_replays_valid": true,
+  "candidate_discrete_log_oracle_consumed": false,
+  "exact_router_control_count": 3,
+  "finite_controls_receive_asymptotic_credit": false,
+  "full_signature_obstruction_counts": {
+    "p100683137_j0_q16780523_h6_u4_v7_offset0": 0,
+    "p100683137_j0_q16780523_h6_u4_v7_offset1": 3,
+    "p3148097_j0_q524683_h6_u3_v5_offset0": 2,
+    "p3148097_j0_q524683_h6_u3_v5_offset1": 2,
+    "p9603641_j0_q1600607_h6_u3_v6_offset0": 1,
+    "p9603641_j0_q1600607_h6_u3_v6_offset1": 0,
+    "p98561_j0_q16427_h6_u2_v3_offset0": 1,
+    "p98561_j0_q16427_h6_u2_v3_offset1": 0
+  },
+  "impossible_router_control_count": 5,
+  "minimum_leaf_counts": {
+    "p100683137_j0_q16780523_h6_u4_v7_offset0": 645,
+    "p100683137_j0_q16780523_h6_u4_v7_offset1": null,
+    "p3148097_j0_q524683_h6_u3_v5_offset0": null,
+    "p3148097_j0_q524683_h6_u3_v5_offset1": null,
+    "p9603641_j0_q1600607_h6_u3_v6_offset0": null,
+    "p9603641_j0_q1600607_h6_u3_v6_offset1": 360,
+    "p98561_j0_q16427_h6_u2_v3_offset0": null,
+    "p98561_j0_q16427_h6_u2_v3_offset1": 33
+  },
+  "minimum_maximum_depths": {
+    "p100683137_j0_q16780523_h6_u4_v7_offset0": 5,
+    "p100683137_j0_q16780523_h6_u4_v7_offset1": null,
+    "p3148097_j0_q524683_h6_u3_v5_offset0": null,
+    "p3148097_j0_q524683_h6_u3_v5_offset1": null,
+    "p9603641_j0_q1600607_h6_u3_v6_offset0": null,
+    "p9603641_j0_q1600607_h6_u3_v6_offset1": 5,
+    "p98561_j0_q16427_h6_u2_v3_offset0": null,
+    "p98561_j0_q16427_h6_u2_v3_offset1": 3
+  },
+  "random_source_comparator": {
+    "candidate_credit": false,
+    "consequence": "A random signature cell containing two independent sources has no common C2 pointer with probability 1-o(1); a direct router therefore approaches one leaf per C5 target.",
+    "fixed_pair_containment_probability": "20/(B*(B-1))",
+    "m_source_common_pair_union_bound": "binom(B,2)*(20/(B*(B-1)))^m",
+    "model": "independent uniform five-subsets of a B-element deck with independent uniform signature buckets",
+    "predicted_leaf_exponent_B": "5",
+    "scope": "Random-model comparator only; not a theorem for the structured pairing decks or arbitrary character parameters.",
+    "two_source_bound": "200/(B*(B-1))"
+  },
+  "schema": "p1553.torus_c5_adaptive_character_decision_router.controls.r142.v1"
+}

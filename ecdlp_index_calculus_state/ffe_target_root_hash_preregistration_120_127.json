@@ -1,0 +1,79 @@
+{
+  "schema": "ecdlp_ffe_static_root_policy_preregistration_v1",
+  "date": "2026-05-25",
+  "claim_boundary": "declared_before_120_127_generation",
+  "holdout_window": {
+    "transfer_indices": [
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127
+    ],
+    "window_label": "120_127"
+  },
+  "pre_factor_gate": {
+    "name": "pre_factor_nonvacuous_hit_root_proxy",
+    "uses_sage_factorization": false,
+    "uses_root_policy_outcome": false,
+    "conditions": [
+      "full materialized FFE surface has at least one selected root pair",
+      "selected public leaf has at least one known hit root before factorization"
+    ]
+  },
+  "primary_root_policy": {
+    "name": "target_root_hash",
+    "policy_type": "static_public_order",
+    "policy_identity_selection_rule": "selected before 120-127 from the 112-119 handoff because it was the posthoc best public static root policy: 3/3 preserving, zero false positives, and 3/3 scan-below-rho with max scan cost 0.912",
+    "selected_from_artifact": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_train_le87_test_112_119.json",
+    "algorithm": [
+      "rank candidate root hyperplanes by target-scoped public fingerprint digest",
+      "stop at the first public-zero root hyperplane",
+      "charge all selector work plus root-scan or direct-root accounting"
+    ],
+    "forbidden_holdout_selection_fields": [
+      "preserves_selected_root_pairs",
+      "chosen_preserves_selected_root_pairs",
+      "public_zero_recovered",
+      "below_rho",
+      "direct_below_rho",
+      "total_ops_over_rho",
+      "direct_total_ops_over_rho"
+    ]
+  },
+  "baseline_root_policies": [
+    {
+      "name": "residue16_then_global_hash_cap1",
+      "reason": "previous fresh-window hybrid primary; direct-root positive on 112-119 with one scan-only miss"
+    },
+    {
+      "name": "summax_sage_low_constant_target_hash",
+      "reason": "frozen static public policy selected from <=87 rows"
+    },
+    {
+      "name": "global_root_hash",
+      "reason": "static public global hash control"
+    },
+    {
+      "name": "learned_target_zero_residue16_prior",
+      "reason": "uncapped learned prior that motivated the hybrid family"
+    }
+  ],
+  "intended_outputs": {
+    "total2_stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_selector_120_127_probe.json",
+    "total3_total4_stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_120_127_probe.json",
+    "strict_signatures": [
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_120_127.json",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total3_total4_signature_fixed_selector_120_127.json"
+    ],
+    "gate_manifests": [
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_fixed_selector_120_127.json",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_fixed_selector_120_127.json"
+    ],
+    "frozen_evaluator": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_frozen_root_policy_train_le87_test_120_127.json"
+  },
+  "promotion_condition": "After generating 120-127 strict signatures and pre-factor manifests, factor only gate-selected surfaces and score target_root_hash. Count as a scan-positive promotion only if all gate-selected surfaces are preserving, false-positive-free, and below Pollard rho under scan accounting. Count as a weaker direct-root positive if all are preserving, false-positive-free, and below rho only under direct-root accounting. Report residue16_then_global_hash_cap1, summax_sage_low_constant_target_hash, global_root_hash, and learned_target_zero_residue16_prior as declared controls."
+}

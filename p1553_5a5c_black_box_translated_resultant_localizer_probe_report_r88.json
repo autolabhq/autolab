@@ -1,0 +1,280 @@
+{
+  "admission": {
+    "failures": [
+      "public_coefficient_free_zero_test_inside_caps",
+      "fixed_marker_source_output_inside_caps",
+      "standard_black_box_or_half_gcd_inside_caps",
+      "actual_semaev_projective_exceptional_charts",
+      "signed_source_biconditional_complete",
+      "known_rhs_rank_without_verifier_dlp",
+      "factor_logs_without_verifier_dlp",
+      "identical_fresh_target_descent",
+      "generic_prime_family_algorithm",
+      "shoup_improvement_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 16,
+    "obligations": {
+      "actual_semaev_projective_exceptional_charts": false,
+      "block_krylov_cap_interval_empty": true,
+      "conditional_logarithmic_oracle_localizer_exact": true,
+      "empty_multiple_nonreduced_scalar_controls": true,
+      "factor_logs_without_verifier_dlp": false,
+      "five_source_bindings_verified": true,
+      "fixed_marker_source_output_inside_caps": false,
+      "generic_prime_family_algorithm": false,
+      "identical_fresh_target_descent": false,
+      "known_rhs_rank_without_verifier_dlp": false,
+      "public_coefficient_free_zero_test_inside_caps": false,
+      "scalar_krylov_full_linear_complexity": true,
+      "shoup_improvement_complete": false,
+      "signed_source_biconditional_complete": false,
+      "standard_black_box_or_half_gcd_inside_caps": false,
+      "standard_operation_ledger_complete": true
+    },
+    "passed_obligation_count": 6
+  },
+  "block_krylov_tradeoff": {
+    "feasible_alpha_interval_empty": true,
+    "maximum_alpha_for_setup_cap": 0.25,
+    "minimum_alpha_for_online_cap": 0.75,
+    "model": "block width B^alpha, optimistic iterations B^(2-alpha), stored quotient blocks B^(2+alpha)",
+    "points": [
+      {
+        "block_width_exponent_B": 0.0,
+        "both_caps": false,
+        "inside_online_iteration_cap": false,
+        "inside_setup_cap": true,
+        "optimistic_iteration_exponent_B": 2.0,
+        "stored_block_state_exponent_B": 2.0
+      },
+      {
+        "block_width_exponent_B": 0.25,
+        "both_caps": false,
+        "inside_online_iteration_cap": false,
+        "inside_setup_cap": true,
+        "optimistic_iteration_exponent_B": 1.75,
+        "stored_block_state_exponent_B": 2.25
+      },
+      {
+        "block_width_exponent_B": 0.5,
+        "both_caps": false,
+        "inside_online_iteration_cap": false,
+        "inside_setup_cap": false,
+        "optimistic_iteration_exponent_B": 1.5,
+        "stored_block_state_exponent_B": 2.5
+      },
+      {
+        "block_width_exponent_B": 0.75,
+        "both_caps": false,
+        "inside_online_iteration_cap": true,
+        "inside_setup_cap": false,
+        "optimistic_iteration_exponent_B": 1.25,
+        "stored_block_state_exponent_B": 2.75
+      },
+      {
+        "block_width_exponent_B": 1.0,
+        "both_caps": false,
+        "inside_online_iteration_cap": true,
+        "inside_setup_cap": false,
+        "optimistic_iteration_exponent_B": 1.0,
+        "stored_block_state_exponent_B": 3.0
+      }
+    ],
+    "quotient_dimension_exponent_B": 2.0,
+    "scope": "standard scalar/block Krylov with explicit quotient blocks; matvec cost is optimistically treated as unit"
+  },
+  "breakthrough": false,
+  "classification": "ORACLE_SOURCE_LOCALIZER_LOGARITHMIC__SCALAR_BLOCK_KRYLOV_OR_HALF_GCD_OVER_CAP",
+  "conditional_oracle_source_replay": {
+    "a_endpoint_occurrences": 32,
+    "a_source": [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "a_subproduct_source_dictionary_words": 32,
+    "c_endpoint_occurrences": 243,
+    "c_source": [
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    "c_source_dictionary_enumerated": true,
+    "c_source_dictionary_words": 243,
+    "candidate_credit": false,
+    "expected_a_endpoint": 894663,
+    "expected_acceptance_plus_binary_calls": 6,
+    "field_prime": 1000003,
+    "joint_source_replay": true,
+    "logarithmic_call_count_exact": true,
+    "oracle_constructor_supplied": false,
+    "oracle_localization": {
+      "accepted": true,
+      "localized_endpoint": 894663,
+      "oracle_calls": 6,
+      "path": [
+        {
+          "role": "acceptance",
+          "subset_size": 32,
+          "zero": true
+        },
+        {
+          "role": "left_child",
+          "subset_size": 16,
+          "zero": false
+        },
+        {
+          "role": "left_child",
+          "subset_size": 8,
+          "zero": false
+        },
+        {
+          "role": "left_child",
+          "subset_size": 4,
+          "zero": true
+        },
+        {
+          "role": "left_child",
+          "subset_size": 2,
+          "zero": true
+        },
+        {
+          "role": "left_child",
+          "subset_size": 1,
+          "zero": false
+        }
+      ]
+    },
+    "recovered_a_endpoint": 894663,
+    "recovered_c_endpoint": 105374,
+    "target": 34,
+    "target_multiplicity": 1,
+    "zero_test_reads_materialized_c_polynomial": true
+  },
+  "disposition": "REJECT_MATERIALIZED_HALF_GCD_AND_SCALAR_BLOCK_KRYLOV_ONLY__CONDITIONAL_BINARY_SOURCE_LOCALIZER_LOGARITHMIC__ZERO_TEST_CONSTRUCTOR_OMITTED__KRYLOV_HANKEL_RANK_B2__BLOCK_WIDTH_CAP_INTERVAL_EMPTY__C_COEFFICIENTS_B3__NESTED_C_NORM_CROSSES_CAP_AT_SLOT4__FIXED_MARKER_SCALAR_RECURRENCE_OPEN__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "exceptional_controls": {
+    "actual_projective_semaev_charts_supplied": false,
+    "empty": {
+      "accepted": false,
+      "correctly_rejected": true,
+      "target": 20
+    },
+    "marked_multiplicity_oracle_supplied": false,
+    "multiple_distinct": {
+      "binary_localizer_returns_one_endpoint": 1,
+      "first_jet_rejects_unique_branch": true,
+      "scalar_norm_first_jet": [
+        0,
+        0
+      ],
+      "scalar_zero_oracle_alone_rejects_multiple": false,
+      "target": 6
+    },
+    "nonreduced": {
+      "first_jet_rejects_unique_branch": true,
+      "scalar_norm_first_jet": [
+        0,
+        0
+      ],
+      "scalar_zero_oracle_alone_rejects_nonreduced": false,
+      "target": 6
+    },
+    "signed_and_infinity_replay_complete": false
+  },
+  "factor_log_solve_complete": false,
+  "fresh_target_descent_complete": false,
+  "next_action": "Construct or refute one coefficient-free fixed-marker scalar resultant recurrence for the five C decks modulo P_A. It must return zero, multiplicity, and all five C source markers without P_C coefficients, a B^2 quotient vector or Krylov block, a C endpoint dictionary, or a unit-cost determinant oracle; fit B^(9/4) setup and B^(5/4) fresh work and replay every projective exceptional chart.",
+  "novelty_scope": "R88 separates source localization from zero-test construction on the R87 split. It adds an exact logarithmic conditional localizer and a scalar/block-Krylov cap tradeoff without reclaiming R80's materialized gcd or P1513's standard KU/norm routes.",
+  "operation_ledger": {
+    "a_characteristic_degree_exponent_B": 2.0,
+    "c_characteristic_degree_exponent_B": 3.0,
+    "scope_exception": "a coefficient-free structured marked-resultant identity that returns zero/multiplicity and the five C source markers as scalars without quotient vectors, Krylov blocks, or a C table",
+    "standard_black_box_and_half_gcd_inside_caps": false,
+    "standard_routes": {
+      "coefficient_half_gcd": {
+        "c_input_exponent_B": 3.0,
+        "inside_caps": false,
+        "owner": "R80/P1513/R87",
+        "remainder_exponent_B": 2.0
+      },
+      "conditional_subproduct_localizer": {
+        "oracle_call_exponent_B": 0.0,
+        "oracle_calls": "1+ceil(log2(B^2))",
+        "source_output_exact_if_unique": true,
+        "zero_test_constructor_omitted": true
+      },
+      "explicit_nested_c_norms": {
+        "first_setup_cap_crossing_slot": 4,
+        "inside_setup_cap": false,
+        "slot_support_exponents_B": [
+          0.6,
+          1.2,
+          1.8,
+          2.4,
+          3.0
+        ]
+      },
+      "materialized_c_polynomial": {
+        "inside_setup_cap": false,
+        "owner": "R80/P1513/R87",
+        "setup_state_exponent_B": 3.0
+      },
+      "scalar_krylov": {
+        "inside_online_cap": false,
+        "optimistic_scalar_sample_exponent_B": 2.0,
+        "quotient_dimension_exponent_B": 2.0
+      }
+    },
+    "translated_remainder_exponent_B": 2.0
+  },
+  "quotient_krylov_control": {
+    "berlekamp_massey_sequence_terms": 64,
+    "candidate_credit": false,
+    "distinct_eigenvalue_count": 32,
+    "field_prime": 1000003,
+    "multiplication_operator_nullity": 1,
+    "quotient_dimension_m": 32,
+    "scalar_krylov_full_linear_complexity": true,
+    "scalar_krylov_hankel_rank": 32,
+    "sequence_sha256": "b82c79772199b5333671c3c789d80de53d61fc70bc92249591200b2fdba06f01",
+    "verifier_diagonal_eigenvalues_consumed": true,
+    "zero_eigenvalue_count": 1
+  },
+  "schema": "p1553.5a5c_black_box_resultant_localizer.r88.v1",
+  "scope_boundary": "This closes materialized half-gcd and the frozen scalar/block Krylov quotient grammar only. It does not lower-bound a coefficient-free structured scalar marked-resultant identity, a non-Krylov determinant/kernel algorithm, or an unrestricted arithmetic circuit over the compact elliptic divisors.",
+  "shoup_bound_improvement": false,
+  "side_artifacts": {
+    "exceptional": "multiplicity_and_projective_exceptional_controls.json",
+    "frozen": "frozen_5a5c_black_box_resultant_localizer.json",
+    "logs_descent": "factor_logs_and_identical_descent_r88.json",
+    "operations": "implicit_resultant_half_gcd_operation_ledger.json",
+    "source_replay": "target_specialization_and_source_localization_replay.json"
+  },
+  "source_bindings": {
+    "p1513_direct_ku_handoff": {
+      "path": "/Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md",
+      "sha256": "27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc"
+    },
+    "p1536_norm_jet_audit": {
+      "path": "/Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+      "sha256": "81ec3515b584c36a809c155b5f26127bce91c09d7bfe6bccc425cdef07d51393"
+    },
+    "r80_batched_gcd_gate": {
+      "path": "p1553_batched_nested_norm_node_compiler_probe_gate_r80.md",
+      "sha256": "1ff3641688f4f0e13fd64f83aa540ea429a4164e0d0741b64b38acd804d7fb01"
+    },
+    "r87_gate": {
+      "path": "p1553_5a5c_jet_preserving_addition_pushforward_probe_gate_r87.md",
+      "sha256": "16d635add67bc64d63d5870663f68ce37e35a21fa4feb436c428b7afbe6ed565"
+    },
+    "r87_report": {
+      "path": "p1553_5a5c_jet_preserving_addition_pushforward_probe_report_r87.json",
+      "sha256": "f10ba663867815c9ee0b1234f4d9dee698d450a3a7171336d36f3e328ea2333a"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "conditional_exponent_envelope": {
+    "atom_a_size_exponent_B": {
+      "decimal": 0.08333333333333333,
+      "exact": "1/12"
+    },
+    "atom_c_size_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "conditional_precomputation_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "conditional_precomputation_exponent_N": {
+      "decimal": 0.45,
+      "exact": "9/20"
+    },
+    "conditional_shifted_descent_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "conditional_shifted_descent_exponent_N": {
+      "decimal": 0.15,
+      "exact": "3/20"
+    },
+    "conditions": [
+      "A scalar-blind weighted six-factor fiber-count circuit builds in B^(9/4+o(1)) work and state.",
+      "A fresh target count query costs polylog(B), and reverse transposed state returns A/C marginals in B^(3/4+o(1)) output work without replaying setup.",
+      "A B^(3/4+o(1)) known-scalar target stream supplies full meaningful aggregate rank with invertible fiber counts.",
+      "The same count circuit accepts arbitrary shifted targets and its successful-fiber density is B^(0+o(1)).",
+      "All extension-field, chart, integer-lift, memory, and bit costs remain within the stated exponents."
+    ],
+    "credit": "conditional_reduction_only",
+    "dense_log_elimination_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "factor_base_size_exponent_B": {
+      "decimal": 0.8333333333333334,
+      "exact": "5/6"
+    },
+    "group_order_N_exponent_B": {
+      "decimal": 5.0,
+      "exact": "5"
+    },
+    "known_target_hit_probability_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "meaningful_log_dimension_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "pollard_rho_exponent_B": {
+      "decimal": 2.5,
+      "exact": "5/2"
+    },
+    "pollard_rho_exponent_N": {
+      "decimal": 0.5,
+      "exact": "1/2"
+    },
+    "positive_marginal_matrix_output_exponent_B": {
+      "decimal": 1.5,
+      "exact": "3/2"
+    },
+    "six_factor_occurrence_exponent_B": {
+      "decimal": 5.0,
+      "exact": "5"
+    }
+  },
+  "known_rhs_identity": "For T=[k]G, 6*c_T*x0 + sum_{a>0}d^A_T(a)*delta_a + sum_{c>0}d^C_T(c)*delta_c = k*c_T mod q.",
+  "meaningful_log_coordinates": {
+    "delta_a": "log(A_a)-log(A_0), a>0",
+    "delta_c": "log(C_c)-log(C_0), c>0",
+    "dimension": "|A|+|C|-1",
+    "factor_log": "log(A_a+C_c)=x0+delta_a(a)+delta_c(c)",
+    "x0": "log(A_0+C_0)"
+  },
+  "required_open_outputs": {
+    "complete_projective_chart_and_integer_lift": "open",
+    "factor_logs_without_verifier_labels": "open",
+    "generic_prime_family_algorithm": "open",
+    "identical_target_descent": "open",
+    "offline_online_transposed_derivative_index": "open",
+    "shoup_bound_improvement": "open",
+    "structured_generic_family_rank_and_density": "open",
+    "weighted_s13_or_group_law_count_circuit": "open"
+  },
+  "schema": "p1553.m6_weighted_fiber_marginal_log_operator.frozen.r144.v1",
+  "source_binding_actual_sha256": {
+    "r115_gate": "11dd899c1ab6b89444cd9c9cc75709a64d9abf99d9370d2536e2f20e3d0fd1de",
+    "r115_report": "2b43c37f93e03c6ccdb675a34d48d7478deb3b0349026c65b2f6fe65695cb88e",
+    "r143_controls": "82f41b2215f9261e38533d65128b6cdc2e107b9aa496cc01086514a1d3d94e9e",
+    "r143_cost": "2229360cdcd9d625b9c93746f53c973393d4bd005637296c3b3558f8c62bc7f5",
+    "r143_frozen": "ad81801828ee4e88e7117bc3bd06d62ce237cc54bb24e2a90537f0857aebc588",
+    "r143_gate": "e17719b1f8ef38c13c02c682f4a51b072ef3f47f23633cf29f3499a8e4ec6653",
+    "r143_logs": "abe05d9d06e23008f46ac9c040affa57e5bb488886ec925bec0de81143c3c271",
+    "r143_parent": "91d76c1b26396e28a2f7199d196ae1bdd294641491dbdfed418d2840e60cc6c9",
+    "r143_producer": "715c34ecaf4fd839a8c30d8b43886bad734d96f9113d0c1bed3cde31ed08b00d",
+    "r143_replay": "e793128490b03e22b8d532f3cbbc298583a206fe0a8a206b41615fb99d20402a",
+    "r143_report": "d7d2ef76a1a0a8579ca543152e5d621e66a8e46723987896b45a8cc47feb950b",
+    "r143_test": "4d7573f630148b687a59a27fec9cb95f1e902e36d0e8ac5dc9d24bf09481a5d6"
+  },
+  "source_bindings": {
+    "r115_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_relation_arity_factor_base_transposed_interface_rebalance_probe_gate_r115.md",
+      "sha256": "11dd899c1ab6b89444cd9c9cc75709a64d9abf99d9370d2536e2f20e3d0fd1de"
+    },
+    "r115_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_relation_arity_factor_base_transposed_interface_rebalance_probe_report_r115.json",
+      "sha256": "2b43c37f93e03c6ccdb675a34d48d7478deb3b0349026c65b2f6fe65695cb88e"
+    },
+    "r143_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/torus_c5_label_congruence_correction_controls.json",
+      "sha256": "82f41b2215f9261e38533d65128b6cdc2e107b9aa496cc01086514a1d3d94e9e"
+    },
+    "r143_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/torus_c5_label_congruence_correction_cost_ledger.json",
+      "sha256": "2229360cdcd9d625b9c93746f53c973393d4bd005637296c3b3558f8c62bc7f5"
+    },
+    "r143_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_torus_c5_label_congruence_correction.json",
+      "sha256": "ad81801828ee4e88e7117bc3bd06d62ce237cc54bb24e2a90537f0857aebc588"
+    },
+    "r143_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_torus_c5_label_congruence_correction_probe_gate_r143.md",
+      "sha256": "e17719b1f8ef38c13c02c682f4a51b072ef3f47f23633cf29f3499a8e4ec6653"
+    },
+    "r143_logs": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/factor_logs_and_identical_descent_r143.json",
+      "sha256": "abe05d9d06e23008f46ac9c040affa57e5bb488886ec925bec0de81143c3c271"
+    },
+    "r143_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_torus_c5_label_congruence_correction_probe_parent_report_r143.yaml",
+      "sha256": "91d76c1b26396e28a2f7199d196ae1bdd294641491dbdfed418d2840e60cc6c9"
+    },
+    "r143_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_torus_c5_label_congruence_correction_probe_r143.py",
+      "sha256": "715c34ecaf4fd839a8c30d8b43886bad734d96f9113d0c1bed3cde31ed08b00d"
+    },
+    "r143_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/torus_c5_label_congruence_correction_replay.json",
+      "sha256": "e793128490b03e22b8d532f3cbbc298583a206fe0a8a206b41615fb99d20402a"
+    },
+    "r143_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_torus_c5_label_congruence_correction_probe_report_r143.json",
+      "sha256": "d7d2ef76a1a0a8579ca543152e5d621e66a8e46723987896b45a8cc47feb950b"
+    },
+    "r143_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_label_congruence_correction_probe_r143.py",
+      "sha256": "4d7573f630148b687a59a27fec9cb95f1e902e36d0e8ac5dc9d24bf09481a5d6"
+    }
+  },
+  "source_free_descent_identity": "If c_T is nonzero mod q, log_G(T)=c_T^(-1) times the aggregate marginal dot product. For T=Q+[r]G this returns log_G(Q) after subtracting r.",
+  "source_requirement": "No individual relation source is needed for factor-log solve or target recovery once exact count and marginals are supplied.",
+  "weighted_fiber_polynomial": {
+    "a_marginal": "d^A_T(a)=(u_a partial Z_T/partial u_a) at u=v=1",
+    "c_marginal": "d^C_T(c)=(v_c partial Z_T/partial v_c) at u=v=1",
+    "count": "c_T=Z_T(1,1)",
+    "definition": "Z_T(u,v)=sum_{(a_j,c_j): sum_j(A_a_j+C_c_j)=T} prod_j u_a_j v_c_j over ordered six-factor sources.",
+    "offline_online_boundary": "Baur-Strassen does not by itself preserve an offline setup/online query split. The candidate must compile reusable derivative-capable state whose fresh marginal query avoids replaying B^(9/4) preprocessing.",
+    "primary_reference": "Baur and Strassen, The Complexity of Partial Derivatives, Theoretical Computer Science 22 (1983), 317-330, doi:10.1016/0304-3975(83)90110-X.",
+    "reverse_differentiation": "Baur-Strassen gives constant-factor nonscalar overhead for differentiating one complete division-safe circuit for Z_T, plus explicit marginal output."
+  }
+}

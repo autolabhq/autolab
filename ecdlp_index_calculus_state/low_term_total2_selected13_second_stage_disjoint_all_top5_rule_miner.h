@@ -1,0 +1,32 @@
+#ifndef LOW_TERM_TOTAL2_SELECTED13_SALT_CONDITIONED_SECOND_STAGE_RULE_MINER_H
+#define LOW_TERM_TOTAL2_SELECTED13_SALT_CONDITIONED_SECOND_STAGE_RULE_MINER_H
+
+#include <stdint.h>
+
+#define SELECTED13_SECOND_STAGE_RULE_SELECTOR_COUNT 6
+#define SELECTED13_SECOND_STAGE_RULE_BEST_HELDOUT_ACCEPTED_BELOW_COUNT 33
+#define SELECTED13_SECOND_STAGE_RULE_BEST_NO_LEAF_HELDOUT_ACCEPTED_BELOW_COUNT 31
+#define SELECTED13_SECOND_STAGE_RULE_BEST_LOTO_HELDOUT_ACCEPTED_BELOW_COUNT 30
+
+typedef struct {
+  uint64_t selector_index;
+  uint64_t selector_id_u64;
+  uint64_t allow_leaf_field;
+  uint64_t max_depth;
+  uint64_t rule_count;
+  uint64_t accepted_below_rho_transfer_count;
+  uint64_t heldout_accepted_below_rho_transfer_count;
+  uint64_t loto_accepted_below_rho_transfer_count;
+  uint64_t loto_heldout_accepted_below_rho_transfer_count;
+} selected13_second_stage_rule_selector_t;
+
+static const selected13_second_stage_rule_selector_t SELECTED13_SECOND_STAGE_RULE_SELECTORS[] = {
+  {0ULL, 10323921819458462629ULL, 0ULL, 1ULL, 1ULL, 30ULL, 30ULL, 30ULL, 30ULL},
+  {1ULL, 13626295238546658417ULL, 0ULL, 2ULL, 2ULL, 31ULL, 31ULL, 29ULL, 29ULL},
+  {2ULL, 11813352428996949014ULL, 0ULL, 3ULL, 2ULL, 31ULL, 31ULL, 29ULL, 29ULL},
+  {3ULL, 5456668179066341928ULL, 1ULL, 1ULL, 1ULL, 30ULL, 30ULL, 30ULL, 30ULL},
+  {4ULL, 10159195295161384521ULL, 1ULL, 2ULL, 2ULL, 32ULL, 32ULL, 29ULL, 29ULL},
+  {5ULL, 16598098926341028720ULL, 1ULL, 3ULL, 3ULL, 33ULL, 33ULL, 28ULL, 28ULL},
+};
+
+#endif

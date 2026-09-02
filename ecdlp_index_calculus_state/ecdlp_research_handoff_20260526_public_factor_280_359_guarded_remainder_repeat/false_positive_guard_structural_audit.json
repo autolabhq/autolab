@@ -1,0 +1,34 @@
+{
+  "schema": "ecdlp_public_factor_guard_false_positive_structural_audit_v1",
+  "guard": "selected_leaf_count_eq1_and_factor_zero_eq1",
+  "source_artifacts": {
+    "quadratic_root": "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_public_factor_quadratic_root_fresh_344_359_fixed_probe.json",
+    "rolling_portfolio": "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_rolling_with_280_359_fixed.json"
+  },
+  "summary": {
+    "false_positive_row_count": 13,
+    "false_positive_surface_count": 1,
+    "false_positive_guard_pass_count": 0,
+    "false_positive_guard_pass_surfaces": [],
+    "guarded_candidate_count": 117,
+    "guarded_false_positive_count": 0,
+    "latest_guarded_selected_surface_count": 9,
+    "latest_guarded_selected_false_positive_count": 0,
+    "interpretation": "The raw 344-359 public-factor audit contains below-rho false-positive rows on one surface, but none pass the selected_leaf_count=1 and factor_zero_leaf_count=1 guard used by the frozen portfolio."
+  },
+  "false_positive_surface": {
+    "target": "22050.cf1@11731",
+    "transfer_index": 357,
+    "row_key": "22050.cf1@11731:uniform:256:salt164",
+    "candidate": "sage_resultant_factor_2",
+    "selected_leaf_count": 3,
+    "factor_zero_leaf_count": 1,
+    "missing_selected_root_pairs": [
+      [
+        90,
+        6110
+      ]
+    ],
+    "min_false_positive_ops_over_rho": 0.64233577
+  }
+}

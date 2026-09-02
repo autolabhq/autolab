@@ -1,0 +1,1092 @@
+{
+  "admission": {
+    "failures": [
+      "target-independent prefix state costs B^3",
+      "fresh-target suffix enumeration and lookup cost B^2",
+      "factor-log rank and sparse solve are unsupplied",
+      "identical scalar-blind fresh-target descent is unsupplied"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 12,
+    "passed_obligation_count": 8
+  },
+  "aggregate": {
+    "all_blind_zero_certificates": true,
+    "all_dyadic_child_counts_conserve": true,
+    "all_forced_sources_recovered_and_verified": true,
+    "all_forced_witnesses_recognized": true,
+    "all_mobius_counts_match_direct_tuple_counts": true,
+    "duplicate_occurrence_control_exact": true,
+    "family_count": 4,
+    "maximum_exact_tuple_count": 1,
+    "maximum_prefix_distinct_subset_key_count": 87480,
+    "maximum_prefix_subset_contribution_count": 87480,
+    "maximum_suffix_distinct_subset_key_count": 4860,
+    "prefix_instance_count": 16,
+    "target_instance_count": 32
+  },
+  "breakthrough": false,
+  "classification": "EXACT_S6_SUBSET_INCIDENCE_COUNT_BUT_B3_PREFIX_STATE",
+  "cost_ledger": {
+    "dyadic_all_children_work_exponent_B": 3.0,
+    "dyadic_polylog_factor_suppressed": true,
+    "fresh_target_lookup_work_exponent_B": 2.0,
+    "fresh_target_suffix_enumeration_exponent_B": 2.0,
+    "lane_inside_caps": false,
+    "literal_incidence_grid_avoided": true,
+    "literal_incidence_grid_exponent_B": 5.0,
+    "online_workspace_cap_exponent_B": 1.25,
+    "prefix_construction_work_exponent_B": 3.0,
+    "prefix_occurrence_and_state_exponent_B": 3.0,
+    "setup_state_cap_exponent_B": 2.25
+  },
+  "deduplication": {
+    "new_idea_id": null,
+    "r2_overlap": "R2 already observed that an exact existence bit and dyadic source replay suffice, and that standard 2+2+1 traffic returns B^3 or B^4.",
+    "r76_increment": "R76 supplies an explicit exact occurrence-count identity, corrects multiple-common-root overcount, and gives source backpointers at the same rejected B^3 boundary."
+  },
+  "disposition": "REJECT_EXACT_S6_SUBSET_INCIDENCE_MOBIUS_CONSTRUCTION_ONLY__FOUR_STANDARD_CURVES__B6_10_14_18__EXACT_TUPLE_COUNTS__MULTIPLE_COMMON_ROOTS_CORRECTED__BLIND_ZERO__FORCED_SOURCE__DYADIC_CHILDREN__PREFIX_STATE_B3__FRESH_TARGET_B2__R2_BOUNDARY_SHARPENED_NOT_NEW_IDEA__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "families": [
+    {
+      "family_id": "secp256k1",
+      "field_bits": 256,
+      "prefixes": [
+        {
+          "deck_size": 6,
+          "observed_distinct_state_exponent_B": 4.511391594469386,
+          "prefix_distinct_subset_key_count": 3240,
+          "prefix_occurrence_count": 216,
+          "prefix_subset_contribution_count": 3240,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 5,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 540,
+              "suffix_occurrence_count": 36,
+              "suffix_subset_contribution_count": 540,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 5,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 540,
+              "suffix_occurrence_count": 36,
+              "suffix_subset_contribution_count": 540,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 10,
+          "observed_distinct_state_exponent_B": 4.176091259055681,
+          "prefix_distinct_subset_key_count": 15000,
+          "prefix_occurrence_count": 1000,
+          "prefix_subset_contribution_count": 15000,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 9,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 1500,
+              "suffix_occurrence_count": 100,
+              "suffix_subset_contribution_count": 1500,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 9,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 1500,
+              "suffix_occurrence_count": 100,
+              "suffix_subset_contribution_count": 1500,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 14,
+          "observed_distinct_state_exponent_B": 4.026142998377762,
+          "prefix_distinct_subset_key_count": 41160,
+          "prefix_occurrence_count": 2744,
+          "prefix_subset_contribution_count": 41160,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 13,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 2940,
+              "suffix_occurrence_count": 196,
+              "suffix_subset_contribution_count": 2940,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 13,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 2940,
+              "suffix_occurrence_count": 196,
+              "suffix_subset_contribution_count": 2940,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 18,
+          "observed_distinct_state_exponent_B": 3.9369210703447157,
+          "prefix_distinct_subset_key_count": 87480,
+          "prefix_occurrence_count": 5832,
+          "prefix_subset_contribution_count": 87480,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 17,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 4860,
+              "suffix_occurrence_count": 324,
+              "suffix_subset_contribution_count": 4860,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 17,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 4860,
+              "suffix_occurrence_count": 324,
+              "suffix_subset_contribution_count": 4860,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p256",
+      "field_bits": 256,
+      "prefixes": [
+        {
+          "deck_size": 6,
+          "observed_distinct_state_exponent_B": 4.511391594469386,
+          "prefix_distinct_subset_key_count": 3240,
+          "prefix_occurrence_count": 216,
+          "prefix_subset_contribution_count": 3240,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 5,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 540,
+              "suffix_occurrence_count": 36,
+              "suffix_subset_contribution_count": 540,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 5,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 540,
+              "suffix_occurrence_count": 36,
+              "suffix_subset_contribution_count": 540,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 10,
+          "observed_distinct_state_exponent_B": 4.176091259055681,
+          "prefix_distinct_subset_key_count": 15000,
+          "prefix_occurrence_count": 1000,
+          "prefix_subset_contribution_count": 15000,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 9,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 1500,
+              "suffix_occurrence_count": 100,
+              "suffix_subset_contribution_count": 1500,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 9,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 1500,
+              "suffix_occurrence_count": 100,
+              "suffix_subset_contribution_count": 1500,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 14,
+          "observed_distinct_state_exponent_B": 4.026142998377762,
+          "prefix_distinct_subset_key_count": 41160,
+          "prefix_occurrence_count": 2744,
+          "prefix_subset_contribution_count": 41160,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 13,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 2940,
+              "suffix_occurrence_count": 196,
+              "suffix_subset_contribution_count": 2940,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 13,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 2940,
+              "suffix_occurrence_count": 196,
+              "suffix_subset_contribution_count": 2940,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 18,
+          "observed_distinct_state_exponent_B": 3.9369210703447157,
+          "prefix_distinct_subset_key_count": 87480,
+          "prefix_occurrence_count": 5832,
+          "prefix_subset_contribution_count": 87480,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 17,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 4860,
+              "suffix_occurrence_count": 324,
+              "suffix_subset_contribution_count": 4860,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 17,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 4860,
+              "suffix_occurrence_count": 324,
+              "suffix_subset_contribution_count": 4860,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p384",
+      "field_bits": 384,
+      "prefixes": [
+        {
+          "deck_size": 6,
+          "observed_distinct_state_exponent_B": 4.511391594469386,
+          "prefix_distinct_subset_key_count": 3240,
+          "prefix_occurrence_count": 216,
+          "prefix_subset_contribution_count": 3240,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 5,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 540,
+              "suffix_occurrence_count": 36,
+              "suffix_subset_contribution_count": 540,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 5,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 540,
+              "suffix_occurrence_count": 36,
+              "suffix_subset_contribution_count": 540,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 10,
+          "observed_distinct_state_exponent_B": 4.176091259055681,
+          "prefix_distinct_subset_key_count": 15000,
+          "prefix_occurrence_count": 1000,
+          "prefix_subset_contribution_count": 15000,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 9,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 1500,
+              "suffix_occurrence_count": 100,
+              "suffix_subset_contribution_count": 1500,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 9,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 1500,
+              "suffix_occurrence_count": 100,
+              "suffix_subset_contribution_count": 1500,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 14,
+          "observed_distinct_state_exponent_B": 4.026142998377762,
+          "prefix_distinct_subset_key_count": 41160,
+          "prefix_occurrence_count": 2744,
+          "prefix_subset_contribution_count": 41160,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 13,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 2940,
+              "suffix_occurrence_count": 196,
+              "suffix_subset_contribution_count": 2940,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 13,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 2940,
+              "suffix_occurrence_count": 196,
+              "suffix_subset_contribution_count": 2940,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 18,
+          "observed_distinct_state_exponent_B": 3.9369210703447157,
+          "prefix_distinct_subset_key_count": 87480,
+          "prefix_occurrence_count": 5832,
+          "prefix_subset_contribution_count": 87480,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 17,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 4860,
+              "suffix_occurrence_count": 324,
+              "suffix_subset_contribution_count": 4860,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 17,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 4860,
+              "suffix_occurrence_count": 324,
+              "suffix_subset_contribution_count": 4860,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        }
+      ],
+      "scalar_labels_consumed": false
+    },
+    {
+      "family_id": "nist_p521",
+      "field_bits": 521,
+      "prefixes": [
+        {
+          "deck_size": 6,
+          "observed_distinct_state_exponent_B": 4.511391594469386,
+          "prefix_distinct_subset_key_count": 3240,
+          "prefix_occurrence_count": 216,
+          "prefix_subset_contribution_count": 3240,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 5,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 540,
+              "suffix_occurrence_count": 36,
+              "suffix_subset_contribution_count": 540,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 5,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 540,
+              "suffix_occurrence_count": 36,
+              "suffix_subset_contribution_count": 540,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 10,
+          "observed_distinct_state_exponent_B": 4.176091259055681,
+          "prefix_distinct_subset_key_count": 15000,
+          "prefix_occurrence_count": 1000,
+          "prefix_subset_contribution_count": 15000,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 9,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 1500,
+              "suffix_occurrence_count": 100,
+              "suffix_subset_contribution_count": 1500,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 9,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 1500,
+              "suffix_occurrence_count": 100,
+              "suffix_subset_contribution_count": 1500,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 14,
+          "observed_distinct_state_exponent_B": 4.026142998377762,
+          "prefix_distinct_subset_key_count": 41160,
+          "prefix_occurrence_count": 2744,
+          "prefix_subset_contribution_count": 41160,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 13,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 2940,
+              "suffix_occurrence_count": 196,
+              "suffix_subset_contribution_count": 2940,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 13,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 2940,
+              "suffix_occurrence_count": 196,
+              "suffix_subset_contribution_count": 2940,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        },
+        {
+          "deck_size": 18,
+          "observed_distinct_state_exponent_B": 3.9369210703447157,
+          "prefix_distinct_subset_key_count": 87480,
+          "prefix_occurrence_count": 5832,
+          "prefix_subset_contribution_count": 87480,
+          "targets": [
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 0,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 17,
+                "positive_leaf_count": 0,
+                "positive_leaf_indices": [],
+                "root_count": 0
+              },
+              "forced_witness_recognized": null,
+              "mobius_tuple_count": 0,
+              "source_indices": null,
+              "source_relation_verified": null,
+              "source_shared_subset_size": null,
+              "suffix_distinct_subset_key_count": 4860,
+              "suffix_occurrence_count": 324,
+              "suffix_subset_contribution_count": 4860,
+              "target_id": "blind_hash_target"
+            },
+            {
+              "blind_zero_certificate": true,
+              "counts_match": true,
+              "direct_tuple_count": 1,
+              "dyadic_child_replay": {
+                "all_parent_counts_equal_child_sums": true,
+                "construction_boundary": "Materializing all child histograms costs B^3 log B entries; the replay proves subset stability but receives no cap credit.",
+                "internal_node_count": 17,
+                "positive_leaf_count": 1,
+                "positive_leaf_indices": [
+                  0
+                ],
+                "root_count": 1
+              },
+              "forced_witness_recognized": true,
+              "mobius_tuple_count": 1,
+              "source_indices": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "source_relation_verified": true,
+              "source_shared_subset_size": 1,
+              "suffix_distinct_subset_key_count": 4860,
+              "suffix_occurrence_count": 324,
+              "suffix_subset_contribution_count": 4860,
+              "target_id": "forced_positive_target"
+            }
+          ]
+        }
+      ],
+      "scalar_labels_consumed": false
+    }
+  ],
+  "fresh_target_descent_complete": false,
+  "identity": {
+    "left_histogram": "h_P(S)=number of prefix occurrences whose endpoint set contains nonempty subset S",
+    "maximum_subsets_per_occurrence": 15,
+    "proof": "Each prefix-suffix pair contributes the alternating sum of all nonempty subsets of its endpoint intersection, equal to one iff that intersection is nonempty.",
+    "right_histogram": "h_Q(S)=number of suffix occurrences whose endpoint set contains nonempty subset S",
+    "tuple_count": "sum over nonempty S of (-1)^(|S|+1) h_P(S) h_Q(S)"
+  },
+  "multiple_common_root_control": {
+    "direct_tuple_count": 4,
+    "duplicate_left_occurrence_preserved": true,
+    "left_occurrence_count": 2,
+    "mobius_count_exact": true,
+    "mobius_tuple_count": 4,
+    "naive_singleton_count_overcounts": true,
+    "right_occurrence_count": 2,
+    "singleton_endpoint_incidence_count": 6
+  },
+  "next_action": "Construct a target-translated subset-frequency oracle with prefix advice at most B^(9/4+o(1)) and fresh-target query work and workspace at most B^(5/4+o(1)), without enumerating either the B^3 prefix triples or B^2 target suffixes. Bind Query2P1 and return exact counts, a source, blind zero, and dyadic children.",
+  "schema": "p1553.s6_subset_incidence_mobius_probe.r76.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "r2_finite_deck_gate_registry": {
+      "bound_gate_sha256": "55acc1457e7fd5a740da57c2c1db957374c7c18561c67b1748176dc8c61fcda5",
+      "path": "p1553_r31_artifact_index_README.md",
+      "sha256": "0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f"
+    },
+    "r73_resultant_multiplicity_grammar": {
+      "path": "p1553_resultant_valuation_trace_grammar_report_r73.json",
+      "sha256": "00f750c15644acdaea32bbbbe9b407071cd3bf6a5cf2268ce075c55bd9a29915"
+    },
+    "r74_s6_residual_support": {
+      "path": "p1553_s6_residual_decision_diagram_probe_report_r74.json",
+      "sha256": "1558482f504bd5e05b112464ee7c6734dd30ee518789735ac7abc8c305a5f740"
+    }
+  }
+}

@@ -1,0 +1,143 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-SIGNED-C3-DIVISOR-TRANSLATION-GCD-R161-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: coordinate_specific_signed_divisor_translation_and_source_gcd_gate
+run_count: 1
+status: target_batched_many_inner_modular_composition_gcd_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - positive-c6
+  - source-reporting
+  - summation-polynomial
+  - quotient-algebra
+  - modular-composition
+  - gcd
+  - full-cost
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R117-R160
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Instantiate an exact coordinate-specific positive-C6 source interface from
+  the signed C3 divisor and identify the remaining target-batched polynomial
+  primitive and its fully charged cost.
+inputs:
+  - path: p1553_m6_positive_c6_generic_locator_reduction_probe_r160.py
+    sha256: c303909641700a141714fde1ef473bb6abe4331ab9cfaf0e53161aa13b1fe7b1
+  - path: p1553_m6_positive_c6_generic_locator_reduction_probe_report_r160.json
+    sha256: 8b061717b7822ce969433b17003f00fb2e8e4644305cda007b70ca2213f4f48c
+  - path: frozen_m6_positive_c6_generic_locator_reduction.json
+    sha256: 868b534a8684cbd63cf72d320102af5d6bc568510bcd64b44698ce5cbea4ca50
+  - path: m6_positive_c6_generic_locator_reduction_cost_ledger.json
+    sha256: 834312ee1a28f7dd7418bd09050af8c39ccbbc816731b7cc00fbfebc9f3814ab
+  - path: m6_positive_c6_generic_locator_reduction_replay.json
+    sha256: 8bcfcc063412cdc3609748ea4843daa01dacef622433468ab201d10db2e2fce7
+  - path: m6_positive_c6_generic_locator_reduction_controls.json
+    sha256: 84b61b9ef84ffbcc88acbf0f24cd41be48d3aa0f495c1de18e2ac2611b83fafa
+  - path: factor_logs_and_identical_descent_r160.json
+    sha256: 3a2980834f0b87e5c68d6ffa5b7cab03da27f1fbaaf8098c1bfe00001a0ee196
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_positive_c6_generic_locator_reduction_probe_r160.py
+    sha256: d568f454e0808498bc43e54b357b29a708252cc42cf53a9e2f0dfdce55a76633
+  - path: p1553_m6_positive_c6_generic_locator_reduction_probe_gate_r160.md
+    sha256: e4d13e79feb831e0d65e734170def4b5e79a6f53edaeb8c49c9bead4e739ec92
+  - path: p1553_m6_positive_c6_generic_locator_reduction_probe_parent_report_r160.yaml
+    sha256: 9089a77246d129094800f1c941a92d355a85d2ad0d1c36c86fb2a3a5bcdc67c2
+  - path: p1553_m6_target_batched_c3_elliptic_transpose_probe_r117.py
+    sha256: af3d7447763e16ee2a21491f3217d719bf57bdafc035d666df5e8f5859cc49f2
+  - path: p1553_m6_target_batched_c3_elliptic_transpose_probe_report_r117.json
+    sha256: 449021dd58e6567bb827bcfe41336175d7b628acda4446e1b63d9a46cf48f824
+  - path: m6_target_batched_c3_transpose_cost_ledger.json
+    sha256: 33ca990fe05e8e80bd4b557d57f4a292a84de0a5d6f1a836fa6bb54965cada8b
+  - path: p1553_m6_target_batched_c3_elliptic_transpose_probe_gate_r117.md
+    sha256: 014f74c772dfc77d8821f658b10ef9bd11a644fe8f0b356c24fda61ef81d9de5
+  - path: p1553_m6_target_batched_c3_elliptic_transpose_probe_parent_report_r117.yaml
+    sha256: 8b276efff8f61f4278e78ab367ff4536c3bee8a1e172ed3ea26a12c1c12dbdae
+  - path: references/semaev_summation_polynomials_2004_031.ps
+    sha256: 991f85d58ab68551a229266d03c2f88a5fc42e81b2a5f8f4432937bcceff16df
+artifacts:
+  - path: p1553_m6_signed_c3_divisor_translation_gcd_probe_r161.py
+    sha256: da25fe5203e243746879ecfc699da912b299ea0781f72df222cdb322bba00e80
+  - path: p1553_m6_signed_c3_divisor_translation_gcd_probe_report_r161.json
+    sha256: 7e73325212e9d8c3cf42ae46cce0a5c1bdebea9784b9bf5c30761c006cb8bedd
+  - path: frozen_m6_signed_c3_divisor_translation_gcd.json
+    sha256: 8c9c3981cbf9f1529547c61cc9673e778079beba86a306eef1ac54979d2520b7
+  - path: m6_signed_c3_divisor_translation_gcd_cost_ledger.json
+    sha256: 511aeedfbb72a268e6bef87178d156cc700eccbfc49c4b7a8441e473d0461b4b
+  - path: m6_signed_c3_divisor_translation_gcd_replay.json
+    sha256: 96dee1fb3ab5423a2f5463827135e6d70b7c124c7b5171a49b3a048eb28b08c3
+  - path: m6_signed_c3_divisor_translation_gcd_controls.json
+    sha256: 6baa61c223de901691e08771da7f8af860a21195565d40be87c9662209cfa955
+  - path: factor_logs_and_identical_descent_r161.json
+    sha256: 70d9dc60c96d4b54f107904f31e4a6800b943fb060b2d4e4b894587da21f69d1
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_signed_c3_divisor_translation_gcd_probe_r161.py
+    sha256: 661edbc66d4dda3179a9829e59a2ddef5e816f11497a1a334513a1ae46676a38
+  - path: p1553_m6_signed_c3_divisor_translation_gcd_probe_gate_r161.md
+    sha256: 0ca8660b9554c39e2c90a8f29cee05554b9fb3adce0c4c2a1038e739b3888bcd
+verified_statements:
+  - >-
+    On the injective signed C3 chart, U is the product of endpoint
+    x-coordinates and the interpolant V satisfies U dividing
+    V^2-(X^3+aX+b).
+  - >-
+    The quotient formulas lambda=(v+V)/(u-X), phi=lambda^2-u-X, and
+    psi=lambda(u-phi)-v compute T-P outside the explicitly split roots u=X.
+  - >-
+    The gcd of U, U(phi), and psi-V(phi) returns exactly the regular signed
+    C3 endpoints participating in positive C3+C3 decompositions of T.
+  - >-
+    For a target with one positive-C6 coefficient source, the source gcd has
+    degree at most binomial(6,3)=20; this bounds output size but not
+    composition work.
+  - >-
+    Six finite controls verify the signed divisor, every preregistered
+    positive source, one empty target, and the denominator-exception branch
+    without consuming candidate oracles.
+  - >-
+    Independent degree-B^(9/4) composition over B^(5/4) targets costs
+    B^(7/2), so the explicit route remains above Pollard rho.
+scoped_failures:
+  target_batched_many_inner_modular_composition: open
+  target_batched_gcd_source_adjoint: open
+  deterministic_hash_to_curve_transfer: open
+  unconditional_total_attack_cost: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+unproved_or_outside_scope:
+  - novelty of the signed-divisor quotient/gcd formulation
+  - an O(N)-scale many-target modular-composition transpose
+  - arithmetic-circuit lower bounds for the required batch primitive
+  - deterministic hash-to-curve pseudorandomness
+  - an unconditional generic-prime source locator
+admission:
+  passed_obligations: 18
+  total_obligations: 26
+  signed_divisor_translation_gcd_interface_admitted: true
+  constant_degree_source_adjoint_admitted: true
+  target_batched_composition_admitted: false
+  lane_admitted: false
+result:
+  c3_divisor_degree_exponent_B: 9/4
+  target_batch_exponent_B: 5/4
+  independent_complete_batch_exponent_B: 7/2
+  required_complete_batch_exponent_B: 5/4
+  source_gcd_degree_bound: 20
+  finite_control_count: 6
+  target_batched_composition_complete: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_SIGNED_C3_U_V_TRANSLATION_GCD_INTERFACE_AND_DEGREE_20_SOURCE_FACTOR__INDEPENDENT_BATCH_B7O2__TARGET_BATCHED_COMPOSITION_GCD_ADJOINT_OPEN__NO_RHO__NO_SHOUP_IMPROVEMENT__NO_BREAKTHROUGH
+next_action: >-
+  Construct or rule out a target-batched many-inner modular-composition and
+  gcd source adjoint that processes the frozen degree-B^(9/4) divisor over
+  all B^(5/4) targets in B^(5/4+o(1)) work without materializing per-target
+  degree-B^(9/4) states, then replay factor logs and identical descent.

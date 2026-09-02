@@ -1,0 +1,63 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-25",
+  "claim_level": "preregisterable_gate_manifest_control",
+  "hypothesis": "A pre-factor gate based on full-surface selected-root presence plus selected-leaf hit-root presence can replace the ex post nonvacuous/public-zero diagnostic gate for root-hyperplane selector tests.",
+  "artifacts": {
+    "manifest_probe": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/ffe_preregistered_gate_manifest_probe.py",
+    "manifest_80_87": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_verified_over_rho_80_87.json",
+    "manifest_72_79": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_all_public_leaf_plus_fresh_72_79.json"
+  },
+  "gate_definition": {
+    "name": "pre_factor_nonvacuous_hit_root_proxy",
+    "uses_sage_factorization": false,
+    "uses_root_policy_outcome": false,
+    "conditions": [
+      "full materialized FFE surface has at least one selected root pair",
+      "selected public leaf has at least one known hit root before factorization"
+    ],
+    "forbidden_selection_fields": [
+      "public_zero_root_count",
+      "public_zero_recovered",
+      "chosen_preserves_selected_root_pairs",
+      "below_rho",
+      "direct_below_rho",
+      "total_ops_over_rho"
+    ]
+  },
+  "evidence": {
+    "control_80_87_surface_count": 6,
+    "control_80_87_pre_factor_nonvacuous_count": 3,
+    "control_80_87_pre_factor_public_zero_proxy_count": 4,
+    "control_80_87_pre_factor_gate_selected_count": 3,
+    "control_80_87_gate_public_zero_capable_count": 3,
+    "control_80_87_gate_below_rho_count": 3,
+    "control_80_87_gate_direct_below_rho_count": 3,
+    "control_80_87_gate_mean_total_ops_over_rho": 0.88533333,
+    "control_80_87_gate_max_total_ops_over_rho": 0.96,
+    "control_80_87_gate_mean_direct_total_ops_over_rho": 0.816,
+    "control_80_87_gate_max_direct_total_ops_over_rho": 0.888,
+    "calibration_72_79_surface_count": 28,
+    "calibration_72_79_pre_factor_nonvacuous_count": 27,
+    "calibration_72_79_pre_factor_public_zero_proxy_count": 28,
+    "calibration_72_79_pre_factor_gate_selected_count": 27,
+    "calibration_72_79_gate_public_zero_capable_count": 27,
+    "calibration_72_79_gate_below_rho_count": 27,
+    "calibration_72_79_gate_direct_below_rho_count": 27,
+    "calibration_72_79_gate_mean_total_ops_over_rho": 0.79625196,
+    "calibration_72_79_gate_max_total_ops_over_rho": 0.968,
+    "calibration_72_79_gate_mean_direct_total_ops_over_rho": 0.72735118,
+    "calibration_72_79_gate_max_direct_total_ops_over_rho": 0.848
+  },
+  "limitations": [
+    "The 80-87 bank is a verified-over-rho diagnostic control, not a fresh below-rho hit stream.",
+    "The gate still requires materializing the full FFE surface before factorization.",
+    "Selector metrics are joined only after the gate is chosen and must not be used to tune the gate on fresh banks.",
+    "Fresh 88-95 or later validation remains required before this can be claimed as an algorithmic relation generator."
+  ],
+  "next_steps": [
+    "Run the pre-factor gate on a fresh 80+ or 88-95 candidate bank before Sage factorization.",
+    "Factor only preregistered surfaces and rerun the first-fall/root-hyperplane selector audit.",
+    "Report pre-factor gate precision against post-factor public-zero capability without changing the gate."
+  ]
+}

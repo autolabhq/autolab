@@ -1,0 +1,96 @@
+{
+  "claim_status": "FRONTIER_HAS_NONCONTIGUOUS_COMPLETE_TAIL",
+  "created_at": "2026-06-05T06:03:27Z",
+  "expected_ranges": [
+    "6280_6287",
+    "6288_6295",
+    "6296_6303",
+    "6304_6311",
+    "6312_6319",
+    "6320_6327"
+  ],
+  "group_summaries": {
+    "certificates": {
+      "available_count": 5,
+      "available_ranges": [
+        "6280_6287",
+        "6296_6303",
+        "6304_6311",
+        "6312_6319",
+        "6320_6327"
+      ],
+      "contiguous_end": 6287,
+      "latest_end": 6327,
+      "latest_range": "6320_6327",
+      "missing_count": 1,
+      "missing_ranges": [
+        "6288_6295"
+      ],
+      "name": "certificates"
+    },
+    "rank_scorers": {
+      "available_count": 5,
+      "available_ranges": [
+        "6280_6287",
+        "6296_6303",
+        "6304_6311",
+        "6312_6319",
+        "6320_6327"
+      ],
+      "contiguous_end": 6287,
+      "latest_end": 6327,
+      "latest_range": "6320_6327",
+      "missing_count": 1,
+      "missing_ranges": [
+        "6288_6295"
+      ],
+      "name": "rank_scorers"
+    },
+    "support_scouts": {
+      "available_count": 6,
+      "available_ranges": [
+        "6280_6287",
+        "6288_6295",
+        "6296_6303",
+        "6304_6311",
+        "6312_6319",
+        "6320_6327"
+      ],
+      "contiguous_end": 6327,
+      "latest_end": 6327,
+      "latest_range": "6320_6327",
+      "missing_count": 0,
+      "missing_ranges": [],
+      "name": "support_scouts"
+    }
+  },
+  "parameters": {
+    "end_max": 6327,
+    "range_width": 8,
+    "start_min": 6280
+  },
+  "schema": "ecdlp.low_term_total2_frontier_gap_audit.v1",
+  "summary": {
+    "common_complete_ranges": [
+      "6280_6287",
+      "6296_6303",
+      "6304_6311",
+      "6312_6319",
+      "6320_6327"
+    ],
+    "contiguous_common_end": 6287,
+    "latest_common_complete_end": 6327,
+    "missing_all_count": 0,
+    "missing_all_ranges": [],
+    "missing_any_count": 1,
+    "missing_any_ranges": [
+      "6288_6295"
+    ],
+    "noncontiguous_complete_tail_ranges": [
+      "6296_6303",
+      "6304_6311",
+      "6312_6319",
+      "6320_6327"
+    ]
+  }
+}

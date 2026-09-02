@@ -1,0 +1,2244 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_leaf_augmentation_replay_probe_9981_9943.h"
+  },
+  "claim_status": "SELECTED13_LEAF_AUGMENTATION_REPLAY_NO_EXPORT",
+  "created_at": "2026-06-05T19:18:00Z",
+  "failures": [],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "pollard_rho_speedup_claimed": false,
+    "public_key_verified_item_count": 0,
+    "rank_gain_is_not_export": true,
+    "relation_derived_ecdlp": false
+  },
+  "native_preflight": {
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_leaf_replay_preflight_sni1f05a/preflight.c",
+      "-o",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_leaf_replay_preflight_sni1f05a/preflight"
+    ],
+    "compile_returncode": 0,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_leaf_augmentation_replay_preflight items=14 exports=0 derived=0 context_errors=0 unverified_gain=3 failures=0",
+    "verified": true
+  },
+  "parameters": {
+    "bank_source": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_probe.json",
+    "config_source": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_schedule_filter_probe.json",
+    "direct_source": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_direct_witness_probe.json",
+    "event_summary_limit": 8,
+    "max_items": null,
+    "radius": 4,
+    "replay_args": {
+      "factor_base_size": 16,
+      "max_relations": 96,
+      "row_count": 128,
+      "row_pool": 512,
+      "scout_limit": 192,
+      "scout_mode": "s3_coeff_spread",
+      "scout_order": "eval_cover_hits_high",
+      "selected_limit": 64
+    },
+    "transfer_source": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_transfer_probe.json",
+    "worklist": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_leaf_augmentation_worklist_9981_9943_probe.json"
+  },
+  "schema": "ecdlp.low_term_total2_selected13_leaf_augmentation_replay_probe.v1",
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "candidate_class_counts": {
+      "exact_selector_replay": 7,
+      "positive_control_leaf_union": 2,
+      "single_leaf_positive_control_augmentation": 5
+    },
+    "context_error_count": 0,
+    "failure_count": 0,
+    "max_rank": 1,
+    "min_ops_over_rho": 0.38686131,
+    "pollard_rho_speedup_claimed": false,
+    "public_key_verified_item_count": 0,
+    "relation_derived_ecdlp": false,
+    "relation_derived_item_count": 0,
+    "relation_producing_item_count": 11,
+    "replayed_item_count": 14,
+    "status_counts": {
+      "NO_REPLAY_RELATION": 3,
+      "UNVERIFIED_RANK_OR_RELATION_GAIN": 3,
+      "UNVERIFIED_REPLAY_RELATION_ONLY": 8
+    },
+    "target_transfer_counts": {
+      "9943": 6,
+      "9981": 8
+    },
+    "unverified_rank_or_relation_gain_count": 3,
+    "verified": true,
+    "work_item_count": 14,
+    "worker_interpretation": "The verifier replay produces target-specific rank/relation evidence for some leaf augmentations, but no candidate public-key-verifies or derives an ECDLP scalar. Rank gains remain worker evidence only."
+  },
+  "work_item_replays": [
+    {
+      "accepted_relation_export": false,
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.38686131,
+      "positive_control": null,
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 1,
+        "ops": 53,
+        "ops_over_rho": 0.38686131,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt171",
+            "scan": {
+              "candidate_verifications": 4,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    3,
+                    5
+                  ],
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "q_coeff": 10041,
+                  "relation_index": 0,
+                  "rhs": 3048,
+                  "row_key": "22050.cf1@11731:uniform:256:salt171",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    3,
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 21
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 4,
+              "preassociation_filter_ops": 53,
+              "preassociation_filter_ops_over_rho": 0.38686131,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 4,
+              "selected_hit_root_values": [
+                6110,
+                6445
+              ],
+              "selected_hit_roots": 2,
+              "selected_leaf_count": 1,
+              "selected_leaf_indices": [
+                90
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 1,
+        "selected_row_count": 1,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_REPLAY_RELATION_ONLY",
+      "status_code": 3,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_2c99873a692aa2f7",
+      "work_item_id_u64": 7097915216434086486
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.72262774,
+      "positive_control": null,
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 99,
+        "ops_over_rho": 0.72262774,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt171",
+            "scan": {
+              "candidate_verifications": 4,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    3,
+                    5
+                  ],
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "q_coeff": 10041,
+                  "relation_index": 0,
+                  "rhs": 3048,
+                  "row_key": "22050.cf1@11731:uniform:256:salt171",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    3,
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 21
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 4,
+              "preassociation_filter_ops": 55,
+              "preassociation_filter_ops_over_rho": 0.40145985,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 4,
+              "selected_hit_root_values": [
+                6110,
+                6445
+              ],
+              "selected_hit_roots": 2,
+              "selected_leaf_count": 3,
+              "selected_leaf_indices": [
+                65,
+                79,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt173",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 44,
+              "preassociation_filter_ops_over_rho": 0.32116788,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 2,
+              "selected_leaf_indices": [
+                65,
+                79
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 5,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_REPLAY_RELATION_ONLY",
+      "status_code": 3,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_c256790d8f418194",
+      "work_item_id_u64": 18179848553993145044
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.70072993,
+      "positive_control": null,
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 96,
+        "ops_over_rho": 0.70072993,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt171",
+            "scan": {
+              "candidate_verifications": 4,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    3,
+                    5
+                  ],
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "q_coeff": 10041,
+                  "relation_index": 0,
+                  "rhs": 3048,
+                  "row_key": "22050.cf1@11731:uniform:256:salt171",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    3,
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 21
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 4,
+              "preassociation_filter_ops": 53,
+              "preassociation_filter_ops_over_rho": 0.38686131,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 4,
+              "selected_hit_root_values": [
+                6110,
+                6445
+              ],
+              "selected_hit_roots": 2,
+              "selected_leaf_count": 1,
+              "selected_leaf_indices": [
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt173",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 43,
+              "preassociation_filter_ops_over_rho": 0.31386861,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 1,
+              "selected_leaf_indices": [
+                90
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_REPLAY_RELATION_ONLY",
+      "status_code": 3,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_4dbafd045fee5c3e",
+      "work_item_id_u64": 5167821327170905524
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.7080292,
+      "positive_control": null,
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 97,
+        "ops_over_rho": 0.7080292,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt171",
+            "scan": {
+              "candidate_verifications": 4,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    3,
+                    5
+                  ],
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "q_coeff": 10041,
+                  "relation_index": 0,
+                  "rhs": 3048,
+                  "row_key": "22050.cf1@11731:uniform:256:salt171",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    3,
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 21
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 4,
+              "preassociation_filter_ops": 53,
+              "preassociation_filter_ops_over_rho": 0.38686131,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 4,
+              "selected_hit_root_values": [
+                6110,
+                6445
+              ],
+              "selected_hit_roots": 2,
+              "selected_leaf_count": 1,
+              "selected_leaf_indices": [
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt173",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 44,
+              "preassociation_filter_ops_over_rho": 0.32116788,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 2,
+              "selected_leaf_indices": [
+                8,
+                90
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 3,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_REPLAY_RELATION_ONLY",
+      "status_code": 3,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_462028918b4dc878",
+      "work_item_id_u64": 16017905367187256178
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.74452555,
+      "positive_control": null,
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 102,
+        "ops_over_rho": 0.74452555,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt171",
+            "scan": {
+              "candidate_verifications": 6,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    3,
+                    5
+                  ],
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "q_coeff": 10041,
+                  "relation_index": 0,
+                  "rhs": 3048,
+                  "row_key": "22050.cf1@11731:uniform:256:salt171",
+                  "scheduled_trial": 2,
+                  "term_shape": "2+2",
+                  "terms": [
+                    3,
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": 0,
+                  "scheduled_trial": 2,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 3,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 3,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 3,
+                  "leaf_index": 8,
+                  "original_trial": 28,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 33
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 4,
+                  "leaf_index": 8,
+                  "original_trial": 28,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 34
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 6,
+              "preassociation_filter_ops": 59,
+              "preassociation_filter_ops_over_rho": 0.43065693,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 6,
+              "selected_hit_root_values": [
+                6110,
+                6202,
+                6445
+              ],
+              "selected_hit_roots": 3,
+              "selected_leaf_count": 2,
+              "selected_leaf_indices": [
+                8,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt173",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 43,
+              "preassociation_filter_ops_over_rho": 0.31386861,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 1,
+              "selected_leaf_indices": [
+                90
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 3,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_REPLAY_RELATION_ONLY",
+      "status_code": 3,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_6cb6cffade5a1590",
+      "work_item_id_u64": 4838527085476961945
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.75912409,
+      "positive_control": null,
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 104,
+        "ops_over_rho": 0.75912409,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt171",
+            "scan": {
+              "candidate_verifications": 6,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    3,
+                    5
+                  ],
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "q_coeff": 10041,
+                  "relation_index": 0,
+                  "rhs": 3048,
+                  "row_key": "22050.cf1@11731:uniform:256:salt171",
+                  "scheduled_trial": 2,
+                  "term_shape": "2+2",
+                  "terms": [
+                    3,
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": 0,
+                  "scheduled_trial": 2,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 3,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 3,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 3,
+                  "leaf_index": 8,
+                  "original_trial": 28,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 33
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 4,
+                  "leaf_index": 8,
+                  "original_trial": 28,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 34
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 6,
+              "preassociation_filter_ops": 60,
+              "preassociation_filter_ops_over_rho": 0.4379562,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 6,
+              "selected_hit_root_values": [
+                6110,
+                6202,
+                6445
+              ],
+              "selected_hit_roots": 3,
+              "selected_leaf_count": 3,
+              "selected_leaf_indices": [
+                8,
+                56,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt173",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 44,
+              "preassociation_filter_ops_over_rho": 0.32116788,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 2,
+              "selected_leaf_indices": [
+                8,
+                90
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 5,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_REPLAY_RELATION_ONLY",
+      "status_code": 3,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_3cf73ac30d400f9a",
+      "work_item_id_u64": 9013166555575190439
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "positive_control_leaf_union",
+      "candidate_class_code": 2,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.77372263,
+      "positive_control": {
+        "derived_secret": 1135,
+        "public_key_verified": true,
+        "rank": 5,
+        "relation_count": 5,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 4,
+        "transfer_index": 9978
+      },
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 106,
+        "ops_over_rho": 0.77372263,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt171",
+            "scan": {
+              "candidate_verifications": 5,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    3,
+                    5
+                  ],
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "q_coeff": 10041,
+                  "relation_index": 0,
+                  "rhs": 3048,
+                  "row_key": "22050.cf1@11731:uniform:256:salt171",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    3,
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 3,
+                  "leaf_index": 34,
+                  "original_trial": 175,
+                  "relation_index": null,
+                  "scheduled_trial": 3,
+                  "scout_pos": 147
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 5,
+              "preassociation_filter_ops": 60,
+              "preassociation_filter_ops_over_rho": 0.4379562,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 5,
+              "selected_hit_root_values": [
+                4665,
+                6110,
+                6445
+              ],
+              "selected_hit_roots": 3,
+              "selected_leaf_count": 5,
+              "selected_leaf_indices": [
+                19,
+                34,
+                65,
+                79,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt173",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 46,
+              "preassociation_filter_ops_over_rho": 0.33576642,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 4,
+              "selected_leaf_indices": [
+                34,
+                65,
+                79,
+                90
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 9,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_REPLAY_RELATION_ONLY",
+      "status_code": 3,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_ecb51c4e07b0ae31",
+      "work_item_id_u64": 14080124493167224106
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 1,
+      "base_relation_count": 1,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.72992701,
+      "positive_control": {
+        "derived_secret": 1135,
+        "public_key_verified": true,
+        "rank": 5,
+        "relation_count": 5,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 4,
+        "transfer_index": 9978
+      },
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 100,
+        "ops_over_rho": 0.72992701,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt171",
+            "scan": {
+              "candidate_verifications": 4,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    3,
+                    5
+                  ],
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "q_coeff": 10041,
+                  "relation_index": 0,
+                  "rhs": 3048,
+                  "row_key": "22050.cf1@11731:uniform:256:salt171",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    3,
+                    3,
+                    5,
+                    5
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 270,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 21
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 301,
+                  "relation_index": null,
+                  "scheduled_trial": 2,
+                  "scout_pos": 21
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 4,
+              "preassociation_filter_ops": 56,
+              "preassociation_filter_ops_over_rho": 0.40875912,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 4,
+              "selected_hit_root_values": [
+                6110,
+                6445
+              ],
+              "selected_hit_roots": 2,
+              "selected_leaf_count": 4,
+              "selected_leaf_indices": [
+                19,
+                65,
+                79,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9981:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt173",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 44,
+              "preassociation_filter_ops_over_rho": 0.32116788,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 2,
+              "selected_leaf_indices": [
+                65,
+                79
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 6,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_REPLAY_RELATION_ONLY",
+      "status_code": 3,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9981,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_1cc114f68d253bf1",
+      "work_item_id_u64": 16343511252153805484
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "exact_selector_replay",
+      "candidate_class_code": 1,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.66423358,
+      "positive_control": null,
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 91,
+        "ops_over_rho": 0.66423358,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt167",
+            "scan": {
+              "candidate_verifications": 2,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    9,
+                    11
+                  ],
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "q_coeff": 4170,
+                  "relation_index": 0,
+                  "rhs": 5768,
+                  "row_key": "22050.cf1@11731:uniform:256:salt167",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    9,
+                    9,
+                    11,
+                    11
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 33
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 34
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 2,
+              "preassociation_filter_ops": 48,
+              "preassociation_filter_ops_over_rho": 0.35036496,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 2,
+              "selected_hit_root_values": [
+                6202
+              ],
+              "selected_hit_roots": 1,
+              "selected_leaf_count": 1,
+              "selected_leaf_indices": [
+                8
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt175",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 43,
+              "preassociation_filter_ops_over_rho": 0.31386861,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 1,
+              "selected_leaf_indices": [
+                8
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 2,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_RANK_OR_RELATION_GAIN",
+      "status_code": 2,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "unverified_rank_or_relation_gain": true,
+      "work_item_id": "leaf_aug_d3d8dfef36d5035f",
+      "work_item_id_u64": 4975669019750684341
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "positive_control_leaf_union",
+      "candidate_class_code": 2,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.75182482,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 103,
+        "ops_over_rho": 0.75182482,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt167",
+            "scan": {
+              "candidate_verifications": 2,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    9,
+                    11
+                  ],
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "q_coeff": 4170,
+                  "relation_index": 0,
+                  "rhs": 5768,
+                  "row_key": "22050.cf1@11731:uniform:256:salt167",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    9,
+                    9,
+                    11,
+                    11
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 33
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 34
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 2,
+              "preassociation_filter_ops": 52,
+              "preassociation_filter_ops_over_rho": 0.37956204,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 2,
+              "selected_hit_root_values": [
+                6202
+              ],
+              "selected_hit_roots": 1,
+              "selected_leaf_count": 5,
+              "selected_leaf_indices": [
+                8,
+                56,
+                65,
+                79,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt175",
+            "scan": {
+              "candidate_verifications": 2,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 492,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 492,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 21
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 2,
+              "preassociation_filter_ops": 51,
+              "preassociation_filter_ops_over_rho": 0.37226277,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 2,
+              "selected_hit_root_values": [
+                6445
+              ],
+              "selected_hit_roots": 1,
+              "selected_leaf_count": 4,
+              "selected_leaf_indices": [
+                8,
+                65,
+                79,
+                90
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 9,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_RANK_OR_RELATION_GAIN",
+      "status_code": 2,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "unverified_rank_or_relation_gain": true,
+      "work_item_id": "leaf_aug_177f1e5d86698505",
+      "work_item_id_u64": 4724397811583671098
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 0,
+      "ops_over_rho": 0.69343066,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 95,
+        "ops_over_rho": 0.69343066,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt167",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 45,
+              "preassociation_filter_ops_over_rho": 0.32846715,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 3,
+              "selected_leaf_indices": [
+                65,
+                79,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt175",
+            "scan": {
+              "candidate_verifications": 2,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 1,
+                  "leaf_index": 90,
+                  "original_trial": 492,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 20
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 90,
+                  "original_trial": 492,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 21
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 2,
+              "preassociation_filter_ops": 50,
+              "preassociation_filter_ops_over_rho": 0.3649635,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 2,
+              "selected_hit_root_values": [
+                6445
+              ],
+              "selected_hit_roots": 1,
+              "selected_leaf_count": 3,
+              "selected_leaf_indices": [
+                65,
+                79,
+                90
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 6,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "status": "NO_REPLAY_RELATION",
+      "status_code": 4,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_2bc48be38ef226aa",
+      "work_item_id_u64": 4305978317195002206
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 0,
+      "ops_over_rho": 0.65693431,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 90,
+        "ops_over_rho": 0.65693431,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt167",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 46,
+              "preassociation_filter_ops_over_rho": 0.33576642,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 4,
+              "selected_leaf_indices": [
+                56,
+                65,
+                79,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt175",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 44,
+              "preassociation_filter_ops_over_rho": 0.32116788,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 2,
+              "selected_leaf_indices": [
+                65,
+                79
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 6,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "status": "NO_REPLAY_RELATION",
+      "status_code": 4,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_2eb2e5cd6e6f0bb4",
+      "work_item_id_u64": 5607138430174165179
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 1,
+      "ops_over_rho": 0.69343066,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "public_key_verified": false,
+      "rank": 1,
+      "relation_count": 1,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 95,
+        "ops_over_rho": 0.69343066,
+        "public_key_verified": false,
+        "rank": 1,
+        "relation_count": 1,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt167",
+            "scan": {
+              "candidate_verifications": 2,
+              "derived_secret": null,
+              "event_summaries": [
+                {
+                  "candidate_pos": 1,
+                  "factor_support": [
+                    9,
+                    11
+                  ],
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "q_coeff": 4170,
+                  "relation_index": 0,
+                  "rhs": 5768,
+                  "row_key": "22050.cf1@11731:uniform:256:salt167",
+                  "scheduled_trial": 1,
+                  "term_shape": "2+2",
+                  "terms": [
+                    9,
+                    9,
+                    11,
+                    11
+                  ]
+                }
+              ],
+              "event_summaries_truncated": false,
+              "event_summary_count": 1,
+              "hit_event_summaries": [
+                {
+                  "accepted_relation": true,
+                  "candidate_pos": 1,
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "relation_index": 0,
+                  "scheduled_trial": 1,
+                  "scout_pos": 33
+                },
+                {
+                  "accepted_relation": false,
+                  "candidate_pos": 2,
+                  "leaf_index": 8,
+                  "original_trial": 74,
+                  "relation_index": null,
+                  "scheduled_trial": 1,
+                  "scout_pos": 34
+                }
+              ],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 2,
+              "preassociation_filter_ops": 51,
+              "preassociation_filter_ops_over_rho": 0.37226277,
+              "rank": 1,
+              "relation_count": 1,
+              "row_public_key_verified": false,
+              "selected_hit_events": 2,
+              "selected_hit_root_values": [
+                6202
+              ],
+              "selected_hit_roots": 1,
+              "selected_leaf_count": 4,
+              "selected_leaf_indices": [
+                8,
+                65,
+                79,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt175",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 44,
+              "preassociation_filter_ops_over_rho": 0.32116788,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 2,
+              "selected_leaf_indices": [
+                65,
+                79
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 6,
+        "selected_row_count": 2,
+        "unique_form_count": 1
+      },
+      "status": "UNVERIFIED_RANK_OR_RELATION_GAIN",
+      "status_code": 2,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "unverified_rank_or_relation_gain": true,
+      "work_item_id": "leaf_aug_3c22f493a77e88cb",
+      "work_item_id_u64": 5669980217387349355
+    },
+    {
+      "accepted_relation_export": false,
+      "base_rank": 0,
+      "base_relation_count": 0,
+      "candidate_class": "single_leaf_positive_control_augmentation",
+      "candidate_class_code": 3,
+      "context_error_count": 0,
+      "context_errors": [],
+      "derived_secret": null,
+      "event_count": 0,
+      "ops_over_rho": 0.65693431,
+      "positive_control": {
+        "derived_secret": 1085,
+        "public_key_verified": true,
+        "rank": 2,
+        "relation_count": 2,
+        "selector": "mode_low_term_support_total5",
+        "top_k": 7,
+        "transfer_index": 9938
+      },
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "relation_derived_ecdlp": false,
+      "replay": {
+        "below_rho": true,
+        "challenge_seeds": [
+          "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731"
+        ],
+        "derived": false,
+        "duplicate_form_count": 0,
+        "generic_rho_steps": 137,
+        "materialized_row_count": 2,
+        "ops": 90,
+        "ops_over_rho": 0.65693431,
+        "public_key_verified": false,
+        "rank": 0,
+        "relation_count": 0,
+        "rows": [
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt167",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 45,
+              "preassociation_filter_ops_over_rho": 0.32846715,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 3,
+              "selected_leaf_indices": [
+                65,
+                79,
+                90
+              ]
+            }
+          },
+          {
+            "challenge_seed": "ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:9943:22050.cf1@11731",
+            "generic_rho_steps": 137,
+            "row_key": "22050.cf1@11731:uniform:256:salt175",
+            "scan": {
+              "candidate_verifications": 0,
+              "derived_secret": null,
+              "event_summaries": [],
+              "event_summaries_truncated": false,
+              "event_summary_count": 0,
+              "hit_event_summaries": [],
+              "hit_event_summaries_truncated": false,
+              "hit_event_summary_count": 0,
+              "preassociation_filter_ops": 45,
+              "preassociation_filter_ops_over_rho": 0.32846715,
+              "rank": 0,
+              "relation_count": 0,
+              "row_public_key_verified": false,
+              "selected_hit_events": 0,
+              "selected_hit_root_values": [],
+              "selected_hit_roots": 0,
+              "selected_leaf_count": 3,
+              "selected_leaf_indices": [
+                8,
+                65,
+                79
+              ]
+            }
+          }
+        ],
+        "selected_leaf_count": 6,
+        "selected_row_count": 2,
+        "unique_form_count": 0
+      },
+      "status": "NO_REPLAY_RELATION",
+      "status_code": 4,
+      "target": "22050.cf1@11731",
+      "transfer_index": 9943,
+      "unverified_rank_or_relation_gain": false,
+      "work_item_id": "leaf_aug_ff31bac110febb60",
+      "work_item_id_u64": 17413619992871636321
+    }
+  ]
+}

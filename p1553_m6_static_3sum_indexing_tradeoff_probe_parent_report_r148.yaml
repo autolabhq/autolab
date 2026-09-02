@@ -1,0 +1,115 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-STATIC-3SUM-INDEXING-TRADEOFF-R148-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_indexing_reduction_and_published_tradeoff_boundary
+run_count: 1
+status: structure_aware_elliptic_autocorrelation_route_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - elliptic-curve
+  - cartesian-factor-base
+  - occurrence-divisor
+  - static-3sum-indexing
+  - time-space-tradeoff
+  - exact-count
+  - atom-marginal
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R115-R144-R147
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether published static 3SUM-indexing data structures supply
+  the shared inside-cap occurrence-pair operator left open by R147.
+inputs:
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_r147.py
+    sha256: cbd08abbdb85025c2353be2253284d79896c6a1709690aa31d01a90622e1a49f
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_report_r147.json
+    sha256: a419f994907d392b8d8cec7a3af6dc0f3a67769350be7c1044e3de4320a69977
+  - path: frozen_m6_occurrence_pair_resultant_local_valuation.json
+    sha256: 0e1c41e3c0ddcb6808977a52d50be72c1a2cef36e186599d3bc5337a793cb26b
+  - path: m6_occurrence_pair_resultant_local_valuation_cost_ledger.json
+    sha256: dbb23343d92b1d757bce760fefeed04aa47719779a4f153fe8a2c6b25dac2c10
+  - path: m6_occurrence_pair_resultant_local_valuation_replay.json
+    sha256: 30e839872cd09e34d12224662c3e3988c5cb478377da1632eb2a4f0c985ef643
+  - path: m6_occurrence_pair_resultant_local_valuation_controls.json
+    sha256: d61405a35dc3efec0c9c49dd3be7159718f052ea7daa601ed56d64a1628fdf65
+  - path: factor_logs_and_identical_descent_r147.json
+    sha256: 4389c787e70da680929bb59faaf1550f22d435f253e8f002dc0d50eb1df2f31c
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_occurrence_pair_resultant_local_valuation_probe_r147.py
+    sha256: da3d847481dd5bc38386f4f50ecb3c9d933e8e6ec0afee0b5c697813e2174a75
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_gate_r147.md
+    sha256: 7398ae8894fc40f710f76e2ec0e6f31726f283ca6fb9153f5258e0561537a6fe
+  - path: p1553_m6_occurrence_pair_resultant_local_valuation_probe_parent_report_r147.yaml
+    sha256: a1fd7d4c9c4b0f3b75b97c6e726187bda9db382c1f58910374009dc322f7b7cf
+  - path: references/golovnev_3sum_preprocessing_1907.08355.pdf
+    sha256: b9161a299ee5227bdf11be0bbfec1c58a9348deb8d261875b935d573b4112785
+  - path: references/dinur_golovnev_3sum_indexing_2512.04258.pdf
+    sha256: e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c
+artifacts:
+  - path: p1553_m6_static_3sum_indexing_tradeoff_probe_r148.py
+    sha256: 415bbb0d00b426855886607d6cb9409dff21f5730dc605079264e0b36c87141f
+  - path: p1553_m6_static_3sum_indexing_tradeoff_probe_report_r148.json
+    sha256: b01496572b919ffd15406ee83bcd185675b96669d0cd40f51972ddf56f2caed7
+  - path: frozen_m6_static_3sum_indexing_tradeoff.json
+    sha256: 071b8e2364b6ba0da5bf949b7f0051af25d558b4ea244c6a0aa31bf4f6d1b133
+  - path: m6_static_3sum_indexing_tradeoff_cost_ledger.json
+    sha256: 3161ea7199f1200b1a9a6643b2cad20f082e343f9a85ca36235a218df8418e7d
+  - path: m6_static_3sum_indexing_tradeoff_replay.json
+    sha256: 190281a3930976fe162232be997201694955015eea27387691aeb6aab3792511
+  - path: m6_static_3sum_indexing_tradeoff_controls.json
+    sha256: 3bee12463c7c4966421832f1edb89673aac3f9139151489faf180298ed5db5b0
+  - path: factor_logs_and_identical_descent_r148.json
+    sha256: 8197c71bfe22bec14b3db5ff5e594d1602229d3b02ad87520a357e5932ec6a85
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_static_3sum_indexing_tradeoff_probe_r148.py
+    sha256: 319b2b006e35a7aa9abf942980527d5172e0ca26ab6e04aab039b7b4612e28dc
+  - path: p1553_m6_static_3sum_indexing_tradeoff_probe_gate_r148.md
+    sha256: 50e465e70d3e57457a64185cd9b86fc9b08bd9ebc56cfe6969f8c1f04508d9ca
+verified_statements:
+  - >-
+    Ignoring weights, the R147 occurrence-pair query is static
+    3SUM-indexing on two identical length-B^(9/4) lists in the elliptic
+    Cayley group; exact counts and atom marginals are stronger outputs.
+  - >-
+    The linear-state trivial scan costs B^(9/4) per target and B^(7/2)
+    = N^(7/10) over the complete B^(5/4) target stream.
+  - >-
+    The Fiat-Naor-derived T*S^3=soft-O(n^6) curve instantiated at linear
+    state gives query exponent n^3 and is dominated by the trivial scan.
+  - >-
+    The Dinur-Golovnev T*S=soft-O(n^(5/2)) improvement starts above
+    n^(3/2) state and uses n^2 preprocessing, translating to B^(27/8)
+    state and B^(9/2) preprocessing at the occurrence-list size.
+  - >-
+    The published decision or witness bounds do not supply exact integer
+    multiplicities or A/C atom marginals and do not lower-bound a
+    structure-aware elliptic autocorrelation circuit.
+scoped_failures:
+  structure_aware_shared_occurrence_autocorrelation: open
+  exact_integer_count_index: open
+  offline_online_transposed_atom_marginals: open
+  structured_generic_family_rank_and_density: open
+  factor_logs_without_verifier_labels: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 25
+  weighted_3sum_indexing_reduction_admitted: true
+  published_standard_indexing_negative_admitted: true
+  structure_aware_shared_operator_admitted: false
+  lane_admitted: false
+next_action: >-
+  Exploit the fact that the occurrence divisor is a triple elliptic
+  convolution of the compact C divisor before applying generic static
+  indexing. Build one structure-aware shared autocorrelation or marker
+  operator with B^(9/4) setup and B^(5/4) total query work that emits exact
+  integer counts and A/C marginals, then replay rank, factor logs, and
+  identical descent.

@@ -1,0 +1,107 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-LABEL-CONGRUENCE-CORRECTION-R143-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: label_congruence_and_explicit_row_boundary
+run_count: 1
+status: implicit_relation_span_operator_open
+labels:
+  - exact-finite
+  - exhaustive-subset-enumeration
+  - finite-field
+  - norm-one-torus
+  - mobius-character
+  - product-defect
+  - group-congruence
+  - generalized-birthday
+  - explicit-row-accounting
+  - prospective
+  - novelty-unverified
+owner: P1553-R121-R142
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the R141 Mobius signatures admit a compact total
+  C2-by-C3 composition law, and whether an ideal projected four-list merge
+  that emits explicit rank rows can cross the Pollard-rho exponent.
+inputs:
+  - path: p1553_torus_c5_adaptive_character_decision_router_probe_r142.py
+    sha256: d99409f519e96a9c62644bddc8262d9e535ec55e8fdd4a70ee828a5486af2eef
+  - path: p1553_torus_c5_adaptive_character_decision_router_probe_report_r142.json
+    sha256: 2a6b812448fcf1e24aac0a7d85f56e2fc0cc9a26de5aaf73b42a1d8ae58b8122
+  - path: frozen_torus_c5_adaptive_character_decision_router.json
+    sha256: b3b1a96ec46f8617b249f366b3fb77bc64bdde4d5188b47e293033a63a82a51e
+  - path: torus_c5_adaptive_character_decision_router_cost_ledger.json
+    sha256: 71ee44314fd109bf2854a659d4a80356d5b084602f1f2e5a7113e2018ba706d4
+  - path: torus_c5_adaptive_character_decision_router_replay.json
+    sha256: b285ea1f2883f16b53f30b00aa6793d84f55b8397200297ec7c227c5e3083a10
+  - path: torus_c5_adaptive_character_decision_router_controls.json
+    sha256: bf452fbfc523fa2469c70da68e25439d8fe79fe7a550a12f8cc6736d6b73d59a
+  - path: factor_logs_and_identical_descent_r142.json
+    sha256: d5a35abfa58dc93a8a5bd6d2d315a186c53a8e435d637084abe02d106f63b81f
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_adaptive_character_decision_router_probe_r142.py
+    sha256: 43723e93867533406eb45ab41cdfedf9f1476f8879018b32e8a106be7935dcb0
+  - path: p1553_torus_c5_adaptive_character_decision_router_probe_gate_r142.md
+    sha256: c4663f680cd2816d721b0d8020c4c5ced9479fc40b4b417701ebc2e060cbdae4
+  - path: p1553_torus_c5_adaptive_character_decision_router_probe_parent_report_r142.yaml
+    sha256: 4ab045100abb9537baa6c2e89cbfbd82809f6adff420837dcadce1224dc3d6d7
+artifacts:
+  - path: p1553_torus_c5_label_congruence_correction_probe_r143.py
+    sha256: 715c34ecaf4fd839a8c30d8b43886bad734d96f9113d0c1bed3cde31ed08b00d
+  - path: p1553_torus_c5_label_congruence_correction_probe_report_r143.json
+    sha256: d7d2ef76a1a0a8579ca543152e5d621e66a8e46723987896b45a8cc47feb950b
+  - path: frozen_torus_c5_label_congruence_correction.json
+    sha256: ad81801828ee4e88e7117bc3bd06d62ce237cc54bb24e2a90537f0857aebc588
+  - path: torus_c5_label_congruence_correction_cost_ledger.json
+    sha256: 2229360cdcd9d625b9c93746f53c973393d4bd005637296c3b3558f8c62bc7f5
+  - path: torus_c5_label_congruence_correction_replay.json
+    sha256: e793128490b03e22b8d532f3cbbc298583a206fe0a8a206b41615fb99d20402a
+  - path: torus_c5_label_congruence_correction_controls.json
+    sha256: 82f41b2215f9261e38533d65128b6cdc2e107b9aa496cc01086514a1d3d94e9e
+  - path: factor_logs_and_identical_descent_r143.json
+    sha256: abe05d9d06e23008f46ac9c040affa57e5bb488886ec925bec0de81143c3c271
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_label_congruence_correction_probe_r143.py
+    sha256: 4d7573f630148b687a59a27fec9cb95f1e902e36d0e8ac5dc9d24bf09481a5d6
+  - path: p1553_torus_c5_label_congruence_correction_probe_gate_r143.md
+    sha256: e17719b1f8ef38c13c02c682f4a51b072ef3f47f23633cf29f3499a8e4ec6653
+verified_statements:
+  - >-
+    The exact Mobius-character product defect is a fixed-degree rational
+    function of the unknown C2 operand, and every defined value replays on
+    all eight frozen controls.
+  - >-
+    In a prime-order group, a total product law computed only from operand
+    signatures forces the signature to be constant or injective.
+  - >-
+    Two controls admit no deterministic composition for any nonempty
+    deck-parameter subset; in the other six, the minimum deterministic
+    table recreates every C2-by-C3 operand pair.
+  - >-
+    An ideal projected two-pair merge that emits enough explicit rank rows
+    has total exponent at least max(beta,1-beta), minimized at one half.
+  - >-
+    The finite table comparisons and explicit-row model receive no credit
+    against implicit relation-span operators or general ECDLP algorithms.
+scoped_failures:
+  compact_total_label_only_composition: rejected
+  frozen_inside_cap_correction_table: rejected_on_actual_controls
+  arithmetic_character_circuit: open
+  implicit_summation_polynomial_ffe_relation_span: open
+  compressed_known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 23
+  lane_admitted: false
+next_action: >-
+  Build one target-batched transposed summation-polynomial/FFE
+  relation-span operator at beta=9/20. It must avoid the N^(11/20)
+  explicit pair merge, expose enough independent known-RHS row action for
+  factor logs, support identical target descent, and fully charge field,
+  bit, memory, rank, log, and descent costs below exponent one half.

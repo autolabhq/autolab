@@ -1,0 +1,306 @@
+{
+  "admission": {
+    "failures": [
+      "actual_divisor_image_entropy_theorem_supplied",
+      "actual_divisor_short_generator_supplied",
+      "leaf_free_merge_law_supplied",
+      "actual_five_a_five_c_integer_lift_complete",
+      "actual_five_a_five_c_source_unranking_complete",
+      "projective_infinity_source_complete",
+      "proper_subsum_source_complete",
+      "tangent_source_complete",
+      "multiplicity_complete_actual_source_return",
+      "known_rhs_rank_without_verifier_dlp",
+      "factor_logs_without_verifier_dlp",
+      "identical_fresh_target_descent",
+      "generic_prime_family_algorithm",
+      "shoup_improvement_complete",
+      "actual_compact_aggregate_digit_trie_inside_caps"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 31,
+    "obligations": {
+      "actual_compact_aggregate_digit_trie_inside_caps": false,
+      "actual_divisor_image_entropy_theorem_supplied": false,
+      "actual_divisor_short_generator_supplied": false,
+      "actual_five_a_five_c_integer_lift_complete": false,
+      "actual_five_a_five_c_source_unranking_complete": false,
+      "arbitrary_index_exponent_B12O5": true,
+      "binomial_entropy_lower_bound_recorded": true,
+      "campaign_entropy_fraction_13O25": true,
+      "duplicate_occurrence_count_exact": true,
+      "duplicate_occurrence_payload_charged": true,
+      "exact_membership_state_injection_theorem_recorded": true,
+      "explicit_trie_leaf_count_charged": true,
+      "factor_logs_without_verifier_dlp": false,
+      "finite_word_bounds_replayed": true,
+      "generic_prime_family_algorithm": false,
+      "identical_fresh_target_descent": false,
+      "integer_no_wrap_replayed": true,
+      "known_rhs_rank_without_verifier_dlp": false,
+      "leaf_free_merge_law_supplied": false,
+      "multiplicity_complete_actual_source_return": false,
+      "patricia_node_count_charged": true,
+      "projective_infinity_source_complete": false,
+      "proper_subsum_source_complete": false,
+      "shoup_improvement_complete": false,
+      "structured_family_nonuniversal_boundary_recorded": true,
+      "structured_interval_membership_source_exact": true,
+      "subset_state_count_exact": true,
+      "tangent_source_complete": false,
+      "ten_source_bindings_verified": true,
+      "toy_occurrence_source_exact": true,
+      "universal_arbitrary_trie_correctly_rejected": true
+    },
+    "passed_obligation_count": 16
+  },
+  "arbitrary_set_information_controls": {
+    "all_finite_word_bounds_exact": true,
+    "binomial_lower_bound": "binomial(p,D)>=(p/D)^D",
+    "campaign_substitution": {
+      "D": "Theta(B^(12/5))",
+      "constant_fraction_of_D": {
+        "decimal": 0.52,
+        "exact": "13/25"
+      },
+      "log_p_D": {
+        "decimal": 0.48,
+        "exact": "12/25"
+      },
+      "minimum_field_words": "D*(1-log_p D)>=13D/25=Theta(B^(12/5))",
+      "p": "Theta(B^5)"
+    },
+    "exact_membership_state_theorem": "Two different subsets must have different persistent states: a target in their symmetric difference forces different exact membership answers. Exact source return is at least as strong.",
+    "family": "all D-element subsets of F_p",
+    "finite_sweep": [
+      {
+        "binary_trie_nodes": 13,
+        "explicit_leaf_records": 4,
+        "minimum_field_words": 3,
+        "minimum_field_words_exact": true,
+        "patricia_branch_nodes_for_D_gt_1": 3,
+        "patricia_leaf_nodes": 4,
+        "patricia_total_nodes": 7,
+        "possible_distinct_subsets": 2380,
+        "prime": 17,
+        "subset_size": 4,
+        "values": [
+          4,
+          5,
+          6,
+          15
+        ]
+      },
+      {
+        "binary_trie_nodes": 19,
+        "explicit_leaf_records": 5,
+        "minimum_field_words": 4,
+        "minimum_field_words_exact": true,
+        "patricia_branch_nodes_for_D_gt_1": 4,
+        "patricia_leaf_nodes": 5,
+        "patricia_total_nodes": 9,
+        "possible_distinct_subsets": 169911,
+        "prime": 31,
+        "subset_size": 5,
+        "values": [
+          14,
+          22,
+          24,
+          25,
+          30
+        ]
+      },
+      {
+        "binary_trie_nodes": 35,
+        "explicit_leaf_records": 7,
+        "minimum_field_words": 5,
+        "minimum_field_words_exact": true,
+        "patricia_branch_nodes_for_D_gt_1": 6,
+        "patricia_leaf_nodes": 7,
+        "patricia_total_nodes": 13,
+        "possible_distinct_subsets": 436270780,
+        "prime": 61,
+        "subset_size": 7,
+        "values": [
+          7,
+          14,
+          17,
+          24,
+          33,
+          44,
+          59
+        ]
+      },
+      {
+        "binary_trie_nodes": 50,
+        "explicit_leaf_records": 10,
+        "minimum_field_words": 7,
+        "minimum_field_words_exact": true,
+        "patricia_branch_nodes_for_D_gt_1": 9,
+        "patricia_leaf_nodes": 10,
+        "patricia_total_nodes": 19,
+        "possible_distinct_subsets": 209123798385425,
+        "prime": 127,
+        "subset_size": 10,
+        "values": [
+          0,
+          3,
+          42,
+          45,
+          54,
+          58,
+          71,
+          81,
+          92,
+          104
+        ]
+      }
+    ],
+    "scope": "Information lower bound for a data structure supporting every D-subset. It does not apply to a restricted structured family with a short public generator or merge law.",
+    "state_count": "binomial(p,D)"
+  },
+  "asymptotic_cost_control": {
+    "arbitrary_D_subset_exact_index": {
+      "build_work": "Omega(D)",
+      "explicit_or_patricia_trie_state": "Theta(D)",
+      "exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "inside_setup_cap": false,
+      "minimum_field_words": "Omega(D)"
+    },
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "explicit_index_target_query": {
+      "inside_online_cap_after_overcap_setup": true,
+      "work": "O(log p)"
+    },
+    "r84_smaller_side": {
+      "actual_divisor_image_is_arbitrary_D_subset": false,
+      "actual_divisor_image_short_generator_proved": false,
+      "leaf_free_mergeable_summary_supplied": false,
+      "prospective_source_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "scope": "Closes exact tries and summaries universal over arbitrary D-subsets, plus explicit occurrence payloads. It does not lower-bound the structured 3A+2C endpoint image or another short public family.",
+    "structured_interval_positive_control": {
+      "inside_direct_caps": true,
+      "persistent_words": "O(1)",
+      "target_query": "O(1) representation-aware comparisons"
+    }
+  },
+  "breakthrough": false,
+  "classification": "ARBITRARY_D_SUBSET_EXACT_INDEX_NEEDS_OMEGA_D_WORDS__EXPLICIT_AND_PATRICIA_TRIES_THETA_D__STRUCTURED_INTERVAL_CONSTANT_STATE_POSITIVE__ACTUAL_DIVISOR_IMAGE_OPEN",
+  "disposition": "REJECT_UNIVERSAL_AGGREGATE_DIGIT_TRIES_ONLY__ALL_D_SUBSETS_REQUIRE_BINOMIAL_P_D_STATES__OMEGA_D_FIELD_WORDS_B12O5__EXPLICIT_AND_PATRICIA_TRIES_THETA_D__DUPLICATE_OCCURRENCE_PAYLOAD_D__STRUCTURED_INTERVAL_CONSTANT_STATE_POSITIVE__ACTUAL_3A2C_IMAGE_ENTROPY_AND_MERGE_OPEN__PROJECTIVE_AND_FULL_5A5C_INCOMPLETE__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "fresh_target_descent_complete": false,
+  "next_action": "Prove or refute one actual-image entropy and merge theorem for the R84 3A+2C side directly from D_A,D_C. Freeze the public parameter family and endpoint-key map before outcomes; either derive a leaf-free summary below B^(9/4) with B^(5/4) exact query/source return, or prove that the reachable image contains an Omega(B^(12/5))-word distinguishable subfamily. Include multiplicity, all exceptional branches, rank, factor logs, and identical target descent.",
+  "novelty_scope": "R100 is the first campaign receipt to give an information-theoretic persistent-state bound for universal exact aggregate source indices while preserving a structured-family positive counterexample.",
+  "schema": "p1553.5a5c_succinct_aggregate_digit_trie.r100.v1",
+  "scope_boundary": "R100 closes universal exact D-subset tries and summaries, including Patricia compression and occurrence payloads. The interval positive control proves this is not a lower bound on a structured endpoint family. No entropy or short-generator theorem is claimed for the actual 3A+2C divisor image.",
+  "shoup_bound_improvement": false,
+  "side_artifacts": {
+    "exceptional": "aggregate_digit_trie_exceptional_controls.json",
+    "frozen": "frozen_5a5c_succinct_aggregate_digit_trie.json",
+    "logs_descent": "factor_logs_and_identical_descent_r100.json",
+    "source_replay": "aggregate_digit_trie_integer_source_replay.json",
+    "state_ledger": "aggregate_digit_trie_state_transition_ledger.json"
+  },
+  "source_bindings": {
+    "p1513_handoff": {
+      "path": "/Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md",
+      "sha256": "27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc"
+    },
+    "r82_gate": {
+      "path": "p1553_cartesian_sum_compact_divisor_probe_gate_r82.md",
+      "sha256": "7c34e1d905c95a756689d4ec0ea92c6bd47808bcb3407d858ce08cccf75fd55e"
+    },
+    "r82_report": {
+      "path": "p1553_cartesian_sum_compact_divisor_probe_report_r82.json",
+      "sha256": "ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832"
+    },
+    "r84_gate": {
+      "path": "p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md",
+      "sha256": "4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661"
+    },
+    "r84_report": {
+      "path": "p1553_5a5c_marked_resultant_source_section_probe_report_r84.json",
+      "sha256": "c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b"
+    },
+    "r94_gate": {
+      "path": "p1553_5a5c_implicit_veronese_hyperplane_source_index_probe_gate_r94.md",
+      "sha256": "66d2004d1b4dfa63ac69f60397da45e379dfca4bb8db12ede0647f028aaf517d"
+    },
+    "r94_report": {
+      "path": "p1553_5a5c_implicit_veronese_hyperplane_source_index_probe_report_r94.json",
+      "sha256": "a9966f1fb407e720ce1e9aaafc82ab4a38eade9f338cda287cb737445d099df0"
+    },
+    "r99_gate": {
+      "path": "p1553_5a5c_multiedge_digitized_equality_projector_probe_gate_r99.md",
+      "sha256": "a7e69ad7cf661f09c679039c5ed9874940eca5432d7ca91dc980f97005bfe560"
+    },
+    "r99_producer": {
+      "path": "p1553_5a5c_multiedge_digitized_equality_projector_probe_r99.py",
+      "sha256": "3497a069b3bb5b2590537344d68ca0d1cefd0995de6cd739d8f79b352c862e23"
+    },
+    "r99_report": {
+      "path": "p1553_5a5c_multiedge_digitized_equality_projector_probe_report_r99.json",
+      "sha256": "dac6fbf38357e640bb174860df16117fdd3461717cb3b2ceac4e76ec7f77707c"
+    }
+  },
+  "structured_and_occurrence_controls": {
+    "blind_integer_count": 0,
+    "blind_target": 3,
+    "duplicate_occurrence_payload_words": 8,
+    "integer_counts_below_prime": true,
+    "occurrence_list": [
+      2,
+      2,
+      5,
+      7,
+      9,
+      12,
+      20,
+      31
+    ],
+    "occurrence_payload_needed_for_complete_source_return": true,
+    "positive_integer_count": 2,
+    "positive_source_index": 0,
+    "positive_target": 2,
+    "structured_interval_blind": {
+      "present": false,
+      "returned_bottom": true,
+      "source_index": null,
+      "summary": {
+        "lower": 20,
+        "upper": 36
+      },
+      "summary_words": 2,
+      "target": 19
+    },
+    "structured_interval_is_constant_state_counterexample": true,
+    "structured_interval_positive": {
+      "present": true,
+      "returned_bottom": false,
+      "source_index": 7,
+      "summary": {
+        "lower": 20,
+        "upper": 36
+      },
+      "summary_words": 2,
+      "target": 27
+    },
+    "value_leaf_count": 7
+  }
+}

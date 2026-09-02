@@ -1,0 +1,120 @@
+schema: crypto.autoresearch.install_validation_receipt.v1
+bundle_id: P1553-R14-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+reason: authoritative checkout is read-only in this session
+composition:
+  mode: atomic_r5_through_r14
+  upstream_bundle_id: P1553-R5-R7-20260719
+  upstream_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_bundle_id: P1553-R13-20260719
+  base_manifest_sha256: 56bf48ebc6234028391b4402354be9b2b7431d82cb8a40e8a5bba134160b07f0
+  base_manifest_hash_list_sha256: 0dd0cac6ec6fd1054ec80fe8a8978ed0ee1d3ea3ed634dfa02f1251065a8149b
+  base_simulated_queue_sha256: 941e8f226cea4eb298e3ab4525fa8475063c1065805c7b198cf90c0150735d97
+delta_manifest:
+  json_sha256: d3c4824f0a2ee508e1b42707817c2ff78e0dab8011cd8b36f654ad69ea8a399a
+  sha256_list_sha256: 34088ede7d5b36547f01027bfbce7f14f9fe37e101502ad0f9b48598ef51af0c
+  unique_sources: 5
+  destination_installs: 6
+  appended_tasks: 2
+producer_bindings:
+  gate_sha256: da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac
+  parent_report_sha256: ec5bc6425a29575468f78fad1803412dc9a69d6a69e581e5deaad7160cb7de8e
+  red_team_markdown_sha256: a534f6260a342bacc1aeba6becce8a35707644ed6fcd16eb2a75cfb7dbbe0c3c
+  red_team_yaml_sha256: 44c05cdfac2b994d25889e104e610bd37f635f1b97d1a5e5f4956363358c3d8f
+  artifact_index_sha256: c3b83927fae0ff95b8d401a6c0059e7caf1de34737f6ec1eaee20b611796208d
+  independent_reviewer: 019f7d58-7430-7a43-b0ed-0d8e7d85c64a
+  initial_review: accept
+  final_review: accept
+  corrections_applied: []
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+  appledouble_sidecars_under_ideas: absent_at_final_scan
+simulated_composed_merge:
+  queue_file_sha256: 93fd7f670455aed953817ac56a25c4311b2e3cae864df8b08204c1ecd9d3ccaf
+  queue_canonical_sha256: 6571d02cf9e919f448fe3763d517d48d57f00a491ee807f2a5db74cbdc705bc6
+  dispatch_file_sha256: e6d715e53c772e6811049dee8a7e4dfe0e196bf06d6b77561137e32697833f52
+  dispatch_report_sha256: 1d99a7912c8e5b394ee12205e4df2846181c0c348a6e5ef751f32f9539e1648b
+  dispatch_plan_sha256: c2a05465591042ee2aeb8f9aef4faa0da0c0b058477c3898c9267dfd15222df6
+  terminal_tasks: 28
+  ready_tasks: 0
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  producer_and_red_team_yaml_documents_parsed: 2
+  delta_json_parsed: true
+  new_staged_files_checked_before_receipt: 7
+  r14_next_action_records: 4
+  source_hash_list: pass
+  manifest_source_bindings: pass
+  artifact_index_precondition_bound: true
+  artifact_index_coverage_in_clean_replay: pass
+  task_ids_unique: pass
+  dependency_ids_resolve: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator_live: pass
+  idea_corpus_validator_clean_temporary_replay_with_r13_and_r14_artifacts_and_r14_index: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+research_result:
+  status: revise_scoped_compiler
+  exact_new_boundary: >-
+    For the complete short-Weierstrass Kummer branch, the two local labels are
+    roots of an explicit quadratic H_(u,q), and substituting the degree-d map
+    psi gives a complete local image divisor with an O(d^2) dense chart
+    description. This is a compact map description, not a construction over
+    all S*L source pairs.
+  exact_decoder: >-
+    Given exact image size K and ordinary trace moments s_0 through
+    s_(2K-1), with nonzero geometric multiplicities below p, the K-by-K
+    Hankel matrix is a weighted Vandermonde Gram matrix and is nonsingular.
+    Fast Pade or Hankel reconstruction therefore recovers the squarefree
+    image minimal polynomial in K^(1+o(1)) field operations. Weighted and
+    key-coordinate moments then recover occurrence weights and complete keys.
+  completeness_and_source_split: >-
+    A finite moment prefix does not certify completeness without exact K,
+    annihilation or containment, or an exact stopping rule. Source-marker
+    moments return fiber sums rather than one jointly coupled pair/fifth
+    source; complete per-fiber source polynomials have total degree S*L.
+  standard_constructor_boundary: >-
+    Split evaluation, quotient-Krylov, nested norms, sparse resultants,
+    multiplication matrices, direct stencils, and per-slice unions expose the
+    S*L=B^3 source algebra or traffic. Fifth-first dense elimination costs
+    d*L^2, at least B^(11/4) in the surviving degree range. These are
+    grammar-specific charges, not unrestricted lower bounds.
+  positive_controls: >-
+    Additive and multiplicative maps admit factored moment construction, and
+    a one-sided hash plus L-scan admits exact counts and one source. P1510 and
+    structured torsion or progression controls likewise prevent generalizing
+    the negative result beyond the actual Kummer branch grammar.
+  surviving_exception: >-
+    A compact tensor-trace constructor for the actual Kummer branch map that
+    emits ordinary, weighted, key, containment, jointly coupled source,
+    adaptive-child, fresh-target, and R10 rank-two answers without an S*L
+    vector, d*L^2 dense resultant, d^2 online join, or unproved stopping rule
+    remains unconstructed and not excluded.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_install_rule: >-
+  Re-read all four live precondition hashes and both required NET task states;
+  compose R5-R7, R8, R9, R10, R11, R12, R13, and R14 on one private queue;
+  install the task files, IDEA-133 artifact, updated artifact index, queue, and
+  regenerated dispatch outputs atomically only if every manifest, source
+  binding, test, focus check, corpus validator, and AppleDouble scan passes.
+  Preserve any mismatch as drift instead of overwriting it.

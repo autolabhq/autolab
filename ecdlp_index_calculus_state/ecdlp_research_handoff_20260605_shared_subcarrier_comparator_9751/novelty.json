@@ -1,0 +1,95 @@
+{
+  "claim_status": "SHARED_CARRIER_SPLITS_INTO_STRICT_AND_BROAD_PUBLIC_LANES",
+  "date": "2026-06-05",
+  "not_a_speedup_claim": true,
+  "latest_audit_end": 9751,
+  "latest_complete_tail_block": "9744_9751",
+  "persistent_missing_block": "9696_9703",
+  "bridge": {
+    "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_missing_column_bridge_audit_5984_9751_probe.json",
+    "direct_below_rho_count": 955,
+    "rank_gain_certificate_count": 276,
+    "accepted_missing_rank_gain_count": 245
+  },
+  "strict_lane": {
+    "tokens": [
+      "salt_min_mod4=2",
+      "selected_has=13"
+    ],
+    "workorder_artifact": "ecdlp_index_calculus_state/low_term_total2_shared_subcarrier_workorder_9696_9751_probe.json",
+    "comparator_artifact": "ecdlp_index_calculus_state/low_term_total2_shared_subcarrier_comparator_audit_9696_9751_probe.json",
+    "shared_row_count": 6,
+    "exported_rank_gain_transfers": [
+      9732
+    ],
+    "missing_full_family_transfers": [
+      9696,
+      9739
+    ],
+    "exported_comparator": {
+      "transfer_index": 9732,
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt174",
+        "22050.cf1@11731:uniform:256:salt176"
+      ],
+      "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+      "accepted_form": [
+        1,
+        5
+      ],
+      "rank_gain": 1,
+      "unique_factor_relation_gain": 1
+    }
+  },
+  "broad_lane": {
+    "tokens": [
+      "selected_has=13"
+    ],
+    "fresh_accepted_missing_hits": [
+      {
+        "transfer_index": 9742,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "accepted_forms": [
+          [10, 14]
+        ],
+        "rank_gain": 1,
+        "unique_factor_relation_gain": 1
+      },
+      {
+        "transfer_index": 9750,
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt161",
+          "22050.cf1@11731:uniform:256:salt170"
+        ],
+        "accepted_forms": [
+          [0, 5],
+          [1, 5],
+          [10, 14]
+        ],
+        "rank_gain": 2,
+        "unique_factor_relation_gain": 6
+      }
+    ]
+  },
+  "next_targets": [
+    {
+      "transfer_index": 9696,
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt170",
+        "22050.cf1@11731:uniform:256:salt171"
+      ],
+      "reason": "strict shared carrier, full-family compatible, direct missing"
+    },
+    {
+      "transfer_index": 9739,
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt166",
+        "22050.cf1@11731:uniform:256:salt172"
+      ],
+      "reason": "strict shared carrier, full-family compatible, direct missing"
+    }
+  ]
+}

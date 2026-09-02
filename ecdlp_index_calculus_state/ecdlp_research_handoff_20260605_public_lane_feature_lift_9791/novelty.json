@@ -1,0 +1,87 @@
+{
+  "artifact": "ecdlp_index_calculus_state/low_term_total2_public_lane_feature_lift_miner_selected13_9696_9791_probe.json",
+  "claim_status": "PUBLIC_LANE_FEATURE_LIFT_ROUTING_CANDIDATE",
+  "created_for_boundary": 9791,
+  "honesty_boundary": [
+    "This is a public-token routing artifact, not new direct/rank evidence.",
+    "Rules are selected against exported comparator labels.",
+    "Missing rows must receive direct/rank export before they can be counted as ECDLP progress.",
+    "No Pollard-rho speedup is claimed from this handoff."
+  ],
+  "new_script": "tasks/ecdlp_index_calculus/low_term_total2_public_lane_feature_lift_miner.py",
+  "primary_queue_rule": {
+    "control_count": 6,
+    "missing_full_family_transfers": [
+      9699,
+      9700,
+      9701,
+      9707,
+      9713,
+      9715,
+      9719,
+      9728,
+      9729,
+      9739,
+      9743,
+      9755,
+      9761,
+      9767,
+      9771,
+      9790
+    ],
+    "positive_count": 12,
+    "precision": 0.66666667,
+    "recall": 1.0,
+    "tokens": [
+      "selected_has=13",
+      "salt_adjacent=False"
+    ]
+  },
+  "sharp_diagnostic_rule": {
+    "control_count": 0,
+    "missing_full_family_transfers": [
+      9715,
+      9728,
+      9755,
+      9790
+    ],
+    "positive_count": 6,
+    "precision": 1.0,
+    "recall": 0.5,
+    "tokens": [
+      "selected_has=13",
+      "salt_adjacent=False",
+      "salt_min_mod4=3"
+    ]
+  },
+  "validation_priority": [
+    {
+      "salts": [
+        171,
+        174
+      ],
+      "transfer_index": 9715
+    },
+    {
+      "salts": [
+        163,
+        166
+      ],
+      "transfer_index": 9728
+    },
+    {
+      "salts": [
+        175,
+        177
+      ],
+      "transfer_index": 9755
+    },
+    {
+      "salts": [
+        167,
+        172
+      ],
+      "transfer_index": 9790
+    }
+  ]
+}

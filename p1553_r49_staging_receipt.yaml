@@ -1,0 +1,81 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R49-EXTERNAL-DENOMINATOR-COLLISION-SLICE-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T10:14:12Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R49 is a deterministic finite
+  external-denominator sample requiring independent review. It extends beyond
+  the R45 trade catalog but does not exhaust eligible blocks or numerator
+  projective space.
+bindings:
+  r48_bundle_hash_list_sha256: ce1a6f65097d907417494fba01c5c4ed529fa5509cbad3ad971c7befc2a6e611
+  r48_staging_receipt_sha256: 815ca9b7afd5af60e1737d7d2109d28b7739d5a46bf585aa38d1c5fc5acabc57
+  r49_gate_sha256: 717ed5f1e01f8b96fd95598811369ec7debbebe04efde3e784172e875dddb7e2
+  r49_parent_report_sha256: cff6ed51139bfc358c5c44068df6d62b0dcb56f86fe491a1ba9f3f798286ce13
+  r49_sweep_script_sha256: 12fcb856ba85da03c521ac3228d184651cfc370f7f97261f643909545ff9c14f
+  r49_sweep_report_sha256: 1045ea8a8abec815fd3614cc02ca6df2569859c828c9a128b8b1812bb37dab7e
+  r49_artifact_index_sha256: 144d8679bf2fc331a1e0c2c7ece69055d24cd8affbd3db83dc78ec8beedb9673
+  r49_bundle_hash_list_sha256: 58992545d6ecaac770d8e2c809f5ade30080b7871b154d33c22b126bdaea0d8f
+result:
+  classification: external_denominator_sample_negative_unsampled_blocks_open
+  sampling_seed: 1553
+  sampling_attempts: 1398
+  accepted_external_blocks: 1000
+  catalog_rejections: 0
+  duplicate_rejections: 0
+  generated_projective_line_instances: 1358000
+  scored_subgroup_basepoint_free_candidates: 1289607
+  subgroup_basepoint_rejections: 61393
+  duplicate_slice_instances: 6000
+  denominators_with_strict_secondary_improvement: 91
+  maximum_collision_pair_gain: 8
+  best_complete_nine_point_fibers: 2
+  best_collision_pairs: 103
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+  survivors: 0
+  unsampled_equal_sum_blocks: unclassified
+  outside_slice_pencils: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r49_hash_list: pass
+  r49_parent_yaml_parse: pass
+  sampling_attempt_count_frozen: pass
+  all_1000_blocks_distinct_and_outside_catalog: pass
+  all_external_section_zero_sets_checked: pass
+  all_seed_collision_bases_rank_seven: pass
+  all_1358000_projective_slice_instances_generated: pass
+  all_unique_candidate_outcomes_accounted: pass
+  deterministic_replay_matches_report_byte_for_byte: pass
+  clean_temporary_replay_with_r16_through_r49_gates_and_r49_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T10_14_12Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the 1000 blocks are a deterministic finite sample, not an exhaustive catalog
+  - each denominator search is exhaustive only over seven declared slices
+  - subgroup basepoint checks do not certify geometric basepoint freeness
+  - no target, R10, relation-rank campaign, logs, descent, or breakthrough
+exactly_one_next_action: >-
+  Exhaust every disjoint external-external pair in the 1,000-block sample,
+  deduplicate by Plucker coordinates, evaluate all 103 subgroup points, and
+  test whether any such direct pencil has a third complete selected fiber.

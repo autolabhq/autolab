@@ -1,0 +1,56 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-25",
+  "claim_status": "component_forward_positive_under_total2_direct_root_accounting",
+  "primary_artifacts": [
+    "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/ffe_prefactor_hit_root_policy_probe.py",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_hit_root_policy_total2_136_143.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_hit_root_policy_total2_112_143.json",
+    "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_hit_root_policy_total3_total4_120_127_negative_control.json"
+  ],
+  "novel_component": {
+    "name": "prefactor_unique_leaf_hit_root_first_target_hash",
+    "description": "Use pre-factor selected leaf hit roots, with a unique-leaf multiplicity tie-break, to locate the preserving Sage root hyperplane before public hash fallback.",
+    "uses_sage_factorization_for_policy_choice": false,
+    "uses_preserving_labels_for_policy_choice": false,
+    "requires_channel_scope": "low_term_total2"
+  },
+  "evidence": {
+    "fresh_136_143": {
+      "surface_count": 6,
+      "chosen_preserving_count": 6,
+      "chosen_false_positive_count": 0,
+      "below_rho_count": 5,
+      "direct_below_rho_count": 6,
+      "mean_evaluated_root_count": 1.0,
+      "max_total_ops_over_rho": 1.064,
+      "max_direct_total_ops_over_rho": 0.928
+    },
+    "total2_112_143": {
+      "surface_count": 12,
+      "chosen_preserving_count": 12,
+      "chosen_false_positive_count": 0,
+      "below_rho_count": 11,
+      "direct_below_rho_count": 12,
+      "mean_total_ops_over_rho": 0.72338686,
+      "mean_direct_total_ops_over_rho": 0.62722141
+    },
+    "total3_total4_120_127_negative_control": {
+      "surface_count": 1,
+      "chosen_preserving_count": 0,
+      "chosen_false_positive_count": 1
+    }
+  },
+  "non_claims": [
+    "No end-to-end ECDLP speedup is claimed.",
+    "No all-channel promotion is claimed.",
+    "No total3/4 promotion is claimed.",
+    "The scan route is not fully promoted because one fresh 136-143 surface is 1.064 ops/rho under scan accounting."
+  ],
+  "next_preregistration": {
+    "window": "144_151",
+    "primary_policy": "prefactor_unique_leaf_hit_root_first_target_hash",
+    "channel_scope": "low_term_total2",
+    "primary_promotion_condition": "all total2 gate-selected surfaces preserving, false-positive-free, and direct-below-rho"
+  }
+}

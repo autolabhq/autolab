@@ -1,0 +1,140 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-RANDOMIZED-TARGET-DIVISOR-NORM-UNION-R164-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: randomized_same_target_norm_reduction_and_incidence_split
+run_count: 1
+status: output_sensitive_regular_elliptic_translation_norm_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - quotient-algebra
+  - target-norm
+  - randomized-las-vegas
+  - exceptional-incidence
+  - full-cost
+  - scoped-boundary
+owner: P1553-R107-R161-R163
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Replace the R163 Fermat projector by a randomized linear same-target
+  residual, make its one-sided error exact by verification, and separate the
+  denominator-incidence branch from the remaining regular target norm.
+inputs:
+  - path: p1553_m6_aggregate_union_factor_label_recovery_probe_r163.py
+    sha256: 225108ac4f89b44c88db5db93aa3c2c1b4578c4b0993f7f736781b469b3d77f9
+  - path: p1553_m6_aggregate_union_factor_label_recovery_probe_report_r163.json
+    sha256: 0a35b4fee30c7abf4ba69232e0f7af65d48ec785aef832c934bf03d5366645ab
+  - path: frozen_m6_aggregate_union_factor_label_recovery.json
+    sha256: 2971fc80ba63eb35303f35592dab57c91d532f31886cfde21b632ef04626c8d7
+  - path: m6_aggregate_union_factor_label_recovery_cost_ledger.json
+    sha256: 28f090f312d5177d4f7d4132e5b772b56b42ff372c7866db23e227b3888e4722
+  - path: m6_aggregate_union_factor_label_recovery_replay.json
+    sha256: 83fa1b944f0b336e8c81c3e166ff0ce94f18949201d93f0b440af87df58e655e
+  - path: m6_aggregate_union_factor_label_recovery_controls.json
+    sha256: dc485b0fd593aadd11db178fd2c2edc5510fc443dca928fcc58627a818c4d5ff
+  - path: aggregate_union_target_labels_and_backpointers_r163.json
+    sha256: 815fbd1a3e64a6f203a34541c5a29c407553144b934b56a5641e38ec4a15b9ee
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_aggregate_union_factor_label_recovery_probe_r163.py
+    sha256: 6f829d95211f8d4b2785e6392319435e6a651a41028de506b2cfadbce621058a
+  - path: p1553_m6_aggregate_union_factor_label_recovery_probe_gate_r163.md
+    sha256: 3064a108bf063ab59a0991be6910b70bf3a2e498974add780f6a57e157a63212
+  - path: p1553_m6_aggregate_union_factor_label_recovery_probe_parent_report_r163.yaml
+    sha256: cbaf7edfdf8ca8082138be914b6af923d913be75b61b44cf3da774584207f90e
+  - path: p1553_5a5c_noncharacter_algebraic_target_norm_resultant_probe_report_r107.json
+    sha256: 0f85b6c29df4b91a56b6f17badc08c08f34c95e21c3b5219261a9308f493d65d
+  - path: p1553_5a5c_noncharacter_algebraic_target_norm_resultant_probe_gate_r107.md
+    sha256: 74343856b9bd1865d92bde6055b9d3b441d2ad716797f478d99ab8ee85cc1c51
+  - path: references/dahan_lex_groebner_dynamic_evaluation_2010.14775v3.pdf
+    sha256: e17f13261cab77b08313c5524764e2a7b1030dfc83b56afc1a88c954034c667f
+artifacts:
+  - path: p1553_m6_randomized_target_divisor_norm_union_probe_r164.py
+    sha256: 770294394c4f9b4e39652224ef44918242198c6c99d9fb786f9883774bb4044b
+  - path: p1553_m6_randomized_target_divisor_norm_union_probe_report_r164.json
+    sha256: 8d9ddeaf584d8d8bd41c3373c9c765b1361aa9a287cf763217b1296ed85b389a
+  - path: frozen_m6_randomized_target_divisor_norm_union.json
+    sha256: bfd2d51835b22c70ddb84217fc12c21187220ef7c2e40993cbcfe3b21cef2781
+  - path: m6_randomized_target_divisor_norm_union_cost_ledger.json
+    sha256: d2ad661d6fec3bbb1bb9bad95a549fa89ab7528a2abdbbd17dee486e8d607ea1
+  - path: m6_randomized_target_divisor_norm_union_replay.json
+    sha256: db29165a34163d1cab89569c883a41f1e61eb1c2ae56f341316b50fcd6c708e4
+  - path: m6_randomized_target_divisor_norm_union_controls.json
+    sha256: 6604f752e894d891afe39e44eb984260a705d0eac86b5734e9dca636e1574cc9
+  - path: randomized_target_label_algebra_and_false_positive_r164.json
+    sha256: 718cbcb4a79a238eb2995b16c56098a7c5cab510dd2b6d1b7faaf730f72dfd62
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_randomized_target_divisor_norm_union_probe_r164.py
+    sha256: 3056cfbbd9abea6dd1b436216112b2d073cd604eb3fc12882b253b510341327a
+  - path: p1553_m6_randomized_target_divisor_norm_union_probe_gate_r164.md
+    sha256: 65f78505220ff5e396fb834c9c81034861b80391578089cc295d72c9be771ea3
+verified_statements:
+  - >-
+    A uniform degree-below-N polynomial in the target-label algebra gives
+    independent uniform randomizers at all N public target labels, regardless
+    of target-coordinate collisions.
+  - >-
+    The linear residual a_j+r_j*b_j has no false negatives and gives each
+    regular nonmatch false cancellation probability at most 1/p.
+  - >-
+    The probability that any of the nN regular nonmatches enters the union is
+    at most nN/p=B^(-3/2), and direct B^2 expected verification makes the
+    returned factor exact.
+  - >-
+    A forced r=-a/b control creates a false root, which direct group-law
+    verification removes without losing any true R163 union root.
+  - >-
+    The incidence factor gcd(U,product_j(X-x(T_j))) and x-bucket verification
+    cost B^(9/4+o(1)) and preserve the positive tangent exception.
+  - >-
+    The standard represented coefficient-ring target norm costs B^(7/2),
+    above rho; no output-sensitive elliptic-translation norm is supplied.
+scoped_failures:
+  output_sensitive_regular_target_norm_below_rho: open
+  standard_independent_coefficient_ring_norm_below_rho: refuted_by_cost
+  dynamic_evaluation_output_sensitive_norm: unsupplied
+  deterministic_hash_to_curve_transfer: open
+  unconditional_total_attack_cost: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+unproved_or_outside_scope:
+  - arithmetic-circuit or data-structure lower bounds for structured norms
+  - a fast simultaneous translation action on the elliptic divisor
+  - deterministic hash-to-curve pseudorandomness
+primary_sources:
+  - url: https://arxiv.org/abs/2010.14775
+    use: quotient-ring dynamic evaluation and represented subresultant scope
+admission:
+  passed_obligations: 20
+  total_obligations: 27
+  randomized_norm_reduction_admitted: true
+  incidence_constructor_admitted: true
+  regular_norm_constructor_admitted: false
+  lane_admitted: false
+result:
+  field_prime_exponent_B: 5
+  c3_divisor_degree_exponent_B: 9/4
+  target_count_exponent_B: 5/4
+  false_union_probability_exponent_B: -3/2
+  expected_regular_verification_exponent_B: 2
+  incidence_constructor_exponent_B: 9/4
+  standard_norm_exponent_B: 7/2
+  global_rho_exponent_B: 5/2
+  finite_control_count: 6
+  unforced_randomized_false_positive_count: 0
+  forced_false_positive_control_complete: true
+  positive_incidence_control_complete: true
+  regular_target_norm_constructor_complete: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_RANDOM_LINEAR_TARGET_RESIDUAL_WITH_NO_FALSE_NEGATIVES__FALSE_UNION_PROBABILITY_B_MINUS3O2__FORCED_FALSE_ROOT_VERIFIED_AWAY__INCIDENCE_BRANCH_B9O4__STANDARD_NORM_B7O2_OVER_RHO__OUTPUT_SENSITIVE_ELLIPTIC_TRANSLATION_NORM_OPEN__NO_RHO__NO_SHOUP_IMPROVEMENT__NO_BREAKTHROUGH
+next_action: >-
+  Construct or refute gcd(U,Norm_target(a+R*b)) below B^(5/2), preferably in
+  B^(9/4+o(1)), using the shared elliptic-translation action without
+  materializing the n-by-N residual table.

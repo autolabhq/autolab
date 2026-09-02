@@ -1,0 +1,68 @@
+schema: crypto.autoresearch.red_team_report.v1
+red_team_report:
+  id: RT-20260719-P1553-EIG-R13
+  task_id: TASK-20260719-P1553-EIG-RT-R1
+  reviewer: 019f7d35-2ed5-7e73-be3b-d04013bd8d40
+  evidence_kind: theorem-only
+  run_count: 0
+  initial_verdict: revise
+  final_verdict: accept
+  producer_bindings:
+    gate_sha256: 78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5
+    parent_report_sha256: b4c1645ab58f470b38519ebb0e9bd993547a5a3d39d56a1c8eb82413ae0ff838
+  claim_under_review: >-
+    The fifth-erased complete Kummer image has a transposed branch-energy
+    floor K=Omega(B^3/d) at dense support for d<=B; its exact reduced image
+    has O(K) representation, while standard graph-first elimination exposes
+    n=S*L and does not supply completeness, adaptive replay, target action, or
+    rank-two evaluation.
+  objections:
+    - >-
+      The first draft relied on R11 through R12 but did not directly hash-bind
+      the R11 gate, parent, and independent receipt or assign P1515/IDEA-057
+      ownership for the transposed rigidity theorem.
+    - >-
+      The first source-section wording allowed J_12 and J_5 to be read as
+      independent marginal selectors rather than one jointly chosen preimage.
+  corrections_applied:
+    - direct R11 gate, parent, and red-team-yaml hashes added to both producer receipts
+    - P1515 and IDEA-057 ownership and deduplication added
+    - J_12 and J_5 coupled as one deterministic set-theoretic source section
+  required_controls:
+    - projective symmetry D_(u,q)=D_(q,u) with all pole and multiplicity strata
+    - distinct fifth Kummer classes and the R11 pole-inclusive 16d bound
+    - both Cauchy-Schwarz steps and degree-d psi fiber charge
+    - explicit retraction of cross-endpoint O(d^2) collision energy
+    - P1510 output-sensitive resultant compiler
+    - R10 exact sparse multiplicative-convolution control
+    - image completeness, adaptive child, exact source, and fresh-target gates
+    - relation density, independent row rank, factor logs, and blind descent
+  counterexample_or_mutation: >-
+    A child restriction that excludes the global selected source but includes
+    another preimage in the same image fiber shows that one source section
+    does not determine child multiplicities. Independently chosen pair and
+    fifth selectors can also name no common preimage.
+  baseline_comparison: >-
+    At dense support and d<=B, K=Omega(B^3/d), so explicit image state below
+    B^(9/4) requires d=Omega(B^(3/4)). Standard source-first elimination has
+    n=S*L=Theta(B^3). No admitted route meets the B^(9/4) setup/state and
+    B^(5/4) online rectangle or establishes an end-to-end sub-rho path.
+  narrowest_supported_statement: >-
+    ACCEPT the transposed fixed-endpoint branch-energy floor, O(K)
+    representation theorem, and B^3 graph-first route closure only in the
+    frozen grammar. Preserve output-sensitive image compilation, compressed
+    completeness, fiber range counting, fresh-target action, rank two, and
+    arbitrary circuits as open.
+  next_concrete_action: >-
+    Audit one explicit output-sensitive compiler in the surviving
+    B^(3/4-o(1))<=d<=B range, requiring exact image weights, one jointly
+    coupled source, compressed containment, every adaptive child, fresh-target
+    action, and R10 rank-two replay before the complete ECDLP gates.
+  artifact_paths:
+    - coordination/tasks/TASK-20260719-P1553-EIG-P1/erased_image_geometric_resolution_gate_r13.md
+    - coordination/tasks/TASK-20260719-P1553-EIG-P1/erased_image_geometric_resolution_report.yaml
+  claims:
+    breakthrough: false
+    shoup_bound_improvement: false
+    new_idea_id: null
+    experiment_or_run: false

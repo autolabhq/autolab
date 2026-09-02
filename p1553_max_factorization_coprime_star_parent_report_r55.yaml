@@ -1,0 +1,95 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-MAX-FACTORIZATION-COPRIME-STAR-R55-PARENT
+date: 2026-07-20
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_exhaustive_coprime_partner_star_scan_and_factorization_multiplicity_interpretation
+  model_scope: one_star_through_unique_280_factorization_section_in_r54_catalog
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_EXACT_STRUCTURED_STAR_NEGATIVE_GATE
+summary: >-
+  The unique 280-factorization section is the complete middle nine-point
+  window. All 140162 coprime catalog partners and all 26911104 interior line
+  points were scanned with zero third product sections; the R52 inherited
+  positive control was detected. Multiplicity 280 is only the number of
+  unlabeled three-triple partitions, so the next route is the rank-three
+  kernel of the fixed-class multiplication map, not more multiplicity ranking.
+inputs:
+  - path: staged/p1553_translated_product_shared_factor_gate_r52.md
+    sha256: 060f27a6830a685f47ec241920bb5d3cb793336bba032e95f926a899bab018a2
+  - path: staged/p1553_genus_one_abc_product_line_gate_r53.md
+    sha256: 0af36c7dd73916d2bdc4d149e2c6176864148d552d22cf7daf55c73e930635d5
+  - path: staged/p1553_coprime_product_trisecant_probe_gate_r54.md
+    sha256: 635c7daba279059e07860cc63698a2ae2d23e621b369dfbe69c2cc846d391b0b
+  - path: staged/p1553_coprime_product_trisecant_probe_report_r54.json
+    sha256: 2af6c0a6a33250c7fbe236c96053227ad9e7ecdeddd19152321af174cc265efb
+outputs:
+  - path: staged/p1553_max_factorization_coprime_star_gate_r55.md
+    sha256: 01cfaa0c114c813f53b40edc47e95d86ea1d330eabf3fb7f1cae5572721bb96e
+  - path: staged/p1553_max_factorization_coprime_star_scan_r55.py
+    sha256: ab68ace21d720f866a6b0e8738ae3f833e327a3ed4ad0d6e7f68d7eea4961dd9
+  - path: staged/p1553_max_factorization_coprime_star_scan_report_r55.json
+    sha256: 359c71d0e6d501d42625d2de0eec8150a90a608ccc2432b701fa8545ef682c14
+frozen_parameters:
+  field_prime: 193
+  subgroup_order: 103
+  center_block:
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+  center_factorization_multiplicity: 280
+controls:
+  unique_product_sections: 278321
+  coprime_catalog_partners: 140162
+  interior_points_per_line: 192
+  interior_points_checked: 26911104
+  primitive_coprime_trisecant_lines: 0
+  maximum_factorization_star_exhausted: true
+  inherited_r52_third_section_detected: true
+theorems:
+  - >-
+    The maximum multiplicity 280 is exactly the number of partitions of nine
+    labeled points into three unlabeled triples.
+  - >-
+    Every catalog line through the center and a coprime catalog partner has
+    been checked at all projective points, with no third catalog section.
+result:
+  classification: maximum_factorization_coprime_star_exact_negative_closeout
+  primitive_coprime_trisecant_found: false
+  maximum_factorization_star_exhausted: true
+  full_catalog_pair_space_exhausted: false
+  factorization_count_is_trisecant_proxy: false
+  multiplication_kernel_rank_three_interface: routed
+  asymptotic_product_line_theorem: absent
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical and implementation review has not been completed
+  - exhaustive scope is one star through one center in one frozen toy catalog
+  - other centers and the full catalog pair space remain open
+  - the multiplication-kernel criterion is routed but not yet proved or tested
+  - no target, R10, rank campaign, logs, or descent
+deduplication:
+  - R54 owns the exact catalog and seed-1554 sampled coprime line probe
+  - R55 owns the exhaustive star through the unique 280-factorization center
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_EXACT_STRUCTURED_STAR_NEGATIVE_GATE__CENTER_IS_COMPLETE_MIDDLE_WINDOW__280_IS_UNLABELED_TRIPLE_PARTITION_COUNT__140162_COPRIME_PARTNERS__26911104_INTERIOR_POINTS__R52_CONTROL_DETECTED__ZERO_PRIMITIVE_TRISECANTS_IN_STAR__OTHER_STARS_OPEN__MULTIPLICATION_KERNEL_RANK_THREE_INTERFACE_ROUTED__NO_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Fix one triple of degree-three Picard classes on the R38 toy, construct its
+  exact multiplication matrix, and search the kernel for rank-at-most-three
+  decompositions whose three product terms have pairwise disjoint split zero
+  divisors in the selected path.

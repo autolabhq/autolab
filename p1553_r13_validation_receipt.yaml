@@ -1,0 +1,113 @@
+schema: crypto.autoresearch.install_validation_receipt.v1
+bundle_id: P1553-R13-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+reason: authoritative checkout is read-only in this session
+composition:
+  mode: atomic_r5_through_r13
+  upstream_bundle_id: P1553-R5-R7-20260719
+  upstream_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_bundle_id: P1553-R12-20260719
+  base_manifest_sha256: 452367a2158cd17ff252d1e3e6b2344e644082be8b9d6e5060ebc50ffbc5f811
+  base_manifest_hash_list_sha256: 273fcb0e624e83ae9011ac8d0ae944beac8c88b868f7eda84a5966bd1a18dbeb
+  base_simulated_queue_sha256: 2a5432d7736d39e754b367afc6a0e0766051810467d2ae4ab81e9acf73169a55
+delta_manifest:
+  json_sha256: 56bf48ebc6234028391b4402354be9b2b7431d82cb8a40e8a5bba134160b07f0
+  sha256_list_sha256: 0dd0cac6ec6fd1054ec80fe8a8978ed0ee1d3ea3ed634dfa02f1251065a8149b
+  unique_sources: 5
+  destination_installs: 6
+  appended_tasks: 2
+producer_bindings:
+  gate_sha256: 78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5
+  parent_report_sha256: b4c1645ab58f470b38519ebb0e9bd993547a5a3d39d56a1c8eb82413ae0ff838
+  red_team_markdown_sha256: dd34379a1daf393f27f7750253d95bf95383f4d857a0e11c6239c5eb2a4d0e0a
+  red_team_yaml_sha256: 6ccc492fab0553ec2a808300f7bf41cd9f26043bd3e3cd64eb21f60b58df169c
+  artifact_index_sha256: 282ca79465b607cfe11e5113008ac9b8a9c14b0bd323a1eebce9d16aa908225c
+  independent_reviewer: 019f7d35-2ed5-7e73-be3b-d04013bd8d40
+  initial_review: revise
+  final_review: accept
+  corrections_applied:
+    - direct R11 gate, parent, and red-team receipt hashes bound
+    - P1515 and IDEA-057 ownership and deduplication added
+    - pair and fifth selectors coupled as one common source preimage
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+  appledouble_sidecars_under_ideas: absent_at_final_scan
+simulated_composed_merge:
+  queue_file_sha256: 941e8f226cea4eb298e3ab4525fa8475063c1065805c7b198cf90c0150735d97
+  queue_canonical_sha256: 69bd60bca555bd968f2a735684d576096e99c9ea9ae2e769e8819fe75121f357
+  dispatch_file_sha256: 5f4ac4be7c7e6653fe087f559978d927a07a290899d59db35a41dee0328e39c0
+  dispatch_report_sha256: 7cff104b68e8c8f5449708e7d8208267999143a94d2f218bd152123909e30092
+  dispatch_plan_sha256: 13e3019d1744938c630b7616bd0e8db8858a37bfa1863b394edb00dacf127846
+  terminal_tasks: 26
+  ready_tasks: 0
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  producer_and_red_team_yaml_documents_parsed: 2
+  delta_json_parsed: true
+  new_staged_files_checked_before_receipt: 7
+  r13_next_action_records: 4
+  source_hash_list: pass
+  manifest_source_bindings: pass
+  artifact_index_precondition_bound: true
+  artifact_index_coverage_in_clean_replay: pass
+  task_ids_unique: pass
+  dependency_ids_resolve: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator_live: pass
+  idea_corpus_validator_clean_temporary_replay_with_r13_artifact_and_index: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+research_result:
+  status: revise_scoped_theorem
+  exact_new_boundary: >-
+    For S endpoint classes and L distinct fifth Kummer classes, fixed-endpoint
+    branch energy gives
+    K>=S^2*L^2/[d*(S*L+32d*binomial(L,2))]. At certified dense support,
+    L=Theta(B), and d<=B, this is K=Omega(B^3/d), so any explicit O(K)
+    erased-image representation below B^(9/4) requires
+    d=Omega(B^(3/4-o(1))).
+  representation_construction_split: >-
+    The squarefree image, exact geometric and occurrence multiplicities,
+    complete keys, and one jointly coupled pair/fifth source have O(K)
+    representation when supplied. Standard graph-first norm,
+    characteristic-polynomial, multiplication-matrix, graph-resolution, and
+    pushforward or Fitting routes expose n=S*L=Theta(B^3) at dense support.
+  completeness_and_replay_split: >-
+    Root witnesses and total mass do not certify that no image state was
+    omitted. One global source section does not determine adaptive child
+    counts when another source in the same fiber lies in the child.
+  preserved_retraction: >-
+    No O(d^2) bound is claimed for all cross-endpoint, cross-fifth collision
+    pairs; common components of that fiber product remain unclassified.
+  surviving_exception: >-
+    A family-specific output-sensitive radical-image compiler in the dense
+    B^(3/4-o(1))<=d<=B range, with exact weights, a jointly coupled source,
+    compressed containment, every adaptive child, fresh-target action, and
+    R10 rank-two replay, remains unconstructed and not excluded.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_install_rule: >-
+  Re-read all four live precondition hashes and both required NET task states;
+  compose R5-R7, R8, R9, R10, R11, R12, and R13 on one private queue; install
+  the task files, IDEA-195 artifact, updated artifact index, queue, and
+  regenerated dispatch outputs atomically only if every manifest, source
+  binding, test, focus check, corpus validator, and AppleDouble scan passes.
+  Preserve any mismatch as drift instead of overwriting it.

@@ -1,0 +1,108 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R15-REVIEW-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: authoritative checkout is read-only and the R15 red-team task remains queued
+composition:
+  mode: atomic_r5_through_r15_review_routing
+  upstream_bundle_id: P1553-R5-R7-20260719
+  upstream_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_bundle_id: P1553-R14-20260719
+  base_manifest_sha256: d3c4824f0a2ee508e1b42707817c2ff78e0dab8011cd8b36f654ad69ea8a399a
+  base_manifest_hash_list_sha256: 34088ede7d5b36547f01027bfbce7f14f9fe37e101502ad0f9b48598ef51af0c
+  base_simulated_queue_sha256: 93fd7f670455aed953817ac56a25c4311b2e3cae864df8b08204c1ecd9d3ccaf
+review_delta:
+  json_sha256: c7b95bbd92dc8fd12d13c79f253d53aa96d47cc9de30d1ea314b4b79622343eb
+  sha256_list_sha256: 256bbe48b12c680e611c32d2d6b3ff612875923a2ec9b8ed278797d976adaa29
+  unique_sources: 3
+  destination_installs: 4
+  appended_tasks: 2
+producer_bindings:
+  gate_sha256: ea007be0b237b91127e6a42501873f914ad31d6d4fd4393c3ae6b85005893b9b
+  parent_report_sha256: 9aa2b9b7fd78e7b6378a01f8a7011ce67c5d273e1cf3bc08c8b873358f763f92
+  artifact_index_sha256: f5641fdf000334b55231f7af3c74022ebea6dee012c7e83e204781a9e5c0195e
+  producer_status: draft_review_required_scoped_negative
+  red_team_task: TASK-20260719-P1553-TCS-RT-R1
+  red_team_state: queued
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+  appledouble_sidecars_under_ideas: absent_at_final_scan
+simulated_composed_review_route:
+  queue_file_sha256: 8ba2ee04877d0a2ce7426b77552b07e5cf6696fe5309ef2470b0e5b0267f93a1
+  queue_canonical_sha256: 03b8a5b9bd9b987c5567d0ae191f1fde5ca1870926d43fb3c49c936558b99d2e
+  dispatch_file_sha256: 86d195b1bf076e76eb37aa94af9b1a6876b8d204654080140b4dce8cbafbaae6
+  dispatch_report_sha256: 6fe4e2d29ae085fff15d1eb4ce5f62c84af728aad8b29e0ac6cea10dd18a2b50
+  dispatch_plan_sha256: e8cd200f98199049c4a3c829f1df1fdf2a1d502c80ce88ed2696c36f38f28f4c
+  terminal_tasks: 29
+  ready_tasks: 1
+  ready_task_id: TASK-20260719-P1553-TCS-RT-R1
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  producer_yaml_documents_parsed: 1
+  review_delta_json_parsed: true
+  source_hash_list: pass
+  manifest_source_bindings: pass
+  artifact_index_precondition_bound: true
+  artifact_index_coverage_in_clean_replay: pass
+  task_ids_unique: pass
+  dependency_ids_resolve: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator_live: pass
+  idea_corpus_validator_clean_temporary_replay_with_r13_r14_r15_artifacts_and_r15_index: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+draft_research_result:
+  status: review_required_scoped_negative
+  exact_correlation_boundary: >-
+    Complete branch trace and norm moments reduce to weighted correlations on
+    h(A), h(A+Q), and h(A-Q). The exact Fourier expression has two character
+    variables. When one branch exponent is zero it collapses to the admitted
+    one-frequency positive control.
+  source_boundary: >-
+    The raw map (A,Q) to (A+Q,A-Q) is invertible in an odd-order group, so
+    retaining both raw translates restores exactly S*L source pairs. Applying
+    h can merge them, but sparse sumset enumeration alone does not provide one
+    joint source after the merge.
+  sparse_convolution_boundary: >-
+    Named output-sensitive sparse nonnegative convolution algorithms use
+    explicit integer indices and cancellation-free coefficients. The EC
+    moment problem has unknown scalar indices and field-valued cancellation;
+    image size is not ordinary convolution support size.
+  r10_boundary: >-
+    R10 asks for B shifted coefficients of a nonnegative multiplicative
+    convolution whose full support may contain B^4 values. Full-support
+    output-sensitive computation is therefore not the required query
+    interface.
+  surviving_exception: >-
+    A query-sensitive list-restricted nonhomomorphic translation-correlation
+    sketch, or a family-specific common-component identity, may still emit the
+    R14 moment, containment, joint-source, child, target, and R10 package
+    without scalar logs, N character modes, S*L translate pairs, or full
+    convolution support. It remains unconstructed and not excluded.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_action: >-
+  Independently red-team the complete-chart scalar, correlation expansion,
+  Fourier signs, translate-pair inverse, sparse-algorithm promises,
+  composable-bucket scope, R10 queried-output boundary, and every positive
+  exception. Bind any correction to new producer hashes before acceptance;
+  do not promote or install R15 as a completed result while review is pending.

@@ -1,0 +1,4156 @@
+{
+  "method": "affine_weierstrass_field_trace_for_first_pass_candidate_points",
+  "non_claims": [
+    "This is a first-pass candidate-point field trace, not a new relation search.",
+    "It does not replace the relation predicate or linear algebra layers.",
+    "A native FFE/summation-polynomial kernel still has to emit the same trace without Python verifier arithmetic."
+  ],
+  "parameters": {
+    "abi_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_abi_target67_672_744.json",
+    "campaign_task_dir": "/Volumes/Volume/autolab/tasks/ecdlp_index_calculus",
+    "charged_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_hit_event_charged_replay_target67_672_744.json",
+    "event_summary_limit": 12,
+    "source_names": [
+      "coord1114_744",
+      "coord161_720",
+      "coord161_728"
+    ],
+    "worklist_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_worklist_audit_target67_672_744.json"
+  },
+  "records": [
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "candidate_artifact": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_744_751_fresh_coordinate_gate.json",
+      "checks": {
+        "all_affine_formulas_match_verifier": true,
+        "all_representative_outputs_match_abi": true,
+        "first_pass_group_count": 8,
+        "matches_abi_first_pass_group_count": true,
+        "matches_abi_row_instance_count": true,
+        "matches_contract_below_rho": true,
+        "matches_contract_event_reuse_target": true,
+        "matching_abi_candidate_point_count": 8,
+        "reused_group_count": 4,
+        "row_instance_trace_count": 12,
+        "verifier_add_match_count": 12
+      },
+      "context_error_count": 0,
+      "context_errors": [],
+      "failures": [],
+      "implementation_boundary": "Affine field-operation trace for first-pass candidate-point output. A lower-level FFE kernel should produce these same outputs before the second-pass relation predicates run.",
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt209"
+      ],
+      "source_name": "coord1114_744",
+      "source_path": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_cost_decomposition_target67_coord1114_8506_744_751_fresh.json",
+      "trace_groups": [
+        {
+          "abi_candidate_point": [
+            2705,
+            9753
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "12",
+            17,
+            218
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 8989,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              2705,
+              9753
+            ],
+            "right": [
+              7537,
+              8016
+            ],
+            "slope": 3059,
+            "slope_denominator": 2558,
+            "slope_denominator_inverse": 6741,
+            "slope_numerator": 2128,
+            "verifier_result": [
+              2705,
+              9753
+            ],
+            "x1": 4979,
+            "x2": 7537,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 8016,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            2705,
+            9753
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt209",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 8989,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  2705,
+                  9753
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 3059,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 2128,
+                "verifier_result": [
+                  2705,
+                  9753
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 12,
+              "original_trial": 218,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "scout_pos": 17,
+              "unsigned_indices": [
+                1,
+                6,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            2705,
+            9753
+          ],
+          "candidate_point_reused": true,
+          "event_key": [
+            "12",
+            17,
+            469
+          ],
+          "fanout": 2,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 8989,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              2705,
+              9753
+            ],
+            "right": [
+              7537,
+              8016
+            ],
+            "slope": 3059,
+            "slope_denominator": 2558,
+            "slope_denominator_inverse": 6741,
+            "slope_numerator": 2128,
+            "verifier_result": [
+              2705,
+              9753
+            ],
+            "x1": 4979,
+            "x2": 7537,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 8016,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            2705,
+            9753
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 2,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 8989,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  2705,
+                  9753
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 3059,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 2128,
+                "verifier_result": [
+                  2705,
+                  9753
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 12,
+              "original_trial": 469,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "scout_pos": 17,
+              "unsigned_indices": [
+                1,
+                6,
+                12,
+                12
+              ]
+            },
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 8989,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  2705,
+                  9753
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 3059,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 2128,
+                "verifier_result": [
+                  2705,
+                  9753
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 12,
+              "original_trial": 469,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "scout_pos": 17,
+              "unsigned_indices": [
+                1,
+                6,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            2705,
+            9753
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "12",
+            30,
+            218
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 8989,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              2705,
+              9753
+            ],
+            "right": [
+              7537,
+              8016
+            ],
+            "slope": 3059,
+            "slope_denominator": 2558,
+            "slope_denominator_inverse": 6741,
+            "slope_numerator": 2128,
+            "verifier_result": [
+              2705,
+              9753
+            ],
+            "x1": 4979,
+            "x2": 7537,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 8016,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            2705,
+            9753
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt209",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 8989,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  2705,
+                  9753
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 3059,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 2128,
+                "verifier_result": [
+                  2705,
+                  9753
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 12,
+              "original_trial": 218,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "scout_pos": 30,
+              "unsigned_indices": [
+                1,
+                6,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            2705,
+            9753
+          ],
+          "candidate_point_reused": true,
+          "event_key": [
+            "12",
+            30,
+            469
+          ],
+          "fanout": 2,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 8989,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              2705,
+              9753
+            ],
+            "right": [
+              7537,
+              8016
+            ],
+            "slope": 3059,
+            "slope_denominator": 2558,
+            "slope_denominator_inverse": 6741,
+            "slope_numerator": 2128,
+            "verifier_result": [
+              2705,
+              9753
+            ],
+            "x1": 4979,
+            "x2": 7537,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 8016,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            2705,
+            9753
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 2,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 8989,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  2705,
+                  9753
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 3059,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 2128,
+                "verifier_result": [
+                  2705,
+                  9753
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 12,
+              "original_trial": 469,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "scout_pos": 30,
+              "unsigned_indices": [
+                1,
+                6,
+                12,
+                12
+              ]
+            },
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 8989,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  2705,
+                  9753
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 3059,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 2128,
+                "verifier_result": [
+                  2705,
+                  9753
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 12,
+              "original_trial": 469,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "scout_pos": 30,
+              "unsigned_indices": [
+                1,
+                6,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            9251,
+            9216
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "12",
+            174,
+            218
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 927,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              9251,
+              9216
+            ],
+            "right": [
+              7537,
+              8016
+            ],
+            "slope": 7122,
+            "slope_denominator": 2558,
+            "slope_denominator_inverse": 6741,
+            "slope_numerator": 4102,
+            "verifier_result": [
+              9251,
+              9216
+            ],
+            "x1": 4979,
+            "x2": 7537,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 8016,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            9251,
+            9216
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt209",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 927,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  9251,
+                  9216
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 7122,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 4102,
+                "verifier_result": [
+                  9251,
+                  9216
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 12,
+              "original_trial": 218,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "scout_pos": 174,
+              "unsigned_indices": [
+                1,
+                6,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            9251,
+            9216
+          ],
+          "candidate_point_reused": true,
+          "event_key": [
+            "12",
+            174,
+            469
+          ],
+          "fanout": 2,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 927,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              9251,
+              9216
+            ],
+            "right": [
+              7537,
+              8016
+            ],
+            "slope": 7122,
+            "slope_denominator": 2558,
+            "slope_denominator_inverse": 6741,
+            "slope_numerator": 4102,
+            "verifier_result": [
+              9251,
+              9216
+            ],
+            "x1": 4979,
+            "x2": 7537,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 8016,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            9251,
+            9216
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 2,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 927,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  9251,
+                  9216
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 7122,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 4102,
+                "verifier_result": [
+                  9251,
+                  9216
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 12,
+              "original_trial": 469,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "scout_pos": 174,
+              "unsigned_indices": [
+                1,
+                6,
+                13,
+                13
+              ]
+            },
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 927,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  9251,
+                  9216
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 7122,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 4102,
+                "verifier_result": [
+                  9251,
+                  9216
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 12,
+              "original_trial": 469,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "scout_pos": 174,
+              "unsigned_indices": [
+                1,
+                6,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            9251,
+            9216
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "12",
+            210,
+            218
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 927,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              9251,
+              9216
+            ],
+            "right": [
+              7537,
+              8016
+            ],
+            "slope": 7122,
+            "slope_denominator": 2558,
+            "slope_denominator_inverse": 6741,
+            "slope_numerator": 4102,
+            "verifier_result": [
+              9251,
+              9216
+            ],
+            "x1": 4979,
+            "x2": 7537,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 8016,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            9251,
+            9216
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt209",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 927,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  9251,
+                  9216
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 7122,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 4102,
+                "verifier_result": [
+                  9251,
+                  9216
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 4,
+              "leaf_index": 12,
+              "original_trial": 218,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "scout_pos": 210,
+              "unsigned_indices": [
+                1,
+                6,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            9251,
+            9216
+          ],
+          "candidate_point_reused": true,
+          "event_key": [
+            "12",
+            210,
+            469
+          ],
+          "fanout": 2,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 927,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              9251,
+              9216
+            ],
+            "right": [
+              7537,
+              8016
+            ],
+            "slope": 7122,
+            "slope_denominator": 2558,
+            "slope_denominator_inverse": 6741,
+            "slope_numerator": 4102,
+            "verifier_result": [
+              9251,
+              9216
+            ],
+            "x1": 4979,
+            "x2": 7537,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 8016,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            9251,
+            9216
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 2,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 927,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  9251,
+                  9216
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 7122,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 4102,
+                "verifier_result": [
+                  9251,
+                  9216
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 4,
+              "leaf_index": 12,
+              "original_trial": 469,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "scout_pos": 210,
+              "unsigned_indices": [
+                1,
+                6,
+                13,
+                13
+              ]
+            },
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 927,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  9251,
+                  9216
+                ],
+                "right": [
+                  7537,
+                  8016
+                ],
+                "slope": 7122,
+                "slope_denominator": 2558,
+                "slope_denominator_inverse": 6741,
+                "slope_numerator": 4102,
+                "verifier_result": [
+                  9251,
+                  9216
+                ],
+                "x1": 4979,
+                "x2": 7537,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 8016,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 4,
+              "leaf_index": 12,
+              "original_trial": 469,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "scout_pos": 210,
+              "unsigned_indices": [
+                1,
+                6,
+                13,
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "candidate_artifact": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_720_727_fresh_coordinate_gate.json",
+      "checks": {
+        "all_affine_formulas_match_verifier": true,
+        "all_representative_outputs_match_abi": true,
+        "first_pass_group_count": 12,
+        "matches_abi_first_pass_group_count": true,
+        "matches_abi_row_instance_count": true,
+        "matches_contract_below_rho": false,
+        "matches_contract_event_reuse_target": false,
+        "matching_abi_candidate_point_count": 12,
+        "reused_group_count": 0,
+        "row_instance_trace_count": 12,
+        "verifier_add_match_count": 12
+      },
+      "context_error_count": 0,
+      "context_errors": [],
+      "failures": [],
+      "implementation_boundary": "Affine field-operation trace for first-pass candidate-point output. A lower-level FFE kernel should produce these same outputs before the second-pass relation predicates run.",
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt207"
+      ],
+      "source_name": "coord161_720",
+      "source_path": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_cost_decomposition_target67_coord161_6976_720_727_fresh.json",
+      "trace_groups": [
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            1,
+            149
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 2,
+              "original_trial": 149,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "scout_pos": 1,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            1,
+            186
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 2,
+              "original_trial": 186,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "scout_pos": 1,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            1,
+            296
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 2,
+              "original_trial": 296,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 2,
+              "scout_pos": 1,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            130,
+            149
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 2,
+              "original_trial": 149,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "scout_pos": 130,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            130,
+            186
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 2,
+              "original_trial": 186,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "scout_pos": 130,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            130,
+            296
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 2,
+              "original_trial": 296,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 2,
+              "scout_pos": 130,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            144,
+            149
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 2,
+              "original_trial": 149,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "scout_pos": 144,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            144,
+            186
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 2,
+              "original_trial": 186,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "scout_pos": 144,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            144,
+            296
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 2,
+              "original_trial": 296,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 2,
+              "scout_pos": 144,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            331,
+            149
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 4,
+              "leaf_index": 2,
+              "original_trial": 149,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "scout_pos": 331,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            331,
+            186
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 4,
+              "leaf_index": 2,
+              "original_trial": 186,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "scout_pos": 331,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            331,
+            296
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt206",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 4,
+              "leaf_index": 2,
+              "original_trial": 296,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 2,
+              "scout_pos": 331,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "candidate_artifact": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_728_735_fresh_coordinate_gate.json",
+      "checks": {
+        "all_affine_formulas_match_verifier": true,
+        "all_representative_outputs_match_abi": true,
+        "first_pass_group_count": 12,
+        "matches_abi_first_pass_group_count": true,
+        "matches_abi_row_instance_count": true,
+        "matches_contract_below_rho": false,
+        "matches_contract_event_reuse_target": false,
+        "matching_abi_candidate_point_count": 12,
+        "reused_group_count": 0,
+        "row_instance_trace_count": 12,
+        "verifier_add_match_count": 12
+      },
+      "context_error_count": 0,
+      "context_errors": [],
+      "failures": [],
+      "implementation_boundary": "Affine field-operation trace for first-pass candidate-point output. A lower-level FFE kernel should produce these same outputs before the second-pass relation predicates run.",
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt207",
+        "67.a1@9803:uniform:256:salt208"
+      ],
+      "source_name": "coord161_728",
+      "source_path": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_cost_decomposition_target67_coord161_6976_728_735_fresh.json",
+      "trace_groups": [
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            4,
+            204
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt208",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 2,
+              "original_trial": 204,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 1,
+              "scout_pos": 4,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            4,
+            377
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt208",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 2,
+              "original_trial": 377,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 2,
+              "scout_pos": 4,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            4,
+            429
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 2,
+              "original_trial": 429,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "scout_pos": 4,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            4,
+            466
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 1,
+              "leaf_index": 2,
+              "original_trial": 466,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 2,
+              "scout_pos": 4,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            202,
+            204
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt208",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 2,
+              "original_trial": 204,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 1,
+              "scout_pos": 202,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            202,
+            377
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt208",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 2,
+              "original_trial": 377,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 2,
+              "scout_pos": 202,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            202,
+            429
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 2,
+              "original_trial": 429,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "scout_pos": 202,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6213,
+            3539
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            202,
+            466
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 6249,
+            "left": [
+              4979,
+              3914
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6213,
+              3539
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 1551,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 9638,
+            "verifier_result": [
+              6213,
+              3539
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 3914,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6213,
+            3539
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 6249,
+                "left": [
+                  4979,
+                  3914
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6213,
+                  3539
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 1551,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 9638,
+                "verifier_result": [
+                  6213,
+                  3539
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 3914,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 2,
+              "leaf_index": 2,
+              "original_trial": 466,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 2,
+              "scout_pos": 202,
+              "unsigned_indices": [
+                1,
+                9,
+                13,
+                13
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            226,
+            204
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt208",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 2,
+              "original_trial": 204,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 1,
+              "scout_pos": 226,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            226,
+            377
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt208",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 2,
+              "original_trial": 377,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 2,
+              "scout_pos": 226,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            226,
+            429
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 1,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 2,
+              "original_trial": 429,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "scout_pos": 226,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        },
+        {
+          "abi_candidate_point": [
+            6696,
+            1166
+          ],
+          "candidate_point_reused": false,
+          "event_key": [
+            "2",
+            226,
+            466
+          ],
+          "fanout": 1,
+          "local_affine_outputs_consistent": true,
+          "matches_abi_candidate_point": true,
+          "representative_affine_trace": {
+            "ainvs_mod_p": [
+              0,
+              1,
+              1,
+              9791,
+              9782
+            ],
+            "curve_model": "generalized_weierstrass",
+            "field": "GF(9803)",
+            "intercept": 1402,
+            "left": [
+              4979,
+              5888
+            ],
+            "matches_verifier_add": true,
+            "operation": "addition",
+            "result": [
+              6696,
+              1166
+            ],
+            "right": [
+              2476,
+              3749
+            ],
+            "slope": 8343,
+            "slope_denominator": 7300,
+            "slope_denominator_inverse": 7833,
+            "slope_numerator": 7664,
+            "verifier_result": [
+              6696,
+              1166
+            ],
+            "x1": 4979,
+            "x2": 2476,
+            "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+            "y1": 5888,
+            "y2": 3749,
+            "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+          },
+          "representative_candidate_point": [
+            6696,
+            1166
+          ],
+          "representative_row_key": "67.a1@9803:uniform:256:salt207",
+          "representative_scheduled_trial": 2,
+          "row_instance_trace_count": 1,
+          "row_instance_traces": [
+            {
+              "affine_trace": {
+                "ainvs_mod_p": [
+                  0,
+                  1,
+                  1,
+                  9791,
+                  9782
+                ],
+                "curve_model": "generalized_weierstrass",
+                "field": "GF(9803)",
+                "intercept": 1402,
+                "left": [
+                  4979,
+                  5888
+                ],
+                "matches_verifier_add": true,
+                "operation": "addition",
+                "result": [
+                  6696,
+                  1166
+                ],
+                "right": [
+                  2476,
+                  3749
+                ],
+                "slope": 8343,
+                "slope_denominator": 7300,
+                "slope_denominator_inverse": 7833,
+                "slope_numerator": 7664,
+                "verifier_result": [
+                  6696,
+                  1166
+                ],
+                "x1": 4979,
+                "x2": 2476,
+                "x3_formula": "(m^2 + a1*m - a2 - x1 - x2) mod p",
+                "y1": 5888,
+                "y2": 3749,
+                "y3_formula": "(-(m + a1)*x3 - b - a3) mod p"
+              },
+              "candidate_pos": 3,
+              "leaf_index": 2,
+              "original_trial": 466,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 2,
+              "scout_pos": 226,
+              "unsigned_indices": [
+                1,
+                9,
+                12,
+                12
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_affine_trace_probe_v1",
+  "summary": {
+    "affine_trace_verified_count": 3,
+    "below_rho_affine_trace_verified_count": 1,
+    "event_reuse_below_rho_affine_trace_verified_count": 1,
+    "interpretation": "The first-pass candidate-point layer now has an explicit affine field-operation trace.  The trace outputs match the ABI artifact and the verifier add formula for every row instance.",
+    "record_count": 3,
+    "total_first_pass_groups": 32,
+    "total_matching_abi_candidate_points": 32,
+    "total_reused_groups": 4,
+    "total_row_instance_traces": 36,
+    "total_verifier_add_matches": 36
+  }
+}

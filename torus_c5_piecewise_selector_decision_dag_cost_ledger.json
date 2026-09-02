@@ -1,0 +1,94 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "branch_count_exponent_B": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "inside_polylog_query_cap": false,
+      "inside_setup_cap": true,
+      "query_exponent_B": {
+        "decimal": 1.5,
+        "exact": "3/2"
+      },
+      "route_id": "optimal_piecewise_constant_branches_sequential_scan",
+      "shared_c3_dictionary_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    {
+      "inside_setup_cap": false,
+      "route_id": "explicit_target_to_branch_router",
+      "state_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      }
+    },
+    {
+      "compact_predicates_constructed": false,
+      "exact_source_backpointers_constructed": false,
+      "ideal_depth": "O(log B)",
+      "route_id": "balanced_shared_predicate_decision_dag",
+      "status": "open"
+    },
+    {
+      "degree_lower_bound_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "exact_selector_constructed": false,
+      "multiplication_lower_bound": "Omega(log B)",
+      "polylog_query_excluded": false,
+      "route_id": "high_degree_low_slp_rational_selector",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_piecewise_selector_decision_dag_cost_ledger.r129.v1",
+  "theorem": {
+    "exact_minimum_branch_count": "Lmin=n+binom(n,2)-ex(n,K5)",
+    "explicit_target_router_state_exponent_B": {
+      "decimal": 3.75,
+      "exact": "15/4"
+    },
+    "iid_exponent_lower_bound": "Lmin=Theta(n^2)=B^(3/2+o(1))",
+    "mandatory_squares": "Each pure fifth power Xi^5 forces the square branch Xi^2.",
+    "matching_construction": "Partition the n atoms into four balanced parts, select all squares and all within-part pairs, and apply pigeonhole to every square-free five-subset.",
+    "not_covered": [
+      "compact shared-predicate branch decision DAGs",
+      "high-degree low-SLP rational selectors",
+      "adaptive cell-probe selectors",
+      "filtered decks with exploitable algebraic collisions",
+      "general arithmetic-circuit or data-structure lower bounds"
+    ],
+    "scope_limits": [
+      "injective commutative source-monomial supports",
+      "piecewise-constant C2 translate branches",
+      "sequential branch scans with a shared exact C3 dictionary",
+      "explicit target-to-branch routing tables"
+    ],
+    "sequential_scan_query_exponent_B": {
+      "decimal": 1.5,
+      "exact": "3/2"
+    },
+    "shared_c3_dictionary_state_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "slp_degree_boundary": "An arithmetic SLP with t multiplication layers can have degree up to 2^t, so the inherited degree B^(9/4) forces only t=Omega(log B), which is compatible with polylogarithmic query work.",
+    "source_model": "The Ck supports are injective degree-k commutative monomials in n deck atoms, with n=B^(3/4+o(1)). A constant C2 branch covers targets divisible by its degree-two monomial.",
+    "squarefree_reduction": "After squares cover repeated variables, cross branches are edges that must hit every square-free five-subset.",
+    "turan_reduction": "The unselected edge graph is K5-free. By Turan's theorem it has at most ex(n,K5)=|E(T4(n))| edges."
+  }
+}

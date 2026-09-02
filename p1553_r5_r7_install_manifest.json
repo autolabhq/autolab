@@ -1,0 +1,323 @@
+{
+  "schema": "crypto.autoresearch.merge_install_manifest.v1",
+  "bundle_id": "P1553-R5-R7-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compare_and_merge",
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "file_installs": [
+    {
+      "source": "p1553_net_parent_report.yaml",
+      "sha256": "16d5b3499b9255e1f70db7641cfdd82154a952401c5502c1ab3bf7c0b8432a82",
+      "destination": "coordination/tasks/TASK-20260719-P1553-NET-P1/net_constructor_report.yaml"
+    },
+    {
+      "source": "p1553_net_parent_theorem.md",
+      "sha256": "695de47e3debcf8f316071a31c34feb71326e0de02dc086b2f9bb92926b8b420",
+      "destination": "coordination/tasks/TASK-20260719-P1553-NET-P1/net_constructor_theorem.md"
+    },
+    {
+      "source": "p1553_net_red_team_transcript.yaml",
+      "sha256": "20f75bf1916bf3aa622c1ef7559668ece0d7ef90531ff0fb3abb23cc3bd25da6",
+      "destination": "coordination/tasks/TASK-20260719-P1553-NET-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_net_red_team_transcript.md",
+      "sha256": "384344ab599dd1fe8c1c412d044eb8b5f40f19019300e0a29d0a8a77e27ab228",
+      "destination": "coordination/tasks/TASK-20260719-P1553-NET-RT-R1/net_red_team.md"
+    },
+    {
+      "source": "p1553_elliptic_net_aggregate_gate_r5.md",
+      "sha256": "aa980ac35fb2a9e1af9a08310c5b62fc024a779d09d766311dd70cbcb9e1192d",
+      "destination": "ideas/artifacts/ECDLP-IDEA-012/p1553_elliptic_net_aggregate_gate_r5.md"
+    },
+    {
+      "source": "p1553_small_root_parent_report.yaml",
+      "sha256": "c4202511d97248dcf9284c63680ae9cc2cc1b75df8a99fc71422b0c0f03b4a7d",
+      "destination": "coordination/tasks/TASK-20260719-P1553-SR-P1/small_root_report.yaml"
+    },
+    {
+      "source": "p1553_small_root_coordinate_gate_r6.md",
+      "sha256": "03e9234bb0e17d7cf97e85a46735748a61fefabb300278c52fef11b41755be05",
+      "destination": "coordination/tasks/TASK-20260719-P1553-SR-P1/small_root_coordinate_gate_r6.md"
+    },
+    {
+      "source": "p1553_small_root_red_team_transcript.yaml",
+      "sha256": "88fa7b17a8fce04a04a85937f48b9cb1b2e2432a7900174160c45307a6ddb37b",
+      "destination": "coordination/tasks/TASK-20260719-P1553-SR-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_small_root_red_team_transcript.md",
+      "sha256": "0005785ccc9b61c79f4af39f4663b3e77808940f772229ec53435d7f4f2a3257",
+      "destination": "coordination/tasks/TASK-20260719-P1553-SR-RT-R1/small_root_red_team.md"
+    },
+    {
+      "source": "p1553_small_root_coordinate_gate_r6.md",
+      "sha256": "03e9234bb0e17d7cf97e85a46735748a61fefabb300278c52fef11b41755be05",
+      "destination": "ideas/artifacts/ECDLP-IDEA-012/p1553_small_root_coordinate_gate_r6.md"
+    },
+    {
+      "source": "p1553_tensorized_small_root_parent_report.yaml",
+      "sha256": "014d7bb61d9749e313e26179c242f321f5d474be8c7af84b48ecffa0fd8c6a25",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TSR-P1/tensorized_small_root_report.yaml"
+    },
+    {
+      "source": "p1553_tensorized_small_root_gate_r7.md",
+      "sha256": "b36870eeb0c7c0a53e6d1714d623629c522f4c58cd308a072e33ea6046a06615",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TSR-P1/tensorized_small_root_gate_r7.md"
+    },
+    {
+      "source": "p1553_tensorized_small_root_red_team.yaml",
+      "sha256": "7edac664917acd0a09fcf97c022b6433c182326a38925590e29a81cc1762f65c",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TSR-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_tensorized_small_root_red_team.md",
+      "sha256": "e043eca4cd6011c7a10bc68261a5ff1ccd68e69dab7681176065e04eab7fa207",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TSR-RT-R1/tensorized_small_root_red_team.md"
+    },
+    {
+      "source": "p1553_tensorized_small_root_gate_r7.md",
+      "sha256": "b36870eeb0c7c0a53e6d1714d623629c522f4c58cd308a072e33ea6046a06615",
+      "destination": "ideas/artifacts/ECDLP-IDEA-012/p1553_tensorized_small_root_gate_r7.md"
+    }
+  ],
+  "queue_merge": {
+    "set_task_states": {
+      "TASK-20260719-P1553-NET-P1": "completed",
+      "TASK-20260719-P1553-NET-RT-R1": "completed"
+    },
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-SR-P1",
+        "title": "Compile the five-label exact small-root predicate",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 60,
+        "review_required": true,
+        "depends_on": ["TASK-20260719-P1553-NET-RT-R1"],
+        "read_scope": [
+          "AGENTS.md",
+          "ideas/artifacts/ECDLP-IDEA-012/p1553_elliptic_net_aggregate_gate_r5.md",
+          "ideas/deferred/ECDLP-IDEA-049_bounded_root_decomposition_transducer_hypothesis.md",
+          "ideas/artifacts/ECDLP-IDEA-049/integral_addition_transducer_derivation.md",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-SR-P1"],
+        "attention_contract": {
+          "decisive_evidence": "An exact bounded-label predicate and source inverse, or the first represented object above a frozen cap.",
+          "inconclusive_decision": "Preserve Query2P1 and the narrower unconstructed root-locator exception without allocating a new idea.",
+          "local_ambiguity_rule": "Resolve sign and orientation ambiguity by freezing x-class labels and explicit signed row semantics before screening a solver.",
+          "peripheral_exclusions": [
+            "No solver or relation campaign",
+            "No new survey of already rejected title variants",
+            "No generic circuit or Shoup lower-bound claim"
+          ],
+          "rerank_trigger": "Rerank only after the exact x-class predicate, domain equations, and blind source inverse are independently audited."
+        },
+        "resource_estimate": {
+          "dominant_stage": "theorem audit",
+          "stages": [
+            {"id": "selector", "work": "B^(1+o(1))"},
+            {"id": "dense_control", "work": "B^5 represented positions"},
+            {"id": "root_locator", "work": "unsupplied under B^(5/4+o(1))"}
+          ]
+        },
+        "handoff": {
+          "objective": "Construct or sharply reduce a coefficient-complete five-label modular small-root interface for exact signed Query2P1 existence and one source.",
+          "uncertainty_reduced": "Whether original factor labels avoid the B^2 pair selector while preserving exact restrictions, source semantics, and the frozen caps.",
+          "inputs": [
+            "the reviewed R5 aggregate gate",
+            "IDEA-049 bounded transducer receipts",
+            "P1536 and P1551 selector and fixed-predicate controls"
+          ],
+          "constraints": [
+            "Use x-class labels, explicit domain polynomials, signed global columns, and complete projective verification.",
+            "Charge exact negative answers and replay separately from predicate evaluation.",
+            "Do not infer a general small-root, circuit, generic-group, or Shoup lower bound.",
+            "Allocate no P1554, experiment, run, or breakthrough claim."
+          ],
+          "deliverables": ["small_root_report.yaml", "small_root_coordinate_gate_r6.md"],
+          "budget": {"wall_clock_seconds": 3000, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "The predicate is exact for one signed source or an explicit correction is preserved.",
+            "Every represented cost is compared with B^(9/4) setup and B^(5/4) online caps.",
+            "Exactly one next theorem action remains and no positive ECDLP status is claimed."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-SR-RT-R1",
+        "title": "Red-team the five-label exact small-root predicate",
+        "role": "red-team",
+        "state": "completed",
+        "priority": 55,
+        "review_required": false,
+        "depends_on": ["TASK-20260719-P1553-SR-P1"],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-SR-P1/small_root_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-SR-P1/small_root_coordinate_gate_r6.md",
+          "ideas/deferred/ECDLP-IDEA-049_bounded_root_decomposition_transducer_hypothesis.md",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-SR-RT-R1"],
+        "attention_contract": {
+          "decisive_evidence": "A reconstructed sign biconditional, legal-label domain, exact source inverse, and the first unproved or over-budget solver stage.",
+          "inconclusive_decision": "Classify the receipt as a partial input compiler and preserve every unrestricted solver exception.",
+          "local_ambiguity_rule": "Treat oriented-deck S_6 roots as invalid until the x-class contract removes sign false positives.",
+          "peripheral_exclusions": [
+            "No experiments or toy root claims",
+            "No all-root requirement when one witness or exact miss suffices",
+            "No generic lattice lower-bound claim"
+          ],
+          "rerank_trigger": "Rerank only after the corrected x-class contract is re-audited."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R6 label, sign, exceptional, replay, dense-expansion, and source claims.",
+          "uncertainty_reduced": "Whether R6 supplies an exact signed relation circuit rather than a coarse orientation locator.",
+          "inputs": ["the R6 producer receipts", "Semaev and complete-addition primary controls"],
+          "constraints": [
+            "Audit exact no-root or one-root semantics, not merely candidate verification.",
+            "Distinguish map evaluation from root and negative replay costs.",
+            "Preserve tensorized, sparse-shift, and nonlattice exceptions."
+          ],
+          "deliverables": ["red_team_report.yaml", "small_root_red_team.md"],
+          "budget": {"wall_clock_seconds": 3000, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "The final sign and domain contract is reconstructed exactly.",
+            "All accepted corrections and remaining gates are explicit.",
+            "No run, P1554, Shoup claim, or breakthrough claim is created."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-TSR-P1",
+        "title": "Construct the tensorized small-root lattice backend",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 50,
+        "review_required": true,
+        "depends_on": ["TASK-20260719-P1553-SR-RT-R1"],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-SR-P1/small_root_coordinate_gate_r6.md",
+          "coordination/tasks/TASK-20260719-P1553-SR-RT-R1/red_team_report.yaml",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "coordination/tasks/TASK-20260718-P1553-TENSOR-RT-R1/red_team_report.yaml",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-TSR-P1"],
+        "attention_contract": {
+          "decisive_evidence": "An exact implicit Gram/LLL construction with rank and bit costs, or the first required B^5 cancellation or recovery object.",
+          "inconclusive_decision": "Preserve only a target-symbolic cap-sized shift-module exception under existing ownership.",
+          "local_ambiguity_rule": "Separate modular CP rank, integer p^k carries, LLL combination rank, and exact source recovery as distinct gates.",
+          "peripheral_exclusions": [
+            "No claim that ambient dimension alone is runtime",
+            "No low-rank predicate equals low-rank zero support inference",
+            "No heuristic Coppersmith output promoted to theorem evidence"
+          ],
+          "rerank_trigger": "Rerank only after the implicit Gram construction and carry modulus are independently reconstructed."
+        },
+        "resource_estimate": {
+          "dominant_stage": "naive exact Gram assembly",
+          "stages": [
+            {"id": "setup_gram", "work": "B^(2+o(1))*A^2"},
+            {"id": "target_gram", "work": "B^(1+o(1))*A^2"},
+            {"id": "standard_recovery", "work": "B^5 or B^3"}
+          ]
+        },
+        "handoff": {
+          "objective": "Determine whether the constant-rank R6 coefficient tensor supports exact implicit Coppersmith reduction and exact source recovery inside the frozen caps.",
+          "uncertainty_reduced": "Whether tensor separation avoids B^5 materialization through the integer norm, carry, LLL, and recovery stages.",
+          "inputs": ["the independently corrected R6 receipts", "P1536 constant-rank and P1553 tensor controls", "current multivariate Coppersmith primary literature"],
+          "constraints": [
+            "Preserve p^m root divisibility and use p^k for kth-power recentering.",
+            "Charge generator count, total CP/TT rank, Gram assembly, LLL bits, and source recovery.",
+            "Treat heuristic shift selection or Groebner recovery as heuristic.",
+            "Allocate no P1554, experiment, run, or breakthrough claim."
+          ],
+          "deliverables": ["tensorized_small_root_report.yaml", "tensorized_small_root_gate_r7.md"],
+          "budget": {"wall_clock_seconds": 3600, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "The implicit Gram construction is coefficient and bit complete or precisely rejected.",
+            "Carry, shortness, independence, and exact recovery are separately gated.",
+            "Exactly one narrower theorem action remains."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-TSR-RT-R1",
+        "title": "Red-team the tensorized small-root lattice backend",
+        "role": "red-team",
+        "state": "completed",
+        "priority": 45,
+        "review_required": false,
+        "depends_on": ["TASK-20260719-P1553-TSR-P1"],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-TSR-P1/tensorized_small_root_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-TSR-P1/tensorized_small_root_gate_r7.md",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "coordination/tasks/TASK-20260718-P1553-TENSOR-RT-R1/red_team_report.yaml",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-TSR-RT-R1"],
+        "attention_contract": {
+          "decisive_evidence": "A reconstructed literal-power rank, exact Gram formula, p^k carry rule, total-rank cap, and exact recovery consequence.",
+          "inconclusive_decision": "Preserve the target-symbolic quotient-module exception without crediting a relation algorithm.",
+          "local_ambiguity_rule": "A low-rank carry is sufficient, not necessary; test uncentered valid lifts and retained LLL combinations separately.",
+          "peripheral_exclusions": [
+            "No experiment or solver execution",
+            "No assumption that LLL preserves constant tensor rank",
+            "No unrestricted tensor, lattice, or Shoup lower bound"
+          ],
+          "rerank_trigger": "Rerank only after exact Gram costs and standard recovery dimensions are bound."
+        },
+        "handoff": {
+          "objective": "Independently reconstruct and try to falsify every tensorized integer-lattice, shortness, and exact source-recovery claim in R7.",
+          "uncertainty_reduced": "Whether R7 contains a real implicit backend and exactly where its first unsupplied or over-budget object occurs.",
+          "inputs": ["the R7 producer receipts", "R6 exact signed predicate", "Ryan 2025, Howgrave-Graham, and Coron controls"],
+          "constraints": [
+            "Reconstruct literal powers, p^m divisibility, p^k recentering, Gram entries, and output rank.",
+            "Audit five useful independent equations and exact subset-stable source recovery separately.",
+            "Preserve every nonstandard implicit-module exception."
+          ],
+          "deliverables": ["red_team_report.yaml", "tensorized_small_root_red_team.md"],
+          "budget": {"wall_clock_seconds": 3600, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "The real implicit Gram construction and all corrections are preserved.",
+            "The B^5 quotient and B^3 recovery costs are scoped to named representations.",
+            "No run, P1554, Shoup claim, or breakthrough claim is created."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Recompute this manifest's file hashes and preserve any mismatch rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false
+  }
+}

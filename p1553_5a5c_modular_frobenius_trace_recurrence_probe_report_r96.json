@@ -1,0 +1,373 @@
+{
+  "admission": {
+    "failures": [
+      "quotient_basis_inside_setup_cap",
+      "quotient_basis_inside_online_cap",
+      "explicit_matrix_inside_setup_cap",
+      "factored_trace_without_quotient_basis_supplied",
+      "actual_five_a_five_c_integer_lift_complete",
+      "actual_five_a_five_c_source_unranking_complete",
+      "projective_infinity_source_complete",
+      "proper_subsum_source_complete",
+      "tangent_multiplicity_source_complete",
+      "known_rhs_rank_without_verifier_dlp",
+      "factor_logs_without_verifier_dlp",
+      "identical_fresh_target_descent",
+      "generic_prime_family_algorithm",
+      "shoup_improvement_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 27,
+    "obligations": {
+      "actual_five_a_five_c_integer_lift_complete": false,
+      "actual_five_a_five_c_source_unranking_complete": false,
+      "blind_zero_source_complete": true,
+      "dyadic_query_dimension_charged": true,
+      "explicit_matrix_inside_setup_cap": false,
+      "explicit_matrix_state_charged_as_B24O5": true,
+      "factor_logs_without_verifier_dlp": false,
+      "factored_trace_without_quotient_basis_supplied": false,
+      "finite_dyadic_trace_source_exact": true,
+      "generic_prime_family_algorithm": false,
+      "identical_fresh_target_descent": false,
+      "known_rhs_rank_without_verifier_dlp": false,
+      "nine_source_bindings_verified": true,
+      "nonreduced_frobenius_rank_loss_replayed": true,
+      "nonreduced_projector_trace_counts_multiplicity": true,
+      "projective_infinity_source_complete": false,
+      "proper_subsum_source_complete": false,
+      "quotient_basis_inside_online_cap": false,
+      "quotient_basis_inside_setup_cap": false,
+      "r84_r90_semantic_deduplication_recorded": true,
+      "radicalization_duplicate_loss_replayed": true,
+      "reduced_projector_trace_exact_integer": true,
+      "reduced_projector_trace_exact_mod_prime": true,
+      "reduced_split_frobenius_is_identity": true,
+      "root_quotient_dimension_charged_as_B12O5": true,
+      "shoup_improvement_complete": false,
+      "tangent_multiplicity_source_complete": false
+    },
+    "passed_obligation_count": 13
+  },
+  "asymptotic_cost_control": {
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "dyadic_range_tree": {
+      "changes_exponent": false,
+      "coefficient_state": "B^(12/5) polylog(B)",
+      "inside_setup_cap": false
+    },
+    "explicit_multiplication_or_frobenius_matrix": {
+      "inside_setup_cap": false,
+      "state_exponent_B": {
+        "decimal": 4.8,
+        "exact": "24/5"
+      }
+    },
+    "factored_trace_without_quotient_basis_supplied": false,
+    "nonreduced_frobenius_preserves_source_multiplicity": false,
+    "r84_root_source_sides": {
+      "larger_exponent_B": {
+        "decimal": 2.6,
+        "exact": "13/5"
+      },
+      "smaller_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "reduced_split_frobenius_compresses_state": false,
+    "scope": "charges the standard explicit split-quotient basis, matrices, and dyadic range quotients only; it is not a lower bound on a factored transposed trace or other succinct source index",
+    "source_complete_split_quotient": {
+      "basis_dimension_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "inside_online_cap": false,
+      "inside_setup_cap": false
+    }
+  },
+  "breakthrough": false,
+  "classification": "SPLIT_QUOTIENT_PROJECTOR_TRACE_EXACT__REDUCED_FROBENIUS_IDENTITY__NONREDUCED_FROBENIUS_LOSES_NILPOTENT_SOURCE_STATE__STANDARD_QUOTIENT_B12O5",
+  "disposition": "REJECT_STANDARD_SPLIT_QUOTIENT_FROBENIUS_TRACE_ONLY__PROJECTOR_TRACE_AND_DYADIC_TOY_SOURCE_EXACT__REDUCED_FROBENIUS_IDENTITY_NO_COMPRESSION__RADICAL_LOSES_DUPLICATE__NONREDUCED_FROBENIUS_LOSES_NILPOTENT_SOURCE_STATE__QUOTIENT_B12O5_AND_MATRIX_B24O5__FACTORED_TRANSPOSED_TRACE_OPEN__PROJECTIVE_AND_FULL_5A5C_SOURCE_INCOMPLETE__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "fresh_target_descent_complete": false,
+  "next_action": "Construct or refute one factored transposed projector-trace functional over the compact A/C divisor circuits. It must compute the integer count and one nonzero dyadic child without materializing a B^(12/5) quotient basis, root polynomial, moment vector, or endpoint/source table; fit B^(9/4) setup and B^(5/4) fresh work/workspace; and replay blind-zero, duplicate, nilpotent, infinity, proper-subsum, tangent, and multiplicity branches without DLP labels or verifier oracles.",
+  "novelty_scope": "R96 is the first campaign receipt to instantiate the R95 projector as an exact quotient-algebra trace and measure the reduced versus nonreduced Frobenius transition.",
+  "quotient_trace_controls": {
+    "blind_split_quotient": {
+      "dimension_below_field_prime": true,
+      "direct_integer_zero_count": 0,
+      "distinct_root_count": 4,
+      "explicit_multiplication_matrix_words": 16,
+      "frobenius_is_identity": true,
+      "frobenius_matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "frobenius_rank": 4,
+      "modulus": [
+        1,
+        4,
+        8,
+        8,
+        1
+      ],
+      "projector_trace_mod_prime": 0,
+      "quotient_dimension": 4,
+      "roots_with_occurrences": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "trace_equals_direct_integer": true,
+      "trace_equals_direct_mod_prime": true,
+      "zero_polynomial": [
+        0,
+        1
+      ]
+    },
+    "dyadic_source": {
+      "all_trace_counts_exact": true,
+      "queried_dimension_sum": 8,
+      "query_dimension_sum_below_three_root_bodies": true,
+      "returned_source_is_zero": true,
+      "root_dimension": 5,
+      "source_index": 0,
+      "source_root": 1,
+      "transcript": [
+        {
+          "quotient_dimension": 5,
+          "range": [
+            0,
+            5
+          ],
+          "zero_count": 3
+        },
+        {
+          "quotient_dimension": 2,
+          "range": [
+            0,
+            2
+          ],
+          "zero_count": 2
+        },
+        {
+          "quotient_dimension": 1,
+          "range": [
+            0,
+            1
+          ],
+          "zero_count": 1
+        }
+      ]
+    },
+    "field_prime": 11,
+    "nonreduced_frobenius_loses_nilpotent_rank": true,
+    "nonreduced_occurrence_quotient": {
+      "dimension_below_field_prime": true,
+      "direct_integer_zero_count": 3,
+      "distinct_root_count": 4,
+      "explicit_multiplication_matrix_words": 25,
+      "frobenius_is_identity": false,
+      "frobenius_matrix": [
+        [
+          1,
+          8,
+          5,
+          2,
+          10
+        ],
+        [
+          0,
+          0,
+          9,
+          8,
+          7
+        ],
+        [
+          0,
+          9,
+          8,
+          5,
+          3
+        ],
+        [
+          0,
+          9,
+          7,
+          6,
+          3
+        ],
+        [
+          0,
+          8,
+          5,
+          2,
+          0
+        ]
+      ],
+      "frobenius_rank": 4,
+      "modulus": [
+        10,
+        8,
+        7,
+        0,
+        7,
+        1
+      ],
+      "projector_trace_mod_prime": 3,
+      "quotient_dimension": 5,
+      "roots_with_occurrences": [
+        1,
+        1,
+        2,
+        4,
+        7
+      ],
+      "trace_equals_direct_integer": true,
+      "trace_equals_direct_mod_prime": true,
+      "zero_polynomial": [
+        4,
+        6,
+        1
+      ]
+    },
+    "radicalization_loses_duplicate_zero_occurrence": true,
+    "reduced_split_quotient": {
+      "dimension_below_field_prime": true,
+      "direct_integer_zero_count": 2,
+      "distinct_root_count": 4,
+      "explicit_multiplication_matrix_words": 16,
+      "frobenius_is_identity": true,
+      "frobenius_matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "frobenius_rank": 4,
+      "modulus": [
+        1,
+        4,
+        8,
+        8,
+        1
+      ],
+      "projector_trace_mod_prime": 2,
+      "quotient_dimension": 4,
+      "roots_with_occurrences": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "trace_equals_direct_integer": true,
+      "trace_equals_direct_mod_prime": true,
+      "zero_polynomial": [
+        4,
+        6,
+        1
+      ]
+    }
+  },
+  "schema": "p1553.5a5c_modular_frobenius_trace_recurrence.r96.v1",
+  "scope_boundary": "This closes only the standard explicit split-quotient basis, multiplication/Frobenius matrices, and dyadic range quotients. It is not a lower bound on a factored transposed trace, modular character sum, or another succinct source-reporting circuit.",
+  "shoup_bound_improvement": false,
+  "side_artifacts": {
+    "exceptional": "quotient_trace_exceptional_controls.json",
+    "frozen": "frozen_5a5c_modular_frobenius_trace_recurrence.json",
+    "logs_descent": "factor_logs_and_identical_descent_r96.json",
+    "source_replay": "integer_lift_dyadic_source_replay.json",
+    "state_ledger": "frobenius_trace_state_and_transition_ledger.json"
+  },
+  "source_bindings": {
+    "r84_gate": {
+      "path": "p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md",
+      "sha256": "4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661"
+    },
+    "r84_report": {
+      "path": "p1553_5a5c_marked_resultant_source_section_probe_report_r84.json",
+      "sha256": "c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b"
+    },
+    "r90_gate": {
+      "path": "p1553_5a5c_nonlocal_moment_hankel_translation_probe_gate_r90.md",
+      "sha256": "b1618f6a354b995db01fbbc7aeeb69df6ebb5248b5c558bc4c72d87ce523897b"
+    },
+    "r90_report": {
+      "path": "p1553_5a5c_nonlocal_moment_hankel_translation_probe_report_r90.json",
+      "sha256": "02bece6fe25e335bd061eec784e237b6d9d2ab57f34bd8dd823217a137a56c2b"
+    },
+    "r94_report": {
+      "path": "p1553_5a5c_implicit_veronese_hyperplane_source_index_probe_report_r94.json",
+      "sha256": "a9966f1fb407e720ce1e9aaafc82ab4a38eade9f338cda287cb737445d099df0"
+    },
+    "r95_gate": {
+      "path": "p1553_5a5c_aggregate_veronese_projector_recurrence_probe_gate_r95.md",
+      "sha256": "6645a20b942f4c86abafed39fa14538b1bb80edee3ffa94a2e7d914e12c0c763"
+    },
+    "r95_producer": {
+      "path": "p1553_5a5c_aggregate_veronese_projector_recurrence_probe_r95.py",
+      "sha256": "494ed8e091bd965d235dfb5b3b350be2f9493eaeb1bc676229116259f59126f9"
+    },
+    "r95_report": {
+      "path": "p1553_5a5c_aggregate_veronese_projector_recurrence_probe_report_r95.json",
+      "sha256": "50441deecd5fadcb05d30c09532d2b5fe6e8893ea2530243c20a52761e0a1742"
+    },
+    "r9_gate": {
+      "path": "p1553_projector_trace_router_gate_r9.md",
+      "sha256": "400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81"
+    }
+  }
+}

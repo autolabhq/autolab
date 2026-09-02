@@ -1,0 +1,649 @@
+{
+  "artifacts": {
+    "backfill_gate": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_backfill_transfer_gate_selected13_9696_9999_probe.json",
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_fresh_emission_packet_selected13_9696_9999_probe.h",
+    "contract": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_kernel_contract_selected13_9696_9999_probe.json",
+    "replay_algebra": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_backfill_replay_algebra_selected13_9696_9999_probe.json",
+    "worklist": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_execution_worklist_selected13_9696_9999_probe.json"
+  },
+  "claim_status": "FFE_SHARP_LANE_FRESH_EMISSION_PACKET_READY",
+  "created_at": "2026-06-05T18:40:18Z",
+  "emission_targets": [
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_gate_status": "BACKFILL_SAME_ROW_KEY_REPLAY_FIRST",
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_id": "t9981_4d807a56f643",
+      "candidate_priority": "first",
+      "family_lane_count": 3,
+      "family_lanes": [
+        {
+          "candidate_form_count": 2,
+          "candidate_form_indices": [
+            0,
+            1
+          ],
+          "family_mask": 33,
+          "family_terms": [
+            0,
+            5
+          ],
+          "fresh_source_solve_required": false,
+          "lane_class": "same_row_key_replay_lane",
+          "lane_hash_u64": 15625142965677174875,
+          "lane_index": 0,
+          "one_salt_neighbor_hint": false,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "same_row_key_hint": true,
+          "source_secret_count": 1,
+          "source_secret_set": [
+            10783
+          ],
+          "source_tier": "same_row_key_exact_support",
+          "source_tier_code": 1,
+          "source_transfers": [
+            9754
+          ],
+          "worker_action": "fresh_reemit_relation_against_backfill_row_hash"
+        },
+        {
+          "candidate_form_count": 2,
+          "candidate_form_indices": [
+            2,
+            3
+          ],
+          "family_mask": 17408,
+          "family_terms": [
+            10,
+            14
+          ],
+          "fresh_source_solve_required": false,
+          "lane_class": "same_row_key_replay_lane",
+          "lane_hash_u64": 1868107030282002951,
+          "lane_index": 1,
+          "one_salt_neighbor_hint": false,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "same_row_key_hint": true,
+          "source_secret_count": 1,
+          "source_secret_set": [
+            8534
+          ],
+          "source_tier": "same_row_key_exact_support",
+          "source_tier_code": 1,
+          "source_transfers": [
+            9742
+          ],
+          "worker_action": "fresh_reemit_relation_against_backfill_row_hash"
+        },
+        {
+          "candidate_form_count": 2,
+          "candidate_form_indices": [
+            4,
+            5
+          ],
+          "family_mask": 34816,
+          "family_terms": [
+            11,
+            15
+          ],
+          "fresh_source_solve_required": true,
+          "lane_class": "support_span_only_source_hint_lane",
+          "lane_hash_u64": 3634773673468780329,
+          "lane_index": 2,
+          "one_salt_neighbor_hint": false,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "same_row_key_hint": false,
+          "source_secret_count": 1,
+          "source_secret_set": [
+            2802
+          ],
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "source_transfers": [
+            9842
+          ],
+          "worker_action": "fresh_support_solve_and_emit_direct_rank_row"
+        }
+      ],
+      "first_pass_id": "first_37e20bd5a8b8d1f0",
+      "fresh_emission_required": true,
+      "full_family_row": {
+        "direct_status": "direct_certificate_missing",
+        "is_full_family": true,
+        "matched_families": [
+          [
+            0,
+            5
+          ],
+          [
+            10,
+            14
+          ],
+          [
+            11,
+            15
+          ]
+        ],
+        "packet_index": 19,
+        "packet_row_offset": 0,
+        "requires_direct_rank_export": true,
+        "row_check_hash": "row_8360d233d32d8d4d",
+        "row_check_hash_u64": 9466797536760925517,
+        "row_id": "t9981_4d807a56f643",
+        "row_id_u64": 85214203672131,
+        "selected_term_support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 16,
+        "work_item_index": 57
+      },
+      "full_gate_replay_result": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+      "full_gate_source_secret_set": [
+        2802,
+        8534,
+        10783
+      ],
+      "group_id": "sharp_group_8d65be64543c",
+      "min_direct_ops_over_rho": 0.6350365,
+      "priority_order": 0,
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "salt_gap": 2,
+        "salt_min_mod4": 3,
+        "salts": [
+          171,
+          173
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9981
+      },
+      "required_output": {
+        "must_match_backfill_row_check_hash": "row_8360d233d32d8d4d",
+        "must_match_backfill_row_id": "t9981_4d807a56f643",
+        "must_not_use_copied_source_form_solve": true,
+        "must_recompute_candidate_equality": true,
+        "must_set_backfill_transfer_index": 9981,
+        "must_verify_public_key": true,
+        "must_write_direct_rank_export": true
+      },
+      "row_slot_count": 3,
+      "row_slots": [
+        {
+          "direct_status": "direct_certificate_missing",
+          "is_full_family": true,
+          "matched_families": [
+            [
+              0,
+              5
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              11,
+              15
+            ]
+          ],
+          "packet_index": 19,
+          "packet_row_offset": 0,
+          "requires_direct_rank_export": true,
+          "row_check_hash": "row_8360d233d32d8d4d",
+          "row_check_hash_u64": 9466797536760925517,
+          "row_id": "t9981_4d807a56f643",
+          "row_id_u64": 85214203672131,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "top_k": 16,
+          "work_item_index": 57
+        },
+        {
+          "direct_status": "direct_certificate_missing",
+          "is_full_family": false,
+          "matched_families": [],
+          "packet_index": 19,
+          "packet_row_offset": 1,
+          "requires_direct_rank_export": true,
+          "row_check_hash": "row_0013286684f431c3",
+          "row_check_hash_u64": 5392445339873731,
+          "row_id": "t9981_6b17fb76c773",
+          "row_id_u64": 117750747285363,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "top_k": 16,
+          "work_item_index": 58
+        },
+        {
+          "direct_status": "direct_certificate_missing",
+          "is_full_family": false,
+          "matched_families": [],
+          "packet_index": 19,
+          "packet_row_offset": 2,
+          "requires_direct_rank_export": true,
+          "row_check_hash": "row_bb5cb557b9f8829e",
+          "row_check_hash_u64": 13500865171336757918,
+          "row_id": "t9981_e15012eae192",
+          "row_id_u64": 247734031016338,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "top_k": 16,
+          "work_item_index": 59
+        }
+      ],
+      "salt_gap": 2,
+      "source_secret_count": 3,
+      "transfer_index": 9981,
+      "worker_acceptance_gate": "fresh_ffe_summation_polynomial_direct_rank_export_only"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_gate_status": "BACKFILL_SALT_NEIGHBOR_MUTATION_SECOND",
+      "backfill_row_check_hash": "row_05f942a16fb73283",
+      "backfill_row_id": "t9943_4c88ff834538",
+      "candidate_priority": "second",
+      "family_lane_count": 3,
+      "family_lanes": [
+        {
+          "candidate_form_count": 2,
+          "candidate_form_indices": [
+            6,
+            7
+          ],
+          "family_mask": 33,
+          "family_terms": [
+            0,
+            5
+          ],
+          "fresh_source_solve_required": true,
+          "lane_class": "support_span_only_source_hint_lane",
+          "lane_hash_u64": 9375066655858740447,
+          "lane_index": 3,
+          "one_salt_neighbor_hint": false,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "same_row_key_hint": false,
+          "source_secret_count": 1,
+          "source_secret_set": [
+            10783
+          ],
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "source_transfers": [
+            9754
+          ],
+          "worker_action": "fresh_support_solve_and_emit_direct_rank_row"
+        },
+        {
+          "candidate_form_count": 2,
+          "candidate_form_indices": [
+            8,
+            9
+          ],
+          "family_mask": 17408,
+          "family_terms": [
+            10,
+            14
+          ],
+          "fresh_source_solve_required": false,
+          "lane_class": "one_salt_neighbor_mutation_lane",
+          "lane_hash_u64": 12968638412138502884,
+          "lane_index": 4,
+          "one_salt_neighbor_hint": true,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "same_row_key_hint": false,
+          "source_secret_count": 1,
+          "source_secret_set": [
+            2802
+          ],
+          "source_tier": "one_salt_neighbor_exact_support",
+          "source_tier_code": 2,
+          "source_transfers": [
+            9842
+          ],
+          "worker_action": "fresh_reemit_relation_against_backfill_row_hash"
+        },
+        {
+          "candidate_form_count": 2,
+          "candidate_form_indices": [
+            10,
+            11
+          ],
+          "family_mask": 34816,
+          "family_terms": [
+            11,
+            15
+          ],
+          "fresh_source_solve_required": false,
+          "lane_class": "one_salt_neighbor_mutation_lane",
+          "lane_hash_u64": 16027564389323554833,
+          "lane_index": 5,
+          "one_salt_neighbor_hint": true,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "same_row_key_hint": false,
+          "source_secret_count": 1,
+          "source_secret_set": [
+            2802
+          ],
+          "source_tier": "one_salt_neighbor_exact_support",
+          "source_tier_code": 2,
+          "source_transfers": [
+            9842
+          ],
+          "worker_action": "fresh_reemit_relation_against_backfill_row_hash"
+        }
+      ],
+      "first_pass_id": "first_cff38c0711c53228",
+      "fresh_emission_required": true,
+      "full_family_row": {
+        "direct_status": "direct_certificate_missing",
+        "is_full_family": true,
+        "matched_families": [
+          [
+            0,
+            5
+          ],
+          [
+            10,
+            14
+          ],
+          [
+            11,
+            15
+          ]
+        ],
+        "packet_index": 17,
+        "packet_row_offset": 0,
+        "requires_direct_rank_export": true,
+        "row_check_hash": "row_05f942a16fb73283",
+        "row_check_hash_u64": 430448500522037891,
+        "row_id": "t9943_4c88ff834538",
+        "row_id_u64": 84151286056248,
+        "selected_term_support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "selector": "mode_low_term_support_total5",
+        "top_k": 16,
+        "work_item_index": 51
+      },
+      "full_gate_replay_result": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+      "full_gate_source_secret_set": [
+        2802,
+        10783
+      ],
+      "group_id": "sharp_group_a15d48c024d5",
+      "min_direct_ops_over_rho": 0.6350365,
+      "priority_order": 1,
+      "public_first_pass": {
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt167",
+          "22050.cf1@11731:uniform:256:salt175"
+        ],
+        "salt_gap": 8,
+        "salt_min_mod4": 3,
+        "salts": [
+          167,
+          175
+        ],
+        "target": "22050.cf1@11731",
+        "transfer_index": 9943
+      },
+      "required_output": {
+        "must_match_backfill_row_check_hash": "row_05f942a16fb73283",
+        "must_match_backfill_row_id": "t9943_4c88ff834538",
+        "must_not_use_copied_source_form_solve": true,
+        "must_recompute_candidate_equality": true,
+        "must_set_backfill_transfer_index": 9943,
+        "must_verify_public_key": true,
+        "must_write_direct_rank_export": true
+      },
+      "row_slot_count": 3,
+      "row_slots": [
+        {
+          "direct_status": "direct_certificate_missing",
+          "is_full_family": true,
+          "matched_families": [
+            [
+              0,
+              5
+            ],
+            [
+              10,
+              14
+            ],
+            [
+              11,
+              15
+            ]
+          ],
+          "packet_index": 17,
+          "packet_row_offset": 0,
+          "requires_direct_rank_export": true,
+          "row_check_hash": "row_05f942a16fb73283",
+          "row_check_hash_u64": 430448500522037891,
+          "row_id": "t9943_4c88ff834538",
+          "row_id_u64": 84151286056248,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "selector": "mode_low_term_support_total5",
+          "top_k": 16,
+          "work_item_index": 51
+        },
+        {
+          "direct_status": "direct_certificate_missing",
+          "is_full_family": false,
+          "matched_families": [],
+          "packet_index": 17,
+          "packet_row_offset": 1,
+          "requires_direct_rank_export": true,
+          "row_check_hash": "row_563a9c5ef89cf673",
+          "row_check_hash_u64": 6213450567622915699,
+          "row_id": "t9943_a49114f229ff",
+          "row_id_u64": 180943028627967,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_cost_low_term_support_total3",
+          "top_k": 16,
+          "work_item_index": 52
+        },
+        {
+          "direct_status": "direct_certificate_missing",
+          "is_full_family": false,
+          "matched_families": [],
+          "packet_index": 17,
+          "packet_row_offset": 2,
+          "requires_direct_rank_export": true,
+          "row_check_hash": "row_33efdf0f2e32d26f",
+          "row_check_hash_u64": 3742455071660757615,
+          "row_id": "t9943_fe0e4b034833",
+          "row_id_u64": 279337341503539,
+          "selected_term_support": [
+            0,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            11,
+            12,
+            13
+          ],
+          "selector": "mode_low_term_support_total3",
+          "top_k": 16,
+          "work_item_index": 53
+        }
+      ],
+      "salt_gap": 8,
+      "source_secret_count": 2,
+      "transfer_index": 9943,
+      "worker_acceptance_gate": "fresh_ffe_summation_polynomial_direct_rank_export_only"
+    }
+  ],
+  "failures": [],
+  "honesty_boundary": [
+    "This packet describes fresh FFE/summation-polynomial emission obligations only.",
+    "It does not evaluate summation polynomials or emit direct/rank rows.",
+    "Replay-algebra source-secret lanes are negative controls, not accepted exports.",
+    "A promoted result must match the bound row_id and row_check_hash and verify the public key."
+  ],
+  "native_preflight": {
+    "c_source_sha256": "fe261b9fcc5cef5923d497e65e08b8c88ac9131e4da296df3d737d85326b0752",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-I",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state",
+      "/private/tmp/ecdlp_selected13_fresh_emission_wfotgzha/selected13_fresh_emission_packet.c",
+      "-o",
+      "/private/tmp/ecdlp_selected13_fresh_emission_wfotgzha/selected13_fresh_emission_packet"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "native_summary": {
+      "accepted_export_count": 0,
+      "failure_count": 0,
+      "family_lane_count": 6,
+      "fresh_required_count": 2,
+      "full_gate_inconsistent_count": 2,
+      "row_slot_count": 6,
+      "source_secret_lane_count": 6,
+      "target_count": 2
+    },
+    "run_returncode": 0,
+    "run_stderr": "",
+    "run_stdout": "{\"target_count\":2,\"row_slot_count\":6,\"family_lane_count\":6,\"accepted_export_count\":0,\"fresh_required_count\":2,\"full_gate_inconsistent_count\":2,\"source_secret_lane_count\":6,\"failure_count\":0}\n"
+  },
+  "schema": "ecdlp.low_term_total2_ffe_sharp_lane_fresh_emission_packet.v1",
+  "summary": {
+    "accepted_backfill_export_count": 0,
+    "family_lane_count": 6,
+    "full_family_target_count": 2,
+    "full_gate_replay_result_counts": {
+      "SOURCE_FORM_SYSTEM_INCONSISTENT": 2
+    },
+    "native_preflight_failure_count": 0,
+    "native_preflight_verified": true,
+    "primary_backfill_transfers": [
+      9981,
+      9943
+    ],
+    "row_slot_count": 6,
+    "row_slot_direct_status_counts": {
+      "direct_certificate_missing": 6
+    },
+    "source_tier_counts": {
+      "one_salt_neighbor_exact_support": 2,
+      "same_row_key_exact_support": 2,
+      "support_span_only": 2
+    },
+    "target_count": 2,
+    "verified": true,
+    "worker_interpretation": "The packet binds priority backfill rows to row hashes and replay-negative controls; a lower-level FFE/summation-polynomial worker must freshly emit direct/rank rows before any export is accepted."
+  }
+}

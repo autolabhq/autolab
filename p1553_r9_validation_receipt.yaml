@@ -1,0 +1,79 @@
+schema: crypto.autoresearch.install_validation_receipt.v1
+bundle_id: P1553-R9-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+reason: authoritative checkout is read-only in this session
+composition:
+  mode: atomic_r5_through_r9
+  upstream_bundle_id: P1553-R5-R7-20260719
+  upstream_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_bundle_id: P1553-R8-20260719
+  base_manifest_sha256: 54f5258d83d54d2473b13c2655e2e3c4c2d124f01b729aec855da18889d08d4d
+  base_manifest_hash_list_sha256: b603dd4ed6b418b642408a3920122e6feca6e82111b79cb4fdd4d5195cea8e5a
+  base_simulated_queue_sha256: 6d946874f4c7c24ee4396b24c2d95d94b4ef1414dd4b9487d5adb9f40cf158f8
+delta_manifest:
+  json_sha256: 73e045b4d939401a2a15699a0db04f0a7f326e3be9a97ed5669035690fe01101
+  sha256_list_sha256: 5ac673dec0653d55156233ae2371bdea776ae8ea09383ae396a9dc4bd478d1ad
+  unique_sources: 4
+  destination_installs: 5
+  appended_tasks: 2
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+simulated_composed_merge:
+  queue_file_sha256: c0cf11e07745be78b192d85b41a6d5876dd6f1d2df4ca0019cceee0d61539ca4
+  queue_canonical_sha256: 710e60cfa7057ca4108404407162dc1630a01738f53ce416d9074cb23fdbc618
+  dispatch_file_sha256: cf8f1016d71e89a0e25480ac8a782f67540a8181c28c078cbdb47a1fe63521e3
+  dispatch_report_sha256: 5084d5b07ad8ab1dff49235d05d7a88644a2509d374bc638e38bcea357490150
+  dispatch_plan_sha256: ed3f7687b6c142c0e3818dc4ac0e0a3ac4f683a4f3cd26abf70e0fc634155512
+  terminal_tasks: 18
+  ready_tasks: 0
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  new_yaml_documents_parsed: 2
+  new_ascii_files_checked: 6
+  new_exactly_one_next_action_headings: 2
+  composed_exactly_one_next_action_headings: 9
+  r9_source_hash_list: pass
+  r9_manifest_source_bindings: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+research_result:
+  status: revise_scoped_theorem
+  exact_new_control: >-
+    Under within-color x-class uniqueness and the explicit threshold
+    32*B^4<p, the Fermat-projector trace is the exact integer restricted root
+    count and gives one source with at most 1+5*ceil(log_2 B) count calls.
+  rank_correction: >-
+    Projector CP rank is at most the root count, so sparse fibers reject a
+    universal large projector-rank obstruction. Low source-labelled output
+    rank does not construct the projector.
+  surviving_exception: >-
+    An exact balanced 2|3 contraction may compute restricted counts from the
+    B^2 pair dictionary and separated triple factors without the standard B^3
+    target-fresh triple table or search.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_install_rule: >-
+  Re-read all three live precondition hashes and both required NET task states;
+  compose R5-R7, R8, and R9 on one private queue; install all files and
+  regenerated dispatch outputs atomically only if every manifest, source
+  binding, test, focus check, and corpus validator still passes. Preserve any
+  mismatch as concurrent-state drift instead of overwriting it.

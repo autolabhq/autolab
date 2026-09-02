@@ -1,0 +1,78 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "random_model_required": false,
+      "route_id": "one_to_six_mode_single_color_zero_predicate",
+      "status": "rejected_deterministically_by_two_atom_progression",
+      "structured_factor_base_theorem": true
+    },
+    {
+      "random_model_required": false,
+      "route_id": "one_to_six_mode_single_color_pole_predicate",
+      "status": "rejected_deterministically_by_two_atom_progression",
+      "structured_factor_base_theorem": true
+    },
+    {
+      "covered_by_six_point_vandermonde_witness": false,
+      "inside_cap_exact_predicate_constructed": false,
+      "route_id": "seven_or_more_mode_extension_zero_predicate",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_dag_constructed": false,
+      "route_id": "multiple_small_mode_predicate_dag",
+      "single_predicate_obstruction_sufficient": false,
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_predicate_constructed": false,
+      "represented_mode_bound_applicable": false,
+      "route_id": "low_slp_expanded_extension_predicate",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_dag_constructed": false,
+      "route_id": "nonzero_value_frobenius_coordinate_dag",
+      "status": "open",
+      "zero_set_obstruction_sufficient": false
+    }
+  ],
+  "schema": "p1553.torus_c5_two_atom_geometric_progression_cost_ledger.r134.v1",
+  "theorem": {
+    "candidate_discrete_log_required": false,
+    "field_independent": true,
+    "first_mode_count_not_excluded": 7,
+    "maximum_excluded_mode_count": 6,
+    "not_covered": [
+      "seven or more represented modes",
+      "multiple-predicate or adaptive decision DAGs",
+      "nonzero-value tests and coordinate comparisons",
+      "polynomials with large expansion but compact straight-line programs",
+      "general arithmetic-circuit, RAM, or cell-probe lower bounds"
+    ],
+    "progression_length": 6,
+    "random_deck_model_required": false,
+    "rational_predicate_consequence": "The same obstruction applies separately to a represented at-most-six-mode numerator-zero or denominator-zero set. No such single zero or pole set can contain an entire color acceptance support.",
+    "scope_limits": [
+      "one represented polynomial zero predicate",
+      "one represented rational numerator-zero or denominator-zero set",
+      "at most six distinct exponent modes modulo q",
+      "the inherited degree-five color acceptance rule"
+    ],
+    "source_degree": 5,
+    "structured_factor_base_application": "At deck size n=B^(3/4+o(1)), every balanced color part has Theta(n) atoms and hence at least two. Therefore every asymptotic color acceptance support contains the required six-term progression deterministically.",
+    "two_atom_progression": "Let x and y be two distinct atoms in one color part. For j=0,...,5, the degree-five source x^(5-j)y^j is accepted by that color and has target z_j=x^5*(y/x)^j. These are six distinct points of a geometric progression because y/x has prime order q.",
+    "vandermonde_obstruction": "Let f(z)=sum_{i=1}^t c_i z^(e_i) have 1<=t<=6 nonzero coefficients and distinct exponents modulo q. If f vanishes on z_j for j=0,...,t-1, then the coefficient vector lies in the kernel of the Vandermonde matrix with nodes (y/x)^(e_i). The nodes are distinct, so its determinant prod_{i<k}((y/x)^(e_k)-(y/x)^(e_i)) is nonzero. Thus all coefficients would be zero, a contradiction."
+  }
+}

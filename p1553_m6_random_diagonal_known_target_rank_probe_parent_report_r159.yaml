@@ -1,0 +1,118 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-RANDOM-DIAGONAL-KNOWN-TARGET-RANK-R159-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: direct_target_coverage_and_random_diagonal_rank
+run_count: 1
+status: batched_positive_c6_reverse_ffe_locator_open
+labels:
+  - theorem
+  - asymptotic
+  - finite-field
+  - elliptic-curve
+  - known-targets
+  - random-diagonal
+  - full-rank
+  - hash-to-curve
+  - target-descent
+  - full-cost
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R158
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Replace pairwise short-relation supply by direct known-target coverage
+  and prove full relation rank using independent diagonal shifts.
+inputs:
+  - path: p1553_m6_short_relation_near_injectivity_supply_probe_r158.py
+    sha256: c68c0a8644117133b7dfaa51564e93a44c2fa614e66c899524ae941a3673439b
+  - path: p1553_m6_short_relation_near_injectivity_supply_probe_report_r158.json
+    sha256: bc0e0e864af69c8c03fd21b0bb360adceea7247daf940f5cc5cbf0e51ad30c6a
+  - path: frozen_m6_short_relation_near_injectivity_supply.json
+    sha256: e278b905703403e30d223d611a36e7eb5cb857c4ef4cf50acab24a81eab8c8e5
+  - path: m6_short_relation_near_injectivity_supply_cost_ledger.json
+    sha256: eac09e1950a431ae71c675210eeda5bacb797bbc6aa83cc32ff7fc9b06497f22
+  - path: m6_short_relation_near_injectivity_supply_replay.json
+    sha256: 055d2a9887db144eed8e4791270522aac82a4760d5fa96ed4dec4b67e9fcb968
+  - path: m6_short_relation_near_injectivity_supply_controls.json
+    sha256: af9095b0b7cba03fc3b6dd454f99672a5e7999c4899a34b30d4f8d5dcc2e13de
+  - path: factor_logs_and_identical_descent_r158.json
+    sha256: 8e1f858b3a49cf92c92c33a73ea9fb1c5133b8cd3eaa8f9939d60e96d74127af
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_short_relation_near_injectivity_supply_probe_r158.py
+    sha256: 1f6134c23a8013c66d24a1d672a0e68faab615823872b9878a2af60f87b49582
+  - path: p1553_m6_short_relation_near_injectivity_supply_probe_gate_r158.md
+    sha256: 20077d3231e0c535af2fe7a4c435148de53fe1da300e1174d1959e89f12a203d
+  - path: p1553_m6_short_relation_near_injectivity_supply_probe_parent_report_r158.yaml
+    sha256: 6a88c2a881948d474248f15e91f826109bf97c46fc7c2cfe35f044f300530f89
+artifacts:
+  - path: p1553_m6_random_diagonal_known_target_rank_probe_r159.py
+    sha256: 8889acea5284ee2ca70d147f35c90d08d3e3612f9749984d6c10856c74efa448
+  - path: p1553_m6_random_diagonal_known_target_rank_probe_report_r159.json
+    sha256: 869f04cbcfa5f918e2d96000508cb02c3ffb1266cbd9e0001f2c14d5a0ae7860
+  - path: frozen_m6_random_diagonal_known_target_rank.json
+    sha256: c5df20238ff3107b384d26c33b882b51754089bd4ff517c0220b1dc67307fc43
+  - path: m6_random_diagonal_known_target_rank_cost_ledger.json
+    sha256: b42f8c6818a92fe269ac9642dca1225faf0a38266824550f0768be47640a00e3
+  - path: m6_random_diagonal_known_target_rank_replay.json
+    sha256: 08a247a446a0c7d1d0ca8abe0016b6ec825165e911341fdb0a54be9a5e1685de
+  - path: m6_random_diagonal_known_target_rank_controls.json
+    sha256: d95dad07fbe68c1f4196535e817a998391e15abd50f918a2b7777ca6a8a07e32
+  - path: factor_logs_and_identical_descent_r159.json
+    sha256: 4a9258ebff17de5b77d9be2db0c0943188e134077e7ea1e93d9069d5982d5871
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_random_diagonal_known_target_rank_probe_r159.py
+    sha256: d8ec783bc8b0c2827d40251364d1bce2d495aeda67c804ee9ab604b4ad60da43
+  - path: p1553_m6_random_diagonal_known_target_rank_probe_gate_r159.md
+    sha256: 58b37a59c6f2a983ab2a0a73bdba444fab667aa24eff91eb49f448453a91fda9
+verified_statements:
+  - >-
+    The positive C6 source universe has M=binomial(d+5,6)=Theta(d^6)
+    elements, and unique endpoint support is at least M/2 except with
+    probability at most 2M/q.
+  - >-
+    Eight q log(d)/M independent known targets per factor-base column
+    leave any column uncovered with probability at most d^(-3),
+    conditional on half-unique endpoint support.
+  - >-
+    The all-column target count is B^(5/4+o(1)).
+  - >-
+    Conditional on coverage and selected sources, independent diagonal
+    shifts give a nonzero determinant polynomial and full-rank failure at
+    most d/q=B^(-17/4).
+  - >-
+    Conditioning iid labels to be nonzero and pairwise distinct up to sign
+    transfers the theorem to the ideal rejection-sampled hash-to-curve law.
+  - >-
+    Identical positive-C6 lookup at Q+tG reduces target descent to the same
+    missing source-locator mechanism.
+  - >-
+    All 12 public-curve controls cover every column, have full rank, verify
+    every recovered factor log, and verify identical target descent.
+  - >-
+    Explicit finite endpoint enumeration costs B^(9/2), so the finite
+    controls receive no attack credit.
+scoped_failures:
+  deterministic_hash_to_curve_transfer: open
+  batched_positive_c6_unique_source_locator: open
+  reverse_only_signed_marker_operator: open
+  signed_weight_separable_ffe_dag: open
+  unconditional_total_attack_cost: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 20
+  total_obligations: 29
+  zero_coverage_and_full_rank_theorem_admitted: true
+  ideal_conditioned_sampler_transfer_admitted: true
+  identical_descent_reduction_admitted: true
+  batched_positive_c6_unique_source_locator_admitted: false
+  reverse_only_signed_marker_operator_admitted: false
+  lane_admitted: false
+next_action: >-
+  Construct a public batched reverse FFE locator for B^(5/4)log(B)
+  arbitrary targets within B^(9/4) setup and B^(5/4) work, then replay the
+  admitted random-diagonal log solve and identical descent without explicit
+  endpoint enumeration.

@@ -1,0 +1,85 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-25",
+  "claim_level": "fresh_preregistered_gate_diagnostic",
+  "hypothesis": "A pre-factor FFE gate selected before Sage factorization can preserve fresh strict below-rho low-term-support surfaces, and those surfaces collapse to root-hyperplane factors with below-rho root-selection costs.",
+  "artifacts": {
+    "total3_total4_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total3_total4_signature_fixed_selector_88_95.json",
+    "total2_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_88_95.json",
+    "total3_total4_manifest": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_fixed_selector_88_95.json",
+    "total2_manifest": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_fixed_selector_88_95.json",
+    "total3_total4_sage_factor": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total3_total4_preregistered_88_95.json",
+    "total2_sage_factor": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total2_preregistered_88_95.json",
+    "total3_total4_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total3_total4_preregistered_88_95.json",
+    "total2_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total2_preregistered_88_95.json",
+    "total3_total4_selector": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_root_hyperplane_selector_total3_total4_preregistered_88_95.json",
+    "total2_selector": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_root_hyperplane_selector_total2_preregistered_88_95.json"
+  },
+  "gate_definition": {
+    "name": "pre_factor_nonvacuous_hit_root_proxy",
+    "uses_sage_factorization": false,
+    "uses_root_policy_outcome": false,
+    "conditions": [
+      "full materialized FFE surface has at least one selected root pair",
+      "selected public leaf has at least one known hit root before factorization"
+    ],
+    "forbidden_selection_fields": [
+      "public_zero_root_count",
+      "public_zero_recovered",
+      "chosen_preserves_selected_root_pairs",
+      "below_rho",
+      "direct_below_rho",
+      "total_ops_over_rho"
+    ]
+  },
+  "evidence": {
+    "total3_total4_strict_case_count": 2,
+    "total3_total4_surface_count": 1,
+    "total3_total4_pre_factor_gate_selected_count": 1,
+    "total3_total4_sage_factor_candidates": 22,
+    "total3_total4_all_factors_root_hyperplanes": true,
+    "total3_total4_factor_shape_counts": {
+      "deg1_mon3_root1": 22
+    },
+    "total3_total4_preserving_root_scan_below_rho_count": 1,
+    "total3_total4_min_preserving_root_scan_ops_over_rho": 0.736,
+    "total3_total4_min_preserving_surface_ffe_ops_over_rho": 0.592,
+    "total3_total4_min_full_remainder_ffe_ops_over_rho": 2.6,
+    "total3_total4_best_selector_policy": "global_root_hash",
+    "total3_total4_best_selector_below_rho_count": 1,
+    "total3_total4_best_selector_direct_below_rho_count": 1,
+    "total3_total4_best_selector_max_total_ops_over_rho": 0.928,
+    "total3_total4_best_selector_max_direct_total_ops_over_rho": 0.88,
+    "total2_strict_case_count": 1,
+    "total2_surface_count": 2,
+    "total2_pre_factor_gate_selected_count": 2,
+    "total2_sage_factor_candidates": 34,
+    "total2_all_factors_root_hyperplanes": true,
+    "total2_factor_shape_counts": {
+      "deg1_mon3_root1": 34
+    },
+    "total2_preserving_root_scan_below_rho_count": 2,
+    "total2_min_preserving_root_scan_ops_over_rho": 0.47445255,
+    "total2_min_preserving_surface_ffe_ops_over_rho": 0.37956204,
+    "total2_min_full_remainder_ffe_ops_over_rho": 1.13138686,
+    "total2_best_selector_policy": "low_root_norm",
+    "total2_best_selector_below_rho_count": 2,
+    "total2_best_selector_direct_below_rho_count": 2,
+    "total2_best_selector_mean_total_ops_over_rho": 0.51824817,
+    "total2_best_selector_max_total_ops_over_rho": 0.54014599,
+    "total2_best_selector_mean_direct_total_ops_over_rho": 0.46715328,
+    "total2_best_selector_max_direct_total_ops_over_rho": 0.46715328
+  },
+  "limitations": [
+    "The final root selector policy is still an evaluation result on a tiny fresh set, not a frozen <=87-trained policy.",
+    "The full-remainder FFE route remains over rho on the measured fresh surfaces.",
+    "The gate requires materializing the full FFE surface before factorization.",
+    "This is evidence for a first-fall root-selection mechanism, not yet an end-to-end ECDLP speedup."
+  ],
+  "next_steps": [
+    "Freeze one combined total2 plus total3/4 root policy using only <=87 artifacts and rerun 88-95 as a held-out test.",
+    "Extend the preregistered manifest-first path to 96-111 or unseen target labels.",
+    "Keep root-scan, direct-root, and full-remainder accounting separate in every future report.",
+    "Require verifier-backed rank and public-key verification before promoting any candidate to relation-generation status."
+  ]
+}

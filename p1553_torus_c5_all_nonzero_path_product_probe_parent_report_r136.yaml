@@ -1,0 +1,113 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-ALL-NONZERO-PATH-PRODUCT-R136-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: sparse_zero_test_decision_tree_path_product_dichotomy
+run_count: 1
+status: growing_support_low_slp_nonzero_value_and_structured_seven_mode_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - sparse-polynomial
+  - decision-tree
+  - path-product
+  - root-bound
+  - structured-factor-base
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R129-R135
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether composed small sparse zero tests can evade the C5
+  Kruskal-rank obstruction while retaining exact positive and empty
+  membership decisions in polylogarithmic target work.
+inputs:
+  - path: p1553_torus_c5_khatri_rao_kruskal_amplification_probe_r135.py
+    sha256: f5729fc48372e99cafebb3d8f0bd5eda510802d0a6a3e68d21595dabe9c09ea5
+  - path: p1553_torus_c5_khatri_rao_kruskal_amplification_probe_report_r135.json
+    sha256: 27c91b9b7d11c09b6511002f29e1e77d083891aaf5e7222a069a0e76408ef278
+  - path: frozen_torus_c5_khatri_rao_kruskal_amplification.json
+    sha256: 25d1398eb817761d6cb4d9f2fea7db08eeee62000d88acfbe1ee276937cd3098
+  - path: torus_c5_khatri_rao_kruskal_amplification_cost_ledger.json
+    sha256: 7f0c37506437d58e2c04c0ee567193ce9c0822c980e21a5e011561f3312d5bdf
+  - path: torus_c5_khatri_rao_kruskal_amplification_replay.json
+    sha256: c6dbb5005e19b068f6a2bffa585ab7a9629855fecb2b98036ebd479ea1a329ef
+  - path: torus_c5_khatri_rao_kruskal_amplification_controls.json
+    sha256: bfec781c34fe40c1bea102f15ff6699c9265424ae37be5cadb3c71e2cc1991d6
+  - path: factor_logs_and_identical_descent_r135.json
+    sha256: 41754c11d3f5448df4ac96f514e3a13eced8f4c82286da54a4e7dfbedc7150e2
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_khatri_rao_kruskal_amplification_probe_r135.py
+    sha256: a85447be8f30789f95ba0a262b10e26cd3131b0dca78a4a53f29ed9bd0fd539b
+  - path: p1553_torus_c5_khatri_rao_kruskal_amplification_probe_gate_r135.md
+    sha256: c9bbf87b8b2c5621218823122f61151ed968b348fbb7497789757797c15b1c19
+  - path: p1553_torus_c5_khatri_rao_kruskal_amplification_probe_parent_report_r135.yaml
+    sha256: 39d3ddc00947291cc6437e385bc142bb50a680ee283a37e1d4e2b39fe7ddb62e
+artifacts:
+  - path: p1553_torus_c5_all_nonzero_path_product_probe_r136.py
+    sha256: a0761c05909996a80b3322aec859fcde97b23d77ce7cf512ddfa0c888e3017d9
+  - path: p1553_torus_c5_all_nonzero_path_product_probe_report_r136.json
+    sha256: 530b696871917a69ddef1e6a0a14a44421176439c0ccf7b9031ecf5a8a1b64ce
+  - path: frozen_torus_c5_all_nonzero_path_product.json
+    sha256: 3a8587a33e176a7174dacf88ced1da243b0be9b77f214a1b41bb2ef3db4ccef0
+  - path: torus_c5_all_nonzero_path_product_cost_ledger.json
+    sha256: 30935ad0b297822f56dca0e69fe80952e51b92c61f32cdee79a43dde8d483d8e
+  - path: torus_c5_all_nonzero_path_product_replay.json
+    sha256: 4c4414fa1472eaec54f9b71eeb6defc47b75c3b278cdad66b7d14e5fa0fb1d4d
+  - path: torus_c5_all_nonzero_path_product_controls.json
+    sha256: bcd98529f44223cb07510094de08c0f234da14830410b67847ec1aef75bf216b
+  - path: factor_logs_and_identical_descent_r136.json
+    sha256: c38aaf5b7966f24273ffe76d6564f4e2cf9d845caa2d17715a535ce044209049
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_all_nonzero_path_product_probe_r136.py
+    sha256: c6dd14aeabda0f4b69b6d3f021b207d998214d63922178fab58220a8beac01e3
+  - path: p1553_torus_c5_all_nonzero_path_product_probe_gate_r136.md
+    sha256: 1a7e631d374e9b49d8d7eaf3440bc31d95b8d28f8f73f5a3e520b1f461bcabc5
+verified_statements:
+  - >-
+    The all-nonzero path of a polynomial zero-test decision tree is
+    represented exactly by the nonvanishing of the product of its node
+    polynomials.
+  - >-
+    A rejecting all-nonzero leaf forces the path product to vanish on the
+    full positive support, while an accepting leaf forces the node root
+    union to cover the full complement.
+  - >-
+    Every exact structured tree has path-product support above six or a
+    root-cover budget at least q minus the color support size.
+  - >-
+    Under the frozen uniform-random-deck model, the path-product threshold
+    becomes (5-o(1))*log2(q) with overwhelming probability.
+  - >-
+    Twelve finite controls replay five linear factors, an exact six-mode
+    product, one surviving positive, one inverse empty on the same path,
+    and all associated C5 sources.
+scoped_failures:
+  structured_zero_test_dag_product_through_six_modes: rejected
+  random_deck_path_product_through_near_five_log_modes: rejected_model_only
+  singleton_finite_color_path_witness: unavailable_no_credit
+  growing_expanded_support_low_slp_dag: open
+  nonzero_value_frobenius_coordinate_dag: open
+  structured_seven_plus_mode_path_product: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 13
+  total_obligations: 21
+  lane_admitted: false
+next_action: >-
+  Construct or refute a growing-support low-SLP selector whose expanded
+  all-nonzero product exceeds the rank threshold, and test nonzero-value
+  Frobenius-coordinate branches that do not reduce to zero sets. Freeze
+  every circuit node and branch, replay exact positive and inverse-empty
+  targets and C2+C3 sources, fit B^(9/4+o(1)) state and polylogarithmic
+  arbitrary-target work, avoid field DLP, and charge rank, logs,
+  identical descent, memory, field operations, and bits.

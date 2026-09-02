@@ -1,0 +1,2204 @@
+{
+  "method": "portable_first_pass_second_pass_kernel_contract_from_hot_path_executor",
+  "non_claims": [
+    "This is a portable contract emitted from the Python executor, not the optimized FFE kernel itself.",
+    "Accepted relation summaries are compact verifier outputs used to replay modular linear algebra.",
+    "A promoted implementation must emit the same first-pass and second-pass contract from lower-level FFE/summation-polynomial code."
+  ],
+  "parameters": {
+    "executor_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_executor_target67_672_744.json",
+    "frontier_targets": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/frontier_targets.json",
+    "source_names": [
+      "coord1114_744",
+      "coord161_720",
+      "coord161_728"
+    ]
+  },
+  "records": [
+    {
+      "checks": {
+        "accepted_relation_count": 3,
+        "first_pass_group_count": 8,
+        "first_pass_group_instance_count": 12,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 12
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": true,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 3,
+            "factor_support": [
+              1,
+              6,
+              13
+            ],
+            "leaf_index": 12,
+            "original_trial": 469,
+            "q_coeff": 3177,
+            "relation_index": 0,
+            "rhs": 6189,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              6,
+              13,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              6,
+              12
+            ],
+            "leaf_index": 12,
+            "original_trial": 218,
+            "q_coeff": 1403,
+            "relation_index": 0,
+            "rhs": 825,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              6,
+              12,
+              12
+            ]
+          },
+          {
+            "candidate_pos": 3,
+            "factor_support": [
+              1,
+              6,
+              13
+            ],
+            "leaf_index": 12,
+            "original_trial": 469,
+            "q_coeff": 8631,
+            "relation_index": 1,
+            "rhs": 6402,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              6,
+              13,
+              13
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              2705,
+              9753
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "12",
+              17,
+              218
+            ],
+            "fanout": 1,
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2705,
+              9753
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 1,
+            "candidate_point_reused": true,
+            "event_key": [
+              "12",
+              17,
+              469
+            ],
+            "fanout": 2,
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              },
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2705,
+              9753
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "12",
+              30,
+              218
+            ],
+            "fanout": 1,
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              2705,
+              9753
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 1,
+            "candidate_point_reused": true,
+            "event_key": [
+              "12",
+              30,
+              469
+            ],
+            "fanout": 2,
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              },
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              9251,
+              9216
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "12",
+              174,
+              218
+            ],
+            "fanout": 1,
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation_count": 2,
+            "candidate_point": [
+              9251,
+              9216
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 1,
+            "candidate_point_reused": true,
+            "event_key": [
+              "12",
+              174,
+              469
+            ],
+            "fanout": 2,
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              },
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              9251,
+              9216
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "12",
+              210,
+              218
+            ],
+            "fanout": 1,
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              9251,
+              9216
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 1,
+            "candidate_point_reused": true,
+            "event_key": [
+              "12",
+              210,
+              469
+            ],
+            "fanout": 2,
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              },
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt209",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 210
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              2716
+            ],
+            "selected_leaf_signature": "12"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "selected_hit_root_values": [
+              2716,
+              5973
+            ],
+            "selected_leaf_signature": "12"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "12",
+              17,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "12",
+              30,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "12",
+              174,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 3,
+              "factor_support": [
+                1,
+                6,
+                13
+              ],
+              "leaf_index": 12,
+              "original_trial": 469,
+              "q_coeff": 3177,
+              "relation_index": 0,
+              "rhs": 6189,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                6,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "12",
+              210,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "12",
+              17,
+              218
+            ],
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                6,
+                12
+              ],
+              "leaf_index": 12,
+              "original_trial": 218,
+              "q_coeff": 1403,
+              "relation_index": 0,
+              "rhs": 825,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                6,
+                12,
+                12
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "12",
+              17,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 17
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "12",
+              30,
+              218
+            ],
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "12",
+              30,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 30
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "12",
+              174,
+              218
+            ],
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "12",
+              174,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": 1,
+            "relation_summary": {
+              "candidate_pos": 3,
+              "factor_support": [
+                1,
+                6,
+                13
+              ],
+              "leaf_index": 12,
+              "original_trial": 469,
+              "q_coeff": 8631,
+              "relation_index": 1,
+              "rhs": 6402,
+              "row_key": "67.a1@9803:uniform:256:salt209",
+              "scheduled_trial": 2,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                6,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 174
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "12",
+              210,
+              218
+            ],
+            "leaf_signature": "12",
+            "original_trial": 218,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt209",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 1,
+            "scout_pos": 210
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "12",
+              210,
+              469
+            ],
+            "leaf_signature": "12",
+            "original_trial": 469,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt209",
+            "scheduled_trial": 2,
+            "scout_pos": 210
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 6227,
+        "factor_variable_count": 14,
+        "form_count": 3,
+        "matches_recorded_secret": true,
+        "rank": 3,
+        "recorded_secret": 6227,
+        "relation_summary_count": 3,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt209"
+      ],
+      "source_name": "coord1114_744",
+      "work_counters": {
+        "baseline_hit_root_ops": 3,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 4,
+        "fused_below_rho": true,
+        "fused_ops": 123,
+        "fused_ops_over_rho": 0.984,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 12,
+        "shared_first_event_pass_ops": 8,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 12,
+        "first_pass_group_instance_count": 12,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 12
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 186,
+            "q_coeff": 9302,
+            "relation_index": 0,
+            "rhs": 6136,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 1,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 149,
+            "q_coeff": 2843,
+            "relation_index": 0,
+            "rhs": 2681,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              1,
+              149
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              1,
+              186
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              1,
+              296
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              130,
+              149
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              130,
+              186
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              130,
+              296
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              144,
+              149
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              144,
+              186
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              144,
+              296
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              331,
+              149
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 331
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              331,
+              186
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 331
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              331,
+              296
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 4,
+                "row_key": "67.a1@9803:uniform:256:salt206",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 331
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "selected_hit_root_values": [
+              161,
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "selected_hit_root_values": [
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              1,
+              186
+            ],
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 186,
+              "q_coeff": 9302,
+              "relation_index": 0,
+              "rhs": 6136,
+              "row_key": "67.a1@9803:uniform:256:salt206",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              1,
+              296
+            ],
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 2,
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              130,
+              186
+            ],
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              130,
+              296
+            ],
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 2,
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              144,
+              186
+            ],
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              144,
+              296
+            ],
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 2,
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "2",
+              331,
+              186
+            ],
+            "leaf_signature": "2",
+            "original_trial": 186,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 1,
+            "scout_pos": 331
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "2",
+              331,
+              296
+            ],
+            "leaf_signature": "2",
+            "original_trial": 296,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt206",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt206",
+            "scheduled_trial": 2,
+            "scout_pos": 331
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              1,
+              149
+            ],
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 1,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 149,
+              "q_coeff": 2843,
+              "relation_index": 0,
+              "rhs": 2681,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 1
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              130,
+              149
+            ],
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 130
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              144,
+              149
+            ],
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 144
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 4,
+            "event_key": [
+              "2",
+              331,
+              149
+            ],
+            "leaf_signature": "2",
+            "original_trial": 149,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 331
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 1767,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 1767,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt206",
+        "67.a1@9803:uniform:256:salt207"
+      ],
+      "source_name": "coord161_720",
+      "work_counters": {
+        "baseline_hit_root_ops": 3,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": false,
+        "fused_ops": 127,
+        "fused_ops_over_rho": 1.016,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 12,
+        "shared_first_event_pass_ops": 12,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      }
+    },
+    {
+      "checks": {
+        "accepted_relation_count": 2,
+        "first_pass_group_count": 12,
+        "first_pass_group_instance_count": 12,
+        "matches_executor_first_pass_ops": true,
+        "matches_executor_fused_ops": true,
+        "matches_executor_rank": true,
+        "matches_executor_second_pass_ops": true,
+        "matches_executor_secret": true,
+        "missing_relation_summaries": [],
+        "missing_relation_summary_count": 0,
+        "second_pass_check_count": 12
+      },
+      "contract_status": "fused_kernel_contract_verified",
+      "event_reuse_target": false,
+      "implementation_boundary": "Portable first-pass/second-pass contract derived from the Python hot-path executor.  A lower-level FFE/summation-polynomial kernel should emit this same contract without depending on scanner internals.",
+      "kernel_contract": {
+        "accepted_relation_summaries": [
+          {
+            "candidate_pos": 2,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 466,
+            "q_coeff": 8889,
+            "relation_index": 0,
+            "rhs": 3933,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 2,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          },
+          {
+            "candidate_pos": 2,
+            "factor_support": [
+              1,
+              9,
+              13
+            ],
+            "leaf_index": 2,
+            "original_trial": 204,
+            "q_coeff": 9843,
+            "relation_index": 0,
+            "rhs": 7283,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "term_shape": "2+1+1",
+            "terms": [
+              1,
+              9,
+              13,
+              13
+            ]
+          }
+        ],
+        "first_pass_candidate_point_groups": [
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              4,
+              204
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              4,
+              377
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              4,
+              429
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              4,
+              466
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 1,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              202,
+              204
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              202,
+              377
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              202,
+              429
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation_count": 1,
+            "candidate_point": [
+              6213,
+              3539
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              202,
+              466
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 2,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              226,
+              204
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              226,
+              377
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt208",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              226,
+              429
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 1
+              }
+            ],
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation_count": 0,
+            "candidate_point": [
+              6696,
+              1166
+            ],
+            "candidate_point_ops": 1,
+            "candidate_point_reuse_saved_ops": 0,
+            "candidate_point_reused": false,
+            "event_key": [
+              "2",
+              226,
+              466
+            ],
+            "fanout": 1,
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_instances": [
+              {
+                "candidate_pos": 3,
+                "row_key": "67.a1@9803:uniform:256:salt207",
+                "scheduled_trial": 2
+              }
+            ],
+            "scout_pos": 226
+          }
+        ],
+        "row_cost_basis": [
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "selected_hit_root_values": [
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          },
+          {
+            "nonshared_base_ops": 50,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "selected_hit_root_values": [
+              9481
+            ],
+            "selected_leaf_signature": "2"
+          }
+        ],
+        "second_pass_row_checks": [
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              4,
+              429
+            ],
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              4,
+              466
+            ],
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 2,
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              202,
+              429
+            ],
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              202,
+              466
+            ],
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 466,
+              "q_coeff": 8889,
+              "relation_index": 0,
+              "rhs": 3933,
+              "row_key": "67.a1@9803:uniform:256:salt207",
+              "scheduled_trial": 2,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 2,
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              226,
+              429
+            ],
+            "leaf_signature": "2",
+            "original_trial": 429,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 1,
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              226,
+              466
+            ],
+            "leaf_signature": "2",
+            "original_trial": 466,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt207",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt207",
+            "scheduled_trial": 2,
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              4,
+              204
+            ],
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 1,
+            "event_key": [
+              "2",
+              4,
+              377
+            ],
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 2,
+            "scout_pos": 4
+          },
+          {
+            "accepted_relation": true,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              202,
+              204
+            ],
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "relation_index": 0,
+            "relation_summary": {
+              "candidate_pos": 2,
+              "factor_support": [
+                1,
+                9,
+                13
+              ],
+              "leaf_index": 2,
+              "original_trial": 204,
+              "q_coeff": 9843,
+              "relation_index": 0,
+              "rhs": 7283,
+              "row_key": "67.a1@9803:uniform:256:salt208",
+              "scheduled_trial": 1,
+              "term_shape": "2+1+1",
+              "terms": [
+                1,
+                9,
+                13,
+                13
+              ]
+            },
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 2,
+            "event_key": [
+              "2",
+              202,
+              377
+            ],
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 2,
+            "scout_pos": 202
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              226,
+              204
+            ],
+            "leaf_signature": "2",
+            "original_trial": 204,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 1,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 1,
+            "scout_pos": 226
+          },
+          {
+            "accepted_relation": false,
+            "candidate_point_source": "hot_path_representative",
+            "candidate_pos": 3,
+            "event_key": [
+              "2",
+              226,
+              377
+            ],
+            "leaf_signature": "2",
+            "original_trial": 377,
+            "relation_index": null,
+            "relation_summary": null,
+            "representative_row_key": "67.a1@9803:uniform:256:salt208",
+            "representative_scheduled_trial": 2,
+            "row_key": "67.a1@9803:uniform:256:salt208",
+            "scheduled_trial": 2,
+            "scout_pos": 226
+          }
+        ]
+      },
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 3693,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 3693,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "selected_row_keys": [
+        "67.a1@9803:uniform:256:salt207",
+        "67.a1@9803:uniform:256:salt208"
+      ],
+      "source_name": "coord161_728",
+      "work_counters": {
+        "baseline_hit_root_ops": 2,
+        "baseline_leaf_ops": 2,
+        "first_pass_saved_ops": 0,
+        "fused_below_rho": false,
+        "fused_ops": 126,
+        "fused_ops_over_rho": 1.008,
+        "generic_rho_steps": 125,
+        "nonshared_base_ops": 100,
+        "second_event_pass_ops": 12,
+        "shared_first_event_pass_ops": 12,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      }
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_contract_probe_v1",
+  "summary": {
+    "contract_below_rho_count": 1,
+    "contract_derived_count": 3,
+    "contract_event_reuse_below_rho_count": 1,
+    "contract_fused_ops_match_count": 3,
+    "contract_secret_match_count": 3,
+    "contract_verified_count": 3,
+    "interpretation": "The hot-path executor has been lowered into a portable contract: first-pass candidate-point groups, second-pass row checks, compact relation summaries, independent derivation, and recomputed work counters.",
+    "mean_contract_below_rho_ops_over_rho": 0.984,
+    "record_count": 3
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "cost_ledger": {
+    "caps": {
+      "fresh_work_workspace_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "conditional_compact_circuit": {
+      "finite_order_two_jet_overhead_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "marker_channel_count_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "scalar_target_norm_circuit_size_exponent_B": "s_unknown",
+      "scalar_target_norm_circuit_state_exponent_B": "mu_unknown",
+      "source_recovery_exponent_B": {
+        "decimal": 0.6,
+        "exact": "3/5"
+      },
+      "source_recovery_inside_online_cap": true
+    },
+    "constructor_status": {
+      "exact_integer_lift_for_all_fibers": false,
+      "generic_multiplicity_bound": false,
+      "target_injected_before_child_summary": false,
+      "whole_deck_scalar_norm_circuit_inside_caps": false
+    },
+    "progress": "For simple and double fibers, source adjoint and unranking add only constant jet overhead plus B^(3/5) public root testing. The unresolved dominant object is now the scalar target norm/count circuit itself.",
+    "standard_explicit_realization": {
+      "candidate_work_credit": false,
+      "source_factor_count_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "source_product_inside_online_cap": false,
+      "source_product_inside_setup_cap": false
+    }
+  },
+  "finite_circuit_semantics": [
+    {
+      "family_id": "p98561_j0_q16427_h6_u2_v3",
+      "maximum_target_multiplicity": 1,
+      "offset": 0,
+      "source_factor_count": 126,
+      "target_support_size": 126
+    },
+    {
+      "family_id": "p98561_j0_q16427_h6_u2_v3",
+      "maximum_target_multiplicity": 1,
+      "offset": 1,
+      "source_factor_count": 126,
+      "target_support_size": 126
+    },
+    {
+      "family_id": "p3148097_j0_q524683_h6_u3_v5",
+      "maximum_target_multiplicity": 2,
+      "offset": 0,
+      "source_factor_count": 2646,
+      "target_support_size": 2631
+    },
+    {
+      "family_id": "p3148097_j0_q524683_h6_u3_v5",
+      "maximum_target_multiplicity": 1,
+      "offset": 1,
+      "source_factor_count": 2646,
+      "target_support_size": 2646
+    },
+    {
+      "family_id": "p9603641_j0_q1600607_h6_u3_v6",
+      "maximum_target_multiplicity": 1,
+      "offset": 0,
+      "source_factor_count": 5292,
+      "target_support_size": 5292
+    },
+    {
+      "family_id": "p9603641_j0_q1600607_h6_u3_v6",
+      "maximum_target_multiplicity": 1,
+      "offset": 1,
+      "source_factor_count": 5292,
+      "target_support_size": 5292
+    },
+    {
+      "family_id": "p100683137_j0_q16780523_h6_u4_v7",
+      "maximum_target_multiplicity": 2,
+      "offset": 0,
+      "source_factor_count": 25872,
+      "target_support_size": 25816
+    },
+    {
+      "family_id": "p100683137_j0_q16780523_h6_u4_v7",
+      "maximum_target_multiplicity": 1,
+      "offset": 1,
+      "source_factor_count": 25872,
+      "target_support_size": 25872
+    }
+  ],
+  "frozen_candidate": {
+    "allowed_fiber_multiplicity_for_finite_decoder": [
+      0,
+      1,
+      2
+    ],
+    "caps": {
+      "fresh_work_workspace_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "excluded_open_operation": "constructing the scalar target norm/count from compact D_A,D_C inside both caps without source, endpoint, residual, quotient, or coefficient-body materialization",
+    "marker_deformation": "replace each source factor z_s by z_s+t0+sum_(j=1)^10 marker_j(s)*t_j",
+    "schema": "p1553.frozen_5a5c_actual_deck_nonmergeable_target_pullback.r105.v1",
+    "source_adjoint": "if the target fiber is Z and m=|Z|, the first nonzero homogeneous term is product_(r notin Z) z_r times product_(s in Z)(t0+marker(s) dot t)",
+    "source_decoder": "Newton identities form the monic degree-five root polynomial; testing the public atom indices with multiplicity recovers the unordered source in O(|A|+|C|) field operations",
+    "target_injection": "inside every source factor before the product",
+    "whole_deck_scalar": "N_T=product_s (kappa(endpoint(s))-kappa(T)) over canonical unordered 5A+5C sources"
+  },
+  "marker_adjoint_theorem": {
+    "coupled_source": "factoring the normalized homogeneous jet returns one complete ten-channel marker vector per coupled source",
+    "finite_actual_jet_overhead_constant": true,
+    "finite_actual_multiplicity_cap": 2,
+    "integer_count": "the first nonzero jet order is exactly m",
+    "lowest_homogeneous_jet": "if the target fiber is Z and m=|Z|, the first nonzero homogeneous term is product_(r notin Z) z_r times product_(s in Z)(t0+marker(s) dot t)",
+    "marker_channels": {
+      "a_power_sums": [
+        "sum i^k",
+        "sum i^k",
+        "sum i^k",
+        "sum i^k",
+        "sum i^k"
+      ],
+      "c_power_sums": [
+        "sum j^k",
+        "sum j^k",
+        "sum j^k",
+        "sum j^k",
+        "sum j^k"
+      ],
+      "channel_count": 10
+    },
+    "marker_deformation": "replace each source factor z_s by z_s+t0+sum_(j=1)^10 marker_j(s)*t_j",
+    "multiset_inverse": "Newton identities form the monic degree-five root polynomial; testing the public atom indices with multiplicity recovers the unordered source in O(|A|+|C|) field operations",
+    "reverse_mode_cost": "Baur-Strassen gives constant-factor first derivatives of a scalar arithmetic circuit; a truncated order-m jet has overhead polynomial in binomial(10+m,m)",
+    "scope": "Conditional on a compact scalar norm/count circuit that accepts the ten fixed marker deformations. The theorem does not construct that scalar circuit, prove an asymptotic fiber-multiplicity bound, or make explicit B^5 source products cheap.",
+    "source_norm": "N_T=product_s (kappa(endpoint(s))-kappa(T)) over canonical unordered 5A+5C sources",
+    "source_recovery_exponent_B": {
+      "decimal": 0.6,
+      "exact": "3/5"
+    },
+    "source_recovery_inside_online_cap": true
+  },
+  "schema": "p1553.actual_deck_target_pullback_circuit_ledger.r105.v1"
+}

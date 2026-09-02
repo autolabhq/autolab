@@ -1,0 +1,62 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R19-GALOIS-ORBIT-TARGET-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T04:29:46Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only, prior reviews remain queued, and
+  R19 is a new scoped theorem package requiring independent review.
+bindings:
+  r18_gate_sha256: d1eadf3edf74acedf30888aff764d221d1483ca3dc8521ff293cd7aa422ca5c4
+  r18_parent_report_sha256: a11c7987bf2c307a5dde77d3ce597a659b356ac841380084c6c289523067d97d
+  r18_bundle_hash_list_sha256: cba5cb2c5c1e3f8fa20dcc9e9a8975e7676a7aaf62cca84dde89ed48af3b2381
+  r19_gate_sha256: b5aef048b9748763f6449e845fa7554755e12715dce695cd99bdc8f0b77df61f
+  r19_parent_report_sha256: e66c15494cf8b45480fda32deb2df3873a48d353e6e7b98f36b11d03254a742e
+  r19_artifact_index_sha256: a76a2abb365e31fb9aad03c99f56d218db344b5c7295d099755f121119b3d11a
+  r19_bundle_hash_list_sha256: ceabb9c14112c4460519b72ea757efe8b9dde51d366865d4a64b2b6778e4da8f
+result:
+  classification: scoped_galois_factor_and_target_negative
+  tame_galois_factors: classified_as_cyclic_dihedral_or_bounded_exceptional
+  balanced_factor_outer_degree: bounded
+  finite_list_orbit_collision_energy: omega_e_times_L
+  branch_preserving_deck_subgroup: bounded
+  nonliftable_genus_at_least_two_incidences: omega_e_times_L_required
+  single_valued_fresh_target_action_below_subgroup_order: impossible
+  nonliftable_interval_incidence_bound: unproved
+  known_elliptic_sum_product_result_supplies_bound: false
+  non_galois_common_factors: not_classified
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r19_hash_list: pass
+  r19_parent_yaml_parse: pass
+  clean_temporary_replay_with_r16_r17_r18_r19_gates_and_r19_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  live_corpus_validator: failed_infrastructure_appledouble_sidecars
+  live_appledouble_sidecar_count_under_ideas: 18
+  live_sidecar_scope: ideas
+  live_sidecars_modified_or_removed: false
+limits:
+  - the finite-list result is a collision-energy requirement, not an upper bound
+  - no o(eL) interval-incidence theorem is proved for nonliftable orbit graphs
+  - the target obstruction covers exact single-valued rational semiconjugacy only
+  - multivalued Kummer target action remains open
+  - non-Galois and decomposable exceptional components remain unclassified
+  - no compact surviving factor or source-recovery construction is supplied
+  - no R10 density, rank, factor logs, target relation, or blind descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Prove or refute an o(eL) total nonliftable Mobius-orbit incidence bound for
+  the frozen prime-subgroup Kummer interval; any counterexample must carry the
+  complete orbit, source, branch-factor, multivalued-target, and R10 receipts.

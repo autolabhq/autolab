@@ -1,0 +1,35 @@
+#ifndef LOW_TERM_TOTAL2_SELECTED13_SECOND_STAGE_DISJOINT_MISS_DIAGNOSTIC_PROBE_H
+#define LOW_TERM_TOTAL2_SELECTED13_SECOND_STAGE_DISJOINT_MISS_DIAGNOSTIC_PROBE_H
+
+#include <stdint.h>
+
+#define SELECTED13_DISJOINT_MISS_DIAGNOSTIC_TRANSFER_COUNT 9
+#define SELECTED13_DISJOINT_MISS_DIAGNOSTIC_REPLAY_COUNT 45
+#define SELECTED13_DISJOINT_MISS_DIAGNOSTIC_TOP5_RESCUE_COUNT 7
+#define SELECTED13_DISJOINT_MISS_DIAGNOSTIC_TRAINING_OVERLAP_COUNT 0
+
+typedef struct {
+  uint64_t transfer_index;
+  uint64_t frozen_leaf;
+  uint64_t frozen_shortlist_position;
+  uint64_t shortlist_has_below_rho;
+  uint64_t accepted_below_rho_leaf_count;
+  uint64_t best_alt_leaf;
+  uint64_t best_alt_shortlist_position;
+  uint64_t best_alt_derived_secret;
+  uint64_t best_alt_ops_over_rho_scaled_1e6;
+} selected13_disjoint_miss_diagnostic_transfer_t;
+
+static const selected13_disjoint_miss_diagnostic_transfer_t SELECTED13_DISJOINT_MISS_DIAGNOSTICS[] = {
+  {10005ULL, 56ULL, 0ULL, 1ULL, 1ULL, 71ULL, 1ULL, 4325ULL, 700730ULL},
+  {10009ULL, 89ULL, 0ULL, 1ULL, 1ULL, 89ULL, 0ULL, 7086ULL, 693431ULL},
+  {10023ULL, 84ULL, 0ULL, 0ULL, 0ULL, 0ULL, 0ULL, 0ULL, 0ULL},
+  {10032ULL, 8ULL, 0ULL, 1ULL, 1ULL, 8ULL, 0ULL, 11247ULL, 737226ULL},
+  {10034ULL, 77ULL, 2ULL, 1ULL, 1ULL, 65ULL, 1ULL, 10511ULL, 700730ULL},
+  {10041ULL, 65ULL, 0ULL, 0ULL, 0ULL, 0ULL, 0ULL, 0ULL, 0ULL},
+  {10043ULL, 8ULL, 2ULL, 1ULL, 1ULL, 54ULL, 0ULL, 985ULL, 700730ULL},
+  {10049ULL, 94ULL, 2ULL, 1ULL, 1ULL, 8ULL, 0ULL, 7855ULL, 700730ULL},
+  {10054ULL, 67ULL, 4ULL, 1ULL, 2ULL, 77ULL, 2ULL, 6305ULL, 700730ULL},
+};
+
+#endif

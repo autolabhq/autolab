@@ -1,0 +1,112 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-RESULTANT-VALUATION-TRACE-GRAMMAR-R73-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_finite_polynomial_replay_and_direct_cost_theorem
+run_count: 1
+status: reject_resultant_valuation_grammar_only
+labels:
+  - exact-toy
+  - representation-bound
+  - source-faithful
+  - novelty-unverified
+owner: P1553-R9-R10
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Freeze one non-CP exact trace-contraction grammar, require it to pass the R10
+  rank-two sparse multiplicative-convolution control with exact multiplicity,
+  zero strata, dyadic containment, and one source, then charge both its
+  expanded and implicit representations against the direct caps.
+inputs:
+  - path: p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+  - path: p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: p1553_s6_centered_carry_rank_minor_probe_report_r72.json
+    sha256: 7e63b52fc7667be14aadc1db3aeeb22b43876ff2c62e3dce87b312c056e85e43
+artifacts:
+  - path: p1553_resultant_valuation_trace_grammar_r73.py
+    sha256: f3066472d96f1ccbb4e5c30dc74ba48101c713536eadd89ff8b5c4b254e0780a
+  - path: p1553_resultant_valuation_trace_grammar_report_r73.json
+    sha256: 00f750c15644acdaea32bbbbe9b407071cd3bf6a5cf2268ce075c55bd9a29915
+  - path: frozen_noncp_trace_circuit_grammar.json
+    sha256: 6a0ee3c3941944fe78770ee027cd1a466fb287596056691284f9a8e3a5eb1b45
+  - path: restricted_projector_trace_replay.json
+    sha256: 4b17e06c6c3bd838da1859062abfae8dbecb563ef18048ed2a67628ccfde5d31
+  - path: rank_two_sparse_convolution_control.json
+    sha256: 09b9aa3d324f66e2c8c729b4ebd8225eb708e75ed5e0b487524c18de1d02eb8e
+  - path: dyadic_joint_source_and_direct_cost_ledger.json
+    sha256: 6d2c07a623da4dc982728eabd563fcde6ae03ef4dfb68eb7a04fb8f0166b0cae
+  - path: p1553_resultant_valuation_trace_grammar_gate_r73.md
+    sha256: 52ad15fcc98b353f65424269a01c8c0f2c1e53f0ecd67f70128ef85bbc15b9ae
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_resultant_valuation_trace_grammar_r73.py
+    sha256: 40577d69b2518354e82015d416ea000cae87dcefd60e00b65ca1da51a5336d0b
+frozen_interface:
+  grammar_id: resultant_valuation_v1
+  field_prime: 1009
+  deck_size: 4
+  instance_types:
+    - blind_all_nonzero
+    - positive_all_nonzero
+    - zero_signature_mutation
+  setup_state_cap_exponent_B: 2.25
+  online_workspace_cap_exponent_B: 1.25
+verified_statements:
+  - >-
+    The root valuation of the degree-B^4 parametric product resultant equals
+    the exact R10 multiplicative-convolution coefficient with full occurrence
+    multiplicity, including repeated pair-product values.
+  - >-
+    A positive specialized pair-polynomial gcd and stored pair backpointers
+    recover one four-label source, and the queried fifth label completes one
+    joint source.
+  - >-
+    The four-state unary zero-signature calculation matches direct tensor
+    enumeration, including a 304-root mutation.
+  - >-
+    Blind count zero, positive count one, and the canonical dyadic child split
+    all replay exactly.
+  - >-
+    Expanding the parametric resultant costs B^4 state; implicit specialized
+    polynomial arithmetic costs B^2 per coefficient and B^3 for the required B
+    coefficients; the direct actual-S6 extension emits B^3 triple occurrences.
+scoped_positive_controls:
+  exact_integer_multiplicity: pass
+  duplicate_occurrence_control: pass
+  zero_signature_control: pass
+  blind_and_positive_target_control: pass
+  dyadic_rectangle_identity: pass
+  joint_source_backpointer: pass
+scoped_failures:
+  expanded_resultant_setup_state: B4_above_B9_over_4
+  specialized_coefficient_query: B2_above_B5_over_4
+  required_B_coefficient_batch: B3_above_cap
+  actual_s6_pair_triple_extension: emits_B3_occurrence_deck
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - quotient-algebra trace transducers
+  - transposed circuits that never represent either target polynomial
+  - arithmetic-circuit and data-structure lower bounds
+  - relation density, independent rank, factor logs, and descent
+admission:
+  passed_obligations: 5
+  obligation_count: 9
+  lane_admitted: false
+result:
+  exact_rank_two_control: true
+  actual_s6_trace_contraction_supplied: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_RESULTANT_VALUATION_GRAMMAR_ONLY__EXACT_R10_RANK_TWO_MULTIPLICITIES__ZERO_STRATA_AND_DYADIC_SOURCE_REPLAY_PASS__EXPANDED_RESULTANT_DEGREE_B4__SPECIALIZED_QUERY_B2__B_QUERY_BATCH_B3__ACTUAL_TRIPLE_EXTENSION_B3__NO_UNRESTRICTED_CIRCUIT_LOWER_BOUND__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Freeze a quotient-algebra trace-transducer grammar built only from dyadic
+  unary subproduct trees. Require it to evaluate the exact R10 rank-two
+  coefficient batch and the actual S6 pair/triple pullback within B^(9/4)
+  setup/state and B^(5/4) online/workspace while preserving zero strata,
+  rectangle identity, and one occurrence-labelled source.

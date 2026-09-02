@@ -1,0 +1,65 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-DEGREE-SIX-SCAN-FREE-FACTOR-LIFT-R62-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exact_rank_one_lift_and_cubic_factor_recovery
+  model_scope: R61_fixed_class_tensor_and_R60_pencil_over_F193
+  novelty: unverified
+  independent_review: pass_after_setup_scope_and_provenance_corrections
+  status: STAGED_INDEPENDENT_REVIEW_PASS_COORDINATOR_ARCHIVAL_REQUIRED
+summary: >-
+  A constant-size rank-one system lifts every rational R61 pencil root to its
+  two factor lines. Two cubic factorizations recover the R60 t=29 source points
+  without field or curve scans. Source generation, factor-base density, logs,
+  rank, and descent remain uncharged.
+inputs:
+  - path: staged/p1553_degree_six_product_hypersurface_locator_gate_r61.md
+    sha256: a737e50f7b587ccae70edf988ca9687f4706778db549b3ca58432463017fa688
+  - path: staged/p1553_degree_six_product_hypersurface_locator_report_r61.json
+    sha256: f91213021bd350b77cf1ac7d5cb8f2f9ae63b1265a5081d4ed58a3da07aa1f64
+  - path: staged/p1553_degree_six_primitive_product_pencil_search_report_r60.json
+    sha256: b15ac1b6cb5df18b4fb5fdcad4d0982fb8c122777dfc6009cbd5318fc28dd364
+outputs:
+  - path: staged/p1553_degree_six_scan_free_factor_lift_gate_r62.md
+    sha256: 38c785bd7d1e6fb1b52d04f07e363de6d63c840187f5b38000e203bddb7187f4
+  - path: staged/p1553_degree_six_scan_free_factor_lift_r62.py
+    sha256: 15ca1a87202d069b79325b7a1743762d221f0726e793020910fb74c3633d900a
+  - path: staged/p1553_degree_six_scan_free_factor_lift_report_r62.json
+    sha256: 31d06e333d24d79382d065fc88ae0b88cd0d58b4307110588275dc1d3995ec37
+  - path: staged/p1553_degree_six_scan_free_factor_lift_independent_review_r62.md
+    sha256: e3c569bda9dfba3af0b50da07ef9a8276b828465299e56768c984e36808084d2
+controls:
+  finite_rational_roots: [0, 29, 33]
+  product_point_at_infinity: true
+  rank_one_minor_count: 9
+  affine_rank_one_variables: 3
+  unique_rational_rank_one_lifts: 4
+  t29_rational_source_points: 6
+  t33_rational_source_points: 0
+  import_time_forward_labelled_subgroup_enumeration: Theta(N)_uncharged
+result:
+  classification: positive_conditional_scan_free_factor_lift_toy
+  r60_parameter_and_factor_recovery_without_field_scan: true
+  r60_six_source_points_recovered_without_curve_scan: true
+  source_pencil_generation_charged: false
+  restricted_factor_base_density_charged: false
+  source_scalar_logs_known_without_dlp: false
+  asymptotic_relation_algorithm: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review passed after setup-scope and direct-provenance corrections
+  - the result is one finite toy conditional on the R61 tensor and R60 pencil
+  - legacy import-time setup builds an uncharged forward labelled subgroup table
+  - source generation, density, logs, rank, and descent remain uncharged
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_POSITIVE_SCAN_FREE_FACTOR_LIFT_TOY_GATE__UNIQUE_RANK_ONE_LIFTS__T29_TWO_LINES_SIX_POINTS_RECOVERED__T33_IRREDUCIBLE_CUBICS__SOURCE_GENERATION_DENSITY_LOGS_RANK_DESCENT_ABSENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Replace scalar-labelled source triples with a public point factor base and
+  charge the full six-atom smoothness probability through locator and lift.

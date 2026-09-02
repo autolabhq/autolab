@@ -1,0 +1,319 @@
+{
+  "admission": {
+    "exact_reduction_admitted": true,
+    "failures": [
+      "inside_cap_nonlinear_c5_membership_predicate_complete",
+      "inside_cap_c5_source_index_complete",
+      "known_rhs_relation_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 17,
+    "obligations": {
+      "breakthrough_complete": false,
+      "current_k6_and_standard_ffe_costs_charged": true,
+      "explicit_occurrence_split_table_cap_theorem_complete": true,
+      "factor_logs_complete": false,
+      "finite_all_binary_split_counts_exact": true,
+      "finite_c6_sources_replay": true,
+      "finite_one_c_plus_c5_counts_exact": true,
+      "finite_positive_repeated_empty_identity_controls_complete": true,
+      "identical_target_descent_complete": false,
+      "inside_cap_c5_source_index_complete": false,
+      "inside_cap_nonlinear_c5_membership_predicate_complete": false,
+      "known_rhs_relation_rank_complete": false,
+      "one_atom_branch_reduction_complete": true,
+      "r117_scoped_boundary_inherited": true,
+      "scope_excludes_output_sensitive_and_general_lower_bounds": true,
+      "shoup_improvement_complete": false,
+      "twelve_source_bindings_verified": true
+    },
+    "passed_obligation_count": 10,
+    "scoped_negative_admitted": true
+  },
+  "artifacts": {
+    "cost": "m6_nonlinear_c6_branch_and_ffe_cost_ledger.json",
+    "exceptional_controls": "m6_nonlinear_c6_exceptional_controls.json",
+    "frozen": "frozen_m6_nonlinear_c6_source_locator.json",
+    "logs_descent": "factor_logs_and_identical_descent_r118.json",
+    "source_replay": "m6_nonlinear_c6_source_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "EXACT_BRANCH_REDUCTION_AND_SCOPED_STANDARD_ROUTE_NEGATIVE_ONLY_WITHHOLD_PROMOTION",
+  "classification": "EXACT_ONE_C_BRANCH_REDUCES_ALLOWED_BATCH_TO_CONSTANT_QUERY_C5_SOURCE_INDEX__NO_EXPLICIT_OCCURRENCE_SPLIT_TABLE_MEETS_B9O4_SETUP_AND_B5O4_BATCH_CAPS__SETUP_COMPATIBLE_C3_SPLIT_BATCH_B11O4__ONLINE_COMPATIBLE_C5_TABLE_B15O4__DINUR_GOLOVNEV_K6_ZERO_SLACK_STATE_B33O8__STANDARD_C5_QUOTIENT_AND_GRID_B15O4__FINITE_PROJECTIVE_POSITIVE_REPEATED_EMPTY_BRANCH_REPLAY_EXACT__OUTPUT_SENSITIVE_NONLINEAR_C5_MEMBERSHIP_FFE_SOURCE_INDEX_OPEN__NO_RANK_LOGS_DESCENT_SHOUP_BREAKTHROUGH",
+  "cost_boundary": {
+    "explicit_occurrence_split_table": {
+      "any_row_meets_both_caps": false,
+      "arbitrary_endpoint_compressed_index_lower_bound_claimed": false,
+      "best_setup_compatible_batch_exponent_B": {
+        "decimal": 2.75,
+        "exact": "11/4"
+      },
+      "best_setup_compatible_stored_arity": 3,
+      "minimum_online_compatible_setup_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "minimum_stored_arity_for_batch_cap": 5,
+      "proof": "For occurrence-materialized C^s tables, setup permits stored arity s<=3. Then the complementary enumerated arity 6-s>=3 makes the A6 batch exponent at least 1/2+9/4=11/4. Conversely the batch cap requires 6-s<=1, hence s>=5 and occurrence state at least 15/4.",
+      "rows": [
+        {
+          "a6_batch_query_exponent_B": {
+            "decimal": 5.0,
+            "exact": "5"
+          },
+          "enumerated_c_arity": 6,
+          "inside_batch_cap": false,
+          "inside_setup_cap": true,
+          "meets_both_caps": false,
+          "per_target_query_exponent_B": {
+            "decimal": 4.5,
+            "exact": "9/2"
+          },
+          "setup_exponent_B": {
+            "decimal": 0.0,
+            "exact": "0"
+          },
+          "stored_c_arity": 0
+        },
+        {
+          "a6_batch_query_exponent_B": {
+            "decimal": 4.25,
+            "exact": "17/4"
+          },
+          "enumerated_c_arity": 5,
+          "inside_batch_cap": false,
+          "inside_setup_cap": true,
+          "meets_both_caps": false,
+          "per_target_query_exponent_B": {
+            "decimal": 3.75,
+            "exact": "15/4"
+          },
+          "setup_exponent_B": {
+            "decimal": 0.75,
+            "exact": "3/4"
+          },
+          "stored_c_arity": 1
+        },
+        {
+          "a6_batch_query_exponent_B": {
+            "decimal": 3.5,
+            "exact": "7/2"
+          },
+          "enumerated_c_arity": 4,
+          "inside_batch_cap": false,
+          "inside_setup_cap": true,
+          "meets_both_caps": false,
+          "per_target_query_exponent_B": {
+            "decimal": 3.0,
+            "exact": "3"
+          },
+          "setup_exponent_B": {
+            "decimal": 1.5,
+            "exact": "3/2"
+          },
+          "stored_c_arity": 2
+        },
+        {
+          "a6_batch_query_exponent_B": {
+            "decimal": 2.75,
+            "exact": "11/4"
+          },
+          "enumerated_c_arity": 3,
+          "inside_batch_cap": false,
+          "inside_setup_cap": true,
+          "meets_both_caps": false,
+          "per_target_query_exponent_B": {
+            "decimal": 2.25,
+            "exact": "9/4"
+          },
+          "setup_exponent_B": {
+            "decimal": 2.25,
+            "exact": "9/4"
+          },
+          "stored_c_arity": 3
+        },
+        {
+          "a6_batch_query_exponent_B": {
+            "decimal": 2.0,
+            "exact": "2"
+          },
+          "enumerated_c_arity": 2,
+          "inside_batch_cap": false,
+          "inside_setup_cap": false,
+          "meets_both_caps": false,
+          "per_target_query_exponent_B": {
+            "decimal": 1.5,
+            "exact": "3/2"
+          },
+          "setup_exponent_B": {
+            "decimal": 3.0,
+            "exact": "3"
+          },
+          "stored_c_arity": 4
+        },
+        {
+          "a6_batch_query_exponent_B": {
+            "decimal": 1.25,
+            "exact": "5/4"
+          },
+          "enumerated_c_arity": 1,
+          "inside_batch_cap": true,
+          "inside_setup_cap": false,
+          "meets_both_caps": false,
+          "per_target_query_exponent_B": {
+            "decimal": 0.75,
+            "exact": "3/4"
+          },
+          "setup_exponent_B": {
+            "decimal": 3.75,
+            "exact": "15/4"
+          },
+          "stored_c_arity": 5
+        },
+        {
+          "a6_batch_query_exponent_B": {
+            "decimal": 0.5,
+            "exact": "1/2"
+          },
+          "enumerated_c_arity": 0,
+          "inside_batch_cap": true,
+          "inside_setup_cap": false,
+          "meets_both_caps": false,
+          "per_target_query_exponent_B": {
+            "decimal": 0.0,
+            "exact": "0"
+          },
+          "setup_exponent_B": {
+            "decimal": 4.5,
+            "exact": "9/2"
+          },
+          "stored_c_arity": 6
+        }
+      ]
+    },
+    "k6_indexing": {
+      "k": 6,
+      "n": "|C|=B^(3/4+o(1))",
+      "sha256": "e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c",
+      "source": "references/dinur_golovnev_3sum_indexing_2512.04258v2.pdf",
+      "state_exponent_B": {
+        "decimal": 4.125,
+        "exact": "33/8"
+      },
+      "theorem": "S=soft-O(n^(k-1/2-delta)), T=soft-O(n^delta), 0<=delta<=1",
+      "zero_online_slack_forces_delta": {
+        "decimal": 0.0,
+        "exact": "0"
+      }
+    },
+    "one_atom_branch": {
+      "negative_queries_require_exact_rejection": true,
+      "outer_query_count_equals_batch_cap": true,
+      "outer_query_count_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "positive_source_can_be_dyadically_recovered_if_predicate_exists": true,
+      "required_c5_query_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "required_interface": "target-dependent C5 membership plus one five-C source in polylogarithmic field work"
+    }
+  },
+  "disposition": "ADMIT_EXACT_ONE_C_PLUS_C5_BRANCH_AND_FINITE_SOURCE_REPLAY_ONLY__REJECT_ALL_EXPLICIT_OCCURRENCE_SPLIT_TABLES_CURRENT_K6_INDEX_AND_STANDARD_REPRESENTED_FFE_RESULTANT_ROUTES_AT_FROZEN_CAPS__PRESERVE_OUTPUT_SENSITIVE_NONLINEAR_C5_MEMBERSHIP_SOURCE_INDEX__NO_LOCATOR__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "exact_reduction": {
+    "a6_target_count_exponent_B": {
+      "decimal": 0.5,
+      "exact": "1/2"
+    },
+    "combined_outer_branch_exponent_B": {
+      "decimal": 1.25,
+      "exact": "5/4"
+    },
+    "first_c_branch_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "identity": "mu_C^*6(T)=sum_(c in C) mu_C^*5(T-c)",
+    "remaining_query_slack_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    }
+  },
+  "finite_evidence": {
+    "all_binary_split_counts_exact": true,
+    "all_one_c_plus_c5_counts_exact": true,
+    "all_sources_replay": true,
+    "asymptotic_credit": false,
+    "control_count": 2,
+    "positive_repeated_empty_and_identity_controls_present": true
+  },
+  "next_action": "Construct or refute one output-sensitive nonlinear C5 membership and source index over the original scalar-blind C deck. It may store B^(9/4+o(1)) C3 state but must answer each arbitrary five-C target in polylogarithmic field work, reject empty targets exactly, and return five occurrence backpointers. Freeze the S6 and deck-domain representation, quotient/remainder dimensions, target-dependent branches, exceptional projective charts, and reverse source path. Then compose with the one-C branch and A6 batch before rank, logs, identical descent, memory, and full cost.",
+  "non_claims": [
+    "Finite enumeration receives no asymptotic credit.",
+    "The split theorem applies only to occurrence-materialized one-side tables.",
+    "No arbitrary endpoint-compressed C5 index lower bound is claimed.",
+    "X-only S6 requires fixed-sign point-source verification.",
+    "Multipoint and truncated-resultant controls are represented upper bounds.",
+    "No output-sensitive C5 data-structure lower bound is claimed.",
+    "No nonlinear C5 predicate, relation rank, logs, or descent is supplied.",
+    "No generic-prime ECDLP or Shoup improvement is claimed."
+  ],
+  "schema": "p1553.m6_nonlinear_value_sensitive_c6_source_locator.r118.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "dinur_golovnev_v2": {
+      "path": "references/dinur_golovnev_3sum_indexing_2512.04258v2.pdf",
+      "sha256": "e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c"
+    },
+    "multipoint_v1": {
+      "path": "references/bhargava_ghosh_guo_kumar_umans_multipoint_2205.00342v1.pdf",
+      "sha256": "14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8"
+    },
+    "r117_controls": {
+      "path": "m6_target_batched_c3_exceptional_controls.json",
+      "sha256": "5b426b99955b1143484198c56b312ca12e9ffa15fe5a36c942f10e74aed6603e"
+    },
+    "r117_cost": {
+      "path": "m6_target_batched_c3_transpose_cost_ledger.json",
+      "sha256": "33ca990fe05e8e80bd4b557d57f4a292a84de0a5d6f1a836fa6bb54965cada8b"
+    },
+    "r117_frozen": {
+      "path": "frozen_m6_target_batched_c3_elliptic_transpose.json",
+      "sha256": "377b169ede2e1fcdab6875fbfa00cf12be4f8b5ab0b58cfe0457afb0d3e96f73"
+    },
+    "r117_gate": {
+      "path": "p1553_m6_target_batched_c3_elliptic_transpose_probe_gate_r117.md",
+      "sha256": "014f74c772dfc77d8821f658b10ef9bd11a644fe8f0b356c24fda61ef81d9de5"
+    },
+    "r117_logs": {
+      "path": "factor_logs_and_identical_descent_r117.json",
+      "sha256": "2fff1a05cc1f032dfb21c7ddb12ce1d72f4b851e6732e63d4c6d83f0b786fb64"
+    },
+    "r117_parent": {
+      "path": "p1553_m6_target_batched_c3_elliptic_transpose_probe_parent_report_r117.yaml",
+      "sha256": "8b276efff8f61f4278e78ab367ff4536c3bee8a1e172ed3ea26a12c1c12dbdae"
+    },
+    "r117_producer": {
+      "path": "p1553_m6_target_batched_c3_elliptic_transpose_probe_r117.py",
+      "sha256": "af3d7447763e16ee2a21491f3217d719bf57bdafc035d666df5e8f5859cc49f2"
+    },
+    "r117_replay": {
+      "path": "m6_target_batched_c3_source_adjoint_replay.json",
+      "sha256": "6878a34e379ae515b9cc301d44441f5726a66df2d96074b01dfebe742f3ba4d1"
+    },
+    "r117_report": {
+      "path": "p1553_m6_target_batched_c3_elliptic_transpose_probe_report_r117.json",
+      "sha256": "449021dd58e6567bb827bcfe41336175d7b628acda4446e1b63d9a46cf48f824"
+    },
+    "truncated_resultant_v1": {
+      "path": "references/moroz_schost_truncated_resultant_1609.04259v1.pdf",
+      "sha256": "160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709"
+    }
+  }
+}

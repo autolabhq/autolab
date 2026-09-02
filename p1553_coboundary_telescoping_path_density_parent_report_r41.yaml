@@ -1,0 +1,120 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-COBOUNDARY-TELESCOPING-PATH-DENSITY-R41-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_and_exact_toy_cancellation_audit
+  model_scope: reduced_coboundary_quotients_and_explicit_path_result_processing
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_POSITIVE_TELESCOPE_NEGATIVE_PATH_DENSITY_GATE
+summary: >-
+  A consecutive product of the R40 coboundary locator telescopes exactly to
+  two h endpoint values. On the exact toy, however, the raw length-nine
+  product has 17 hit targets, 16 zero-pole overlaps, and only nine positive
+  reduced orders; eight genuine hits are erased. Even granting pole separation
+  and unit endpoint evaluation, K explicit path quotients cover at most
+  K*L+|V|-K targets and cost Omega(K), giving expected Omega(N/L)=Omega(B^3)
+  work per scalar-blind hit at L=B^2. Only one global cancellation-free marked
+  across-path locator remains open.
+inputs:
+  - path: staged/p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: staged/p1553_heavy_key_source_target_support_gate_r36.md
+    sha256: 103670908f33baee0915372434899a3a710861f501e19c91599f4221fe3f2aa5
+  - path: staged/p1553_path_3sum_generic_reduction_gate_r37.md
+    sha256: b8a9423edef4041fcc78ec9f4808ab63ab2f97aa4fc1b157afaedabadb87c772
+  - path: staged/p1553_target_walk_support_work_gate_r38.md
+    sha256: ecacb63d18cc2e4478fa0d3c6b71930a4ba4e0a50f3866bd46752ed7c37f7aa5
+  - path: staged/p1553_implicit_pencil_norm_coboundary_gate_r39.md
+    sha256: 2901305c2ac83fe51d2f23957389cb2dfb6d58b3c4bc0d2e439ad4ef3f6085f6
+  - path: staged/p1553_orbit_transfer_divisor_miller_gate_r40.md
+    sha256: 7aebb68ba410c223250fd907cd8891a9539553c202d16bcff3d0a79e7e35a07b
+  - path: staged/p1553_r40_bundle.sha256
+    sha256: a91e942c9bdd2ba75981c1bad49afc25d0ac368ca97309bae8a4ab10de87ceb8
+  - path: staged/p1553_r40_staging_receipt.yaml
+    sha256: 3657a5e86b27d2cd8edbe725f3a2ea0d94911ebbec88ff8fc50a63c6e3849500
+outputs:
+  - path: staged/p1553_coboundary_telescoping_path_density_gate_r41.md
+    sha256: c256de45204dc0c71983899bc710e0a5c3b147d38ee61d82049bb0eaabe17850
+  - path: staged/p1553_coboundary_telescoping_selfcheck_r41.py
+    sha256: 7ee2c844196cdf4f21eca66e871ad1ab7275e3026369449fbe602d12f5643f0e
+  - path: staged/p1553_coboundary_telescoping_selfcheck_report_r41.json
+    sha256: a302f041e382c27894cfac328d3b5c8de13b84748f638610795b1f59ceaba64c
+frozen_parameters:
+  subgroup_order: N=B^(5+o(1))
+  selected_path_length: L=B^2
+  other_pair_support: at_most_B^2
+  setup_cap: B^(9/4+o(1))
+  density_adjusted_average_query_gate: B^(1/2-o(1))
+theorems:
+  - >-
+    A length-M consecutive product of F=tau_q(h)/h telescopes exactly to two
+    h endpoint values.
+  - >-
+    Reduced rational telescoping preserves only net valuations and can cancel
+    simultaneous raw zero and pole factors, erasing existence and source marks.
+  - >-
+    Under perfect pole separation and unit endpoint evaluation, explicitly
+    processing K path quotients costs expected at least N/(2L)=Omega(B^3) per
+    scalar-blind hit.
+controls:
+  exact_telescoping_identity: pass
+  raw_zero_support: retained_before_reduction
+  raw_pole_support: retained_before_reduction
+  zero_pole_overlap: charged
+  reduced_quotient_as_total_predicate: rejected_without_disjointness
+  separated_poles: granted_for_path_density_theorem
+  endpoint_evaluation_cost: optimistically_unit
+  global_across_path_circuit: admitted_outside_gate
+toy_control:
+  field_prime: 193
+  subgroup_order: 103
+  selected_path_length: 9
+  other_pair_path_length: 9
+  raw_zero_support: 17
+  raw_pole_support: 28
+  raw_zero_pole_overlap: 16
+  unambiguous_raw_zeros: 1
+  reduced_positive_support: 9
+  reduced_negative_support: 18
+  raw_hits_lost_by_reduction: 8
+  replay_matches_report: true
+result:
+  classification: exact_telescope_semantic_loss_and_path_density_negative
+  coboundary_path_telescope: present
+  toy_reduced_quotient_complete: false
+  pole_separated_explicit_path_expected_hit_work: B^3
+  global_cancellation_free_across_path_locator: absent
+  degree_B_asymptotic_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - the cancellation statistics are for the exact R40 toy optimum
+  - a different pole placement may satisfy disjointness at greater transfer cost
+  - the B^3 theorem is scoped to explicit processing of path results
+  - one global cancellation-free marked across-path circuit remains open
+  - no degree-B family, target, R10, rank, logs, or descent
+deduplication:
+  - R37 owns the generic path-only DLP reduction
+  - R38 owns explicit changed-point support/work cancellation
+  - R40 owns the subgroup-supported coboundary and explicit Miller screen
+  - R41 adds exact telescoping semantics and path-level density cancellation
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_POSITIVE_TELESCOPE_NEGATIVE_PATH_DENSITY_GATE__COBOUNDARY_CONSECUTIVE_PRODUCT_TELESCOPES_EXACTLY__R40_TOY_RAW_HITS17_REDUCED_ZEROS9_LOST8__ZERO_POLE_OVERLAP_ERASES_EXISTENCE_AND_SOURCE__CANCELLATION_FREE_PAIR_RETAINS_INTERIOR_COMMON_FACTOR__EVEN_PERFECT_POLE_SEPARATION_AND_UNIT_ENDPOINT_COST_GIVE_B3_PER_HIT__EXPLICIT_K_PATH_RESULTS_CLOSED__GLOBAL_CANCELLATION_FREE_MARKED_ACROSS_PATH_LOCATOR_OPEN__NO_DEGREE_B_FAMILY_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Reduce or separate the global across-path operation. Instantiate the path
+  endpoint family on R37's mixed-radix generic-DLP decks and prove that any
+  subset-stable cancellation-free marked locator with setup B^(9/4) and
+  average query below B^(1/2) recovers the hidden scalar; alternatively exhibit
+  a pencil identity that fails on the R37 controls but combines all path starts
+  in sublinear work. Require path, position, and R36 source output before R10.

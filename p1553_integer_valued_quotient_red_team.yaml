@@ -1,0 +1,75 @@
+schema_version: p1553-integer-valued-quotient-red-team-v1
+date: 2026-07-19
+role: red-team
+reviewer_agent_id: 019f7ca1-e1be-7941-97be-290005295446
+coordinator_transcription: true
+run_accounting:
+  experiments_executed: 0
+  solver_runs_executed: 0
+  fixtures_executed: 0
+  timing_runs_executed: 0
+  relation_campaigns_executed: 0
+terminal_verdict:
+  classification: revise_scoped_control
+  statement: >-
+    Newton and CRT identities are exact and ordinary height is not invariant.
+    Shi supplies a synthetic least-nonnegative lift/carry rank control, but no
+    centered elliptic rank theorem or branch-complete unit-or-zero-divisor
+    router is constructed.
+  p1554_allocated: false
+  run_created: false
+  shoup_claim: false
+  breakthrough_claim: false
+accepted_basis_control:
+  falling_factorial_transform: integral_unitriangular
+  binomial_evaluation_transform: lower_unitriangular
+  factorials_mod_p_m: units
+  integer_valued_height_correction: accepted
+  quotient_rank: Theta(B^5)
+  dual_norm: "|h(a)| <= ||W c(h)||_2 ||W^(-T) phi(a)||_2"
+accepted_exact_query_control:
+  empty_fiber: F_R_is_a_unit
+  pseudoinverse: G_R=F_R^(p-2)
+  zero_projector: chi_R=1-F_R^(p-1)
+  identities:
+    - F_R*G_R=1-chi_R
+    - F_R*chi_R=0
+  uniform_branch_router: unsupplied
+accepted_shi_control:
+  prime_matrix_real_rank: (p+1)/2
+  selected_minor_rational_rank: B
+  selected_minor_mod_p_rank: 1
+  raw_carry_rational_rank: at_least_B_minus_1
+  five_mode_rational_cp_rank: B
+  five_mode_mod_p_cp_rank: 1
+  centered_elliptic_rank_theorem: false
+accepted_cost_correction:
+  r7_pairwise_formal_setup: B^(4+o(1))
+  r7_pairwise_formal_online: B^(3+o(1))
+  intrinsic_runtime_lower_bound: false
+  explicit_control_direct_contraction: B^(2+o(1))
+remaining_gates:
+  standard_exact_quotient_decision: B^5
+  standard_balanced_source_locator: B^3
+  branch_complete_unit_or_zero_divisor_interface: unsupplied
+  centered_elliptic_remainder_rank: unproved
+  exact_subset_stable_decision_and_source: unsupplied
+  relation_density_rank_logs_descent: unsupplied
+exactly_one_next_action: >-
+  For every frozen R6 dyadic subbox and fresh known-log or blind-masked target,
+  prove or refute one branch-complete representation of G_R=F_R^(p-2) and
+  chi_R=1-F_R^(p-1), or an explicitly equivalent unit-or-zero-divisor
+  interface, that certifies chi_R=0 on empty fibers, preserves a positive child
+  when chi_R!=0, and after O(log B) restrictions returns one verified signed
+  occurrence-labelled source with repeated columns aggregated. Charge
+  target-independent construction and state, target specialization, every
+  failed child, exact zero testing, output, integer heights, and Gram/LLL bit
+  complexity; use p^k recentering only for lattice powers actually invoked.
+  Under R7's naive CP-Gram route require A<=B^(1/8+o(1)); otherwise prove the
+  direct B^(9/4) setup/state and B^(5/4) online/workspace bounds. Any flattening
+  obstruction closes only the explicitly named lift and representation.
+source_bindings:
+  hash_algorithm: SHA-256
+  files:
+    p1553_integer_valued_quotient_gate_r8.md: 78c856187bb43adcd97d0f02f2259c7299874ab93a03954dacb4dd1b8b007ed9
+    p1553_integer_valued_quotient_parent_report.yaml: 110f0893b7a32d84114ef85c4d8c2baad00c05b86af21d51de1b64162bc7369a

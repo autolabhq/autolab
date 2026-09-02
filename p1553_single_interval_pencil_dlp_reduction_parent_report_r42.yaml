@@ -1,0 +1,127 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-SINGLE-INTERVAL-PENCIL-DLP-REDUCTION-R42-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_generic_reduction_and_exhaustive_pencil_toy
+  model_scope: marked_single_interval_target_index
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_STRONG_GENERIC_BOUNDARY_POSITIVE_PENCIL_TOY_GATE
+summary: >-
+  One selected interval of B^2 endpoints, one Q-dependent B^2-point giant
+  pair deck, and B known-log queries recover an arbitrary prime-order DLP from
+  any marked hit. A generic implementation has total work
+  B^max(s,1+kappa,2), so setup s<=9/4 forces average query kappa>=3/2 by
+  Shoup, a full exponent above R36's required kappa<1/2. The exact R38
+  degree-three pencil realizes the selected interval. An exhaustive toy check
+  recovers all 103 secrets, with zero missing secrets and zero bad marked
+  recoveries. Coordinate-level pencil operations remain outside Shoup's
+  generic model; no asymptotic family or complete ECDLP path is supplied.
+inputs:
+  - path: staged/p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: staged/p1553_near_period_run_compiler_gate_r31.md
+    sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+  - path: staged/p1553_heavy_key_source_target_support_gate_r36.md
+    sha256: 103670908f33baee0915372434899a3a710861f501e19c91599f4221fe3f2aa5
+  - path: staged/p1553_path_3sum_generic_reduction_gate_r37.md
+    sha256: b8a9423edef4041fcc78ec9f4808ab63ab2f97aa4fc1b157afaedabadb87c772
+  - path: staged/p1553_target_walk_support_work_gate_r38.md
+    sha256: ecacb63d18cc2e4478fa0d3c6b71930a4ba4e0a50f3866bd46752ed7c37f7aa5
+  - path: staged/p1553_orbit_transfer_divisor_miller_gate_r40.md
+    sha256: 7aebb68ba410c223250fd907cd8891a9539553c202d16bcff3d0a79e7e35a07b
+  - path: staged/p1553_coboundary_telescoping_path_density_gate_r41.md
+    sha256: c256de45204dc0c71983899bc710e0a5c3b147d38ee61d82049bb0eaabe17850
+  - path: staged/p1553_r41_bundle.sha256
+    sha256: c817d7f5652a2d85761889e2026abf0ac576690c4088a3b2f274a6f951bddda6
+  - path: staged/p1553_r41_staging_receipt.yaml
+    sha256: a612e89dc5ebeec6f87520dadf94f1a4b17548e55aef4985850e04d965011ac1
+outputs:
+  - path: staged/p1553_single_interval_pencil_dlp_reduction_gate_r42.md
+    sha256: 8a8de8726e4fc9542f97cf7e1ba4fc54596307cc544da0d0b18b588553022dae
+  - path: staged/p1553_single_interval_dlp_selfcheck_r42.py
+    sha256: 16d75cd10fa6591c073a4124fcffcca8a251a2121c16c7674375bf0b021573c6
+  - path: staged/p1553_single_interval_dlp_selfcheck_report_r42.json
+    sha256: 94da3dd1e8312f827eab79be1dbc4ff405bb57c9c7e85860c6e7442a33ebb37e
+frozen_parameters:
+  subgroup_order: N_prime
+  radix: B=ceil(N^(1/5))
+  selected_interval_size: B^2
+  giant_pair_deck_size: B^2
+  known_log_queries: B
+  setup_cap: B^(9/4+o(1))
+theorems:
+  - >-
+    Every prime-order DLP has a marked witness among B known-log queries for
+    the one-interval and giant-pair decks, and every marked witness recovers
+    the scalar exactly modulo N.
+  - >-
+    A generic implementation has total work B^max(s,1+kappa,2); Shoup forces
+    max(s,1+kappa,2)>=5/2-o(1).
+  - >-
+    Under s<=9/4, a generic marked one-interval locator needs average query
+    kappa>=3/2-o(1).
+controls:
+  unknown_interval_offset_log_used: false
+  q_dependent_preprocessing: charged
+  negative_queries: charged
+  occurrence_labels: required
+  modular_wraps: replayed
+  coordinate_algorithms: admitted_outside_generic_lower_bound
+  heavy_complete_key_marks: absent
+toy_control:
+  field_prime: 193
+  subgroup_order: 103
+  B: 3
+  path_generator_scalar: 38
+  selected_q_coordinates: 19_through_27
+  selected_pair_deck_equals_r38_pencil_union: true
+  selected_complete_pencil_fibers: 3
+  detailed_secret_q_coordinate: 77
+  detailed_marked_hits: 2
+  secrets_tested: 103
+  secrets_with_two_hits: 66
+  secrets_with_three_hits: 37
+  missing_secrets: 0
+  bad_marked_recoveries: 0
+  replay_matches_report: true
+result:
+  classification: strong_generic_boundary_with_exact_pencil_toy_embedding
+  one_interval_dlp_reduction: present
+  generic_query_floor_under_setup_cap: B^(3/2-o(1))
+  exact_degree_three_pencil_embedding: present
+  exhaustive_toy_scalar_recovery: pass
+  asymptotic_degree_B_interval_pencil_family: absent
+  heavy_complete_key_global_locator: absent
+  coordinate_level_candidate: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - Shoup applies only to generic group-operation implementations
+  - the exact common-pencil embedding is degree-three toy evidence
+  - heavy complete-key marks and asymptotic interval pencils are absent
+  - no coordinate locator, R10, rank, logs, or descent
+deduplication:
+  - R37 owns the B^2-query multi-path generic reduction
+  - R38 owns the exact degree-three low-boundary pencil
+  - R41 owns telescoping semantics and explicit path-density cancellation
+  - R42 adds the B-query single-interval reduction and embeds it in R38
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_STRONG_GENERIC_BOUNDARY_POSITIVE_PENCIL_TOY_GATE__ONE_B2_INTERVAL_PLUS_ONE_B2_GIANT_DECK_AND_B_QUERIES_ENCODE_DLP__EVERY_MARKED_HIT_RECOVERS_THE_SCALAR__GENERIC_SETUP_B9_OVER4_FORCES_QUERY_B3_OVER2__R36_REQUIRED_QUERY_BELOW_B1_OVER2_IS_FULL_EXPONENT_BEYOND_GENERIC__R38_DEGREE3_PENCIL_REALIZES_THE_SELECTED_INTERVAL__ALL_103_TOY_SECRETS_RECOVERED_ZERO_BAD_MARKS__COORDINATE_LEVEL_OPERATION_NOT_EXCLUDED_BY_SHOUP__ASYMPTOTIC_INTERVAL_PENCIL_HEAVY_KEYS_GLOBAL_LOCATOR_ABSENT__NO_R10_RANK_LOGS_OR_DESCENT__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Search for an asymptotic coordinate identity defined only when the selected
+  interval is a union of complete fibers of one degree-B pencil and combining
+  the B^2 giant endpoints without generic scanning. Require it first to recover
+  all 103 R42 toy secrets without scalar labels, then attempt a degree-nine
+  lift. Reject interval-only, group-only, generic Miller-support, and equality
+  circuits; bind any genuine pencil-only survivor to R36 source marks and R10.

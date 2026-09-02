@@ -1,0 +1,68 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-FULL-CURVE-PRIMITIVE-PRODUCT-PENCIL-R58-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exact_deterministic_positive_primitive_product_pencil_search
+  model_scope: one_degree_nine_witness_on_E_F193_full_rational_curve
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_POSITIVE_PRIMITIVE_TOY_GATE
+summary: >-
+  Seed 1559 finds a primitive degree-nine product pencil after 11104 accepted
+  coprime pencils. Its three rational fibers are pairwise disjoint and split
+  into the same three degree-three classes. The third fiber has three H and
+  six H+T2 points; public [104] projects all roots to H, but factor logs,
+  asymptotics, target location, rank, and descent remain absent.
+inputs:
+  - path: staged/p1553_maximal_class_orbit_gate_r57.md
+    sha256: 6902f76953535858c85b8a5b2bf6da5418f60749ce7799934768056bc1d0c609
+  - path: staged/p1553_maximal_class_orbit_scan_report_r57.json
+    sha256: 05f6bb2ded46cd3ba45664c0bda7f96000f285c4788f6badc61993d9c3fdec33
+outputs:
+  - path: staged/p1553_full_curve_primitive_product_pencil_gate_r58.md
+    sha256: 592438ed51e3fa39cc869927fad40726949ee6c645b487db4e4795d5b8118f25
+  - path: staged/p1553_full_curve_primitive_product_pencil_search_r58.py
+    sha256: d4fda31b41d93ef58b393476a6e4a64535947e305e132fe671dcac7cf9c141f3
+  - path: staged/p1553_full_curve_primitive_product_pencil_search_report_r58.json
+    sha256: 728037585618fbe680747e5b68a40005fc8a6c8b0979213662c0b638cd616c3b
+controls:
+  field_prime: 193
+  curve_order: 206
+  prime_subgroup_order: 103
+  class_sum_scalars: [46, 54, 96]
+  factor_catalog_sizes: [1717, 1717, 1717]
+  search_seed: 1559
+  attempts: 25996
+  accepted_coprime_pencils: 11104
+  complete_rational_third_fibers_seen: 6
+  witness_parameter: 33
+  common_base_divisor_degree: 0
+  effective_map_degree: 9
+  third_fiber_H_points: 3
+  third_fiber_H_plus_T2_points: 6
+  public_cofactor_projector: 104
+result:
+  classification: positive_primitive_degree_nine_product_pencil_toy
+  primitive_coprime_degree_nine_product_pencil_found: true
+  third_fiber_source_points_publicly_projectable_without_dlp: true
+  third_fiber_scalar_logs_known_without_dlp: false
+  asymptotic_pencil_family: absent
+  low_boundary_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - one finite toy does not establish an asymptotic family
+  - the per-pencil full-field scan and factor-base restriction are uncharged
+  - no target, R10, rank campaign, logs, or descent
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_POSITIVE_PRIMITIVE_TOY_GATE__DEGREE9_BASE0_THREE_DISJOINT_SPLIT_FIBERS__SEED1559_ACCEPTED11104__THIRD_FIBER_3H_6HT2__PUBLIC_104_PROJECTION__NO_ASYMPTOTIC_TARGET_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Verify public cofactor projection and charge split-fiber plus ordered
+  class-partition success before any relation-rate claim.

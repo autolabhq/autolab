@@ -1,0 +1,71 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-KERNEL-DECOMPOSITION-RELATION-GENERATOR-R66-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exact_kernel_decomposition_relation_generator_and_cost_gate
+  model_scope: R65_coordinate_hash_B24_base_on_E_F193
+  novelty: unverified
+  independent_review: pass_after_provenance_relation_and_literal_cost_corrections
+  status: STAGED_INDEPENDENT_REVIEW_PASS_COORDINATOR_ARCHIVAL_REQUIRED
+summary: >-
+  Conditional on scalar-labelled toy catalogs, decomposing kernel matrices as
+  K=X Y^T gives a relation generator. At B=24 it tests 1,158,780 candidates and
+  recovers exactly the unique R65 primitive line. The finite reduction is
+  constant-factor only, the uniform model retains N^6/B^5 relation collection,
+  and the executable's Theta(N log N)-group-work subgroup table plus sorting
+  blocks a sub-rho claim.
+inputs:
+  - path: staged/p1553_exact_public_base_trisecant_gate_r65.md
+    sha256: 43d26e3e7ac869eadc324a43edee2e56cae65711e73499542523ece8655f7b4d
+  - path: staged/p1553_exact_public_base_trisecant_scan_report_r65.json
+    sha256: 30d686228a271cbdf4a61e2bf4b7d553bc297d7e6203955863b15b7ff98fdb8a
+  - path: staged/p1553_exact_public_base_trisecant_scan_r65.py
+    sha256: 148c8c0b39c5a1849a99e7509e5212364f777d6e38899f55affe6611b6ee3ff8
+  - path: staged/p1553_degree_six_product_hypersurface_locator_report_r61.json
+    sha256: f91213021bd350b77cf1ac7d5cb8f2f9ae63b1265a5081d4ed58a3da07aa1f64
+outputs:
+  - path: staged/p1553_kernel_decomposition_relation_generator_gate_r66.md
+    sha256: 7032c45a1f49249951bcad021ff2ac6b7510be84b102e3ad7348fce586a3bf58
+  - path: staged/p1553_kernel_decomposition_relation_generator_r66.py
+    sha256: 8cd9ff9530616bb44d621814b9db3e8ec2f9c5db67b10ea5436d51d45067d693
+  - path: staged/p1553_kernel_decomposition_relation_generator_report_r66.json
+    sha256: 753c16d1f15e444517ac7bc503fd9f888d8219e724e1dced6c384ed6b80a4081
+  - path: staged/p1553_kernel_decomposition_relation_generator_independent_review_r66.md
+    sha256: d1e66ed26830bdd51db19fcf99e6c350dc49f11c7a86c724a583a9ccfc700cbd
+controls:
+  public_base_size: 24
+  smooth_factor_section_counts: [56, 84]
+  pairwise_disjoint_left_triples: 13872
+  invertible_left_triples: 13795
+  first_right_candidates: 1158780
+  all_right_smooth_completions: 569
+  pairwise_disjoint_right_completions: 1
+  distinct_primitive_lines: 1
+result:
+  classification: kernel_decomposition_relation_generator_toy_gate
+  conditional_precomputed_catalog_kernel_decomposition_rule: true
+  unconditional_public_kernel_decomposition_generation_rule: false
+  scalar_labelled_subgroup_table_cost_blocks_sub_rho_claim: true
+  unique_r65_primitive_line_recovered: true
+  subquadratic_in_full_smooth_product_pair_scan: false
+  asymptotic_exponent_improvement_under_uniform_model: false
+  asymptotic_relation_algorithm: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - one B=24 base on one finite toy curve
+  - the executable uses Theta(N log N) group work plus O(N log N) sorting for a scalar-labelled subgroup table
+  - full scan remains Theta(S^4) for balanced catalogs
+  - preprocessing, rank, logs, linear algebra, and descent remain uncharged
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_KERNEL_GENERATOR_TOY_GATE__CONDITIONAL_PRECOMPUTED_CATALOG_K_EQUALS_XYT_RULE__THETA_N_LOG_N_SCALAR_LABELLED_TABLE_BLOCKS_SUB_RHO__B24_1158780_CANDIDATES_569_SMOOTH_ONE_DISJOINT__UNIQUE_R65_LINE__NORMALIZED_RELATION_65_112_16__CONSTANT_FACTOR_ONLY_N6_OVER_B5_UNCHANGED__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Characterize induced projective completion maps and test public smooth-factor
+  families for orbit closure beyond the uniform S^3/|P^2|^2 rate.

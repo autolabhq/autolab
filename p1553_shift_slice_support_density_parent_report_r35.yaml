@@ -1,0 +1,105 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-SHIFT-SLICE-SUPPORT-DENSITY-R35-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: oriented_fixed_shift_slices_and_sampled_source_density
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_CONDITIONAL_POSITIVE_AND_DENSITY_GATE
+summary: >-
+  A dense fixed fifth-shift slice has Omega(B^2) distinct oriented complete
+  keys by the translate curve normalization-defect bound and can be enumerated
+  with exact coupled sources in O(B^2) work. O(log B) random slices recover
+  all keys occurring on a constant fraction of shifts and miss only a
+  controlled source-mass fraction. If relation sources are restricted to the
+  scanned shifts, however, s shifts give random-target success at most
+  O(s/B). Under the B^(9/4) setup and B^(5/4) direct online caps, literal
+  slices imply campaign exponent at least 3/5. Exploiting unscanned source
+  mass requires a new marked source-fiber locator.
+inputs:
+  - path: staged/p1553_erased_image_geometric_resolution_gate_r13.md
+    sha256: 78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5
+  - path: staged/p1553_translate_curve_bezout_saturation_gate_r27.md
+    sha256: dee8a0913854e0ce3e717ecdbc3e8aea73b987b2b2fb71790a470f501dd0c2d9
+  - path: staged/p1553_near_period_run_compiler_gate_r31.md
+    sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+  - path: staged/p1553_summation_surface_grid_residue_gate_r34.md
+    sha256: 84bb7fa7288a76099378a9b475aededbbcb27e53564f7f55a730e127e457656a
+  - path: staged/p1553_r34_bundle.sha256
+    sha256: 3e90b0b3976629e2d6a76de4d48c29912c6f96b48213e81e94ab5ccb52e05612
+  - path: staged/p1553_r34_staging_receipt.yaml
+    sha256: a4aa4dd51f0dd4c016040538f8f5d07332bc70aaa6a6090d2e5a625c4a3aaef0
+output:
+  path: staged/p1553_shift_slice_support_density_gate_r35.md
+  sha256: e72c406ee3997eaac86b44d757a34793d3678a129331ef7be17aa09ae05ee0de
+frozen_parameters:
+  map_degree: c=B
+  selected_values: c
+  selected_shifts: c
+  selected_points: c^2
+  complete_source_occurrences: c^3
+  source_group_order: c^(5+o(1))
+theorems:
+  - >-
+    One shift slice has second moment below 3c^2, so any slice with
+    alpha*c^2 complete sources has at least alpha^2*c^2/(alpha+2) distinct
+    oriented complete keys.
+  - >-
+    One good slice and one coupled source per attained key are enumerated in
+    O(c^2) work and state by scanning the represented selected support.
+  - >-
+    Keys present on fewer than tau*c shifts carry at most
+    sqrt(3*A*tau)*c^3 source occurrences when the global image has at most
+    A*c^2 keys.
+  - >-
+    O(tau^-1*log c) random shift slices capture every high-shift-support key
+    with inverse-polynomial failure probability and O(c^2*log c) work.
+  - >-
+    Restricting returned fifth sources to s=B^gamma shifts gives target
+    density at most O(B^(gamma-1)); with gamma<=1/4 and direct online exponent
+    5/4, the campaign exponent is at least 3/5.
+controls:
+  oriented_to_unordered_key: constant_degree_with_source_tags
+  slice_outputs: exact_one_sided
+  heavy_key_sampling: monte_carlo_omissions_only
+  scanned_source_density: charged
+  unscanned_source_locator: admitted_open
+result:
+  classification: cap_sized_slice_support_compiler_density_insufficient
+  one_good_slice_work: B^2
+  one_good_slice_distinct_keys: Omega(B^2)
+  heavy_support_sampler_work: B^2_polylog_B
+  global_exact_multiplicities: absent
+  sampled_shift_target_density: O(s_over_B)
+  direct_cap_campaign_exponent_floor: 3_over_5
+  unscanned_restricted_source_fiber_locator: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: insufficient_for_sampled_sources
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - sampling is one-sided Monte Carlo and does not certify completeness
+  - no exact global multiplicities or adaptive source-fiber counts
+  - no fresh-target action or complete factor-base-to-target ECDLP path
+deduplication:
+  - R13 owns erased-image multiplicity and child queries
+  - R27 owns translate-curve delta defect
+  - R31 owns near-period domains
+  - R34 owns the addition surface and selected-shift curve union
+  - R35 adds slice support sampling and sampled-fifth target-density accounting
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_CONDITIONAL_POSITIVE_AND_DENSITY_GATE__ONE_DENSE_SHIFT_HAS_OMEGA_B2_KEYS_AND_O_B2_COMPILER__LOG_B_SLICES_CAPTURE_HEAVY_GLOBAL_SUPPORT__EXACT_MULTIPLICITIES_ABSENT__S_SCANNED_FIFTH_SOURCES_HAVE_TARGET_DENSITY_O_S_OVER_B__DIRECT_CAP_CAMPAIGN_LAMBDA_AT_LEAST_3_OVER_5__UNSCANNED_SOURCE_FIBER_LOCATOR_ABSENT__NO_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute a marked source-fiber locator above the captured key
+  dictionary that counts and returns a coupled endpoint/fifth source across
+  all B shifts for any canonical dyadic child inside B^(5/4+o(1)) online work
+  and workspace using the R31 runs and R34 curve union without B^3 incidence
+  state; then implement fresh-target action, R10, rank, logs, and descent.

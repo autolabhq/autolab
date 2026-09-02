@@ -1,0 +1,76 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R43-DEGREE-THREE-INNER-COMPOSITION-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T09:14:58Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R43 is a new exhaustive toy
+  composition-negative gate requiring independent review. It closes rational
+  degree-three inner maps only on the R38 toy curve; primitive degree-nine
+  pencils and asymptotic families remain open.
+bindings:
+  r42_bundle_hash_list_sha256: fa218b20a5b79da63d5883497606c4d1fa3f7fd1a9ad9417c410f7c289ba20b8
+  r42_staging_receipt_sha256: 8e128b8cd0452a24f64407a5989569230cd1b6dd3ad66061364b1f149b77ab56
+  r43_gate_sha256: b02901b1a822ce98f886146d5a04d2ea35b9515ec549358d2c4b7c02b6700ec8
+  r43_parent_report_sha256: 509734c3ee0e935d0cfc3a08f099f6b38f096204d2ff4d3f7c99987e07557799
+  r43_selfcheck_script_sha256: ad36272041959e7559ef4c2556c02f04ab7aba04293f2a8c617d04e2ce4072cc
+  r43_selfcheck_report_sha256: 948f2a034addc4b4930934d0a6594d86d2cfe2cee46241f73ab0518617d34c02
+  r43_artifact_index_sha256: 6138914d3428f12f95b63ec9124290a264b16b1479b9f590566e9d875554df56
+  r43_bundle_hash_list_sha256: 5deeefbbf9fef16f424c494c260b781532eef37bb1f6ff859829b8ea300e45ab
+result:
+  classification: exhaustive_toy_composition_negative_primitive_degree_nine_open
+  rational_degree_three_inner_maps_checked: all_on_r38_curve
+  rational_pencil_centers_per_embedding_class: 37237
+  embedding_classes_checked: 2
+  subgroup_maximum_complete_triple_coverage: 51
+  required_complete_triple_coverage: 81
+  outside_coset_complete_triple_coverage: 0
+  original_pencil_length_81_intervals_checked: 10506
+  original_pencil_minimum_inner_values: 60
+  original_pencil_intervals_at_most_27_values: 0
+  degree_three_by_degree_three_composition: absent_on_toy
+  primitive_degree_nine_pencil: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r43_hash_list: pass
+  r43_parent_yaml_parse: pass
+  all_206_rational_curve_points_checked: pass
+  all_37237_rational_pencil_centers_per_class_checked: pass
+  both_subgroup_cosets_checked: pass
+  complete_triple_fiber_coverage_checked: pass
+  all_10506_original_pencil_intervals_checked: pass
+  composition_81_point_requirement_checked: pass
+  r43_selfcheck_replay_matches_report: pass
+  clean_temporary_replay_with_r16_through_r43_gates_and_r43_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T09_14_58Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the exhaustive result is for one toy curve
+  - primitive degree-nine pencils remain open
+  - no asymptotic theorem, target, R10, rank, logs, descent, or breakthrough
+exactly_one_next_action: >-
+  Search primitive degree-nine pencils. Partition a length-81 orbit interval
+  into nine degree-nine blocks with equal Abel sum, construct their section
+  vectors in H^0(E,L), and test whether all nine vectors have projective rank
+  two. Start with structured equal-sum partitions such as normal 9-by-9
+  magic-square rows, retain negative rank witnesses, and require a rank-two
+  survivor to pass R42's all-secret marked target test.

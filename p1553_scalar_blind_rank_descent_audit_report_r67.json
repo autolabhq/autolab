@@ -1,0 +1,563 @@
+{
+  "checks": {
+    "all_linear_target_relations_recover_one_log": true,
+    "all_loaded_dependency_source_digests_are_pinned": true,
+    "all_three_relation_layers_recover_identical_logs": true,
+    "core_fixed_sum_matrix_has_full_column_rank": true,
+    "core_incidence_nullity_is_exactly_two": true,
+    "core_logs_are_stable_after_target_extension": true,
+    "core_logs_verify_by_public_scalar_multiplication": true,
+    "core_plus_linear_target_rows_reach_expanded_rank": true,
+    "core_rank_reaches_dimension_minus_two": true,
+    "direct_product_quotient_rank_matches_incidence_rank": true,
+    "direct_r61_report_digest_is_pinned": true,
+    "expanded_fixed_sum_matrix_has_full_column_rank": true,
+    "expanded_incidence_nullity_is_exactly_two": true,
+    "expanded_rank_reaches_dimension_minus_two": true,
+    "factor_base_generation_consumes_no_scalar_labels": true,
+    "linear_target_lookup_matches_expanded_catalog": true,
+    "pair_lookup_matches_factor_catalog_triples": true,
+    "target_is_absent_from_target_independent_core_base": true,
+    "target_log_verifies_by_public_scalar_multiplication": true
+  },
+  "classification": [
+    "toy",
+    "exact-relation-rank",
+    "scalar-blind-target-action",
+    "model-bound",
+    "novelty-unverified"
+  ],
+  "core_precomputation": {
+    "admissible_factor_pairs": 4220,
+    "common_lifted_base_degree_histogram": {
+      "1": 27,
+      "2": 305,
+      "3": 11255,
+      "4": 4584
+    },
+    "direct_product_quotient_relations": {
+      "incidence_scan_required": false,
+      "nullity": 2,
+      "rank": 22,
+      "relation_rows": 4161
+    },
+    "distinct_smooth_product_sections": 4162,
+    "exact_product_section_pairs": 8659041,
+    "exact_trisecant_lines": 16171,
+    "fixed_sum_pair_complement_lookup": {
+      "coefficient_matrix_rank": 24,
+      "pair_hash_lookups": [
+        276,
+        276
+      ],
+      "relation_rows": 36,
+      "triple_counts": [
+        19,
+        17
+      ],
+      "unique_log_solution_available": true
+    },
+    "lifted_factor_section_counts": [
+      76,
+      68
+    ],
+    "line_size_histogram": {
+      "10": 92,
+      "3": 12194,
+      "4": 1785,
+      "5": 784,
+      "6": 660,
+      "7": 172,
+      "8": 268,
+      "9": 216
+    },
+    "primitive_trisecant_lines": 0,
+    "projected_class_triple_counts": [
+      19,
+      17
+    ],
+    "public_group_sum_tests": [
+      2024,
+      2024
+    ],
+    "rank": {
+      "cumulative_rank_through_common_lifted_base_degree": {
+        "1": 22,
+        "2": 22,
+        "3": 22,
+        "4": 22
+      },
+      "nullity": 2,
+      "nullspace_basis": [
+        [
+          78,
+          90,
+          61,
+          10,
+          62,
+          55,
+          35,
+          69,
+          64,
+          82,
+          50,
+          94,
+          72,
+          91,
+          59,
+          25,
+          3,
+          30,
+          84,
+          43,
+          98,
+          13,
+          1,
+          0
+        ],
+        [
+          26,
+          14,
+          43,
+          94,
+          42,
+          49,
+          69,
+          35,
+          40,
+          22,
+          54,
+          10,
+          32,
+          13,
+          45,
+          79,
+          101,
+          74,
+          20,
+          61,
+          6,
+          91,
+          0,
+          1
+        ]
+      ],
+      "rank": 22,
+      "rank_by_common_lifted_base_degree": {
+        "1": 22,
+        "2": 22,
+        "3": 22,
+        "4": 22
+      },
+      "relation_rows": 41643,
+      "rows_by_common_lifted_base_degree": {
+        "1": 54,
+        "2": 612,
+        "3": 22873,
+        "4": 18104
+      }
+    }
+  },
+  "cost_boundary": {
+    "exact_incidence_scan": "not needed for logs; audited at O(M^2 log M) time and Theta(M^2) memory",
+    "exact_toy_target_hash_lookups": 48,
+    "factor_base_scale_for_rank": "B at least on the order of sqrt(N) under the uniform model",
+    "factor_base_setup": "O(B polylog(p)) expected public field/group operations; no Theta(N) table and no scalar labels",
+    "fixed_sum_catalog_enumeration": "Theta(B^2) pair-complement hash lookups; the toy uses exactly 2*C(B,2)",
+    "linear_algebra_sub_rho": false,
+    "online_target_cost_at_required_scale": "Theta(sqrt(N)), rho matching rather than improving",
+    "online_target_lookup": "Theta(K*B) group/hash operations by solving P_i+P_j=C-Q with one complement lookup per P_i",
+    "relation_generation_sub_rho": false,
+    "relation_precomputation_at_required_scale": "Theta(B^2)=Theta(N), already above rho",
+    "smooth_product_materialization": "not needed for logs; retained only as an FFE control",
+    "target_descent_amortized": true,
+    "target_extension_repeats_relation_collection": false,
+    "uniform_fixed_sum_relation_count": "about K*B^3/N for K public class sums; B independent rows require B^2 on the order of N when K is constant",
+    "uniform_target_pair_count": "about K*B^2/N; constant success requires B on the order of sqrt(N)"
+  },
+  "dependency_source_sha256": {
+    "p1553_catalog_pencil_fiber_scan_r46.py": "3101a43126a2c1511b15ad6aef1bdc7a0144719ecb31bc9708d10128413e2572",
+    "p1553_coprime_product_trisecant_probe_r54.py": "c42ce441526d9adc95617eccac15a5b09e29a044e40f253ea0f8123a6a7b1ccc",
+    "p1553_degree_six_primitive_product_pencil_search_r60.py": "5a9b2f6987fc945e3664347b6c929fc0fc4b973b615e0277545bc4ec5091e5f8",
+    "p1553_degree_six_product_hypersurface_locator_r61.py": "b8331ae9534fde907df8cffda074d2443f219324174fee6f49756cd40351bbfb",
+    "p1553_degree_six_scan_free_factor_lift_r62.py": "15ca1a87202d069b79325b7a1743762d221f0726e793020910fb74c3633d900a",
+    "p1553_exact_public_base_trisecant_scan_r65.py": "148c8c0b39c5a1849a99e7509e5212364f777d6e38899f55affe6611b6ee3ff8",
+    "p1553_fixed_class_multiplication_kernel_scan_r56.py": "40698d92012a4ca4e79f5ac8da58f76967a14e2dd20ba234e1b61c273aedc210",
+    "p1553_full_curve_primitive_product_pencil_search_r58.py": "d4fda31b41d93ef58b393476a6e4a64535947e305e132fe671dcac7cf9c141f3",
+    "p1553_low_boundary_pencil_search_r38.py": "a750f12e3aa8840f63e4b32ff1f783f00086f0d2c4244bb2c6a70614488a5de8",
+    "p1553_primitive_degree_nine_rank_search_r44.py": "b9bbad90f2f5076ea0cb8346d94514a7e8f82993daa07c374d050e334be2687b",
+    "p1553_public_factor_base_closure_probe_r63.py": "7f5d061a539d62d2b3d362fed8252fead5b8e14dbc9250f5543e686f3a8d89cb"
+  },
+  "factor_base": {
+    "definition": "identity and generator anchors followed by SHA256 counter-to-x, Tonelli-Shanks, and cofactor-two clearing",
+    "hash_to_curve_cost": {
+      "accepted_hash_points": 22,
+      "attempted_counters": 48,
+      "duplicate_or_identity_outputs": 4,
+      "quadratic_residue_counters": 26
+    },
+    "points": [
+      {
+        "encoding": "O",
+        "index": 0,
+        "source": "anchor_identity"
+      },
+      {
+        "encoding": "1,44",
+        "index": 1,
+        "source": "anchor_generator"
+      },
+      {
+        "encoding": "133,64",
+        "index": 2,
+        "source": "sha256_counter_0"
+      },
+      {
+        "encoding": "178,74",
+        "index": 3,
+        "source": "sha256_counter_2"
+      },
+      {
+        "encoding": "107,17",
+        "index": 4,
+        "source": "sha256_counter_4"
+      },
+      {
+        "encoding": "186,15",
+        "index": 5,
+        "source": "sha256_counter_6"
+      },
+      {
+        "encoding": "30,64",
+        "index": 6,
+        "source": "sha256_counter_11"
+      },
+      {
+        "encoding": "109,151",
+        "index": 7,
+        "source": "sha256_counter_13"
+      },
+      {
+        "encoding": "174,61",
+        "index": 8,
+        "source": "sha256_counter_14"
+      },
+      {
+        "encoding": "61,36",
+        "index": 9,
+        "source": "sha256_counter_21"
+      },
+      {
+        "encoding": "169,42",
+        "index": 10,
+        "source": "sha256_counter_22"
+      },
+      {
+        "encoding": "107,176",
+        "index": 11,
+        "source": "sha256_counter_24"
+      },
+      {
+        "encoding": "64,145",
+        "index": 12,
+        "source": "sha256_counter_26"
+      },
+      {
+        "encoding": "20,138",
+        "index": 13,
+        "source": "sha256_counter_28"
+      },
+      {
+        "encoding": "108,151",
+        "index": 14,
+        "source": "sha256_counter_29"
+      },
+      {
+        "encoding": "127,157",
+        "index": 15,
+        "source": "sha256_counter_30"
+      },
+      {
+        "encoding": "169,151",
+        "index": 16,
+        "source": "sha256_counter_34"
+      },
+      {
+        "encoding": "180,17",
+        "index": 17,
+        "source": "sha256_counter_36"
+      },
+      {
+        "encoding": "64,48",
+        "index": 18,
+        "source": "sha256_counter_38"
+      },
+      {
+        "encoding": "178,119",
+        "index": 19,
+        "source": "sha256_counter_40"
+      },
+      {
+        "encoding": "120,11",
+        "index": 20,
+        "source": "sha256_counter_41"
+      },
+      {
+        "encoding": "74,70",
+        "index": 21,
+        "source": "sha256_counter_44"
+      },
+      {
+        "encoding": "130,99",
+        "index": 22,
+        "source": "sha256_counter_46"
+      },
+      {
+        "encoding": "27,61",
+        "index": 23,
+        "source": "sha256_counter_47"
+      }
+    ],
+    "scalar_labels_materialized": false,
+    "target_independent": true
+  },
+  "field_prime": 193,
+  "limits": [
+    "the complete solve is one prime-order subgroup of size 103 on one finite toy curve",
+    "fixed-sum triple equations solve the toy before any product, sextic, or trisecant computation",
+    "under the uniform model, enough fixed-sum rows require B about sqrt(N), Theta(N) precomputation, and Theta(sqrt(N)) online target lookup",
+    "the generic sparse-linear-algebra cost at B about sqrt(N) is about N field operations",
+    "the exact FFE incidence scans are retained as redundant controls and are not part of the claimed target action",
+    "no generic-prime distribution or rank theorem is proved",
+    "no Shoup-bound improvement or ECDLP breakthrough is claimed"
+  ],
+  "linear_algebra": {
+    "core_logs_recovered_from_fixed_sum_system": [
+      0,
+      1,
+      93,
+      63,
+      33,
+      41,
+      5,
+      25,
+      16,
+      69,
+      32,
+      70,
+      51,
+      44,
+      7,
+      90,
+      71,
+      99,
+      52,
+      40,
+      36,
+      89,
+      88,
+      45
+    ],
+    "dense_toy_elimination_complexity": "O(R*B^2) field operations for R relation rows and B columns",
+    "direct_quotient_and_incidence_nullspaces_used_as_controls": true,
+    "fixed_sum_right_hand_sides": [
+      46,
+      54
+    ],
+    "generic_sparse_linear_algebra_model": "about B^2 field operations for a full-rank sparse B-column system absent additional matrix structure",
+    "modulus": 103,
+    "target_log_recovered_from_fixed_sum_system": 53
+  },
+  "pass": true,
+  "prime_subgroup_order": 103,
+  "result": {
+    "asymptotic_relation_algorithm": false,
+    "breakthrough": false,
+    "exact_core_relation_rank_available": true,
+    "factor_base_logs_recovered_on_toy": true,
+    "ffe_layers_add_independent_log_information": false,
+    "fixed_sum_equations_solve_before_ffe": true,
+    "fresh_public_target_action": true,
+    "primitive_only_relations_full_rank": false,
+    "quadratic_all_pairs_relation_scan_required": false,
+    "rho_matching_online_descent_under_uniform_model": true,
+    "scalar_blind_target_log_recovered_on_toy": true,
+    "shoup_bound_improvement": false
+  },
+  "schema": "p1553.scalar_blind_rank_descent_audit.r67.v1",
+  "target_extension": {
+    "admissible_factor_pairs": 6908,
+    "common_lifted_base_degree_histogram": {
+      "0": 2,
+      "1": 110,
+      "2": 1164,
+      "3": 31999,
+      "4": 7804
+    },
+    "direct_product_quotient_relations": {
+      "incidence_scan_required": false,
+      "nullity": 2,
+      "rank": 23,
+      "relation_rows": 6709
+    },
+    "distinct_smooth_product_sections": 6710,
+    "exact_product_section_pairs": 22508695,
+    "exact_trisecant_lines": 41079,
+    "fixed_sum_pair_complement_lookup": {
+      "coefficient_matrix_rank": 25,
+      "pair_hash_lookups": [
+        300,
+        300
+      ],
+      "relation_rows": 46,
+      "triple_counts": [
+        24,
+        22
+      ],
+      "unique_log_solution_available": true
+    },
+    "lifted_factor_section_counts": [
+      96,
+      88
+    ],
+    "line_size_histogram": {
+      "10": 296,
+      "11": 36,
+      "12": 16,
+      "3": 33505,
+      "4": 3513,
+      "5": 1029,
+      "6": 984,
+      "7": 596,
+      "8": 652,
+      "9": 452
+    },
+    "linear_target_pair_lookup": {
+      "core_plus_target_relation_rank": 25,
+      "core_point_hash_lookups": [
+        24,
+        24
+      ],
+      "pair_counts": [
+        5,
+        5
+      ],
+      "target_log_candidates": [
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53,
+        53
+      ]
+    },
+    "primitive_trisecant_lines": 2,
+    "projected_class_triple_counts": [
+      24,
+      22
+    ],
+    "public_group_sum_tests": [
+      2300,
+      2300
+    ],
+    "rank": {
+      "cumulative_rank_through_common_lifted_base_degree": {
+        "0": 4,
+        "1": 23,
+        "2": 23,
+        "3": 23,
+        "4": 23
+      },
+      "nullity": 2,
+      "nullspace_basis": [
+        [
+          71,
+          58,
+          98,
+          76,
+          54,
+          53,
+          6,
+          55,
+          69,
+          101,
+          67,
+          88,
+          26,
+          14,
+          83,
+          34,
+          75,
+          20,
+          13,
+          66,
+          15,
+          47,
+          60,
+          1,
+          0
+        ],
+        [
+          33,
+          46,
+          6,
+          28,
+          50,
+          51,
+          98,
+          49,
+          35,
+          3,
+          37,
+          16,
+          78,
+          90,
+          21,
+          70,
+          29,
+          84,
+          91,
+          38,
+          89,
+          57,
+          44,
+          0,
+          1
+        ]
+      ],
+      "rank": 23,
+      "rank_by_common_lifted_base_degree": {
+        "0": 4,
+        "1": 23,
+        "2": 23,
+        "3": 23,
+        "4": 23
+      },
+      "relation_rows": 101541,
+      "rows_by_common_lifted_base_degree": {
+        "0": 4,
+        "1": 220,
+        "2": 2336,
+        "3": 65617,
+        "4": 33364
+      }
+    },
+    "target_involving_direct_quotient_rows": 4344,
+    "target_involving_direct_rows_rank": 23,
+    "target_involving_incidence_rows": 31345,
+    "target_involving_incidence_rows_rank": 23
+  },
+  "target_input": {
+    "consumed_scalar_label": false,
+    "default_fixture": true,
+    "encoding": "137,171",
+    "point": [
+      137,
+      171
+    ]
+  }
+}

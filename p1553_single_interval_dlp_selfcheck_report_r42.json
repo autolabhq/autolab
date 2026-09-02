@@ -1,0 +1,302 @@
+{
+  "B": 3,
+  "asymptotic_reduction": {
+    "generic_shoup_condition": "max(s,1+kappa,2)>=5/2-o(1)",
+    "generic_total_work": "B^max(s,1+kappa,2)",
+    "marked_recovery": "x=(i*B+j)B^3+hB^2+(aB+b) mod N",
+    "other_pair_deck": "v_ij=Q-z0-(i*B+j)B^3P",
+    "queries": "R_h=h*B^2P for 0<=h<B",
+    "query_count": "B",
+    "selected_pair_deck": "z_ij=z0-(i*B+j)P, one interval of length B^2",
+    "under_setup_s_at_most_9_over_4": "kappa>=3/2-o(1)"
+  },
+  "canonical_labels": {
+    "giant_labels": [
+      0,
+      2
+    ],
+    "query_index": 2,
+    "selected_labels": [
+      1,
+      2
+    ]
+  },
+  "checks": {
+    "all_103_secret_recoveries_are_exact": true,
+    "all_103_secrets_have_a_marked_hit": true,
+    "all_marked_hits_recover_secret": true,
+    "all_selected_endpoints_have_selected_pencil_values": true,
+    "at_least_one_marked_hit": true,
+    "canonical_hit_present": true,
+    "second_pair_deck_has_nine_occurrences": true,
+    "selected_pair_deck_equals_r38_pencil_union": true,
+    "selected_pair_deck_has_nine_occurrences": true,
+    "selected_pair_deck_is_one_interval": true,
+    "three_known_log_queries": true
+  },
+  "classification": [
+    "toy",
+    "exact",
+    "model-bound",
+    "novelty-unverified"
+  ],
+  "exhaustive_secret_control": {
+    "bad_recoveries": 0,
+    "hit_count_histogram": {
+      "2": 66,
+      "3": 37
+    },
+    "missing_secrets": [],
+    "secrets_tested": 103
+  },
+  "field_prime": 193,
+  "giant_occurrences": [
+    {
+      "endpoint_q_coordinate": 50,
+      "giant_digit": 0,
+      "left": 0,
+      "right": 0
+    },
+    {
+      "endpoint_q_coordinate": 23,
+      "giant_digit": 1,
+      "left": 0,
+      "right": 1
+    },
+    {
+      "endpoint_q_coordinate": 99,
+      "giant_digit": 2,
+      "left": 0,
+      "right": 2
+    },
+    {
+      "endpoint_q_coordinate": 72,
+      "giant_digit": 3,
+      "left": 1,
+      "right": 0
+    },
+    {
+      "endpoint_q_coordinate": 45,
+      "giant_digit": 4,
+      "left": 1,
+      "right": 1
+    },
+    {
+      "endpoint_q_coordinate": 18,
+      "giant_digit": 5,
+      "left": 1,
+      "right": 2
+    },
+    {
+      "endpoint_q_coordinate": 94,
+      "giant_digit": 6,
+      "left": 2,
+      "right": 0
+    },
+    {
+      "endpoint_q_coordinate": 67,
+      "giant_digit": 7,
+      "left": 2,
+      "right": 1
+    },
+    {
+      "endpoint_q_coordinate": 40,
+      "giant_digit": 8,
+      "left": 2,
+      "right": 2
+    }
+  ],
+  "giant_pair_left_q_coordinates": [
+    50,
+    72,
+    94
+  ],
+  "giant_pair_right_q_coordinates": [
+    0,
+    76,
+    49
+  ],
+  "limits": [
+    "the exact pencil embedding is degree three and toy-only",
+    "the reduction is a generic boundary only for group-operation implementations",
+    "coordinate-level pencil or coboundary algorithms lie outside Shoup's generic model",
+    "an asymptotic degree-B interval pencil family is not constructed",
+    "no R10 coefficients, relation rank, factor logs, or blind descent are constructed"
+  ],
+  "marked_hit_count": 2,
+  "marked_hits": [
+    {
+      "giant_digit": 2,
+      "giant_endpoint_q_coordinate": 99,
+      "giant_labels": [
+        0,
+        2
+      ],
+      "query_index": 2,
+      "query_q_coordinate": 18,
+      "recovered_secret_q_coordinate": 77,
+      "recovery_pass": true,
+      "selected_endpoint_q_coordinate": 22,
+      "selected_labels": [
+        1,
+        2
+      ],
+      "selected_remainder": 5
+    },
+    {
+      "giant_digit": 6,
+      "giant_endpoint_q_coordinate": 94,
+      "giant_labels": [
+        2,
+        0
+      ],
+      "query_index": 2,
+      "query_q_coordinate": 18,
+      "recovered_secret_q_coordinate": 77,
+      "recovery_pass": true,
+      "selected_endpoint_q_coordinate": 27,
+      "selected_labels": [
+        0,
+        0
+      ],
+      "selected_remainder": 0
+    }
+  ],
+  "pass": true,
+  "path_generator_inverse_scalar": 19,
+  "path_generator_scalar": 38,
+  "query_q_coordinates": [
+    0,
+    9,
+    18
+  ],
+  "schema": "p1553.single_interval_dlp_selfcheck.r42.v1",
+  "secret_generator_scalar": 42,
+  "secret_q_coordinate": 77,
+  "selected_interval_q_coordinates": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "selected_interval_top_q_coordinate": 27,
+  "selected_occurrences": [
+    {
+      "endpoint_q_coordinate": 27,
+      "left": 0,
+      "remainder": 0,
+      "right": 0
+    },
+    {
+      "endpoint_q_coordinate": 26,
+      "left": 0,
+      "remainder": 1,
+      "right": 1
+    },
+    {
+      "endpoint_q_coordinate": 25,
+      "left": 0,
+      "remainder": 2,
+      "right": 2
+    },
+    {
+      "endpoint_q_coordinate": 24,
+      "left": 1,
+      "remainder": 3,
+      "right": 0
+    },
+    {
+      "endpoint_q_coordinate": 23,
+      "left": 1,
+      "remainder": 4,
+      "right": 1
+    },
+    {
+      "endpoint_q_coordinate": 22,
+      "left": 1,
+      "remainder": 5,
+      "right": 2
+    },
+    {
+      "endpoint_q_coordinate": 21,
+      "left": 2,
+      "remainder": 6,
+      "right": 0
+    },
+    {
+      "endpoint_q_coordinate": 20,
+      "left": 2,
+      "remainder": 7,
+      "right": 1
+    },
+    {
+      "endpoint_q_coordinate": 19,
+      "left": 2,
+      "remainder": 8,
+      "right": 2
+    }
+  ],
+  "selected_pair_left_q_coordinates": [
+    27,
+    24,
+    21
+  ],
+  "selected_pair_right_q_coordinates": [
+    0,
+    102,
+    101
+  ],
+  "selected_pencil_membership": {
+    "19": {
+      "generator_scalar": 1,
+      "pencil_value": 0,
+      "selected_value": true
+    },
+    "20": {
+      "generator_scalar": 39,
+      "pencil_value": "infinity",
+      "selected_value": true
+    },
+    "21": {
+      "generator_scalar": 77,
+      "pencil_value": 192,
+      "selected_value": true
+    },
+    "22": {
+      "generator_scalar": 12,
+      "pencil_value": "infinity",
+      "selected_value": true
+    },
+    "23": {
+      "generator_scalar": 50,
+      "pencil_value": 192,
+      "selected_value": true
+    },
+    "24": {
+      "generator_scalar": 88,
+      "pencil_value": 0,
+      "selected_value": true
+    },
+    "25": {
+      "generator_scalar": 23,
+      "pencil_value": 192,
+      "selected_value": true
+    },
+    "26": {
+      "generator_scalar": 61,
+      "pencil_value": 0,
+      "selected_value": true
+    },
+    "27": {
+      "generator_scalar": 99,
+      "pencil_value": "infinity",
+      "selected_value": true
+    }
+  },
+  "subgroup_order": 103
+}

@@ -1,0 +1,211 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_target_export_verifier_gate_10376_probe.h"
+  },
+  "claim_status": "SELECTED13_PRIORITY0_TARGET_EXPORT_VERIFIER_GATE_READY",
+  "created_at": "2026-06-06T02:34:47Z",
+  "failures": [],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "general_ecdlp_algorithm_claimed": false,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "source_voters_are_not_target_row_exports": true,
+    "target_export_not_emitted_by_this_gate": true
+  },
+  "native_preflight": {
+    "c_source_sha256": "e5e194113b67e0a26e354fe2ca6d58bdeacf16eaaa36184a9ec52976c18bf81b",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-I",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state",
+      "/private/tmp/selected13_priority0_target_gate_i42favb8/preflight.c",
+      "-o",
+      "/private/tmp/selected13_priority0_target_gate_i42favb8/preflight"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_priority0_target_export_verifier_gate_preflight transfer=10376 expected_secret=5859 source_voters=3 terms=20 synthesis_terms=19 hybrid_coeff_lanes=2 failures=0",
+    "verified": true
+  },
+  "packet_hash_u64": 1982505138445056265,
+  "parameters": {
+    "coeff_gap": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_residual_coeff_gap_manifest_10376_probe.json",
+    "synthesis_worklist": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_residual_synthesis_worklist_10376_probe.json"
+  },
+  "schema": "ecdlp.low_term_total2_selected13_priority0_target_export_verifier_gate.v1",
+  "source_consensus": {
+    "all_source_voters_match_expected_secret": true,
+    "expected_secret": 5859,
+    "expected_secret_source": "artifact_consensus_from_verified_source_voters",
+    "secret_histogram": {
+      "5859": 3
+    },
+    "source_voter_class_counts": {
+      "direct_certificate_source": 1,
+      "shared_product_source": 2
+    },
+    "source_voter_count": 3,
+    "unique_secrets": [
+      5859
+    ],
+    "verified_source_voter_count": 3
+  },
+  "source_voters": [
+    {
+      "derived_secret": 5859,
+      "evidence_count": 2,
+      "evidence_rank": 2,
+      "hint_local_index": 0,
+      "materialization_required": false,
+      "source_public_key_verified": true,
+      "source_row_hash_u64": 5275705598190304756,
+      "source_selector": "mode_low_term_support_total5",
+      "source_top_k": 12,
+      "source_voter_class": "direct_certificate_source",
+      "source_voter_class_code": 1,
+      "source_voter_hash_u64": 14145845173935327712,
+      "term_slot_count": 6,
+      "voter_interpretation": "direct certificate coefficient source, used as a guard rather than a target export"
+    },
+    {
+      "derived_secret": 5859,
+      "evidence_count": 2,
+      "evidence_rank": 2,
+      "hint_local_index": 1,
+      "materialization_required": true,
+      "source_public_key_verified": true,
+      "source_row_hash_u64": 3798422369699625013,
+      "source_selector": "mode_cost_hybrid_support_monic_b_total2",
+      "source_top_k": 12,
+      "source_voter_class": "shared_product_source",
+      "source_voter_class_code": 2,
+      "source_voter_hash_u64": 2894120462566414757,
+      "term_slot_count": 7,
+      "voter_interpretation": "shared-product verified source relation, coefficient materialization still required"
+    },
+    {
+      "derived_secret": 5859,
+      "evidence_count": 2,
+      "evidence_rank": 2,
+      "hint_local_index": 2,
+      "materialization_required": true,
+      "source_public_key_verified": true,
+      "source_row_hash_u64": 3695383160683521145,
+      "source_selector": "mode_cost_hybrid_support_monic_b_total2",
+      "source_top_k": 16,
+      "source_voter_class": "shared_product_source",
+      "source_voter_class_code": 2,
+      "source_voter_hash_u64": 8483766029900898480,
+      "term_slot_count": 7,
+      "voter_interpretation": "shared-product verified source relation, coefficient materialization still required"
+    }
+  ],
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "expected_secret": 5859,
+    "failure_count": 0,
+    "hybrid_coefficient_materialization_lane_count": 2,
+    "native_preflight_verified": true,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "source_consensus_verified": true,
+    "source_voter_count": 3,
+    "synthesis_required_term_count": 19,
+    "term_slot_count": 20,
+    "verified": true,
+    "worker_interpretation": "The gate binds a future 10376 target direct/rank export to the verified source consensus secret 5859, the exact row request id, all 20 synthesis slots, public-key verification, and relation_derived_ecdlp=true. It does not accept a source replay as a target export."
+  },
+  "target_export_acceptance_gate": {
+    "accepted_relation_export_count": 0,
+    "expected_secret": 5859,
+    "expected_secret_source": "artifact_consensus_from_verified_source_voters",
+    "must_complete_synthesis_required_terms": 19,
+    "must_complete_term_slot_count": 20,
+    "must_emit_target_direct_rank_export": true,
+    "must_match_expected_secret": 5859,
+    "must_match_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "must_materialize_hybrid_coeff_lane_count": 2,
+    "must_reject_source_hint_replay_as_target_export": true,
+    "must_set_relation_derived_ecdlp": true,
+    "must_verify_public_key": true,
+    "public_key_validation_scope": "The mounted LMFDB curve record does not carry a static precomputed challenge public key; the target public key is replay-artifact-specific. Future target exports must therefore run the verifier on their emitted public key while matching the artifact-derived source consensus scalar recorded here.",
+    "relation_derived_ecdlp": false,
+    "target_row_request_id_u64": 15227462883308766969
+  },
+  "target_slot": {
+    "candidate_case_arg": "22050.cf1@11731|10376|mode_low_term_support_total5|16",
+    "classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+    "classification_code": 5,
+    "combined_family_residual_rank": 5,
+    "direct_ops_over_rho": 0.68613139,
+    "direct_ops_over_rho_scaled": 68613139,
+    "family_mask_rank": 3,
+    "family_masks": [
+      34816,
+      17408,
+      33
+    ],
+    "phase": "target_direct_rank_export",
+    "phase_code": 1,
+    "priority_rank": 0,
+    "priority_score": 1551239,
+    "required_output": {
+      "must_emit_target_direct_rank_export": true,
+      "must_evaluate_fresh_ffe_or_summation_polynomial_system": true,
+      "must_match_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+      "must_reject_source_hint_replay_as_target_export": true,
+      "must_set_relation_derived_ecdlp": true,
+      "must_verify_public_key": true
+    },
+    "residual_mask_rank": 2,
+    "residual_masks": [
+      13068,
+      13132
+    ],
+    "row_keys": [
+      "22050.cf1@11731:uniform:256:salt168",
+      "22050.cf1@11731:uniform:256:salt173"
+    ],
+    "row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "row_request_id_u64": 15227462883308766969,
+    "selected_support_mask": 65533,
+    "selected_term_support": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "selector": "mode_low_term_support_total5",
+    "target": "22050.cf1@11731",
+    "target_salts": [
+      168,
+      173
+    ],
+    "top_k": 16,
+    "transfer_index": 10376,
+    "worker_acceptance_gate": "fresh_ffe_direct_rank_export_and_relation_derived_ecdlp_only",
+    "worker_class": "hinted_delta_source_solve",
+    "worker_class_code": 3
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "method": "public_single_hit_root_root_cost_assembly_selector",
+  "non_claims": [
+    "This selector does not inspect relation derivation outcomes.",
+    "This selector does not use preserving-factor labels or false-positive labels.",
+    "This is not an ECDLP speedup until replayed assemblies publicly derive fresh challenge keys."
+  ],
+  "parameters": {
+    "forbidden_selection_fields": [
+      "public_key_verified",
+      "relation_count",
+      "rank",
+      "chosen_preserves_selected_root_pairs",
+      "chosen_false_positive",
+      "below_rho",
+      "direct_below_rho"
+    ],
+    "gate_source": "ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_candidates_176_183.json",
+    "max_cases_per_challenge": 3,
+    "max_total_ops_over_rho": 1.0,
+    "policy_source": "ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_single_hit_root_policy_total2_candidates_176_183.json",
+    "seed": "ecdlp-frontier-signed-dual-sieve-v1",
+    "selection_rule": [
+      "exactly one pre_factor_selected_hit_root",
+      "public_zero_recovered",
+      "total_ops_over_rho < threshold",
+      "rank by public source ops/rho then retained surface count"
+    ],
+    "signature_source": "ecdlp_index_calculus_state/low_term_total2_candidate_signature_fixed_selector_176_183.json",
+    "windows": [
+      {
+        "gate_source": "ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_candidates_176_183.json",
+        "label": "total2_candidates_176_183",
+        "policy_source": "ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_single_hit_root_policy_total2_candidates_176_183.json",
+        "signature_source": "ecdlp_index_calculus_state/low_term_total2_candidate_signature_fixed_selector_176_183.json"
+      }
+    ]
+  },
+  "retained_source_cases": [
+    {
+      "case_key": "22050.cf1@11731|179|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('22050.cf1@11731:uniform:256:salt175', (90,)), ('22050.cf1@11731:uniform:256:salt166', (90,)))",
+      "leaf_selector": "mode_cost_low_term_support_total2",
+      "ops_over_rho": 0.66423358,
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "retained_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt175",
+          "salt": 175,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt175|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:179:22050.cf1@11731"
+        }
+      ],
+      "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 2,
+      "selected_row_count": 2,
+      "signature_public_key_verified": false,
+      "signature_rank": 0,
+      "signature_relation_count": 0,
+      "surface_ids": [
+        "22050.cf1@11731|22050.cf1@11731:uniform:256:salt175|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:179:22050.cf1@11731"
+      ],
+      "target": "22050.cf1@11731",
+      "top_k": 12,
+      "transfer_index": 179
+    },
+    {
+      "case_key": "22050.cf1@11731|182|4|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('22050.cf1@11731:uniform:256:salt166', (90,)), ('22050.cf1@11731:uniform:256:salt176', (90,)))",
+      "leaf_selector": "mode_cost_low_term_support_total2",
+      "ops_over_rho": 0.70072993,
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "retained_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt176",
+          "salt": 176,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt176|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:22050.cf1@11731"
+        }
+      ],
+      "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 2,
+      "selected_row_count": 2,
+      "signature_public_key_verified": true,
+      "signature_rank": 2,
+      "signature_relation_count": 2,
+      "surface_ids": [
+        "22050.cf1@11731|22050.cf1@11731:uniform:256:salt176|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:22050.cf1@11731"
+      ],
+      "target": "22050.cf1@11731",
+      "top_k": 4,
+      "transfer_index": 182
+    },
+    {
+      "case_key": "22050.cf1@11731|182|4|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('22050.cf1@11731:uniform:256:salt166', (90,)), ('22050.cf1@11731:uniform:256:salt176', (90,)))",
+      "leaf_selector": "mode_cost_low_term_support_total2",
+      "ops_over_rho": 0.70072993,
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "retained_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt176",
+          "salt": 176,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt176|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:22050.cf1@11731"
+        }
+      ],
+      "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 2,
+      "selected_row_count": 2,
+      "signature_public_key_verified": true,
+      "signature_rank": 2,
+      "signature_relation_count": 2,
+      "surface_ids": [
+        "22050.cf1@11731|22050.cf1@11731:uniform:256:salt176|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:22050.cf1@11731"
+      ],
+      "target": "22050.cf1@11731",
+      "top_k": 4,
+      "transfer_index": 182
+    },
+    {
+      "case_key": "22050.cf1@11731|182|7|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('22050.cf1@11731:uniform:256:salt166', (90,)), ('22050.cf1@11731:uniform:256:salt176', (90,)))",
+      "leaf_selector": "mode_cost_low_term_support_total2",
+      "ops_over_rho": 0.70072993,
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "retained_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            90
+          ],
+          "row_key": "22050.cf1@11731:uniform:256:salt176",
+          "salt": 176,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt176|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:22050.cf1@11731"
+        }
+      ],
+      "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 2,
+      "selected_row_count": 2,
+      "signature_public_key_verified": true,
+      "signature_rank": 2,
+      "signature_relation_count": 2,
+      "surface_ids": [
+        "22050.cf1@11731|22050.cf1@11731:uniform:256:salt176|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:22050.cf1@11731"
+      ],
+      "target": "22050.cf1@11731",
+      "top_k": 7,
+      "transfer_index": 182
+    },
+    {
+      "case_key": "67.a1@9803|182|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total2|(('67.a1@9803:uniform:256:salt205', (0,)), ('67.a1@9803:uniform:256:salt203', (0,)))",
+      "leaf_selector": "mode_low_term_support_total2",
+      "ops_over_rho": 0.888,
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "retained_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            0
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt205",
+          "salt": 205,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:67.a1@9803"
+        }
+      ],
+      "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 2,
+      "selected_row_count": 2,
+      "signature_public_key_verified": false,
+      "signature_rank": 1,
+      "signature_relation_count": 1,
+      "surface_ids": [
+        "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:67.a1@9803"
+      ],
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 182
+    },
+    {
+      "case_key": "67.a1@9803|182|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('67.a1@9803:uniform:256:salt205', (0,)), ('67.a1@9803:uniform:256:salt208', (0,)))",
+      "leaf_selector": "mode_cost_low_term_support_total2",
+      "ops_over_rho": 0.888,
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "retained_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            0
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt205",
+          "salt": 205,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:67.a1@9803"
+        }
+      ],
+      "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 2,
+      "selected_row_count": 2,
+      "signature_public_key_verified": false,
+      "signature_rank": 1,
+      "signature_relation_count": 1,
+      "surface_ids": [
+        "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:67.a1@9803"
+      ],
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 182
+    },
+    {
+      "case_key": "67.a1@9803|182|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total2|(('67.a1@9803:uniform:256:salt203', (0,)), ('67.a1@9803:uniform:256:salt205', (0,)))",
+      "leaf_selector": "mode_low_term_support_total2",
+      "ops_over_rho": 0.888,
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "retained_row_leaf_keys": [
+        {
+          "leaf_indices": [
+            0
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt205",
+          "salt": 205,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:67.a1@9803"
+        }
+      ],
+      "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 2,
+      "selected_row_count": 2,
+      "signature_public_key_verified": false,
+      "signature_rank": 1,
+      "signature_relation_count": 1,
+      "surface_ids": [
+        "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:67.a1@9803"
+      ],
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 182
+    }
+  ],
+  "retained_surfaces": [
+    {
+      "chosen_factor_index": 8,
+      "chosen_root": 6445,
+      "direct_root_recovery_ops": 61,
+      "direct_total_ops_over_rho": 0.46715328,
+      "evaluated_root_count": 1,
+      "generic_rho_steps": 137,
+      "p": 11731,
+      "pre_factor_selected_hit_root_ambiguity": {
+        "6445": 1
+      },
+      "pre_factor_selected_hit_roots": [
+        6445
+      ],
+      "public_zero_recovered": true,
+      "root_scan_ops": 63,
+      "row_key": "22050.cf1@11731:uniform:256:salt175",
+      "salt": 175,
+      "selector_eval_ops": 3,
+      "source_case_count": 1,
+      "source_case_keys": [
+        "22050.cf1@11731|179|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('22050.cf1@11731:uniform:256:salt175', (90,)), ('22050.cf1@11731:uniform:256:salt166', (90,)))"
+      ],
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt175|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:179:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "total_ops_over_rho": 0.48175182,
+      "transfer_index": 179
+    },
+    {
+      "chosen_factor_index": 9,
+      "chosen_root": 6110,
+      "direct_root_recovery_ops": 61,
+      "direct_total_ops_over_rho": 0.46715328,
+      "evaluated_root_count": 1,
+      "generic_rho_steps": 137,
+      "p": 11731,
+      "pre_factor_selected_hit_root_ambiguity": {
+        "6110": 1
+      },
+      "pre_factor_selected_hit_roots": [
+        6110
+      ],
+      "public_zero_recovered": true,
+      "root_scan_ops": 68,
+      "row_key": "22050.cf1@11731:uniform:256:salt176",
+      "salt": 176,
+      "selector_eval_ops": 3,
+      "source_case_count": 3,
+      "source_case_keys": [
+        "22050.cf1@11731|182|4|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('22050.cf1@11731:uniform:256:salt166', (90,)), ('22050.cf1@11731:uniform:256:salt176', (90,)))",
+        "22050.cf1@11731|182|4|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('22050.cf1@11731:uniform:256:salt166', (90,)), ('22050.cf1@11731:uniform:256:salt176', (90,)))",
+        "22050.cf1@11731|182|7|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('22050.cf1@11731:uniform:256:salt166', (90,)), ('22050.cf1@11731:uniform:256:salt176', (90,)))"
+      ],
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt176|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "total_ops_over_rho": 0.51824818,
+      "transfer_index": 182
+    },
+    {
+      "chosen_factor_index": 10,
+      "chosen_root": 4136,
+      "direct_root_recovery_ops": 73,
+      "direct_total_ops_over_rho": 0.608,
+      "evaluated_root_count": 1,
+      "generic_rho_steps": 125,
+      "p": 9803,
+      "pre_factor_selected_hit_root_ambiguity": {
+        "4136": 1
+      },
+      "pre_factor_selected_hit_roots": [
+        4136
+      ],
+      "public_zero_recovered": true,
+      "root_scan_ops": 86,
+      "row_key": "67.a1@9803:uniform:256:salt205",
+      "salt": 205,
+      "selector_eval_ops": 3,
+      "source_case_count": 3,
+      "source_case_keys": [
+        "67.a1@9803|182|12|fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0|mode_low_term_support_total2|(('67.a1@9803:uniform:256:salt205', (0,)), ('67.a1@9803:uniform:256:salt203', (0,)))",
+        "67.a1@9803|182|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total2|(('67.a1@9803:uniform:256:salt205', (0,)), ('67.a1@9803:uniform:256:salt208', (0,)))",
+        "67.a1@9803|182|16|fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0|mode_low_term_support_total2|(('67.a1@9803:uniform:256:salt203', (0,)), ('67.a1@9803:uniform:256:salt205', (0,)))"
+      ],
+      "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:182:67.a1@9803",
+      "target": "67.a1@9803",
+      "total_ops_over_rho": 0.712,
+      "transfer_index": 182
+    }
+  ],
+  "schema": "ecdlp_ffe_public_single_hit_root_assembly_selector_probe_v1",
+  "summary": {
+    "assembly_status": "public_pre_replay_selection_ready",
+    "challenge_count": 3,
+    "max_direct_total_ops_over_rho": 0.608,
+    "max_total_ops_over_rho": 0.712,
+    "mean_direct_total_ops_over_rho": 0.51410219,
+    "mean_total_ops_over_rho": 0.57066667,
+    "min_direct_total_ops_over_rho": 0.46715328,
+    "min_total_ops_over_rho": 0.48175182,
+    "next_obligation": "Replay the selected assemblies and count verifier-derived public-key successes.",
+    "retained_surface_count": 3,
+    "selected_signature_verified_case_count": 3,
+    "selected_source_case_count": 7,
+    "selected_source_max_ops_over_rho": 0.888,
+    "selected_source_mean_ops_over_rho": 0.77577477,
+    "selected_source_min_ops_over_rho": 0.66423358,
+    "target_summaries": {
+      "22050.cf1@11731": {
+        "source_case_count": 4,
+        "surface_count": 2
+      },
+      "67.a1@9803": {
+        "source_case_count": 3,
+        "surface_count": 1
+      }
+    }
+  }
+}

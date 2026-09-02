@@ -1,0 +1,56 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-MULTIPLICATIVE-X-S3-CLOSURE-SCREEN-R70-PARENT
+date: 2026-07-28
+idea_ids: [ECDLP-IDEA-057, ECDLP-IDEA-195]
+classification:
+  evidence: four_family_scalar_blind_multiplicative_x_s3_rank_screen
+  model_scope: four_small_prime_order_families_with_32_matched_controls_each
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_MULTIPLICATIVE_X_S3_NEGATIVE_SCREEN
+summary: >-
+  Public multiplicative-subgroup x-coordinate prefixes have exact S3 closure
+  rows but no transferred independent collision-rank excess. Candidate ranks
+  3,1,4,0 never exceed the 32-control maximum, all 28-pair probes exceed rho,
+  and no sub-pair locator or target descent is supplied.
+inputs:
+  - path: staged/p1553_constructive_closure_collision_gate_report_r69.json
+    sha256: 401b8ae56607f4962c9ae10ed99889d5c27ac865d0e27b3359f7b163a04dd451
+outputs:
+  - path: staged/p1553_multiplicative_x_s3_closure_screen_r70.py
+    sha256: 4d06a22f56ca58fbd4f4ed13a120324ce630ce1b1576243ee2b82fcdd340643e
+  - path: staged/p1553_multiplicative_x_s3_closure_screen_report_r70.json
+    sha256: 9e58c6178eb18b7535c59e117ad942465d6c7853890291dec2c7c0abdb4ffd89
+controls:
+  family_count: 4
+  base_size: 8
+  matched_hash_controls_per_family: 32
+  exact_candidate_s3_checks: 112
+  candidate_s3_failures: 0
+  candidate_independent_collision_ranks: [3, 1, 4, 0]
+  matched_control_max_ranks: [5, 3, 4, 3]
+  pair_proposals_per_family: 28
+  rho_expected_operations: [13, 22, 17, 27]
+result:
+  classification: multiplicative_x_s3_negative_screen
+  scalar_blind_four_family_screen_complete: true
+  transferred_superuniform_collision_rank: false
+  subquadratic_s3_locator_supplied: false
+  source_beats_rho: false
+  target_descent_complete: false
+  new_idea_created: false
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - all four families are small prime-order toys with fixed size-eight prefixes
+  - no negative theorem covers every multiplicative coset family
+  - the exhaustive pair scan is a falsification probe, not a proposed locator
+  - no Shoup-bound improvement or ECDLP breakthrough is claimed
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_MULTIPLICATIVE_X_S3_NEGATIVE_SCREEN__FOUR_SCALAR_BLIND_FAMILIES__ALL_S3_CHECKS_EXACT__NO_TRANSFERRED_RANK_EXCESS__ALL_PAIR_PROBES_ABOVE_RHO__NO_LOCATOR_OR_DESCENT__NO_NEW_IDEA__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Close the raw multiplicative-x prefix candidate unless independent review
+  identifies a non-prefix coset family with a prospective density theorem.
+  Route new work to a source with an explicit sub-pair collision locator, not
+  merely FFT-compatible coordinates.

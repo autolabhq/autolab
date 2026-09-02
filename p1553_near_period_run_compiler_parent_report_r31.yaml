@@ -1,0 +1,99 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-NEAR-PERIOD-RUN-COMPILER-R31-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: near_total_selected_translation_containment_after_r30
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_CONDITIONAL_POSITIVE
+summary: >-
+  R30's owned O(B^2) image gives total signed boundary O(B^2) for a B^2-point
+  selected support and 2B signed shifts. A minimum-boundary public shift has
+  only O(B) induced paths. The intersection of any k translates of the
+  support has at most k times that many aligned paths. Consequently all B
+  complete Z intersect (Z-q) intersect (Z+q) domains, exact counts, and one
+  source per run compile into O(B^2) work and state using only EC additions
+  and membership lookups. The complete value-triple histogram along total
+  run length B^3, restriction stability, target, R10, rank, logs, and descent
+  remain unsupplied.
+inputs:
+  - path: staged/p1553_translation_correlation_sparse_convolution_gate_r15.md
+    sha256: ea007be0b237b91127e6a42501873f914ad31d6d4fd4393c3ae6b85005893b9b
+  - path: staged/p1553_popular_difference_complete_triple_gate_r25.md
+    sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+  - path: staged/p1553_selected_singularity_common_subdivisor_gate_r28.md
+    sha256: c24183bfe4823a9318ae06769763c94cfed99cb4291807f06b85f397fd53f662
+  - path: staged/p1553_signed_partition_packing_gate_r30.md
+    sha256: 8876faa2b65f6a44410495209617b50e99cc781caaf73a2f4cb8b359b294006f
+  - path: staged/p1553_r30_bundle.sha256
+    sha256: ffedf5472d54e778fc2d8e0f379f38e45c8bce41ec224030978ab42178dc0edf
+  - path: staged/p1553_r30_staging_receipt.yaml
+    sha256: f53b15dc9a85860f1472146c5e2ebc0333acb8067d9aa57761c708bac591e7d8
+output:
+  path: staged/p1553_near_period_run_compiler_gate_r31.md
+  sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+frozen_parameters:
+  selected_support_size: z=c^2
+  fifth_shift_count: L=c
+  signed_shift_count: M=2c
+  total_signed_boundary: O(c^2)
+theorems:
+  - >-
+    A minimum-boundary signed shift q0 has d0=O(c) and decomposes the c^2
+    represented support points into exactly d0 public q0-paths.
+  - >-
+    The intersection of k translates of Z has at most k*d0 q0-runs, whose
+    starts and lengths are computable from translated base boundaries and
+    precomputed path coordinates without walking interiors.
+  - >-
+    Every complete both-branch domain Z intersect (Z-q) intersect (Z+q) has
+    at most 3d0 runs, and all c domains compile in O(c^2) work and state.
+  - >-
+    Complete value keys reduce to exact histograms of aligned triples from
+    O(c^2) run records with total represented length c^3; the histogram is
+    not constructed by the run theorem.
+controls:
+  scalar_log_of_q0: not_used
+  point_membership_and_group_law: exact_and_required
+  empty_singleton_boundary_runs: retained
+  arbitrary_dyadic_restrictions: not_proved_path_compatible
+result:
+  classification: conditional_positive_translation_incidence_compiler
+  base_path_count: O(B)
+  complete_domain_run_records: O(B^2)
+  construction_work: O(B^2)
+  retained_state: O(B^2)
+  exact_domain_counts: supplied
+  one_source_per_run: supplied
+  complete_value_histogram: absent
+  standard_value_scan: B^3
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - selected support and near-total ownership are upstream conditions
+  - exact complete value histogram remains unconstructed
+  - arbitrary adaptive restriction fragmentation remains unbounded
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R15 owns generic translation correlation
+  - R25 owns popular differences
+  - R28 owns common fiber sub-divisors
+  - R30 owns signed near-total containment
+  - R31 adds the exact near-period run compiler and colored-histogram residual
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_CONDITIONAL_POSITIVE__MINIMUM_BOUNDARY_SHIFT_GIVES_O_B_PATHS__ALL_COMPLETE_SIGNED_DOMAINS_COMPILE_TO_O_B2_RUN_RECORDS_WITH_EXACT_COUNTS_AND_SOURCES__NO_SCALAR_LOG_USED__COMPLETE_VALUE_HISTOGRAM_REMAINS_B3_BY_STANDARD_SCAN__RESTRICTIONS_TARGET_R10_RANK_LOGS_AND_DESCENT_ABSENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Build or refute an exact output-sensitive aligned-run colored histogram for
+  the actual degree-B pencil within B^(9/4+o(1)) setup, preserving complete
+  keys, counts, sources, adaptive restrictions, target, R10, rank, logs, and
+  descent without scanning B^3 positions or using scalar gap logs.

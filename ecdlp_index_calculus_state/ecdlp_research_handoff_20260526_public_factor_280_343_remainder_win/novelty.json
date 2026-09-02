@@ -1,0 +1,49 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-26",
+  "claim": "Frozen guarded public-factor portfolio survived fresh transfer windows 280-343, and 328-343 produced the first preserving full-remainder FFE below-rho witness in this chain.",
+  "artifacts": [
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_row_328_343_expanded_probe.json",
+    "ecdlp_index_calculus_state/low_term_total2_expanded_leaf_rescue_328_343_fixed_summary.json",
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_sage_factor_fresh_328_343_fixed_probe.json",
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_public_factor_quadratic_root_fresh_328_343_fixed_probe.json",
+    "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_rolling_with_280_343_fixed.json",
+    "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_loo_with_280_343_fixed.json",
+    "ecdlp_index_calculus_state/ecdlp_research_handoff_20260526_public_factor_280_343_remainder_win/false_positive_guard_structural_audit.json",
+    "ecdlp_index_calculus_state/ecdlp_research_handoff_20260526_public_factor_280_343_remainder_win/full_remainder_sparsity_audit.json"
+  ],
+  "new_evidence": {
+    "fresh_windows": [
+      "fresh_280_295_fixed",
+      "fresh_296_311_fixed",
+      "fresh_312_327_fixed",
+      "fresh_328_343_fixed"
+    ],
+    "raw_328_343_surface_count": 9,
+    "raw_328_343_best_policy": "global_fingerprint_hash",
+    "raw_328_343_best_policy_below_rho_count": 8,
+    "raw_328_343_best_policy_false_positive_count": 0,
+    "raw_328_343_preserving_sage_factor_surfaces": 9,
+    "raw_328_343_full_remainder_below_rho_count": 1,
+    "raw_328_343_min_full_remainder_ffe_ops_over_rho": 0.96350365,
+    "raw_328_343_min_full_remainder_monomials": 79,
+    "raw_328_343_min_known_hit_root_count": 12,
+    "rolling_test_window_count": 15,
+    "rolling_below_rho_count": 87,
+    "rolling_latest_window": "fresh_328_343_fixed",
+    "rolling_latest_below_rho_count": 5,
+    "rolling_latest_false_positive_count": 0,
+    "rolling_latest_max_charged_ops_over_rho": 0.72,
+    "loo_heldout_window_count": 16,
+    "loo_below_rho_count": 110,
+    "loo_false_positive_count": 0,
+    "loo_gap_to_guarded_oracle_below_rho": 0,
+    "loo_failing_window_count": 0
+  },
+  "novelty_assessment": {
+    "strength": "four fresh-window promotion plus one full-remainder below-rho witness",
+    "strongest_point": "The combined rolling and LOO guarded portfolios remain perfect through 280-343, while one 328-343 preserving Sage factor has full-remainder FFE cost 0.96350365 rho.",
+    "main_limitation": "The full-remainder win is one surface, direct public quadratic-root selection is 8/9 before portfolio selection, and this remains a component result.",
+    "next_required_step": "Explain the full-remainder sparsity mechanism and test whether it repeats in the next transfer block without changing the frozen guard."
+  }
+}

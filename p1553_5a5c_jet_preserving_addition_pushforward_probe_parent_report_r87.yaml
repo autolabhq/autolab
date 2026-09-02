@@ -1,0 +1,109 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-JET-PRESERVING-ADDITION-PUSHFORWARD-R87-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: marked_norm_nonfunctor_theorem_and_translated_remainder_screen
+run_count: 1
+status: target_local_first_norm_jet_nonfunctor_explicit_remainder_full_b2
+labels:
+  - exact-theorem
+  - exact-finite-controls
+  - synthetic-scalar-control
+  - prospective
+  - scoped-negative
+  - novelty-unverified
+owner: P1515-P1536-P1553-R82-R86
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Construct or refute a jet-preserving addition-pushforward intertwiner that
+  derives the colored first norm jet from compact D_A,D_C without forming the
+  B^3 five-C support or B^5 colored source quotient.
+inputs:
+  - path: p1553_5a5c_sparse_multihomogeneous_moment_recurrence_probe_report_r86.json
+    sha256: b93c1e581a7953cf1a9a86d3ff4220f5c2a92b2ea3e0ed7076c57d8896ee1173
+  - path: p1553_5a5c_sparse_multihomogeneous_moment_recurrence_probe_gate_r86.md
+    sha256: 21d52b3d5f04fa408d0d9a4ef229f9169f05f4a31aa858e21ff252ef497f9b44
+  - path: /Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md
+    sha256: 81ec3515b584c36a809c155b5f26127bce91c09d7bfe6bccc425cdef07d51393
+  - path: /Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-098/compressed_navigator_gate_v1.md
+    sha256: dadcadf45bdea910f0a12e904bdfe32c4a517b0756ef08148de75fb39929e3e5
+  - path: /Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-098/recursive_s3_local_separator_trichotomy_v1.md
+    sha256: dec667b097bcaefdf4c54091b2a9fa7757db5a65efe5b36e6ac15a6ff11a435a
+artifacts:
+  - path: p1553_5a5c_jet_preserving_addition_pushforward_probe_r87.py
+    sha256: d822035ed8e13a8ba0c987d5eab5a2a06bff251ebc32479ea358626ef038cf6b
+  - path: p1553_5a5c_jet_preserving_addition_pushforward_probe_report_r87.json
+    sha256: f10ba663867815c9ee0b1234f4d9dee698d450a3a7171336d36f3e328ea2333a
+  - path: frozen_5a5c_jet_pushforward_intertwiner.json
+    sha256: 17da8d76443ff32d9e603293888e321da139b5881c86a14ea9bffbbd4f1079b9
+  - path: slotwise_jet_composition_and_truncation_receipts.json
+    sha256: e92a9997b3cca52f5b76105cb73bb94b0edce1ff92e7aa91fe5e96603a66ef00
+  - path: public_input_target_jet_and_source_replay.json
+    sha256: 59b29d077fe60e37bd6c7c24471f305fe96392f3685e23d79e1d73fa3cc63fce
+  - path: exceptional_chart_and_false_positive_controls.json
+    sha256: 140445bb3acbd687125c375fd425d1560aa1c08c51277acf993e8ab3c0a0fe9d
+  - path: factor_logs_and_identical_descent_r87.json
+    sha256: f81bcda053f2d840d23bcab637e826148e5ee3fc9e3a96dbde712b78ca9c3b9c
+  - path: p1553_5a5c_jet_preserving_addition_pushforward_probe_gate_r87.md
+    sha256: 16d635add67bc64d63d5870663f68ce37e35a21fa4feb436c428b7afbe6ed565
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_jet_preserving_addition_pushforward_probe_r87.py
+    sha256: 41f86fe36a9c0ae9f8f4331b4a0dde2f697d81ff967775068c629414a910e21c
+verified_statements:
+  - >-
+    Exact Pontryagin norm composition requires P_C and P_C' at every shifted
+    target T-a, not only the first norm jet at the final target T.
+  - >-
+    Two split cubics with valid five-marker root perturbations have identical
+    seven-scalar local first jets over F_101, but composition with the same
+    two-point left divisor gives different scalar first jets.
+  - >-
+    In characteristic p>n, translations of a monic degree-n polynomial span
+    every polynomial of degree at most n; modulo degree-m A with m<=n+1, the
+    translated remainder orbit has full dimension m.
+  - >-
+    Four finite controls attain full remainder ranks 3,5,7,9, and a
+    32-by-243 synthetic endpoint split recovers one unique ten-choice source
+    by a degree-one translated gcd.
+  - >-
+    The five-A characteristic polynomial has B^2 degree, the five-C
+    polynomial has B^3 degree, and an explicit fresh translated remainder has
+    B^2 words, outside the stated setup/query rectangle.
+scoped_failures:
+  public_compact_c5_norm_inside_setup_cap: fail
+  fresh_translated_remainder_inside_online_cap: fail
+  black_box_scalar_resultant_source_localizer: unsupplied
+  fixed_factor_index_marker_identity: unsupplied
+  actual_semaev_projective_exceptional_charts: unsupplied
+  signed_source_biconditional_complete: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - the fixed factor-index marker subfamily
+  - black-box scalar resultants and implicit half-gcd source localization
+  - unrestricted arithmetic circuits over compact elliptic divisors
+  - complete signed, infinity, tangent, and exceptional Semaev charts
+admission:
+  passed_obligations: 6
+  obligation_count: 16
+  lane_admitted: false
+result:
+  target_local_marked_first_jet_universal_intertwiner: false
+  explicit_translated_remainder_inside_caps: false
+  black_box_scalar_resultant_source_localizer_supplied: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_TARGET_LOCAL_FIRST_JET_AND_EXPLICIT_TRANSLATED_REMAINDER_ONLY__EXACT_PONTRYAGIN_NORM_REQUIRES_SHIFTED_JETS__SPLIT_POLYNOMIAL_COUNTEREXAMPLE__TRANSLATION_REMAINDER_ORBIT_FULL_B2__C5_CHARACTERISTIC_B3__SYNTHETIC_TRANSLATED_GCD_SOURCE_EXACT_BUT_ENUMERATED__BLACK_BOX_SCALAR_RESULTANT_GCD_OPEN__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one black-box translated resultant/gcd source localizer
+  for P_A(X) and implicit P_C(T-X). It must consume compact five-slot
+  D_A,D_C, avoid materializing the B^3 C polynomial and B^2 translated
+  remainder/evaluation orbit, specialize one fresh target inside B^5/4,
+  return the unique jointly coupled source, and reject multiple, nonreduced,
+  signed, infinity, and exceptional fibers.

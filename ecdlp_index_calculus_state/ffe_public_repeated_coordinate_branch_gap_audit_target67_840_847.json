@@ -1,0 +1,115 @@
+{
+  "method": "coordinate_gate_vs_row_guard_vs_strict_pair_gap_audit",
+  "non_claims": [
+    "This is a diagnostic branch-gap audit, not a selector and not a speedup claim.",
+    "Exact coordinates are used only to identify missed branches across existing artifacts.",
+    "Coordinate-gate verification over rho does not promote the strict pair rule."
+  ],
+  "parameters": {
+    "coordinate_gate": [
+      "w840_847|ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_840_847_fresh_coordinate_gate.json"
+    ],
+    "guard_replay": [
+      "w840_847|ecdlp_index_calculus_state/ffe_public_repeated_coordinate_frozen_pipeline_target67_840_847_fresh_guard_replay.json"
+    ],
+    "pair_replay": [
+      "w840_847|ecdlp_index_calculus_state/ffe_public_repeated_coordinate_subset_pair_rule_replay_target67_pairminer_positive_decomp_no_exact_span0_count2_840_847.json"
+    ]
+  },
+  "schema": "ecdlp_public_repeated_coordinate_branch_gap_audit_v1",
+  "summary": {
+    "coordinate_gate": {
+      "case_count": 72,
+      "mean_ops_over_rho": 1.28711111,
+      "min_ops_over_rho": 1.224,
+      "relation_case_count": 16,
+      "unique_coordinate_transfer_count": 11,
+      "verified_below_rho_count": 0,
+      "verified_case_count": 16
+    },
+    "coordinate_gate_verified": {
+      "case_count": 16,
+      "mean_ops_over_rho": 1.414,
+      "min_ops_over_rho": 1.336,
+      "relation_case_count": 16,
+      "unique_coordinate_transfer_count": 3,
+      "verified_below_rho_count": 0,
+      "verified_case_count": 16
+    },
+    "coordinate_verified_missing_from_strict_pair": {
+      "coordinate_verified_not_in_strict_pair_count": 1,
+      "coordinate_verified_unique_key_count": 3,
+      "examples": [
+        {
+          "below_rho": false,
+          "coordinate": {
+            "b": 55,
+            "c": 7531
+          },
+          "key": "w840_847:847:55,7531",
+          "leaf_indices": [
+            0
+          ],
+          "leaf_selector": "mode_cost_low_term_support_total3",
+          "ops_over_rho": 1.336,
+          "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+          "public_key_verified": true,
+          "rank": 2,
+          "relation_count": 2,
+          "salts": [
+            204,
+            205,
+            208
+          ],
+          "source": "w840_847",
+          "top_k": 4,
+          "transfer_index": 847
+        }
+      ],
+      "strict_pair_unique_key_count": 4
+    },
+    "row_guard": {
+      "case_count": 48,
+      "mean_ops_over_rho": 0.462,
+      "min_ops_over_rho": 0.408,
+      "relation_case_count": 0,
+      "unique_coordinate_transfer_count": 7,
+      "verified_below_rho_count": 0,
+      "verified_case_count": 0
+    },
+    "row_guard_relation": {
+      "case_count": 0,
+      "mean_ops_over_rho": null,
+      "min_ops_over_rho": null,
+      "relation_case_count": 0,
+      "unique_coordinate_transfer_count": 0,
+      "verified_below_rho_count": 0,
+      "verified_case_count": 0
+    },
+    "row_guard_relation_form_signatures": {},
+    "row_guard_relation_missing_from_strict_pair": {
+      "examples": [],
+      "row_guard_relation_not_in_strict_pair_count": 0,
+      "row_guard_relation_unique_key_count": 0,
+      "strict_pair_unique_key_count": 4
+    },
+    "strict_pair": {
+      "case_count": 32,
+      "mean_ops_over_rho": 0.767,
+      "min_ops_over_rho": 0.48,
+      "relation_case_count": 12,
+      "unique_coordinate_transfer_count": 4,
+      "verified_below_rho_count": 0,
+      "verified_case_count": 8
+    },
+    "strict_pair_relation": {
+      "case_count": 12,
+      "mean_ops_over_rho": 0.872,
+      "min_ops_over_rho": 0.552,
+      "relation_case_count": 12,
+      "unique_coordinate_transfer_count": 2,
+      "verified_below_rho_count": 0,
+      "verified_case_count": 8
+    }
+  }
+}

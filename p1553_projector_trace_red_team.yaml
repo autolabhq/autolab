@@ -1,0 +1,71 @@
+schema_version: p1553-projector-trace-red-team-v1
+date: 2026-07-19
+role: red-team
+reviewer_agent_id: 019f7ca1-e1be-7941-97be-290005295446
+coordinator_transcription: true
+run_accounting:
+  experiments_executed: 0
+  solver_runs_executed: 0
+  fixtures_executed: 0
+  timing_runs_executed: 0
+  relation_campaigns_executed: 0
+terminal_verdict:
+  classification: revise_scoped_theorem
+  statement: >-
+    Projector trace is an exact integer restricted root count above the
+    explicit threshold and gives a branch-complete dyadic router. No cap-sized
+    trace contraction, elliptic rank lower bound, or ECDLP algorithm follows.
+  p1554_allocated: false
+  run_created: false
+  shoup_claim: false
+  breakthrough_claim: false
+accepted_root_count:
+  within_color_x_class_uniqueness: required
+  cross_color_repetition: occurrence_labelled_and_allowed
+  sharp_bound_used_in_proof: 16*min_j(product_(i!=j)|I_i|)
+  conservative_frozen_bound: 32*B^4
+  exact_integer_threshold: 32*B^4<p
+accepted_trace_router:
+  projector: chi_(R,I)=1-F_R^(p-1)
+  trace: C_(R,I)=z_(R,I)_mod_p
+  exact_count_above_threshold: true
+  count_calls: at_most_1_plus_5_ceil_log2_B
+  leaf_processing: enumerate_signs_verify_then_aggregate_columns
+  converse_router_to_exact_count: unproved
+accepted_rank_bounds:
+  projector_cp_rank: at_most_z_(R,I)
+  fermat_power_cp_rank: at_most_z_(R,I)_plus_1
+  universal_large_projector_rank_obstruction: false
+conditional_supplied_backend:
+  target_fresh_factor_cost: A*B^(1+o(1))
+  target_fresh_rank_cap: A<=B^(1/4+o(1))
+  target_independent_factor_setup_state: A*B^(1+o(1))
+  target_independent_weight_replay: A*B^(o(1))
+  target_independent_rank_cap: A<=B^(5/4+o(1))
+accepted_carry_scope:
+  first_carry_identity: K'_1=K_1+L
+  higher_power_affine_identity_claimed: false
+  carry_rank_lift_invariant: false
+accepted_standard_boundary:
+  literal_fermat_expansion: over_cap_for_fixed_r_R_at_least_2
+  literal_expansion_rank_lower_bound: false
+  pair_dictionary: B^2
+  standard_target_fresh_triple_table_or_search: B^3
+  standard_relation_collection: B^4
+  standard_blind_descent: B^3
+  implicit_count_contraction: unsupplied
+exactly_one_next_action: >-
+  Derive or refute one exact balanced 2|3 contraction computing only C_(R,I)
+  on the full box and every queried dyadic child, without materializing or
+  source-supplying the B^3 triple table, within B^(9/4+o(1)) setup/state and
+  B^(5/4+o(1)) fresh-target time/workspace. Charge the initial count, one child
+  per level including zero children, target specialization, exact field and
+  bit complexity, occurrence backpointers, leaf sign verification,
+  repeated-column aggregation, relation density and rank, factor logs, and
+  identical blind-masked descent. A negative result closes only the explicit
+  contraction representation it proves.
+source_bindings:
+  hash_algorithm: SHA-256
+  files:
+    p1553_projector_trace_router_gate_r9.md: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+    p1553_projector_trace_parent_report.yaml: 40ef9120033e21a16cd256fa5d7a3e4a3f035ef00f6f4fed5601246a477446f5

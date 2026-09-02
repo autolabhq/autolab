@@ -1,0 +1,1961 @@
+{
+  "global_batch_lane_artifact_checks": {
+    "batch_lane_shape_matches": true,
+    "global_batch_lane_artifact_matches": true,
+    "global_batch_lane_verified": true,
+    "native_failure_count_zero": true,
+    "shared_group_shape_matches": true,
+    "summary_case_count_matches": true,
+    "summary_group_count_matches": true,
+    "summary_lane_count_matches": true
+  },
+  "global_batch_lane_artifact_failures": [],
+  "method": "verifier_curve_and_contract_guard_for_grouped_left_y_batch_lane_kernel",
+  "non_claims": [
+    "This validates an implementation boundary for existing relation systems; it is not a fresh relation search.",
+    "The lane-amortized accounting remains conditional on the native batch-lane artifact and portable contract.",
+    "Second-pass relation predicates and modular linear algebra are unchanged from the prior fused-kernel contract."
+  ],
+  "parameters": {
+    "affine_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_affine_trace_target67_672_744.json",
+    "batch_lane_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_batch_lane_target67_672_744.json",
+    "campaign_task_dir": "/Volumes/Volume/autolab/tasks/ecdlp_index_calculus",
+    "lane_contract_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_batch_lane_contract_target67_672_744.json",
+    "source_names": []
+  },
+  "records": [
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": true,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 8,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 6,
+        "lane_fused_below_rho": true,
+        "lane_fused_ops": 117,
+        "lane_fused_ops_over_rho": 0.936,
+        "lane_total_saved_ops": 6,
+        "nonshared_base_ops": 100,
+        "original_fused_ops": 123,
+        "original_fused_ops_over_rho": 0.984,
+        "second_event_pass_ops": 12,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 4,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "12",
+              174,
+              218
+            ],
+            [
+              "12",
+              174,
+              469
+            ],
+            [
+              "12",
+              210,
+              218
+            ],
+            [
+              "12",
+              210,
+              469
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 4,
+          "group_index": 2,
+          "in_base_order_subgroup": true,
+          "left_y": 3914,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            9251,
+            9216
+          ],
+          "registers": {
+            "intercept": 927,
+            "slope": 7122,
+            "slope_numerator": 4102
+          },
+          "row_instance_trace_count": 6,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 4,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "12",
+              17,
+              218
+            ],
+            [
+              "12",
+              17,
+              469
+            ],
+            [
+              "12",
+              30,
+              218
+            ],
+            [
+              "12",
+              30,
+              469
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 5,
+          "group_index": 2,
+          "in_base_order_subgroup": true,
+          "left_y": 5888,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2705,
+            9753
+          ],
+          "registers": {
+            "intercept": 8989,
+            "slope": 3059,
+            "slope_numerator": 2128
+          },
+          "row_instance_trace_count": 6,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 6227,
+        "factor_variable_count": 14,
+        "form_count": 3,
+        "matches_recorded_secret": true,
+        "rank": 3,
+        "recorded_secret": 6227,
+        "relation_summary_count": 3,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            2705,
+            9753
+          ],
+          [
+            9251,
+            9216
+          ]
+        ],
+        "event_case_count": 8,
+        "reused_case_count": 4,
+        "second_pass_check_count": 12
+      },
+      "source_name": "coord1114_744",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": true,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 4,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 2,
+        "lane_fused_below_rho": true,
+        "lane_fused_ops": 108,
+        "lane_fused_ops_over_rho": 0.864,
+        "lane_total_saved_ops": 2,
+        "nonshared_base_ops": 100,
+        "original_fused_ops": 110,
+        "original_fused_ops_over_rho": 0.88,
+        "second_event_pass_ops": 4,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 2,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "1",
+              229,
+              42
+            ],
+            [
+              "1",
+              229,
+              286
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 10,
+          "group_index": 5,
+          "in_base_order_subgroup": true,
+          "left_y": 2638,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            5473,
+            680
+          ],
+          "registers": {
+            "intercept": 7507,
+            "slope": 2207,
+            "slope_numerator": 9662
+          },
+          "row_instance_trace_count": 2,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 2,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "1",
+              68,
+              42
+            ],
+            [
+              "1",
+              68,
+              286
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 11,
+          "group_index": 5,
+          "in_base_order_subgroup": true,
+          "left_y": 7164,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            7480,
+            6431
+          ],
+          "registers": {
+            "intercept": 422,
+            "slope": 8253,
+            "slope_numerator": 5136
+          },
+          "row_instance_trace_count": 2,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "117,6119",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "1"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 695
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 9438,
+        "factor_variable_count": 11,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 9438,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            5473,
+            680
+          ],
+          [
+            7480,
+            6431
+          ]
+        ],
+        "event_case_count": 4,
+        "reused_case_count": 0,
+        "second_pass_check_count": 4
+      },
+      "source_name": "coord117_688",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": true,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 12,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 10,
+        "lane_fused_below_rho": true,
+        "lane_fused_ops": 117,
+        "lane_fused_ops_over_rho": 0.936,
+        "lane_total_saved_ops": 10,
+        "nonshared_base_ops": 100,
+        "original_fused_ops": 127,
+        "original_fused_ops_over_rho": 1.016,
+        "second_event_pass_ops": 12,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 6,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "2",
+              130,
+              149
+            ],
+            [
+              "2",
+              130,
+              186
+            ],
+            [
+              "2",
+              130,
+              296
+            ],
+            [
+              "2",
+              144,
+              149
+            ],
+            [
+              "2",
+              144,
+              186
+            ],
+            [
+              "2",
+              144,
+              296
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 0,
+          "group_index": 0,
+          "in_base_order_subgroup": true,
+          "left_y": 5888,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ],
+          "registers": {
+            "intercept": 1402,
+            "slope": 8343,
+            "slope_numerator": 7664
+          },
+          "row_instance_trace_count": 6,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 6,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "2",
+              1,
+              149
+            ],
+            [
+              "2",
+              1,
+              186
+            ],
+            [
+              "2",
+              1,
+              296
+            ],
+            [
+              "2",
+              331,
+              149
+            ],
+            [
+              "2",
+              331,
+              186
+            ],
+            [
+              "2",
+              331,
+              296
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 1,
+          "group_index": 0,
+          "in_base_order_subgroup": true,
+          "left_y": 3914,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ],
+          "registers": {
+            "intercept": 6249,
+            "slope": 1551,
+            "slope_numerator": 9638
+          },
+          "row_instance_trace_count": 6,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 1767,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 1767,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            6213,
+            3539
+          ],
+          [
+            6696,
+            1166
+          ]
+        ],
+        "event_case_count": 12,
+        "reused_case_count": 0,
+        "second_pass_check_count": 12
+      },
+      "source_name": "coord161_720",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": true,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 12,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 10,
+        "lane_fused_below_rho": true,
+        "lane_fused_ops": 116,
+        "lane_fused_ops_over_rho": 0.928,
+        "lane_total_saved_ops": 10,
+        "nonshared_base_ops": 100,
+        "original_fused_ops": 126,
+        "original_fused_ops_over_rho": 1.008,
+        "second_event_pass_ops": 12,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 8,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "2",
+              4,
+              204
+            ],
+            [
+              "2",
+              4,
+              377
+            ],
+            [
+              "2",
+              4,
+              429
+            ],
+            [
+              "2",
+              4,
+              466
+            ],
+            [
+              "2",
+              226,
+              204
+            ],
+            [
+              "2",
+              226,
+              377
+            ],
+            [
+              "2",
+              226,
+              429
+            ],
+            [
+              "2",
+              226,
+              466
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 0,
+          "group_index": 0,
+          "in_base_order_subgroup": true,
+          "left_y": 5888,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ],
+          "registers": {
+            "intercept": 1402,
+            "slope": 8343,
+            "slope_numerator": 7664
+          },
+          "row_instance_trace_count": 8,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 4,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "2",
+              202,
+              204
+            ],
+            [
+              "2",
+              202,
+              377
+            ],
+            [
+              "2",
+              202,
+              429
+            ],
+            [
+              "2",
+              202,
+              466
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 1,
+          "group_index": 0,
+          "in_base_order_subgroup": true,
+          "left_y": 3914,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ],
+          "registers": {
+            "intercept": 6249,
+            "slope": 1551,
+            "slope_numerator": 9638
+          },
+          "row_instance_trace_count": 4,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 3693,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 3693,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            6213,
+            3539
+          ],
+          [
+            6696,
+            1166
+          ]
+        ],
+        "event_case_count": 12,
+        "reused_case_count": 0,
+        "second_pass_check_count": 12
+      },
+      "source_name": "coord161_728",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": true,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 6,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 4,
+        "lane_fused_below_rho": true,
+        "lane_fused_ops": 110,
+        "lane_fused_ops_over_rho": 0.88,
+        "lane_total_saved_ops": 4,
+        "nonshared_base_ops": 100,
+        "original_fused_ops": 114,
+        "original_fused_ops_over_rho": 0.912,
+        "second_event_pass_ops": 6,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 4,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "0",
+              37,
+              109
+            ],
+            [
+              "0",
+              37,
+              503
+            ],
+            [
+              "0",
+              210,
+              109
+            ],
+            [
+              "0",
+              210,
+              503
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 2,
+          "group_index": 1,
+          "in_base_order_subgroup": true,
+          "left_y": 6558,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2344,
+            7558
+          ],
+          "registers": {
+            "intercept": 554,
+            "slope": 76,
+            "slope_numerator": 3673
+          },
+          "row_instance_trace_count": 4,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 2,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "0",
+              294,
+              109
+            ],
+            [
+              "0",
+              294,
+              503
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 3,
+          "group_index": 1,
+          "in_base_order_subgroup": true,
+          "left_y": 3244,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            868,
+            1621
+          ],
+          "registers": {
+            "intercept": 5744,
+            "slope": 9275,
+            "slope_numerator": 6987
+          },
+          "row_instance_trace_count": 2,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "3|3",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 706
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 3713,
+        "factor_variable_count": 15,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 3713,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            868,
+            1621
+          ],
+          [
+            2344,
+            7558
+          ]
+        ],
+        "event_case_count": 6,
+        "reused_case_count": 0,
+        "second_pass_check_count": 6
+      },
+      "source_name": "coord55_704",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": true,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 4,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 2,
+        "lane_fused_below_rho": true,
+        "lane_fused_ops": 108,
+        "lane_fused_ops_over_rho": 0.864,
+        "lane_total_saved_ops": 2,
+        "nonshared_base_ops": 100,
+        "original_fused_ops": 110,
+        "original_fused_ops_over_rho": 0.88,
+        "second_event_pass_ops": 4,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 2,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "0",
+              11,
+              29
+            ],
+            [
+              "0",
+              11,
+              442
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 2,
+          "group_index": 1,
+          "in_base_order_subgroup": true,
+          "left_y": 6558,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2344,
+            7558
+          ],
+          "registers": {
+            "intercept": 554,
+            "slope": 76,
+            "slope_numerator": 3673
+          },
+          "row_instance_trace_count": 2,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 2,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "0",
+              170,
+              29
+            ],
+            [
+              "0",
+              170,
+              442
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 3,
+          "group_index": 1,
+          "in_base_order_subgroup": true,
+          "left_y": 3244,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            868,
+            1621
+          ],
+          "registers": {
+            "intercept": 5744,
+            "slope": 9275,
+            "slope_numerator": 6987
+          },
+          "row_instance_trace_count": 2,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 718
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 9797,
+        "factor_variable_count": 15,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 9797,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            868,
+            1621
+          ],
+          [
+            2344,
+            7558
+          ]
+        ],
+        "event_case_count": 4,
+        "reused_case_count": 0,
+        "second_pass_check_count": 4
+      },
+      "source_name": "coord55_712",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": true,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 8,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 6,
+        "lane_fused_below_rho": true,
+        "lane_fused_ops": 62,
+        "lane_fused_ops_over_rho": 0.496,
+        "lane_total_saved_ops": 6,
+        "nonshared_base_ops": 50,
+        "original_fused_ops": 68,
+        "original_fused_ops_over_rho": 0.544,
+        "second_event_pass_ops": 8,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 4,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "7",
+              19,
+              233
+            ],
+            [
+              "7",
+              19,
+              473
+            ],
+            [
+              "7",
+              191,
+              233
+            ],
+            [
+              "7",
+              191,
+              473
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 6,
+          "group_index": 3,
+          "in_base_order_subgroup": true,
+          "left_y": 3914,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            371,
+            1564
+          ],
+          "registers": {
+            "intercept": 0,
+            "slope": 6628,
+            "slope_numerator": 3691
+          },
+          "row_instance_trace_count": 4,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 4,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "7",
+              245,
+              233
+            ],
+            [
+              "7",
+              245,
+              473
+            ],
+            [
+              "7",
+              347,
+              233
+            ],
+            [
+              "7",
+              347,
+              473
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 7,
+          "group_index": 3,
+          "in_base_order_subgroup": true,
+          "left_y": 5888,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            2139,
+            6807
+          ],
+          "registers": {
+            "intercept": 6439,
+            "slope": 1827,
+            "slope_numerator": 1717
+          },
+          "row_instance_trace_count": 4,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "757,1452",
+        "hit_event_signature": "8",
+        "hit_root_signature": "1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "7"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 1,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 715
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 702,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 702,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            371,
+            1564
+          ],
+          [
+            2139,
+            6807
+          ]
+        ],
+        "event_case_count": 8,
+        "reused_case_count": 0,
+        "second_pass_check_count": 8
+      },
+      "source_name": "coord757_712",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": true,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 8,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 6,
+        "lane_fused_below_rho": true,
+        "lane_fused_ops": 112,
+        "lane_fused_ops_over_rho": 0.896,
+        "lane_total_saved_ops": 6,
+        "nonshared_base_ops": 100,
+        "original_fused_ops": 118,
+        "original_fused_ops_over_rho": 0.944,
+        "second_event_pass_ops": 8,
+        "shared_hit_root_ops": 1,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 4,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "9",
+              69,
+              336
+            ],
+            [
+              "9",
+              69,
+              359
+            ],
+            [
+              "9",
+              296,
+              336
+            ],
+            [
+              "9",
+              296,
+              359
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 8,
+          "group_index": 4,
+          "in_base_order_subgroup": true,
+          "left_y": 4094,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            7962,
+            4835
+          ],
+          "registers": {
+            "intercept": 9101,
+            "slope": 8916,
+            "slope_numerator": 6896
+          },
+          "row_instance_trace_count": 4,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 4,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "9",
+              5,
+              336
+            ],
+            [
+              "9",
+              5,
+              359
+            ],
+            [
+              "9",
+              151,
+              336
+            ],
+            [
+              "9",
+              151,
+              359
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 9,
+          "group_index": 4,
+          "in_base_order_subgroup": true,
+          "left_y": 5708,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            4247,
+            7706
+          ],
+          "registers": {
+            "intercept": 2569,
+            "slope": 7250,
+            "slope_numerator": 5282
+          },
+          "row_instance_trace_count": 4,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "861,9226",
+        "hit_event_signature": "4|4",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "9"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 692
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 8677,
+        "factor_variable_count": 14,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 8677,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            4247,
+            7706
+          ],
+          [
+            7962,
+            4835
+          ]
+        ],
+        "event_case_count": 8,
+        "reused_case_count": 0,
+        "second_pass_check_count": 8
+      },
+      "source_name": "coord861_688",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": false,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 9,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 7,
+        "lane_fused_below_rho": false,
+        "lane_fused_ops": 164,
+        "lane_fused_ops_over_rho": 1.312,
+        "lane_total_saved_ops": 7,
+        "nonshared_base_ops": 150,
+        "original_fused_ops": 171,
+        "original_fused_ops_over_rho": 1.368,
+        "second_event_pass_ops": 9,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 6,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "2",
+              76,
+              53
+            ],
+            [
+              "2",
+              76,
+              135
+            ],
+            [
+              "2",
+              76,
+              217
+            ],
+            [
+              "2",
+              322,
+              53
+            ],
+            [
+              "2",
+              322,
+              135
+            ],
+            [
+              "2",
+              322,
+              217
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 0,
+          "group_index": 0,
+          "in_base_order_subgroup": true,
+          "left_y": 5888,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ],
+          "registers": {
+            "intercept": 1402,
+            "slope": 8343,
+            "slope_numerator": 7664
+          },
+          "row_instance_trace_count": 6,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 3,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "2",
+              114,
+              53
+            ],
+            [
+              "2",
+              114,
+              135
+            ],
+            [
+              "2",
+              114,
+              217
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 1,
+          "group_index": 0,
+          "in_base_order_subgroup": true,
+          "left_y": 3914,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ],
+          "registers": {
+            "intercept": 6249,
+            "slope": 1551,
+            "slope_numerator": 9638
+          },
+          "row_instance_trace_count": 3,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "3|3|3",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 677
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 9544,
+        "factor_variable_count": 13,
+        "form_count": 2,
+        "matches_recorded_secret": true,
+        "rank": 2,
+        "recorded_secret": 9544,
+        "relation_summary_count": 2,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            6213,
+            3539
+          ],
+          [
+            6696,
+            1166
+          ]
+        ],
+        "event_case_count": 9,
+        "reused_case_count": 0,
+        "second_pass_check_count": 9
+      },
+      "source_name": "coord161_672",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    },
+    {
+      "batch_lane_abi_status": "batch_lane_abi_verified",
+      "checks": {
+        "affine_trace_verified": true,
+        "all_event_outputs_locally_consistent": true,
+        "all_event_outputs_match_abi": true,
+        "all_event_outputs_match_verifier_add": true,
+        "all_lanes_finite": true,
+        "all_lanes_in_subgroup": true,
+        "all_lanes_on_curve": true,
+        "batch_lane_count_matches": true,
+        "batch_lane_verified": true,
+        "case_count_matches": true,
+        "global_batch_lane_artifact_matches": true,
+        "lane_contract_below_rho": false,
+        "lane_contract_verified": true,
+        "left_y_lane_outputs_unique": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "second_pass_check_count_matches": true
+      },
+      "failures": [],
+      "implementation_boundary": "Batch-lane ABI/curve guard: grouped-left-y native lanes produce verifier-curve base-subgroup points while the portable lane contract preserves second-pass fanout and relation-derived secret recovery.",
+      "lane_amortized_work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "event_key_first_pass_ops": 6,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 4,
+        "lane_fused_below_rho": false,
+        "lane_fused_ops": 161,
+        "lane_fused_ops_over_rho": 1.288,
+        "lane_total_saved_ops": 4,
+        "nonshared_base_ops": 150,
+        "original_fused_ops": 165,
+        "original_fused_ops_over_rho": 1.32,
+        "second_event_pass_ops": 6,
+        "shared_hit_root_ops": 2,
+        "shared_leaf_ops": 1
+      },
+      "lane_curve_checks": [
+        {
+          "case_count": 3,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "2",
+              150,
+              14
+            ],
+            [
+              "2",
+              150,
+              96
+            ],
+            [
+              "2",
+              150,
+              299
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 0,
+          "group_index": 0,
+          "in_base_order_subgroup": true,
+          "left_y": 5888,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6696,
+            1166
+          ],
+          "registers": {
+            "intercept": 1402,
+            "slope": 8343,
+            "slope_numerator": 7664
+          },
+          "row_instance_trace_count": 3,
+          "source_lane_index": 0
+        },
+        {
+          "case_count": 3,
+          "coords_in_field": true,
+          "event_keys": [
+            [
+              "2",
+              19,
+              14
+            ],
+            [
+              "2",
+              19,
+              96
+            ],
+            [
+              "2",
+              19,
+              299
+            ]
+          ],
+          "finite_point": true,
+          "global_lane_index": 1,
+          "group_index": 0,
+          "in_base_order_subgroup": true,
+          "left_y": 3914,
+          "on_curve": true,
+          "parsed": true,
+          "point": [
+            6213,
+            3539
+          ],
+          "registers": {
+            "intercept": 6249,
+            "slope": 1551,
+            "slope_numerator": 9638
+          },
+          "row_instance_trace_count": 3,
+          "source_lane_index": 1
+        }
+      ],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "2|2|2",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 740
+      },
+      "relation_form_replay": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 4924,
+        "factor_variable_count": 14,
+        "form_count": 3,
+        "matches_recorded_secret": true,
+        "rank": 3,
+        "recorded_secret": 4924,
+        "relation_summary_count": 3,
+        "target_order": 9887,
+        "target_order_source": "frontier_targets_base_order"
+      },
+      "source_lane_counts": {
+        "batch_lane_count": 2,
+        "distinct_candidate_points": [
+          [
+            6213,
+            3539
+          ],
+          [
+            6696,
+            1166
+          ]
+        ],
+        "event_case_count": 6,
+        "reused_case_count": 0,
+        "second_pass_check_count": 6
+      },
+      "source_name": "coord161_736",
+      "target_context": {
+        "ainvs": [
+          0,
+          1,
+          1,
+          -12,
+          -21
+        ],
+        "base": [
+          0,
+          1424
+        ],
+        "base_order": 9887,
+        "generic_rho_steps": 125,
+        "group_order": 9887,
+        "label": "67.a1",
+        "p": 9803
+      }
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_batch_lane_abi_probe_v1",
+  "summary": {
+    "batch_lane_abi_verified_count": 10,
+    "below_rho_lane_contract_count": 8,
+    "global_batch_lane_artifact_verified": true,
+    "global_batch_lane_count": 12,
+    "interpretation": "The batch-lane implementation boundary is ABI-stable at the curve layer: source-local lanes are valid base-subgroup points and the lane-amortized contract keeps the original second-pass relation derivation intact.",
+    "lane_curve_verified_count": 10,
+    "lane_subgroup_verified_count": 10,
+    "mean_lane_contract_below_rho_ops_over_rho": 0.85,
+    "record_count": 10,
+    "relation_replay_derived_count": 10,
+    "relation_replay_secret_match_count": 10,
+    "second_pass_fanout_verified_count": 10,
+    "total_batch_lanes": 20,
+    "total_event_cases": 77,
+    "total_second_pass_checks": 81
+  }
+}

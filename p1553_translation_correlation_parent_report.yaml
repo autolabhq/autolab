@@ -1,0 +1,152 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-TRANSLATION-CORRELATION-SPARSE-CONVOLUTION-R15-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: draft_review_required_scoped_negative
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+  - independent-review-required
+owner: P1553/P1551/IDEA-057/IDEA-195
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether output-sensitive sparse convolution or a Fourier transplant can
+  construct the R14 complete Kummer moments, containment, joint source,
+  adaptive-child, fresh-target, and R10 rank-two interfaces inside the
+  B^(9/4) setup and B^(5/4) online rectangle.
+inputs:
+  - path: staged/p1553_tensor_trace_minpoly_compiler_gate_r14.md
+    sha256: da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac
+  - path: staged/p1553_tensor_trace_minpoly_parent_report.yaml
+    sha256: ec5bc6425a29575468f78fad1803412dc9a69d6a69e581e5deaad7160cb7de8e
+  - path: staged/p1553_tensor_trace_minpoly_red_team.yaml
+    sha256: 44c05cdfac2b994d25889e104e610bd37f635f1b97d1a5e5f4956363358c3d8f
+  - path: staged/p1553_erased_image_geometric_resolution_gate_r13.md
+    sha256: 78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: ideas/artifacts/ECDLP-IDEA-057/prime_order_composable_bucket_theorem.md
+    sha256: 524a59c1728bcbea804ac4be42ace5a965b68a6332e85d941829b89e04fc4225
+  - path: ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md
+    sha256: 5f1bd9c12ca700074c9cd327f6539bc880ec60b27431dc5f34e23b0a12f6c68f
+process_guidance:
+  local_contract: ecdlp_index_calculus_state/experiment_contract_p1436_autoresearch_focus_enrichment.md
+  source_url: https://x.com/askalphaxiv/status/2076737985559822734
+  use: focus on decisive tests, resolve nonblocking ambiguity locally, defer peripheral branches
+  evidentiary_role: workflow_only
+frozen_interface:
+  group_order: N prime, odd, and different from the base-field characteristic
+  label_bound: B=N^(1/5)
+  endpoint_support: S=Theta(B^2)
+  fifth_support: L=Theta(B)
+  source_pairs: S*L=Theta(B^3)
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted miss or one completely verified signed occurrence-labelled source
+verified_statements:
+  - >-
+    On every regular complete chart, branch trace and norm are
+    h(A+Q)+h(A-Q) and h(A+Q)h(A-Q). A separating scalar moment therefore
+    expands into weighted correlations of h(A), h(A+Q), and h(A-Q).
+  - >-
+    The raw map (A,Q) to (A+Q,A-Q) is bijective onto its image because N is
+    odd, with inverse A=(X+Y)/2 and Q=(X-Y)/2. Listing both branch translates
+    therefore retains exactly S*L source pairs before the map h merges them.
+  - >-
+    With the stated Fourier convention, each three-point correlation has an
+    exact double-character sum indexed by alpha and beta. The change to
+    alpha*beta and alpha*beta^(-1) is bijective and does not remove the second
+    frequency variable.
+  - >-
+    If one branch exponent is zero, its Fourier transform is a delta at the
+    trivial character and the correlation reduces to a one-frequency positive
+    control. A general complete divisor key requires both branch values.
+  - >-
+    Globally composable target-independent buckets on the prime-order EC group
+    are constant or injective by the bound IDEA-057 theorem. Coordinate hashes
+    need a new charged nonhomomorphic correction law.
+  - >-
+    Sparse nonnegative convolution works from known integer indices and
+    cancellation-free coefficients. Complete Kummer moments have unknown EC
+    scalar indices and field-valued correlations that can cancel; image size
+    K is not ordinary convolution support size.
+  - >-
+    R10 has nonnegative multiplicative histograms, but a full convolution can
+    have B^4 outputs while only B shifted coefficients are queried. A
+    full-support output-sensitive algorithm is the wrong interface in that
+    regime.
+scoped_failures:
+  direct_supported_correlation: S*L=B^3 incidences
+  raw_translate_pair_support: exactly_S*L_pairs
+  full_ec_character_table: N=B^5_modes_and_scalar_indexing
+  double_fourier_normal_form: N^2_standard_summands
+  literal_moment_expansion: Theta(j^3)_correlation_families_at_order_j
+  integer_sparse_convolution_transplant: no_known_ec_index_and_field_cancellation
+  globally_composable_ec_bucket: constant_or_injective
+  r10_full_support_convolution: up_to_B^4_outputs_for_B_queries
+surviving_exceptions:
+  - query-sensitive list-restricted nonhomomorphic translation-correlation sketch
+  - compact family-specific Kummer correlation or common-component identity
+  - supplied sparse Fourier support and compact exact transform sampler
+  - compressed image containment and joint source selector
+  - known-scalar exponent indices
+  - smooth supplied quotients of F_p^star
+  - one-branch, uniform-fiber, additive, and multiplicative controls
+  - arbitrary circuits and data structures outside the screened grammar
+positive_controls:
+  one_branch_correlation: exact one-frequency Fourier reduction
+  known_scalar_decks: explicit integer exponent indices
+  smooth_multiplicative_quotient: homomorphic buckets when a suitable divisor of p-1 is supplied
+  small_full_convolution_support: output-sensitive sparse convolution may fit setup
+  additive_and_multiplicative_maps: inherited exact factorized moment compilers
+complexity_accounting:
+  source_pairs: S*L=B^(3+o(1))
+  full_ec_characters: N=B^(5+o(1))
+  full_r10_convolution_support: up_to_B^(4+o(1))
+  requested_r10_coefficients: B^(1+o(1))
+  full_setup_and_state_cap: B^(9/4+o(1))
+  fresh_target_and_workspace_cap: B^(5/4+o(1))
+  conditional_lambda: max(s,1+d_loss+kappa,2)/5
+  conditional_mu: max(s_m,w,2)/5
+unproved_or_outside_scope:
+  - compact sampling of the required two-frequency correlations
+  - cross-endpoint branch fiber-product common-component classification
+  - exact moment stopping and image containment
+  - one jointly coupled source on a multiple fiber
+  - exact dyadic and adaptive-child updates
+  - fresh-target action and all-negative cost
+  - query-sensitive R10 sparse multiplicative convolution
+  - arbitrary arithmetic-circuit, word-RAM, or cell-probe lower bounds
+  - relation density, independent rank, factor logs, and scalar-blind descent
+deduplication:
+  - IDEA-057 owns the prime-order composable-bucket theorem and nonhomomorphic correction residual
+  - P1553 R10 owns exact rank-two sparse multiplicative convolution and queried coefficients
+  - P1553 R14 owns the exact trace-Hankel decoder and missing compact moment constructor
+  - P1551 owns the finite-domain selector and quotient-extractor grammar
+  - R15 adds no mechanism-new idea ID
+primary_sources:
+  - url: https://arxiv.org/abs/2107.07625
+    use: output-sensitive sparse nonnegative convolution interface
+  - url: https://arxiv.org/abs/1501.05296
+    use: explicit-index sumset and sparse polynomial multiplication interface
+  - url: https://arxiv.org/abs/2205.00342
+    use: represented-input multivariate multipoint-evaluation control
+  - url: https://www.shoup.net/papers/dlbounds1.pdf
+    use: generic-group baseline only
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_NEGATIVE__COMPLETE_BRANCH_MOMENTS_ARE_EXACT_THREE_POINT_TRANSLATION_CORRELATIONS__FOURIER_NORMAL_FORM_HAS_TWO_CHARACTER_VARIABLES__RAW_TRANSLATE_PAIR_IS_SOURCE_INJECTIVE_AND_HAS_S_L_ENTRIES__INTEGER_SPARSE_CONVOLUTION_NEEDS_KNOWN_INDICES_AND_NONNEGATIVE_SUPPORT__R10_FULL_SUPPORT_CAN_BE_B_FOURTH_FOR_ONLY_B_QUERIES__QUERY_SENSITIVE_NONHOMOMORPHIC_CORRELATION_SKETCH_AND_COMMON_COMPONENT_IDENTITY_REMAIN_OPEN__NO_NEW_IDEA__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Attempt one query-sensitive list-restricted nonhomomorphic
+  translation-correlation sketch for the complete Kummer chart, and classify
+  on paper the common components of the cross-endpoint branch fiber product.
+  Require the R14 moments, containment, one joint source, dyadic and
+  fresh-target updates, and R10's B shifted coefficients. Reject the first
+  scalar-log index, globally composable bucket, N character table, S*L pair
+  list, full-support output, cancellation-based support heuristic, or
+  uncharged repair table.

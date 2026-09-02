@@ -1,0 +1,549 @@
+{
+  "checks": {
+    "column_affine_instances": true,
+    "column_minimum_rank_is_eight": true,
+    "column_no_rank_two": true,
+    "row_affine_instances": true,
+    "row_rank_is_always_nine": true,
+    "trade_count": true,
+    "trade_minimum_rank_is_eight": true,
+    "trade_no_rank_two": true,
+    "trade_rank_instances": true
+  },
+  "classification": [
+    "toy",
+    "exact",
+    "model-bound",
+    "novelty-unverified"
+  ],
+  "column_partition_affine_scan": {
+    "instances": 10506,
+    "minimum_rank": 8,
+    "minimum_rank_witnesses": [
+      {
+        "start": 0,
+        "step": 42,
+        "translation": 71
+      },
+      {
+        "start": 1,
+        "step": 42,
+        "translation": 70
+      },
+      {
+        "start": 2,
+        "step": 42,
+        "translation": 69
+      },
+      {
+        "start": 3,
+        "step": 42,
+        "translation": 68
+      },
+      {
+        "start": 4,
+        "step": 42,
+        "translation": 67
+      },
+      {
+        "start": 5,
+        "step": 42,
+        "translation": 66
+      },
+      {
+        "start": 6,
+        "step": 42,
+        "translation": 65
+      },
+      {
+        "start": 7,
+        "step": 42,
+        "translation": 64
+      },
+      {
+        "start": 8,
+        "step": 42,
+        "translation": 63
+      },
+      {
+        "start": 9,
+        "step": 42,
+        "translation": 62
+      },
+      {
+        "start": 10,
+        "step": 42,
+        "translation": 61
+      },
+      {
+        "start": 11,
+        "step": 42,
+        "translation": 60
+      },
+      {
+        "start": 12,
+        "step": 42,
+        "translation": 59
+      },
+      {
+        "start": 13,
+        "step": 42,
+        "translation": 58
+      },
+      {
+        "start": 14,
+        "step": 42,
+        "translation": 57
+      },
+      {
+        "start": 15,
+        "step": 42,
+        "translation": 56
+      },
+      {
+        "start": 16,
+        "step": 42,
+        "translation": 55
+      },
+      {
+        "start": 17,
+        "step": 42,
+        "translation": 54
+      },
+      {
+        "start": 18,
+        "step": 42,
+        "translation": 53
+      },
+      {
+        "start": 19,
+        "step": 42,
+        "translation": 52
+      }
+    ],
+    "rank_histogram": {
+      "8": 206,
+      "9": 10300
+    }
+  },
+  "equal_pair_sum_trade_walk": {
+    "attempts": 20022,
+    "contexts": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        42
+      ],
+      [
+        1,
+        42
+      ],
+      [
+        0,
+        43
+      ],
+      [
+        12,
+        43
+      ],
+      [
+        0,
+        102
+      ],
+      [
+        50,
+        17
+      ]
+    ],
+    "minimum": {
+      "blocks": [
+        [
+          4,
+          7,
+          29,
+          32,
+          44,
+          49,
+          63,
+          64,
+          68
+        ],
+        [
+          5,
+          18,
+          21,
+          26,
+          46,
+          50,
+          56,
+          66,
+          72
+        ],
+        [
+          15,
+          16,
+          20,
+          28,
+          37,
+          52,
+          55,
+          60,
+          77
+        ],
+        [
+          3,
+          11,
+          22,
+          27,
+          41,
+          47,
+          59,
+          74,
+          76
+        ],
+        [
+          1,
+          6,
+          10,
+          30,
+          51,
+          54,
+          58,
+          71,
+          79
+        ],
+        [
+          9,
+          14,
+          25,
+          38,
+          39,
+          42,
+          53,
+          65,
+          75
+        ],
+        [
+          2,
+          17,
+          19,
+          36,
+          40,
+          45,
+          61,
+          67,
+          73
+        ],
+        [
+          0,
+          13,
+          31,
+          33,
+          34,
+          48,
+          62,
+          69,
+          70
+        ],
+        [
+          8,
+          12,
+          23,
+          24,
+          35,
+          43,
+          57,
+          78,
+          80
+        ]
+      ],
+      "context": [
+        0,
+        43
+      ],
+      "rank": 8,
+      "trade": 47
+    },
+    "rank_histograms": {
+      "start_0_step_1": {
+        "8": 102,
+        "9": 19899
+      },
+      "start_0_step_102": {
+        "8": 102,
+        "9": 19899
+      },
+      "start_0_step_42": {
+        "8": 96,
+        "9": 19905
+      },
+      "start_0_step_43": {
+        "8": 107,
+        "9": 19894
+      },
+      "start_12_step_43": {
+        "8": 107,
+        "9": 19894
+      },
+      "start_1_step_1": {
+        "8": 102,
+        "9": 19899
+      },
+      "start_1_step_42": {
+        "8": 96,
+        "9": 19905
+      },
+      "start_50_step_17": {
+        "8": 110,
+        "9": 19891
+      }
+    },
+    "rank_instances": 160008,
+    "seed": 1553,
+    "trades": 20000
+  },
+  "field_prime": 193,
+  "limits": [
+    "the row and column affine scans are exhaustive only for two structured partitions",
+    "the deterministic trade walk is a finite correlated family, not a random-sampling theorem",
+    "rank greater than two is a negative witness only for the tested partition and affine context",
+    "primitive degree-nine pencils outside the tested family remain open",
+    "no target locator, R10 output, rank campaign, logs, or descent is constructed"
+  ],
+  "linear_system": {
+    "basis": [
+      "1",
+      "x",
+      "x^2",
+      "x^3",
+      "x^4",
+      "y",
+      "x*y",
+      "x^2*y",
+      "x^3*y"
+    ],
+    "dimension": 9,
+    "divisor": "9O",
+    "fiber_partition_requirement": "nine equal-sum blocks with section-vector rank 2"
+  },
+  "magic_square": [
+    [
+      46,
+      57,
+      68,
+      79,
+      0,
+      11,
+      22,
+      33,
+      44
+    ],
+    [
+      56,
+      67,
+      78,
+      8,
+      10,
+      21,
+      32,
+      43,
+      45
+    ],
+    [
+      66,
+      77,
+      7,
+      9,
+      20,
+      31,
+      42,
+      53,
+      55
+    ],
+    [
+      76,
+      6,
+      17,
+      19,
+      30,
+      41,
+      52,
+      54,
+      65
+    ],
+    [
+      5,
+      16,
+      18,
+      29,
+      40,
+      51,
+      62,
+      64,
+      75
+    ],
+    [
+      15,
+      26,
+      28,
+      39,
+      50,
+      61,
+      63,
+      74,
+      4
+    ],
+    [
+      25,
+      27,
+      38,
+      49,
+      60,
+      71,
+      73,
+      3,
+      14
+    ],
+    [
+      35,
+      37,
+      48,
+      59,
+      70,
+      72,
+      2,
+      13,
+      24
+    ],
+    [
+      36,
+      47,
+      58,
+      69,
+      80,
+      1,
+      12,
+      23,
+      34
+    ]
+  ],
+  "pass": true,
+  "row_partition_affine_scan": {
+    "instances": 10506,
+    "minimum_rank": 9,
+    "minimum_rank_witnesses": [
+      {
+        "start": 0,
+        "step": 1,
+        "translation": 63
+      },
+      {
+        "start": 1,
+        "step": 1,
+        "translation": 62
+      },
+      {
+        "start": 2,
+        "step": 1,
+        "translation": 61
+      },
+      {
+        "start": 3,
+        "step": 1,
+        "translation": 60
+      },
+      {
+        "start": 4,
+        "step": 1,
+        "translation": 59
+      },
+      {
+        "start": 5,
+        "step": 1,
+        "translation": 58
+      },
+      {
+        "start": 6,
+        "step": 1,
+        "translation": 57
+      },
+      {
+        "start": 7,
+        "step": 1,
+        "translation": 56
+      },
+      {
+        "start": 8,
+        "step": 1,
+        "translation": 55
+      },
+      {
+        "start": 9,
+        "step": 1,
+        "translation": 54
+      },
+      {
+        "start": 10,
+        "step": 1,
+        "translation": 53
+      },
+      {
+        "start": 11,
+        "step": 1,
+        "translation": 52
+      },
+      {
+        "start": 12,
+        "step": 1,
+        "translation": 51
+      },
+      {
+        "start": 13,
+        "step": 1,
+        "translation": 50
+      },
+      {
+        "start": 14,
+        "step": 1,
+        "translation": 49
+      },
+      {
+        "start": 15,
+        "step": 1,
+        "translation": 48
+      },
+      {
+        "start": 16,
+        "step": 1,
+        "translation": 47
+      },
+      {
+        "start": 17,
+        "step": 1,
+        "translation": 46
+      },
+      {
+        "start": 18,
+        "step": 1,
+        "translation": 45
+      },
+      {
+        "start": 19,
+        "step": 1,
+        "translation": 44
+      }
+    ],
+    "rank_histogram": {
+      "9": 10506
+    }
+  },
+  "schema": "p1553.primitive_degree_nine_rank_search.r44.v1",
+  "subgroup_order": 103
+}

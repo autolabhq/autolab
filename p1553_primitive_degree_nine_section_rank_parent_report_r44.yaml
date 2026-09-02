@@ -1,0 +1,126 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-PRIMITIVE-DEGREE-NINE-SECTION-RANK-R44-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_finite_field_section_rank_and_finite_structured_search
+  model_scope: structured_degree_nine_partitions_on_r38_toy_curve
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_STRUCTURED_TOY_PRIMITIVE_PENCIL_NEGATIVE_GATE
+summary: >-
+  A primitive degree-nine pencil partitioning an 81-point interval into nine
+  fibers needs equal Abel sums and rank two among the nine exact section
+  vectors in H^0(E,O(9O)). Exhausting all 10,506 affine contexts of the normal
+  order-nine magic-square row and column partitions gives rank nine for every
+  row instance and ranks eight or nine for every column instance. A
+  deterministic 20,000-step equal-pair-sum trade walk contributes 160,008
+  exact rank instances in eight affine contexts and also has minimum rank
+  eight. The tested structured families contain no pencil; arbitrary
+  primitive degree-nine pencils remain open.
+inputs:
+  - path: staged/p1553_target_walk_support_work_gate_r38.md
+    sha256: ecacb63d18cc2e4478fa0d3c6b71930a4ba4e0a50f3866bd46752ed7c37f7aa5
+  - path: staged/p1553_single_interval_pencil_dlp_reduction_gate_r42.md
+    sha256: 8a8de8726e4fc9542f97cf7e1ba4fc54596307cc544da0d0b18b588553022dae
+  - path: staged/p1553_degree_three_inner_composition_gate_r43.md
+    sha256: b02901b1a822ce98f886146d5a04d2ea35b9515ec549358d2c4b7c02b6700ec8
+  - path: staged/p1553_r43_bundle.sha256
+    sha256: 5deeefbbf9fef16f424c494c260b781532eef37bb1f6ff859829b8ea300e45ab
+  - path: staged/p1553_r43_staging_receipt.yaml
+    sha256: b647080192cf34b92687f1e30bf0cff6a313b096a4c7847d08780d80f67d3e35
+outputs:
+  - path: staged/p1553_primitive_degree_nine_section_rank_gate_r44.md
+    sha256: bc5e2068f25814087f228c5bc422109b3f7d5122cfad6bb0600b6208d372885a
+  - path: staged/p1553_primitive_degree_nine_rank_search_r44.py
+    sha256: b9bbad90f2f5076ea0cb8346d94514a7e8f82993daa07c374d050e334be2687b
+  - path: staged/p1553_primitive_degree_nine_rank_search_report_r44.json
+    sha256: 29a998d29bd0b98d1b31b50ff9be589d3cedcaa5cb791cc911f4d337ffaf75c6
+frozen_parameters:
+  field_prime: 193
+  curve_order: 206
+  subgroup_order: 103
+  divisor: 9O
+  section_space_dimension: 9
+  interval_length: 81
+  block_count: 9
+  block_size: 9
+  required_section_rank: 2
+  affine_contexts_per_structured_partition: 10506
+  trade_seed: 1553
+  accepted_trades: 20000
+  trade_affine_contexts: 8
+theorems:
+  - >-
+    Equal Abel sums place the nine degree-nine block divisors in one complete
+    linear system, but one common pencil additionally requires their nine
+    section vectors to have rank exactly two.
+  - >-
+    Every affine embedding of the normal magic-square row partition has rank
+    nine, while every affine embedding of its column partition has rank eight
+    or nine.
+  - >-
+    Every exact rank instance in the finite equal-pair-sum trade walk has rank
+    eight or nine and therefore is not a primitive degree-nine pencil.
+controls:
+  all_nonzero_affine_steps_checked_for_rows: true
+  all_nonzero_affine_steps_checked_for_columns: true
+  all_affine_starts_checked_for_rows_and_columns: true
+  block_abel_sums_equal: true
+  common_translation_recomputed: true
+  section_kernels_exact_over_f193: true
+  section_vectors_projectively_normalized: true
+  finite_field_rank_exact: true
+  deterministic_trade_seed_frozen: true
+  arbitrary_equal_sum_partitions: admitted_outside_gate
+toy_control:
+  row_affine_instances: 10506
+  row_rank_histogram:
+    9: 10506
+  column_affine_instances: 10506
+  column_rank_histogram:
+    8: 206
+    9: 10300
+  trade_attempts: 20022
+  accepted_trades: 20000
+  trade_rank_instances: 160008
+  trade_rank_histogram:
+    8: 822
+    9: 159186
+  minimum_observed_rank: 8
+  rank_two_survivors: 0
+  replay_matches_report_byte_for_byte: true
+result:
+  classification: structured_toy_primitive_pencil_negative_arbitrary_family_open
+  magic_row_partition_pencil: absent_on_toy
+  magic_column_partition_pencil: absent_on_toy
+  finite_equal_sum_trade_family_pencil: absent_on_toy
+  arbitrary_primitive_degree_nine_pencil: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - the exhaustive affine result covers only two structured partitions on one toy curve
+  - the deterministic trade walk is finite and correlated, not a sampling theorem
+  - arbitrary equal-sum partitions and primitive degree-nine pencils remain open
+  - no asymptotic family, target locator, R10, rank campaign, logs, or descent
+deduplication:
+  - R38 owns the original degree-three low-boundary pencil
+  - R42 owns the single-interval pencil DLP reduction
+  - R43 closes every rational degree-three inner composition on the toy
+  - R44 starts the primitive degree-nine branch with exact section-rank tests
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_STRUCTURED_TOY_PRIMITIVE_PENCIL_NEGATIVE_GATE__NINE_EQUAL_ABEL_SUM_BLOCKS_REQUIRE_SECTION_VECTOR_RANK_TWO__MAGIC_ROW_AFFINE_SCAN_10506_INSTANCES_ALL_RANK_NINE__MAGIC_COLUMN_AFFINE_SCAN_206_RANK_EIGHT_10300_RANK_NINE__EQUAL_PAIR_SUM_TRADE_WALK_160008_RANK_INSTANCES_MINIMUM_EIGHT__NO_RANK_TWO_SURVIVOR__ARBITRARY_PRIMITIVE_DEGREE_NINE_PENCIL_OPEN__NO_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Replace the undirected trade walk with a rank-minor-guided search. Starting
+  from every rank-eight column witness, enumerate all equal-sum pair trades,
+  score each child by exact section rank and the number of vanishing 8-by-8
+  minors, retain a deterministic beam, and require any rank-two survivor to
+  pass R42's all-secret marked-target test before any asymptotic claim.

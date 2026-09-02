@@ -1,0 +1,227 @@
+schema_version: "p1553-net-red-team-v1"
+red_team_report:
+  id: "RT-20260719-P1553-NET-RT-R1"
+  task_id: "TASK-20260719-P1553-NET-RT-R1"
+  role: "red-team"
+  as_of_utc: "2026-07-19"
+  claim_under_review: "oracle-free gauge-invariant elliptic-net construction of z_R or exact dyadic unit products"
+  read_only: true
+  experiments_executed: 0
+  solver_runs_executed: 0
+  fixtures_executed: 0
+  timing_runs_executed: 0
+  relation_campaigns_executed: 0
+
+  producer_defects:
+    - id: "NET-DEFECT-RAW-INDEX"
+      severity: "critical"
+      location: "p1553_net_parent_report.yaml:65-74 and p1553_net_parent_theorem.md:48-61"
+      finding: "The raw W(j,1)=Psi_(j,1)(T,q) interface is false at j=0 and j=1. Stange normalizes Psi_(0,1) and Psi_(1,1) to 1, so these terms cannot witness zeros."
+      correction: "Set Q=q-2T and use Psi_(j+2,1)(T,Q), since (j+2)T+Q=jT+q. This correction is exact on the nondegenerate chart."
+    - id: "ZR-DEFECT-AMBIENT-FINITE"
+      severity: "major"
+      location: "coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_theorem_gate.md"
+      finding: "The ambient projection E_K x Spec(A_I) -> Spec(A_I) is proper/projective, not finite."
+      correction: "Only Z=D_12 intersection D_34^R -> Spec(A_I) is finite, because Z is closed in the finite divisor D_12 x Spec(A_I)."
+    - id: "NET-DEFECT-CHART-SCOPE"
+      severity: "major"
+      location: "p1553_net_parent_report.yaml:gauge_and_charts and net_zero_interface"
+      finding: "The standard net zero theorem requires a nondegenerate chart. Q=O, Q=+/-T, tangent, vertical, infinity, repeated, and nonreduced cases cannot be handled by unsaturated affine formulas."
+      correction: "Use complete group-law branches and saturated projective masks. These restore semantics but do not establish the required cost."
+    - id: "NET-DEFECT-SURROGATE-DISTINCTION"
+      severity: "major"
+      location: "p1553_net_parent_report.yaml:mixed_seed_gate"
+      finding: "The raw product of net terms is not proved equal to the R4 key-difference resultant. It may contain component-dependent gauge units."
+      correction: "The strongest valid grant is only a zero-support surrogate: one fixed-label r_R(t_j), at B^(2+o(1)) online work and workspace."
+    - id: "NET-DEFECT-ORBIT-ENVELOPE"
+      severity: "moderate"
+      location: "p1553_net_parent_report.yaml:mixed_seed_gate and parent theorem section Mixed-seed obstruction"
+      finding: "B^(5/2) is not a standard elliptic-net algorithm."
+      correction: "It is only an optimistic envelope after supplying a compact polynomial or rational recurrence. It remains above the B^(5/4) online cap."
+    - id: "HASH-DEFECT-PRODUCER"
+      severity: "major"
+      location: "coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_report.yaml:local_input_bindings"
+      finding: "The producer binds stale hashes for ledger/FINDING-PF-IC-001.md, focus/current_plan.json, coordination/dispatch_queue.json, and the canonical ZR-P1 task card."
+      correction: "Actual hashes are recorded under source_bindings and canonical_task_cards below."
+    - id: "HASH-DEFECT-REDTEAM"
+      severity: "major"
+      location: "coordination/tasks/TASK-20260718-P1553-ZR-RT-R1/red_team_report.yaml:local_input_bindings"
+      finding: "The red-team receipt repeats stale hashes for ledger/FINDING-PF-IC-001.md, focus/current_plan.json, coordination/dispatch_queue.json, and the canonical ZR-RT-R1 task card."
+      correction: "Actual hashes are recorded under source_bindings and canonical_task_cards below."
+    - id: "HASH-DEFECT-PARENT"
+      severity: "moderate"
+      location: "p1553_net_parent_report.yaml:216"
+      finding: "effective_task_card_sha256 fc1de984aca6c86e401704d101e545b038fb7339f99eb3913438a021d80954c7 is not reproducible from the authoritative dispatch queue."
+      correction: "The canonical NET-P1 task object hashes to 026b0d5a82c4baca4a47bc269d7a180492c4a24d2afd4148c66b5e3aade2c95f."
+
+  yaml_key_audit:
+    files_checked:
+      - "coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_report.yaml"
+      - "coordination/tasks/TASK-20260718-P1553-ZR-RT-R1/red_team_report.yaml"
+      - "p1553_net_parent_report.yaml"
+    parse_result: "all three YAML files parse successfully"
+    malformed_keys: []
+    non_ascii_keys: []
+    conclusion: "No malformed or non-ASCII YAML key was found in the checked YAML files."
+
+  reconstructed_interface:
+    scalar_orbit: "A_j=A_0+[j]T for 0<=j<B"
+    pair_target: "q_(u,v)=A_0+u+v-R"
+    corrected_point: "Q_(u,v)=q_(u,v)-2T"
+    corrected_term: "Psi_(j+2,1)(T,Q_(u,v))"
+    identity: "(j+2)T+Q_(u,v)=jT+q_(u,v)"
+    zero_claim: "On the nondegenerate chart, the corrected term is zero iff u+v+A_j=R."
+    exceptional_index_correction: "The raw j=0,1 terms are exceptional because Psi_(0,1)=Psi_(1,1)=1."
+
+  chart_requirements:
+    - case: "Q=O"
+      required_semantics: "Use direct identity handling; relation condition is (j+2)T=O."
+    - case: "Q=+T"
+      required_semantics: "Use direct complete-law handling; relation condition is (j+3)T=O."
+    - case: "Q=-T"
+      required_semantics: "Use direct complete-law handling; relation condition is (j+1)T=O."
+    - case: "tangent"
+      required_semantics: "Use the tangent branch only under its nonzero denominator mask."
+    - case: "vertical"
+      required_semantics: "Use the inverse/equal-x branch and retain output O."
+    - case: "infinity"
+      required_semantics: "Use projective identity branches; do not clear denominators."
+    - case: "repeated"
+      required_semantics: "Retain occurrence labels and multiplicities; squarefree z_R records support only."
+    - case: "nonreduced"
+      required_semantics: "Intersection length may change, but Fitting support and fifth-label support do not."
+
+  gauge_analysis:
+    rescaling: "W'_q(z)=c_q*f_q(z)*W_q(z), with c_q and f_q(z) nonzero."
+    invariant:
+      - "individual zero support"
+      - "aggregate zero support"
+      - "gcd support after interpolation at fifth labels"
+      - "zero/nonzero status of an interval product"
+    noninvariant:
+      - "raw nonzero aggregate values"
+      - "raw dyadic unit-product values"
+    consequence: "Any value-sensitive method must construct and charge a gauge normalization."
+
+  mixed_seed_analysis:
+    pair_degree: "n=Theta(B^2)"
+    pair_pair_count: "Theta(B^4)"
+    individual_mixed_seed_work: "B^(4+o(1))"
+    one_fixed_label_surrogate: "r_R(t_j) costs B^(2+o(1)) online work and workspace"
+    all_B_labels: "B fixed-label resultants cost B^(3+o(1)) online work"
+    optimistic_supplied_recurrence: "n*sqrt(B)=B^(5/2+o(1))"
+    cap: "B^(5/4+o(1))"
+    conclusion: "No cited standard net recurrence constructs the target-dependent mixed seed inside the cap."
+
+  recurrence_scope:
+    component_identity: "A_q+B_q+C_q=0 for each pair-pair component q"
+    diagonal_products: "A=product_q A_q, B=product_q B_q, C=product_q C_q"
+    proved_correction: "The component identities do not imply A+B+C=0."
+    expansion: "Multiplication produces mixed choices from {A,B,C}^q, not a closed three-term diagonal recurrence."
+    scope_limit: "This rejects standard componentwise quartic recurrence closure only. It does not prove monomial independence and does not rule out an unknown aggregate arithmetic or Boolean circuit."
+
+  controls:
+    favorable_hit: "One simple labelled fifth occurrence gives z_R(T)=T-t_a."
+    no_relation: "Every r_R(t_j) and every F_R(j) is a unit; no dynamic zero-divisor split exists."
+    gauge: "Independent nonzero quadratic gauges preserve support but change raw unit values."
+    exceptional_charts: "Identity, +/-T, tangent, vertical, infinity, repeated, and nonreduced strata require complete branches."
+    target_freshness: "Replacing R after preprocessing forces target-dependent seeds and resultants to be rebuilt."
+    replay: "Exact source recovery requires positive and negative dyadic child tests plus final complete-law singleton verification."
+
+  baseline_comparison:
+    pollard_rho: "N^(1/2+o(1))=B^(5/2+o(1)) time."
+    bsgs: "B^(5/2+o(1)) time and memory."
+    one_fixed_label: "B^(2+o(1)); below rho but above the B^(5/4) online cap and not a label/source decoder."
+    all_labels: "B^(3+o(1)); above the cap."
+    supplied_recurrence_envelope: "B^(5/2+o(1)); conditional and above the cap."
+    interpretation: "No better-than-rho ECDLP result is established."
+
+  conditional_complete_path:
+    setup: "B^(2+o(1))"
+    known_log_relation_campaign: "B targets times B^(5/4+o(1)) = B^(9/4+o(1))"
+    sparse_factor_log_algebra: "B^(2+o(1))"
+    masked_descent: "B^(5/4+o(1))"
+    exponents: "lambda=0.45 and mu=0.40"
+    missing:
+      - "oracle-free target-fresh constructor"
+      - "constant verified relation and target success density"
+      - "Theta(B) independent relation rank"
+      - "factor-log completion and scalar verification"
+      - "identical scalar-blind descent"
+      - "collision, deck-rebuild, failure, and bit accounting"
+
+  operation_level_dedup:
+    P1540: "Elliptic-net term evaluation, quadratic gauge, translated-coordinate, QRT, EDS, Fourier, and index-location controls."
+    P1513: "Translated products, common-factor location, and source-replay information flow."
+    P1551: "Finite-domain selector and represented endpoint-coefficient access."
+    P1516: "Two pair indexes with the missing target-local router."
+    conclusion: "The fifth-orbit net proposal is a semantic merge of existing operations, not a new owner or P1554."
+
+  claim_boundary:
+    closes:
+      - "raw j=0,1 net zero interface"
+      - "standard componentwise diagonal-product recurrence closure"
+      - "standard supplied-term and division-polynomial evaluation as a free mixed seed"
+      - "raw unit-product gauge invariance"
+      - "named represented routes costing B^3 or assuming r_R"
+    does_not_close:
+      - "unknown aggregate arithmetic circuits"
+      - "unknown Boolean circuits"
+      - "target-local data structures"
+      - "word-RAM or cell-probe methods"
+      - "monomial independence in general"
+      - "general circuit lower bounds"
+      - "Shoup generic-group lower bounds"
+      - "ECDLP in general"
+
+  terminal_scoped_verdict: "REVISE_SCOPED_NEGATIVE__RAW_INDEX_CORRECTED__EXACT_ZERO_SUPPORT_ONLY_ON_COMPLETE_NONDEGENERATE_CHART__GAUGE_SUPPORT_INVARIANT_RAW_UNITS_NOT_INVARIANT__STANDARD_MIXED_SEEDS_B4_OR_FIXED_LABEL_B2__B5OVER2_ONLY_SUPPLIED_RECURRENCE_ENVELOPE__DIAGONAL_PRODUCT_NONCLOSURE_SCOPED_TO_STANDARD_COMPONENTWISE_RECURRENCES__NO_RELATION_ALL_UNIT__RANK_LOGS_DESCENT_UNSUPPLIED__P1513_P1540_P1551_P1516_MERGE__NO_GENERAL_LOWER_BOUND__NO_SHOUP_CLAIM__NO_P1554__NO_RUN__NO_BREAKTHROUGH"
+
+  next_concrete_action: "Under existing P1553/P1513/P1551/P1516 ownership, require one theorem-only oracle-free construction of r_R mod g_I or exact dyadic unit products within total B^(5/4+o(1)) including all charts, target freshness, and positive and negative replay; otherwise preserve this scoped exception unchanged."
+
+  canonical_task_cards:
+    "TASK-20260718-P1553-ZR-P1": "a915ecaa29a5ecec593aa239aa0f3340bbd375a57bb117f13003fef7adcee571"
+    "TASK-20260718-P1553-ZR-RT-R1": "ee60d821f86a3e79c567e371ce2db67ee41bc3eb5e2c1dcf0c2ce3a76549defc"
+    "TASK-20260719-P1553-NET-P1": "026b0d5a82c4baca4a47bc269d7a180492c4a24d2afd4148c66b5e3aade2c95f"
+    "TASK-20260719-P1553-NET-RT-R1": "65ec571e0391c110ecf844fb2834f224b8c3f13777981c2692d2a4811d46a626"
+
+  source_bindings:
+    - path: "/Volumes/Volume/crypto-autoresearcher/AGENTS.md"
+      sha256: "4b9810aaa2c96a9e8d7db097d6abfc8cbeb24038df3a09e98f0beb4c23a6d362"
+    - path: "/Volumes/Volume/crypto-autoresearcher/agents/red-team.md"
+      sha256: "7ae9372d518fba2b9868eccf1d99102cde1ac6dae2d7bb593971d264314893f5"
+    - path: "/Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-012/p1553_target_label_common_factor_gate_r4.md"
+      sha256: "8cf15364c2da6830255216f3766a5d016b847d4bd012df92fd86c462ee6a9bc1"
+    - path: "/Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-006/p1540_elliptic_net_translated_pole_annihilator_gate.md"
+      sha256: "d9a4040230022c24f7011932ef7cd9b5bcea51236a80c042bb498d2012428437"
+    - path: "/Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-006/p1540_r1_independent_audit.md"
+      sha256: "8032be2d3a645ac64c046783191cc9c634715518eb18e4702acf66e077223d45"
+    - path: "/Volumes/Volume/crypto-autoresearcher/coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_report.yaml"
+      sha256: "2501e4fa56f425186313472e0da57cd8c5fae66d3cea22f0464ca4d82fc62adf"
+    - path: "/Volumes/Volume/crypto-autoresearcher/coordination/tasks/TASK-20260718-P1553-ZR-P1/zr_theorem_gate.md"
+      sha256: "41a93d0f0d9c1c0b1a1adb0debf39b8a84425f0d4f7147ea5eb12c89719c2b08"
+    - path: "/Volumes/Volume/crypto-autoresearcher/coordination/tasks/TASK-20260718-P1553-ZR-RT-R1/red_team_report.yaml"
+      sha256: "0f1041d6a8aa2859e8e087e88462044f7cab76da08c8e78f0597f857838fc8a3"
+    - path: "/Volumes/Volume/crypto-autoresearcher/coordination/tasks/TASK-20260718-P1553-ZR-RT-R1/zr_red_team.md"
+      sha256: "e7b9150064adc393850c410a092f26b3ebd1fadbf7a9b714ff0f9b70b5d0216c"
+    - path: "/Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-121/translated_product_common_norm_v3_audit_v2.md"
+      sha256: "407e3c7da6345f156f7c6bcaa75749e16b6184735d32be4b6e4aca69427763d5"
+    - path: "/Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-121/ku_circuit_reduction_v2.md"
+      sha256: "6fcca1d12e911f6eb2142ac96b6d0a83b6ac20db11efd06bc24c0abb7c99dc48"
+    - path: "/Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-165/pair_sum_quotient_theorem.md"
+      sha256: "18cebc9c209c6ba0d705e43da7f921885e60d3436b201375e306e14f4ae0bdb2"
+    - path: "/Volumes/Volume/crypto-autoresearcher/ledger/FINDING-PF-IC-001.md"
+      sha256: "62da10b47e9c0a9dd289f7ef4890df0d23098cc94ab9be52ab748f41411254b4"
+    - path: "/Volumes/Volume/crypto-autoresearcher/focus/current_plan.json"
+      sha256: "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6"
+    - path: "/Volumes/Volume/crypto-autoresearcher/focus/current_plan.md"
+      sha256: "5d5d360a0e99e98f90d062fd5908d0690397ee060161f2700422291c7ae2563d"
+    - path: "/Volumes/Volume/crypto-autoresearcher/coordination/dispatch_queue.json"
+      sha256: "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2"
+    - path: "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_net_parent_report.yaml"
+      sha256: "16d5b3499b9255e1f70db7641cfdd82154a952401c5502c1ab3bf7c0b8432a82"
+    - path: "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_net_parent_theorem.md"
+      sha256: "695de47e3debcf8f316071a31c34feb71326e0de02dc086b2f9bb92926b8b420"
+
+  artifact_paths:
+    - "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_net_parent_report.yaml"
+    - "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_net_parent_theorem.md"

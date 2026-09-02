@@ -1,0 +1,186 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-ERASED-IMAGE-GEOMETRIC-RESOLUTION-R13-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: revise_scoped_theorem
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+owner: P1553/P1551/P1533/P1510/P1515/IDEA-001/IDEA-003/IDEA-012/IDEA-057/IDEA-195
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the fifth-label-erased complete Kummer branch image and
+  one exact source can be represented and constructed below the dense S*L
+  incidence cost, while preserving target queries and adaptive source replay.
+inputs:
+  - path: staged/p1553_high_degree_kummer_provenance_gate_r12.md
+    sha256: 999159b7f3240ad6cc78034bc68ef6f9c27bfb3a00f88ff2ffc38cc58e9fe181
+  - path: staged/p1553_high_degree_kummer_provenance_parent_report.yaml
+    sha256: 0b1c9869776a5d8669693d4a05eaf096659e02dbce424fbfce9dd3fff269a8f4
+  - path: staged/p1553_high_degree_kummer_provenance_red_team.md
+    sha256: 2a609a031cf3d5aa373f9ce458f0500c7cc51c149b309c74198a6c205b89c449
+  - path: staged/p1553_cartesian_kummer_rigidity_gate_r11.md
+    sha256: 6c79b486bfa4cfd14674033a438db3d91ddf7bbe4d2c4aaf309f1a0706f0df4e
+  - path: staged/p1553_cartesian_kummer_rigidity_parent_report.yaml
+    sha256: 5f65da4f50e301067258f14f4b8e6dec91a0f096ac04e2418e4957bd649604b2
+  - path: staged/p1553_cartesian_kummer_rigidity_red_team.yaml
+    sha256: dec795cf4abcb14fd33b4e264dbe13eca168f504fc5557dfb6421bd04d99c14b
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md
+    sha256: 5f1bd9c12ca700074c9cd327f6539bc880ec60b27431dc5f34e23b0a12f6c68f
+  - path: ideas/artifacts/ECDLP-IDEA-003/p1533_collision_multiset_resultant_spec.md
+    sha256: f9eb2ae215d75cce9684e8d2fde7d4a94e6ce36a9a8787eec8a5614ea1a8f337
+  - path: ideas/artifacts/ECDLP-IDEA-012/p1553_target_label_common_factor_gate_r4.md
+    sha256: 8cf15364c2da6830255216f3766a5d016b847d4bd012df92fd86c462ee6a9bc1
+  - path: research/p1510_global_truncated_marked_resultant_compiler.md
+    sha256: 20c7e26c55801aba57d2095254823f20de66ca499c8281ac761603391e8f0d68
+  - path: research/p1510_global_truncated_marked_resultant_compiler_audit.md
+    sha256: e89c11c5a57ae2ac90f4d42b3d33558cb1c1ba1765d7409a7940accba3098452
+process_guidance:
+  local_contract: ecdlp_index_calculus_state/experiment_contract_p1436_autoresearch_focus_enrichment.md
+  source_url: https://x.com/askalphaxiv/status/2076737985559822734
+  use: focus on decisive tests, resolve nonblocking ambiguity locally, defer peripheral branches
+  evidentiary_role: workflow_only
+frozen_interface:
+  group_order: N=p^(1+o(1)) prime
+  characteristic: p>3
+  label_bound: B=N^(1/5)
+  pair_endpoint_support: U of size S
+  pair_occurrence_weights: omega(u) positive integers summing to B^2
+  fifth_occurrences: L=Theta(B), specialized to L=B
+  image_map: Phi(u,q)=(psi(u),[f(A+Q)]+[f(A-Q)])
+  image_size: K
+  graph_degree: n=S*L
+  total_occurrence_mass: B^2*L=B^(3+o(1))
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted miss or one completely verified signed occurrence-labelled source
+verified_statements:
+  - >-
+    Transposing R11 at fixed endpoint gives at most 16d endpoints for every
+    colliding pair of distinct fifth labels. Two Cauchy-Schwarz steps and the
+    at-most-d psi fiber yield
+    K>=S^2*L^2/(d*(S*L+32d*binomial(L,2))).
+  - >-
+    At certified dense support S=Theta(B^2), L=Theta(B), and d<=B, the erased
+    image has K=Omega(B^3/d). Any explicit O(K) representation below the
+    B^(9/4+o(1)) state cap therefore requires d=Omega(B^(3/4-o(1))).
+  - >-
+    After a valid projective chart and injective scalar projection are chosen,
+    the radical image polynomial P, geometric multiplicity interpolant,
+    occurrence-mass interpolant, one pair-occurrence selector, one fifth-label
+    selector, constant-many full-key coordinates, and an equivalent
+    root-indexed table use O(K) base-field coefficients.
+  - >-
+    The pair and fifth selectors are one jointly chosen set-theoretic section:
+    at every image root they name the same source preimage. Independent
+    marginal selectors are not source-faithful.
+  - >-
+    For random projection, chart failure is at most K/p and collision failure
+    is at most K(K-1)/(2p). Under K<=B^(9/4+o(1)) and p=B^(5+o(1)), the latter
+    is B^(-1/2+o(1)); a constructor must charge collision detection,
+    resampling, and complete verification.
+  - >-
+    The full graph norm or characteristic polynomial equals the product over
+    U x I_5, has degree n=S*L, and factors as product_y(T-t_y)^m_y. Its
+    squarefree part has degree K, but squarefree reduction after construction
+    does not refund degree-n represented traffic.
+  - >-
+    Explicit multiplication matrices, split graph values, graph geometric
+    resolutions, and explicit pushforward or Fitting modules expose at least
+    n base-field entries in the frozen graph-first represented grammar. At
+    dense support n=Theta(B^3).
+  - >-
+    O(K) source witnesses prove only that represented roots have preimages.
+    Even with total geometric and occurrence masses, they do not prove that
+    all actual image states were represented. Standard exact containment
+    verification returns to the n-dimensional source algebra.
+  - >-
+    One selected source per image state cannot answer an adaptive child that
+    excludes the selected source but contains another source in the same
+    fiber. Exact child packages, a range-count/source-selector index, or an
+    implicit child fiber query are additionally required.
+  - >-
+    The compact image package does not express R10's rank-two sparse
+    multiplicative convolution. Known exact evaluators remain B^3 direct work
+    or p-1 dense modes.
+  - >-
+    P1510 is an independently audited output-sensitive marked-resultant
+    compiler on a different frozen family. It prevents treating resultant
+    syntax or graph degree as an unrestricted image-construction lower bound.
+scoped_failures:
+  explicit_erased_image_below_degree_B_three_quarters_at_dense_support: image_size_over_B^(9/4)
+  full_graph_norm_or_characteristic_polynomial_at_dense_support: B^3 represented degree
+  explicit_graph_multiplication_or_split_value_algebra_at_dense_support: B^3 traffic
+  graph_geometric_resolution_at_dense_support: B^3 source degree
+  explicit_pushforward_or_fitting_module_at_dense_support: B^3 base-field dimension
+  root_witnesses_plus_total_mass: does_not_certify_image_completeness
+  one_source_section_per_image_state: does_not_support_arbitrary_child_counts
+  image_polynomial_without_target_action: does_not_answer_fresh_target_query
+  image_polynomial_without_rank_two_index: does_not_pass_R10_control
+surviving_exceptions:
+  - family-specific output-sensitive radical-image compiler
+  - compressed exact image-containment proof with charged verification
+  - subset-stable exact fiber range counting and source selection
+  - P1510-style multiplicative decomposition specialized to Phi
+  - uniform-fiber quotient construction that also passes the prime-order gate
+  - arbitrary arithmetic circuits, proof systems, and data structures outside the frozen grammar
+positive_controls:
+  p1510: output-sensitive compiler exists on its frozen marked-resultant family but proves no ECDLP stage
+  composite_torsion_quotient: exact compact image and inversion but wrong source-group structure
+  arithmetic_progression_interpolation: compact invertible image but O(B/N) relation density and known logs
+  supplied_image_package: O(K) representation and setup expansion but uncharged construction and completeness
+complexity_accounting:
+  graph_degree: S*L
+  dense_graph_degree: B^3
+  image_representation: O(K)
+  erased_image_floor: S^2*L^2/(d*(S*L+32d*binomial(L,2)))
+  dense_erased_image_floor_for_d_at_most_B: Omega(B^3/d)
+  total_occurrence_mass: B^2*L=B^(3+o(1)) but values individually and total are below p
+  full_setup_and_state_cap: B^(9/4+o(1))
+  fresh_target_and_workspace_cap: B^(5/4+o(1))
+  conditional_parameters: setup B^s, state B^s_m, target work B^kappa, target workspace B^w, reciprocal density B^d_loss
+  conditional_lambda: max(s,1+d_loss+kappa,2)/5
+  conditional_mu: max(s_m,w,2)/5
+unproved_or_outside_scope:
+  - cross-endpoint cross-fifth collision energy and common-component classification
+  - output-sensitive construction of P and exact occurrence weights
+  - a compressed proof that every source image is a root of P
+  - exact adaptive-child range counting and source selection
+  - fresh-target action and all-negative cost
+  - R10 rank-two sparse multiplicative-convolution evaluator
+  - arbitrary circuit, proof-system, word-RAM, cell-probe, or data-structure lower bounds
+  - relation density, independent rank, factor logs, and scalar-blind descent
+deduplication:
+  - P1515 and IDEA-057 own list-specific rational Kummer maps and the R11 finite-Cartesian branch-rigidity theorem
+  - P1533 owns characteristic-polynomial, direct-resultant, subdivision, and source-recovery semantics
+  - P1551 owns explicit finite-domain quotient and unrepresented-extractor boundaries
+  - IDEA-012 and P1553 R4 own target-label common-factor and Fitting-module semantics
+  - P1510 owns the positive output-sensitive marked-resultant compiler control
+  - P1553 R10 owns exact Query2P1 counts, dyadic replay, and rank-two convolution
+  - R13 introduces no mechanism-new operation and no new idea ID
+primary_sources:
+  - url: https://arxiv.org/abs/alg-geom/9609005
+    use: geometric-degree-sensitive elimination upper-bound framework
+  - url: https://arxiv.org/abs/math/0210009
+    use: Chow-form complexity and geometric-degree comparison
+  - url: https://arxiv.org/abs/2205.00342
+    use: represented multivariate multipoint-evaluation comparison
+disposition: >-
+  REVISE_SCOPED_THEOREM__TRANSPOSED_BRANCH_ENERGY_GIVES_K_AT_LEAST_S_SQUARED_L_SQUARED_OVER_D_TIMES_S_L_PLUS_32_D_BINOMIAL_L_2__DENSE_D_AT_MOST_B_GIVES_K_OMEGA_B_CUBED_OVER_D__EXPLICIT_STATE_FORCES_D_AT_LEAST_B_THREE_QUARTERS__EXACT_RADICAL_IMAGE_MULTIPLICITIES_AND_ONE_SOURCE_HAVE_O_K_REPRESENTATION__STANDARD_GRAPH_FIRST_ROUTES_EXPOSE_N_EQUALS_S_L__DENSE_N_EQUALS_B_CUBED__WITNESSES_AND_TOTAL_MASS_DO_NOT_CERTIFY_COMPLETENESS__ONE_SOURCE_SECTION_DOES_NOT_SUPPORT_ADAPTIVE_CHILDREN__RANK_TWO_AND_FRESH_TARGET_ACTION_ABSENT__P1510_PRESERVES_OUTPUT_SENSITIVE_COMPILER_EXCEPTION__NO_NEW_IDEA__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Write one explicit output-sensitive compiler attempt for Phi from the unary
+  support polynomials, Kummer map, occurrence weights, and source dictionaries.
+  It must return the radical image, exact occurrence weights, exact source
+  selectors, and a compressed proof of image completeness; support every
+  adaptive child and fresh target; express R10's rank-two control; and meet
+  B^(9/4) setup/state and B^(5/4) online work/workspace in the surviving
+  dense-support degree range B^(3/4-o(1))<=d<=B before the inherited density,
+  rank, factor-log, and blind-descent gates are evaluated.

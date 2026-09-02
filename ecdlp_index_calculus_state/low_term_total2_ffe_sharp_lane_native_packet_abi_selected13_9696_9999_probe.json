@@ -1,0 +1,149 @@
+{
+  "artifacts": {
+    "c_header": "ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_kernel_packet_manifest_selected13_9696_9999_probe.h",
+    "packet_manifest": "ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_kernel_packet_manifest_selected13_9696_9999_probe.json"
+  },
+  "claim_status": "FFE_SHARP_LANE_NATIVE_PACKET_ABI_VERIFIED",
+  "created_at": "2026-06-05T17:29:57Z",
+  "expected": {
+    "backfill_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "exact_transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "full_family_backfill_transfers": [
+      9715,
+      9728,
+      9755,
+      9790,
+      9814,
+      9839,
+      9840,
+      9872,
+      9889,
+      9909,
+      9913,
+      9943,
+      9981
+    ],
+    "full_family_masks": [
+      33,
+      17408,
+      34816
+    ],
+    "neutral_transfers": [
+      9969
+    ],
+    "replay_class_counts": {
+      "direct_rank_backfill": 13,
+      "exact_positive_replay": 6,
+      "neutral_exported_replay": 1
+    },
+    "row_class_counts": {
+      "direct_rank_backfill_row": 39,
+      "exact_positive_row": 6,
+      "inherited_promotion_row": 12,
+      "neutral_exported_row": 3
+    }
+  },
+  "failures": [],
+  "honesty_boundary": [
+    "This verifies the native C ABI shape for selected13 sharp-lane packets only.",
+    "It does not evaluate summation polynomials or finite-field equations.",
+    "It does not export direct/rank rows, solve an ECDLP instance, or claim a Pollard-rho speedup."
+  ],
+  "native_execution": {
+    "c_source_sha256": "83bb85b1a96124044d7f271a0cdae4b0ae1bcc8224b3f6adcd0e5cf6a9cdee41",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-I",
+      "ecdlp_index_calculus_state",
+      "/private/tmp/ecdlp_selected13_abi_gkl2ue4t/selected13_native_packet_abi_probe.c",
+      "-o",
+      "/private/tmp/ecdlp_selected13_abi_gkl2ue4t/selected13_native_packet_abi_probe"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "native_summary": {
+      "backfill_full_family_packet_count": 13,
+      "backfill_packet_seen_count": 13,
+      "backfill_transfer_mismatch_count": 0,
+      "covered_row_count": 60,
+      "failure_count": 0,
+      "neutral_9969_ok_count": 1,
+      "neutral_9969_seen_count": 1,
+      "neutral_bad_flag_count": 0,
+      "packet_count": 20,
+      "replay_class_counts": {
+        "1": 13,
+        "2": 0,
+        "3": 6,
+        "4": 1
+      },
+      "row_class_counts": {
+        "1": 39,
+        "2": 12,
+        "3": 6,
+        "4": 3
+      },
+      "row_count": 60,
+      "row_index_mismatch_count": 0,
+      "selected13_missing_count": 0
+    },
+    "run_returncode": 0,
+    "run_stderr": "",
+    "run_stdout": "{\"packet_count\":20,\"row_count\":60,\"covered_row_count\":60,\"failure_count\":0,\"row_index_mismatch_count\":0,\"selected13_missing_count\":0,\"backfill_packet_seen_count\":13,\"backfill_transfer_mismatch_count\":0,\"backfill_full_family_packet_count\":13,\"neutral_9969_seen_count\":1,\"neutral_9969_ok_count\":1,\"neutral_bad_flag_count\":0,\"replay_class_counts\":{\"1\":13,\"2\":0,\"3\":6,\"4\":1},\"row_class_counts\":{\"1\":39,\"2\":12,\"3\":6,\"4\":3}}\n"
+  },
+  "schema": "ecdlp.low_term_total2_ffe_sharp_lane_native_packet_abi_probe.v1",
+  "summary": {
+    "backfill_full_family_packet_count": 13,
+    "backfill_transfer_count": 13,
+    "compiled": true,
+    "exact_positive_packet_count": 6,
+    "native_failure_count": 0,
+    "native_packet_count": 20,
+    "native_row_count": 60,
+    "neutral_9969_ok_count": 1,
+    "neutral_packet_count": 1,
+    "packet_count": 20,
+    "replay_class_counts": {
+      "direct_rank_backfill": 13,
+      "exact_positive_replay": 6,
+      "neutral_exported_replay": 1
+    },
+    "row_class_counts": {
+      "direct_rank_backfill_row": 39,
+      "exact_positive_row": 6,
+      "inherited_promotion_row": 12,
+      "neutral_exported_row": 3
+    },
+    "row_count": 60,
+    "selected13_missing_count": 0,
+    "verified": true
+  }
+}

@@ -1,0 +1,45 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-LIST-ONLY-MASS-COLLISION-R22-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: exact_toy_search_and_fresh_holdout
+status: reject_toy_no_transfer
+labels:
+  - toy
+  - exact
+  - model-bound
+  - novelty-unverified
+owner: P1553/IDEA-057/IDEA-195
+new_idea_id: null
+breakthrough: false
+inputs:
+  - path: staged/p1553_quadratic_intermediate_field_gate_r21.md
+    sha256: ad8d9e83b919ea92c98eefcb657831f01378b6760d49b2aaea0a892d6ed52be1
+  - path: staged/p1553_list_only_mass_collision_toy_report_r22c.json
+    sha256: 40ef33016a6e12b802ee7c40183c853e4d180d89b7993abf85f1d6e6c48a5af8
+  - path: staged/p1553_list_only_mass_collision_holdout_report_r22d.json
+    sha256: b32b017c2d126e537891c5891cb31d5720caeee660eb1d715d0fbe1e04190302
+verified_results:
+  training_candidates: 4096
+  training_sources: 160
+  best_training_distinct_keys: 96
+  best_training_compression_ratio: 1.6666666666666667
+  training_gate_twofold: fail
+  training_zero_branch_collision_excess: 25
+  holdout_nominal_sources: 160
+  holdout_regular_sources: 145
+  holdout_pole_sources: 15
+  holdout_distinct_keys: 136
+  holdout_compression_ratio: 1.0661764705882353
+  holdout_gate_one_point_five_and_no_poles: fail
+  deterministic_training_replay: byte_identical
+  deterministic_holdout_replay: byte_identical
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  unrestricted_lower_bound: false
+  transferable_constructor: false
+exactly_one_next_action: >-
+  Derive one list-independent common-factor-free complete-correlation identity
+  and test it on frozen multi-interval all-chart holdouts without denominator
+  tuning or hidden source-table advice.

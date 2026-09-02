@@ -1,0 +1,106 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-TRANSLATE-CURVE-BEZOUT-SATURATION-R27-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-057
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: finite_exceptional_values_after_maximal_isogeny_quotient
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION
+summary: >-
+  After R26, every nonzero shift gives an integral bidegree-(c,c) translate
+  curve with genus-one normalization. One curve has total delta defect
+  (c-1)^2-1; two distinct curves intersect with multiplicity 2c^2; and equal
+  curves arise from at most six g-preserving automorphisms per shift. These
+  bounds give a complete-image floor Omega(B^2). Achieving O(B^2) requires
+  Bezout saturation across Omega(B^2) shift pairs and then one of two exact
+  branches: Omega(B^3) selected singularity defect, or a multiplicity-stripped
+  value grid with Omega(B) distinct shifts on positive incidence mass.
+inputs:
+  - path: staged/p1553_random_fifth_deck_correlation_gate_r23.md
+    sha256: de9a0a496fc6696ed6e976351476c56262484124c8c7d7cc2cdbddd16a6cc184
+  - path: staged/p1553_popular_difference_complete_triple_gate_r25.md
+    sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+  - path: staged/p1553_maximal_isogeny_translate_diversity_gate_r26.md
+    sha256: 0f9d0d8f7d2cbc2b73ba848f252f0f0d9a1d2b870411c5610725ff33c67b364c
+  - path: staged/p1553_maximal_isogeny_translate_diversity_parent_report_r26.yaml
+    sha256: a77f0d76c6c7b52e17d89efc8ef5907bf0eceb29e62272efabc774d2b3737fa0
+  - path: staged/p1553_r26_bundle.sha256
+    sha256: a410f9433d0b2291fb70151c648f5ec6ab3cb01e0ced7bd8ed70948c9a8d3457
+  - path: staged/p1553_r26_staging_receipt.yaml
+    sha256: 64cb06101dcff48488f7d13ab9806b8bb564c2bc4ff9df176d4ab091c418d4a4
+output:
+  path: staged/p1553_translate_curve_bezout_saturation_gate_r27.md
+  sha256: dee8a0913854e0ce3e717ecdbc3e8aea73b987b2b2fb71790a470f501dd0c2d9
+frozen_parameters:
+  outer_map_degree: c=Theta(B)
+  selected_values: r=Theta(B)
+  selected_shifts: L=Theta(B)
+  selected_pullback_points: z=Theta(c*r)=Theta(B^2)
+  source_rectangle: n=z*L=Theta(B^3)
+theorems:
+  - >-
+    An integral bidegree-(c,c) translate curve with genus-one normalization
+    has total delta invariant (c-1)^2-1 and at most twice that many ordered
+    distinct normalization collisions.
+  - >-
+    Two distinct translate curves have intersection number 2c^2, which bounds
+    their ordered normalization source matches.
+  - >-
+    Curves equal only through an automorphism preserving g; trivial
+    translation stabilizer bounds these automorphisms by six per shift.
+  - >-
+    Complete-key energy is at most
+    4L^2c^2+12L(z+2c^2), giving K=Omega(B^2).
+  - >-
+    An O(B^2) image with z=Theta(cr) forces Omega(c^2) selected intersection
+    multiplicity on a positive fraction of shift and branch-matching pairs.
+  - >-
+    Writing D for selected same-curve normalization collision defect, the
+    saturation dichotomy is D=Omega(Lc^2), or the multiplicity-stripped
+    distinct-shift grid has squared incidence sum Omega(L^2c^2).
+  - >-
+    In the second branch, Omega(c^2) value pairs carry Omega(L) distinct
+    shifts on positive incidence mass.
+controls:
+  tangencies_and_nonordinary_singularities: counted_by_delta_and_intersection_multiplicity
+  equal_translate_curves: admitted_and_bounded_by_g_preserving_automorphisms
+  normalization_source_multiplicity: separated_from_distinct_shift_counts
+  genericity_assumption: none
+result:
+  classification: exact_bezout_saturation_dichotomy_no_constructor
+  finite_exceptional_image_lower_bound: Omega(B^2)
+  target_image_O_B2: requires_Bezout_saturation
+  selected_singularity_branch: requires_Omega(B^3)_delta_defect
+  distinct_shift_grid_branch: requires_Omega(B)_shifts_on_positive_incidence_mass
+  algebraic_design: absent
+  exact_complete_sources: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - the saturation dichotomy is necessary and does not refute either branch
+  - no algebraic singularity or fiber-difference constructor is supplied
+  - no unrestricted arithmetic-circuit or generic-group lower bound
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R23 owns complete collision energy and the Omega(SLd) budget
+  - R25 owns point-set popular differences and additive energy
+  - R26 owns maximal-isogeny translate diversity
+  - R27 adds singularity defect, Bezout saturation, and multiplicity-stripped shift incidence
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION__FINITE_EXCEPTIONAL_IMAGE_HAS_OMEGA_B2_FLOOR__O_B2_IMAGE_REQUIRES_BEZOUT_SATURATION_ACROSS_OMEGA_B2_SHIFT_PAIRS__EITHER_OMEGA_B3_SELECTED_DELTA_DEFECT_OR_OMEGA_B_DISTINCT_SHIFTS_ON_POSITIVE_C2_INCIDENCE_MASS__NO_ALGEBRAIC_DESIGN__NO_TARGET__NO_R10__NO_DENSITY_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute both saturation branches for a frozen degree-B map,
+  B values, and B public shifts, followed by O(B^2) complete triples, exact
+  source replay, fresh target, R10, rank, logs, and descent; reject scalar
+  charts, adaptive selection, isogeny stabilizers, or represented pair tables.

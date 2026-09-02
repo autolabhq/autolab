@@ -1,0 +1,23 @@
+{
+  "caps": {
+    "fresh_work_exponent_B": 1.25,
+    "setup_state_exponent_B": 2.25
+  },
+  "decoder": "Newton identities or Hankel/Pad\u00e9 rational reconstruction",
+  "forbidden_materializations": [
+    "endpoint/source dictionary",
+    "shift-value table",
+    "quotient or Krylov vector"
+  ],
+  "marker_rule": "source choice index plus one in each C slot",
+  "nonlinear_deck_update": true,
+  "nonlocal": true,
+  "schema": "p1553.frozen_5a5c_nonlocal_translation_sketch.r90.v1",
+  "sketch_id": "truncated_exponential_moment_hankel_pade_v1",
+  "state": [
+    "G(z)=product_i sum_j exp(c_ij*z) mod z^K",
+    "G_i(z)=weighted_i(z)*product_(h!=i) unweighted_h(z) mod z^K"
+  ],
+  "target_independent": true,
+  "translation_law": "G_target(z)=exp(target*z)*G(-z)"
+}

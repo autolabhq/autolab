@@ -1,0 +1,147 @@
+{
+  "admission": {
+    "exact_interface_admitted": true,
+    "failures": [
+      "implicit_target_batched_coefficient_functional_complete",
+      "known_rhs_relation_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "full_source_to_target_cost_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 16,
+    "obligations": {
+      "a6_and_c3_exponents_exact": true,
+      "breakthrough_complete": false,
+      "current_bound_indexing_routes_rejected": true,
+      "dinur_golovnev_online_boundary_exact": true,
+      "factor_logs_complete": false,
+      "finite_negative_control_present": true,
+      "finite_three_form_count_identity_exact": true,
+      "full_source_to_target_cost_complete": false,
+      "identical_target_descent_complete": false,
+      "implicit_target_batched_coefficient_functional_complete": false,
+      "known_rhs_relation_rank_complete": false,
+      "r115_vertex_exactly_imported": true,
+      "shoup_improvement_complete": false,
+      "six_coupled_factor_source_replay_exact": true,
+      "standard_algebraic_route_costs_charged": true,
+      "twelve_source_bindings_verified": true
+    },
+    "passed_obligation_count": 9
+  },
+  "artifacts": {
+    "frozen_interface": "frozen_m6_c3_pair_sum_batch_interface.json",
+    "indexing_ledger": "c3_pair_sum_indexing_and_algebraic_cost_ledger.json",
+    "logs_descent": "factor_logs_and_identical_descent_r116.json",
+    "source_replay": "m6_a6_c3_self_convolution_source_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "EXACT_INTERFACE_REDUCTION_AND_SCOPED_ROUTE_AUDIT_ONLY_WITHHOLD_PROMOTION",
+  "classification": "M6_SELF_CONVOLUTION_EXACTLY_REDUCES_TO_A6_BATCH_OF_C3_PAIR_SUM_QUERIES__C3_STATE_B9O4_AND_BATCH_B1O2__AVERAGE_QUERY_ALLOWANCE_B3O4__DINUR_GOLOVNEV_ONLINE_BOUNDARY_SETUP_B39O8_AND_INTEGER_RESIDUE_TRANSFER_ABSENT__PREPROCESSED_UNIVERSE_N2_SETUP_FAIL__STANDARD_TRANSLATED_DIVISOR_BATCH_B11O4__PAIR_RESULTANT_B9O2__DENSE_FOURIER_B5__FINITE_PROJECTIVE_COUNTS_AND_SOURCES_EXACT__TRANSPOSED_COEFFICIENT_FUNCTIONAL_RANK_LOGS_DESCENT_OPEN",
+  "cost_boundary": {
+    "bound_indexing_route_meets_both_caps": false,
+    "fresh_cap_exponent_B": {
+      "decimal": 1.25,
+      "exact": "5/4"
+    },
+    "inside_cap_algorithm_constructed": false,
+    "rho_exponent_B": {
+      "decimal": 2.5,
+      "exact": "5/2"
+    },
+    "setup_cap_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "standard_algebraic_routes_scoped_only": true
+  },
+  "disposition": "ADMIT_EXACT_A6_BATCHED_C3_PAIR_SUM_REDUCTION_AND_FINITE_SOURCE_REPLAY_ONLY__REJECT_CURRENT_BOUND_INDEXING_AND_STANDARD_EXPLICIT_DIVISOR_RESULTANT_GROUP_ALGEBRA_ROUTES_AT_FROZEN_CAPS__PRESERVE_TARGET_BATCHED_TRANSPOSED_ELLIPTIC_COEFFICIENT_FUNCTIONAL__NO_LOCATOR__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "exact_reduction": {
+    "average_query_allowance_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "fresh_target_batch": "{R-a6 : a6 in A6}",
+    "fresh_target_batch_exponent_B": {
+      "decimal": 0.5,
+      "exact": "1/2"
+    },
+    "preprocessed_multiset": "C3=mu_C^*3",
+    "preprocessed_occurrence_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "requested_coefficient": "sum_a6 mu_A6(a6)(mu_C3*mu_C3)(R-a6)",
+    "requested_source": "one A6 and two C3 occurrence backpointers"
+  },
+  "finite_evidence": {
+    "all_instances_exact": true,
+    "asymptotic_credit": false,
+    "instance_count": 3,
+    "negative_control_present": true
+  },
+  "next_action": "Construct or refute one exact target-batched elliptic coefficient functional for sum_{a6} mu_A6(a6) (mu_C3*mu_C3)(R-a6). It may store the B^(9/4) C3 endpoint divisor and enumerate the B^(1/2) A6 target batch, but must use at most B^(5/4+o(1)) fresh work and workspace, never emit the B^(9/2) C3 pair sum or B^(11/4) translated-divisor batch, use no DLP/residue labels or determinant oracle, and return one A6 plus two C3 occurrence backpointers on every positive projective branch. Then apply the same operator to relation collection and target descent and pass known-RHS rank and factor-log verification.",
+  "non_claims": [
+    "Finite enumeration proves semantics, not asymptotic runtime.",
+    "Failure of current indexing curves is not a data-structure lower bound.",
+    "Standard explicit algebraic route costs do not exclude a new transpose.",
+    "Fixed S7 and S13 degrees do not supply a coefficient functional.",
+    "No relation-rank theorem, factor logs, or identical descent is supplied.",
+    "No generic-prime ECDLP or Shoup improvement is claimed."
+  ],
+  "schema": "p1553.m6_a6_batched_c3_pair_sum_source_locator.r116.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "dinur_golovnev_v2": {
+      "path": "references/dinur_golovnev_3sum_indexing_2512.04258v2.pdf",
+      "sha256": "e56522544d9ae28ec542825fcd2e7238360a05306a79d0b757a910dda382420c"
+    },
+    "kirkpatrick_et_al_v1": {
+      "path": "references/kirkpatrick_et_al_preprocessed_3sum_unknown_universes_2602.11363v1.pdf",
+      "sha256": "6c676ae909461219b8d2f4480225aade0ab46633c989e6249c980dae79c203ca"
+    },
+    "r115_cap_table": {
+      "path": "transposed_interface_cap_table.json",
+      "sha256": "4ceb78067425e998f17f562ad10b79891b561662da2c4078bb14e95117230891"
+    },
+    "r115_frozen": {
+      "path": "frozen_relation_arity_factor_base_exponent_model.json",
+      "sha256": "8c6a589c1caa227f23adbf2c72d0800026d6cc49c34461fa99b72ac6a3f79209"
+    },
+    "r115_gate": {
+      "path": "p1553_relation_arity_factor_base_transposed_interface_rebalance_probe_gate_r115.md",
+      "sha256": "11dd899c1ab6b89444cd9c9cc75709a64d9abf99d9370d2536e2f20e3d0fd1de"
+    },
+    "r115_ledger": {
+      "path": "relation_arity_factor_base_feasibility_ledger.json",
+      "sha256": "4936d19fa0a1024743d4aca462ddb14362495e1f52581913a6231586c7bc8ffe"
+    },
+    "r115_logs": {
+      "path": "factor_logs_and_identical_descent_r115.json",
+      "sha256": "e8bfa068aae74130599656c1b9a2bfa2d91c5b5cd3c26cc1f2eae3cc4425f497"
+    },
+    "r115_parent": {
+      "path": "p1553_relation_arity_factor_base_transposed_interface_rebalance_probe_parent_report_r115.yaml",
+      "sha256": "78e92013af76848e4c925cbbe99e8b74d9c9e73726e2f9c7f542a03c2dd9b27b"
+    },
+    "r115_producer": {
+      "path": "p1553_relation_arity_factor_base_transposed_interface_rebalance_probe_r115.py",
+      "sha256": "d3da38cdf54c39fca800fa451ad54a99bf0288529987b14ec39ee1367b3b615a"
+    },
+    "r115_report": {
+      "path": "p1553_relation_arity_factor_base_transposed_interface_rebalance_probe_report_r115.json",
+      "sha256": "2b43c37f93e03c6ccdb675a34d48d7478deb3b0349026c65b2f6fe65695cb88e"
+    },
+    "r82_producer": {
+      "path": "p1553_cartesian_sum_compact_divisor_probe_r82.py",
+      "sha256": "7380bff3175625016affee4703b0b0f2867a28113f72eef2d90614ed57ffef07"
+    },
+    "r82_report": {
+      "path": "p1553_cartesian_sum_compact_divisor_probe_report_r82.json",
+      "sha256": "ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832"
+    }
+  }
+}

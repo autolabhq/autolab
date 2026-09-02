@@ -1,0 +1,77 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "candidate_work_credit": false,
+      "inside_setup_or_query_cap": false,
+      "minimum_mode_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      },
+      "route_id": "complex_sparse_fourier_color_zero_test",
+      "transfers_to_actual_finite_fields": false
+    },
+    {
+      "candidate_work_credit": false,
+      "inside_setup_or_query_cap": false,
+      "minimum_mode_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "route_id": "complex_exact_color_indicator",
+      "transfers_to_actual_finite_fields": false
+    },
+    {
+      "actual_order": 2,
+      "condition_passes": false,
+      "required_order": "ord_q(characteristic)=q-1",
+      "route_id": "primitive_finite_field_chebotarev_uncertainty_transfer",
+      "status": "inapplicable_to_actual_pairing_fields"
+    },
+    {
+      "all_minors_theorem_supplied": false,
+      "route_id": "order_two_finite_field_fourier_minor_theorem",
+      "sparse_zero_lower_bound_supplied": false,
+      "status": "open"
+    },
+    {
+      "exact_circuit_constructed": false,
+      "general_lower_bound_claimed": false,
+      "route_id": "nonfourier_shared_predicate_or_low_slp_selector_dag",
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_sparse_fourier_predicate_transfer_cost_ledger.r130.v1",
+  "theorem": {
+    "actual_pairing_field_boundary": "Every R82 family has characteristic=6q-1 and therefore ord_q(characteristic)=2, outside the primitive condition.",
+    "complex_color_predicate_consequence": "A zero test vanishing on Theta(B^(15/4)) accepted targets needs B^(15/4+o(1)) complex modes.",
+    "complex_exact_indicator_consequence": "An exact indicator supported on at most B^(15/4+o(1)) of q=B^(5+o(1)) points has B^(5+o(1)) Fourier support.",
+    "complex_sparse_zero_consequence": "A nonzero complex q-cyclic Fourier polynomial with s modes has at most s-1 zeros.",
+    "counterexample_boundary": "GF(2^10) with q=11 admits a five-mode polynomial with five distinct subgroup zeros, so the complex sparse-zero consequence fails after finite-field reduction in general.",
+    "finite_field_primary_source_boundary": "The pinned finite-field Chebotarev sufficient theorem is stated in the primitive case ord_q(characteristic)=q-1; finite-characteristic transfer is not automatic.",
+    "finite_field_transfer_requirement": "The sharp support inequality requires nonvanishing minors of the q-by-q Fourier matrix in the circuit coefficient field.",
+    "not_covered": [
+      "actual order-two finite-field Fourier matrices",
+      "non-Fourier shared-predicate decision DAGs",
+      "high-degree low-SLP finite-field selectors",
+      "adaptive cell-probe selectors",
+      "general arithmetic-circuit or data-structure lower bounds"
+    ],
+    "scope_limits": [
+      "complex or characteristic-zero cyclic Fourier predicates",
+      "finite-field transfer only after a field-specific all-minors proof",
+      "sparse Fourier zero tests and exact Fourier indicators"
+    ],
+    "tao_complex_theorem": "For nonzero f on Z/qZ with q prime and complex coefficients, |supp(f)|+|supp(fhat)|>=q+1."
+  }
+}

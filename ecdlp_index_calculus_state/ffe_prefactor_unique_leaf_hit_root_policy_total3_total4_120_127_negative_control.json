@@ -1,0 +1,174 @@
+{
+  "method": "prefactor_unique_leaf_hit_root_first_target_hash",
+  "parameters": {
+    "ordering": [
+      "candidate root is in pre_factor_selected_hit_roots",
+      "minimum selected-leaf hit-root multiplicity for candidate root",
+      "target_root_hash",
+      "factor_index"
+    ],
+    "policy": "prefactor_unique_leaf_hit_root_first_target_hash",
+    "surface_pairs": [
+      {
+        "audit_source": "ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total3_total4_preregistered_120_127.json",
+        "gate_source": "ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total3_total4_fixed_selector_120_127.json",
+        "label": "total3_total4_120_127",
+        "sage_factor_source": "ecdlp_index_calculus_state/ffe_sage_factor_total3_total4_preregistered_120_127.json"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "below_rho": false,
+      "candidate_count": 18,
+      "chosen_candidate": {
+        "candidate_name": "sage_resultant_factor_5",
+        "constant": 5157,
+        "constant_norm": 5157,
+        "direct_root_recovery_ops": 76,
+        "factor_index": 5,
+        "factor_root_scan_ops": 80,
+        "preserves_selected_root_pairs": false,
+        "public_zero": true,
+        "root": 4059,
+        "root_norm": 4059,
+        "selected_root_pair_count": 1,
+        "selected_surface_zero_leaves": 1,
+        "selected_valid_root_leaves": 1
+      },
+      "chosen_false_positive": true,
+      "chosen_preserves_selected_root_pairs": false,
+      "direct_below_rho": false,
+      "direct_root_recovery_ops": 76,
+      "direct_total_ops": 85,
+      "direct_total_ops_over_rho": 0.62043796,
+      "evaluated_root_count": 1,
+      "generic_rho_steps": 137,
+      "label": "total3_total4_120_127",
+      "original_selected_root_pair_count": 2,
+      "p": 11731,
+      "policy": "prefactor_unique_leaf_hit_root_first_target_hash",
+      "pre_factor_selected_hit_root_ambiguity": {
+        "4059": 1,
+        "6202": 1
+      },
+      "pre_factor_selected_hit_roots": [
+        4059,
+        6202
+      ],
+      "prefactor_hit_candidate_count": 2,
+      "preserving_root_count": 0,
+      "public_zero_recovered": true,
+      "public_zero_root_count": 2,
+      "root_scan_ops": 80,
+      "row_key": "22050.cf1@11731:uniform:256:salt174",
+      "salt": 174,
+      "selector_eval_ops": 9,
+      "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt174|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:127:22050.cf1@11731",
+      "target": "22050.cf1@11731",
+      "top_root_sample": [
+        {
+          "factor_index": 5,
+          "in_pre_factor_selected_hit_roots": true,
+          "pre_factor_selected_hit_root_ambiguity": 1,
+          "preserves_selected_root_pairs": false,
+          "public_zero": true,
+          "root": 4059
+        },
+        {
+          "factor_index": 6,
+          "in_pre_factor_selected_hit_roots": true,
+          "pre_factor_selected_hit_root_ambiguity": 1,
+          "preserves_selected_root_pairs": false,
+          "public_zero": true,
+          "root": 6202
+        },
+        {
+          "factor_index": 2,
+          "in_pre_factor_selected_hit_roots": false,
+          "pre_factor_selected_hit_root_ambiguity": null,
+          "preserves_selected_root_pairs": false,
+          "public_zero": false,
+          "root": 1336
+        },
+        {
+          "factor_index": 15,
+          "in_pre_factor_selected_hit_roots": false,
+          "pre_factor_selected_hit_root_ambiguity": null,
+          "preserves_selected_root_pairs": false,
+          "public_zero": false,
+          "root": 10272
+        },
+        {
+          "factor_index": 3,
+          "in_pre_factor_selected_hit_roots": false,
+          "pre_factor_selected_hit_root_ambiguity": null,
+          "preserves_selected_root_pairs": false,
+          "public_zero": false,
+          "root": 3093
+        },
+        {
+          "factor_index": 11,
+          "in_pre_factor_selected_hit_roots": false,
+          "pre_factor_selected_hit_root_ambiguity": null,
+          "preserves_selected_root_pairs": false,
+          "public_zero": false,
+          "root": 8293
+        },
+        {
+          "factor_index": 12,
+          "in_pre_factor_selected_hit_roots": false,
+          "pre_factor_selected_hit_root_ambiguity": null,
+          "preserves_selected_root_pairs": false,
+          "public_zero": false,
+          "root": 8346
+        },
+        {
+          "factor_index": 17,
+          "in_pre_factor_selected_hit_roots": false,
+          "pre_factor_selected_hit_root_ambiguity": null,
+          "preserves_selected_root_pairs": false,
+          "public_zero": false,
+          "root": 11166
+        }
+      ],
+      "total_ops": 89,
+      "total_ops_over_rho": 0.64963504,
+      "transfer_index": 127
+    }
+  ],
+  "schema": "ecdlp_ffe_prefactor_hit_root_policy_probe_v1",
+  "summary": {
+    "all_surfaces_below_rho": false,
+    "all_surfaces_direct_below_rho": false,
+    "all_surfaces_false_positive_free": false,
+    "all_surfaces_preserving": false,
+    "below_rho_count": 0,
+    "chosen_false_positive_count": 1,
+    "chosen_preserving_count": 0,
+    "direct_below_rho_count": 0,
+    "interpretation": "This diagnostic orders Sage root hyperplanes whose root is already present in the preregistered pre-factor selected-hit-root set before falling back to target_root_hash. It must be preregistered on a new window before being treated as a promoted policy.",
+    "label_summaries": {
+      "total3_total4_120_127": {
+        "chosen_false_positive_count": 1,
+        "surface_count": 1
+      }
+    },
+    "max_direct_total_ops_over_rho": 0.62043796,
+    "max_total_ops_over_rho": 0.64963504,
+    "mean_direct_total_ops_over_rho": 0.62043796,
+    "mean_evaluated_root_count": 1.0,
+    "mean_selector_eval_ops": 9.0,
+    "mean_total_ops_over_rho": 0.64963504,
+    "min_direct_total_ops_over_rho": 0.62043796,
+    "min_total_ops_over_rho": 0.64963504,
+    "public_zero_recovered_count": 1,
+    "surface_count": 1,
+    "target_summaries": {
+      "22050.cf1@11731": {
+        "chosen_false_positive_count": 1,
+        "surface_count": 1
+      }
+    }
+  }
+}

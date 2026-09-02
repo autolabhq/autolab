@@ -1,0 +1,311 @@
+{
+  "cases": [
+    {
+      "activation_features": {
+        "factor_zero_profile_count": 1,
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+        "row_count": 1,
+        "row_xmatch_count_max": 6,
+        "row_xmatch_count_min": 6,
+        "row_xmatch_counts": [
+          6
+        ],
+        "salt_mod2_pattern": [
+          0
+        ],
+        "salt_mod2_residue_counts": {
+          "0": 1,
+          "1": 0
+        },
+        "salt_mod3_pattern": [
+          1
+        ],
+        "salt_mod3_residue_counts": {
+          "0": 0,
+          "1": 1,
+          "2": 0
+        },
+        "salt_mod4_pattern": [
+          2
+        ],
+        "salt_mod4_residue_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 1,
+          "3": 0
+        },
+        "scheduled1_count": 2,
+        "support05_count": 0,
+        "support15_count": 0,
+        "top_k": 7,
+        "transfer_index": 618,
+        "xmatch_count": 6
+      },
+      "activation_rule": "activate:row_xmatch_count_max>=8&top_k<=12",
+      "activation_rule_matched": false,
+      "case_key": "22050.cf1@11731|618|7|fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total3|(('22050.cf1@11731:uniform:256:salt166', (8, 56, 90)),)",
+      "context_error_count": 0,
+      "context_errors": [],
+      "factor_rejected_profiles": [
+        {
+          "factor_value": 3837,
+          "leaf_index": 56,
+          "monic_coefficients": {
+            "b": 6062,
+            "c": 823
+          },
+          "row_key": "22050.cf1@11731:uniform:256:salt166",
+          "salt": 166,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:618:22050.cf1@11731"
+        },
+        {
+          "factor_value": 9493,
+          "leaf_index": 90,
+          "monic_coefficients": {
+            "b": 10907,
+            "c": 9714
+          },
+          "row_key": "22050.cf1@11731:uniform:256:salt166",
+          "salt": 166,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:618:22050.cf1@11731"
+        }
+      ],
+      "factor_zero_profiles": [
+        {
+          "factor_value": 0,
+          "leaf_index": 8,
+          "monic_coefficients": {
+            "b": 784,
+            "c": 7142
+          },
+          "row_key": "22050.cf1@11731:uniform:256:salt166",
+          "salt": 166,
+          "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:618:22050.cf1@11731"
+        }
+      ],
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+      "rows": [
+        {
+          "baseline_costs": {
+            "preassociation_filter_beats_rho": true,
+            "preassociation_filter_ops": 57,
+            "preassociation_filter_ops_over_rho": 0.41605839,
+            "projected_core_ops_before_filtered_association": 44
+          },
+          "baseline_public_key_verified": true,
+          "baseline_rank": 2,
+          "row_key": "22050.cf1@11731:uniform:256:salt166",
+          "selected_leaf_indices": [
+            8
+          ],
+          "xmatches": [
+            {
+              "candidate_pos": 1,
+              "duplicate_form": false,
+              "factor_support": [
+                9,
+                11
+              ],
+              "leaf_index": 8,
+              "original_trial": 71,
+              "scheduled_trial": 1,
+              "scout_pos": 33,
+              "term_shape": "2+2",
+              "unsigned_indices": [
+                9,
+                9,
+                11,
+                11
+              ],
+              "valid_relation": false
+            },
+            {
+              "candidate_pos": 1,
+              "duplicate_form": false,
+              "event_summary": {
+                "candidate_pos": 1,
+                "factor_support": [
+                  9,
+                  11
+                ],
+                "leaf_index": 8,
+                "original_trial": 101,
+                "q_coeff": 4755,
+                "relation_index": 0,
+                "rhs": 1188,
+                "scheduled_trial": 2,
+                "term_shape": "2+2",
+                "terms": [
+                  9,
+                  9,
+                  11,
+                  11
+                ]
+              },
+              "factor_support": [
+                9,
+                11
+              ],
+              "leaf_index": 8,
+              "original_trial": 101,
+              "scheduled_trial": 2,
+              "scout_pos": 33,
+              "term_shape": "2+2",
+              "unsigned_indices": [
+                9,
+                9,
+                11,
+                11
+              ],
+              "valid_relation": true
+            },
+            {
+              "candidate_pos": 1,
+              "duplicate_form": false,
+              "event_summary": {
+                "candidate_pos": 1,
+                "factor_support": [
+                  9,
+                  11
+                ],
+                "leaf_index": 8,
+                "original_trial": 280,
+                "q_coeff": 2027,
+                "relation_index": 0,
+                "rhs": 1358,
+                "scheduled_trial": 3,
+                "term_shape": "2+2",
+                "terms": [
+                  9,
+                  9,
+                  11,
+                  11
+                ]
+              },
+              "factor_support": [
+                9,
+                11
+              ],
+              "leaf_index": 8,
+              "original_trial": 280,
+              "scheduled_trial": 3,
+              "scout_pos": 33,
+              "term_shape": "2+2",
+              "unsigned_indices": [
+                9,
+                9,
+                11,
+                11
+              ],
+              "valid_relation": true
+            },
+            {
+              "candidate_pos": 2,
+              "duplicate_form": false,
+              "factor_support": [
+                8,
+                11
+              ],
+              "leaf_index": 8,
+              "original_trial": 71,
+              "scheduled_trial": 1,
+              "scout_pos": 34,
+              "term_shape": "2+2",
+              "unsigned_indices": [
+                8,
+                8,
+                11,
+                11
+              ],
+              "valid_relation": false
+            },
+            {
+              "candidate_pos": 2,
+              "duplicate_form": false,
+              "factor_support": [
+                8,
+                11
+              ],
+              "leaf_index": 8,
+              "original_trial": 101,
+              "scheduled_trial": 2,
+              "scout_pos": 34,
+              "term_shape": "2+2",
+              "unsigned_indices": [
+                8,
+                8,
+                11,
+                11
+              ],
+              "valid_relation": false
+            },
+            {
+              "candidate_pos": 2,
+              "duplicate_form": false,
+              "factor_support": [
+                8,
+                11
+              ],
+              "leaf_index": 8,
+              "original_trial": 280,
+              "scheduled_trial": 3,
+              "scout_pos": 34,
+              "term_shape": "2+2",
+              "unsigned_indices": [
+                8,
+                8,
+                11,
+                11
+              ],
+              "valid_relation": false
+            }
+          ]
+        }
+      ],
+      "rule_results": [],
+      "source_ops_over_rho": 0.43065693,
+      "source_public_key_verified": true,
+      "target": "22050.cf1@11731",
+      "top_k": 7,
+      "transfer_index": 618
+    }
+  ],
+  "method": "public_linear_factor_gate_xmatch_orientation_audit",
+  "parameters": {
+    "activation_rule": "activate:row_xmatch_count_max>=8&top_k<=12",
+    "factor": {
+      "b_coeff": 4745,
+      "c_coeff": 1,
+      "constant": 3236,
+      "p": 11731
+    },
+    "leaf_selector": "mode_cost_low_term_support_total3",
+    "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+    "radius": 4,
+    "rules": [
+      "scheduled_trial_min",
+      "candidate_pos_min",
+      "all"
+    ],
+    "signature_source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_616_623.json",
+    "target": "22050.cf1@11731",
+    "top_k": 7,
+    "transfer_index": 618
+  },
+  "schema": "ecdlp_ffe_public_linear_factor_xmatch_orientation_audit_v1",
+  "summary": {
+    "activated_case_count": 0,
+    "best_verified_rules": [],
+    "interpretation": "Rules are public filters over x-match metadata emitted after the public linear factor gate.  shared_leaf_hit_root_ops is a charged model that amortizes identical selected leaves and hit roots across rows; it is not a measured direct replay cost.",
+    "min_verified_measured_ops_over_rho": null,
+    "min_verified_shared_leaf_hit_root_ops_over_rho": null,
+    "min_verified_shared_leaf_ops_over_rho": null,
+    "source_case_count": 1,
+    "verified_measured_below_rho_rule_count": 0,
+    "verified_rule_count": 0,
+    "verified_shared_leaf_below_rho_rule_count": 0,
+    "verified_shared_leaf_hit_root_below_rho_rule_count": 0
+  }
+}

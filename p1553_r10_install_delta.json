@@ -1,0 +1,190 @@
+{
+  "schema": "crypto.autoresearch.merge_install_delta.v1",
+  "bundle_id": "P1553-R10-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compose_compare_and_merge",
+  "base_bundle": {
+    "bundle_id": "P1553-R9-20260719",
+    "manifest": "p1553_r9_install_delta.json",
+    "manifest_sha256": "73e045b4d939401a2a15699a0db04f0a7f326e3be9a97ed5669035690fe01101",
+    "manifest_hash_list": "p1553_r9_install_delta.sha256",
+    "manifest_hash_list_sha256": "5ac673dec0653d55156233ae2371bdea776ae8ea09383ae396a9dc4bd478d1ad",
+    "simulated_queue_sha256": "c0cf11e07745be78b192d85b41a6d5876dd6f1d2df4ca0019cceee0d61539ca4"
+  },
+  "upstream_bundle": {
+    "bundle_id": "P1553-R5-R7-20260719",
+    "manifest_sha256": "41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a",
+    "manifest_hash_list_sha256": "0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d"
+  },
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "composition_rule": "Apply R5-R7, R8, R9, and R10 to one private copy of the live queue, validate the combined result, then install all files and dispatch state atomically. Never install this delta alone.",
+  "file_installs": [
+    {
+      "source": "p1553_factorized_pullback_parent_report.yaml",
+      "sha256": "acf820dac41bded67af083931e4284702cdf75d5c9fd8e121c21dc57bfc3bf97",
+      "destination": "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_report.yaml"
+    },
+    {
+      "source": "p1553_factorized_pullback_gate_r10.md",
+      "sha256": "49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1",
+      "destination": "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md"
+    },
+    {
+      "source": "p1553_factorized_pullback_red_team.yaml",
+      "sha256": "3a810ae62318ddac77edcacf364e28454473919e956cce488352d1511e484670",
+      "destination": "coordination/tasks/TASK-20260719-P1553-FPB-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_factorized_pullback_red_team.md",
+      "sha256": "bb692017404ccbb853d02f3cc2806ab74588b8592eb50e3a4ebba1f96f573a17",
+      "destination": "coordination/tasks/TASK-20260719-P1553-FPB-RT-R1/factorized_pullback_red_team.md"
+    },
+    {
+      "source": "p1553_factorized_pullback_gate_r10.md",
+      "sha256": "49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1",
+      "destination": "ideas/artifacts/ECDLP-IDEA-012/p1553_factorized_pullback_gate_r10.md"
+    }
+  ],
+  "queue_merge": {
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-FPB-P1",
+        "title": "Prove the factorized actual-image pullback boundary",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 20,
+        "review_required": true,
+        "depends_on": ["TASK-20260719-P1553-PTR-RT-R1"],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-PTR-P1/projector_trace_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-PTR-RT-R1/red_team_report.yaml",
+          "ideas/artifacts/ECDLP-IDEA-098/p1515_r1_r11_independent_audit.md",
+          "ideas/artifacts/ECDLP-IDEA-012/p1553_determinant_value_channel_audit_r1.md",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-FPB-P1"],
+        "attention_contract": {
+          "decisive_evidence": "An exact actual-image pullback circuit inside both caps, or a lower bound for one frozen grammar on the actual S_6 signature image that still expresses the rank-two convolution control.",
+          "inconclusive_decision": "Preserve the actual-image nonlinear pullback and sparse rank-two convolution as open without allocating a new idea.",
+          "local_ambiguity_rule": "Separate ambient orthogonality from the actual signature image, literal moment channels from circuit rank, canonical dyadic rectangles from arbitrary subsets, and count output from source recovery.",
+          "peripheral_exclusions": [
+            "No full-domain identity-minor theorem imported to the restricted S_6 image",
+            "No rank-two division before all 4^5 unary zero states are charged",
+            "No relation or descent claim from a count-only contraction",
+            "No P1554, experiment, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after the frozen grammar, zero-signature semantics, rank-two positive control, and complete campaign accounting are independently reconstructed."
+        },
+        "resource_estimate": {
+          "dominant_stage": "standard explicit triple incidence materialization",
+          "stages": [
+            {"id": "canonical_dyadic_pair_histograms", "work": "B^(2+o(1)) setup/state"},
+            {"id": "standard_triple_pullback", "work": "B^3 fresh-target values"},
+            {"id": "literal_moment_simplex", "work": "binomial(p+r-2,r-1) channels"},
+            {"id": "admitted_actual_image_query", "work": "at most B^(5/4+o(1))"},
+            {"id": "dyadic_source_replay", "work": "B^(o(1)) exact count calls"}
+          ]
+        },
+        "handoff": {
+          "objective": "Prove the exact moment and low-rank controls, reject only named over-cap representations, and isolate the actual-image factorized pullback.",
+          "uncertainty_reduced": "Whether universal separation can work, what happens at effective ranks zero through two, and which exact nonlinear object survives the standard route audit.",
+          "inputs": [
+            "the independently reviewed R9 exact-count router",
+            "P1515 explicit and implicit 2|3 route ownership",
+            "P1536 moment and balanced-search controls",
+            "current primary-source MPE and indexing comparisons"
+          ],
+          "constraints": [
+            "Bind every formula to canonical dyadic occurrence-labelled decks.",
+            "Handle zero signatures before projective or ratio normalization.",
+            "Scope the identity minor to full-domain separated features.",
+            "Charge the B-target batch and favorable conditional campaign formulas.",
+            "Allocate no new idea, run, Shoup claim, or breakthrough claim."
+          ],
+          "deliverables": ["factorized_pullback_report.yaml", "factorized_pullback_gate_r10.md"],
+          "budget": {"wall_clock_seconds": 3600, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "The moment identity and ambient identity-minor scope are exact.",
+            "Rank-zero, rank-at-most-one, rank-two, and all zero strata are complete.",
+            "Every route rejection names its first charged over-cap object.",
+            "The complete campaign accounting and exactly one next action remain."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-FPB-RT-R1",
+        "title": "Red-team the factorized actual-image pullback boundary",
+        "role": "red-team",
+        "state": "completed",
+        "priority": 15,
+        "review_required": false,
+        "depends_on": ["TASK-20260719-P1553-FPB-P1"],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-098/p1515_r1_r11_independent_audit.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": ["coordination/tasks/TASK-20260719-P1553-FPB-RT-R1"],
+        "attention_contract": {
+          "decisive_evidence": "Independent reconstruction of the moment formula, identity minor, four-state zero partition, rank-two convolution, canonical dyadic state, and complete campaign exponents.",
+          "inconclusive_decision": "Accept only the scoped theorem and retain all actual-image and implicit-circuit exceptions.",
+          "local_ambiguity_rule": "Check coefficient rank zero separately, distinguish p-1 character modes from p, and keep work, workspace, and reciprocal-density exponents distinct.",
+          "peripheral_exclusions": [
+            "No lower bound on arbitrary rational or arithmetic circuits",
+            "No arbitrary-subset claim from canonical dyadic histograms",
+            "No new idea, run, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after every correction appears in both producer files and the final source hashes match."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R10 algebra, zero strata, route scope, ownership, and campaign accounting.",
+          "uncertainty_reduced": "Whether the surviving actual-image pullback is stated without overclaiming a universal obstruction or omitting a favorable control.",
+          "inputs": [
+            "the R10 producer receipts",
+            "the R9 independent exact-count correction",
+            "P1515 and P1536 ownership receipts"
+          ],
+          "constraints": [
+            "Reconstruct all four unary zero states before accepting ratios.",
+            "Require the rank-two sparse convolution as a mandatory positive control.",
+            "Keep one actual-image next action and preserve all representation exceptions."
+          ],
+          "deliverables": ["red_team_report.yaml", "factorized_pullback_red_team.md"],
+          "budget": {"wall_clock_seconds": 3600, "memory_gb": 4, "maximum_runs": 1},
+          "completion_gate": [
+            "Every theorem identity and scope is independently reconstructed.",
+            "Every required correction is reflected in both producer files.",
+            "Exactly one next action and no positive ECDLP status remain."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Recompute all manifest layers and every source hash; preserve drift rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false
+  }
+}

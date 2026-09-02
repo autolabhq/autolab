@@ -1,0 +1,90 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "inside_polylog_query_cap": false,
+      "query_exponent_B": "9/4+gamma",
+      "route_id": "all_bucket_pair_resultants"
+    },
+    {
+      "inside_polylog_query_cap": false,
+      "query_exponent_B": "9/4",
+      "route_id": "quotient_style_H_routed_pair_resultants"
+    },
+    {
+      "inside_setup_cap": false,
+      "route_id": "represented_symbolic_bucket_resultants",
+      "setup_output_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      }
+    },
+    {
+      "bucket_exponent_gamma": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "exact_router_constructed": false,
+      "inside_setup_and_query_caps_if_constructed": true,
+      "route_id": "extreme_implicit_singleton_C3_router",
+      "routed_pair_exponent_rho": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_bucket_resultant_routing_tradeoff_cost_ledger.r127.v1",
+  "tradeoff": {
+    "R_pair_query_work": "B^(rho+9/4-gamma)",
+    "R_routed_pairs_parameter": "R=B^rho",
+    "all_H2_pairs_query_work": "B^(9/4+gamma)",
+    "balanced_bucket_parameter": "H=B^gamma",
+    "balanced_degrees": {
+      "C2_per_bucket": "B^(3/2-gamma)",
+      "C3_per_bucket": "B^(9/4-gamma)"
+    },
+    "extreme_survivor": "H=B^(9/4) cap-tight C3 singleton buckets plus an implicit O(1)-pair arbitrary-target router and source locator.",
+    "extreme_survivor_constructed": false,
+    "nonnegative_rho_and_nonempty_C3_bucket_consequence": "With 0<=gamma<=9/4 and rho>=0, polylog query requires gamma=9/4 and rho=0.",
+    "not_covered": [
+      "shared transposed evaluation across bucket resultants",
+      "implicit O(1)-pair routing at gamma=9/4",
+      "adaptive cell-probe structures",
+      "nonlinear non-resultant correction certificates",
+      "general arithmetic circuits or data structures"
+    ],
+    "optimistic_one_pair_resultant_work": "B^(9/4-gamma)",
+    "polylog_query_necessary_inequality": "rho<=gamma-9/4",
+    "quotient_or_latin_slice_R_equals_H": {
+      "inside_polylog_query_cap": false,
+      "query_work": "B^(9/4)",
+      "rho": "gamma"
+    },
+    "represented_dense_target_bucket_tensor": {
+      "does_not_supply_polylog_resultant_query": true,
+      "inside_setup_requires": "gamma<=3/4",
+      "state_exponent_B": "3*gamma"
+    },
+    "represented_symbolic_bucket_resultants": {
+      "inside_setup_cap": false,
+      "total_output_degree": "B^(15/4)"
+    },
+    "scope_limits": [
+      "balanced bucket polynomial/resultant grammars",
+      "optimistic quasi-linear work in the larger represented degree",
+      "explicit target-bucket routing tensors",
+      "independent evaluation of routed bucket-pair resultants"
+    ]
+  }
+}

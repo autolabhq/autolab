@@ -1,0 +1,288 @@
+{
+  "cases": [
+    {
+      "activation_features": {
+        "factor_zero_profile_count": 1,
+        "leaf_selector": "mode_cost_low_term_support_total4",
+        "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+        "row_count": 1,
+        "row_xmatch_count_max": 4,
+        "row_xmatch_count_min": 4,
+        "row_xmatch_counts": [
+          4
+        ],
+        "salt_mod2_pattern": [
+          0
+        ],
+        "salt_mod2_residue_counts": {
+          "0": 1,
+          "1": 0
+        },
+        "salt_mod3_pattern": [
+          0
+        ],
+        "salt_mod3_residue_counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0
+        },
+        "salt_mod4_pattern": [
+          0
+        ],
+        "salt_mod4_residue_counts": {
+          "0": 1,
+          "1": 0,
+          "2": 0,
+          "3": 0
+        },
+        "scheduled1_count": 2,
+        "support05_count": 0,
+        "support15_count": 0,
+        "top_k": 7,
+        "transfer_index": 639,
+        "xmatch_count": 4
+      },
+      "activation_rule": "activate:row_xmatch_count_max>=8&top_k<=12",
+      "activation_rule_matched": false,
+      "case_key": "67.a1@9803|639|7|fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0|mode_cost_low_term_support_total4|(('67.a1@9803:uniform:256:salt204', (0, 2, 4, 6)),)",
+      "context_error_count": 0,
+      "context_errors": [],
+      "factor_rejected_profiles": [
+        {
+          "factor_value": 7320,
+          "leaf_index": 0,
+          "monic_coefficients": {
+            "b": 55,
+            "c": 7531
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:639:67.a1@9803"
+        },
+        {
+          "factor_value": 2489,
+          "leaf_index": 2,
+          "monic_coefficients": {
+            "b": 161,
+            "c": 6976
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:639:67.a1@9803"
+        },
+        {
+          "factor_value": 6620,
+          "leaf_index": 6,
+          "monic_coefficients": {
+            "b": 542,
+            "c": 3911
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:639:67.a1@9803"
+        }
+      ],
+      "factor_zero_profiles": [
+        {
+          "factor_value": 0,
+          "leaf_index": 4,
+          "monic_coefficients": {
+            "b": 281,
+            "c": 3224
+          },
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:639:67.a1@9803"
+        }
+      ],
+      "leaf_selector": "mode_cost_low_term_support_total4",
+      "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+      "rows": [
+        {
+          "baseline_costs": {
+            "preassociation_filter_beats_rho": true,
+            "preassociation_filter_ops": 60,
+            "preassociation_filter_ops_over_rho": 0.48,
+            "projected_core_ops_before_filtered_association": 51
+          },
+          "baseline_public_key_verified": true,
+          "baseline_rank": 2,
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "selected_leaf_indices": [
+            4
+          ],
+          "xmatches": [
+            {
+              "candidate_pos": 1,
+              "duplicate_form": false,
+              "factor_support": [
+                1,
+                12,
+                15
+              ],
+              "leaf_index": 4,
+              "original_trial": 223,
+              "scheduled_trial": 1,
+              "scout_pos": 15,
+              "term_shape": "2+1+1",
+              "unsigned_indices": [
+                1,
+                12,
+                15,
+                15
+              ],
+              "valid_relation": false
+            },
+            {
+              "candidate_pos": 1,
+              "duplicate_form": false,
+              "factor_support": [
+                1,
+                12,
+                15
+              ],
+              "leaf_index": 4,
+              "original_trial": 268,
+              "scheduled_trial": 2,
+              "scout_pos": 15,
+              "term_shape": "2+1+1",
+              "unsigned_indices": [
+                1,
+                12,
+                15,
+                15
+              ],
+              "valid_relation": false
+            },
+            {
+              "candidate_pos": 2,
+              "duplicate_form": false,
+              "event_summary": {
+                "candidate_pos": 2,
+                "factor_support": [
+                  1,
+                  12,
+                  14
+                ],
+                "leaf_index": 4,
+                "original_trial": 223,
+                "q_coeff": 8811,
+                "relation_index": 0,
+                "rhs": 1161,
+                "scheduled_trial": 1,
+                "term_shape": "2+1+1",
+                "terms": [
+                  1,
+                  12,
+                  14,
+                  14
+                ]
+              },
+              "factor_support": [
+                1,
+                12,
+                14
+              ],
+              "leaf_index": 4,
+              "original_trial": 223,
+              "scheduled_trial": 1,
+              "scout_pos": 40,
+              "term_shape": "2+1+1",
+              "unsigned_indices": [
+                1,
+                12,
+                14,
+                14
+              ],
+              "valid_relation": true
+            },
+            {
+              "candidate_pos": 2,
+              "duplicate_form": false,
+              "event_summary": {
+                "candidate_pos": 2,
+                "factor_support": [
+                  1,
+                  12,
+                  14
+                ],
+                "leaf_index": 4,
+                "original_trial": 268,
+                "q_coeff": 2145,
+                "relation_index": 0,
+                "rhs": 1238,
+                "scheduled_trial": 2,
+                "term_shape": "2+1+1",
+                "terms": [
+                  1,
+                  12,
+                  14,
+                  14
+                ]
+              },
+              "factor_support": [
+                1,
+                12,
+                14
+              ],
+              "leaf_index": 4,
+              "original_trial": 268,
+              "scheduled_trial": 2,
+              "scout_pos": 40,
+              "term_shape": "2+1+1",
+              "unsigned_indices": [
+                1,
+                12,
+                14,
+                14
+              ],
+              "valid_relation": true
+            }
+          ]
+        }
+      ],
+      "rule_results": [],
+      "source_ops_over_rho": 0.504,
+      "source_public_key_verified": true,
+      "target": "67.a1@9803",
+      "top_k": 7,
+      "transfer_index": 639
+    }
+  ],
+  "method": "public_linear_factor_gate_xmatch_orientation_audit",
+  "parameters": {
+    "activation_rule": "activate:row_xmatch_count_max>=8&top_k<=12",
+    "factor": {
+      "b_coeff": 8098,
+      "c_coeff": 1,
+      "constant": 5337,
+      "p": 9803
+    },
+    "leaf_selector": "mode_cost_low_term_support_total4",
+    "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+    "radius": 4,
+    "rules": [
+      "scheduled_trial_min",
+      "candidate_pos_min",
+      "all"
+    ],
+    "signature_source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_632_639.json",
+    "target": "67.a1@9803",
+    "top_k": 7,
+    "transfer_index": 639
+  },
+  "schema": "ecdlp_ffe_public_linear_factor_xmatch_orientation_audit_v1",
+  "summary": {
+    "activated_case_count": 0,
+    "best_verified_rules": [],
+    "interpretation": "Rules are public filters over x-match metadata emitted after the public linear factor gate.  shared_leaf_hit_root_ops is a charged model that amortizes identical selected leaves and hit roots across rows; it is not a measured direct replay cost.",
+    "min_verified_measured_ops_over_rho": null,
+    "min_verified_shared_leaf_hit_root_ops_over_rho": null,
+    "min_verified_shared_leaf_ops_over_rho": null,
+    "source_case_count": 1,
+    "verified_measured_below_rho_rule_count": 0,
+    "verified_rule_count": 0,
+    "verified_shared_leaf_below_rho_rule_count": 0,
+    "verified_shared_leaf_hit_root_below_rho_rule_count": 0
+  }
+}

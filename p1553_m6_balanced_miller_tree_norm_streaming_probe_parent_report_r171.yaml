@@ -1,0 +1,102 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-BALANCED-MILLER-TREE-NORM-STREAMING-R171-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: explicit_generalized_miller_tree_and_scoped_node_local_streaming_negative
+run_count: 1
+status: nonlocal_batched_leaf_translate_operator_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - generalized-miller
+  - balanced-tree
+  - weil-reciprocity
+  - target-norm
+  - symbolic-cancellation
+  - full-cost
+  - scoped-negative
+owner: P1553-R167-R170-MILLER-1986-ENGE-2013-MOROZ-SCHOST-2016-BHARGAVA-ET-AL-2022
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Instantiate the compact generalized Miller witness, test node-local norm
+  streaming, and determine whether balancing removes the R170 nN work barrier.
+inputs:
+  - {path: p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_r170.py, sha256: 71f94407c05de7c0a4bcc77643c63e5f601b1c609639cbdba874a72c56f0091d}
+  - {path: p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_report_r170.json, sha256: a354427601094c8346253ac38bc0fd53f878e67d71962846561088ee6495162c}
+  - {path: frozen_m6_lambda_zero_fitting_target_norm_dedup.json, sha256: 34735b27f7b9d9a018a2c158cccaab4c9d61942144636d72b4cdcdc95d9d9f97}
+  - {path: m6_lambda_zero_fitting_target_norm_dedup_cost_ledger.json, sha256: 97cf12e1011c10148588da6febba2edbcfaa445f12fcb4df12ca81dc11278113}
+  - {path: m6_lambda_zero_fitting_target_norm_dedup_replay.json, sha256: 84a36d4ab086664e4a2382e6b057f45b741dd43c38c7acd19026c0ff8f51d3cd}
+  - {path: m6_lambda_zero_fitting_target_norm_dedup_controls.json, sha256: 1c00d68dcc15217ce1d3b7192e0992ccb9a1443450df3d100cb1d1beb2fd409f}
+  - {path: lambda_zero_fitting_norm_and_density_r170.json, sha256: fa7b5427696e244c257fa95168e3b7f5646c9bdff5d10ff25fd0b8193d28bea1}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_r170.py, sha256: 51f82e0b8e762591669eec9aaa240e80c44b34ec1e7e56e80ca8ee83e955d2f3}
+  - {path: p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_gate_r170.md, sha256: 564ad5ffd47317768209244b1432f13cc2a0d1245a3d582e59c9bb0174375e02}
+  - {path: p1553_m6_lambda_zero_fitting_target_norm_dedup_probe_parent_report_r170.yaml, sha256: a6bcb432f330f492669dbb597361d3cc9c7ceff468292a3b00bebe231965df91}
+  - {path: references/miller_weil_pairing_algorithm_1986.pdf, sha256: 39c76c7643278b87b3d8c24b9a07d0b4cbfb561cd13735548990848e0f0bd166}
+  - {path: references/enge_bilinear_pairings_1301.5520v2.pdf, sha256: 93b99fa2d13e09c1bc8282b58d472be6285ceea9b594e9b97d765212a3aaa8e4}
+  - {path: references/moroz_schost_truncated_resultant_1609.04259.pdf, sha256: 160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709}
+  - {path: references/bhargava_ghosh_guo_kumar_umans_multipoint_2205.00342v1.pdf, sha256: 14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8}
+artifacts:
+  - {path: p1553_m6_balanced_miller_tree_norm_streaming_probe_r171.py, sha256: 684ab4cf92398b7a7789b8e429356ee712ba255e65f5d172cee1c4ebbe58d39e}
+  - {path: p1553_m6_balanced_miller_tree_norm_streaming_probe_report_r171.json, sha256: 12c34212fa3e07321ec7e9524a32a845233b420eae28f16e2dc3abfebd4efa92}
+  - {path: frozen_m6_balanced_miller_tree_norm_streaming.json, sha256: a80e1d9cbb7893a0a70ee04c95cd4ca2632f45181c9b72d645bd1afaf15abaef}
+  - {path: m6_balanced_miller_tree_norm_streaming_cost_ledger.json, sha256: 9e9fe2ae4e5ec8e905b60b56227be57e86f0cc10de63e0c0917dc7b5837ebb76}
+  - {path: m6_balanced_miller_tree_norm_streaming_replay.json, sha256: 76a793283ce4df296d0ead1dc6826bab40835cefdfcbc809e481bbbe377141be}
+  - {path: m6_balanced_miller_tree_norm_streaming_controls.json, sha256: d54c4d4db51abab1ccf4d01294bee945d240d637dd9db4a0078a523bef8aa300}
+  - {path: balanced_miller_tree_and_leaf_cancellation_r171.json, sha256: e322d78df66e9edec2fb39b412a98b23077b7648548f4154f30b7a166a5bcc7f}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_balanced_miller_tree_norm_streaming_probe_r171.py, sha256: 85df97c68496b5ce8beb3c207ab2e6b0bf0a51486be80183e6e92d02d76e74e5}
+  - {path: p1553_m6_balanced_miller_tree_norm_streaming_probe_gate_r171.md, sha256: 0f862466fa7816c438c6ef8526e66e350b1091c02f2e631d5b28a4105c10d680}
+verified_statements:
+  - Six balanced numerator and denominator trees close at infinity with 80 total line merges and maximum depth four.
+  - The trees match the dense R167 witnesses up to nonzero scalar on 192 safe comparisons.
+  - The compact tree quotient replays all selected rows and exactly the 140 R167 candidate roots.
+  - 1,222 admissible generic-shift line reciprocity identities hold exactly; 58 pole or nonunit rows are explicitly skipped.
+  - Every selected endpoint has f0(-P)=0, so linewise ratios require symbolic numerator-denominator cancellation before specialization.
+  - Internal sums, origin factors, the common zero, and public correction leaves telescope, leaving exactly 40 target leaves across the six controls.
+  - Balanced streaming reduces depth and live state but retains B^(7/2) node-local or leaf-local work.
+scoped_failures:
+  node_local_balanced_slp_streaming_below_rho: refuted_by_exact_telescoping_and_cost
+  per_leaf_quotient_ring_streaming_below_rho: refuted_by_cost
+  nonlocal_batched_leaf_translate_operator: open
+  arithmetic_circuit_or_data_structure_lower_bound: not_claimed
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 22
+  total_obligations: 29
+  balanced_generalized_miller_tree_admitted: true
+  node_local_norm_homomorphism_admitted: true
+  node_local_slp_streaming_below_rho_admitted: false
+  nonlocal_batched_leaf_translate_operator_admitted: false
+  lane_admitted: false
+result:
+  control_count: 6
+  total_line_merge_count: 80
+  maximum_tree_depth: 4
+  dense_tree_comparison_count: 192
+  admissible_line_reciprocity_row_count: 1222
+  skipped_pole_or_nonunit_line_row_count: 58
+  residual_target_leaf_count: 40
+  candidate_root_count: 140
+  balanced_tree_state_exponent_B: 5/4
+  live_endpoint_value_vector_exponent_B: 9/4
+  node_local_line_norm_work_exponent_B: 7/2
+  raw_signed_grid_tree_expansion_exponent_B: 23/4
+  global_rho_exponent_B: 5/2
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_EXPLICIT_BALANCED_GENERALIZED_MILLER_TREES__DENSE_WITNESS_EQUALITY_UP_TO_SCALAR__EXACT_R167_NORM_REPLAY__NODE_LOCAL_WEIL_HOMOMORPHISM__INTERNAL_SUMS_AND_AUXILIARY_LEAVES_TELESCOPE_TO_EXACTLY_N_TARGET_FACTORS__BALANCING_REDUCES_DEPTH_AND_MEMORY_NOT_NN_B7O2_WORK__NONLOCAL_BATCHED_LEAF_TRANSLATE_OPERATOR_OPEN__NO_CIRCUIT_LOWER_BOUND__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute a nonlocal batched elliptic leaf-translate product
+  operator that emits product_j U(x(T_j-P)) modulo U in softly O(n+N) work,
+  preferably B^(9/4+o(1)), without visiting the n-by-N pair grid,
+  materializing N dense quotient-ring elements, or invoking an uncharged
+  norm, resultant, or multipoint oracle.

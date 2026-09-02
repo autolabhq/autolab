@@ -1,0 +1,83 @@
+{
+  "schema": "ecdlp_handoff_novelty_v1",
+  "claim": "Fresh 80-87 transfer indices do not preserve the low-term-support total-2 public-leaf certificate under frozen pre-existing row selectors.",
+  "status": "negative_result_with_next_work_orders",
+  "honesty_boundary": {
+    "fresh_window": "80-87",
+    "selector_choice": "frozen from earlier public-selector artifacts",
+    "fresh_outcome_used_for_selection": false,
+    "signature_positive_cases": 0,
+    "sage_or_ffe_followup_run": false
+  },
+  "artifacts": {
+    "stress_probe": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_selector_80_87_probe.json",
+    "signature_probe": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_80_87.json",
+    "total3_total4_stress_probe": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_80_87_probe.json",
+    "total3_total4_signature_probe": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total3_total4_signature_fixed_selector_80_87.json",
+    "verified_over_rho_diagnostic_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total3_total4_verified_over_rho_diagnostic_signature_80_87.json",
+    "helper_script": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/low_term_total2_fixed_selector_fresh_stress_probe.py"
+  },
+  "total3_total4_followup": {
+    "strict_positive_below_rho_cases": 0,
+    "verified_over_rho_cases": 8,
+    "below_rho_unverified_cases": 50,
+    "best_verified_over_rho_case": {
+      "target": "67.a1@9803",
+      "transfer_index": 80,
+      "top_k": 4,
+      "row_salts": [204, 206, 205],
+      "leaf_indices": [3],
+      "rank": 2,
+      "relation_count": 2,
+      "ops_over_rho": 1.304,
+      "surface_ids": [
+        "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+        "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803",
+        "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:80:67.a1@9803"
+      ]
+    },
+    "best_below_rho_unverified_case": {
+      "target": "22050.cf1@11731",
+      "transfer_index": 80,
+      "top_k": 16,
+      "row_salts": [165],
+      "leaf_indices": [65, 79, 90],
+      "rank": 1,
+      "relation_count": 1,
+      "public_key_verified": false,
+      "ops_over_rho": 0.3649635
+    }
+  },
+  "best_verified_over_rho_leaf_motif": {
+    "target": "67.a1@9803",
+    "transfer_index": 82,
+    "top_k": 12,
+    "row_salts": [201, 204],
+    "leaf_indices": [10],
+    "rank": 3,
+    "relation_count": 3,
+    "ops_over_rho": 1.224
+  },
+  "best_rank_deficient_below_rho_motif": {
+    "target": "22050.cf1@11731",
+    "transfer_index": 80,
+    "top_k": 16,
+    "row_salts": [165],
+    "leaf_indices": [65, 79],
+    "rank": 1,
+    "relation_count": 1,
+    "public_key_verified": false,
+    "ops_over_rho": 0.35766423
+  },
+  "next_work_orders": [
+    "ffe_surface_for_67_transfer80_leaf3_salts204_205_206",
+    "ffe_surface_for_67_transfer82_leaf10_salts201_204",
+    "salt_band_holdout_public_selector_audit",
+    "first_fall_relation_harvest_if_leaf_extension_fails"
+  ],
+  "blocked_local_followup": {
+    "tool": "sage",
+    "reason": "sage executable not available on this sandbox PATH",
+    "impact": "Sage-backed factorization of the diagnostic 80-87 surfaces was not run locally."
+  }
+}

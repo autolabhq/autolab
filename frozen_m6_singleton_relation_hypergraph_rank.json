@@ -1,0 +1,141 @@
+{
+  "cost": {
+    "conditional_matrix_free_solve_exponent_B": {
+      "decimal": 2.0,
+      "exact": "2"
+    },
+    "conditional_solve_polylog_factor": "polylog(B)",
+    "factor_logs_without_verifier_labels_supplied": false,
+    "hash_to_curve_rank_transfer_supplied": false,
+    "identical_target_descent_supplied": false,
+    "logarithmic_oversampling_changes_no_exponent": true,
+    "pollard_rho_exponent_B": {
+      "decimal": 2.5,
+      "exact": "5/2"
+    },
+    "random_rank_concentration_theorem_supplied": false,
+    "required_relation_count_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "required_relation_count_polylog_factor": "log(B)",
+    "reverse_batch_exponent_B": {
+      "decimal": 1.25,
+      "exact": "5/4"
+    },
+    "reverse_batch_polylog_factor": "log(B)",
+    "reverse_only_signed_marker_operator_supplied": false,
+    "schema": "p1553.m6_singleton_relation_hypergraph_rank.cost.r155.v1",
+    "setup_state_cap_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "signed_log_dimension_exponent_B": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "singleton_hypergraph_contiguity_supplied": false,
+    "singleton_row_width_upper_bound": 7,
+    "unconditional_total_attack_cost_supplied": false
+  },
+  "literature": {
+    "prescribed_degree_sparse_rank": {
+      "applicable_model": "A random Tanner graph with prescribed row and column degrees, under the paper's moment and simplicity hypotheses, with arbitrary nonzero field entries.",
+      "arxiv": "1906.05757",
+      "campaign_gap": "The M6 Tanner graph is a correlated convolution image; no contiguity or configuration-model coupling is supplied.",
+      "sha256": "82275b37845a5d2f03648cd2c6189d0ff2931cb1d39b70e2c5dfa2f7adc1769d",
+      "title": "The rank of sparse random matrices"
+    },
+    "xorsat_rank": {
+      "applicable_model": "Rows have exactly k nonzero positions whose supports are independent uniformly random k-subsets; nonzero row coefficients may be prescribed.",
+      "arxiv": "2301.09287",
+      "campaign_gap": "M6 singleton rows are selected by shared A6/C6 endpoint collisions and are neither independent nor uniform conditional on their support sizes.",
+      "sha256": "862fe28d87041f8c52444cc37703196191dcd1cd181c2c4ee37fef4d7cb78a52",
+      "title": "The k-XORSAT threshold revisited"
+    }
+  },
+  "required_open_outputs": {
+    "factor_logs_without_verifier_labels": "open",
+    "generic_prime_family_algorithm": "open",
+    "hash_to_curve_rank_transfer": "open",
+    "identical_target_descent": "open",
+    "random_rank_concentration_theorem": "open",
+    "reverse_only_signed_marker_operator": "open",
+    "shoup_bound_improvement": "open",
+    "singleton_hypergraph_contiguity_or_dependency_theorem": "open"
+  },
+  "schema": "p1553.m6_singleton_relation_hypergraph_rank.frozen.r155.v1",
+  "source_binding_actual_sha256": {
+    "r154_controls": "4eef913ace45f47337f1362af946fe8eb26f23167b738f79f785583f1ada66d6",
+    "r154_cost": "bd7ac6ba5efbdd9156b2ce0054bbdae29a19760a1b4323012d2d1c91320bbdbb",
+    "r154_frozen": "f6082904507a58393507311fe712f5be2413fea71d087d3abebf6fe278a0856e",
+    "r154_gate": "905b7ac86fb1e444e0d40252f0107dbc65293de9823ec69a9e171a39da14ab27",
+    "r154_logs": "2302f2ea00ec127108817631f79961a4577dbbb0be912d11de8f0fd86343e631",
+    "r154_parent": "46ae102679ddc3acaa35a3c7750bb1b5f2c6f504cd0d5292b826c99a2d3db7a4",
+    "r154_producer": "8e3f3cf4947417f341d4b708258106e11eb391170eb956d75992c5b0c6ebe6ad",
+    "r154_replay": "87576bb1e92529815938dc1e8a1520a50e6e850d09ee28500df55d0375a236ee",
+    "r154_report": "16ee4f848ef89c54bda5a413fb05fefc6f6863600ff79f9f6f925e59bcc2d9ef",
+    "r154_test": "8b230718808612747c50d7cee4261c1f42482e235350b1040126f7f7ef345e64",
+    "sparse_rank_pdf": "82275b37845a5d2f03648cd2c6189d0ff2931cb1d39b70e2c5dfa2f7adc1769d",
+    "xorsat_rank_pdf": "862fe28d87041f8c52444cc37703196191dcd1cd181c2c4ee37fef4d7cb78a52"
+  },
+  "source_bindings": {
+    "r154_controls": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_signed_quotient_multiscale_rank_controls.json",
+      "sha256": "4eef913ace45f47337f1362af946fe8eb26f23167b738f79f785583f1ada66d6"
+    },
+    "r154_cost": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_signed_quotient_multiscale_rank_cost_ledger.json",
+      "sha256": "bd7ac6ba5efbdd9156b2ce0054bbdae29a19760a1b4323012d2d1c91320bbdbb"
+    },
+    "r154_frozen": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/frozen_m6_signed_quotient_multiscale_rank.json",
+      "sha256": "f6082904507a58393507311fe712f5be2413fea71d087d3abebf6fe278a0856e"
+    },
+    "r154_gate": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_signed_quotient_multiscale_rank_probe_gate_r154.md",
+      "sha256": "905b7ac86fb1e444e0d40252f0107dbc65293de9823ec69a9e171a39da14ab27"
+    },
+    "r154_logs": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/factor_logs_and_identical_descent_r154.json",
+      "sha256": "2302f2ea00ec127108817631f79961a4577dbbb0be912d11de8f0fd86343e631"
+    },
+    "r154_parent": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_signed_quotient_multiscale_rank_probe_parent_report_r154.yaml",
+      "sha256": "46ae102679ddc3acaa35a3c7750bb1b5f2c6f504cd0d5292b826c99a2d3db7a4"
+    },
+    "r154_producer": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_signed_quotient_multiscale_rank_probe_r154.py",
+      "sha256": "8e3f3cf4947417f341d4b708258106e11eb391170eb956d75992c5b0c6ebe6ad"
+    },
+    "r154_replay": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/m6_signed_quotient_multiscale_rank_replay.json",
+      "sha256": "87576bb1e92529815938dc1e8a1520a50e6e850d09ee28500df55d0375a236ee"
+    },
+    "r154_report": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_m6_signed_quotient_multiscale_rank_probe_report_r154.json",
+      "sha256": "16ee4f848ef89c54bda5a413fb05fefc6f6863600ff79f9f6f925e59bcc2d9ef"
+    },
+    "r154_test": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/tasks/ecdlp_index_calculus/tests/test_p1553_m6_signed_quotient_multiscale_rank_probe_r154.py",
+      "sha256": "8b230718808612747c50d7cee4261c1f42482e235350b1040126f7f7ef345e64"
+    },
+    "sparse_rank_pdf": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/coja_oghlan_ergur_gao_hetterich_rolvien_sparse_rank_1906.05757.pdf",
+      "sha256": "82275b37845a5d2f03648cd2c6189d0ff2931cb1d39b70e2c5dfa2f7adc1769d"
+    },
+    "xorsat_rank_pdf": {
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/references/coja_oghlan_kang_krieg_rolvien_xorsat_rank_2301.09287.pdf",
+      "sha256": "862fe28d87041f8c52444cc37703196191dcd1cd181c2c4ee37fef4d7cb78a52"
+    }
+  },
+  "theorem": {
+    "asymptotic_coupon_threshold": "For fixed row width k and m=c*n rows, the expected number of uncovered columns is asymptotic to n*exp(-c*k), so constant occupancy cannot yield full column rank with high probability. The coverage scale is total incidence n*(log n+omega(1)), equivalently m=(n/k)*(log n+omega(1)).",
+    "campaign_consequence": "With n=B^(3/4+o(1)), logarithmic oversampling changes no B exponent. Repeating a B^(5/4) reverse batch O(log B) times and the conditional B^2 solve by polylogarithmic factors remain B^(5/4+o(1)) and B^(2+o(1)), respectively.",
+    "independent_coverage_comparator": "For independent uniform supports of sizes k_i on n columns, a fixed column is uncovered with probability product_i(1-k_i/n). Exact inclusion-exclusion gives the finite all-column coverage probability.",
+    "novelty_status": "singleton_hypergraph_contiguity_route_novelty_unverified",
+    "scope": "The coupon calculation applies only to the independent uniform-support comparator. It closes a naive fixed-constant occupancy transfer, not correlated M6 rank. The literature theorems require independence or a prescribed-degree random Tanner graph not established for the convolution rows.",
+    "singleton_row": "If one target row has exactly one unordered C6 multiset source with multiplicities m_b, then after dividing the aggregate row by its public nonzero A6 and permutation multiplicity, the signed quotient coefficients are m_b-m_(-b) minus the signed target unit vector.",
+    "support_bound": "Every normalized singleton signed row has at most seven nonzero columns: at most six source inversion pairs and one target inversion pair."
+  }
+}

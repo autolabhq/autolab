@@ -1,0 +1,433 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_ffe_residual_kernel_contract_10376_probe.h"
+  },
+  "claim_status": "SELECTED13_PRIORITY0_FFE_RESIDUAL_KERNEL_CONTRACT_READY",
+  "created_at": "2026-06-06T02:44:14Z",
+  "failures": [],
+  "fused_term_groups": [
+    {
+      "ffe_materialization_required": true,
+      "group_index": 0,
+      "hybrid_materialization_slot_count": 2,
+      "lane_bitmap": 7,
+      "lane_count": 3,
+      "participating_hint_local_indices": [
+        0,
+        1,
+        2
+      ],
+      "plain_synthesis_slot_count": 1,
+      "residual_synthesis_required": true,
+      "selected_support_member": true,
+      "source_guard_slot_count": 0,
+      "synthesis_required_slot_count": 3,
+      "term": 2,
+      "term_group_class": "plain_and_hybrid_residual",
+      "term_group_class_code": 1,
+      "term_group_hash_u64": 625253404608900124,
+      "term_mask": 4,
+      "term_slot_count": 3,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 2,
+        "needs_residual_synthesis": 1
+      },
+      "worker_action": "synthesize_residual_term_once_and_fan_out_to_plain_and_hybrid_lanes"
+    },
+    {
+      "ffe_materialization_required": true,
+      "group_index": 1,
+      "hybrid_materialization_slot_count": 2,
+      "lane_bitmap": 7,
+      "lane_count": 3,
+      "participating_hint_local_indices": [
+        0,
+        1,
+        2
+      ],
+      "plain_synthesis_slot_count": 1,
+      "residual_synthesis_required": true,
+      "selected_support_member": true,
+      "source_guard_slot_count": 0,
+      "synthesis_required_slot_count": 3,
+      "term": 3,
+      "term_group_class": "plain_and_hybrid_residual",
+      "term_group_class_code": 1,
+      "term_group_hash_u64": 12277630229386035858,
+      "term_mask": 8,
+      "term_slot_count": 3,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 2,
+        "needs_residual_synthesis": 1
+      },
+      "worker_action": "synthesize_residual_term_once_and_fan_out_to_plain_and_hybrid_lanes"
+    },
+    {
+      "ffe_materialization_required": true,
+      "group_index": 2,
+      "hybrid_materialization_slot_count": 2,
+      "lane_bitmap": 6,
+      "lane_count": 2,
+      "participating_hint_local_indices": [
+        1,
+        2
+      ],
+      "plain_synthesis_slot_count": 0,
+      "residual_synthesis_required": true,
+      "selected_support_member": true,
+      "source_guard_slot_count": 0,
+      "synthesis_required_slot_count": 2,
+      "term": 6,
+      "term_group_class": "hybrid_residual",
+      "term_group_class_code": 2,
+      "term_group_hash_u64": 3086328166022190046,
+      "term_mask": 64,
+      "term_slot_count": 2,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 2
+      },
+      "worker_action": "materialize_hybrid_coefficients_and_synthesize_residual_term"
+    },
+    {
+      "ffe_materialization_required": true,
+      "group_index": 3,
+      "hybrid_materialization_slot_count": 2,
+      "lane_bitmap": 7,
+      "lane_count": 3,
+      "participating_hint_local_indices": [
+        0,
+        1,
+        2
+      ],
+      "plain_synthesis_slot_count": 1,
+      "residual_synthesis_required": true,
+      "selected_support_member": true,
+      "source_guard_slot_count": 0,
+      "synthesis_required_slot_count": 3,
+      "term": 8,
+      "term_group_class": "plain_and_hybrid_residual",
+      "term_group_class_code": 1,
+      "term_group_hash_u64": 4341360394075942461,
+      "term_mask": 256,
+      "term_slot_count": 3,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 2,
+        "needs_residual_synthesis": 1
+      },
+      "worker_action": "synthesize_residual_term_once_and_fan_out_to_plain_and_hybrid_lanes"
+    },
+    {
+      "ffe_materialization_required": true,
+      "group_index": 4,
+      "hybrid_materialization_slot_count": 2,
+      "lane_bitmap": 7,
+      "lane_count": 3,
+      "participating_hint_local_indices": [
+        0,
+        1,
+        2
+      ],
+      "plain_synthesis_slot_count": 0,
+      "residual_synthesis_required": true,
+      "selected_support_member": true,
+      "source_guard_slot_count": 1,
+      "synthesis_required_slot_count": 2,
+      "term": 9,
+      "term_group_class": "guarded_hybrid_residual",
+      "term_group_class_code": 3,
+      "term_group_hash_u64": 53535956301802573,
+      "term_mask": 512,
+      "term_slot_count": 3,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 2,
+        "source_coefficient_guard_available": 1
+      },
+      "worker_action": "reuse_source_guard_then_materialize_hybrid_coefficients_and_synthesize_residual_term"
+    },
+    {
+      "ffe_materialization_required": true,
+      "group_index": 5,
+      "hybrid_materialization_slot_count": 2,
+      "lane_bitmap": 7,
+      "lane_count": 3,
+      "participating_hint_local_indices": [
+        0,
+        1,
+        2
+      ],
+      "plain_synthesis_slot_count": 1,
+      "residual_synthesis_required": true,
+      "selected_support_member": true,
+      "source_guard_slot_count": 0,
+      "synthesis_required_slot_count": 3,
+      "term": 12,
+      "term_group_class": "plain_and_hybrid_residual",
+      "term_group_class_code": 1,
+      "term_group_hash_u64": 8488276073462351163,
+      "term_mask": 4096,
+      "term_slot_count": 3,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 2,
+        "needs_residual_synthesis": 1
+      },
+      "worker_action": "synthesize_residual_term_once_and_fan_out_to_plain_and_hybrid_lanes"
+    },
+    {
+      "ffe_materialization_required": true,
+      "group_index": 6,
+      "hybrid_materialization_slot_count": 2,
+      "lane_bitmap": 7,
+      "lane_count": 3,
+      "participating_hint_local_indices": [
+        0,
+        1,
+        2
+      ],
+      "plain_synthesis_slot_count": 1,
+      "residual_synthesis_required": true,
+      "selected_support_member": true,
+      "source_guard_slot_count": 0,
+      "synthesis_required_slot_count": 3,
+      "term": 13,
+      "term_group_class": "plain_and_hybrid_residual",
+      "term_group_class_code": 1,
+      "term_group_hash_u64": 4960414881889188724,
+      "term_mask": 8192,
+      "term_slot_count": 3,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 2,
+        "needs_residual_synthesis": 1
+      },
+      "worker_action": "synthesize_residual_term_once_and_fan_out_to_plain_and_hybrid_lanes"
+    }
+  ],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "general_ecdlp_algorithm_claimed": false,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "summation_polynomial_evaluated": false,
+    "target_export_not_emitted_by_this_contract": true
+  },
+  "kernel_contract": {
+    "accepted_relation_export_count": 0,
+    "expected_secret": 5859,
+    "fresh_ffe_or_summation_polynomial_required": true,
+    "fused_residual_term_group_count": 7,
+    "must_emit_target_direct_rank_export": true,
+    "must_match_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "must_materialize_hybrid_coeff_lane_count": 2,
+    "must_preserve_target_export_verifier_gate": true,
+    "must_reject_source_hint_replay_as_target_export": true,
+    "must_set_relation_derived_ecdlp": true,
+    "must_synthesize_required_slot_count": 19,
+    "must_verify_public_key": true,
+    "relation_derived_ecdlp": false,
+    "target_export_verifier_gate": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_target_export_verifier_gate_10376_probe.json"
+  },
+  "kernel_lanes": [
+    {
+      "coefficient_form_count": 2,
+      "hint_local_index": 0,
+      "kernel_lane_hash_u64": 4038950136043926055,
+      "lane_class": "source_coeff_guard_partial_residual_synthesis",
+      "lane_class_code": 1,
+      "lane_work_hash_u64": 9822312700161620005,
+      "materialization_required": false,
+      "source_public_key_verified": true,
+      "source_row_hash_u64": 5275705598190304756,
+      "source_voter_hash_u64": 14145845173935327712,
+      "source_voter_secret": 5859,
+      "synthesis_required_slot_count": 5,
+      "term_slot_count": 6,
+      "term_status_counts": {
+        "needs_residual_synthesis": 5,
+        "source_coefficient_guard_available": 1
+      }
+    },
+    {
+      "coefficient_form_count": 0,
+      "hint_local_index": 1,
+      "kernel_lane_hash_u64": 118777896192940195,
+      "lane_class": "shared_product_verified_coeff_materialization",
+      "lane_class_code": 2,
+      "lane_work_hash_u64": 3487033340450738322,
+      "materialization_required": true,
+      "source_public_key_verified": true,
+      "source_row_hash_u64": 3798422369699625013,
+      "source_voter_hash_u64": 2894120462566414757,
+      "source_voter_secret": 5859,
+      "synthesis_required_slot_count": 7,
+      "term_slot_count": 7,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 7
+      }
+    },
+    {
+      "coefficient_form_count": 0,
+      "hint_local_index": 2,
+      "kernel_lane_hash_u64": 15931574021200847042,
+      "lane_class": "shared_product_verified_coeff_materialization",
+      "lane_class_code": 2,
+      "lane_work_hash_u64": 2814064405339709981,
+      "materialization_required": true,
+      "source_public_key_verified": true,
+      "source_row_hash_u64": 3695383160683521145,
+      "source_voter_hash_u64": 8483766029900898480,
+      "source_voter_secret": 5859,
+      "synthesis_required_slot_count": 7,
+      "term_slot_count": 7,
+      "term_status_counts": {
+        "needs_hybrid_coefficient_materialization_and_residual_synthesis": 7
+      }
+    }
+  ],
+  "native_preflight": {
+    "c_source_sha256": "1c47a41dae6d7e3fd6c67c1814f984fd0829d594fa877fbcdfeb7790e1a3b6e5",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-I",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state",
+      "/private/tmp/selected13_priority0_residual_kernel_3t4xzjkp/preflight.c",
+      "-o",
+      "/private/tmp/selected13_priority0_residual_kernel_3t4xzjkp/preflight"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_priority0_ffe_residual_kernel_contract_preflight transfer=10376 lanes=3 term_groups=7 slots=20 synthesis_slots=19 hybrid_slots=14 guard_slots=1 failures=0",
+    "verified": true
+  },
+  "packet_hash_u64": 11513293704711537260,
+  "parameters": {
+    "synthesis_worklist": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_residual_synthesis_worklist_10376_probe.json",
+    "target_gate": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_target_export_verifier_gate_10376_probe.json",
+    "task_dir": "/Volumes/Volume/autolab/tasks/ecdlp_index_calculus"
+  },
+  "schema": "ecdlp.low_term_total2_selected13_priority0_ffe_residual_kernel_contract.v1",
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "failure_count": 0,
+    "fused_term_group_count": 7,
+    "generic_rho_steps": 137,
+    "hybrid_materialization_slot_count": 14,
+    "kernel_lane_count": 3,
+    "native_preflight_verified": true,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "rho_comparison_status": "contract_only_no_executable_ops_over_rho_claim",
+    "source_guard_slot_count": 1,
+    "structural_fanout_saving_slots": 12,
+    "synthesis_required_slot_count": 19,
+    "term_group_class_counts": {
+      "guarded_hybrid_residual": 1,
+      "hybrid_residual": 1,
+      "plain_and_hybrid_residual": 5
+    },
+    "term_slot_count": 20,
+    "verified": true,
+    "worker_interpretation": "The contract fuses 19 synthesis-required residual slots into seven unique term groups while preserving lane fanout, one source guard, and fourteen hybrid coefficient-materialization slots. It remains a pre-export FFE/summation worker contract."
+  },
+  "target_context": {
+    "ainvs": [
+      1,
+      -1,
+      0,
+      -1383867,
+      -626265459
+    ],
+    "ainvs_mod_p": [
+      1,
+      11730,
+      0,
+      391,
+      5707
+    ],
+    "base": [
+      1,
+      2582
+    ],
+    "base_order": 11779,
+    "context_status": "verified",
+    "generic_rho_steps": 137,
+    "group_order": 11779,
+    "label": "22050.cf1",
+    "p": 11731,
+    "precomputed_target": false,
+    "target": "22050.cf1@11731"
+  },
+  "target_slot": {
+    "candidate_case_arg": "22050.cf1@11731|10376|mode_low_term_support_total5|16",
+    "classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+    "classification_code": 5,
+    "combined_family_residual_rank": 5,
+    "direct_ops_over_rho": 0.68613139,
+    "direct_ops_over_rho_scaled": 68613139,
+    "family_mask_rank": 3,
+    "family_masks": [
+      34816,
+      17408,
+      33
+    ],
+    "phase": "target_direct_rank_export",
+    "phase_code": 1,
+    "priority_rank": 0,
+    "priority_score": 1551239,
+    "required_output": {
+      "must_emit_target_direct_rank_export": true,
+      "must_evaluate_fresh_ffe_or_summation_polynomial_system": true,
+      "must_match_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+      "must_reject_source_hint_replay_as_target_export": true,
+      "must_set_relation_derived_ecdlp": true,
+      "must_verify_public_key": true
+    },
+    "residual_mask_rank": 2,
+    "residual_masks": [
+      13068,
+      13132
+    ],
+    "row_keys": [
+      "22050.cf1@11731:uniform:256:salt168",
+      "22050.cf1@11731:uniform:256:salt173"
+    ],
+    "row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "row_request_id_u64": 15227462883308766969,
+    "selected_support_mask": 65533,
+    "selected_term_support": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "selector": "mode_low_term_support_total5",
+    "target": "22050.cf1@11731",
+    "target_salts": [
+      168,
+      173
+    ],
+    "top_k": 16,
+    "transfer_index": 10376,
+    "worker_acceptance_gate": "fresh_ffe_direct_rank_export_and_relation_derived_ecdlp_only",
+    "worker_class": "hinted_delta_source_solve",
+    "worker_class_code": 3
+  }
+}

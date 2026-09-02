@@ -1,0 +1,113 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-TWO-SIDED-IMPLICIT-JOIN-R102-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_canonical_join_and_density_one_filter_conservation
+run_count: 1
+status: exact_direct_join_over_online_cap_target_forced_filter_open
+labels:
+  - exact-finite-controls
+  - source-replay
+  - time-memory
+  - scoped-negative
+  - prospective
+  - novelty-unverified
+owner: P1513-P1553-R82-R84-R100-R101
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Construct the best setup-eligible canonical two-sided join, exhaust direct
+  atom-count splits, and test whether disjoint or independent filtering has
+  enough representation surplus to reach the online cap.
+inputs:
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_r101.py
+    sha256: 854df1da576b07cc3dd63b1249a42a72d56708ef8eb43c4ef37478f2558e747d
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_report_r101.json
+    sha256: 050d1093fc34611f502a3f7b3ebf6fc632b3aeb9d03718f922e99baa2fe985c9
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_gate_r101.md
+    sha256: 3e12e4ab70edba64076d27b68d39ab34307ca6d9ff08252432759673b74a9ac5
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_parent_report_r101.yaml
+    sha256: 14beac87b86d3664fd439c82663e444aa379035d292c60873523f0d6c9c67d6d
+  - path: p1553_5a5c_succinct_aggregate_digit_trie_probe_report_r100.json
+    sha256: fc7281ba084824963da550dfb8f034baa4f6d133305e18af11684e2be61154dd
+  - path: p1553_5a5c_succinct_aggregate_digit_trie_probe_gate_r100.md
+    sha256: 653ad0f51c9ec6f88a89769ca757f45ae70432cb947148d447eda968286a2e50
+  - path: p1553_5a5c_marked_resultant_source_section_probe_r84.py
+    sha256: 80cd0887fd24bfc37f0568f03a8af4c98eb148e030a3112576c1a0940f4ad99d
+  - path: p1553_5a5c_marked_resultant_source_section_probe_report_r84.json
+    sha256: c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b
+  - path: p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md
+    sha256: 4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661
+  - path: p1553_cartesian_sum_compact_divisor_probe_r82.py
+    sha256: 7380bff3175625016affee4703b0b0f2867a28113f72eef2d90614ed57ffef07
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: /Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md
+    sha256: 27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc
+artifacts:
+  - path: p1553_5a5c_two_sided_implicit_join_probe_r102.py
+    sha256: 3fae17c49683586178518a0df8d377c8f553bd131539f1bab579c0f55d5b0742
+  - path: p1553_5a5c_two_sided_implicit_join_probe_report_r102.json
+    sha256: 5f16489b5f0535df6c9728edfed5f2f83641a4b9c30fd2609db52a73f46d40e7
+  - path: frozen_5a5c_two_sided_implicit_join.json
+    sha256: 9042f4def4ed53ac97acbd9529cff38283a33ce3f5c4484a64632e7836f725bf
+  - path: two_sided_join_state_and_transition_ledger.json
+    sha256: f243619a5ad71e5800e51894fc43bc02c92ce99d41a86fc6988c0195e01a932b
+  - path: two_sided_join_integer_source_replay.json
+    sha256: cbff1dafbf14e0d23c2c96170780a3a67ab2fac69cff1293194f481c755128d8
+  - path: two_sided_join_exceptional_controls.json
+    sha256: 053ae7abfb99cc054a01abe5fe6d2a94f9e88e338cec41dc1091b33d9afb9cb7
+  - path: factor_logs_and_identical_descent_r102.json
+    sha256: 5b49334577bfe2c11867ff274cead16ae03a974b4b9fa0cb7027f0b69cb328f5
+  - path: p1553_5a5c_two_sided_implicit_join_probe_gate_r102.md
+    sha256: 1af82597762525110baf31cec7b4e7b96693a730270f7e1bd6556906e5c5f56c
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_two_sided_implicit_join_probe_r102.py
+    sha256: 073cc397a7237ce6da7dff810d3aadb63a8fdaada5f1fea97258b9ccd7b535b5
+verified_statements:
+  - >-
+    A canonical 4A+1C prefix dictionary uses B^11/5 state and a canonical
+    1A+4C fresh query uses B^14/5 work while preserving exact integer count
+    and one source.
+  - >-
+    Exhausting all 34 nontrivial atom-count splits leaves B^14/5 as the best
+    direct query exponent under the B^9/4 setup cap.
+  - >-
+    The source and subgroup exponents are both B^5, so bounded permutations
+    and pairings provide no polynomial representation surplus.
+  - >-
+    Ideal B^31/20 disjoint filtering requires B^31/20 classes or repetitions
+    for constant success and restores B^14/5 total work.
+scoped_failures:
+  exact_overcap_canonical_join: pass
+  full_two_sided_join_inside_caps: fail
+  target_forced_algebraic_filter: unsupplied
+  projective_and_proper_subsum_replay: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - target-forced Semaev or FFE identities
+  - nonpartition algebraic filters
+  - lower bounds for arbitrary arithmetic circuits
+admission:
+  passed_obligations: 24
+  obligation_count: 34
+  exact_overcap_join_baseline_admitted: true
+  lane_admitted: false
+result:
+  canonical_prefix_state_exponent_B: 11/5
+  canonical_suffix_query_exponent_B: 14/5
+  density_surplus_exponent_B: 0
+  target_forced_algebraic_filter_complete: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_EXACT_OVER_CAP_CANONICAL_JOIN_ONLY__BEST_DIRECT_SPLIT_B11O5_STATE_B14O5_QUERY__DENSITY_ONE_DISJOINT_FILTERS_PAY_PRUNING_BACK_IN_REPETITIONS__TARGET_FORCED_ALGEBRAIC_FILTER_OPEN__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one target-forced algebraic join filter for L+R=T,
+  using a frozen public rational invariant and Semaev or FFE relation that
+  preserves every true source without polynomial thinning.

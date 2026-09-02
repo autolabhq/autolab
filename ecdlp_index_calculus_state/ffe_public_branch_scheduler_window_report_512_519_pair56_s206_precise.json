@@ -1,0 +1,443 @@
+{
+  "method": "bucket_frozen_scheduler_window_before_exact_line_replay",
+  "parameters": {
+    "near_miss_limit": 8,
+    "public_sources": [
+      "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json"
+    ],
+    "scheduler_source": "ecdlp_index_calculus_state/ffe_public_branch_scheduler_validation_512_519_pair56_s206_precise.json",
+    "stress_sources": [
+      "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_512_519_probe.json"
+    ],
+    "target": "67.a1@9803",
+    "target_branch_prefix": "67_"
+  },
+  "scheduler_cases": [],
+  "scheduler_false_positive_cases": [],
+  "schema": "ecdlp_ffe_public_branch_scheduler_window_report_v1",
+  "stress_summaries": [
+    {
+      "best_policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "best_policy_summary": {
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "stress_leaf_below_rho": 0,
+        "stress_leaf_best_ops_over_rho": 1.01459854,
+        "stress_leaf_verified": 24,
+        "stress_row_below_rho": 0,
+        "stress_row_verified": 27
+      },
+      "policy_summaries": [
+        {
+          "policy": "fixed_target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+          "row_selector": "target_cap1_ow1_hw3_lw0_sw0_cw0_aw0",
+          "stress_leaf_below_rho": 0,
+          "stress_leaf_best_ops_over_rho": null,
+          "stress_leaf_verified": 0,
+          "stress_row_below_rho": 0,
+          "stress_row_verified": 0
+        },
+        {
+          "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+          "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+          "stress_leaf_below_rho": 0,
+          "stress_leaf_best_ops_over_rho": 1.01459854,
+          "stress_leaf_verified": 24,
+          "stress_row_below_rho": 0,
+          "stress_row_verified": 27
+        },
+        {
+          "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+          "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+          "stress_leaf_below_rho": 0,
+          "stress_leaf_best_ops_over_rho": 1.05109489,
+          "stress_leaf_verified": 20,
+          "stress_row_below_rho": 0,
+          "stress_row_verified": 22
+        }
+      ],
+      "source": "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total3_total4_fixed_selector_512_519_probe.json"
+    }
+  ],
+  "summary": {
+    "activation_opportunity_count": 0,
+    "interpretation": "The frozen target branch had no activation opportunity in this window. This is a validation failure for branch reach, not evidence against the frozen x-match activation rule.",
+    "next_obligation": "Do not widen the frozen activation rule from this window. Either validate branch reach on another future window or move to public line prediction / amortized exact-line confirmation.",
+    "scheduler_false_positive_count": 0,
+    "scheduler_selected_case_count": 0,
+    "scheduler_verified_below_rho_count": 0,
+    "source_case_counts": {
+      "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json": 196
+    },
+    "target_branch_case_count": 0,
+    "target_branch_verified_below_rho_count": 0,
+    "target_cap1_below_rho_count": 0,
+    "target_cap1_public_candidate_count": 0,
+    "target_cap1_verified_label_count": 0,
+    "target_public_candidate_count": 112,
+    "target_scheduler_case_count": 0
+  },
+  "target_cap1_near_misses": [],
+  "target_public_near_misses": [
+    {
+      "below_rho": false,
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "ops_over_rho": 1.224,
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "row_leaf_keys": [
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt201",
+          "salt": 201,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        }
+      ],
+      "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 3,
+      "selected_row_count": 3,
+      "source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json",
+      "target": "67.a1@9803",
+      "top_k": 4,
+      "transfer_index": 517,
+      "unique_leaf_indices": [
+        3
+      ]
+    },
+    {
+      "below_rho": false,
+      "leaf_selector": "mode_low_term_support_total3",
+      "ops_over_rho": 1.224,
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "row_leaf_keys": [
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt201",
+          "salt": 201,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt202",
+          "salt": 202,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        }
+      ],
+      "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 3,
+      "selected_row_count": 3,
+      "source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json",
+      "target": "67.a1@9803",
+      "top_k": 4,
+      "transfer_index": 517,
+      "unique_leaf_indices": [
+        3
+      ]
+    },
+    {
+      "below_rho": false,
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "ops_over_rho": 1.224,
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "row_leaf_keys": [
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt201",
+          "salt": 201,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        }
+      ],
+      "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 3,
+      "selected_row_count": 3,
+      "source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json",
+      "target": "67.a1@9803",
+      "top_k": 7,
+      "transfer_index": 517,
+      "unique_leaf_indices": [
+        3
+      ]
+    },
+    {
+      "below_rho": false,
+      "leaf_selector": "mode_low_term_support_total3",
+      "ops_over_rho": 1.224,
+      "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "row_leaf_keys": [
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt201",
+          "salt": 201,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            3
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:517:67.a1@9803"
+        }
+      ],
+      "row_selector": "target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 3,
+      "selected_row_count": 3,
+      "source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json",
+      "target": "67.a1@9803",
+      "top_k": 7,
+      "transfer_index": 517,
+      "unique_leaf_indices": [
+        3
+      ]
+    },
+    {
+      "below_rho": false,
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "ops_over_rho": 1.224,
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "row_leaf_keys": [
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt205",
+          "salt": 205,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        }
+      ],
+      "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 3,
+      "selected_row_count": 3,
+      "source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json",
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 519,
+      "unique_leaf_indices": [
+        4
+      ]
+    },
+    {
+      "below_rho": false,
+      "leaf_selector": "mode_low_term_support_total3",
+      "ops_over_rho": 1.224,
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "row_leaf_keys": [
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt205",
+          "salt": 205,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        }
+      ],
+      "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 3,
+      "selected_row_count": 3,
+      "source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json",
+      "target": "67.a1@9803",
+      "top_k": 12,
+      "transfer_index": 519,
+      "unique_leaf_indices": [
+        4
+      ]
+    },
+    {
+      "below_rho": false,
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "ops_over_rho": 1.224,
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "row_leaf_keys": [
+        {
+          "leaf_indices": [
+            16
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt204",
+          "salt": 204,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:513:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            16
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:513:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            16
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:513:67.a1@9803"
+        }
+      ],
+      "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 3,
+      "selected_row_count": 3,
+      "source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json",
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 513,
+      "unique_leaf_indices": [
+        16
+      ]
+    },
+    {
+      "below_rho": false,
+      "leaf_selector": "mode_cost_low_term_support_total3",
+      "ops_over_rho": 1.224,
+      "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "public_key_verified": false,
+      "rank": 0,
+      "relation_count": 0,
+      "row_leaf_keys": [
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt205",
+          "salt": 205,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt206",
+          "salt": 206,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        },
+        {
+          "leaf_indices": [
+            4
+          ],
+          "row_key": "67.a1@9803:uniform:256:salt203",
+          "salt": 203,
+          "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt203|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:519:67.a1@9803"
+        }
+      ],
+      "row_selector": "global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+      "selected_leaf_count": 3,
+      "selected_row_count": 3,
+      "source": "ecdlp_index_calculus_state/low_term_total3_total4_public_bounded_full_selector_512_519.json",
+      "target": "67.a1@9803",
+      "top_k": 16,
+      "transfer_index": 519,
+      "unique_leaf_indices": [
+        4
+      ]
+    }
+  ]
+}

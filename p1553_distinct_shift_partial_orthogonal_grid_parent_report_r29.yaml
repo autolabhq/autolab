@@ -1,0 +1,113 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-DISTINCT-SHIFT-PARTIAL-ORTHOGONAL-GRID-R29-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-057
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: distinct_shift_grid_branch_after_r27_r28
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION
+summary: >-
+  R27 branch B yields Theta(B) shifts whose transition matrices between B
+  selected fibers have Theta(B^2) occupied cells and only o(B^2) repeated
+  normalization cells. These are partial orthogonal fiber grids. Exact full
+  coverage for one nonzero shift would make the B^2-point support invariant
+  in a prime-order group and is impossible. A curve capturing a constant
+  fraction of one good transition grid must have total bidegree Omega(B).
+  Affine-plane parallel classes attain the abstract orthogonal-partition
+  scale but use an unavailable rank-two additive chart. The approximate
+  partial design and compact complete two-branch compiler remain open.
+inputs:
+  - path: staged/p1553_translation_correlation_sparse_convolution_gate_r15.md
+    sha256: ea007be0b237b91127e6a42501873f914ad31d6d4fd4393c3ae6b85005893b9b
+  - path: staged/p1553_galois_orbit_target_gate_r19.md
+    sha256: b5aef048b9748763f6449e845fa7554755e12715dce695cd99bdc8f0b77df61f
+  - path: staged/p1553_popular_difference_complete_triple_gate_r25.md
+    sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+  - path: staged/p1553_maximal_isogeny_translate_diversity_gate_r26.md
+    sha256: 0f9d0d8f7d2cbc2b73ba848f252f0f0d9a1d2b870411c5610725ff33c67b364c
+  - path: staged/p1553_translate_curve_bezout_saturation_gate_r27.md
+    sha256: dee8a0913854e0ce3e717ecdbc3e8aea73b987b2b2fb71790a470f501dd0c2d9
+  - path: staged/p1553_selected_singularity_common_subdivisor_gate_r28.md
+    sha256: c24183bfe4823a9318ae06769763c94cfed99cb4291807f06b85f397fd53f662
+  - path: staged/p1553_r28_bundle.sha256
+    sha256: 38970d51cf0592cfe34eb020f5d2798c44f47aa95e2abad1208d13addf42e48d
+  - path: staged/p1553_r28_staging_receipt.yaml
+    sha256: cd701dd5034752b4ad0dab9563345c09077b69f87e228eea576f60c81b4baeeb
+output:
+  path: staged/p1553_distinct_shift_partial_orthogonal_grid_gate_r29.md
+  sha256: 2d675720d215e78d1fa83e3a33a91ceb6b41060c13031dedf1ba6943dbd5e9eb
+frozen_parameters:
+  outer_map_degree: c=Theta(B)
+  selected_values: r=Theta(B)
+  selected_shifts: L=Theta(B)
+  selected_pullback_points: z=Theta(B^2)
+  source_group_order: N=Theta(B^5)
+theorems:
+  - >-
+    Branch B contains Theta(L) shifts with Theta(c^2) occupied transition
+    cells and o(c^2) repeated cells, hence Theta(c^2) singleton fiber
+    intersections per good shift.
+  - >-
+    If r=c, z=c^2, and every value pair is represented exactly once for one
+    nonzero shift, then Z is translation invariant and must equal the whole
+    prime-order group, contradicting c^2<N.
+  - >-
+    A bidegree-(u,v) curve not containing the integral bidegree-(c,c)
+    translate curve captures at most c(u+v) selected normalization points;
+    a constant fraction of a good grid requires u+v=Omega(c).
+  - >-
+    A single-valued value router agreeing on Theta(c^2) points has degree
+    Omega(c), unless it is a forbidden global translation semiconjugacy.
+  - >-
+    The c+1 parallel classes of an affine plane give extremal pairwise
+    orthogonal partitions of c^2 points, but require an external rank-two
+    additive chart unavailable in the prime cyclic source group.
+controls:
+  transition_multiplicity: exact_integer_counts
+  full_grid: rejected_by_prime_cycle_invariance
+  scalar_interval: admitted_near_invariance_control
+  affine_plane: positive_combinatorial_negative_interface_control
+  sparse_degree_c_relation: admitted_not_a_circuit_lower_bound
+result:
+  classification: exact_partial_orthogonal_grid_reduction_no_constructor
+  good_shift_count: Theta(B)
+  singleton_cells_per_good_shift: Theta(B^2)
+  exact_full_grid: impossible_on_proper_prime_group_subset
+  finite_list_capture_degree: Omega(B)
+  affine_plane_scale: attainable_with_external_rank_two_chart
+  compact_partial_grid_compiler: absent
+  complete_plus_minus_image: absent
+  complete_source_package: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - exact full-grid impossibility has no constant-density stability theorem
+  - no universal circuit lower bound for structured degree-B relation families
+  - no compact coupled plus-minus occupancy or source compiler
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R15 owns two-frequency correlation and source recovery
+  - R25 owns popular differences and additive energy
+  - R26 owns global translate bidegree
+  - R27 owns saturation and the two-branch dichotomy
+  - R28 owns common sub-divisors and residual Abel sums
+  - R29 adds partial orthogonal grids, interpolation degree, and affine controls
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION__THETA_B_GOOD_SHIFTS_WITH_THETA_B2_SINGLETON_TRANSITIONS__EXACT_FULL_GRID_IMPOSSIBLE__FINITE_LIST_CAPTURE_NEEDS_DEGREE_OMEGA_B__AFFINE_PLANE_PASSES_ONLY_WITH_EXTERNAL_RANK_TWO_CHART__APPROXIMATE_COMPACT_GRID_ABSENT__NO_COMPLETE_IMAGE_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one degree-B approximate partial-orthogonal grid with B
+  values and B public shifts, together with a compact exact compiler for the
+  coupled plus-minus image, counts, and sources; reject external affine or
+  scalar charts, false-positive supersets, dense per-shift tables, isogeny
+  stabilizers, or missing target, R10, rank, logs, and descent.

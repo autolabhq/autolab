@@ -1,0 +1,57 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-CONNECTED-KUMMER-DECK-R20-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: draft_review_required_scoped_negative
+labels:
+  - theorem-only
+  - model-bound
+  - novelty-unverified
+  - independent-review-required
+owner: P1553/IDEA-057/IDEA-195
+new_idea_id: null
+breakthrough: false
+objective: >-
+  Decide whether a nonliftable Mobius deck transformation can preserve one
+  complete translated Kummer branch map below the prime subgroup order.
+inputs:
+  - path: staged/p1553_block_common_right_factor_compiler_gate_r16.md
+    sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+  - path: staged/p1553_generic_pair_birational_gate_r18.md
+    sha256: d1eadf3edf74acedf30888aff764d221d1483ca3dc8521ff293cd7aa422ca5c4
+  - path: staged/p1553_galois_orbit_target_gate_r19.md
+    sha256: b5aef048b9748763f6449e845fa7554755e12715dce695cd99bdc8f0b77df61f
+verified_statements:
+  - >-
+    A Mobius map not preserving the four Kummer branch points gives a
+    connected biquadratic fiber product with independent sign involutions.
+  - >-
+    Equality of complete trace and norm on that fiber product makes one
+    translated branch pair coincide identically.
+  - >-
+    The coincident pair forces f to be invariant under translation by 2A,
+    which has order N for every nonzero endpoint A in the odd prime subgroup.
+  - >-
+    A separable degree-m map has at most m deck automorphisms, contradicting
+    m<N.
+  - >-
+    Every Galois common-factor deck group embeds in the Kummer four-branch
+    stabilizer, so its degree is at most 24.
+scoped_failures:
+  growing_geometric_galois_common_factor: impossible
+  nonliftable_complete_branch_deck_transformation: impossible
+  non_galois_common_factors: not_classified
+  decomposable_exceptional_components: not_classified
+  multivalued_target_action: not_classified
+  r10_density_rank_logs_and_descent: not_supplied
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  unrestricted_lower_bound: false
+  new_idea_id: null
+exactly_one_next_action: >-
+  Classify decomposable and primitive non-Galois components of the R18
+  cross-factor envelope, reducing every normal intermediate stage to the R20
+  degree-24 bound or extracting one fully certified balanced survivor.

@@ -1,0 +1,26 @@
+{
+  "artifact": "ecdlp_index_calculus_state/ffe_public_single_hit_root_assembly_replay_total3_total4_public_stress_192_199.json",
+  "boundary_artifact": "ecdlp_index_calculus_state/ffe_public_single_hit_root_assembly_replay_total3_total4_public_bounded_200_207.json",
+  "claim_status": "public_total3_total4_selector_recovers_hard_target_once_but_relation_independence_boundary_remains",
+  "date": "2026-05-25",
+  "evidence": {
+    "public_selector_192_199_case_count": 30,
+    "public_selector_192_199_policy_below_rho_count": 4,
+    "public_selector_192_199_verified_case_count": 4,
+    "public_selector_192_199_verified_group_count": 1,
+    "public_selector_192_199_verified_secret": 303,
+    "public_bounded_200_207_case_count": 48,
+    "public_bounded_200_207_policy_below_rho_count": 7,
+    "public_bounded_200_207_verified_case_count": 0,
+    "public_bounded_200_207_verified_group_count": 0,
+    "public_bounded_200_207_selected_verifier_positive_labels": 0
+  },
+  "method": "Raw total3/total4 stress rows were selected by public row/leaf cost only, then passed through pre-factor FFE gating, Sage factorization, prefactor unique-leaf root policy, and retained-root relation replay.",
+  "non_claims": [
+    "Not a complete ECDLP index-calculus speedup.",
+    "Not yet repeated as a fresh derived-key success on 200-207.",
+    "Does not use verifier labels to select the public stress cases.",
+    "Does not prove relation-form independence generalizes."
+  ],
+  "next_obligation": "Add a public relation-form independence/diversity selector on top of the total3/total4 FFE root-policy gate."
+}

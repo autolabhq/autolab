@@ -1,0 +1,691 @@
+{
+  "accounting_boundaries": {
+    "conservative_event_key_contract": "One first-pass candidate-point operation is charged per public event key.",
+    "optimized_batch_lane_contract": "First-pass candidate-point work is charged by validated grouped-left-y native lanes, and requires the batch-lane ABI/curve guard."
+  },
+  "method": "side_by_side_event_key_and_batch_lane_contract_accounting",
+  "non_claims": [
+    "This is a comparison of existing verified contracts; it is not a new relation search.",
+    "Lane-only below-rho records are optimized-implementation claims, not conservative event-key claims.",
+    "No large-field or general ECDLP break is claimed by this artifact."
+  ],
+  "parameters": {
+    "event_key_contract_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_contract_target67_672_744.json",
+    "lane_abi_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_batch_lane_abi_target67_672_744.json",
+    "lane_contract_source": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_batch_lane_contract_target67_672_744.json",
+    "source_names": []
+  },
+  "records": [
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "batch_lane_only_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": false,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "source_name": "coord161_720",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 117,
+        "batch_lane_fused_ops_over_rho": 0.936,
+        "event_key_first_pass_ops": 12,
+        "event_key_fused_below_rho": false,
+        "event_key_fused_ops": 127,
+        "event_key_fused_ops_over_rho": 1.016,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 10,
+        "lane_total_saved_ops": 10,
+        "second_event_pass_ops": 12
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "batch_lane_only_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": false,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "source_name": "coord161_728",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 116,
+        "batch_lane_fused_ops_over_rho": 0.928,
+        "event_key_first_pass_ops": 12,
+        "event_key_fused_below_rho": false,
+        "event_key_fused_ops": 126,
+        "event_key_fused_ops_over_rho": 1.008,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 10,
+        "lane_total_saved_ops": 10,
+        "second_event_pass_ops": 12
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "event_key_and_batch_lane_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": true,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "source_name": "coord1114_744",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 117,
+        "batch_lane_fused_ops_over_rho": 0.936,
+        "event_key_first_pass_ops": 8,
+        "event_key_fused_below_rho": true,
+        "event_key_fused_ops": 123,
+        "event_key_fused_ops_over_rho": 0.984,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 6,
+        "lane_total_saved_ops": 6,
+        "second_event_pass_ops": 12
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "event_key_and_batch_lane_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": true,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "117,6119",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "1"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 695
+      },
+      "source_name": "coord117_688",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 108,
+        "batch_lane_fused_ops_over_rho": 0.864,
+        "event_key_first_pass_ops": 4,
+        "event_key_fused_below_rho": true,
+        "event_key_fused_ops": 110,
+        "event_key_fused_ops_over_rho": 0.88,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 2,
+        "lane_total_saved_ops": 2,
+        "second_event_pass_ops": 4
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "event_key_and_batch_lane_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": true,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "3|3",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 706
+      },
+      "source_name": "coord55_704",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 110,
+        "batch_lane_fused_ops_over_rho": 0.88,
+        "event_key_first_pass_ops": 6,
+        "event_key_fused_below_rho": true,
+        "event_key_fused_ops": 114,
+        "event_key_fused_ops_over_rho": 0.912,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 4,
+        "lane_total_saved_ops": 4,
+        "second_event_pass_ops": 6
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "event_key_and_batch_lane_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": true,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "55,7531",
+        "hit_event_signature": "2|2",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "0"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 718
+      },
+      "source_name": "coord55_712",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 108,
+        "batch_lane_fused_ops_over_rho": 0.864,
+        "event_key_first_pass_ops": 4,
+        "event_key_fused_below_rho": true,
+        "event_key_fused_ops": 110,
+        "event_key_fused_ops_over_rho": 0.88,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 2,
+        "lane_total_saved_ops": 2,
+        "second_event_pass_ops": 4
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "event_key_and_batch_lane_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": true,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "757,1452",
+        "hit_event_signature": "8",
+        "hit_root_signature": "1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "7"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 1,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 715
+      },
+      "source_name": "coord757_712",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 62,
+        "batch_lane_fused_ops_over_rho": 0.496,
+        "event_key_first_pass_ops": 8,
+        "event_key_fused_below_rho": true,
+        "event_key_fused_ops": 68,
+        "event_key_fused_ops_over_rho": 0.544,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 6,
+        "lane_total_saved_ops": 6,
+        "second_event_pass_ops": 8
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "event_key_and_batch_lane_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": true,
+        "optimized_batch_lane_below_rho_claim": true,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "861,9226",
+        "hit_event_signature": "4|4",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "9"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 692
+      },
+      "source_name": "coord861_688",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": true,
+        "batch_lane_fused_ops": 112,
+        "batch_lane_fused_ops_over_rho": 0.896,
+        "event_key_first_pass_ops": 8,
+        "event_key_fused_below_rho": true,
+        "event_key_fused_ops": 118,
+        "event_key_fused_ops_over_rho": 0.944,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 6,
+        "lane_total_saved_ops": 6,
+        "second_event_pass_ops": 8
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "not_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": false,
+        "optimized_batch_lane_below_rho_claim": false,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "3|3|3",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 677
+      },
+      "source_name": "coord161_672",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": false,
+        "batch_lane_fused_ops": 164,
+        "batch_lane_fused_ops_over_rho": 1.312,
+        "event_key_first_pass_ops": 9,
+        "event_key_fused_below_rho": false,
+        "event_key_fused_ops": 171,
+        "event_key_fused_ops_over_rho": 1.368,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 7,
+        "lane_total_saved_ops": 7,
+        "second_event_pass_ops": 9
+      }
+    },
+    {
+      "checks": {
+        "batch_lane_abi_verified": true,
+        "batch_lane_contract_verified": true,
+        "batch_lane_native_verified": true,
+        "case_count_matches": true,
+        "event_key_contract_verified": true,
+        "event_key_first_pass_ops_match": true,
+        "event_key_ops_match_lane_original": true,
+        "lane_count_matches": true,
+        "lane_curve_guarded": true,
+        "lane_saved_ops_match": true,
+        "lane_subgroup_guarded": true,
+        "preserves_second_pass_fanout": true,
+        "relation_replay_derived": true,
+        "relation_replay_matches_secret": true,
+        "rho_steps_match": true,
+        "second_pass_ops_match": true,
+        "source_contract_verified_by_lane": true
+      },
+      "claim_class": "not_below_rho",
+      "claim_permissions": {
+        "conservative_event_key_below_rho_claim": false,
+        "optimized_batch_lane_below_rho_claim": false,
+        "optimized_claim_requires": [
+          "batch_lane_contract_verified",
+          "batch_lane_abi_verified",
+          "lane_curve_guarded",
+          "lane_subgroup_guarded",
+          "preserved_second_pass_fanout",
+          "relation_replay_matches_secret"
+        ]
+      },
+      "comparison_status": "contract_comparison_verified",
+      "failures": [],
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "2|2|2",
+        "hit_root_signature": "1|1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 3,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 740
+      },
+      "source_name": "coord161_736",
+      "work_counters": {
+        "batch_lane_first_pass_ops": 2,
+        "batch_lane_fused_below_rho": false,
+        "batch_lane_fused_ops": 161,
+        "batch_lane_fused_ops_over_rho": 1.288,
+        "event_key_first_pass_ops": 6,
+        "event_key_fused_below_rho": false,
+        "event_key_fused_ops": 165,
+        "event_key_fused_ops_over_rho": 1.32,
+        "generic_rho_steps": 125,
+        "lane_first_pass_saved_ops": 4,
+        "lane_total_saved_ops": 4,
+        "second_event_pass_ops": 6
+      }
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_contract_comparison_probe_v1",
+  "summary": {
+    "batch_lane_abi_guarded_below_rho_count": 8,
+    "batch_lane_only_below_rho_count": 2,
+    "batch_lane_optimized_below_rho_count": 8,
+    "contract_comparison_verified_count": 10,
+    "event_key_and_batch_lane_below_rho_count": 6,
+    "event_key_conservative_below_rho_count": 6,
+    "interpretation": "Event-key and batch-lane accounting are now compared without mixing claim boundaries.  Conservative below-rho claims require only the event-key contract; optimized below-rho claims additionally require the batch-lane contract and ABI/curve guard.",
+    "lane_only_source_names": [
+      "coord161_720",
+      "coord161_728"
+    ],
+    "mean_batch_lane_below_rho_ops_over_rho": 0.85,
+    "mean_event_key_below_rho_ops_over_rho": 0.85733333,
+    "not_below_rho_count": 2,
+    "record_count": 10,
+    "total_batch_lane_fused_ops": 1175,
+    "total_event_key_fused_ops": 1232,
+    "total_lane_saved_ops": 57
+  }
+}

@@ -1,0 +1,110 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-A-DIVERSITY-PROJECTIVE-RANK-R156-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_projective_row_quotient_with_finite_log_rank_transition
+run_count: 1
+status: direct_asymptotic_rank_and_reverse_marker_operator_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - inversion-symmetry
+  - signed-quotient
+  - singleton-relations
+  - projective-rows
+  - a-diversity
+  - logarithmic-oversampling
+  - rank
+  - two-core
+  - model-bound
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R155
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether R155 rank deficits are structural or an artifact of
+  fixing only two A inversion pairs.
+inputs:
+  - path: p1553_m6_singleton_relation_hypergraph_rank_probe_r155.py
+    sha256: a8c59626ebd38c87c7bc19c8c98cae15a548ce489ba3f39b6eb2387ababd5c00
+  - path: p1553_m6_singleton_relation_hypergraph_rank_probe_report_r155.json
+    sha256: 11e69758caceba9926e8d1d046aef71f56ed075ab2d2766988eb8ecc258a7bac
+  - path: frozen_m6_singleton_relation_hypergraph_rank.json
+    sha256: f3a0f229c3449bf32e26e0c832eb36cd5911ebb1357e005f5e7fc9a5d195155b
+  - path: m6_singleton_relation_hypergraph_rank_cost_ledger.json
+    sha256: 9c7ac01885694dc51ed6450e20a6c44d4425d088a00e3cdfdf73f19bff84b977
+  - path: m6_singleton_relation_hypergraph_rank_replay.json
+    sha256: 3d8c2281175f3584a83c8502aa379a2222a9d0b95526f33a77a48f5f5f05570b
+  - path: m6_singleton_relation_hypergraph_rank_controls.json
+    sha256: 1b9f0096c3fad2565e3af956b8a52be04877afabbfa24e063039a43211bb4530
+  - path: factor_logs_and_identical_descent_r155.json
+    sha256: 307739c16b7f2d695679648dc91f79c84f564c69ac670305654d63cf088abb2d
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_singleton_relation_hypergraph_rank_probe_r155.py
+    sha256: 0c5dbd2eb8cded7a05bd9bea690d4dad17c2525dce0ef5dc1030a03143e3f509
+  - path: p1553_m6_singleton_relation_hypergraph_rank_probe_gate_r155.md
+    sha256: f558cd9a526471ad51e076256934bdea34a7fd2c5d41f878ae6fdd39eb797875
+  - path: p1553_m6_singleton_relation_hypergraph_rank_probe_parent_report_r155.yaml
+    sha256: 66d36dd4a801f8b621c90415cbef3886562a8ca1660744b3771e3ba6ac011971
+artifacts:
+  - path: p1553_m6_a_diversity_projective_rank_probe_r156.py
+    sha256: b9caa2eb7bab40d3c3907111d1836130f3cc69394b0489445177996532f4a22a
+  - path: p1553_m6_a_diversity_projective_rank_probe_report_r156.json
+    sha256: 8c04aa3e5640f661d9d2c30e24dcd769dfc4fa6b07c3947f57a83f75965414f3
+  - path: frozen_m6_a_diversity_projective_rank.json
+    sha256: feb947fe5fcef1b7c016f11c1cd978882ab87358bbb855ac846f2934a4a41088
+  - path: m6_a_diversity_projective_rank_cost_ledger.json
+    sha256: db4ed01dace9c597b38686180406fc9392d7eedce1f09dd3b92e639e1d395f2a
+  - path: m6_a_diversity_projective_rank_replay.json
+    sha256: eeb66740bcd2ad794082e780fcf0f80f1c23a4a40e15c0bc1a6dfe9ba99b4b4e
+  - path: m6_a_diversity_projective_rank_controls.json
+    sha256: 82e745fb615edad055b00e24feb77f02ee45f33712e83ffe04e80e3f4c12d3ad
+  - path: factor_logs_and_identical_descent_r156.json
+    sha256: fd84ab20b0d1fcee454e75c80f49fc7cf9d9b9dcf9f87e8eb6ece939ec18bc45
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_a_diversity_projective_rank_probe_r156.py
+    sha256: f67774f461f02dea8b454467c8398e786991095fc3b1a5c8b995ff62fd58a99e
+  - path: p1553_m6_a_diversity_projective_rank_probe_gate_r156.md
+    sha256: 0d47ca3ee6534eb38287f8a611612d594d96f710c0b6cac675fdd2d7bc619bc1
+verified_statements:
+  - >-
+    Opposite singleton rows projectively normalize to one row without
+    changing the signed row span or rank.
+  - >-
+    Generic signed A6 coefficient support grows as Theta(r^6) for r
+    independent A inversion pairs, matching the selected A6 exponent.
+  - >-
+    All 108 preregistered controls replay relation and opposite-row
+    identities with separate coverage, projective-count, and residual
+    dependency diagnostics.
+  - >-
+    Full-rank counts by A-pair count are 18,22,22, while counts by
+    logarithmic factor are 6,21,35; only one factor-eight control fails.
+  - >-
+    The finite transition receives no asymptotic, hash-to-curve, factor-log,
+    descent, rho, or Shoup credit.
+scoped_failures:
+  asymptotic_a_diversity_rank_theorem: open
+  convolution_tanner_contiguity_or_direct_rank_theorem: open
+  hash_to_curve_rank_transfer: open
+  reverse_only_signed_marker_operator: open
+  signed_weight_separable_ffe_dag: open
+  factor_logs_without_verifier_labels: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 26
+  projective_opposite_row_quotient_admitted: true
+  finite_a_diversity_transition_admitted_without_transfer: true
+  asymptotic_rank_or_hash_to_curve_transfer_admitted: false
+  reverse_only_signed_marker_operator_admitted: false
+  lane_admitted: false
+next_action: >-
+  Derive or refute a direct asymptotic rank theorem after projective
+  opposite-row quotienting, then transfer it to hash-to-curve decks and
+  instantiate the reverse signed FFE operator within the frozen caps.

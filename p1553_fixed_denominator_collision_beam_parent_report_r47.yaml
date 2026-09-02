@@ -1,0 +1,113 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-FIXED-DENOMINATOR-COLLISION-BEAM-R47-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_deterministic_collision_hyperplane_slice_search
+  model_scope: two_fixed_denominators_from_strongest_r46_toy_pair
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_FINITE_FIXED_DENOMINATOR_COLLISION_NEGATIVE_GATE
+summary: >-
+  For a fixed denominator section, point-pair fiber collisions are linear
+  equations in the numerator modulo the denominator. Seven independent rows
+  isolate one pencil; dropping one row leaves a projective line of exactly 194
+  pencils, all of which R47 enumerates. An eight-layer width-32 beam for both
+  orientations of the strongest R46 pair generates 611,100 slice instances
+  and scores 576,607 layer-unique candidates. Neither orientation improves the
+  seed's two complete fibers and 106 collision pairs. Other denominators and
+  pencils outside the finite beam remain open.
+inputs:
+  - path: staged/p1553_single_interval_pencil_dlp_reduction_gate_r42.md
+    sha256: 8a8de8726e4fc9542f97cf7e1ba4fc54596307cc544da0d0b18b588553022dae
+  - path: staged/p1553_rank_minor_guided_partition_gate_r45.md
+    sha256: 61f894cbc7a135c811202e91ced1ddb63c665b2ec3a08c78475e96fd01dfe3d6
+  - path: staged/p1553_catalog_pencil_fiber_gate_r46.md
+    sha256: 6302cf24ff82dfc1d96c0cc21c0980c862a3218c0100ffb29905a35a8b63e2e4
+  - path: staged/p1553_r46_bundle.sha256
+    sha256: ce3d817daa4c16a3025ab0b7236453bdc1313fe70b0df18caa82ffb5046042a5
+  - path: staged/p1553_r46_staging_receipt.yaml
+    sha256: 739e33ade7027c9d07e6f738c46bcf76c3dc364bfc75a1ee35050d17b1f96f56
+outputs:
+  - path: staged/p1553_fixed_denominator_collision_beam_gate_r47.md
+    sha256: ea56391b5ab951bea92390f3ae490c89d68885f29b02a8433adc5efba80415e3
+  - path: staged/p1553_fixed_denominator_collision_beam_r47.py
+    sha256: 2761e82597d3a9aeef902e70e1decc763b9cc2b883e89c0f265e0fd3002a44b6
+  - path: staged/p1553_fixed_denominator_collision_beam_report_r47.json
+    sha256: 5ea67039d9a32425160de5eac791e728a05785435247928663a275b09f17c388
+frozen_parameters:
+  field_prime: 193
+  subgroup_order: 103
+  selected_interval_length: 81
+  denominator_orientations: 2
+  collision_basis_rank: 7
+  dropped_rows_per_state: 7
+  projective_slice_size: 194
+  beam_width: 32
+  beam_layers: 8
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+theorems:
+  - >-
+    A fixed-denominator point-pair collision is a linear equation in numerator
+    coefficients and descends to a hyperplane in the eight-dimensional
+    quotient by the denominator.
+  - >-
+    Seven independent collision rows isolate one pencil, while dropping one
+    row leaves a projective line containing exactly 194 F_193-rational pencils.
+  - >-
+    Exhausting every such one-row-dropped slice at every retained beam state
+    produces no candidate with three complete selected fibers.
+controls:
+  both_seed_denominator_orientations_checked: true
+  every_six_row_slice_enumerates_194_pencils: true
+  all_selected_numerator_collision_bases_rank_seven: true
+  subgroup_basepoints_rejected: true
+  all_candidates_scored_on_full_subgroup: true
+  degree_nine_subgroup_fiber_multiplicity_control: true
+  deterministic_tie_breaking: true
+toy_control:
+  generated_projective_line_instances: 611100
+  layer_unique_candidates: 576607
+  subgroup_basepoint_rejections: 27376
+  selected_nonseed_states: 512
+  seed_complete_fibers: 2
+  seed_collision_pairs: 106
+  best_complete_fibers: 2
+  best_collision_pairs: 106
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+  survivors: 0
+  replay_matches_report_byte_for_byte: true
+result:
+  classification: finite_two_denominator_collision_negative_other_denominators_open
+  three_complete_fiber_candidate: absent_in_finite_search
+  nine_complete_fiber_candidate: absent_in_finite_search
+  other_catalog_denominators: unclassified
+  outside_catalog_primitive_degree_nine_pencil: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - only two denominator sections are searched
+  - the width-32 beam is finite and not exhaustive in projective seven-space
+  - subgroup basepoint checks do not certify geometric basepoint freeness
+  - no target, R10, relation-rank campaign, logs, descent, or breakthrough
+deduplication:
+  - R46 owns exhaustive two-section catalog pencils
+  - R47 owns off-catalog numerator slices around the strongest fixed denominators
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_FINITE_FIXED_DENOMINATOR_COLLISION_NEGATIVE_GATE__COLLISION_EQUATIONS_LINEAR_IN_NUMERATOR_MODULO_FIXED_DENOMINATOR__SIX_ROW_SLICE_EXHAUSTS_194_PROJECTIVE_PENCILS__TWO_DENOMINATOR_ORIENTATIONS_EIGHT_LAYERS_WIDTH32__611100_SLICE_INSTANCES_576607_LAYER_UNIQUE_CANDIDATES__ALL512_SELECTED_NONSEED_COLLISION_BASES_HAVE_RANK_SEVEN__GLOBAL_BEST_REMAINS_TWO_COMPLETE_FIBERS_106_COLLISION_PAIRS__REQUIRED_NINE_FIBERS_324_COLLISION_PAIRS_ABSENT__OTHER_DENOMINATORS_AND_OUTSIDE_BEAM_PENCILS_OPEN__NO_TARGET_R10_RELATION_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  For each of all 807 R46 catalog sections as denominator, choose its highest-
+  collision disjoint catalog partner, extract a rank-seven collision basis,
+  drop each basis row, and exhaust all seven 194-pencil projective slices.
+  Retain the exact best fiber score per denominator and require any three-fiber
+  improvement to pass a full divisor/basepoint check before deeper search.

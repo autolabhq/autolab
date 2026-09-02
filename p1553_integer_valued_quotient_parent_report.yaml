@@ -1,0 +1,145 @@
+schema: crypto.autoresearch.theorem_report.v1
+report_id: P1553-INTEGER-VALUED-QUOTIENT-R8-PARENT
+date: 2026-07-19
+role: coordinator
+evidence_kind: theorem-only
+run_count: 0
+status: revise_scoped_reduction
+labels:
+  - theorem-only
+  - non-run
+  - model-bound
+  - novelty-unverified
+owner: P1553/P1534/P1536/IDEA-049/IDEA-198
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether falling-factorial, binomial/Newton, or CRT coordinates
+  turn the R7 constant-rank modular predicate into an exact target-symbolic
+  quotient-lattice unit-or-witness solver inside the frozen caps.
+inputs:
+  - path: staged/p1553_tensorized_small_root_gate_r7.md
+    sha256: b36870eeb0c7c0a53e6d1714d623629c522f4c58cd308a072e33ea6046a06615
+  - path: staged/p1553_tensorized_small_root_parent_report.yaml
+    sha256: 014d7bb61d9749e313e26179c242f321f5d474be8c7af84b48ecffa0fd8c6a25
+  - path: ideas/artifacts/ECDLP-IDEA-158/p1534_r1_independent_audit.md
+    sha256: 6a2c96f41552f91ab6d6ddc4801d6e4f958cf5845f6f81676de7f4db89653c53
+  - path: ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md
+    sha256: 81ec3515b584c36a809c155b5f26127bce91c09d7bfe6bccc425cdef07d51393
+  - path: ideas/rejected/ECDLP-IDEA-198_barvinok_carry_state_source_unranking_hypothesis.md
+    sha256: 834211bd8e26e3d421df0749653a1bc55b786aab56a698edb9cd71013a0c058a
+primary_sources:
+  - url: https://arxiv.org/abs/2607.10763
+    use: exact real-rank formula for the least-residue modular multiplication matrix
+  - url: https://arxiv.org/abs/1605.08065
+    use: scoped univariate binomial-auxiliary capacity control
+  - url: https://artifacts.iacr.org/eurocrypt/2025/a13/
+    use: explicit and heuristic boundaries of current automated multivariate Coppersmith shifts
+frozen_interface:
+  group_order: N=p^(1+o(1))
+  label_bound: B=N^(1/5)
+  setup_and_state_cap: B^(9/4+o(1))
+  online_and_workspace_cap: B^(5/4+o(1))
+  output: exact restricted unit-or-witness plus one signed x-class-labelled source
+verified_statements:
+  - >-
+    The falling-factorial and monomial transforms are integral
+    unitriangular. The binomial evaluation matrix on consecutive labels is
+    lower unitriangular, and all factorial denominators are units modulo p^m
+    because every deck size is below p.
+  - >-
+    An integer-valued Newton formulation can avoid clearing all factorial
+    denominators, so ordinary monomial coefficient height alone is not an
+    invariant obstruction. Clearing back into Z[z] restores the factorial
+    scale and must be charged.
+  - >-
+    Tensor-product Newton and CRT transforms are invertible factorwise and
+    preserve supplied CP rank. They diagonalize the finite-grid quotient but
+    retain its product_i(s_i)=Theta(B^5) abstract rank.
+  - >-
+    In the split F_p quotient, an empty root fiber is exactly the statement
+    that F_R is a unit. An exact miss certificate is an inverse, while exact
+    positive support is 1-F_R^(p-1); singleton source multipliers already
+    encode the unknown source.
+  - >-
+    The inverse and singleton multipliers are branch certificates, not a
+    uniform multi-root constructor. The exact uniform identities use
+    G_R=F_R^(p-2) and chi_R=1-F_R^(p-1), and an implementation must decide
+    chi_R=0 versus chi_R!=0 while preserving a positive restricted child.
+  - >-
+    LLL failure is not an exact miss certificate, and short quotient vectors
+    need not isolate the source fiber. Exact decision, useful shortness, and
+    source recovery remain separate gates.
+  - >-
+    Shi's rank formula implies that for B below (p+1)/2 there is a B by B
+    least-residue multiplication minor with real rank B although its reduction
+    modulo p has rank one. Its integer carry relative to the raw outer product
+    has rank at least B-1.
+  - >-
+    Tensoring that minor with three all-ones modes gives an exact five-mode
+    control against inferring a low-rank canonical bounded lift or carry from
+    modular CP rank. Its rational CP rank is B. Factorwise invertible rational
+    basis transforms before recentering preserve its two-block flattening
+    rank, but CRT recentering is nonlinear and is not covered.
+  - >-
+    The control is not a rank theorem for actual S_6 deck tensors and does not
+    rule out other bounded lifts, elliptic-specific cancellations, shared
+    correlations, or non-CP implicit modules.
+  - >-
+    The first standard over-budget target-fresh objects are the p^k-centered
+    remainder or carry and the exact quotient inverse/projector. Explicit CRT
+    realization has B^5 coordinates; no cap-sized separated constructor is
+    supplied.
+scoped_positive_controls:
+  newton_modular_divisibility: exact
+  integer_valued_height_correction: accepted
+  crt_algebra_isomorphism: exact
+  empty_fiber_unit_test: exact
+  singleton_multiplier_identity: exact
+  shi_canonical_remainder_control: exact
+scoped_failures:
+  quotient_state_rank: Theta(B^5)
+  standard_empty_fiber_inverse: B^5_coordinates
+  standard_zero_projector: B^5_coordinates
+  standard_balanced_source_locator: B^3
+  target_fresh_p_k_remainder_or_carry: no_cap_sized_constructor
+  shi_control_least_nonnegative_cp_rank: B
+  shi_control_raw_carry_cp_rank: at_least_B_minus_1
+  r7_pairwise_cost_after_formal_substitution: setup_B4_online_B3
+  intrinsic_runtime_lower_bound_from_shi: false
+  centered_elliptic_remainder_rank: unproved
+  exact_unit_or_witness_solver: unsupplied
+complexity_accounting:
+  conditional_lambda: max(s,1+kappa,2)/5
+  conditional_mu: max(s_m,w,2)/5
+  full_cap_lambda: 0.45
+  full_cap_mu: 0.45
+  mu_0_40_requires: persistent_state_at_most_B^2
+unproved_or_outside_scope:
+  - low-rank bounded lifts for the actual R6 S_6 interpolation family
+  - all centered or specially chosen O(p)-width lifts
+  - shared-correlation and non-CP implicit algorithms
+  - unrestricted multivariate Coppersmith or tensor lower bounds
+  - relation density, independent rank, factor logs, and scalar-blind descent
+deduplication:
+  - IDEA-049 owns bounded integer transducers and small-root source extraction
+  - IDEA-198 owns carry-state encoding and source unranking
+  - P1534 owns the exact quotient kernel and primitive-idempotent source issue
+  - P1536 owns the constant-rank S_6 predicate versus projector distinction
+  - P1553 owns Query2P1, restrictions, signs, and source replay
+disposition: >-
+  REVISE_SCOPED_CONTROL__NEWTON_INTEGER_VALUED_AND_CRT_IDENTITIES_EXACT__ORDINARY_HEIGHT_NOT_INVARIANT__EMPTY_IFF_UNIT__UNIFORM_PSEUDOINVERSE_PROJECTOR_IDENTITIES_EXACT__SHI_GIVES_AN_ARBITRARY_B_BY_B_LEAST_NONNEGATIVE_MINOR_WITH_Q_RANK_B_MOD_P_RANK_ONE_AND_RAW_CARRY_RANK_AT_LEAST_B_MINUS_1__FIVE_MODE_SYNTHETIC_CONTROL_HAS_CP_RANK_B__NEWTON_LINEAR_TRANSFORMS_PRESERVE_Q_FLATTENING_ONLY_BEFORE_RECENTERING__CRT_RECENTERING_NOT_RANK_PRESERVING__A_GE_B_EXACT_FOR_CONTROL__B4_B3_ONLY_IMPORTED_NAIVE_CP_COSTS__NO_INTRINSIC_RUNTIME_LOWER_BOUND__CENTERED_ELLIPTIC_REMAINDER_UNRESOLVED__INVERSE_AND_SINGLETON_MULTIPLIERS_BRANCH_INCOMPLETE__UNIFORM_MULTIROOT_UNIT_OR_ZERO_DIVISOR_ROUTER_UNSUPPLIED__STANDARD_RECOVERY_B5_OR_B3__NO_P1554__NO_RUN__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  For every frozen R6 dyadic subbox and fresh known-log or blind-masked target,
+  prove or refute one branch-complete representation of G_R=F_R^(p-2) and
+  chi_R=1-F_R^(p-1), or an explicitly equivalent unit-or-zero-divisor
+  interface, that certifies chi_R=0 on empty fibers, preserves a positive child
+  when chi_R!=0, and after O(log B) restrictions returns one verified signed
+  occurrence-labelled source with repeated columns aggregated. Charge
+  target-independent construction and state, target specialization, every
+  failed child, exact zero testing, output, integer heights, and Gram/LLL bit
+  complexity; use p^k recentering only for lattice powers actually invoked.
+  Under R7's naive CP-Gram route require A<=B^(1/8+o(1)); otherwise prove the
+  direct B^(9/4) setup/state and B^(5/4) online/workspace bounds. Any flattening
+  obstruction closes only the explicitly named lift and representation.

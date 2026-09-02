@@ -1,0 +1,74 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R51-TRANSLATED-TRIPLE-PRODUCT-PENCIL-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T10:25:57Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R51 is a new structured toy
+  product-family gate requiring independent review. It finds genuine
+  three-block pencil lines but no nine-block exact cover; shared divisor
+  factors remain to be classified.
+bindings:
+  r50_bundle_hash_list_sha256: 5d128e21d1548fa0a367af33b58f63489124298fc3772803a9718d6482dade58
+  r50_staging_receipt_sha256: 62d8bf4d6ff265ee1d8588378d278790f7632c8786a3487391a183e8e8d89b7f
+  r51_gate_sha256: 4b60aab9732a448c718f570262b6a44dd28fbdde6797090bba78fb1f59761ca2
+  r51_parent_report_sha256: c5191d27133e320600aed0413d4ebd9afebf46adecf28eaaebbe08b841b23236
+  r51_scan_script_sha256: 65558338a59a296040e331d934126351d39911b9c19cfd042958dc146cf5808b
+  r51_scan_report_sha256: 967c875ad12c403b8aaa3be6934677e68ea7d837d334f9cd3112c311c4137bb5
+  r51_artifact_index_sha256: 42e4e97b69067ba58ed60e9e34ead85439b7b8096eb1add1a1b127595f091fce
+  r51_bundle_hash_list_sha256: 0883d51fb4c15eb0865b2d6b34662863d4f560bc6976c8a14df2c97215762f35
+result:
+  classification: translated_triple_product_structural_positive_no_exact_cover
+  candidate_degree_nine_blocks: 253
+  section_pairs: 31878
+  distinct_plucker_lines: 31422
+  two_block_lines: 31194
+  three_block_lines: 228
+  maximum_blocks_on_one_line: 3
+  required_blocks_on_one_line: 9
+  canonical_exact_cover_section_rank: 9
+  required_section_rank: 2
+  exact_cover_lines: 0
+  shared_factor_explanation: unclassified
+  other_product_and_primitive_sections: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r51_hash_list: pass
+  r51_parent_yaml_parse: pass
+  r38_local_fiber_patterns_reconstructed: pass
+  all_253_candidate_blocks_enumerated: pass
+  all_31878_section_pairs_accounted: pass
+  all_31422_plucker_lines_classified_by_size: pass
+  canonical_exact_cover_and_section_rank_checked: pass
+  deterministic_replay_matches_report_byte_for_byte: pass
+  clean_temporary_replay_with_r16_through_r51_gates_and_r51_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T10_25_57Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - only unions of three translated R38 local triple fibers are covered
+  - the 228 three-block lines may be inherited shared-factor degree-three pencils
+  - no asymptotic lifting theorem, target, R10, rank campaign, logs, or descent
+exactly_one_next_action: >-
+  Classify all 228 three-block lines. Test whether exactly two labeled local
+  triples and six divisor points are common and whether the residual triples
+  are A, B, and C in one translated R38 window. Divide out any common factor
+  and classify the residual pencil degree.

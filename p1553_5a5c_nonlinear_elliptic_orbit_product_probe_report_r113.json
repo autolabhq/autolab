@@ -1,0 +1,179 @@
+{
+  "admission": {
+    "failures": [
+      "inside_cap_leaf_generator_complete",
+      "inside_cap_source_adjoint_complete",
+      "generic_multiplicity_integer_lift_complete",
+      "known_rhs_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 16,
+    "obligations": {
+      "all_c3_translation_stabilizers_trivial": true,
+      "all_canonical_c3_orderings_nonorbit": true,
+      "all_product_roots_exact": true,
+      "all_sources_match_r112": true,
+      "breakthrough_complete": false,
+      "endpoint_zero_divisor_supports_frozen": true,
+      "factor_logs_complete": false,
+      "generic_multiplicity_integer_lift_complete": false,
+      "identical_target_descent_complete": false,
+      "inside_cap_leaf_generator_complete": false,
+      "inside_cap_source_adjoint_complete": false,
+      "known_rhs_rank_complete": false,
+      "r108_weight_and_r105_markers_preserved": true,
+      "shoup_improvement_complete": false,
+      "sixteen_actual_and_matched_instances": true,
+      "ten_source_bindings_verified": true
+    },
+    "passed_obligation_count": 8,
+    "scoped_negative_admitted": true
+  },
+  "artifacts": {
+    "exceptional": "orbit_product_exceptional_controls.json",
+    "frozen": "frozen_5a5c_nonlinear_elliptic_orbit_product.json",
+    "logs_descent": "factor_logs_and_identical_descent_r113.json",
+    "recurrence_ledger": "elliptic_orbit_product_recurrence_ledger.json",
+    "source_replay": "orbit_product_subset_source_replay.json"
+  },
+  "breakthrough": false,
+  "claim_status": "EXACT_ORBIT_PRODUCT_SCOPED_NEGATIVE_WITHHOLD_PROMOTION",
+  "classification": "CANONICAL_C3_ENDPOINT_SETS_HAVE_TRIVIAL_TRANSLATION_STABILIZER_IN_THE_PRIME_GROUP_AND_ARE_NOT_FIXED_TRANSLATION_ORBITS__ANY_NONZERO_TRANSLATION_ORBIT_HAS_FULL_B5_LENGTH__ORDER_ONE_PREFIX_PRODUCT_STILL_REQUIRES_B3_DISTINCT_LEAF_GENERATIONS__PRODUCT_TREE_RETURNS_EXACT_SOURCE_ONLY_AFTER_B3_LEAVES__TARGET_INDEPENDENT_ENDPOINT_ZERO_DIVISOR_HAS_B5_OCCURRENCE_DEGREE_AND_NEAR_SOURCE_BODY_SUPPORT__FIXED_ORBIT_STANDARD_PRODUCT_TREE_AND_BOUNDED_STATE_AS_WORK_CLAIMS_CLOSED_ONLY__TRANSPOSED_NONUNIFORM_C5_LEAF_GENERATOR_OPEN",
+  "control_summary": {
+    "all_c3_orderings_nonorbit": true,
+    "all_c3_translation_stabilizers_trivial": true,
+    "all_product_roots_exact": true,
+    "all_sources_match_r112": true,
+    "instance_count": 16,
+    "maximum_prefix_leaf_evaluations": 462,
+    "maximum_product_tree_nodes": 926,
+    "minimum_endpoint_zero_divisor_support_ratio": 0.9943310657596371,
+    "source_count": 18
+  },
+  "cost_ledger": {
+    "caps": {
+      "fresh_work_workspace_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "constructor_status": {
+      "exact_product_root_and_source_replay_complete": true,
+      "fixed_translation_orbit_recurrence_complete": false,
+      "generic_multiplicity_integer_lift_complete": false,
+      "inside_cap_leaf_generator_complete": false,
+      "inside_cap_source_adjoint_complete": false
+    },
+    "fixed_translation_orbit": {
+      "all_actual_c3_stabilizers_trivial": true,
+      "all_canonical_orderings_nonorbit": true,
+      "c3_endpoint_support_exponent_B": {
+        "decimal": 1.8,
+        "exact": "9/5"
+      },
+      "full_orbit_inside_setup_cap": false,
+      "nonzero_orbit_length_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "prime_group_theorem": "A nonzero translation in a prime-order group generates the full group; every nonempty proper subset has trivial translation stabilizer."
+    },
+    "nonlinear_product_tree": {
+      "bounded_product_state_reduces_leaf_work": false,
+      "leaf_generation_inside_online_cap": false,
+      "leaf_generator_exponent_B": {
+        "decimal": 3.0,
+        "exact": "3"
+      },
+      "maximum_observed_leaf_count": 462,
+      "maximum_observed_tree_nodes": 926,
+      "prefix_recurrence_order": 1,
+      "prefix_state_dimension": 1,
+      "product_tree_state_exponent_B": {
+        "decimal": 3.0,
+        "exact": "3"
+      },
+      "tree_state_inside_setup_cap": false
+    },
+    "scope": {
+      "arbitrary_variable_coefficient_recurrence_lower_bound_claimed": false,
+      "bounded_prefix_state_as_work_claim_closed": true,
+      "fixed_translation_orbit_closed": true,
+      "standard_product_tree_closed": true,
+      "transposed_nonuniform_leaf_generator_closed": false
+    },
+    "target_independent_compilation": {
+      "endpoint_dictionary_state_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "inside_setup_cap": false,
+      "minimum_observed_support_ratio": 0.9943310657596371,
+      "zero_divisor_occurrence_degree_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      }
+    }
+  },
+  "disposition": "REJECT_FIXED_TRANSLATION_ORBIT_AND_STANDARD_PRODUCT_TREE__REJECT_BOUNDED_PREFIX_STATE_AS_LOW_WORK__MERGE_WITH_IDEA006_IDEA012_R4_R97_R100__PRESERVE_TRANSPOSED_NONUNIFORM_C5_LEAF_GENERATOR__NO_LOCATOR__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "next_action": "Construct or refute one transposed nonuniform C5 leaf generator for the typed endpoint membership functional. It must evaluate an exact target existence bit and adjoint one canonical source without forming B^3 leaves or B^5 endpoint support, inside B^(9/4) setup and B^(5/4) fresh work/workspace; charge target updates, complete charts, weight 14400, markers, multiplicity, rank, factor logs, and identical descent.",
+  "non_claims": [
+    "Constant prefix-product state does not imply constant leaf work.",
+    "Observed support ratios are not an asymptotic theorem.",
+    "No lower bound for arbitrary variable-coefficient recurrences is proved.",
+    "No generic-prime ECDLP algorithm is constructed.",
+    "No rank, factor-log, target-descent, or Shoup gate passes."
+  ],
+  "schema": "p1553.5a5c_nonlinear_elliptic_orbit_product.r113.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "idea_registry": {
+      "path": "p1553_r35_artifact_index_README.md",
+      "sha256": "9f4371eefd5e4019833eef858e3bda79d41aff0c5d7b861c71a5987a96acc392"
+    },
+    "r112_exceptional": {
+      "path": "query2p1_exceptional_controls.json",
+      "sha256": "110d294b56f23a917a2b15291bfa4eccc8c2fe9416aef84f8bf51b9e97ee1478"
+    },
+    "r112_frozen": {
+      "path": "frozen_5a5c_gauge_normalized_endpoint_query2p1.json",
+      "sha256": "0e817b083bb044ae719d70ed6db7d8e4bd328ab06d644d5c96a4f4c7e6ab2085"
+    },
+    "r112_gate": {
+      "path": "p1553_5a5c_gauge_normalized_endpoint_query2p1_probe_gate_r112.md",
+      "sha256": "d8de8e795feb08ebf967b9f10aa4b4f41919b4e808aa8f0bdaa88c206b7015ac"
+    },
+    "r112_ledger": {
+      "path": "gauge_normalized_endpoint_index_ledger.json",
+      "sha256": "98feb6e98a004219d16a15421d59f1f69afd414044a61bba09232b9af627973e"
+    },
+    "r112_logs": {
+      "path": "factor_logs_and_identical_descent_r112.json",
+      "sha256": "05adbed7775de1ba91058bb320b861eda03fa683a13910c307a2b873d7373ff3"
+    },
+    "r112_parent": {
+      "path": "p1553_5a5c_gauge_normalized_endpoint_query2p1_probe_parent_report_r112.yaml",
+      "sha256": "82fda11f8c376fb127b3f7bd384fb52ec4c7fd70f6dc1cc4ece447e7647aaf19"
+    },
+    "r112_producer": {
+      "path": "p1553_5a5c_gauge_normalized_endpoint_query2p1_probe_r112.py",
+      "sha256": "d556faf03c6c9ec5448b40754582e2f57c42cdb15a64a007e74581a49a3e8a34"
+    },
+    "r112_replay": {
+      "path": "query2p1_subset_source_replay.json",
+      "sha256": "b5bb8bf663f5b24bc74511b10c77cc6b693577266aba5b037c191f18dade51de"
+    },
+    "r112_report": {
+      "path": "p1553_5a5c_gauge_normalized_endpoint_query2p1_probe_report_r112.json",
+      "sha256": "3fa72cd2fd1ea45efc0db0946fac71ce42d325327d282a269439f61fe1719db2"
+    }
+  }
+}

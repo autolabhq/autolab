@@ -1,0 +1,104 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-TARGET-SIGN-CONJUGATE-S3-SELF-RESULTANT-R172-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: exact_target_sign_conjugate_identity_and_open_factored_self_resultant_interface
+run_count: 1
+status: factored_self_s3_resultant_mod_u_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - semaev-s3
+  - target-sign-conjugation
+  - iterated-resultant
+  - quotient-ring
+  - full-cost
+  - open-interface
+owner: P1553-R161-R171-SEMAEV-2004-MOROZ-SCHOST-2016-HYUN-NEIGER-SCHOST-2019
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Remove target-y dependence from the R171 Kummer locator by target-sign
+  conjugation, derive the exact Semaev S3 self-resultant identity, and test
+  whether its represented or factored forms supply a sub-rho nonlocal batch.
+inputs:
+  - {path: p1553_m6_balanced_miller_tree_norm_streaming_probe_r171.py, sha256: 684ab4cf92398b7a7789b8e429356ee712ba255e65f5d172cee1c4ebbe58d39e}
+  - {path: p1553_m6_balanced_miller_tree_norm_streaming_probe_report_r171.json, sha256: 12c34212fa3e07321ec7e9524a32a845233b420eae28f16e2dc3abfebd4efa92}
+  - {path: frozen_m6_balanced_miller_tree_norm_streaming.json, sha256: a80e1d9cbb7893a0a70ee04c95cd4ca2632f45181c9b72d645bd1afaf15abaef}
+  - {path: m6_balanced_miller_tree_norm_streaming_cost_ledger.json, sha256: 9e9fe2ae4e5ec8e905b60b56227be57e86f0cc10de63e0c0917dc7b5837ebb76}
+  - {path: m6_balanced_miller_tree_norm_streaming_replay.json, sha256: 76a793283ce4df296d0ead1dc6826bab40835cefdfcbc809e481bbbe377141be}
+  - {path: m6_balanced_miller_tree_norm_streaming_controls.json, sha256: d54c4d4db51abab1ccf4d01294bee945d240d637dd9db4a0078a523bef8aa300}
+  - {path: balanced_miller_tree_and_leaf_cancellation_r171.json, sha256: e322d78df66e9edec2fb39b412a98b23077b7648548f4154f30b7a166a5bcc7f}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_balanced_miller_tree_norm_streaming_probe_r171.py, sha256: 85df97c68496b5ce8beb3c207ab2e6b0bf0a51486be80183e6e92d02d76e74e5}
+  - {path: p1553_m6_balanced_miller_tree_norm_streaming_probe_gate_r171.md, sha256: 0f862466fa7816c438c6ef8526e66e350b1091c02f2e631d5b28a4105c10d680}
+  - {path: p1553_m6_balanced_miller_tree_norm_streaming_probe_parent_report_r171.yaml, sha256: 3fee4660f7b558116299174194657da9464435f402a9f3fb289489474fbb1f93}
+  - {path: p1553_m6_signed_c3_divisor_translation_gcd_probe_report_r161.json, sha256: 7e73325212e9d8c3cf42ae46cce0a5c1bdebea9784b9bf5c30761c006cb8bedd}
+  - {path: p1553_m6_signed_c3_divisor_translation_gcd_probe_gate_r161.md, sha256: 0ca8660b9554c39e2c90a8f29cee05554b9fb3adce0c4c2a1038e739b3888bcd}
+  - {path: references/semaev_summation_polynomials_2004_031.ps, sha256: 991f85d58ab68551a229266d03c2f88a5fc42e81b2a5f8f4432937bcceff16df}
+  - {path: references/moroz_schost_truncated_resultant_1609.04259.pdf, sha256: 160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709}
+  - {path: references/hyun_neiger_schost_bivariate_resultants_1905.04356.pdf, sha256: 32b73cf0ca7172bdec0f8f1b256adda628a86d6dd7eee8e07e8644e35a9f16f3}
+artifacts:
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_r172.py, sha256: 297dc3d3195926341fbbd79c7d0346e59bfcb1cd721e5b4f0d4b3e2cb4d615c8}
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_report_r172.json, sha256: 66f986b68c6d31576c688da4509d828139275331009dba4bb05abd45aef5ce5e}
+  - {path: frozen_m6_target_sign_conjugate_s3_self_resultant.json, sha256: 5a6938348733ec3d103ec2044198bcb5aef06c2119da01d45d5f746ed9e737bf}
+  - {path: m6_target_sign_conjugate_s3_self_resultant_cost_ledger.json, sha256: b8ceb6c4d9cc9d6365ce861ba17b6ac631c0e8f4f951d56dc4d94d0e351602f0}
+  - {path: m6_target_sign_conjugate_s3_self_resultant_replay.json, sha256: 7975e14f92f9fedd73193ace641d3ea6e2d97387b512be16ad9b01133fb15920}
+  - {path: m6_target_sign_conjugate_s3_self_resultant_controls.json, sha256: d176c75580c5810c37e6e9debb0a2a91636fe17f28bbec0b516f2a3cd164bc99}
+  - {path: target_conjugate_s3_factored_self_resultant_r172.json, sha256: 281fcf996ceddeeef5b5da57930e6b5dfc44da6da743719726fc2ebffd7f299d}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_target_sign_conjugate_s3_self_resultant_probe_r172.py, sha256: b9b663f3e502971257047a6b39d09a4d969030ebfd928927b14be4f474385dd1}
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_gate_r172.md, sha256: 14fb9459c75510f26177e2ef795266a825f58c2cdd11797d6ec6e60bd31dc951}
+verified_statements:
+  - The target-sign conjugate product removes target-y dependence through an exact Semaev S3 identity.
+  - Six controls verify 2,972 homogenized translation factors and 1,486 target-sign conjugate S3 products.
+  - Six iterated-resultant controls verify 8,922 factor-product rows and one exact denominator batch modulo each selected divisor U.
+  - The plus branch exactly replays all 140 R171 candidate roots; the conjugate branch adds one finite-control root, with signed verification retained.
+  - The six represented reverse resultants fill all 1,270 coefficient slots and have full coefficient-matrix rank sum 86.
+  - The represented reverse-resultant body costs B^(5/2), exactly the rho proxy before the final self-resultant; the standard local route costs B^(7/2).
+  - A softly linear factored self-S3 resultant modulo arbitrary squarefree U is not supplied by the producer or the audited literature contracts.
+scoped_failures:
+  represented_reverse_resultant_strictly_below_rho: refuted_by_full_cost
+  standard_pair_or_factor_local_route_below_rho: refuted_by_full_cost
+  factored_self_s3_resultant_mod_u: open
+  resultant_or_circuit_lower_bound: not_claimed
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 24
+  total_obligations: 31
+  target_sign_conjugate_s3_identity_admitted: true
+  single_denominator_batch_admitted: true
+  factored_self_s3_resultant_mod_u_admitted: false
+  lane_admitted: false
+result:
+  control_count: 6
+  homogenized_translate_identity_count: 2972
+  target_sign_conjugate_s3_identity_count: 1486
+  reverse_resultant_row_identity_count: 8922
+  represented_reverse_resultant_coefficient_slot_count: 1270
+  represented_reverse_resultant_nonzero_coefficient_count: 1270
+  reverse_resultant_coefficient_rank_sum: 86
+  plus_candidate_root_count: 140
+  conjugate_candidate_root_count: 1
+  symmetric_candidate_root_count: 141
+  factored_s3_state_exponent_B: 5/4
+  batched_denominator_exponent_B: 9/4
+  represented_reverse_resultant_body_exponent_B: 5/2
+  standard_local_route_exponent_B: 7/2
+  global_rho_exponent_B: 5/2
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_TARGET_SIGN_CONJUGATE_SEMAEV_S3_IDENTITY__COMPACT_TARGET_X_DIVISOR_AND_SINGLE_DENOMINATOR_BATCH__PLUS_BRANCH_EQUALS_R171__CONJUGATE_BRANCH_EXPLICIT_WITH_SIGNED_VERIFIER__SIX_ITERATED_RESULTANT_REPLAYS__REVERSE_RESULTANT_FULL_N2_BODY_B5O2_AT_RHO__STANDARD_FINAL_NN_B7O2__FACTORED_SELF_S3_RESULTANT_MOD_U_OPEN__NO_CIRCUIT_LOWER_BOUND__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute a factored self-S3 resultant operator that emits
+  Res_Z(U(Z),product_j S3(X,Z,u_j)) modulo U(X) in softly O(n+N) work,
+  preferably B^(9/4+o(1)), without materializing the N^2 reverse-resultant
+  body, visiting nN point/factor pairs, inverting candidate nonunits, or
+  invoking an uncharged resultant, norm, root, count, or multipoint oracle.

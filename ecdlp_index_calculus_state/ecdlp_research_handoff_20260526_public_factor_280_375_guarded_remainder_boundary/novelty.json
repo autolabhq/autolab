@@ -1,0 +1,52 @@
+{
+  "schema": "ecdlp_research_handoff_novelty_v1",
+  "date": "2026-05-26",
+  "claim": "Frozen guarded public-factor portfolio survived fresh transfer windows 280-375, but 360-375 did not repeat the full-remainder FFE below-rho witness.",
+  "artifacts": [
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_row_360_375_expanded_probe.json",
+    "ecdlp_index_calculus_state/low_term_total2_expanded_leaf_rescue_360_375_fixed_summary.json",
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_sage_factor_fresh_360_375_fixed_probe.json",
+    "ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_public_factor_quadratic_root_fresh_360_375_fixed_probe.json",
+    "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_rolling_with_280_375_fixed.json",
+    "ecdlp_index_calculus_state/ffe_public_factor_guarded_portfolio_loo_with_280_375_fixed.json",
+    "ecdlp_index_calculus_state/ecdlp_research_handoff_20260526_public_factor_280_375_guarded_remainder_boundary/false_positive_guard_structural_audit.json",
+    "ecdlp_index_calculus_state/ecdlp_research_handoff_20260526_public_factor_280_375_guarded_remainder_boundary/full_remainder_boundary_audit.json"
+  ],
+  "new_evidence": {
+    "fresh_windows": [
+      "fresh_280_295_fixed",
+      "fresh_296_311_fixed",
+      "fresh_312_327_fixed",
+      "fresh_328_343_fixed",
+      "fresh_344_359_fixed",
+      "fresh_360_375_fixed"
+    ],
+    "raw_360_375_surface_count": 7,
+    "raw_360_375_best_policy": "low_constant",
+    "raw_360_375_best_policy_below_rho_count": 4,
+    "raw_360_375_best_policy_false_positive_count": 1,
+    "raw_360_375_false_positive_row_count": 13,
+    "raw_360_375_false_positive_guard_pass_count": 0,
+    "raw_360_375_preserving_sage_factor_surfaces": 6,
+    "raw_360_375_full_remainder_below_rho_count": 0,
+    "raw_360_375_min_full_remainder_ffe_ops_over_rho": 1.208,
+    "raw_360_375_min_full_remainder_monomials": 92,
+    "rolling_test_window_count": 17,
+    "rolling_below_rho_count": 99,
+    "rolling_latest_window": "fresh_360_375_fixed",
+    "rolling_latest_below_rho_count": 3,
+    "rolling_latest_false_positive_count": 0,
+    "rolling_latest_max_charged_ops_over_rho": 0.68,
+    "loo_heldout_window_count": 18,
+    "loo_below_rho_count": 122,
+    "loo_false_positive_count": 0,
+    "loo_gap_to_guarded_oracle_below_rho": 0,
+    "loo_failing_window_count": 0
+  },
+  "novelty_assessment": {
+    "strength": "six fresh-window guarded portfolio promotion plus a full-remainder boundary result",
+    "strongest_point": "The combined rolling and LOO guarded portfolios remain perfect through 280-375 despite another raw false-positive surface.",
+    "main_limitation": "The 360-375 block does not repeat the full-remainder below-rho profile; latest guarded surface count drops to 3.",
+    "next_required_step": "Mine public row-envelope features that predict the 79-monomial full-remainder profile instead of only extending transfer windows."
+  }
+}

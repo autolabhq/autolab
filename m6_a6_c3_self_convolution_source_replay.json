@@ -1,0 +1,745 @@
+{
+  "all_instances_exact": true,
+  "batched_form": "sum_a6 mu_A6(a6) (mu_C3*mu_C3)(R-a6)",
+  "finite_enumeration_receives_asymptotic_credit": false,
+  "identity": "mu_A^*6 * mu_C^*6 = (mu_A^*3 * mu_C^*3) * (mu_A^*3 * mu_C^*3)",
+  "instances": [
+    {
+      "all_exact": true,
+      "curve": {
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "field_prime": 98561,
+        "subgroup_order": 16427
+      },
+      "enumeration_receives_asymptotic_credit": false,
+      "factor_base": {
+        "atom_a_size": 2,
+        "atom_c_size": 3,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 5,
+          "output_degree": 6,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 6,
+        "input_atom_count": 5,
+        "offset": 0,
+        "optional_materialization_group_additions": 6,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "family_id": "p98561_j0_q16427_h6_u2_v3",
+      "negative_control_count": 0,
+      "occurrence_masses": {
+        "a3": 8,
+        "a6": 64,
+        "c3": 27,
+        "c6": 729,
+        "six_f": 46656,
+        "three_f": 216
+      },
+      "positive_control_count": 1,
+      "support_sizes": {
+        "a3": 4,
+        "a6": 7,
+        "c3": 10,
+        "c6": 28,
+        "three_f": 40
+      },
+      "target_controls": [
+        {
+          "a6_batched_c3_pair_count": 1800,
+          "all_three_counts_equal": true,
+          "batched_atom_source_replay_exact": true,
+          "batched_factor_source_replay_exact": true,
+          "batched_source": {
+            "a6_indices": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ],
+            "left_c3_indices": [
+              0,
+              0,
+              1
+            ],
+            "right_c3_indices": [
+              1,
+              2,
+              2
+            ]
+          },
+          "direct_a6_c6_count": 1800,
+          "direct_source_replay_exact": true,
+          "factor_s3_chain": {
+            "all_nonprojective_s3_zero": true,
+            "final_endpoint": [
+              50599,
+              79197
+            ],
+            "nonprojective_checks": 5,
+            "step_count": 5,
+            "steps": [
+              {
+                "endpoint": [
+                  50137,
+                  21550
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  87035,
+                  3185
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  93585,
+                  35218
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  7609,
+                  97494
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  50599,
+                  79197
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              }
+            ]
+          },
+          "positive": true,
+          "self_convolution_source_replay_exact": true,
+          "source_presence_exact": true,
+          "target": [
+            50599,
+            79197
+          ],
+          "three_f_self_convolution_count": 1800
+        }
+      ],
+      "validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      }
+    },
+    {
+      "all_exact": true,
+      "curve": {
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "field_prime": 98561,
+        "subgroup_order": 16427
+      },
+      "enumeration_receives_asymptotic_credit": false,
+      "factor_base": {
+        "asymptotic_credit": false,
+        "atom_a_size": 1,
+        "atom_c_size": 2,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 5,
+          "output_degree": 6,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 2,
+        "finite_semantic_subdeck": true,
+        "input_atom_count": 5,
+        "offset": 0,
+        "optional_materialization_group_additions": 6,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "family_id": "p98561_j0_q16427_h6_u2_v3_subdeck_u1_v2",
+      "negative_control_count": 1,
+      "occurrence_masses": {
+        "a3": 1,
+        "a6": 1,
+        "c3": 8,
+        "c6": 64,
+        "six_f": 64,
+        "three_f": 8
+      },
+      "positive_control_count": 2,
+      "support_sizes": {
+        "a3": 1,
+        "a6": 1,
+        "c3": 4,
+        "c6": 7,
+        "three_f": 4
+      },
+      "target_controls": [
+        {
+          "a6_batched_c3_pair_count": 1,
+          "all_three_counts_equal": true,
+          "batched_atom_source_replay_exact": true,
+          "batched_factor_source_replay_exact": true,
+          "batched_source": {
+            "a6_indices": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "left_c3_indices": [
+              0,
+              0,
+              0
+            ],
+            "right_c3_indices": [
+              0,
+              0,
+              0
+            ]
+          },
+          "direct_a6_c6_count": 1,
+          "direct_source_replay_exact": true,
+          "factor_s3_chain": {
+            "all_nonprojective_s3_zero": true,
+            "final_endpoint": [
+              46941,
+              40742
+            ],
+            "nonprojective_checks": 5,
+            "step_count": 5,
+            "steps": [
+              {
+                "endpoint": [
+                  50137,
+                  21550
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  82531,
+                  39026
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  60778,
+                  24673
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  68461,
+                  88959
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  46941,
+                  40742
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              }
+            ]
+          },
+          "positive": true,
+          "self_convolution_source_replay_exact": true,
+          "source_presence_exact": true,
+          "target": [
+            46941,
+            40742
+          ],
+          "three_f_self_convolution_count": 1
+        },
+        {
+          "a6_batched_c3_pair_count": 1,
+          "all_three_counts_equal": true,
+          "batched_atom_source_replay_exact": true,
+          "batched_factor_source_replay_exact": true,
+          "batched_source": {
+            "a6_indices": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "left_c3_indices": [
+              1,
+              1,
+              1
+            ],
+            "right_c3_indices": [
+              1,
+              1,
+              1
+            ]
+          },
+          "direct_a6_c6_count": 1,
+          "direct_source_replay_exact": true,
+          "factor_s3_chain": {
+            "all_nonprojective_s3_zero": true,
+            "final_endpoint": [
+              80560,
+              71284
+            ],
+            "nonprojective_checks": 5,
+            "step_count": 5,
+            "steps": [
+              {
+                "endpoint": [
+                  8991,
+                  16360
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  33456,
+                  15627
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  76966,
+                  79961
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  26123,
+                  69597
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  80560,
+                  71284
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              }
+            ]
+          },
+          "positive": true,
+          "self_convolution_source_replay_exact": true,
+          "source_presence_exact": true,
+          "target": [
+            80560,
+            71284
+          ],
+          "three_f_self_convolution_count": 1
+        },
+        {
+          "a6_batched_c3_pair_count": 0,
+          "all_three_counts_equal": true,
+          "batched_atom_source_replay_exact": true,
+          "batched_factor_source_replay_exact": true,
+          "batched_source": null,
+          "direct_a6_c6_count": 0,
+          "direct_source_replay_exact": true,
+          "factor_s3_chain": null,
+          "positive": false,
+          "self_convolution_source_replay_exact": true,
+          "source_presence_exact": true,
+          "target": [
+            11165,
+            19999
+          ],
+          "three_f_self_convolution_count": 0
+        }
+      ],
+      "validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      }
+    },
+    {
+      "all_exact": true,
+      "curve": {
+        "cofactor": 6,
+        "curve_a": 0,
+        "curve_b": 1,
+        "field_prime": 3148097,
+        "subgroup_order": 524683
+      },
+      "enumeration_receives_asymptotic_credit": false,
+      "factor_base": {
+        "atom_a_size": 3,
+        "atom_c_size": 5,
+        "construction": "F_(i,j)=A_i+C_j",
+        "divisor_slp": {
+          "correspondence": "addition_pushforward(D_A x D_C)",
+          "input_divisors": "D_A=sum_i[A_i], D_C=sum_j[C_j]",
+          "input_leaf_count": 8,
+          "output_degree": 15,
+          "output_divisor": "D_F=sum_(i,j)[A_i+C_j]",
+          "straight_line_gate_count_before_output_materialization": 1
+        },
+        "factor_base_contains_identity": false,
+        "factor_base_injective": true,
+        "factor_base_size": 15,
+        "input_atom_count": 8,
+        "offset": 0,
+        "optional_materialization_group_additions": 15,
+        "rejected_c_candidates": 0,
+        "source_rules": {
+          "candidate_scalar_labels_consumed": false,
+          "hash_to_curve_and_cofactor_clear": true,
+          "outcome_adaptive_selection": false
+        }
+      },
+      "family_id": "p3148097_j0_q524683_h6_u3_v5",
+      "negative_control_count": 0,
+      "occurrence_masses": {
+        "a3": 27,
+        "a6": 729,
+        "c3": 125,
+        "c6": 15625,
+        "six_f": 11390625,
+        "three_f": 3375
+      },
+      "positive_control_count": 3,
+      "support_sizes": {
+        "a3": 10,
+        "a6": 28,
+        "c3": 35,
+        "c6": 210,
+        "three_f": 350
+      },
+      "target_controls": [
+        {
+          "a6_batched_c3_pair_count": 32400,
+          "all_three_counts_equal": true,
+          "batched_atom_source_replay_exact": true,
+          "batched_factor_source_replay_exact": true,
+          "batched_source": {
+            "a6_indices": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2
+            ],
+            "left_c3_indices": [
+              0,
+              0,
+              1
+            ],
+            "right_c3_indices": [
+              2,
+              3,
+              4
+            ]
+          },
+          "direct_a6_c6_count": 32400,
+          "direct_source_replay_exact": true,
+          "factor_s3_chain": {
+            "all_nonprojective_s3_zero": true,
+            "final_endpoint": [
+              1738599,
+              3067315
+            ],
+            "nonprojective_checks": 5,
+            "step_count": 5,
+            "steps": [
+              {
+                "endpoint": [
+                  2679863,
+                  756071
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  2302676,
+                  477507
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  2081659,
+                  636177
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  368884,
+                  837369
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  1738599,
+                  3067315
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              }
+            ]
+          },
+          "positive": true,
+          "self_convolution_source_replay_exact": true,
+          "source_presence_exact": true,
+          "target": [
+            1738599,
+            3067315
+          ],
+          "three_f_self_convolution_count": 32400
+        },
+        {
+          "a6_batched_c3_pair_count": 32400,
+          "all_three_counts_equal": true,
+          "batched_atom_source_replay_exact": true,
+          "batched_factor_source_replay_exact": true,
+          "batched_source": {
+            "a6_indices": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2
+            ],
+            "left_c3_indices": [
+              0,
+              1,
+              1
+            ],
+            "right_c3_indices": [
+              2,
+              3,
+              4
+            ]
+          },
+          "direct_a6_c6_count": 32400,
+          "direct_source_replay_exact": true,
+          "factor_s3_chain": {
+            "all_nonprojective_s3_zero": true,
+            "final_endpoint": [
+              1675335,
+              337409
+            ],
+            "nonprojective_checks": 5,
+            "step_count": 5,
+            "steps": [
+              {
+                "endpoint": [
+                  2808925,
+                  1752116
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  786896,
+                  2705259
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  2034030,
+                  615537
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  111697,
+                  828244
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  1675335,
+                  337409
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              }
+            ]
+          },
+          "positive": true,
+          "self_convolution_source_replay_exact": true,
+          "source_presence_exact": true,
+          "target": [
+            1675335,
+            337409
+          ],
+          "three_f_self_convolution_count": 32400
+        },
+        {
+          "a6_batched_c3_pair_count": 32400,
+          "all_three_counts_equal": true,
+          "batched_atom_source_replay_exact": true,
+          "batched_factor_source_replay_exact": true,
+          "batched_source": {
+            "a6_indices": [
+              0,
+              0,
+              1,
+              1,
+              2,
+              2
+            ],
+            "left_c3_indices": [
+              0,
+              1,
+              2
+            ],
+            "right_c3_indices": [
+              2,
+              3,
+              4
+            ]
+          },
+          "direct_a6_c6_count": 32400,
+          "direct_source_replay_exact": true,
+          "factor_s3_chain": {
+            "all_nonprojective_s3_zero": true,
+            "final_endpoint": [
+              2113623,
+              909524
+            ],
+            "nonprojective_checks": 5,
+            "step_count": 5,
+            "steps": [
+              {
+                "endpoint": [
+                  2808925,
+                  1752116
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  604321,
+                  2756975
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  996978,
+                  338826
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  2571016,
+                  1721355
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              },
+              {
+                "endpoint": [
+                  2113623,
+                  909524
+                ],
+                "projective_exception": false,
+                "s3_zero": true
+              }
+            ]
+          },
+          "positive": true,
+          "self_convolution_source_replay_exact": true,
+          "source_presence_exact": true,
+          "target": [
+            2113623,
+            909524
+          ],
+          "three_f_self_convolution_count": 32400
+        }
+      ],
+      "validation": {
+        "curve_discriminant_nonzero": true,
+        "field_prime_probable_prime": true,
+        "generator_has_stated_order": true,
+        "generator_nonidentity": true,
+        "j_zero_supersingular_order_identity": true,
+        "subgroup_order_probable_prime": true
+      }
+    }
+  ],
+  "negative_control_present": true,
+  "schema": "p1553.m6_a6_c3_self_convolution_source_replay.r116.v1",
+  "source_rule": "one A6 backpointer plus two C3 backpointers yields six ordered factors F_i=A_i+C_i"
+}

@@ -1,0 +1,116 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-GEOMETRY-ONLY-WEIGHT-INTERPOLATION-ADJOINT-R152-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: reusable_weight_independent_leaf_derivative_state
+run_count: 1
+status: signed_weight_separable_internal_ffe_dag_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - elliptic-curve
+  - compact-divisor
+  - subproduct-tree
+  - interpolation
+  - automatic-differentiation
+  - tangent
+  - adjoint
+  - scalar-blind
+  - signed-branch
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R82-R151
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether arbitrary A/C atom tangents and adjoints can reuse
+  scalar-blind geometry without replaying setup, as required by the R151
+  matrix-free marker interface.
+inputs:
+  - path: p1553_m6_matrix_free_marginal_jacobian_krylov_probe_r151.py
+    sha256: cf632dcddc7b2bc55982ddcf5bdf24ed6af91904d13493233a9f320675b93e5b
+  - path: p1553_m6_matrix_free_marginal_jacobian_krylov_probe_report_r151.json
+    sha256: 3a8f5134ac731fb1481c358148986acdf355bfe1c8370d7e8c00d6a9ad95d14e
+  - path: frozen_m6_matrix_free_marginal_jacobian_krylov.json
+    sha256: 3bff6dff925cc884ee3753004ce81b5774348bba75c3558c7f31eb0b7f825d2d
+  - path: m6_matrix_free_marginal_jacobian_krylov_cost_ledger.json
+    sha256: 810f77f445eb7438a9421cb3f865a385d5dabaf09eea94de281c787d442b06bb
+  - path: m6_matrix_free_marginal_jacobian_krylov_replay.json
+    sha256: 5dec8cda3eab0a81d2dfd84d1e8a140778f1cc69187b3f1af1fa543cfd90c792
+  - path: m6_matrix_free_marginal_jacobian_krylov_controls.json
+    sha256: 5b64b07215b75e16e52e136e81e58ae988a13446331fc5499f67a68f661f33c7
+  - path: factor_logs_and_identical_descent_r151.json
+    sha256: 9570ebf6009e680ef1d0840b775f56c7bc0021fd7219b240a84b5ada0752e0b6
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_matrix_free_marginal_jacobian_krylov_probe_r151.py
+    sha256: 9c68d8c9b17c7fc9e85f0f9e0ffe6416050b342bf8e4439e9e50b36385323be6
+  - path: p1553_m6_matrix_free_marginal_jacobian_krylov_probe_gate_r151.md
+    sha256: be163b44b889c67206a9a1eb73a02a6df911afc2b018f7848b145403285ad903
+  - path: p1553_m6_matrix_free_marginal_jacobian_krylov_probe_parent_report_r151.yaml
+    sha256: 016abc9cbaa7d1de107eb742d13607a35983e429fcc70f0475b83af8c5a36d0f
+  - path: p1553_cartesian_sum_compact_divisor_probe_r82.py
+    sha256: 7380bff3175625016affee4703b0b0f2867a28113f72eef2d90614ed57ffef07
+  - path: p1553_cartesian_sum_compact_divisor_probe_gate_r82.md
+    sha256: 7c34e1d905c95a756689d4ec0ea92c6bd47808bcb3407d858ce08cccf75fd55e
+  - path: p1553_cartesian_sum_compact_divisor_probe_parent_report_r82.yaml
+    sha256: 7e1f819fef24d082cc0d361975d19d09e20594d88960656b2b45251eee1512e3
+  - path: references/bhargava_ghosh_guo_kumar_umans_multipoint_2205.00342v1.pdf
+    sha256: 14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8
+artifacts:
+  - path: p1553_m6_geometry_only_weight_interpolation_adjoint_probe_r152.py
+    sha256: 0ccb39253ab66c97961bd08722dab7ad45248e4b6faaf74f9e752344c4491fb2
+  - path: p1553_m6_geometry_only_weight_interpolation_adjoint_probe_report_r152.json
+    sha256: f2dd5a43593e9e747d969c73afefac9ee7ce7aac3ca79ca2dd009ea1ffe4e46c
+  - path: frozen_m6_geometry_only_weight_interpolation_adjoint.json
+    sha256: 6f51f9a2cb8199f8f45c919cfc0e3d2fbdcfb9b9aa2755b57c1d7e56b29e1c25
+  - path: m6_geometry_only_weight_interpolation_adjoint_cost_ledger.json
+    sha256: abb38aac0549ecdf871955000accf92e89fee3d2697a5ebbccf49c25adb9fbf9
+  - path: m6_geometry_only_weight_interpolation_adjoint_replay.json
+    sha256: 858e0802bf8f0702d6a596b97bb5b7ae514d2a34849a8e55f3ea66dff0ddf5bf
+  - path: m6_geometry_only_weight_interpolation_adjoint_controls.json
+    sha256: 31bfcb6da0a040ee79885ffbb5c2ca5190d2a7c1d97efb9d4e69e00698ab3db4
+  - path: factor_logs_and_identical_descent_r152.json
+    sha256: 551b053ad3b4730d0f615b784becb4ae1e11d9665bedd8b365d460e69db7ee92
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_geometry_only_weight_interpolation_adjoint_probe_r152.py
+    sha256: fbcaad6bac3619973c27bbd990d9a23e8890b5318626e12a9132c53831852282
+  - path: p1553_m6_geometry_only_weight_interpolation_adjoint_probe_gate_r152.md
+    sha256: 57c336c6e337e06092efc54af710b8cd5ae8de46edf184d9c3335cd44f4bb38a
+verified_statements:
+  - >-
+    Distinct public A/C x-coordinate decks admit geometry-only subproduct
+    trees, barycentric interpolation bases, and nonzero fixed inverses.
+  - >-
+    Arbitrary dual tangent payloads change only interpolation payloads and
+    do not rebuild geometry or divide by weights.
+  - >-
+    The transpose interpolation map returns exact atom adjoints and satisfies
+    the forward/reverse pairing identity.
+  - >-
+    All sixteen A/C deck controls roundtrip and transpose exactly using no
+    verifier scalar labels or DLP oracle.
+  - >-
+    Leaf setup, tangent compilation, and adjoint application cost
+    B^(3/4+o(1)), while signed internal elimination remains open.
+scoped_failures:
+  weight_separable_internal_elimination_dag: open
+  signed_branch_exactness: open
+  bidirectional_marker_batch_operator: open
+  generic_prime_rank_and_density: open
+  factor_logs: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 25
+  weight_independent_leaf_derivative_state_admitted: true
+  bidirectional_marker_batch_operator_admitted: false
+  lane_admitted: false
+next_action: >-
+  Construct one division-safe summation-polynomial/FFE elimination DAG whose
+  internal topology and pivots depend only on public geometry, whose dual
+  payload remains inside B^(9/4+o(1)), and whose forward and reverse marker
+  batches cost B^(5/4+o(1)).

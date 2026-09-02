@@ -1,0 +1,105 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-CONFLUENT-SIGNED-DUAL-CHOW-PUSHFORWARD-R174-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: exact_confluent_signed_dual_chow_identity_and_open_factored_outer_norm
+run_count: 1
+status: factored_confluent_outer_norm_open
+labels:
+  - theorem
+  - exact-finite
+  - elliptic-curve
+  - signed-collinearity
+  - tangent-confluence
+  - dual-chow
+  - divisor-pushforward
+  - full-cost
+  - open-interface
+owner: P1553-R166-R173-SEMAEV-2004-BHARGAVA-ET-AL-2022
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Turn the R173 target-sign split into a commutative, signed, tangent-aware
+  divisor pushforward and test whether represented Chow or multipoint routes
+  remain strictly below the rho exponent.
+inputs:
+  - {path: p1553_m6_s3_determinantal_transfer_noncommutativity_probe_r173.py, sha256: dd63e3404bb9cd6cf24de48234b8240e6a7918eefb200bd76292c2e410119f67}
+  - {path: p1553_m6_s3_determinantal_transfer_noncommutativity_probe_report_r173.json, sha256: 2a9d6fafbee9c3c8e3d9323af291476bb662de075090cb497ad9e8555dafe75c}
+  - {path: frozen_m6_s3_determinantal_transfer_noncommutativity.json, sha256: 2032a4ef8c743de4db64d0e49bf8763fd23270120f26bb937629e9ef60410533}
+  - {path: m6_s3_determinantal_transfer_noncommutativity_cost_ledger.json, sha256: 7a0bb4812e6e7facbe4528e4717e34dfdd6b08f4d2b19af50f72ae921b490588}
+  - {path: m6_s3_determinantal_transfer_noncommutativity_replay.json, sha256: 57840c79d02126b9a4510273465df74fc0316c94913d2739a131ca0a880f1c4b}
+  - {path: m6_s3_determinantal_transfer_noncommutativity_controls.json, sha256: c53431049b58348471d8cf8d5797c7e9e7fcf52f0fc0bdd05e3631f26e1a2d64}
+  - {path: s3_determinantal_transfer_noncommutativity_r173.json, sha256: 4bd35b11d490b12445c8c98bd568e40d91259609b7a2976984c3f76c9454004c}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_s3_determinantal_transfer_noncommutativity_probe_r173.py, sha256: 2f0b521d7e78901247119376a167951a4805e202976576aafe729f26e0107740}
+  - {path: p1553_m6_s3_determinantal_transfer_noncommutativity_probe_gate_r173.md, sha256: 437a665efca2d9c0903e801f11b44f0c69f1d0a14a64ae4b69603593049442f7}
+  - {path: p1553_m6_s3_determinantal_transfer_noncommutativity_probe_parent_report_r173.yaml, sha256: c57613845a891c5a1f917bd0721a7b7041676c6abc289c194f92d083022a2a84}
+  - {path: references/semaev_summation_polynomials_2004_031.ps, sha256: 991f85d58ab68551a229266d03c2f88a5fc42e81b2a5f8f4432937bcceff16df}
+  - {path: references/bhargava_ghosh_guo_kumar_umans_multipoint_2205.00342v1.pdf, sha256: 14eddc304a7dd8995ebc1e24171571fd9dc0f1f837ca35a7f9e2e6fb21bfafa8}
+artifacts:
+  - {path: p1553_m6_confluent_signed_dual_chow_pushforward_probe_r174.py, sha256: 9b30baf9bea77492816bd81bcbd6cfae01ae05b467b8793562101da8afe9765c}
+  - {path: p1553_m6_confluent_signed_dual_chow_pushforward_probe_report_r174.json, sha256: a8b1d1d5fd4ffeaef17726325ebd85c343285ef61d16ca4dd1ce91dfcce28496}
+  - {path: frozen_m6_confluent_signed_dual_chow_pushforward.json, sha256: 4673a2fd8dea6f212d4761b8ac60f99aadd99ddb43656db4e64992fb7cbd5d3b}
+  - {path: m6_confluent_signed_dual_chow_pushforward_cost_ledger.json, sha256: dee4664a442779b2c531714bcfe8af33deff1af1b903c99801c363438a3693b1}
+  - {path: m6_confluent_signed_dual_chow_pushforward_replay.json, sha256: fbac601d12b26ce98237c3481af4a7c8b956df658585bb085acf16c3afb8e3aa}
+  - {path: m6_confluent_signed_dual_chow_pushforward_controls.json, sha256: 6d69f7146857cfd017281550e7a44b99aa4c53623b767c852da40b81e8bc9d40}
+  - {path: confluent_signed_dual_chow_pushforward_r174.json, sha256: a87d2bb7b4b68d874c1f74867cd3d34ba5d69b2c60c7f58903647579c1cfd3f8}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_confluent_signed_dual_chow_pushforward_probe_r174.py, sha256: 747064ba9bc417572ab40ca6bac9169c35fc130bb112739d893ff76c06d274a7}
+  - {path: p1553_m6_confluent_signed_dual_chow_pushforward_probe_gate_r174.md, sha256: 46597f7afd91ada661b5822031489b7d08445b041dfd4399b4343199457afebb}
+verified_statements:
+  - Signed collinearity gives the exact P plus Q equals T condition off the diagonal.
+  - The Q equals P chart requires the geometric curve tangent and cannot use the derivative of the interpolated V side table.
+  - Six controls verify 68,326 signed factor biconditionals, including 5 tangent and 236 secant zeros.
+  - Six controls verify 1,486 selected-Chow confluent derivative identities and 8,922 target dual-Chow evaluations.
+  - Target-first and target-last products agree exactly and recover all 140 R166 verified roots without the opposite-sign Kummer branch.
+  - The six represented target Chow forms fill all 204 slots, whose asymptotic N squared body is B to the 5 over 2 at rho.
+  - The six represented selected Chow forms fill all 4,770 slots, whose asymptotic n squared body is B to the 9 over 2.
+  - A fused factored dual-Chow outer norm modulo arbitrary squarefree U is not supplied.
+scoped_failures:
+  represented_target_chow_strictly_below_rho: refuted_by_full_cost
+  represented_selected_chow_below_rho: refuted_by_full_cost
+  selected_target_and_selected_pair_query_grids_below_rho: refuted_by_full_cost
+  factored_confluent_outer_norm: open
+  resultant_or_circuit_lower_bound: not_claimed
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 16
+  total_obligations: 23
+  confluent_signed_dual_chow_identity_admitted: true
+  factored_confluent_outer_norm_admitted: false
+  lane_admitted: false
+result:
+  control_count: 6
+  line_factor_identity_count: 68326
+  tangent_factor_count: 1486
+  tangent_zero_count: 5
+  secant_zero_count: 236
+  selected_chow_confluent_identity_count: 1486
+  target_chow_identity_count: 8922
+  candidate_root_count: 140
+  target_chow_coefficient_slot_count: 204
+  target_chow_nonzero_coefficient_count: 204
+  selected_chow_coefficient_slot_count: 4770
+  selected_chow_nonzero_coefficient_count: 4770
+  factored_target_chow_state_exponent_B: 5/4
+  represented_target_chow_exponent_B: 5/2
+  selected_target_grid_exponent_B: 7/2
+  represented_selected_chow_exponent_B: 9/2
+  global_rho_exponent_B: 5/2
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_SIGNED_COLLINEARITY_AND_TANGENT_CONFLUENT_DEFLATION__EXACT_TARGET_DUAL_CHOW_PUSHFORWARD__TARGET_FIRST_EQUALS_TARGET_LAST__R166_VERIFIED_ROOTS_REPLAYED_WITHOUT_OPPOSITE_SIGN_BRANCH__REPRESENTED_TARGET_CHOW_N2_B5O2_AT_RHO__SELECTED_CHOW_N2_B9O2__NN_AND_N2_GRIDS_ABOVE_RHO__FACTORED_CONFLUENT_OUTER_NORM_OPEN__NO_GENERAL_LOWER_BOUND__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute a fused operator that keeps the N target linear factors
+  factored, handles Delta_V and the geometric tangent chart symbolically, and
+  emits the outer norm modulo U in softly O(n+N) work below B^(5/2). Reject N
+  squared or n squared Chow coefficients, nN or n squared query grids,
+  target-dependent uncharged transforms, candidate inversions, and unit-cost
+  multipoint, norm, derivative, or resultant oracles.

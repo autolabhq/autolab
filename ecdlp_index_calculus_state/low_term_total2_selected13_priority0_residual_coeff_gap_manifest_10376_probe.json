@@ -1,0 +1,395 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_residual_coeff_gap_manifest_10376_probe.h",
+    "direct_certificate_paths": [
+      "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_10376_10383_probe.json"
+    ]
+  },
+  "claim_status": "SELECTED13_PRIORITY0_RESIDUAL_COEFF_GAP_MANIFEST_READY",
+  "created_at": "2026-06-06T02:18:17Z",
+  "failures": [],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "coefficients_are_source_guards_not_target_exports": true,
+    "fresh_direct_rank_worker_required": true,
+    "general_ecdlp_algorithm_claimed": false,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false
+  },
+  "native_preflight": {
+    "c_source_sha256": "a2848e79f823b4897d39f4afed14fb58c21dcfcdaca009c4efb577c38d2423be",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-I",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state",
+      "/private/tmp/selected13_priority0_coeff_gap_cbkpn8j6/preflight.c",
+      "-o",
+      "/private/tmp/selected13_priority0_coeff_gap_cbkpn8j6/preflight"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_priority0_residual_coeff_gap_preflight transfer=10376 lanes=3 coeff_lanes=1 missing_coeff_lanes=2 forms=2 failures=0",
+    "verified": true
+  },
+  "packet_hash_u64": 3252093021858036432,
+  "parameters": {
+    "direct_evidence": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_materialization_direct_evidence_audit_111_full147_probe.json",
+    "emission_packet": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_ffe_direct_rank_emission_packet_10376_probe.json",
+    "source_hint": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_materialization_source_hint_adapter_111_full147_probe.json"
+  },
+  "required_worker_outputs": {
+    "must_emit_target_direct_rank_export": true,
+    "must_materialize_missing_hybrid_coefficients": true,
+    "must_set_relation_derived_ecdlp": true,
+    "must_synthesize_uncovered_residual_terms": true,
+    "must_verify_public_key": true
+  },
+  "residual_coeff_lanes": [
+    {
+      "adapter_source_artifact": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_selected_leaf_term_support_scout_22050_col15_selector_expanded_10376_10383_probe.json",
+      "coefficient_form_count": 2,
+      "coefficient_rank_mod_order": 2,
+      "coefficient_union_mask": 2560,
+      "coefficient_union_terms": [
+        9,
+        11
+      ],
+      "direct_certificate_artifact": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_10376_10383_probe.json",
+      "direct_certificate_offset": 2,
+      "direct_public_key_verified": true,
+      "direct_source_derived_secret": 5859,
+      "forms": [
+        {
+          "coeff_count": 17,
+          "coeffs": [
+            1931,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0
+          ],
+          "form_hash_u64": 7535820120347288277,
+          "form_index": 0,
+          "form_support_mask": 2560,
+          "form_support_terms": [
+            9,
+            11
+          ],
+          "residual_overlap_mask": 512,
+          "residual_overlap_terms": [
+            9
+          ],
+          "rhs": 6812,
+          "terms": [
+            9,
+            9,
+            11,
+            11
+          ]
+        },
+        {
+          "coeff_count": 17,
+          "coeffs": [
+            10962,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            11777,
+            0,
+            11777,
+            0,
+            0,
+            0,
+            0
+          ],
+          "form_hash_u64": 6514666582442510976,
+          "form_index": 1,
+          "form_support_mask": 2560,
+          "form_support_terms": [
+            9,
+            11
+          ],
+          "residual_overlap_mask": 512,
+          "residual_overlap_terms": [
+            9
+          ],
+          "rhs": 8173,
+          "terms": [
+            9,
+            9,
+            11,
+            11
+          ]
+        }
+      ],
+      "hint_hash_u64": 13039068490116701655,
+      "hint_local_index": 0,
+      "missing_target_support_mask": 13068,
+      "missing_target_terms": [
+        2,
+        3,
+        8,
+        9,
+        12,
+        13
+      ],
+      "order": 11779,
+      "residual_overlap_union_mask": 512,
+      "residual_overlap_union_terms": [
+        9
+      ],
+      "same_salt_pair": true,
+      "scout_direct_public_key_verified": true,
+      "scout_shared_product_public_key_verified": false,
+      "source_class": "direct_certificate_coefficients_available",
+      "source_class_code": 1,
+      "source_row_hash_u64": 5275705598190304756,
+      "source_selected_support_mask": 52465,
+      "source_selector": "mode_low_term_support_total5",
+      "source_top_k": 12,
+      "target_gap_exact": true,
+      "uncovered_residual_mask": 12556,
+      "uncovered_residual_terms": [
+        2,
+        3,
+        8,
+        12,
+        13
+      ],
+      "worker_action": "reuse_source_coefficients_as_guard_then_synthesize_uncovered_residual_terms"
+    },
+    {
+      "adapter_source_artifact": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_selected_leaf_term_support_scout_22050_col15_selector_expanded_10376_10383_probe.json",
+      "coefficient_form_count": 0,
+      "coefficient_rank_mod_order": 0,
+      "coefficient_union_mask": 0,
+      "coefficient_union_terms": [],
+      "direct_certificate_artifact": null,
+      "direct_certificate_offset": -1,
+      "direct_public_key_verified": true,
+      "direct_source_derived_secret": null,
+      "forms": [],
+      "hint_hash_u64": 3019703627563812167,
+      "hint_local_index": 1,
+      "missing_target_support_mask": 13132,
+      "missing_target_terms": [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      "order": 0,
+      "residual_overlap_union_mask": 0,
+      "residual_overlap_union_terms": [],
+      "same_salt_pair": true,
+      "scout_direct_public_key_verified": true,
+      "scout_shared_product_public_key_verified": true,
+      "source_class": "shared_product_verified_coefficients_missing",
+      "source_class_code": 2,
+      "source_row_hash_u64": 3798422369699625013,
+      "source_selected_support_mask": 52401,
+      "source_selector": "mode_cost_hybrid_support_monic_b_total2",
+      "source_top_k": 12,
+      "target_gap_exact": true,
+      "uncovered_residual_mask": 13132,
+      "uncovered_residual_terms": [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      "worker_action": "materialize_missing_coefficients_then_synthesize_residual_terms"
+    },
+    {
+      "adapter_source_artifact": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_selected_leaf_term_support_scout_22050_col15_selector_expanded_10376_10383_probe.json",
+      "coefficient_form_count": 0,
+      "coefficient_rank_mod_order": 0,
+      "coefficient_union_mask": 0,
+      "coefficient_union_terms": [],
+      "direct_certificate_artifact": null,
+      "direct_certificate_offset": -1,
+      "direct_public_key_verified": true,
+      "direct_source_derived_secret": null,
+      "forms": [],
+      "hint_hash_u64": 13390195903203261877,
+      "hint_local_index": 2,
+      "missing_target_support_mask": 13132,
+      "missing_target_terms": [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      "order": 0,
+      "residual_overlap_union_mask": 0,
+      "residual_overlap_union_terms": [],
+      "same_salt_pair": true,
+      "scout_direct_public_key_verified": true,
+      "scout_shared_product_public_key_verified": true,
+      "source_class": "shared_product_verified_coefficients_missing",
+      "source_class_code": 2,
+      "source_row_hash_u64": 3695383160683521145,
+      "source_selected_support_mask": 52401,
+      "source_selector": "mode_cost_hybrid_support_monic_b_total2",
+      "source_top_k": 16,
+      "target_gap_exact": true,
+      "uncovered_residual_mask": 13132,
+      "uncovered_residual_terms": [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      "worker_action": "materialize_missing_coefficients_then_synthesize_residual_terms"
+    }
+  ],
+  "schema": "ecdlp.low_term_total2_selected13_priority0_residual_coeff_gap_manifest.v1",
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "coefficient_backed_lane_count": 1,
+    "coefficient_form_count": 2,
+    "failure_count": 0,
+    "lane_count": 3,
+    "native_preflight_verified": true,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "source_class_counts": {
+      "direct_certificate_coefficients_available": 1,
+      "shared_product_verified_coefficients_missing": 2
+    },
+    "uncovered_residual_term_sets": [
+      [
+        2,
+        3,
+        8,
+        12,
+        13
+      ],
+      [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ]
+    ],
+    "verified": true,
+    "worker_interpretation": "Only one 10376 residual lane has direct-certificate coefficient forms. The two hybrid lanes remain verified source guards but need fresh coefficient materialization before a target direct/rank export can be accepted."
+  },
+  "target_slot": {
+    "candidate_case_arg": "22050.cf1@11731|10376|mode_low_term_support_total5|16",
+    "classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+    "classification_code": 5,
+    "combined_family_residual_rank": 5,
+    "direct_ops_over_rho": 0.68613139,
+    "direct_ops_over_rho_scaled": 68613139,
+    "family_mask_rank": 3,
+    "family_masks": [
+      34816,
+      17408,
+      33
+    ],
+    "phase": "target_direct_rank_export",
+    "phase_code": 1,
+    "priority_rank": 0,
+    "priority_score": 1551239,
+    "required_output": {
+      "must_emit_target_direct_rank_export": true,
+      "must_evaluate_fresh_ffe_or_summation_polynomial_system": true,
+      "must_match_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+      "must_reject_source_hint_replay_as_target_export": true,
+      "must_set_relation_derived_ecdlp": true,
+      "must_verify_public_key": true
+    },
+    "residual_mask_rank": 2,
+    "residual_masks": [
+      13068,
+      13132
+    ],
+    "row_keys": [
+      "22050.cf1@11731:uniform:256:salt168",
+      "22050.cf1@11731:uniform:256:salt173"
+    ],
+    "row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "row_request_id_u64": 15227462883308766969,
+    "selected_support_mask": 65533,
+    "selected_term_support": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "selector": "mode_low_term_support_total5",
+    "target": "22050.cf1@11731",
+    "target_salts": [
+      168,
+      173
+    ],
+    "top_k": 16,
+    "transfer_index": 10376,
+    "worker_acceptance_gate": "fresh_ffe_direct_rank_export_and_relation_derived_ecdlp_only",
+    "worker_class": "hinted_delta_source_solve",
+    "worker_class_code": 3
+  }
+}

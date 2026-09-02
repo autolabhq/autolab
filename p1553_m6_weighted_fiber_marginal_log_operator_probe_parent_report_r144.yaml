@@ -1,0 +1,116 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-WEIGHTED-FIBER-MARGINAL-LOG-OPERATOR-R144-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: source_free_aggregate_relation_reduction
+run_count: 1
+status: weighted_count_transposed_index_open
+labels:
+  - exact-finite
+  - finite-field
+  - elliptic-curve
+  - cartesian-factor-base
+  - six-factor-relation
+  - weighted-fiber-count
+  - automatic-differentiation
+  - known-rhs-rank
+  - source-free-descent
+  - conditional-cost
+  - prospective
+  - novelty-unverified
+owner: P1553-R82-R115-R143
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether summing every ordered six-factor relation in a
+  known-target fiber compresses relation collection, factor-log recovery,
+  and identical target descent to one weighted count-and-marginal operator.
+inputs:
+  - path: p1553_torus_c5_label_congruence_correction_probe_r143.py
+    sha256: 715c34ecaf4fd839a8c30d8b43886bad734d96f9113d0c1bed3cde31ed08b00d
+  - path: p1553_torus_c5_label_congruence_correction_probe_report_r143.json
+    sha256: d7d2ef76a1a0a8579ca543152e5d621e66a8e46723987896b45a8cc47feb950b
+  - path: frozen_torus_c5_label_congruence_correction.json
+    sha256: ad81801828ee4e88e7117bc3bd06d62ce237cc54bb24e2a90537f0857aebc588
+  - path: torus_c5_label_congruence_correction_cost_ledger.json
+    sha256: 2229360cdcd9d625b9c93746f53c973393d4bd005637296c3b3558f8c62bc7f5
+  - path: torus_c5_label_congruence_correction_replay.json
+    sha256: e793128490b03e22b8d532f3cbbc298583a206fe0a8a206b41615fb99d20402a
+  - path: torus_c5_label_congruence_correction_controls.json
+    sha256: 82f41b2215f9261e38533d65128b6cdc2e107b9aa496cc01086514a1d3d94e9e
+  - path: factor_logs_and_identical_descent_r143.json
+    sha256: abe05d9d06e23008f46ac9c040affa57e5bb488886ec925bec0de81143c3c271
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_label_congruence_correction_probe_r143.py
+    sha256: 4d7573f630148b687a59a27fec9cb95f1e902e36d0e8ac5dc9d24bf09481a5d6
+  - path: p1553_torus_c5_label_congruence_correction_probe_gate_r143.md
+    sha256: e17719b1f8ef38c13c02c682f4a51b072ef3f47f23633cf29f3499a8e4ec6653
+  - path: p1553_torus_c5_label_congruence_correction_probe_parent_report_r143.yaml
+    sha256: 91d76c1b26396e28a2f7199d196ae1bdd294641491dbdfed418d2840e60cc6c9
+  - path: p1553_relation_arity_factor_base_transposed_interface_rebalance_probe_report_r115.json
+    sha256: 2b43c37f93e03c6ccdb675a34d48d7478deb3b0349026c65b2f6fe65695cb88e
+  - path: p1553_relation_arity_factor_base_transposed_interface_rebalance_probe_gate_r115.md
+    sha256: 11dd899c1ab6b89444cd9c9cc75709a64d9abf99d9370d2536e2f20e3d0fd1de
+artifacts:
+  - path: p1553_m6_weighted_fiber_marginal_log_operator_probe_r144.py
+    sha256: 3cd7a3e40bf696a836ff6b6cad4c59a7ca73a44d72d152232cddeffa14e90a5c
+  - path: p1553_m6_weighted_fiber_marginal_log_operator_probe_report_r144.json
+    sha256: 954bc230dbe28300534a765c3bde389b7ae807767b664dc82f63ede1b3a5805d
+  - path: frozen_m6_weighted_fiber_marginal_log_operator.json
+    sha256: 70e6a2d8c6fb9b2eb579d4deb3a398a21ad126a34175d3c8f00d64cd3bda02fc
+  - path: m6_weighted_fiber_marginal_log_operator_cost_ledger.json
+    sha256: 20a1dd3117e76d7c99160ff4c23efd51286c438e28ba4479a18965cd27a1ab3f
+  - path: m6_weighted_fiber_marginal_log_operator_replay.json
+    sha256: 1b2b4533fb7d635cc22ab564758ecfd5134a053f3ee27da6ec666659e63ad327
+  - path: m6_weighted_fiber_marginal_log_operator_controls.json
+    sha256: 0677e3a7220e7258e4dc56bff14f5e083a09ed048948667fe0582dd2fa4c6ea8
+  - path: factor_logs_and_identical_descent_r144.json
+    sha256: 260511a7965ce75937fbf22c41f6cd16060140b3de4741e091e995ecf1506e4a
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_weighted_fiber_marginal_log_operator_probe_r144.py
+    sha256: 34c164e5aeb86b2d0da6bb2ff53da79e692cc0e59df88293375a8a7395b8e6d0
+  - path: p1553_m6_weighted_fiber_marginal_log_operator_probe_gate_r144.md
+    sha256: c967cc10137fe861384a80a8261763c2ecb86ca2951db8c5bf43f348c65e1e9b
+verified_statements:
+  - >-
+    Summing all ordered six-factor relations in a known-target fiber gives
+    one exact known-RHS equation in the |A|+|C|-1 meaningful log
+    coordinates.
+  - >-
+    Fiber count is the all-one specialization of a weighted relation
+    polynomial, and atom occurrence marginals are its logarithmic first
+    derivatives.
+  - >-
+    Once factor logs are known, the same count and marginals recover a
+    positive target log and support known-shift identical descent without
+    opening an individual source.
+  - >-
+    All eight actual controls have full meaningful aggregate rank and exact
+    finite factor-log, positive-target, shifted-target, empty, and source
+    semantic replay.
+  - >-
+    The B^(9/4)=N^(9/20) precomputation envelope is conditional on a
+    weighted count index, reusable offline/online transposed derivative
+    state, structured rank and density, and complete projective bit costs.
+scoped_failures:
+  weighted_s7_or_s13_count_index: open
+  offline_online_transposed_derivative_index: open
+  structured_generic_family_rank_and_density: open
+  projective_chart_and_integer_lift: open
+  factor_logs_without_verifier_labels: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 19
+  total_obligations: 29
+  lane_admitted: false
+next_action: >-
+  Construct the scalar-blind weighted six-factor fiber-count circuit from
+  compact A/C divisors and S7 or expanded S13. Compile reusable state in
+  B^(9/4+o(1)), answer fresh counts in polylogarithmic work, and emit each
+  positive B^(3/4+o(1)) marginal vector without replaying setup. Charge all
+  charts, multiplicity, integer lift, rank, logs, shifted descent, memory,
+  field operations, and bit cost without a DLP, root, count, marginal, rank,
+  or source oracle.

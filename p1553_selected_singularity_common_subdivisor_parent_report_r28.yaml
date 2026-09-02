@@ -1,0 +1,109 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-SELECTED-SINGULARITY-COMMON-SUBDIVISOR-R28-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-057
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: selected_singularity_branch_after_r27
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION
+summary: >-
+  R27 selected-delta saturation is re-expressed as actual common effective
+  sub-divisors of a fiber of g and a translated fiber. Full translated fibers
+  are impossible because they imply cT=0. Unless occupied value-shift cells
+  already have the dense Lc^2 scale, singularity mass forces growing common
+  sub-divisors. Removing each common part leaves complementary divisors whose
+  Abel sums differ by exactly cT. A scalar interval saturates the B^3 delta
+  scale on one fiber, proving that delta mass alone is a false positive; it
+  fails the B^2 support, single-pencil decomposition, complete image, and
+  ECDLP interfaces.
+inputs:
+  - path: staged/p1553_block_common_right_factor_compiler_gate_r16.md
+    sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+  - path: staged/p1553_quadratic_intermediate_field_gate_r21.md
+    sha256: ad8d9e83b919ea92c98eefcb657831f01378b6760d49b2aaea0a892d6ed52be1
+  - path: staged/p1553_popular_difference_complete_triple_gate_r25.md
+    sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+  - path: staged/p1553_translate_curve_bezout_saturation_gate_r27.md
+    sha256: dee8a0913854e0ce3e717ecdbc3e8aea73b987b2b2fb71790a470f501dd0c2d9
+  - path: staged/p1553_r27_bundle.sha256
+    sha256: 38503161972ea8ec40575a4def14fd6619b883772f8d6c9e249d7573ab5d5ba6
+  - path: staged/p1553_r27_staging_receipt.yaml
+    sha256: 5c56925dde1d0a39409605e8a54058392e127f6a2380feda10a99bc62714f3ef
+output:
+  path: staged/p1553_selected_singularity_common_subdivisor_gate_r28.md
+  sha256: c24183bfe4823a9318ae06769763c94cfed99cb4291807f06b85f397fd53f662
+frozen_parameters:
+  outer_map_degree: c=Theta(B)
+  selected_values: r=Theta(B)
+  selected_shifts: L=Theta(B)
+  selected_pullback_points: z=Theta(c*r)=Theta(B^2)
+  source_group_order: N=Theta(B^5)
+theorems:
+  - >-
+    A nonzero prime-subgroup translation cannot carry one full degree-c fiber
+    to another when c<N; the maximum common fiber-subdivisor degree is c-1.
+  - >-
+    If D is Omega(Lc^2) but the number of occupied shift-value cells is
+    o(Lc^2), the maximum selected cell multiplicity grows, and one dyadic
+    layer contains at least D/(4h^2 log c) cells with common-subdivisor degree
+    at least h.
+  - >-
+    Removing a degree-u common sub-divisor leaves two degree-(c-u)
+    complementary divisors whose Abel sums differ by exactly cT.
+  - >-
+    The r selected fibers must be the zero divisor of one decomposed function
+    H_C composed with g; unrelated convenient degree-c blocks do not form a
+    passing pencil.
+  - >-
+    A scalar interval on one declared fiber contributes Theta(Lc^2) selected
+    delta defect for L=Theta(c), but supplies only c support points and no
+    degree-c pencil with c selected fibers or complete cryptanalytic interface.
+controls:
+  ramification_and_infinity: retained_in_effective_divisors
+  full_fiber_translate: rejected_by_picard_class_cT
+  compact_formula_exception: admitted_not_lower_bounded_by_cell_count
+  scalar_interval: positive_delta_control_and_negative_public_chart_control
+result:
+  classification: exact_common_subdivisor_reduction_no_constructor
+  selected_delta_saturation_alone: insufficient
+  full_translated_fiber: impossible_for_nonzero_T_and_c_less_than_N
+  sparse_cell_saturation: forces_growing_common_subdivisors
+  residual_divisor_class: c*T
+  one_pencil_decomposition: required
+  scalar_interval_delta_scale: passes
+  scalar_interval_support_mass: fails
+  simultaneous_degree_c_pencil: absent
+  complete_image_O_B2: absent
+  complete_source_package: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - no impossibility theorem for the simultaneous decomposed pencil
+  - no universal circuit or compact-formula lower bound
+  - the dense distinct-shift branch remains separately open
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R25 owns popular differences and additive energy
+  - R26 owns maximal-isogeny translate diversity
+  - R27 owns the delta and Bezout saturation dichotomy
+  - R16 through R21 own common right factors of complete branch maps
+  - R28 adds common-subdivisor layers, residual Abel sums, and the pencil control
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION__DELTA_MASS_ALONE_INSUFFICIENT__FULL_FIBER_TRANSLATE_IMPOSSIBLE__SPARSE_CELL_SATURATION_FORCES_GROWING_COMMON_SUBDIVISORS__RESIDUAL_CLASS_EQUALS_C_TIMES_T__SCALAR_INTERVAL_PASSES_DELTA_BUT_FAILS_MASS_AND_PENCIL__NO_COMPLETE_IMAGE_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one degree-B pencil with B prospective fibers, B^2
+  prime-subgroup points, and B public shifts whose common-subdivisor histogram
+  supplies B^3 selected defect without a scalar chart, isogeny stabilizer, or
+  explicit super-cap table; then require complete triples, target, R10, rank,
+  logs, and descent.

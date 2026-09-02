@@ -1,0 +1,121 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-FULL-MULTIPLICATIVE-X-COSET-ENDPOINT-R81-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: prospective_complete_coset_endpoint_density_rank_replay
+run_count: 1
+status: reject_full_multiplicative_x_coset_lift_mask_geometry_only
+labels:
+  - exact-finite
+  - prospective
+  - scalar-blind-source
+  - verifier-dlp-separated
+  - novelty-unverified
+owner: P1553-R3-R70-R80
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether a complete multiplicative x-coordinate coset retains a compact
+  triple S4 endpoint representation after the exact curve lift mask and
+  cofactor map, while preserving prospective density and known-RHS rank.
+inputs:
+  - path: p1553_batched_nested_norm_node_compiler_probe_report_r80.json
+    sha256: 936537fb78908dd2916bf6fa5b2091f336b9a47217a1ff787b068ae0491992c5
+  - path: p1553_multiplicative_x_s3_closure_screen_report_r70.json
+    sha256: 9e58c6178eb18b7535c59e117ad942465d6c7853890291dec2c7c0abdb4ffd89
+  - path: p1553_r31_artifact_index_README.md
+    sha256: 0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f
+    contains_artifact: p1553_query2p1_indexing_gate_r3.md
+    contains_artifact_sha256: b2ee5934e295ab1f0d6b43452898e520d0cb18e718a8f5865694b25909b0df5e
+artifacts:
+  - path: p1553_full_multiplicative_x_coset_endpoint_probe_r81.py
+    sha256: c755542a96dba8423a4ea4f4e2b861263c45eb8cfe73db10e5dff2789632c3d0
+  - path: p1553_full_multiplicative_x_coset_endpoint_probe_report_r81.json
+    sha256: e556efa7c1e639f76915f152ebdcc3d00db2a932d8ef207ae8653c94117f026f
+  - path: frozen_full_multiplicative_x_coset_geometry.json
+    sha256: 1766734ec232564b79e06f0ab8a31f1ad4fc4fa019a8d7f8ad30c8362accde71
+  - path: triple_endpoint_support_and_lift_mask_replay.json
+    sha256: 27982f64300420c02246a5e0de97140d194c4ea3ba03a10896136402b7f762c9
+  - path: matched_random_density_rank_controls.json
+    sha256: 5ef6c3d870db0246f7235cde5196fac001a4fd9fb38e4b0621213e38d9f7caa0
+  - path: scalar_blind_source_and_cost_ledger.json
+    sha256: 5f3e284794595f6301e7f0926d21ca0fcb6d9b047f14fd6e37b77ea803309eaa
+  - path: p1553_full_multiplicative_x_coset_endpoint_probe_gate_r81.md
+    sha256: cb3c26ad300ee02e357ef1892c0335e519acd3c29e509f15efb79bf48a806086
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_full_multiplicative_x_coset_endpoint_probe_r81.py
+    sha256: bd040c951d760cf2ea78d6205628459bdeffd79121accffc5f09a8f3e29ba11c
+frozen_interface:
+  curve_model: y^2=x^3+1
+  family_count: 4
+  complete_coset_count: 16
+  matched_hash_control_count: 32
+  coset_offsets:
+    - 0
+    - 1
+    - 2
+    - 3
+  scalar_labels_consumed: false
+  verifier_dlp_credit: forbidden
+  geometry_id: full_x_coset_lift_mask_cofactor_clear_v1
+verified_statements:
+  - >-
+    Every candidate enumerates its complete coordinate coset and satisfies the
+    exact sparse domain equation X^d-c before the lift mask is observed.
+  - >-
+    All family, subgroup, lift, cofactor, and sampled signed-group endpoint
+    checks pass on four prime-order relation-scale toy families.
+  - >-
+    Every unordered triple has a distinct endpoint-set key on all 16 cosets,
+    so the exact endpoint-set representation has C(B+2,3) entries.
+  - >-
+    Candidate root support has fitted slope 3.0175 versus 2.9825 for matched
+    controls; no candidate root support meets the B^(9/4) cap.
+  - >-
+    Thirteen candidate cosets and 27 controls attain full sampled known-RHS
+    rank, while mean candidate density differs from controls by only -0.0079.
+  - >-
+    Verifier-only BSGS labels replay every support, count, source, and rank
+    statement but cost B^(5/2+o(1)) and receive no algorithmic credit.
+scoped_positive_controls:
+  complete_multiplicative_cosets: pass
+  sparse_coordinate_domain_polynomial: pass
+  scalar_blind_construction: pass
+  exact_lift_and_cofactor_map: pass
+  exact_group_endpoint_replay: pass
+  matched_hash_density_rank_controls: pass
+  relation_scale_without_group_saturation: pass
+scoped_failures:
+  triple_root_support_inside_B9_over_4: fail
+  exact_endpoint_set_representation_inside_B9_over_4: fail
+  scalar_blind_online_source_inside_B5_over_4: unsupplied
+  candidate_factor_log_solve_without_verifier_dlp: unsupplied
+  identical_fresh_target_descent: unsupplied
+  generic_prime_family_theorem: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - higher-dimensional compact divisor factor bases
+  - non-Cartesian or sparse straight-line divisor circuits
+  - unrestricted structured endpoint representations
+  - generic-prime asymptotic lower bounds
+admission:
+  passed_obligations: 7
+  obligation_count: 14
+  lane_admitted: false
+result:
+  complete_coset_geometry_replayed: true
+  exact_endpoint_support_replayed: true
+  matched_density_rank_controls_complete: true
+  direct_caps_satisfied: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_FULL_MULTIPLICATIVE_X_COSET_LIFT_MASK_GEOMETRY_ONLY__FOUR_Q_THETA_B5_PRIME_ORDER_FAMILIES__SIXTEEN_COMPLETE_COSETS__THIRTY_TWO_MATCHED_HASH_CONTROLS__SPARSE_XD_MINUS_C_DOMAIN__EXACT_LIFT_MASK_AND_COFACTOR_MAP__EXACT_GROUP_ENDPOINT_REPLAY__TRIPLE_ROOT_AND_ENDPOINT_SET_CAP_FAILURE__VERIFIER_BSGS_B2P5_EXCLUDED__NO_SCALAR_BLIND_SUBCAP_SOURCE__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Leave one-dimensional field cosets and construct one scalar-blind compact
+  divisor factor base whose triple S4 endpoint representation is proved at
+  most B^(9/4+o(1)) before enumeration; require a field-level source query at
+  most B^(5/4+o(1)), prospective density, matched rank, verified logs, and
+  identical target descent without verifier DLP labels.

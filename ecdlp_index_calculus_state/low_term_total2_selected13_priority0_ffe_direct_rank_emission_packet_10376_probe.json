@@ -1,0 +1,387 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_ffe_direct_rank_emission_packet_10376_probe.h"
+  },
+  "claim_status": "SELECTED13_PRIORITY0_FFE_DIRECT_RANK_EMISSION_PACKET_READY",
+  "control_slots": [
+    {
+      "control_hash_u64": 13703686158880693475,
+      "control_index": 0,
+      "derived_secret": 9742,
+      "phase": "positive_control_relation_derived_guard",
+      "phase_code": 4,
+      "relation_derived_ecdlp": true,
+      "row_request_id": "selected13_matmiss_10595_0_a0bbe3093d1b",
+      "row_request_id_u64": 11582100495532818341,
+      "selected_support_mask": 65533,
+      "transfer_index": 10595
+    },
+    {
+      "control_hash_u64": 13732467143193834822,
+      "control_index": 1,
+      "derived_secret": 9742,
+      "phase": "positive_control_relation_derived_guard",
+      "phase_code": 4,
+      "relation_derived_ecdlp": true,
+      "row_request_id": "selected13_matmiss_10595_1_62b12369aee6",
+      "row_request_id_u64": 7111504223407624559,
+      "selected_support_mask": 15309,
+      "transfer_index": 10595
+    },
+    {
+      "control_hash_u64": 2363463747439152101,
+      "control_index": 2,
+      "derived_secret": 9742,
+      "phase": "positive_control_relation_derived_guard",
+      "phase_code": 4,
+      "relation_derived_ecdlp": true,
+      "row_request_id": "selected13_matmiss_10595_2_a427040bf4f6",
+      "row_request_id_u64": 11828427395712818429,
+      "selected_support_mask": 15309,
+      "transfer_index": 10595
+    }
+  ],
+  "created_at": "2026-06-06T02:10:45Z",
+  "failures": [],
+  "family_lanes": [
+    {
+      "family_index": 0,
+      "family_lane_hash_u64": 3970563750847567121,
+      "family_mask": 34816,
+      "family_terms": [
+        11,
+        15
+      ],
+      "phase": "family_mask_direct_rank_lane",
+      "phase_code": 3,
+      "selected_support_covers_family": true,
+      "worker_action": "include_family_mask_in_fresh_rank_export"
+    },
+    {
+      "family_index": 1,
+      "family_lane_hash_u64": 5877233894344903382,
+      "family_mask": 17408,
+      "family_terms": [
+        10,
+        14
+      ],
+      "phase": "family_mask_direct_rank_lane",
+      "phase_code": 3,
+      "selected_support_covers_family": true,
+      "worker_action": "include_family_mask_in_fresh_rank_export"
+    },
+    {
+      "family_index": 2,
+      "family_lane_hash_u64": 1547686404788704459,
+      "family_mask": 33,
+      "family_terms": [
+        0,
+        5
+      ],
+      "phase": "family_mask_direct_rank_lane",
+      "phase_code": 3,
+      "selected_support_covers_family": true,
+      "worker_action": "include_family_mask_in_fresh_rank_export"
+    }
+  ],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "fresh_direct_rank_worker_required": true,
+    "general_ecdlp_algorithm_claimed": false,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "residual_source_hints_are_not_target_exports": true
+  },
+  "native_preflight": {
+    "c_source_sha256": "165878716edec2131db2174e1a2b8551e05e4f4f3bd82d508a9e1a903231abb9",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-I",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state",
+      "/private/tmp/selected13_priority0_ffe_emission_jqcoptm5/preflight.c",
+      "-o",
+      "/private/tmp/selected13_priority0_ffe_emission_jqcoptm5/preflight"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_priority0_ffe_direct_rank_emission_preflight transfer=10376 residual_lanes=3 family_lanes=3 controls=3 combined_rank=5 failures=0",
+    "verified": true
+  },
+  "packet_hash_u64": 6185264853462762656,
+  "parameters": {
+    "worker_packet": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_priority0_direct_rank_worker_packet_10376_probe.json"
+  },
+  "required_worker_outputs": {
+    "must_emit_target_direct_rank_export": true,
+    "must_evaluate_fresh_ffe_or_summation_polynomial_system": true,
+    "must_match_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "must_reject_source_hint_replay_as_target_export": true,
+    "must_set_relation_derived_ecdlp": true,
+    "must_verify_public_key": true
+  },
+  "residual_lanes": [
+    {
+      "direct_ops_over_rho": 0.78832117,
+      "direct_ops_over_rho_scaled": 78832117,
+      "direct_public_key_verified": true,
+      "extra_source_support_mask": 0,
+      "hint_hash_u64": 13039068490116701655,
+      "hint_local_index": 0,
+      "missing_target_support_mask": 13068,
+      "missing_target_terms": [
+        2,
+        3,
+        8,
+        9,
+        12,
+        13
+      ],
+      "phase": "same_salt_residual_delta_guard",
+      "phase_code": 2,
+      "public_product_gate_selected": false,
+      "residual_lane_hash_u64": 7139530377084802544,
+      "same_salt_pair": true,
+      "shared_product_public_key_verified": false,
+      "source_row_hash_u64": 5275705598190304756,
+      "source_row_keys": [
+        "22050.cf1@11731:uniform:256:salt168",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "source_selected_support_mask": 52465,
+      "source_selector": "mode_low_term_support_total5",
+      "source_selector_u64": 7740325808165506689,
+      "source_support_is_target_subset": true,
+      "source_terms": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "source_top_k": 12,
+      "target_gap_exact": true,
+      "target_selected_support_mask": 65533,
+      "worker_action": "freshly_solve_missing_target_terms_against_bound_target_row"
+    },
+    {
+      "direct_ops_over_rho": 0.69343066,
+      "direct_ops_over_rho_scaled": 69343066,
+      "direct_public_key_verified": true,
+      "extra_source_support_mask": 0,
+      "hint_hash_u64": 3019703627563812167,
+      "hint_local_index": 1,
+      "missing_target_support_mask": 13132,
+      "missing_target_terms": [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      "phase": "same_salt_residual_delta_guard",
+      "phase_code": 2,
+      "public_product_gate_selected": true,
+      "residual_lane_hash_u64": 18228329592615618854,
+      "same_salt_pair": true,
+      "shared_product_public_key_verified": true,
+      "source_row_hash_u64": 3798422369699625013,
+      "source_row_keys": [
+        "22050.cf1@11731:uniform:256:salt168",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "source_selected_support_mask": 52401,
+      "source_selector": "mode_cost_hybrid_support_monic_b_total2",
+      "source_selector_u64": 11751282872521667808,
+      "source_support_is_target_subset": true,
+      "source_terms": [
+        0,
+        4,
+        5,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "source_top_k": 12,
+      "target_gap_exact": true,
+      "target_selected_support_mask": 65533,
+      "worker_action": "freshly_solve_missing_target_terms_against_bound_target_row"
+    },
+    {
+      "direct_ops_over_rho": 0.69343066,
+      "direct_ops_over_rho_scaled": 69343066,
+      "direct_public_key_verified": true,
+      "extra_source_support_mask": 0,
+      "hint_hash_u64": 13390195903203261877,
+      "hint_local_index": 2,
+      "missing_target_support_mask": 13132,
+      "missing_target_terms": [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      "phase": "same_salt_residual_delta_guard",
+      "phase_code": 2,
+      "public_product_gate_selected": true,
+      "residual_lane_hash_u64": 8540841909473775939,
+      "same_salt_pair": true,
+      "shared_product_public_key_verified": true,
+      "source_row_hash_u64": 3695383160683521145,
+      "source_row_keys": [
+        "22050.cf1@11731:uniform:256:salt168",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "source_selected_support_mask": 52401,
+      "source_selector": "mode_cost_hybrid_support_monic_b_total2",
+      "source_selector_u64": 11751282872521667808,
+      "source_support_is_target_subset": true,
+      "source_terms": [
+        0,
+        4,
+        5,
+        7,
+        10,
+        11,
+        14,
+        15
+      ],
+      "source_top_k": 16,
+      "target_gap_exact": true,
+      "target_selected_support_mask": 65533,
+      "worker_action": "freshly_solve_missing_target_terms_against_bound_target_row"
+    }
+  ],
+  "schema": "ecdlp.low_term_total2_selected13_priority0_ffe_direct_rank_emission_packet.v1",
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "combined_family_residual_rank": 5,
+    "control_relation_derived_row_count": 3,
+    "control_slot_count": 3,
+    "failure_count": 0,
+    "family_lane_count": 3,
+    "family_mask_rank": 3,
+    "native_preflight_verified": true,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "residual_lane_count": 3,
+    "residual_mask_rank": 2,
+    "residual_missing_target_term_sets": [
+      [
+        2,
+        3,
+        8,
+        9,
+        12,
+        13
+      ],
+      [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ],
+      [
+        2,
+        3,
+        6,
+        8,
+        9,
+        12,
+        13
+      ]
+    ],
+    "target_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "target_transfer_index": 10376,
+    "verified": true,
+    "worker_interpretation": "The manifest binds the 10376 target row to exact source-support residual gaps. A lower-level FFE/summation-polynomial worker must emit a fresh target direct/rank export and verify the public key before relation_derived_ecdlp can become true."
+  },
+  "target_slot": {
+    "candidate_case_arg": "22050.cf1@11731|10376|mode_low_term_support_total5|16",
+    "classification": "FRESH_DIRECT_RELATION_REQUIRED_NO_RELATIONS",
+    "classification_code": 5,
+    "combined_family_residual_rank": 5,
+    "direct_ops_over_rho": 0.68613139,
+    "direct_ops_over_rho_scaled": 68613139,
+    "family_mask_rank": 3,
+    "family_masks": [
+      34816,
+      17408,
+      33
+    ],
+    "phase": "target_direct_rank_export",
+    "phase_code": 1,
+    "priority_rank": 0,
+    "priority_score": 1551239,
+    "required_output": {
+      "must_emit_target_direct_rank_export": true,
+      "must_evaluate_fresh_ffe_or_summation_polynomial_system": true,
+      "must_match_row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+      "must_reject_source_hint_replay_as_target_export": true,
+      "must_set_relation_derived_ecdlp": true,
+      "must_verify_public_key": true
+    },
+    "residual_mask_rank": 2,
+    "residual_masks": [
+      13068,
+      13132
+    ],
+    "row_keys": [
+      "22050.cf1@11731:uniform:256:salt168",
+      "22050.cf1@11731:uniform:256:salt173"
+    ],
+    "row_request_id": "selected13_matmiss_10376_0_d352d0d05610",
+    "row_request_id_u64": 15227462883308766969,
+    "selected_support_mask": 65533,
+    "selected_term_support": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "selector": "mode_low_term_support_total5",
+    "target": "22050.cf1@11731",
+    "target_salts": [
+      168,
+      173
+    ],
+    "top_k": 16,
+    "transfer_index": 10376,
+    "worker_acceptance_gate": "fresh_ffe_direct_rank_export_and_relation_derived_ecdlp_only",
+    "worker_class": "hinted_delta_source_solve",
+    "worker_class_code": 3
+  }
+}

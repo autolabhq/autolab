@@ -1,0 +1,44 @@
+schema: crypto.autoresearch.install_validation_receipt.v1
+bundle_id: P1553-R5-R7-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+reason: authoritative checkout is read-only in this session
+manifest:
+  json_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  sha256_list_sha256: 0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d
+  unique_sources: 13
+  destination_installs: 15
+  appended_tasks: 4
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+simulated_merge:
+  queue_sha256: f235ae20a9c1496c47a07b1a4ac9e7c6b2265c3b37e7cc52cba8151b65dfb1d8
+  dispatch_sha256: 6f4b8c02eabd1a305ae51df303eaf91845efdf4a2d7e44713ba1af023390de70
+  dispatch_report_sha256: b3c89c5b6944a943d06f86a1ec019ba20cf731ac73792b26b64f99da8056bbe2
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  yaml_documents_parsed: 4
+  ascii_files_checked: 8
+  exactly_one_next_action_headings: 4
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator: pass
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_install_rule: >-
+  Re-read all three live precondition hashes and both required NET task states;
+  install atomically only if they still match, regenerate current_dispatch from
+  the merged queue, rerun every listed validator, and preserve any mismatch as
+  concurrent-state drift instead of overwriting it.

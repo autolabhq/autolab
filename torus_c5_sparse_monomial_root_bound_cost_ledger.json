@@ -1,0 +1,160 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "model_required": false,
+      "required_root_exponent_q": {
+        "decimal": 0.75,
+        "exact": "3/4"
+      },
+      "route_id": "one_to_four_mode_extension_zero_predicate",
+      "status": "rejected_asymptotically_by_subgroup_root_bound"
+    },
+    {
+      "maximum_term_count": "1+floor(log2(q)/4)",
+      "model_required": true,
+      "route_id": "small_log_mode_random_deck_zero_predicate",
+      "status": "rejected_with_overwhelming_probability_under_uniform_random_deck_model_only",
+      "structured_factor_base_transfer_proved": false
+    },
+    {
+      "first_not_excluded_by_root_exponent": true,
+      "inside_cap_exact_predicate_constructed": false,
+      "route_id": "five_mode_extension_zero_predicate",
+      "status": "open"
+    },
+    {
+      "covered_by_random_deck_union_bound": false,
+      "inside_cap_exact_predicate_constructed": false,
+      "route_id": "larger_polylog_sparse_extension_predicate",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_predicate_constructed": false,
+      "represented_sparse_support_bound_applicable": false,
+      "route_id": "low_slp_expanded_extension_predicate",
+      "status": "open"
+    },
+    {
+      "inside_cap_exact_predicate_constructed": false,
+      "route_id": "multi_predicate_frobenius_coordinate_dag",
+      "single_zero_predicate_bound_applicable": false,
+      "status": "open"
+    }
+  ],
+  "schema": "p1553.torus_c5_sparse_monomial_root_bound_cost_ledger.r133.v1",
+  "theorem": {
+    "adaptation_proof_dependencies": [
+      "exponent reduction modulo the cyclic domain order q",
+      "the geometry-of-numbers degree reduction in t-1 exponents",
+      "power maps and coset decomposition in a cyclic group",
+      "the ordinary degree bound over the coefficient field K",
+      "linear independence of distinct characters because char(K) does not divide q"
+    ],
+    "deterministic_consequence": "A represented extension-field zero predicate with at most four distinct modes cannot vanish on q^(3/4+o(1)) color targets. Five modes are the first count not excluded by this bound; the bound does not construct such a predicate.",
+    "not_covered": [
+      "five-mode existence or nonexistence at the q^(3/4) threshold",
+      "larger polylogarithmic represented support",
+      "polynomials with large expansion but compact straight-line programs",
+      "multiple-predicate or adaptive decision DAGs",
+      "nonzero-value tests and coordinate comparisons",
+      "deterministic structured factor bases",
+      "general arithmetic-circuit, RAM, or cell-probe lower bounds"
+    ],
+    "primary_source": {
+      "arxiv": "1602.00208",
+      "author": "Zander Kelley",
+      "pinned_artifact": "references/kelley_sparse_polynomial_roots_1602.00208.pdf",
+      "pinned_sha256": "250daacc1b157043cd9c7345036eb332fc69fee8e48a12ba81eddcc2b91995b7",
+      "source_result": "Theorem 2.3 and its proof",
+      "title": "Roots of Sparse Polynomials over a Finite Field",
+      "url": "https://arxiv.org/abs/1602.00208"
+    },
+    "prime_order_coset_parameter": 1,
+    "random_deck_model": {
+      "assumptions": [
+        "q is prime and q is not 5",
+        "the deck is an ordered uniform sample without replacement from H",
+        "the four balanced color parts are fixed independently of deck values",
+        "the coefficient field has size p^2 with p<6q",
+        "predicates are represented sparse sums with distinct exponents modulo q"
+      ],
+      "asymptotic_consequence": "At deck size q^(3/20+o(1)), m=q^(3/20+o(1))/4 and the displayed failure bound tends to zero because its positive logarithm is O((log q)^2) while 3m grows polynomially.",
+      "logarithmic_threshold": "If t-1 <= log2(q)/4, the subgroup root bound gives root density at most 2*q^(-1/(t-1)) <= 1/8.",
+      "model_bound": true,
+      "projective_polynomial_count": "For exact term count t, support choices are at most q^t. After projective coefficient normalization, coefficient choices are at most (p^2)^(t-1) < 36^t q^(2t). Hence the represented predicate count is below 36^t q^(3t).",
+      "pure_fifth_subset": "Every atom in a color supplies its pure fifth power to that color's C5 acceptance set. Since gcd(5,q)=1, fifth powering permutes H, so a color's pure fifth powers form a uniform sample without replacement.",
+      "receives_candidate_credit": false,
+      "transfers_to_structured_factor_base": false,
+      "union_bound": "Writing T=1+floor(log2(q)/4) and m for the smallest color part, the probability that any represented predicate with at most T modes vanishes on every pure fifth power of any color is at most 4*T*36^T*q^(3T)*8^(-m)."
+    },
+    "required_color_root_exponent_q": {
+      "decimal": 0.75,
+      "exact": "3/4"
+    },
+    "scope_limits": [
+      "one represented sparse polynomial zero predicate",
+      "distinct exponent modes modulo the prime subgroup order",
+      "one through four modes deterministically",
+      "up to one quarter log2(q) modes only in the frozen random-deck model"
+    ],
+    "subgroup_adaptation": "Let H be a cyclic subgroup of prime order q in a field K of characteristic not q. For a nonzero t-mode function f(z)=sum_i a_i z^(e_i) with nonzero coefficients and distinct e_i modulo q, the degree-reduction proof of Kelley Theorem 2.3 applies with cyclic domain order q. Since H has prime order and distinct characters are linearly independent, the largest root coset has size C=1. Thus for t>=2, |{z in H:f(z)=0}| <= 2 q^(1-1/(t-1)).",
+    "term_threshold_rows": [
+      {
+        "excluded_for_q_to_three_quarters_roots": true,
+        "first_not_excluded_by_bound": false,
+        "root_exponent_q": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "term_count": 1
+      },
+      {
+        "excluded_for_q_to_three_quarters_roots": true,
+        "first_not_excluded_by_bound": false,
+        "root_exponent_q": {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        "term_count": 2
+      },
+      {
+        "excluded_for_q_to_three_quarters_roots": true,
+        "first_not_excluded_by_bound": false,
+        "root_exponent_q": {
+          "decimal": 0.5,
+          "exact": "1/2"
+        },
+        "term_count": 3
+      },
+      {
+        "excluded_for_q_to_three_quarters_roots": true,
+        "first_not_excluded_by_bound": false,
+        "root_exponent_q": {
+          "decimal": 0.6666666666666666,
+          "exact": "2/3"
+        },
+        "term_count": 4
+      },
+      {
+        "excluded_for_q_to_three_quarters_roots": false,
+        "first_not_excluded_by_bound": true,
+        "root_exponent_q": {
+          "decimal": 0.75,
+          "exact": "3/4"
+        },
+        "term_count": 5
+      }
+    ]
+  }
+}

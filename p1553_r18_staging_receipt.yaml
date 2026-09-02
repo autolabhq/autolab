@@ -1,0 +1,64 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R18-GENERIC-PAIR-BIRATIONAL-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T04:18:25Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only, prior reviews remain queued, and
+  R18 is a new generic geometric theorem requiring independent review.
+bindings:
+  r16_gate_sha256: 9f7ec4ecb6821e30affce39b25b459891f6be0b945b6d64332971dd86df2237c
+  r17_gate_sha256: 0ca83b9a6991fe593832519773971aa9fa17b705a7ea155f561cd18ecebc0101
+  r17_success_report_sha256: f5c9257d77a3c87efcf00655a5ec04735eebbacc3f5b7377df3266d9ed2cd154
+  r17_bundle_hash_list_sha256: 4acc5ae300cec07f0b428fd58431975cee1182338a82c4b67ed29ece00c25fdf
+  r18_gate_sha256: d1eadf3edf74acedf30888aff764d221d1483ca3dc8521ff293cd7aa422ca5c4
+  r18_parent_report_sha256: a11c7987bf2c307a5dde77d3ce597a659b356ac841380084c6c289523067d97d
+  r18_artifact_index_sha256: 0bdee2cc732bc0a5ed746d7d7502820fdd6b8fa102b11a3bcc9269789858c64f
+  r18_bundle_hash_list_sha256: cba5cb2c5c1e3f8fa20dcc9e9a8975e7676a7aaf62cca84dde89ed48af3b2381
+result:
+  classification: generic_geometric_negative
+  degree_range: d_at_least_3_and_characteristic_zero_or_greater_than_2d
+  family: full_zero_fiber_interpolation_psi_equals_h_over_g
+  polynomial_specialization_pair_degree: 1
+  generic_denominator_pair_degree: 1
+  generic_simultaneous_common_right_factor: absent
+  common_factor_envelope: proper_zariski_closed_not_classified
+  genuine_exceptional_locus_closed: not_claimed
+  chart_and_denominator_artifacts: not_separated
+  prime_subgroup_incidence: unproved
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r18_hash_list: pass
+  r18_parent_yaml_parse: pass
+  clean_temporary_replay_with_r16_r17_r18_gates_and_r18_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  live_corpus_validator: failed_infrastructure_appledouble_sidecars
+  live_appledouble_sidecar_count_under_ideas: 1
+  live_sidecar_scope: ideas/reviews/._DEDUP-20260719T211533-0700.md
+  live_sidecars_modified_or_removed: false
+limits:
+  - proper common-factor envelope is not classified
+  - genuine components are not separated from chart or denominator artifacts
+  - no arithmetic incidence bound for the prime subgroup endpoint support
+  - no endpoint or fifth finite-list saturation theorem
+  - no compact factor construction for a surviving exceptional component
+  - no fresh-target action or R10 index
+  - no density, rank, factor logs, or blind descent
+  - no unrestricted lower bound, Shoup improvement, or breakthrough
+exactly_one_next_action: >-
+  Classify positive-dimensional components of the closed paired cross-factor
+  envelope, separate genuine components from chart artifacts, and either
+  reduce them to known controls or extract one explicit non-Galois component
+  with both finite-list saturation gates and a compact certificate.

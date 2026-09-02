@@ -1,0 +1,87 @@
+{
+  "candidate_work_credit": false,
+  "caps": {
+    "per_arbitrary_target_query_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "setup_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    }
+  },
+  "routes": [
+    {
+      "inside_polylog_query_cap": false,
+      "inside_setup_cap": true,
+      "minimum_degree_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "query_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      },
+      "route_id": "dense_single_rational_c2_selector",
+      "setup_coefficient_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    {
+      "inside_setup_cap": false,
+      "route_id": "explicit_target_to_c2_selector_table",
+      "state_exponent_B": {
+        "decimal": 3.75,
+        "exact": "15/4"
+      }
+    },
+    {
+      "circuit_size_lower_bound_proved": false,
+      "degree_lower_bound_applies": true,
+      "exact_structure_constructed": false,
+      "route_id": "high_degree_low_slp_rational_selector",
+      "status": "open"
+    },
+    {
+      "compact_branch_router_constructed": false,
+      "route_id": "compact_piecewise_rational_selector",
+      "status": "open",
+      "total_branch_degree_lower_bound_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    }
+  ],
+  "schema": "p1553.torus_c5_rational_selector_degree_cost_ledger.r128.v1",
+  "theorem": {
+    "constant_selector_boundary": "A constant x covers at most |C3| distinct targets x*C3 and cannot cover |C5| when |C5|>|C3|.",
+    "degree_definition": "d=max(deg A,deg D)",
+    "degree_lower_bound": "d>=ceil(|C5|/|C2|)",
+    "dense_horner_query_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "dense_representation_state_exponent_B": {
+      "decimal": 2.25,
+      "exact": "9/4"
+    },
+    "fiber_bound": "For each x in C2, A(Y)-xD(Y) has degree at most d and is not identically zero for a nonconstant selector, so R(Y)=x on at most d targets.",
+    "iid_exponent_lower_bound": "d>=B^(15/4-3/2+o(1))=B^(9/4+o(1))",
+    "inside_polylog_query_cap": false,
+    "inside_setup_cap": true,
+    "not_covered": [
+      "high-degree low-SLP rational selectors",
+      "compact branch-selection circuits",
+      "adaptive cell-probe selectors",
+      "shared transposed selector evaluation",
+      "general arithmetic circuits or data structures"
+    ],
+    "scope_limits": [
+      "one globally defined rational C2 selector",
+      "dense represented numerator and denominator evaluation",
+      "piecewise selectors charged by represented branch degrees"
+    ],
+    "selector_model": "A rational function R(Y)=A(Y)/D(Y), defined on every positive C5 target, returns a C2 factor x such that Y/x is in C3."
+  }
+}

@@ -1,0 +1,78 @@
+schema: crypto.autoresearch.review_staging_receipt.v1
+bundle_id: P1553-R40-ORBIT-TRANSFER-DIVISOR-MILLER-20260719
+date: 2026-07-19
+captured_utc: 2026-07-20T08:50:29Z
+installed: false
+authoritative_write_attempted: false
+independent_review_complete: false
+promotion_authorized: false
+reason: >-
+  The authoritative checkout is read-only and R40 is a new exact positive
+  coboundary construction and scoped standard-Miller route gate requiring
+  independent review. It does not provide the two nested partial-orbit
+  compressions, asymptotic pencil, or ECDLP path.
+bindings:
+  r39_bundle_hash_list_sha256: 44d37773e2a4948efa5247111b8d160b8d4b2dd9fbd9df1b33c4cbb18e2c4b70
+  r39_staging_receipt_sha256: 51b9e6a732a1ffe9055a4d555517b7f5117341552d5ce8bf1be1ab37091922f8
+  r40_gate_sha256: 7aebb68ba410c223250fd907cd8891a9539553c202d16bcff3d0a79e7e35a07b
+  r40_parent_report_sha256: c1f6e3096422fe43ffa0598bdc5c2c8b46bef5b6c2e3c91b70c481a52277d73c
+  r40_selfcheck_script_sha256: f95eaac1764ca1ce26dd8b169d2822ce086db369689cfcf3ac0dcf7ca4104c2c
+  r40_selfcheck_report_sha256: 72af378590ca75899803fe187c03adc4ca55b5a7b76415d432a463ffe20df018
+  r40_artifact_index_sha256: 487aa10c74bf81b77c9c370b652aa10d591ce303ac1bf8f7b675e34986d457c4
+  r40_bundle_hash_list_sha256: a91e942c9bdd2ba75981c1bad49afc25d0ac368ca97309bae8a4ab10de87ceb8
+result:
+  classification: positive_coboundary_standard_miller_negative_partial_product_open
+  subgroup_supported_coboundary_locator: present
+  transfer_support_lower_bound: B^2
+  transfer_degree_lower_bound: B^4
+  standard_explicit_support_miller_work: B^2
+  toy_minimum_transfer_degree: 21
+  toy_minimum_transfer_support: 19
+  toy_standard_sequential_miller_merge_upper_bound: 40
+  proper_subgroup_kernel_compression: absent
+  division_polynomial_interval_compression: absent
+  partial_orbit_product_circuit: absent
+  outer_marked_factor_locator: absent
+  degree_nine_pencil_lift: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  breakthrough: false
+  shoup_bound_improvement: false
+authoritative_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  artifact_index_sha256: 1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1
+validation:
+  r40_hash_list: pass
+  r40_parent_yaml_parse: pass
+  selected_path_reindexed_exactly: pass
+  all_allowed_toy_pole_multisets_dynamic_programmed: pass
+  exact_minimum_transfer_degree_checked: pass
+  transfer_picard_principality_checked: pass
+  coboundary_zero_and_pole_orders_checked: pass
+  prime_order_subgroup_control_checked: pass
+  r40_selfcheck_replay_matches_report: pass
+  clean_temporary_replay_with_r16_through_r40_gates_and_r40_index: pass
+  clean_replay_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_corpus_validator: pass_at_2026_07_20T08_50_29Z
+  live_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+  live_appledouble_sidecar_count_under_ideas: 0
+  live_sidecars_modified_or_removed_by_this_run: false
+limits:
+  - independent mathematical review has not been completed
+  - the dynamic-program optimum is toy-only and grammar-specific
+  - explicit support bounds are not unrestricted circuit lower bounds
+  - a new partial-orbit product identity and marked outer locator remain open
+  - no degree-nine pencil, target, R10, rank, logs, descent, or breakthrough
+exactly_one_next_action: >-
+  Build or refute a partial-orbit product circuit with input (R_0,q,L) and
+  work sublinear in L, not an explicit divisor list. Derive its addition law
+  from elliptic sigma/net identities, test exact doubling and concatenation on
+  the R40 degree-21 toy, and require a second-level marked factor locator for
+  the outer B^2-factor norm. Reject one-net-term, full-subgroup-norm, and
+  unmarked-product substitutions; bind a survivor to a degree-nine pencil and
+  the R10 source interface.

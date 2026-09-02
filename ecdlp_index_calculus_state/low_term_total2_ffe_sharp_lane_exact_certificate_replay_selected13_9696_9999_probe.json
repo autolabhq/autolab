@@ -1,0 +1,875 @@
+{
+  "artifacts": {
+    "c_header": "ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_exact_certificate_replay_selected13_9696_9999_probe.h",
+    "contract": "ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_kernel_contract_selected13_9696_9999_probe.json",
+    "worklist": "ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_execution_worklist_selected13_9696_9999_probe.json"
+  },
+  "claim_status": "FFE_SHARP_LANE_EXACT_CERTIFICATE_REPLAY_READY",
+  "created_at": "2026-06-05T17:44:22Z",
+  "failures": [],
+  "honesty_boundary": [
+    "This replays embedded exact certificate material and native preflight records only.",
+    "It does not evaluate summation polynomials, regenerate missing sidecar certificate artifacts, export direct/rank rows, solve ECDLP, or claim a Pollard-rho speedup."
+  ],
+  "native_preflight": {
+    "c_source_sha256": "ba91843b9ce3d8f266b69d05e47a7d221e3f99ceb4abc072f67362b2e67ab437",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-I",
+      "ecdlp_index_calculus_state",
+      "/private/tmp/ecdlp_selected13_exact_2czy72cy/selected13_exact_certificate_preflight.c",
+      "-o",
+      "/private/tmp/ecdlp_selected13_exact_2czy72cy/selected13_exact_certificate_preflight"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "native_summary": {
+      "accepted_missing_record_count": 3,
+      "classification_counts": {
+        "1": 3,
+        "2": 3
+      },
+      "failure_count": 0,
+      "form_count_sum": 7,
+      "rank_gain_sum": 7,
+      "record_count": 6,
+      "selected13_missing_count": 0,
+      "zero_cert_hash_count": 0,
+      "zero_row_hash_count": 0
+    },
+    "run_returncode": 0,
+    "run_stderr": "",
+    "run_stdout": "{\"record_count\":6,\"failure_count\":0,\"selected13_missing_count\":0,\"zero_cert_hash_count\":0,\"zero_row_hash_count\":0,\"rank_gain_sum\":7,\"form_count_sum\":7,\"accepted_missing_record_count\":3,\"classification_counts\":{\"1\":3,\"2\":3}}\n"
+  },
+  "records": [
+    {
+      "accepted_missing_columns": [
+        10,
+        14
+      ],
+      "accepted_missing_mask": 17408,
+      "accepted_priority_columns": [
+        10,
+        14
+      ],
+      "accepted_priority_mask": 17408,
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9736_9743_probe.json",
+      "artifact_available_in_worktree": false,
+      "certificate_hash": "cert_958c291f3606ddda",
+      "certificate_hash_u64": 10776033222417898970,
+      "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+      "classification_code": 1,
+      "direct_ops_over_rho": 0.72262774,
+      "direct_ops_over_rho_scaled": 72262774,
+      "exact_index": 0,
+      "expected_form_supports": [
+        [
+          10,
+          14
+        ]
+      ],
+      "first_pass_id": "first_509f4cb80d532526",
+      "form_count": 1,
+      "form_masks": [
+        17408,
+        0,
+        0,
+        0
+      ],
+      "form_supports": [
+        [
+          10,
+          14
+        ]
+      ],
+      "group_id": "sharp_group_d455913b772d",
+      "rank": 2,
+      "rank_gain": 1,
+      "rank_score": {
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9736_9743_probe.json",
+        "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+        "rank_after": 10,
+        "rank_before": 9,
+        "rank_gain": 1,
+        "unique_factor_relation_gain": 1
+      },
+      "recomputed_certificate_hash": "cert_958c291f3606ddda",
+      "recomputed_certificate_material": {
+        "accepted_missing_columns": [
+          10,
+          14
+        ],
+        "accepted_priority_columns": [
+          10,
+          14
+        ],
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9736_9743_probe.json",
+        "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+        "direct_ops_over_rho": 0.72262774,
+        "form_supports": [
+          [
+            10,
+            14
+          ]
+        ],
+        "rank": 2,
+        "rank_gain": 1,
+        "rank_score": {
+          "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9736_9743_probe.json",
+          "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+          "rank_after": 10,
+          "rank_before": 9,
+          "rank_gain": 1,
+          "unique_factor_relation_gain": 1
+        },
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selected_term_support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "selector": "mode_low_term_support_total5",
+        "target": "22050.cf1@11731",
+        "top_k": 16,
+        "transfer_index": 9742,
+        "unique_factor_relation_gain": 1
+      },
+      "row_check_hash": "row_8297ddc959605c62",
+      "row_check_hash_u64": 9410233803271593058,
+      "row_id": "t9742_c31aa535faab",
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt171",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "salts": [
+        171,
+        173
+      ],
+      "selected_support_mask": 65533,
+      "selector": "mode_low_term_support_total5",
+      "target": "22050.cf1@11731",
+      "top_k": 16,
+      "transfer_index": 9742,
+      "unique_factor_relation_gain": 1,
+      "work_item": {
+        "accepted_exact_certificate_hash": "cert_958c291f3606ddda",
+        "accepted_exact_certificate_hash_u64": 10776033222417898970,
+        "phase": "exact_certificate_replay",
+        "row_check_hash": "row_8297ddc959605c62",
+        "row_check_hash_u64": 9410233803271593058,
+        "selected_support_mask": 65533,
+        "work_item_index": 7
+      }
+    },
+    {
+      "accepted_missing_columns": [
+        0
+      ],
+      "accepted_missing_mask": 1,
+      "accepted_priority_columns": [
+        0,
+        5
+      ],
+      "accepted_priority_mask": 33,
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9752_9759_probe.json",
+      "artifact_available_in_worktree": false,
+      "certificate_hash": "cert_a48b2b6b92f1dc81",
+      "certificate_hash_u64": 11856618185009781889,
+      "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+      "classification_code": 1,
+      "direct_ops_over_rho": 0.72262774,
+      "direct_ops_over_rho_scaled": 72262774,
+      "exact_index": 1,
+      "expected_form_supports": [
+        [
+          0,
+          5
+        ]
+      ],
+      "first_pass_id": "first_a00ffd43ac646faa",
+      "form_count": 1,
+      "form_masks": [
+        33,
+        0,
+        0,
+        0
+      ],
+      "form_supports": [
+        [
+          0,
+          5
+        ]
+      ],
+      "group_id": "sharp_group_57288a59d612",
+      "rank": 2,
+      "rank_gain": 1,
+      "rank_score": {
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9752_9759_probe.json",
+        "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+        "rank_after": 10,
+        "rank_before": 9,
+        "rank_gain": 1,
+        "unique_factor_relation_gain": 1
+      },
+      "recomputed_certificate_hash": "cert_a48b2b6b92f1dc81",
+      "recomputed_certificate_material": {
+        "accepted_missing_columns": [
+          0
+        ],
+        "accepted_priority_columns": [
+          0,
+          5
+        ],
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9752_9759_probe.json",
+        "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+        "direct_ops_over_rho": 0.72262774,
+        "form_supports": [
+          [
+            0,
+            5
+          ]
+        ],
+        "rank": 2,
+        "rank_gain": 1,
+        "rank_score": {
+          "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9752_9759_probe.json",
+          "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+          "rank_after": 10,
+          "rank_before": 9,
+          "rank_gain": 1,
+          "unique_factor_relation_gain": 1
+        },
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt171",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selected_term_support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "selector": "mode_low_term_support_total5",
+        "target": "22050.cf1@11731",
+        "top_k": 16,
+        "transfer_index": 9754,
+        "unique_factor_relation_gain": 1
+      },
+      "row_check_hash": "row_51460d48402e79c0",
+      "row_check_hash_u64": 5856382969407502784,
+      "row_id": "t9754_a66fa93a38cd",
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt171",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "salts": [
+        171,
+        173
+      ],
+      "selected_support_mask": 65533,
+      "selector": "mode_low_term_support_total5",
+      "target": "22050.cf1@11731",
+      "top_k": 16,
+      "transfer_index": 9754,
+      "unique_factor_relation_gain": 1,
+      "work_item": {
+        "accepted_exact_certificate_hash": "cert_a48b2b6b92f1dc81",
+        "accepted_exact_certificate_hash_u64": 11856618185009781889,
+        "phase": "exact_certificate_replay",
+        "row_check_hash": "row_51460d48402e79c0",
+        "row_check_hash_u64": 5856382969407502784,
+        "selected_support_mask": 65533,
+        "work_item_index": 10
+      }
+    },
+    {
+      "accepted_missing_columns": [],
+      "accepted_missing_mask": 0,
+      "accepted_priority_columns": [
+        5
+      ],
+      "accepted_priority_mask": 32,
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9776_9783_probe.json",
+      "artifact_available_in_worktree": false,
+      "certificate_hash": "cert_753164c241aa0dcb",
+      "certificate_hash_u64": 8444641561784487371,
+      "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+      "classification_code": 2,
+      "direct_ops_over_rho": 0.72262774,
+      "direct_ops_over_rho_scaled": 72262774,
+      "exact_index": 2,
+      "expected_form_supports": [
+        [
+          1,
+          5
+        ]
+      ],
+      "first_pass_id": "first_6c47f5122c30e7c1",
+      "form_count": 1,
+      "form_masks": [
+        34,
+        0,
+        0,
+        0
+      ],
+      "form_supports": [
+        [
+          1,
+          5
+        ]
+      ],
+      "group_id": "sharp_group_f86f780b311f",
+      "rank": 2,
+      "rank_gain": 1,
+      "rank_score": {
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9776_9783_probe.json",
+        "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+        "rank_after": 10,
+        "rank_before": 9,
+        "rank_gain": 1,
+        "unique_factor_relation_gain": 1
+      },
+      "recomputed_certificate_hash": "cert_753164c241aa0dcb",
+      "recomputed_certificate_material": {
+        "accepted_missing_columns": [],
+        "accepted_priority_columns": [
+          5
+        ],
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9776_9783_probe.json",
+        "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+        "direct_ops_over_rho": 0.72262774,
+        "form_supports": [
+          [
+            1,
+            5
+          ]
+        ],
+        "rank": 2,
+        "rank_gain": 1,
+        "rank_score": {
+          "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9776_9783_probe.json",
+          "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+          "rank_after": 10,
+          "rank_before": 9,
+          "rank_gain": 1,
+          "unique_factor_relation_gain": 1
+        },
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt174"
+        ],
+        "selected_term_support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "selector": "mode_low_term_support_total5",
+        "target": "22050.cf1@11731",
+        "top_k": 16,
+        "transfer_index": 9776,
+        "unique_factor_relation_gain": 1
+      },
+      "row_check_hash": "row_5c7c78c26073311d",
+      "row_check_hash_u64": 6664334324838641949,
+      "row_id": "t9776_1f890a9ba538",
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt174"
+      ],
+      "salts": [
+        163,
+        174
+      ],
+      "selected_support_mask": 65533,
+      "selector": "mode_low_term_support_total5",
+      "target": "22050.cf1@11731",
+      "top_k": 16,
+      "transfer_index": 9776,
+      "unique_factor_relation_gain": 1,
+      "work_item": {
+        "accepted_exact_certificate_hash": "cert_753164c241aa0dcb",
+        "accepted_exact_certificate_hash_u64": 8444641561784487371,
+        "phase": "exact_certificate_replay",
+        "row_check_hash": "row_5c7c78c26073311d",
+        "row_check_hash_u64": 6664334324838641949,
+        "selected_support_mask": 65533,
+        "work_item_index": 15
+      }
+    },
+    {
+      "accepted_missing_columns": [],
+      "accepted_missing_mask": 0,
+      "accepted_priority_columns": [
+        5
+      ],
+      "accepted_priority_mask": 32,
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9800_9807_probe.json",
+      "artifact_available_in_worktree": false,
+      "certificate_hash": "cert_95b5c6c76e22eaaa",
+      "certificate_hash_u64": 10787747042284464810,
+      "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+      "classification_code": 2,
+      "direct_ops_over_rho": 0.75182482,
+      "direct_ops_over_rho_scaled": 75182482,
+      "exact_index": 3,
+      "expected_form_supports": [
+        [
+          1,
+          5
+        ]
+      ],
+      "first_pass_id": "first_77f01da9e3ef3401",
+      "form_count": 1,
+      "form_masks": [
+        34,
+        0,
+        0,
+        0
+      ],
+      "form_supports": [
+        [
+          1,
+          5
+        ]
+      ],
+      "group_id": "sharp_group_d33284e14590",
+      "rank": 2,
+      "rank_gain": 1,
+      "rank_score": {
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9800_9807_probe.json",
+        "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+        "rank_after": 10,
+        "rank_before": 9,
+        "rank_gain": 1,
+        "unique_factor_relation_gain": 1
+      },
+      "recomputed_certificate_hash": "cert_95b5c6c76e22eaaa",
+      "recomputed_certificate_material": {
+        "accepted_missing_columns": [],
+        "accepted_priority_columns": [
+          5
+        ],
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9800_9807_probe.json",
+        "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+        "direct_ops_over_rho": 0.75182482,
+        "form_supports": [
+          [
+            1,
+            5
+          ]
+        ],
+        "rank": 2,
+        "rank_gain": 1,
+        "rank_score": {
+          "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9800_9807_probe.json",
+          "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+          "rank_after": 10,
+          "rank_before": 9,
+          "rank_gain": 1,
+          "unique_factor_relation_gain": 1
+        },
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt171"
+        ],
+        "selected_term_support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "selector": "mode_low_term_support_total5",
+        "target": "22050.cf1@11731",
+        "top_k": 16,
+        "transfer_index": 9803,
+        "unique_factor_relation_gain": 1
+      },
+      "row_check_hash": "row_ec8ecdc13fc613ce",
+      "row_check_hash_u64": 17045787869526234062,
+      "row_id": "t9803_b18fbcf9d26a",
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt171"
+      ],
+      "salts": [
+        163,
+        171
+      ],
+      "selected_support_mask": 65533,
+      "selector": "mode_low_term_support_total5",
+      "target": "22050.cf1@11731",
+      "top_k": 16,
+      "transfer_index": 9803,
+      "unique_factor_relation_gain": 1,
+      "work_item": {
+        "accepted_exact_certificate_hash": "cert_95b5c6c76e22eaaa",
+        "accepted_exact_certificate_hash_u64": 10787747042284464810,
+        "phase": "exact_certificate_replay",
+        "row_check_hash": "row_ec8ecdc13fc613ce",
+        "row_check_hash_u64": 17045787869526234062,
+        "selected_support_mask": 65533,
+        "work_item_index": 23
+      }
+    },
+    {
+      "accepted_missing_columns": [
+        10,
+        14,
+        15
+      ],
+      "accepted_missing_mask": 50176,
+      "accepted_priority_columns": [
+        10,
+        14,
+        15
+      ],
+      "accepted_priority_mask": 50176,
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9840_9847_probe.json",
+      "artifact_available_in_worktree": false,
+      "certificate_hash": "cert_c4555d787f52fbbd",
+      "certificate_hash_u64": 14147316576567884733,
+      "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+      "classification_code": 1,
+      "direct_ops_over_rho": 0.7810219,
+      "direct_ops_over_rho_scaled": 78102190,
+      "exact_index": 4,
+      "expected_form_supports": [
+        [
+          10,
+          14
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "first_pass_id": "first_89d6c841b0bd58fb",
+      "form_count": 2,
+      "form_masks": [
+        17408,
+        34816,
+        0,
+        0
+      ],
+      "form_supports": [
+        [
+          10,
+          14
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "group_id": "sharp_group_c6f20681a8f6",
+      "rank": 3,
+      "rank_gain": 2,
+      "rank_score": {
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9840_9847_probe.json",
+        "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+        "rank_after": 11,
+        "rank_before": 9,
+        "rank_gain": 2,
+        "unique_factor_relation_gain": 6
+      },
+      "recomputed_certificate_hash": "cert_c4555d787f52fbbd",
+      "recomputed_certificate_material": {
+        "accepted_missing_columns": [
+          10,
+          14,
+          15
+        ],
+        "accepted_priority_columns": [
+          10,
+          14,
+          15
+        ],
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9840_9847_probe.json",
+        "classification": "ACCEPTED_MISSING_COLUMN_RANK_GAIN",
+        "direct_ops_over_rho": 0.7810219,
+        "form_supports": [
+          [
+            10,
+            14
+          ],
+          [
+            11,
+            15
+          ]
+        ],
+        "rank": 3,
+        "rank_gain": 2,
+        "rank_score": {
+          "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9840_9847_probe.json",
+          "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+          "rank_after": 11,
+          "rank_before": 9,
+          "rank_gain": 2,
+          "unique_factor_relation_gain": 6
+        },
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt167",
+          "22050.cf1@11731:uniform:256:salt176"
+        ],
+        "selected_term_support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "selector": "mode_low_term_support_total5",
+        "target": "22050.cf1@11731",
+        "top_k": 16,
+        "transfer_index": 9842,
+        "unique_factor_relation_gain": 6
+      },
+      "row_check_hash": "row_3f80c0d06f416f8a",
+      "row_check_hash_u64": 4575869222860713866,
+      "row_id": "t9842_89b910c16356",
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt167",
+        "22050.cf1@11731:uniform:256:salt176"
+      ],
+      "salts": [
+        167,
+        176
+      ],
+      "selected_support_mask": 65533,
+      "selector": "mode_low_term_support_total5",
+      "target": "22050.cf1@11731",
+      "top_k": 16,
+      "transfer_index": 9842,
+      "unique_factor_relation_gain": 6,
+      "work_item": {
+        "accepted_exact_certificate_hash": "cert_c4555d787f52fbbd",
+        "accepted_exact_certificate_hash_u64": 14147316576567884733,
+        "phase": "exact_certificate_replay",
+        "row_check_hash": "row_3f80c0d06f416f8a",
+        "row_check_hash_u64": 4575869222860713866,
+        "selected_support_mask": 65533,
+        "work_item_index": 34
+      }
+    },
+    {
+      "accepted_missing_columns": [],
+      "accepted_missing_mask": 0,
+      "accepted_priority_columns": [
+        5
+      ],
+      "accepted_priority_mask": 32,
+      "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9880_9887_probe.json",
+      "artifact_available_in_worktree": false,
+      "certificate_hash": "cert_07a3d881ca472e21",
+      "certificate_hash_u64": 550521631425375777,
+      "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+      "classification_code": 2,
+      "direct_ops_over_rho": 0.75182482,
+      "direct_ops_over_rho_scaled": 75182482,
+      "exact_index": 5,
+      "expected_form_supports": [
+        [
+          1,
+          5
+        ]
+      ],
+      "first_pass_id": "first_cfdad6b2b87c5dfc",
+      "form_count": 1,
+      "form_masks": [
+        34,
+        0,
+        0,
+        0
+      ],
+      "form_supports": [
+        [
+          1,
+          5
+        ]
+      ],
+      "group_id": "sharp_group_821ce671cb93",
+      "rank": 2,
+      "rank_gain": 1,
+      "rank_score": {
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9880_9887_probe.json",
+        "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+        "rank_after": 10,
+        "rank_before": 9,
+        "rank_gain": 1,
+        "unique_factor_relation_gain": 1
+      },
+      "recomputed_certificate_hash": "cert_07a3d881ca472e21",
+      "recomputed_certificate_material": {
+        "accepted_missing_columns": [],
+        "accepted_priority_columns": [
+          5
+        ],
+        "artifact": "ecdlp_index_calculus_state/low_term_total2_direct_relation_equation_certificate_22050_col15_lowterm_support5_9880_9887_probe.json",
+        "classification": "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN",
+        "direct_ops_over_rho": 0.75182482,
+        "form_supports": [
+          [
+            1,
+            5
+          ]
+        ],
+        "rank": 2,
+        "rank_gain": 1,
+        "rank_score": {
+          "artifact": "ecdlp_index_calculus_state/low_term_total2_factor_rank_candidate_scorer_target67_22050_multibranch_plus_priority_hash6_plus_direct_col15_lowterm_support5_9880_9887_probe.json",
+          "claim_status": "MARGINAL_FACTOR_RANK_GAIN",
+          "rank_after": 10,
+          "rank_before": 9,
+          "rank_gain": 1,
+          "unique_factor_relation_gain": 1
+        },
+        "row_keys": [
+          "22050.cf1@11731:uniform:256:salt163",
+          "22050.cf1@11731:uniform:256:salt173"
+        ],
+        "selected_term_support": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "selector": "mode_low_term_support_total5",
+        "target": "22050.cf1@11731",
+        "top_k": 16,
+        "transfer_index": 9884,
+        "unique_factor_relation_gain": 1
+      },
+      "row_check_hash": "row_15fdfd61cbcae2e6",
+      "row_check_hash_u64": 1584701240377008870,
+      "row_id": "t9884_e2635d3064cc",
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt163",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "salts": [
+        163,
+        173
+      ],
+      "selected_support_mask": 65533,
+      "selector": "mode_low_term_support_total5",
+      "target": "22050.cf1@11731",
+      "top_k": 16,
+      "transfer_index": 9884,
+      "unique_factor_relation_gain": 1,
+      "work_item": {
+        "accepted_exact_certificate_hash": "cert_07a3d881ca472e21",
+        "accepted_exact_certificate_hash_u64": 550521631425375777,
+        "phase": "exact_certificate_replay",
+        "row_check_hash": "row_15fdfd61cbcae2e6",
+        "row_check_hash_u64": 1584701240377008870,
+        "selected_support_mask": 65533,
+        "work_item_index": 41
+      }
+    }
+  ],
+  "schema": "ecdlp.low_term_total2_ffe_sharp_lane_exact_certificate_replay.v1",
+  "summary": {
+    "accepted_missing_record_count": 3,
+    "artifact_sidecar_available_count": 0,
+    "artifact_sidecar_missing_count": 6,
+    "classification_counts": {
+      "ACCEPTED_MISSING_COLUMN_RANK_GAIN": 3,
+      "RANK_GAIN_WITHOUT_ACCEPTED_MISSING_COLUMN": 3
+    },
+    "embedded_material_replay_count": 6,
+    "form_count_sum": 7,
+    "native_preflight_failure_count": 0,
+    "native_preflight_verified": true,
+    "rank_gain_sum": 7,
+    "record_count": 6,
+    "selected13_missing_count": 0,
+    "transfers": [
+      9742,
+      9754,
+      9776,
+      9803,
+      9842,
+      9884
+    ],
+    "unique_certificate_hash_count": 6,
+    "unique_row_hash_count": 6,
+    "verified": true
+  }
+}

@@ -1,0 +1,244 @@
+{
+  "artifacts": {
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_fresh_materialization_adapter_9981_probe.h",
+    "fresh_emission_packet": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_fresh_emission_packet_selected13_9696_9999_probe.json",
+    "selected13_workorder": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_workorder_9696_9999_probe.json",
+    "support_scout_summaries": {
+      "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_selected_leaf_term_support_scout_22050_col15_selector_expanded_9976_9983_probe.json": {
+        "schema": "ecdlp.low_term_total2_selected_leaf_term_support_scout.v1",
+        "summary": {
+          "case_count": 90,
+          "direct_verified_priority_hit_count": 6,
+          "gate_selected_priority_hit_count": 45,
+          "priority_hit_count": 68,
+          "shared_verified_priority_hit_count": 3,
+          "support_counts": {
+            "0": 90,
+            "10": 68,
+            "11": 51,
+            "12": 27,
+            "13": 6,
+            "14": 68,
+            "15": 68,
+            "2": 27,
+            "3": 27,
+            "4": 80,
+            "5": 80,
+            "6": 31,
+            "7": 57,
+            "8": 15,
+            "9": 15
+          }
+        }
+      }
+    }
+  },
+  "claim_status": "SELECTED13_FRESH_MATERIALIZATION_NEEDS_FRESH_DIRECT_VERIFICATION",
+  "created_at": "2026-06-05T18:54:52Z",
+  "failures": [],
+  "honesty_boundary": {
+    "accepted_relation_export_count": 0,
+    "claim_requires_relation_derived_ecdlp": true,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "unverified_below_rho_labels_are_diagnostic_only": true
+  },
+  "native_preflight": {
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_materialization_preflight_caal1lri/preflight.c",
+      "-o",
+      "/var/folders/cj/2r80qnks3h50r83ztw0tlcqw0000gn/T/selected13_materialization_preflight_caal1lri/preflight"
+    ],
+    "compile_returncode": 0,
+    "preflight_returncode": 0,
+    "preflight_stderr": "",
+    "preflight_stdout": "selected13_fresh_materialization_preflight targets=1 lanes=3 materialized=1 needs_fresh_direct=1 below_rho_unverified=1 failures=0",
+    "verified": true
+  },
+  "parameters": {
+    "packet": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_fresh_emission_packet_selected13_9696_9999_probe.json",
+    "support_scouts": [
+      "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_selected_leaf_term_support_scout_22050_col15_selector_expanded_9976_9983_probe.json"
+    ],
+    "support_state_dir": "/Volumes/Volume/autolab/ecdlp_index_calculus_state",
+    "targets": [
+      9981
+    ],
+    "workorder": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_selected13_workorder_9696_9999_probe.json"
+  },
+  "schema": "ecdlp.low_term_total2_selected13_fresh_materialization_adapter.v1",
+  "summary": {
+    "accepted_relation_export_count": 0,
+    "below_rho_unverified_count": 1,
+    "direct_public_key_verified_count": 0,
+    "failure_count": 0,
+    "family_lane_count": 3,
+    "lane_source_tier_counts": {
+      "same_row_key_exact_support": 2,
+      "support_span_only": 1
+    },
+    "materialized_target_count": 1,
+    "needs_fresh_direct_verification_count": 1,
+    "pollard_rho_speedup_claimed": false,
+    "relation_derived_ecdlp": false,
+    "relation_export_ready_count": 0,
+    "target_count": 1,
+    "verified": true,
+    "worker_interpretation": "Packet/workorder/support rows are hash-bound to a fresh worker case. Observed support-scout direct labels remain unverified, so the next step is a fresh FFE/summation-polynomial direct verifier, not a relation-derived ECDLP claim."
+  },
+  "worker_cases": [
+    {
+      "accepted_relation_export": false,
+      "backfill_row_check_hash": "row_8360d233d32d8d4d",
+      "backfill_row_check_hash_u64": 9466797536760925517,
+      "backfill_row_id": "t9981_4d807a56f643",
+      "backfill_row_id_u64": 85214203672131,
+      "below_rho_label": true,
+      "candidate_case_arg": "22050.cf1@11731|9981|mode_low_term_support_total5|16",
+      "direct_ops_over_rho": 0.72262774,
+      "direct_ops_over_rho_scaled": 72262774,
+      "direct_public_key_verified": false,
+      "direct_status": "direct_certificate_missing",
+      "family_lane_count": 3,
+      "family_lanes": [
+        {
+          "candidate_form_count": 2,
+          "family_mask": 33,
+          "family_terms": [
+            0,
+            5
+          ],
+          "fresh_source_solve_required": false,
+          "lane_hash_u64": 15625142965677174875,
+          "lane_index": 0,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "source_secret_count": 1,
+          "source_tier": "same_row_key_exact_support",
+          "source_tier_code": 1,
+          "source_transfers": [
+            9754
+          ],
+          "worker_action": "fresh_reemit_relation_against_backfill_row_hash"
+        },
+        {
+          "candidate_form_count": 2,
+          "family_mask": 17408,
+          "family_terms": [
+            10,
+            14
+          ],
+          "fresh_source_solve_required": false,
+          "lane_hash_u64": 1868107030282002951,
+          "lane_index": 1,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "source_secret_count": 1,
+          "source_tier": "same_row_key_exact_support",
+          "source_tier_code": 1,
+          "source_transfers": [
+            9742
+          ],
+          "worker_action": "fresh_reemit_relation_against_backfill_row_hash"
+        },
+        {
+          "candidate_form_count": 2,
+          "family_mask": 34816,
+          "family_terms": [
+            11,
+            15
+          ],
+          "fresh_source_solve_required": true,
+          "lane_hash_u64": 3634773673468780329,
+          "lane_index": 2,
+          "replay_result_code": 1,
+          "replay_result_status": "SOURCE_SECRET_REPLAY_ONLY",
+          "source_secret_count": 1,
+          "source_tier": "support_span_only",
+          "source_tier_code": 3,
+          "source_transfers": [
+            9842
+          ],
+          "worker_action": "fresh_support_solve_and_emit_direct_rank_row"
+        }
+      ],
+      "family_masks": [
+        33,
+        17408,
+        34816
+      ],
+      "full_gate_replay_result": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+      "full_gate_replay_result_code": 2,
+      "matched_families": [
+        [
+          0,
+          5
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          11,
+          15
+        ]
+      ],
+      "materialized": true,
+      "needs_fresh_direct_verification": true,
+      "observed_support_scout": {
+        "artifact": "/Volumes/Volume/autolab/ecdlp_index_calculus_state/low_term_total2_selected_leaf_term_support_scout_22050_col15_selector_expanded_9976_9983_probe.json",
+        "direct_public_key_verified": false,
+        "public_product_gate_selected": false,
+        "shared_product_public_key_verified": false,
+        "shared_product_relation_count": 0
+      },
+      "relation_derived_ecdlp": false,
+      "required_output": {
+        "must_match_backfill_row_check_hash": "row_8360d233d32d8d4d",
+        "must_match_backfill_row_id": "t9981_4d807a56f643",
+        "must_not_use_copied_source_form_solve": true,
+        "must_recompute_candidate_equality": true,
+        "must_set_backfill_transfer_index": 9981,
+        "must_verify_public_key": true,
+        "must_write_direct_rank_export": true
+      },
+      "row_keys": [
+        "22050.cf1@11731:uniform:256:salt171",
+        "22050.cf1@11731:uniform:256:salt173"
+      ],
+      "selected_term_support": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "selector": "mode_low_term_support_total5",
+      "shared_product_public_key_verified": false,
+      "target": "22050.cf1@11731",
+      "top_k": 16,
+      "transfer_index": 9981,
+      "worker_acceptance_gate": "fresh_ffe_summation_polynomial_direct_rank_export_only",
+      "workorder": {
+        "direct_status": "direct_certificate_missing",
+        "range": "9976_9983",
+        "score": 154
+      }
+    }
+  ]
+}

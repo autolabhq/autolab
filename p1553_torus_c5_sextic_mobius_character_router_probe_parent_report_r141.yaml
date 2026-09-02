@@ -1,0 +1,108 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-SEXTIC-MOBIUS-CHARACTER-ROUTER-R141-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: nonzero_value_character_router_boundary
+run_count: 1
+status: nonlinear_nontranslation_source_router_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - norm-one-torus
+  - mobius-character
+  - character-sum
+  - inverse-separation
+  - fourier-rank
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-unverified
+owner: P1553-R121-R129-R140
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the R140 Mobius image supplies a polylogarithmic
+  nonzero-value selector without recovering its hidden Fourier mode.
+inputs:
+  - path: p1553_torus_c5_order_two_four_minor_claw_probe_r140.py
+    sha256: a849f79dea39041de547b473c0d4fc28e6221bbb6e004738028c7f4515422373
+  - path: p1553_torus_c5_order_two_four_minor_claw_probe_report_r140.json
+    sha256: 3971132c94034f6c7f03bb7b77e83212fe805d9539b96c77a10e14176dca527c
+  - path: frozen_torus_c5_order_two_four_minor_claw.json
+    sha256: 7930da7bdd6f51254ab2a23aacf12113c0c85fd2857aec8919caeb30d69f1a1f
+  - path: torus_c5_order_two_four_minor_claw_cost_ledger.json
+    sha256: 2cd3c7708e4f83af6f688e10ce27e06198e6aaade546b0e0ef15423777137af8
+  - path: torus_c5_order_two_four_minor_claw_replay.json
+    sha256: 0661fab8f891080107a03e95981fea0170e54cbe8f53487db40fcfa9f0a9a3e2
+  - path: torus_c5_order_two_four_minor_claw_controls.json
+    sha256: dbe9feac7384b1d6048b11d9a7a86e2afdb91adc339481132183e85f57ea1a75
+  - path: factor_logs_and_identical_descent_r140.json
+    sha256: b7d7c9f1ecf51a349dea0c610c4a8a3fee6d000708285685a4d27d9b12eeecda
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_order_two_four_minor_claw_probe_r140.py
+    sha256: 8e5daa679de1739e71c9670c5b775c2179d833748730fe897ba7eb8b8e36a585
+  - path: p1553_torus_c5_order_two_four_minor_claw_probe_gate_r140.md
+    sha256: 33c8b530802974a36b06b0032c17794f7f77bf454d41dd4a2e2415d671ccfe66
+  - path: p1553_torus_c5_order_two_four_minor_claw_probe_parent_report_r140.yaml
+    sha256: 03ae39a6fde97e95581fefccf64a86cc6adc29ff2126ffc2e72bfd7f6d136ec5
+artifacts:
+  - path: p1553_torus_c5_sextic_mobius_character_router_probe_r141.py
+    sha256: 5cdbf62193929e3fc8ed3634763f1d9eb2ce7d2561b752e3ac81006d423e2f49
+  - path: p1553_torus_c5_sextic_mobius_character_router_probe_report_r141.json
+    sha256: 9b3705ae5515c8f700875e31766a7e9dcb1c5150ac880ae3c0ef197e07388173
+  - path: frozen_torus_c5_sextic_mobius_character_router.json
+    sha256: 07dedf03d33d83e729e12a52f5302bbb6cc03c508e54d8ec82a21bf0e1f59a0c
+  - path: torus_c5_sextic_mobius_character_router_cost_ledger.json
+    sha256: 62856c871858208554c515949994390af29071079a1200d9903ca7c6cac9274c
+  - path: torus_c5_sextic_mobius_character_router_replay.json
+    sha256: c783712f1b583f05f45a7b8864ff8cc34214225db92e4331958eac845d3c5b36
+  - path: torus_c5_sextic_mobius_character_router_controls.json
+    sha256: 8a8689012a8e41f3815e203b72fd0e942f7d0f2771a320dfd0034e303a604f8f
+  - path: factor_logs_and_identical_descent_r141.json
+    sha256: f0da0ce91e958076bd365b09adbaa91197c78ad761b7e68c6ea262b4882c7458
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_sextic_mobius_character_router_probe_r141.py
+    sha256: 3e900cf9ae19b4b32eb058886329760d40afdf053357358e97f49de4d0199b9a
+  - path: p1553_torus_c5_sextic_mobius_character_router_probe_gate_r141.md
+    sha256: 5874757459e62c4e7e9dd4f68f9109cc66262b2ed7cae6501c82e1be1d550f0f
+verified_statements:
+  - >-
+    The R140 Mobius claw becomes
+    d*(t_x*t_z+t_x*t_w+t_z*t_w)=3 in base-field Cayley coordinates.
+  - >-
+    The six-valued character chi_z(x)=T_z(x)^q is evaluable in
+    logarithmic field work without a discrete logarithm.
+  - >-
+    Weil square-root cancellation and a union bound give a
+    logarithmic-size fixed parameter family separating any
+    inversion-disjoint support from its inverse.
+  - >-
+    Parseval and the same fixed-conductor character-sum bound force
+    Omega(q) translated-linear Fourier support and B-to-five state.
+  - >-
+    All eight actual controls separate every positive inverse pair with
+    at most four parameters; their C2-by-C3 matrices have full row rank.
+scoped_failures:
+  base_field_zero_test_inversion_obstruction: bypassed
+  translated_linear_character_router: rejected_asymptotically
+  nonlinear_nontranslation_character_router: open
+  compact_character_composition: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 16
+  total_obligations: 26
+  lane_admitted: false
+next_action: >-
+  Construct a nonlinear C2 source router from the sextic Mobius
+  characters without materializing their Omega(q) translated linear
+  orbit. Freeze every parameter, character value, branch, candidate C2
+  pointer, C3 certificate, inverse-empty path, and reverse five-source
+  pointer; fit B^(9/4+o(1)) state and polylogarithmic arbitrary-target
+  work; avoid field DLP; and charge rank, logs, identical descent,
+  memory, field operations, extension degree, and bits.

@@ -1,0 +1,109 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-SQUAREFREE-TRUNCATED-RESULTANT-APPLICABILITY-R179-PARENT
+date: 2026-08-01
+role: coordinator
+evidence_kind: exact_squarefree_crt_replay_and_published_resultant_applicability_audit
+run_count: 1
+status: factored_squarefree_dynamic_evaluation_open
+labels:
+  - theorem-applicability
+  - exact-finite
+  - elliptic-curve
+  - truncated-resultant
+  - squarefree-crt
+  - full-cost
+  - open-interface
+owner: P1553-R172-R178-MOROZ-SCHOST-2016-SHOUP-1997
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether fast x-adic truncated-resultant algorithms directly supply
+  the R178 signed aggregate norm modulo arbitrary squarefree U inside the
+  B^(5/2) rho boundary.
+inputs:
+  - {path: p1553_m6_marked_fitting_signed_norm_dedup_probe_r178.py, sha256: 5aa01661614943739d8dc4ee623def8df94a0ecbc6119f344cee7f88b4b24312}
+  - {path: p1553_m6_marked_fitting_signed_norm_dedup_probe_report_r178.json, sha256: 679eeeeb8031fa4b4121d2004f5778629c5f16f116dcf8b10b3603a2ad63d2a6}
+  - {path: frozen_m6_marked_fitting_signed_norm_dedup.json, sha256: a575b4bbf47f3d43ada0fc4411d352f795a87261caae7ba388f7e427b46325a4}
+  - {path: m6_marked_fitting_signed_norm_dedup_cost_ledger.json, sha256: 999972250b94afa500eaa1e93285d70d662192232cd2c6ae9527a36ddf8ca606}
+  - {path: m6_marked_fitting_signed_norm_dedup_replay.json, sha256: b241914e4cdfd7b14e66fba051399dabfd84b1248be31fab0db57714bad6acae}
+  - {path: m6_marked_fitting_signed_norm_dedup_controls.json, sha256: ca239fb08f96845781ea8a7be8237fc0bf0bc66e1ed2918cb6ac9a1d55437716}
+  - {path: marked_fitting_signed_norm_equivalence_r178.json, sha256: 4c9d6cb8b5a7d32747e13542f42b3a3a382b04d97cc6caa709cd6aa706dd7c66}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_marked_fitting_signed_norm_dedup_probe_r178.py, sha256: ae71be82ca4f0113d27459b6360de65b1c5312e84ff9951899960a6be196ea65}
+  - {path: p1553_m6_marked_fitting_signed_norm_dedup_probe_gate_r178.md, sha256: bf0071ea97bd82f97b18c2f944f039153b5711ab9f3ace4b0aa910b805df9462}
+  - {path: p1553_m6_marked_fitting_signed_norm_dedup_probe_parent_report_r178.yaml, sha256: 12cf8c48f4d0c3d5973c8d07dc85f92eb7459aae4952942c09a39075d4ccceaf}
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_report_r172.json, sha256: 66f986b68c6d31576c688da4509d828139275331009dba4bb05abd45aef5ce5e}
+  - {path: p1553_m6_target_sign_conjugate_s3_self_resultant_probe_gate_r172.md, sha256: 14fb9459c75510f26177e2ef795266a825f58c2cdd11797d6ec6e60bd31dc951}
+  - {path: references/moroz_schost_truncated_resultant_1609.04259.pdf, sha256: 160c68cfbb413ca27352a064cbf2d27f7ad4ed6a210c3d6ead2770e00204b709}
+  - {path: references/hyun_neiger_schost_bivariate_resultants_1905.04356.pdf, sha256: 32b73cf0ca7172bdec0f8f1b256adda628a86d6dd7eee8e07e8644e35a9f16f3}
+  - {path: references/shoup_generic_dlp_lower_bound_1997.pdf, sha256: 89d19aad3a4d98b563029de9135d30c8ed9b831d74f7348c286acc22f9af85b3}
+artifacts:
+  - {path: p1553_m6_squarefree_truncated_resultant_applicability_probe_r179.py, sha256: 00210a51d1ee5dd3f8154eeab57c5909309711c3558a0699ae9ffa0cf0b271e9}
+  - {path: p1553_m6_squarefree_truncated_resultant_applicability_probe_report_r179.json, sha256: 3f68214851d59a68369f45cf7cc9b1c1eed768f0129cc218834fb3e25d4ac4e5}
+  - {path: frozen_m6_squarefree_truncated_resultant_applicability.json, sha256: ef327c0c0dad05eb697a5e99bce2d8f37533fe07dc747ee8c5082652cb9edcc6}
+  - {path: m6_squarefree_truncated_resultant_applicability_cost_ledger.json, sha256: 6315b3766fd611229bbb8394e4dd135f084e203ec823f3c712d9e08f5d7d73b7}
+  - {path: m6_squarefree_truncated_resultant_applicability_replay.json, sha256: 8d3b4e7af0f28fc0e5626ce14717fb450f54474d1e28c7c1bb6a5697794a5f06}
+  - {path: m6_squarefree_truncated_resultant_applicability_controls.json, sha256: 07bda95159541b61d43b307e85f756ec6b7239273b73103414ef8ff52125bcbc}
+  - {path: squarefree_truncated_resultant_applicability_r179.json, sha256: 037891a103819194d1c8866a779ee98fbaa554fbdd53bed8576e78c888ef4769}
+  - {path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_squarefree_truncated_resultant_applicability_probe_r179.py, sha256: 1e700b72e6934753cd939c9bcf472d9653f4e62a09e7a5af8c3f36a81f7e215e}
+  - {path: p1553_m6_squarefree_truncated_resultant_applicability_probe_gate_r179.md, sha256: 87ae37e53a7f10af580a58287f2d83848dee20ff8f5f8e157d74174b39a21791}
+verified_statements:
+  - All six R178 signed aggregate residues replay exactly.
+  - All six selected-divisor polynomials are squarefree.
+  - The 202 order-one CRT residues reconstruct every 202-slot aggregate exactly.
+  - Zero and the local power polynomial agree in the local quotient but differ modulo U in every control.
+  - A single order-n x-adic application and n order-one CRT applications both instantiate the published cost at softly n squared.
+  - The two finite degree-precision totals are each 8,922, matching the represented pair count.
+  - Expanding the target dual-Chow form reaches the B^(5/2) rho boundary.
+scoped_failures:
+  direct_xadic_truncated_resultant_below_rho: refuted_by_interface_and_full_cost
+  per_component_crt_resultants_below_rho: refuted_by_full_cost
+  represented_target_chow_strictly_below_rho: false
+  factored_squarefree_dynamic_evaluation: open
+  arithmetic_circuit_lower_bound: not_claimed
+  deterministic_hash_to_curve_transfer: open
+  generic_prime_coordinate_family_algorithm: open
+  factor_logs: open
+  identical_target_descent: open
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 11
+  total_obligations: 20
+  xadic_applicability_scope_admitted: true
+  direct_truncated_resultant_route_closed: true
+  factored_dynamic_evaluation_constructor_admitted: false
+  lane_admitted: false
+result:
+  control_count: 6
+  selected_divisor_degree_sum: 202
+  target_count_sum: 40
+  crt_component_count: 202
+  pair_evaluation_count: 8922
+  global_degree_precision_product_sum: 8922
+  crt_degree_precision_product_sum: 8922
+  target_chow_coefficient_slot_sum: 204
+  selected_divisor_degree_exponent_B: 9/4
+  target_factor_count_exponent_B: 5/4
+  desired_factored_total_exponent_B: 9/4
+  direct_xadic_total_exponent_B: 9/2
+  direct_crt_total_exponent_B: 9/2
+  represented_target_chow_exponent_B: 5/2
+  global_rho_exponent_B: 5/2
+  factored_dynamic_evaluation_constructor_supplied: false
+  generic_prime_family_algorithm: false
+  pollard_rho_improvement: false
+  shoup_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_MOROZ_SCHOST_XADIC_INTERFACE_SCOPE__SIX_R178_SIGNED_NORM_CONTROLS_REPLAYED__SQUAREFREE_U_IS_N_ORDER_ONE_CRT_COMPONENTS__LOCAL_POWER_ALIAS_WITNESSES_EXACT__ONE_ORDER_N_EXPANSION_AND_N_ORDER_ONE_EXPANSIONS_BOTH_STANDARD_N2__REPRESENTED_TARGET_CHOW_AT_RHO__DIRECT_TRUNCATED_RESULTANT_ROUTE_CLOSED__FACTORED_SQUAREFREE_DYNAMIC_EVALUATION_OPEN__NO_CIRCUIT_LOWER_BOUND__NO_RHO_SHOUP_BREAKTHROUGH
+next_action: >-
+  Construct or refute one factored arbitrary-squarefree dynamic-evaluation
+  operator. Keep U,V and all N target factors factored, split U only by charged
+  gcds at actual nonunits, share elimination work across every CRT component,
+  and emit C_h mod U or G_1 in softly O(n+N) total work. Reject one order-n
+  x-adic surrogate, n local resultants, N quotient-ring elements, N squared
+  coefficient expansion, nN or n squared grids, candidate inversions, and
+  unit-cost resultant, norm, multipoint, root, count, marginal, rank, or source
+  oracles.

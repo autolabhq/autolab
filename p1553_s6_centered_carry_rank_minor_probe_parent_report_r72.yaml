@@ -1,0 +1,146 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-S6-CENTERED-CARRY-RANK-MINOR-R72-PARENT
+date: 2026-07-28
+role: coordinator
+evidence_kind: exact_finite_modular_minor
+run_count: 1
+status: reject_two_natural_s6_centered_carry_lifts
+labels:
+  - exact-finite
+  - representation-bound
+  - scalar-blind-source
+  - novelty-unverified
+owner: P1553-R7-R10/IDEA-049/IDEA-198
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether an arity-six-specific cancellation keeps either of two
+  natural exact S6 resultant carries below the raw degree-induced mode-rank
+  ceiling on scalar-blind legal grids.
+inputs:
+  - path: p1553_s4_centered_carry_rank_probe_report_r71.json
+    sha256: 6ee62d61f6c567a5a65947b6b47026182bd961565dde3c1aee540cf3cbe5b72f
+  - path: p1553_s4_centered_carry_rank_probe_gate_r71.md
+    sha256: f194ed996a24659e2b11d762dd471c0ff75ab98d6e64a9df8b782c676acca2f7
+  - path: p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+  - path: p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+artifacts:
+  - path: p1553_s6_centered_carry_rank_minor_probe_r72.py
+    sha256: e074f0f8894d7a194b4cdc25a6ef707c326d65751b3b3df0dc22b891ca8c451f
+  - path: p1553_s6_centered_carry_rank_minor_probe_report_r72.json
+    sha256: 7e63b52fc7667be14aadc1db3aeeb22b43876ff2c62e3dce87b312c056e85e43
+  - path: p1553_s6_centered_carry_rank_minor_probe_gate_r72.md
+    sha256: fa9935407e1e733c57b294e92519d7ba03499b1ffa360a4d474929c57ea2a12e
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_s6_centered_carry_rank_minor_probe_r72.py
+    sha256: 97cc80978468e593e9e7551362a742b5f00daf5c9d806063d84a85e80a5bccab
+frozen_interface:
+  curve_families:
+    - secp256k1
+    - nist_p256
+    - nist_p384
+    - nist_p521
+  target_types:
+    - blind_hash_target
+    - forced_positive_target
+  scalar_labels_consumed: false
+  deck_count: 5
+  deck_size: 18
+  predicate_replay_prefix_size: 3
+  lift_schedules:
+    - least_nonnegative_coefficients
+    - centered_coefficients
+  rank_moduli:
+    - 1000003
+    - 1000033
+  raw_mode_rank_upper_bound: 17
+verified_statements:
+  - >-
+    All four standardized field moduli and subgroup orders pass strong
+    probable-prime replay, every standard generator is on its stated curve
+    and is killed by its stated order, every discriminant is nonzero, and all
+    cofactors are one.
+  - >-
+    At B=18, 32*B^4 is below every field prime and B^5 is below every subgroup
+    order, so the R9 no-wrap and probe-size controls hold.
+  - >-
+    Five public decks per family are derived from domain-separated SHA-256
+    x-coordinate streams and canonical square roots. No scalar label or
+    discrete logarithm is consumed.
+  - >-
+    Across 1944 size-three predicate tuples, S6 vanishes exactly when one of
+    the 32 normalized signed group relations exists. Every blind prefix has
+    zero roots, every forced prefix has exactly one, and all forced witnesses
+    verify.
+  - >-
+    The S4 polynomial-in-last-variable compiler matches the R71 direct
+    resultant, and the fixed-degree S4-by-S4 Sylvester determinant preserves
+    the specialized S6 predicate and sampled symmetries.
+  - >-
+    Under both auxiliary primes, every raw mode for both coefficient lifts
+    has rank 17. The degree-16-in-each-variable theorem supplies a matching
+    rational upper bound, proving exact raw rational mode rank 17.
+  - >-
+    Every centered remainder and all 160 carry profiles have full mode rank
+    18 under both auxiliary primes. Hence every named frozen carry has
+    rational matrix rank and rational CP rank at least 18.
+  - >-
+    The result rejects only the least-nonnegative and coefficient-centered
+    integer resultant lifts. It is not a rank theorem for the Fermat
+    projector, another lift, or a non-CP trace contraction.
+aggregate:
+  family_count: 4
+  target_instance_count: 8
+  mode_instance_count: 40
+  carry_rank_profile_count: 160
+  full_carry_rank_profile_count: 160
+  raw_rational_mode_rank_exact: 17
+  carry_rational_cp_rank_lower_bound: 18
+  predicate_tuple_count: 1944
+  unique_s6_tuple_evaluation_count: 12961
+scoped_positive_controls:
+  standard_curve_parameter_replay: pass
+  scalar_blind_public_source: pass
+  blind_and_forced_positive_targets: pass
+  exact_s6_predicate_replay: pass
+  recursive_s4_compiler_replay: pass
+  two_auxiliary_prime_minor_receipts: pass
+scoped_failures:
+  least_nonnegative_s6_carry_cp_rank: at_least_18_on_every_frozen_mode
+  centered_coefficient_s6_carry_cp_rank: at_least_18_on_every_frozen_mode
+  arity_six_low_carry_rank_exception_observed: false
+  branch_complete_trace_contraction: unsupplied
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - asymptotic rank growth for increasing deck families
+  - every integer lift and arithmetic schedule
+  - Fermat projector rank and construction
+  - non-CP balanced trace contractions
+  - intrinsic runtime lower bounds
+  - relation density, independent rank, factor logs, and descent
+admission:
+  passed_obligations: 3
+  obligation_count: 7
+  lane_admitted: false
+result:
+  named_s6_carry_low_rank_survives: false
+  projector_trace_contraction_supplied: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_TWO_NATURAL_S6_CENTERED_CARRY_LIFTS__SECP256K1_P256_P384_P521__FIVE_SCALAR_BLIND_B18_DECKS__BLIND_AND_FORCED_POSITIVE_TARGETS__1944_EXACT_S6_SIGN_REPLAYS__ZERO_PREDICATE_MISMATCHES__R9_NO_WRAP_THRESHOLD_HOLDS__LEAST_NONNEGATIVE_AND_CENTERED_COEFFICIENT_LIFTS__RAW_MODE_RANK_EXACTLY_17_FROM_MODULAR_MINOR_AND_DEGREE16_BOUND__CENTERED_REMAINDER_MODE_RANK18__CENTERED_CARRY_MODE_RANK18__ALL_160_LIFT_TARGET_MODE_PRIME_PROFILES_FULL__RATIONAL_CP_RANK_AT_LEAST18_PER_NAMED_CARRY__FINITE_LIFT_SCOPED_ONLY__PROJECTOR_TRACE_AND_NON_CP_PULLBACK_OPEN__NO_TRACE_COUNT_CONSTRUCTOR__NO_FACTOR_LOG_SOLVE__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Close explicit centered-carry CP construction for the two natural S6
+  resultant lifts. Return to the R9 and R10 surviving object: define one exact
+  non-CP balanced contraction of the restricted projector trace without
+  materializing the B^3 triple table. Require a frozen circuit grammar that
+  handles zero signatures, exact integer multiplicities, one occurrence
+  backpointer, blind and positive targets, adaptive dyadic children, and the
+  rank-two sparse multiplicative-convolution control. Reject any proposal that
+  renames a carry, dense character table, source-incidence tensor, or
+  uncharged selector.

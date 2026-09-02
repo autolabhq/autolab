@@ -1,0 +1,111 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-ORDER-TWO-FOUR-MINOR-CLAW-R140-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: characteristic_specific_fourier_minor_counterexample
+run_count: 1
+status: subcap_known_mode_claw_or_nonzero_value_selector_open
+labels:
+  - exact-finite
+  - theorem
+  - finite-field
+  - norm-one-torus
+  - sparse-polynomial
+  - fourier-minor
+  - mobius-claw
+  - full-spark-counterexample
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-unverified
+owner: P1553-R121-R129-R139
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether order-two Frobenius extends the R139 full-spark
+  theorem to four columns on the structured atom progressions.
+inputs:
+  - path: p1553_torus_c5_order_two_three_minor_rigidity_probe_r139.py
+    sha256: 16f87b9249e368f80c7d85169c5a969ebb059e7d03dd0fbf84bf1951bf64ab18
+  - path: p1553_torus_c5_order_two_three_minor_rigidity_probe_report_r139.json
+    sha256: a6a63b4dc9dcff419103ed4db4884c23c53c8c4d8d2c607a9da7244a96a5a2ce
+  - path: frozen_torus_c5_order_two_three_minor_rigidity.json
+    sha256: b3bbc3eb99aad5c03e5feee56c90a979ec086361375d353a297ea72fa4837456
+  - path: torus_c5_order_two_three_minor_rigidity_cost_ledger.json
+    sha256: 660ca8cca2de9f2887b764c6d6054d99c1fdd540e2573c1293be9142f3ecb7f4
+  - path: torus_c5_order_two_three_minor_rigidity_replay.json
+    sha256: 96ba9fc10f4637ebc545ec9e1f39f8d2b687ed81548914bf8f0102713335fc17
+  - path: torus_c5_order_two_three_minor_rigidity_controls.json
+    sha256: 7e033a78d9b351529b5427087e8a8da5a28ee5840a9bc61919f21206ee51b6b0
+  - path: factor_logs_and_identical_descent_r139.json
+    sha256: 0f080f3cbad1317f7e0084c810e1e34ef45a0fc6ebda3398256f14fca3964be6
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_order_two_three_minor_rigidity_probe_r139.py
+    sha256: 04c617baf2efcab875d2f550b9e448cf89028960b5d990aae37bb53dcb944098
+  - path: p1553_torus_c5_order_two_three_minor_rigidity_probe_gate_r139.md
+    sha256: 068211b726698d32ec0c3ad91ded28e814b2331a9b99a7c74a9327c9bfc8d76d
+  - path: p1553_torus_c5_order_two_three_minor_rigidity_probe_parent_report_r139.yaml
+    sha256: a495e6be54c566f2f38174798963b6cd59c12be11cda1f160a89843ad2508888
+  - path: torus_c5_two_atom_geometric_progression_controls.json
+    sha256: dfc7c9d0f13d21cd3bee1bba5a0dd7d727ef5df0fb7969ff66d9384293ea0a56
+artifacts:
+  - path: p1553_torus_c5_order_two_four_minor_claw_probe_r140.py
+    sha256: a849f79dea39041de547b473c0d4fc28e6221bbb6e004738028c7f4515422373
+  - path: p1553_torus_c5_order_two_four_minor_claw_probe_report_r140.json
+    sha256: 3971132c94034f6c7f03bb7b77e83212fe805d9539b96c77a10e14176dca527c
+  - path: frozen_torus_c5_order_two_four_minor_claw.json
+    sha256: 7930da7bdd6f51254ab2a23aacf12113c0c85fd2857aec8919caeb30d69f1a1f
+  - path: torus_c5_order_two_four_minor_claw_cost_ledger.json
+    sha256: 2cd3c7708e4f83af6f688e10ce27e06198e6aaade546b0e0ef15423777137af8
+  - path: torus_c5_order_two_four_minor_claw_replay.json
+    sha256: 0661fab8f891080107a03e95981fea0170e54cbe8f53487db40fcfa9f0a9a3e2
+  - path: torus_c5_order_two_four_minor_claw_controls.json
+    sha256: dbe9feac7384b1d6048b11d9a7a86e2afdb91adc339481132183e85f57ea1a75
+  - path: factor_logs_and_identical_descent_r140.json
+    sha256: b7d7c9f1ecf51a349dea0c610c4a8a3fee6d000708285685a4d27d9b12eeecda
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_order_two_four_minor_claw_probe_r140.py
+    sha256: 8e5daa679de1739e71c9670c5b775c2179d833748730fe897ba7eb8b8e36a585
+  - path: p1553_torus_c5_order_two_four_minor_claw_probe_gate_r140.md
+    sha256: 33c8b530802974a36b06b0032c17794f7f77bf454d41dd4a2e2415d671ccfe66
+verified_statements:
+  - >-
+    The normalized four-minor determinant factors into five excluded
+    factors and one explicit Mobius-claw factor.
+  - >-
+    Order-two Frobenius makes the Mobius map an involution on norm-one
+    values, but does not reveal the integer exponent of its image.
+  - >-
+    All twelve available actual color progressions admit bounded
+    known-mode claws whose minors have rank three.
+  - >-
+    Every actual kernel polynomial has four nonzero coefficients and
+    vanishes on exactly rows zero, one, three, and four among the six
+    checked progression sources.
+  - >-
+    The standard q-to-one-half collision or generic DLP baseline is
+    B-to-five-halves, above the B-to-nine-fourths setup cap.
+scoped_failures:
+  universal_four_column_full_spark: rejected_deterministically
+  subcap_asymptotic_known_mode_claw: open
+  direct_hidden_mode_evaluation_without_dlp: open
+  asymptotically_dense_four_mode_atom_roots: open
+  nonzero_value_frobenius_coordinate_selector: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 16
+  total_obligations: 26
+  lane_admitted: false
+next_action: >-
+  Exploit the explicit Mobius claw without recovering a hidden Fourier
+  mode discrete logarithm, prove a sub-q^(9/20) known-mode claw
+  algorithm from non-generic structure, or construct a genuinely
+  nonzero-value Frobenius-coordinate selector. Freeze every mode,
+  coefficient, branch, source pointer, and empty path; fit
+  B^(9/4+o(1)) state and polylogarithmic arbitrary-target work; avoid
+  field DLP; and charge rank, logs, identical descent, memory, field
+  operations, extension degree, and bits.

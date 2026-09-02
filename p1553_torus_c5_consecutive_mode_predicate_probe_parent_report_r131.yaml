@@ -1,0 +1,104 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-CONSECUTIVE-MODE-PREDICATE-R131-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_actual_field_vandermonde_controls_and_scoped_root_bound
+run_count: 1
+status: lacunary_low_slp_or_nonfourier_shared_predicate_dag_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - consecutive-modes
+  - vandermonde
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R129-R130
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether consecutive-mode selector predicates in the actual
+  order-two pairing fields can route the optimal C2 branches within the
+  frozen setup and arbitrary-target query caps.
+inputs:
+  - path: p1553_torus_c5_sparse_fourier_predicate_transfer_probe_r130.py
+    sha256: b990d602bc7b15a90bea8bbd1cc9bc600d7cbcab73caeaedecd7e666a95c55a1
+  - path: p1553_torus_c5_sparse_fourier_predicate_transfer_probe_report_r130.json
+    sha256: afcb0fd152a95535b5f004d9d07774a9a375ea548b79919f47a6d15682dfdeda
+  - path: frozen_torus_c5_sparse_fourier_predicate_transfer.json
+    sha256: 1b4d4b5437b71d6ff9204296145bf88cf68a16d52155aa469bda394a8a61f204
+  - path: torus_c5_sparse_fourier_predicate_transfer_cost_ledger.json
+    sha256: 552c3cc83c1b1635bd046845c2f4e8af6cd88c934918bfbb9303fc26eda67e8b
+  - path: torus_c5_sparse_fourier_predicate_transfer_replay.json
+    sha256: 11eba087140a633fe286c35ecd41fa2eb36ed9ae2f12e02eb1dd6e5631b1ae1c
+  - path: torus_c5_sparse_fourier_predicate_transfer_controls.json
+    sha256: 2c30b825eaf7a88b66be04dd29647dfc40aab2016db43c5c9c5957dbc8c95b1d
+  - path: factor_logs_and_identical_descent_r130.json
+    sha256: b0c80b3af457cd080ae1cbf6e703e22fe831085e638fade844ef6d41fafc30a6
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_sparse_fourier_predicate_transfer_probe_r130.py
+    sha256: 5d33f9e894264362d0c663a45b7bdbdf8edf2c854cc9bc13880adedc3ea4564f
+  - path: p1553_torus_c5_sparse_fourier_predicate_transfer_probe_gate_r130.md
+    sha256: 5737c29c69068dfb01ff8bd9b6aab0f210b362e4060f2d19d23e91fe474de640
+  - path: p1553_torus_c5_sparse_fourier_predicate_transfer_probe_parent_report_r130.yaml
+    sha256: b14d2ac67d0d702f19f223509193e7b107866bede8eec975fa2c622189565824
+artifacts:
+  - path: p1553_torus_c5_consecutive_mode_predicate_probe_r131.py
+    sha256: d312f28885677339632ec9517c8529e327a63fa7e8aca5d6a67d6a4f71e3adf9
+  - path: p1553_torus_c5_consecutive_mode_predicate_probe_report_r131.json
+    sha256: a2ffed2c599fd1003dce13a3a360d7ac49f983ab92a439f1023a8abe0cb2efcb
+  - path: frozen_torus_c5_consecutive_mode_predicate.json
+    sha256: 46775815377c1cadbc095735b4f1fe9cd64167ea7b933664ae5892e5bc1b8ded
+  - path: torus_c5_consecutive_mode_predicate_cost_ledger.json
+    sha256: d18d3317aa2952b604c880d44447cef0d7bbc2c01b33a28b4131889fdfea8965
+  - path: torus_c5_consecutive_mode_predicate_replay.json
+    sha256: 80c0a9d57247a981a55ec104cfb8f933e44b2bc610db945aaa89a7b473068f9b
+  - path: torus_c5_consecutive_mode_predicate_controls.json
+    sha256: c9b874db6c10f6108b1179bcddd7e2e5dcc398cec6eaa871649912f07e20fb2a
+  - path: factor_logs_and_identical_descent_r131.json
+    sha256: 9388946d26f2e311fd712feaaed9e6905e4e5ecbe5ceed554084d6e57fd39b36
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_consecutive_mode_predicate_probe_r131.py
+    sha256: 50c4fb705854bb11de19096716295d05ba54b035e6dc8ef675c112219481cb3a
+  - path: p1553_torus_c5_consecutive_mode_predicate_probe_gate_r131.md
+    sha256: e2b714358fa386b23f8c9bdf75ab6d6971d080209d0e45885b4ba4fbb623f11d
+verified_statements:
+  - >-
+    Over every coefficient field, a nonzero polynomial with a consecutive
+    mode block of width s has fewer than s distinct nonzero roots.
+  - >-
+    A balanced color accepts Theta(B^(15/4)) injective degree-five source
+    targets, forcing that width for a single consecutive-mode zero
+    predicate.
+  - >-
+    All thirty active color controls in the eight actual pairing decks have
+    nonzero exact Vandermonde determinants and exact dense annihilator zero
+    sets.
+  - >-
+    Every positive source supplies an R129-optimal within-color C2 branch
+    and a complementary C3 source whose product replays the target.
+scoped_failures:
+  dense_consecutive_mode_color_predicate: rejected_B15O4_state_and_query
+  explicit_color_root_product_tree: rejected_B15O4_state_and_query
+  lacunary_order_two_finite_field_predicate: open
+  high_degree_low_slp_predicate: open
+  nonfourier_shared_predicate_decision_dag: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 12
+  total_obligations: 20
+  lane_admitted: false
+next_action: >-
+  Construct or refute a lacunary predicate in the actual
+  ord_q(characteristic)=2 fields, or a non-Fourier shared decision DAG.
+  It must choose a valid C2 branch in polylogarithmic arbitrary-target
+  work, return exact C2+C3 sources or an empty certificate, fit
+  B^(9/4+o(1)) state, avoid field DLP, and include rank, logs, identical
+  descent, memory, field-operation, and bit costs.

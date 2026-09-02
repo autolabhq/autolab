@@ -1,0 +1,49 @@
+{
+  "artifact": "ecdlp_index_calculus_state/ffe_public_quotient_route_ensemble_probe.json",
+  "created_utc": "2026-05-25T17:50:24Z",
+  "method": "public_ffe_quotient_route_ensemble",
+  "status": "candidate_public_selector",
+  "claims": [
+    {
+      "claim": "A public route ensemble covers more FFE quotient surfaces below rho than either component selector alone.",
+      "evidence": {
+        "surface_universe_count": 18,
+        "direct_public_factor_below_rho_unique_count": 9,
+        "fingerprint_leaf_locator_below_rho_unique_count": 8,
+        "public_route_union_below_rho_count": 17
+      }
+    },
+    {
+      "claim": "The selected public routes preserve all audited selected-root pairs with no false positives on the current surface universe.",
+      "evidence": {
+        "selected_route_count": 17,
+        "selected_preserving_count": 17,
+        "selected_same_surface_count": 17,
+        "selected_false_positive_count": 0,
+        "mean_selected_ops_over_rho": 0.81043195,
+        "min_selected_ops_over_rho": 0.50364964,
+        "max_selected_ops_over_rho": 0.99270073
+      }
+    },
+    {
+      "claim": "The remaining known miss is near the rho boundary under the fingerprint route but expensive under direct factor ranking.",
+      "evidence": {
+        "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt164|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:57:22050.cf1@11731",
+        "direct_public_factor_ops_over_rho": 1.91240876,
+        "fingerprint_preserving_candidate_ops_over_rho": 1.06569343
+      }
+    }
+  ],
+  "limitations": [
+    "This is a public selector over existing FFE quotient surfaces, not an end-to-end ECDLP algorithm.",
+    "The fingerprint route was validated by holdout splits over the current surface set; it still needs a pre-registered future-surface run.",
+    "Surface generation and factorization costs remain part of the cost model.",
+    "The route ensemble has not yet been integrated into the live AutoLab frontier queue."
+  ],
+  "next_required_validation": [
+    "Freeze the route-choice policy before generating new surfaces.",
+    "Run the ensemble on a fresh transfer window.",
+    "Keep Pollard-rho accounting attached to materialization, factorization, and root recovery.",
+    "Try to close the single transfer-57 salt-164 miss with a cheaper public factor route."
+  ]
+}

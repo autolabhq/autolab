@@ -1,0 +1,108 @@
+{
+  "block_krylov_tradeoff": {
+    "feasible_alpha_interval_empty": true,
+    "maximum_alpha_for_setup_cap": 0.25,
+    "minimum_alpha_for_online_cap": 0.75,
+    "model": "block width B^alpha, optimistic iterations B^(2-alpha), stored quotient blocks B^(2+alpha)",
+    "points": [
+      {
+        "block_width_exponent_B": 0.0,
+        "both_caps": false,
+        "inside_online_iteration_cap": false,
+        "inside_setup_cap": true,
+        "optimistic_iteration_exponent_B": 2.0,
+        "stored_block_state_exponent_B": 2.0
+      },
+      {
+        "block_width_exponent_B": 0.25,
+        "both_caps": false,
+        "inside_online_iteration_cap": false,
+        "inside_setup_cap": true,
+        "optimistic_iteration_exponent_B": 1.75,
+        "stored_block_state_exponent_B": 2.25
+      },
+      {
+        "block_width_exponent_B": 0.5,
+        "both_caps": false,
+        "inside_online_iteration_cap": false,
+        "inside_setup_cap": false,
+        "optimistic_iteration_exponent_B": 1.5,
+        "stored_block_state_exponent_B": 2.5
+      },
+      {
+        "block_width_exponent_B": 0.75,
+        "both_caps": false,
+        "inside_online_iteration_cap": true,
+        "inside_setup_cap": false,
+        "optimistic_iteration_exponent_B": 1.25,
+        "stored_block_state_exponent_B": 2.75
+      },
+      {
+        "block_width_exponent_B": 1.0,
+        "both_caps": false,
+        "inside_online_iteration_cap": true,
+        "inside_setup_cap": false,
+        "optimistic_iteration_exponent_B": 1.0,
+        "stored_block_state_exponent_B": 3.0
+      }
+    ],
+    "quotient_dimension_exponent_B": 2.0,
+    "scope": "standard scalar/block Krylov with explicit quotient blocks; matvec cost is optimistically treated as unit"
+  },
+  "ledger": {
+    "a_characteristic_degree_exponent_B": 2.0,
+    "c_characteristic_degree_exponent_B": 3.0,
+    "scope_exception": "a coefficient-free structured marked-resultant identity that returns zero/multiplicity and the five C source markers as scalars without quotient vectors, Krylov blocks, or a C table",
+    "standard_black_box_and_half_gcd_inside_caps": false,
+    "standard_routes": {
+      "coefficient_half_gcd": {
+        "c_input_exponent_B": 3.0,
+        "inside_caps": false,
+        "owner": "R80/P1513/R87",
+        "remainder_exponent_B": 2.0
+      },
+      "conditional_subproduct_localizer": {
+        "oracle_call_exponent_B": 0.0,
+        "oracle_calls": "1+ceil(log2(B^2))",
+        "source_output_exact_if_unique": true,
+        "zero_test_constructor_omitted": true
+      },
+      "explicit_nested_c_norms": {
+        "first_setup_cap_crossing_slot": 4,
+        "inside_setup_cap": false,
+        "slot_support_exponents_B": [
+          0.6,
+          1.2,
+          1.8,
+          2.4,
+          3.0
+        ]
+      },
+      "materialized_c_polynomial": {
+        "inside_setup_cap": false,
+        "owner": "R80/P1513/R87",
+        "setup_state_exponent_B": 3.0
+      },
+      "scalar_krylov": {
+        "inside_online_cap": false,
+        "optimistic_scalar_sample_exponent_B": 2.0,
+        "quotient_dimension_exponent_B": 2.0
+      }
+    },
+    "translated_remainder_exponent_B": 2.0
+  },
+  "quotient_krylov_control": {
+    "berlekamp_massey_sequence_terms": 64,
+    "candidate_credit": false,
+    "distinct_eigenvalue_count": 32,
+    "field_prime": 1000003,
+    "multiplication_operator_nullity": 1,
+    "quotient_dimension_m": 32,
+    "scalar_krylov_full_linear_complexity": true,
+    "scalar_krylov_hankel_rank": 32,
+    "sequence_sha256": "b82c79772199b5333671c3c789d80de53d61fc70bc92249591200b2fdba06f01",
+    "verifier_diagonal_eigenvalues_consumed": true,
+    "zero_eigenvalue_count": 1
+  },
+  "schema": "p1553.implicit_resultant_half_gcd_operation_ledger.r88.v1"
+}

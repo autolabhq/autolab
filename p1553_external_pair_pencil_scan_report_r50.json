@@ -1,0 +1,121 @@
+{
+  "checks": {
+    "all_disjoint_pairs_accounted": true,
+    "all_external_pairs_accounted": true,
+    "all_unique_pencils_scored": true,
+    "no_three_fiber_survivor": true
+  },
+  "classification": [
+    "toy",
+    "exact",
+    "exhaustive-finite-sample-pairs",
+    "model-bound",
+    "novelty-unverified"
+  ],
+  "fiber_results": {
+    "best_witness": {
+      "collision_pairs": 104,
+      "complete_coverage": 18,
+      "complete_nine_point_fibers": 2,
+      "first_block": [
+        12,
+        15,
+        16,
+        24,
+        38,
+        53,
+        66,
+        67,
+        69
+      ],
+      "maximum_selected_multiplicity": 9,
+      "second_block": [
+        29,
+        30,
+        35,
+        54,
+        57,
+        58,
+        59,
+        68,
+        73
+      ],
+      "selected_multiplicity_histogram": {
+        "1": 32,
+        "2": 5,
+        "3": 3,
+        "4": 3,
+        "9": 2
+      }
+    },
+    "collision_pair_histogram": {
+      "100": 4,
+      "102": 1,
+      "103": 1,
+      "104": 1,
+      "72": 4,
+      "73": 27,
+      "74": 163,
+      "75": 794,
+      "76": 2246,
+      "77": 5263,
+      "78": 9747,
+      "79": 14463,
+      "80": 18734,
+      "81": 20957,
+      "82": 20752,
+      "83": 18675,
+      "84": 15439,
+      "85": 11885,
+      "86": 8364,
+      "87": 5669,
+      "88": 3658,
+      "89": 2371,
+      "90": 1343,
+      "91": 846,
+      "92": 461,
+      "93": 252,
+      "94": 149,
+      "95": 80,
+      "96": 38,
+      "97": 30,
+      "98": 14,
+      "99": 7
+    },
+    "complete_nine_point_fiber_histogram": {
+      "2": 162438
+    },
+    "required_collision_pairs": 324,
+    "required_complete_fibers": 9,
+    "survivors": []
+  },
+  "field_prime": 193,
+  "limits": [
+    "the pair scan is exhaustive only within the deterministic 1000-block R49 sample",
+    "the combined 1807-section sample is tiny relative to all eligible blocks",
+    "no asymptotic family, target locator, R10 output, relation-rank campaign, logs, or descent is constructed"
+  ],
+  "pair_scan": {
+    "disjoint_pairs": 162438,
+    "duplicate_pencil_pairs": 0,
+    "overlap_histogram": {
+      "0": 162438,
+      "1": 205988,
+      "2": 102122,
+      "3": 25202,
+      "4": 3465,
+      "5": 282,
+      "6": 3
+    },
+    "total_pairs": 499500,
+    "unique_basepoint_free_pencils": 162438
+  },
+  "pass": true,
+  "sample": {
+    "external_sections": 1000,
+    "sampling_attempts": 1398,
+    "sampling_seed": 1553
+  },
+  "schema": "p1553.external_pair_pencil_scan.r50.v1",
+  "subgroup_order": 103
+}

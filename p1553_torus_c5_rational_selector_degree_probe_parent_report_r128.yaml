@@ -1,0 +1,105 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-RATIONAL-SELECTOR-DEGREE-R128-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_selector_interpolation_controls_and_scoped_degree_bound
+run_count: 1
+status: high_degree_low_slp_or_compact_piecewise_selector_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - rational-selector
+  - interpolation
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R114-R119-R121-R127
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether a globally defined rational C2 selector can implement the
+  cap-tight singleton-C3 target router with polylogarithmic arbitrary-target
+  work.
+inputs:
+  - path: p1553_torus_c5_bucket_resultant_routing_tradeoff_probe_r127.py
+    sha256: 4d4d88bbd2f0f98f1eca9f2986d6ebbb50f5fef7a3af9cc8a5a9c4cd9e802a7b
+  - path: p1553_torus_c5_bucket_resultant_routing_tradeoff_probe_report_r127.json
+    sha256: 373a69c5a6a0dcdb4b12f68d1a1bd71b74f4c8e1971329dba64f103fe4ae138f
+  - path: frozen_torus_c5_bucket_resultant_routing_tradeoff.json
+    sha256: c91e94d84a12e920d0b59619b730a9e81b4ff2aa9bc8fb46014a2f39594fad4a
+  - path: torus_c5_bucket_resultant_routing_tradeoff_cost_ledger.json
+    sha256: 2c1cf3b67084f01265dfde52c9c32e328bb7e30be06385f4752af8f8b5d9d45f
+  - path: torus_c5_bucket_resultant_routing_tradeoff_replay.json
+    sha256: 293fc34625268ea3cc34f7e6bdd28b8f46ced80f5f00855855639525f0be38e7
+  - path: torus_c5_bucket_resultant_routing_tradeoff_controls.json
+    sha256: 536b8b366e6705ae4c7a7f5c8b46630b85a3b6dd827040202cb0c726d99ae758
+  - path: factor_logs_and_identical_descent_r127.json
+    sha256: 7d3b8d62d4b77dcdbd92e1a2ec84df10dd0a106832ec6ee08ef022967ad6ee13
+  - path: p1553_torus_c5_bucket_resultant_routing_tradeoff_probe_gate_r127.md
+    sha256: 729bb912d2db0bd518375bdbce0f7cf0fa5d068af854224b8306a7c8be6db4d8
+  - path: p1553_torus_c5_bucket_resultant_routing_tradeoff_probe_parent_report_r127.yaml
+    sha256: 2b052667b1ed2687ce048c4059c13ee9be4804fc096f310bb537eaf0a10776e1
+  - path: p1553_m6_small_k_multiplicative_c5_moment_torus_probe_gate_r121.md
+    sha256: 9266e3655a3f4176280834ec91c897cc7d30274382df6e197628af37bae71309
+  - path: p1553_m6_output_sensitive_nonlinear_c5_source_index_probe_gate_r119.md
+    sha256: 941e375918c4acd1be8293fcc40666879b4f5178b4454e28c21487cb9be9a9e9
+  - path: p1553_5a5c_transposed_nonuniform_c5_leaf_generator_probe_gate_r114.md
+    sha256: 6574145a6d67ec4e55a8bf0cf90c3a0c9f858aa4cddbfd7e9a733c1033b3a3da
+artifacts:
+  - path: p1553_torus_c5_rational_selector_degree_probe_r128.py
+    sha256: 50ddb43a677d114b534ed55eb877f589ceadf481d29bf5c819323d2add6848c3
+  - path: p1553_torus_c5_rational_selector_degree_probe_report_r128.json
+    sha256: 400968376068f669ee972aaed88303ce24ee12529fa69bfdc9e7a3890ccdef8f
+  - path: frozen_torus_c5_rational_selector_degree.json
+    sha256: 6cd1af34f4e2c6c5f0539b08653927b51930fb1b22779f5d6f560e50e589e8bf
+  - path: torus_c5_rational_selector_degree_cost_ledger.json
+    sha256: e375179be8e4bcc39205e17a6ea57d20bb83d27da405f82a7f6a765d1536eddf
+  - path: torus_c5_rational_selector_degree_replay.json
+    sha256: 96a1e44774730df55d4ae28cec543ad9eefba4d601a65e6fd7a39f95423a95c9
+  - path: torus_c5_rational_selector_degree_controls.json
+    sha256: ee1afcd3fe2aa702305da00bd447113b83c596043cb019d8fff52866f7261d02
+  - path: factor_logs_and_identical_descent_r128.json
+    sha256: dd8702872a282ab88e93d70f8f8185db52e6623ed26be7bee9f442d609479bf3
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_rational_selector_degree_probe_r128.py
+    sha256: a78bd8ed02849a150ea7a30ffc24ccd345d12927c9178e246a2c65b30335d7d7
+  - path: p1553_torus_c5_rational_selector_degree_probe_gate_r128.md
+    sha256: 6033e5f5bf8fa0b9934efde304d4036a01fddf8deede30255a936b406722977d
+verified_statements:
+  - >-
+    A nonconstant rational C2 selector of degree d can output any fixed C2
+    value on at most d targets, forcing d at least |C5|/|C2|.
+  - >-
+    Under the inherited iid-distinct-support exponents, the rational
+    selector degree is at least B^(9/4).
+  - >-
+    Dense degree-B^(9/4) coefficients fit setup exactly but represented
+    arbitrary-target evaluation misses the polylogarithmic query cap.
+  - >-
+    All eight actual canonical selectors interpolate exactly, return
+    replayable C2+C3 sources, and have unique interpolation degree |C5|-1.
+scoped_failures:
+  dense_single_rational_c2_selector: rejected_B9O4_query
+  explicit_target_to_c2_selector_table: rejected_B15O4_state
+  high_degree_low_slp_rational_selector: open
+  compact_piecewise_rational_selector: open
+  adaptive_selector: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 12
+  total_obligations: 20
+  lane_admitted: false
+next_action: >-
+  Construct or refute a high-degree low-SLP or compact piecewise rational
+  C2 selector that evaluates in polylogarithmic arbitrary-target work,
+  returns exact C2+C3 sources or an empty certificate, fits B^(9/4+o(1))
+  state, avoids field DLP, and includes full rank, logs, identical descent,
+  memory, field-operation, and bit costs.

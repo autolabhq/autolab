@@ -1,0 +1,355 @@
+{
+  "admission": {
+    "failed_obligations": [
+      "public_pre_choice_slice_selector",
+      "frozen_disjoint_target_heldout_split",
+      "covered_positive_and_negative_controls",
+      "complete_rejected_candidate_costing",
+      "public_source_below_rho",
+      "new_independent_fixed_sum_rows_and_route_join"
+    ],
+    "obligation_count": 6,
+    "passed_obligation_count": 0,
+    "source_lane_admitted": false
+  },
+  "candidate": "public pre-choice slice-quadratic FFE relation source",
+  "claim_boundary": {
+    "algorithm_breakthrough": false,
+    "generic_prime_field_speedup": false,
+    "oracle_component_below_rho_is_full_attack": false,
+    "shoup_bound_improvement": false
+  },
+  "classification": "SLICE_QUADRATIC_ORACLE_DIAGNOSTIC_ONLY",
+  "code_bindings": {
+    "factor_source": {
+      "path": "/Volumes/Volume/git/autolab/tasks/ecdlp_index_calculus/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_resultant_slice_factor_probe.py",
+      "sha256": "93724747d35544e66dc56fa3c9d0d849f32bce29c4915e8d4ab21740877d3ad4"
+    },
+    "slice_source": {
+      "path": "/Volumes/Volume/git/autolab/tasks/ecdlp_index_calculus/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_slice_quadratic_root_probe.py",
+      "sha256": "a2368c6e1ad3a0c777ecb54aeba5c4d213d50239c241e5a2fd034b13e5810219"
+    }
+  },
+  "diagnostic_result": {
+    "oracle_all_hit_below_rho_count": 17,
+    "oracle_selected_hit_below_rho_count": 17,
+    "status": "valid_post_selector_component_diagnostic",
+    "surface_count": 18,
+    "surfaces_with_preserving_slice_quadratic": 17
+  },
+  "fatal_obstruction": "The emitted slice is selected from verifier-backed leaf coefficients. The corpus contains no public pre-choice candidate stream, no covered negative cases, no frozen target-level heldout split, and no fresh independent-row delta. The oracle-selected component cannot be charged as a relation source.",
+  "generated_at": "2026-07-29T05:41:08.728882+00:00",
+  "next_action": "Modify the surface producer to emit one label-separated corpus over at least four target families: deterministic public pre-choice axis/value/factor candidates, sequestered positive and negative outcomes, every rejected-candidate cost, and fresh fixed-sum row/rank deltas; then run leave-one-target-family-out exactly once.",
+  "obligations": {
+    "complete_rejected_candidate_costing": {
+      "all_public_candidates_charged": null,
+      "emitted_oracle_candidate_count": 34,
+      "pass": false,
+      "public_pre_choice_candidate_count": 0
+    },
+    "covered_positive_and_negative_controls": {
+      "pass": false,
+      "prior_predictor_covered_negative_count": 0,
+      "prior_predictor_covered_positive_count": 2,
+      "prior_predictor_promotion_passed": false,
+      "signature_negative_case_count": 0,
+      "signature_positive_case_count": 19
+    },
+    "frozen_disjoint_target_heldout_split": {
+      "explicit_splits": [],
+      "minimum_target_count": 4,
+      "pass": false,
+      "targets": [
+        "22050.cf1@11731",
+        "67.a1@9803"
+      ],
+      "unique_target_count": 2
+    },
+    "new_independent_fixed_sum_rows_and_route_join": {
+      "fresh_rank_delta": 0,
+      "new_independent_fixed_sum_row_count": 0,
+      "pass": false,
+      "prior_exact_route_join_gate_passed": false,
+      "prior_target_independent_gate_passed": false
+    },
+    "public_pre_choice_slice_selector": {
+      "chooser_calls_selected_coordinates": true,
+      "chooser_function_found": true,
+      "oracle_label_dependency": true,
+      "pass": false,
+      "selected_coordinates_function_found": true,
+      "selected_coordinates_reads_selected_leaf_indices": true,
+      "selector_mode": null
+    },
+    "public_source_below_rho": {
+      "blind_uniform_slice_audit": {
+        "interpretation": "This is an optimistic lower bound for a label-blind uniform slice schedule, not a generic-group lower bound. Real specialization, factorization, rejection, and leaf-scan costs are omitted.",
+        "maximum_optimistic_expected_draws_over_rho": 57.08759124087591,
+        "minimum_optimistic_expected_draws_over_rho": 52.285333333333334,
+        "surface_rows": [
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": null,
+            "optimistic_expected_draws_without_replacement": null,
+            "oracle_successful_axis_value_count": 0,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:62:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt161|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:39:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt168|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:39:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt167|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:40:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt176|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:40:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt164|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:57:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:57:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt163|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:69:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt166|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:69:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 23462,
+            "generic_rho_steps": 137,
+            "optimistic_expected_draws_over_rho": 57.08759124087591,
+            "optimistic_expected_draws_without_replacement": 7821.0,
+            "oracle_successful_axis_value_count": 2,
+            "p": 11731,
+            "surface_id": "22050.cf1@11731|22050.cf1@11731:uniform:256:salt170|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:57:22050.cf1@11731",
+            "target": "22050.cf1@11731"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 19606,
+            "generic_rho_steps": 125,
+            "optimistic_expected_draws_over_rho": 52.285333333333334,
+            "optimistic_expected_draws_without_replacement": 6535.666666666667,
+            "oracle_successful_axis_value_count": 2,
+            "p": 9803,
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt202|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:32:67.a1@9803",
+            "target": "67.a1@9803"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 19606,
+            "generic_rho_steps": 125,
+            "optimistic_expected_draws_over_rho": 52.285333333333334,
+            "optimistic_expected_draws_without_replacement": 6535.666666666667,
+            "oracle_successful_axis_value_count": 2,
+            "p": 9803,
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:32:67.a1@9803",
+            "target": "67.a1@9803"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 19606,
+            "generic_rho_steps": 125,
+            "optimistic_expected_draws_over_rho": 52.285333333333334,
+            "optimistic_expected_draws_without_replacement": 6535.666666666667,
+            "oracle_successful_axis_value_count": 2,
+            "p": 9803,
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:40:67.a1@9803",
+            "target": "67.a1@9803"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 19606,
+            "generic_rho_steps": 125,
+            "optimistic_expected_draws_over_rho": 52.285333333333334,
+            "optimistic_expected_draws_without_replacement": 6535.666666666667,
+            "oracle_successful_axis_value_count": 2,
+            "p": 9803,
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt207|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:40:67.a1@9803",
+            "target": "67.a1@9803"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 19606,
+            "generic_rho_steps": 125,
+            "optimistic_expected_draws_over_rho": 52.285333333333334,
+            "optimistic_expected_draws_without_replacement": 6535.666666666667,
+            "oracle_successful_axis_value_count": 2,
+            "p": 9803,
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt204|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:55:67.a1@9803",
+            "target": "67.a1@9803"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 19606,
+            "generic_rho_steps": 125,
+            "optimistic_expected_draws_over_rho": 52.285333333333334,
+            "optimistic_expected_draws_without_replacement": 6535.666666666667,
+            "oracle_successful_axis_value_count": 2,
+            "p": 9803,
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt205|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:55:67.a1@9803",
+            "target": "67.a1@9803"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 19606,
+            "generic_rho_steps": 125,
+            "optimistic_expected_draws_over_rho": 52.285333333333334,
+            "optimistic_expected_draws_without_replacement": 6535.666666666667,
+            "oracle_successful_axis_value_count": 2,
+            "p": 9803,
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt201|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:46:67.a1@9803",
+            "target": "67.a1@9803"
+          },
+          {
+            "assumption": "one free operation per axis/value candidate",
+            "axis_value_universe": 19606,
+            "generic_rho_steps": 125,
+            "optimistic_expected_draws_over_rho": 52.285333333333334,
+            "optimistic_expected_draws_without_replacement": 6535.666666666667,
+            "oracle_successful_axis_value_count": 2,
+            "p": 9803,
+            "surface_id": "67.a1@9803|67.a1@9803:uniform:256:salt206|ecdlp-frontier-signed-dual-sieve-v1:shared-transfer:46:67.a1@9803",
+            "target": "67.a1@9803"
+          }
+        ],
+        "surfaces_without_any_oracle_slice": 1,
+        "target_summaries": [
+          {
+            "distinct_oracle_axis_fixed_value_count": 4,
+            "minimum_optimistic_expected_draws_over_rho": 57.08759124087591,
+            "preserving_surface_count": 9,
+            "surface_count": 10,
+            "target": "22050.cf1@11731",
+            "unique_challenge_seed_count": 5,
+            "unique_row_key_count": 8
+          },
+          {
+            "distinct_oracle_axis_fixed_value_count": 6,
+            "minimum_optimistic_expected_draws_over_rho": 52.285333333333334,
+            "preserving_surface_count": 8,
+            "surface_count": 8,
+            "target": "67.a1@9803",
+            "unique_challenge_seed_count": 4,
+            "unique_row_key_count": 6
+          }
+        ]
+      },
+      "measured_public_source_total_ops_over_rho_max": null,
+      "oracle_all_hit_min_ops_over_rho": 0.48175182,
+      "oracle_selected_hit_min_ops_over_rho": 0.38686131,
+      "pass": false
+    }
+  },
+  "r68_binding": {
+    "information_conservation_pass": true,
+    "new_fixed_sum_rows_required": true,
+    "product_or_quotient_relation_rank_credit": 0
+  },
+  "schema": "ecdlp.p1436_slice_quadratic_public_source_preflight.v1",
+  "source_bindings": {
+    "p1228": {
+      "claim_status": "OBSERVATION_P1228_FFE_FACTOR_FINGERPRINT_RECALLS_TWO_POSITIVES_COVERAGE_LIMITED",
+      "path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/p1228_slice_quadratic_ffe_factor_fingerprint_predictor_probe.json",
+      "schema": "ecdlp.low_term_total2_p1228_slice_quadratic_ffe_factor_fingerprint_predictor.v1",
+      "sha256": "0bf6072aed7b3ab2ba6de3cfd84b6f755851afd2f71c6c7d10cb4a2f157cd296"
+    },
+    "p1324": {
+      "claim_status": "OBSERVATION_P1324_SALT_CONTACT_NO_EXACT_PUBLIC_PREFIX_QROOT_JOIN",
+      "path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/p1324_public_prefix_slice_qroot_route_join_after_p1323_probe.json",
+      "schema": "ecdlp.low_term_total2_p1324_public_prefix_slice_qroot_route_join_after_p1323.v1",
+      "sha256": "958247f0de2e51fb10b4a9b6457f4ec4c6035809b4b02e269087c7a71fc9e9b7"
+    },
+    "r68": {
+      "claim_status": null,
+      "path": "/Users/adamburan/.codex/worktrees/258d/autolab/p1553_ffe_fixed_sum_information_conservation_report_r68.json",
+      "schema": "p1553.ffe_fixed_sum_information_conservation.r68.v1",
+      "sha256": "5c064a36630c052093ebb7bd3b4429d37f836982ba097eacbad2f2ebe1bb6b51"
+    },
+    "signature": {
+      "claim_status": null,
+      "path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_signature_probe.json",
+      "schema": "ecdlp_low_term_total2_signature_probe_v1",
+      "sha256": "1c76e88582e3bf45ae7b61d821018d62bd8215429163e63e59e24c8f4eaa7d09"
+    },
+    "slice_probe": {
+      "claim_status": null,
+      "path": "/Volumes/Volume/git/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_low_term_total2_ffe_slice_quadratic_root_probe.json",
+      "schema": "ecdlp_low_term_total2_ffe_slice_quadratic_root_probe_v1",
+      "sha256": "1d32c0ba508eb12dcf513e32af2ae65f3d3cd9743262b010811c637194f41089"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-COPRIME-PRODUCT-TRISECANT-PROBE-R54-PARENT
+date: 2026-07-20
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_broadened_product_catalog_and_deterministic_sampled_coprime_pencil_probe
+  model_scope: three_within_window_degree_three_factors_on_frozen_r38_81_point_path
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SAMPLED_COPRIME_TRISECANT_NEGATIVE_GATE
+summary: >-
+  The exact catalog has 756 within-window degree-three factors, 296600
+  admissible factorizations, and 278321 unique degree-nine product sections.
+  A seed-1554 sample of 100000 coprime pencils checked all 19200000 interior
+  line points and found no third catalog section. The scanner detects the
+  pinned inherited R52 third section. The zero count closes only the sampled
+  pencils and is not an exhaustive or asymptotic theorem.
+inputs:
+  - path: staged/p1553_primitive_degree_nine_rank_gate_r44.md
+    sha256: bc5e2068f25814087f228c5bc422109b3f7d5122cfad6bb0600b6208d372885a
+  - path: staged/p1553_translated_product_shared_factor_gate_r52.md
+    sha256: 060f27a6830a685f47ec241920bb5d3cb793336bba032e95f926a899bab018a2
+  - path: staged/p1553_translated_product_shared_factor_audit_report_r52.json
+    sha256: 6f4d3645197eaa67f959bdefe886bfd586555b88f62426eccb761a047e317000
+  - path: staged/p1553_genus_one_abc_product_line_gate_r53.md
+    sha256: 0af36c7dd73916d2bdc4d149e2c6176864148d552d22cf7daf55c73e930635d5
+outputs:
+  - path: staged/p1553_coprime_product_trisecant_probe_gate_r54.md
+    sha256: 635c7daba279059e07860cc63698a2ae2d23e621b369dfbe69c2cc846d391b0b
+  - path: staged/p1553_coprime_product_trisecant_probe_r54.py
+    sha256: c42ce441526d9adc95617eccac15a5b09e29a044e40f253ea0f8123a6a7b1ccc
+  - path: staged/p1553_coprime_product_trisecant_probe_report_r54.json
+    sha256: 2af6c0a6a33250c7fbe236c96053227ad9e7ecdeddd19152321af174cc265efb
+frozen_parameters:
+  field_prime: 193
+  subgroup_order: 103
+  path_start: 1
+  path_step: 38
+  windows: 9
+  window_size: 9
+  factor_size: 3
+  product_factors: 3
+  product_degree: 9
+  product_offset_sum: 360
+  coprime_pencil_sample: 100000
+  sample_seed: 1554
+theorems:
+  - >-
+    The within-window product catalog contains exactly 296600 admissible
+    factorizations and 278321 distinct degree-nine section vectors.
+  - >-
+    Every accepted sampled generator pair has disjoint zero divisors, so an
+    interior catalog hit would be a basepoint-free primitive trisecant in the
+    finite family.
+controls:
+  local_degree_three_factors: 756
+  admissible_factorizations: 296600
+  unique_product_divisors: 278321
+  unique_product_sections: 278321
+  factorization_multiplicity_histogram:
+    1: 276320
+    10: 2000
+    280: 1
+  maximum_multiplicity_block:
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+  sampled_coprime_pencils: 100000
+  sampling_attempts: 279530
+  interior_points_per_pencil: 192
+  interior_points_checked: 19200000
+  inherited_r52_third_section_detected: true
+  primitive_coprime_trisecants_in_sample: 0
+result:
+  classification: sampled_coprime_product_trisecant_negative_probe
+  primitive_coprime_trisecant_found: false
+  exhaustive_coprime_pair_classification: false
+  asymptotic_product_line_theorem: absent
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical and implementation review has not been completed
+  - the exact catalog covers only three within-window factors on one frozen toy
+  - the coprime pair probe is sampled rather than exhaustive
+  - zero sampled survivors do not prove catalog-wide or asymptotic nonexistence
+  - no target, R10, rank campaign, logs, or descent
+deduplication:
+  - R51 owns the 253 translated-R38 product sections and their positive lines
+  - R52 owns the inherited common-factor classification of those lines
+  - R53 owns the scope failure of the single three-fiber abc inequality
+  - R54 owns the broadened exact product catalog and sampled coprime line probe
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SAMPLED_COPRIME_TRISECANT_NEGATIVE_GATE__756_LOCAL_FACTORS__296600_FACTORIZATIONS__278321_UNIQUE_SECTIONS__100000_SEED1554_COPRIME_PENCILS__19200000_INTERIOR_POINTS__R52_POSITIVE_CONTROL_DETECTED__ZERO_PRIMITIVE_COPRIME_TRISECANTS_IN_SAMPLE__NOT_EXHAUSTIVE__NO_ASYMPTOTIC_THEOREM_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Exhaust the structured star through the unique 280-factorization
+  middle-window section by scanning every coprime catalog partner and all 192
+  interior line points. Preserve any third catalog section as a primitive
+  construction seed; a zero count closes only that star.

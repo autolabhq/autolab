@@ -1,0 +1,109 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-S6-SUBSET-INCIDENCE-MOBIUS-R76-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_finite_occurrence_count
+run_count: 1
+status: reject_exact_s6_subset_incidence_mobius_construction_only
+labels:
+  - exact-finite
+  - multiplicity-preserving
+  - scalar-blind-source
+  - representation-bound
+  - novelty-unverified
+owner: P1553-R2-R9-R10
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Replace the literal B^5 S4-prefix/S4-suffix endpoint incidence grid by an
+  exact occurrence-count formula that preserves duplicate factors, corrects
+  multiple common roots, returns a source, and supports dyadic child replay.
+inputs:
+  - path: p1553_s6_residual_decision_diagram_probe_report_r74.json
+    sha256: 1558482f504bd5e05b112464ee7c6734dd30ee518789735ac7abc8c305a5f740
+  - path: p1553_resultant_valuation_trace_grammar_report_r73.json
+    sha256: 00f750c15644acdaea32bbbbe9b407071cd3bf6a5cf2268ce075c55bd9a29915
+  - path: p1553_r31_artifact_index_README.md
+    sha256: 0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f
+    contains_artifact: p1553_finite_deck_weighted_endpoint_gate_r2.md
+    contains_artifact_sha256: 55acc1457e7fd5a740da57c2c1db957374c7c18561c67b1748176dc8c61fcda5
+artifacts:
+  - path: p1553_s6_subset_incidence_mobius_probe_r76.py
+    sha256: 3e1887461a0355bfd026dd35bdef3aad43d9d2313a21745902ab66c463435314
+  - path: p1553_s6_subset_incidence_mobius_probe_report_r76.json
+    sha256: de41d1618bc71c46f700bfead0ed72c5ac0b29a89da3b5c32534a15314ef4c93
+  - path: p1553_s6_subset_incidence_mobius_probe_gate_r76.md
+    sha256: 14761973b0063d680b4a7dc5a8821dfdd3e9d1a631be3f6880f1ee2786bb6900
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_s6_subset_incidence_mobius_probe_r76.py
+    sha256: a3f69763285d1d04205b16271d347989dac518f47a53b91ee7f8eddad38aaf2f
+frozen_interface:
+  curve_families:
+    - secp256k1
+    - nist_p256
+    - nist_p384
+    - nist_p521
+  prefix_sizes:
+    - 6
+    - 10
+    - 14
+    - 18
+  target_types:
+    - blind_hash_target
+    - forced_positive_target
+  scalar_labels_consumed: false
+  grammar_id: s6_endpoint_subset_incidence_mobius_v1
+verified_statements:
+  - >-
+    The alternating subset-histogram inner product counts intersecting
+    prefix-suffix occurrence pairs exactly, including duplicate factors.
+  - >-
+    A multiple-common-root control is counted as four tuples by Mobius
+    inversion while a naive singleton endpoint sum overcounts it as six.
+  - >-
+    All 32 frozen target instances match a direct deduplicated endpoint
+    incidence count; every blind count is zero and every forced source verifies.
+  - >-
+    Every dyadic first-coordinate parent count equals the sum of its child
+    counts.
+  - >-
+    The literal B^5 grid is avoided, but explicit prefix advice is B^3 and
+    fresh-target suffix enumeration is B^2.
+scoped_positive_controls:
+  exact_occurrence_count: pass
+  duplicate_factor_multiplicity: pass
+  multiple_common_root_correction: pass
+  blind_zero_target: pass
+  forced_positive_source: pass
+  dyadic_child_conservation: pass
+scoped_failures:
+  prefix_state_exponent_B: 3
+  prefix_construction_exponent_B: 3
+  fresh_target_work_exponent_B: 2
+  factor_log_solve: unsupplied
+  scalar_blind_descent: unsupplied
+unproved_or_outside_scope:
+  - succinct implicit or transposed subset-frequency oracles
+  - target translation without B^2 suffix enumeration
+  - asymptotic subset-key collision bounds for arbitrary decks
+  - relation density, independent rank, factor logs, and descent
+admission:
+  passed_obligations: 8
+  obligation_count: 12
+  lane_admitted: false
+result:
+  exact_tuple_count_complete: true
+  literal_B5_grid_avoided: true
+  direct_caps_satisfied: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_EXACT_S6_SUBSET_INCIDENCE_MOBIUS_CONSTRUCTION_ONLY__FOUR_STANDARD_CURVES__B6_10_14_18__EXACT_TUPLE_COUNTS__MULTIPLE_COMMON_ROOTS_CORRECTED__BLIND_ZERO__FORCED_SOURCE__DYADIC_CHILDREN__PREFIX_STATE_B3__FRESH_TARGET_B2__R2_BOUNDARY_SHARPENED_NOT_NEW_IDEA__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct a target-translated subset-frequency oracle with prefix advice at
+  most B^(9/4+o(1)) and fresh-target query work/workspace at most
+  B^(5/4+o(1)), without enumerating either B^3 prefix triples or B^2 target
+  suffixes. Bind Query2P1 and require exact counts, a source, blind zero, and
+  dyadic children.

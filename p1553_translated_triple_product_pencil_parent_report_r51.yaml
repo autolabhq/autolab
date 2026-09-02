@@ -1,0 +1,111 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-TRANSLATED-TRIPLE-PRODUCT-PENCIL-R51-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_exhaustive_translated_triple_product_section_scan
+  model_scope: degree_nine_unions_of_three_translated_r38_local_fibers
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_TRANSLATED_TRIPLE_PRODUCT_STRUCTURAL_GATE
+summary: >-
+  Tiling the 81-point path by nine translated copies of the R38 three-fiber
+  pattern yields 253 admissible degree-nine blocks formed by unions of three
+  local triple fibers with window-index sum 12. Exact Plucker scanning of all
+  31,878 section pairs gives 31,194 pencil lines containing two blocks and 228
+  lines containing three. The maximum is three, below nine required for an
+  exact 81-point cover. A canonical combinatorial exact cover exists but its
+  nine section vectors have rank nine. The three-block lines remain to be
+  classified for shared divisor factors.
+inputs:
+  - path: staged/p1553_target_walk_support_work_gate_r38.md
+    sha256: ecacb63d18cc2e4478fa0d3c6b71930a4ba4e0a50f3866bd46752ed7c37f7aa5
+  - path: staged/p1553_degree_three_inner_composition_gate_r43.md
+    sha256: b02901b1a822ce98f886146d5a04d2ea35b9515ec549358d2c4b7c02b6700ec8
+  - path: staged/p1553_primitive_degree_nine_section_rank_gate_r44.md
+    sha256: bc5e2068f25814087f228c5bc422109b3f7d5122cfad6bb0600b6208d372885a
+  - path: staged/p1553_external_pair_pencil_gate_r50.md
+    sha256: b7b8024af071ddf11bef600236c41a97cf3e9ed3bb56ff13e7e6fd48189d9791
+  - path: staged/p1553_r50_bundle.sha256
+    sha256: 5d128e21d1548fa0a367af33b58f63489124298fc3772803a9718d6482dade58
+  - path: staged/p1553_r50_staging_receipt.yaml
+    sha256: 62d8bf4d6ff265ee1d8588378d278790f7632c8786a3487391a183e8e8d89b7f
+outputs:
+  - path: staged/p1553_translated_triple_product_pencil_gate_r51.md
+    sha256: 4b60aab9732a448c718f570262b6a44dd28fbdde6797090bba78fb1f59761ca2
+  - path: staged/p1553_translated_triple_product_pencil_scan_r51.py
+    sha256: 65558338a59a296040e331d934126351d39911b9c19cfd042958dc146cf5808b
+  - path: staged/p1553_translated_triple_product_pencil_scan_report_r51.json
+    sha256: 967c875ad12c403b8aaa3be6934677e68ea7d837d334f9cd3112c311c4137bb5
+frozen_parameters:
+  field_prime: 193
+  subgroup_order: 103
+  path_start: 1
+  path_step: 38
+  translated_windows: 9
+  local_fibers_per_window: 3
+  labeled_local_triples: 27
+  triple_unions_per_degree_nine_block: 3
+  required_window_index_sum: 12
+  required_blocks_on_pencil_line: 9
+theorems:
+  - >-
+    A union of three translated local fibers has common degree-nine Abel sum
+    exactly when the three window indices sum to 12.
+  - >-
+    The resulting 253 exact sections determine 31,422 pencil lines, of which
+    228 contain three candidate block sections and none contains more.
+  - >-
+    The 27 labeled local triples admit exact nine-block covers, but the
+    canonical cover has section rank nine and no pencil line can host a cover.
+controls:
+  r38_local_fiber_patterns_reconstructed: true
+  all_253_candidate_blocks_enumerated: true
+  all_blocks_degree_nine_and_sum_360: true
+  all_253_sections_distinct: true
+  all_31878_section_pairs_accounted: true
+  canonical_exact_cover_exists: true
+  canonical_exact_cover_section_rank_checked: true
+toy_control:
+  candidate_degree_nine_blocks: 253
+  section_pairs: 31878
+  distinct_plucker_lines: 31422
+  two_block_lines: 31194
+  three_block_lines: 228
+  maximum_blocks_on_one_line: 3
+  required_blocks_on_one_line: 9
+  canonical_cover_section_rank: 9
+  required_section_rank: 2
+  exact_cover_lines: 0
+  replay_matches_report_byte_for_byte: true
+result:
+  classification: translated_triple_product_structural_positive_no_exact_cover
+  three_block_pencil_lines: present_228
+  nine_block_exact_cover_line: absent
+  shared_factor_explanation: unclassified
+  other_product_and_primitive_sections: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - only unions of three translated R38 local triple fibers are covered
+  - three-block lines may be inherited shared-factor degree-three pencils
+  - no asymptotic lifting theorem, target, R10, rank campaign, logs, or descent
+deduplication:
+  - R43 owns degree-three by degree-three compositions
+  - R51 owns products of three translated local degree-three fiber sections
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_TRANSLATED_TRIPLE_PRODUCT_STRUCTURAL_GATE__R38_LOCAL_FIBER_PATTERNS_TILED_ACROSS_NINE_WINDOWS__253_ADMISSIBLE_DEGREE_NINE_TRIPLE_UNION_BLOCKS__31878_SECTION_PAIRS_31422_DISTINCT_PENCIL_LINES__31194_LINES_HAVE_TWO_BLOCKS_228_LINES_HAVE_THREE_BLOCKS__MAXIMUM_THREE_BLOCKS_REQUIRED_NINE__CANONICAL_27_ITEM_EXACT_COVER_EXISTS_WITH_SECTION_RANK_NINE__NO_RANK_TWO_EXACT_COVER_LINE__OTHER_PRODUCT_AND_PRIMITIVE_SECTIONS_OPEN__NO_TARGET_R10_RELATION_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Classify all 228 three-block lines. Test whether exactly two labeled local
+  triples and six divisor points are common and whether the three residual
+  triples are A, B, and C in one translated R38 window. If so, divide out the
+  common factor and record an inherited degree-three pencil rather than a
+  primitive degree-nine survivor.

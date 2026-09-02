@@ -1,0 +1,342 @@
+{
+  "execution_status": {
+    "missing_inputs": [
+      "collision_records conforming to ecdlp.p1436_collision_record.v1"
+    ],
+    "next_step": "Collect collision-level raw records in the original collection path and rerun this script to compile exact matrix artifacts. Each record needs edge_id, left/right shifts, a full relation coefficient vector and RHS, plus exact source-equation and residual-equality flags. Synthetic summaries are not durable replay evidence.",
+    "records_missing_exact_inputs": 3,
+    "records_with_invalid_collision_sources": 0,
+    "records_with_missing_collision_sources": 3,
+    "replay_ready_records": 0,
+    "routing_ablation_records": 3,
+    "status": "missing_exact_inputs"
+  },
+  "generated_at": "2026-07-29T05:07:25.714897Z",
+  "note_url": "https://x.com/askalphaxiv/status/2076737985559822734?s=46",
+  "records": [
+    {
+      "augmented_rank": 3,
+      "collision_count": 16,
+      "configuration": "consecutive_canonical_mask1",
+      "cross_shift_collision_count": 10,
+      "curve": {
+        "bits": 24,
+        "seed": 1432401,
+        "split": "prospective"
+      },
+      "factor_base_size_B": 12,
+      "matrix_variants": [
+        {
+          "augmented_rank_observed": 3,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 16,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 3,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "all_edge"
+        },
+        {
+          "augmented_rank_observed": 3,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 10,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 3,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "cross_shift_only"
+        },
+        {
+          "augmented_rank_observed": 3,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 6,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 3,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "within_shift_only"
+        }
+      ],
+      "policy": "two_map_union",
+      "prefix": "full",
+      "raw_collision_records_exact": false,
+      "raw_collision_records_present": false,
+      "raw_collision_source": {
+        "count": 0,
+        "exact": false,
+        "field": "",
+        "present": false,
+        "schema": "ecdlp.p1436_collision_record.v1",
+        "sha256": "",
+        "validation_errors": [
+          "collision_records_missing"
+        ]
+      },
+      "relation_rank": 3,
+      "relation_row_count": 4,
+      "replay_mode": "synthetic",
+      "unknown_factor_count": 4,
+      "within_shift_collision_count": 6
+    },
+    {
+      "augmented_rank": 2,
+      "collision_count": 12,
+      "configuration": "mixed_balanced_stride_mask1",
+      "cross_shift_collision_count": 4,
+      "curve": {
+        "bits": 24,
+        "seed": 1432401,
+        "split": "prospective"
+      },
+      "factor_base_size_B": 12,
+      "matrix_variants": [
+        {
+          "augmented_rank_observed": 2,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 2,
+          "observed_collision_edges": 12,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 2,
+          "relation_row_count": 2,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "all_edge"
+        },
+        {
+          "augmented_rank_observed": 2,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 2,
+          "observed_collision_edges": 4,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 2,
+          "relation_row_count": 2,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "cross_shift_only"
+        },
+        {
+          "augmented_rank_observed": 2,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 2,
+          "observed_collision_edges": 8,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 2,
+          "relation_row_count": 2,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "within_shift_only"
+        }
+      ],
+      "policy": "two_map_union",
+      "prefix": "full",
+      "raw_collision_records_exact": false,
+      "raw_collision_records_present": false,
+      "raw_collision_source": {
+        "count": 0,
+        "exact": false,
+        "field": "",
+        "present": false,
+        "schema": "ecdlp.p1436_collision_record.v1",
+        "sha256": "",
+        "validation_errors": [
+          "collision_records_missing"
+        ]
+      },
+      "relation_rank": 2,
+      "relation_row_count": 2,
+      "replay_mode": "synthetic",
+      "unknown_factor_count": 4,
+      "within_shift_collision_count": 8
+    },
+    {
+      "augmented_rank": 1,
+      "collision_count": 8,
+      "configuration": "random_hash_mask1",
+      "cross_shift_collision_count": 4,
+      "curve": {
+        "bits": 24,
+        "seed": 1432401,
+        "split": "prospective"
+      },
+      "factor_base_size_B": 12,
+      "matrix_variants": [
+        {
+          "augmented_rank_observed": 1,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 8,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 1,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "all_edge"
+        },
+        {
+          "augmented_rank_observed": 1,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 4,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 1,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "cross_shift_only"
+        },
+        {
+          "augmented_rank_observed": 1,
+          "augmented_rows": [],
+          "coefficient_rows": [],
+          "max_rank_estimate": 4,
+          "observed_collision_edges": 4,
+          "raw_collision_record_count": 0,
+          "raw_collision_records_exact": false,
+          "raw_collision_records_present": false,
+          "raw_collision_source_sha256": "",
+          "relation_rank_observed": 1,
+          "relation_row_count": 4,
+          "replay_hint": "Replay if ABI-valid raw collision records become available.",
+          "replay_mode": "synthetic",
+          "source_validation_errors": [
+            "collision_records_missing"
+          ],
+          "status": "synthetic_replay_planned",
+          "unknown_factor_count": 4,
+          "variant": "within_shift_only"
+        }
+      ],
+      "policy": "two_map_union",
+      "prefix": "full",
+      "raw_collision_records_exact": false,
+      "raw_collision_records_present": false,
+      "raw_collision_source": {
+        "count": 0,
+        "exact": false,
+        "field": "",
+        "present": false,
+        "schema": "ecdlp.p1436_collision_record.v1",
+        "sha256": "",
+        "validation_errors": [
+          "collision_records_missing"
+        ]
+      },
+      "relation_rank": 1,
+      "relation_row_count": 4,
+      "replay_mode": "synthetic",
+      "unknown_factor_count": 4,
+      "within_shift_collision_count": 4
+    }
+  ],
+  "required_variants": [
+    "all_edge",
+    "cross_shift_only",
+    "within_shift_only"
+  ],
+  "schema": "ecdlp.p1436_collision_to_rank_routing_ablation.v2",
+  "source": {
+    "source_author": "askalphaxiv",
+    "source_post_id": "2076737985559822734",
+    "source_post_url": "https://x.com/askalphaxiv/status/2076737985559822734",
+    "source_post_url_with_query": "https://x.com/askalphaxiv/status/2076737985559822734?s=46",
+    "source_query": "?s=46",
+    "tweet_has_media": true,
+    "tweet_hashtags": [],
+    "tweet_intake_status": "Exact tweet text snapshot captured for this known source.",
+    "tweet_media_count": 1,
+    "tweet_media_types": [
+      "video"
+    ],
+    "tweet_media_urls": [
+      "https://x.com/askalphaxiv/status/2076737985559822734/photo/1"
+    ],
+    "tweet_posted_at": "2026-07-13T18:38:14.340000+00:00",
+    "tweet_referenced_paper_title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in LLM Finetuning",
+    "tweet_source_title": "Towards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in Large Language Model Finetuning",
+    "tweet_source_url": "https://arxiv.org/abs/2607.08393",
+    "tweet_summary": "Introducing autoresearch with GPT 5.6\n\nWe had GPT 5.6 Sol reproduce the key findings from \u201cTowards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in LLM Finetuning\u201d\n\nCompared to GPT-5.5 and even Fable 5, GPT-5.6 stayed more focused on a few, critical experiments and spent less time on peripheral details. It also asked fewer \u201cclarification\u201d questions and independently resolved ambiguities instead of pushing them back to us\n\n@OpenAI pushing the boundaries of the automated research loop with models that don\u2019t have handcuffs",
+    "tweet_summary_is_verbatim": true,
+    "tweet_text": "Introducing autoresearch with GPT 5.6\n\nWe had GPT 5.6 Sol reproduce the key findings from \u201cTowards Mechanistically Understanding Why Memorized Knowledge Fails to Generalize in LLM Finetuning\u201d\n\nCompared to GPT-5.5 and even Fable 5, GPT-5.6 stayed more focused on a few, critical experiments and spent less time on peripheral details. It also asked fewer \u201cclarification\u201d questions and independently resolved ambiguities instead of pushing them back to us\n\n@OpenAI pushing the boundaries of the automated research loop with models that don\u2019t have handcuffs",
+    "tweet_text_included": true,
+    "tweet_text_sha256": "00e2d31acd224456e90716252ce3712de52d2b2ffde1145ecbc776df99c31041",
+    "tweet_text_source_note": "Exact tweet text is embedded for this known source as an auditable source snapshot."
+  }
+}

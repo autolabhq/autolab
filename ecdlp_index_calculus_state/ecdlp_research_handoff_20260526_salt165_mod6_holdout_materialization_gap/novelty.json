@@ -1,0 +1,75 @@
+{
+  "artifacts": {
+    "coverage_audit": "ecdlp_index_calculus_state/ffe_full_remainder_salt165_mod6_holdout_coverage_audit_376_671.json",
+    "coverage_script": "tasks/ecdlp_index_calculus/ffe_full_remainder_salt165_holdout_coverage_audit.py",
+    "exact_profile_wrapper": "tasks/ecdlp_index_calculus/ffe_sage_factor_exact_profile_subset_probe.py",
+    "transfer378_diagnostic": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_22050_salt165_mod6_holdout_transfer378_376_383.json",
+    "transfer420_diagnostic": "ecdlp_index_calculus_state/ffe_sage_factor_exact_profiles_22050_salt165_mod6_holdout_transfer420_416_423.json"
+  },
+  "claim_status": "holdout_selector_exposure_found_but_not_materialized",
+  "date": "2026-05-26",
+  "exact_attempts": [
+    {
+      "error_kinds": {
+        "candidate spec not found": 4,
+        "row_key_missing_from_replay_context": 4
+      },
+      "materialization_error_count": 4,
+      "materialized_exact_profile_count": 0,
+      "requested_profile_count": 4,
+      "transfer_index": 378
+    },
+    {
+      "error_kinds": {
+        "candidate spec not found": 2,
+        "row_key_missing_from_replay_context": 2
+      },
+      "materialization_error_count": 2,
+      "materialized_exact_profile_count": 0,
+      "requested_profile_count": 2,
+      "transfer_index": 420
+    }
+  ],
+  "frozen_selector": {
+    "row_key": "22050.cf1@11731:uniform:256:salt165",
+    "row_salt": 165,
+    "target": "22050.cf1@11731",
+    "transfer_modulus": 6,
+    "transfer_residue": 0
+  },
+  "holdout_coverage": {
+    "leaf_signature_counts": {
+      "34,90": 3,
+      "65,79": 4,
+      "79": 20,
+      "8,90": 18,
+      "90": 51
+    },
+    "neighbor_control_distinct_salt_count": 16,
+    "neighbor_control_profile_count": 1720,
+    "public_verified_label_count": 16,
+    "selected_transfer_count": 12,
+    "selected_transfers": [
+      378,
+      420,
+      438,
+      480,
+      540,
+      588,
+      594,
+      606,
+      612,
+      618,
+      630,
+      660
+    ],
+    "selector_artifact_count": 60,
+    "selector_profile_count": 96
+  },
+  "next_required_implementation": "forced_witness_exact_profile_materializer_for_public_bounded_row_leaf_keys",
+  "pollard_rho_comparison": {
+    "full_remainder_holdout_materialized": false,
+    "rho_baseline": 1.0
+  },
+  "schema": "ecdlp_salt165_mod6_holdout_materialization_gap_v1"
+}

@@ -1,0 +1,64 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-DEGREE-SIX-PRODUCT-HYPERSURFACE-LOCATOR-R61-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exact_product_image_sextic_and_constant_degree_pencil_locator
+  model_scope: one_fixed_class_pair_on_E_F193_and_the_R60_pencil
+  novelty: unverified
+  independent_review: pass_after_cost_scope_correction
+  status: STAGED_INDEPENDENT_REVIEW_PASS_COORDINATOR_ARCHIVAL_REQUIRED
+summary: >-
+  The fixed-class degree-six multiplication map has rank six and its projected
+  Segre image has a certified sextic equation. Restriction to the R60 pencil
+  recovers t=29 by fixed-degree factorization, removing the Theta(p) parameter
+  scan after uncharged Theta(N^3) toy preprocessing. Scan-free factor lifting,
+  preprocessing amortization, density, logs, rank, and descent remain open.
+inputs:
+  - path: staged/p1553_degree_six_primitive_product_pencil_gate_r60.md
+    sha256: 89aa1c7cbd31d898c6bd06a8950b46f646898912e1ba6179023d137ddc251137
+  - path: staged/p1553_degree_six_primitive_product_pencil_search_report_r60.json
+    sha256: b15ac1b6cb5df18b4fb5fdcad4d0982fb8c122777dfc6009cbd5318fc28dd364
+outputs:
+  - path: staged/p1553_degree_six_product_hypersurface_locator_gate_r61.md
+    sha256: a737e50f7b587ccae70edf988ca9687f4706778db549b3ca58432463017fa688
+  - path: staged/p1553_degree_six_product_hypersurface_locator_r61.py
+    sha256: b8331ae9534fde907df8cffda074d2443f219324174fee6f49756cd40351bbfb
+  - path: staged/p1553_degree_six_product_hypersurface_locator_report_r61.json
+    sha256: f91213021bd350b77cf1ac7d5cb8f2f9ae63b1265a5081d4ed58a3da07aa1f64
+  - path: staged/p1553_degree_six_product_hypersurface_locator_independent_review_r61.md
+    sha256: 9c6a7e0049998e4cd38290e65e9cb74150cc6d18caa26f7ea1089aa0ef8f1c13
+controls:
+  field_prime: 193
+  multiplication_rank: 6
+  multiplication_kernel_dimension: 3
+  implicit_equation_degree: 6
+  lower_degree_nullities: [0, 0, 0, 0, 0]
+  degree_six_nullity: 1
+  exact_pullback_evaluations: 784
+  current_toy_preprocessing_triple_examination: Theta(N^3)_uncharged
+  restricted_polynomial_degree: 5
+  finite_rational_roots: [0, 29, 33]
+result:
+  classification: positive_constant_degree_parameter_locator_toy
+  linear_field_scan_removed_from_parameter_location: true
+  scan_free_factor_recovery: absent
+  asymptotic_relation_algorithm: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review passed after the preprocessing-cost correction
+  - the result is one finite toy and fixed class pair
+  - the online claim is conditional on uncharged and unamortized preprocessing
+  - source factor lifting, density, logs, rank, and descent remain uncharged
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_POSITIVE_ALGEBRAIC_LOCATOR_TOY_GATE__RANK6_KERNEL3__UNIQUE_SEXTIC_EXACT_PULLBACK__R60_ROOT29_RECOVERED_WITHOUT_FIELD_SCAN__FACTOR_LIFT_DENSITY_LOGS_RANK_DESCENT_ABSENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Invert the fixed-class multiplication map at t=29 with a constant-size
+  rank-one lifting system and recover both cubic factor divisors without a
+  field or curve-point scan.

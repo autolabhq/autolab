@@ -1,0 +1,361 @@
+{
+  "adjoint_rank_controls": {
+    "all_dyadic_adjoint_families_full_rank": true,
+    "all_jacobians_full_rank": true,
+    "blind_nonzero_sweep": [
+      {
+        "all_projector_derivatives_nonzero": true,
+        "dimension": 4,
+        "dyadic_adjoint_rank": 4,
+        "dyadic_mask_count": 7,
+        "expected_full_binary_mask_count": 7,
+        "jacobian_rank": 4
+      },
+      {
+        "all_projector_derivatives_nonzero": true,
+        "dimension": 8,
+        "dyadic_adjoint_rank": 8,
+        "dyadic_mask_count": 15,
+        "expected_full_binary_mask_count": 15,
+        "jacobian_rank": 8
+      },
+      {
+        "all_projector_derivatives_nonzero": true,
+        "dimension": 16,
+        "dyadic_adjoint_rank": 16,
+        "dyadic_mask_count": 31,
+        "expected_full_binary_mask_count": 31,
+        "jacobian_rank": 16
+      },
+      {
+        "all_projector_derivatives_nonzero": true,
+        "dimension": 32,
+        "dyadic_adjoint_rank": 32,
+        "dyadic_mask_count": 63,
+        "expected_full_binary_mask_count": 63,
+        "jacobian_rank": 32
+      }
+    ],
+    "field_prime": 101,
+    "projector_derivative_identity": "delta_0'(h)=h^(p-2) in F_p",
+    "projector_identity": "delta_0(h)=1-h^(p-1)",
+    "scope": "Finite exact rank for the pointwise Jacobian and the complete dyadic mask family; not an asymptotic lower bound on arbitrary nonlinear compact trace circuits."
+  },
+  "admission": {
+    "failures": [
+      "pointwise_trace_inside_setup_cap",
+      "pointwise_trace_inside_online_cap",
+      "compact_range_idempotent_inside_caps",
+      "actual_five_a_five_c_integer_lift_complete",
+      "actual_five_a_five_c_source_unranking_complete",
+      "projective_infinity_source_complete",
+      "proper_subsum_source_complete",
+      "tangent_source_complete",
+      "multiplicity_complete_source_return",
+      "known_rhs_rank_without_verifier_dlp",
+      "factor_logs_without_verifier_dlp",
+      "identical_fresh_target_descent",
+      "generic_prime_family_algorithm",
+      "shoup_improvement_complete",
+      "compact_nonlinear_tensor_tower_trace_supplied"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 28,
+    "obligations": {
+      "actual_five_a_five_c_integer_lift_complete": false,
+      "actual_five_a_five_c_source_unranking_complete": false,
+      "blind_nonzero_bottom_exact": true,
+      "blind_projector_jacobians_full_rank": true,
+      "compact_nonlinear_tensor_tower_trace_supplied": false,
+      "compact_range_idempotent_inside_caps": false,
+      "duplicate_projector_count_exact": true,
+      "dyadic_adjoint_families_full_rank": true,
+      "factor_logs_without_verifier_dlp": false,
+      "finite_projector_identity_exact": true,
+      "full_gradient_state_charged": true,
+      "generic_prime_family_algorithm": false,
+      "identical_fresh_target_descent": false,
+      "known_rhs_rank_without_verifier_dlp": false,
+      "multiplicity_complete_source_return": false,
+      "nine_source_bindings_verified": true,
+      "pointwise_trace_inside_online_cap": false,
+      "pointwise_trace_inside_setup_cap": false,
+      "projective_infinity_source_complete": false,
+      "projector_derivative_identity_replayed": true,
+      "proper_subsum_source_complete": false,
+      "shoup_improvement_complete": false,
+      "standard_source_exponent_charged_as_B12O5": true,
+      "tangent_source_complete": false,
+      "toy_integer_counts_below_prime": true,
+      "two_zero_product_gradient_collapse_replayed": true,
+      "unique_product_gradient_localizer_replayed": true,
+      "unique_zero_dyadic_source_exact": true
+    },
+    "passed_obligation_count": 13
+  },
+  "asymptotic_cost_control": {
+    "balanced_product_tree": {
+      "forward_multiplications": "D-1",
+      "full_forward_nodes": "2D-1",
+      "inside_online_cap": false,
+      "inside_setup_cap": false,
+      "leaf_values": "D",
+      "reverse_adjoint_words": "Theta(D)",
+      "work_and_state_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "caps": {
+      "fresh_work_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "compact_nonlinear_tensor_tower_trace_supplied": false,
+    "dyadic_range_masks": {
+      "linearized_span_rank": "D",
+      "mask_count": "2D-1 for power-of-two D",
+      "state_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "full_transposed_adjoint": {
+      "adjoint_words": "Theta(D)",
+      "inside_setup_cap": false,
+      "state_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "pointwise_fermat_projector": {
+      "inside_online_cap": false,
+      "inside_setup_cap": false,
+      "state_or_streamed_source_values": "Theta(D)",
+      "work": "Theta(D log p)=B^(12/5) polylog(B)",
+      "work_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    },
+    "scope": "Charges pointwise Fermat evaluation, source-valued product trees, their reverse adjoints, and the full dyadic linearized mask family. It does not lower-bound a nonlinear tensor-tower trace whose node states are constructed directly from compact A/C divisor circuits.",
+    "source_side": {
+      "source_count": "D=Theta(B^(12/5))",
+      "value_count_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      }
+    }
+  },
+  "breakthrough": false,
+  "classification": "POINTWISE_PROJECTOR_JACOBIAN_AND_DYADIC_ADJOINT_FULL_RANK__UNIQUE_PRODUCT_GRADIENT_LOCALIZER__MULTIZERO_GRADIENT_COLLAPSE__STANDARD_TRANSPOSE_B12O5",
+  "disposition": "REJECT_STANDARD_POINTWISE_TRANSPOSE_ONLY__PROJECTOR_COUNTS_AND_TOY_DYADIC_SOURCE_EXACT__BLIND_JACOBIAN_AND_DYADIC_ADJOINT_FULL_RANK__UNIQUE_PRODUCT_GRADIENT_LOCALIZES__MULTIZERO_PRODUCT_GRADIENT_COLLAPSES__SOURCE_VALUES_AND_ADJOINTS_B12O5__NONLINEAR_TENSOR_TOWER_OPEN__PROJECTIVE_AND_FULL_5A5C_SOURCE_INCOMPLETE__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "factor_log_solve_complete": false,
+  "fresh_target_descent_complete": false,
+  "next_action": "Construct or refute one nonlinear tensor-tower projector trace whose node states are derived directly from compact A/C divisor circuits rather than source leaves, quotient bases, moment vectors, or linearized dyadic masks. Freeze its tensor algebra and target transition before outcomes; require exact integer count, one complete coupled source, all exceptional branches, B^(9/4) setup/state, B^(5/4) fresh work/workspace, known-RHS rank, factor logs, and identical target descent.",
+  "novelty_scope": "R97 is the first campaign receipt to rank the complete pointwise projector Jacobian and dyadic adjoint family and to separate unique-zero product-gradient localization from its multi-zero collapse.",
+  "schema": "p1553.5a5c_factored_transposed_projector_trace.r97.v1",
+  "scope_boundary": "This closes pointwise Fermat powering, source-valued product trees, their reverse adjoints, and linearized dyadic masks. The finite full-rank result is not an asymptotic lower bound on a nonlinear tensor-tower trace built directly from compact A/C divisor circuits.",
+  "shoup_bound_improvement": false,
+  "side_artifacts": {
+    "exceptional": "transposed_trace_exceptional_controls.json",
+    "frozen": "frozen_5a5c_factored_transposed_projector_trace.json",
+    "logs_descent": "factor_logs_and_identical_descent_r97.json",
+    "source_replay": "range_idempotent_integer_source_replay.json",
+    "state_ledger": "factored_trace_state_and_adjoint_ledger.json"
+  },
+  "source_and_gradient_controls": {
+    "blind_nonzero": {
+      "dyadic_source": {
+        "queried_value_occurrences": 8,
+        "returned_bottom": true,
+        "source_index": null,
+        "transcript": [
+          {
+            "range": [
+              0,
+              8
+            ],
+            "zero_count": 0
+          }
+        ]
+      },
+      "integer_projector_count": 0,
+      "values": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23
+      ]
+    },
+    "field_prime": 101,
+    "multiplicity_boundary": "The projector sum counts two zero occurrences, while the first derivative of the scalar product is identically zero.",
+    "two_zeros": {
+      "integer_projector_count": 2,
+      "product_gradient": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "product_gradient_is_zero_vector": true,
+      "values": [
+        3,
+        0,
+        5,
+        7,
+        0,
+        11,
+        13,
+        17
+      ]
+    },
+    "unique_zero": {
+      "dyadic_source": {
+        "queried_value_occurrences": 22,
+        "returned_bottom": false,
+        "returned_source_is_zero": true,
+        "source_index": 2,
+        "transcript": [
+          {
+            "range": [
+              0,
+              8
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              0,
+              4
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              0,
+              4
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              0,
+              2
+            ],
+            "zero_count": 0
+          },
+          {
+            "range": [
+              2,
+              4
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              2,
+              3
+            ],
+            "zero_count": 1
+          },
+          {
+            "range": [
+              2,
+              3
+            ],
+            "zero_count": 1
+          }
+        ]
+      },
+      "integer_projector_count": 1,
+      "product_gradient": [
+        0,
+        0,
+        27,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "product_gradient_localizes_unique_zero": true,
+      "product_gradient_nonzero_indices": [
+        2
+      ],
+      "projector_gradient": [
+        34,
+        81,
+        0,
+        29,
+        46,
+        70,
+        6,
+        16
+      ],
+      "projector_gradient_materialized_words": 8,
+      "values": [
+        3,
+        5,
+        0,
+        7,
+        11,
+        13,
+        17,
+        19
+      ],
+      "zero_coordinate_has_nonzero_projector_gradient": false
+    }
+  },
+  "source_bindings": {
+    "p1513_handoff": {
+      "path": "/Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md",
+      "sha256": "27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc"
+    },
+    "r78_gate": {
+      "path": "p1553_actual_s6_fermat_tensor_train_probe_gate_r78.md",
+      "sha256": "9149c3b903d91a2156125a2c61896dc1111eaeffafdf0536c89a50b7e0e84ff9"
+    },
+    "r78_report": {
+      "path": "p1553_actual_s6_fermat_tensor_train_probe_report_r78.json",
+      "sha256": "e590002c433c6504725d5ab7ff1dba97ad8c15400bf0117846742da7359c5e60"
+    },
+    "r88_gate": {
+      "path": "p1553_5a5c_black_box_translated_resultant_localizer_probe_gate_r88.md",
+      "sha256": "90f0980bdeb51f540cd233f207218361cc14beb8a899c246418410d36ef43d56"
+    },
+    "r88_report": {
+      "path": "p1553_5a5c_black_box_translated_resultant_localizer_probe_report_r88.json",
+      "sha256": "d73e017c731a54c6913aeaa94e6b5c6d54ca3757f56be14e8ca8ee5524031de1"
+    },
+    "r95_report": {
+      "path": "p1553_5a5c_aggregate_veronese_projector_recurrence_probe_report_r95.json",
+      "sha256": "50441deecd5fadcb05d30c09532d2b5fe6e8893ea2530243c20a52761e0a1742"
+    },
+    "r96_gate": {
+      "path": "p1553_5a5c_modular_frobenius_trace_recurrence_probe_gate_r96.md",
+      "sha256": "55655280c02bbef1e5f0f29bcad1beb1b21d6809e79b7de400a58997b0caa64d"
+    },
+    "r96_producer": {
+      "path": "p1553_5a5c_modular_frobenius_trace_recurrence_probe_r96.py",
+      "sha256": "92f646378156476cf897729b6bca6d67bc47398663137aee1ab17d910511f960"
+    },
+    "r96_report": {
+      "path": "p1553_5a5c_modular_frobenius_trace_recurrence_probe_report_r96.json",
+      "sha256": "e4e667703d22b96c5ef64b3bfbbd24119f128cd00f68d0d7d850ba41c0c0e163"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+schema: crypto.autoresearch.install_validation_receipt.v1
+bundle_id: P1553-R8-20260719
+date: 2026-07-19
+installed: false
+authoritative_write_attempted: false
+reason: authoritative checkout is read-only in this session
+composition:
+  mode: atomic_base_plus_delta
+  base_bundle_id: P1553-R5-R7-20260719
+  base_manifest_sha256: 41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a
+  base_manifest_hash_list_sha256: 0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d
+  base_simulated_queue_sha256: f235ae20a9c1496c47a07b1a4ac9e7c6b2265c3b37e7cc52cba8151b65dfb1d8
+delta_manifest:
+  json_sha256: 54f5258d83d54d2473b13c2655e2e3c4c2d124f01b729aec855da18889d08d4d
+  sha256_list_sha256: b603dd4ed6b418b642408a3920122e6feca6e82111b79cb4fdd4d5195cea8e5a
+  unique_sources: 4
+  destination_installs: 5
+  appended_tasks: 2
+live_preconditions:
+  coordination_dispatch_queue_sha256: 623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2
+  coordination_current_dispatch_sha256: 39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a
+  focus_current_plan_sha256: d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6
+  task_states:
+    TASK-20260719-P1553-NET-P1: queued
+    TASK-20260719-P1553-NET-RT-R1: queued
+simulated_composed_merge:
+  queue_file_sha256: 6d946874f4c7c24ee4396b24c2d95d94b4ef1414dd4b9487d5adb9f40cf158f8
+  queue_canonical_sha256: 0910678dc0d728ac1da0d2ba73b6695040644931e2ef3c62d98ca3a72b1aede9
+  dispatch_file_sha256: dc6895cdfe04e01a10251cd61932358d36233d6465637d2df50f8e18d1ab0d4d
+  dispatch_report_sha256: 0052b4ceb4740315745af4f5493cea885d7492c609ab65817ec474b71935c257
+  dispatch_plan_sha256: a72781daf826657b0f818e514a583235c88dca32ecedae2550b819693099a56e
+  ready_tasks: 0
+  deferred_or_blocked_tasks: 0
+  all_selected_dependencies_completed: true
+  claim_relevant_tasks_have_independent_review: true
+  concurrency_cap_respected: true
+  coordinator_only_promotes_research_status: true
+  selected_write_scopes_do_not_overlap: true
+  terminal_noncompleted_tasks_do_not_unblock_successors: true
+validation:
+  new_yaml_documents_parsed: 2
+  new_ascii_files_checked: 6
+  new_exactly_one_next_action_headings: 2
+  composed_exactly_one_next_action_headings: 7
+  base_source_hash_list: pass
+  delta_source_hash_list: pass
+  delta_manifest_source_bindings: pass
+  focus_and_dispatch_tests: 30_passed
+  focused_queue_valid: true
+  focused_queue_sha256: a27a3bab565cd15bef41da0f85d3772413f5b8f3bf090e8d35191b543984e9cb
+  idea_corpus_validator: pass
+  idea_corpus_snapshot: 17_hypotheses_17_registry_rows_9_contracts
+research_result:
+  status: revise_scoped_control
+  new_positive_control: >-
+    Integer-valued Newton and CRT coordinates are exact, and Shi's modular
+    multiplication theorem gives a synthetic rank-one-mod-p tensor whose
+    least-nonnegative lift has rational CP rank B and raw carry rank at least
+    B-1.
+  correction: >-
+    Ordinary monomial coefficient height is not invariant; general dual norms
+    use the inverse transpose; canonical recentering is nonlinear; and the
+    B^4/B^3 figures are imported costs of the R7 pairwise CP-Gram model, not
+    intrinsic lower bounds.
+  surviving_exception: >-
+    A branch-complete elliptic-specific unit-or-zero-divisor representation
+    may still avoid the synthetic control and the standard B^5 or B^3 routes.
+claims:
+  breakthrough: false
+  shoup_bound_improvement: false
+  experiment_or_run: false
+  new_idea_id: null
+next_install_rule: >-
+  Re-read all three live precondition hashes and both required NET task states;
+  compose the bound R5-R7 base and R8 delta on one private queue; install all
+  files and regenerated dispatch outputs atomically only if every hash, task
+  state, source binding, test, focus check, and corpus validator still passes.
+  Preserve any mismatch as concurrent-state drift instead of overwriting it.

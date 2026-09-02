@@ -1,0 +1,64 @@
+{
+  "schema": "ecdlp_ffe_public_single_hit_root_assembly_preregistration_v1",
+  "date": "2026-05-25",
+  "claim_boundary": "declared_before_176_183_generation",
+  "holdout_window": {
+    "transfer_indices": [
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183
+    ],
+    "window_label": "176_183"
+  },
+  "candidate_source": {
+    "family": "fixed_selector_low_term_total2_public_below_rho",
+    "leaf_selectors": [
+      "mode_cost_low_term_support_total2",
+      "mode_low_term_support_total2"
+    ],
+    "positive_source": "below_rho_all",
+    "note": "Candidate rows are selected by public leaf cost below the rho proxy, not by public_key_verified, relation_count, or rank."
+  },
+  "retained_root_selector": {
+    "gate": "single_prefactor_hit_root",
+    "policy": "prefactor_unique_leaf_hit_root_first_target_hash",
+    "selection_rule": [
+      "exactly one pre_factor_selected_hit_root",
+      "public_zero_recovered",
+      "total_ops_over_rho < 1.0",
+      "at most 3 public source cases per target and transfer challenge",
+      "rank candidate cases by public source ops/rho, then retained surface count, then deterministic case key"
+    ],
+    "forbidden_selection_fields": [
+      "public_key_verified",
+      "relation_count",
+      "rank",
+      "chosen_preserves_selected_root_pairs",
+      "chosen_false_positive",
+      "below_rho",
+      "direct_below_rho"
+    ]
+  },
+  "intended_outputs": {
+    "stress": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/frontier_signed_eval_cover_row_side_sketch_fresh_salt_filter_rescue_guarded_relation_harvester_static_bank_shared_challenge_salt_neighborhood_public_leaf_policy_low_term_total2_fixed_selector_176_183_probe.json",
+    "strict_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_signature_fixed_selector_176_183.json",
+    "candidate_signature": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_candidate_signature_fixed_selector_176_183.json",
+    "gate_manifest": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_preregistered_gate_manifest_total2_candidates_176_183.json",
+    "sage_factor_subset": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_sage_factor_total2_candidates_single_hit_root_176_183.json",
+    "factor_audit": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_first_fall_linear_factor_audit_total2_candidates_single_hit_root_176_183.json",
+    "root_policy_eval": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_prefactor_unique_leaf_single_hit_root_policy_total2_candidates_176_183.json",
+    "assembly_selector": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_single_hit_root_assembly_selector_176_183.json",
+    "assembly_replay": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/ffe_public_single_hit_root_assembly_replay_176_183.json"
+  },
+  "promotion_condition": "Promote only if the preregistered public assembly selector produces below-rho same-challenge relation systems that publicly derive fresh challenge keys without post-hoc leaf choice.",
+  "non_claims": [
+    "This does not claim a complete ECDLP index-calculus break.",
+    "This does not use total3 or total4 candidates.",
+    "This does not allow preserving-factor labels or relation derivation outcomes to choose assemblies."
+  ]
+}

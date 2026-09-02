@@ -1,0 +1,150 @@
+{
+  "method": "compiled_c_affine_add_kernel_for_first_pass_candidate_points",
+  "native_execution": {
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_native_kernel_target67_744_controls.c",
+      "-o",
+      "/private/tmp/ecdlp_native_kernel_ody1798u/ffe_public_repeated_coordinate_fused_kernel_native_kernel_target67_744_controls.bin"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executable": "/private/tmp/ecdlp_native_kernel_ody1798u/ffe_public_repeated_coordinate_fused_kernel_native_kernel_target67_744_controls.bin",
+    "executed": true,
+    "native_summary": {
+      "case_count": 32,
+      "failure_count": 0,
+      "field_op_counts": {
+        "add": 64,
+        "inv": 32,
+        "mul": 160,
+        "neg": 32,
+        "sub": 256,
+        "total": 544
+      },
+      "register_match_count": 32,
+      "result_match_count": 32,
+      "reused_case_count": 4,
+      "verified_count": 32
+    },
+    "run_returncode": 0,
+    "run_stderr": "",
+    "run_stdout": "{\"case_count\":32,\"verified_count\":32,\"failure_count\":0,\"result_match_count\":32,\"register_match_count\":32,\"reused_case_count\":4,\"field_op_counts\":{\"add\":64,\"sub\":256,\"mul\":160,\"neg\":32,\"inv\":32,\"total\":544}}\n"
+  },
+  "non_claims": [
+    "This is a compact native reference kernel for first-pass candidate-point arithmetic, not an optimized FFE kernel.",
+    "It does not search for new relations and does not replace the second-pass relation predicate layer.",
+    "A production FFE/summation-polynomial implementation must still pass this kernel gate and the ABI/contract gates."
+  ],
+  "parameters": {
+    "affine_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_affine_trace_target67_744_controls.json",
+    "c_out": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_native_kernel_target67_744_controls.c",
+    "compiler": "cc",
+    "keep_exe": false,
+    "native_reference_source": "ecdlp_index_calculus_state/ffe_public_repeated_coordinate_fused_kernel_native_reference_target67_744_controls.json",
+    "source_names": []
+  },
+  "records": [
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "case_count": 8,
+      "matches_contract_below_rho": true,
+      "matches_contract_event_reuse_target": true,
+      "native_kernel_status": "native_kernel_verified",
+      "public_group_key": {
+        "coordinate_key": "1114,8506",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "12"
+        ],
+        "policy": "fixed_target_cap3_ow0_hw1_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 12,
+        "transfer_index": 744
+      },
+      "reused_case_count": 4,
+      "source_name": "coord1114_744"
+    },
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "case_count": 12,
+      "matches_contract_below_rho": false,
+      "matches_contract_event_reuse_target": false,
+      "native_kernel_status": "native_kernel_verified",
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "4|8",
+        "hit_root_signature": "1|2",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 721
+      },
+      "reused_case_count": 0,
+      "source_name": "coord161_720"
+    },
+    {
+      "affine_trace_status": "fused_kernel_affine_trace_verified",
+      "case_count": 12,
+      "matches_contract_below_rho": false,
+      "matches_contract_event_reuse_target": false,
+      "native_kernel_status": "native_kernel_verified",
+      "public_group_key": {
+        "coordinate_key": "161,6976",
+        "hit_event_signature": "6|6",
+        "hit_root_signature": "1|1",
+        "leaf_selector": "mode_cost_low_term_support_total3",
+        "leaf_signatures": [
+          "2"
+        ],
+        "policy": "fixed_global_cap3_ow1_hw3_lw0_sw0_cw0_aw0",
+        "selected_row_count": 2,
+        "target": "67.a1@9803",
+        "top_k": 4,
+        "transfer_index": 732
+      },
+      "reused_case_count": 0,
+      "source_name": "coord161_728"
+    }
+  ],
+  "schema": "ecdlp_public_repeated_coordinate_fused_kernel_native_kernel_probe_v1",
+  "summary": {
+    "below_rho_native_kernel_verified_count": 1,
+    "compiled": true,
+    "event_reuse_below_rho_native_kernel_verified_count": 1,
+    "executed": true,
+    "global_native_kernel_verified": true,
+    "interpretation": "The first-pass candidate-point layer has been executed by a compact native C affine-add kernel over operand arrays.",
+    "matches_native_reference_op_counts": true,
+    "native_case_count": 32,
+    "native_failure_count": 0,
+    "native_field_op_counts": {
+      "add": 64,
+      "inv": 32,
+      "mul": 160,
+      "neg": 32,
+      "sub": 256,
+      "total": 544
+    },
+    "native_kernel_verified_count": 3,
+    "native_register_match_count": 32,
+    "native_result_match_count": 32,
+    "native_reused_case_count": 4,
+    "native_verified_case_count": 32,
+    "record_count": 3
+  }
+}

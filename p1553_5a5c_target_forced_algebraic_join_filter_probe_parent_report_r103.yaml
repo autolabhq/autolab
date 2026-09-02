@@ -1,0 +1,117 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-TARGET-FORCED-ALGEBRAIC-JOIN-FILTER-R103-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: exact_s3_root_factorization_and_standard_ffe_cost_audit
+run_count: 1
+status: target_forced_identity_exact_standard_realizations_over_cap
+labels:
+  - semaev
+  - ffe
+  - exact-finite-controls
+  - source-replay
+  - scoped-negative
+  - prospective
+  - novelty-unverified
+owner: P1553-R70-R82-R84-R101-R102
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the target-forced S3 relation reduces the exact
+  two-sided join when realized pointwise, through explicit endpoint
+  polynomials, or through materialized finite-field factorization.
+inputs:
+  - path: p1553_5a5c_two_sided_implicit_join_probe_r102.py
+    sha256: 3fae17c49683586178518a0df8d377c8f553bd131539f1bab579c0f55d5b0742
+  - path: p1553_5a5c_two_sided_implicit_join_probe_report_r102.json
+    sha256: 5f16489b5f0535df6c9728edfed5f2f83641a4b9c30fd2609db52a73f46d40e7
+  - path: p1553_5a5c_two_sided_implicit_join_probe_gate_r102.md
+    sha256: 1af82597762525110baf31cec7b4e7b96693a730270f7e1bd6556906e5c5f56c
+  - path: p1553_5a5c_two_sided_implicit_join_probe_parent_report_r102.yaml
+    sha256: 9a965158bc96e51dd8daea1abb86f5552b75dac94998633ec97b22f8b9a3ad67
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_report_r101.json
+    sha256: 050d1093fc34611f502a3f7b3ebf6fc632b3aeb9d03718f922e99baa2fe985c9
+  - path: p1553_5a5c_actual_divisor_image_entropy_merge_probe_gate_r101.md
+    sha256: 3e12e4ab70edba64076d27b68d39ab34307ca6d9ff08252432759673b74a9ac5
+  - path: p1553_5a5c_marked_resultant_source_section_probe_r84.py
+    sha256: 80cd0887fd24bfc37f0568f03a8af4c98eb148e030a3112576c1a0940f4ad99d
+  - path: p1553_5a5c_marked_resultant_source_section_probe_report_r84.json
+    sha256: c9b1c5fb0f58f2c5118562623fd5dfff5d55d7238b513892d4178a67af5ccf0b
+  - path: p1553_5a5c_marked_resultant_source_section_probe_gate_r84.md
+    sha256: 4e23024a1a5971a52d6664be678fd095f506814297e61b0f8992076e643e3661
+  - path: p1553_cartesian_sum_compact_divisor_probe_r82.py
+    sha256: 7380bff3175625016affee4703b0b0f2867a28113f72eef2d90614ed57ffef07
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: p1553_multiplicative_x_s3_closure_screen_r70.py
+    sha256: 4d06a22f56ca58fbd4f4ed13a120324ce630ce1b1576243ee2b82fcdd340643e
+  - path: p1553_multiplicative_x_s3_closure_screen_report_r70.json
+    sha256: 9e58c6178eb18b7535c59e117ad942465d6c7853890291dec2c7c0abdb4ffd89
+  - path: p1553_multiplicative_x_s3_closure_screen_gate_r70.md
+    sha256: dd37fc251816a2c6ee798525aec4e7dd3c69eec60952102b55f90f60c353faa8
+artifacts:
+  - path: p1553_5a5c_target_forced_algebraic_join_filter_probe_r103.py
+    sha256: 9ebba96331379a99abaa4596772855a884a62137828edefd5f6a2d81478152dd
+  - path: p1553_5a5c_target_forced_algebraic_join_filter_probe_report_r103.json
+    sha256: 587d8283716ee8568aab1576376b57b786f412c7c16d4e3942d271b276a5173c
+  - path: frozen_5a5c_target_forced_algebraic_join_filter.json
+    sha256: 0a855551836539a9887360f139cfaa6ce19cdbcfeb0d88ec74ec8a9c78a12b2c
+  - path: target_forced_invariant_and_ffe_ledger.json
+    sha256: 7584f6e7239ca9c6c5bb5fc45684fe45f2c28e84ff7e8500195a95cbcae0d905
+  - path: target_forced_join_integer_source_replay.json
+    sha256: bf4a19f9730dbfa75a0cab37e8ab6609c7daf9f7305872c05399cfd4dae52270
+  - path: target_forced_join_exceptional_controls.json
+    sha256: f3db0381af5e3b60fe0a56605f6bbf16a4c63187f048464d51f154181f5f4f90
+  - path: factor_logs_and_identical_descent_r103.json
+    sha256: 204f44a32c757a09be74b387bf1c8066cabb293b466c0a373d501b5ecbadb9fb
+  - path: p1553_5a5c_target_forced_algebraic_join_filter_probe_gate_r103.md
+    sha256: 63e155a40d7762e1bc362d72610a91c075f5075b35997e680e74c82c29215aa2
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_target_forced_algebraic_join_filter_probe_r103.py
+    sha256: 5ac18c568661a64eeba7ac6219ed6a224b3d0195491d875fdec46bc38e246975
+verified_statements:
+  - >-
+    For every regular affine L,T, S3 as a quadratic in x(R) has roots
+    x(T-L) and x(T+L), and every true L+R=T pair survives.
+  - >-
+    The x-coordinate filter includes four signed point branches, so a
+    point-level sign and source replay remains necessary.
+  - >-
+    Pointwise local-oracle composition costs at least B^16/5 and the
+    canonical split remains B^11/5 state with B^14/5 fresh work.
+  - >-
+    Explicit endpoint polynomials and materialized base-field FFE factors
+    retain B^12/5 or larger degree and source payload.
+scoped_failures:
+  target_forced_s3_identity: pass
+  compact_preendpoint_s3_ffe_pushdown_inside_caps: unsupplied
+  exact_integer_count_and_joint_source_inside_caps: unsupplied
+  exceptional_projective_and_degree_drop_charts: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - nonstandard target-specialized S3 or FFE pushdown
+  - arbitrary compact arithmetic circuits
+  - generic-prime lower bounds
+admission:
+  passed_obligations: 21
+  obligation_count: 32
+  target_forced_s3_identity_admitted: true
+  lane_admitted: false
+result:
+  target_forced_s3_relation_exact: true
+  sign_resolved: false
+  pointwise_best_exponent_B: 16/5
+  canonical_query_exponent_B: 14/5
+  compact_preendpoint_pushdown_complete: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  ADMIT_TARGET_FORCED_S3_IDENTITY_ONLY__TWO_X_ROOTS_T_MINUS_L_AND_T_PLUS_L__SIGN_AMBIGUITY_CONSTANT__POINTWISE_AND_STANDARD_AGGREGATE_FFE_REALIZATIONS_OVER_CAP__COMPACT_PREENDPOINT_PUSHDOWN_OPEN__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one sign-resolved target-specialized S3 or FFE
+  pushdown acting directly on D_A,D_C before partial endpoint emission.

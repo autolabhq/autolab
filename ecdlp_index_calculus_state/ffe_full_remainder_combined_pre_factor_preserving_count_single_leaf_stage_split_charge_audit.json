@@ -1,0 +1,171 @@
+{
+  "activation_family": "pre_factor_stage:activate:original_selected_root_pair_count=1&factor_root_scan_ops_over_rho<=0.46:True || pre_factor_stage:activate:profile_top_k=12&preserving_candidate_count=11&factor_root_scan_ops_over_rho<=0.46:True || pre_factor_stage:activate:profile_top_k=12&preserving_candidate_count=13&selected_leaf_index_count=1&factor_root_scan_ops_over_rho<=0.46:True",
+  "clause_summaries": [
+    {
+      "activation_rule": "activate:original_selected_root_pair_count=1&factor_root_scan_ops_over_rho<=0.46:True",
+      "candidate_remainder_ops_over_rho_sum": 3.4160584,
+      "clause_index": 0,
+      "factor_root_scan_ops_over_rho_sum": 1.8248175,
+      "mode": "pre_factor_stage",
+      "selected_negative_count": 0,
+      "selected_positive_count": 4,
+      "selected_record_count": 4
+    },
+    {
+      "activation_rule": "activate:profile_top_k=12&preserving_candidate_count=11&factor_root_scan_ops_over_rho<=0.46:True",
+      "candidate_remainder_ops_over_rho_sum": 6.540146,
+      "clause_index": 1,
+      "factor_root_scan_ops_over_rho_sum": 2.71532844,
+      "mode": "pre_factor_stage",
+      "selected_negative_count": 0,
+      "selected_positive_count": 8,
+      "selected_record_count": 8
+    },
+    {
+      "activation_rule": "activate:profile_top_k=12&preserving_candidate_count=13&selected_leaf_index_count=1&factor_root_scan_ops_over_rho<=0.46:True",
+      "candidate_remainder_ops_over_rho_sum": 8.93430657,
+      "clause_index": 2,
+      "factor_root_scan_ops_over_rho_sum": 3.02189778,
+      "mode": "pre_factor_stage",
+      "selected_negative_count": 0,
+      "selected_positive_count": 9,
+      "selected_record_count": 9
+    }
+  ],
+  "evaluation_source": "ecdlp_index_calculus_state/ffe_full_remainder_combined_pre_factor_preserving_count_single_leaf_family_probe.json",
+  "family_name": "queue_or_preserving_counts_single_leaf_420",
+  "groups": {
+    "all_records": {
+      "candidate_remainder_ops_over_rho_avg": 2.09315877,
+      "candidate_remainder_ops_over_rho_sum": 1260.08157688,
+      "factor_root_scan_ops_over_rho_avg": 0.4442003,
+      "factor_root_scan_ops_over_rho_sum": 267.4085835,
+      "negative_count": 602,
+      "positive_count": 21,
+      "record_count": 623,
+      "surface_full_remainder_ops_over_rho_avg": 2.09209265,
+      "surface_full_remainder_ops_over_rho_sum": 1303.37372285
+    },
+    "rejected_records": {
+      "candidate_remainder_ops_over_rho_avg": 2.13630132,
+      "candidate_remainder_ops_over_rho_sum": 1241.19106591,
+      "factor_root_scan_ops_over_rho_avg": 0.44724017,
+      "factor_root_scan_ops_over_rho_sum": 259.84653978,
+      "negative_count": 602,
+      "positive_count": 0,
+      "record_count": 602,
+      "surface_full_remainder_ops_over_rho_avg": 2.13369304,
+      "surface_full_remainder_ops_over_rho_sum": 1284.48321188
+    },
+    "selected_records": {
+      "candidate_remainder_ops_over_rho_avg": 0.89954814,
+      "candidate_remainder_ops_over_rho_sum": 18.89051097,
+      "factor_root_scan_ops_over_rho_avg": 0.36009732,
+      "factor_root_scan_ops_over_rho_sum": 7.56204372,
+      "negative_count": 0,
+      "positive_count": 21,
+      "record_count": 21,
+      "surface_full_remainder_ops_over_rho_avg": 0.89954814,
+      "surface_full_remainder_ops_over_rho_sum": 18.89051097
+    }
+  },
+  "label_mode": "full_remainder_below_rho",
+  "method": "replay_evaluated_rule_family_and_proxy_charge_full_remainder_followup",
+  "missed_positive_records": [],
+  "proxy_charge": {
+    "candidate_remainder_all_records_sum": 1260.08157688,
+    "candidate_remainder_rejected_sum": 1241.19106591,
+    "candidate_remainder_selected_only_sum": 18.89051097,
+    "factor_root_scan_all_records_sum": 267.4085835,
+    "factor_scan_plus_selected_candidate_remainder_sum": 286.29909447,
+    "factor_scan_plus_selected_candidate_remainder_vs_all_candidate_remainder": 0.22720679,
+    "factor_scan_plus_selected_surface_full_remainder_sum": 286.29909447,
+    "factor_scan_plus_selected_surface_full_remainder_vs_all_surface_full_remainder": 0.21966002,
+    "selected_candidate_remainder_fraction_of_all": 0.0149915,
+    "selected_surface_full_remainder_fraction_of_all": 0.01449355,
+    "surface_full_remainder_all_records_sum": 1303.37372285,
+    "surface_full_remainder_selected_only_sum": 18.89051097
+  },
+  "schema": "ecdlp_full_remainder_stage_split_charge_audit_v1",
+  "selected_false_positive_records": [],
+  "source_summaries": [
+    {
+      "positive_count": 3,
+      "record_count": 16,
+      "selected_negative_count": 0,
+      "selected_positive_count": 3,
+      "selected_record_count": 3,
+      "source_label": "broad_t420_neighbors"
+    },
+    {
+      "positive_count": 6,
+      "record_count": 8,
+      "selected_negative_count": 0,
+      "selected_positive_count": 6,
+      "selected_record_count": 6,
+      "source_label": "broad_t420_salt165"
+    },
+    {
+      "positive_count": 8,
+      "record_count": 8,
+      "selected_negative_count": 0,
+      "selected_positive_count": 8,
+      "selected_record_count": 8,
+      "source_label": "broad_t618_salt165"
+    },
+    {
+      "positive_count": 1,
+      "record_count": 2,
+      "selected_negative_count": 0,
+      "selected_positive_count": 1,
+      "selected_record_count": 1,
+      "source_label": "queue_22050_salt165_240_247_followup_batch2"
+    },
+    {
+      "positive_count": 1,
+      "record_count": 2,
+      "selected_negative_count": 0,
+      "selected_positive_count": 1,
+      "selected_record_count": 1,
+      "source_label": "queue_22050_salt165_288_295_rowdiverse_batch2"
+    },
+    {
+      "positive_count": 1,
+      "record_count": 1,
+      "selected_negative_count": 0,
+      "selected_positive_count": 1,
+      "selected_record_count": 1,
+      "source_label": "queue_22050_salt165_288_295_rowdiverse_followup_batch42"
+    },
+    {
+      "positive_count": 1,
+      "record_count": 2,
+      "selected_negative_count": 0,
+      "selected_positive_count": 1,
+      "selected_record_count": 1,
+      "source_label": "queue_mixed_240_247_global_followup_batch12"
+    }
+  ],
+  "stage_boundary": {
+    "interpretation": "Proxy charge only: the family can reject full-remainder follow-up after exact materialization and Sage factorization, but this artifact does not prove a wall-clock or asymptotic speedup.",
+    "materialization_cost_is_charged": false,
+    "sage_factorization_cost_is_charged": false,
+    "selector_requires_exact_surface_materialization": true,
+    "selector_requires_sage_factorization": true,
+    "selector_uses_factor_root_scan_cost": true,
+    "selector_uses_pre_factor_stage": true,
+    "selector_uses_preserving_candidate_count": true
+  },
+  "summary": {
+    "positive_count": 21,
+    "precision": 1.0,
+    "recall": 1.0,
+    "record_count": 623,
+    "rejected_negative_count": 602,
+    "rejected_positive_count": 0,
+    "rejected_record_count": 602,
+    "selected_negative_count": 0,
+    "selected_positive_count": 21,
+    "selected_record_count": 21
+  }
+}

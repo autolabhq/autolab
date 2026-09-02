@@ -1,0 +1,167 @@
+{
+  "admission": {
+    "lane_admitted": false,
+    "linear_translation_rank_negative_admitted": true,
+    "obligation_count": 26,
+    "obligations": {
+      "all_actual_c2_by_c3_matrices_full_row_rank": true,
+      "all_actual_inverse_pairs_separated": true,
+      "all_actual_multiplicative_defects_attain_six_cosets": true,
+      "all_synthetic_fourier_supports_at_least_q_minus_one": true,
+      "breakthrough_complete": false,
+      "cayley_claw_form_derived": true,
+      "compact_nontranslation_composition_complete": false,
+      "complete_five_source_index": false,
+      "eight_actual_controls_complete": true,
+      "factor_logs_complete": false,
+      "generic_prime_family_algorithm": false,
+      "identical_target_descent_complete": false,
+      "inverse_equality_rational_function_not_sixth_power": true,
+      "known_rhs_relation_rank_complete": false,
+      "nonlinear_character_source_router_complete": false,
+      "parseval_forces_linear_fourier_support_omega_q": true,
+      "pollard_rho_improvement_complete": false,
+      "polylog_inverse_separating_family_exists": true,
+      "r140_mobius_involution_inherited": true,
+      "sextic_character_has_six_values": true,
+      "sextic_character_polylog_evaluable": true,
+      "shoup_improvement_complete": false,
+      "ten_source_bindings_verified": true,
+      "translated_character_sums_uniformly_square_root_bounded": true,
+      "translation_invariant_linear_state_exponent_B5": true,
+      "weil_square_root_bound_applies": true
+    },
+    "passed_obligation_count": 16,
+    "polylog_inverse_separator_admitted": true
+  },
+  "artifacts": {
+    "controls": "torus_c5_sextic_mobius_character_router_controls.json",
+    "cost": "torus_c5_sextic_mobius_character_router_cost_ledger.json",
+    "frozen": "frozen_torus_c5_sextic_mobius_character_router.json",
+    "logs_descent": "factor_logs_and_identical_descent_r141.json",
+    "source_replay": "torus_c5_sextic_mobius_character_router_replay.json"
+  },
+  "breakthrough": false,
+  "classification": "SEXTIC_MOBIUS_CHARACTER_EVALUATES_IN_POLYLOG_WITHOUT_DLP__WEIL_CANCELLATION_GIVES_POLYLOG_FIXED_PARAMETER_INVERSE_SEPARATOR__ALL_EIGHT_ACTUAL_POSITIVE_INVERSE_EMPTY_SUPPORTS_SEPARATED_WITH_AT_MOST_FOUR_PARAMETERS__C2_BY_C3_CHARACTER_MATRICES_FULL_ROW_RANK_AND_MULTIPLICATIVE_DEFECT_ATTAINS_ALL_SIX_COSETS__PARSEVAL_FORCES_OMEGA_Q_B5_TRANSLATED_LINEAR_STATE__NONLINEAR_SOURCE_ROUTER_OPEN__NO_RANK_LOGS_DESCENT_SHOUP_BREAKTHROUGH",
+  "controls_summary": {
+    "actual_control_count": 8,
+    "all_actual_c2_by_c3_matrices_full_row_rank": true,
+    "all_actual_c5_supports_injective": true,
+    "all_actual_cayley_claw_identities_exact": true,
+    "all_actual_inverse_pairs_separated": true,
+    "all_actual_multiplicative_defects_attain_six_cosets": true,
+    "all_actual_positive_inverses_empty": true,
+    "all_synthetic_fourier_supports_at_least_q_minus_one": true,
+    "candidate_discrete_log_oracle_consumed": false,
+    "finite_controls_receive_asymptotic_credit": false,
+    "maximum_selected_parameter_count": 4,
+    "schema": "p1553.torus_c5_sextic_mobius_character_router.controls.r141.v1",
+    "synthetic_control_count": 8
+  },
+  "cost_summary": {
+    "actual_maximum_selected_parameter_count": 4,
+    "candidate_field_dlp_used": false,
+    "factor_log_cost_supplied": false,
+    "identical_descent_cost_supplied": false,
+    "inverse_separator_exponent_B": {
+      "decimal": 0.0,
+      "exact": "0"
+    },
+    "inverse_separator_parameter_count": "O(log |S|)",
+    "inverse_separator_query_cost": "O(log |S|*log q)",
+    "linear_translation_inside_setup_cap": false,
+    "linear_translation_rank_exponent_B": {
+      "decimal": 5.0,
+      "exact": "5"
+    },
+    "nonlinear_source_router_cost_supplied": false,
+    "rank_cost_supplied": false,
+    "schema": "p1553.torus_c5_sextic_mobius_character_router.cost.r141.v1",
+    "single_character_query_cost": "O(log q) field operations",
+    "total_attack_cost_supplied": false
+  },
+  "disposition": "ADMIT_POLYLOG_NONZERO_VALUE_INVERSE_SEPARATOR__REJECT_TRANSLATED_LINEAR_CHARACTER_ROUTER_AT_B5_STATE__PRESERVE_NONLINEAR_NONTRANSLATION_SOURCE_ROUTER__NO_RANK__NO_LOGS__NO_DESCENT__NO_SHOUP__NO_BREAKTHROUGH",
+  "experiment_id": "P1553-TORUS-C5-SEXTIC-MOBIUS-CHARACTER-ROUTER-R141",
+  "next_action": "Construct a nonlinear C2 source router from the sextic Mobius characters without materializing their Omega(q) translated linear orbit. Freeze every parameter, character value, branch, candidate C2 pointer, C3 certificate, inverse-empty path, and reverse five-source pointer; fit B^(9/4+o(1)) state and polylogarithmic arbitrary-target work; avoid field DLP; and charge rank, logs, identical descent, memory, field operations, extension degree, and bits.",
+  "non_claims": [
+    "Inverse separation is not C2 source selection.",
+    "Full finite row rank is not asymptotic evidence by itself.",
+    "The Omega(q) theorem covers translated linear character-label convolution only.",
+    "No general nonlinear circuit, RAM, or cell-probe lower bound is claimed.",
+    "No source index, relation rank, logs, descent, rho, or Shoup result is supplied."
+  ],
+  "pollard_rho_improvement": false,
+  "schema": "p1553.torus_c5_sextic_mobius_character_router.r141.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "r140_controls": {
+      "path": "torus_c5_order_two_four_minor_claw_controls.json",
+      "sha256": "dbe9feac7384b1d6048b11d9a7a86e2afdb91adc339481132183e85f57ea1a75"
+    },
+    "r140_cost": {
+      "path": "torus_c5_order_two_four_minor_claw_cost_ledger.json",
+      "sha256": "2cd3c7708e4f83af6f688e10ce27e06198e6aaade546b0e0ef15423777137af8"
+    },
+    "r140_frozen": {
+      "path": "frozen_torus_c5_order_two_four_minor_claw.json",
+      "sha256": "7930da7bdd6f51254ab2a23aacf12113c0c85fd2857aec8919caeb30d69f1a1f"
+    },
+    "r140_gate": {
+      "path": "p1553_torus_c5_order_two_four_minor_claw_probe_gate_r140.md",
+      "sha256": "33c8b530802974a36b06b0032c17794f7f77bf454d41dd4a2e2415d671ccfe66"
+    },
+    "r140_logs": {
+      "path": "factor_logs_and_identical_descent_r140.json",
+      "sha256": "b7d7c9f1ecf51a349dea0c610c4a8a3fee6d000708285685a4d27d9b12eeecda"
+    },
+    "r140_parent": {
+      "path": "p1553_torus_c5_order_two_four_minor_claw_probe_parent_report_r140.yaml",
+      "sha256": "03ae39a6fde97e95581fefccf64a86cc6adc29ff2126ffc2e72bfd7f6d136ec5"
+    },
+    "r140_producer": {
+      "path": "p1553_torus_c5_order_two_four_minor_claw_probe_r140.py",
+      "sha256": "a849f79dea39041de547b473c0d4fc28e6221bbb6e004738028c7f4515422373"
+    },
+    "r140_replay": {
+      "path": "torus_c5_order_two_four_minor_claw_replay.json",
+      "sha256": "0661fab8f891080107a03e95981fea0170e54cbe8f53487db40fcfa9f0a9a3e2"
+    },
+    "r140_report": {
+      "path": "p1553_torus_c5_order_two_four_minor_claw_probe_report_r140.json",
+      "sha256": "3971132c94034f6c7f03bb7b77e83212fe805d9539b96c77a10e14176dca527c"
+    },
+    "r140_test": {
+      "path": "tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_order_two_four_minor_claw_probe_r140.py",
+      "sha256": "8e5daa679de1739e71c9670c5b775c2179d833748730fe897ba7eb8b8e36a585"
+    }
+  },
+  "theorem": {
+    "cayley_form": "For X(t)=(1+u*t)/(1-u*t), u^2=d, the Mobius claw w=T_z(x) is equivalent to d*(t_x*t_z+t_x*t_w+t_z*t_w)=3.",
+    "character_definition": "chi_z(x)=T_z(x)^q lies in mu_6 because the full norm-one group has order p+1=6q.",
+    "evaluation_cost": "One Mobius evaluation and binary exponentiation by q use O(log q) field operations and no discrete logarithm.",
+    "inverse_separation": "For fixed x!=x^-1, equality chi_z(x)=chi_z(x^-1) is the trivial-coset condition for a fixed-degree rational function of z with a simple divisor, hence not a sixth power. Weil cancellation gives q/6+O(sqrt(q)) equal parameters. A union bound therefore gives O(log |S|) fixed parameters separating every x in any inversion-disjoint support S from x^-1.",
+    "linear_translation_boundary": "Every Fourier coefficient of x->chi_z(x) on H is a fixed-conductor torus character sum and is O(sqrt(q)). Parseval then forces Omega(q) nonzero coefficients, so the translated circulant has Omega(q)=B^(5+o(1)) complex rank.",
+    "literature_novelty": "unverified",
+    "primary_source": {
+      "author": "Andre Weil",
+      "doi": "10.1073/pnas.34.5.204",
+      "title": "On Some Exponential Sums",
+      "url": "https://doi.org/10.1073/pnas.34.5.204",
+      "use": "Square-root cancellation for nontrivial fixed-degree character sums on a genus-zero finite-field curve.",
+      "year": 1948
+    },
+    "scope": "The rank result covers translation-invariant linear convolution or sketch realizations of the six coset labels. It is not a lower bound for nonlinear circuits, adaptive data structures, RAM, or cell probes."
+  },
+  "verified_source_hashes": {
+    "r140_controls": "dbe9feac7384b1d6048b11d9a7a86e2afdb91adc339481132183e85f57ea1a75",
+    "r140_cost": "2cd3c7708e4f83af6f688e10ce27e06198e6aaade546b0e0ef15423777137af8",
+    "r140_frozen": "7930da7bdd6f51254ab2a23aacf12113c0c85fd2857aec8919caeb30d69f1a1f",
+    "r140_gate": "33c8b530802974a36b06b0032c17794f7f77bf454d41dd4a2e2415d671ccfe66",
+    "r140_logs": "b7d7c9f1ecf51a349dea0c610c4a8a3fee6d000708285685a4d27d9b12eeecda",
+    "r140_parent": "03ae39a6fde97e95581fefccf64a86cc6adc29ff2126ffc2e72bfd7f6d136ec5",
+    "r140_producer": "a849f79dea39041de547b473c0d4fc28e6221bbb6e004738028c7f4515422373",
+    "r140_replay": "0661fab8f891080107a03e95981fea0170e54cbe8f53487db40fcfa9f0a9a3e2",
+    "r140_report": "3971132c94034f6c7f03bb7b77e83212fe805d9539b96c77a10e14176dca527c",
+    "r140_test": "8e5daa679de1739e71c9670c5b775c2179d833748730fe897ba7eb8b8e36a585"
+  }
+}

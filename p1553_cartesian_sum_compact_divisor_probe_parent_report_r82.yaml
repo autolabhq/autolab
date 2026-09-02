@@ -1,0 +1,134 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-CARTESIAN-SUM-COMPACT-DIVISOR-R82-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: prospective_compact_divisor_endpoint_source_cost_replay
+run_count: 1
+status: cartesian_sum_compact_s4_pass_full_source_rho_fail
+labels:
+  - exact-finite
+  - prospective
+  - scalar-blind-source
+  - local-positive
+  - verifier-dlp-separated
+  - novelty-unverified
+owner: P1553-R3-R11-R14-R81
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Test whether a non-one-dimensional scalar-blind factor base given by the
+  elliptic addition pushforward F=A+C compiles its triple S4 endpoints inside
+  the setup and query caps and whether that compression survives known-RHS
+  relation collection, factor logs, and identical target descent.
+inputs:
+  - path: p1553_full_multiplicative_x_coset_endpoint_probe_report_r81.json
+    sha256: e556efa7c1e639f76915f152ebdcc3d00db2a932d8ef207ae8653c94117f026f
+  - path: p1553_tensor_trace_minpoly_compiler_gate_r14.md
+    sha256: da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac
+  - path: p1553_cartesian_kummer_rigidity_gate_r11.md
+    sha256: 6c79b486bfa4cfd14674033a438db3d91ddf7bbe4d2c4aaf309f1a0706f0df4e
+  - path: p1553_r31_artifact_index_README.md
+    sha256: 0c76f5d8385bf97b9008314736d8d3a8593e6d96fc4f25af380c2ef47fc8907f
+    contains_artifact: p1553_query2p1_indexing_gate_r3.md
+    contains_artifact_sha256: b2ee5934e295ab1f0d6b43452898e520d0cb18e718a8f5865694b25909b0df5e
+artifacts:
+  - path: p1553_cartesian_sum_compact_divisor_probe_r82.py
+    sha256: 7380bff3175625016affee4703b0b0f2867a28113f72eef2d90614ed57ffef07
+  - path: p1553_cartesian_sum_compact_divisor_probe_report_r82.json
+    sha256: ccc83fec0dc411ce35f27f21bcb1e543f6fe3d85a95aa24217701d8c9bbf5832
+  - path: frozen_compact_divisor_factor_base.json
+    sha256: b5d90a713e6d2e0d092ac9019fcc7fc262df9a1874d550ba1782271ff66465b5
+  - path: divisor_slp_to_s4_endpoint_compiler.json
+    sha256: 4987a01b3214a0fc5b822f52bd3ee80e405a406599be9067fb013dc2b3050629
+  - path: prospective_density_and_matched_rank_controls.json
+    sha256: 1a727680b6fc2644c167861bc515588dbc712c7470a9923067f55a230131e195
+  - path: scalar_blind_query_source_cost_ledger.json
+    sha256: 37df840a3025d2b3226cb403a764af6f4cb3e8baa88e25d1254123f52c389086
+  - path: verified_factor_logs_and_identical_descent.json
+    sha256: fb6bb7367b1f75c17d9b9ce9abb690ff01ea581f13f525c8302323ed6da1dd8b
+  - path: p1553_cartesian_sum_compact_divisor_probe_gate_r82.md
+    sha256: 7c34e1d905c95a756689d4ec0ea92c6bd47808bcb3407d858ce08cccf75fd55e
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_cartesian_sum_compact_divisor_probe_r82.py
+    sha256: 4e5ec3da8794a55517be02be8fbf20b79f2abe088b9fa09fdff59cbbbe230247
+frozen_interface:
+  curve_model: y^2=x^3+1
+  family_count: 4
+  instance_count: 8
+  matched_hash_control_count: 8
+  atom_a_size: B^(2/5+o(1))
+  atom_c_size: B^(3/5+o(1))
+  factor_base: F_ij=A_i+C_j
+  scalar_labels_consumed: false
+  verifier_dlp_credit: forbidden
+  geometry_id: cartesian_sum_addition_pushforward_u_B2o5_v_B3o5_v1
+verified_statements:
+  - >-
+    All eight scalar-blind addition maps are injective, omit the identity,
+    and produce exactly B=uv factor-base columns from u+v input atoms.
+  - >-
+    The exact identity 3F=3A+3C yields B^(9/5+o(1)) retained state and a
+    B^(6/5+o(1)) endpoint membership/source query, below both campaign caps.
+  - >-
+    Every sampled local S4 source replays through complete group addition;
+    the candidate does not materialize the B^3 convolution or consume scalar
+    labels.
+  - >-
+    Adjacent rectangle identities have exact rank B-u-v+1, prospective
+    verifier-only known-RHS rows reach u+v-1, and their combined nominal
+    factor-column rank is B on every instance.
+  - >-
+    Exact five-factor support density lies between 0.001538 and 0.007670,
+    versus 0.011911 through 0.022017 for matched random controls; the
+    candidate retains a B^5 support exponent but loses a finite factor.
+  - >-
+    The full relation and identical descent are the colored ten-sum 5A+5C.
+    The best explicit equality split costs B^(13/5) work and B^(12/5) state,
+    while generic collision search is B^(5/2)=N^(1/2).
+scoped_positive_controls:
+  compact_addition_pushforward_divisor: pass
+  scalar_blind_construction: pass
+  injective_factor_base: pass
+  exact_local_s4_compiler: pass
+  local_s4_setup_state_cap: pass
+  local_s4_fresh_query_cap: pass
+  exact_source_replay: pass
+  prospective_density_and_matched_controls: pass
+  public_rectangle_rank: pass
+  prospective_meaningful_rank: pass
+scoped_failures:
+  full_scalar_blind_relation_source_inside_B5_over_4: fail
+  full_source_state_inside_B9_over_4: fail
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  candidate_factor_log_solve_without_verifier_dlp: unsupplied
+  identical_fresh_target_descent: unsupplied
+  generic_prime_family_theorem: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - addition-compatible field-coordinate filtrations
+  - representation-specific summation-polynomial or FFE source solvers
+  - non-Cartesian compact divisors without an additive atom factorization
+  - unrestricted algebraic-circuit lower bounds
+  - generic-prime asymptotic lower bounds beyond the cited generic model
+admission:
+  passed_obligations: 11
+  obligation_count: 17
+  lane_admitted: false
+result:
+  compact_divisor_replayed: true
+  exact_local_s4_compiler_complete: true
+  local_s4_caps_satisfied: true
+  prospective_density_rank_controls_complete: true
+  full_relation_source_complete: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_CARTESIAN_SUM_FULL_PIPELINE_ONLY__COMPACT_ADDITION_PUSHFORWARD_FACTOR_BASE__EXACT_B6O5_BY_B9O5_TRIPLE_COMPILER__B6O5_TRIPLE_QUERY_PASSES__PUBLIC_RECTANGLE_KERNEL_EXACT__PROSPECTIVE_MEANINGFUL_RANK_PASSES__FULL_RELATION_IS_5A_PLUS_5C__BEST_EXPLICIT_JOIN_B2P6_WORK_B2P4_STATE__GENERIC_COLLISION_B2P5_EQUALS_RHO__NO_QUOTIENT_WAGNER_CREDIT__NO_SUBCAP_FFE__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Derive or refute one addition-compatible field-coordinate filtration for
+  the colored 5A+5C source. Every partial filter must compose under elliptic
+  addition, retain exact source backpointers, avoid verifier DLP labels, fit
+  B^(9/4) setup/state and B^(5/4) fresh work/workspace, and pass a matched
+  random-deck control.

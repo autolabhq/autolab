@@ -1,0 +1,76 @@
+{
+  "candidate_credit": false,
+  "conditional_oracle_replay": {
+    "a_endpoint_occurrences": 32,
+    "a_source": [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "a_subproduct_source_dictionary_words": 32,
+    "c_endpoint_occurrences": 243,
+    "c_source": [
+      0,
+      0,
+      2,
+      1,
+      0
+    ],
+    "c_source_dictionary_enumerated": true,
+    "c_source_dictionary_words": 243,
+    "candidate_credit": false,
+    "expected_a_endpoint": 894663,
+    "expected_acceptance_plus_binary_calls": 6,
+    "field_prime": 1000003,
+    "joint_source_replay": true,
+    "logarithmic_call_count_exact": true,
+    "oracle_constructor_supplied": false,
+    "oracle_localization": {
+      "accepted": true,
+      "localized_endpoint": 894663,
+      "oracle_calls": 6,
+      "path": [
+        {
+          "role": "acceptance",
+          "subset_size": 32,
+          "zero": true
+        },
+        {
+          "role": "left_child",
+          "subset_size": 16,
+          "zero": false
+        },
+        {
+          "role": "left_child",
+          "subset_size": 8,
+          "zero": false
+        },
+        {
+          "role": "left_child",
+          "subset_size": 4,
+          "zero": true
+        },
+        {
+          "role": "left_child",
+          "subset_size": 2,
+          "zero": true
+        },
+        {
+          "role": "left_child",
+          "subset_size": 1,
+          "zero": false
+        }
+      ]
+    },
+    "recovered_a_endpoint": 894663,
+    "recovered_c_endpoint": 105374,
+    "target": 34,
+    "target_multiplicity": 1,
+    "zero_test_reads_materialized_c_polynomial": true
+  },
+  "logarithmic_source_localization_exact": true,
+  "public_zero_test_and_marker_constructor_inside_caps": false,
+  "schema": "p1553.target_specialization_source_localization.r88.v1"
+}

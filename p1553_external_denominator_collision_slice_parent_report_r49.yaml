@@ -1,0 +1,119 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-EXTERNAL-DENOMINATOR-COLLISION-SLICE-R49-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_deterministic_external_block_sample_and_declared_slice_sweep
+  model_scope: 1000_outside_catalog_equal_sum_denominators_on_r38_toy
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_EXTERNAL_DENOMINATOR_SAMPLE_NEGATIVE_GATE
+summary: >-
+  Deterministic seed 1553 generates 1,000 distinct nine-point blocks outside
+  the R45 catalog whose offset sums are 360 modulo 103. Every exact section
+  zero set is verified. Each denominator's highest-collision disjoint catalog
+  partner has collision-basis rank seven, and all seven 194-pencil slices are
+  exhausted. The sweep generates 1,358,000 instances and scores 1,289,607
+  subgroup-basepoint-free candidates. Ninety-one denominators improve their
+  secondary score by at most eight, but none gains a third complete fiber.
+  Unsampled blocks and pencils outside the declared slices remain open.
+inputs:
+  - path: staged/p1553_single_interval_pencil_dlp_reduction_gate_r42.md
+    sha256: 8a8de8726e4fc9542f97cf7e1ba4fc54596307cc544da0d0b18b588553022dae
+  - path: staged/p1553_catalog_pencil_fiber_gate_r46.md
+    sha256: 6302cf24ff82dfc1d96c0cc21c0980c862a3218c0100ffb29905a35a8b63e2e4
+  - path: staged/p1553_all_denominator_collision_slice_gate_r48.md
+    sha256: 76952071e56ade008852176cd17d71e23a8f98f0b7b674464fd1dd85f8c1f81f
+  - path: staged/p1553_r48_bundle.sha256
+    sha256: ce1a6f65097d907417494fba01c5c4ed529fa5509cbad3ad971c7befc2a6e611
+  - path: staged/p1553_r48_staging_receipt.yaml
+    sha256: 815ca9b7afd5af60e1737d7d2109d28b7739d5a46bf585aa38d1c5fc5acabc57
+outputs:
+  - path: staged/p1553_external_denominator_collision_slice_gate_r49.md
+    sha256: 717ed5f1e01f8b96fd95598811369ec7debbebe04efde3e784172e875dddb7e2
+  - path: staged/p1553_external_denominator_collision_slice_sweep_r49.py
+    sha256: 12fcb856ba85da03c521ac3228d184651cfc370f7f97261f643909545ff9c14f
+  - path: staged/p1553_external_denominator_collision_slice_sweep_report_r49.json
+    sha256: 1045ea8a8abec815fd3614cc02ca6df2569859c828c9a128b8b1812bb37dab7e
+frozen_parameters:
+  field_prime: 193
+  subgroup_order: 103
+  selected_interval_length: 81
+  sampling_seed: 1553
+  accepted_external_blocks: 1000
+  target_offset_sum_mod_103: 51
+  catalog_seed_sections: 807
+  dropped_collision_rows_per_denominator: 7
+  pencils_per_projective_slice: 194
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+theorems:
+  - >-
+    A nine-offset block has zero Abel sum after the fixed translation exactly
+    when its offset sum is 360 modulo 103.
+  - >-
+    Every accepted external block has an exact degree-nine section whose full
+    subgroup zero set is precisely the named block.
+  - >-
+    Exhausting all declared slices for all 1,000 sampled external denominators
+    produces no candidate with three complete selected fibers.
+controls:
+  deterministic_sampling_seed_frozen: true
+  sampling_attempt_count_frozen: true
+  all_1000_blocks_distinct_and_outside_catalog: true
+  all_external_section_zero_sets_checked: true
+  all_external_section_vectors_distinct: true
+  all_seed_collision_bases_rank_seven: true
+  all_1358000_slice_instances_generated: true
+  all_unique_candidate_outcomes_accounted: true
+  subgroup_basepoints_rejected: true
+toy_control:
+  sampling_attempts: 1398
+  congruent_candidates: 1000
+  catalog_rejections: 0
+  duplicate_rejections: 0
+  generated_projective_line_instances: 1358000
+  unique_pencil_keys_including_seeds: 1352000
+  scored_subgroup_basepoint_free_candidates: 1289607
+  subgroup_basepoint_rejections: 61393
+  duplicate_slice_instances: 6000
+  denominators_with_strict_secondary_improvement: 91
+  maximum_collision_pair_gain: 8
+  global_best_complete_fibers: 2
+  global_best_collision_pairs: 103
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+  survivors: 0
+  replay_matches_report_byte_for_byte: true
+result:
+  classification: external_denominator_sample_negative_unsampled_blocks_open
+  three_complete_fiber_candidate: absent_in_declared_slices
+  nine_complete_fiber_candidate: absent_in_declared_slices
+  unsampled_equal_sum_blocks: unclassified
+  outside_slice_pencils: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - the 1000 blocks are a deterministic finite sample, not an exhaustive catalog
+  - each denominator search is exhaustive only over seven declared slices
+  - subgroup basepoint checks do not certify geometric basepoint freeness
+  - no target, R10, relation-rank campaign, logs, descent, or breakthrough
+deduplication:
+  - R48 owns declared slices for all retained catalog denominators
+  - R49 owns the first denominator sample outside the R45 trade catalog
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_EXTERNAL_DENOMINATOR_SAMPLE_NEGATIVE_GATE__SEED1553_ACCEPTS_1000_DISTINCT_OUTSIDE_CATALOG_EQUAL_SUM_BLOCKS__ALL1000_EXACT_SECTION_ZERO_SETS_AND_RANK_SEVEN_SEEDS_CHECKED__SEVEN_194_PENCIL_SLICES_EXHAUSTED_PER_EXTERNAL_DENOMINATOR__1358000_INSTANCES_1289607_SCORED_CANDIDATES__91_DENOMINATORS_IMPROVE_SECONDARY_SCORE_MAX_GAIN8__NO_CANDIDATE_HAS_THREE_COMPLETE_NINE_POINT_FIBERS__GLOBAL_BEST_TWO_FIBERS_103_COLLISION_PAIRS__REQUIRED_NINE_FIBERS_324_COLLISION_PAIRS_ABSENT__UNSAMPLED_BLOCKS_AND_OUTSIDE_SLICE_PENCILS_OPEN__NO_TARGET_R10_RELATION_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Complete the direct pairwise pencil audit for the enlarged 1,807-section
+  sample. R46 covers catalog-catalog pairs and R49 seed selection scores every
+  external-catalog pair. Exhaust every disjoint external-external pair,
+  deduplicate by Plucker coordinates, evaluate all subgroup points, and test
+  for a third complete selected fiber.

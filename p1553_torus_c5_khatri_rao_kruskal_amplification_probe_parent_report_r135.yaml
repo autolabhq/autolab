@@ -1,0 +1,114 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-TORUS-C5-KHATRI-RAO-KRUSKAL-AMPLIFICATION-R135-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: finite_field_khatri_rao_rank_and_random_model_negative
+run_count: 1
+status: structured_seven_mode_multi_predicate_nonzero_value_and_low_slp_open
+labels:
+  - exact-finite
+  - theorem-only
+  - finite-field
+  - norm-one-torus
+  - sparse-polynomial
+  - khatri-rao
+  - kruskal-rank
+  - random-model
+  - structured-factor-base
+  - source-reporting
+  - cost-accounting
+  - prospective
+  - novelty-deduplicated
+owner: P1553-R121-R129-R134
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Determine whether the C5 product evaluation matrix is a Khatri-Rao
+  power of the atom matrix and whether its Kruskal rank excludes the
+  surviving represented sparse predicate range.
+inputs:
+  - path: p1553_torus_c5_two_atom_geometric_progression_probe_r134.py
+    sha256: 42be98b69e5ba120e79d75d52b66e85719e4e81e59e0a6ba9f5dfb1fd804420c
+  - path: p1553_torus_c5_two_atom_geometric_progression_probe_report_r134.json
+    sha256: 29b274cce5b88242f31e07906147157a44a3e783774413a230a1c4e4a679d9cf
+  - path: frozen_torus_c5_two_atom_geometric_progression.json
+    sha256: 2f9fb995e8a0b6821365c7ee404130cc1d6d58006e59012806a2105ffc2e3829
+  - path: torus_c5_two_atom_geometric_progression_cost_ledger.json
+    sha256: bd223baa1e454f7b9b09cf5bb4b5c733bc94f46daa1e853c8cfd2ace4c7454a6
+  - path: torus_c5_two_atom_geometric_progression_replay.json
+    sha256: 384774470b2d92c2eaade2038ec1eb753e263f756e3a2c32ec1fd858b4082e04
+  - path: torus_c5_two_atom_geometric_progression_controls.json
+    sha256: dfc7c9d0f13d21cd3bee1bba5a0dd7d727ef5df0fb7969ff66d9384293ea0a56
+  - path: factor_logs_and_identical_descent_r134.json
+    sha256: 4784ebaa2d16e9dbc7fad24588a7c924b32f4a3efbc5633540d33f8fdb45a859
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_two_atom_geometric_progression_probe_r134.py
+    sha256: 1b71034e755e072967fff685cba29d65240e62b585090c64ac6702ca88379ad5
+  - path: p1553_torus_c5_two_atom_geometric_progression_probe_gate_r134.md
+    sha256: 161eca40da4f5fd1a861892a628168f10176b592f786913f24d07bf37f634f7c
+  - path: p1553_torus_c5_two_atom_geometric_progression_probe_parent_report_r134.yaml
+    sha256: 40c2423dc8939c25335465091840cc13e3a08e4f60dc9ff7e5ad556090e98dc3
+  - path: references/bhaskara_charikar_vijayaraghavan_tensor_uniqueness_1304.8087.pdf
+    sha256: 1667cbac1975b46257ac46ef887e11fca01d9f45d8bc951824671ef5d5e23618
+artifacts:
+  - path: p1553_torus_c5_khatri_rao_kruskal_amplification_probe_r135.py
+    sha256: f5729fc48372e99cafebb3d8f0bd5eda510802d0a6a3e68d21595dabe9c09ea5
+  - path: p1553_torus_c5_khatri_rao_kruskal_amplification_probe_report_r135.json
+    sha256: 27c91b9b7d11c09b6511002f29e1e77d083891aaf5e7222a069a0e76408ef278
+  - path: frozen_torus_c5_khatri_rao_kruskal_amplification.json
+    sha256: 25d1398eb817761d6cb4d9f2fea7db08eeee62000d88acfbe1ee276937cd3098
+  - path: torus_c5_khatri_rao_kruskal_amplification_cost_ledger.json
+    sha256: 7f0c37506437d58e2c04c0ee567193ce9c0822c980e21a5e011561f3312d5bdf
+  - path: torus_c5_khatri_rao_kruskal_amplification_replay.json
+    sha256: c6dbb5005e19b068f6a2bffa585ab7a9629855fecb2b98036ebd479ea1a329ef
+  - path: torus_c5_khatri_rao_kruskal_amplification_controls.json
+    sha256: bfec781c34fe40c1bea102f15ff6699c9265424ae37be5cadb3c71e2cc1991d6
+  - path: factor_logs_and_identical_descent_r135.json
+    sha256: 41754c11d3f5448df4ac96f514e3a13eced8f4c82286da54a4e7dfbedc7150e2
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_torus_c5_khatri_rao_kruskal_amplification_probe_r135.py
+    sha256: a85447be8f30789f95ba0a262b10e26cd3131b0dca78a4a53f29ed9bd0fd539b
+  - path: p1553_torus_c5_khatri_rao_kruskal_amplification_probe_gate_r135.md
+    sha256: c9bbf87b8b2c5621218823122f61151ed968b348fbb7497789757797c15b1c19
+verified_statements:
+  - >-
+    Over any field, the Kruskal rank of a Khatri-Rao product is at least
+    the sum of the input Kruskal ranks minus one, capped by the column
+    count.
+  - >-
+    The all-five-atoms-from-one-color C5 evaluation submatrix is the
+    row-deduplicated fifth Khatri-Rao power of the atom evaluation matrix.
+  - >-
+    Atom Kruskal rank two recovers the deterministic six-mode obstruction
+    but gives no structured seventh-mode credit.
+  - >-
+    Under the frozen uniform-random-deck model, sparse-root bounds and
+    Khatri-Rao amplification exclude represented predicates through
+    (5-o(1))*log2(q) modes with overwhelming probability.
+  - >-
+    Twelve finite controls replay atom Kruskal rank two, product Kruskal
+    rank six, row deduplication, source products, and color acceptance.
+scoped_failures:
+  one_to_six_mode_structured_zero_or_pole: rejected_deterministically
+  near_five_log_mode_random_deck_zero_or_pole: rejected_model_only
+  singleton_finite_color_rank_witness: unavailable_no_credit
+  structured_seven_plus_mode_zero_or_pole: open
+  multiple_small_mode_predicate_dag: open
+  nonzero_value_frobenius_coordinate_dag: open
+  low_slp_expanded_extension_predicate: open
+  complete_five_source_index: open
+  known_rhs_relation_rank: open
+  factor_logs: open
+  identical_target_descent: open
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 14
+  total_obligations: 22
+  lane_admitted: false
+next_action: >-
+  Test a multiple-small-predicate decision DAG, a nonzero-value
+  Frobenius-coordinate branch, or a high-expansion low-SLP predicate.
+  Freeze all branches, coefficients, and nodes, replay exact
+  positive/empty paths and C2+C3 sources, fit B^(9/4+o(1)) state and
+  polylogarithmic arbitrary-target work, avoid field DLP, and charge
+  rank, logs, identical descent, memory, field operations, and bits.

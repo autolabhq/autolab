@@ -1,0 +1,106 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-SIGNED-PARTITION-PACKING-R30-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-057
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: complete_signed_selected_value_grid_after_r29
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION
+summary: >-
+  If the selected both-branch stratum owns all nontrivial compression in an
+  O(B^2) complete image, it contains B^3-O(B^2) sources. The resulting 2B
+  signed translated-fiber partitions are near-complete on B^2 points. An
+  exact pair-packing inequality forces Omega(B^4) repeated point-pairs across
+  the partitions. Weighting by signed differences then yields Omega(B)
+  distinct difference shifts whose translate curves each place Omega(B^2)
+  normalization-collision defect on the selected grid. Thus near-total R27
+  branch B reduces to the R28 selected-singularity residual-divisor branch.
+inputs:
+  - path: staged/p1553_distinguished_branch_value_mass_gate_r24.md
+    sha256: dd9b27fa5114e2121463612f5afaf09db12de30a0a0c4397f1dc37aafac1e99f
+  - path: staged/p1553_popular_difference_complete_triple_gate_r25.md
+    sha256: 28b24d76a8fbecf50b755c7f808283664bfd52ba50395cc097d43a191ef7f70a
+  - path: staged/p1553_translate_curve_bezout_saturation_gate_r27.md
+    sha256: dee8a0913854e0ce3e717ecdbc3e8aea73b987b2b2fb71790a470f501dd0c2d9
+  - path: staged/p1553_selected_singularity_common_subdivisor_gate_r28.md
+    sha256: c24183bfe4823a9318ae06769763c94cfed99cb4291807f06b85f397fd53f662
+  - path: staged/p1553_distinct_shift_partial_orthogonal_grid_gate_r29.md
+    sha256: 2d675720d215e78d1fa83e3a33a91ceb6b41060c13031dedf1ba6943dbd5e9eb
+  - path: staged/p1553_r29_bundle.sha256
+    sha256: 5619581cd011919d6b3f4523ecb090bd150fa0b4fdf3ef9d4db799a647f83ee1
+  - path: staged/p1553_r29_staging_receipt.yaml
+    sha256: 38cb018730122b9390bdf0d51acb748bb4f3c1c2edfe4de95fdc7427bc5089ec
+output:
+  path: staged/p1553_signed_partition_packing_gate_r30.md
+  sha256: 8876faa2b65f6a44410495209617b50e99cc781caaf73a2f4cb8b359b294006f
+frozen_parameters:
+  outer_map_degree: c=B
+  selected_values: r=c
+  selected_kummer_shifts: L=c
+  signed_shift_count: M=2c
+  selected_pullback_points: z=c^2
+  source_rectangle: n=c^3
+theorems:
+  - >-
+    Under selected-stratum ownership, K_complete<=A*c^2 forces total signed
+    domain deficit at most 2A*c^2 across 2c translated partitions.
+  - >-
+    The repeated signed point-pair count is at least one half the sum of
+    I_S^2/r-I_S over signed shifts, minus binomial(z,2).
+  - >-
+    At r=L=c and z=c^2, near-complete signed domains force
+    Omega(c^4) repeated point-pairs across two signed partitions.
+  - >-
+    Weighting selected translate-curve singularity counts by signed
+    difference multiplicity bounds the repeated pair count.
+  - >-
+    Omega(c) distinct signed differences must each have Omega(c^2) selected
+    normalization-collision defect, reducing near-total branch B to R28.
+controls:
+  outside_selected_sources: singleton_and_unshared_under_ownership_premise
+  mixed_mechanism: admitted_only_with_disjoint_mass_and_energy_ledger
+  signed_difference_multiplicity: explicitly_weighted
+  unbalanced_blocks_and_erasures: retained_in_exact_inequality
+result:
+  classification: signed_grid_reduces_to_selected_singularity_branch
+  selected_both_branch_sources: B^3-O(B^2)
+  signed_partition_count: 2B
+  repeated_signed_pair_mass: Omega(B^4)
+  saturated_distinct_difference_shifts: Omega(B)
+  selected_delta_per_saturated_difference: Omega(B^2)
+  independent_near_total_branch_B: closed_into_R28
+  residual_divisor_pencil: open
+  mixed_or_constant_mass_mechanism: open_if_separately_certified
+  complete_source_package: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  relation_density: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - ownership premise is scoped and does not deny separately certified mixing
+  - constant-mass partial containment below the packing threshold remains open
+  - no impossibility theorem for the R28 residual-divisor pencil
+  - no complete factor-base-to-target ECDLP path
+deduplication:
+  - R24 owns selected-stratum source mass
+  - R25 owns popular differences and additive energy
+  - R27 owns initial delta and grid dichotomy
+  - R28 owns common sub-divisors and residual Abel sums
+  - R29 owns one-branch partial orthogonal grids
+  - R30 adds complete signed packing and difference-weighted collapse to R28
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_SCOPED_REDUCTION__OWNED_O_B2_IMAGE_FORCES_NEAR_TOTAL_SELECTED_MASS__TWO_B_SIGNED_PARTITIONS_FORCE_OMEGA_B4_REPEATED_PAIRS__OMEGA_B_DIFFERENCE_CURVES_EACH_SATURATE_OMEGA_B2_SELECTED_DELTA__NEAR_TOTAL_BRANCH_B_COLLAPSES_TO_R28__RESIDUAL_PENCIL_OPEN__NO_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Analyze the forced R28 residual-divisor family on the Omega(B) saturated
+  signed differences, requiring one prospective degree-B pencil, compact
+  common-subdivisor generation, residual cV certificates, O(B^2) complete
+  keys, exact sources, target, R10, rank, logs, and descent.

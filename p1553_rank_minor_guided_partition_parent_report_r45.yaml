@@ -1,0 +1,121 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-RANK-MINOR-GUIDED-PARTITION-R45-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_finite_field_rank_and_deterministic_budgeted_search
+  model_scope: equal_pair_sum_trade_graph_on_r38_toy_interval
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_FINITE_RANK_GUIDED_PRIMITIVE_PENCIL_NEGATIVE_GATE
+summary: >-
+  The 206 R44 rank-eight affine contexts collapse exactly to steps 42 and 61
+  because the common source translation cancels the start. The rank-eight
+  equal-pair-sum component containing the column partition is exhaustively 25
+  states with 6,647 distinct rank-nine boundary states. An eight-layer,
+  width-64 cofactor-guided bridge search expands 512 rank-nine states, evaluates
+  198,401 layer-unique children, and retains a catalog of 281 rank-eight
+  states. The minimum remains rank eight, above the pencil requirement two.
+  Later closures and bridge selection are budgeted, so arbitrary primitive
+  degree-nine pencils remain open.
+inputs:
+  - path: staged/p1553_single_interval_pencil_dlp_reduction_gate_r42.md
+    sha256: 8a8de8726e4fc9542f97cf7e1ba4fc54596307cc544da0d0b18b588553022dae
+  - path: staged/p1553_degree_three_inner_composition_gate_r43.md
+    sha256: b02901b1a822ce98f886146d5a04d2ea35b9515ec549358d2c4b7c02b6700ec8
+  - path: staged/p1553_primitive_degree_nine_section_rank_gate_r44.md
+    sha256: bc5e2068f25814087f228c5bc422109b3f7d5122cfad6bb0600b6208d372885a
+  - path: staged/p1553_r44_bundle.sha256
+    sha256: e24ce23353862aed15fa5f67fdffcad9cb1a5d3364160aad2da7ef0e394e7cf9
+  - path: staged/p1553_r44_staging_receipt.yaml
+    sha256: e914625038aedffecab5164f4d5aa5a009ce8fa77a6b5dbeaf44f46a905a04d6
+outputs:
+  - path: staged/p1553_rank_minor_guided_partition_gate_r45.md
+    sha256: 61f894cbc7a135c811202e91ced1ddb63c665b2ec3a08c78475e96fd01dfe3d6
+  - path: staged/p1553_rank_minor_guided_partition_search_r45.py
+    sha256: ac3562f9a1968bcbacae3de6952e4aa0bbc7a3163c3f2a4c0f47eea281b3093e
+  - path: staged/p1553_rank_minor_guided_partition_search_report_r45.json
+    sha256: dce423a510a0cf087f168e55ff3a02d0c360ce2c9f7565a57a0a8eb2a2889ebd
+frozen_parameters:
+  field_prime: 193
+  subgroup_order: 103
+  interval_length: 81
+  block_count: 9
+  block_size: 9
+  required_section_rank: 2
+  step_representative: 42
+  negated_step_representative: 61
+  beam_width: 64
+  beam_layers: 8
+  later_rank_eight_closure_budget_per_layer: 32
+theorems:
+  - >-
+    For common block sum 360, the translated affine interval scalar is
+    step*(k-40), independent of start; negating step acts by an invertible
+    basis sign change and preserves rank and cofactor zeros.
+  - >-
+    For rank-nine section matrices, vanishing 8-by-8 cofactors are zero
+    entries of the inverse; for rank eight their count is 81 minus the product
+    of left- and right-null support sizes.
+  - >-
+    The complete non-increasing rank-eight trade component containing the R44
+    column witness has 25 states and no state below rank eight.
+controls:
+  all_206_root_start_contexts_checked: true
+  both_step_representatives_checked: true
+  initial_rank_eight_component_untruncated: true
+  initial_rank_eight_component_exhaustive_under_equal_pair_sum_trades: true
+  later_rank_eight_closures_budgeted_and_flagged: true
+  rank_nine_beam_deterministic: true
+  exact_finite_field_ranks_checked: true
+  exact_cofactor_scores_checked: true
+  retained_rank_eight_partition_catalog_preserved: true
+toy_control:
+  initial_rank_eight_component_states: 25
+  initial_rank_eight_edge_occurrences: 52
+  initial_rank_nine_edge_occurrences: 6852
+  initial_distinct_rank_nine_boundary_states: 6647
+  expanded_rank_nine_states: 512
+  layer_unique_child_count_sum: 198401
+  layer_rank_eight_child_count_sum: 1108
+  layer_rank_nine_child_count_sum: 197293
+  retained_rank_eight_states: 281
+  final_rank_nine_pool: 303694
+  minimum_observed_rank: 8
+  rank_two_survivors: 0
+  replay_matches_report_byte_for_byte: true
+result:
+  classification: finite_rank_guided_negative_arbitrary_primitive_pencil_open
+  initial_rank_eight_component: exhausted_without_descent
+  budgeted_rank_nine_bridge_search: no_rank_below_eight
+  retained_rank_eight_catalog: available_for_pencil_first_scan
+  arbitrary_primitive_degree_nine_pencil: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - only the initial 25-state rank-eight component is exhaustively closed
+  - later rank-eight closures and rank-nine bridge selection have declared finite budgets
+  - cofactor sparsity is a heuristic score rather than a rank-descent theorem
+  - arbitrary equal-sum partitions and primitive degree-nine pencils remain open
+  - no target, R10, relation-rank campaign, logs, descent, or breakthrough
+deduplication:
+  - R42 owns the single-interval pencil DLP reduction
+  - R43 closes degree-three by degree-three compositions on the toy
+  - R44 owns the first structured primitive section-rank scan
+  - R45 owns deterministic rank-minor-guided equal-sum trade traversal
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_FINITE_RANK_GUIDED_PRIMITIVE_PENCIL_NEGATIVE_GATE__ALL206_R44_RANK_EIGHT_START_CONTEXTS_COLLAPSE_TO_STEPS_42_AND_61__INITIAL_RANK_EIGHT_TRADE_COMPONENT_EXHAUSTIVE_25_STATES__INITIAL_DISTINCT_RANK_NINE_BOUNDARY_6647__EIGHT_LAYER_WIDTH64_RANK_NINE_BEAM_EXPANDS_512_STATES__RETAINED_RANK_EIGHT_CATALOG_281_STATES__MINIMUM_SECTION_RANK_EIGHT_REQUIRED_TWO__LATER_CLOSURES_AND_RANK_NINE_BRIDGES_BUDGETED__ARBITRARY_PRIMITIVE_DEGREE_NINE_PENCIL_OPEN__NO_TARGET_R10_RELATION_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Perform a pencil-first exhaustive scan over the R45 catalog. Deduplicate all
+  degree-nine block sections, enumerate every unordered nonproportional pair,
+  evaluate each rational pencil on all 81 interval points, and require nine
+  disjoint complete nine-point fibers covering all 81 points before passing a
+  survivor to R42's all-secret marked-target test.

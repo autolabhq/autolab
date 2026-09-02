@@ -1,0 +1,221 @@
+{
+  "admission": {
+    "failures": [
+      "inside_cap_zero_mask_aggregate_complete",
+      "exact_source_locator_complete",
+      "generic_multiplicity_integer_lift_complete",
+      "known_rhs_rank_complete",
+      "factor_logs_complete",
+      "identical_target_descent_complete",
+      "shoup_improvement_complete",
+      "breakthrough_complete"
+    ],
+    "lane_admitted": false,
+    "obligation_count": 20,
+    "obligations": {
+      "all_positive_and_negative_alternants_exact": true,
+      "all_translated_domains_disjoint_affine": true,
+      "all_zero_sum_shift_schedules_exact": true,
+      "breakthrough_complete": false,
+      "confluent_jets_removed_by_position_separation": true,
+      "determinant_value_channel_deduplicated": true,
+      "exact_source_locator_complete": false,
+      "factor_logs_complete": false,
+      "finite_field_target_zero_biconditional_complete": true,
+      "generic_multiplicity_integer_lift_complete": false,
+      "identical_target_descent_complete": false,
+      "inside_cap_zero_mask_aggregate_complete": false,
+      "known_rhs_rank_complete": false,
+      "r108_marker_weight_semantics_preserved": true,
+      "seven_source_bindings_verified": true,
+      "shoup_improvement_complete": false,
+      "sixteen_actual_and_matched_instances": true,
+      "theta_pair_table_inside_online_cap": true,
+      "two_actual_double_fibers_replayed": true,
+      "unshifted_repeat_false_positive_reproduced": true
+    },
+    "passed_obligation_count": 12,
+    "target_zero_biconditional_admitted": true
+  },
+  "alternant_theorem": {
+    "basis": [
+      "1",
+      "x",
+      "y",
+      "x^2",
+      "x*y",
+      "x^3",
+      "x^2*y",
+      "x^4",
+      "x^3*y",
+      "x^5",
+      "x^4*y"
+    ],
+    "basis_pole_orders": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "confluent_jets_required_after_position_separation": false,
+    "curve_model": "short Weierstrass y^2=x^3+a*x+b",
+    "line_bundle": "L(11O)",
+    "original_target_biconditional": "det=0 iff sum_(i=1)^10 P_i=T",
+    "position_shift_rule": "Q_i=P_i+S_i with sum_i S_i=O; P_11=-T",
+    "predicate": "det(eval_basis(Q_i))=0 iff sum_i Q_i=O for eleven pairwise-distinct affine points Q_i",
+    "proof": "Singularity gives a nonzero f in L(11O) vanishing at all eleven distinct Q_i. Degree forces div(f)=sum_i[Q_i]-11[O], whose Abel sum is O. Conversely Abel sum O makes that divisor principal and supplies the kernel section.",
+    "target_dependent_shift_search_scalar_blind": true
+  },
+  "artifacts": {
+    "circuit_ledger": "theta_addition_bond_and_contraction_ledger.json",
+    "exceptional": "theta_addition_pole_exceptional_controls.json",
+    "frozen": "frozen_5a5c_theta_addition_cancellation_network.json",
+    "logs_descent": "factor_logs_and_identical_descent_r110.json",
+    "marker_replay": "theta_addition_canonical_marker_replay.json"
+  },
+  "breakthrough": false,
+  "cauchy_theta_scope": {
+    "analytic_identity": "det K(x_i,y_j;lambda) = sigma(lambda+X-Y)/sigma(lambda) * prod_(a<b)sigma(x_a-x_b)sigma(y_b-y_a) / prod_(a,b)sigma(x_a-y_b)",
+    "confluent_or_position_separated_repair_required": true,
+    "constant_determinant_is_source_locator": false,
+    "constant_determinant_per_supplied_source": true,
+    "finite_field_algebraic_substitute": "the position-separated L(11O) Abel alternant",
+    "globally_scalar_rational_kernel": false,
+    "kronecker_kernel_is_poincare_bundle_section": true,
+    "pairwise_theta_table_exponent_B": {
+      "decimal": 1.0,
+      "exact": "1"
+    },
+    "pairwise_theta_table_inside_online_cap": true,
+    "primary_source": "https://arxiv.org/abs/2305.02837",
+    "unshifted_repeated_rows_are_false_zeros": true
+  },
+  "claim_status": "EXACT_TARGET_PREDICATE_POSITIVE_WITHHOLD_ALGORITHM_PROMOTION",
+  "classification": "POSITION_SEPARATED_L11_ABEL_ALTERNANT_GIVES_EXACT_FINITE_FIELD_TARGET_ZERO_BICONDITIONAL__ZERO_SUM_SHIFTS_REMOVE_REPEATED_ROW_AND_AFFINE_POLE_BRANCHES_INSIDE_ONLINE_CAP__ELLIPTIC_CAUCHY_AND_VALUE_CHANNEL_MERGE_WITH_IDEA012__CONSTANT_DETERMINANT_PER_SUPPLIED_SOURCE_DOES_NOT_LOCATE_ZEROS__GLOBAL_ZERO_MASK_RESTORES_B5_ROW_MODE_AND_BALANCED_INCIDENCE_B12O5__FINITE_DECK_ANNIHILATOR_CONTRACTION_OPEN",
+  "control_summary": {
+    "all_positive_and_negative_alternants_exact": true,
+    "all_translated_domains_disjoint_affine": true,
+    "all_unshifted_repeat_controls_false_positive": true,
+    "all_zero_sum_shift_schedules_exact": true,
+    "double_fiber_instance_count": 2,
+    "instance_count": 16,
+    "maximum_shift_multiplier": 1,
+    "negative_source_count": 512,
+    "positive_source_count": 18
+  },
+  "cost_ledger": {
+    "caps": {
+      "fresh_work_workspace_exponent_B": {
+        "decimal": 1.25,
+        "exact": "5/4"
+      },
+      "setup_state_exponent_B": {
+        "decimal": 2.25,
+        "exact": "9/4"
+      }
+    },
+    "constructor_status": {
+      "exact_source_locator_complete": false,
+      "finite_field_target_zero_biconditional_complete": true,
+      "generic_multiplicity_integer_lift_complete": false,
+      "inside_cap_zero_mask_aggregate_complete": false,
+      "r108_weight_14400_marker_semantics_preserved": true,
+      "repeated_atom_false_zeros_removed": true
+    },
+    "linear_value_channel": {
+      "deduplicated_campaign_lane": "ECDLP-IDEA-012 determinant value channel and P1539 Abel-Jacobi evaluation minor",
+      "determinant_multilinearity_allows_unary_row_sums": true,
+      "linear_value_moment_reports_zero_locations": false,
+      "quadratic_mixed_discriminant_reports_zero_locations": false
+    },
+    "position_separated_alternant": {
+      "both_inside_online_cap": true,
+      "determinant_dimension": 11,
+      "full_source_scan_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "full_source_scan_inside_caps": false,
+      "per_supplied_source_cost_exponent_B": {
+        "decimal": 0.0,
+        "exact": "0"
+      },
+      "target_shift_forbidden_multiplier_bound": "(5*|A|+5*|C|+1)^2",
+      "target_shift_search_exponent_B": {
+        "decimal": 1.2,
+        "exact": "6/5"
+      },
+      "thin_row_table_state_exponent_B": {
+        "decimal": 0.6,
+        "exact": "3/5"
+      }
+    },
+    "zero_mask_contraction": {
+      "balanced_postmask_incidence_exponent_B": {
+        "decimal": 2.4,
+        "exact": "12/5"
+      },
+      "balanced_postmask_incidence_inside_online_cap": false,
+      "balanced_postmask_incidence_inside_setup_cap": false,
+      "field_zero_mask": "1-det^(p-1)",
+      "finite_deck_annihilator_contraction_supplied": false,
+      "finite_deck_restriction_eliminates_global_mode": true,
+      "generic_prime_scaling_p": "Theta(B^5)",
+      "global_row_mode_exponent_B": {
+        "decimal": 5.0,
+        "exact": "5"
+      },
+      "global_row_mode_inside_caps": false,
+      "global_single_row_section_dimension": "11*(p-1)",
+      "mask_exact_on_field_values": true
+    }
+  },
+  "disposition": "ADMIT_POSITION_SEPARATED_ABEL_ALTERNANT_PREDICATE_ONLY__MERGE_ELLIPTIC_CAUCHY_VALUE_CHANNEL_WITH_IDEA012__REJECT_POINTWISE_SOURCE_SCAN_AND_GLOBAL_FERMAT_ROW_MODE__PRESERVE_FINITE_DECK_ANNIHILATOR_CONTRACTION__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH",
+  "next_action": "Construct or refute one target-specialized finite-deck annihilator for the position-separated Abel alternant determinant. It must compute the exact zero count or existence bit and return one coupled canonical 5A+5C source without evaluating the B^5 source body, materializing the B^(12/5) balanced incidence, or using DLP labels; charge target updates, integer lifting, R108 weight 14400, R105 markers, multiplicity, rank, logs, and identical descent.",
+  "non_claims": [
+    "The exact alternant predicate is not an inside-cap zero locator.",
+    "The determinant value channel does not report zero positions.",
+    "No lower bound for arbitrary finite-deck circuits is proved.",
+    "No generic-prime ECDLP algorithm is constructed.",
+    "No rank, factor-log, target-descent, or Shoup gate passes."
+  ],
+  "schema": "p1553.5a5c_theta_addition_cancellation_network.r110.v1",
+  "shoup_bound_improvement": false,
+  "source_bindings": {
+    "idea_registry": {
+      "path": "p1553_r35_artifact_index_README.md",
+      "sha256": "9f4371eefd5e4019833eef858e3bda79d41aff0c5d7b861c71a5987a96acc392"
+    },
+    "r105_report": {
+      "path": "p1553_5a5c_actual_deck_nonmergeable_target_pullback_probe_report_r105.json",
+      "sha256": "c00b8c3e934e783012acb1dab83282f98720702bb8cd81a706fbdf4671f93a83"
+    },
+    "r108_report": {
+      "path": "p1553_5a5c_factored_elliptic_lambda_ring_chow_norm_probe_report_r108.json",
+      "sha256": "91fab519c6a59851a672aed1a9e18fac8c434359c91a9e1d9fc0acb112ee7b41"
+    },
+    "r109_gate": {
+      "path": "p1553_5a5c_poincare_theta_target_section_rank_probe_gate_r109.md",
+      "sha256": "fc876cc0b83fc43c61c2b95eff1cb0229663f1974b024d4a8f4619b264b7cc00"
+    },
+    "r109_parent": {
+      "path": "p1553_5a5c_poincare_theta_target_section_rank_probe_parent_report_r109.yaml",
+      "sha256": "dd826bb338e9eeada0692f75ec94f7cecc2ae2b407b0830120d4c9c742e1d9ef"
+    },
+    "r109_producer": {
+      "path": "p1553_5a5c_poincare_theta_target_section_rank_probe_r109.py",
+      "sha256": "085b3df3d7442a78800dcd01e67c8fc155a9dfb1181d9a141ed9097c2af65c2e"
+    },
+    "r109_report": {
+      "path": "p1553_5a5c_poincare_theta_target_section_rank_probe_report_r109.json",
+      "sha256": "73c826964d17877ea26436c40bd52753f2b5d0c416fee86ef04f2b4c8f030e4d"
+    }
+  }
+}

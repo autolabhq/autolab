@@ -1,0 +1,108 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-M6-HASH-TO-CURVE-PROJECTIVE-RANK-R157-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: public_group_singleton_rank_and_finite_factor_log_transfer
+run_count: 1
+status: asymptotic_rank_reverse_ffe_and_descent_open
+labels:
+  - exact-finite
+  - theorem
+  - elliptic-curve
+  - hash-to-curve
+  - public-group-equality
+  - singleton-relations
+  - projective-rows
+  - factor-logs
+  - no-dlp-oracle
+  - full-cost
+  - scoped-boundary
+  - novelty-unverified
+owner: P1553-R156
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Transfer the R156 singleton projective-rank transition from scalar-label
+  controls to public prime-order curve points without a DLP oracle.
+inputs:
+  - path: p1553_m6_a_diversity_projective_rank_probe_r156.py
+    sha256: b9caa2eb7bab40d3c3907111d1836130f3cc69394b0489445177996532f4a22a
+  - path: p1553_m6_a_diversity_projective_rank_probe_report_r156.json
+    sha256: 8c04aa3e5640f661d9d2c30e24dcd769dfc4fa6b07c3947f57a83f75965414f3
+  - path: frozen_m6_a_diversity_projective_rank.json
+    sha256: feb947fe5fcef1b7c016f11c1cd978882ab87358bbb855ac846f2934a4a41088
+  - path: m6_a_diversity_projective_rank_cost_ledger.json
+    sha256: db4ed01dace9c597b38686180406fc9392d7eedce1f09dd3b92e639e1d395f2a
+  - path: m6_a_diversity_projective_rank_replay.json
+    sha256: eeb66740bcd2ad794082e780fcf0f80f1c23a4a40e15c0bc1a6dfe9ba99b4b4e
+  - path: m6_a_diversity_projective_rank_controls.json
+    sha256: 82e745fb615edad055b00e24feb77f02ee45f33712e83ffe04e80e3f4c12d3ad
+  - path: factor_logs_and_identical_descent_r156.json
+    sha256: fd84ab20b0d1fcee454e75c80f49fc7cf9d9b9dcf9f87e8eb6ece939ec18bc45
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_a_diversity_projective_rank_probe_r156.py
+    sha256: f67774f461f02dea8b454467c8398e786991095fc3b1a5c8b995ff62fd58a99e
+  - path: p1553_m6_a_diversity_projective_rank_probe_gate_r156.md
+    sha256: 0d47ca3ee6534eb38287f8a611612d594d96f710c0b6cac675fdd2d7bc619bc1
+  - path: p1553_m6_a_diversity_projective_rank_probe_parent_report_r156.yaml
+    sha256: dbcc1e54ee782a39380b28dead9ae770c161be054f752ca687d79e295d4dde4d
+artifacts:
+  - path: p1553_m6_hash_to_curve_projective_rank_probe_r157.py
+    sha256: 0f022ee1c90e5a2feb61f213f71e3b1345015b89611bcf5d738dd2242426cba9
+  - path: p1553_m6_hash_to_curve_projective_rank_probe_report_r157.json
+    sha256: 50cff20e88c953f76a373747a4f11f0dd21a36a0e526bf25c5bbfdaa8997b7d7
+  - path: frozen_m6_hash_to_curve_projective_rank.json
+    sha256: efb0d428c915f93b7c03057486c91d4263d695a536af12204e04fd136f0ff708
+  - path: m6_hash_to_curve_projective_rank_cost_ledger.json
+    sha256: ac54b8756ce08ecdd3e659f1f60bb969ca7db07ba19f8b630e0b3719628466f9
+  - path: m6_hash_to_curve_projective_rank_replay.json
+    sha256: cc1e0613c6c7f493400fd403e840a000fbde60770e6526e127e79d329dc8d3de
+  - path: m6_hash_to_curve_projective_rank_controls.json
+    sha256: 4d78e859ed61f7e4ac7d65f381a027e32f89e8e89a0e673e27daac8702bb1deb
+  - path: factor_logs_and_identical_descent_r157.json
+    sha256: e8ce99ff9582fe5b90fee2bebc12d4641a203b1df2828513c1db8232568c493f
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_m6_hash_to_curve_projective_rank_probe_r157.py
+    sha256: d39dcdff1ec2f809ea275a28066f6f5f2cb0420f578f3f8c13837e05f38836d2
+  - path: p1553_m6_hash_to_curve_projective_rank_probe_gate_r157.md
+    sha256: ea7757fa1adfb06c8d80c5be9224419220a7f96570f069613e0631de609a38af
+verified_statements:
+  - >-
+    Under injectivity of the feasible signed C6 coefficient map, an unordered
+    endpoint is singleton exactly when its coefficient vector has l1 norm six.
+  - >-
+    All 24 actual curve controls satisfy coefficient-map injectivity, the
+    cancellation-pair fiber formula, and the singleton criterion.
+  - >-
+    Public curve-point equality supplies every signed relation row and known-A
+    right-hand side without verifier scalar labels or a DLP oracle.
+  - >-
+    Twenty-three controls have full rank and recover all C factor logs; all
+    recovered logs verify by public scalar multiplication.
+  - >-
+    The lone failure has two projective rows for dimension three, and no
+    control has residual dependency after projective row count is sufficient.
+  - >-
+    Explicit C6 endpoint enumeration costs B^(9/2), exceeds rho, and receives
+    no attack or asymptotic credit.
+scoped_failures:
+  asymptotic_hash_to_curve_coefficient_map_injectivity: open
+  asymptotic_short_relation_rank_theorem: open
+  reverse_only_signed_marker_operator: open
+  signed_weight_separable_ffe_dag: open
+  identical_target_descent: open
+  generic_prime_family_algorithm: open
+  pollard_rho_improvement: false
+  shoup_bound_improvement: false
+  breakthrough: false
+admission:
+  passed_obligations: 15
+  total_obligations: 24
+  l1_singleton_theorem_admitted: true
+  finite_public_group_rank_and_factor_logs_admitted: true
+  asymptotic_hash_to_curve_rank_admitted: false
+  reverse_only_signed_marker_operator_admitted: false
+  lane_admitted: false
+next_action: >-
+  Prove generic-prime high-probability injectivity and full rank for the public
+  short-relation coefficient system, then construct the reverse signed FFE
+  operator and identical target descent within the frozen caps.

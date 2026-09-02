@@ -1,0 +1,107 @@
+schema: crypto.autoresearch.experiment_report.v1
+report_id: P1553-5A5C-BLACK-BOX-TRANSLATED-RESULTANT-R88-PARENT
+date: 2026-07-29
+role: coordinator
+evidence_kind: conditional_oracle_localizer_and_krylov_half_gcd_cost_screen
+run_count: 1
+status: oracle_localizer_logarithmic_scalar_block_krylov_half_gcd_over_cap
+labels:
+  - exact-finite-controls
+  - conditional-oracle
+  - verifier-only
+  - prospective
+  - scoped-negative
+  - novelty-unverified
+owner: P1513-P1536-P1553-R80-R87
+new_idea_id: null
+new_experiment: null
+breakthrough: false
+objective: >-
+  Construct or refute a black-box translated resultant/gcd source localizer
+  that consumes compact five-slot D_A,D_C without materializing the B^3 C
+  polynomial, B^2 translated remainder, or translated evaluation orbit.
+inputs:
+  - path: p1553_5a5c_jet_preserving_addition_pushforward_probe_report_r87.json
+    sha256: f10ba663867815c9ee0b1234f4d9dee698d450a3a7171336d36f3e328ea2333a
+  - path: p1553_5a5c_jet_preserving_addition_pushforward_probe_gate_r87.md
+    sha256: 16d635add67bc64d63d5870663f68ce37e35a21fa4feb436c428b7afbe6ed565
+  - path: p1553_batched_nested_norm_node_compiler_probe_gate_r80.md
+    sha256: 1ff3641688f4f0e13fd64f83aa540ea429a4164e0d0741b64b38acd804d7fb01
+  - path: /Volumes/Volume/autolab/research/p1513_idea121_direct_ku_handoff_v3_20260717.md
+    sha256: 27c8f1f15fd0c3b81ebe2008aa96db12417c3f6612c5c151212206dcba388dcc
+  - path: /Volumes/Volume/crypto-autoresearcher/ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md
+    sha256: 81ec3515b584c36a809c155b5f26127bce91c09d7bfe6bccc425cdef07d51393
+artifacts:
+  - path: p1553_5a5c_black_box_translated_resultant_localizer_probe_r88.py
+    sha256: bd67b19a13e6e27bd4b2315aef5374d68d44d52f03a9b63bff3cefb6d5b12874
+  - path: p1553_5a5c_black_box_translated_resultant_localizer_probe_report_r88.json
+    sha256: d73e017c731a54c6913aeaa94e6b5c6d54ca3757f56be14e8ca8ee5524031de1
+  - path: frozen_5a5c_black_box_resultant_localizer.json
+    sha256: a09a62f16c9b48bc5a75edefe57300dd1fa3beebee4b850912f0fbdebb24a0e7
+  - path: implicit_resultant_half_gcd_operation_ledger.json
+    sha256: 02b0a63db108e0f01294283a07f6a6a29f5388d3915502c2c9c10f11d40ef874
+  - path: target_specialization_and_source_localization_replay.json
+    sha256: 998e341c074f7d97afe77ffceb62d62bfc65fa6153408531041a89d8fcee2ce7
+  - path: multiplicity_and_projective_exceptional_controls.json
+    sha256: e4ddb24e0a0febfeec97952bf5b0dc96b0049bf0bad4fa0d777c22694154def8
+  - path: factor_logs_and_identical_descent_r88.json
+    sha256: b53060e3ef0f023565b7f5063f7e34fe9282284a6507797bbe4f3a417cc3c99c
+  - path: p1553_5a5c_black_box_translated_resultant_localizer_probe_gate_r88.md
+    sha256: 90f0980bdeb51f540cd233f207218361cc14beb8a899c246418410d36ef43d56
+  - path: tasks/ecdlp_index_calculus/tests/test_p1553_5a5c_black_box_translated_resultant_localizer_probe_r88.py
+    sha256: 5e7a9ffefda911a68525b3059981a22a6e859590990c7f48d606766537e7a74b
+verified_statements:
+  - >-
+    Given an exact subset zero-test oracle, one acceptance call and five
+    balanced left-child calls localize the unique endpoint among 32 left
+    occurrences and replay all ten source choices.
+  - >-
+    The positive localizer reads a degree-243 C polynomial and 243-word
+    source dictionary, so it proves conditional semantics only.
+  - >-
+    The accepted quotient multiplication operator has dimension 32, one
+    zero eigenvalue, 32 distinct eigenvalues, and scalar Krylov Hankel rank
+    32.
+  - >-
+    In the optimistic block model, online compliance requires block-width
+    exponent at least 3/4 while setup compliance requires at most 1/4, so no
+    width meets both caps.
+  - >-
+    Scalar zero tests reject empty fibers but do not reject multiple or
+    nonreduced fibers; the first norm jet rejects both unique-source branches.
+scoped_failures:
+  public_coefficient_free_zero_test_inside_caps: unsupplied
+  fixed_marker_source_output_inside_caps: unsupplied
+  standard_black_box_or_half_gcd_inside_caps: fail
+  actual_semaev_projective_exceptional_charts: unsupplied
+  signed_source_biconditional_complete: unsupplied
+  known_rhs_rank_without_verifier_dlp: unsupplied
+  factor_logs_without_verifier_dlp: unsupplied
+  identical_target_descent: unsupplied
+  shoup_improvement: false
+unproved_or_outside_scope:
+  - coefficient-free fixed-marker scalar resultants
+  - non-Krylov determinant and kernel identities
+  - unrestricted arithmetic circuits over compact elliptic divisors
+  - complete signed, infinity, tangent, and exceptional Semaev charts
+admission:
+  passed_obligations: 6
+  obligation_count: 16
+  lane_admitted: false
+result:
+  conditional_logarithmic_source_localizer_exact: true
+  public_black_box_resultant_constructor_inside_caps: false
+  fixed_marker_source_output_inside_caps: false
+  factor_log_solve_complete: false
+  fresh_target_descent_complete: false
+  shoup_bound_improvement: false
+  breakthrough: false
+disposition: >-
+  REJECT_MATERIALIZED_HALF_GCD_AND_SCALAR_BLOCK_KRYLOV_ONLY__CONDITIONAL_BINARY_SOURCE_LOCALIZER_LOGARITHMIC__ZERO_TEST_CONSTRUCTOR_OMITTED__KRYLOV_HANKEL_RANK_B2__BLOCK_WIDTH_CAP_INTERVAL_EMPTY__C_COEFFICIENTS_B3__NESTED_C_NORM_CROSSES_CAP_AT_SLOT4__FIXED_MARKER_SCALAR_RECURRENCE_OPEN__NO_RANK__NO_FACTOR_LOGS__NO_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute one coefficient-free fixed-marker scalar resultant
+  recurrence for the five C decks modulo P_A. It must return zero,
+  multiplicity, and all five C source markers without P_C coefficients, a
+  B^2 quotient vector or Krylov block, a C endpoint dictionary, or a
+  unit-cost determinant oracle; fit B^9/4 setup and B^5/4 fresh work and
+  replay every projective exceptional chart.

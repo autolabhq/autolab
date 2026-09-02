@@ -1,0 +1,609 @@
+{
+  "artifacts": {
+    "backfill_gate": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_backfill_transfer_gate_selected13_9696_9999_probe.json",
+    "c_header": "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state/low_term_total2_ffe_sharp_lane_backfill_replay_algebra_selected13_9696_9999_probe.h"
+  },
+  "claim_status": "FFE_SHARP_LANE_BACKFILL_REPLAY_ALGEBRA_READY",
+  "created_at": "2026-06-05T18:29:25Z",
+  "failures": [],
+  "honesty_boundary": [
+    "This tests source coefficient replay algebra only.",
+    "Source-secret replay or source-form inconsistency is not a backfill direct/rank export.",
+    "A promoted result still needs fresh FFE/summation-polynomial row emission and public-key verification against the backfill row hash."
+  ],
+  "native_preflight": {
+    "c_source_sha256": "303141ab450d3dee5b12602d66f65781803ecb3209a0028ca657dfed1d03c52f",
+    "compile_command": [
+      "cc",
+      "-std=c99",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-I",
+      "/Users/adamburan/.codex/worktrees/258d/autolab/ecdlp_index_calculus_state",
+      "/private/tmp/ecdlp_selected13_replay_algebra_ho2cj4ju/selected13_backfill_replay_algebra.c",
+      "-o",
+      "/private/tmp/ecdlp_selected13_replay_algebra_ho2cj4ju/selected13_backfill_replay_algebra"
+    ],
+    "compile_returncode": 0,
+    "compile_stderr": "",
+    "compile_stdout": "",
+    "compiled": true,
+    "executed": true,
+    "native_summary": {
+      "accepted_export_count": 0,
+      "case_count": 12,
+      "failure_count": 0,
+      "inconsistent_count": 3,
+      "mask_lane_count": 6,
+      "no_unique_count": 0,
+      "source_secret_only_count": 9,
+      "tier_group_count": 4,
+      "transfer_gate_count": 2,
+      "unverified_new_derivation_count": 0
+    },
+    "run_returncode": 0,
+    "run_stderr": "",
+    "run_stdout": "{\"case_count\":12,\"mask_lane_count\":6,\"tier_group_count\":4,\"transfer_gate_count\":2,\"source_secret_only_count\":9,\"inconsistent_count\":3,\"no_unique_count\":0,\"unverified_new_derivation_count\":0,\"accepted_export_count\":0,\"failure_count\":0}\n"
+  },
+  "parameters": {
+    "coefficient_width": 17,
+    "modulus": 11779,
+    "primary_backfill_transfers": [
+      9981,
+      9943
+    ]
+  },
+  "replay_cases": [
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_8360d233d32d8d4d"
+      ],
+      "backfill_transfer_index": 9981,
+      "candidate_form_count": 2,
+      "candidate_form_indices": [
+        0,
+        1
+      ],
+      "case_hash_u64": 18400362525785284021,
+      "case_kind": "mask_lane",
+      "case_kind_code": 1,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 10783,
+        "pivot_cols": [
+          0,
+          1
+        ],
+        "rank": 2
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 33,
+      "lane_index": 0,
+      "replay_case_index": 0,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        10783
+      ],
+      "source_tier": "same_row_key_exact_support",
+      "source_transfers": [
+        9754
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_8360d233d32d8d4d"
+      ],
+      "backfill_transfer_index": 9981,
+      "candidate_form_count": 2,
+      "candidate_form_indices": [
+        2,
+        3
+      ],
+      "case_hash_u64": 8260591872682989555,
+      "case_kind": "mask_lane",
+      "case_kind_code": 1,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 8534,
+        "pivot_cols": [
+          0,
+          11
+        ],
+        "rank": 2
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 17408,
+      "lane_index": 1,
+      "replay_case_index": 1,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        8534
+      ],
+      "source_tier": "same_row_key_exact_support",
+      "source_transfers": [
+        9742
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_8360d233d32d8d4d"
+      ],
+      "backfill_transfer_index": 9981,
+      "candidate_form_count": 2,
+      "candidate_form_indices": [
+        4,
+        5
+      ],
+      "case_hash_u64": 13256988698752106813,
+      "case_kind": "mask_lane",
+      "case_kind_code": 1,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 2802,
+        "pivot_cols": [
+          0,
+          12
+        ],
+        "rank": 2
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 34816,
+      "lane_index": 2,
+      "replay_case_index": 2,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        2802
+      ],
+      "source_tier": "support_span_only",
+      "source_transfers": [
+        9842
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_05f942a16fb73283"
+      ],
+      "backfill_transfer_index": 9943,
+      "candidate_form_count": 2,
+      "candidate_form_indices": [
+        6,
+        7
+      ],
+      "case_hash_u64": 10955677910807858060,
+      "case_kind": "mask_lane",
+      "case_kind_code": 1,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 10783,
+        "pivot_cols": [
+          0,
+          1
+        ],
+        "rank": 2
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 33,
+      "lane_index": 3,
+      "replay_case_index": 3,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        10783
+      ],
+      "source_tier": "support_span_only",
+      "source_transfers": [
+        9754
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_05f942a16fb73283"
+      ],
+      "backfill_transfer_index": 9943,
+      "candidate_form_count": 2,
+      "candidate_form_indices": [
+        8,
+        9
+      ],
+      "case_hash_u64": 13223436932156737796,
+      "case_kind": "mask_lane",
+      "case_kind_code": 1,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 2802,
+        "pivot_cols": [
+          0,
+          11
+        ],
+        "rank": 2
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 17408,
+      "lane_index": 4,
+      "replay_case_index": 4,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        2802
+      ],
+      "source_tier": "one_salt_neighbor_exact_support",
+      "source_transfers": [
+        9842
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_05f942a16fb73283"
+      ],
+      "backfill_transfer_index": 9943,
+      "candidate_form_count": 2,
+      "candidate_form_indices": [
+        10,
+        11
+      ],
+      "case_hash_u64": 1732202402242038841,
+      "case_kind": "mask_lane",
+      "case_kind_code": 1,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 2802,
+        "pivot_cols": [
+          0,
+          12
+        ],
+        "rank": 2
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 34816,
+      "lane_index": 5,
+      "replay_case_index": 5,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        2802
+      ],
+      "source_tier": "one_salt_neighbor_exact_support",
+      "source_transfers": [
+        9842
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_8360d233d32d8d4d"
+      ],
+      "backfill_transfer_index": 9981,
+      "candidate_form_count": 4,
+      "candidate_form_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "case_hash_u64": 1688894166022019084,
+      "case_kind": "tier_group",
+      "case_kind_code": 2,
+      "derived": {
+        "consistent": false,
+        "derived": false,
+        "derived_secret": null,
+        "pivot_cols": [
+          0,
+          1,
+          11
+        ],
+        "rank": 3
+      },
+      "derived_secret_matches_source": false,
+      "family_mask": 0,
+      "lane_index": -1,
+      "replay_case_index": 6,
+      "result_code": 2,
+      "result_status": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+      "source_secret_count": 2,
+      "source_secret_set": [
+        8534,
+        10783
+      ],
+      "source_tier": "same_row_key_exact_support",
+      "source_transfers": [
+        9742,
+        9754
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_8360d233d32d8d4d"
+      ],
+      "backfill_transfer_index": 9981,
+      "candidate_form_count": 2,
+      "candidate_form_indices": [
+        4,
+        5
+      ],
+      "case_hash_u64": 12997506241499288532,
+      "case_kind": "tier_group",
+      "case_kind_code": 2,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 2802,
+        "pivot_cols": [
+          0,
+          12
+        ],
+        "rank": 2
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 0,
+      "lane_index": -1,
+      "replay_case_index": 7,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        2802
+      ],
+      "source_tier": "support_span_only",
+      "source_transfers": [
+        9842
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_05f942a16fb73283"
+      ],
+      "backfill_transfer_index": 9943,
+      "candidate_form_count": 4,
+      "candidate_form_indices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "case_hash_u64": 14368021946584332931,
+      "case_kind": "tier_group",
+      "case_kind_code": 2,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 2802,
+        "pivot_cols": [
+          0,
+          11,
+          12
+        ],
+        "rank": 3
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 0,
+      "lane_index": -1,
+      "replay_case_index": 8,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        2802
+      ],
+      "source_tier": "one_salt_neighbor_exact_support",
+      "source_transfers": [
+        9842
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_05f942a16fb73283"
+      ],
+      "backfill_transfer_index": 9943,
+      "candidate_form_count": 2,
+      "candidate_form_indices": [
+        6,
+        7
+      ],
+      "case_hash_u64": 17685701549050675370,
+      "case_kind": "tier_group",
+      "case_kind_code": 2,
+      "derived": {
+        "consistent": true,
+        "derived": true,
+        "derived_secret": 10783,
+        "pivot_cols": [
+          0,
+          1
+        ],
+        "rank": 2
+      },
+      "derived_secret_matches_source": true,
+      "family_mask": 0,
+      "lane_index": -1,
+      "replay_case_index": 9,
+      "result_code": 1,
+      "result_status": "SOURCE_SECRET_REPLAY_ONLY",
+      "source_secret_count": 1,
+      "source_secret_set": [
+        10783
+      ],
+      "source_tier": "support_span_only",
+      "source_transfers": [
+        9754
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_8360d233d32d8d4d"
+      ],
+      "backfill_transfer_index": 9981,
+      "candidate_form_count": 6,
+      "candidate_form_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "case_hash_u64": 14262778809041961571,
+      "case_kind": "transfer_gate",
+      "case_kind_code": 3,
+      "derived": {
+        "consistent": false,
+        "derived": false,
+        "derived_secret": null,
+        "pivot_cols": [
+          0,
+          1,
+          11,
+          12
+        ],
+        "rank": 4
+      },
+      "derived_secret_matches_source": false,
+      "family_mask": 0,
+      "lane_index": -1,
+      "replay_case_index": 10,
+      "result_code": 2,
+      "result_status": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+      "source_secret_count": 3,
+      "source_secret_set": [
+        2802,
+        8534,
+        10783
+      ],
+      "source_tier": "",
+      "source_transfers": [
+        9742,
+        9754,
+        9842
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    },
+    {
+      "accepted_backfill_export_count": 0,
+      "backfill_row_check_hashes": [
+        "row_05f942a16fb73283"
+      ],
+      "backfill_transfer_index": 9943,
+      "candidate_form_count": 6,
+      "candidate_form_indices": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "case_hash_u64": 3890728656848651879,
+      "case_kind": "transfer_gate",
+      "case_kind_code": 3,
+      "derived": {
+        "consistent": false,
+        "derived": false,
+        "derived_secret": null,
+        "pivot_cols": [
+          0,
+          1,
+          11,
+          12
+        ],
+        "rank": 4
+      },
+      "derived_secret_matches_source": false,
+      "family_mask": 0,
+      "lane_index": -1,
+      "replay_case_index": 11,
+      "result_code": 2,
+      "result_status": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+      "source_secret_count": 2,
+      "source_secret_set": [
+        2802,
+        10783
+      ],
+      "source_tier": "",
+      "source_transfers": [
+        9754,
+        9842
+      ],
+      "worker_obligation": "reemit_and_publicly_verify_backfill_direct_rank_row"
+    }
+  ],
+  "schema": "ecdlp.low_term_total2_ffe_sharp_lane_backfill_replay_algebra_probe.v1",
+  "summary": {
+    "accepted_backfill_export_count": 0,
+    "case_kind_counts": {
+      "mask_lane": 6,
+      "tier_group": 4,
+      "transfer_gate": 2
+    },
+    "native_preflight_failure_count": 0,
+    "native_preflight_verified": true,
+    "primary_backfill_transfers": [
+      9981,
+      9943
+    ],
+    "replay_case_count": 12,
+    "result_counts": {
+      "SOURCE_FORM_SYSTEM_INCONSISTENT": 3,
+      "SOURCE_SECRET_REPLAY_ONLY": 9
+    },
+    "transfer_gate_statuses": [
+      {
+        "backfill_transfer_index": 9981,
+        "candidate_form_count": 6,
+        "result_status": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+        "source_secret_set": [
+          2802,
+          8534,
+          10783
+        ]
+      },
+      {
+        "backfill_transfer_index": 9943,
+        "candidate_form_count": 6,
+        "result_status": "SOURCE_FORM_SYSTEM_INCONSISTENT",
+        "source_secret_set": [
+          2802,
+          10783
+        ]
+      }
+    ],
+    "unverified_new_linear_derivation_count": 0,
+    "verified": true,
+    "worker_interpretation": "The bound sidecar forms replay only source secrets or inconsistent source mixes; no accepted backfill export is produced without fresh FFE/summation-polynomial row emission."
+  }
+}

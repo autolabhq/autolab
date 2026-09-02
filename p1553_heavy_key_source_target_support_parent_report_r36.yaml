@@ -1,0 +1,117 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-HEAVY-KEY-SOURCE-TARGET-SUPPORT-R36-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: theorem_only
+  model_scope: heavy_captured_keys_and_both_branch_selected_target_support
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_POSITIVE_SOURCE_NEGATIVE_DENSITY_GATE
+summary: >-
+  A captured oriented key occurring on a constant fraction of fifth shifts
+  has an exact Las Vegas source section over all shifts in expected O(B)
+  work: sample its degree-B center fiber times the B fifth labels and verify.
+  This removes the unrestricted root-witness table as the immediate blocker.
+  However, both-branch containment places every target-visible endpoint in
+  the same B^2-point set Z. With the other B^2 pair endpoint deck, compressed
+  rows cover only O(B^4) targets in a group of order B^(5+o(1)), forcing
+  density loss at least one exponent. A sub-rho route now requires a marked
+  path-structured 3SUM target index below B^(1/2) average query work.
+inputs:
+  - path: staged/p1553_projector_trace_router_gate_r9.md
+    sha256: 400f4a49d75948a188df281633c1b974d2aa70142e852c6a55de7a810e3edf81
+  - path: staged/p1553_factorized_pullback_gate_r10.md
+    sha256: 49eceb2dce63eaceda74afa052d0919d44166758516e177086f2296c545cd4f1
+  - path: staged/p1553_erased_image_geometric_resolution_gate_r13.md
+    sha256: 78ff09226852f140a8c33ce5ba98106ed62007b7126673d3f3af2c49d08a2cc5
+  - path: staged/p1553_signed_partition_packing_gate_r30.md
+    sha256: 8876faa2b65f6a44410495209617b50e99cc781caaf73a2f4cb8b359b294006f
+  - path: staged/p1553_near_period_run_compiler_gate_r31.md
+    sha256: d624b76f30e94289f85180ef3a4de14d0887437a25b1fcefe495d1f7216fa4b9
+  - path: staged/p1553_shift_slice_support_density_gate_r35.md
+    sha256: e72c406ee3997eaac86b44d757a34793d3678a129331ef7be17aa09ae05ee0de
+  - path: staged/p1553_r35_bundle.sha256
+    sha256: b56ea2610fc5406772a4aae1f43edca8a822e26363ef4c4d16f53756b550bde2
+  - path: staged/p1553_r35_staging_receipt.yaml
+    sha256: fbe37828749337a1a2850b53e42d695c393bd61b73861fa2934900a5a5e6a159
+output:
+  path: staged/p1553_heavy_key_source_target_support_gate_r36.md
+  sha256: 103670908f33baee0915372434899a3a710861f501e19c91599f4221fe3f2aa5
+frozen_parameters:
+  source_group_order: B^(5+o(1))
+  map_degree: B
+  selected_center_points: B^2
+  fifth_shifts: B
+  other_pair_endpoint_occurrences: B^2
+  heavy_shift_support: tau_B
+theorems:
+  - >-
+    A heavy oriented key has at least tau*B sources in a candidate rectangle
+    of size at most B^2, so uniform exact rejection sampling returns a
+    coupled all-shift source in expected at most B/tau trials.
+  - >-
+    Every useful signed endpoint of a both-branch selected source lies in Z,
+    so combining it with the other pair deck covers at most O(B^4) targets.
+  - >-
+    Uniform known-log target success is at most B^(-1+o(1)), independently
+    of complete-key and source multiplicities above one endpoint.
+  - >-
+    At density loss one, the R10 campaign formula requires target query
+    exponent below one half for a strict sub-rho result; kappa=5/4 gives
+    lambda at least 13/20.
+  - >-
+    The necessary fresh-target projection is marked 3SUM-Indexing on two
+    B^2-point sets; the direct R31 path-block schedule has state B^2*h and
+    query B^2/h+B.
+controls:
+  source_sampler: exact_las_vegas_conditional_on_heavy_key
+  arbitrary_child_counts: absent
+  signed_target_support: exact_constant_sign_union
+  target_multiplicity_as_support: rejected
+  unstructured_3sum_indexing: parameter_mismatch_not_lower_bound
+  path_block_index: exact_route_specific_control
+result:
+  classification: root_source_positive_both_branch_target_density_insufficient
+  heavy_key_root_source_expected_work: B
+  unscanned_fifth_source: present_conditional_on_captured_heavy_key
+  exact_source_multiplicity: absent
+  arbitrary_child_counts: absent
+  target_visible_endpoint_support: B^2
+  total_compressed_target_support: O(B^4)
+  random_target_success: at_most_B^-1
+  reciprocal_density_loss_exponent: at_least_1
+  campaign_exponent_at_kappa_5_over_4: at_least_13_over_20
+  required_subrho_target_query_exponent: below_1_over_2
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - heavy-key status is a promise and is not certified by rejection sampling
+  - no exact global multiplicities or arbitrary restricted counts
+  - the density theorem is scoped to the both-branch selected source owner
+  - current 3SUM indexing comparisons are not polynomial lower bounds
+  - no target, R10, rank, logs, or descent
+deduplication:
+  - R9 owns exact count self-reduction and direct source-router semantics
+  - R10 owns campaign accounting and queried coefficients
+  - R13 owns erased-image multiplicity and source sections
+  - R30 owns both-branch selected containment
+  - R31 owns path compression
+  - R35 owns heavy-key discovery and sampled-fifth density
+  - R36 adds root rejection sampling and all-shift target-support density
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_POSITIVE_SOURCE_NEGATIVE_DENSITY_GATE__HEAVY_CAPTURED_KEY_HAS_EXACT_ALL_SHIFT_ROOT_SOURCE_IN_EXPECTED_B_WORK__EXACT_COUNTS_AND_ARBITRARY_CHILDREN_ABSENT__BOTH_BRANCH_TARGET_VISIBLE_SUPPORT_B2__COMPRESSED_TARGET_SUPPORT_O_B4__RANDOM_TARGET_SUCCESS_AT_MOST_B_MINUS_1__DENSITY_LOSS_AT_LEAST_ONE__KAPPA_5_OVER_4_GIVES_LAMBDA_AT_LEAST_13_OVER_20__SUB_RHO_REQUIRES_MARKED_PATH_3SUM_TARGET_QUERY_BELOW_B_HALF__NO_TARGET_R10_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Construct or refute a marked fresh-target index for the R31 path family.
+  Given a fresh known-log target, it must find an extendible captured key and
+  pair endpoint, invoke the exact heavy-key source section, use at most
+  B^(9/4+o(1)) target-independent state, and average below B^(1/2-o(1))
+  target work after density while preserving signs, occurrence pointers,
+  R10, rank, logs, and descent.

@@ -1,0 +1,109 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-ALL-DENOMINATOR-COLLISION-SLICE-R48-PARENT
+date: 2026-07-19
+idea_ids:
+  - ECDLP-IDEA-195
+classification:
+  evidence: exact_all_catalog_denominator_declared_slice_sweep
+  model_scope: one_row_dropped_collision_slices_for_all_807_r46_denominators
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_ALL_CATALOG_DENOMINATOR_SLICE_NEGATIVE_GATE
+summary: >-
+  For every one of 807 retained catalog denominator sections, R48 selects the
+  highest-collision disjoint catalog partner, verifies a rank-seven collision
+  basis, and exhausts all seven one-row-dropped projective slices of 194
+  pencils each. The sweep generates 1,095,906 instances and scores 1,040,723
+  subgroup-basepoint-free candidates. Seventy-two denominators improve their
+  secondary collision score by at most 11, but none gains a third complete
+  nine-point fiber. Pencils outside the declared slices and denominators
+  outside the catalog remain open.
+inputs:
+  - path: staged/p1553_single_interval_pencil_dlp_reduction_gate_r42.md
+    sha256: 8a8de8726e4fc9542f97cf7e1ba4fc54596307cc544da0d0b18b588553022dae
+  - path: staged/p1553_catalog_pencil_fiber_gate_r46.md
+    sha256: 6302cf24ff82dfc1d96c0cc21c0980c862a3218c0100ffb29905a35a8b63e2e4
+  - path: staged/p1553_fixed_denominator_collision_beam_gate_r47.md
+    sha256: ea56391b5ab951bea92390f3ae490c89d68885f29b02a8433adc5efba80415e3
+  - path: staged/p1553_r47_bundle.sha256
+    sha256: 7407fccf1684d4cbe11d7f9b16111516233523cc7e4864dd549a3bd96e2f69b3
+  - path: staged/p1553_r47_staging_receipt.yaml
+    sha256: 1488ef90bf65eecc857ed63f73d0409247cc19db62ed88abb7b75e9d41c64162
+outputs:
+  - path: staged/p1553_all_denominator_collision_slice_gate_r48.md
+    sha256: 76952071e56ade008852176cd17d71e23a8f98f0b7b674464fd1dd85f8c1f81f
+  - path: staged/p1553_all_denominator_collision_slice_sweep_r48.py
+    sha256: 011e767a9ff568773f1dba1f6dabda6d63fc22ceac38bdcc80b17c21a33ab3ef
+  - path: staged/p1553_all_denominator_collision_slice_sweep_report_r48.json
+    sha256: adf85fbbbe578d1c613ef3cba286a1c9eb97caed239bfd52ea500c64bedf6d35
+frozen_parameters:
+  field_prime: 193
+  subgroup_order: 103
+  selected_interval_length: 81
+  catalog_denominators: 807
+  disjoint_catalog_pairs_scored_for_seeds: 142286
+  dropped_collision_rows_per_denominator: 7
+  pencils_per_projective_slice: 194
+  generated_instances_per_denominator: 1358
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+theorems:
+  - >-
+    Every selected catalog seed has collision-basis rank seven and therefore
+    defines seven exact 194-pencil one-row-dropped projective slices.
+  - >-
+    Exhausting all declared slices for all 807 catalog denominators produces
+    no candidate with three complete selected fibers.
+controls:
+  all_807_denominators_checked: true
+  all_142286_disjoint_pairs_scored_for_seed_selection: true
+  all_seed_collision_bases_rank_seven: true
+  all_1095906_projective_slice_instances_generated: true
+  all_unique_candidate_outcomes_accounted: true
+  subgroup_basepoints_rejected: true
+  all_candidates_scored_on_full_subgroup: true
+toy_control:
+  generated_projective_line_instances: 1095906
+  unique_pencil_keys_including_seeds: 1091064
+  scored_subgroup_basepoint_free_candidates: 1040723
+  subgroup_basepoint_rejections: 49534
+  duplicate_slice_instances: 4842
+  denominators_with_strict_secondary_improvement: 72
+  maximum_collision_pair_gain: 11
+  global_best_complete_fibers: 2
+  global_best_collision_pairs: 106
+  required_complete_fibers: 9
+  required_collision_pairs: 324
+  survivors: 0
+  replay_matches_report_byte_for_byte: true
+result:
+  classification: all_catalog_denominator_slice_negative_outside_catalog_open
+  three_complete_fiber_candidate: absent_in_declared_slices
+  nine_complete_fiber_candidate: absent_in_declared_slices
+  outside_slice_catalog_pencils: unclassified
+  outside_catalog_denominators: unclassified
+  asymptotic_interval_pencil_family: absent
+  fresh_target_action: absent
+  r10_queried_coefficients: absent
+  independent_rank: absent
+  factor_base_logs: absent
+  scalar_blind_descent: absent
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent mathematical review has not been completed
+  - each denominator search is exhaustive only over seven declared slices
+  - every denominator is still drawn from the budgeted R45 catalog
+  - subgroup basepoint checks do not certify geometric basepoint freeness
+  - no target, R10, relation-rank campaign, logs, descent, or breakthrough
+deduplication:
+  - R47 owns deep finite beams around two strongest denominators
+  - R48 owns one-layer breadth across all retained catalog denominators
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_ALL_CATALOG_DENOMINATOR_SLICE_NEGATIVE_GATE__ALL807_CATALOG_DENOMINATORS_HAVE_RANK_SEVEN_COLLISION_SEEDS__SEVEN_194_PENCIL_SLICES_EXHAUSTED_PER_DENOMINATOR__1095906_GENERATED_INSTANCES_1040723_SCORED_CANDIDATES__72_DENOMINATORS_IMPROVE_SECONDARY_SCORE_MAX_GAIN11__NO_CANDIDATE_HAS_THREE_COMPLETE_NINE_POINT_FIBERS__GLOBAL_BEST_REMAINS_TWO_FIBERS_106_COLLISION_PAIRS__REQUIRED_NINE_FIBERS_324_COLLISION_PAIRS_ABSENT__OUTSIDE_SLICE_AND_OUTSIDE_CATALOG_PENCILS_OPEN__NO_TARGET_R10_RELATION_RANK_LOGS_OR_DESCENT__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  With deterministic seed 1553, generate 1,000 distinct nine-subsets of
+  offsets 0 through 80 outside the R45 catalog whose offset sum is 360 modulo
+  103. Construct their exact sections, verify each subgroup zero set, choose
+  the highest-collision disjoint catalog partner, and exhaust the same seven
+  194-pencil slices.

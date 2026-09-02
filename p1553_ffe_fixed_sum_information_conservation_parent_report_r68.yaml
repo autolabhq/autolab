@@ -1,0 +1,73 @@
+schema: crypto.autoresearch.parent_report.v1
+report_id: P1553-FFE-FIXED-SUM-INFORMATION-CONSERVATION-R68-PARENT
+date: 2026-07-20
+idea_ids: [ECDLP-IDEA-195]
+classification:
+  evidence: exact_fixed_sum_product_row_span_containment_and_semantic_dedup_gate
+  model_scope: general_incidence_identity_with_R67_B24_and_target_replay
+  novelty: unverified
+  independent_review: required
+  status: DRAFT_REVIEW_REQUIRED_INFORMATION_CONSERVATION_GATE
+summary: >-
+  Every degree-six product quotient is exactly the sum of two fixed-sum factor
+  row differences. On the R67 core and target extension, 4161 and 6709 product
+  quotient rows add zero rank beyond 34 and 44 catalog differences. FFE can
+  help only by discovering new fixed-sum rows more cheaply. The uniform model
+  is rho-matching or worse, and structured-base escapes merge with ledger
+  IDEAs 027, 340, and 389.
+inputs:
+  - path: staged/p1553_scalar_blind_rank_descent_gate_r67.md
+    sha256: daf1906c179acbe1ebc88eed28c76fe146058489568fa56d0397513ae8be1f13
+  - path: staged/p1553_scalar_blind_rank_descent_audit_report_r67.json
+    sha256: fc47d3d509597fe5b7a0928c5fcffc4cd6c60679ea7efc7d531f4b24b28f143b
+  - path: staged/p1553_scalar_blind_rank_descent_audit_r67.py
+    sha256: 60cf8dc258f2ea097a8581bd95b8002829be492a512cf336c270abda6876129e
+  - path: staged/p1553_degree_six_product_hypersurface_locator_report_r61.json
+    sha256: f91213021bd350b77cf1ac7d5cb8f2f9ae63b1265a5081d4ed58a3da07aa1f64
+  - path: live_authoritative/ideas/rejected/ECDLP-IDEA-027_bounded_defect_freiman_chart_hypothesis.md
+    sha256: 3b55666b656cc8c0a45ca5fa8479fc4683b07f0f2b3fa8163e57c815d0ce92e3
+  - path: live_authoritative/ideas/rejected/ECDLP-IDEA-340_balog_szemeredi_gowers_energy_source_chart_hypothesis.md
+    sha256: ea9d604e306e74e42d4b4fbe9d9bab944ebb4efef0dbcaa9e4ffd3273bbe6bd4
+  - path: live_authoritative/ideas/rejected/ECDLP-IDEA-389_plunnecke_magnification_source_graph_hypothesis.md
+    sha256: 27eb402e30269bec368290388ad8109e6151e940f3cf78b5f2033cc561327de2
+outputs:
+  - path: staged/p1553_ffe_fixed_sum_information_conservation_gate_r68.md
+    sha256: f0c532664c53b3dbbf5805385161d030ff1d0f8ba02ed19a5da1535fb6fbd0cf
+  - path: staged/p1553_ffe_fixed_sum_information_conservation_r68.py
+    sha256: b8aa38732e577d10c7e7326f01ed5d3a688627963f7d0b98dee3f6a2078deddc
+  - path: staged/p1553_ffe_fixed_sum_information_conservation_report_r68.json
+    sha256: 5c064a36630c052093ebb7bd3b4429d37f836982ba097eacbad2f2ebe1bb6b51
+controls:
+  core_base_size: 24
+  core_catalog_triples: [19, 17]
+  core_catalog_difference_rows: 34
+  core_catalog_difference_rank: 22
+  core_product_quotient_rows: 4161
+  core_product_quotient_rank: 22
+  expanded_base_size: 25
+  expanded_catalog_triples: [24, 22]
+  expanded_catalog_difference_rows: 44
+  expanded_catalog_difference_rank: 23
+  expanded_product_quotient_rows: 6709
+  expanded_product_quotient_rank: 23
+result:
+  classification: ffe_fixed_sum_information_conservation_gate
+  product_quotients_add_factor_log_information: false
+  pencil_factorization_can_only_help_by_finding_new_fixed_sum_rows: true
+  uniform_model_beats_rho: false
+  structured_base_successor_is_semantically_new: false
+  new_idea_created: false
+  shoup_bound_improvement: false
+  breakthrough: false
+limits:
+  - independent review has not been completed
+  - exact row identity is general but rank replay is one size-103 toy
+  - uniform density is a model, not a lower bound for every structured base
+  - structured escapes require the unsupplied public chart/source operations in ledger owners 027, 340, and 389
+  - no Shoup-bound improvement or ECDLP breakthrough is claimed
+disposition: >-
+  DRAFT_REVIEW_REQUIRED_INFORMATION_CONSERVATION_GATE__PRODUCT_QUOTIENTS_EQUAL_FIXED_SUM_ROW_DIFFERENCES__CORE_AND_TARGET_ADD_ZERO_RANK__FFE_ONLY_NEW_FACTOR_DISCOVERY_CAN_HELP__UNIFORM_B_SQRT_N_PRECOMP_N_ONLINE_SQRT_N__STRUCTURED_ESCAPE_MERGES_027_340_389__NO_NEW_IDEA__NO_SHOUP_CLAIM__NO_BREAKTHROUGH
+exactly_one_next_action: >-
+  Require every future product-section or summation-polynomial relation claim
+  to exhibit a scalar-blind new-factor-row discovery operation below the direct
+  pair-complement cost before permitting another experiment in this lane.

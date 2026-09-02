@@ -1,0 +1,245 @@
+{
+  "schema": "crypto.autoresearch.merge_install_delta.v1",
+  "bundle_id": "P1553-R14-20260719",
+  "date": "2026-07-19",
+  "authoritative_root": "/Volumes/Volume/crypto-autoresearcher",
+  "mode": "atomic_compose_compare_and_merge",
+  "base_bundle": {
+    "bundle_id": "P1553-R13-20260719",
+    "manifest": "p1553_r13_install_delta.json",
+    "manifest_sha256": "56bf48ebc6234028391b4402354be9b2b7431d82cb8a40e8a5bba134160b07f0",
+    "manifest_hash_list": "p1553_r13_install_delta.sha256",
+    "manifest_hash_list_sha256": "0dd0cac6ec6fd1054ec80fe8a8978ed0ee1d3ea3ed634dfa02f1251065a8149b",
+    "simulated_queue_sha256": "941e8f226cea4eb298e3ab4525fa8475063c1065805c7b198cf90c0150735d97"
+  },
+  "upstream_bundle": {
+    "bundle_id": "P1553-R5-R7-20260719",
+    "manifest_sha256": "41773128e513bf1a2008b9eb5b58614e390b7090274278b93396597459e4a31a",
+    "manifest_hash_list_sha256": "0731ab08885c1f7a821b1037a2c0ba820ff560c73d405ca37a190f8a2fb40b5d"
+  },
+  "preconditions": {
+    "coordination/dispatch_queue.json": "623ce5e6644e7831f6781bdc7240a0ba1cb1480dd14037c39ea590cee84eb7b2",
+    "coordination/current_dispatch.json": "39990c5f1723718a0871fb865ebba5711c1cf0773f555329e0a361036d1e0c6a",
+    "focus/current_plan.json": "d7527467e6f88fed7f86dbd81feef865b4832980ef94579833aec74dfcc033b6",
+    "ideas/artifacts/README.md": "1d3f6a252c649b47653712a11d78ca93e20ba99da8b14a51af08e065a8c93df1"
+  },
+  "required_task_states": {
+    "TASK-20260719-P1553-NET-P1": "queued",
+    "TASK-20260719-P1553-NET-RT-R1": "queued"
+  },
+  "composition_rule": "Apply R5-R7, R8, R9, R10, R11, R12, R13, and R14 to one private copy of the live queue, validate the combined result, then install all files and dispatch state atomically. Never install this delta alone.",
+  "file_installs": [
+    {
+      "source": "p1553_tensor_trace_minpoly_parent_report.yaml",
+      "sha256": "ec5bc6425a29575468f78fad1803412dc9a69d6a69e581e5deaad7160cb7de8e",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TTM-P1/tensor_trace_minpoly_report.yaml"
+    },
+    {
+      "source": "p1553_tensor_trace_minpoly_compiler_gate_r14.md",
+      "sha256": "da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TTM-P1/tensor_trace_minpoly_compiler_gate_r14.md"
+    },
+    {
+      "source": "p1553_tensor_trace_minpoly_red_team.yaml",
+      "sha256": "44c05cdfac2b994d25889e104e610bd37f635f1b97d1a5e5f4956363358c3d8f",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TTM-RT-R1/red_team_report.yaml"
+    },
+    {
+      "source": "p1553_tensor_trace_minpoly_red_team.md",
+      "sha256": "a534f6260a342bacc1aeba6becce8a35707644ed6fcd16eb2a75cfb7dbbe0c3c",
+      "destination": "coordination/tasks/TASK-20260719-P1553-TTM-RT-R1/tensor_trace_minpoly_red_team.md"
+    },
+    {
+      "source": "p1553_tensor_trace_minpoly_compiler_gate_r14.md",
+      "sha256": "da12515cf2bef622f320fd1a2c174b3fc2920cc39ae223af23b314b64709b4ac",
+      "destination": "ideas/artifacts/ECDLP-IDEA-133/p1553_tensor_trace_minpoly_compiler_gate_r14.md"
+    },
+    {
+      "source": "p1553_r14_artifact_index_README.md",
+      "sha256": "c3b83927fae0ff95b8d401a6c0059e7caf1de34737f6ec1eaee20b611796208d",
+      "destination": "ideas/artifacts/README.md"
+    }
+  ],
+  "queue_merge": {
+    "append_tasks": [
+      {
+        "id": "TASK-20260719-P1553-TTM-P1",
+        "title": "Compile the erased Kummer image through tensor traces",
+        "role": "idea-generator",
+        "state": "completed",
+        "priority": 4,
+        "review_required": true,
+        "depends_on": [
+          "TASK-20260719-P1553-EIG-RT-R1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "coordination/tasks/TASK-20260719-P1553-EIG-P1/erased_image_geometric_resolution_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-EIG-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-068/p1510_multiplicative_compiler_derivation.md",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "ideas/artifacts/ECDLP-IDEA-195/p1551_finite_domain_selector_circuit_gate.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-TTM-P1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "The compact quadratic local branch map, the exact certified trace-Hankel decoder, the first represented object and charged cost in every standard constructor, and the additive, multiplicative, hash-scan, P1510, and rank-two controls.",
+          "inconclusive_decision": "Close only the named split, dense-resultant, nested-norm, sparse-resultant, quotient-Krylov, direct-stencil, and slice-union constructors; preserve compact actual-Phi moment generation, containment, jointly coupled source recovery, adaptive child counts, fresh-target action, and rank-two queries.",
+          "local_ambiguity_rule": "Separate the O(d^2) branch-map description from construction over the S-by-L source algebra; require exact K or an independently certified stopping condition before Hankel decoding; separate fiber sums from one jointly coupled source and full convolution support from the queried rank-two interface.",
+          "peripheral_exclusions": [
+            "No finite moment prefix treated as image completeness without an exact certificate",
+            "No output-sensitive decoder treated as an output-sensitive moment constructor",
+            "No grammar-specific constructor charge promoted to an unrestricted lower bound",
+            "No new idea, experiment, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after the branch formula, Hankel nonsingularity, completeness certificate, source coupling, every constructor charge, positive controls, and R10 interface mismatch are independently reconstructed."
+        },
+        "resource_estimate": {
+          "dominant_stage": "surviving compact tensor-trace constructor for the actual Kummer branch map",
+          "stages": [
+            {
+              "id": "compact_local_map",
+              "work": "O(S+L+d^2) input and O(d^2) dense chart coefficients"
+            },
+            {
+              "id": "certified_hankel_decode",
+              "work": "K^(1+o(1)) from moments s_0 through s_(2K-1) and exact K"
+            },
+            {
+              "id": "dense_fifth_resultant",
+              "work": "d*L^2"
+            },
+            {
+              "id": "source_algebra_routes",
+              "work": "S*L represented dimension"
+            },
+            {
+              "id": "admitted_target_and_child_query",
+              "work": "at most B^(5/4+o(1)) per fresh target or adaptive child"
+            }
+          ]
+        },
+        "handoff": {
+          "objective": "Construct or refute a sub-SL tensor-trace engine for the actual Kummer branch map that emits the certified moment and query package needed by the erased-image compiler.",
+          "uncertainty_reduced": "Whether compact branch formulas plus output-sensitive minimal-polynomial decoding suffice, or whether all known constructors reintroduce the full S-by-L source algebra or the d*L^2 join.",
+          "inputs": [
+            "the independently accepted R13 erased-image gate",
+            "the R10 exact count and rank-two interface",
+            "P1510 output-sensitive multiplicative compiler control",
+            "P1536 projector and coloured-source semantics",
+            "P1551 explicit quotient grammar"
+          ],
+          "constraints": [
+            "Retain complete projective branch divisors and saturated exceptional charts.",
+            "Require exact K or an independently proved containment or stopping certificate.",
+            "Keep ordinary moments, occurrence weights, complete key coordinates, and one jointly coupled source separate.",
+            "Charge d*L^2, d^2 joins, and S*L vector traffic wherever materialized.",
+            "Test fresh-target, adaptive child, and R10 rank-two interfaces rather than full unused support.",
+            "Allocate no new idea, run, Shoup claim, or breakthrough status."
+          ],
+          "deliverables": [
+            "tensor_trace_minpoly_report.yaml",
+            "tensor_trace_minpoly_compiler_gate_r14.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "The local branch formula and all exceptional charts are exact.",
+            "The trace-Hankel decoder states its exact K and no-wrap assumptions.",
+            "Every standard constructor identifies its first large represented object.",
+            "Positive factorization controls and the R10 query mismatch are explicit.",
+            "Exactly one compact-constructor action and no positive ECDLP status remain."
+          ]
+        }
+      },
+      {
+        "id": "TASK-20260719-P1553-TTM-RT-R1",
+        "title": "Red-team tensor traces and minimal-polynomial decoding",
+        "role": "red-team",
+        "state": "completed",
+        "priority": 3,
+        "review_required": false,
+        "depends_on": [
+          "TASK-20260719-P1553-TTM-P1"
+        ],
+        "read_scope": [
+          "AGENTS.md",
+          "agents/red-team.md",
+          "coordination/tasks/TASK-20260719-P1553-TTM-P1/tensor_trace_minpoly_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-TTM-P1/tensor_trace_minpoly_compiler_gate_r14.md",
+          "coordination/tasks/TASK-20260719-P1553-EIG-RT-R1/red_team_report.yaml",
+          "coordination/tasks/TASK-20260719-P1553-FPB-P1/factorized_pullback_gate_r10.md",
+          "ideas/artifacts/ECDLP-IDEA-068/p1510_multiplicative_compiler_derivation.md",
+          "ideas/artifacts/ECDLP-IDEA-133/p1536_frobenius_projector_norm_jet_audit.md",
+          "focus/current_plan.json"
+        ],
+        "write_scope": [
+          "coordination/tasks/TASK-20260719-P1553-TTM-RT-R1"
+        ],
+        "attention_contract": {
+          "decisive_evidence": "Independent reconstruction of the local quadratic, the moment identities and Hankel determinant, the exact decoding preconditions, each constructor charge, the source-coupling obstruction, and every positive control.",
+          "inconclusive_decision": "Accept only the exact decoder and frozen constructor boundary while retaining compact moment construction, containment, joint source selection, target and child action, rank two, factor-base logarithms, blind descent, and the full ECDLP cost path.",
+          "local_ambiguity_rule": "Reject any moment-prefix stopping heuristic, marginal source selectors, hidden SL trace vectors, d^2 joins, full-support convolution substituted for rank-two queries, or grammar-specific cost stated as a general lower bound.",
+          "peripheral_exclusions": [
+            "No unrestricted algebraic-circuit, sparse-resultant, or data-structure lower bound",
+            "No exact image decoder treated as a relation campaign or blind descent",
+            "No new idea, experiment, Shoup claim, or breakthrough status"
+          ],
+          "rerank_trigger": "Rerank only after the final producer hashes match, all corrections are present in both producer files, and the surviving compact-constructor action has every required output interface."
+        },
+        "handoff": {
+          "objective": "Independently falsify or correct the R14 branch map, trace-Hankel decoder, constructor costs, source semantics, positive controls, and target/rank-two boundary.",
+          "uncertainty_reduced": "Whether the compact description and exact decoder are valid without silently supplying the hard moment constructor or a false completeness and source certificate.",
+          "inputs": [
+            "the R14 producer receipts",
+            "the independently accepted R13 receipts",
+            "R10 rank-two and Query2P1 semantics",
+            "P1510 and structured additive or multiplicative controls",
+            "P1536 and P1551 source and quotient semantics"
+          ],
+          "constraints": [
+            "Reconstruct the local polynomial, trace moments, and Hankel determinant exactly.",
+            "Check p-greater-than-8d^2, 2K-less-than-p, zero roots, poles, and exceptional strata.",
+            "Require one jointly coupled pair/fifth source, not marginal fiber sums.",
+            "Charge every represented source-algebra vector, resultant, and join.",
+            "Preserve all target, rank, factor-log, and descent omissions."
+          ],
+          "deliverables": [
+            "red_team_report.yaml",
+            "tensor_trace_minpoly_red_team.md"
+          ],
+          "budget": {
+            "wall_clock_seconds": 3600,
+            "memory_gb": 4,
+            "maximum_runs": 1
+          },
+          "completion_gate": [
+            "Every algebraic identity and cost exponent is independently reconstructed or corrected.",
+            "The exact decoder is cleanly separated from the missing constructor.",
+            "The final producer hashes match the accepted review.",
+            "Exactly one next action and no positive ECDLP status remain."
+          ]
+        }
+      }
+    ]
+  },
+  "post_install": [
+    "Regenerate coordination/current_dispatch.json and coordination/current_dispatch.md with tools/research_dispatch.py.",
+    "Run tools/test_autoresearch_focus.py and tools/test_research_dispatch.py.",
+    "Run tools/autoresearch_focus.py on focus/focus_queue_20260717.json with --check-only.",
+    "Run ideas/validate_ideas.py.",
+    "Recompute all manifest layers, the artifact-index precondition, and every source hash; preserve drift rather than overwriting concurrent state."
+  ],
+  "claims": {
+    "breakthrough": false,
+    "shoup_bound_improvement": false,
+    "new_idea_id": null,
+    "experiment_or_run": false
+  }
+}
